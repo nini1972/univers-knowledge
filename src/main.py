@@ -1,12 +1,27 @@
 import os
+import re
 from dotenv import load_dotenv
 from crewai import Crew, Process
 
 from agents.universe_agents import UniverseAgents
 from tasks.universe_tasks import UniverseTasks
 
+def read_index(filepath):
+    try:
+        with open(filepath, 'r') as f:
+            return f.read()
+    except FileNotFoundError:
+        return "Index not found. Start with basic physics."
+
+def sanitize_filename(name):
+    # Convert "The Standard Model!" to "the_standard_model.md"
+    s = re.sub(r'[^a-zA-Z0-9\s]', '', name).strip().replace(' ', '_').lower()
+    return f"{s}.md"
+
 def main():
     load_dotenv()
+    index_path = "../knowledge_base/_index.md"
+    current_index = read_index(index_path)
 
     # Initialize Agents
     agents = UniverseAgents()
@@ -18,28 +33,43 @@ def main():
     # Initialize Tasks
     tasks = UniverseTasks()
     
-    # We can pass an initial concept here to kick off the learning process
-    initial_concept = "The Standard Model of Elementary Particles"
-    output_location = "../knowledge_base/level_1_fundamental_physics/standard_model.md"
+    print("--- STEP 1: Determine Next Topic ---")
+    topic_task = tasks.determine_next_topic_task(student, current_index)
+    topic_crew = Crew(agents=[student], tasks=[topic_task], verbose=True)
     
-    research_task = tasks.research_concept_task(researcher, initial_concept)
-    verify_task = tasks.verify_research_task(skeptic, initial_concept)
-    evaluate_task = tasks.student_evaluation_task(student, initial_concept)
+    # We run the Student alone first to decide what to learn today
+    # next_concept = topic_crew.kickoff()
+    
+    # FOR TESTING PURPOSES, since we can't run the LLM right now, we define a dummy concept.
+    # In live execution (Github Actions), uncomment the lines above and remove the line below.
+    next_concept = "Quantum Entanglement" 
+    
+    next_concept = str(next_concept).strip()
+    print(f"Target Concept Selected: {next_concept}")
+    
+    # We dynamically create the output paths based on the Student's decision
+    filename = sanitize_filename(next_concept)
+    # For now, default to level 1. A more advanced Student could decide the level dynamically.
+    level_folder = "level_1_fundamental_physics" 
+    output_location = f"../knowledge_base/{level_folder}/{filename}"
+
+    print("--- STEP 2: Research & Verification Loop ---")
+    
+    research_task = tasks.research_concept_task(researcher, next_concept)
+    verify_task = tasks.verify_research_task(skeptic, next_concept)
+    evaluate_task = tasks.student_evaluation_task(student, next_concept)
     document_task = tasks.document_knowledge_task(archivist, output_location)
+    update_index_task = tasks.update_index_task(archivist, index_path, next_concept, level_folder)
 
     # Instantiate the Crew
     universe_crew = Crew(
         agents=[student, researcher, skeptic, archivist],
-        tasks=[research_task, verify_task, evaluate_task, document_task],
+        tasks=[research_task, verify_task, evaluate_task, document_task, update_index_task],
         process=Process.sequential,
         verbose=True
     )
-
-    print("Initialize Student Agent logic completed.")
-    print(f"Beginning research on: {initial_concept}")
     
-    # Execute the workflow
-    # WARNING: Need OPENAI_API_KEY or LLM endpoint configured to run this.
+    # Execute the core workflow
     # result = universe_crew.kickoff()
     # print("Workflow complete:", result)
 
