@@ -1,0 +1,50 @@
+name: Autonomous Student Workflow
+
+on:
+  schedule:
+    # Runs every day at midnight (UTC)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions UI
+
+jobs:
+  run-student-agent:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to push new knowledge base files back to the repo
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Execute Knowledge Gathering (Level 1)
+        run: |
+          cd src
+          python main.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Execute Advanced Frameworks (Level 2)
+        run: |
+          cd src
+          python main_level2.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Commit and Push Knowledge Base Updates
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add knowledge_base/
+          # Only commit if there are changes
+          git diff --staged --quiet || git commit -m "docs: Student agent acquired new verified knowledge \ud83e\udde0"
+          git push
