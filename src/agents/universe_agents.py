@@ -2,8 +2,15 @@ from crewai import Agent
 from textwrap import dedent
 from langchain_community.tools import DuckDuckGoSearchRun
 
-# Initialize the search tool to be used by the Researcher
-search_tool = DuckDuckGoSearchRun()
+
+def _build_search_tools():
+    """Create search tools lazily so missing optional deps don't crash module import."""
+    try:
+        return [DuckDuckGoSearchRun()]
+    except Exception as exc:
+        # Keep the workflow running even if web search deps are temporarily unavailable.
+        print(f"Warning: DuckDuckGo search disabled ({exc})")
+        return []
 
 class UniverseAgents:
     def student_agent(self) -> Agent:
@@ -22,6 +29,7 @@ class UniverseAgents:
         )
 
     def researcher_agent(self) -> Agent:
+        search_tools = _build_search_tools()
         return Agent(
             role='Fundamental Physics Researcher',
             goal='Gather comprehensive and accurate data on physical phenomena, theories, and the fundamental building blocks of the universe.',
@@ -32,7 +40,7 @@ class UniverseAgents:
             """),
             verbose=True,
             allow_delegation=False,
-            tools=[search_tool] # Equipped with DuckDuckGo Search
+            tools=search_tools
         )
 
     def skeptic_agent(self) -> Agent:
