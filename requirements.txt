@@ -3,7 +3,6 @@ crewai-tools
 langchain-openai
 langchain-community
 langchain-tavily
-duckduckgo-search
 ddgs
 python-dotenv
 markdown
