@@ -32,8 +32,18 @@ jobs:
           python -m pip install -U ddgs
           python -c "from ddgs import DDGS; print('ddgs import ok')"
 
+      - name: Print Runtime Diagnostics
+        run: |
+          echo "Commit: $(git rev-parse HEAD)"
+          python -V
+          sed -n '1,80p' src/agents/universe_agents.py
+
       - name: Execute Knowledge Gathering (Level 1)
         run: |
+          if [ -z "${OPENAI_API_KEY}" ]; then
+            echo "::error::OPENAI_API_KEY is empty or missing in repository secrets."
+            exit 1
+          fi
           cd src
           python main.py
         env:
@@ -45,6 +55,10 @@ jobs:
 
       - name: Execute Advanced Frameworks (Level 2)
         run: |
+          if [ -z "${OPENAI_API_KEY}" ]; then
+            echo "::error::OPENAI_API_KEY is empty or missing in repository secrets."
+            exit 1
+          fi
           cd src
           python main_level2.py
         env:
