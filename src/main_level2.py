@@ -7,6 +7,7 @@ from tasks.universe_tasks import UniverseTasks
 
 def main():
     load_dotenv()
+    dry_run = os.getenv("DRY_RUN", "false").lower() == "true"
 
     # Initialize Agents
     agents = UniverseAgents()
@@ -58,8 +59,11 @@ def main():
     print(f"Beginning debate on: {theory_a} vs {theory_b}")
     
     # Execute the workflow
-    # result = advanced_crew.kickoff()
-    # print("Workflow complete:", result)
+    if dry_run:
+        print("DRY_RUN enabled. Skipping advanced_crew.kickoff().")
+    else:
+        result = advanced_crew.kickoff()
+        print("Workflow complete:", result)
 
 if __name__ == "__main__":
     main()

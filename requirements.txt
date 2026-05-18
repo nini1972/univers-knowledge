@@ -3,6 +3,7 @@ crewai-tools
 langchain-openai
 langchain-community
 duckduckgo-search
+ddgs
 python-dotenv
 markdown
 mcp

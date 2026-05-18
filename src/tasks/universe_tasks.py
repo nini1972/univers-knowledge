@@ -83,11 +83,14 @@ class UniverseTasks:
                 You MUST use the 'Generate Universe Image' tool to actually create the image. 
                 Pass your detailed prompt to the tool.
                 
-                The tool will return the local file path to the generated image.
-                Your final output must be exactly the markdown image tag embedding the generated image:
+                If the tool returns a normal file path, your final output must be exactly:
                 `![{concept}](<the path returned by the tool>)`
+
+                If the tool returns a value that starts with `GENMEDIA_UNAVAILABLE:`, do NOT fabricate a file path.
+                In that case, your final output must be exactly:
+                `[VISUAL_PENDING: <the full tool message>]`
             """),
-            expected_output="A markdown image tag embedding the actual generated image file path.",
+            expected_output="Either a markdown image tag with a real generated path, or a VISUAL_PENDING marker with a concrete unavailability reason.",
             agent=agent
         )
 

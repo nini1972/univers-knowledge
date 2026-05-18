@@ -9,6 +9,9 @@ on:
 jobs:
   run-student-agent:
     runs-on: ubuntu-latest
+    concurrency:
+      group: autonomous-student-${{ github.ref }}
+      cancel-in-progress: true
     permissions:
       contents: write # Needed to push new knowledge base files back to the repo
 
@@ -24,6 +27,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Execute Knowledge Gathering (Level 1)
@@ -32,6 +36,8 @@ jobs:
           python main.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PYTHONUNBUFFERED: "1"
+          ENABLE_GENMEDIA: "false"
 
       - name: Execute Advanced Frameworks (Level 2)
         run: |
@@ -39,6 +45,8 @@ jobs:
           python main_level2.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PYTHONUNBUFFERED: "1"
+          ENABLE_GENMEDIA: "false"
 
       - name: Commit and Push Knowledge Base Updates
         run: |

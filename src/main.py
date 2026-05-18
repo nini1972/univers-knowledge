@@ -20,6 +20,7 @@ def sanitize_filename(name):
 
 def main():
     load_dotenv()
+    dry_run = os.getenv("DRY_RUN", "false").lower() == "true"
     index_path = "../knowledge_base/_index.md"
     current_index = read_index(index_path)
 
@@ -38,12 +39,12 @@ def main():
     topic_task = tasks.determine_next_topic_task(student, current_index)
     topic_crew = Crew(agents=[student], tasks=[topic_task], verbose=True)
     
-    # We run the Student alone first to decide what to learn today
-    # next_concept = topic_crew.kickoff()
-    
-    # FOR TESTING PURPOSES, since we can't run the LLM right now, we define a dummy concept.
-    # In live execution (Github Actions), uncomment the lines above and remove the line below.
-    next_concept = "Quantum Entanglement" 
+    if dry_run:
+        # Keep local dry-runs deterministic and API-free when needed.
+        next_concept = "Quantum Entanglement"
+    else:
+        # Run the Student first to decide what to learn in this cycle.
+        next_concept = topic_crew.kickoff()
     
     next_concept = str(next_concept).strip()
     print(f"Target Concept Selected: {next_concept}")
@@ -79,8 +80,11 @@ def main():
     )
     
     # Execute the core workflow
-    # result = universe_crew.kickoff()
-    # print("Workflow complete:", result)
+    if dry_run:
+        print("DRY_RUN enabled. Skipping universe_crew.kickoff().")
+    else:
+        result = universe_crew.kickoff()
+        print("Workflow complete:", result)
 
 if __name__ == "__main__":
     main()
