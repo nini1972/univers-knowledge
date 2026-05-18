@@ -1,14 +1,35 @@
 from crewai import Agent
+import os
 from textwrap import dedent
-from langchain_community.tools import DuckDuckGoSearchRun
 
 
 def _build_search_tools():
-    """Create search tools lazily so missing optional deps don't crash module import."""
+    """Create search tools lazily so missing deps/keys do not crash startup.
+
+    Preferred order:
+    1) TavilySearch from langchain-tavily when TAVILY_API_KEY is available.
+    2) SerperDevTool when SERPER_API_KEY is available.
+    3) DuckDuckGoSearchRun as a no-key fallback when ddgs is installed.
+    4) No search tool (graceful degradation).
+    """
+    if os.getenv("TAVILY_API_KEY"):
+        try:
+            from langchain_tavily import TavilySearch
+            return [TavilySearch(max_results=5, topic="general")]
+        except Exception as exc:
+            print(f"Warning: Tavily search disabled ({exc})")
+
+    if os.getenv("SERPER_API_KEY"):
+        try:
+            from crewai_tools import SerperDevTool
+            return [SerperDevTool()]
+        except Exception as exc:
+            print(f"Warning: Serper search disabled ({exc})")
+
     try:
+        from langchain_community.tools import DuckDuckGoSearchRun
         return [DuckDuckGoSearchRun()]
     except Exception as exc:
-        # Keep the workflow running even if web search deps are temporarily unavailable.
         print(f"Warning: DuckDuckGo search disabled ({exc})")
         return []
 
