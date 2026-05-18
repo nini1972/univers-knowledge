@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "genmedia-nanobanana": {
+      "command": "./.mcp-servers/mcp-nanobanana-go.exe",
+      "args": [],
+      "env": {
+        "PROJECT_ID": "city-future-storyteller",
+        "LOCATION": "us-central1"
+      }
+    },
+    "genmedia-veo": {
+      "command": "./.mcp-servers/mcp-veo-go.exe",
+      "args": [],
+      "env": {
+        "PROJECT_ID": "city-future-storyteller",
+        "LOCATION": "us-central1"
+      }
+    }
+  }
+}

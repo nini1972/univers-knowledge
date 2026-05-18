@@ -78,21 +78,26 @@ class UniverseTasks:
             description=dedent(f"""
                 Read the final verified summary for the concept: {concept}.
                 Create a highly detailed, 1-paragraph image generation prompt that accurately 
-                visualizes the core mechanisms of this concept. Provide this prompt wrapped in a 
-                markdown image placeholder like so: 
-                `[IMAGE_PROMPT: <your detailed description here>]`
+                visualizes the core mechanisms of this concept. 
+                
+                You MUST use the 'Generate Universe Image' tool to actually create the image. 
+                Pass your detailed prompt to the tool.
+                
+                The tool will return the local file path to the generated image.
+                Your final output must be exactly the markdown image tag embedding the generated image:
+                `![{concept}](<the path returned by the tool>)`
             """),
-            expected_output="A detailed visual prompt for DALL-E/Midjourney wrapped in a designated markdown placeholder.",
+            expected_output="A markdown image tag embedding the actual generated image file path.",
             agent=agent
         )
 
     def document_knowledge_task(self, agent, output_path):
         return Task(
             description=dedent("""
-                Take the final approved summary from the Student and format it strictly following the
-                template found in 'knowledge_base/templates/concept_template.md'.
-                Include proper sections, citations, mathematical formulas (LaTeX/KaTeX), and identify 
-                placeholders where visual diagrams should be inserted.
+                Take the final approved summary from the Student and the generated image tag from the Visualizer.
+                Format the final output strictly following the template found in 'knowledge_base/templates/concept_template.md'.
+                Include proper sections, citations, mathematical formulas (LaTeX/KaTeX), and INSERT the Markdown image tag generated 
+                by the Visualizer directly into the document where appropriate.
                 Do NOT include markdown formatting wrappers like "```markdown" in the final output text,
                 just output the raw markdown text so it saves properly.
             """),

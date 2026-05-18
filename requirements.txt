@@ -5,3 +5,5 @@ langchain-community
 duckduckgo-search
 python-dotenv
 markdown
+mcp
+langchain-mcp-adapters

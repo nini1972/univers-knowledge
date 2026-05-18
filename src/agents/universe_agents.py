@@ -61,14 +61,17 @@ class UniverseAgents:
         )
 
     def visualizer_agent(self) -> Agent:
+        from tools.genmedia_tools import generate_universe_image
         return Agent(
             role='Scientific Visualizer',
-            goal='Translate abstract, complex physics concepts into highly detailed, accurate prompts for image generation.',
+            goal='Translate abstract, complex physics concepts into highly detailed, accurate prompts for image generation, and execute them.',
             backstory=dedent("""
                 You are a bridging entity between art and quantum mechanics. When a concept transcends 
                 simple verbal explanation, you create vivid, structurally accurate visual metaphors and 
-                detailed image generation prompts that capture the essence of the phenomenon.
+                detailed image generation prompts that capture the essence of the phenomenon. You then
+                invoke the Gemini image generator to bring them to life.
             """),
             verbose=True,
-            allow_delegation=False
+            allow_delegation=False,
+            tools=[generate_universe_image]
         )

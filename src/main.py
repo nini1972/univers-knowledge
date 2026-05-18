@@ -28,6 +28,7 @@ def main():
     student = agents.student_agent()
     researcher = agents.researcher_agent()
     skeptic = agents.skeptic_agent()
+    visualizer = agents.visualizer_agent()
     archivist = agents.archivist_agent()
 
     # Initialize Tasks
@@ -58,13 +59,21 @@ def main():
     research_task = tasks.research_concept_task(researcher, next_concept)
     verify_task = tasks.verify_research_task(skeptic, next_concept)
     evaluate_task = tasks.student_evaluation_task(student, next_concept)
+    visual_task = tasks.generate_visual_concept_task(visualizer, next_concept)
     document_task = tasks.document_knowledge_task(archivist, output_location)
     update_index_task = tasks.update_index_task(archivist, index_path, next_concept, level_folder)
 
     # Instantiate the Crew
     universe_crew = Crew(
-        agents=[student, researcher, skeptic, archivist],
-        tasks=[research_task, verify_task, evaluate_task, document_task, update_index_task],
+        agents=[student, researcher, skeptic, visualizer, archivist],
+        tasks=[
+            research_task, 
+            verify_task, 
+            evaluate_task, 
+            visual_task,
+            document_task, 
+            update_index_task
+        ],
         process=Process.sequential,
         verbose=True
     )
