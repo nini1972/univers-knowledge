@@ -52,6 +52,24 @@ jobs:
           chmod +x "$GITHUB_WORKSPACE/.mcp-servers/mcp-nanobanana-go"
           ls -l "$GITHUB_WORKSPACE/.mcp-servers"
 
+      - name: Configure Google ADC (Genmedia)
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+        run: |
+          if [ -z "${GCP_SA_KEY}" ]; then
+            echo "::warning::GCP_SA_KEY is not set. Genmedia may fail with missing ADC credentials."
+          else
+            CRED_PATH="$RUNNER_TEMP/gcp-sa.json"
+            printf '%s' "${GCP_SA_KEY}" > "$CRED_PATH"
+            echo "GOOGLE_APPLICATION_CREDENTIALS=$CRED_PATH" >> "$GITHUB_ENV"
+          fi
+
+          if [ -n "${GCP_PROJECT_ID}" ]; then
+            echo "GOOGLE_CLOUD_PROJECT=${GCP_PROJECT_ID}" >> "$GITHUB_ENV"
+            echo "PROJECT_ID=${GCP_PROJECT_ID}" >> "$GITHUB_ENV"
+          fi
+
       - name: Execute Knowledge Gathering (Level 1)
         run: |
           if [ -z "${OPENAI_API_KEY}" ]; then
