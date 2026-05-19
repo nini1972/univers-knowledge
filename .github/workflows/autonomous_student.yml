@@ -44,8 +44,7 @@ jobs:
             echo "::error::OPENAI_API_KEY is empty or missing in repository secrets."
             exit 1
           fi
-          cd src
-          python main.py
+          python src/main.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
@@ -59,8 +58,7 @@ jobs:
             echo "::error::OPENAI_API_KEY is empty or missing in repository secrets."
             exit 1
           fi
-          cd src
-          python main_level2.py
+          python src/main_level2.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}

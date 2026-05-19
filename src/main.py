@@ -21,7 +21,7 @@ def sanitize_filename(name):
 def main():
     load_dotenv()
     dry_run = os.getenv("DRY_RUN", "false").lower() == "true"
-    index_path = "../knowledge_base/_index.md"
+    index_path = "knowledge_base/_index.md"
     current_index = read_index(index_path)
 
     # Initialize Agents
@@ -53,7 +53,7 @@ def main():
     filename = sanitize_filename(next_concept)
     # For now, default to level 1. A more advanced Student could decide the level dynamically.
     level_folder = "level_1_fundamental_physics" 
-    output_location = f"../knowledge_base/{level_folder}/{filename}"
+    output_location = f"knowledge_base/{level_folder}/{filename}"
 
     print("--- STEP 2: Research & Verification Loop ---")
     

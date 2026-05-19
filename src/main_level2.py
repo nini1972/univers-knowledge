@@ -22,7 +22,7 @@ def main():
     
     theory_a = "String Theory"
     theory_b = "Loop Quantum Gravity"
-    output_location = "../knowledge_base/level_2_advanced_frameworks/quantum_gravity_debate.md"
+    output_location = "knowledge_base/level_2_advanced_frameworks/quantum_gravity_debate.md"
     
     # 1. Research both approaches
     research_task_a = tasks.research_concept_task(researcher, theory_a)
