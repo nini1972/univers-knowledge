@@ -1,29 +1,17 @@
----
-title: Knowledge Base Index  
----
-
 # Knowledge Base Index
 
 ## Level 1: Fundamental Physics
 
-- [CP Violation](level_1_fundamental_physics/cp_violation.md)
+- [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matter_antimatter_asymmetry.md)
 
 ## Level 2: Particle Physics
 
-*(no entries yet)*
+- [Standard Model Overview](level_2_particle_physics/standard_model_overview.md)
 
-## Level 2: Cosmology
+- [CP Violation in Particle Physics](level_2_particle_physics/cp_violation.md)
 
-*(no entries yet)*
+## Level 3: Cosmology
 
-## Level 2: Quantum Field Theory
+- [Big Bang and Early Universe](level_3_cosmology/big_bang_early_universe.md)
 
-*(no entries yet)*
-
-## Level 1: Mathematics
-
-*(no entries yet)*
-
-## Level 1: Experimental Methods
-
-*(no entries yet)*
+- [Baryogenesis Theories](level_3_cosmology/baryogenesis_theories.md)
