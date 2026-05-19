@@ -23,13 +23,13 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          python -m pip install -U ddgs
+          pip cache purge || true
+          pip install --no-cache-dir -r requirements.txt
+          python -m pip install --no-cache-dir -U ddgs
           python -c "from ddgs import DDGS; print('ddgs import ok')"
 
       - name: Print Runtime Diagnostics
