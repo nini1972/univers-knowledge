@@ -1,5 +1,6 @@
 from crewai import Agent
 import os
+import importlib.util
 from textwrap import dedent
 
 
@@ -14,11 +15,14 @@ def _build_search_tools():
     Note: CrewAI Agent.tools expects CrewAI-compatible BaseTool instances.
     """
     if os.getenv("TAVILY_API_KEY"):
-        try:
-            from crewai_tools import TavilySearchTool
-            return [TavilySearchTool()]
-        except Exception as exc:
-            print(f"Warning: Tavily search disabled ({exc})")
+        if importlib.util.find_spec("tavily") is None:
+            print("Warning: Tavily search disabled (missing tavily-python package)")
+        else:
+            try:
+                from crewai_tools import TavilySearchTool
+                return [TavilySearchTool()]
+            except Exception as exc:
+                print(f"Warning: Tavily search disabled ({exc})")
 
     if os.getenv("SERPER_API_KEY"):
         try:
@@ -87,7 +91,7 @@ class UniverseAgents:
         )
 
     def visualizer_agent(self) -> Agent:
-        from tools.genmedia_tools import generate_universe_image
+        from tools.genmedia_tools import GenerateUniverseImageTool
         return Agent(
             role='Scientific Visualizer',
             goal='Translate abstract, complex physics concepts into highly detailed, accurate prompts for image generation, and execute them.',
@@ -99,5 +103,5 @@ class UniverseAgents:
             """),
             verbose=True,
             allow_delegation=False,
-            tools=[generate_universe_image]
+            tools=[GenerateUniverseImageTool()]
         )

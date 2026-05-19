@@ -2,7 +2,7 @@ import asyncio
 import os
 import json
 import re
-from langchain.tools import tool
+from crewai.tools import BaseTool
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
@@ -89,12 +89,13 @@ async def _generate_image_async(prompt: str) -> str:
     except Exception as e:
         return f"GENMEDIA_UNAVAILABLE: {str(e)}"
 
-@tool("Generate Universe Image")
-def generate_universe_image(prompt: str) -> str:
-    """
-    Generate an image using the Google Genmedia (Nano Banana) MCP Server.
-    Pass a highly detailed, 1-paragraph image generation prompt that accurately visualizes 
-    the core mechanisms of a physics or cosmology concept. The tool will output the local 
-    saved file path which you can use in markdown.
-    """
-    return asyncio.run(_generate_image_async(prompt))
+class GenerateUniverseImageTool(BaseTool):
+    name: str = "Generate Universe Image"
+    description: str = (
+        "Generate an image using the Google Genmedia (Nano Banana) MCP Server. "
+        "Pass a highly detailed, 1-paragraph prompt that visualizes a physics or cosmology concept. "
+        "Returns the generated local image path or a GENMEDIA_UNAVAILABLE message."
+    )
+
+    def _run(self, prompt: str) -> str:
+        return asyncio.run(_generate_image_async(prompt))

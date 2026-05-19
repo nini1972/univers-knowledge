@@ -3,6 +3,7 @@ crewai-tools
 langchain-openai
 langchain-community
 langchain-tavily
+tavily-python
 ddgs
 python-dotenv
 markdown
