@@ -83,6 +83,11 @@ async def _generate_image_async(prompt: str) -> str:
                     # E.g., if path is c:/.../knowledge_base/images/file.png, we just want 'images/file.png'
                     if "knowledge_base" in filepath:
                         filepath = filepath.split("knowledge_base/")[-1]
+
+                    # Generated concept docs are saved under knowledge_base/level_*/,
+                    # so image paths must go up one level to resolve correctly.
+                    if filepath.startswith("images/"):
+                        filepath = f"../{filepath}"
                         
                     return filepath
                 return text_output

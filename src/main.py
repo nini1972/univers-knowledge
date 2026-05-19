@@ -1,5 +1,6 @@
 import os
 import re
+from pathlib import Path
 from dotenv import load_dotenv
 from crewai import Crew, Process
 
@@ -18,11 +19,84 @@ def sanitize_filename(name):
     s = re.sub(r'[^a-zA-Z0-9\s]', '', name).strip().replace(' ', '_').lower()
     return f"{s}.md"
 
+
+def _index_heading_for_level(level_folder: str) -> str:
+    mapping = {
+        "level_1_fundamental_physics": "## Level 1: Fundamental Physics",
+        "level_2_advanced_frameworks": "## Level 2: Advanced Frameworks",
+    }
+    return mapping.get(level_folder, "## Level 1: Fundamental Physics")
+
+
+def _prune_stale_index_links(index_lines, repo_root: Path):
+    """Drop bullet links that point to files that no longer exist."""
+    out = []
+    for line in index_lines:
+        match = re.search(r"\[[^\]]+\]\(([^)]+\.md)\)", line)
+        if match and line.lstrip().startswith("-"):
+            target = repo_root / "knowledge_base" / match.group(1)
+            if not target.exists():
+                continue
+        out.append(line)
+    return out
+
+
+def update_index_file(index_path: str, concept_name: str, level_folder: str, filename: str):
+    """Deterministically merge new concept into index without LLM rewriting."""
+    repo_root = Path(__file__).resolve().parent.parent
+    idx = repo_root / index_path
+    if not idx.exists():
+        idx.parent.mkdir(parents=True, exist_ok=True)
+        idx.write_text("# Knowledge Base Index\n\n", encoding="utf-8")
+
+    lines = idx.read_text(encoding="utf-8").splitlines()
+    lines = _prune_stale_index_links(lines, repo_root)
+
+    heading = _index_heading_for_level(level_folder)
+    link_rel = f"{level_folder}/{filename}"
+    entry = f"- [{concept_name}]({link_rel})"
+
+    if any(entry == line.strip() for line in lines):
+        idx.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+        return
+
+    if heading not in lines:
+        if lines and lines[-1].strip() != "":
+            lines.append("")
+        lines.extend([heading, "", entry])
+        idx.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+        return
+
+    h_idx = lines.index(heading)
+    insert_at = h_idx + 1
+    while insert_at < len(lines) and not lines[insert_at].startswith("## "):
+        insert_at += 1
+
+    section_lines = lines[h_idx + 1:insert_at]
+    if section_lines and section_lines[0].strip() != "":
+        lines.insert(h_idx + 1, "")
+        insert_at += 1
+    lines.insert(insert_at, entry)
+
+    idx.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+
+def sanitize_index_file(index_path: str):
+    """Ensure index only references files that currently exist."""
+    repo_root = Path(__file__).resolve().parent.parent
+    idx = repo_root / index_path
+    if not idx.exists():
+        return "Index not found. Start with basic physics."
+    lines = idx.read_text(encoding="utf-8").splitlines()
+    lines = _prune_stale_index_links(lines, repo_root)
+    idx.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    return idx.read_text(encoding="utf-8")
+
 def main():
     load_dotenv()
     dry_run = os.getenv("DRY_RUN", "false").lower() == "true"
     index_path = "knowledge_base/_index.md"
-    current_index = read_index(index_path)
+    current_index = sanitize_index_file(index_path)
 
     # Initialize Agents
     agents = UniverseAgents()
@@ -55,6 +129,12 @@ def main():
     level_folder = "level_1_fundamental_physics" 
     output_location = f"knowledge_base/{level_folder}/{filename}"
 
+    # Never overwrite existing concept files during automated runs.
+    repo_root = Path(__file__).resolve().parent.parent
+    if (repo_root / output_location).exists():
+        print(f"Concept file already exists, skipping write: {output_location}")
+        return
+
     print("--- STEP 2: Research & Verification Loop ---")
     
     research_task = tasks.research_concept_task(researcher, next_concept)
@@ -62,7 +142,6 @@ def main():
     evaluate_task = tasks.student_evaluation_task(student, next_concept)
     visual_task = tasks.generate_visual_concept_task(visualizer, next_concept)
     document_task = tasks.document_knowledge_task(archivist, output_location)
-    update_index_task = tasks.update_index_task(archivist, index_path, next_concept, level_folder)
 
     # Instantiate the Crew
     universe_crew = Crew(
@@ -72,8 +151,7 @@ def main():
             verify_task, 
             evaluate_task, 
             visual_task,
-            document_task, 
-            update_index_task
+            document_task
         ],
         process=Process.sequential,
         verbose=True
@@ -84,6 +162,7 @@ def main():
         print("DRY_RUN enabled. Skipping universe_crew.kickoff().")
     else:
         result = universe_crew.kickoff()
+        update_index_file(index_path, next_concept, level_folder, filename)
         print("Workflow complete:", result)
 
 if __name__ == "__main__":
