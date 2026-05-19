@@ -7,15 +7,16 @@ def _build_search_tools():
     """Create search tools lazily so missing deps/keys do not crash startup.
 
     Preferred order:
-    1) TavilySearch from langchain-tavily when TAVILY_API_KEY is available.
-    2) SerperDevTool when SERPER_API_KEY is available.
-    3) DuckDuckGoSearchRun as a no-key fallback when ddgs is installed.
-    4) No search tool (graceful degradation).
+    1) TavilySearchTool from crewai_tools when TAVILY_API_KEY is available.
+    2) SerperDevTool from crewai_tools when SERPER_API_KEY is available.
+    3) No search tool (graceful degradation).
+
+    Note: CrewAI Agent.tools expects CrewAI-compatible BaseTool instances.
     """
     if os.getenv("TAVILY_API_KEY"):
         try:
-            from langchain_tavily import TavilySearch
-            return [TavilySearch(max_results=5, topic="general")]
+            from crewai_tools import TavilySearchTool
+            return [TavilySearchTool()]
         except Exception as exc:
             print(f"Warning: Tavily search disabled ({exc})")
 
@@ -26,12 +27,8 @@ def _build_search_tools():
         except Exception as exc:
             print(f"Warning: Serper search disabled ({exc})")
 
-    try:
-        from langchain_community.tools import DuckDuckGoSearchRun
-        return [DuckDuckGoSearchRun()]
-    except Exception as exc:
-        print(f"Warning: DuckDuckGo search disabled ({exc})")
-        return []
+    print("Warning: No search API key configured; researcher will run without web search tools.")
+    return []
 
 class UniverseAgents:
     def student_agent(self) -> Agent:
