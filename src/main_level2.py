@@ -107,8 +107,13 @@ def main():
 
     # Initialize Agents
     agents = UniverseAgents()
-    student = agents.student_agent()
-    researcher = agents.researcher_agent()
+
+    # Use dedicated agent instances across crews and for parallel tasks to avoid
+    # reusing the same executor concurrently.
+    topic_student = agents.student_agent()
+    evaluation_student = agents.student_agent()
+    researcher_a = agents.researcher_agent()
+    researcher_b = agents.researcher_agent()
     skeptic = agents.skeptic_agent()
     archivist = agents.archivist_agent()
     has_genmedia_credentials = bool(os.getenv("GOOGLE_APPLICATION_CREDENTIALS"))
@@ -120,8 +125,8 @@ def main():
     tasks = UniverseTasks()
 
     print("--- STEP 1: Determine Next Level 2 Debate Topic ---")
-    topic_task = tasks.determine_next_level2_topic_task(student, current_index)
-    topic_crew = Crew(agents=[student], tasks=[topic_task], verbose=True)
+    topic_task = tasks.determine_next_level2_topic_task(topic_student, current_index)
+    topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True)
 
     if dry_run:
         selection_output = json.dumps({
@@ -158,15 +163,15 @@ def main():
             theory_a_prompt = f"{theory_a}\nFollow-up context from prior rejection:\n{follow_up_context}"
             theory_b_prompt = f"{theory_b}\nFollow-up context from prior rejection:\n{follow_up_context}"
 
-        # Request parallel research via async tasks; older CrewAI runtimes may still execute these sequentially.
-        # If that fallback occurs, this loop remains correct and future runtime upgrades can unlock true concurrency.
-        research_task_a = tasks.research_concept_task(researcher, theory_a_prompt, async_execution=True)
-        research_task_b = tasks.research_concept_task(researcher, theory_b_prompt, async_execution=True)
+        # Request parallel research via async tasks. Each task gets its own
+        # researcher agent instance to prevent concurrent executor reuse.
+        research_task_a = tasks.research_concept_task(researcher_a, theory_a_prompt, async_execution=True)
+        research_task_b = tasks.research_concept_task(researcher_b, theory_b_prompt, async_execution=True)
         debate_task = tasks.debate_theories_task(skeptic, theory_a, theory_b)
-        evaluate_task = tasks.student_evaluation_task(student, f"The debate between {theory_a} and {theory_b}")
+        evaluate_task = tasks.student_evaluation_task(evaluation_student, f"The debate between {theory_a} and {theory_b}")
 
         evaluation_crew = Crew(
-            agents=[researcher, skeptic, student],
+            agents=[researcher_a, researcher_b, skeptic, evaluation_student],
             tasks=[research_task_a, research_task_b, debate_task, evaluate_task],
             process=Process.sequential,
             verbose=True
