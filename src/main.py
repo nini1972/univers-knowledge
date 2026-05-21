@@ -1,11 +1,24 @@
 import os
 import re
+import json
 from pathlib import Path
 from dotenv import load_dotenv
 from crewai import Crew, Process
 
 from agents.universe_agents import UniverseAgents
 from tasks.universe_tasks import UniverseTasks
+try:
+    from workflow_contracts import (
+        parse_student_decision,
+        normalize_markdown_output,
+        validate_concept_markdown,
+    )
+except ImportError:
+    from src.workflow_contracts import (
+        parse_student_decision,
+        normalize_markdown_output,
+        validate_concept_markdown,
+    )
 try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
 except ImportError:
@@ -114,7 +127,7 @@ def main():
         print(f"Concept file already exists, skipping write: {output_location}")
         return
 
-    print("--- STEP 2: Research & Verification Loop ---")
+    print("--- STEP 2: Research & Verification ---")
 
     # Fresh student instance for the research crew — avoids the
     # "Executor is already running" RuntimeError caused by reusing the
@@ -124,35 +137,73 @@ def main():
     research_task = tasks.research_concept_task(researcher, next_concept)
     verify_task = tasks.verify_research_task(skeptic, next_concept)
     evaluate_task = tasks.student_evaluation_task(research_student, next_concept)
-    visual_task = tasks.generate_visual_concept_task(visualizer, next_concept) if visualizer else None
-    document_task = tasks.document_knowledge_task(
-        archivist,
-        output_location,
-        include_visual=bool(visual_task)
-    )
 
-    crew_agents = [research_student, researcher, skeptic, archivist]
-    crew_tasks = [research_task, verify_task, evaluate_task]
-    if visualizer and visual_task:
-        crew_agents.append(visualizer)
-        crew_tasks.append(visual_task)
-    crew_tasks.append(document_task)
-
-    # Instantiate the Crew
-    universe_crew = Crew(
-        agents=crew_agents,
-        tasks=crew_tasks,
+    evaluation_crew = Crew(
+        agents=[research_student, researcher, skeptic],
+        tasks=[research_task, verify_task, evaluate_task],
         process=Process.sequential,
         verbose=True
     )
     
-    # Execute the core workflow
     if dry_run:
-        print("DRY_RUN enabled. Skipping universe_crew.kickoff().")
+        evaluation_output = json.dumps({
+            "status": "approved",
+            "reason_code": "dry_run",
+            "summary_for_archivist": f"Dry-run approved summary for {next_concept}.",
+            "follow_up_questions": []
+        })
     else:
-        result = universe_crew.kickoff()
-        update_index_file(index_path, next_concept, level_folder, filename)
-        print("Workflow complete:", result)
+        evaluation_output = str(evaluation_crew.kickoff()).strip()
+
+    decision = parse_student_decision(evaluation_output)
+    if decision["status"] != "approved":
+        print(
+            "Concept rejected by Student decision contract. "
+            f"reason_code={decision['reason_code']} follow_up_questions={decision['follow_up_questions']}"
+        )
+        return
+
+    print("--- STEP 3: Documentation & Validation ---")
+
+    visual_task = tasks.generate_visual_concept_task(visualizer, next_concept) if visualizer else None
+    document_task = tasks.document_knowledge_task(
+        archivist,
+        output_location,
+        include_visual=bool(visual_task),
+        approved_summary=decision["summary_for_archivist"],
+    )
+
+    final_agents = [archivist]
+    final_tasks = []
+    if visualizer and visual_task:
+        final_agents.insert(0, visualizer)
+        final_tasks.append(visual_task)
+    final_tasks.append(document_task)
+
+    final_crew = Crew(
+        agents=final_agents,
+        tasks=final_tasks,
+        process=Process.sequential,
+        verbose=True
+    )
+
+    if dry_run:
+        print("DRY_RUN enabled. Skipping final_crew.kickoff().")
+        return
+
+    document_output = normalize_markdown_output(str(final_crew.kickoff()).strip())
+    valid, validation_errors = validate_concept_markdown(document_output)
+    if not valid:
+        print("ERROR: Document validation failed; file/index update was blocked.")
+        for err in validation_errors:
+            print(f" - {err}")
+        return
+
+    output_file = repo_root / output_location
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    output_file.write_text(document_output.rstrip() + "\n", encoding="utf-8")
+    update_index_file(index_path, next_concept, level_folder, filename)
+    print(f"Workflow complete: wrote validated document to {output_location}")
 
 if __name__ == "__main__":
     main()

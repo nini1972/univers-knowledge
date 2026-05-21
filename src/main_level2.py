@@ -8,6 +8,18 @@ from crewai import Crew, Process
 from agents.universe_agents import UniverseAgents
 from tasks.universe_tasks import UniverseTasks
 try:
+    from workflow_contracts import (
+        parse_student_decision,
+        normalize_markdown_output,
+        validate_concept_markdown,
+    )
+except ImportError:
+    from src.workflow_contracts import (
+        parse_student_decision,
+        normalize_markdown_output,
+        validate_concept_markdown,
+    )
+try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
 except ImportError:
     from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
@@ -44,11 +56,6 @@ def _extract_level2_selection(raw_output: str):
             "Causal Dynamical Triangulations",
             "Nonperturbative Quantum Gravity Debate",
         )
-
-
-def _evaluation_rejected(output: str):
-    lowered = str(output).lower()
-    return any(flag in lowered for flag in ["rejected", "fail", "follow-up"])
 
 
 def _ensure_index_file(idx: Path):
@@ -151,6 +158,12 @@ def main():
     retries = 0
     follow_up_context = ""
     evaluation_output = ""
+    evaluation_decision = {
+        "status": "rejected",
+        "reason_code": "missing_evaluation",
+        "summary_for_archivist": "",
+        "follow_up_questions": ["No evaluation decision was produced."],
+    }
     rejected = False
 
     while True:
@@ -181,19 +194,35 @@ def main():
         )
 
         if dry_run:
-            evaluation_output = "APPROVED: Dry run evaluation."
+            evaluation_output = json.dumps({
+                "status": "approved",
+                "reason_code": "dry_run",
+                "summary_for_archivist": f"Dry-run approved summary for debate: {theory_a} vs {theory_b}.",
+                "follow_up_questions": []
+            })
         else:
             evaluation_output = str(evaluation_crew.kickoff()).strip()
 
-        rejected = _evaluation_rejected(evaluation_output)
+        evaluation_decision = parse_student_decision(evaluation_output)
+        rejected = evaluation_decision["status"] != "approved"
         if not rejected:
             break
         if retries >= max_retries:
-            print(f"WARNING: Evaluation rejected after {max_retries} retries. Skipping document generation.")
+            print(
+                "WARNING: Evaluation rejected after "
+                f"{max_retries} retries (reason_code={evaluation_decision['reason_code']}). "
+                "Skipping document generation."
+            )
             break
 
         retries += 1
-        follow_up_context = evaluation_output
+        follow_up_context = json.dumps(
+            {
+                "reason_code": evaluation_decision["reason_code"],
+                "follow_up_questions": evaluation_decision["follow_up_questions"],
+            },
+            ensure_ascii=True,
+        )
         print(f"Evaluation rejected. Retrying research with follow-up context (attempt {retries}/{max_retries}).")
 
     if rejected and retries >= max_retries:
@@ -204,7 +233,7 @@ def main():
         archivist,
         output_location,
         include_visual=bool(visual_task),
-        approved_summary=evaluation_output
+        approved_summary=evaluation_decision["summary_for_archivist"]
     )
 
     final_agents = [archivist]
@@ -224,9 +253,19 @@ def main():
     if dry_run:
         print("DRY_RUN enabled. Skipping final_crew.kickoff().")
     else:
-        result = final_crew.kickoff()
+        result = normalize_markdown_output(str(final_crew.kickoff()).strip())
+        valid, validation_errors = validate_concept_markdown(result)
+        if not valid:
+            print("ERROR: Document validation failed; file/index update was blocked.")
+            for err in validation_errors:
+                print(f" - {err}")
+            return
+
+        output_file = repo_root / output_location
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        output_file.write_text(result.rstrip() + "\n", encoding="utf-8")
         update_index_file(index_path, concept_name, level_folder, filename)
-        print("Workflow complete:", result)
+        print(f"Workflow complete: wrote validated document to {output_location}")
 
 if __name__ == "__main__":
     main()

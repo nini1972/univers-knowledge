@@ -76,10 +76,19 @@ class UniverseTasks:
             description=dedent(f"""
                 Assess the Researcher's report and the Skeptic's verification on: {concept}.
                 Decide if this concept has passed the Verification Threshold.
-                If it passes, formulate a clear directive for the Archivist to document it. 
-                If it fails, dictate what specific fallback questions the Researcher must explore next.
+                Return ONLY valid JSON with this exact schema:
+                {{
+                  "status": "approved" | "rejected",
+                  "reason_code": "short_snake_case_reason",
+                  "summary_for_archivist": "non-empty when approved",
+                  "follow_up_questions": ["question 1", "question 2"]
+                }}
+                Rules:
+                - If approved: status must be "approved" and summary_for_archivist must be non-empty.
+                - If rejected: status must be "rejected" and follow_up_questions must contain at least one concrete question.
+                - Do not include markdown code fences or extra commentary.
             """),
-            expected_output="A final ruling on the concept. If approved, a structured summary for the archivist. If rejected, detailed follow-up questions.",
+            expected_output="A strict JSON object containing status, reason_code, summary_for_archivist, and follow_up_questions.",
             agent=agent
         )
 
@@ -143,6 +152,5 @@ class UniverseTasks:
                 just output the raw markdown text so it saves properly.
             """),
             expected_output=f"A fully formatted Markdown document saved directly to {output_path}.",
-            agent=agent,
-            output_file=output_path # CrewAI will save the output of this task directly to the file
+            agent=agent
         )
