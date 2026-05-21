@@ -111,9 +111,6 @@ def main():
     # Use dedicated agent instances across crews and for parallel tasks to avoid
     # reusing the same executor concurrently.
     topic_student = agents.student_agent()
-    evaluation_student = agents.student_agent()
-    researcher_a = agents.researcher_agent()
-    researcher_b = agents.researcher_agent()
     skeptic = agents.skeptic_agent()
     archivist = agents.archivist_agent()
     has_genmedia_credentials = bool(os.getenv("GOOGLE_APPLICATION_CREDENTIALS"))
@@ -157,6 +154,12 @@ def main():
     rejected = False
 
     while True:
+        # Build fresh agent instances per attempt so async tasks never share an
+        # executor and retries do not reuse any prior run state.
+        evaluation_student = agents.student_agent()
+        researcher_a = agents.researcher_agent()
+        researcher_b = agents.researcher_agent()
+
         theory_a_prompt = theory_a
         theory_b_prompt = theory_b
         if follow_up_context:
