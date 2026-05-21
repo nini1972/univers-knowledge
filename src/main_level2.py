@@ -7,37 +7,10 @@ from crewai import Crew, Process
 
 from agents.universe_agents import UniverseAgents
 from tasks.universe_tasks import UniverseTasks
-
-
-def _index_heading_for_level(level_folder: str) -> str:
-    mapping = {
-        "level_1_fundamental_physics": "## Level 1: Fundamental Physics",
-        "level_2_advanced_frameworks": "## Level 2: Advanced Frameworks",
-    }
-    return mapping.get(level_folder, "## Level 2: Advanced Frameworks")
-
-
-def _prune_stale_index_links(index_lines, repo_root: Path):
-    out = []
-    for line in index_lines:
-        match = re.search(r"\[[^\]]+\]\(([^)]+\.md)\)", line)
-        if match and line.lstrip().startswith("-"):
-            target = repo_root / "knowledge_base" / match.group(1)
-            if not target.exists():
-                continue
-        out.append(line)
-    return out
-
-
-def sanitize_index_file(index_path: str):
-    repo_root = Path(__file__).resolve().parent.parent
-    idx = repo_root / index_path
-    if not idx.exists():
-        return "Index not found. Start with basic physics."
-    lines = idx.read_text(encoding="utf-8").splitlines()
-    lines = _prune_stale_index_links(lines, repo_root)
-    idx.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
-    return idx.read_text(encoding="utf-8")
+try:
+    from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
+except ImportError:
+    from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
 
 
 def sanitize_filename(name):
@@ -104,9 +77,9 @@ def update_index_file(index_path: str, concept_name: str, level_folder: str, fil
     _ensure_index_file(idx)
 
     lines = idx.read_text(encoding="utf-8").splitlines()
-    lines = _prune_stale_index_links(lines, repo_root)
+    lines = prune_stale_index_links(lines, repo_root)
 
-    heading = _index_heading_for_level(level_folder)
+    heading = index_heading_for_level(level_folder, "## Level 2: Advanced Frameworks")
     link_rel = f"{level_folder}/{filename}"
     entry = f"- [{concept_name}]({link_rel})"
 
@@ -122,7 +95,7 @@ def main():
     load_dotenv()
     dry_run = os.getenv("DRY_RUN", "false").lower() == "true"
     index_path = "knowledge_base/_index.md"
-    current_index = sanitize_index_file(index_path)
+    current_index = sanitize_index_file(index_path, Path(__file__).resolve().parent.parent)
 
     # Initialize Agents
     agents = UniverseAgents()
