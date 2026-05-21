@@ -41,8 +41,8 @@ def sanitize_index_file(index_path: str):
 
 
 def sanitize_filename(name):
-    s = re.sub(r'[^a-zA-Z0-9\s]', '', name).strip().replace(' ', '_').lower()
-    return f"{s}.md"
+    sanitized_name = re.sub(r'[^a-zA-Z0-9\s]', '', name).strip().replace(' ', '_').lower()
+    return f"{sanitized_name}.md"
 
 
 def _extract_level2_selection(raw_output: str):
@@ -174,7 +174,8 @@ def main():
             theory_a_prompt = f"{theory_a}\nFollow-up context from prior rejection:\n{follow_up_context}"
             theory_b_prompt = f"{theory_b}\nFollow-up context from prior rejection:\n{follow_up_context}"
 
-        # Attempt parallel research with async tasks; execution order may still be constrained by CrewAI runtime version.
+        # Request parallel research via async tasks; older CrewAI runtimes may still execute these sequentially.
+        # If that fallback occurs, this loop remains correct and future runtime upgrades can unlock true concurrency.
         research_task_a = tasks.research_concept_task(researcher, theory_a_prompt, async_execution=True)
         research_task_b = tasks.research_concept_task(researcher, theory_b_prompt, async_execution=True)
         debate_task = tasks.debate_theories_task(skeptic, theory_a, theory_b)
