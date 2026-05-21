@@ -31,11 +31,19 @@ def _extract_level2_selection(raw_output: str):
         end = text.rfind("}")
         if start != -1 and end != -1 and end > start:
             text = text[start:end + 1]
-    data = json.loads(text)
-    theory_a = str(data["theory_a"]).strip()
-    theory_b = str(data["theory_b"]).strip()
-    concept_name = str(data["concept_name"]).strip()
-    return theory_a, theory_b, concept_name
+    try:
+        data = json.loads(text)
+        theory_a = str(data["theory_a"]).strip()
+        theory_b = str(data["theory_b"]).strip()
+        concept_name = str(data["concept_name"]).strip()
+        return theory_a, theory_b, concept_name
+    except (json.JSONDecodeError, KeyError, TypeError) as exc:
+        print(f"WARNING: Invalid topic selection output ({exc}). Raw output: {raw_output}")
+        return (
+            "Asymptotic Safety Gravity",
+            "Causal Dynamical Triangulations",
+            "Nonperturbative Quantum Gravity Debate",
+        )
 
 
 def _evaluation_rejected(output: str):
