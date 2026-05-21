@@ -1,41 +1,54 @@
 import os
 import re
+import json
 from pathlib import Path
 from dotenv import load_dotenv
 from crewai import Crew, Process
 
 from agents.universe_agents import UniverseAgents
 from tasks.universe_tasks import UniverseTasks
+try:
+    from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
+except ImportError:
+    from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
 
 
-def _index_heading_for_level(level_folder: str) -> str:
-    mapping = {
-        "level_1_fundamental_physics": "## Level 1: Fundamental Physics",
-        "level_2_advanced_frameworks": "## Level 2: Advanced Frameworks",
-    }
-    return mapping.get(level_folder, "## Level 2: Advanced Frameworks")
+def sanitize_filename(name):
+    try:
+        from main import sanitize_filename as _shared_sanitize_filename
+    except ImportError:
+        from src.main import sanitize_filename as _shared_sanitize_filename
+    return _shared_sanitize_filename(name)
 
 
-def _prune_stale_index_links(index_lines, repo_root: Path):
-    out = []
-    for line in index_lines:
-        match = re.search(r"\[[^\]]+\]\(([^)]+\.md)\)", line)
-        if match and line.lstrip().startswith("-"):
-            target = repo_root / "knowledge_base" / match.group(1)
-            if not target.exists():
-                continue
-        out.append(line)
-    return out
+def _extract_level2_selection(raw_output: str):
+    text = str(raw_output).strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?", "", text).strip()
+        text = re.sub(r"```$", "", text).strip()
+    if not text.startswith("{"):
+        start = text.find("{")
+        end = text.rfind("}")
+        if start != -1 and end != -1 and end > start:
+            text = text[start:end + 1]
+    try:
+        data = json.loads(text)
+        theory_a = str(data["theory_a"]).strip()
+        theory_b = str(data["theory_b"]).strip()
+        concept_name = str(data["concept_name"]).strip()
+        return theory_a, theory_b, concept_name
+    except (json.JSONDecodeError, KeyError, TypeError) as exc:
+        print(f"WARNING: Invalid topic selection output ({exc}). Raw output: {raw_output}")
+        return (
+            "Asymptotic Safety Gravity",
+            "Causal Dynamical Triangulations",
+            "Nonperturbative Quantum Gravity Debate",
+        )
 
 
-def sanitize_index_file(index_path: str):
-    repo_root = Path(__file__).resolve().parent.parent
-    idx = repo_root / index_path
-    if not idx.exists():
-        return
-    lines = idx.read_text(encoding="utf-8").splitlines()
-    lines = _prune_stale_index_links(lines, repo_root)
-    idx.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+def _evaluation_rejected(output: str):
+    lowered = str(output).lower()
+    return any(flag in lowered for flag in ["rejected", "fail", "follow-up"])
 
 
 def _ensure_index_file(idx: Path):
@@ -72,9 +85,9 @@ def update_index_file(index_path: str, concept_name: str, level_folder: str, fil
     _ensure_index_file(idx)
 
     lines = idx.read_text(encoding="utf-8").splitlines()
-    lines = _prune_stale_index_links(lines, repo_root)
+    lines = prune_stale_index_links(lines, repo_root)
 
-    heading = _index_heading_for_level(level_folder)
+    heading = index_heading_for_level(level_folder, "## Level 2: Advanced Frameworks")
     link_rel = f"{level_folder}/{filename}"
     entry = f"- [{concept_name}]({link_rel})"
 
@@ -90,70 +103,120 @@ def main():
     load_dotenv()
     dry_run = os.getenv("DRY_RUN", "false").lower() == "true"
     index_path = "knowledge_base/_index.md"
-    sanitize_index_file(index_path)
+    current_index = sanitize_index_file(index_path, Path(__file__).resolve().parent.parent)
 
     # Initialize Agents
     agents = UniverseAgents()
     student = agents.student_agent()
     researcher = agents.researcher_agent()
     skeptic = agents.skeptic_agent()
-    visualizer = agents.visualizer_agent()
     archivist = agents.archivist_agent()
+    has_genmedia_credentials = bool(os.getenv("GOOGLE_APPLICATION_CREDENTIALS"))
+    visualizer = agents.visualizer_agent() if has_genmedia_credentials else None
+    if not has_genmedia_credentials:
+        print("WARNING: GOOGLE_APPLICATION_CREDENTIALS is not set; skipping visual generation task.")
 
     # Initialize Tasks
     tasks = UniverseTasks()
-    
-    theory_a = "String Theory"
-    theory_b = "Loop Quantum Gravity"
-    concept_name = "Quantum Gravity Debate"
+
+    print("--- STEP 1: Determine Next Level 2 Debate Topic ---")
+    topic_task = tasks.determine_next_level2_topic_task(student, current_index)
+    topic_crew = Crew(agents=[student], tasks=[topic_task], verbose=True)
+
+    if dry_run:
+        selection_output = json.dumps({
+            "theory_a": "Asymptotic Safety Gravity",
+            "theory_b": "Causal Dynamical Triangulations",
+            "concept_name": "Nonperturbative Quantum Gravity Debate"
+        })
+    else:
+        selection_output = topic_crew.kickoff()
+
+    theory_a, theory_b, concept_name = _extract_level2_selection(selection_output)
     level_folder = "level_2_advanced_frameworks"
-    filename = "quantum_gravity_debate.md"
-    output_location = "knowledge_base/level_2_advanced_frameworks/quantum_gravity_debate.md"
+    filename = sanitize_filename(concept_name)
+    output_location = f"knowledge_base/{level_folder}/{filename}"
 
     repo_root = Path(__file__).resolve().parent.parent
     if (repo_root / output_location).exists():
         print(f"Concept file already exists, skipping write: {output_location}")
         return
-    
-    # 1. Research both approaches
-    research_task_a = tasks.research_concept_task(researcher, theory_a)
-    research_task_b = tasks.research_concept_task(researcher, theory_b)
-    
-    # 2. Skeptic debates them
-    debate_task = tasks.debate_theories_task(skeptic, theory_a, theory_b)
-    
-    # 3. Student evaluates the debate
-    evaluate_task = tasks.student_evaluation_task(student, f"The debate between {theory_a} and {theory_b}")
-    
-    # 4. Visualizer creates a prompt to illustrate the competing concepts
-    visual_task = tasks.generate_visual_concept_task(visualizer, "Quantum Gravity Approaches")
 
-    # 5. Archivist formats the final theoretical document
-    document_task = tasks.document_knowledge_task(archivist, output_location)
+    print("Phase 3: Level 2 Advanced Frameworks Orchestration Ready.")
+    print(f"Beginning debate on: {theory_a} vs {theory_b}")
 
-    # Instantiate the Crew
-    advanced_crew = Crew(
-        agents=[researcher, skeptic, student, visualizer, archivist],
-        tasks=[
-            research_task_a, 
-            research_task_b, 
-            debate_task, 
-            evaluate_task, 
-            visual_task,
-            document_task
-        ],
+    max_retries = 2
+    retries = 0
+    follow_up_context = ""
+    evaluation_output = ""
+    rejected = False
+
+    while True:
+        theory_a_prompt = theory_a
+        theory_b_prompt = theory_b
+        if follow_up_context:
+            theory_a_prompt = f"{theory_a}\nFollow-up context from prior rejection:\n{follow_up_context}"
+            theory_b_prompt = f"{theory_b}\nFollow-up context from prior rejection:\n{follow_up_context}"
+
+        # Request parallel research via async tasks; older CrewAI runtimes may still execute these sequentially.
+        # If that fallback occurs, this loop remains correct and future runtime upgrades can unlock true concurrency.
+        research_task_a = tasks.research_concept_task(researcher, theory_a_prompt, async_execution=True)
+        research_task_b = tasks.research_concept_task(researcher, theory_b_prompt, async_execution=True)
+        debate_task = tasks.debate_theories_task(skeptic, theory_a, theory_b)
+        evaluate_task = tasks.student_evaluation_task(student, f"The debate between {theory_a} and {theory_b}")
+
+        evaluation_crew = Crew(
+            agents=[researcher, skeptic, student],
+            tasks=[research_task_a, research_task_b, debate_task, evaluate_task],
+            process=Process.sequential,
+            verbose=True
+        )
+
+        if dry_run:
+            evaluation_output = "APPROVED: Dry run evaluation."
+        else:
+            evaluation_output = str(evaluation_crew.kickoff()).strip()
+
+        rejected = _evaluation_rejected(evaluation_output)
+        if not rejected:
+            break
+        if retries >= max_retries:
+            print(f"WARNING: Evaluation rejected after {max_retries} retries. Skipping document generation.")
+            break
+
+        retries += 1
+        follow_up_context = evaluation_output
+        print(f"Evaluation rejected. Retrying research with follow-up context (attempt {retries}/{max_retries}).")
+
+    if rejected and retries >= max_retries:
+        return
+
+    visual_task = tasks.generate_visual_concept_task(visualizer, concept_name) if visualizer else None
+    document_task = tasks.document_knowledge_task(
+        archivist,
+        output_location,
+        include_visual=bool(visual_task),
+        approved_summary=evaluation_output
+    )
+
+    final_agents = [archivist]
+    final_tasks = []
+    if visualizer and visual_task:
+        final_agents.insert(0, visualizer)
+        final_tasks.append(visual_task)
+    final_tasks.append(document_task)
+
+    final_crew = Crew(
+        agents=final_agents,
+        tasks=final_tasks,
         process=Process.sequential,
         verbose=True
     )
 
-    print("Phase 3: Level 2 Advanced Frameworks Orchestration Ready.")
-    print(f"Beginning debate on: {theory_a} vs {theory_b}")
-    
-    # Execute the workflow
     if dry_run:
-        print("DRY_RUN enabled. Skipping advanced_crew.kickoff().")
+        print("DRY_RUN enabled. Skipping final_crew.kickoff().")
     else:
-        result = advanced_crew.kickoff()
+        result = final_crew.kickoff()
         update_index_file(index_path, concept_name, level_folder, filename)
         print("Workflow complete:", result)
 
