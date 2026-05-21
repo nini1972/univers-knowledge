@@ -184,7 +184,10 @@ def main():
         research_task_a = tasks.research_concept_task(researcher_a, theory_a_prompt, async_execution=True)
         research_task_b = tasks.research_concept_task(researcher_b, theory_b_prompt, async_execution=True)
         debate_task = tasks.debate_theories_task(skeptic, theory_a, theory_b)
-        evaluate_task = tasks.student_evaluation_task(evaluation_student, f"The debate between {theory_a} and {theory_b}")
+        evaluate_task = tasks.student_level2_debate_evaluation_task(
+            evaluation_student,
+            f"The debate between {theory_a} and {theory_b}"
+        )
 
         evaluation_crew = Crew(
             agents=[researcher_a, researcher_b, skeptic, evaluation_student],
@@ -205,6 +208,23 @@ def main():
 
         evaluation_decision = parse_student_decision(evaluation_output)
         rejected = evaluation_decision["status"] != "approved"
+
+        if rejected and evaluation_decision["reason_code"] == "lack_of_experimental_confirmation":
+            # Level 2 policy: absence of direct confirmation can still be archived as
+            # [THEORETICAL] if the analysis is rigorous and source-grounded.
+            evaluation_decision = {
+                "status": "approved",
+                "reason_code": "theoretical_without_direct_confirmation",
+                "summary_for_archivist": (
+                    f"[THEORETICAL] Comparative report approved for {theory_a} vs {theory_b}. "
+                    "The analysis is rigorous, source-grounded, and transparent about uncertainty, "
+                    "but lacks direct experimental confirmation at this stage. "
+                    "Document strengths, weaknesses, current constraints, and open validation paths."
+                ),
+                "follow_up_questions": evaluation_decision.get("follow_up_questions", []),
+            }
+            rejected = False
+
         if not rejected:
             break
         if retries >= max_retries:

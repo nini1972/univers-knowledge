@@ -86,6 +86,32 @@ class UniverseTasks:
                 Rules:
                 - If approved: status must be "approved" and summary_for_archivist must be non-empty.
                 - If rejected: status must be "rejected" and follow_up_questions must contain at least one concrete question.
+                - Per protocol, unproven but mathematically consistent concepts can still be approved as [THEORETICAL].
+                - Do NOT reject solely because experimental confirmation is absent.
+                - Do not include markdown code fences or extra commentary.
+            """),
+            expected_output="A strict JSON object containing status, reason_code, summary_for_archivist, and follow_up_questions.",
+            agent=agent
+        )
+
+    def student_level2_debate_evaluation_task(self, agent, concept):
+        return Task(
+            description=dedent(f"""
+                Assess the comparative Level 2 debate report and skeptic review on: {concept}.
+                Return ONLY valid JSON with this exact schema:
+                {{
+                  "status": "approved" | "rejected",
+                  "reason_code": "short_snake_case_reason",
+                  "summary_for_archivist": "non-empty when approved",
+                  "follow_up_questions": ["question 1", "question 2"]
+                }}
+                Decision policy for Level 2 debates:
+                - Approve when the report is rigorous, source-grounded, mathematically coherent, and transparent about uncertainty.
+                - If there is no direct experimental confirmation, classify the outcome as [THEORETICAL] inside summary_for_archivist.
+                - Reject ONLY for quality failures (insufficient sources, logical inconsistencies, missing critical comparisons, or non-rigorous claims).
+                - "lack_of_experimental_confirmation" alone is NOT a valid rejection reason for Level 2.
+                - If approved: status must be "approved" and summary_for_archivist must be non-empty.
+                - If rejected: status must be "rejected" and follow_up_questions must contain at least one concrete question.
                 - Do not include markdown code fences or extra commentary.
             """),
             expected_output="A strict JSON object containing status, reason_code, summary_for_archivist, and follow_up_questions.",
