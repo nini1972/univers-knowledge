@@ -38,7 +38,8 @@ def _extract_level2_selection(raw_output: str):
         concept_name = str(data["concept_name"]).strip()
         return theory_a, theory_b, concept_name
     except (json.JSONDecodeError, KeyError, TypeError) as exc:
-        print(f"WARNING: Invalid topic selection output ({exc}). Raw output: {raw_output}")
+        raw_length = len(str(raw_output))
+        print(f"WARNING: Invalid topic selection output ({exc}). Raw output omitted for safety (length={raw_length}).")
         return (
             "Asymptotic Safety Gravity",
             "Causal Dynamical Triangulations",
