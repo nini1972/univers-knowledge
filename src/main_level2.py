@@ -41,8 +41,11 @@ def sanitize_index_file(index_path: str):
 
 
 def sanitize_filename(name):
-    sanitized_name = re.sub(r'[^a-zA-Z0-9\s]', '', name).strip().replace(' ', '_').lower()
-    return f"{sanitized_name}.md"
+    try:
+        from main import sanitize_filename as _shared_sanitize_filename
+    except ImportError:
+        from src.main import sanitize_filename as _shared_sanitize_filename
+    return _shared_sanitize_filename(name)
 
 
 def _extract_level2_selection(raw_output: str):
