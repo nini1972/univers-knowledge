@@ -6,6 +6,7 @@
 
 - [Quantum Chromodynamics (QCD)](level_1_fundamental_physics/quantum_chromodynamics_qcd.md)
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md)
+- [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md)
 ## Level 2: Particle Physics
 
 - (other entries)
