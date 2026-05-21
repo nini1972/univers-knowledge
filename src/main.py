@@ -72,7 +72,11 @@ def main():
 
     # Initialize Agents
     agents = UniverseAgents()
-    student = agents.student_agent()
+
+    # Use a dedicated student instance for the topic-selection crew so its
+    # executor state does not bleed into the main research crew below.
+    topic_student = agents.student_agent()
+
     researcher = agents.researcher_agent()
     skeptic = agents.skeptic_agent()
     archivist = agents.archivist_agent()
@@ -85,8 +89,8 @@ def main():
     tasks = UniverseTasks()
     
     print("--- STEP 1: Determine Next Topic ---")
-    topic_task = tasks.determine_next_topic_task(student, current_index)
-    topic_crew = Crew(agents=[student], tasks=[topic_task], verbose=True)
+    topic_task = tasks.determine_next_topic_task(topic_student, current_index)
+    topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True)
     
     if dry_run:
         # Keep local dry-runs deterministic and API-free when needed.
@@ -111,10 +115,15 @@ def main():
         return
 
     print("--- STEP 2: Research & Verification Loop ---")
-    
+
+    # Fresh student instance for the research crew — avoids the
+    # "Executor is already running" RuntimeError caused by reusing the
+    # same agent object that was already used in topic_crew above.
+    research_student = agents.student_agent()
+
     research_task = tasks.research_concept_task(researcher, next_concept)
     verify_task = tasks.verify_research_task(skeptic, next_concept)
-    evaluate_task = tasks.student_evaluation_task(student, next_concept)
+    evaluate_task = tasks.student_evaluation_task(research_student, next_concept)
     visual_task = tasks.generate_visual_concept_task(visualizer, next_concept) if visualizer else None
     document_task = tasks.document_knowledge_task(
         archivist,
@@ -122,7 +131,7 @@ def main():
         include_visual=bool(visual_task)
     )
 
-    crew_agents = [student, researcher, skeptic, archivist]
+    crew_agents = [research_student, researcher, skeptic, archivist]
     crew_tasks = [research_task, verify_task, evaluate_task]
     if visualizer and visual_task:
         crew_agents.append(visualizer)
