@@ -19,6 +19,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Verify Required Secrets
+        run: |
+          set -euo pipefail
+          MISSING=""
+          [ -z "${OPENAI_API_KEY:-}" ] && MISSING="$MISSING OPENAI_API_KEY"
+          if [ -n "$MISSING" ]; then
+            echo "::error::Missing required secrets:$MISSING"
+            exit 1
+          fi
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -31,20 +43,32 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          set -euo pipefail
           python -m pip install --upgrade pip
           pip cache purge || true
           pip install --no-cache-dir -r requirements.txt
-          python -m pip install --no-cache-dir -U ddgs
           python -c "from ddgs import DDGS; print('ddgs import ok')"
 
       - name: Print Runtime Diagnostics
         run: |
+          set -euo pipefail
           echo "Commit: $(git rev-parse HEAD)"
           python -V
           sed -n '1,80p' src/agents/universe_agents.py
 
+      - name: Cache Go modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
       - name: Build Linux Genmedia Binary
         run: |
+          set -euo pipefail
           mkdir -p .mcp-servers
           git clone --depth=1 https://github.com/GoogleCloudPlatform/vertex-ai-creative-studio /tmp/vertex-ai-creative-studio
           cd /tmp/vertex-ai-creative-studio/experiments/mcp-genmedia/mcp-genmedia-go
@@ -57,6 +81,7 @@ jobs:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
         run: |
+          set -euo pipefail
           if [ -z "${GCP_SA_KEY}" ]; then
             echo "::warning::GCP_SA_KEY is not set. Genmedia may fail with missing ADC credentials."
           else
@@ -72,6 +97,7 @@ jobs:
 
       - name: Execute Knowledge Gathering (Level 1)
         run: |
+          set -euo pipefail
           if [ -z "${OPENAI_API_KEY}" ]; then
             echo "::error::OPENAI_API_KEY is empty or missing in repository secrets."
             exit 1
@@ -86,6 +112,7 @@ jobs:
 
       - name: Execute Advanced Frameworks (Level 2)
         run: |
+          set -euo pipefail
           if [ -z "${OPENAI_API_KEY}" ]; then
             echo "::error::OPENAI_API_KEY is empty or missing in repository secrets."
             exit 1
@@ -100,6 +127,7 @@ jobs:
 
       - name: Verify Generated Images
         run: |
+          set -euo pipefail
           if [ -d "knowledge_base/images" ]; then
             COUNT=$(find knowledge_base/images -maxdepth 1 -type f | wc -l)
             echo "Generated image file count: ${COUNT}"
@@ -111,6 +139,7 @@ jobs:
 
       - name: Commit and Push Knowledge Base Updates
         run: |
+          set -euo pipefail
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add knowledge_base/

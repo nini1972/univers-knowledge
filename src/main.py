@@ -103,8 +103,11 @@ def main():
     student = agents.student_agent()
     researcher = agents.researcher_agent()
     skeptic = agents.skeptic_agent()
-    visualizer = agents.visualizer_agent()
     archivist = agents.archivist_agent()
+    has_genmedia_credentials = bool(os.getenv("GOOGLE_APPLICATION_CREDENTIALS"))
+    visualizer = agents.visualizer_agent() if has_genmedia_credentials else None
+    if not has_genmedia_credentials:
+        print("WARNING: GOOGLE_APPLICATION_CREDENTIALS is not set; skipping visual generation task.")
 
     # Initialize Tasks
     tasks = UniverseTasks()
@@ -140,19 +143,24 @@ def main():
     research_task = tasks.research_concept_task(researcher, next_concept)
     verify_task = tasks.verify_research_task(skeptic, next_concept)
     evaluate_task = tasks.student_evaluation_task(student, next_concept)
-    visual_task = tasks.generate_visual_concept_task(visualizer, next_concept)
-    document_task = tasks.document_knowledge_task(archivist, output_location)
+    visual_task = tasks.generate_visual_concept_task(visualizer, next_concept) if visualizer else None
+    document_task = tasks.document_knowledge_task(
+        archivist,
+        output_location,
+        include_visual=bool(visual_task)
+    )
+
+    crew_agents = [student, researcher, skeptic, archivist]
+    crew_tasks = [research_task, verify_task, evaluate_task]
+    if visualizer and visual_task:
+        crew_agents.append(visualizer)
+        crew_tasks.append(visual_task)
+    crew_tasks.append(document_task)
 
     # Instantiate the Crew
     universe_crew = Crew(
-        agents=[student, researcher, skeptic, visualizer, archivist],
-        tasks=[
-            research_task, 
-            verify_task, 
-            evaluate_task, 
-            visual_task,
-            document_task
-        ],
+        agents=crew_agents,
+        tasks=crew_tasks,
         process=Process.sequential,
         verbose=True
     )
