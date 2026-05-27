@@ -55,27 +55,39 @@ class UniverseTasks:
             async_execution=async_execution
         )
 
-    def verify_research_task(self, agent, concept):
+    def verify_research_task(self, agent, concept, context=None):
         return Task(
             description=dedent(f"""
                 Review the research report on: {concept}.
-                Apply the strict Verification Threshold:
-                1. Are there at least 3 independent, credible sources?
-                2. Is there experimental/empirical evidence, or is this purely theoretical?
-                3. Are there competing theories or contradictions? 
+                Apply the strict Verification Protocol to evaluate the findings.
                 
-                If the concept relies on unproven hypotheses, explicitly flag it as [THEORETICAL].
-                If there are logical fallacies or lack of consensus, return a failure report to the student.
+                You MUST fill out and include this exact markdown checklist and score at the end of your report:
+                
+                Verification Checklist:
+                - [ ] Criterion 1: Source Consensus (at least 3 independent sources cited)
+                - [ ] Criterion 2: Skepticism & Gaps (limitations/contradictions highlighted)
+                - [ ] Criterion 3: Mathematical Grounding (concept is grounded in mathematical formulas or LaTeX equations)
+                - [ ] Criterion 4: Status Classification (clearly classified as [VERIFIED] or [THEORETICAL])
+                - [ ] Criterion 5: Visual Grounding (detailed visual/image prompt description included)
+
+                Verification Score: X/5
+                
+                Replace [ ] with [x] for each criterion that is successfully met. Compute and output the final score (e.g., Score: 4/5 or 5/5).
+                If the concept relies on unproven hypotheses, explicitly flag it as [THEORETICAL] and do not let the Student accept it as [VERIFIED].
             """),
-            expected_output="A verification report indicating whether the concept meets the threshold to be accepted as 'Verified Knowledge' or 'Theoretical Knowledge', along with critiques.",
-            agent=agent
+            expected_output="A comprehensive verification report concluding with the completed 5-point Verification Checklist and final Verification Score.",
+            agent=agent,
+            context=context
         )
 
-    def student_evaluation_task(self, agent, concept):
+    def student_evaluation_task(self, agent, concept, context=None):
         return Task(
             description=dedent(f"""
                 Assess the Researcher's report and the Skeptic's verification on: {concept}.
                 Decide if this concept has passed the Verification Threshold.
+                
+                CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the concept and set "status" to "rejected" and "reason_code" to "insufficient_skeptic_score".
+                
                 Return ONLY valid JSON with this exact schema:
                 {{
                   "status": "approved" | "rejected",
@@ -91,13 +103,17 @@ class UniverseTasks:
                 - Do not include markdown code fences or extra commentary.
             """),
             expected_output="A strict JSON object containing status, reason_code, summary_for_archivist, and follow_up_questions.",
-            agent=agent
+            agent=agent,
+            context=context
         )
 
-    def student_level2_debate_evaluation_task(self, agent, concept):
+    def student_level2_debate_evaluation_task(self, agent, concept, context=None):
         return Task(
             description=dedent(f"""
                 Assess the comparative Level 2 debate report and skeptic review on: {concept}.
+                
+                CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the concept and set "status" to "rejected" and "reason_code" to "insufficient_skeptic_score".
+                
                 Return ONLY valid JSON with this exact schema:
                 {{
                   "status": "approved" | "rejected",
@@ -115,10 +131,11 @@ class UniverseTasks:
                 - Do not include markdown code fences or extra commentary.
             """),
             expected_output="A strict JSON object containing status, reason_code, summary_for_archivist, and follow_up_questions.",
-            agent=agent
+            agent=agent,
+            context=context
         )
 
-    def debate_theories_task(self, agent, theory_a, theory_b):
+    def debate_theories_task(self, agent, theory_a, theory_b, context=None):
         return Task(
             description=dedent(f"""
                 Conduct a rigorous comparative debate between "{theory_a}" and "{theory_b}".
@@ -127,9 +144,23 @@ class UniverseTasks:
                 2. Alignment with existing empirical data (e.g., General Relativity and Quantum Mechanics).
                 3. Major flaws or unprovable assumptions in each.
                 Highlight which theory (if either) has stronger current consensus, and clearly flag both as [THEORETICAL].
+                
+                You MUST include this exact markdown checklist and score at the end of your debate report:
+                
+                Verification Checklist:
+                - [ ] Criterion 1: Multi-source Integration (at least 3 independent sources compared)
+                - [ ] Criterion 2: Mathematical Consistency (rigorous comparative math review in LaTeX)
+                - [ ] Criterion 3: Empirical Core (empirical data alignment and gaps scrutinized)
+                - [ ] Criterion 4: Transparency & Gaps (unprovable assumptions flagged)
+                - [ ] Criterion 5: Comparative Consensus (clear statement of current consensus status)
+
+                Verification Score: X/5
+                
+                Replace [ ] with [x] for each criterion that is successfully met. Compute and output the final score.
             """),
-            expected_output="A structured debate report comparing both theories, highlighting strengths, weaknesses, and current scientific consensus.",
-            agent=agent
+            expected_output="A structured debate report comparing both theories, concluding with the completed 5-point Verification Checklist and final Verification Score.",
+            agent=agent,
+            context=context
         )
 
     def generate_visual_concept_task(self, agent, concept):

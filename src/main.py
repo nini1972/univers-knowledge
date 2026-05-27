@@ -12,17 +12,35 @@ try:
         parse_student_decision,
         normalize_markdown_output,
         validate_concept_markdown,
+        parse_skeptic_checklist_score,
     )
 except ImportError:
     from src.workflow_contracts import (
         parse_student_decision,
         normalize_markdown_output,
         validate_concept_markdown,
+        parse_skeptic_checklist_score,
     )
 try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
 except ImportError:
     from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
+
+try:
+    from evaluation_logger import (
+        log_evaluation_outcome,
+        get_top_failure_patterns,
+        log_telemetry_event,
+    )
+except ImportError:
+    from src.evaluation_logger import (
+        log_evaluation_outcome,
+        get_top_failure_patterns,
+        log_telemetry_event,
+    )
+
+import time
+
 
 def read_index(filepath):
     try:
@@ -102,41 +120,56 @@ def main():
     tasks = UniverseTasks()
     
     print("--- STEP 1: Determine Next Topic ---")
+    step1_start = time.time()
+    log_telemetry_event("topic_selection", "start", metadata={"index_path": index_path})
+
+    # Retrieve pre-run failure guidance patterns (Issue 7)
+    patterns = get_top_failure_patterns()
+    pattern_guidance = ""
+    if patterns:
+        pattern_guidance = "\n\nCRITICAL HISTORICAL FAILURE GUIDANCE:\n" + "\n".join(f"- {p}" for p in patterns)
+
     topic_task = tasks.determine_next_topic_task(topic_student, current_index)
+    if pattern_guidance:
+        topic_task.description += pattern_guidance
+
     topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True)
     
     if dry_run:
-        # Keep local dry-runs deterministic and API-free when needed.
         next_concept = "Quantum Entanglement"
     else:
-        # Run the Student first to decide what to learn in this cycle.
         next_concept = topic_crew.kickoff()
     
     next_concept = str(next_concept).strip()
     print(f"Target Concept Selected: {next_concept}")
+    log_telemetry_event(
+        "topic_selection", 
+        "end", 
+        duration_seconds=time.time() - step1_start, 
+        metadata={"selected_concept": next_concept}
+    )
     
     # We dynamically create the output paths based on the Student's decision
     filename = sanitize_filename(next_concept)
-    # For now, default to level 1. A more advanced Student could decide the level dynamically.
     level_folder = "level_1_fundamental_physics" 
     output_location = f"knowledge_base/{level_folder}/{filename}"
 
-    # Never overwrite existing concept files during automated runs.
     repo_root = Path(__file__).resolve().parent.parent
     if (repo_root / output_location).exists():
         print(f"Concept file already exists, skipping write: {output_location}")
         return
 
     print("--- STEP 2: Research & Verification ---")
+    step2_start = time.time()
+    log_telemetry_event("research_evaluation", "start", metadata={"concept": next_concept})
 
-    # Fresh student instance for the research crew — avoids the
-    # "Executor is already running" RuntimeError caused by reusing the
-    # same agent object that was already used in topic_crew above.
     research_student = agents.student_agent()
 
     research_task = tasks.research_concept_task(researcher, next_concept)
-    verify_task = tasks.verify_research_task(skeptic, next_concept)
-    evaluate_task = tasks.student_evaluation_task(research_student, next_concept)
+    verify_task = tasks.verify_research_task(skeptic, next_concept, context=[research_task])
+    evaluate_task = tasks.student_evaluation_task(research_student, next_concept, context=[research_task, verify_task])
+    if pattern_guidance:
+        evaluate_task.description += pattern_guidance
 
     evaluation_crew = Crew(
         agents=[research_student, researcher, skeptic],
@@ -152,10 +185,43 @@ def main():
             "summary_for_archivist": f"Dry-run approved summary for {next_concept}.",
             "follow_up_questions": []
         })
+        skeptic_output = "Verification Score: 5/5"
     else:
         evaluation_output = str(evaluation_crew.kickoff()).strip()
+        skeptic_output = ""
+        if hasattr(verify_task, 'output') and verify_task.output:
+            skeptic_output = str(verify_task.output.raw)
 
     decision = parse_student_decision(evaluation_output)
+    
+    # Parse skeptic checklist score (Issue 9)
+    score, total_score = parse_skeptic_checklist_score(skeptic_output)
+    if score is None and skeptic_output:
+        # Fallback parsing on raw output text just in case
+        score, total_score = parse_skeptic_checklist_score(evaluation_output)
+    
+    # Log evaluation outcome (Issue 6)
+    log_evaluation_outcome(
+        concept=next_concept,
+        status=decision["status"],
+        reason_code=decision["reason_code"],
+        score=score,
+        total_score=total_score,
+        follow_up_questions=decision["follow_up_questions"]
+    )
+
+    log_telemetry_event(
+        "research_evaluation", 
+        "end", 
+        duration_seconds=time.time() - step2_start, 
+        metadata={
+            "status": decision["status"],
+            "reason_code": decision["reason_code"],
+            "score": score,
+            "total_score": total_score
+        }
+    )
+
     if decision["status"] != "approved":
         print(
             "Concept rejected by Student decision contract. "
@@ -164,6 +230,8 @@ def main():
         return
 
     print("--- STEP 3: Documentation & Validation ---")
+    step3_start = time.time()
+    log_telemetry_event("documentation_validation", "start", metadata={"concept": next_concept, "output_location": output_location})
 
     visual_task = tasks.generate_visual_concept_task(visualizer, next_concept) if visualizer else None
     document_task = tasks.document_knowledge_task(
@@ -189,6 +257,12 @@ def main():
 
     if dry_run:
         print("DRY_RUN enabled. Skipping final_crew.kickoff().")
+        log_telemetry_event(
+            "documentation_validation", 
+            "end", 
+            duration_seconds=time.time() - step3_start, 
+            metadata={"status": "skipped_dry_run"}
+        )
         return
 
     document_output = normalize_markdown_output(str(final_crew.kickoff()).strip())
@@ -197,6 +271,12 @@ def main():
         print("ERROR: Document validation failed; file/index update was blocked.")
         for err in validation_errors:
             print(f" - {err}")
+        log_telemetry_event(
+            "documentation_validation", 
+            "end", 
+            duration_seconds=time.time() - step3_start, 
+            metadata={"status": "failed_validation", "errors": validation_errors}
+        )
         return
 
     output_file = repo_root / output_location
@@ -204,6 +284,12 @@ def main():
     output_file.write_text(document_output.rstrip() + "\n", encoding="utf-8")
     update_index_file(index_path, next_concept, level_folder, filename)
     print(f"Workflow complete: wrote validated document to {output_location}")
+    log_telemetry_event(
+        "documentation_validation", 
+        "end", 
+        duration_seconds=time.time() - step3_start, 
+        metadata={"status": "success", "output_location": output_location}
+    )
 
 if __name__ == "__main__":
     main()

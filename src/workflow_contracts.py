@@ -129,3 +129,55 @@ def validate_concept_markdown(markdown_text: str):
         errors.append("Missing top-level title heading (e.g., '# Concept Name').")
 
     return len(errors) == 0, errors
+
+
+def parse_skeptic_checklist_score(skeptic_output: str):
+    """
+    Parses the skeptic's output to find the verification score or calculate it from the checkboxes.
+    Returns (score, total) or (None, None).
+    """
+    text = str(skeptic_output or "")
+
+    # 1. Try to find an explicit "Verification Score: X/Y" or "Score: X/Y"
+    score_match = re.search(r"Verification\s*Score:\s*(\d+)\s*/\s*(\d+)", text, re.IGNORECASE)
+    if not score_match:
+        score_match = re.search(r"Score:\s*(\d+)\s*/\s*(\d+)", text, re.IGNORECASE)
+
+    if score_match:
+        return int(score_match.group(1)), int(score_match.group(2))
+
+    # 2. Fallback: Parse markdown checkboxes like `- [x]` or `- [ ]`
+    checkboxes = re.findall(r"-\s*\[([ xX])\]\s", text)
+    if checkboxes:
+        checked = sum(1 for cb in checkboxes if cb.lower() == 'x')
+        total = len(checkboxes)
+        return checked, total
+
+    return None, None
+
+
+def check_level2_prerequisites(theory_a: str, theory_b: str, concept_name: str, index_content: str):
+    """
+    Checks if prerequisites for selected Level 2 topics exist in the current index.
+    Returns (True, None) if prerequisites are met.
+    Otherwise returns (False, fallback_concept) suggesting a missing prerequisite to learn first.
+    """
+    prerequisites = {
+        "gravity": ["General Relativity", "Quantum Mechanics"],
+        "quantum": ["Quantum Mechanics"],
+        "string": ["Quantum Mechanics", "General Relativity"],
+        "supersymmetry": ["Quantum Mechanics"],
+        "cosmology": ["General Relativity"],
+    }
+
+    index_lower = index_content.lower()
+    combined_text = f"{theory_a} {theory_b} {concept_name}".lower()
+
+    for keyword, prereqs in prerequisites.items():
+        if keyword in combined_text:
+            for prereq in prereqs:
+                if prereq.lower() not in index_lower:
+                    return False, prereq
+
+    return True, None
+

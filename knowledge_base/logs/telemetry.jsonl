@@ -1,0 +1,11 @@
+{"stage": "topic_selection_level2", "event_type": "start", "timestamp": "2026-05-27T22:13:47.103825Z", "duration_seconds": null, "metadata": {"index_path": "knowledge_base/_index.md"}}
+{"stage": "topic_selection_level2", "event_type": "end", "timestamp": "2026-05-27T22:13:47.131275Z", "duration_seconds": 0.027569293975830078, "metadata": {"status": "blocked_by_prerequisite", "selected_concept": "Nonperturbative Quantum Gravity Debate", "missing_prerequisite": "General Relativity"}}
+{"stage": "topic_selection", "event_type": "start", "timestamp": "2026-05-27T22:14:07.151644Z", "duration_seconds": null, "metadata": {"index_path": "knowledge_base/_index.md"}}
+{"stage": "topic_selection", "event_type": "end", "timestamp": "2026-05-27T22:14:07.156100Z", "duration_seconds": 0.004515647888183594, "metadata": {"selected_concept": "Quantum Entanglement"}}
+{"stage": "research_evaluation", "event_type": "start", "timestamp": "2026-05-27T22:14:07.157061Z", "duration_seconds": null, "metadata": {"concept": "Quantum Entanglement"}}
+{"stage": "topic_selection", "event_type": "start", "timestamp": "2026-05-27T22:14:26.911276Z", "duration_seconds": null, "metadata": {"index_path": "knowledge_base/_index.md"}}
+{"stage": "topic_selection", "event_type": "end", "timestamp": "2026-05-27T22:14:26.915174Z", "duration_seconds": 0.003980398178100586, "metadata": {"selected_concept": "Quantum Entanglement"}}
+{"stage": "research_evaluation", "event_type": "start", "timestamp": "2026-05-27T22:14:26.916114Z", "duration_seconds": null, "metadata": {"concept": "Quantum Entanglement"}}
+{"stage": "research_evaluation", "event_type": "end", "timestamp": "2026-05-27T22:14:26.922692Z", "duration_seconds": 0.006452083587646484, "metadata": {"status": "approved", "reason_code": "dry_run", "score": 5, "total_score": 5}}
+{"stage": "documentation_validation", "event_type": "start", "timestamp": "2026-05-27T22:14:26.923321Z", "duration_seconds": null, "metadata": {"concept": "Quantum Entanglement", "output_location": "knowledge_base/level_1_fundamental_physics/quantum_entanglement.md"}}
+{"stage": "documentation_validation", "event_type": "end", "timestamp": "2026-05-27T22:14:26.926135Z", "duration_seconds": 0.0028564929962158203, "metadata": {"status": "skipped_dry_run"}}

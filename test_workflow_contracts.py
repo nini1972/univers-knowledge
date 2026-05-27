@@ -1,6 +1,12 @@
 import unittest
 
-from src.workflow_contracts import parse_student_decision, validate_concept_markdown, normalize_markdown_output
+from src.workflow_contracts import (
+    parse_student_decision,
+    validate_concept_markdown,
+    normalize_markdown_output,
+    parse_skeptic_checklist_score,
+)
+
 
 
 VALID_MARKDOWN = """---
@@ -111,5 +117,48 @@ content
         self.assertIn("# Title", normalized)
 
 
+    def test_parse_skeptic_checklist_score_explicit(self):
+        text = "Some critique here.\nVerification Score: 4/5\nOther notes."
+        score, total = parse_skeptic_checklist_score(text)
+        self.assertEqual(score, 4)
+        self.assertEqual(total, 5)
+
+    def test_parse_skeptic_checklist_score_checkbox_fallback(self):
+        text = """
+        Checklist:
+        - [x] Criterion 1
+        - [x] Criterion 2
+        - [ ] Criterion 3
+        - [x] Criterion 4
+        """
+        score, total = parse_skeptic_checklist_score(text)
+        self.assertEqual(score, 3)
+        self.assertEqual(total, 4)
+
+    def test_check_level2_prerequisites_blocks_when_missing(self):
+        from src.workflow_contracts import check_level2_prerequisites
+        index_content = "# Knowledge Base Index\n\n## Level 1\n- [Standard Model](level_1/standard_model.md)"
+        theory_a = "String Theory"
+        theory_b = "Loop Quantum Gravity"
+        concept_name = "Quantum Gravity Debate"
+        
+        prereq_ok, missing = check_level2_prerequisites(theory_a, theory_b, concept_name, index_content)
+        self.assertFalse(prereq_ok)
+        self.assertEqual(missing, "General Relativity")
+
+    def test_check_level2_prerequisites_allows_when_present(self):
+        from src.workflow_contracts import check_level2_prerequisites
+        index_content = "# Knowledge Base Index\n\n## Level 1\n- [General Relativity](level_1/gr.md)\n- [Quantum Mechanics](level_1/qm.md)"
+        theory_a = "String Theory"
+        theory_b = "Loop Quantum Gravity"
+        concept_name = "Quantum Gravity Debate"
+        
+        prereq_ok, missing = check_level2_prerequisites(theory_a, theory_b, concept_name, index_content)
+        self.assertTrue(prereq_ok)
+        self.assertIsNone(missing)
+
+
 if __name__ == "__main__":
     unittest.main()
+
+
