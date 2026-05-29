@@ -4,6 +4,7 @@
 
 - [CP Violation](level_1_fundamental_physics/cp_violation.md)
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md)
+- [General Relativity](level_1_fundamental_physics/general_relativity.md)
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md)
 - [Neutrino Oscillations](level_1_fundamental_physics/neutrino_oscillations.md)
 - [Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications](level_1_fundamental_physics/quantum_chromodynamics_qcd.md)
@@ -14,6 +15,7 @@
 
 ## Level 2: Advanced Frameworks
 
+- [Beyond the Standard Model Solutions to the Hierarchy Problem](level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md)
 - [Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md)
 - [Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity](level_2_advanced_frameworks/quantum_gravity_debate.md)
 
