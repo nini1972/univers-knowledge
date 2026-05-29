@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univers Knowledge - Epistemological Explorer</title>
+    <!-- Modern Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Radiant background mesh glow -->
+    <div class="glow-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Dashboard Header -->
+        <header class="app-header">
+            <div class="header-logo">
+                <i class="fa-solid fa-atom logo-icon"></i>
+                <div class="logo-text">
+                    <h1>UNIVERS <span class="highlight">KNOWLEDGE</span></h1>
+                    <p class="subtitle">THE SKEPTICAL STUDENT'S EPISTEMOLOGICAL EXPLORER</p>
+                </div>
+            </div>
+            <div class="header-stats" id="global-stats">
+                <div class="stat-badge">
+                    <span class="stat-label">TOTAL CONCEPTS</span>
+                    <span class="stat-value" id="stat-total">0</span>
+                </div>
+                <div class="stat-badge verified">
+                    <span class="stat-label">VERIFIED</span>
+                    <span class="stat-value" id="stat-verified">0</span>
+                </div>
+                <div class="stat-badge theoretical">
+                    <span class="stat-label">THEORETICAL</span>
+                    <span class="stat-value" id="stat-theoretical">0</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="app-workspace">
+            
+            <!-- Sidebar with filters and search -->
+            <section class="sidebar-panel">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search concepts, equations, sources..." autocomplete="off">
+                    <button id="clear-search" class="clear-btn" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-label">LEVELS</div>
+                    <div class="filter-options" id="level-filters">
+                        <button class="filter-btn active" data-filter="level-all">All</button>
+                        <button class="filter-btn" data-filter="level-1">L1: Physics</button>
+                        <button class="filter-btn" data-filter="level-2">L2: Advanced</button>
+                        <button class="filter-btn" data-filter="level-3">L3: Astro</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-label">STATUS</div>
+                    <div class="filter-options" id="status-filters">
+                        <button class="filter-btn active" data-filter="status-all">All</button>
+                        <button class="filter-btn text-verified" data-filter="status-verified">
+                            <span class="pulse-dot dot-verified"></span> Verified
+                        </button>
+                        <button class="filter-btn text-theoretical" data-filter="status-theoretical">
+                            <span class="pulse-dot dot-theoretical"></span> Theoretical
+                        </button>
+                    </div>
+                </div>
+
+                <div class="concept-list-container">
+                    <div class="list-header">
+                        <span>CONCEPTS</span>
+                        <span id="results-count">0 found</span>
+                    </div>
+                    <div class="concept-list" id="concept-list">
+                        <!-- Concept items dynamically injected here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Dynamic Viewer -->
+            <section class="viewer-panel" id="concept-viewer">
+                <!-- Welcome/Landing state displayed initially -->
+                <div class="welcome-view" id="welcome-view">
+                    <div class="welcome-content">
+                        <i class="fa-solid fa-shuttle-space welcome-icon"></i>
+                        <h2>Explore the Self-Developing Universe</h2>
+                        <p>Welcome to the live, daily growing scientific knowledge base. This project operates via continuous GitHub Actions, evaluating fundamental theories and mathematical models with an uncompromising skeptical filter.</p>
+                        
+                        <div class="action-grid">
+                            <div class="action-card" id="btn-explore-first">
+                                <i class="fa-solid fa-compass"></i>
+                                <h3>Begin Exploration</h3>
+                                <p>Start browsing fundamental physics concepts, equations, and verified proof boundaries.</p>
+                            </div>
+                            <div class="action-card" id="btn-show-network">
+                                <i class="fa-solid fa-network-wired"></i>
+                                <h3>Relationship Network</h3>
+                                <p>Trace how Level 1 physics acts as prerequisite foundations for Level 2 debates.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-alert">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Select any concept from the sidebar to inspect detailed mathematical frameworks, skeptical refutations, generated scientific visualizations, and source bibliography.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept Content View (hidden by default) -->
+                <div class="concept-content-view" id="content-view" style="display: none;">
+                    <div class="concept-header">
+                        <div class="title-area">
+                            <div class="meta-badges">
+                                <span class="badge level-badge" id="view-level">LEVEL 1</span>
+                                <span class="badge status-badge" id="view-status">VERIFIED</span>
+                            </div>
+                            <h2 id="view-title">Concept Title</h2>
+                        </div>
+                        <button class="close-view-btn" id="btn-back-to-welcome" title="Back to dashboard overview">
+                            <i class="fa-solid fa-house"></i> Dashboard
+                        </button>
+                    </div>
+
+                    <div class="scroll-container">
+                        <!-- Navigation tabs for long files -->
+                        <nav class="concept-tabs">
+                            <a href="#sec-overview" class="tab-link active"><i class="fa-solid fa-eye"></i> Overview</a>
+                            <a href="#sec-explanation" class="tab-link"><i class="fa-solid fa-book-open"></i> Explanation</a>
+                            <a href="#sec-math" class="tab-link"><i class="fa-solid fa-calculator"></i> Math</a>
+                            <a href="#sec-skeptic" class="tab-link alert-tab"><i class="fa-solid fa-circle-question"></i> Alternative Theories</a>
+                            <a href="#sec-verification" class="tab-link success-tab"><i class="fa-solid fa-shield-halved"></i> Verification</a>
+                            <a href="#sec-visual" class="tab-link"><i class="fa-solid fa-image"></i> Visualization</a>
+                        </nav>
+
+                        <div class="sections-wrapper">
+                            <!-- SECTION 1: OVERVIEW -->
+                            <section id="sec-overview" class="concept-section active-section">
+                                <div class="section-title">
+                                    <span class="sec-num">01</span>
+                                    <h3>Overview</h3>
+                                </div>
+                                <div class="section-body prose" id="view-overview-content">
+                                    <!-- Dynamic -->
+                                </div>
+                            </section>
+
+                            <!-- SECTION 2: EXPLANATION -->
+                            <section id="sec-explanation" class="concept-section">
+                                <div class="section-title">
+                                    <span class="sec-num">02</span>
+                                    <h3>Detailed Explanation</h3>
+                                </div>
+                                <div class="section-body prose" id="view-explanation-content">
+                                    <!-- Dynamic -->
+                                </div>
+                            </section>
+
+                            <!-- SECTION 3: MATH FRAMEWORK -->
+                            <section id="sec-math" class="concept-section">
+                                <div class="section-title">
+                                    <span class="sec-num">03</span>
+                                    <h3>Mathematical Framework</h3>
+                                </div>
+                                <div class="section-body math-container prose" id="view-math-content">
+                                    <!-- Dynamic -->
+                                </div>
+                            </section>
+
+                            <!-- SECTION 4: SKEPTICAL PERSPECTIVES -->
+                            <section id="sec-skeptic" class="concept-section skeptic-highlight">
+                                <div class="section-title">
+                                    <span class="sec-num">04</span>
+                                    <h3>Skeptical Perspectives & Alternative Hypotheses</h3>
+                                </div>
+                                <div class="section-body alternative-box prose" id="view-skeptic-content">
+                                    <!-- Dynamic -->
+                                </div>
+                            </section>
+
+                            <!-- SECTION 5: VERIFICATION -->
+                            <section id="sec-verification" class="concept-section verification-highlight">
+                                <div class="section-title">
+                                    <span class="sec-num">05</span>
+                                    <h3>Verification & Skeptic's Notes</h3>
+                                </div>
+                                <div class="section-body verification-box prose" id="view-verification-content">
+                                    <!-- Dynamic -->
+                                </div>
+                            </section>
+
+                            <!-- SECTION 6: VISUAL REPRESENTATION -->
+                            <section id="sec-visual" class="concept-section">
+                                <div class="section-title">
+                                    <span class="sec-num">06</span>
+                                    <h3>Visual Representation</h3>
+                                </div>
+                                <div class="section-body visual-box" id="view-visual-content">
+                                    <!-- Dynamic -->
+                                </div>
+                            </section>
+
+                            <!-- SECTION 7: RELATED CONCEPTS -->
+                            <section id="sec-related" class="concept-section">
+                                <div class="section-title">
+                                    <span class="sec-num">07</span>
+                                    <h3>Related Concepts & Prerequisites</h3>
+                                </div>
+                                <div class="section-body" id="view-related-content">
+                                    <!-- Dynamic links here -->
+                                </div>
+                            </section>
+
+                            <!-- BIBLIOGRAPHY & SOURCES -->
+                            <section id="sec-sources" class="concept-section sources-section">
+                                <div class="section-title">
+                                    <i class="fa-solid fa-bookmark section-icon"></i>
+                                    <h3>Bibliography & References</h3>
+                                </div>
+                                <div class="section-body">
+                                    <ul class="sources-list" id="view-sources-list">
+                                        <!-- Dynamic -->
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network Diagram Overlay (hidden by default) -->
+                <div class="network-diagram-view" id="network-view" style="display: none;">
+                    <div class="concept-header">
+                        <div class="title-area">
+                            <span class="badge level-badge">INTERACTIVE</span>
+                            <h2>Prerequisite Flowchart</h2>
+                        </div>
+                        <button class="close-view-btn" id="btn-close-network">
+                            <i class="fa-solid fa-xmark"></i> Close Map
+                        </button>
+                    </div>
+                    <div class="network-container">
+                        <div class="map-info">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Showing topological dependencies. Click on any node to load its detailed research portfolio.</span>
+                        </div>
+                        <div class="network-visualizer" id="network-graph-canvas">
+                            <!-- Dynamic canvas graph elements -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script loading -->
+    <script src="index.js"></script>
+</body>
+</html>

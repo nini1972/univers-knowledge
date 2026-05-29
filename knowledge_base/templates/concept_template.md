@@ -19,13 +19,16 @@ sources:
 ## 3. Mathematical Framework
 (LaTeX/KaTeX formulas governing this concept, if any. e.g., $E=mc^2$)
 
-## 4. Verification & Skeptic's Notes
+## 4. Skeptical Perspectives & Alternative Hypotheses
+(Rigorous comparison with at least one viable alternative explanation or counter-hypothesis. What are the experimental bounds that restrict these alternative viewpoints?)
+
+## 5. Verification & Skeptic's Notes
 (The Skeptic Agent's notes. What is the evidence? What are the gaps or competing theories?)
 
-## 5. Visual Representation
+## 6. Visual Representation
 *(Placeholder for Visualizer Agent to inject images or diagrams.)*
 `[IMAGE_PLACEHOLDER: Description of what needs to be drawn]`
 
-## 6. Related Concepts
+## 7. Related Concepts
 - [Link to Concept 1]
 - [Link to Concept 2]

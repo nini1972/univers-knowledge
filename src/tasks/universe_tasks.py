@@ -52,12 +52,12 @@ class UniverseTasks:
                 
                 CRITICAL REQUIREMENTS - Your research report MUST satisfy these 5 criteria:
                 1. Cite at least 3 independent scientific/academic sources with clear references.
-                2. Highlight skepticism, empirical gaps, limitations, and contradictions of this concept.
+                2. Highlight skepticism, empirical gaps, limitations, and contradictions of this concept, explicitly comparing the mainstream model with at least one unorthodox or alternative counter-hypothesis (e.g. MOND vs. Dark Matter; loop quantum gravity or non-commutative geometry vs. String Theory) and describing the current experimental bounds.
                 3. Include mathematical grounding, equations, or LaTeX formulas (e.g. $E=mc^2$) explaining the underlying physics.
                 4. Classify the status clearly as either [VERIFIED] or [THEORETICAL] with rigorous justification.
                 5. Include a "Visual Grounding" section with a highly detailed, 1-paragraph visual description or image generation prompt for a schematic diagram representing the concept.
             """),
-            expected_output="A comprehensive research report detailing the concept, citing at least 3 scientific sources, including math formulas, status, limitations, and a visual description.",
+            expected_output="A comprehensive research report detailing the concept, citing at least 3 scientific sources, including alternative hypotheses, math formulas, status, limitations, and a visual description.",
             agent=agent,
             async_execution=async_execution
         )
@@ -175,7 +175,14 @@ class UniverseTasks:
             description=dedent(f"""
                 Read the final verified summary for the concept: {concept}.
                 Create a highly detailed, 1-paragraph image generation prompt that accurately 
-                visualizes the core mechanisms of this concept. 
+                visualizes the core physical mechanisms of this concept. 
+                
+                VISUAL STYLING GUIDELINES:
+                - Use a cinematic deep-space aesthetic with a premium dark mode obsidian backdrop.
+                - Use vibrant, curated neon HSL highlights (e.g. quantum cyan, stellar ultraviolet, glowing nebular violet, and supernova orange).
+                - Use technical schematic line-art, glassmorphism lenses, and geometric overlay patterns to give a premium, scientific look.
+                - Avoid generic flat designs; make the scene feel immersive, layered, and multi-dimensional.
+                - Create a vivid, structurally accurate visual metaphor representing the quantum/cosmological phenomenon.
                 
                 You MUST use the 'Generate Universe Image' tool to actually create the image. 
                 Pass your detailed prompt to the tool.

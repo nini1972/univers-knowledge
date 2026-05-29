@@ -117,9 +117,10 @@ def validate_concept_markdown(markdown_text: str):
         "## 1. Overview",
         "## 2. Detailed Explanation",
         "## 3. Mathematical Framework",
-        "## 4. Verification & Skeptic's Notes",
-        "## 5. Visual Representation",
-        "## 6. Related Concepts",
+        "## 4. Skeptical Perspectives & Alternative Hypotheses",
+        "## 5. Verification & Skeptic's Notes",
+        "## 6. Visual Representation",
+        "## 7. Related Concepts",
     ]
     for heading in required_sections:
         if heading not in text:

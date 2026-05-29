@@ -30,13 +30,16 @@ Detailed explanation text.
 ## 3. Mathematical Framework
 $E=mc^2$
 
-## 4. Verification & Skeptic's Notes
+## 4. Skeptical Perspectives & Alternative Hypotheses
+Skeptical perspectives text.
+
+## 5. Verification & Skeptic's Notes
 Verification notes.
 
-## 5. Visual Representation
+## 6. Visual Representation
 [VISUAL_PENDING: pending generation]
 
-## 6. Related Concepts
+## 7. Related Concepts
 - [Standard Model]
 """
 
@@ -95,10 +98,10 @@ class TestWorkflowContracts(unittest.TestCase):
         self.assertEqual(errors, [])
 
     def test_validate_concept_markdown_rejects_missing_section(self):
-        invalid_doc = VALID_MARKDOWN.replace("## 4. Verification & Skeptic's Notes\nVerification notes.\n\n", "")
+        invalid_doc = VALID_MARKDOWN.replace("## 5. Verification & Skeptic's Notes\nVerification notes.\n\n", "")
         valid, errors = validate_concept_markdown(invalid_doc)
         self.assertFalse(valid)
-        self.assertTrue(any("## 4. Verification & Skeptic's Notes" in err for err in errors))
+        self.assertTrue(any("## 5. Verification & Skeptic's Notes" in err for err in errors))
 
     def test_validate_concept_markdown_rejects_missing_frontmatter(self):
         invalid_doc = VALID_MARKDOWN.split("---\n", 2)[-1]
