@@ -915,9 +915,10 @@ html, body {
 
 /* Prose Typography Styling */
 .prose {
-    font-size: 14.5px;
+    font-size: 15px;
     color: var(--text-secondary);
-    line-height: 1.8;
+    line-height: 1.85;
+    letter-spacing: 0.015em;
 }
 
 .prose p {
@@ -927,6 +928,25 @@ html, body {
 .prose p:last-child {
     margin-bottom: 0;
 }
+
+/* Inline concept link in markdown prose with neon glow hover effect */
+.inline-concept-link {
+    color: var(--neon-cyan);
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--neon-cyan-glow);
+    padding-bottom: 1px;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.inline-concept-link:hover {
+    color: var(--text-primary);
+    border-bottom-color: var(--neon-cyan);
+    border-bottom-style: solid;
+    text-shadow: 0 0 8px var(--neon-cyan-glow), 0 0 15px var(--neon-cyan);
+}
+
 
 .prose h4 {
     font-size: 16px;

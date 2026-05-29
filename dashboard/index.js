@@ -237,6 +237,28 @@ document.addEventListener('DOMContentLoaded', () => {
         text = text.replace(/\*([^*]+)\*/g, '<em>$1</em>');
         text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
 
+        // Markdown images: ![alt](src)
+        text = text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
+            let finalSrc = src.trim();
+            if (finalSrc.startsWith('../images/')) {
+                finalSrc = `../knowledge_base/${finalSrc.replace('../', '')}`;
+            } else if (finalSrc.startsWith('images/')) {
+                finalSrc = `../knowledge_base/${finalSrc}`;
+            } else if (finalSrc.startsWith('sandbox:')) {
+                finalSrc = `../knowledge_base/${finalSrc.replace('sandbox:/', '')}`;
+            }
+            return `<div class="markdown-img-wrapper" style="text-align: center; margin: 16px 0;"><img src="${finalSrc}" alt="${alt}" class="markdown-image" style="max-width:100%; border-radius:8px; border:1px solid var(--border-glass); box-shadow:0 0 15px rgba(0,242,254,0.15);" onerror="this.onerror=null; this.style.display='none';" /></div>`;
+        });
+
+        // Markdown links: [label](url)
+        text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, label, url) => {
+            let finalUrl = url.trim();
+            if (finalUrl.endsWith('.md')) {
+                return `<span class="inline-concept-link" data-target="${finalUrl.replace('.md', '')}">${label}</span>`;
+            }
+            return `<a href="${finalUrl}" target="_blank" style="color: var(--neon-blue); text-decoration: underline;">${label}</a>`;
+        });
+
         // Latex block equations $$ ... $$
         text = text.replace(/\$\$(.+?)\$\$/gs, '<div class="math-container">$1</div>');
         // Inline latex $ ... $
@@ -311,13 +333,35 @@ document.addEventListener('DOMContentLoaded', () => {
         // Extract and Render individual standard headings
         const rawContent = concept.content;
         
-        const overviewRaw = extractSection(rawContent, '1\\.\\s+Overview');
-        const explanationRaw = extractSection(rawContent, '2\\.\\s+Detailed Explanation');
-        const mathRaw = extractSection(rawContent, '3\\.\\s+Mathematical Framework');
-        const skepticRaw = extractSection(rawContent, '4\\.\\s+Skeptical Perspectives & Alternative Hypotheses');
-        const verificationRaw = extractSection(rawContent, '5\\.\\s+Verification & Skeptic\'s Notes');
-        const visualRaw = extractSection(rawContent, '6\\.\\s+Visual Representation');
-        const relatedRaw = extractSection(rawContent, '7\\.\\s+Related Concepts');
+        let overviewRaw = extractSection(rawContent, '1\\.\\s+Overview');
+        let explanationRaw = extractSection(rawContent, '2\\.\\s+Detailed Explanation');
+        let mathRaw = extractSection(rawContent, '3\\.\\s+Mathematical Framework');
+        let skepticRaw = extractSection(rawContent, '4\\.\\s+Skeptical Perspectives & Alternative Hypotheses');
+        let verificationRaw = extractSection(rawContent, '5\\.\\s+Verification & Skeptic\'s Notes');
+        let visualRaw = extractSection(rawContent, '6\\.\\s+Visual Representation');
+        let relatedRaw = extractSection(rawContent, '7\\.\\s+Related Concepts');
+
+        // Fallback for older 6-section template
+        if (!overviewRaw && !explanationRaw && !mathRaw) {
+            overviewRaw = extractSection(rawContent, '1\\.\\s+Overview');
+            explanationRaw = extractSection(rawContent, '2\\.\\s+Detailed Explanation');
+            mathRaw = extractSection(rawContent, '3\\.\\s+Mathematical Framework');
+            verificationRaw = extractSection(rawContent, '4\\.\\s+Verification & Skeptic\'s Notes');
+            visualRaw = extractSection(rawContent, '5\\.\\s+Visual Representation');
+            relatedRaw = extractSection(rawContent, '6\\.\\s+Related Concepts');
+            skepticRaw = ''; // Old files don't have Section 4: Skeptical Perspectives
+        }
+
+        // Ultimate fallback for completely unstructured or custom reports
+        if (!overviewRaw && !explanationRaw && !mathRaw && !verificationRaw) {
+            overviewRaw = rawContent;
+            explanationRaw = '';
+            mathRaw = '';
+            skepticRaw = '';
+            verificationRaw = '';
+            visualRaw = '';
+            relatedRaw = '';
+        }
 
         // Inject parsed html
         elements.viewOverview.innerHTML = parseMarkdown(overviewRaw || concept.overview || '*No overview available.*');
@@ -328,9 +372,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Section 6: Image Display Logic
         if (concept.image_path) {
+            let finalImgSrc = concept.image_path;
+            if (finalImgSrc.startsWith('images/')) {
+                finalImgSrc = `../knowledge_base/${finalImgSrc}`;
+            } else if (finalImgSrc.startsWith('sandbox:')) {
+                finalImgSrc = `../knowledge_base/${finalImgSrc.replace('sandbox:/', '')}`;
+            } else if (!finalImgSrc.startsWith('http') && !finalImgSrc.startsWith('../')) {
+                finalImgSrc = `../${finalImgSrc}`;
+            }
+
             elements.viewVisual.innerHTML = `
                 <div class="visual-img-container" style="text-align: center; width: 100%;">
-                    <img src="../${concept.image_path}" alt="${concept.title} scientific simulation image" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\\'no-visual-placeholder\\\'><i class=\\'fa-regular fa-image\\\'></i><h4>Visual asset not compiled yet</h4><p>The image is queued for automatic generation.</p></div>';">
+                    <img src="${finalImgSrc}" alt="${concept.title} scientific simulation image" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\\'no-visual-placeholder\\\'><i class=\\'fa-regular fa-image\\\'></i><h4>Visual asset not compiled yet</h4><p>The image is queued for automatic generation.</p></div>';">
                     <p style="font-size: 11px; color: var(--text-muted); margin-top: 8px;"><i class="fa-solid fa-camera"></i> Generated by Universe Visualizer Agent</p>
                 </div>
             `;
@@ -572,6 +625,16 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // clear sidebar active state
             document.querySelectorAll('.concept-card').forEach(c => c.classList.remove('active'));
+        });
+
+        // Event delegation for inline concept links
+        elements.contentView.addEventListener('click', (e) => {
+            const link = e.target.closest('.inline-concept-link');
+            if (link) {
+                const targetId = link.getAttribute('data-target');
+                const conceptId = targetId.split('/').pop();
+                selectConcept(conceptId);
+            }
         });
     }
 
