@@ -49,8 +49,15 @@ class UniverseTasks:
                 You must gather information from at least 3 independent scientific sources.
                 Synthesize the current understanding, proposed mechanisms, and any mathematical 
                 frameworks associated with this concept.
+                
+                CRITICAL REQUIREMENTS - Your research report MUST satisfy these 5 criteria:
+                1. Cite at least 3 independent scientific/academic sources with clear references.
+                2. Highlight skepticism, empirical gaps, limitations, and contradictions of this concept.
+                3. Include mathematical grounding, equations, or LaTeX formulas (e.g. $E=mc^2$) explaining the underlying physics.
+                4. Classify the status clearly as either [VERIFIED] or [THEORETICAL] with rigorous justification.
+                5. Include a "Visual Grounding" section with a highly detailed, 1-paragraph visual description or image generation prompt for a schematic diagram representing the concept.
             """),
-            expected_output="A comprehensive research report detailing the concept, citing at least 3 scientific sources.",
+            expected_output="A comprehensive research report detailing the concept, citing at least 3 scientific sources, including math formulas, status, limitations, and a visual description.",
             agent=agent,
             async_execution=async_execution
         )

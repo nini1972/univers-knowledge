@@ -102,3 +102,34 @@ def log_telemetry_event(stage: str, event_type: str, duration_seconds: float = N
     
     with open(telemetry_file, "a", encoding="utf-8") as f:
         f.write(json.dumps(record) + "\n")
+
+
+def get_last_missing_prerequisite(index_content: str) -> str:
+    """
+    Reads telemetry.jsonl to find if the last Level 2 topic selection was blocked by a missing prerequisite.
+    Only returns the missing prerequisite if it is not already present in the index.
+    """
+    telemetry_file = LOGS_DIR / "telemetry.jsonl"
+    if not telemetry_file.exists():
+        return None
+        
+    try:
+        with open(telemetry_file, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+            
+        # Search backwards from the latest line
+        for line in reversed(lines):
+            if not line.strip():
+                continue
+            record = json.loads(line)
+            if record.get("stage") == "topic_selection_level2" and record.get("event_type") == "end":
+                metadata = record.get("metadata", {})
+                if metadata.get("status") == "blocked_by_prerequisite":
+                    missing = metadata.get("missing_prerequisite")
+                    if missing and missing.lower() not in index_content.lower():
+                        return missing
+    except Exception as e:
+        print(f"Warning: Failed to parse telemetry for prerequisites: {e}")
+        
+    return None
+

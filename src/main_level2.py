@@ -181,7 +181,6 @@ def main():
     prereq_ok, missing_prereq = check_level2_prerequisites(theory_a, theory_b, concept_name, current_index)
     if not prereq_ok:
         print(f"\n[PREREQUISITE BLOCKED] Selected debate '{concept_name}' requires the prerequisite '{missing_prereq}', which is not yet verified in our index.")
-        print(f"Please run the Level 1 learning loop first (e.g., 'python main.py') to study and index '{missing_prereq}' first.\n")
         log_telemetry_event(
             "topic_selection_level2",
             "end",
@@ -192,6 +191,15 @@ def main():
                 "missing_prerequisite": missing_prereq
             }
         )
+        print(f"[CLOSED-LOOP FEEDBACK] Automatically triggering Level 1 learning loop for: '{missing_prereq}'")
+        try:
+            from main import run_level1_flow
+        except ImportError:
+            from src.main import run_level1_flow
+        try:
+            run_level1_flow(missing_prereq)
+        except Exception as exc:
+            print(f"ERROR executing automatic Level 1 learning flow: {exc}")
         return
 
     level_folder = "level_2_advanced_frameworks"
