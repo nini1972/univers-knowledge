@@ -13,6 +13,7 @@ try:
         normalize_markdown_output,
         validate_concept_markdown,
         check_level2_prerequisites,
+        parse_skeptic_checklist_score,
     )
 except ImportError:
     from src.workflow_contracts import (
@@ -20,6 +21,7 @@ except ImportError:
         normalize_markdown_output,
         validate_concept_markdown,
         check_level2_prerequisites,
+        parse_skeptic_checklist_score,
     )
 try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
