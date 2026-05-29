@@ -58,43 +58,13 @@ def sanitize_filename(name):
 
 
 def update_index_file(index_path: str, concept_name: str, level_folder: str, filename: str):
-    """Deterministically merge new concept into index without LLM rewriting."""
+    """Deterministically synchronize the entire index to match current files on disk."""
     repo_root = Path(__file__).resolve().parent.parent
-    idx = repo_root / index_path
-    if not idx.exists():
-        idx.parent.mkdir(parents=True, exist_ok=True)
-        idx.write_text("# Knowledge Base Index\n\n", encoding="utf-8")
-
-    lines = idx.read_text(encoding="utf-8").splitlines()
-    lines = prune_stale_index_links(lines, repo_root)
-
-    heading = index_heading_for_level(level_folder, "## Level 1: Fundamental Physics")
-    link_rel = f"{level_folder}/{filename}"
-    entry = f"- [{concept_name}]({link_rel})"
-
-    if any(entry == line.strip() for line in lines):
-        idx.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
-        return
-
-    if heading not in lines:
-        if lines and lines[-1].strip() != "":
-            lines.append("")
-        lines.extend([heading, "", entry])
-        idx.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
-        return
-
-    h_idx = lines.index(heading)
-    insert_at = h_idx + 1
-    while insert_at < len(lines) and not lines[insert_at].startswith("## "):
-        insert_at += 1
-
-    section_lines = lines[h_idx + 1:insert_at]
-    if section_lines and section_lines[0].strip() != "":
-        lines.insert(h_idx + 1, "")
-        insert_at += 1
-    lines.insert(insert_at, entry)
-
-    idx.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    try:
+        from index_utils import synchronize_index
+    except ImportError:
+        from src.index_utils import synchronize_index
+    synchronize_index(index_path, repo_root)
 
 
 def run_level1_flow(next_concept: str):
