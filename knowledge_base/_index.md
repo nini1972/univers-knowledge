@@ -9,19 +9,19 @@ graph TD
     classDef theoretical fill:#241d08,stroke:#f59e0b,stroke-width:2px,color:#fef3c7;
 
     %% Concept Nodes
-    cp_violation["CP Violation"]:::theoretical
-    electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
-    general_relativity["General Relativity"]:::verified
-    matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
+    the_higgs_boson["The Higgs Boson"]:::theoretical
+    quantum_mechanics["Quantum Mechanics"]:::verified
     neutrino_oscillations["Neutrino Oscillations"]:::theoretical
     quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
-    quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
-    quantum_mechanics["Quantum Mechanics"]:::verified
+    cp_violation["CP Violation"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
-    the_higgs_boson["The Higgs Boson"]:::theoretical
+    general_relativity["General Relativity"]:::verified
+    quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
+    matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
+    electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
+    quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
-    quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
 
     %% Connections & Prerequisites
 ```
