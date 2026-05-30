@@ -30,6 +30,23 @@
                     <p class="subtitle">THE SKEPTICAL STUDENT'S EPISTEMOLOGICAL EXPLORER</p>
                 </div>
             </div>
+
+            <!-- Perspective Selector Controls -->
+            <div class="perspective-selector" id="perspective-selector">
+                <button class="perspective-btn active" data-perspective="codex">
+                    <i class="fa-solid fa-compass"></i> <span>Codex Explorer</span>
+                </button>
+                <button class="perspective-btn" data-perspective="network">
+                    <i class="fa-solid fa-network-wired"></i> <span>Network Topology</span>
+                </button>
+                <button class="perspective-btn" data-perspective="ledger">
+                    <i class="fa-solid fa-timeline"></i> <span>Odyssey Ledger</span>
+                </button>
+                <button class="perspective-btn" data-perspective="agents">
+                    <i class="fa-solid fa-robot"></i> <span>Agent Command</span>
+                </button>
+            </div>
+
             <div class="header-stats" id="global-stats">
                 <div class="stat-badge">
                     <span class="stat-label">TOTAL CONCEPTS</span>
@@ -47,10 +64,10 @@
         </header>
 
         <!-- Main Workspace -->
-        <main class="app-workspace">
+        <main class="app-workspace" id="app-workspace">
             
-            <!-- Sidebar with filters and search -->
-            <section class="sidebar-panel">
+            <!-- Sidebar with filters and search (only applicable in Codex mode, but handles smoothly) -->
+            <section class="sidebar-panel" id="sidebar-panel">
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     <input type="text" id="search-input" placeholder="Search concepts, equations, sources..." autocomplete="off">
@@ -93,7 +110,8 @@
 
             <!-- Main Dynamic Viewer -->
             <section class="viewer-panel" id="concept-viewer">
-                <!-- Welcome/Landing state displayed initially -->
+                
+                <!-- 1. Welcome/Landing state displayed initially inside Codex perspective -->
                 <div class="welcome-view" id="welcome-view">
                     <div class="welcome-content">
                         <i class="fa-solid fa-shuttle-space welcome-icon"></i>
@@ -106,7 +124,7 @@
                                 <h3>Begin Exploration</h3>
                                 <p>Start browsing fundamental physics concepts, equations, and verified proof boundaries.</p>
                             </div>
-                            <div class="action-card" id="btn-show-network">
+                            <div class="action-card" id="btn-show-network-card">
                                 <i class="fa-solid fa-network-wired"></i>
                                 <h3>Relationship Network</h3>
                                 <p>Trace how Level 1 physics acts as prerequisite foundations for Level 2 debates.</p>
@@ -120,7 +138,7 @@
                     </div>
                 </div>
 
-                <!-- Concept Content View (hidden by default) -->
+                <!-- 2. Codex Concept Content View (hidden by default) -->
                 <div class="concept-content-view" id="content-view" style="display: none;">
                     <div class="concept-header">
                         <div class="title-area">
@@ -240,29 +258,218 @@
                     </div>
                 </div>
 
-                <!-- Network Diagram Overlay (hidden by default) -->
+                <!-- 3. Network Diagram View (Canvas-based Interactive Mindmap) -->
                 <div class="network-diagram-view" id="network-view" style="display: none;">
                     <div class="concept-header">
                         <div class="title-area">
-                            <span class="badge level-badge">INTERACTIVE</span>
-                            <h2>Prerequisite Flowchart</h2>
+                            <span class="badge level-badge">TOPOLOGICAL GRAPH</span>
+                            <h2>Prerequisite Knowledge Network</h2>
                         </div>
-                        <button class="close-view-btn" id="btn-close-network">
-                            <i class="fa-solid fa-xmark"></i> Close Map
-                        </button>
                     </div>
                     <div class="network-container">
                         <div class="map-info">
-                            <i class="fa-solid fa-circle-info"></i>
-                            <span>Showing topological dependencies. Click on any node to load its detailed research portfolio.</span>
+                            <div class="graph-legend">
+                                <span class="legend-item"><span class="legend-dot dot-verified"></span> Verified</span>
+                                <span class="legend-item"><span class="legend-dot dot-theoretical"></span> Theoretical</span>
+                                <span class="legend-item"><span class="legend-dot dot-latest"></span> Latest Run</span>
+                            </div>
+                            <span>Showing physical dependencies. Click and drag nodes, or hover to trace causal flows. Click to open in Codex.</span>
                         </div>
-                        <div class="network-visualizer" id="network-graph-canvas">
-                            <!-- Dynamic canvas graph elements -->
+                        <div class="network-visualizer-canvas-wrapper">
+                            <canvas id="network-canvas" class="network-canvas"></canvas>
+                            <div class="canvas-zoom-controls">
+                                <button class="zoom-hud-btn" id="btn-zoom-in" title="Zoom In"><i class="fa-solid fa-plus"></i></button>
+                                <button class="zoom-hud-btn" id="btn-zoom-out" title="Zoom Out"><i class="fa-solid fa-minus"></i></button>
+                                <button class="zoom-hud-btn" id="btn-zoom-reset" title="Recenter & Reset Scale"><i class="fa-solid fa-arrows-to-dot"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <!-- 4. Odyssey Ledger View (Chronological timeline of discovery runs) -->
+                <div class="odyssey-ledger-view" id="ledger-view" style="display: none;">
+                    <div class="concept-header">
+                        <div class="title-area">
+                            <span class="badge level-badge">EPISTEMOLOGICAL CHRONOLOGY</span>
+                            <h2>The Chronicle of Discovery</h2>
+                        </div>
+                        <div class="timeline-filters">
+                            <button class="time-filter-btn active" data-time-filter="all">All Attempts</button>
+                            <button class="time-filter-btn approved" data-time-filter="approved">Approved</button>
+                            <button class="time-filter-btn rejected" data-time-filter="rejected">Rejected</button>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-scroll-container">
+                        <div class="timeline-wrapper">
+                            <div class="timeline-track"></div>
+                            <div class="timeline-stream" id="timeline-stream">
+                                <!-- Dynamic timeline cards injected here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Agent Command Center View (Telemetry & Cognitive Metrics) -->
+                <div class="agent-command-view" id="agents-view" style="display: none;">
+                    <div class="concept-header">
+                        <div class="title-area">
+                            <span class="badge level-badge">COGNITIVE STATUS</span>
+                            <h2>Agent Command Center</h2>
+                        </div>
+                        <div class="agent-mood-badge">
+                            <span class="pulse-dot dot-verified"></span> SYSTEM STATUS: <span id="pipeline-status">DORMANT (AWAITING RUN)</span>
+                        </div>
+                    </div>
+
+                    <div class="command-dashboard-layout">
+                        <!-- Agent grid of cards -->
+                        <div class="agents-grid">
+                            <!-- Card 1: Student Orchestrator -->
+                            <div class="agent-card orchestrator">
+                                <div class="agent-card-header">
+                                    <div class="agent-avatar"><i class="fa-solid fa-compass-drafting"></i></div>
+                                    <div class="agent-meta">
+                                        <h3>Student Orchestrator</h3>
+                                        <span class="agent-role">System Scribe & Director</span>
+                                    </div>
+                                </div>
+                                <p class="agent-directive">Directs knowledge loop transitions, coordinates agent workflows, enforces prerequisite ordering, and programmatically self-heals markdown.</p>
+                                <div class="agent-metrics">
+                                    <div class="metric-row">
+                                        <span class="m-label">Topics Selected</span>
+                                        <span class="m-value" id="m-orchestrator-selected">0</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span class="m-label">Syntactic Self-Heals</span>
+                                        <span class="m-value" id="m-orchestrator-heals">0</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span class="m-label">Success Rate</span>
+                                        <span class="m-value">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Physics Researcher -->
+                            <div class="agent-card researcher">
+                                <div class="agent-card-header">
+                                    <div class="agent-avatar"><i class="fa-solid fa-atom"></i></div>
+                                    <div class="agent-meta">
+                                        <h3>Physics Researcher</h3>
+                                        <span class="agent-role">Literature Seeker & Scholar</span>
+                                    </div>
+                                </div>
+                                <p class="agent-directive">Scours academic archives, prioritizes open-access peer-reviewed literature (arXiv, NASA, CERN), and synthesizes robust LaTeX mathematical frameworks.</p>
+                                <div class="agent-metrics">
+                                    <div class="metric-row">
+                                        <span class="m-label">Papers Consulted</span>
+                                        <span class="m-value" id="m-researcher-papers">0</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span class="m-label">LaTeX Derivations</span>
+                                        <span class="m-value" id="m-researcher-formulas">0</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span class="m-label">Verified citations</span>
+                                        <span class="m-value" id="m-researcher-citations">0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Scientific Skeptic -->
+                            <div class="agent-card skeptic">
+                                <div class="agent-card-header">
+                                    <div class="agent-avatar"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <div class="agent-meta">
+                                        <h3>Scientific Skeptic</h3>
+                                        <span class="agent-role">Epistemological Guardian</span>
+                                    </div>
+                                </div>
+                                <p class="agent-directive">Subjects reports to a strict 5-point verification protocol, demands experimental proof links, and issues refutations to theoretical hypotheses.</p>
+                                <div class="agent-metrics">
+                                    <div class="metric-row">
+                                        <span class="m-label">Strictness quotient</span>
+                                        <span class="m-value text-theoretical" id="m-skeptic-strictness">0%</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span class="m-label">Average Score Given</span>
+                                        <span class="m-value" id="m-skeptic-avg">0.0 / 5</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span class="m-label">Criticisms Raised</span>
+                                        <span class="m-value" id="m-skeptic-criticisms">0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4: Archivist & Visualizer -->
+                            <div class="agent-card archivist">
+                                <div class="agent-card-header">
+                                    <div class="agent-avatar"><i class="fa-solid fa-palette"></i></div>
+                                    <div class="agent-meta">
+                                        <h3>Archivist & Visualizer</h3>
+                                        <span class="agent-role">Structural Architect</span>
+                                    </div>
+                                </div>
+                                <p class="agent-directive">Compiles the master database file, constructs global index mapping, and triggers deep visual simulations to synthesize abstract physics into interactive schematics.</p>
+                                <div class="agent-metrics">
+                                    <div class="metric-row">
+                                        <span class="m-label">Database Files Written</span>
+                                        <span class="m-value" id="m-archivist-writes">0</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span class="m-label">Visualizations Generated</span>
+                                        <span class="m-value" id="m-archivist-images">0</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span class="m-label">Database Integrity</span>
+                                        <span class="m-value text-verified">100% Valid</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terminal Activity log ticker -->
+                        <div class="ticker-terminal">
+                            <div class="terminal-header">
+                                <div style="display: flex; gap: 6px;">
+                                    <span class="terminal-dot dot-red"></span>
+                                    <span class="terminal-dot dot-yellow"></span>
+                                    <span class="terminal-dot dot-green"></span>
+                                </div>
+                                <span class="terminal-title"><i class="fa-solid fa-terminal"></i> COGNITIVE TELEMETRY FEED</span>
+                                <span class="terminal-stat" id="ticker-lines-count">0 steps</span>
+                            </div>
+                            <div class="terminal-body" id="telemetry-ticker">
+                                <!-- Dynamic telemetry list items -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
         </main>
+
+        <!-- Persistent Timeline Scrubber Bar -->
+        <footer class="app-timeline-scrubber-bar">
+            <div class="scrubber-controls">
+                <button class="scrubber-btn" id="btn-scrub-prev" title="Step Backward"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="scrubber-btn play-pause-btn" id="btn-scrub-play" title="Play / Pause"><i class="fa-solid fa-play"></i></button>
+                <button class="scrubber-btn" id="btn-scrub-next" title="Step Forward"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+            
+            <div class="scrubber-slider-wrapper">
+                <input type="range" id="scrubber-slider" min="0" max="0" value="0" step="1">
+                <div class="scrubber-track-fill" id="scrubber-track-fill"></div>
+                <div class="scrubber-ticks" id="scrubber-ticks"></div>
+            </div>
+
+            <div class="scrubber-readout">
+                <div class="epoch-badge">EPOCH <span id="scrubber-epoch-num">0</span> / <span id="scrubber-epoch-total">0</span></div>
+                <div class="epoch-concept" id="scrubber-epoch-concept">Initializing Spacetime Continuum...</div>
+                <div class="epoch-status" id="scrubber-epoch-status">STATUS: CALIBRATING</div>
+            </div>
+        </footer>
     </div>
 
     <!-- Script loading -->
