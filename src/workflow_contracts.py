@@ -206,60 +206,66 @@ def normalize_markdown_output(raw_output: str):
         reconstructed_body.append("") # Spacer line
 
     # Step 7: Parse, repair and guarantee all required keys in frontmatter
-    if not frontmatter:
-        clean_title = title.replace("#", "").strip()
-        frontmatter = (
-            f"---\n"
-            f"title: \"{clean_title}\"\n"
-            f"level: 1\n"
-            f"status: \"[THEORETICAL]\"\n"
-            f"sources:\n"
-            f"  - \"Standard scientific consensus\"\n"
-            f"---"
-        )
-    else:
-        # Reparse inner keys of existing frontmatter block
-        fm_inner_match = re.search(r"^---\s*\n([\s\S]*?)\n---", frontmatter)
-        if fm_inner_match:
-            fm_inner = fm_inner_match.group(1)
-            fm_keys = {}
-            for line in fm_inner.splitlines():
-                if ":" in line:
-                    parts = line.split(":", 1)
-                    fm_keys[parts[0].strip().lower()] = parts[1].strip()
+    default_fm_keys = {
+        "title": f'"{title.replace("#", "").strip()}"',
+        "level": "1",
+        "status": '"[THEORETICAL]"',
+        "sources": '  - "Standard scientific consensus"'
+    }
 
-            repaired_lines = []
-            
-            # 1. Title
-            if "title" in fm_keys:
-                repaired_lines.append(f"title: {fm_keys['title']}")
-            else:
-                clean_title = title.replace("#", "").strip()
-                repaired_lines.append(f"title: \"{clean_title}\"")
-            
-            # 2. Level
-            if "level" in fm_keys:
-                repaired_lines.append(f"level: {fm_keys['level']}")
-            else:
-                repaired_lines.append("level: 1")
-            
-            # 3. Status
-            if "status" in fm_keys:
-                repaired_lines.append(f"status: {fm_keys['status']}")
-            else:
-                repaired_lines.append("status: \"[THEORETICAL]\"")
-            
-            # 4. Sources
-            if "sources" in fm_keys:
-                sources_match = re.search(r"sources:[\s\S]*", fm_inner, re.IGNORECASE)
-                if sources_match:
-                    repaired_lines.append(sources_match.group(0).strip())
-                else:
-                    repaired_lines.append("sources:\n  - \"Standard scientific consensus\"")
-            else:
-                repaired_lines.append("sources:\n  - \"Standard scientific consensus\"")
-                
-            frontmatter = "---\n" + "\n".join(repaired_lines) + "\n---"
+    parsed_keys = {}
+    sources_lines = []
+    in_sources = False
+
+    if frontmatter:
+        # Reparse inner keys of existing frontmatter block
+        # Split into lines and clean
+        fm_lines = [line.strip() for line in frontmatter.splitlines() if line.strip()]
+        if fm_lines and fm_lines[0] == "---":
+            fm_lines = fm_lines[1:]
+        if fm_lines and fm_lines[-1] == "---":
+            fm_lines = fm_lines[:-1]
+
+        for line in fm_lines:
+            if line.startswith("-") and in_sources:
+                sources_lines.append(line)
+                continue
+
+            if ":" in line:
+                parts = line.split(":", 1)
+                key = parts[0].strip().lower()
+                val = parts[1].strip()
+
+                if key == "sources":
+                    in_sources = True
+                    if val:  # single line source, e.g. sources: [A, B]
+                        sources_lines.append(f"  - {val}")
+                    continue
+
+                in_sources = False
+                parsed_keys[key] = val
+
+        if "title" in parsed_keys:
+            default_fm_keys["title"] = parsed_keys["title"]
+        if "level" in parsed_keys:
+            default_fm_keys["level"] = parsed_keys["level"]
+        if "status" in parsed_keys:
+            default_fm_keys["status"] = parsed_keys["status"]
+
+    # Reconstruct perfectly
+    repaired_lines = []
+    repaired_lines.append("title: " + default_fm_keys["title"])
+    repaired_lines.append("level: " + str(default_fm_keys["level"]))
+    repaired_lines.append("status: " + default_fm_keys["status"])
+    repaired_lines.append("sources:")
+    if sources_lines:
+        for s in sources_lines:
+            s_clean = s.strip().lstrip("-").strip()
+            repaired_lines.append(f"  - {s_clean}")
+    else:
+        repaired_lines.append(default_fm_keys["sources"])
+
+    frontmatter = "---\n" + "\n".join(repaired_lines) + "\n---"
 
     final_doc = f"{frontmatter}\n\n{title}\n\n" + "\n".join(reconstructed_body)
     return final_doc.strip()

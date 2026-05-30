@@ -252,6 +252,30 @@ The electromagnetic force is one of the four fundamental forces.
         self.assertTrue(prereq_ok)
         self.assertIsNone(missing)
 
+    def test_normalize_markdown_repairs_complex_frontmatter(self):
+        raw = """---
+sources:
+  - arXiv:1234.5678
+  - http://example.com
+title: "Electromagnetism"
+level: 1
+status: "[VERIFIED]"
+---
+# Electromagnetism
+
+## 1. Overview
+The electromagnetic force is one of the four fundamental forces.
+"""
+        normalized = normalize_markdown_output(raw)
+        valid, errors = validate_concept_markdown(normalized)
+        self.assertTrue(valid, f"Validation failed with errors: {errors}")
+        self.assertTrue(normalized.startswith("---"))
+        self.assertIn('title: "Electromagnetism"', normalized)
+        self.assertIn('level: 1', normalized)
+        self.assertIn('status: "[VERIFIED]"', normalized)
+        self.assertIn('  - arXiv:1234.5678', normalized)
+        self.assertIn('  - http://example.com', normalized)
+
 
 if __name__ == "__main__":
     unittest.main()
