@@ -60,7 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const synonyms = [
             ["beyondthestandardmodelsolutionstothehierarchyproblem", "beyondthestandardmodelsupersymmetryvsextradimensionsdebate"],
             ["beyondthestandardmodelsolutionstothehierarchyproblem", "beyondthestandardmodel"],
-            ["beyondthestandardmodelsupersymmetryvsextradimensionsdebate", "beyondthestandardmodel"]
+            ["beyondthestandardmodelsupersymmetryvsextradimensionsdebate", "beyondthestandardmodel"],
+            ["cosmicinflation", "inflationarycosmology"],
+            ["modifiedgravityvsdarkmatterparadigmdebate", "modifiednewtoniandynamicsmondversuscolddarkmattercdmparadigmdebate"]
         ];
         
         for (const [s1, s2] of synonyms) {
@@ -144,11 +146,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadAllDatasets() {
         try {
-            // Parallel Fetch execution
+            // Parallel Fetch execution with cache-busting query parameter to force dynamic reload
+            const cacheBust = `?t=${Date.now()}`;
             const [dbRes, evalRes, telRes] = await Promise.all([
-                fetch('../knowledge_base/database.json'),
-                fetch('../knowledge_base/logs/evaluation_runs.jsonl'),
-                fetch('../knowledge_base/logs/telemetry.jsonl')
+                fetch(`../knowledge_base/database.json${cacheBust}`),
+                fetch(`../knowledge_base/logs/evaluation_runs.jsonl${cacheBust}`),
+                fetch(`../knowledge_base/logs/telemetry.jsonl${cacheBust}`)
             ]);
 
             if (!dbRes.ok) throw new Error(`Database error! Status: ${dbRes.status}`);
@@ -363,6 +366,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // 2. Filter telemetry based on the timestamp of the current attempt run
         if (currentAttemptIndex === 0) {
             telemetryEvents = [];
+        } else if (currentAttemptIndex === chronologicalRuns.length) {
+            // In the present (fully completed universe), display all events
+            telemetryEvents = [...allTelemetryEvents];
         } else {
             const currentRun = chronologicalRuns[currentAttemptIndex - 1];
             const maxTimestamp = new Date(currentRun.timestamp);
