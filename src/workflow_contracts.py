@@ -92,10 +92,177 @@ def parse_student_decision(raw_output: str):
 
 def normalize_markdown_output(raw_output: str):
     text = str(raw_output).strip()
-    if text.startswith("```"):
+    
+    # Extract content inside markdown code block if present (discards external preamble/postamble)
+    fence_match = re.search(r"```(?:markdown|md)?\s*\n([\s\S]*?)\n```", text, re.IGNORECASE)
+    if fence_match:
+        text = fence_match.group(1).strip()
+    elif text.startswith("```"):
         text = re.sub(r"^```(?:markdown|md)?", "", text).strip()
         text = re.sub(r"```$", "", text).strip()
-    return text
+
+    # Step 1: Extract and isolate YAML frontmatter if present
+    frontmatter = ""
+    # Find first --- and its closing ---
+    first_dash = text.find("---")
+    if first_dash != -1:
+        second_dash = text.find("---", first_dash + 3)
+        if second_dash != -1:
+            frontmatter = text[first_dash:second_dash + 3].strip()
+            # The body is everything after the closing ---
+            body_text = text[second_dash + 3:].strip()
+        else:
+            body_text = text
+    else:
+        body_text = text
+
+    # Step 2: Extract top-level title `# Title`
+    title = ""
+    title_match = re.search(r"^#\s+(.+)$", body_text, re.MULTILINE)
+    if title_match:
+        title = title_match.group(0).strip()
+        body_text = body_text.replace(title, "", 1).strip()
+    else:
+        # Try to extract from frontmatter if available
+        if frontmatter:
+            title_fm = re.search(r"title:\s*\"?([^\n\"]+)\"?", frontmatter, re.IGNORECASE)
+            if title_fm:
+                title = f"# {title_fm.group(1).strip()}"
+            else:
+                title = "# Fundamental Physics Concept"
+        else:
+            title = "# Fundamental Physics Concept"
+
+    # Step 3: Standardize headings line-by-line in body_text
+    heading_patterns = [
+        (1, r"^#*\s*(?:\d+\.?\s*)?Overview.*$", "## 1. Overview"),
+        (2, r"^#*\s*(?:\d+\.?\s*)?(?:Detailed\s+)?Explanation.*$", "## 2. Detailed Explanation"),
+        (3, r"^#*\s*(?:\d+\.?\s*)?(?:Mathematical\s+)?Framework.*$", "## 3. Mathematical Framework"),
+        (4, r"^#*\s*(?:\d+\.?\s*)?(?:Skeptical\s+Perspectives|Alternative\s+Hypotheses|Skeptical\s+Perspectives\s*&\s*Alternative\s+Hypotheses).*$", "## 4. Skeptical Perspectives & Alternative Hypotheses"),
+        (5, r"^#*\s*(?:\d+\.?\s*)?(?:Verification\s*&\s*Skeptic's\s*Notes|Verification\s+Notes|Skeptic's\s*Notes).*$", "## 5. Verification & Skeptic's Notes"),
+        (6, r"^#*\s*(?:\d+\.?\s*)?(?:Visual\s+Representation|Visual\s+Grounding|Visualization).*$", "## 6. Visual Representation"),
+        (7, r"^#*\s*(?:\d+\.?\s*)?Related\s+Concepts.*$", "## 7. Related Concepts")
+    ]
+
+    lines = body_text.splitlines()
+    for idx, line in enumerate(lines):
+        line_stripped = line.strip()
+        for h_id, pattern, standard_heading in heading_patterns:
+            if re.match(pattern, line_stripped, re.IGNORECASE):
+                lines[idx] = standard_heading
+                break
+    body_text = "\n".join(lines)
+
+    # Step 4: Parse contents for each section
+    REQUIRED_HEADINGS = [
+        "## 1. Overview",
+        "## 2. Detailed Explanation",
+        "## 3. Mathematical Framework",
+        "## 4. Skeptical Perspectives & Alternative Hypotheses",
+        "## 5. Verification & Skeptic's Notes",
+        "## 6. Visual Representation",
+        "## 7. Related Concepts"
+    ]
+
+    section_contents = {}
+    heading_positions = []
+    for heading in REQUIRED_HEADINGS:
+        pos = body_text.find(heading)
+        if pos != -1:
+            heading_positions.append((pos, heading))
+
+    # Sort by character index
+    heading_positions.sort()
+
+    for i in range(len(heading_positions)):
+        pos, heading = heading_positions[i]
+        start_idx = pos + len(heading)
+        if i + 1 < len(heading_positions):
+            end_idx = heading_positions[i+1][0]
+            content = body_text[start_idx:end_idx].strip()
+        else:
+            content = body_text[start_idx:].strip()
+        section_contents[heading] = content
+
+    # Step 5: Assign default placeholders for any missing headings
+    default_placeholders = {
+        "## 1. Overview": "*(Overview content pending validation.)*",
+        "## 2. Detailed Explanation": "*(Detailed explanation pending research.)*",
+        "## 3. Mathematical Framework": "*(No mathematical framework compiled.)*",
+        "## 4. Skeptical Perspectives & Alternative Hypotheses": "*(No alternative hypotheses compiled.)*",
+        "## 5. Verification & Skeptic's Notes": "*(Verification notes pending peer review.)*",
+        "## 6. Visual Representation": "*(No visual representation compiled.)*",
+        "## 7. Related Concepts": "*(No related concepts linked.)*"
+    }
+
+    # Step 6: Reconstruct the document body in perfect order
+    reconstructed_body = []
+    for heading in REQUIRED_HEADINGS:
+        content = section_contents.get(heading, "").strip()
+        if not content:
+            content = default_placeholders[heading]
+        reconstructed_body.append(heading)
+        reconstructed_body.append(content)
+        reconstructed_body.append("") # Spacer line
+
+    # Step 7: Parse, repair and guarantee all required keys in frontmatter
+    if not frontmatter:
+        clean_title = title.replace("#", "").strip()
+        frontmatter = (
+            f"---\n"
+            f"title: \"{clean_title}\"\n"
+            f"level: 1\n"
+            f"status: \"[THEORETICAL]\"\n"
+            f"sources:\n"
+            f"  - \"Standard scientific consensus\"\n"
+            f"---"
+        )
+    else:
+        # Reparse inner keys of existing frontmatter block
+        fm_inner_match = re.search(r"^---\s*\n([\s\S]*?)\n---", frontmatter)
+        if fm_inner_match:
+            fm_inner = fm_inner_match.group(1)
+            fm_keys = {}
+            for line in fm_inner.splitlines():
+                if ":" in line:
+                    parts = line.split(":", 1)
+                    fm_keys[parts[0].strip().lower()] = parts[1].strip()
+
+            repaired_lines = []
+            
+            # 1. Title
+            if "title" in fm_keys:
+                repaired_lines.append(f"title: {fm_keys['title']}")
+            else:
+                clean_title = title.replace("#", "").strip()
+                repaired_lines.append(f"title: \"{clean_title}\"")
+            
+            # 2. Level
+            if "level" in fm_keys:
+                repaired_lines.append(f"level: {fm_keys['level']}")
+            else:
+                repaired_lines.append("level: 1")
+            
+            # 3. Status
+            if "status" in fm_keys:
+                repaired_lines.append(f"status: {fm_keys['status']}")
+            else:
+                repaired_lines.append("status: \"[THEORETICAL]\"")
+            
+            # 4. Sources
+            if "sources" in fm_keys:
+                sources_match = re.search(r"sources:[\s\S]*", fm_inner, re.IGNORECASE)
+                if sources_match:
+                    repaired_lines.append(sources_match.group(0).strip())
+                else:
+                    repaired_lines.append("sources:\n  - \"Standard scientific consensus\"")
+            else:
+                repaired_lines.append("sources:\n  - \"Standard scientific consensus\"")
+                
+            frontmatter = "---\n" + "\n".join(repaired_lines) + "\n---"
+
+    final_doc = f"{frontmatter}\n\n{title}\n\n" + "\n".join(reconstructed_body)
+    return final_doc.strip()
 
 
 def validate_concept_markdown(markdown_text: str):

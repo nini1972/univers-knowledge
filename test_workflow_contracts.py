@@ -109,15 +109,107 @@ class TestWorkflowContracts(unittest.TestCase):
         self.assertFalse(valid)
         self.assertTrue(any("Missing YAML frontmatter block" in err for err in errors))
 
-    def test_normalize_markdown_output_strips_fences(self):
-        raw = """```markdown
-# Title
+    def test_normalize_markdown_output_strips_fences_and_preambles(self):
+        raw = """Here is your report:
+```markdown
+---
+title: "Quantum Gravity"
+level: 2
+status: "[THEORETICAL]"
+sources:
+  - CERN Report
+---
+
+# Quantum Gravity
 ## 1. Overview
-content
-```"""
+Some overview content.
+```
+I hope this helps!"""
         normalized = normalize_markdown_output(raw)
-        self.assertFalse(normalized.startswith("```"))
-        self.assertIn("# Title", normalized)
+        self.assertFalse(normalized.startswith("Here is your"))
+        self.assertTrue(normalized.startswith("---"))
+        self.assertNotIn("I hope this helps!", normalized)
+        self.assertIn("# Quantum Gravity", normalized)
+        self.assertIn("## 1. Overview", normalized)
+
+    def test_normalize_markdown_standardizes_mismatched_headings(self):
+        raw = """---
+title: "Dark Matter"
+level: 1
+status: "[THEORETICAL]"
+sources:
+  - arXiv:1234.5678
+---
+# Dark Matter
+
+### 1. overview
+Intro here.
+
+## Explanation
+Some details.
+
+## 3. Mathematical Framework
+$F=ma$
+
+## 4. Alternative hypotheses
+Alternative details.
+
+## Skeptic's Notes
+Verification info.
+
+## 6. Visualization
+A drawing prompt.
+
+## Related Concepts
+- [Link]
+"""
+        normalized = normalize_markdown_output(raw)
+        valid, errors = validate_concept_markdown(normalized)
+        self.assertTrue(valid, f"Validation failed with errors: {errors}")
+        self.assertIn("## 1. Overview", normalized)
+        self.assertIn("## 2. Detailed Explanation", normalized)
+        self.assertIn("## 3. Mathematical Framework", normalized)
+        self.assertIn("## 4. Skeptical Perspectives & Alternative Hypotheses", normalized)
+        self.assertIn("## 5. Verification & Skeptic's Notes", normalized)
+        self.assertIn("## 6. Visual Representation", normalized)
+        self.assertIn("## 7. Related Concepts", normalized)
+
+    def test_normalize_markdown_inserts_missing_headings_with_placeholders(self):
+        raw = """---
+title: "Standard Model"
+level: 1
+status: "[VERIFIED]"
+sources:
+  - CERN website
+---
+# Standard Model
+
+## 1. Overview
+Over.
+
+## 2. Detailed Explanation
+Explanation.
+"""
+        normalized = normalize_markdown_output(raw)
+        valid, errors = validate_concept_markdown(normalized)
+        self.assertTrue(valid, f"Validation failed with errors: {errors}")
+        self.assertIn("## 3. Mathematical Framework", normalized)
+        self.assertIn("*(No mathematical framework compiled.)*", normalized)
+        self.assertIn("## 7. Related Concepts", normalized)
+        self.assertIn("*(No related concepts linked.)*", normalized)
+
+    def test_normalize_markdown_repairs_missing_frontmatter(self):
+        raw = """# Electromagnetism
+
+## 1. Overview
+The electromagnetic force is one of the four fundamental forces.
+"""
+        normalized = normalize_markdown_output(raw)
+        valid, errors = validate_concept_markdown(normalized)
+        self.assertTrue(valid, f"Validation failed with errors: {errors}")
+        self.assertTrue(normalized.startswith("---"))
+        self.assertIn('title: "Electromagnetism"', normalized)
+        self.assertIn('status: "[THEORETICAL]"', normalized)
 
 
     def test_parse_skeptic_checklist_score_explicit(self):

@@ -50,6 +50,10 @@ class UniverseTasks:
                 Synthesize the current understanding, proposed mechanisms, and any mathematical 
                 frameworks associated with this concept.
                 
+                SEARCH STRATEGY & SPECIFICITY INSTRUCTIONS:
+                - When searching, generate highly specific queries. Append terms like "review article", "recent advances", "experimental constraints", or "mathematical framework" (e.g., "{concept} experimental constraints" or "{concept} review article").
+                - Prioritize peer-reviewed journals, institutional PDFs (.edu/.ac), and open-access preprint portals (like arXiv.org).
+                
                 CRITICAL REQUIREMENTS - Your research report MUST satisfy these 5 criteria:
                 1. Cite at least 3 independent scientific/academic sources with clear references.
                 2. Highlight skepticism, empirical gaps, limitations, and contradictions of this concept, explicitly comparing the mainstream model with at least one unorthodox or alternative counter-hypothesis (e.g. MOND vs. Dark Matter; loop quantum gravity or non-commutative geometry vs. String Theory) and describing the current experimental bounds.

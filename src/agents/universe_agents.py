@@ -8,21 +8,22 @@ def _build_search_tools():
     """Create search tools lazily so missing deps/keys do not crash startup.
 
     Preferred order:
-    1) TavilySearchTool from crewai_tools when TAVILY_API_KEY is available.
+    1) Custom ScholarlySearchTool when TAVILY_API_KEY is available.
     2) SerperDevTool from crewai_tools when SERPER_API_KEY is available.
     3) No search tool (graceful degradation).
 
     Note: CrewAI Agent.tools expects CrewAI-compatible BaseTool instances.
     """
     if os.getenv("TAVILY_API_KEY"):
-        if importlib.util.find_spec("tavily") is None:
-            print("Warning: Tavily search disabled (missing tavily-python package)")
-        else:
+        try:
+            from tools.scholarly_search import ScholarlySearchTool
+            return [ScholarlySearchTool()]
+        except ImportError:
             try:
-                from crewai_tools import TavilySearchTool
-                return [TavilySearchTool()]
+                from src.tools.scholarly_search import ScholarlySearchTool
+                return [ScholarlySearchTool()]
             except Exception as exc:
-                print(f"Warning: Tavily search disabled ({exc})")
+                print(f"Warning: Custom ScholarlySearchTool disabled ({exc})")
 
     if os.getenv("SERPER_API_KEY"):
         try:
@@ -56,10 +57,16 @@ class UniverseAgents:
             role='Fundamental Physics Researcher',
             goal='Gather comprehensive and accurate data on physical phenomena, theories, and the fundamental building blocks of the universe.',
             backstory=dedent("""
-                You are an expert researcher with access to vast amounts of scientific literature. 
-                You synthesize complex physics theories into digestible reports. You actively look for consensus
-                in the scientific community, but as a critical thinker, you always identify and contrast mainstream 
-                claims with viable scientific alternative hypotheses or counter-arguments, analyzing their relative merits and experimental limits.
+                You are an expert academic researcher with direct access to peer-reviewed scientific literature databases.
+                You synthesize complex physics theories into digestible reports. You actively seek scientific consensus,
+                but as a rigorous thinker, you always identify and contrast mainstream claims with viable alternative
+                hypotheses (e.g. MOND vs Dark Matter), detailing their exact experimental limits.
+
+                SOURCE SELECTION MANDATES:
+                - Always prioritize Peer-Reviewed & Institutional materials first (arXiv, CERN, NASA, IOP, APS, and universities).
+                - Completely avoid citing low-quality general blogs, social media, forums, or unvetted pages.
+                - For every source cited, capture its exact URL and include DOI or arXiv numbers where available.
+                - If Tavily notes raw content is unavailable (metadata only), clearly flag that full-text access is restricted but cite the abstract/findings.
             """),
             verbose=True,
             allow_delegation=False,
