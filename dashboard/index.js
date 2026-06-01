@@ -1562,122 +1562,142 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
 
     function setupInteractiveEventHooks() {
-        // Search filter input listeners
-        elements.searchInput.addEventListener('input', (e) => {
-            currentFilters.search = e.target.value.toLowerCase().trim();
-            elements.clearSearch.style.display = currentFilters.search ? 'block' : 'none';
-            applyFiltersAndRenderSidebar();
-        });
-
-        elements.clearSearch.addEventListener('click', () => {
-            elements.searchInput.value = '';
-            currentFilters.search = '';
-            elements.clearSearch.style.display = 'none';
-            applyFiltersAndRenderSidebar();
-        });
-
-        // Filter Level buttons triggers
-        elements.levelFilters.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                elements.levelFilters.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentFilters.level = btn.getAttribute('data-filter');
+        // 1. Search filter input listeners
+        if (elements.searchInput && elements.clearSearch) {
+            elements.searchInput.addEventListener('input', (e) => {
+                currentFilters.search = e.target.value.toLowerCase().trim();
+                elements.clearSearch.style.display = currentFilters.search ? 'block' : 'none';
                 applyFiltersAndRenderSidebar();
             });
-        });
 
-        // Filter Status buttons triggers
-        elements.statusFilters.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                elements.statusFilters.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentFilters.status = btn.getAttribute('data-filter');
+            elements.clearSearch.addEventListener('click', () => {
+                elements.searchInput.value = '';
+                currentFilters.search = '';
+                elements.clearSearch.style.display = 'none';
                 applyFiltersAndRenderSidebar();
             });
-        });
+        }
 
-        // Concept Codex section scrolling tab highlighting tracker
-        elements.scrollContainer.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('.concept-section');
-            let activeId = 'sec-overview';
-            
-            sections.forEach(sec => {
-                const rect = sec.getBoundingClientRect();
-                if (rect.top <= 140) {
-                    activeId = sec.getAttribute('id');
-                }
+        // 2. Filter Level buttons triggers
+        if (elements.levelFilters) {
+            elements.levelFilters.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    elements.levelFilters.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilters.level = btn.getAttribute('data-filter');
+                    applyFiltersAndRenderSidebar();
+                });
+            });
+        }
+
+        // 3. Filter Status buttons triggers
+        if (elements.statusFilters) {
+            elements.statusFilters.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    elements.statusFilters.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilters.status = btn.getAttribute('data-filter');
+                    applyFiltersAndRenderSidebar();
+                });
+            });
+        }
+
+        // 4. Concept Codex section scrolling tab highlighting tracker
+        if (elements.scrollContainer && elements.tabLinks) {
+            elements.scrollContainer.addEventListener('scroll', () => {
+                const sections = document.querySelectorAll('.concept-section');
+                let activeId = 'sec-overview';
+                
+                sections.forEach(sec => {
+                    const rect = sec.getBoundingClientRect();
+                    if (rect.top <= 140) {
+                        activeId = sec.getAttribute('id');
+                    }
+                });
+
+                elements.tabLinks.forEach(link => {
+                    if (link.getAttribute('href') === `#${activeId}`) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
             });
 
             elements.tabLinks.forEach(link => {
-                if (link.getAttribute('href') === `#${activeId}`) {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    elements.tabLinks.forEach(l => l.classList.remove('active'));
                     link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
+                    
+                    const targetId = link.getAttribute('href');
+                    const targetSec = document.querySelector(targetId);
+                    if (targetSec) {
+                        targetSec.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        }
+
+        // 5. Dual Perspective selectors triggers
+        if (elements.perspectiveSelector) {
+            elements.perspectiveSelector.querySelectorAll('.perspective-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const targetPerspective = btn.getAttribute('data-perspective');
+                    switchPerspective(targetPerspective);
+                });
+            });
+        }
+
+        // 6. Timeline Filter triggers
+        if (elements.timelineFilters) {
+            elements.timelineFilters.querySelectorAll('.time-filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    elements.timelineFilters.querySelectorAll('.time-filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentTimelineFilter = btn.getAttribute('data-time-filter');
+                    renderOdysseyLedgerTimeline();
+                });
+            });
+        }
+
+        // 7. Content inline hyperlinking delegations
+        if (elements.contentView) {
+            elements.contentView.addEventListener('click', (e) => {
+                const link = e.target.closest('.inline-concept-link');
+                if (link) {
+                    const targetId = link.getAttribute('data-target');
+                    selectConcept(targetId);
                 }
             });
-        });
+        }
 
-        elements.tabLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                elements.tabLinks.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
-                
-                const targetId = link.getAttribute('href');
-                const targetSec = document.querySelector(targetId);
-                if (targetSec) {
-                    targetSec.scrollIntoView({ behavior: 'smooth' });
+        // 8. Action panel cards click handlers (Inside Codex Landing welcome view)
+        if (elements.btnExploreFirst) {
+            elements.btnExploreFirst.addEventListener('click', () => {
+                if (concepts.length > 0) {
+                    const alphabeticallyFirst = [...concepts].sort((a,b) => a.title.localeCompare(b.title))[0];
+                    selectConcept(alphabeticallyFirst.id);
                 }
             });
-        });
+        }
 
-        // Dual Perspective selectors triggers
-        elements.perspectiveSelector.querySelectorAll('.perspective-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const targetPerspective = btn.getAttribute('data-perspective');
-                switchPerspective(targetPerspective);
+        if (elements.btnShowNetworkCard) {
+            elements.btnShowNetworkCard.addEventListener('click', () => {
+                switchPerspective('network');
             });
-        });
+        }
 
-        // Timeline Filter triggers
-        elements.timelineFilters.querySelectorAll('.time-filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                elements.timelineFilters.querySelectorAll('.time-filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentTimelineFilter = btn.getAttribute('data-time-filter');
-                renderOdysseyLedgerTimeline();
+        if (elements.btnBackToWelcome) {
+            elements.btnBackToWelcome.addEventListener('click', () => {
+                activeConceptId = null;
+                if (elements.contentView) elements.contentView.style.display = 'none';
+                if (elements.welcomeView) elements.welcomeView.style.display = 'flex';
+                document.querySelectorAll('.concept-card').forEach(c => c.classList.remove('active'));
             });
-        });
+        }
 
-        // Content inline hyperlinking delegations
-        elements.contentView.addEventListener('click', (e) => {
-            const link = e.target.closest('.inline-concept-link');
-            if (link) {
-                const targetId = link.getAttribute('data-target');
-                selectConcept(targetId);
-            }
-        });
-
-        // Action panel cards click handlers (Inside Codex Landing welcome view)
-        elements.btnExploreFirst.addEventListener('click', () => {
-            if (concepts.length > 0) {
-                const alphabeticallyFirst = [...concepts].sort((a,b) => a.title.localeCompare(b.title))[0];
-                selectConcept(alphabeticallyFirst.id);
-            }
-        });
-
-        elements.btnShowNetworkCard.addEventListener('click', () => {
-            switchPerspective('network');
-        });
-
-        elements.btnBackToWelcome.addEventListener('click', () => {
-            activeConceptId = null;
-            elements.contentView.style.display = 'none';
-            elements.welcomeView.style.display = 'flex';
-            document.querySelectorAll('.concept-card').forEach(c => c.classList.remove('active'));
-        });
-
-        // ⏳ Timeline Scrubber Controls Event Hooks
+        // 9. ⏳ Timeline Scrubber Controls Event Hooks
         if (elements.scrubberSlider) {
             elements.scrubberSlider.addEventListener('input', (e) => {
                 pausePlayback();
@@ -1712,7 +1732,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 🔍 Canvas Zoom Controls Overlay Event Hooks
+        // 10. 🔍 Canvas Zoom Controls Overlay Event Hooks
         if (elements.btnZoomIn) {
             elements.btnZoomIn.addEventListener('click', () => {
                 const oldZoom = canvasZoom;
@@ -1751,8 +1771,32 @@ document.addEventListener('DOMContentLoaded', () => {
         // Canvas Interaction physics mouse hooks
         setupNetworkCanvasMouseListeners();
 
-        // Command tab switcher (Telemetry / Sandbox Arena)
-        if (elements.commandTabBtns) {
+        // 11. Command tab switcher (Telemetry / Sandbox Arena) using Delegated Click Hooks
+        const tabsHeader = document.querySelector('.command-tabs-header');
+        if (tabsHeader) {
+            tabsHeader.addEventListener('click', (e) => {
+                const btn = e.target.closest('.command-tab-btn');
+                if (!btn) return;
+                
+                const targetTab = btn.getAttribute('data-tab');
+                
+                const btns = tabsHeader.querySelectorAll('.command-tab-btn');
+                btns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const tabTelemetry = document.getElementById('tab-telemetry');
+                const tabSandbox = document.getElementById('tab-sandbox');
+                
+                if (targetTab === 'telemetry') {
+                    if (tabTelemetry) tabTelemetry.style.display = 'block';
+                    if (tabSandbox) tabSandbox.style.display = 'none';
+                } else if (targetTab === 'sandbox') {
+                    if (tabTelemetry) tabTelemetry.style.display = 'none';
+                    if (tabSandbox) tabSandbox.style.display = 'block';
+                }
+            });
+        } else if (elements.commandTabBtns) {
+            // Fallback for isolated systems or cached states
             elements.commandTabBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
                     const targetTab = btn.getAttribute('data-tab');
@@ -1771,7 +1815,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Initiate Sandbox Debate Event Hook
+        // 12. Initiate Sandbox Debate Event Hook
         if (elements.btnSandboxStart) {
             elements.btnSandboxStart.addEventListener('click', () => {
                 const selectVal = elements.sandboxConceptSelect ? elements.sandboxConceptSelect.value : '';
@@ -1793,6 +1837,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setupNetworkCanvasMouseListeners() {
         const canvas = elements.networkCanvas;
+        if (!canvas) return;
         let isPanning = false;
         let panStart = { x: 0, y: 0 };
         
