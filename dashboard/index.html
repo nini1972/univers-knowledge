@@ -430,19 +430,105 @@
                             </div>
                         </div>
 
-                        <!-- Terminal Activity log ticker -->
-                        <div class="ticker-terminal">
-                            <div class="terminal-header">
-                                <div style="display: flex; gap: 6px;">
-                                    <span class="terminal-dot dot-red"></span>
-                                    <span class="terminal-dot dot-yellow"></span>
-                                    <span class="terminal-dot dot-green"></span>
-                                </div>
-                                <span class="terminal-title"><i class="fa-solid fa-terminal"></i> COGNITIVE TELEMETRY FEED</span>
-                                <span class="terminal-stat" id="ticker-lines-count">0 steps</span>
+                        <!-- Right Tabbed Panel: Telemetry & Skeptic Sandbox -->
+                        <div class="command-right-panel">
+                            <div class="command-tabs-header">
+                                <button class="command-tab-btn active" data-tab="telemetry">
+                                    <i class="fa-solid fa-terminal"></i> Cognitive Telemetry
+                                </button>
+                                <button class="command-tab-btn" data-tab="sandbox">
+                                    <i class="fa-solid fa-shuttle-space"></i> Skeptic Sandbox Arena 🪐
+                                </button>
                             </div>
-                            <div class="terminal-body" id="telemetry-ticker">
-                                <!-- Dynamic telemetry list items -->
+
+                            <div class="command-tab-content">
+                                <!-- TAB 1: TELEMETRY FEED -->
+                                <div class="tab-pane active" id="tab-telemetry">
+                                    <div class="ticker-terminal">
+                                        <div class="terminal-header">
+                                            <div style="display: flex; gap: 6px;">
+                                                <span class="terminal-dot dot-red"></span>
+                                                <span class="terminal-dot dot-yellow"></span>
+                                                <span class="terminal-dot dot-green"></span>
+                                            </div>
+                                            <span class="terminal-title">COGNITIVE TELEMETRY FEED</span>
+                                            <span class="terminal-stat" id="ticker-lines-count">0 steps</span>
+                                        </div>
+                                        <div class="terminal-body" id="telemetry-ticker">
+                                            <!-- Dynamic telemetry list items -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TAB 2: SKEPTIC SANDBOX ARENA -->
+                                <div class="tab-pane" id="tab-sandbox" style="display: none;">
+                                    <div class="sandbox-arena">
+                                        <div class="sandbox-control-bar">
+                                            <div class="selector-wrapper">
+                                                <i class="fa-solid fa-compass-drafting selector-icon"></i>
+                                                <select id="sandbox-concept-select" class="sandbox-select">
+                                                    <!-- Dynamically populated from JS -->
+                                                </select>
+                                            </div>
+                                            <input type="text" id="sandbox-custom-input" class="sandbox-custom-input" placeholder="Type custom scientific concept..." style="display: none;">
+                                            <button id="btn-sandbox-start" class="sandbox-action-btn">
+                                                <i class="fa-solid fa-play"></i> <span>Initiate Debate</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="sandbox-body-layout">
+                                            <!-- Stream screen -->
+                                            <div class="sandbox-debate-stream-wrapper">
+                                                <div class="sandbox-stream-header">
+                                                    <span class="terminal-dot dot-red"></span>
+                                                    <span class="terminal-dot dot-yellow"></span>
+                                                    <span class="terminal-dot dot-green"></span>
+                                                    <span class="stream-title"><i class="fa-solid fa-comments"></i> LIVE DEBATE TRANSLATION</span>
+                                                </div>
+                                                <div id="sandbox-debate-stream" class="sandbox-debate-stream">
+                                                    <div class="empty-arena-placeholder">
+                                                        <i class="fa-solid fa-circle-nodes"></i>
+                                                        <p>Select a scientific topic and click "Initiate Debate" to start the multi-agent epistemic arena.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Instrument HUD -->
+                                            <div class="sandbox-hud">
+                                                <div class="hud-card">
+                                                    <h4>EPISTEMIC METRIC</h4>
+                                                    <div class="score-gauge-container">
+                                                        <div class="score-gauge-wrapper">
+                                                            <svg class="score-gauge-svg" viewBox="0 0 100 100">
+                                                                <circle class="gauge-bg" cx="50" cy="50" r="42"></circle>
+                                                                <circle class="gauge-fill" id="sandbox-gauge-fill" cx="50" cy="50" r="42" style="stroke-dashoffset: 264;"></circle>
+                                                            </svg>
+                                                            <div class="score-readout">
+                                                                <span id="sandbox-score-value">0</span>
+                                                                <span class="score-percent">%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="score-gauge-label">Epistemic Score</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="hud-card verdict-card">
+                                                    <h4>EPISTEMIC VERDICT</h4>
+                                                    <div id="sandbox-verdict-box" class="verdict-content-box">
+                                                        Awaiting debate initialization...
+                                                    </div>
+                                                </div>
+
+                                                <div class="hud-card history-card">
+                                                    <h4>DEBATE RECORDS</h4>
+                                                    <div id="sandbox-history-list" class="history-list-box">
+                                                        <!-- Dynamic list of recorded runs -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

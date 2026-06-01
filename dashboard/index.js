@@ -41,6 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let playbackInterval = null;
     let playbackSpeed = 2200; // 2.2 seconds per tick epoch
 
+    // Sandbox Arena Engine State
+    let allSandboxDebates = [];
+    let isSandboxDebateRunning = false;
+
     // Clean and match concepts synonymously
     function areConceptsEquivalent(nameA, nameB) {
         if (!nameA || !nameB) return false;
@@ -137,7 +141,22 @@ document.addEventListener('DOMContentLoaded', () => {
         // Zoom Controls Overlay
         btnZoomIn: document.getElementById('btn-zoom-in'),
         btnZoomOut: document.getElementById('btn-zoom-out'),
-        btnZoomReset: document.getElementById('btn-zoom-reset')
+        btnZoomReset: document.getElementById('btn-zoom-reset'),
+
+        // Tab switcher
+        commandTabBtns: document.querySelectorAll('.command-tab-btn'),
+        tabTelemetry: document.getElementById('tab-telemetry'),
+        tabSandbox: document.getElementById('tab-sandbox'),
+        
+        // Sandbox elements
+        sandboxConceptSelect: document.getElementById('sandbox-concept-select'),
+        sandboxCustomInput: document.getElementById('sandbox-custom-input'),
+        btnSandboxStart: document.getElementById('btn-sandbox-start'),
+        sandboxDebateStream: document.getElementById('sandbox-debate-stream'),
+        sandboxGaugeFill: document.getElementById('sandbox-gauge-fill'),
+        sandboxScoreValue: document.getElementById('sandbox-score-value'),
+        sandboxVerdictBox: document.getElementById('sandbox-verdict-box'),
+        sandboxHistoryList: document.getElementById('sandbox-history-list')
     };
 
     /* ==========================================================================
@@ -148,10 +167,11 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // Parallel Fetch execution with cache-busting query parameter to force dynamic reload
             const cacheBust = `?t=${Date.now()}`;
-            const [dbRes, evalRes, telRes] = await Promise.all([
+            const [dbRes, evalRes, telRes, sandboxRes] = await Promise.all([
                 fetch(`../knowledge_base/database.json${cacheBust}`),
                 fetch(`../knowledge_base/logs/evaluation_runs.jsonl${cacheBust}`),
-                fetch(`../knowledge_base/logs/telemetry.jsonl${cacheBust}`)
+                fetch(`../knowledge_base/logs/telemetry.jsonl${cacheBust}`),
+                fetch(`../knowledge_base/logs/sandbox_debates.jsonl${cacheBust}`).catch(() => null)
             ]);
 
             if (!dbRes.ok) throw new Error(`Database error! Status: ${dbRes.status}`);
@@ -208,6 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             allEvaluationRuns = await parseJSONL(evalRes);
             allTelemetryEvents = await parseJSONL(telRes);
+            allSandboxDebates = sandboxRes && sandboxRes.ok ? await parseJSONL(sandboxRes) : [];
 
             // Establish standard sorted lists
             allTelemetryEvents.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)); // Newest first for live activity
@@ -261,6 +282,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function initializeSystem() {
         updateChronologicalState();
         setupInteractiveEventHooks();
+        populateSandboxConcepts();
+        renderSandboxHistory();
         
         // Initial view default
         switchPerspective('codex');
@@ -1727,6 +1750,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Canvas Interaction physics mouse hooks
         setupNetworkCanvasMouseListeners();
+
+        // Command tab switcher (Telemetry / Sandbox Arena)
+        if (elements.commandTabBtns) {
+            elements.commandTabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const targetTab = btn.getAttribute('data-tab');
+                    
+                    elements.commandTabBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    if (targetTab === 'telemetry') {
+                        if (elements.tabTelemetry) elements.tabTelemetry.style.display = 'block';
+                        if (elements.tabSandbox) elements.tabSandbox.style.display = 'none';
+                    } else if (targetTab === 'sandbox') {
+                        if (elements.tabTelemetry) elements.tabTelemetry.style.display = 'none';
+                        if (elements.tabSandbox) elements.tabSandbox.style.display = 'block';
+                    }
+                });
+            });
+        }
+
+        // Initiate Sandbox Debate Event Hook
+        if (elements.btnSandboxStart) {
+            elements.btnSandboxStart.addEventListener('click', () => {
+                const selectVal = elements.sandboxConceptSelect ? elements.sandboxConceptSelect.value : '';
+                let concept = selectVal;
+                
+                if (selectVal === 'custom') {
+                    concept = elements.sandboxCustomInput ? elements.sandboxCustomInput.value.trim() : '';
+                }
+                
+                if (!concept) {
+                    alert('Please select or input a scientific topic to initiate.');
+                    return;
+                }
+                
+                runSandboxDebate(concept);
+            });
+        }
     }
 
     function setupNetworkCanvasMouseListeners() {
@@ -1857,6 +1919,431 @@ document.addEventListener('DOMContentLoaded', () => {
                 selectConcept(id);
             }
         });
+    }
+
+    /* ==========================================================================
+       🪐 SKEPTIC SANDBOX ARENA CORE ROUTINES
+       ========================================================================== */
+
+    function populateSandboxConcepts() {
+        if (!elements.sandboxConceptSelect) return;
+        
+        const select = elements.sandboxConceptSelect;
+        select.innerHTML = '';
+        
+        const placeholderOpt = document.createElement('option');
+        placeholderOpt.value = '';
+        placeholderOpt.disabled = true;
+        placeholderOpt.selected = true;
+        placeholderOpt.textContent = 'Select a scientific concept...';
+        select.appendChild(placeholderOpt);
+        
+        const uniqueTitles = new Set();
+        allConcepts.forEach(c => {
+            if (c.title) {
+                uniqueTitles.add(c.title);
+            }
+        });
+        
+        Array.from(uniqueTitles).sort().forEach(title => {
+            const opt = document.createElement('option');
+            opt.value = title;
+            opt.textContent = title;
+            select.appendChild(opt);
+        });
+        
+        const customOpt = document.createElement('option');
+        customOpt.value = 'custom';
+        customOpt.textContent = 'Custom Topic...';
+        select.appendChild(customOpt);
+        
+        select.addEventListener('change', () => {
+            if (select.value === 'custom') {
+                if (elements.sandboxCustomInput) {
+                    elements.sandboxCustomInput.style.display = 'block';
+                    elements.sandboxCustomInput.focus();
+                }
+            } else {
+                if (elements.sandboxCustomInput) {
+                    elements.sandboxCustomInput.style.display = 'none';
+                }
+            }
+        });
+    }
+
+    function renderSandboxHistory() {
+        if (!elements.sandboxHistoryList) return;
+        
+        const list = elements.sandboxHistoryList;
+        list.innerHTML = '';
+        
+        if (allSandboxDebates.length === 0) {
+            list.innerHTML = `<div style="text-align: center; color: var(--text-muted); font-size: 11px; padding: 10px;">No debate records available.</div>`;
+            return;
+        }
+        
+        allSandboxDebates.forEach(debate => {
+            const item = document.createElement('div');
+            item.className = 'history-item';
+            
+            let scoreClass = 'score-low';
+            if (debate.score >= 80) {
+                scoreClass = 'score-high';
+            } else if (debate.score >= 60) {
+                scoreClass = 'score-mid';
+            }
+            
+            item.innerHTML = `
+                <span class="history-item-concept" title="${debate.concept}">${debate.concept}</span>
+                <span class="history-item-score ${scoreClass}">${debate.score}%</span>
+            `;
+            
+            item.addEventListener('click', () => {
+                displayCompletedDebate(debate);
+            });
+            
+            list.appendChild(item);
+        });
+    }
+
+    function displayCompletedDebate(debate) {
+        if (!elements.sandboxDebateStream || !elements.sandboxVerdictBox) return;
+        
+        const stream = elements.sandboxDebateStream;
+        stream.innerHTML = '';
+        
+        debate.turns.forEach(turn => {
+            const bubble = document.createElement('div');
+            bubble.className = `sandbox-bubble ${turn.agent}`;
+            
+            const header = document.createElement('div');
+            header.className = 'sandbox-bubble-header';
+            header.innerHTML = `
+                <span>${turn.agent === 'caveman' ? 'Grog' : (turn.agent === 'oracle' ? 'The Oracle' : 'Skeptical Student')}</span>
+                <span class="sandbox-bubble-role">${turn.role}</span>
+            `;
+            
+            const text = document.createElement('div');
+            text.className = 'sandbox-bubble-text';
+            text.innerHTML = compileMarkdownToHTML(turn.text);
+            
+            bubble.appendChild(header);
+            bubble.appendChild(text);
+            stream.appendChild(bubble);
+        });
+        
+        stream.scrollTop = stream.scrollHeight;
+        updateSandboxGauge(debate.score);
+        elements.sandboxVerdictBox.textContent = debate.verdict;
+    }
+
+    function updateSandboxGauge(score) {
+        if (!elements.sandboxGaugeFill || !elements.sandboxScoreValue) return;
+        
+        const targetOffset = 264 - (264 * score) / 100;
+        elements.sandboxGaugeFill.style.strokeDashoffset = targetOffset;
+        
+        let color = 'var(--status-rejected)';
+        if (score >= 80) {
+            color = 'var(--status-verified)';
+        } else if (score >= 60) {
+            color = 'var(--status-theoretical)';
+        }
+        elements.sandboxGaugeFill.style.stroke = color;
+        
+        const currentVal = parseInt(elements.sandboxScoreValue.textContent) || 0;
+        const duration = 1000;
+        const startTime = performance.now();
+        
+        function animateCount(timestamp) {
+            const elapsed = timestamp - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            const easeProgress = progress * (2 - progress);
+            const val = Math.floor(currentVal + (score - currentVal) * easeProgress);
+            elements.sandboxScoreValue.textContent = val;
+            
+            if (progress < 1) {
+                requestAnimationFrame(animateCount);
+            } else {
+                elements.sandboxScoreValue.textContent = score;
+            }
+        }
+        requestAnimationFrame(animateCount);
+    }
+
+    function generateMockDebate(concept) {
+        const conceptLower = concept.toLowerCase();
+        const timestamp = new Date().toISOString();
+        
+        if (conceptLower.includes('entanglement')) {
+            return {
+                id: `debate_${Date.now()}`,
+                concept: "Quantum Entanglement",
+                timestamp: timestamp,
+                score: 88,
+                verdict: "Quantum Entanglement is mathematically indisputable and experimentally verified, yet continues to defy primitive spatial common sense.",
+                turns: [
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: "Today we tackle Quantum Entanglement. How can two subatomic particles, separated by light-years, instantly coordinate their states? This seems to violate Einstein's speed limit of light. Grog, Oracle, state your positions!"
+                    },
+                    {
+                        agent: "caveman",
+                        role: "Grog the Caveman",
+                        text: "UG! Grog look at moon. Grog throw rock. Rock fly, hit tree. That make sense! Cause and effect have touch! But Oracle talk about 'spooky action'. Two stones, one in Grog cave, one in other tribe cave. Oracle say if Grog turn stone over, other stone turn over instantly! GROG SAY CRAZY! No touch, no rope, no fire smoke between them. Grog think Oracle make big trick with invisible magic!"
+                    },
+                    {
+                        agent: "oracle",
+                        role: "The Transcendent Oracle",
+                        text: "Grog, thy senses are bound by the heavy friction of the earth. In the deeper fabric of reality, space is not a dividing void, but an emergent projection. The two particles are represented by a single, non-separable quantum wave function: $\\Psi_{AB} = \\frac{1}{\\sqrt{2}} (|0\\rangle_A |1\\rangle_B - |1\\rangle_A |0\\rangle_B)$. When we measure particle A, the state vector collapses instantly across all space. No signal travels *through* space, because at the level of the quantum state, space does not exist."
+                    },
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: "Fascinating. Grog rejects it because there is no mechanical medium—no rope or physical touch. But Oracle, your math is elegant, yet how do we verify this without falling into local hidden variables? How do we know the particles didn't just agree on their states beforehand, like a pair of shoes pre-packaged in left and right boxes? Grog, how can you explain Bell's Inequality experiments with just rocks?"
+                    },
+                    {
+                        agent: "caveman",
+                        role: "Grog the Caveman",
+                        text: "GROG NO LIKE hidden boxes! If Grog put left shoe in one bag, right shoe in other bag. Send one to chief, keep one. Grog open bag, see left shoe. Grog know chief bag have right shoe instantly! But that because shoe was *already* left shoe! No magic spooky spin change! Oracle say shoe is both left and right until Grog look. Grog say shoe is shoe! Measurement just show what was already there!"
+                    },
+                    {
+                        agent: "oracle",
+                        role: "The Transcendent Oracle",
+                        text: "Ah, Grog, but the shoes of thy analogy are classical. John Stewart Bell proved that if the universe were simple pre-packaged shoes, the correlations under different measurement angles could never exceed a strict limit: $S \\le 2$. Yet, the light of our lasers measuring entangled photons reveals a value of $S = 2\\sqrt{2} \\approx 2.828$. This violates Bell's inequality, proving that the states were truly undecided—entangled in a cosmic superposition—until measured. Thy primitive realism is mathematically dead."
+                    },
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: "Unbelievable. The Bell test violations of local realism are experimentally solid, which refutes Grog's pre-packaged shoe theory. Superposition is real, and the correlation is stronger than any classical system can explain. Yet, because no information can be sent faster than light, General Relativity remains safe. Our final consensus: Entanglement is mathematically robust and experimentally proven, yet physically incomprehensible to macroscopic beings."
+                    }
+                ]
+            };
+        } else if (conceptLower.includes('gravity') || conceptLower.includes('mond') || conceptLower.includes('dark matter')) {
+            return {
+                id: `debate_${Date.now()}`,
+                concept: "MOND vs Cold Dark Matter",
+                timestamp: timestamp,
+                score: 65,
+                verdict: "Modified Newtonian Gravity (MOND) explains galactic rotation curves without invisible matter, but lacks general relativistic consistency and cosmological scaling.",
+                turns: [
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: "Today we debate galactic rotation curves. Galaxies spin so fast their outer stars should fly off into space, yet they hold together. Is there an invisible halo of 'Dark Matter' pulling them, or is our formula for gravity wrong at low accelerations? Grog, Oracle, bring forth your arguments!"
+                    },
+                    {
+                        agent: "caveman",
+                        role: "Grog the Caveman",
+                        text: "UG! Grog throw rock. Heavy rock fall fast. Grog swing rock on vine. If Grog swing rock super fast, vine snap, rock fly into river! Galaxies are big spinning rocks on vine. If stars spin too fast, gravity vine must be stronger, or stars fly away! Grog look into sky—no see extra heavy stuff. Grog think gravity vine just pull harder when swing gets lazy at edge! Why make up invisible ghosts like 'dark matter' when gravity formula just need tiny bend? 🪨"
+                    },
+                    {
+                        agent: "oracle",
+                        role: "The Transcendent Oracle",
+                        text: "Grog, thy intuition of the vine is noble, but thy gravity model is incomplete. Galaxies are bound by the invisible. We propose Cold Dark Matter (CDM), a non-baryonic particle species that does not interact with the electromagnetic spectrum. The rotation curve flatlines because outer stars reside inside a massive spherical dark halo, where mass scales linearly with radius: $M(r) \\propto r$. This preserves Einstein's general relativity: $G_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu}$, where $T_{\\mu\\nu}$ includes this unseen energy density."
+                    },
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: "A classic impasse. Grog modifies Newton's laws (MOND) using an acceleration constant $a_0 \\approx 1.2 \\times 10^{-10} \\text{ m/s}^2$ to fit rotation curves beautifully without invisible particles. Oracle invokes an invisible, undetected matter field to save General Relativity. But Oracle, we have searched for WIMPs and axions for decades in deep mines and found nothing! And Grog, how does your MOND explain the Bullet Cluster collision, where the gravitational lensing maps are offset from visible gas?"
+                    },
+                    {
+                        agent: "caveman",
+                        role: "Grog the Caveman",
+                        text: "GROG WATCH bullet cluster! Gas collide, hot gas get stuck in middle like sticky mud. But gravity lens still keep going on sides! Grog admit: that hard to explain if gravity only follow mud! It seem gravity pulling toward *something* invisible that flew right through. Grog scratch head. Maybe dark matter is real heavy dust we cannot burn. But Grog still hate inventing particles that never hit Grog's underground traps!"
+                    },
+                    {
+                        agent: "oracle",
+                        role: "The Transcendent Oracle",
+                        text: "Indeed, the Bullet Cluster is the graveyard of pure baryonic gravity modifications. The separation of the lensing potential from the dissipative gas is the direct empirical footprint of collisionless Dark Matter. While thy laboratory traps remain silent, the gravitational lensing profile $\\theta_E = \\frac{4GM}{c^2 D_L}$ maps the cosmic skeleton perfectly. We must persevere in particle synthesis."
+                    },
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: "The Bullet Cluster indeed presents a massive hurdle for modified gravity, as gravitational lensing points to a collisionless mass source separate from visible gas. However, CDM's lack of direct laboratory detection and its 'cuspy halo' issues keep the debate alive. Our verdict: Dark Matter remains the leading cosmological paradigm with a solid 65% score, but remains theoretical until a physical particle is captured in a detector."
+                    }
+                ]
+            };
+        } else if (conceptLower.includes('inflation') || conceptLower.includes('cosmology')) {
+            return {
+                id: `debate_${Date.now()}`,
+                concept: "Cosmic Inflation",
+                timestamp: timestamp,
+                score: 72,
+                verdict: "Cosmic Inflation solves flatness and monopole problems with grand mathematical elegance, but its lack of direct primordial gravitational wave evidence keeps it partially theoretical.",
+                turns: [
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: "Today we probe the early cosmos: Cosmic Inflation. It claims that a fraction of a second after the Big Bang, the universe underwent an exponential expansion, growing by a factor of $10^{26}$ or more in $10^{-32}$ seconds. What triggered this? Grog, Oracle, defend your models!"
+                    },
+                    {
+                        agent: "caveman",
+                        role: "Grog the Caveman",
+                        text: "UG! Grog look at flat field. Plain and smooth. Grog understand why field flat—it just ground! But Oracle say ground was once tiny, then blow up like giant puff-ball! If Grog blow fire-breath into clay pot, pot break! Pot not grow smooth and nice. Grog say if universe blow up that fast, everything should tear apart! Where is inflation-spirit now? Grog look, but only see quiet night sky. No blowing, no inflating. Grog say: if cannot see inflation-wind blow today, it just myth!"
+                    },
+                    {
+                        agent: "oracle",
+                        role: "The Transcendent Oracle",
+                        text: "Primal tracker, thy pot explodes because its materials possess chemical tension. But the inflaton is a scalar field $\\phi$ moving down a flat potential energy density $V(\\phi)$. This field drives an exponential Hubble expansion $a(t) = a_0 e^{Ht}$, where $H^2 \\approx \\frac{8\\pi G}{3} V(\\phi)$. This rapid stretching dilutes magnetic monopoles and flattens cosmic curvature $\\Omega \\to 1$, explaining why thy eyes see a flat horizon. The inflation-wind is not a myth; its quantum fluctuations are the very seeds of galaxies, written as $\\mathcal{P}_{\\mathcal{R}}(k) \\approx \\frac{H^2}{8\\pi^2 M_{Pl}^2 \\epsilon}$."
+                    },
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: "The inflaton field resolves the horizon and flatness problems, yet we cannot directly detect the inflaton particle. Grog demands immediate observations. But Oracle, there is a signature: primordial gravitational waves should leave B-mode polarizations in the Cosmic Microwave Background (CMB). Yet, our telescopes like BICEP and Planck have only seen dust! How do you justify inflation without primordial B-modes? Grog, does Grog see any seeds in the sky?"
+                    },
+                    {
+                        agent: "caveman",
+                        role: "Grog the Caveman",
+                        text: "GROG SEE stars! Stars are like glowing coals of forest fire. 🪵 Grog know coal comes from wood. If Oracle say stars came from tiny quantum seed-shivers, Grog want to see the shiver! CMB is just cold background glow. Grog think cold glow is just ashes of old cosmic campfire. Grog not see B-mode polar-shapes. Show Grog real shiver-wave, or Grog say: 'Big Oracle just make up scalar-magic to cover Big Bang gap!'"
+                    },
+                    {
+                        agent: "oracle",
+                        role: "The Transcendent Oracle",
+                        text: "The ash of the cosmic campfire is indeed the CMB, Grog. Yet, inside those ashes, we measure the temperature fluctuations $\\frac{\\Delta T}{T} \\approx 10^{-5}$, which exhibit a nearly scale-invariant power spectrum $n_s = 0.965 \\pm 0.004$, exactly as predicted by our slow-roll parameter $\\eta$. Primordial gravitational waves indeed remain elusive, as the tensor-to-scalar ratio is bounded by $r < 0.036$. We await the CMB-S4 and LiteBIRD observatories to measure the tensor perturbations $h_{\\mu\\nu}$. Thy campfire was lit by the quantum shivers of the cosmos."
+                    },
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: "A spectacular synthesis! Grog's 'ashes' are the precise thermal fluctuations of the CMB. The slow-roll spectral index $n_s \\approx 0.965$ is one of the most successful predictions in modern astrophysics, confirming the quantum origin of structure. However, because $r$ is extremely small and we have not found B-modes, inflation remains a leading paradigm (72%) but is not yet fully sealed. Grog's healthy skepticism is justified, yet Oracle's mathematical fit is stunning."
+                    }
+                ]
+            };
+        } else {
+            return {
+                id: `debate_${Date.now()}`,
+                concept: concept,
+                timestamp: timestamp,
+                score: 75,
+                verdict: `Theoretical exploration of ${concept} reveals a strong mathematical framework with promising, yet incomplete empirical confirmation.`,
+                turns: [
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: `Today we examine ${concept}. We seek to bridge the gap between Grog's direct empirical observations and the Oracle's mathematical equations. Let us begin!`
+                    },
+                    {
+                        agent: "caveman",
+                        role: "Grog the Caveman",
+                        text: `UG! Grog look at ${concept}. Grog look for fire, rock, and smoke. If Grog cannot burn it, smell it, or hit it with club, Grog very skeptical! How does this touch Grog's everyday hunting life? 🪨`
+                    },
+                    {
+                        agent: "oracle",
+                        role: "The Transcendent Oracle",
+                        text: `Greetings, explorer. ${concept} represents a beautiful, symmetric coordinate field of the cosmos. Mathematically, it is described by unified field tensor transformations $\\mathbf{T}_{\\mu\\nu}$ that exist far beyond Grog's immediate sensory horizon. It is a necessary structure of mathematical consistency and gauge invariance.`
+                    },
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: `The Oracle claims mathematical necessity, while Grog demands physical contact. Let us push deeper: Oracle, what is the direct, verifiable evidence for this field? Grog, how do you explain the subtle perturbations that your simple rock mechanics cannot account for?`
+                    },
+                    {
+                        agent: "caveman",
+                        role: "Grog the Caveman",
+                        text: `Grog know that simple rock path can bend. If wind blow, rock bend. Grog understand there are invisible winds! If ${concept} is just a cosmic wind pulling on stars, Grog can accept it. But don't tell Grog it exists in ten extra dimensions Grog cannot climb! 🦴`
+                    },
+                    {
+                        agent: "oracle",
+                        role: "The Transcendent Oracle",
+                        text: `The invisible winds of Grog are but vector fields. Indeed, we verify this through precise cosmic microwave background measurements and micro-perturbations in particle decays. Symmetries must preserve gauge invariance under localized phase rotations $\\psi \\to e^{i\\alpha(x)}\\psi$.`
+                    },
+                    {
+                        agent: "grill_student",
+                        role: "The Skeptical Student Explorer",
+                        text: `Both perspectives hold a piece of the truth. Grog's 'cosmic wind' is an elegant analogy for field force effects, while the Oracle's gauge symmetries provide the structural backbone. ${concept} stands as a vital framework, balancing empirical grounding with theoretical elegance.`
+                    }
+                ]
+            };
+        }
+    }
+
+    async function runSandboxDebate(concept) {
+        if (isSandboxDebateRunning) return;
+        
+        isSandboxDebateRunning = true;
+        elements.btnSandboxStart.disabled = true;
+        elements.btnSandboxStart.classList.add('disabled');
+        elements.btnSandboxStart.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Running...`;
+        
+        updateSandboxGauge(0);
+        elements.sandboxVerdictBox.innerHTML = `<span class="pulse-dot dot-theoretical"></span> Debate in progress. Agents are formulating epistemics...`;
+        
+        const stream = elements.sandboxDebateStream;
+        stream.innerHTML = '';
+        
+        // Prioritize actual LLM-generated debate from our logged runs (newest first)
+        let debate = [...allSandboxDebates].reverse().find(d => d.concept && d.concept.toLowerCase() === concept.toLowerCase());
+        if (!debate) {
+            debate = generateMockDebate(concept);
+        }
+        const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+        
+        for (let i = 0; i < debate.turns.length; i++) {
+            const turn = debate.turns[i];
+            
+            const typingBubble = document.createElement('div');
+            typingBubble.className = `sandbox-bubble ${turn.agent}`;
+            
+            const header = document.createElement('div');
+            header.className = 'sandbox-bubble-header';
+            header.innerHTML = `
+                <span>${turn.agent === 'caveman' ? 'Grog' : (turn.agent === 'oracle' ? 'The Oracle' : 'Skeptical Student')}</span>
+                <span class="sandbox-bubble-role">${turn.role}</span>
+            `;
+            
+            const textContainer = document.createElement('div');
+            textContainer.className = 'sandbox-bubble-text';
+            textContainer.innerHTML = `
+                <div class="typing-indicator">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            `;
+            
+            typingBubble.appendChild(header);
+            typingBubble.appendChild(textContainer);
+            stream.appendChild(typingBubble);
+            
+            stream.scrollTop = stream.scrollHeight;
+            
+            await sleep(1800);
+            
+            textContainer.innerHTML = compileMarkdownToHTML(turn.text);
+            stream.scrollTop = stream.scrollHeight;
+            
+            const wordCount = turn.text.split(/\s+/).length;
+            const readDelay = Math.min(3000, Math.max(1000, wordCount * 50));
+            if (i < debate.turns.length - 1) {
+                await sleep(readDelay);
+            }
+        }
+        
+        updateSandboxGauge(debate.score);
+        elements.sandboxVerdictBox.textContent = debate.verdict;
+        
+        const telemetryEvent = {
+            id: `telemetry_${Date.now()}`,
+            event_type: "skeptic_sandbox_debate",
+            stage: "sandbox_arena",
+            concept: debate.concept,
+            timestamp: new Date().toISOString(),
+            status: "APPROVED",
+            message: `Debate Completed on '${debate.concept}': Score ${debate.score}% - '${debate.verdict}'`
+        };
+        
+        allTelemetryEvents.unshift(telemetryEvent);
+        allSandboxDebates.push(debate);
+        
+        renderSandboxHistory();
+        updateChronologicalState();
+        
+        elements.btnSandboxStart.disabled = false;
+        elements.btnSandboxStart.classList.remove('disabled');
+        elements.btnSandboxStart.innerHTML = `<i class="fa-solid fa-play"></i> Initiate Debate`;
+        isSandboxDebateRunning = false;
     }
 
     // Launch parallel ingestion pipeline

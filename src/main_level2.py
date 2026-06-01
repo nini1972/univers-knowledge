@@ -1,7 +1,14 @@
+import sys
 import os
+from pathlib import Path
+# Ensure virtual environment site-packages are loaded for AppLocker/policy compliance
+VENV_SITE_PACKAGES = Path(__file__).resolve().parent.parent / ".venv" / "Lib" / "site-packages"
+if VENV_SITE_PACKAGES.exists():
+    import site
+    site.addsitedir(str(VENV_SITE_PACKAGES))
+
 import re
 import json
-from pathlib import Path
 from dotenv import load_dotenv
 from crewai import Crew, Process
 
@@ -396,6 +403,16 @@ def main():
             duration_seconds=time.time() - step3_start, 
             metadata={"status": "success", "output_location": output_location}
         )
+
+        try:
+            print("--- STEP 4: Skeptic Sandbox Debate (Caveman & Oracle Integration) ---")
+            sandbox_script = Path(__file__).resolve().parent / "skeptic_sandbox.py"
+            import subprocess
+            import sys
+            subprocess.run([sys.executable, str(sandbox_script), concept_name], check=True)
+        except Exception as e:
+            print(f"Warning: Failed to run Skeptic Sandbox debate: {e}")
+
 
 if __name__ == "__main__":
     main()
