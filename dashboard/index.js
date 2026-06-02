@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         linksByKey: new Map(),
         simulation: {
             alpha: 1.0,
-            repulsion: 2200,      // soft neighbor repulsion
+            repulsion: 3500,      // soft neighbor repulsion
             linkStrength: 0.025,   // spring link attraction
             damping: 0.82         // friction to settle positions smoothly
         }
@@ -1445,15 +1445,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const canvas = elements.networkCanvas;
         const width = canvas ? canvas.clientWidth : 900;
         const height = canvas ? canvas.clientHeight : 520;
-        const gravityStrength = 0.035;
+        const gravityStrength = 0.006; // Softer vertical pull allows orbital/spring forces to form natural circular clusters
+        const centerX = width / 2;
         
         nodes.forEach(node => {
             const zone = getLevelZone(node.level, width, height);
             const targetY = (zone.yMin + zone.yMax) / 2;
             
-            // Pull vertically toward level preferred bands
+            // Pull vertically toward level preferred bands (much softer than before)
             const dy = targetY - node.y;
             node.vy += dy * gravityStrength;
+
+            // Gentle horizontal gravity toward the center to keep the network beautifully centered
+            const dx = centerX - node.x;
+            node.vx += dx * 0.0025;
         });
     }
 
@@ -1479,10 +1484,53 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function applyAmbientMotion(nodes) {
+        // 1. Slow breathing cycle
         nodes.forEach(node => {
             node.pulse += 0.012; // slow breathing cycle
-            node.x += Math.sin(node.pulse) * 0.08;
-            node.y += Math.cos(node.pulse * 0.7) * 0.08;
+            node.x += Math.sin(node.pulse) * 0.05;
+            node.y += Math.cos(node.pulse * 0.7) * 0.05;
+        });
+
+        // 2. Slow majestic orbital circulation for Level 2 nodes around their connected Level 1 parent nodes
+        graphLinks.forEach(link => {
+            const s = link.source;
+            const t = link.target;
+            if (!s || !t || !s.visible || !t.visible) return;
+
+            let parent = null;
+            let child = null;
+
+            if (s.level === 1 && t.level === 2) {
+                parent = s;
+                child = t;
+            } else if (t.level === 1 && s.level === 2) {
+                parent = t;
+                child = s;
+            }
+
+            if (parent && child && child !== draggedNode) {
+                const dx = child.x - parent.x;
+                const dy = child.y - parent.y;
+                const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+
+                // Tangential vector (-dy, dx) normalized
+                const tx = -dy / dist;
+                const ty = dx / dist;
+
+                // Slow rotation speed (pixels per frame)
+                const orbitSpeed = 0.16; 
+                
+                // Determine direction based on character hash of IDs to keep it stable but varied
+                const keyStr = String(parent.id) + String(child.id);
+                let charSum = 0;
+                for (let idx = 0; idx < keyStr.length; idx++) {
+                    charSum += keyStr.charCodeAt(idx);
+                }
+                const dir = charSum % 2 === 0 ? 1 : -1;
+
+                child.x += tx * dir * orbitSpeed;
+                child.y += ty * dir * orbitSpeed;
+            }
         });
     }
 
