@@ -490,8 +490,8 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.contentView.style.display = 'none';
             elements.welcomeView.style.display = 'flex';
         } else if (activeConceptId) {
-            // Re-select active concept to dynamically reload updated status styles
-            selectConcept(activeConceptId);
+            // Re-select active concept to dynamically reload updated status styles (preserving the current active tab perspective)
+            selectConcept(activeConceptId, true);
         }
 
         // Update active network graph coordinates if perspective is active
@@ -733,11 +733,11 @@ document.addEventListener('DOMContentLoaded', () => {
        📬 CONCEPT SPECIFIC VIEWER & DATA ROUTING
        ========================================================================== */
 
-    function selectConcept(id) {
+    function selectConcept(id, preservePerspective = false) {
         activeConceptId = id;
         
-        // Ensure we are in Codex mode to read content
-        if (activePerspective !== 'codex') {
+        // Ensure we are in Codex mode to read content unless explicitly requested to preserve current perspective (e.g. during timeline play)
+        if (!preservePerspective && activePerspective !== 'codex') {
             switchPerspective('codex');
         }
 
