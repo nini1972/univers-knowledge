@@ -9,29 +9,31 @@ graph TD
     classDef theoretical fill:#241d08,stroke:#f59e0b,stroke-width:2px,color:#fef3c7;
 
     %% Concept Nodes
-    cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
-    cp_violation["CP Violation"]:::theoretical
-    dark_matter["Dark Matter"]:::theoretical
-    electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
-    general_relativity["General Relativity"]:::verified
-    inflationary_cosmology["Inflationary Cosmology"]:::theoretical
-    matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
-    neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
-    neutrino_oscillations["Neutrino Oscillations"]:::theoretical
-    neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
-    quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
-    quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
-    quantum_mechanics["Quantum Mechanics"]:::verified
-    standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
     the_higgs_boson["The Higgs Boson"]:::theoretical
-    beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
-    beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
-    emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
-    mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
-    modified_gravity_vs_dark_matter_paradigm_debate["Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate"]:::theoretical
-    quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
+    quantum_mechanics["Quantum Mechanics"]:::verified
+    dark_matter["Dark Matter"]:::theoretical
+    neutrino_oscillations["Neutrino Oscillations"]:::theoretical
+    quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
+    cp_violation["CP Violation"]:::theoretical
+    standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
+    general_relativity["General Relativity"]:::verified
+    cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
+    quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
+    quantum_entanglement["Quantum Entanglement"]:::verified
+    matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
+    electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
+    neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
+    inflationary_cosmology["Inflationary Cosmology"]:::theoretical
+    neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
+    supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
+    modified_gravity_vs_dark_matter_paradigm_debate["Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate"]:::theoretical
+    beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
+    emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
+    beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
+    mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
+    quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
 
     %% Connections & Prerequisites
 ```
@@ -50,6 +52,7 @@ graph TD
 - [Neutrino Physics and Its Implications for Cosmology](level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md) [VERIFIED]
 - [Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications](level_1_fundamental_physics/quantum_chromodynamics_qcd.md) [THEORETICAL]
 - [Quantum Electrodynamics (QED) — Verified Knowledge Summary](level_1_fundamental_physics/quantum_electrodynamics_qed.md) [THEORETICAL]
+- [Quantum Entanglement](level_1_fundamental_physics/quantum_entanglement.md) [VERIFIED]
 - [Quantum Mechanics](level_1_fundamental_physics/quantum_mechanics.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
@@ -64,6 +67,7 @@ graph TD
 - [Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation](level_2_advanced_frameworks/quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation.md) [THEORETICAL]
 - [Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity](level_2_advanced_frameworks/quantum_gravity_debate.md) [THEORETICAL]
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
+- [Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics.md) [THEORETICAL]
 
 ## Level 3: Cosmology and Astrophysics
 
