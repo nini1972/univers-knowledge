@@ -35,6 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let animationFrameId = null;
     let particleFlows = []; // Micro-animation data flows
 
+    const graphState = {
+        nodesById: new Map(),
+        linksByKey: new Map(),
+        simulation: {
+            alpha: 1.0,
+            repulsion: 2200,      // soft neighbor repulsion
+            linkStrength: 0.025,   // spring link attraction
+            damping: 0.82         // friction to settle positions smoothly
+        }
+    };
+
     // Timeline Playback Scrubber Engine State
     let currentAttemptIndex = 0;
     let isPlaying = false;
@@ -485,7 +496,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update active network graph coordinates if perspective is active
         if (activePerspective === 'network') {
-            buildNetworkGraphModel();
+            syncGraphWithConcepts(concepts);
+            graphState.simulation.alpha = 0.35; // gently reheat on timeline change
         }
     }
 
@@ -1171,126 +1183,428 @@ document.addEventListener('DOMContentLoaded', () => {
        🕸️ INTERACTIVE GRAVITY CONSTELLATION GRAPH (CANVAS ORBIT PHYSICS)
        ========================================================================== */
 
-    function buildNetworkGraphModel() {
-        graphNodes = [];
-        graphLinks = [];
+    function computeNodeRadius(concept) {
+        const relationsCount = concept.related ? concept.related.length : 0;
+        const relationBoost = Math.min(relationsCount * 1.5, 12);
         
-        const canvas = elements.networkCanvas;
-        const width = canvas.clientWidth;
-        const height = canvas.clientHeight;
+        let latestBoost = 0;
+        if (evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, concept.title)) {
+            latestBoost = 6;
+        }
+        
+        const base = 18 + relationBoost + latestBoost;
+        return Math.max(18, Math.min(base, 32));
+    }
 
-        // Group nodes by level to assign bases
-        const levelsGroup = { 1: [], 2: [], 3: [] };
-        concepts.forEach(c => {
-            const isVerified = c.status === 'VERIFIED' || c.status === '[VERIFIED]';
-            const node = {
-                id: c.id,
-                title: c.title,
-                level: c.level,
-                status: isVerified ? 'VERIFIED' : 'THEORETICAL',
-                // Coordinates
-                x: 0,
-                y: 0,
-                vx: 0,
-                vy: 0,
-                r: 22,
-                pulse: 0
+    function getLevelZone(level, width, height) {
+        const h = height || 520;
+        const w = width || 900;
+        const padX = 100;
+        
+        if (level === 1) {
+            return {
+                xMin: padX,
+                xMax: w - padX,
+                yMin: h * 0.10,
+                yMax: h * 0.30
             };
-            
-            if (levelsGroup[c.level]) {
-                levelsGroup[c.level].push(node);
-            }
-            graphNodes.push(node);
-        });
-
-        // Distribute bases evenly across levels rows
-        Object.keys(levelsGroup).forEach(lvlStr => {
-            const lvl = parseInt(lvlStr);
-            const nodes = levelsGroup[lvl];
-            const rowY = height * (lvl === 1 ? 0.22 : (lvl === 2 ? 0.50 : 0.78));
-            
-            nodes.forEach((node, idx) => {
-                const step = width / (nodes.length + 1);
-                node.baseX = step * (idx + 1);
-                node.baseY = rowY;
-                node.x = node.baseX;
-                node.y = node.baseY;
-            });
-        });
-
-        // Configure slow Zero-G drifting and orbital physics angles
-        graphNodes.forEach(node => {
-            node.orbitParent = findGravitationalParent(node);
-            if (node.orbitParent) {
-                node.orbitAngle = Math.random() * Math.PI * 2;
-                node.orbitSpeed = 0.0012 + Math.random() * 0.0014;
-                if (node.level === 2) {
-                    node.orbitRadius = 110 + Math.random() * 30;
-                } else { // Level 3
-                    node.orbitRadius = 60 + Math.random() * 20;
-                }
-            } else {
-                node.driftAngle = Math.random() * Math.PI * 2;
-                node.driftSpeed = 0.0015 + Math.random() * 0.0015;
-                node.driftRadiusX = 15;
-                node.driftRadiusY = 10;
-            }
-        });
-
-        // Compile link references
-        concepts.forEach(c => {
-            if (c.related && c.related.length > 0) {
-                c.related.forEach(relId => {
-                    const sourceNode = graphNodes.find(n => n.id === c.id);
-                    const targetNode = graphNodes.find(n => n.id === relId);
-                    
-                    if (sourceNode && targetNode) {
-                        graphLinks.push({
-                            source: sourceNode,
-                            target: targetNode,
-                            pulseOffset: Math.random() * Math.PI
-                        });
-                    }
-                });
-            }
-        });
-
-        // Initialize micro transmission data particles along links
-        particleFlows = [];
-        for (let i = 0; i < graphLinks.length; i++) {
-            if (Math.random() > 0.4) {
-                particleFlows.push({
-                    linkIndex: i,
-                    progress: Math.random(),
-                    speed: 0.004 + Math.random() * 0.006
-                });
-            }
+        } else if (level === 2) {
+            return {
+                xMin: padX,
+                xMax: w - padX,
+                yMin: h * 0.40,
+                yMax: h * 0.60
+            };
+        } else {
+            return {
+                xMin: padX,
+                xMax: w - padX,
+                yMin: h * 0.68,
+                yMax: h * 0.88
+            };
         }
     }
 
-    function findGravitationalParent(node) {
-        if (node.level <= 1) return null; // Level 1 nodes never orbit; they are central gravity suns
+    function findBestSeedParent(concept) {
+        if (!concept.related || concept.related.length === 0) return null;
         
-        const concept = concepts.find(c => c.id === node.id);
-        if (!concept || !concept.related || concept.related.length === 0) return null;
-        
-        // Find a related node of a strictly lower level
         for (let relId of concept.related) {
-            const relNode = graphNodes.find(n => n.id === relId);
-            if (relNode && relNode.level < node.level) {
+            const relNode = graphState.nodesById.get(relId);
+            if (relNode && relNode.visible && relNode.level < concept.level) {
                 return relNode;
             }
         }
         
-        // Fallback: look for ANY related Level 1 node in the graph, as Level 1s are the heavy centers
         for (let relId of concept.related) {
-            const relNode = graphNodes.find(n => n.id === relId && n.level === 1);
-            if (relNode) return relNode;
+            const relNode = graphState.nodesById.get(relId);
+            if (relNode && relNode.visible) {
+                return relNode;
+            }
         }
         
-        // Final fallback: orbit the first active Level 1 node in the graph, or null (drift independently)
-        const firstLvl1 = graphNodes.find(n => n.level === 1);
-        return firstLvl1 || null;
+        return null;
+    }
+
+    function seedNodePosition(concept) {
+        const canvas = elements.networkCanvas;
+        const width = canvas ? canvas.clientWidth : 900;
+        const height = canvas ? canvas.clientHeight : 520;
+        
+        const parentNode = findBestSeedParent(concept);
+        if (parentNode) {
+            return {
+                x: parentNode.x + (Math.random() - 0.5) * 60,
+                y: parentNode.y + (Math.random() - 0.5) * 60
+            };
+        }
+        
+        const visibleRelated = [];
+        if (concept.related) {
+            concept.related.forEach(relId => {
+                const node = graphState.nodesById.get(relId);
+                if (node && node.visible) {
+                    visibleRelated.push(node);
+                }
+            });
+        }
+        if (visibleRelated.length > 0) {
+            let sumX = 0, sumY = 0;
+            visibleRelated.forEach(n => { sumX += n.x; sumY += n.y; });
+            return {
+                x: sumX / visibleRelated.length + (Math.random() - 0.5) * 40,
+                y: sumY / visibleRelated.length + (Math.random() - 0.5) * 40
+            };
+        }
+        
+        const zone = getLevelZone(concept.level, width, height);
+        return {
+            x: (zone.xMin + zone.xMax) / 2 + (Math.random() - 0.5) * (width * 0.2),
+            y: (zone.yMin + zone.yMax) / 2 + (Math.random() - 0.5) * 30
+        };
+    }
+
+    function syncGraphWithConcepts(conceptsList) {
+        const canvas = elements.networkCanvas;
+        if (!canvas) return;
+        
+        const activeIds = new Set(conceptsList.map(c => c.id));
+        
+        conceptsList.forEach(c => {
+            const isVerified = c.status === 'VERIFIED' || c.status === '[VERIFIED]';
+            
+            if (graphState.nodesById.has(c.id)) {
+                const node = graphState.nodesById.get(c.id);
+                node.visible = true;
+                node.status = isVerified ? 'VERIFIED' : 'THEORETICAL';
+                node.r = computeNodeRadius(c);
+            } else {
+                const seed = seedNodePosition(c);
+                const node = {
+                    id: c.id,
+                    title: c.title,
+                    level: c.level,
+                    status: isVerified ? 'VERIFIED' : 'THEORETICAL',
+                    x: seed.x,
+                    y: seed.y,
+                    vx: (Math.random() - 0.5) * 2,
+                    vy: (Math.random() - 0.5) * 2,
+                    r: computeNodeRadius(c),
+                    pulse: Math.random() * Math.PI,
+                    visible: true
+                };
+                graphState.nodesById.set(c.id, node);
+            }
+        });
+        
+        graphState.nodesById.forEach((node, id) => {
+            if (!activeIds.has(id)) {
+                node.visible = false;
+            }
+        });
+        
+        graphNodes = Array.from(graphState.nodesById.values()).filter(n => n.visible);
+        
+        syncGraphLinks(conceptsList);
+    }
+
+    function syncGraphLinks(conceptsList) {
+        const activeKeys = new Set();
+        
+        conceptsList.forEach(c => {
+            if (c.related && c.related.length > 0) {
+                c.related.forEach(relId => {
+                    const hasSource = graphState.nodesById.has(c.id);
+                    const hasTarget = graphState.nodesById.has(relId);
+                    
+                    if (hasSource && hasTarget) {
+                        const key = c.id < relId ? `${c.id}->${relId}` : `${relId}->${c.id}`;
+                        activeKeys.add(key);
+                        
+                        if (!graphState.linksByKey.has(key)) {
+                            const sourceNode = graphState.nodesById.get(c.id);
+                            const targetNode = graphState.nodesById.get(relId);
+                            
+                            const newLink = {
+                                key,
+                                source: sourceNode,
+                                target: targetNode,
+                                pulseOffset: Math.random() * Math.PI,
+                                visible: true
+                            };
+                            graphState.linksByKey.set(key, newLink);
+                        } else {
+                            graphState.linksByKey.get(key).visible = true;
+                        }
+                    }
+                });
+            }
+        });
+        
+        graphState.linksByKey.forEach((link, key) => {
+            if (!activeKeys.has(key)) {
+                link.visible = false;
+            } else {
+                if (!link.source.visible || !link.target.visible) {
+                    link.visible = false;
+                }
+            }
+        });
+        
+        graphLinks = Array.from(graphState.linksByKey.values()).filter(l => l.visible);
+        
+        // Sync particle flows dynamically
+        particleFlows = particleFlows.filter(flow => flow.link && flow.link.visible);
+        
+        graphLinks.forEach(link => {
+            const hasParticle = particleFlows.some(flow => flow.link === link);
+            if (!hasParticle && Math.random() > 0.5) {
+                particleFlows.push({
+                    link: link,
+                    progress: Math.random(),
+                    speed: 0.004 + Math.random() * 0.006
+                });
+            }
+        });
+    }
+
+    /* ==========================================================================
+       🧬 2D GRAPH FORCE PHYSICS, COLLISION RESOLUTION, & LOD VIEWPORT ENGINE
+       ========================================================================== */
+
+    function applyRepulsionForces(nodes) {
+        const repulsion = graphState.simulation.repulsion;
+        for (let i = 0; i < nodes.length; i++) {
+            const nodeA = nodes[i];
+            for (let j = i + 1; j < nodes.length; j++) {
+                const nodeB = nodes[j];
+                const dx = nodeB.x - nodeA.x;
+                const dy = nodeB.y - nodeA.y;
+                const distSq = dx * dx + dy * dy + 1; // prevent division by zero
+                const dist = Math.sqrt(distSq);
+                
+                if (dist < 320) { // limit repulsion reach for performance
+                    const force = repulsion / distSq;
+                    const fx = (dx / dist) * force;
+                    const fy = (dy / dist) * force;
+                    
+                    nodeA.vx -= fx;
+                    nodeA.vy -= fy;
+                    nodeB.vx += fx;
+                    nodeB.vy += fy;
+                }
+            }
+        }
+    }
+
+    function applyLinkForces(links) {
+        const strength = graphState.simulation.linkStrength;
+        const restLength = 110; // desired distance between connected concepts
+        
+        links.forEach(link => {
+            const s = link.source;
+            const t = link.target;
+            
+            const dx = t.x - s.x;
+            const dy = t.y - s.y;
+            const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+            
+            const displacement = dist - restLength;
+            const force = displacement * strength;
+            
+            const fx = (dx / dist) * force;
+            const fy = (dy / dist) * force;
+            
+            s.vx += fx;
+            s.vy += fy;
+            t.vx -= fx;
+            t.vy -= fy;
+        });
+    }
+
+    function applyClusterForces(nodes) {
+        const canvas = elements.networkCanvas;
+        const width = canvas ? canvas.clientWidth : 900;
+        const height = canvas ? canvas.clientHeight : 520;
+        const gravityStrength = 0.035;
+        
+        nodes.forEach(node => {
+            const zone = getLevelZone(node.level, width, height);
+            const targetY = (zone.yMin + zone.yMax) / 2;
+            
+            // Pull vertically toward level preferred bands
+            const dy = targetY - node.y;
+            node.vy += dy * gravityStrength;
+        });
+    }
+
+    function applyBoundaryForces(nodes) {
+        const canvas = elements.networkCanvas;
+        const width = canvas ? canvas.clientWidth : 900;
+        const height = canvas ? canvas.clientHeight : 520;
+        const borderPadding = 50;
+        
+        nodes.forEach(node => {
+            if (node.x < borderPadding) {
+                node.vx += (borderPadding - node.x) * 0.08;
+            } else if (node.x > width - borderPadding) {
+                node.vx -= (node.x - (width - borderPadding)) * 0.08;
+            }
+            
+            if (node.y < borderPadding) {
+                node.vy += (borderPadding - node.y) * 0.08;
+            } else if (node.y > height - borderPadding) {
+                node.vy -= (node.y - (height - borderPadding)) * 0.08;
+            }
+        });
+    }
+
+    function applyAmbientMotion(nodes) {
+        nodes.forEach(node => {
+            node.pulse += 0.012; // slow breathing cycle
+            node.x += Math.sin(node.pulse) * 0.08;
+            node.y += Math.cos(node.pulse * 0.7) * 0.08;
+        });
+    }
+
+    function integrateNodeMotion(nodes) {
+        const damping = graphState.simulation.damping;
+        const alpha = graphState.simulation.alpha;
+        
+        nodes.forEach(node => {
+            if (node === draggedNode) return;
+            
+            node.x += node.vx * alpha;
+            node.y += node.vy * alpha;
+            
+            node.vx *= damping;
+            node.vy *= damping;
+        });
+        
+        // Cooling schedule
+        if (graphState.simulation.alpha > 0.04) {
+            graphState.simulation.alpha *= 0.985;
+        } else {
+            graphState.simulation.alpha = 0.04; // maintain baseline reactive alpha
+        }
+    }
+
+    function resolveNodeCollisions(nodes) {
+        const padding = 12; // space between circles
+        for (let i = 0; i < nodes.length; i++) {
+            const nodeA = nodes[i];
+            for (let j = i + 1; j < nodes.length; j++) {
+                const nodeB = nodes[j];
+                const dx = nodeB.x - nodeA.x;
+                const dy = nodeB.y - nodeA.y;
+                const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+                
+                const minDist = nodeA.r + nodeB.r + padding;
+                if (dist < minDist) {
+                    const overlap = minDist - dist;
+                    const ox = (dx / dist) * overlap * 0.5;
+                    const oy = (dy / dist) * overlap * 0.5;
+                    
+                    if (nodeA !== draggedNode) {
+                        nodeA.x -= ox;
+                        nodeA.y -= oy;
+                    }
+                    if (nodeB !== draggedNode) {
+                        nodeB.x += ox;
+                        nodeB.y += oy;
+                    }
+                }
+            }
+        }
+    }
+
+    function isNodeInViewport(node, width, height) {
+        const screenX = node.x * canvasZoom + canvasOffset.x;
+        const screenY = node.y * canvasZoom + canvasOffset.y;
+        const padding = node.r * canvasZoom + 100; // expanded bounds checking
+        return (
+            screenX >= -padding &&
+            screenX <= width + padding &&
+            screenY >= -padding &&
+            screenY <= height + padding
+        );
+    }
+
+    function isLinkInViewport(link, width, height) {
+        return isNodeInViewport(link.source, width, height) || isNodeInViewport(link.target, width, height);
+    }
+
+    function getAdaptiveLabelMode() {
+        const nodeCount = graphNodes.length;
+        if (canvasZoom < 0.7) {
+            return 'minimal';
+        }
+        if (nodeCount > 35) {
+            return canvasZoom > 1.4 ? 'compact' : 'minimal';
+        } else if (nodeCount > 15) {
+            return canvasZoom > 1.1 ? 'expanded' : 'compact';
+        }
+        return canvasZoom > 0.85 ? 'expanded' : 'compact';
+    }
+
+    function truncateLabel(title, maxLen) {
+        if (title.length <= maxLen) return title;
+        return title.substring(0, maxLen) + '...';
+    }
+
+    function drawNodeLabel(ctx, node, mode) {
+        const isHovered = hoveredNode && hoveredNode.id === node.id;
+        const isSelected = activeConceptId === node.id;
+        const isLatestRun = evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, node.title);
+        const isHighPriority = isHovered || isSelected || isLatestRun;
+        
+        if (mode === 'minimal' && !isHighPriority) {
+            return;
+        }
+        
+        ctx.save();
+        ctx.fillStyle = isHighPriority ? 'var(--text-primary)' : 'var(--text-secondary)';
+        ctx.font = isHighPriority ? 'bold 12px var(--font-sans)' : '500 10.5px var(--font-sans)';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        
+        const titleText = node.title;
+        if (mode === 'compact' && !isHighPriority) {
+            const label = truncateLabel(titleText, 14);
+            ctx.fillText(label, node.x, node.y + node.r + 10);
+        } else {
+            if (titleText.length > 18) {
+                const words = titleText.split(' ');
+                const mid = Math.ceil(words.length / 2);
+                const line1 = words.slice(0, mid).join(' ');
+                const line2 = words.slice(mid).join(' ');
+                
+                ctx.fillText(line1, node.x, node.y + node.r + 10);
+                ctx.fillText(line2, node.x, node.y + node.r + 22);
+            } else {
+                ctx.fillText(titleText, node.x, node.y + node.r + 10);
+            }
+        }
+        ctx.restore();
     }
 
     function applyGravityWarp(gx, gy) {
@@ -1361,7 +1675,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             ctx.stroke();
         }
-        
         ctx.restore();
     }
 
@@ -1385,6 +1698,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 1. Draw connection lines
         graphLinks.forEach((link, idx) => {
+            if (!isLinkInViewport(link, width, height)) return;
+
             const s = link.source;
             const t = link.target;
             
@@ -1418,8 +1733,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 2. Draw particle flows along links (Micro-animations)
         particleFlows.forEach(flow => {
-            const link = graphLinks[flow.linkIndex];
-            if (!link) return;
+            const link = flow.link;
+            if (!link || !link.visible) return;
+            
+            // Always update progress so the animation flows naturally offscreen
+            flow.progress += flow.speed;
+            if (flow.progress > 1.0) {
+                flow.progress = 0;
+            }
+            
+            // Viewport culling for particle rendering
+            if (!isLinkInViewport(link, width, height)) return;
             
             const s = link.source;
             const t = link.target;
@@ -1431,6 +1755,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const x = (1-p)*(1-p)*s.x + 2*(1-p)*p*midX + p*p*t.x;
             const y = (1-p)*(1-p)*s.y + 2*(1-p)*p*midY + p*p*t.y;
             
+            ctx.save();
             ctx.beginPath();
             ctx.arc(x, y, 3, 0, Math.PI * 2);
             
@@ -1439,17 +1764,18 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.shadowColor = ctx.fillStyle;
             ctx.shadowBlur = 10;
             ctx.fill();
-            
-            flow.progress += flow.speed;
-            if (flow.progress > 1.0) {
-                flow.progress = 0;
-            }
+            ctx.restore();
         });
         
         ctx.shadowBlur = 0; // Reset shadows
 
+        // Get adaptive label mode once per frame
+        const labelMode = getAdaptiveLabelMode();
+
         // 3. Draw Nodes circles
         graphNodes.forEach(node => {
+            if (!isNodeInViewport(node, width, height)) return;
+
             const isLatestRun = evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, node.title);
             const isVerified = node.status === 'VERIFIED';
             const isHovered = hoveredNode && hoveredNode.id === node.id;
@@ -1460,6 +1786,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Coronary halo ring glows
             if (isLatestRun || isHovered) {
+                ctx.save();
                 ctx.beginPath();
                 ctx.arc(node.x, node.y, pulseRadius + 6, 0, Math.PI * 2);
                 ctx.fillStyle = isLatestRun ? 'rgba(0, 242, 254, 0.08)' : (isVerified ? 'rgba(0, 230, 118, 0.06)' : 'rgba(255, 179, 0, 0.06)');
@@ -1467,9 +1794,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.lineWidth = 1;
                 ctx.fill();
                 ctx.stroke();
+                ctx.restore();
             }
 
             // Central Node Circle
+            ctx.save();
             ctx.beginPath();
             ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
             ctx.fillStyle = isVerified ? 'hsl(152, 90%, 8%)' : 'hsl(38, 95%, 6%)';
@@ -1480,31 +1809,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.shadowBlur = isHovered ? 12 : 6;
             ctx.fill();
             ctx.stroke();
-            ctx.shadowBlur = 0; // Clear shadows
+            ctx.restore();
 
             // Node Level indicator text inside node
+            ctx.save();
             ctx.fillStyle = 'hsla(210, 25%, 98%, 0.9)';
             ctx.font = 'bold 11px var(--font-mono)';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillText(`L${node.level}`, node.x, node.y);
+            ctx.restore();
 
-            // Level Text label below node
-            ctx.fillStyle = isHovered ? 'var(--text-primary)' : 'var(--text-secondary)';
-            ctx.font = isHovered ? 'bold 11.5px var(--font-sans)' : '500 10.5px var(--font-sans)';
-            
-            const titleText = node.title;
-            if (titleText.length > 18) {
-                const words = titleText.split(' ');
-                const mid = Math.ceil(words.length / 2);
-                const line1 = words.slice(0, mid).join(' ');
-                const line2 = words.slice(mid).join(' ');
-                
-                ctx.fillText(line1, node.x, node.y + node.r + 14);
-                ctx.fillText(line2, node.x, node.y + node.r + 26);
-            } else {
-                ctx.fillText(titleText, node.x, node.y + node.r + 15);
-            }
+            // Adaptive Label rendering
+            drawNodeLabel(ctx, node, labelMode);
         });
 
         ctx.restore();
@@ -1524,25 +1841,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const ctx = canvas.getContext('2d');
         ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
 
-        // Build vectors map
-        buildNetworkGraphModel();
+        // Synchronize and seed coordinates on graph load
+        syncGraphWithConcepts(concepts);
+        graphState.simulation.alpha = 1.0; // energetically layout elements on load
 
         // Run animations
         const tick = () => {
-            // Update orbital positions dynamically on frame updates
-            graphNodes.forEach(node => {
-                if (node === draggedNode) return;
-                
-                if (node.orbitParent) {
-                    node.orbitAngle += node.orbitSpeed;
-                    node.x = node.orbitParent.x + Math.cos(node.orbitAngle) * node.orbitRadius;
-                    node.y = node.orbitParent.y + Math.sin(node.orbitAngle) * node.orbitRadius;
-                } else if (node.driftAngle !== undefined) {
-                    node.driftAngle += node.driftSpeed;
-                    node.x = node.baseX + Math.sin(node.driftAngle) * node.driftRadiusX;
-                    node.y = node.baseY + Math.cos(node.driftAngle) * node.driftRadiusY;
-                }
-            });
+            // Apply physics force pipeline
+            applyRepulsionForces(graphNodes);
+            applyLinkForces(graphLinks);
+            applyClusterForces(graphNodes);
+            applyBoundaryForces(graphNodes);
+            resolveNodeCollisions(graphNodes);
+            integrateNodeMotion(graphNodes);
+            applyAmbientMotion(graphNodes);
 
             drawNetworkGraph();
             animationFrameId = requestAnimationFrame(tick);
@@ -1859,11 +2171,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (draggedNode) {
                 draggedNode.x = canvasX;
                 draggedNode.y = canvasY;
-                // If dragged, reset its drift center coordinates dynamically
-                if (!draggedNode.orbitParent) {
-                    draggedNode.baseX = canvasX;
-                    draggedNode.baseY = canvasY;
-                }
+                // Reheat physics loop for organic real-time adjustments around the dragged node
+                graphState.simulation.alpha = Math.max(graphState.simulation.alpha, 0.45);
                 return;
             }
 
