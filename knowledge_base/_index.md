@@ -23,6 +23,7 @@ graph TD
     quantum_entanglement["Quantum Entanglement"]:::verified
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
     electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
+    neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
     neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
@@ -33,6 +34,7 @@ graph TD
     emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
+    quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
@@ -50,6 +52,7 @@ graph TD
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md) [THEORETICAL]
+- [Neutrino Decoupling and Its Effects on Early Universe Cosmology](level_1_fundamental_physics/neutrino_decoupling_and_its_effects_on_early_universe_cosmology.md) [VERIFIED]
 - [Neutrino Mass and its Role in Particle Physics and Cosmology](level_1_fundamental_physics/neutrino_mass_and_its_role_in_particle_physics_and_cosmology.md) [VERIFIED]
 - [Neutrino Oscillations](level_1_fundamental_physics/neutrino_oscillations.md) [THEORETICAL]
 - [Neutrino Physics and Its Implications for Cosmology](level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md) [VERIFIED]
@@ -68,6 +71,7 @@ graph TD
 - [Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md) [THEORETICAL]
 - [Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate](level_2_advanced_frameworks/modified_gravity_vs_dark_matter_paradigm_debate.md) [THEORETICAL]
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
+- [Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem](level_2_advanced_frameworks/quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem.md) [THEORETICAL]
 - [Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation](level_2_advanced_frameworks/quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation.md) [THEORETICAL]
 - [Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity](level_2_advanced_frameworks/quantum_gravity_debate.md) [THEORETICAL]
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
