@@ -26,6 +26,7 @@ graph TD
     neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
     planck_epoch_and_the_initial_conditions_for_the_universe["Planck Epoch and the Initial Conditions for the Universe"]:::theoretical
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
+    neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
     neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
@@ -33,6 +34,7 @@ graph TD
     modified_gravity_vs_dark_matter_paradigm_debate["Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
     emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
+    axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
     quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
@@ -55,6 +57,7 @@ graph TD
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md) [THEORETICAL]
 - [Neutrino Decoupling and Its Effects on Early Universe Cosmology](level_1_fundamental_physics/neutrino_decoupling_and_its_effects_on_early_universe_cosmology.md) [VERIFIED]
+- [Neutrino Flavor Physics](level_1_fundamental_physics/neutrino_flavor_physics.md) [VERIFIED]
 - [Neutrino Mass and its Role in Particle Physics and Cosmology](level_1_fundamental_physics/neutrino_mass_and_its_role_in_particle_physics_and_cosmology.md) [VERIFIED]
 - [Neutrino Oscillations](level_1_fundamental_physics/neutrino_oscillations.md) [THEORETICAL]
 - [Neutrino Physics and Its Implications for Cosmology](level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md) [VERIFIED]
@@ -68,6 +71,7 @@ graph TD
 
 ## Level 2: Advanced Frameworks
 
+- [Axion Dark Matter vs WIMPs in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_wimps_in_explaining_dark_matter.md) [THEORETICAL]
 - [Beyond the Standard Model Solutions to the Hierarchy Problem](level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md) [THEORETICAL]
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
