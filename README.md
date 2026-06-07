@@ -65,6 +65,14 @@ cd src
 python main.py
 ```
 
+### 4. Serve the Project Locally
+In a separate terminal from the project root, serve the repository over HTTP:
+```powershell
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000/dashboard/` in your browser.
+
 ## 📂 Data Structure
 The generated learning artifacts are preserved cleanly in the `knowledge_base` directory:
 - `_index.md`: The running table of contents.

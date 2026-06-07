@@ -2,3 +2,12 @@
 
 #Ignore vscode AI rules
 .github\instructions\codacy.instructions.md
+.env
+
+# Local scratch utilities and cache
+scratch/*.py
+scratch/__pycache__/
+
+# Python cache artifacts
+**/__pycache__/
+*.py[cod]
