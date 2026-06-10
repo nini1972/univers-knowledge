@@ -21,6 +21,7 @@ graph TD
     cp_violation["CP Violation"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
     general_relativity["General Relativity"]:::verified
+    quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
     cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
     quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
     quantum_entanglement["Quantum Entanglement"]:::verified
@@ -39,6 +40,7 @@ graph TD
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
     emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
+    asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
     quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
@@ -73,6 +75,7 @@ graph TD
 - [Quantum Electrodynamics (QED) — Verified Knowledge Summary](level_1_fundamental_physics/quantum_electrodynamics_qed.md) [THEORETICAL]
 - [Quantum Entanglement](level_1_fundamental_physics/quantum_entanglement.md) [VERIFIED]
 - [Quantum Field Theory](level_1_fundamental_physics/quantum_field_theory.md) [VERIFIED]
+- [Quantum Measurement Problem](level_1_fundamental_physics/quantum_measurement_problem.md) [THEORETICAL]
 - [Quantum Mechanics](level_1_fundamental_physics/quantum_mechanics.md) [VERIFIED]
 - [Quantum Vacuum Fluctuations and Zero-Point Energy](level_1_fundamental_physics/quantum_vacuum_fluctuations_and_zeropoint_energy.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
@@ -80,6 +83,7 @@ graph TD
 
 ## Level 2: Advanced Frameworks
 
+- [Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Axion Dark Matter vs WIMPs in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_wimps_in_explaining_dark_matter.md) [THEORETICAL]
 - [Beyond the Standard Model Solutions to the Hierarchy Problem](level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md) [THEORETICAL]
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]
