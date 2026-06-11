@@ -9,6 +9,7 @@ graph TD
     classDef theoretical fill:#241d08,stroke:#f59e0b,stroke-width:2px,color:#fef3c7;
 
     %% Concept Nodes
+    neutrino_mass_generation_mechanisms["Neutrino Mass Generation Mechanisms"]:::verified
     the_higgs_boson["The Higgs Boson"]:::theoretical
     cosmological_constant_and_dark_energy["Cosmological Constant and Dark Energy"]:::verified
     quantum_mechanics["Quantum Mechanics"]:::verified
@@ -40,6 +41,7 @@ graph TD
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
     emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
+    debate_on_modified_gravity_theories_teves_vs_fr_gravity["Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity"]:::verified
     asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
@@ -68,6 +70,7 @@ graph TD
 - [Neutrino Decoupling and Its Effects on Early Universe Cosmology](level_1_fundamental_physics/neutrino_decoupling_and_its_effects_on_early_universe_cosmology.md) [VERIFIED]
 - [Neutrino Flavor Physics](level_1_fundamental_physics/neutrino_flavor_physics.md) [VERIFIED]
 - [Neutrino Mass and its Role in Particle Physics and Cosmology](level_1_fundamental_physics/neutrino_mass_and_its_role_in_particle_physics_and_cosmology.md) [VERIFIED]
+- [Neutrino Mass Generation Mechanisms](level_1_fundamental_physics/neutrino_mass_generation_mechanisms.md) [VERIFIED]
 - [Neutrino Oscillations](level_1_fundamental_physics/neutrino_oscillations.md) [THEORETICAL]
 - [Neutrino Physics and Its Implications for Cosmology](level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md) [VERIFIED]
 - [Planck Epoch and the Initial Conditions for the Universe](level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md) [THEORETICAL]
@@ -88,6 +91,7 @@ graph TD
 - [Beyond the Standard Model Solutions to the Hierarchy Problem](level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md) [THEORETICAL]
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
+- [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
