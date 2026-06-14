@@ -17,6 +17,7 @@ graph TD
     quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
     standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
+    big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
     neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
@@ -46,6 +47,7 @@ graph TD
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
+    falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
     debate_on_modified_gravity_theories_teves_vs_fr_gravity["Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity"]:::verified
     quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
     emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
@@ -62,6 +64,7 @@ graph TD
 
 ## Level 1: Fundamental Physics
 
+- [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
@@ -99,6 +102,7 @@ graph TD
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
+- [Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
 - [Massive Gravity versus f(R) Gravity in Modified Gravity Debates](level_2_advanced_frameworks/massive_gravity_versus_fr_gravity_in_modified_gravity_debates.md) [THEORETICAL]
