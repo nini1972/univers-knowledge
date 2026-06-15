@@ -22,6 +22,7 @@ graph TD
     neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
     cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
+    quantum_decoherence["Quantum Decoherence"]:::verified
     general_relativity["General Relativity"]:::verified
     neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
     the_higgs_boson["The Higgs Boson"]:::theoretical
@@ -57,6 +58,7 @@ graph TD
     quantum_loop_gravity_vs_string_field_theory_debate["Quantum Loop Gravity vs String Field Theory Debate"]:::theoretical
     asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
+    quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
     massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
 
     %% Connections & Prerequisites
@@ -83,6 +85,7 @@ graph TD
 - [Neutrino Physics and Its Implications for Cosmology](level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md) [VERIFIED]
 - [Planck Epoch and the Initial Conditions for the Universe](level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md) [THEORETICAL]
 - [Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications](level_1_fundamental_physics/quantum_chromodynamics_qcd.md) [THEORETICAL]
+- [Quantum Decoherence](level_1_fundamental_physics/quantum_decoherence.md) [VERIFIED]
 - [Quantum Electrodynamics (QED) — Verified Knowledge Summary](level_1_fundamental_physics/quantum_electrodynamics_qed.md) [THEORETICAL]
 - [Quantum Entanglement](level_1_fundamental_physics/quantum_entanglement.md) [VERIFIED]
 - [Quantum Field Theory](level_1_fundamental_physics/quantum_field_theory.md) [VERIFIED]
@@ -110,6 +113,7 @@ graph TD
 - [Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate](level_2_advanced_frameworks/modified_gravity_vs_dark_matter_paradigm_debate.md) [THEORETICAL]
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
 - [Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem](level_2_advanced_frameworks/quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem.md) [THEORETICAL]
+- [Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory](level_2_advanced_frameworks/quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory.md) [THEORETICAL]
 - [Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation](level_2_advanced_frameworks/quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation.md) [THEORETICAL]
 - [Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity](level_2_advanced_frameworks/quantum_gravity_debate.md) [THEORETICAL]
 - [Quantum Loop Gravity vs String Field Theory Debate](level_2_advanced_frameworks/quantum_loop_gravity_vs_string_field_theory_debate.md) [THEORETICAL]
