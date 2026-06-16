@@ -132,7 +132,7 @@ jobs:
             COUNT=$(find knowledge_base/images -maxdepth 1 -type f | wc -l)
             echo "Generated image file count: ${COUNT}"
             echo "Latest image files:"
-            ls -lt knowledge_base/images | head -n 10
+            ls -lt knowledge_base/images | sed -n '1,10p'
           else
             echo "No knowledge_base/images directory found."
           fi
