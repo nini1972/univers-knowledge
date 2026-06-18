@@ -35,6 +35,7 @@ graph TD
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
     cp_violation["CP Violation"]:::theoretical
     quantum_entanglement["Quantum Entanglement"]:::verified
+    neutrino_anomalies_and_sterile_neutrino_hypothesis["Neutrino Anomalies and Sterile Neutrino Hypothesis"]:::theoretical
     neutrino_mass_generation_mechanisms["Neutrino Mass Generation Mechanisms"]:::verified
     neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
     electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
@@ -44,6 +45,7 @@ graph TD
     holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
+    entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena["Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"]:::theoretical
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
     superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
@@ -80,6 +82,7 @@ graph TD
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md) [THEORETICAL]
+- [Neutrino Anomalies and Sterile Neutrino Hypothesis](level_1_fundamental_physics/neutrino_anomalies_and_sterile_neutrino_hypothesis.md) [THEORETICAL]
 - [Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology](level_1_fundamental_physics/neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology.md) [VERIFIED]
 - [Neutrino Decoupling and Its Effects on Early Universe Cosmology](level_1_fundamental_physics/neutrino_decoupling_and_its_effects_on_early_universe_cosmology.md) [VERIFIED]
 - [Neutrino Flavor Physics](level_1_fundamental_physics/neutrino_flavor_physics.md) [VERIFIED]
@@ -111,6 +114,7 @@ graph TD
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
+- [Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena](level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md) [THEORETICAL]
 - [Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md) [THEORETICAL]
 - [Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
