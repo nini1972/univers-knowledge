@@ -13,6 +13,7 @@ graph TD
     cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
     quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
     planck_epoch_and_the_initial_conditions_for_the_universe["Planck Epoch and the Initial Conditions for the Universe"]:::theoretical
+    neutrino_mass_hierarchies_and_their_implications["Neutrino Mass Hierarchies and Their Implications"]:::theoretical
     quantum_mechanics["Quantum Mechanics"]:::verified
     quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
@@ -64,6 +65,7 @@ graph TD
     quantum_loop_gravity_vs_string_field_theory_debate["Quantum Loop Gravity vs String Field Theory Debate"]:::theoretical
     asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
+    supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics["Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics"]:::theoretical
     quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
     massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
 
@@ -88,6 +90,7 @@ graph TD
 - [Neutrino Flavor Physics](level_1_fundamental_physics/neutrino_flavor_physics.md) [VERIFIED]
 - [Neutrino Mass and its Role in Particle Physics and Cosmology](level_1_fundamental_physics/neutrino_mass_and_its_role_in_particle_physics_and_cosmology.md) [VERIFIED]
 - [Neutrino Mass Generation Mechanisms](level_1_fundamental_physics/neutrino_mass_generation_mechanisms.md) [VERIFIED]
+- [Neutrino Mass Hierarchies and Their Implications](level_1_fundamental_physics/neutrino_mass_hierarchies_and_their_implications.md) [THEORETICAL]
 - [Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models](level_1_fundamental_physics/neutrino_mass_mechanisms_beyond_standard_seesaw_models.md) [THEORETICAL]
 - [Neutrino Oscillations](level_1_fundamental_physics/neutrino_oscillations.md) [THEORETICAL]
 - [Neutrino Physics and Its Implications for Cosmology](level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md) [VERIFIED]
@@ -131,6 +134,7 @@ graph TD
 - [String Theory versus Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics](level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md) [THEORETICAL]
+- [Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics.md) [THEORETICAL]
 
 ## Level 3: Cosmology and Astrophysics
