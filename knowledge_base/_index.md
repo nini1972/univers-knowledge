@@ -19,6 +19,7 @@ graph TD
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
     standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
     big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
+    quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
     neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
@@ -53,6 +54,7 @@ graph TD
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
+    ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
@@ -103,6 +105,7 @@ graph TD
 - [Quantum Field Theory](level_1_fundamental_physics/quantum_field_theory.md) [VERIFIED]
 - [Quantum Measurement Problem](level_1_fundamental_physics/quantum_measurement_problem.md) [THEORETICAL]
 - [Quantum Mechanics](level_1_fundamental_physics/quantum_mechanics.md) [VERIFIED]
+- [Quantum Vacuum and Spacetime Structure](level_1_fundamental_physics/quantum_vacuum_and_spacetime_structure.md) [THEORETICAL]
 - [Quantum Vacuum Fluctuations and Zero-Point Energy](level_1_fundamental_physics/quantum_vacuum_fluctuations_and_zeropoint_energy.md) [VERIFIED]
 - [Standard Model Fermion Mass Hierarchies and Mixing Matrices](level_1_fundamental_physics/standard_model_fermion_mass_hierarchies_and_mixing_matrices.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
@@ -116,6 +119,7 @@ graph TD
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
+- [Ekpyrotic Universe Model versus Inflationary Cosmology Debate](level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md) [VERIFIED]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
 - [Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena](level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md) [THEORETICAL]
 - [Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md) [THEORETICAL]
