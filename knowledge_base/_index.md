@@ -52,6 +52,7 @@ graph TD
     superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
+    supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
@@ -140,6 +141,7 @@ graph TD
 - [Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics](level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md) [THEORETICAL]
 - [Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics.md) [THEORETICAL]
+- [Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking](level_2_advanced_frameworks/supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking.md) [THEORETICAL]
 
 ## Level 3: Cosmology and Astrophysics
 
