@@ -24,6 +24,7 @@ graph TD
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
     neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
+    neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
     cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
     quantum_decoherence["Quantum Decoherence"]:::verified
     general_relativity["General Relativity"]:::verified
@@ -97,6 +98,7 @@ graph TD
 - [Neutrino Mass Generation Mechanisms](level_1_fundamental_physics/neutrino_mass_generation_mechanisms.md) [VERIFIED]
 - [Neutrino Mass Hierarchies and Their Implications](level_1_fundamental_physics/neutrino_mass_hierarchies_and_their_implications.md) [THEORETICAL]
 - [Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models](level_1_fundamental_physics/neutrino_mass_mechanisms_beyond_standard_seesaw_models.md) [THEORETICAL]
+- [Neutrino Oscillation Mechanisms](level_1_fundamental_physics/neutrino_oscillation_mechanisms.md) [VERIFIED]
 - [Neutrino Oscillations](level_1_fundamental_physics/neutrino_oscillations.md) [THEORETICAL]
 - [Neutrino Physics and Its Implications for Cosmology](level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md) [VERIFIED]
 - [Neutrinoless Double Beta Decay](level_1_fundamental_physics/neutrinoless_double_beta_decay.md) [THEORETICAL]
