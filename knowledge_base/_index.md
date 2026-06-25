@@ -15,6 +15,7 @@ graph TD
     quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
     planck_epoch_and_the_initial_conditions_for_the_universe["Planck Epoch and the Initial Conditions for the Universe"]:::theoretical
     neutrino_mass_hierarchies_and_their_implications["Neutrino Mass Hierarchies and Their Implications"]:::theoretical
+    standard_model_gauge_symmetries_and_their_spontaneous_breaking["Standard Model Gauge Symmetries and Their Spontaneous Breaking"]:::verified
     quantum_mechanics["Quantum Mechanics"]:::verified
     quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
     neutrino_cp_violation["Neutrino CP Violation"]:::theoretical
@@ -49,6 +50,7 @@ graph TD
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
+    modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
     entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena["Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"]:::theoretical
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
@@ -116,6 +118,7 @@ graph TD
 - [Quantum Vacuum and Spacetime Structure](level_1_fundamental_physics/quantum_vacuum_and_spacetime_structure.md) [THEORETICAL]
 - [Quantum Vacuum Fluctuations and Zero-Point Energy](level_1_fundamental_physics/quantum_vacuum_fluctuations_and_zeropoint_energy.md) [VERIFIED]
 - [Standard Model Fermion Mass Hierarchies and Mixing Matrices](level_1_fundamental_physics/standard_model_fermion_mass_hierarchies_and_mixing_matrices.md) [VERIFIED]
+- [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 
@@ -136,6 +139,7 @@ graph TD
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
 - [Massive Gravity versus f(R) Gravity in Modified Gravity Debates](level_2_advanced_frameworks/massive_gravity_versus_fr_gravity_in_modified_gravity_debates.md) [THEORETICAL]
 - [Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md) [THEORETICAL]
+- [Modified Gravity Theories vs Dark Matter Particle Models Debate](level_2_advanced_frameworks/modified_gravity_theories_vs_dark_matter_particle_models_debate.md) [THEORETICAL]
 - [Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate](level_2_advanced_frameworks/modified_gravity_vs_dark_matter_paradigm_debate.md) [THEORETICAL]
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
 - [Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem](level_2_advanced_frameworks/quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem.md) [THEORETICAL]
