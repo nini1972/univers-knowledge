@@ -44,12 +44,14 @@ graph TD
     quantum_entanglement["Quantum Entanglement"]:::verified
     neutrino_anomalies_and_sterile_neutrino_hypothesis["Neutrino Anomalies and Sterile Neutrino Hypothesis"]:::theoretical
     neutrino_mass_generation_mechanisms["Neutrino Mass Generation Mechanisms"]:::verified
+    neutrino_mass_ordering_and_experimental_determination["Neutrino Mass Ordering and Experimental Determination"]:::verified
     neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
     electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
     neutrinoless_double_beta_decay["Neutrinoless Double Beta Decay"]:::theoretical
     neutrino_oscillations["Neutrino Oscillations"]:::theoretical
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
+    modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
     quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
     modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
@@ -104,6 +106,7 @@ graph TD
 - [Neutrino Mass Generation Mechanisms](level_1_fundamental_physics/neutrino_mass_generation_mechanisms.md) [VERIFIED]
 - [Neutrino Mass Hierarchies and Their Implications](level_1_fundamental_physics/neutrino_mass_hierarchies_and_their_implications.md) [THEORETICAL]
 - [Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models](level_1_fundamental_physics/neutrino_mass_mechanisms_beyond_standard_seesaw_models.md) [THEORETICAL]
+- [Neutrino Mass Ordering and Experimental Determination](level_1_fundamental_physics/neutrino_mass_ordering_and_experimental_determination.md) [VERIFIED]
 - [Neutrino Oscillation Mechanisms](level_1_fundamental_physics/neutrino_oscillation_mechanisms.md) [VERIFIED]
 - [Neutrino Oscillations](level_1_fundamental_physics/neutrino_oscillations.md) [THEORETICAL]
 - [Neutrino Physics and Its Implications for Cosmology](level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md) [VERIFIED]
@@ -144,6 +147,7 @@ graph TD
 - [Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md) [THEORETICAL]
 - [Modified Gravity Theories vs Dark Matter Particle Models Debate](level_2_advanced_frameworks/modified_gravity_theories_vs_dark_matter_particle_models_debate.md) [THEORETICAL]
 - [Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate](level_2_advanced_frameworks/modified_gravity_vs_dark_matter_paradigm_debate.md) [THEORETICAL]
+- [Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves](level_2_advanced_frameworks/modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves.md) [THEORETICAL]
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
 - [Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem](level_2_advanced_frameworks/quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem.md) [THEORETICAL]
 - [Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory](level_2_advanced_frameworks/quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory.md) [THEORETICAL]
