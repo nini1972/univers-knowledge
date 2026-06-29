@@ -32,6 +32,7 @@ graph TD
     quantum_decoherence["Quantum Decoherence"]:::verified
     general_relativity["General Relativity"]:::verified
     neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
+    matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
     neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
     the_higgs_boson["The Higgs Boson"]:::theoretical
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
@@ -78,6 +79,7 @@ graph TD
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     quantum_loop_gravity_vs_string_field_theory_debate["Quantum Loop Gravity vs String Field Theory Debate"]:::theoretical
     asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
+    higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate["Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
     supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics["Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics"]:::theoretical
     supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"]:::theoretical
@@ -100,6 +102,7 @@ graph TD
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Inflationary Reheating Mechanisms](level_1_fundamental_physics/inflationary_reheating_mechanisms.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md) [THEORETICAL]
+- [Matter-Antimatter Asymmetry Mechanisms](level_1_fundamental_physics/matterantimatter_asymmetry_mechanisms.md) [THEORETICAL]
 - [Neutrino Anomalies and Sterile Neutrino Hypothesis](level_1_fundamental_physics/neutrino_anomalies_and_sterile_neutrino_hypothesis.md) [THEORETICAL]
 - [Neutrino CP Violation](level_1_fundamental_physics/neutrino_cp_violation.md) [THEORETICAL]
 - [Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology](level_1_fundamental_physics/neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology.md) [VERIFIED]
@@ -144,6 +147,7 @@ graph TD
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
 - [Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena](level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md) [THEORETICAL]
 - [Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md) [THEORETICAL]
+- [Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate](level_2_advanced_frameworks/higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate.md) [THEORETICAL]
 - [Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
