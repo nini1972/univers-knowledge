@@ -42,6 +42,7 @@ graph TD
     dark_matter["Dark Matter"]:::theoretical
     inflationary_reheating_mechanisms["Inflationary Reheating Mechanisms"]:::theoretical
     cosmological_constant_and_dark_energy["Cosmological Constant and Dark Energy"]:::verified
+    quantum_gravity["Quantum Gravity"]:::theoretical
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
     cp_violation["CP Violation"]:::theoretical
     quantum_entanglement["Quantum Entanglement"]:::verified
@@ -68,6 +69,7 @@ graph TD
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
+    supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate["Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"]:::theoretical
     cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
@@ -127,6 +129,7 @@ graph TD
 - [Quantum Electrodynamics (QED) — Verified Knowledge Summary](level_1_fundamental_physics/quantum_electrodynamics_qed.md) [THEORETICAL]
 - [Quantum Entanglement](level_1_fundamental_physics/quantum_entanglement.md) [VERIFIED]
 - [Quantum Field Theory](level_1_fundamental_physics/quantum_field_theory.md) [VERIFIED]
+- [Quantum Gravity](level_1_fundamental_physics/quantum_gravity.md) [THEORETICAL]
 - [Quantum Measurement Problem](level_1_fundamental_physics/quantum_measurement_problem.md) [THEORETICAL]
 - [Quantum Mechanics](level_1_fundamental_physics/quantum_mechanics.md) [VERIFIED]
 - [Quantum Vacuum and Spacetime Structure](level_1_fundamental_physics/quantum_vacuum_and_spacetime_structure.md) [THEORETICAL]
@@ -170,6 +173,7 @@ graph TD
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics](level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md) [THEORETICAL]
 - [Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics](level_2_advanced_frameworks/superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics.md) [THEORETICAL]
+- [Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate](level_2_advanced_frameworks/supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate.md) [THEORETICAL]
 - [Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking](level_2_advanced_frameworks/supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking.md) [THEORETICAL]
