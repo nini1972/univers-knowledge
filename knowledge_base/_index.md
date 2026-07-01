@@ -19,6 +19,7 @@ graph TD
     quantum_vacuum_polarization["Quantum Vacuum Polarization"]:::verified
     quantum_mechanics["Quantum Mechanics"]:::verified
     quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
+    cosmic_neutrino_background["Cosmic Neutrino Background"]:::theoretical
     neutrino_cp_violation["Neutrino CP Violation"]:::theoretical
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
     standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
@@ -67,6 +68,7 @@ graph TD
     superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
     holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate["Holographic Principle vs Causal Set Theory in Quantum Gravity Debate"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
+    loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate["Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate"]:::theoretical
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
     warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation["Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"]:::theoretical
     supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
@@ -102,6 +104,7 @@ graph TD
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
+- [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
 - [CP Violation](level_1_fundamental_physics/cp_violation.md) [THEORETICAL]
 - [Dark Matter](level_1_fundamental_physics/dark_matter.md) [THEORETICAL]
@@ -163,6 +166,7 @@ graph TD
 - [Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](level_2_advanced_frameworks/holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
+- [Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](level_2_advanced_frameworks/loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
 - [Massive Gravity versus f(R) Gravity in Modified Gravity Debates](level_2_advanced_frameworks/massive_gravity_versus_fr_gravity_in_modified_gravity_debates.md) [THEORETICAL]
 - [Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md) [THEORETICAL]
