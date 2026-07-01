@@ -11,6 +11,10 @@ import re
 import json
 from dotenv import load_dotenv
 from crewai import Crew, Process
+try:
+    from step_logger import make_step_callback
+except ImportError:
+    from src.step_logger import make_step_callback
 
 from agents.universe_agents import UniverseAgents
 from tasks.universe_tasks import UniverseTasks
@@ -155,7 +159,8 @@ def run_level1_flow(next_concept: str):
             agents=[research_student, researcher, math_physicist, skeptic],
             tasks=[research_task, math_task, verify_task, evaluate_task],
             process=Process.sequential,
-            verbose=True
+            verbose=True,
+            step_callback=make_step_callback("evaluation_crew"),
         )
 
         if dry_run:
@@ -273,7 +278,8 @@ def run_level1_flow(next_concept: str):
         agents=final_agents,
         tasks=final_tasks,
         process=Process.sequential,
-        verbose=True
+        verbose=True,
+        step_callback=make_step_callback("final_crew"),
     )
 
     if dry_run:
@@ -353,7 +359,7 @@ def main():
     if pattern_guidance:
         topic_task.description += pattern_guidance
 
-    topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True)
+    topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback("topic_crew"))
 
     missing_prereq = get_last_missing_prerequisite(current_index)
     if missing_prereq:

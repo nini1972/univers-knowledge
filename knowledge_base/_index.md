@@ -52,6 +52,7 @@ graph TD
     neutrino_mass_ordering_and_experimental_determination["Neutrino Mass Ordering and Experimental Determination"]:::verified
     neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
     electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
+    neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics["Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics"]:::verified
     neutrinoless_double_beta_decay["Neutrinoless Double Beta Decay"]:::theoretical
     neutrino_oscillations["Neutrino Oscillations"]:::theoretical
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
@@ -67,6 +68,7 @@ graph TD
     holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate["Holographic Principle vs Causal Set Theory in Quantum Gravity Debate"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
+    warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation["Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"]:::theoretical
     supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
@@ -124,6 +126,7 @@ graph TD
 - [Neutrino Oscillation Mechanisms](level_1_fundamental_physics/neutrino_oscillation_mechanisms.md) [VERIFIED]
 - [Neutrino Oscillations](level_1_fundamental_physics/neutrino_oscillations.md) [THEORETICAL]
 - [Neutrino Physics and Its Implications for Cosmology](level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md) [VERIFIED]
+- [Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics](level_1_fundamental_physics/neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics.md) [VERIFIED]
 - [Neutrinoless Double Beta Decay](level_1_fundamental_physics/neutrinoless_double_beta_decay.md) [THEORETICAL]
 - [Planck Epoch and the Initial Conditions for the Universe](level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md) [THEORETICAL]
 - [Primordial Gravitational Waves](level_1_fundamental_physics/primordial_gravitational_waves.md) [THEORETICAL]
@@ -182,6 +185,7 @@ graph TD
 - [Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking](level_2_advanced_frameworks/supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking](level_2_advanced_frameworks/supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking.md) [THEORETICAL]
+- [Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md) [THEORETICAL]
 
 ## Level 3: Cosmology and Astrophysics
 

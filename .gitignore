@@ -11,3 +11,6 @@ scratch/__pycache__/
 # Python cache artifacts
 **/__pycache__/
 *.py[cod]
+
+# Agent step logs (generated at runtime)
+logs/
