@@ -23,6 +23,7 @@ graph TD
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
     standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
     big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
+    neutrino_lifetime_and_decay_mechanisms["Neutrino Lifetime and Decay Mechanisms"]:::verified
     quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
     neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
@@ -59,6 +60,7 @@ graph TD
     quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
     modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
+    supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration["Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration"]:::verified
     entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena["Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"]:::theoretical
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
     superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
@@ -112,6 +114,7 @@ graph TD
 - [Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology](level_1_fundamental_physics/neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology.md) [VERIFIED]
 - [Neutrino Decoupling and Its Effects on Early Universe Cosmology](level_1_fundamental_physics/neutrino_decoupling_and_its_effects_on_early_universe_cosmology.md) [VERIFIED]
 - [Neutrino Flavor Physics](level_1_fundamental_physics/neutrino_flavor_physics.md) [VERIFIED]
+- [Neutrino Lifetime and Decay Mechanisms](level_1_fundamental_physics/neutrino_lifetime_and_decay_mechanisms.md) [VERIFIED]
 - [Neutrino Mass and its Role in Particle Physics and Cosmology](level_1_fundamental_physics/neutrino_mass_and_its_role_in_particle_physics_and_cosmology.md) [VERIFIED]
 - [Neutrino Mass Generation Mechanisms](level_1_fundamental_physics/neutrino_mass_generation_mechanisms.md) [VERIFIED]
 - [Neutrino Mass Hierarchies and Their Implications](level_1_fundamental_physics/neutrino_mass_hierarchies_and_their_implications.md) [THEORETICAL]
@@ -173,6 +176,7 @@ graph TD
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics](level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md) [THEORETICAL]
 - [Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics](level_2_advanced_frameworks/superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics.md) [THEORETICAL]
+- [Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration](level_2_advanced_frameworks/supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration.md) [VERIFIED]
 - [Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate](level_2_advanced_frameworks/supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate.md) [THEORETICAL]
 - [Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics.md) [THEORETICAL]
