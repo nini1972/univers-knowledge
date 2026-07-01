@@ -1,11 +1,13 @@
 ---
 title: "Neutrino Anomalies and Sterile Neutrino Hypothesis"
-level: 1
+level: "1"
 status: "[THEORETICAL]"
 sources:
   - Multiple independent research reports on neutrino anomalies and sterile neutrino theory
   - Experimental data and analyses from KATRIN, IceCube, and MicroBooNE collaborations
   - Theoretical frameworks including extensions of PMNS mixing matrices and neutrino mass models
+math_status: "[MATH_CONJECTURED]"
+math_score: "1/4"
 ---
 
 # Neutrino Anomalies and Sterile Neutrino Hypothesis
@@ -51,7 +53,7 @@ Where:
 - \(\nu_e, \nu_\mu, \nu_\tau\) represent the three active neutrino flavors.
 - \(\nu_s\) is the sterile neutrino flavor state.
 - \(\nu_1, \nu_2, \nu_3, \nu_4\) are the mass eigenstates.
-  
+
 The oscillation probabilities depend on the elements of this extended mixing matrix and additional mass-squared differences such as \(\Delta m^2_{41}\). The survival and conversion probabilities incorporate these parameters as:
 
 \[
@@ -96,3 +98,124 @@ In conclusion, the sterile neutrino hypothesis remains a well-documented, carefu
 - Reactor Neutrino Anomaly
 - Standard Model Extensions
 - Cosmological Constraints on Neutrinos
+
+## 8. Mathematical Derivation
+
+### Starting Axioms
+- [AXIOM] Neutrinos exist in three active flavor states that mix via the 3x3 PMNS matrix, a unitary matrix describing flavor to mass eigenstate basis transformation.
+- [AXIOM] Extension to include sterile neutrinos introduces additional neutrino states that are singlets under Standard Model gauge interactions (no weak interactions).
+- [AXIOM] Neutrino flavor oscillations arise from mixing between mass eigenstates with different masses, evolving in time with quantum mechanical phase differences.
+- [AXIOM] The total mixing matrix including sterile states remains unitary, extended from 3x3 PMNS matrix to a 4x4 unitary matrix \( U \).
+- [AXIOM] Oscillation probabilities depend on mixing angles, CP phases, and mass-squared differences between mass eigenstates.
+- [AXIOM] The Hamiltonian governing neutrino propagation is Hermitian and includes terms for mass and potential (matter effects neglected here for simplicity).
+
+### Step-by-Step Derivation
+
+**Step 1** [STEP_ASSUMED]: Extend the PMNS matrix from \(3 \times 3\) to \(4 \times 4\) to include one sterile neutrino flavor state:
+\[
+U = \begin{pmatrix}
+U_{e1} & U_{e2} & U_{e3} & U_{e4} \\
+U_{\mu1} & U_{\mu2} & U_{\mu3} & U_{\mu4} \\
+U_{\tau1} & U_{\tau2} & U_{\tau3} & U_{\tau4} \\
+U_{s1} & U_{s2} & U_{s3} & U_{s4}
+\end{pmatrix}
+\]
+This matrix is unitary: \( U U^\dagger = U^\dagger U = I \).
+
+**Step 2** [STEP_ASSUMED]: Define flavor eigenstates \( |\nu_\alpha\rangle \) in terms of mass eigenstates \( |\nu_i\rangle \) by:
+\[
+|\nu_\alpha\rangle = \sum_{i=1}^4 U_{\alpha i}^* |\nu_i\rangle
+\]
+where \(\alpha = e, \mu, \tau, s\).
+
+**Step 3** [STEP_VERIFIED]: The time evolution of mass eigenstates is given by:
+\[
+|\nu_i(t)\rangle = e^{-iE_i t} |\nu_i(0)\rangle \approx e^{-i (m_i^2/2E) t} |\nu_i(0)\rangle
+\]
+using relativistic approximation \(E_i \approx E + \frac{m_i^2}{2E}\).
+
+**Step 4** [STEP_VERIFIED]: The neutrino flavor transition amplitude from flavor \(\alpha\) to \(\beta\) after propagation length \(L\) is:
+\[
+A_{\alpha\to\beta}(L) = \langle \nu_\beta | \nu_\alpha(L) \rangle = \sum_{i=1}^4 U_{\alpha i}^* U_{\beta i} e^{-i \frac{m_i^2 L}{2 E}}
+\]
+
+**Step 5** [STEP_VERIFIED]: The oscillation probability is:
+\[
+P_{\alpha \to \beta}(L,E) = |A_{\alpha\to\beta}(L)|^2 = \delta_{\alpha\beta} - 4 \sum_{i>j} \text{Re}(U_{\alpha i}^* U_{\beta i} U_{\alpha j} U_{\beta j}^*) \sin^2 \left(\frac{\Delta m^2_{ij} L}{4E} \right) + 2 \sum_{i>j} \text{Im}(U_{\alpha i}^* U_{\beta i} U_{\alpha j} U_{\beta j}^*) \sin \left(\frac{\Delta m^2_{ij} L}{2E} \right)
+\]
+where \(\Delta m^2_{ij} = m_i^2 - m_j^2\).
+
+**Step 6** [STEP_ASSUMED]: Introduce new mixing angles and CP phases in the extended \(4 \times 4\) matrix to parametrize the additional sterile neutrino mixing, for example adding \(\theta_{14}, \theta_{24}, \theta_{34}\) and associated CP-violating phases.
+
+**Step 7** [STEP_ASSUMED]: The anomalies in measured neutrino appearance and disappearance rates can be modeled by tuning sterile neutrino parameters \( \theta_{i4} \) and mass splitting \( \Delta m^2_{41} \sim 1 \text{ eV}^2 \), which is larger than the established solar and atmospheric splittings.
+
+**Step 8** [STEP_CONJECTURED]: The sterile neutrino state does not interact weakly (no charged or neutral current interactions), consistent with its sterile nature, thus explaining deficits or excesses in event rates without contradicting established electroweak measurements.
+
+**Step 9** [STEP_CONJECTURED]: The full phenomenological model including sterile neutrinos still faces tensions with experimental data sets, implying that this extension, while explanatory, is not definitively proven.
+
+### Final Result
+\[
+P_{\alpha \to \beta}(L,E) = \delta_{\alpha\beta} - 4 \sum_{i>j} \text{Re}(U_{\alpha i}^* U_{\beta i} U_{\alpha j} U_{\beta j}^*) \sin^2 \left(\frac{\Delta m^2_{ij} L}{4E} \right) + 2 \sum_{i>j} \text{Im}(U_{\alpha i}^* U_{\beta i} U_{\alpha j} U_{\beta j}^*) \sin \left(\frac{\Delta m^2_{ij} L}{2E} \right)
+\]
+where the mixing matrix \(U\) is a \(4 \times 4\) unitary matrix incorporating the sterile neutrino, extending the PMNS matrix.
+
+### Proof Boundary
+| Category         | Count | Interpretation                                     |
+|------------------|-------|---------------------------------------------------|
+| Proven steps     | 3     | Verified quantum mechanical evolution and oscillation formulas (Steps 3-5)               |
+| Assumed steps    | 4     | Introducing extended mixing matrix structure and parametrizations, physical assumptions at phenomenological level (Steps 1,2,6,7)                  |
+| Conjectured steps| 2     | Assumptions about sterile neutrino properties and interpretation vis-a-vis experiments (Steps 8,9) |
+
+### Mathematical Status
+**Neutrino Anomalies And Sterile Neutrino Hypothesis** receives: `[MATH_ASSUMED]`
+
+This status reflects that while the foundational quantum mechanical framework for neutrino oscillations is fully verified, the extension to sterile neutrinos depends on extending the mixing matrix and assuming new physics beyond the Standard Model. These assumptions are theoretically consistent but remain conjectural experimentally. To upgrade the mathematical status, robust experimental verification or a derivation from a more fundamental theory would be required.
+
+## 9. Mathematical Integrity Report
+*(Auto-generated by Math Physicist agent — Tier 1 check)*
+
+**Math Score:** 1/4
+**Math Status:** [MATH_CONJECTURED]
+
+### Equations Extracted
+- `\begin{bmatrix}
+\nu_e \\
+\nu_\mu \\
+\nu_\tau \\
+\nu_s
+\end{bmatrix}
+= U
+\begin{bmatrix}
+\nu_1 \\
+\nu`
+- `P_{\nu_\alpha \rightarrow \nu_\beta} = \delta_{\alpha\beta} - 4\sum_{i>j} \text{Re}(U_{\alpha i} U^*`
+- `\nu_e, \nu_\mu, \nu_\tau`
+- `\nu_s`
+- `\nu_1, \nu_2, \nu_3, \nu_4`
+- `\Delta m^2_{41}`
+
+### Dimensional Consistency
+| Equation | Verdict | Explanation |
+|---|---|---|
+| `\begin{bmatrix}
+\nu_e \\
+\nu_\mu \\
+\nu_\tau \\
+\nu_s
+\end{b` | UNDECIDABLE | Equation pattern not in known database. Requires manual or agent-assisted dimens |
+| `P_{\nu_\alpha \rightarrow \nu_\beta} = \delta_{\alpha\beta} ` | UNDECIDABLE | Equation pattern not in known database. Requires manual or agent-assisted dimens |
+| `\nu_e, \nu_\mu, \nu_\tau` | DIMENSIONLESS | Expression appears to be a scalar/dimensionless quantity or partial expression. |
+| `\nu_s` | DIMENSIONLESS | Expression appears to be a scalar/dimensionless quantity or partial expression. |
+| `\nu_1, \nu_2, \nu_3, \nu_4` | DIMENSIONLESS | Expression appears to be a scalar/dimensionless quantity or partial expression. |
+| `\Delta m^2_{41}` | DIMENSIONLESS | Expression appears to be a scalar/dimensionless quantity or partial expression. |
+
+**Overall:** ALL_UNDECIDABLE
+
+### Topological Analysis
+Not topological — standard physics formalism.
+
+### Numerical Benchmarks
+Not applicable — no matching physical constants found.
+
+### Assessment
+Mathematical integrity check found 6 equation(s). Dimensional analysis: all undecidable (0 consistent, 0 inconsistent). Assigned math_status: [MATH_CONJECTURED].
