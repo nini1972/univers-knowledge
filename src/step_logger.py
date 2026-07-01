@@ -35,7 +35,7 @@ def make_step_callback(crew_label: str = "crew") -> Any:
 
     def _callback(step_output: Any) -> None:
         entry = {
-            "ts": datetime.now(timezone.utc).isoformat(),
+            "ts": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
             "crew": crew_label,
             "step": str(step_output),
         }
