@@ -44,6 +44,7 @@ def make_step_callback(crew_label: str = "crew") -> Any:
                 fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
         except OSError as exc:
             # Never let logging failures break a run
-            print(f"WARNING: step_logger could not write to {log_file}: {exc}")
+            import sys
+            print(f"WARNING: step_logger could not write to {log_file}: {exc}", file=sys.stderr)
 
     return _callback
