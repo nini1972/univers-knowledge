@@ -9,3 +9,8 @@ python-dotenv
 markdown
 mcp
 langchain-mcp-adapters
+# Mathematical Proof & Verification Engine
+sympy
+pint
+numpy
+scipy

@@ -20,6 +20,8 @@ try:
         normalize_markdown_output,
         validate_concept_markdown,
         parse_skeptic_checklist_score,
+        parse_math_score,
+        parse_math_status,
     )
 except ImportError:
     from src.workflow_contracts import (
@@ -27,6 +29,8 @@ except ImportError:
         normalize_markdown_output,
         validate_concept_markdown,
         parse_skeptic_checklist_score,
+        parse_math_score,
+        parse_math_status,
     )
 try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
@@ -84,6 +88,7 @@ def run_level1_flow(next_concept: str):
     # Initialize Agents
     agents = UniverseAgents()
     researcher = agents.researcher_agent()
+    math_physicist = agents.math_physicist_agent()
     skeptic = agents.skeptic_agent()
     archivist = agents.archivist_agent()
     has_genmedia_credentials = bool(os.getenv("GOOGLE_APPLICATION_CREDENTIALS"))
@@ -102,7 +107,7 @@ def run_level1_flow(next_concept: str):
 
     # We dynamically create the output paths based on the Student's decision
     filename = sanitize_filename(next_concept)
-    level_folder = "level_1_fundamental_physics" 
+    level_folder = "level_1_fundamental_physics"
     output_location = f"knowledge_base/{level_folder}/{filename}"
 
     if (repo_root / output_location).exists():
@@ -127,8 +132,8 @@ def run_level1_flow(next_concept: str):
     while True:
         attempt_start = time.time()
         log_telemetry_event(
-            "research_evaluation_attempt", 
-            "start", 
+            "research_evaluation_attempt",
+            "start",
             metadata={"concept": next_concept, "attempt": retries + 1}
         )
 
@@ -138,18 +143,21 @@ def run_level1_flow(next_concept: str):
             research_concept_prompt = f"{next_concept}\nFollow-up context from prior rejection:\n{follow_up_context}"
 
         research_task = tasks.research_concept_task(researcher, research_concept_prompt)
-        verify_task = tasks.verify_research_task(skeptic, next_concept, context=[research_task])
-        evaluate_task = tasks.student_evaluation_task(research_student, next_concept, context=[research_task, verify_task])
+        # ── NEW: Tier 1 Math Verification ────────────────────────────────────
+        math_task = tasks.math_verification_task(math_physicist, next_concept, context=[research_task])
+        # ── Skeptic now receives both research and math verification reports ──
+        verify_task = tasks.verify_research_task(skeptic, next_concept, context=[research_task, math_task])
+        evaluate_task = tasks.student_evaluation_task(research_student, next_concept, context=[research_task, math_task, verify_task])
         if pattern_guidance:
             evaluate_task.description += pattern_guidance
 
         evaluation_crew = Crew(
-            agents=[research_student, researcher, skeptic],
-            tasks=[research_task, verify_task, evaluate_task],
+            agents=[research_student, researcher, math_physicist, skeptic],
+            tasks=[research_task, math_task, verify_task, evaluate_task],
             process=Process.sequential,
             verbose=True
         )
-        
+
         if dry_run:
             evaluation_output = json.dumps({
                 "status": "approved",
@@ -157,22 +165,32 @@ def run_level1_flow(next_concept: str):
                 "summary_for_archivist": f"Dry-run approved summary for {next_concept}.",
                 "follow_up_questions": []
             })
-            skeptic_output = "Verification Score: 5/5"
+            skeptic_output = "Verification Score: 6/6"
+            math_output = "**Math Score:** 4/4\n[MATH_PROVEN]"
         else:
             evaluation_output = str(evaluation_crew.kickoff()).strip()
             skeptic_output = ""
+            math_output = ""
             if hasattr(verify_task, 'output') and verify_task.output:
                 skeptic_output = str(verify_task.output.raw)
+            if hasattr(math_task, 'output') and math_task.output:
+                math_output = str(math_task.output.raw)
 
         decision = parse_student_decision(evaluation_output)
         rejected = decision["status"] != "approved"
-        
+
         # Parse skeptic checklist score (Issue 9)
         score, total_score = parse_skeptic_checklist_score(skeptic_output)
         if score is None and skeptic_output:
             # Fallback parsing on raw output text just in case
             score, total_score = parse_skeptic_checklist_score(evaluation_output)
-        
+
+        # Parse math verification score and status (Math Engine)
+        math_score, math_total = parse_math_score(math_output)
+        math_status_val = parse_math_status(math_output)
+        if math_score is not None:
+            print(f"[MATH] Score: {math_score}/{math_total} | Status: [{math_status_val}]")
+
         # Log evaluation outcome (Issue 6)
         log_evaluation_outcome(
             concept=next_concept,
@@ -185,14 +203,16 @@ def run_level1_flow(next_concept: str):
         )
 
         log_telemetry_event(
-            "research_evaluation_attempt", 
-            "end", 
-            duration_seconds=time.time() - attempt_start, 
+            "research_evaluation_attempt",
+            "end",
+            duration_seconds=time.time() - attempt_start,
             metadata={
                 "status": decision["status"],
                 "reason_code": decision["reason_code"],
                 "score": score,
                 "total_score": total_score,
+                "math_score": math_score,
+                "math_status": math_status_val,
                 "attempt": retries + 1
             }
         )
@@ -218,9 +238,9 @@ def run_level1_flow(next_concept: str):
         print(f"Evaluation rejected. Retrying research with follow-up context (attempt {retries}/{max_retries}).")
 
     log_telemetry_event(
-        "research_evaluation", 
-        "end", 
-        duration_seconds=time.time() - step2_start, 
+        "research_evaluation",
+        "end",
+        duration_seconds=time.time() - step2_start,
         metadata={
             "final_status": decision["status"],
             "total_attempts": retries + 1
@@ -259,9 +279,9 @@ def run_level1_flow(next_concept: str):
     if dry_run:
         print("DRY_RUN enabled. Skipping final_crew.kickoff().")
         log_telemetry_event(
-            "documentation_validation", 
-            "end", 
-            duration_seconds=time.time() - step3_start, 
+            "documentation_validation",
+            "end",
+            duration_seconds=time.time() - step3_start,
             metadata={"status": "skipped_dry_run"}
         )
         return
@@ -273,9 +293,9 @@ def run_level1_flow(next_concept: str):
         for err in validation_errors:
             print(f" - {err}")
         log_telemetry_event(
-            "documentation_validation", 
-            "end", 
-            duration_seconds=time.time() - step3_start, 
+            "documentation_validation",
+            "end",
+            duration_seconds=time.time() - step3_start,
             metadata={"status": "failed_validation", "errors": validation_errors}
         )
         return
@@ -286,9 +306,9 @@ def run_level1_flow(next_concept: str):
     update_index_file(index_path, next_concept, level_folder, filename)
     print(f"Workflow complete: wrote validated document to {output_location}")
     log_telemetry_event(
-        "documentation_validation", 
-        "end", 
-        duration_seconds=time.time() - step3_start, 
+        "documentation_validation",
+        "end",
+        duration_seconds=time.time() - step3_start,
         metadata={"status": "success", "output_location": output_location}
     )
 
@@ -318,7 +338,7 @@ def main():
 
     # Initialize Tasks
     tasks = UniverseTasks()
-    
+
     print("--- STEP 1: Determine Next Topic ---")
     step1_start = time.time()
     log_telemetry_event("topic_selection", "start", metadata={"index_path": index_path})
@@ -334,7 +354,7 @@ def main():
         topic_task.description += pattern_guidance
 
     topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True)
-    
+
     missing_prereq = get_last_missing_prerequisite(current_index)
     if missing_prereq:
         print(f"[CLOSED-LOOP FEEDBACK] Prioritizing missing Level 2 prerequisite: '{missing_prereq}'")
@@ -343,16 +363,16 @@ def main():
         next_concept = "Quantum Entanglement"
     else:
         next_concept = topic_crew.kickoff()
-    
+
     next_concept = str(next_concept).strip()
     print(f"Target Concept Selected: {next_concept}")
     log_telemetry_event(
-        "topic_selection", 
-        "end", 
-        duration_seconds=time.time() - step1_start, 
+        "topic_selection",
+        "end",
+        duration_seconds=time.time() - step1_start,
         metadata={"selected_concept": next_concept}
     )
-    
+
     # Run the Level 1 flow
     run_level1_flow(next_concept)
 

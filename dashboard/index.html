@@ -60,12 +60,16 @@
                     <span class="stat-label">THEORETICAL</span>
                     <span class="stat-value" id="stat-theoretical">0</span>
                 </div>
+                <div class="stat-badge math-proven" title="Concepts with Math Score 3/4 or 4/4">
+                    <span class="stat-label">MATH OK</span>
+                    <span class="stat-value" id="stat-math-proven">0</span>
+                </div>
             </div>
         </header>
 
         <!-- Main Workspace -->
         <main class="app-workspace" id="app-workspace">
-            
+
             <!-- Sidebar with filters and search (only applicable in Codex mode, but handles smoothly) -->
             <section class="sidebar-panel" id="sidebar-panel">
                 <div class="search-box">
@@ -110,14 +114,14 @@
 
             <!-- Main Dynamic Viewer -->
             <section class="viewer-panel" id="concept-viewer">
-                
+
                 <!-- 1. Welcome/Landing state displayed initially inside Codex perspective -->
                 <div class="welcome-view" id="welcome-view">
                     <div class="welcome-content">
                         <i class="fa-solid fa-shuttle-space welcome-icon"></i>
                         <h2>Explore the Self-Developing Universe</h2>
                         <p>Welcome to the live, daily growing scientific knowledge base. This project operates via continuous GitHub Actions, evaluating fundamental theories and mathematical models with an uncompromising skeptical filter.</p>
-                        
+
                         <div class="action-grid">
                             <div class="action-card" id="btn-explore-first">
                                 <i class="fa-solid fa-compass"></i>
@@ -299,7 +303,7 @@
                             <button class="time-filter-btn rejected" data-time-filter="rejected">Rejected</button>
                         </div>
                     </div>
-                    
+
                     <div class="timeline-scroll-container">
                         <div class="timeline-wrapper">
                             <div class="timeline-track"></div>
@@ -543,7 +547,7 @@
                 <button class="scrubber-btn play-pause-btn" id="btn-scrub-play" title="Play / Pause"><i class="fa-solid fa-play"></i></button>
                 <button class="scrubber-btn" id="btn-scrub-next" title="Step Forward"><i class="fa-solid fa-forward-step"></i></button>
             </div>
-            
+
             <div class="scrubber-slider-wrapper">
                 <input type="range" id="scrubber-slider" min="0" max="0" value="0" step="1">
                 <div class="scrubber-track-fill" id="scrubber-track-fill"></div>

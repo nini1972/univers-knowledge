@@ -9,13 +9,13 @@
     --bg-card-hover: hsla(225, 20%, 12%, 0.8);
     --bg-header: hsla(225, 25%, 3%, 0.7);
     --bg-sidebar: hsla(225, 20%, 5%, 0.4);
-    
+
     /* Neon Accents */
     --neon-blue: hsl(198, 100%, 48%);
     --neon-blue-glow: hsla(198, 100%, 48%, 0.25);
     --neon-cyan: hsl(180, 100%, 45%);
     --neon-cyan-glow: hsla(180, 100%, 45%, 0.2);
-    
+
     /* Status Colors */
     --status-verified: hsl(152, 90%, 45%);
     --status-verified-glow: hsla(152, 90%, 45%, 0.15);
@@ -28,7 +28,7 @@
     --text-primary: hsl(210, 25%, 98%);
     --text-secondary: hsl(215, 15%, 78%);
     --text-muted: hsl(215, 12%, 52%);
-    
+
     /* Layout Details */
     --border-glass: hsla(225, 15%, 100%, 0.07);
     --border-glow: hsla(198, 100%, 48%, 0.3);
@@ -237,6 +237,32 @@ html, body {
 .stat-badge.theoretical .stat-value {
     color: var(--status-theoretical);
     text-shadow: 0 0 8px var(--status-theoretical-glow);
+}
+
+.stat-badge.math-proven .stat-value {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px hsla(185, 100%, 60%, 0.5);
+}
+
+.stat-badge.math-proven .stat-label {
+    color: var(--neon-cyan);
+    opacity: 0.75;
+}
+
+/* Math status mini-badge shown on concept cards */
+.math-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: hsla(225, 20%, 100%, 0.04);
+    border: 1px solid hsla(225, 20%, 100%, 0.08);
+    white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -2536,4 +2562,3 @@ html, body {
     background: var(--status-rejected-glow);
     border: 1px solid var(--status-rejected-glow);
 }
-

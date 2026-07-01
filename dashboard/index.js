@@ -13,16 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let evaluationRuns = [];
     let telemetryEvents = [];
     let chronologicalRuns = []; // Oldest first runs list
-    
+
     let activeConceptId = null;
     let activePerspective = 'codex'; // 'codex', 'network', 'ledger', 'agents'
-    
+
     let currentFilters = {
         search: '',
         level: 'level-all',
         status: 'status-all'
     };
-    
+
     let currentTimelineFilter = 'all'; // 'all', 'approved', 'rejected'
 
     // Node graph physics states
@@ -63,14 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const cA = clean(nameA);
         const cB = clean(nameB);
         if (cA === cB) return true;
-        
+
         // Starts with or contains matching for longer titles (e.g. including verification markers)
         if (cA.includes(cB) || cB.includes(cA)) {
             if (cA.startsWith(cB) || cB.startsWith(cA) || (cA.length > 10 && cB.length > 10)) {
                 return true;
             }
         }
-        
+
         // Custom synonym overrides
         const synonyms = [
             ["beyondthestandardmodelsolutionstothehierarchyproblem", "beyondthestandardmodelsupersymmetryvsextradimensionsdebate"],
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ["cosmicinflation", "inflationarycosmology"],
             ["modifiedgravityvsdarkmatterparadigmdebate", "modifiednewtoniandynamicsmondversuscolddarkmattercdmparadigmdebate"]
         ];
-        
+
         for (const [s1, s2] of synonyms) {
             if ((cA === s1 && cB === s2) || (cA === s2 && cB === s1)) return true;
         }
@@ -101,17 +101,18 @@ document.addEventListener('DOMContentLoaded', () => {
         agentsView: document.getElementById('agents-view'),
         perspectiveSelector: document.getElementById('perspective-selector'),
         sidebarPanel: document.getElementById('sidebar-panel'),
-        
+
         // Stats
         totalStat: document.getElementById('stat-total'),
         verifiedStat: document.getElementById('stat-verified'),
         theoreticalStat: document.getElementById('stat-theoretical'),
-        
+        mathProvenStat: document.getElementById('stat-math-proven'),
+
         // Navigation / Action Buttons
         btnExploreFirst: document.getElementById('btn-explore-first'),
         btnShowNetworkCard: document.getElementById('btn-show-network-card'),
         btnBackToWelcome: document.getElementById('btn-back-to-welcome'),
-        
+
         // Viewer elements
         viewTitle: document.getElementById('view-title'),
         viewLevel: document.getElementById('view-level'),
@@ -126,17 +127,17 @@ document.addEventListener('DOMContentLoaded', () => {
         viewSources: document.getElementById('view-sources-list'),
         tabLinks: document.querySelectorAll('.tab-link'),
         scrollContainer: document.querySelector('.scroll-container'),
-        
+
         // Timeline & Agents
         timelineStream: document.getElementById('timeline-stream'),
         timelineFilters: document.querySelector('.timeline-filters'),
         telemetryTicker: document.getElementById('telemetry-ticker'),
         tickerLinesCount: document.getElementById('ticker-lines-count'),
         pipelineStatus: document.getElementById('pipeline-status'),
-        
+
         // Canvas Graph
         networkCanvas: document.getElementById('network-canvas'),
-        
+
         // Scrubber Controls
         btnScrubPrev: document.getElementById('btn-scrub-prev'),
         btnScrubPlay: document.getElementById('btn-scrub-play'),
@@ -148,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrubberEpochTotal: document.getElementById('scrubber-epoch-total'),
         scrubberEpochConcept: document.getElementById('scrubber-epoch-concept'),
         scrubberEpochStatus: document.getElementById('scrubber-epoch-status'),
-        
+
         // Zoom Controls Overlay
         btnZoomIn: document.getElementById('btn-zoom-in'),
         btnZoomOut: document.getElementById('btn-zoom-out'),
@@ -158,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         commandTabBtns: document.querySelectorAll('.command-tab-btn'),
         tabTelemetry: document.getElementById('tab-telemetry'),
         tabSandbox: document.getElementById('tab-sandbox'),
-        
+
         // Sandbox elements
         sandboxConceptSelect: document.getElementById('sandbox-concept-select'),
         sandboxCustomInput: document.getElementById('sandbox-custom-input'),
@@ -199,19 +200,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     const contentClean = cleanText(c.content);
                     allConcepts.forEach(target => {
                         if (target.id === c.id) return;
-                        
+
                         const targetIdClean = cleanText(target.id);
-                        
+
                         // Extract core title before parentheses/dashes
                         const coreTitle = target.title.split('(')[0].split('–')[0].split('—')[0].split('-')[0].trim();
                         const coreTitleClean = cleanText(coreTitle);
-                        
+
                         let abbrClean = null;
                         const parenMatch = target.title.match(/\(([^)]+)\)/);
                         if (parenMatch) {
                             abbrClean = cleanText(parenMatch[1]);
                         }
-                        
+
                         if (
                             contentClean.includes(targetIdClean) ||
                             (coreTitleClean.length > 3 && contentClean.includes(coreTitleClean)) ||
@@ -222,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
             });
-            
+
             // JSONL Parsing helper
             const parseJSONL = async (res) => {
                 if (!res.ok) return [];
@@ -231,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     .map(line => line.trim())
                     .filter(line => line.length > 0)
                     .map(line => {
-                        try { return JSON.parse(line); } 
+                        try { return JSON.parse(line); }
                         catch (e) { return null; }
                     })
                     .filter(item => item !== null);
@@ -243,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Establish standard sorted lists
             allTelemetryEvents.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)); // Newest first for live activity
-            
+
             // Setup Chronological Runs ascending list
             chronologicalRuns = [...allEvaluationRuns].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
             currentAttemptIndex = chronologicalRuns.length; // Start in the PRESENT (fully completed universe)
@@ -264,13 +265,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 <pre style="background: hsla(225, 20%, 2%, 0.8); border: 1px solid var(--border-glass); padding:8px; border-radius:4px; font-family:var(--font-mono); font-size:11px; margin-top:10px; color:var(--text-primary); text-align:left;">python -m http.server 8000</pre>
             </div>
         `;
-        
+
         elements.welcomeView.innerHTML = `
             <div class="welcome-content" style="max-width: 600px;">
                 <i class="fa-solid fa-circle-nodes welcome-icon" style="color: var(--status-theoretical);"></i>
                 <h2>Security Sandboxing restriction</h2>
                 <p>Browsers restrict HTTP fetch calls to local folders for security unless served over a port. Launch a local web server to enable our dynamic data engine:</p>
-                
+
                 <div class="info-alert" style="background-color: hsla(38, 95%, 52%, 0.08); border-color: hsla(38, 95%, 52%, 0.25); text-align: left; width: 100%;">
                     <i class="fa-solid fa-code" style="color: var(--status-theoretical); font-size: 18px; margin-right: 12px;"></i>
                     <div>
@@ -295,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setupInteractiveEventHooks();
         populateSandboxConcepts();
         renderSandboxHistory();
-        
+
         // Initial view default
         switchPerspective('codex');
     }
@@ -305,7 +306,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const verified = concepts.filter(c => c.status === 'VERIFIED' || c.status === '[VERIFIED]').length;
         elements.verifiedStat.textContent = verified;
         elements.theoreticalStat.textContent = concepts.length - verified;
-        
+
+        // Math Engine stat: count concepts with math_status MATH_PROVEN, MATH_CONSISTENT, or MATH_TOPOLOGICAL
+        const mathOkStatuses = ['MATH_PROVEN', 'MATH_CONSISTENT', 'MATH_TOPOLOGICAL', '[MATH_PROVEN]', '[MATH_CONSISTENT]', '[MATH_TOPOLOGICAL]'];
+        const mathOkCount = concepts.filter(c => mathOkStatuses.includes(c.math_status || '')).length;
+        if (elements.mathProvenStat) elements.mathProvenStat.textContent = mathOkCount;
+
         // Update Pipeline status badge
         if (telemetryEvents.length > 0) {
             const latestEvent = telemetryEvents[0];
@@ -329,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function switchPerspective(perspectiveId) {
         activePerspective = perspectiveId;
-        
+
         // Toggle programmatic fullscreen layout width
         const workspace = document.getElementById('app-workspace');
         if (workspace) {
@@ -393,10 +399,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateChronologicalState() {
         // 1. Calculate active evaluation runs based on current playback index
         const activeRuns = chronologicalRuns.slice(0, currentAttemptIndex);
-        
+
         // Feed reverse sorted runs to Ledger View
         evaluationRuns = [...activeRuns].reverse();
-        
+
         // 2. Filter telemetry based on the timestamp of the current attempt run
         if (currentAttemptIndex === 0) {
             telemetryEvents = [];
@@ -413,17 +419,17 @@ document.addEventListener('DOMContentLoaded', () => {
         concepts = [];
         allConcepts.forEach(c => {
             const hasAnyHistoricalRuns = allEvaluationRuns.some(r => areConceptsEquivalent(r.concept, c.title));
-            
+
             if (hasAnyHistoricalRuns) {
                 // If it has runs, only show it if its first run is reached in chronological active playback
                 const conceptRuns = activeRuns.filter(r => areConceptsEquivalent(r.concept, c.title));
                 if (conceptRuns.length > 0) {
                     const latestRun = conceptRuns[conceptRuns.length - 1];
                     const isApproved = latestRun.status === 'approved';
-                    
+
                     // Level 2/3 concepts must strictly map to THEORETICAL (never verified as physical facts)
                     const dynamicStatus = (isApproved && c.level === 1) ? 'VERIFIED' : 'THEORETICAL';
-                    
+
                     concepts.push({
                         ...c,
                         status: dynamicStatus
@@ -567,18 +573,18 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyFiltersAndRenderSidebar() {
         const filtered = concepts.filter(c => {
             // Search text filter
-            const matchesSearch = currentFilters.search === '' || 
+            const matchesSearch = currentFilters.search === '' ||
                 c.title.toLowerCase().includes(currentFilters.search) ||
                 (c.overview && c.overview.toLowerCase().includes(currentFilters.search)) ||
                 (c.content && c.content.toLowerCase().includes(currentFilters.search));
-            
+
             // Level filter
             let matchesLevel = true;
             if (currentFilters.level !== 'level-all') {
                 const targetLvl = parseInt(currentFilters.level.replace('level-', ''));
                 matchesLevel = c.level === targetLvl;
             }
-            
+
             // Status filter
             let matchesStatus = true;
             if (currentFilters.status !== 'status-all') {
@@ -613,6 +619,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const activeClass = c.id === activeConceptId ? 'active' : '';
             const relationsCount = c.related ? c.related.length : 0;
 
+            // Math status badge
+            const rawMathStatus = (c.math_status || '').replace(/[\[\]]/g, '').trim();
+            const mathBadgeMap = {
+                'MATH_PROVEN':      { label: 'PROVEN',      color: 'var(--status-verified)',      icon: 'fa-square-root-variable' },
+                'MATH_CONSISTENT':  { label: 'CONSISTENT',  color: 'var(--status-verified)',      icon: 'fa-square-root-variable' },
+                'MATH_TOPOLOGICAL': { label: 'TOPOLOGICAL', color: 'var(--neon-cyan)',             icon: 'fa-atom' },
+                'MATH_CONJECTURED': { label: 'CONJECTURED', color: 'var(--status-theoretical)',   icon: 'fa-flask' },
+                'MATH_FLAWED':      { label: 'FLAWED',      color: 'hsl(0, 90%, 60%)',            icon: 'fa-triangle-exclamation' },
+                'MATH_PENDING':     { label: 'PENDING',     color: 'var(--text-muted)',            icon: 'fa-hourglass-half' },
+            };
+            const mathBadge = mathBadgeMap[rawMathStatus];
+            const mathBadgeHtml = mathBadge
+                ? `<span class="math-status-badge" style="color:${mathBadge.color}; font-size: 9.5px; letter-spacing: 0.06em; font-weight: 700; opacity: 0.85;" title="Math Status: ${rawMathStatus}">
+                        <i class="fa-solid ${mathBadge.icon}" style="font-size: 8px; margin-right: 3px;"></i>${mathBadge.label}
+                   </span>`
+                : '';
+
             return `
                 <div class="concept-card ${cardBorderClass} ${activeClass}" data-id="${c.id}">
                     <div class="card-top">
@@ -625,6 +648,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="card-excerpt">${cleanExcerpts(c.overview || c.content || '')}</p>
                     <div class="card-footer">
                         <span><i class="fa-solid fa-link"></i> ${relationsCount} relations</span>
+                        ${mathBadgeHtml}
                         <span class="card-links"><i class="fa-solid fa-angle-right"></i></span>
                     </div>
                 </div>
@@ -656,7 +680,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function compileMarkdownToHTML(mdText) {
         let text = mdText || '';
-        
+
         // Remove frontmatter blocks
         text = text.replace(/^---\s*\n[\s\S]*?\n---\s*/, '');
         // Remove top-level header title
@@ -705,7 +729,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Blockquotes formatting
         text = text.replace(/^\s*>\s+(.+)$/gm, '<blockquote>$1</blockquote>');
-        
+
         // Dividers
         text = text.replace(/^---$/gm, '<hr>');
 
@@ -735,7 +759,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function selectConcept(id, preservePerspective = false) {
         activeConceptId = id;
-        
+
         // Ensure we are in Codex mode to read content unless explicitly requested to preserve current perspective (e.g. during timeline play)
         if (!preservePerspective && activePerspective !== 'codex') {
             switchPerspective('codex');
@@ -756,18 +780,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // View toggle
         elements.welcomeView.style.display = 'none';
         elements.contentView.style.display = 'flex';
-        
+
         // Title block headers
         elements.viewTitle.textContent = concept.title;
         elements.viewLevel.textContent = `LEVEL ${concept.level}`;
-        
+
         const isVerified = concept.status === 'VERIFIED' || concept.status === '[VERIFIED]';
         elements.viewStatus.textContent = isVerified ? 'VERIFIED' : 'THEORETICAL';
         elements.viewStatus.className = 'badge status-badge ' + (isVerified ? 'verified' : 'theoretical');
 
         // Heading extraction split parsing
         const rawContent = concept.content;
-        
+
         let overviewRaw = extractStandardHeading(rawContent, '1\\.\\s+Overview');
         let explanationRaw = extractStandardHeading(rawContent, '2\\.\\s+Detailed Explanation');
         let mathRaw = extractStandardHeading(rawContent, '3\\.\\s+Mathematical Framework');
@@ -841,9 +865,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 `;
             }).join('');
-            
+
             elements.viewRelated.innerHTML = `<div class="related-grid">${relationsHtml}</div>`;
-            
+
             // Re-attach listeners for relations
             elements.viewRelated.querySelectorAll('.related-link-card').forEach(card => {
                 card.addEventListener('click', () => {
@@ -898,7 +922,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function compileDebateTerminalHTML(run) {
         const dialogs = [];
         const attempt = run.attempt || 1;
-        
+
         // 1. Physics Researcher submits draft
         let researcherMsg = "";
         if (attempt === 1) {
@@ -920,7 +944,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const score = run.score !== undefined ? run.score : (isApproved ? 5 : 3);
         const totalScore = run.total_score || 5;
         let skepticMsg = "";
-        
+
         if (isApproved) {
             if (run.reason_code === 'dry_run') {
                 skepticMsg = `Verification bypass triggered. Assigned Score: <strong>${score}/${totalScore}</strong>. Although full verification is currently running under dry-run constraints, the document structure and logic check out.`;
@@ -931,7 +955,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 skepticMsg += `<br><br><strong>Constructive observations for future iterations:</strong><ul>` + run.follow_up_questions.map(q => `<li>${q}</li>`).join('') + `</ul>`;
             }
         } else {
-            skepticMsg = `Assigned Score: <strong>${score}/${totalScore}</strong>. Scrutiny protocol triggered. <strong style="color:var(--status-theoretical)">CRITICAL DISCOVERY VOIDS DETECTED:</strong> Your manuscript does not meet our strict empirical verification constraints. We demand formal resolution on the following gaps:<ul>` + 
+            skepticMsg = `Assigned Score: <strong>${score}/${totalScore}</strong>. Scrutiny protocol triggered. <strong style="color:var(--status-theoretical)">CRITICAL DISCOVERY VOIDS DETECTED:</strong> Your manuscript does not meet our strict empirical verification constraints. We demand formal resolution on the following gaps:<ul>` +
                 run.follow_up_questions.map(q => `<li>${q}</li>`).join('') + `</ul>`;
         }
         dialogs.push({
@@ -998,10 +1022,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const statusClass = isApproved ? 'approved' : 'rejected';
             const statusLabel = isApproved ? 'APPROVED' : 'REJECTED';
             const iconClass = isApproved ? 'fa-solid fa-circle-check text-verified' : 'fa-solid fa-triangle-exclamation text-theoretical';
-            
+
             const timestampFormatted = formatRelativeTime(run.timestamp);
             const scoreHtml = run.score !== undefined ? `<span class="timeline-score-badge">Score: ${run.score}/${run.total_score || 5}</span>` : '';
-            
+
             // Build the debate terminal content instead of standard accordion lists
             const debateTerminalHtml = compileDebateTerminalHTML(run);
 
@@ -1053,7 +1077,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (diffHours < 24) return `${diffHours}h ago`;
         if (diffDays === 1) return 'Yesterday';
         if (diffDays < 7) return `${diffDays} days ago`;
-        
+
         return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
     }
 
@@ -1065,7 +1089,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Student Orchestrator metrics
         const distinctSelected = new Set(evaluationRuns.map(r => r.concept)).size;
         document.getElementById('m-orchestrator-selected').textContent = distinctSelected || concepts.length;
-        
+
         // Count self-heals by counting attempts > 1
         const selfHeals = evaluationRuns.filter(r => r.attempt > 1).length;
         document.getElementById('m-orchestrator-heals').textContent = selfHeals;
@@ -1087,11 +1111,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Skeptic metrics
         const rejections = evaluationRuns.filter(r => r.status === 'rejected');
         const strictnessPct = evaluationRuns.length > 0 ? Math.round((rejections.length / evaluationRuns.length) * 100) : 40;
-        
+
         const validRunsWithScore = evaluationRuns.filter(r => r.score !== undefined);
         const sumScores = validRunsWithScore.reduce((sum, r) => sum + r.score, 0);
         const avgScore = validRunsWithScore.length > 0 ? (sumScores / validRunsWithScore.length).toFixed(1) : '4.6';
-        
+
         const totalCriticisms = rejections.reduce((sum, r) => sum + (r.follow_up_questions ? r.follow_up_questions.length : 0), 0);
 
         document.getElementById('m-skeptic-strictness').textContent = `${strictnessPct}% Strictness`;
@@ -1147,7 +1171,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 // Event Type end
                 const duration = event.duration_seconds ? ` (completed in <span class="term-accent">${event.duration_seconds.toFixed(2)}s</span>)` : '';
-                
+
                 if (event.stage === 'topic_selection') {
                     message = `Selected target study subject: ${highlightConcept}.${duration}`;
                 } else if (event.stage === 'topic_selection_level2') {
@@ -1186,12 +1210,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function computeNodeRadius(concept) {
         const relationsCount = concept.related ? concept.related.length : 0;
         const relationBoost = Math.min(relationsCount * 1.5, 12);
-        
+
         let latestBoost = 0;
         if (evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, concept.title)) {
             latestBoost = 6;
         }
-        
+
         const base = 18 + relationBoost + latestBoost;
         return Math.max(18, Math.min(base, 32));
     }
@@ -1200,7 +1224,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const h = height || 520;
         const w = width || 900;
         const padX = 100;
-        
+
         if (level === 1) {
             return {
                 xMin: padX,
@@ -1227,21 +1251,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function findBestSeedParent(concept) {
         if (!concept.related || concept.related.length === 0) return null;
-        
+
         for (let relId of concept.related) {
             const relNode = graphState.nodesById.get(relId);
             if (relNode && relNode.visible && relNode.level < concept.level) {
                 return relNode;
             }
         }
-        
+
         for (let relId of concept.related) {
             const relNode = graphState.nodesById.get(relId);
             if (relNode && relNode.visible) {
                 return relNode;
             }
         }
-        
+
         return null;
     }
 
@@ -1249,7 +1273,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const canvas = elements.networkCanvas;
         const width = canvas ? canvas.clientWidth : 900;
         const height = canvas ? canvas.clientHeight : 520;
-        
+
         const parentNode = findBestSeedParent(concept);
         if (parentNode) {
             return {
@@ -1257,7 +1281,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 y: parentNode.y + (Math.random() - 0.5) * 60
             };
         }
-        
+
         const visibleRelated = [];
         if (concept.related) {
             concept.related.forEach(relId => {
@@ -1275,7 +1299,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 y: sumY / visibleRelated.length + (Math.random() - 0.5) * 40
             };
         }
-        
+
         const zone = getLevelZone(concept.level, width, height);
         return {
             x: (zone.xMin + zone.xMax) / 2 + (Math.random() - 0.5) * (width * 0.2),
@@ -1286,12 +1310,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function syncGraphWithConcepts(conceptsList) {
         const canvas = elements.networkCanvas;
         if (!canvas) return;
-        
+
         const activeIds = new Set(conceptsList.map(c => c.id));
-        
+
         conceptsList.forEach(c => {
             const isVerified = c.status === 'VERIFIED' || c.status === '[VERIFIED]';
-            
+
             if (graphState.nodesById.has(c.id)) {
                 const node = graphState.nodesById.get(c.id);
                 node.visible = true;
@@ -1315,35 +1339,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 graphState.nodesById.set(c.id, node);
             }
         });
-        
+
         graphState.nodesById.forEach((node, id) => {
             if (!activeIds.has(id)) {
                 node.visible = false;
             }
         });
-        
+
         graphNodes = Array.from(graphState.nodesById.values()).filter(n => n.visible);
-        
+
         syncGraphLinks(conceptsList);
     }
 
     function syncGraphLinks(conceptsList) {
         const activeKeys = new Set();
-        
+
         conceptsList.forEach(c => {
             if (c.related && c.related.length > 0) {
                 c.related.forEach(relId => {
                     const hasSource = graphState.nodesById.has(c.id);
                     const hasTarget = graphState.nodesById.has(relId);
-                    
+
                     if (hasSource && hasTarget) {
                         const key = c.id < relId ? `${c.id}->${relId}` : `${relId}->${c.id}`;
                         activeKeys.add(key);
-                        
+
                         if (!graphState.linksByKey.has(key)) {
                             const sourceNode = graphState.nodesById.get(c.id);
                             const targetNode = graphState.nodesById.get(relId);
-                            
+
                             const newLink = {
                                 key,
                                 source: sourceNode,
@@ -1359,7 +1383,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
-        
+
         graphState.linksByKey.forEach((link, key) => {
             if (!activeKeys.has(key)) {
                 link.visible = false;
@@ -1369,12 +1393,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
-        
+
         graphLinks = Array.from(graphState.linksByKey.values()).filter(l => l.visible);
-        
+
         // Sync particle flows dynamically
         particleFlows = particleFlows.filter(flow => flow.link && flow.link.visible);
-        
+
         graphLinks.forEach(link => {
             const hasParticle = particleFlows.some(flow => flow.link === link);
             if (!hasParticle && Math.random() > 0.5) {
@@ -1401,12 +1425,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dy = nodeB.y - nodeA.y;
                 const distSq = dx * dx + dy * dy + 1; // prevent division by zero
                 const dist = Math.sqrt(distSq);
-                
+
                 if (dist < 320) { // limit repulsion reach for performance
                     const force = repulsion / distSq;
                     const fx = (dx / dist) * force;
                     const fy = (dy / dist) * force;
-                    
+
                     nodeA.vx -= fx;
                     nodeA.vy -= fy;
                     nodeB.vx += fx;
@@ -1419,21 +1443,21 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyLinkForces(links) {
         const strength = graphState.simulation.linkStrength;
         const restLength = 110; // desired distance between connected concepts
-        
+
         links.forEach(link => {
             const s = link.source;
             const t = link.target;
-            
+
             const dx = t.x - s.x;
             const dy = t.y - s.y;
             const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-            
+
             const displacement = dist - restLength;
             const force = displacement * strength;
-            
+
             const fx = (dx / dist) * force;
             const fy = (dy / dist) * force;
-            
+
             s.vx += fx;
             s.vy += fy;
             t.vx -= fx;
@@ -1447,11 +1471,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const height = canvas ? canvas.clientHeight : 520;
         const gravityStrength = 0.006; // Softer vertical pull allows orbital/spring forces to form natural circular clusters
         const centerX = width / 2;
-        
+
         nodes.forEach(node => {
             const zone = getLevelZone(node.level, width, height);
             const targetY = (zone.yMin + zone.yMax) / 2;
-            
+
             // Pull vertically toward level preferred bands (much softer than before)
             const dy = targetY - node.y;
             node.vy += dy * gravityStrength;
@@ -1467,14 +1491,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const width = canvas ? canvas.clientWidth : 900;
         const height = canvas ? canvas.clientHeight : 520;
         const borderPadding = 50;
-        
+
         nodes.forEach(node => {
             if (node.x < borderPadding) {
                 node.vx += (borderPadding - node.x) * 0.08;
             } else if (node.x > width - borderPadding) {
                 node.vx -= (node.x - (width - borderPadding)) * 0.08;
             }
-            
+
             if (node.y < borderPadding) {
                 node.vy += (borderPadding - node.y) * 0.08;
             } else if (node.y > height - borderPadding) {
@@ -1518,8 +1542,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const ty = dx / dist;
 
                 // Slow rotation speed (pixels per frame)
-                const orbitSpeed = 0.16; 
-                
+                const orbitSpeed = 0.16;
+
                 // Determine direction based on character hash of IDs to keep it stable but varied
                 const keyStr = String(parent.id) + String(child.id);
                 let charSum = 0;
@@ -1537,17 +1561,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function integrateNodeMotion(nodes) {
         const damping = graphState.simulation.damping;
         const alpha = graphState.simulation.alpha;
-        
+
         nodes.forEach(node => {
             if (node === draggedNode) return;
-            
+
             node.x += node.vx * alpha;
             node.y += node.vy * alpha;
-            
+
             node.vx *= damping;
             node.vy *= damping;
         });
-        
+
         // Cooling schedule
         if (graphState.simulation.alpha > 0.04) {
             graphState.simulation.alpha *= 0.985;
@@ -1565,13 +1589,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dx = nodeB.x - nodeA.x;
                 const dy = nodeB.y - nodeA.y;
                 const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-                
+
                 const minDist = nodeA.r + nodeB.r + padding;
                 if (dist < minDist) {
                     const overlap = minDist - dist;
                     const ox = (dx / dist) * overlap * 0.5;
                     const oy = (dy / dist) * overlap * 0.5;
-                    
+
                     if (nodeA !== draggedNode) {
                         nodeA.x -= ox;
                         nodeA.y -= oy;
@@ -1624,17 +1648,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const isSelected = activeConceptId === node.id;
         const isLatestRun = evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, node.title);
         const isHighPriority = isHovered || isSelected || isLatestRun;
-        
+
         if (mode === 'minimal' && !isHighPriority) {
             return;
         }
-        
+
         ctx.save();
         ctx.fillStyle = isHighPriority ? 'var(--text-primary)' : 'var(--text-secondary)';
         ctx.font = isHighPriority ? 'bold 12px var(--font-sans)' : '500 10.5px var(--font-sans)';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
-        
+
         const titleText = node.title;
         if (mode === 'compact' && !isHighPriority) {
             const label = truncateLabel(titleText, 14);
@@ -1645,7 +1669,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const mid = Math.ceil(words.length / 2);
                 const line1 = words.slice(0, mid).join(' ');
                 const line2 = words.slice(mid).join(' ');
-                
+
                 ctx.fillText(line1, node.x, node.y + node.r + 10);
                 ctx.fillText(line2, node.x, node.y + node.r + 22);
             } else {
@@ -1658,13 +1682,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyGravityWarp(gx, gy) {
         let warpedX = gx;
         let warpedY = gy;
-        
+
         const lvl1Nodes = graphNodes.filter(n => n.level === 1);
         if (lvl1Nodes.length === 0) return { x: gx, y: gy };
-        
+
         let totalDx = 0;
         let totalDy = 0;
-        
+
         lvl1Nodes.forEach(node => {
             const dx = gx - node.x;
             const dy = gy - node.y;
@@ -1676,7 +1700,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 totalDy += (dy / dist) * pull;
             }
         });
-        
+
         return {
             x: gx - totalDx,
             y: gy - totalDy
@@ -1687,15 +1711,15 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.save();
         ctx.strokeStyle = 'hsla(180, 100%, 45%, 0.08)';
         ctx.lineWidth = 0.55;
-        
+
         const gridSpacing = 40;
-        
+
         // Broad world coordinates to cover arbitrary panning and zoom
         const minX = -3000;
         const maxX = 4000;
         const minY = -2000;
         const maxY = 3000;
-        
+
         // Draw Vertical grid lines
         for (let x = minX; x < maxX; x += gridSpacing) {
             ctx.beginPath();
@@ -1709,7 +1733,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             ctx.stroke();
         }
-        
+
         // Draw Horizontal grid lines
         for (let y = minY; y < maxY; y += gridSpacing) {
             ctx.beginPath();
@@ -1733,10 +1757,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const height = canvas.height / window.devicePixelRatio;
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        
+
         ctx.save();
         ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
-        
+
         ctx.save();
         ctx.translate(canvasOffset.x, canvasOffset.y);
         ctx.scale(canvasZoom, canvasZoom);
@@ -1750,18 +1774,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const s = link.source;
             const t = link.target;
-            
+
             const isHoveredLink = hoveredNode && (hoveredNode.id === s.id || hoveredNode.id === t.id);
-            
+
             ctx.beginPath();
             ctx.moveTo(s.x, s.y);
-            
+
             // Subtle curved quadratic bezier path
             const midX = (s.x + t.x) / 2;
             const midY = (s.y + t.y) / 2 + (s.x === t.x ? 0 : 32);
-            
+
             ctx.quadraticCurveTo(midX, midY, t.x, t.y);
-            
+
             const isBothVerified = s.status === 'VERIFIED' && t.status === 'VERIFIED';
             if (isHoveredLink) {
                 ctx.strokeStyle = isBothVerified ? 'hsl(180, 100%, 45%)' : 'hsl(38, 95%, 52%)';
@@ -1774,7 +1798,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.shadowBlur = 0;
             }
             ctx.stroke();
-            
+
             link.midX = midX;
             link.midY = midY;
         });
@@ -1783,30 +1807,30 @@ document.addEventListener('DOMContentLoaded', () => {
         particleFlows.forEach(flow => {
             const link = flow.link;
             if (!link || !link.visible) return;
-            
+
             // Always update progress so the animation flows naturally offscreen
             flow.progress += flow.speed;
             if (flow.progress > 1.0) {
                 flow.progress = 0;
             }
-            
+
             // Viewport culling for particle rendering
             if (!isLinkInViewport(link, width, height)) return;
-            
+
             const s = link.source;
             const t = link.target;
             const p = flow.progress;
-            
+
             const midX = link.midX || (s.x + t.x) / 2;
             const midY = link.midY || (s.y + t.y) / 2;
-            
+
             const x = (1-p)*(1-p)*s.x + 2*(1-p)*p*midX + p*p*t.x;
             const y = (1-p)*(1-p)*s.y + 2*(1-p)*p*midY + p*p*t.y;
-            
+
             ctx.save();
             ctx.beginPath();
             ctx.arc(x, y, 3, 0, Math.PI * 2);
-            
+
             const isBothVerified = s.status === 'VERIFIED' && t.status === 'VERIFIED';
             ctx.fillStyle = isBothVerified ? 'hsl(180, 100%, 50%)' : 'hsl(38, 95%, 52%)';
             ctx.shadowColor = ctx.fillStyle;
@@ -1814,7 +1838,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.fill();
             ctx.restore();
         });
-        
+
         ctx.shadowBlur = 0; // Reset shadows
 
         // Get adaptive label mode once per frame
@@ -1827,7 +1851,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const isLatestRun = evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, node.title);
             const isVerified = node.status === 'VERIFIED';
             const isHovered = hoveredNode && hoveredNode.id === node.id;
-            
+
             // Pulse calculations
             node.pulse += 0.035;
             const pulseRadius = node.r + Math.sin(node.pulse) * 2.5;
@@ -1852,7 +1876,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.fillStyle = isVerified ? 'hsl(152, 90%, 8%)' : 'hsl(38, 95%, 6%)';
             ctx.strokeStyle = isVerified ? 'hsl(152, 90%, 45%)' : 'hsl(38, 95%, 52%)';
             ctx.lineWidth = isHovered ? 2.5 : 1.5;
-            
+
             ctx.shadowColor = isVerified ? 'rgba(0, 230, 118, 0.3)' : 'rgba(255, 179, 0, 0.3)';
             ctx.shadowBlur = isHovered ? 12 : 6;
             ctx.fill();
@@ -1878,7 +1902,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function startNetworkGraphPhysicsLoop() {
         const canvas = elements.networkCanvas;
-        
+
         // Handle HDPI canvas resize scale mapping
         const rect = canvas.parentElement.getBoundingClientRect();
         canvas.width = rect.width * window.devicePixelRatio;
@@ -1967,7 +1991,7 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.scrollContainer.addEventListener('scroll', () => {
                 const sections = document.querySelectorAll('.concept-section');
                 let activeId = 'sec-overview';
-                
+
                 sections.forEach(sec => {
                     const rect = sec.getBoundingClientRect();
                     if (rect.top <= 140) {
@@ -1989,7 +2013,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     e.preventDefault();
                     elements.tabLinks.forEach(l => l.classList.remove('active'));
                     link.classList.add('active');
-                    
+
                     const targetId = link.getAttribute('href');
                     const targetSec = document.querySelector(targetId);
                     if (targetSec) {
@@ -2065,13 +2089,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateChronologicalState();
             });
         }
-        
+
         if (elements.btnScrubPlay) {
             elements.btnScrubPlay.addEventListener('click', () => {
                 togglePlayback();
             });
         }
-        
+
         if (elements.btnScrubPrev) {
             elements.btnScrubPrev.addEventListener('click', () => {
                 pausePlayback();
@@ -2081,7 +2105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
-        
+
         if (elements.btnScrubNext) {
             elements.btnScrubNext.addEventListener('click', () => {
                 pausePlayback();
@@ -2106,7 +2130,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
-        
+
         if (elements.btnZoomOut) {
             elements.btnZoomOut.addEventListener('click', () => {
                 const oldZoom = canvasZoom;
@@ -2120,7 +2144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
-        
+
         if (elements.btnZoomReset) {
             elements.btnZoomReset.addEventListener('click', () => {
                 canvasZoom = 1.0;
@@ -2137,16 +2161,16 @@ document.addEventListener('DOMContentLoaded', () => {
             tabsHeader.addEventListener('click', (e) => {
                 const btn = e.target.closest('.command-tab-btn');
                 if (!btn) return;
-                
+
                 const targetTab = btn.getAttribute('data-tab');
-                
+
                 const btns = tabsHeader.querySelectorAll('.command-tab-btn');
                 btns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                
+
                 const tabTelemetry = document.getElementById('tab-telemetry');
                 const tabSandbox = document.getElementById('tab-sandbox');
-                
+
                 if (targetTab === 'telemetry') {
                     if (tabTelemetry) tabTelemetry.style.display = 'block';
                     if (tabSandbox) tabSandbox.style.display = 'none';
@@ -2160,10 +2184,10 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.commandTabBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
                     const targetTab = btn.getAttribute('data-tab');
-                    
+
                     elements.commandTabBtns.forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
-                    
+
                     if (targetTab === 'telemetry') {
                         if (elements.tabTelemetry) elements.tabTelemetry.style.display = 'block';
                         if (elements.tabSandbox) elements.tabSandbox.style.display = 'none';
@@ -2180,16 +2204,16 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.btnSandboxStart.addEventListener('click', () => {
                 const selectVal = elements.sandboxConceptSelect ? elements.sandboxConceptSelect.value : '';
                 let concept = selectVal;
-                
+
                 if (selectVal === 'custom') {
                     concept = elements.sandboxCustomInput ? elements.sandboxCustomInput.value.trim() : '';
                 }
-                
+
                 if (!concept) {
                     alert('Please select or input a scientific topic to initiate.');
                     return;
                 }
-                
+
                 runSandboxDebate(concept);
             });
         }
@@ -2200,7 +2224,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!canvas) return;
         let isPanning = false;
         let panStart = { x: 0, y: 0 };
-        
+
         const getMousePos = (e) => {
             const rect = canvas.getBoundingClientRect();
             return {
@@ -2211,7 +2235,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         canvas.addEventListener('mousemove', (e) => {
             const m = getMousePos(e);
-            
+
             // Adjust coordinates based on pan offset & zoom
             const canvasX = (m.x - canvasOffset.x) / canvasZoom;
             const canvasY = (m.y - canvasOffset.y) / canvasZoom;
@@ -2240,7 +2264,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dx = canvasX - node.x;
                 const dy = canvasY - node.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
-                
+
                 if (dist <= node.r) {
                     foundHover = node;
                     break;
@@ -2255,7 +2279,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const m = getMousePos(e);
             const canvasX = (m.x - canvasOffset.x) / canvasZoom;
             const canvasY = (m.y - canvasOffset.y) / canvasZoom;
-            
+
             // Check if we clicked on top of a node
             let clickedNode = null;
             for (let i = 0; i < graphNodes.length; i++) {
@@ -2268,7 +2292,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 }
             }
-            
+
             if (clickedNode) {
                 draggedNode = clickedNode;
                 canvas.style.cursor = 'grabbing';
@@ -2299,17 +2323,17 @@ document.addEventListener('DOMContentLoaded', () => {
         canvas.addEventListener('wheel', (e) => {
             e.preventDefault();
             const m = getMousePos(e);
-            
+
             const zoomIntensity = 0.04;
             const delta = -e.deltaY;
             const oldZoom = canvasZoom;
-            
+
             if (delta > 0) {
                 canvasZoom = Math.min(2.5, canvasZoom + zoomIntensity);
             } else {
                 canvasZoom = Math.max(0.5, canvasZoom - zoomIntensity);
             }
-            
+
             // Zoom centered on current mouse coordinates
             canvasOffset.x = m.x - (m.x - canvasOffset.x) * (canvasZoom / oldZoom);
             canvasOffset.y = m.y - (m.y - canvasOffset.y) * (canvasZoom / oldZoom);
@@ -2329,36 +2353,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function populateSandboxConcepts() {
         if (!elements.sandboxConceptSelect) return;
-        
+
         const select = elements.sandboxConceptSelect;
         select.innerHTML = '';
-        
+
         const placeholderOpt = document.createElement('option');
         placeholderOpt.value = '';
         placeholderOpt.disabled = true;
         placeholderOpt.selected = true;
         placeholderOpt.textContent = 'Select a scientific concept...';
         select.appendChild(placeholderOpt);
-        
+
         const uniqueTitles = new Set();
         allConcepts.forEach(c => {
             if (c.title) {
                 uniqueTitles.add(c.title);
             }
         });
-        
+
         Array.from(uniqueTitles).sort().forEach(title => {
             const opt = document.createElement('option');
             opt.value = title;
             opt.textContent = title;
             select.appendChild(opt);
         });
-        
+
         const customOpt = document.createElement('option');
         customOpt.value = 'custom';
         customOpt.textContent = 'Custom Topic...';
         select.appendChild(customOpt);
-        
+
         select.addEventListener('change', () => {
             if (select.value === 'custom') {
                 if (elements.sandboxCustomInput) {
@@ -2375,65 +2399,65 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderSandboxHistory() {
         if (!elements.sandboxHistoryList) return;
-        
+
         const list = elements.sandboxHistoryList;
         list.innerHTML = '';
-        
+
         if (allSandboxDebates.length === 0) {
             list.innerHTML = `<div style="text-align: center; color: var(--text-muted); font-size: 11px; padding: 10px;">No debate records available.</div>`;
             return;
         }
-        
+
         allSandboxDebates.forEach(debate => {
             const item = document.createElement('div');
             item.className = 'history-item';
-            
+
             let scoreClass = 'score-low';
             if (debate.score >= 80) {
                 scoreClass = 'score-high';
             } else if (debate.score >= 60) {
                 scoreClass = 'score-mid';
             }
-            
+
             item.innerHTML = `
                 <span class="history-item-concept" title="${debate.concept}">${debate.concept}</span>
                 <span class="history-item-score ${scoreClass}">${debate.score}%</span>
             `;
-            
+
             item.addEventListener('click', () => {
                 displayCompletedDebate(debate);
             });
-            
+
             list.appendChild(item);
         });
     }
 
     function displayCompletedDebate(debate) {
         if (!elements.sandboxDebateStream || !elements.sandboxVerdictBox) return;
-        
+
         const stream = elements.sandboxDebateStream;
         stream.innerHTML = '';
-        
+
         debate.turns.forEach(turn => {
             const bubble = document.createElement('div');
             bubble.className = `sandbox-bubble ${turn.agent}`;
-            
+
             const header = document.createElement('div');
             header.className = 'sandbox-bubble-header';
             header.innerHTML = `
                 <span>${turn.agent === 'caveman' ? 'Grog' : (turn.agent === 'oracle' ? 'The Oracle' : 'Skeptical Student')}</span>
                 <span class="sandbox-bubble-role">${turn.role}</span>
             `;
-            
+
             const text = document.createElement('div');
             text.className = 'sandbox-bubble-text';
             text.innerHTML = compileMarkdownToHTML(turn.text);
-            
+
             bubble.appendChild(header);
             bubble.appendChild(text);
             stream.appendChild(bubble);
         });
-        
+
         stream.scrollTop = stream.scrollHeight;
         updateSandboxGauge(debate.score);
         elements.sandboxVerdictBox.textContent = debate.verdict;
@@ -2441,10 +2465,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateSandboxGauge(score) {
         if (!elements.sandboxGaugeFill || !elements.sandboxScoreValue) return;
-        
+
         const targetOffset = 264 - (264 * score) / 100;
         elements.sandboxGaugeFill.style.strokeDashoffset = targetOffset;
-        
+
         let color = 'var(--status-rejected)';
         if (score >= 80) {
             color = 'var(--status-verified)';
@@ -2452,19 +2476,19 @@ document.addEventListener('DOMContentLoaded', () => {
             color = 'var(--status-theoretical)';
         }
         elements.sandboxGaugeFill.style.stroke = color;
-        
+
         const currentVal = parseInt(elements.sandboxScoreValue.textContent) || 0;
         const duration = 1000;
         const startTime = performance.now();
-        
+
         function animateCount(timestamp) {
             const elapsed = timestamp - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            
+
             const easeProgress = progress * (2 - progress);
             const val = Math.floor(currentVal + (score - currentVal) * easeProgress);
             elements.sandboxScoreValue.textContent = val;
-            
+
             if (progress < 1) {
                 requestAnimationFrame(animateCount);
             } else {
@@ -2477,7 +2501,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function generateMockDebate(concept) {
         const conceptLower = concept.toLowerCase();
         const timestamp = new Date().toISOString();
-        
+
         if (conceptLower.includes('entanglement')) {
             return {
                 id: `debate_${Date.now()}`,
@@ -2663,38 +2687,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function runSandboxDebate(concept) {
         if (isSandboxDebateRunning) return;
-        
+
         isSandboxDebateRunning = true;
         elements.btnSandboxStart.disabled = true;
         elements.btnSandboxStart.classList.add('disabled');
         elements.btnSandboxStart.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Running...`;
-        
+
         updateSandboxGauge(0);
         elements.sandboxVerdictBox.innerHTML = `<span class="pulse-dot dot-theoretical"></span> Debate in progress. Agents are formulating epistemics...`;
-        
+
         const stream = elements.sandboxDebateStream;
         stream.innerHTML = '';
-        
+
         // Prioritize actual LLM-generated debate from our logged runs (newest first)
         let debate = [...allSandboxDebates].reverse().find(d => d.concept && d.concept.toLowerCase() === concept.toLowerCase());
         if (!debate) {
             debate = generateMockDebate(concept);
         }
         const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-        
+
         for (let i = 0; i < debate.turns.length; i++) {
             const turn = debate.turns[i];
-            
+
             const typingBubble = document.createElement('div');
             typingBubble.className = `sandbox-bubble ${turn.agent}`;
-            
+
             const header = document.createElement('div');
             header.className = 'sandbox-bubble-header';
             header.innerHTML = `
                 <span>${turn.agent === 'caveman' ? 'Grog' : (turn.agent === 'oracle' ? 'The Oracle' : 'Skeptical Student')}</span>
                 <span class="sandbox-bubble-role">${turn.role}</span>
             `;
-            
+
             const textContainer = document.createElement('div');
             textContainer.className = 'sandbox-bubble-text';
             textContainer.innerHTML = `
@@ -2704,28 +2728,28 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="typing-dot"></div>
                 </div>
             `;
-            
+
             typingBubble.appendChild(header);
             typingBubble.appendChild(textContainer);
             stream.appendChild(typingBubble);
-            
+
             stream.scrollTop = stream.scrollHeight;
-            
+
             await sleep(1800);
-            
+
             textContainer.innerHTML = compileMarkdownToHTML(turn.text);
             stream.scrollTop = stream.scrollHeight;
-            
+
             const wordCount = turn.text.split(/\s+/).length;
             const readDelay = Math.min(3000, Math.max(1000, wordCount * 50));
             if (i < debate.turns.length - 1) {
                 await sleep(readDelay);
             }
         }
-        
+
         updateSandboxGauge(debate.score);
         elements.sandboxVerdictBox.textContent = debate.verdict;
-        
+
         const telemetryEvent = {
             id: `telemetry_${Date.now()}`,
             event_type: "skeptic_sandbox_debate",
@@ -2735,13 +2759,13 @@ document.addEventListener('DOMContentLoaded', () => {
             status: "APPROVED",
             message: `Debate Completed on '${debate.concept}': Score ${debate.score}% - '${debate.verdict}'`
         };
-        
+
         allTelemetryEvents.unshift(telemetryEvent);
         allSandboxDebates.push(debate);
-        
+
         renderSandboxHistory();
         updateChronologicalState();
-        
+
         elements.btnSandboxStart.disabled = false;
         elements.btnSandboxStart.classList.remove('disabled');
         elements.btnSandboxStart.innerHTML = `<i class="fa-solid fa-play"></i> Initiate Debate`;

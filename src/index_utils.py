@@ -58,6 +58,8 @@ def parse_concept_md(file_path: Path, folder_name: str) -> dict:
         level = 3
 
     status = "THEORETICAL"
+    math_status = "MATH_PENDING"
+    math_score = "0/4"
     sources = []
 
     # Parse YAML frontmatter
@@ -79,7 +81,15 @@ def parse_concept_md(file_path: Path, folder_name: str) -> dict:
                     status = "THEORETICAL"
                 elif "REJECTED" in val:
                     status = "REJECTED"
-        
+            elif line_str.lower().startswith("math_status:"):
+                raw = line_str.split(":", 1)[1].strip().strip('"').strip("'").upper()
+                # Normalize: strip brackets → e.g. [MATH_PROVEN] → MATH_PROVEN
+                math_status = raw.replace("[", "").replace("]", "").strip()
+            elif line_str.lower().startswith("math_score:"):
+                raw_score = line_str.split(":", 1)[1].strip().strip('"').strip("'")
+                if "/" in raw_score:
+                    math_score = raw_score
+
         # Extract sources list
         sources_match = re.search(r"sources:\s*\n((?:\s*-\s*.+\n?)+)", frontmatter)
         if sources_match:
@@ -110,12 +120,14 @@ def parse_concept_md(file_path: Path, folder_name: str) -> dict:
     overview_match = re.search(r"## 1\.\s+Overview\s*\n([\s\S]*?)(?=\n##|$)", content)
     if overview_match:
         overview = overview_match.group(1).strip()
-    
+
     return {
         "id": stem,
         "title": title,
         "level": level,
         "status": status,
+        "math_status": math_status,
+        "math_score": math_score,
         "sources": sources,
         "path": f"{folder_name}/{file_path.name}",
         "image_path": image_path,
@@ -212,7 +224,7 @@ def synchronize_index(index_path: str, repo_root: Path) -> str:
 
     # Start compiling the _index.md content
     index_lines = ["# Knowledge Base Index", ""]
-    
+
     # Inject Mermaid.js visual graph
     if all_concepts:
         index_lines.append("## Interactive Concept Network")

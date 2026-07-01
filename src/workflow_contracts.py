@@ -92,7 +92,7 @@ def parse_student_decision(raw_output: str):
 
 def normalize_markdown_output(raw_output: str):
     text = str(raw_output).strip()
-    
+
     # Extract content inside markdown code block if present (discards external preamble/postamble)
     fence_match = re.search(r"```(?:markdown|md)?\s*\n([\s\S]*?)\n```", text, re.IGNORECASE)
     if fence_match:
@@ -273,6 +273,7 @@ def normalize_markdown_output(raw_output: str):
 
 def validate_concept_markdown(markdown_text: str):
     errors = []
+    warnings = []
     text = str(markdown_text or "").strip()
     if not text:
         return False, ["Document is empty."]
@@ -285,6 +286,10 @@ def validate_concept_markdown(markdown_text: str):
         for key in ["title:", "level:", "status:", "sources:"]:
             if key not in frontmatter:
                 errors.append(f"Frontmatter missing required key: {key}")
+        # Soft check for new math fields (warning, not blocking)
+        for math_key in ["math_status:", "math_score:"]:
+            if math_key not in frontmatter:
+                warnings.append(f"Frontmatter missing math field: {math_key} (will be added by math enrichment pipeline)")
 
     required_sections = [
         "## 1. Overview",
@@ -299,10 +304,20 @@ def validate_concept_markdown(markdown_text: str):
         if heading not in text:
             errors.append(f"Missing required section heading: {heading}")
 
+    # Soft check for math sections (sections 8 & 9 are added by enrichment pipeline)
+    for math_section in ["## 8. Mathematical Derivation", "## 9. Mathematical Integrity Report"]:
+        if math_section not in text:
+            warnings.append(f"Math section not yet present: {math_section} (added by math_enrichment.py)")
+
     if not re.search(r"^#\s+.+", text, re.MULTILINE):
         errors.append("Missing top-level title heading (e.g., '# Concept Name').")
 
+    # Log warnings to console (non-blocking)
+    for w in warnings:
+        print(f"  [MATH WARN] {w}")
+
     return len(errors) == 0, errors
+
 
 
 def parse_skeptic_checklist_score(skeptic_output: str):
@@ -354,4 +369,49 @@ def check_level2_prerequisites(theory_a: str, theory_b: str, concept_name: str, 
                     return False, prereq
 
     return True, None
-
+
+
+def parse_math_score(math_output: str):
+    """
+    Parses the Math Physicist's verification report to extract the Math Score (X/4).
+    Returns (score: int | None, total: int | None).
+
+    Handles formats like:
+      - "Math Score: 3/4"
+      - "**Math Score:** 3/4"
+      - "Score: 3/4"
+    """
+    text = str(math_output or "")
+
+    # Strip markdown bold asterisks before matching for robustness
+    stripped = text.replace("**", "").replace("*", "")
+
+    # Primary: Match "Math Score: X/Y" (after stripping)
+    match = re.search(r'Math\s*Score\s*:\s*(\d+)\s*/\s*(\d+)', stripped, re.IGNORECASE)
+    if match:
+        return int(match.group(1)), int(match.group(2))
+
+    # Secondary: generic score format anchored to denominator 4 (after stripping)
+    match = re.search(r'Score\s*:\s*(\d+)\s*/\s*4', stripped, re.IGNORECASE)
+    if match:
+        return int(match.group(1)), 4
+
+    return None, None
+
+
+def parse_math_status(math_output: str) -> str:
+    """
+    Parses the Math Physicist's report to extract the assigned math_status label.
+    Returns one of: MATH_PROVEN, MATH_CONSISTENT, MATH_CONJECTURED, MATH_TOPOLOGICAL,
+                    MATH_FLAWED, MATH_PENDING, or MATH_UNKNOWN (if not found).
+    """
+    text = str(math_output or "")
+    valid_statuses = [
+        "MATH_PROVEN", "MATH_CONSISTENT", "MATH_CONJECTURED",
+        "MATH_TOPOLOGICAL", "MATH_FLAWED", "MATH_PENDING",
+    ]
+    for status in valid_statuses:
+        # Match [MATH_PROVEN] or MATH_PROVEN
+        if re.search(rf"\[?{re.escape(status)}\]?", text, re.IGNORECASE):
+            return status
+    return "MATH_UNKNOWN"

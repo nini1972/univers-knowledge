@@ -21,6 +21,8 @@ try:
         validate_concept_markdown,
         check_level2_prerequisites,
         parse_skeptic_checklist_score,
+        parse_math_score,
+        parse_math_status,
     )
 except ImportError:
     from src.workflow_contracts import (
@@ -29,6 +31,8 @@ except ImportError:
         validate_concept_markdown,
         check_level2_prerequisites,
         parse_skeptic_checklist_score,
+        parse_math_score,
+        parse_math_status,
     )
 try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
@@ -110,6 +114,7 @@ def main():
     # Use dedicated agent instances across crews and for parallel tasks to avoid
     # reusing the same executor concurrently.
     topic_student = agents.student_agent()
+    math_physicist = agents.math_physicist_agent()
     skeptic = agents.skeptic_agent()
     archivist = agents.archivist_agent()
     has_genmedia_credentials = bool(os.getenv("GOOGLE_APPLICATION_CREDENTIALS"))
@@ -146,7 +151,7 @@ def main():
         selection_output = topic_crew.kickoff()
 
     theory_a, theory_b, concept_name = _extract_level2_selection(selection_output)
-    
+
     # Enforce prerequisite check (Issue 10)
     prereq_ok, missing_prereq = check_level2_prerequisites(theory_a, theory_b, concept_name, current_index)
     if not prereq_ok:
@@ -219,8 +224,8 @@ def main():
     while True:
         attempt_start = time.time()
         log_telemetry_event(
-            "research_evaluation_level2_attempt", 
-            "start", 
+            "research_evaluation_level2_attempt",
+            "start",
             metadata={"concept": concept_name, "attempt": retries + 1}
         )
 
@@ -237,17 +242,19 @@ def main():
         research_task_a = tasks.research_concept_task(researcher_a, theory_a_prompt, async_execution=True)
         research_task_b = tasks.research_concept_task(researcher_b, theory_b_prompt, async_execution=True)
         debate_task = tasks.debate_theories_task(skeptic, theory_a, theory_b, context=[research_task_a, research_task_b])
+        # ── NEW: Tier 1 Math Verification after debate report ─────────────
+        math_task = tasks.math_verification_task(math_physicist, concept_name, context=[research_task_a, research_task_b, debate_task])
         evaluate_task = tasks.student_level2_debate_evaluation_task(
             evaluation_student,
             f"The debate between {theory_a} and {theory_b}",
-            context=[research_task_a, research_task_b, debate_task]
+            context=[research_task_a, research_task_b, debate_task, math_task]
         )
         if pattern_guidance:
             evaluate_task.description += pattern_guidance
 
         evaluation_crew = Crew(
-            agents=[researcher_a, researcher_b, skeptic, evaluation_student],
-            tasks=[research_task_a, research_task_b, debate_task, evaluate_task],
+            agents=[researcher_a, researcher_b, skeptic, math_physicist, evaluation_student],
+            tasks=[research_task_a, research_task_b, debate_task, math_task, evaluate_task],
             process=Process.sequential,
             verbose=True
         )
@@ -259,12 +266,16 @@ def main():
                 "summary_for_archivist": f"Dry-run approved summary for debate: {theory_a} vs {theory_b}.",
                 "follow_up_questions": []
             })
-            skeptic_output = "Verification Score: 5/5"
+            skeptic_output = "Verification Score: 6/6"
+            math_output = "**Math Score:** 4/4\n[MATH_PROVEN]"
         else:
             evaluation_output = str(evaluation_crew.kickoff()).strip()
             skeptic_output = ""
+            math_output = ""
             if hasattr(debate_task, 'output') and debate_task.output:
                 skeptic_output = str(debate_task.output.raw)
+            if hasattr(math_task, 'output') and math_task.output:
+                math_output = str(math_task.output.raw)
 
         evaluation_decision = parse_student_decision(evaluation_output)
         rejected = evaluation_decision["status"] != "approved"
@@ -287,6 +298,12 @@ def main():
         if score is None and skeptic_output:
             score, total_score = parse_skeptic_checklist_score(evaluation_output)
 
+        # Parse math score and status from Math Physicist report
+        math_score, math_total = parse_math_score(math_output)
+        math_status_val = parse_math_status(math_output)
+        if math_score is not None:
+            print(f"[MATH] Score: {math_score}/{math_total} | Status: [{math_status_val}]")
+
         log_evaluation_outcome(
             concept=concept_name,
             status=evaluation_decision["status"],
@@ -298,14 +315,16 @@ def main():
         )
 
         log_telemetry_event(
-            "research_evaluation_level2_attempt", 
-            "end", 
-            duration_seconds=time.time() - attempt_start, 
+            "research_evaluation_level2_attempt",
+            "end",
+            duration_seconds=time.time() - attempt_start,
             metadata={
                 "status": evaluation_decision["status"],
                 "reason_code": evaluation_decision["reason_code"],
                 "score": score,
                 "total_score": total_score,
+                "math_score": math_score,
+                "math_status": math_status_val,
                 "attempt": retries + 1
             }
         )
@@ -331,9 +350,9 @@ def main():
         print(f"Evaluation rejected. Retrying research with follow-up context (attempt {retries}/{max_retries}).")
 
     log_telemetry_event(
-        "research_evaluation_level2", 
-        "end", 
-        duration_seconds=time.time() - step2_start, 
+        "research_evaluation_level2",
+        "end",
+        duration_seconds=time.time() - step2_start,
         metadata={
             "final_status": evaluation_decision["status"],
             "total_attempts": retries + 1
@@ -372,9 +391,9 @@ def main():
     if dry_run:
         print("DRY_RUN enabled. Skipping final_crew.kickoff().")
         log_telemetry_event(
-            "documentation_validation_level2", 
-            "end", 
-            duration_seconds=time.time() - step3_start, 
+            "documentation_validation_level2",
+            "end",
+            duration_seconds=time.time() - step3_start,
             metadata={"status": "skipped_dry_run"}
         )
     else:
@@ -385,9 +404,9 @@ def main():
             for err in validation_errors:
                 print(f" - {err}")
             log_telemetry_event(
-                "documentation_validation_level2", 
-                "end", 
-                duration_seconds=time.time() - step3_start, 
+                "documentation_validation_level2",
+                "end",
+                duration_seconds=time.time() - step3_start,
                 metadata={"status": "failed_validation", "errors": validation_errors}
             )
             return
@@ -398,9 +417,9 @@ def main():
         update_index_file(index_path, concept_name, level_folder, filename)
         print(f"Workflow complete: wrote validated document to {output_location}")
         log_telemetry_event(
-            "documentation_validation_level2", 
-            "end", 
-            duration_seconds=time.time() - step3_start, 
+            "documentation_validation_level2",
+            "end",
+            duration_seconds=time.time() - step3_start,
             metadata={"status": "success", "output_location": output_location}
         )
 
@@ -416,4 +435,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

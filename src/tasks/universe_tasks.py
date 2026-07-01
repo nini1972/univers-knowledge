@@ -9,7 +9,7 @@ class UniverseTasks:
                 ---
                 {current_index}
                 ---
-                Based on what is already known, identify ONE logical next concept in fundamental physics 
+                Based on what is already known, identify ONE logical next concept in fundamental physics
                 or cosmology that is currently missing and should form the foundation of our next learning step.
                 Do NOT suggest a topic that is already explicitly listed in the index.
                 Your response must ONLY be the name of the concept, so it can be passed directly to the Researcher.
@@ -47,13 +47,13 @@ class UniverseTasks:
             description=dedent(f"""
                 Research the following concept thoroughly: {concept}.
                 You must gather information from at least 3 independent scientific sources.
-                Synthesize the current understanding, proposed mechanisms, and any mathematical 
+                Synthesize the current understanding, proposed mechanisms, and any mathematical
                 frameworks associated with this concept.
-                
+
                 SEARCH STRATEGY & SPECIFICITY INSTRUCTIONS:
                 - When searching, generate highly specific queries. Append terms like "review article", "recent advances", "experimental constraints", or "mathematical framework" (e.g., "{concept} experimental constraints" or "{concept} review article").
                 - Prioritize peer-reviewed journals, institutional PDFs (.edu/.ac), and open-access preprint portals (like arXiv.org).
-                
+
                 CRITICAL REQUIREMENTS - Your research report MUST satisfy these 5 criteria:
                 1. Cite at least 3 independent scientific/academic sources with clear references.
                 2. Highlight skepticism, empirical gaps, limitations, and contradictions of this concept, explicitly comparing the mainstream model with at least one unorthodox or alternative counter-hypothesis (e.g. MOND vs. Dark Matter; loop quantum gravity or non-commutative geometry vs. String Theory) and describing the current experimental bounds.
@@ -71,34 +71,175 @@ class UniverseTasks:
             description=dedent(f"""
                 Review the research report on: {concept}.
                 Apply the strict Verification Protocol to evaluate the findings.
-                
+
                 You MUST fill out and include this exact markdown checklist and score at the end of your report:
-                
+
                 Verification Checklist:
                 - [ ] Criterion 1: Source Consensus (at least 3 independent sources cited)
                 - [ ] Criterion 2: Skepticism & Gaps (limitations/contradictions highlighted)
                 - [ ] Criterion 3: Mathematical Grounding (concept is grounded in mathematical formulas or LaTeX equations)
                 - [ ] Criterion 4: Status Classification (clearly classified as [VERIFIED] or [THEORETICAL])
                 - [ ] Criterion 5: Visual Grounding (detailed visual/image prompt description included)
+                - [ ] Criterion 6: Mathematical Integrity (Math Physicist's Math Score is at least 3/4 OR math_status is [MATH_TOPOLOGICAL] or [MATH_CONJECTURED] with clear justification)
 
-                Verification Score: X/5
-                
-                Replace [ ] with [x] for each criterion that is successfully met. Compute and output the final score (e.g., Score: 4/5 or 5/5).
+                Verification Score: X/6
+
+                Replace [ ] with [x] for each criterion that is successfully met. Compute and output the final score (e.g., Score: 5/6 or 6/6).
                 If the concept relies on unproven hypotheses, explicitly flag it as [THEORETICAL] and do not let the Student accept it as [VERIFIED].
+                If the Math Physicist's report is not yet available in context, mark Criterion 6 as [ ] (unchecked) and note it as PENDING.
             """),
-            expected_output="A comprehensive verification report concluding with the completed 5-point Verification Checklist and final Verification Score.",
+            expected_output="A comprehensive verification report concluding with the completed 6-point Verification Checklist and final Verification Score.",
             agent=agent,
             context=context
         )
+
+    def math_verification_task(self, agent, concept, context=None):
+        """Tier 1 — Automatic math verification task. Inserted after research, before skeptic."""
+        return Task(
+            description=dedent(f"""
+                Perform a rigorous mathematical integrity check on the research report for: {concept}.
+
+                You MUST execute the following steps in order using your tools:
+
+                STEP 1 — Extract equations:
+                Use the "Equation Extractor" tool on the full research report text from context.
+                Pass the raw text directly to the tool.
+
+                STEP 2 — Check dimensional consistency:
+                Pass the JSON output from Step 1 directly to the "Dimensional Consistency Checker" tool.
+
+                STEP 3 — Classify topological structures:
+                Use the "Topology Classifier" tool with the concept name and the full research text.
+
+                STEP 4 — Validate numerical benchmarks:
+                Use the "Numerical Benchmark Validator" tool with the concept name and the equation JSON from Step 1.
+
+                STEP 5 — Compute the Math Score and assign math_status:
+                Award 1 point for each criterion met:
+                  - Point 1: At least 1 equation was successfully extracted (Step 1)
+                  - Point 2: All extracted equations are CONSISTENT or DIMENSIONLESS (Step 2), OR math is purely topological
+                  - Point 3: Topological structures are VALID (Step 3), OR dimensional verification passed fully
+                  - Point 4: At least 1 numerical benchmark MATCHES (Step 4), OR concept is theoretical with no experimental values
+
+                Assign math_status based on results:
+                  [MATH_PROVEN]      — Score 4/4, all steps verified
+                  [MATH_CONSISTENT]  — Score 2-3/4, no INCONSISTENT flags
+                  [MATH_CONJECTURED] — Has unproven assumptions clearly flagged
+                  [MATH_TOPOLOGICAL] — Primarily topological, structurally valid
+                  [MATH_FLAWED]      — Any INCONSISTENT verdict detected
+                  [MATH_PENDING]     — No equations found at all
+
+                STEP 6 — Write the Math Verification Report:
+                Format your output EXACTLY as:
+
+                ## Math Verification Report
+
+                **Concept:** {concept}
+                **Math Score:** X/4
+                **Math Status:** [MATH_???]
+
+                ### Equations Extracted
+                (list equations found, or "None found")
+
+                ### Dimensional Consistency
+                (per-equation verdict from tool)
+
+                ### Topological Analysis
+                (topology type and structural assessment, or "Not topological")
+
+                ### Numerical Benchmarks
+                (benchmark matches and values, or "Not applicable")
+
+                ### Assessment
+                (2-3 sentence narrative summary of mathematical integrity)
+            """),
+            expected_output=dedent(f"""
+                A Math Verification Report for {concept} with:
+                - Math Score (X/4)
+                - math_status ([MATH_PROVEN/CONSISTENT/CONJECTURED/TOPOLOGICAL/FLAWED/PENDING])
+                - Dimensional consistency results per equation
+                - Topological structure classification
+                - Numerical benchmark comparison
+            """),
+            agent=agent,
+            context=context
+        )
+
+    def derivation_deep_dive_task(self, agent, concept, research_text, context=None):
+        """Tier 2 — On-demand deep-dive derivation task for the Derivation Architect."""
+        return Task(
+            description=dedent(f"""
+                Produce a complete step-by-step mathematical derivation for: {concept}.
+
+                You have access to the full research report text below:
+                ---
+                {research_text[:3000]}
+                ---
+
+                You MUST work through these steps with your tools:
+
+                STEP 1: Extract all equations using "Equation Extractor" on the research text above.
+
+                STEP 2: For each major equation, attempt symbolic verification using "Symbolic Derivation Verifier".
+                Structure your derivation steps as a JSON list:
+                ["axiom_or_equation_1", "intermediate_step_2", "result_3"]
+                Pass this to the tool and record [STEP_VERIFIED], [STEP_ASSUMED], or [STEP_CONJECTURED] for each.
+
+                STEP 3: If topological structures are present, run "Topology Classifier".
+
+                STEP 4: Cross-check dimensional consistency with "Dimensional Consistency Checker".
+
+                STEP 5: Anchor numerical predictions with "Numerical Benchmark Validator".
+
+                STEP 6: Compose the final output using EXACTLY this format:
+
+                ## 8. Mathematical Derivation
+
+                ### Starting Axioms
+                - [AXIOM] (list the fundamental principles this derivation starts from)
+
+                ### Step-by-Step Derivation
+
+                **Step 1** [STEP_VERIFIED/ASSUMED/CONJECTURED]: (description and equation)
+                **Step 2** [STEP_VERIFIED/ASSUMED/CONJECTURED]: (description and equation)
+                (continue for all steps...)
+
+                ### Final Result
+                (The key equation or conclusion with LaTeX formatting)
+
+                ### Proof Boundary
+                | Category | Count | Interpretation |
+                |---|---|---|
+                | Proven steps | N | Verified by sympy or known physics identity |
+                | Assumed steps | N | Plausible but not fully verified symbolically |
+                | Conjectured steps | N | Relies on unproven physical hypothesis |
+
+                ### Mathematical Status
+                **{concept}** receives: `[MATH_???]`
+
+                (2-3 sentence explanation of why this status was assigned and what would be needed to upgrade it)
+            """),
+            expected_output=dedent(f"""
+                A complete ## 8. Mathematical Derivation section for {concept} including:
+                - Starting axioms
+                - Step-by-step derivation with [STEP_VERIFIED/ASSUMED/CONJECTURED] labels
+                - Final result in LaTeX
+                - Proof Boundary table
+                - Final math_status with justification
+            """),
+            agent=agent,
+            context=context
+        )
+
 
     def student_evaluation_task(self, agent, concept, context=None):
         return Task(
             description=dedent(f"""
                 Assess the Researcher's report and the Skeptic's verification on: {concept}.
                 Decide if this concept has passed the Verification Threshold.
-                
+
                 CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the concept and set "status" to "rejected" and "reason_code" to "insufficient_skeptic_score".
-                
+
                 Return ONLY valid JSON with this exact schema:
                 {{
                   "status": "approved" | "rejected",
@@ -122,9 +263,9 @@ class UniverseTasks:
         return Task(
             description=dedent(f"""
                 Assess the comparative Level 2 debate report and skeptic review on: {concept}.
-                
+
                 CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the concept and set "status" to "rejected" and "reason_code" to "insufficient_skeptic_score".
-                
+
                 Return ONLY valid JSON with this exact schema:
                 {{
                   "status": "approved" | "rejected",
@@ -155,9 +296,9 @@ class UniverseTasks:
                 2. Alignment with existing empirical data (e.g., General Relativity and Quantum Mechanics).
                 3. Major flaws or unprovable assumptions in each.
                 Highlight which theory (if either) has stronger current consensus, and clearly flag both as [THEORETICAL].
-                
+
                 You MUST include this exact markdown checklist and score at the end of your debate report:
-                
+
                 Verification Checklist:
                 - [ ] Criterion 1: Multi-source Integration (at least 3 independent sources compared)
                 - [ ] Criterion 2: Mathematical Consistency (rigorous comparative math review in LaTeX)
@@ -166,7 +307,7 @@ class UniverseTasks:
                 - [ ] Criterion 5: Comparative Consensus (clear statement of current consensus status)
 
                 Verification Score: X/5
-                
+
                 Replace [ ] with [x] for each criterion that is successfully met. Compute and output the final score.
             """),
             expected_output="A structured debate report comparing both theories, concluding with the completed 5-point Verification Checklist and final Verification Score.",
@@ -178,19 +319,19 @@ class UniverseTasks:
         return Task(
             description=dedent(f"""
                 Read the final verified summary for the concept: {concept}.
-                Create a highly detailed, 1-paragraph image generation prompt that accurately 
-                visualizes the core physical mechanisms of this concept. 
-                
+                Create a highly detailed, 1-paragraph image generation prompt that accurately
+                visualizes the core physical mechanisms of this concept.
+
                 VISUAL STYLING GUIDELINES:
                 - Use a cinematic deep-space aesthetic with a premium dark mode obsidian backdrop.
                 - Use vibrant, curated neon HSL highlights (e.g. quantum cyan, stellar ultraviolet, glowing nebular violet, and supernova orange).
                 - Use technical schematic line-art, glassmorphism lenses, and geometric overlay patterns to give a premium, scientific look.
                 - Avoid generic flat designs; make the scene feel immersive, layered, and multi-dimensional.
                 - Create a vivid, structurally accurate visual metaphor representing the quantum/cosmological phenomenon.
-                
-                You MUST use the 'Generate Universe Image' tool to actually create the image. 
+
+                You MUST use the 'Generate Universe Image' tool to actually create the image.
                 Pass your detailed prompt to the tool.
-                
+
                 If the tool returns a normal file path, your final output must be exactly:
                 `![{concept}](<the path returned by the tool>)`
 
@@ -257,19 +398,21 @@ class UniverseTasks:
         return Task(
             description=dedent(f"""
                 {summary_source} {visual_source}
-                
+
                 You MUST format the final output strictly following this exact template. Fill in all placeholder values (such as {{Concept Name}}, the level, the status, and sources list).
-                
+
                 CRITICAL STRUCTURE INSTRUCTIONS:
-                1. You must include the complete YAML frontmatter block starting and ending with '---' containing: title, level, status, and sources.
-                2. You must use the EXACT headings, numbering, and titles as defined in the template below. Do NOT omit any headings, and do NOT alter their names/numbers.
-                3. {visual_insert}
-                4. Do NOT wrap the entire output in markdown code fences like '```markdown'. Output raw markdown content directly.
-                
+                1. You must include the complete YAML frontmatter block starting and ending with '---' containing: title, level, status, sources, math_status, and math_score.
+                2. For math_status: extract it from the Math Physicist's Math Verification Report in context. Use [MATH_PENDING] if the report is not available.
+                3. For math_score: extract the Math Score (e.g., "3/4") from the Math Physicist's report. Use "0/4" if not available.
+                4. You must use the EXACT headings, numbering, and titles as defined in the template below. Do NOT omit any headings, and do NOT alter their names/numbers.
+                5. {visual_insert}
+                6. Do NOT wrap the entire output in markdown code fences like '```markdown'. Output raw markdown content directly.
+                7. For section ## 9. Mathematical Integrity Report: copy the Math Physicist's full verification report from context into this section. If no math report is available, write "[MATH_PENDING — will be populated by math_enrichment.py]".
+
                 TEMPLATE LAYOUT TO STRICTLY ADHERE TO:
                 {template_content}
             """),
-            expected_output=f"A fully formatted Markdown document saved directly to {output_path} following the exact template layout, starting with '---' frontmatter.",
+            expected_output=f"A fully formatted Markdown document saved directly to {output_path} following the exact template layout, starting with '---' frontmatter including math_status and math_score.",
             agent=agent
         )
-
