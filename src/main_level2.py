@@ -48,12 +48,14 @@ try:
         log_evaluation_outcome,
         get_top_failure_patterns,
         log_telemetry_event,
+        log_rejected_concept,
     )
 except ImportError:
     from src.evaluation_logger import (
         log_evaluation_outcome,
         get_top_failure_patterns,
         log_telemetry_event,
+        log_rejected_concept,
     )
 
 import time
@@ -342,6 +344,17 @@ def main():
                 f"{max_retries} retries (reason_code={evaluation_decision['reason_code']}). "
                 "Skipping document generation."
             )
+            log_rejected_concept(
+                concept=concept_name,
+                level=2,
+                reason_code=evaluation_decision["reason_code"],
+                total_attempts=retries + 1,
+                follow_up_questions=evaluation_decision.get("follow_up_questions", []),
+                math_score=math_score,
+                math_status=math_status_val,
+                last_skeptic_score=score,
+                last_skeptic_total=total_score,
+            )
             break
 
         retries += 1
@@ -376,7 +389,9 @@ def main():
         archivist,
         output_location,
         include_visual=bool(visual_task),
-        approved_summary=evaluation_decision["summary_for_archivist"]
+        approved_summary=evaluation_decision["summary_for_archivist"],
+        math_status=math_status_val,
+        math_score=math_score,
     )
 
     final_agents = [archivist]

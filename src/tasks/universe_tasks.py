@@ -343,7 +343,7 @@ class UniverseTasks:
             agent=agent
         )
 
-    def document_knowledge_task(self, agent, output_path, include_visual=True, approved_summary=None):
+    def document_knowledge_task(self, agent, output_path, include_visual=True, approved_summary=None, math_status=None, math_score=None):
         from pathlib import Path
         repo_root = Path(__file__).resolve().parent.parent
         template_file = repo_root / "knowledge_base" / "templates" / "concept_template.md"
@@ -395,6 +395,22 @@ class UniverseTasks:
             visual_source = ""
             visual_insert = "If no image tag is available, section '## 5. Visual Representation' must contain either a text description of the visualization or the raw image placeholder."
 
+        # Build explicit math field instructions from pre-parsed values
+        if math_status and math_score is not None:
+            math_yaml_instruction = dedent(f"""
+                IMPORTANT — Math YAML fields are already known. Use these EXACT values verbatim:
+                  math_status: "{math_status}"
+                  math_score: "{math_score}/4"
+                Do NOT change or omit these values.
+            """).strip()
+        else:
+            math_yaml_instruction = dedent("""
+                For math_status: extract it from the Math Physicist's Math Verification Report in context.
+                Use [MATH_PENDING] if the report is not available.
+                For math_score: extract the Math Score (e.g., "3/4") from the Math Physicist's report.
+                Use "0/4" if not available.
+            """).strip()
+
         return Task(
             description=dedent(f"""
                 {summary_source} {visual_source}
@@ -403,12 +419,11 @@ class UniverseTasks:
 
                 CRITICAL STRUCTURE INSTRUCTIONS:
                 1. You must include the complete YAML frontmatter block starting and ending with '---' containing: title, level, status, sources, math_status, and math_score.
-                2. For math_status: extract it from the Math Physicist's Math Verification Report in context. Use [MATH_PENDING] if the report is not available.
-                3. For math_score: extract the Math Score (e.g., "3/4") from the Math Physicist's report. Use "0/4" if not available.
-                4. You must use the EXACT headings, numbering, and titles as defined in the template below. Do NOT omit any headings, and do NOT alter their names/numbers.
-                5. {visual_insert}
-                6. Do NOT wrap the entire output in markdown code fences like '```markdown'. Output raw markdown content directly.
-                7. For section ## 9. Mathematical Integrity Report: copy the Math Physicist's full verification report from context into this section. If no math report is available, write "[MATH_PENDING — will be populated by math_enrichment.py]".
+                2. {math_yaml_instruction}
+                3. You must use the EXACT headings, numbering, and titles as defined in the template below. Do NOT omit any headings, and do NOT alter their names/numbers.
+                4. {visual_insert}
+                5. Do NOT wrap the entire output in markdown code fences like '```markdown'. Output raw markdown content directly.
+                6. For section ## 9. Mathematical Integrity Report: copy the Math Physicist's full verification report from context into this section. If no math report is available, write "[MATH_PENDING — will be populated by math_enrichment.py]".
 
                 TEMPLATE LAYOUT TO STRICTLY ADHERE TO:
                 {template_content}

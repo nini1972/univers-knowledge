@@ -47,6 +47,7 @@ try:
         get_top_failure_patterns,
         log_telemetry_event,
         get_last_missing_prerequisite,
+        log_rejected_concept,
     )
 except ImportError:
     from src.evaluation_logger import (
@@ -54,6 +55,7 @@ except ImportError:
         get_top_failure_patterns,
         log_telemetry_event,
         get_last_missing_prerequisite,
+        log_rejected_concept,
     )
 
 import time
@@ -230,6 +232,17 @@ def run_level1_flow(next_concept: str):
                 f"{max_retries} retries (reason_code={decision['reason_code']}). "
                 "Skipping document generation."
             )
+            log_rejected_concept(
+                concept=next_concept,
+                level=1,
+                reason_code=decision["reason_code"],
+                total_attempts=retries + 1,
+                follow_up_questions=decision.get("follow_up_questions", []),
+                math_score=math_score,
+                math_status=math_status_val,
+                last_skeptic_score=score,
+                last_skeptic_total=total_score,
+            )
             break
 
         retries += 1
@@ -265,6 +278,8 @@ def run_level1_flow(next_concept: str):
         output_location,
         include_visual=bool(visual_task),
         approved_summary=decision["summary_for_archivist"],
+        math_status=math_status_val,
+        math_score=math_score,
     )
 
     final_agents = [archivist]
