@@ -143,6 +143,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add knowledge_base/
+          git add -f knowledge_base/logs/rejected_concepts.jsonl || true
           # Only commit if there are changes
           git diff --staged --quiet || git commit -m "docs: Student agent acquired new verified knowledge \ud83e\udde0"
           git push
