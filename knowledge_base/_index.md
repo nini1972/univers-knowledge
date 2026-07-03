@@ -31,6 +31,7 @@ graph TD
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
     neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
     cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
+    quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
     quantum_decoherence["Quantum Decoherence"]:::verified
     neutrino_masses_and_leptogenesis["Neutrino Masses and Leptogenesis"]:::verified
     general_relativity["General Relativity"]:::verified
@@ -78,6 +79,7 @@ graph TD
     supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate["Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"]:::theoretical
     cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
+    loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate["Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
     causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research["Causal Set Theory vs Spin Foam Models in Quantum Gravity Research"]:::theoretical
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
@@ -143,6 +145,7 @@ graph TD
 - [Quantum Measurement Problem](level_1_fundamental_physics/quantum_measurement_problem.md) [THEORETICAL]
 - [Quantum Mechanics](level_1_fundamental_physics/quantum_mechanics.md) [VERIFIED]
 - [Quantum Vacuum and Spacetime Structure](level_1_fundamental_physics/quantum_vacuum_and_spacetime_structure.md) [THEORETICAL]
+- [Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation](level_1_fundamental_physics/quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation.md) [THEORETICAL]
 - [Quantum Vacuum Fluctuations and Zero-Point Energy](level_1_fundamental_physics/quantum_vacuum_fluctuations_and_zeropoint_energy.md) [VERIFIED]
 - [Quantum Vacuum Polarization](level_1_fundamental_physics/quantum_vacuum_polarization.md) [VERIFIED]
 - [Standard Model Fermion Mass Hierarchies and Mixing Matrices](level_1_fundamental_physics/standard_model_fermion_mass_hierarchies_and_mixing_matrices.md) [VERIFIED]
@@ -170,6 +173,7 @@ graph TD
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](level_2_advanced_frameworks/loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
+- [Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Massive Gravity versus f(R) Gravity in Modified Gravity Debates](level_2_advanced_frameworks/massive_gravity_versus_fr_gravity_in_modified_gravity_debates.md) [THEORETICAL]
 - [Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md) [THEORETICAL]
 - [Modified Gravity Theories vs Dark Matter Particle Models Debate](level_2_advanced_frameworks/modified_gravity_theories_vs_dark_matter_particle_models_debate.md) [THEORETICAL]
