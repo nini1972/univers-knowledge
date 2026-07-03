@@ -198,6 +198,23 @@ def run_level1_flow(next_concept: str):
         if math_score is not None:
             print(f"[MATH] Score: {math_score}/{math_total} | Status: [{math_status_val}]")
 
+        # Force a retry if no equations are found on the first attempt
+        if math_status_val == "MATH_PENDING" and retries == 0:
+            print(f"[MATH RETRY TRIGGER] '{next_concept}' is MATH_PENDING on attempt 1. Forcing retry with math search prompt.")
+            rejected = True
+            decision = {
+                "status": "rejected",
+                "reason_code": "missing_math_equations",
+                "summary_for_archivist": "",
+                "follow_up_questions": [
+                    "The Math Physicist found no LaTeX equations in the research report. "
+                    "Please search specifically for the mathematical formulas, equations, or "
+                    "formal mathematical models associated with this concept and format them "
+                    "in standard LaTeX notation (e.g. using $...$ or $$...$$)."
+                ]
+            }
+
+
         # Log evaluation outcome (Issue 6)
         log_evaluation_outcome(
             concept=next_concept,
