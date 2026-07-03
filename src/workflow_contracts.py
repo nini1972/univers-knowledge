@@ -141,7 +141,9 @@ def normalize_markdown_output(raw_output: str):
         (4, r"^#*\s*(?:\d+\.?\s*)?(?:Skeptical\s+Perspectives|Alternative\s+Hypotheses|Skeptical\s+Perspectives\s*&\s*Alternative\s+Hypotheses).*$", "## 4. Skeptical Perspectives & Alternative Hypotheses"),
         (5, r"^#*\s*(?:\d+\.?\s*)?(?:Verification\s*&\s*Skeptic's\s*Notes|Verification\s+Notes|Skeptic's\s*Notes).*$", "## 5. Verification & Skeptic's Notes"),
         (6, r"^#*\s*(?:\d+\.?\s*)?(?:Visual\s+Representation|Visual\s+Grounding|Visualization).*$", "## 6. Visual Representation"),
-        (7, r"^#*\s*(?:\d+\.?\s*)?Related\s+Concepts.*$", "## 7. Related Concepts")
+        (7, r"^#*\s*(?:\d+\.?\s*)?Related\s+Concepts.*$", "## 7. Related Concepts"),
+        (8, r"^#*\s*(?:\d+\.?\s*)?(?:Mathematical\s+)?Derivation.*$", "## 8. Mathematical Derivation"),
+        (9, r"^#*\s*(?:\d+\.?\s*)?(?:Mathematical\s+)?Integrity.*Report.*$", "## 9. Mathematical Integrity Report")
     ]
 
     lines = body_text.splitlines()
@@ -164,21 +166,32 @@ def normalize_markdown_output(raw_output: str):
         "## 7. Related Concepts"
     ]
 
-    section_contents = {}
-    heading_positions = []
+    # Detect optional headings dynamically (e.g. ## 8. ... and ## 9. ...)
+    detected_optional_headings = []
+    for match in re.finditer(r'^##\s+([89]\..*)$', body_text, re.MULTILINE):
+        heading_text = match.group(0).strip()
+        pos = match.start()
+        detected_optional_headings.append((pos, heading_text))
+
+    all_headings = []
+    # Add required headings that exist in the text
     for heading in REQUIRED_HEADINGS:
         pos = body_text.find(heading)
         if pos != -1:
-            heading_positions.append((pos, heading))
+            all_headings.append((pos, heading))
 
-    # Sort by character index
-    heading_positions.sort()
+    # Add detected optional headings
+    all_headings.extend(detected_optional_headings)
 
-    for i in range(len(heading_positions)):
-        pos, heading = heading_positions[i]
+    # Sort by character index to preserve relative ordering in original text
+    all_headings.sort(key=lambda x: x[0])
+
+    section_contents = {}
+    for i in range(len(all_headings)):
+        pos, heading = all_headings[i]
         start_idx = pos + len(heading)
-        if i + 1 < len(heading_positions):
-            end_idx = heading_positions[i+1][0]
+        if i + 1 < len(all_headings):
+            end_idx = all_headings[i+1][0]
             content = body_text[start_idx:end_idx].strip()
         else:
             content = body_text[start_idx:].strip()
@@ -204,6 +217,14 @@ def normalize_markdown_output(raw_output: str):
         reconstructed_body.append(heading)
         reconstructed_body.append(content)
         reconstructed_body.append("") # Spacer line
+
+    # Reconstruct any optional/custom headings (like ## 8. and ## 9.)
+    for _, heading in all_headings:
+        if heading not in REQUIRED_HEADINGS:
+            content = section_contents.get(heading, "").strip()
+            reconstructed_body.append(heading)
+            reconstructed_body.append(content)
+            reconstructed_body.append("") # Spacer line
 
     # Step 7: Parse, repair and guarantee all required keys in frontmatter
     default_fm_keys = {
@@ -257,6 +278,19 @@ def normalize_markdown_output(raw_output: str):
     repaired_lines.append("title: " + default_fm_keys["title"])
     repaired_lines.append("level: " + str(default_fm_keys["level"]))
     repaired_lines.append("status: " + default_fm_keys["status"])
+
+    # Reconstruct math fields if they exist in parsed_keys
+    if "math_status" in parsed_keys:
+        val = parsed_keys["math_status"].strip()
+        if not (val.startswith('"') and val.endswith('"')):
+            val = f'"{val}"'
+        repaired_lines.append("math_status: " + val)
+    if "math_score" in parsed_keys:
+        val = parsed_keys["math_score"].strip()
+        if not (val.startswith('"') and val.endswith('"')):
+            val = f'"{val}"'
+        repaired_lines.append("math_score: " + val)
+
     repaired_lines.append("sources:")
     if sources_lines:
         for s in sources_lines:
@@ -269,6 +303,7 @@ def normalize_markdown_output(raw_output: str):
 
     final_doc = f"{frontmatter}\n\n{title}\n\n" + "\n".join(reconstructed_body)
     return final_doc.strip()
+
 
 
 def validate_concept_markdown(markdown_text: str):
