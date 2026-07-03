@@ -260,7 +260,13 @@ def run_level1_flow(next_concept: str):
                 last_skeptic_score=score,
                 last_skeptic_total=total_score,
             )
+            try:
+                import backlog_manager
+            except ImportError:
+                from src import backlog_manager
+            backlog_manager.add_to_backlog(next_concept, level=1, questions=decision.get("follow_up_questions", []))
             break
+
 
         retries += 1
         follow_up_context = json.dumps(
@@ -343,12 +349,21 @@ def run_level1_flow(next_concept: str):
     output_file.write_text(document_output.rstrip() + "\n", encoding="utf-8")
     update_index_file(index_path, next_concept, level_folder, filename)
     print(f"Workflow complete: wrote validated document to {output_location}")
+
+    try:
+        import backlog_manager
+    except ImportError:
+        from src import backlog_manager
+    backlog_manager.resolve_backlog_item(next_concept)
+    backlog_manager.add_to_backlog(next_concept, level=1, questions=decision.get("follow_up_questions", []))
+
     log_telemetry_event(
         "documentation_validation",
         "end",
         duration_seconds=time.time() - step3_start,
         metadata={"status": "success", "output_location": output_location}
     )
+
 
     try:
         print("--- STEP 4: Skeptic Sandbox Debate (Caveman & Oracle Integration) ---")
@@ -393,14 +408,24 @@ def main():
 
     topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback("topic_crew"))
 
+    try:
+        import backlog_manager
+    except ImportError:
+        from src import backlog_manager
+    backlog_item = backlog_manager.get_next_backlog_item()
+
     missing_prereq = get_last_missing_prerequisite(current_index)
-    if missing_prereq:
+    if backlog_item:
+        print(f"[CLOSED-LOOP FEEDBACK] Prioritizing backlog research point: '{backlog_item['question']}'")
+        next_concept = backlog_item['question']
+    elif missing_prereq:
         print(f"[CLOSED-LOOP FEEDBACK] Prioritizing missing Level 2 prerequisite: '{missing_prereq}'")
         next_concept = missing_prereq
     elif dry_run:
         next_concept = "Quantum Entanglement"
     else:
         next_concept = topic_crew.kickoff()
+
 
     next_concept = str(next_concept).strip()
     print(f"Target Concept Selected: {next_concept}")

@@ -372,7 +372,13 @@ def main():
                 last_skeptic_score=score,
                 last_skeptic_total=total_score,
             )
+            try:
+                import backlog_manager
+            except ImportError:
+                from src import backlog_manager
+            backlog_manager.add_to_backlog(concept_name, level=2, questions=evaluation_decision.get("follow_up_questions", []))
             break
+
 
         retries += 1
         follow_up_context = json.dumps(
@@ -454,12 +460,20 @@ def main():
         output_file.write_text(result.rstrip() + "\n", encoding="utf-8")
         update_index_file(index_path, concept_name, level_folder, filename)
         print(f"Workflow complete: wrote validated document to {output_location}")
+
+        try:
+            import backlog_manager
+        except ImportError:
+            from src import backlog_manager
+        backlog_manager.add_to_backlog(concept_name, level=2, questions=evaluation_decision.get("follow_up_questions", []))
+
         log_telemetry_event(
             "documentation_validation_level2",
             "end",
             duration_seconds=time.time() - step3_start,
             metadata={"status": "success", "output_location": output_location}
         )
+
 
         try:
             print("--- STEP 4: Skeptic Sandbox Debate (Caveman & Oracle Integration) ---")
