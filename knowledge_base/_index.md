@@ -73,6 +73,7 @@ graph TD
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
     warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation["Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"]:::theoretical
     supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
+    modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration["Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration"]:::theoretical
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
@@ -177,6 +178,7 @@ graph TD
 - [Massive Gravity versus f(R) Gravity in Modified Gravity Debates](level_2_advanced_frameworks/massive_gravity_versus_fr_gravity_in_modified_gravity_debates.md) [THEORETICAL]
 - [Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md) [THEORETICAL]
 - [Modified Gravity Theories vs Dark Matter Particle Models Debate](level_2_advanced_frameworks/modified_gravity_theories_vs_dark_matter_particle_models_debate.md) [THEORETICAL]
+- [Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration](level_2_advanced_frameworks/modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration.md) [THEORETICAL]
 - [Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate](level_2_advanced_frameworks/modified_gravity_vs_dark_matter_paradigm_debate.md) [THEORETICAL]
 - [Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves](level_2_advanced_frameworks/modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves.md) [THEORETICAL]
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
