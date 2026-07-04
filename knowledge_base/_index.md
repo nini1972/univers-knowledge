@@ -47,6 +47,7 @@ graph TD
     cosmological_constant_and_dark_energy["Cosmological Constant and Dark Energy"]:::verified
     quantum_gravity["Quantum Gravity"]:::theoretical
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
+    what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay["Direct Detection of Neutrino Decay Experimental Strategies"]:::theoretical
     cp_violation["CP Violation"]:::theoretical
     quantum_entanglement["Quantum Entanglement"]:::verified
     neutrino_anomalies_and_sterile_neutrino_hypothesis["Neutrino Anomalies and Sterile Neutrino Hypothesis"]:::theoretical
@@ -69,6 +70,7 @@ graph TD
     superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
     holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate["Holographic Principle vs Causal Set Theory in Quantum Gravity Debate"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
+    black_hole_models_debate_observational_techniques_vs_theoretical_frameworks["Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks"]:::verified
     loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate["Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate"]:::theoretical
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
     warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation["Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"]:::theoretical
@@ -112,6 +114,7 @@ graph TD
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
 - [CP Violation](level_1_fundamental_physics/cp_violation.md) [THEORETICAL]
 - [Dark Matter](level_1_fundamental_physics/dark_matter.md) [THEORETICAL]
+- [Direct Detection of Neutrino Decay Experimental Strategies](level_1_fundamental_physics/what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay.md) [THEORETICAL]
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md) [THEORETICAL]
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
@@ -160,6 +163,7 @@ graph TD
 - [Axion Dark Matter vs WIMPs in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_wimps_in_explaining_dark_matter.md) [THEORETICAL]
 - [Beyond the Standard Model Solutions to the Hierarchy Problem](level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md) [THEORETICAL]
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]
+- [Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks](level_2_advanced_frameworks/black_hole_models_debate_observational_techniques_vs_theoretical_frameworks.md) [VERIFIED]
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
 - [Causal Set Theory vs Spin Foam Models in Quantum Gravity Research](level_2_advanced_frameworks/causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research.md) [THEORETICAL]
 - [Cosmological Constant versus Quintessence in Explaining Dark Energy](level_2_advanced_frameworks/cosmological_constant_versus_quintessence_in_explaining_dark_energy.md) [THEORETICAL]
