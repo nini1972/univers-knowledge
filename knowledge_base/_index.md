@@ -29,6 +29,7 @@ graph TD
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
     neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
+    how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures["Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures"]:::theoretical
     neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
     cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
     quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
@@ -100,6 +101,7 @@ graph TD
     supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics["Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics"]:::theoretical
     supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"]:::theoretical
     quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
+    freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate["Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate"]:::theoretical
     massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
 
     %% Connections & Prerequisites
@@ -152,6 +154,7 @@ graph TD
 - [Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation](level_1_fundamental_physics/quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation.md) [THEORETICAL]
 - [Quantum Vacuum Fluctuations and Zero-Point Energy](level_1_fundamental_physics/quantum_vacuum_fluctuations_and_zeropoint_energy.md) [VERIFIED]
 - [Quantum Vacuum Polarization](level_1_fundamental_physics/quantum_vacuum_polarization.md) [VERIFIED]
+- [Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures](level_1_fundamental_physics/how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures.md) [THEORETICAL]
 - [Standard Model Fermion Mass Hierarchies and Mixing Matrices](level_1_fundamental_physics/standard_model_fermion_mass_hierarchies_and_mixing_matrices.md) [VERIFIED]
 - [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
@@ -172,6 +175,7 @@ graph TD
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
 - [Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena](level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md) [THEORETICAL]
 - [Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md) [THEORETICAL]
+- [Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate](level_2_advanced_frameworks/freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate.md) [THEORETICAL]
 - [Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate](level_2_advanced_frameworks/higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate.md) [THEORETICAL]
 - [Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](level_2_advanced_frameworks/holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
