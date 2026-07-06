@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let hoveredNode = null;
     let canvasOffset = { x: 0, y: 0 };
     let canvasZoom = 1.0;
+    let galacticRotationAngle = 0; // Milky Way spiral rotation
     let animationFrameId = null;
     let particleFlows = []; // Micro-animation data flows
 
@@ -1469,20 +1470,62 @@ document.addEventListener('DOMContentLoaded', () => {
         const canvas = elements.networkCanvas;
         const width = canvas ? canvas.clientWidth : 900;
         const height = canvas ? canvas.clientHeight : 520;
-        const gravityStrength = 0.006; // Softer vertical pull allows orbital/spring forces to form natural circular clusters
         const centerX = width / 2;
+        const centerY = height / 2;
+
+        // Core Hubs (which gravitate directly to the supermassive galactic center)
+        const coreHubs = new Set(['quantum_gravity', 'standard_model_of_particle_physics', 'neutrino_oscillations']);
 
         nodes.forEach(node => {
-            const zone = getLevelZone(node.level, width, height);
-            const targetY = (zone.yMin + zone.yMax) / 2;
+            if (node === draggedNode) return;
 
-            // Pull vertically toward level preferred bands (much softer than before)
-            const dy = targetY - node.y;
-            node.vy += dy * gravityStrength;
+            let targetX = centerX;
+            let targetY = centerY;
 
-            // Gentle horizontal gravity toward the center to keep the network beautifully centered
-            const dx = centerX - node.x;
-            node.vx += dx * 0.0025;
+            if (coreHubs.has(node.id)) {
+                // Core hubs are drawn strongly to the very center
+                const dx = centerX - node.x;
+                const dy = centerY - node.y;
+                node.vx += dx * 0.015;
+                node.vy += dy * 0.015;
+            } else {
+                // Other nodes are distributed along 4 spiral arms of the galaxy
+                let hash = 0;
+                for (let idx = 0; idx < node.id.length; idx++) {
+                    hash += node.id.charCodeAt(idx);
+                }
+                const armIndex = hash % 4; // 4 spiral arms
+                const armAngleOffset = armIndex * (Math.PI / 2);
+
+                // Determine the radius (distance from center) based on level
+                let baseRadius = 90;
+                if (node.level === 2) {
+                    baseRadius = 180;
+                } else if (node.level === 3) {
+                    baseRadius = 270;
+                }
+                
+                // Add a little variation based on hash to spread nodes along the arm
+                const variation = (hash % 10) / 10;
+                const radius = baseRadius + variation * 70;
+
+                // Spiral angle: theta = spiral_winding * radius + arm_angle_offset + global_rotation
+                const windFactor = 0.007; // beautiful spiral winding curve
+                const theta = radius * windFactor + armAngleOffset + galacticRotationAngle;
+
+                // Home positions on the rotating spiral arm
+                targetX = centerX + radius * Math.cos(theta);
+                targetY = centerY + radius * Math.sin(theta);
+
+                // Gravitational pull toward spiral home position
+                const dx = targetX - node.x;
+                const dy = targetY - node.y;
+                
+                // Softer pull allows the node to float and spring under link and repulsion forces
+                const gravityStrength = 0.009; 
+                node.vx += dx * gravityStrength;
+                node.vy += dy * gravityStrength;
+            }
         });
     }
 
@@ -1750,6 +1793,36 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.restore();
     }
 
+    function drawGalacticCore(ctx, cx, cy) {
+        ctx.save();
+        const grad = ctx.createRadialGradient(cx, cy, 2, cx, cy, 75);
+        grad.addColorStop(0, 'rgba(255, 255, 255, 0.95)');
+        grad.addColorStop(0.15, 'rgba(0, 242, 254, 0.5)');
+        grad.addColorStop(0.45, 'rgba(156, 39, 176, 0.22)');
+        grad.addColorStop(1, 'rgba(10, 15, 30, 0)');
+
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.arc(cx, cy, 75, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Orbiting accretion disk particles
+        const time = Date.now() * 0.0012;
+        for (let i = 0; i < 16; i++) {
+            const r = 12 + (i * 3.8);
+            const speed = 1.6 / (r * 0.08 + 1.0);
+            const angle = time * speed + (i * (Math.PI / 8));
+            const px = cx + r * Math.cos(angle);
+            const py = cy + r * Math.sin(angle);
+            
+            ctx.beginPath();
+            ctx.arc(px, py, 1.1, 0, Math.PI * 2);
+            ctx.fillStyle = i % 3 === 0 ? 'rgba(0, 242, 254, 0.75)' : (i % 3 === 1 ? 'rgba(238, 130, 238, 0.75)' : 'rgba(255, 255, 255, 0.8)');
+            ctx.fill();
+        }
+        ctx.restore();
+    }
+
     function drawNetworkGraph() {
         const canvas = elements.networkCanvas;
         const ctx = canvas.getContext('2d');
@@ -1767,6 +1840,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 0. Render spacetime gravitational warp grid in background
         drawWarpGrid(ctx, width, height);
+
+        // Draw the Supermassive Galactic Nucleus (Milky Way core)
+        drawGalacticCore(ctx, width / 2, height / 2);
 
         // 1. Draw connection lines
         graphLinks.forEach((link, idx) => {
@@ -1919,6 +1995,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Run animations
         const tick = () => {
+            // Increment galactic rotation angle slowly over time
+            galacticRotationAngle += 0.00045;
+
             // Apply physics force pipeline
             applyRepulsionForces(graphNodes);
             applyLinkForces(graphLinks);
