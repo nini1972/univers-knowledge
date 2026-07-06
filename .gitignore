@@ -14,3 +14,6 @@ scratch/__pycache__/
 
 # Agent step logs (generated at runtime)
 logs/
+
+# One-off build helper scripts (not part of deployed dashboard)
+dashboard/write_galaxy.py
