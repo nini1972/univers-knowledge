@@ -1167,6 +1167,45 @@ html, body {
     box-shadow: 0 0 8px var(--status-theoretical);
 }
 
+.network-toggle-controls {
+    display: flex;
+    background: hsla(225, 20%, 8%, 0.6);
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    padding: 3px;
+    gap: 2px;
+}
+
+.network-toggle-btn {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-secondary);
+    padding: 6px 14px;
+    font-size: 12.5px;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.network-toggle-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.network-toggle-btn.active {
+    color: #00f2fe;
+    background: rgba(0, 242, 254, 0.12);
+    border: 1px solid rgba(0, 242, 254, 0.25);
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.1);
+}
+
+
 .map-info i {
     color: var(--neon-cyan);
 }

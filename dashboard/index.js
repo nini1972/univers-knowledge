@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let canvasOffset = { x: 0, y: 0 };
     let canvasZoom = 1.0;
     let galacticRotationAngle = 0; // Milky Way spiral rotation
+    let currentNetworkViewMode = 'topology'; // 'topology' or 'galaxy'
     let animationFrameId = null;
     let particleFlows = []; // Micro-animation data flows
 
@@ -155,6 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
         btnZoomIn: document.getElementById('btn-zoom-in'),
         btnZoomOut: document.getElementById('btn-zoom-out'),
         btnZoomReset: document.getElementById('btn-zoom-reset'),
+        btnViewTopology: document.getElementById('btn-view-topology'),
+        btnViewGalaxy: document.getElementById('btn-view-galaxy'),
 
         // Tab switcher
         commandTabBtns: document.querySelectorAll('.command-tab-btn'),
@@ -1473,63 +1476,77 @@ document.addEventListener('DOMContentLoaded', () => {
         const centerX = width / 2;
         const centerY = height / 2;
 
-        // Core Hubs (which gravitate directly to the supermassive galactic center)
-        const coreHubs = new Set(['quantum_gravity', 'standard_model_of_particle_physics', 'neutrino_oscillations']);
+        if (currentNetworkViewMode === 'topology') {
+            // Original Clean vertical bands layout
+            const gravityStrength = 0.006;
+            nodes.forEach(node => {
+                if (node === draggedNode) return;
+                const zone = getLevelZone(node.level, width, height);
+                const targetY = (zone.yMin + zone.yMax) / 2;
 
-        nodes.forEach(node => {
-            if (node === draggedNode) return;
-
-            let targetX = centerX;
-            let targetY = centerY;
-
-            if (coreHubs.has(node.id)) {
-                // Core hubs are drawn strongly to the very center
-                const dx = centerX - node.x;
-                const dy = centerY - node.y;
-                node.vx += dx * 0.015;
-                node.vy += dy * 0.015;
-            } else {
-                // Other nodes are distributed along 4 spiral arms of the galaxy
-                let hash = 0;
-                for (let idx = 0; idx < node.id.length; idx++) {
-                    hash += node.id.charCodeAt(idx);
-                }
-                const armIndex = hash % 4; // 4 spiral arms
-                const armAngleOffset = armIndex * (Math.PI / 2);
-
-                // Determine the radius (distance from center) based on level
-                let baseRadius = 90;
-                if (node.level === 2) {
-                    baseRadius = 180;
-                } else if (node.level === 3) {
-                    baseRadius = 270;
-                }
-                
-                // Add a little variation based on hash to spread nodes along the arm
-                const variation = (hash % 10) / 10;
-                const radius = baseRadius + variation * 70;
-
-                // Spiral angle: theta = spiral_winding * radius + arm_angle_offset + global_rotation
-                const windFactor = 0.007; // beautiful spiral winding curve
-                const theta = radius * windFactor + armAngleOffset + galacticRotationAngle;
-
-                // Home positions on the rotating spiral arm
-                targetX = centerX + radius * Math.cos(theta);
-                targetY = centerY + radius * Math.sin(theta);
-
-                // Gravitational pull toward spiral home position
-                const dx = targetX - node.x;
                 const dy = targetY - node.y;
-                
-                // Softer pull allows the node to float and spring under link and repulsion forces
-                const gravityStrength = 0.009; 
-                node.vx += dx * gravityStrength;
                 node.vy += dy * gravityStrength;
-            }
-        });
+
+                const dx = centerX - node.x;
+                node.vx += dx * 0.0025;
+            });
+        } else {
+            // Milky Way Galaxy layout: spiral arms
+            const coreHubs = new Set(['quantum_gravity', 'standard_model_of_particle_physics', 'neutrino_oscillations']);
+
+            nodes.forEach(node => {
+                if (node === draggedNode) return;
+
+                let targetX = centerX;
+                let targetY = centerY;
+
+                if (coreHubs.has(node.id)) {
+                    // Core hubs gravitate strongly to the supermassive core
+                    const dx = centerX - node.x;
+                    const dy = centerY - node.y;
+                    node.vx += dx * 0.018;
+                    node.vy += dy * 0.018;
+                } else {
+                    // Other nodes are distributed along 4 spiral arms of the galaxy
+                    let hash = 0;
+                    for (let idx = 0; idx < node.id.length; idx++) {
+                        hash += node.id.charCodeAt(idx);
+                    }
+                    const armIndex = hash % 4; // 4 spiral arms
+                    const armAngleOffset = armIndex * (Math.PI / 2);
+
+                    // Deeper spacing: wider radius prevents overlaps in Galaxy mode!
+                    let baseRadius = 140;
+                    if (node.level === 2) {
+                        baseRadius = 260;
+                    } else if (node.level === 3) {
+                        baseRadius = 380;
+                    }
+                    
+                    const variation = (hash % 10) / 10;
+                    const radius = baseRadius + variation * 100;
+
+                    // Spiral angle: theta = spiral_winding * radius + arm_angle_offset + global_rotation
+                    const windFactor = 0.005; // slightly wider winding
+                    const theta = radius * windFactor + armAngleOffset + galacticRotationAngle;
+
+                    targetX = centerX + radius * Math.cos(theta);
+                    targetY = centerY + radius * Math.sin(theta);
+
+                    const dx = targetX - node.x;
+                    const dy = targetY - node.y;
+                    
+                    const gravityStrength = 0.012; 
+                    node.vx += dx * gravityStrength;
+                    node.vy += dy * gravityStrength;
+                }
+            });
+        }
     }
 
     function applyBoundaryForces(nodes) {
+        if (currentNetworkViewMode === 'galaxy') return; // let them orbit freely in space!
+
         const canvas = elements.networkCanvas;
         const width = canvas ? canvas.clientWidth : 900;
         const height = canvas ? canvas.clientHeight : 520;
@@ -1841,8 +1858,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // 0. Render spacetime gravitational warp grid in background
         drawWarpGrid(ctx, width, height);
 
-        // Draw the Supermassive Galactic Nucleus (Milky Way core)
-        drawGalacticCore(ctx, width / 2, height / 2);
+        // Draw the Supermassive Galactic Nucleus (Milky Way core) only in Galaxy mode
+        if (currentNetworkViewMode === 'galaxy') {
+            drawGalacticCore(ctx, width / 2, height / 2);
+        }
 
         // 1. Draw connection lines
         graphLinks.forEach((link, idx) => {
@@ -1997,8 +2016,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Run animations
         const tick = () => {
-            // Increment galactic rotation angle slowly over time
-            galacticRotationAngle += 0.00045;
+            // Increment galactic rotation angle slowly over time only in Galaxy mode
+            if (currentNetworkViewMode === 'galaxy') {
+                galacticRotationAngle += 0.00045;
+            }
 
             // Apply physics force pipeline
             applyRepulsionForces(graphNodes);
@@ -2230,6 +2251,31 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.btnZoomReset.addEventListener('click', () => {
                 canvasZoom = 1.0;
                 canvasOffset = { x: 0, y: 0 };
+            });
+        }
+
+        // Network View Mode Toggle click handlers (Topological Flow vs Milky Way Galaxy)
+        if (elements.btnViewTopology) {
+            elements.btnViewTopology.addEventListener('click', () => {
+                if (currentNetworkViewMode === 'topology') return;
+                currentNetworkViewMode = 'topology';
+                elements.btnViewTopology.classList.add('active');
+                elements.btnViewGalaxy.classList.remove('active');
+                canvasZoom = 1.0;
+                canvasOffset = { x: 0, y: 0 };
+                graphState.simulation.alpha = 1.0; // energetically reposition
+            });
+        }
+
+        if (elements.btnViewGalaxy) {
+            elements.btnViewGalaxy.addEventListener('click', () => {
+                if (currentNetworkViewMode === 'galaxy') return;
+                currentNetworkViewMode = 'galaxy';
+                elements.btnViewGalaxy.classList.add('active');
+                elements.btnViewTopology.classList.remove('active');
+                canvasZoom = 0.60; // zoom out to fit the larger galaxy
+                canvasOffset = { x: 0, y: 0 };
+                graphState.simulation.alpha = 1.0; // energetically reposition
             });
         }
 
