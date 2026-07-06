@@ -1,0 +1,65 @@
+name: Deploy Dashboard to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'dashboard/**'
+      - 'knowledge_base/**'
+  workflow_dispatch: # Allows manual triggering from Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queue.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}dashboard/
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # This creates an artifact matching the root layout of our repo
+      # so that dashboard/ can successfully fetch ../knowledge_base/
+      - name: Package Dashboard and Knowledge Base
+        run: |
+          mkdir -p dist
+          cp -r dashboard dist/
+          cp -r knowledge_base dist/
+          # Ensure there is a friendly redirection index.html in the root path
+          cat << 'EOF' > dist/index.html
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <meta http-equiv="refresh" content="0; url=./dashboard/">
+              <title>Redirecting to Dashboard</title>
+          </head>
+          <body>
+              <p>Redirecting to <a href="./dashboard/">dashboard/</a>...</p>
+          </body>
+          </html>
+          EOF
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+...

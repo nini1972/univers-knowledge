@@ -261,8 +261,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <div style="padding: 20px; color: var(--text-muted); font-size: 13px; text-align: center;">
                 <i class="fa-solid fa-triangle-exclamation" style="font-size: 24px; color: var(--status-theoretical); margin-bottom: 10px;"></i>
                 <p>Failed to load datasets via direct browser file security protocols.</p>
-                <p style="margin-top:10px;">Launch a lightweight development local server in your workspace to run this environment:</p>
-                <pre style="background: hsla(225, 20%, 2%, 0.8); border: 1px solid var(--border-glass); padding:8px; border-radius:4px; font-family:var(--font-mono); font-size:11px; margin-top:10px; color:var(--text-primary); text-align:left;">python -m http.server 8000</pre>
+                <p style="margin-top:10px;">Launch a self-routing development local server in your workspace to run this environment:</p>
+                <pre style="background: hsla(225, 20%, 2%, 0.8); border: 1px solid var(--border-glass); padding:8px; border-radius:4px; font-family:var(--font-mono); font-size:11px; margin-top:10px; color:var(--text-primary); text-align:left;">python serve.py</pre>
             </div>
         `;
 
@@ -278,8 +278,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         <strong>Launch Steps:</strong>
                         <ol style="margin-top: 8px; margin-left: 16px; font-size: 12.5px; line-height: 1.6;">
                             <li>Open PowerShell or Command Prompt in <code>C:\\Users\\ninic\\univers-knowledge</code></li>
-                            <li>Run: <code style="background: hsla(225,100%,100%,0.08); padding: 2px 6px; border-radius: 4px; font-family: var(--font-mono); color:#fff;">python -m http.server 8000</code></li>
-                            <li>Access your local browser link: <a href="http://localhost:8000/dashboard/" target="_blank" style="color: var(--neon-cyan); font-weight: 700; text-decoration: underline;">http://localhost:8000/dashboard/</a></li>
+                            <li>Run: <code style="background: hsla(225,100%,100%,0.08); padding: 2px 6px; border-radius: 4px; font-family: var(--font-mono); color:#fff;">python serve.py</code></li>
+                            <li>Access your local browser link via the port reported in the terminal, or run: <code style="background: hsla(225,100%,100%,0.08); padding: 2px 6px; border-radius: 4px; font-family: var(--font-mono); color:#fff;">python -m http.server 8000</code></li>
                         </ol>
                     </div>
                 </div>

@@ -66,12 +66,23 @@ python main.py
 ```
 
 ### 4. Serve the Project Locally
-In a separate terminal from the project root, serve the repository over HTTP:
+In a separate terminal from the project root, serve the repository dynamically over HTTP (which automatically finds an open port if 8000 is taken, and opens your browser):
+```powershell
+python serve.py
+```
+*(Windows users facing corporate policy/AppLocker blocks on the virtual environment can use the trusted Python launcher instead)*:
+```powershell
+py serve.py
+```
+
+Alternatively, run the standard python HTTP server manually:
 ```powershell
 python -m http.server 8000
 ```
-
-Then open `http://localhost:8000/dashboard/` in your browser.
+or
+```powershell
+py -m http.server 8000
+```
 
 ## 📂 Data Structure
 The generated learning artifacts are preserved cleanly in the `knowledge_base` directory:
