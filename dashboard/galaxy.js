@@ -124,6 +124,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let rotAngle  = 0;
     const ROT_SPEED = 0.00022;  // radians per frame at ~60fps
 
+    // Galaxy tilt: Y-axis compression that makes everything look like a real galaxy
+    // photograph — viewed from ~25 degrees above the equatorial plane.
+    // Applied globally so arms, core, nebulae all share the same perspective.
+    const TILT_Y = 0.44;
+
     // Playback
     let isPlaying = false;
     let playTimer = null;
@@ -231,6 +236,10 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.translate(W / 2 + panX * zoom, H / 2 + panY * zoom);
         ctx.scale(zoom, zoom);
 
+        // Galaxy perspective tilt: compress Y so the whole galaxy looks like it's
+        // viewed at ~25° above the equatorial plane — arms AND core on the same plane.
+        ctx.scale(1, TILT_Y);
+
         drawBgStars();
         drawNebulae();
         drawCore();
@@ -297,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const speed  = 1.85 / (rDisk * 0.062 + 0.82);
             const angle  = t * speed + i * (Math.PI * 2 / 28);
             const px     = rDisk * Math.cos(angle);
-            const py     = rDisk * Math.sin(angle) * 0.35;
+            const py     = rDisk * Math.sin(angle);  // circular — global TILT_Y handles the flattening
             const alpha  = 0.42 + 0.58 * Math.abs(Math.sin(angle * 2.4));
             ctx.save();
             ctx.globalAlpha = alpha;
@@ -490,9 +499,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const W    = canvas.clientWidth;
         const H    = canvas.clientHeight;
 
-        // Screen → world
+        // Screen → world (account for TILT_Y compression on the Y axis)
         const wx = (cx - W / 2) / zoom - panX;
-        const wy = (cy - H / 2) / zoom - panY;
+        const wy = (cy - H / 2) / (zoom * TILT_Y) - panY;
 
         // Un-rotate to match stored star positions
         const cosNeg = Math.cos(-rotAngle);
