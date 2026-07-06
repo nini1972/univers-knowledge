@@ -76,6 +76,7 @@ graph TD
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
     warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation["Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"]:::theoretical
     supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
+    higgs_portal_dark_matter_vs_sterile_neutrino_dark_matter_debate["Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate"]:::theoretical
     modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration["Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration"]:::theoretical
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
@@ -177,6 +178,7 @@ graph TD
 - [Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md) [THEORETICAL]
 - [Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate](level_2_advanced_frameworks/freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate.md) [THEORETICAL]
 - [Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate](level_2_advanced_frameworks/higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate.md) [THEORETICAL]
+- [Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate](level_2_advanced_frameworks/higgs_portal_dark_matter_vs_sterile_neutrino_dark_matter_debate.md) [THEORETICAL]
 - [Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](level_2_advanced_frameworks/holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
