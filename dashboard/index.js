@@ -1213,15 +1213,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function computeNodeRadius(concept) {
         const relationsCount = concept.related ? concept.related.length : 0;
-        const relationBoost = Math.min(relationsCount * 1.5, 12);
 
+        if (currentNetworkViewMode === 'galaxy') {
+            // Galaxy mode: stars sized purely by degree (connectivity)
+            // dwarf 1-2 → 5px, main sequence 3-5 → 7px, giant 6-9 → 10px, supergiant 10+ → 13px
+            const isLatestRun = evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, concept.title);
+            let r;
+            if (relationsCount >= 10) r = 13;
+            else if (relationsCount >= 6)  r = 10;
+            else if (relationsCount >= 3)  r = 7;
+            else                           r = 5;
+            return isLatestRun ? r + 3 : r; // latest-run star glows a bit bigger
+        }
+
+        // Topology mode: original size logic
+        const relationBoost = Math.min(relationsCount * 1.5, 12);
         let latestBoost = 0;
         if (evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, concept.title)) {
             latestBoost = 6;
         }
-
         const base = 18 + relationBoost + latestBoost;
         return Math.max(18, Math.min(base, 32));
+    }
+
+    // Returns the thematic arm colour for a concept based on its ID keywords (galaxy mode only)
+    function getGalaxyArmColour(nodeId) {
+        const id = nodeId.toLowerCase();
+        if (id.includes('neutrino'))                                            return { fill: 'hsl(310, 80%, 10%)', stroke: 'hsl(310, 90%, 62%)', glow: 'rgba(255, 60, 220, 0.45)' };
+        if (id.includes('quantum_gravity') || id.includes('loop_quantum') ||
+            id.includes('causal_dynamical') || id.includes('asymptotic_safety') ||
+            id.includes('string_theory'))                                        return { fill: 'hsl(270, 80%, 10%)', stroke: 'hsl(270, 90%, 68%)', glow: 'rgba(160, 80, 255, 0.45)' };
+        if (id.includes('dark') || id.includes('axion') || id.includes('wimp')) return { fill: 'hsl(220, 70%, 9%)',  stroke: 'hsl(220, 80%, 62%)', glow: 'rgba(80, 130, 255, 0.40)' };
+        if (id.includes('standard_model') || id.includes('higgs') ||
+            id.includes('fermion') || id.includes('electroweak') ||
+            id.includes('qcd') || id.includes('quark') || id.includes('boson')) return { fill: 'hsl(50, 80%, 8%)',   stroke: 'hsl(50, 95%, 58%)',  glow: 'rgba(255, 220, 50, 0.40)' };
+        if (id.includes('cosmol') || id.includes('inflat') ||
+            id.includes('big_bang') || id.includes('cosmic') ||
+            id.includes('cmb') || id.includes('baryon'))                         return { fill: 'hsl(38, 80%, 8%)',   stroke: 'hsl(38, 95%, 58%)',  glow: 'rgba(255, 160, 40, 0.40)' };
+        if (id.includes('general_relativ') || id.includes('black_hole') ||
+            id.includes('spacetime') || id.includes('gravitational_wave'))       return { fill: 'hsl(25, 80%, 8%)',   stroke: 'hsl(25, 95%, 60%)',  glow: 'rgba(255, 110, 30, 0.40)' };
+        if (id.includes('supersymmet') || id.includes('beyond_standard') ||
+            id.includes('extra_dimension') || id.includes('hierarchy'))          return { fill: 'hsl(285, 70%, 9%)',  stroke: 'hsl(285, 85%, 65%)', glow: 'rgba(200, 80, 255, 0.38)' };
+        // Quantum foundations + fallback
+        return { fill: 'hsl(180, 60%, 8%)', stroke: 'hsl(180, 100%, 50%)', glow: 'rgba(0, 242, 254, 0.38)' };
     }
 
     function getLevelZone(level, width, height) {
@@ -1964,28 +1998,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.restore();
             }
 
-            // Central Node Circle
+            // Central Node Circle — themed colour in Galaxy mode, status colour in Topology mode
             ctx.save();
             ctx.beginPath();
             ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
-            ctx.fillStyle = isVerified ? 'hsl(152, 90%, 8%)' : 'hsl(38, 95%, 6%)';
-            ctx.strokeStyle = isVerified ? 'hsl(152, 90%, 45%)' : 'hsl(38, 95%, 52%)';
-            ctx.lineWidth = isHovered ? 2.5 : 1.5;
 
-            ctx.shadowColor = isVerified ? 'rgba(0, 230, 118, 0.3)' : 'rgba(255, 179, 0, 0.3)';
-            ctx.shadowBlur = isHovered ? 12 : 6;
+            if (currentNetworkViewMode === 'galaxy') {
+                const armColour = getGalaxyArmColour(node.id);
+                ctx.fillStyle   = armColour.fill;
+                ctx.strokeStyle = isHovered ? 'rgba(255,255,255,0.9)' : armColour.stroke;
+                ctx.lineWidth   = isHovered ? 2.5 : 1.5;
+                ctx.shadowColor = armColour.glow;
+                ctx.shadowBlur  = isHovered ? 18 : (isLatestRun ? 14 : 8);
+            } else {
+                ctx.fillStyle   = isVerified ? 'hsl(152, 90%, 8%)' : 'hsl(38, 95%, 6%)';
+                ctx.strokeStyle = isVerified ? 'hsl(152, 90%, 45%)' : 'hsl(38, 95%, 52%)';
+                ctx.lineWidth   = isHovered ? 2.5 : 1.5;
+                ctx.shadowColor = isVerified ? 'rgba(0, 230, 118, 0.3)' : 'rgba(255, 179, 0, 0.3)';
+                ctx.shadowBlur  = isHovered ? 12 : 6;
+            }
+
             ctx.fill();
             ctx.stroke();
             ctx.restore();
 
-            // Node Level indicator text inside node
-            ctx.save();
-            ctx.fillStyle = 'hsla(210, 25%, 98%, 0.9)';
-            ctx.font = 'bold 11px var(--font-mono)';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillText(`L${node.level}`, node.x, node.y);
-            ctx.restore();
+            // Node Level indicator — only show in Topology mode (stars don't need Ln text)
+            if (currentNetworkViewMode !== 'galaxy') {
+                ctx.save();
+                ctx.fillStyle = 'hsla(210, 25%, 98%, 0.9)';
+                ctx.font = 'bold 11px var(--font-mono)';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(`L${node.level}`, node.x, node.y);
+                ctx.restore();
+            }
 
             // Adaptive Label rendering
             drawNodeLabel(ctx, node, labelMode);
@@ -2263,7 +2309,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 elements.btnViewGalaxy.classList.remove('active');
                 canvasZoom = 1.0;
                 canvasOffset = { x: 0, y: 0 };
-                graphState.simulation.alpha = 1.0; // energetically reposition
+                // Re-sync so computeNodeRadius reverts to topology circle sizes
+                syncGraphWithConcepts(concepts);
+                graphState.simulation.alpha = 1.0;
             });
         }
 
@@ -2273,9 +2321,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentNetworkViewMode = 'galaxy';
                 elements.btnViewGalaxy.classList.add('active');
                 elements.btnViewTopology.classList.remove('active');
-                canvasZoom = 0.60; // zoom out to fit the larger galaxy
+                // Zoom further out: smaller stars + wider spiral = need more canvas real-estate
+                canvasZoom = 0.35;
                 canvasOffset = { x: 0, y: 0 };
-                graphState.simulation.alpha = 1.0; // energetically reposition
+                // Re-sync so computeNodeRadius picks up the new galaxy-mode sizes immediately
+                syncGraphWithConcepts(concepts);
+                graphState.simulation.alpha = 1.0;
             });
         }
 
