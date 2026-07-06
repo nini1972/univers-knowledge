@@ -2317,16 +2317,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (elements.btnViewGalaxy) {
             elements.btnViewGalaxy.addEventListener('click', () => {
-                if (currentNetworkViewMode === 'galaxy') return;
-                currentNetworkViewMode = 'galaxy';
-                elements.btnViewGalaxy.classList.add('active');
-                elements.btnViewTopology.classList.remove('active');
-                // Zoom further out: smaller stars + wider spiral = need more canvas real-estate
-                canvasZoom = 0.35;
-                canvasOffset = { x: 0, y: 0 };
-                // Re-sync so computeNodeRadius picks up the new galaxy-mode sizes immediately
-                syncGraphWithConcepts(concepts);
-                graphState.simulation.alpha = 1.0;
+                // Open the dedicated Milky Way Galaxy page
+                window.location.href = 'galaxy.html';
             });
         }
 

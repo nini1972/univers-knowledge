@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univers Knowledge — Milky Way Galaxy</title>
+    <meta name="description" content="Physics knowledge as a living Milky Way galaxy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="galaxy.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="g-header">
+    <a href="index.html" class="back-btn">
+        <i class="fa-solid fa-chevron-left"></i> Dashboard
+    </a>
+    <div class="g-brand">
+        <i class="fa-solid fa-circle-nodes g-brand-icon"></i>
+        <h1>UNIVERS <span>MILKY WAY</span></h1>
+        <span class="g-brand-sub">Physics Knowledge as a Living Galaxy</span>
+    </div>
+    <div class="g-stats">
+        <div class="gstat">
+            <span class="gstat-label">Stars Visible</span>
+            <span class="gstat-value" id="stat-visible">0</span>
+        </div>
+        <div class="gstat">
+            <span class="gstat-label">Total Stars</span>
+            <span class="gstat-value" id="stat-total" style="color:var(--text-muted)">—</span>
+        </div>
+    </div>
+</header>
+
+<!-- CANVAS -->
+<canvas id="galaxy-canvas"></canvas>
+
+<!-- ERROR STATE -->
+<div id="error-overlay">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <h2>Cannot connect to galaxy data</h2>
+    <p>Browsers block local file fetches for security. Launch a local server first:</p>
+    <code>python serve.py</code>
+    <p style="font-size:11px;margin-top:6px">Then open <strong>http://localhost:8000/dashboard/galaxy.html</strong></p>
+</div>
+
+<!-- ARM LEGEND -->
+<aside class="arm-legend">
+    <div class="legend-heading">Spiral Arms</div>
+    <div class="legend-row"><div class="ldot" style="background:hsl(310,90%,62%);box-shadow:0 0 5px hsl(310,90%,50%)"></div>Neutrino Physics<span class="lcount" id="lc-0">—</span></div>
+    <div class="legend-row"><div class="ldot" style="background:hsl(270,90%,68%);box-shadow:0 0 5px hsl(270,90%,55%)"></div>Quantum Gravity<span class="lcount" id="lc-1">—</span></div>
+    <div class="legend-row"><div class="ldot" style="background:hsl(38,95%,58%);box-shadow:0 0 5px hsl(38,95%,45%)"></div>Cosmology<span class="lcount" id="lc-2">—</span></div>
+    <div class="legend-row"><div class="ldot" style="background:hsl(50,95%,58%);box-shadow:0 0 5px hsl(50,95%,45%)"></div>Standard Model<span class="lcount" id="lc-3">—</span></div>
+    <div class="legend-row"><div class="ldot" style="background:hsl(220,80%,62%);box-shadow:0 0 5px hsl(220,80%,50%)"></div>Dark Sector<span class="lcount" id="lc-4">—</span></div>
+    <div class="legend-row"><div class="ldot" style="background:hsl(25,95%,60%);box-shadow:0 0 5px hsl(25,95%,48%)"></div>Spacetime &amp; GR<span class="lcount" id="lc-5">—</span></div>
+    <div class="legend-row"><div class="ldot" style="background:hsl(285,85%,65%);box-shadow:0 0 5px hsl(285,85%,52%)"></div>Beyond Std Model<span class="lcount" id="lc-6">—</span></div>
+    <div class="legend-row"><div class="ldot" style="background:hsl(180,100%,50%);box-shadow:0 0 5px hsl(180,100%,40%)"></div>Quantum Foundations<span class="lcount" id="lc-7">—</span></div>
+</aside>
+
+<!-- TOOLTIP -->
+<div id="star-tip">
+    <div class="tip-name" id="tip-name"></div>
+    <div class="tip-badges">
+        <span class="tip-badge" id="tip-status"></span>
+        <span class="tip-badge" id="tip-arm"></span>
+        <span class="tip-badge badge-conn" id="tip-conn"></span>
+    </div>
+</div>
+
+<!-- ZOOM CONTROLS -->
+<div class="zoom-panel">
+    <button class="zoom-btn" id="zoom-in"    title="Zoom In (+)">+</button>
+    <button class="zoom-btn" id="zoom-out"   title="Zoom Out (-)">-</button>
+    <button class="zoom-btn" id="zoom-reset" title="Reset View (0)"><i class="fa-solid fa-expand"></i></button>
+</div>
+
+<!-- TIMELINE -->
+<footer class="g-timeline">
+    <div class="tl-controls">
+        <button class="tl-btn" id="tl-prev" title="Previous epoch (Left)"><i class="fa-solid fa-backward-step"></i></button>
+        <button class="tl-btn" id="tl-play" title="Play / Pause (Space)"><i class="fa-solid fa-play"></i></button>
+        <button class="tl-btn" id="tl-next" title="Next epoch (Right)"><i class="fa-solid fa-forward-step"></i></button>
+    </div>
+    <div class="tl-center">
+        <div class="tl-info-row">
+            <span class="tl-epoch-badge" id="epoch-badge">EPOCH 0 / 0</span>
+            <span class="tl-concept" id="tl-concept">Big Bang — Pre-Science Era</span>
+            <span class="tl-status" id="tl-status"></span>
+        </div>
+        <div class="tl-track" id="tl-track">
+            <div class="tl-fill" id="tl-fill" style="width:0%"></div>
+            <div class="tl-thumb" id="tl-thumb" style="left:0%"></div>
+        </div>
+    </div>
+    <div class="tl-right">
+        <div class="speed-row">
+            <span class="speed-label">Speed</span>
+            <select class="speed-select" id="speed-select">
+                <option value="2200">0.5x</option>
+                <option value="1200" selected>1x</option>
+                <option value="600">2x</option>
+                <option value="250">4x</option>
+            </select>
+        </div>
+    </div>
+</footer>
+
+<script src="galaxy.js"></script>
+</body>
+</html>
