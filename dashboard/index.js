@@ -1977,7 +1977,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startNetworkGraphPhysicsLoop() {
+        stopNetworkGraphLoop();
         const canvas = elements.networkCanvas;
+        if (!canvas) return;
 
         // Handle HDPI canvas resize scale mapping
         const rect = canvas.parentElement.getBoundingClientRect();
