@@ -107,13 +107,36 @@ def parse_concept_md(file_path: Path, folder_name: str) -> dict:
         if image_path.startswith("../"):
             image_path = image_path.replace("../", "")
 
-    # Extract related concepts (links)
+    # Extract related concepts (from both markdown links and bullet points under "Related Concepts" section)
     related = []
     links = re.findall(r"\[[^\]]+\]\(([^)]+\.md)\)", content)
     for l in links:
         target_stem = Path(l).stem
         if target_stem != stem and target_stem not in related:
             related.append(target_stem)
+
+    # Also parse bullet points under the "Related Concepts" heading
+    rc_match = re.search(r"##\s+\d+\.\s+Related Concepts\s*\n([\s\S]*?)(?=\n##|$)", content, re.IGNORECASE)
+    if rc_match:
+        section_text = rc_match.group(1)
+        items = re.findall(r"^\s*[-*]\s+(.+)$", section_text, re.MULTILINE)
+        for item in items:
+            item_clean = item.strip()
+            # If it's a markdown link [Text](file.md), extract the stem
+            link_match = re.match(r"\[([^\]]+)\]\(([^)]+\.md)\)", item_clean)
+            if link_match:
+                target_stem = Path(link_match.group(2)).stem
+            else:
+                # Sanitize plain text title to standard lowercase snake_case ID
+                t = item_clean.strip().lower()
+                t = re.sub(r'[\s\-]+', '_', t)
+                t = re.sub(r'[^\w]', '', t)
+                t = re.sub(r'_+', '_', t)
+                target_stem = t
+            
+            if target_stem and target_stem != stem and target_stem not in related:
+                related.append(target_stem)
+
 
     # Extract overview summary from section "## 1. Overview"
     overview = ""
