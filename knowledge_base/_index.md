@@ -9,165 +9,169 @@ graph TD
     classDef theoretical fill:#241d08,stroke:#f59e0b,stroke-width:2px,color:#fef3c7;
 
     %% Concept Nodes
-    big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
-    cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
+    quantum_field_theory["Quantum Field Theory"]:::verified
     cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
-    cosmic_neutrino_background["Cosmic Neutrino Background"]:::theoretical
-    cosmological_constant_and_dark_energy["Cosmological Constant and Dark Energy"]:::verified
-    cp_violation["CP Violation"]:::theoretical
-    dark_matter["Dark Matter"]:::theoretical
-    electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
-    general_relativity["General Relativity"]:::verified
-    how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures["Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures"]:::theoretical
-    inflationary_cosmology["Inflationary Cosmology"]:::theoretical
-    inflationary_reheating_mechanisms["Inflationary Reheating Mechanisms"]:::theoretical
-    matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
-    matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
-    neutrinoless_double_beta_decay["Neutrinoless Double Beta Decay"]:::theoretical
-    neutrino_anomalies_and_sterile_neutrino_hypothesis["Neutrino Anomalies and Sterile Neutrino Hypothesis"]:::theoretical
-    neutrino_cp_violation["Neutrino CP Violation"]:::theoretical
-    neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
-    neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
-    neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
-    neutrino_lifetime_and_decay_mechanisms["Neutrino Lifetime and Decay Mechanisms"]:::verified
-    neutrino_masses_and_leptogenesis["Neutrino Masses and Leptogenesis"]:::verified
-    neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
-    neutrino_mass_generation_mechanisms["Neutrino Mass Generation Mechanisms"]:::verified
-    neutrino_mass_hierarchies_and_their_implications["Neutrino Mass Hierarchies and Their Implications"]:::theoretical
-    neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
-    neutrino_mass_ordering_and_experimental_determination["Neutrino Mass Ordering and Experimental Determination"]:::verified
-    neutrino_oscillations["Neutrino Oscillations"]:::theoretical
-    neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
-    neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
-    neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics["Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics"]:::verified
-    planck_epoch_and_the_initial_conditions_for_the_universe["Planck Epoch and the Initial Conditions for the Universe"]:::theoretical
     primordial_gravitational_waves["Primordial Gravitational Waves"]:::theoretical
     quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
-    quantum_decoherence["Quantum Decoherence"]:::verified
-    quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
-    quantum_entanglement["Quantum Entanglement"]:::verified
-    quantum_field_theory["Quantum Field Theory"]:::verified
-    quantum_gravity["Quantum Gravity"]:::theoretical
-    quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
-    quantum_mechanics["Quantum Mechanics"]:::verified
-    quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
-    quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
-    quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
-    quantum_vacuum_polarization["Quantum Vacuum Polarization"]:::verified
-    standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
+    planck_epoch_and_the_initial_conditions_for_the_universe["Planck Epoch and the Initial Conditions for the Universe"]:::theoretical
+    neutrino_mass_hierarchies_and_their_implications["Neutrino Mass Hierarchies and Their Implications"]:::theoretical
     standard_model_gauge_symmetries_and_their_spontaneous_breaking["Standard Model Gauge Symmetries and Their Spontaneous Breaking"]:::verified
+    quantum_vacuum_polarization["Quantum Vacuum Polarization"]:::verified
+    quantum_mechanics["Quantum Mechanics"]:::verified
+    quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
+    cosmic_neutrino_background["Cosmic Neutrino Background"]:::theoretical
+    neutrino_cp_violation["Neutrino CP Violation"]:::theoretical
+    matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
+    standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
+    big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
+    neutrino_lifetime_and_decay_mechanisms["Neutrino Lifetime and Decay Mechanisms"]:::verified
+    quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
+    quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
+    neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
+    how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures["Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures"]:::theoretical
+    neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
+    cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
+    what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay["What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?"]:::verified
+    quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
+    quantum_decoherence["Quantum Decoherence"]:::verified
+    neutrino_masses_and_leptogenesis["Neutrino Masses and Leptogenesis"]:::verified
+    general_relativity["General Relativity"]:::verified
+    neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
+    matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
+    neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
     the_higgs_boson["The Higgs Boson"]:::theoretical
+    inflationary_cosmology["Inflationary Cosmology"]:::theoretical
+    neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
+    quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
+    dark_matter["Dark Matter"]:::theoretical
+    inflationary_reheating_mechanisms["Inflationary Reheating Mechanisms"]:::theoretical
+    cosmological_constant_and_dark_energy["Cosmological Constant and Dark Energy"]:::verified
+    quantum_gravity["Quantum Gravity"]:::theoretical
+    neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
     what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay["Direct Detection of Neutrino Decay Experimental Strategies"]:::theoretical
-    asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
-    axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
-    beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
-    beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
-    black_hole_models_debate_observational_techniques_vs_theoretical_frameworks["Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks"]:::verified
-    causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity["Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity"]:::theoretical
-    causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research["Causal Set Theory vs Spin Foam Models in Quantum Gravity Research"]:::theoretical
-    cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
-    debate_on_modified_gravity_theories_teves_vs_fr_gravity["Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity"]:::verified
-    ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
-    emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
-    entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena["Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"]:::theoretical
-    falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
-    freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate["Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate"]:::theoretical
-    higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate["Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate"]:::theoretical
-    higgs_portal_dark_matter_vs_sterile_neutrino_dark_matter_debate["Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate"]:::theoretical
-    holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate["Holographic Principle vs Causal Set Theory in Quantum Gravity Debate"]:::theoretical
-    holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
-    horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
-    loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate["Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate"]:::theoretical
-    loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
-    loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate["Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
-    massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
-    mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
-    modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
-    modified_gravity_vs_dark_matter_paradigm_debate["Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate"]:::theoretical
-    modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration["Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration"]:::theoretical
-    modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
-    multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
-    quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
-    quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
-    quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
-    quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
-    quantum_loop_gravity_vs_string_field_theory_debate["Quantum Loop Gravity vs String Field Theory Debate"]:::theoretical
-    string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
+    cp_violation["CP Violation"]:::theoretical
+    quantum_entanglement["Quantum Entanglement"]:::verified
+    neutrino_anomalies_and_sterile_neutrino_hypothesis["Neutrino Anomalies and Sterile Neutrino Hypothesis"]:::theoretical
+    neutrino_mass_generation_mechanisms["Neutrino Mass Generation Mechanisms"]:::verified
+    neutrino_mass_ordering_and_experimental_determination["Neutrino Mass Ordering and Experimental Determination"]:::verified
+    neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
+    electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
+    neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics["Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics"]:::verified
+    neutrinoless_double_beta_decay["Neutrinoless Double Beta Decay"]:::theoretical
+    neutrino_oscillations["Neutrino Oscillations"]:::theoretical
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
-    superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
-    superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics["Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics"]:::theoretical
-    supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration["Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration"]:::verified
-    supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate["Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"]:::theoretical
-    supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics["Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics"]:::theoretical
-    supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"]:::theoretical
-    supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
+    holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
+    modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
+    quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
+    modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
+    supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration["Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration"]:::verified
+    entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena["Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"]:::theoretical
+    mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
+    superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
+    holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate["Holographic Principle vs Causal Set Theory in Quantum Gravity Debate"]:::theoretical
+    beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
+    black_hole_models_debate_observational_techniques_vs_theoretical_frameworks["Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks"]:::verified
+    loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate["Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate"]:::theoretical
+    horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
     warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation["Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"]:::theoretical
+    supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
+    higgs_portal_dark_matter_vs_sterile_neutrino_dark_matter_debate["Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate"]:::theoretical
+    modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration["Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration"]:::theoretical
+    loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
+    quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
+    ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
+    supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate["Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"]:::theoretical
+    cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
+    multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
+    loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate["Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
+    beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
+    causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research["Causal Set Theory vs Spin Foam Models in Quantum Gravity Research"]:::theoretical
+    falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
+    debate_on_modified_gravity_theories_teves_vs_fr_gravity["Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity"]:::verified
+    quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
+    emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
+    superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics["Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics"]:::theoretical
+    modified_gravity_vs_dark_matter_paradigm_debate["Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate"]:::theoretical
+    causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity["Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity"]:::theoretical
+    string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
+    quantum_loop_gravity_vs_string_field_theory_debate["Quantum Loop Gravity vs String Field Theory Debate"]:::theoretical
+    asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
+    higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate["Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate"]:::theoretical
+    axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
+    supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics["Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics"]:::theoretical
+    axion_dark_matter_vs_sterile_neutrino_dark_matter_in_explaining_dark_matter["Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter"]:::theoretical
+    supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"]:::theoretical
+    quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
+    freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate["Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate"]:::theoretical
+    massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
 
     %% Connections & Prerequisites
-    cosmic_microwave_background_radiation --- big_bang_nucleosynthesis
+    quantum_mechanics --- quantum_field_theory
+    standard_model_of_particle_physics --- quantum_field_theory
+    quantum_gravity --- planck_epoch_and_the_initial_conditions_for_the_universe
+    neutrino_oscillations --- neutrino_mass_hierarchies_and_their_implications
+    quantum_chromodynamics_qcd --- standard_model_gauge_symmetries_and_their_spontaneous_breaking
+    quantum_entanglement --- quantum_mechanics
+    standard_model_of_particle_physics --- quantum_mechanics
     big_bang_nucleosynthesis --- cosmic_neutrino_background
     standard_model_of_particle_physics --- cosmic_neutrino_background
-    general_relativity --- cosmological_constant_and_dark_energy
-    cosmic_microwave_background_radiation --- dark_matter
-    quantum_mechanics --- general_relativity
-    quantum_gravity --- general_relativity
-    cosmic_neutrino_background --- how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures
-    primordial_gravitational_waves --- inflationary_cosmology
-    big_bang_nucleosynthesis --- inflationary_reheating_mechanisms
-    cp_violation --- matterantimatter_asymmetry_mechanisms
     neutrino_oscillations --- neutrino_cp_violation
-    standard_model_of_particle_physics --- neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology
-    standard_model_of_particle_physics --- neutrino_decoupling_and_its_effects_on_early_universe_cosmology
+    neutrino_oscillations --- standard_model_fermion_mass_hierarchies_and_mixing_matrices
+    standard_model_of_particle_physics --- standard_model_fermion_mass_hierarchies_and_mixing_matrices
+    cosmic_microwave_background_radiation --- big_bang_nucleosynthesis
     neutrino_oscillations --- neutrino_lifetime_and_decay_mechanisms
     standard_model_of_particle_physics --- neutrino_lifetime_and_decay_mechanisms
+    quantum_electrodynamics_qed --- quantum_vacuum_and_spacetime_structure
+    quantum_field_theory --- quantum_vacuum_fluctuations_and_zeropoint_energy
+    neutrino_oscillations --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
+    neutrinoless_double_beta_decay --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
+    cosmic_neutrino_background --- how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures
+    neutrino_oscillations --- what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay
+    neutrinoless_double_beta_decay --- what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay
+    quantum_measurement_problem --- quantum_decoherence
     neutrino_oscillations --- neutrino_masses_and_leptogenesis
     neutrinoless_double_beta_decay --- neutrino_masses_and_leptogenesis
+    quantum_mechanics --- general_relativity
+    quantum_gravity --- general_relativity
+    standard_model_of_particle_physics --- neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology
+    cp_violation --- matterantimatter_asymmetry_mechanisms
+    standard_model_of_particle_physics --- neutrino_decoupling_and_its_effects_on_early_universe_cosmology
+    primordial_gravitational_waves --- inflationary_cosmology
     neutrino_oscillations --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
     standard_model_of_particle_physics --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
     cosmic_neutrino_background --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
+    cosmic_microwave_background_radiation --- dark_matter
+    big_bang_nucleosynthesis --- inflationary_reheating_mechanisms
+    general_relativity --- cosmological_constant_and_dark_energy
+    quantum_field_theory --- quantum_gravity
+    neutrino_oscillations --- neutrino_physics_and_its_implications_for_cosmology
+    neutrinoless_double_beta_decay --- what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay
+    neutrino_oscillations --- what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay
     neutrino_oscillations --- neutrino_mass_generation_mechanisms
     standard_model_of_particle_physics --- neutrino_mass_generation_mechanisms
     neutrinoless_double_beta_decay --- neutrino_mass_generation_mechanisms
-    neutrino_oscillations --- neutrino_mass_hierarchies_and_their_implications
-    neutrino_oscillations --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
-    neutrinoless_double_beta_decay --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
-    neutrino_oscillations --- neutrino_physics_and_its_implications_for_cosmology
     neutrino_oscillations --- neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics
-    quantum_gravity --- planck_epoch_and_the_initial_conditions_for_the_universe
-    quantum_measurement_problem --- quantum_decoherence
-    quantum_mechanics --- quantum_field_theory
-    standard_model_of_particle_physics --- quantum_field_theory
-    quantum_field_theory --- quantum_gravity
-    quantum_entanglement --- quantum_mechanics
-    standard_model_of_particle_physics --- quantum_mechanics
-    quantum_electrodynamics_qed --- quantum_vacuum_and_spacetime_structure
-    quantum_field_theory --- quantum_vacuum_fluctuations_and_zeropoint_energy
-    neutrino_oscillations --- standard_model_fermion_mass_hierarchies_and_mixing_matrices
-    standard_model_of_particle_physics --- standard_model_fermion_mass_hierarchies_and_mixing_matrices
-    quantum_chromodynamics_qcd --- standard_model_gauge_symmetries_and_their_spontaneous_breaking
-    neutrinoless_double_beta_decay --- what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay
-    neutrino_oscillations --- what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay
+    quantum_gravity --> string_theory_vs_asymptotic_safety_in_quantum_gravity_debate
+    quantum_gravity --> holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research
+    quantum_gravity --> entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena
+    electroweak_symmetry_breaking --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
+    quantum_field_theory --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
+    quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
+    quantum_gravity --- horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research
+    quantum_gravity --- loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
+    inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
     cosmological_constant_and_dark_energy --> debate_on_modified_gravity_theories_teves_vs_fr_gravity
-    quantum_gravity --> entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena
-    quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
-    quantum_gravity --> holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research
-    quantum_gravity --- horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research
-    quantum_gravity --- loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
-    general_relativity --> massive_gravity_versus_fr_gravity_in_modified_gravity_debates
-    electroweak_symmetry_breaking --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
-    quantum_field_theory --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
-    inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     quantum_measurement_problem --- quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
-    quantum_gravity --> quantum_loop_gravity_vs_string_field_theory_debate
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
-    quantum_gravity --> string_theory_vs_asymptotic_safety_in_quantum_gravity_debate
+    quantum_gravity --> quantum_loop_gravity_vs_string_field_theory_debate
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
+    general_relativity --> massive_gravity_versus_fr_gravity_in_modified_gravity_debates
 ```
 
 ## Level 1: Fundamental Physics
@@ -222,10 +226,12 @@ graph TD
 - [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
+- [What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?](level_1_fundamental_physics/what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay.md) [VERIFIED]
 
 ## Level 2: Advanced Frameworks
 
 - [Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md) [THEORETICAL]
+- [Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_sterile_neutrino_dark_matter_in_explaining_dark_matter.md) [THEORETICAL]
 - [Axion Dark Matter vs WIMPs in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_wimps_in_explaining_dark_matter.md) [THEORETICAL]
 - [Beyond the Standard Model Solutions to the Hierarchy Problem](level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md) [THEORETICAL]
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]
