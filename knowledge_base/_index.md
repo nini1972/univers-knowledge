@@ -63,6 +63,7 @@ graph TD
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
+    superfluid_dark_matter_vs_sterile_neutrino_dark_matter_debate["Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate"]:::verified
     quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
     modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
@@ -268,6 +269,7 @@ graph TD
 - [String Theory versus Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics](level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md) [THEORETICAL]
+- [Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate](level_2_advanced_frameworks/superfluid_dark_matter_vs_sterile_neutrino_dark_matter_debate.md) [VERIFIED]
 - [Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics](level_2_advanced_frameworks/superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics.md) [THEORETICAL]
 - [Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration](level_2_advanced_frameworks/supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration.md) [VERIFIED]
 - [Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate](level_2_advanced_frameworks/supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate.md) [THEORETICAL]
