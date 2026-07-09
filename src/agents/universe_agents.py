@@ -11,13 +11,15 @@ def _get_llm(role: str) -> LLM | None:
         model = os.getenv(model_env) or os.getenv("OPENROUTER_MODEL") or "meta-llama/llama-3.1-70b-instruct"
 
         # Self-healing: if role uses tools, ensure the model supports tool use on OpenRouter.
-        # OpenRouter only reliably supports tool use with OpenAI models or Claude 3.5 Sonnet.
+        # Overrule models known to crash/fail tool calls on OpenRouter (like the default Llama 70B, Gemini Flash, or Haiku).
         roles_using_tools = ['visualizer', 'math', 'researcher']
         if role in roles_using_tools:
             model_lower = model.lower()
-            is_openai = "openai/" in model_lower or model_lower.startswith("gpt-")
-            is_sonnet = "claude-3.5-sonnet" in model_lower or "claude-3-5-sonnet" in model_lower
-            if not (is_openai or is_sonnet):
+            is_default_llama = "llama-3.1-70b" in model_lower
+            is_gemini_flash = "gemini" in model_lower and "flash" in model_lower
+            is_haiku = "haiku" in model_lower
+
+            if is_default_llama or is_gemini_flash or is_haiku:
                 print(f"Info: Overriding tool-using role '{role}' model '{model}' to 'openai/gpt-4o-mini' on OpenRouter for stable tool execution.")
                 model = "openai/gpt-4o-mini"
 
