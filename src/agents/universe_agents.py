@@ -9,6 +9,18 @@ def _get_llm(role: str) -> LLM | None:
     if api_key:
         model_env = f"OPENROUTER_MODEL_{role.upper()}"
         model = os.getenv(model_env) or os.getenv("OPENROUTER_MODEL") or "meta-llama/llama-3.1-70b-instruct"
+
+        # Self-healing: if role uses tools, ensure the model supports tool use on OpenRouter.
+        # OpenRouter only reliably supports tool use with OpenAI models or Claude 3.5 Sonnet.
+        roles_using_tools = ['visualizer', 'math', 'researcher']
+        if role in roles_using_tools:
+            model_lower = model.lower()
+            is_openai = "openai/" in model_lower or model_lower.startswith("gpt-")
+            is_sonnet = "claude-3.5-sonnet" in model_lower or "claude-3-5-sonnet" in model_lower
+            if not (is_openai or is_sonnet):
+                print(f"Info: Overriding tool-using role '{role}' model '{model}' to 'openai/gpt-4o-mini' on OpenRouter for stable tool execution.")
+                model = "openai/gpt-4o-mini"
+
         api_base = "https://openrouter.ai/api/v1"
         try:
             return LLM(
