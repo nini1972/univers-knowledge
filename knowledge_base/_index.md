@@ -89,6 +89,7 @@ graph TD
     loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate["Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
     causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research["Causal Set Theory vs Spin Foam Models in Quantum Gravity Research"]:::theoretical
+    scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration["Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
     debate_on_modified_gravity_theories_teves_vs_fr_gravity["Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity"]:::verified
     quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
@@ -166,6 +167,7 @@ graph TD
     inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
+    general_relativity --- scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration
     cosmological_constant_and_dark_energy --> debate_on_modified_gravity_theories_teves_vs_fr_gravity
     quantum_measurement_problem --- quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
@@ -266,6 +268,7 @@ graph TD
 - [Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation](level_2_advanced_frameworks/quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation.md) [THEORETICAL]
 - [Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity](level_2_advanced_frameworks/quantum_gravity_debate.md) [THEORETICAL]
 - [Quantum Loop Gravity vs String Field Theory Debate](level_2_advanced_frameworks/quantum_loop_gravity_vs_string_field_theory_debate.md) [THEORETICAL]
+- [Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
 - [String Theory versus Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics](level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md) [THEORETICAL]
