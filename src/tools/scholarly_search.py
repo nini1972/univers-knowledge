@@ -15,38 +15,134 @@ class ScholarlySearchTool(BaseTool):
     )
 
     def _run(self, query: str) -> str:
-        api_key = os.getenv("TAVILY_API_KEY")
-        if not api_key:
-            return (
-                "ERROR: TAVILY_API_KEY environment variable is not configured. "
-                "Unable to perform web research."
-            )
-
         print(f"[Scholarly Search] Executing optimized academic query: '{query}'")
+        raw_results = []
+        tavily_key = os.getenv("TAVILY_API_KEY")
+        
+        # 1. Try Tavily first
+        if tavily_key:
+            try:
+                url = "https://api.tavily.com/search"
+                payload = {
+                    "api_key": tavily_key,
+                    "query": query,
+                    "search_depth": "advanced",
+                    "include_images": False,
+                    "include_answer": False,
+                    "include_raw_content": True,
+                    "max_results": 15,
+                }
+                response = requests.post(url, json=payload, timeout=10)
+                if response.status_code == 200:
+                    data = response.json()
+                    raw_results = data.get("results", [])
+                    print(f"[Scholarly Search] Tavily succeeded: found {len(raw_results)} results.")
+                else:
+                    print(f"Warning: Tavily returned status {response.status_code}: {response.text}")
+            except Exception as exc:
+                print(f"Warning: Tavily connection failed: {exc}")
+        else:
+            print("[Scholarly Search] TAVILY_API_KEY not configured. Skipping Tavily...")
 
-        # 1. Fetch raw results from Tavily API
-        try:
-            url = "https://api.tavily.com/search"
-            payload = {
-                "api_key": api_key,
-                "query": query,
-                "search_depth": "advanced",
-                "include_images": False,
-                "include_answer": False,
-                "include_raw_content": True,
-                "max_results": 15,
-            }
-            response = requests.post(url, json=payload, timeout=10)
-            if response.status_code != 200:
-                return f"ERROR: Tavily API returned status code {response.status_code}: {response.text}"
-            
-            data = response.json()
-            raw_results = data.get("results", [])
-        except Exception as exc:
-            return f"ERROR: Failed to connect to Tavily search API: {exc}"
+        # 2. Try Serper Fallback if no results
+        serper_key = os.getenv("SERPER_API_KEY")
+        if not raw_results and serper_key:
+            try:
+                print("[Scholarly Search] Trying Serper API fallback...")
+                headers = {
+                    "X-API-KEY": serper_key,
+                    "Content-Type": "application/json"
+                }
+                payload = {"q": query, "num": 15}
+                res = requests.post("https://google.serper.dev/search", json=payload, headers=headers, timeout=10)
+                if res.status_code == 200:
+                    serper_data = res.json()
+                    organic = serper_data.get("organic", [])
+                    for item in organic:
+                        raw_results.append({
+                            "url": item.get("link", ""),
+                            "title": item.get("title", ""),
+                            "content": item.get("snippet", ""),
+                            "raw_content": None
+                        })
+                    print(f"[Scholarly Search] Serper fallback succeeded: found {len(raw_results)} results.")
+                else:
+                    print(f"Warning: Serper API returned status {res.status_code}: {res.text}")
+            except Exception as exc:
+                print(f"Warning: Serper fallback failed: {exc}")
+
+        # 3. Try Exa Fallback if no results
+        exa_key = os.getenv("EXA_API_KEY")
+        if not raw_results and exa_key:
+            try:
+                print("[Scholarly Search] Trying Exa API fallback...")
+                headers = {
+                    "x-api-key": exa_key,
+                    "Content-Type": "application/json"
+                }
+                payload = {
+                    "query": query,
+                    "useAutoprompt": False,
+                    "numResults": 10,
+                    "text": True
+                }
+                res = requests.post("https://api.exa.ai/search", json=payload, headers=headers, timeout=10)
+                if res.status_code == 200:
+                    exa_data = res.json()
+                    results = exa_data.get("results", [])
+                    for item in results:
+                        raw_results.append({
+                            "url": item.get("url", ""),
+                            "title": item.get("title", ""),
+                            "content": item.get("text", "") or item.get("author", "") or "",
+                            "raw_content": item.get("text", "")
+                        })
+                    print(f"[Scholarly Search] Exa fallback succeeded: found {len(raw_results)} results.")
+                else:
+                    print(f"Warning: Exa API returned status {res.status_code}: {res.text}")
+            except Exception as exc:
+                print(f"Warning: Exa fallback failed: {exc}")
+
+        # 4. Try Public ArXiv API Fallback if no results
+        if not raw_results:
+            try:
+                print("[Scholarly Search] Falling back to Public ArXiv Search API...")
+                import urllib.request
+                import urllib.parse
+                import xml.etree.ElementTree as ET
+                
+                escaped_query = urllib.parse.quote(query)
+                arxiv_url = f"http://export.arxiv.org/api/query?search_query=all:{escaped_query}&max_results=12"
+                
+                with urllib.request.urlopen(arxiv_url, timeout=8) as conn:
+                    xml_data = conn.read()
+                    
+                root = ET.fromstring(xml_data)
+                ns = {'atom': 'http://www.w3.org/2005/Atom'}
+                entries = root.findall('atom:entry', ns)
+                
+                for entry in entries:
+                    title_el = entry.find('atom:title', ns)
+                    summary_el = entry.find('atom:summary', ns)
+                    id_el = entry.find('atom:id', ns)
+                    
+                    title = title_el.text.strip().replace('\n', ' ') if title_el is not None else "ArXiv Paper"
+                    summary = summary_el.text.strip().replace('\n', ' ') if summary_el is not None else ""
+                    url = id_el.text.strip() if id_el is not None else ""
+                    
+                    if url:
+                        raw_results.append({
+                            "url": url,
+                            "title": title,
+                            "content": summary,
+                            "raw_content": summary
+                        })
+                print(f"[Scholarly Search] ArXiv fallback succeeded: found {len(raw_results)} papers.")
+            except Exception as exc:
+                print(f"Warning: ArXiv fallback failed: {exc}")
 
         if not raw_results:
-            return "No search results returned from Tavily. Try refining your query."
+            return "ERROR: All search APIs (Tavily, Serper, Exa, ArXiv) failed or returned no results."
 
         # 2. Filter, Rank, and Deduplicate results
         ACADEMIC_DOMAINS = {

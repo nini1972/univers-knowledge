@@ -1,7 +1,24 @@
-from crewai import Agent
+from crewai import Agent, LLM
 import os
 import importlib.util
 from textwrap import dedent
+
+def _get_llm(role: str) -> LLM | None:
+    """Retrieve custom LLM configuration for OpenRouter if configured, otherwise fallback."""
+    api_key = os.getenv("OPENROUTER_API_KEY")
+    if api_key:
+        model_env = f"OPENROUTER_MODEL_{role.upper()}"
+        model = os.getenv(model_env) or os.getenv("OPENROUTER_MODEL") or "meta-llama/llama-3.1-70b-instruct"
+        api_base = "https://openrouter.ai/api/v1"
+        try:
+            return LLM(
+                model=f"openrouter/{model}",
+                api_key=api_key,
+                base_url=api_base
+            )
+        except Exception as exc:
+            print(f"Warning: Failed to initialize CrewAI LLM wrapper for {role}: {exc}")
+    return None
 
 
 def _build_search_tools():
@@ -48,7 +65,7 @@ class UniverseAgents:
             """),
             verbose=True,
             allow_delegation=True,
-            # We'll configure specific LLMs later; it defaults to OpenAI's environment variables.
+            llm=_get_llm('student')
         )
 
     def researcher_agent(self) -> Agent:
@@ -70,7 +87,8 @@ class UniverseAgents:
             """),
             verbose=True,
             allow_delegation=False,
-            tools=search_tools
+            tools=search_tools,
+            llm=_get_llm('researcher')
         )
 
     def skeptic_agent(self) -> Agent:
@@ -83,7 +101,8 @@ class UniverseAgents:
                 unproven hypotheses as facts without clear disclaimers.
             """),
             verbose=True,
-            allow_delegation=False
+            allow_delegation=False,
+            llm=_get_llm('skeptic')
         )
 
     def archivist_agent(self) -> Agent:
@@ -95,7 +114,8 @@ class UniverseAgents:
                 into clear, cross-linked documentation that builds a growing Web of Knowledge.
             """),
             verbose=True,
-            allow_delegation=False
+            allow_delegation=False,
+            llm=_get_llm('archivist')
         )
 
     def visualizer_agent(self) -> Agent:
@@ -114,7 +134,8 @@ class UniverseAgents:
             """),
             verbose=True,
             allow_delegation=False,
-            tools=[GenerateUniverseImageTool()]
+            tools=[GenerateUniverseImageTool()],
+            llm=_get_llm('visualizer')
         )
 
     def math_physicist_agent(self) -> Agent:
@@ -151,7 +172,8 @@ class UniverseAgents:
             """),
             verbose=True,
             allow_delegation=False,
-            tools=get_tier1_math_tools()
+            tools=get_tier1_math_tools(),
+            llm=_get_llm('math')
         )
 
     def derivation_architect_agent(self) -> Agent:
@@ -191,5 +213,6 @@ class UniverseAgents:
             """),
             verbose=True,
             allow_delegation=False,
-            tools=get_tier2_math_tools()
+            tools=get_tier2_math_tools(),
+            llm=_get_llm('math')
         )
