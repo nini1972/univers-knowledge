@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinyLaunch - The Micro-SaaS Marketplace</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#eedeff',
+              200: '#ddd6fe',
+              300: '#c4b5fd',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+              800: '#5b21b6',
+              900: '#4c1d95',
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- React & Babel CDNs -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f15;
+      color: #f3f4f6;
+      overflow-x: hidden;
+    }
+    .font-outfit {
+      font-family: 'Outfit', sans-serif;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #181825;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #373750;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #5b21b6;
+    }
+    /* Glassmorphism Classes */
+    .glass-panel {
+      background: rgba(30, 30, 45, 0.45);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-input {
+      background: rgba(15, 15, 25, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease-in-out;
+    }
+    .glass-input:focus {
+      border-color: #8b5cf6;
+      box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.25);
+      outline: none;
+    }
+    .glow-hover:hover {
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.35);
+      transform: translateY(-2px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+<body class="min-h-screen selection:bg-brand-500 selection:text-white">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect, useMemo } = React;
+
+    // --- INITIAL MOCK DATA ---
+    const INITIAL_LISTINGS = [
+      {
+        id: "logosgen",
+        name: "LogosGen.ai",
+        tagline: "AI-Powered Logo & Brand Identity Generator",
+        description: "An automated brand identity platform for startup founders. Users input their business name, choose an industry theme, select colors, and the system generates high-quality SVG vector logos, business card layouts, and brand guidelines in seconds.",
+        category: "AI",
+        mrr: 1250,
+        arr: 15000,
+        askingPrice: 24000,
+        profitMargin: 92,
+        cac: 12,
+        ltv: 180,
+        techStack: ["Next.js", "OpenAI API", "Supabase", "Tailwind CSS"],
+        owner: {
+          name: "Alex Rivera",
+          avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80"
+        },
+        reviews: [
+          { author: "Sarah Jenkins", rating: 5, comment: "Incredibly fast tool! I bought this as an investment, set up automated ads, and doubled the MRR in two months." },
+          { author: "Chen Wei", rating: 4, comment: "Clean code structure. Very easy to integrate Stripe billing." }
+        ],
+        type: "saas"
+      },
+      {
+        id: "formspark",
+        name: "FormSpark",
+        tagline: "Voice-Enabled Interactive Form Builder",
+        description: "A Typeform competitor that lets creators build conversational forms where users can either type or speak their answers. Uses browser WebSpeech API for transcription. Ideal for qualitative user feedback and customer support intake.",
+        category: "Productivity",
+        mrr: 450,
+        arr: 5400,
+        askingPrice: 6500,
+        profitMargin: 85,
+        cac: 8,
+        ltv: 95,
+        techStack: ["React", "Firebase", "Web Speech API", "Tailwind CSS"],
+        owner: {
+          name: "Maximilian K.",
+          avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
+        },
+        reviews: [
+          { author: "Julia Roberts", rating: 5, comment: "My conversion rates on lead capture rose by 40% after using their voice forms!" }
+        ],
+        type: "saas"
+      },
+      {
+        id: "seospider",
+        name: "SEO Spider",
+        tagline: "Automated SEO Audit & Backlink Crawler",
+        description: "An automated SEO audit crawler. Input any URL, and within a minute it scans the page structure, headers, meta tags, speed metrics, and backlinks, delivering a clean, actionable PDF audit report. Great lead generator for digital agencies.",
+        category: "Marketing",
+        mrr: 0,
+        arr: 0,
+        askingPrice: 1800,
+        profitMargin: 98,
+        cac: 0,
+        ltv: 0,
+        techStack: ["Python", "FastAPI", "PostgreSQL", "Playwright"],
+        owner: {
+          name: "Elena Rostova",
+          avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80"
+        },
+        reviews: [],
+        type: "micro-tool"
+      },
+      {
+        id: "writeeasily",
+        name: "WriteEasily",
+        tagline: "AI Newsletter Generator & Auto-scheduler",
+        description: "An all-in-one newsletter system. Point to your blog, product page, or RSS feed, select the tone (casual, professional, witty), and it automatically drafts, schedules, and dispatches highly engaging newsletters via SendGrid/Mailgun.",
+        category: "AI",
+        mrr: 2100,
+        arr: 25200,
+        askingPrice: 39000,
+        profitMargin: 88,
+        cac: 24,
+        ltv: 320,
+        techStack: ["Vue.js", "Express", "MongoDB", "SendGrid"],
+        owner: {
+          name: "Marcus Vance",
+          avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80"
+        },
+        reviews: [
+          { author: "Linda K.", rating: 5, comment: "Saves me hours of copyediting. High open rates!" }
+        ],
+        type: "saas"
+      },
+      {
+        id: "mockuppro",
+        name: "MockupPro 3D",
+        tagline: "Instant 3D Device Mockup Generator",
+        description: "Create stunning 3D device mockups directly in the browser. Users can upload screenshots, choose a device (iPhone, MacBook, iPad), adjust rotation/lighting, and download high-resolution PNGs or transparent WebPs.",
+        category: "Design",
+        mrr: 820,
+        arr: 9840,
+        askingPrice: 15500,
+        profitMargin: 95,
+        cac: 15,
+        ltv: 110,
+        techStack: ["Svelte", "Three.js", "Vercel", "Tailwind CSS"],
+        owner: {
+          name: "Daniel Craig",
+          avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150&q=80"
+        },
+        reviews: [
+          { author: "Taro Tanaka", rating: 4, comment: "Clean UI and great 3D rendering speeds. Customers love this." }
+        ],
+        type: "saas"
+      }
+    ];
+
+    // --- ICON HELPER COMPONENT ---
+    function Icon({ name, className = "w-5 h-5", onClick }) {
+      useEffect(() => {
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+      }, [name]);
+
+      return <i data-lucide={name} className={className} onClick={onClick} />;
+    }
+
+    // --- MAIN APP COMPONENT ---
+    function App() {
+      const [listings, setListings] = useState(INITIAL_LISTINGS);
+      const [currentPage, setCurrentPage] = useState('explore'); // explore | detail | dashboard | list-new
+      const [selectedListing, setSelectedListing] = useState(null);
+      const [searchQuery, setSearchQuery] = useState('');
+      const [categoryFilter, setCategoryFilter] = useState('All');
+      const [minMrr, setMinMrr] = useState(0);
+      const [maxPrice, setMaxPrice] = useState(50000);
+      const [sortBy, setSortBy] = useState('newest');
+      const [myAcquisitions, setMyAcquisitions] = useState([]);
+      const [purchasingItem, setPurchasingItem] = useState(null); // for checkout modal
+      const [purchaseType, setPurchaseType] = useState('buy'); // buy | rent | invest
+      const [isSubmittingPurchase, setIsSubmittingPurchase] = useState(false);
+      const [isPurchaseSuccess, setIsPurchaseSuccess] = useState(false);
+
+      // Seller stats state (to support interactive demo adding to stats)
+      const [sellerStats, setSellerStats] = useState({
+        totalSales: 48000,
+        activeSubscriptions: 24,
+        pageViews: 12450,
+        conversionRate: 2.4,
+        history: [1200, 1500, 1350, 1800, 2100, 2450, 2900]
+      });
+
+      // Filter logic
+      const filteredListings = useMemo(() => {
+        return listings
+          .filter(item => {
+            const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                  item.tagline.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                  item.description.toLowerCase().includes(searchQuery.toLowerCase());
+            const matchesCategory = categoryFilter === 'All' || item.category === categoryFilter;
+            const matchesMrr = item.mrr >= minMrr;
+            const matchesPrice = item.askingPrice <= maxPrice;
+            return matchesSearch && matchesCategory && matchesMrr && matchesPrice;
+          })
+          .sort((a, b) => {
+            if (sortBy === 'newest') return 1; // mock order
+            if (sortBy === 'highest-mrr') return b.mrr - a.mrr;
+            if (sortBy === 'lowest-price') return a.askingPrice - b.askingPrice;
+            if (sortBy === 'highest-price') return b.askingPrice - a.askingPrice;
+            return 0;
+          });
+      }, [listings, searchQuery, categoryFilter, minMrr, maxPrice, sortBy]);
+
+      // Category list
+      const categories = ['All', 'AI', 'Productivity', 'Marketing', 'Design', 'Developer Tools'];
+
+      const handleAddListing = (newListing) => {
+        setListings([newListing, ...listings]);
+        setCurrentPage('explore');
+      };
+
+      const handleBuyClick = (item, type = 'buy') => {
+        setPurchaseType(type);
+        setPurchasingItem(item);
+        setIsPurchaseSuccess(false);
+      };
+
+      const executePurchase = () => {
+        setIsSubmittingPurchase(true);
+        setTimeout(() => {
+          setIsSubmittingPurchase(false);
+          setIsPurchaseSuccess(true);
+          // Add to user acquisitions
+          setMyAcquisitions(prev => [
+            ...prev,
+            {
+              ...purchasingItem,
+              purchaseDate: new Date().toLocaleDateString(),
+              type: purchaseType,
+              status: 'active'
+            }
+          ]);
+        }, 1500);
+      };
+
+      return (
+        <div className="min-h-screen flex flex-col bg-[#0f0f15] text-gray-100">
+          {/* HEADER */}
+          <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-[#0f0f15]/85 backdrop-blur-md">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+              {/* Logo */}
+              <div className="flex items-center space-x-3 cursor-pointer" onClick={() => { setCurrentPage('explore'); setSelectedListing(null); }}>
+                <div className="bg-brand-600 p-2 rounded-xl flex items-center justify-center shadow-lg shadow-brand-500/20">
+                  <Icon name="rocket" className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-xl font-bold font-outfit tracking-tight bg-gradient-to-r from-white via-gray-200 to-brand-400 bg-clip-text text-transparent">
+                  TinyLaunch
+                </span>
+              </div>
+
+              {/* Navigation */}
+              <nav className="hidden md:flex space-x-1">
+                <button
+                  onClick={() => { setCurrentPage('explore'); setSelectedListing(null); }}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${currentPage === 'explore' ? 'bg-white/5 text-white' : 'text-gray-400 hover:text-white'}`}
+                >
+                  Explore
+                </button>
+                <button
+                  onClick={() => setCurrentPage('dashboard')}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${currentPage === 'dashboard' ? 'bg-white/5 text-white' : 'text-gray-400 hover:text-white'}`}
+                >
+                  Dashboard
+                </button>
+              </nav>
+
+              {/* Action Buttons */}
+              <div className="flex items-center space-x-4">
+                <button
+                  onClick={() => setCurrentPage('list-new')}
+                  className="hidden sm:inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 shadow-lg shadow-brand-600/20 transition-all active:scale-95"
+                >
+                  <Icon name="plus" className="w-4 h-4 mr-1.5" />
+                  List a Project
+                </button>
+                <div className="flex items-center space-x-2 border-l border-white/10 pl-4">
+                  <img className="h-8 w-8 rounded-full border border-brand-500/30" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=80&h=80&q=80" alt="Avatar" />
+                  <span className="hidden lg:block text-xs font-semibold text-gray-300">Creator Hub</span>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          {/* MAIN CONTAINER */}
+          <main className="flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
+            {currentPage === 'explore' && (
+              <ExploreView
+                listings={filteredListings}
+                categories={categories}
+                categoryFilter={categoryFilter}
+                setCategoryFilter={setCategoryFilter}
+                searchQuery={searchQuery}
+                setSearchQuery={setSearchQuery}
+                minMrr={minMrr}
+                setMinMrr={setMinMrr}
+                maxPrice={maxPrice}
+                setMaxPrice={setMaxPrice}
+                sortBy={sortBy}
+                setSortBy={setSortBy}
+                onSelect={(item) => { setSelectedListing(item); setCurrentPage('detail'); }}
+                onBuy={(item, type) => handleBuyClick(item, type)}
+              />
+            )}
+
+            {currentPage === 'detail' && selectedListing && (
+              <DetailView
+                item={selectedListing}
+                onBack={() => setCurrentPage('explore')}
+                onBuy={(type) => handleBuyClick(selectedListing, type)}
+              />
+            )}
+
+            {currentPage === 'dashboard' && (
+              <DashboardView
+                myAcquisitions={myAcquisitions}
+                sellerStats={sellerStats}
+                setSellerStats={setSellerStats}
+                listings={listings}
+                onSelect={(item) => { setSelectedListing(item); setCurrentPage('detail'); }}
+              />
+            )}
+
+            {currentPage === 'list-new' && (
+              <ListNewForm
+                onSubmit={handleAddListing}
+                onCancel={() => setCurrentPage('explore')}
+              />
+            )}
+          </main>
+
+          {/* CHECKOUT/TRANSACTION MODAL */}
+          {purchasingItem && (
+            <CheckoutModal
+              item={purchasingItem}
+              type={purchaseType}
+              isSubmitting={isSubmittingPurchase}
+              isSuccess={isPurchaseSuccess}
+              onClose={() => setPurchasingItem(null)}
+              onConfirm={executePurchase}
+            />
+          )}
+
+          {/* FOOTER */}
+          <footer className="border-t border-white/10 bg-[#07070a] py-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <div className="flex items-center space-x-2">
+                <div className="bg-brand-600 p-1.5 rounded-lg">
+                  <Icon name="rocket" className="w-5 h-5 text-white" />
+                </div>
+                <span className="font-bold text-lg font-outfit text-white">TinyLaunch</span>
+              </div>
+              <p className="text-sm text-gray-500">&copy; 2026 TinyLaunch Inc. Premium Micro-SaaS Marketplace.</p>
+              <div className="flex space-x-6 text-sm text-gray-400">
+                <a href="#" className="hover:text-white transition-colors">Privacy</a>
+                <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" className="hover:text-white transition-colors">Support</a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 1. EXPLORE VIEW
+    // ==========================================
+    function ExploreView({
+      listings, categories, categoryFilter, setCategoryFilter,
+      searchQuery, setSearchQuery, minMrr, setMinMrr, maxPrice,
+      setMaxPrice, sortBy, setSortBy, onSelect, onBuy
+    }) {
+      return (
+        <div>
+          {/* HERO */}
+          <div className="relative rounded-3xl overflow-hidden mb-10 bg-gradient-to-r from-brand-900 to-indigo-900 border border-brand-500/20 p-8 md:p-12 shadow-2xl">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-600/30 via-transparent to-transparent pointer-events-none"></div>
+            <div className="relative z-10 max-w-2xl">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-500/20 text-brand-300 border border-brand-500/30 mb-4 uppercase tracking-wider">
+                🚀 The Ultimate Micro-SaaS Marketplace
+              </span>
+              <h1 className="text-4xl md:text-5xl font-extrabold font-outfit tracking-tight text-white mb-4 leading-tight">
+                Buy, Sell, or Lease verified Micro-SaaS products.
+              </h1>
+              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+                Find profitable niche software projects, validate your next business idea instantly, or easily transition your side projects to new owners.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#explore-grid" className="px-6 py-3 bg-white text-brand-950 font-semibold rounded-xl hover:bg-gray-100 transition-all active:scale-95 flex items-center shadow-lg">
+                  Explore Listings
+                  <Icon name="arrow-right" className="w-5 h-5 ml-2 text-brand-950" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* FILTERS & SEARCH */}
+          <div id="explore-grid" className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            {/* LEFT FILTER PANEL */}
+            <div className="lg:col-span-1 space-y-6">
+              <div className="glass-panel p-6 rounded-2xl">
+                <h3 className="text-lg font-bold font-outfit text-white mb-4 flex items-center">
+                  <Icon name="sliders-horizontal" className="w-5 h-5 mr-2 text-brand-400" />
+                  Filter Projects
+                </h3>
+
+                {/* Search */}
+                <div className="space-y-2 mb-6">
+                  <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Search</label>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      placeholder="Keywords, tech, etc..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="w-full pl-10 pr-4 py-2.5 rounded-xl glass-input text-sm text-white"
+                    />
+                    <Icon name="search" className="w-4 h-4 text-gray-400 absolute left-3 top-3.5" />
+                  </div>
+                </div>
+
+                {/* Categories */}
+                <div className="space-y-2 mb-6">
+                  <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Category</label>
+                  <div className="flex flex-wrap gap-2">
+                    {categories.map(cat => (
+                      <button
+                        key={cat}
+                        onClick={() => setCategoryFilter(cat)}
+                        className={`px-3 py-1.5 rounded-xl text-xs font-medium border transition-all ${
+                          categoryFilter === cat
+                            ? 'bg-brand-600 border-brand-500 text-white'
+                            : 'border-white/10 hover:border-white/20 text-gray-400 hover:text-white'
+                        }`}
+                      >
+                        {cat}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Min MRR */}
+                <div className="space-y-2 mb-6">
+                  <div className="flex justify-between text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                    <span>Min Monthly Revenue</span>
+                    <span className="text-brand-400">${minMrr}/mo</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="5000"
+                    step="100"
+                    value={minMrr}
+                    onChange={(e) => setMinMrr(Number(e.target.value))}
+                    className="w-full accent-brand-500 bg-white/10 h-1.5 rounded-lg appearance-none cursor-pointer"
+                  />
+                </div>
+
+                {/* Max Price */}
+                <div className="space-y-2 mb-6">
+                  <div className="flex justify-between text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                    <span>Max Asking Price</span>
+                    <span className="text-brand-400">${maxPrice.toLocaleString()}</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="1000"
+                    max="100000"
+                    step="2500"
+                    value={maxPrice}
+                    onChange={(e) => setMaxPrice(Number(e.target.value))}
+                    className="w-full accent-brand-500 bg-white/10 h-1.5 rounded-lg appearance-none cursor-pointer"
+                  />
+                </div>
+
+                {/* Sort By */}
+                <div className="space-y-2">
+                  <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Sort By</label>
+                  <select
+                    value={sortBy}
+                    onChange={(e) => setSortBy(e.target.value)}
+                    className="w-full px-3 py-2.5 rounded-xl glass-input text-sm text-white"
+                  >
+                    <option value="newest">Newest Listed</option>
+                    <option value="highest-mrr">Highest MRR</option>
+                    <option value="lowest-price">Lowest Price</option>
+                    <option value="highest-price">Highest Price</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            {/* LISTINGS GRID */}
+            <div className="lg:col-span-3 space-y-6">
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-xl font-bold font-outfit text-white">
+                  Available Projects ({filteredListings.length})
+                </h2>
+              </div>
+
+              {filteredListings.length === 0 ? (
+                <div className="glass-panel rounded-2xl p-12 text-center">
+                  <div className="inline-flex p-4 rounded-full bg-white/5 mb-4 text-gray-500">
+                    <Icon name="search" className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">No matching projects found</h3>
+                  <p className="text-gray-400 text-sm max-w-sm mx-auto">
+                    Try adjusting your filters, decreasing the minimum MRR, or clearing the search query.
+                  </p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {filteredListings.map(item => (
+                    <SaaSCard
+                      key={item.id}
+                      item={item}
+                      onSelect={onSelect}
+                      onBuy={onBuy}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 2. SAAS CARD COMPONENT
+    // ==========================================
+    function SaaSCard({ item, onSelect, onBuy }) {
+      return (
+        <div className="glass-panel rounded-2xl overflow-hidden hover:border-brand-500/40 transition-all duration-300 flex flex-col justify-between h-[420px] group relative shadow-lg">
+          <div className="absolute top-4 right-4 bg-white/5 border border-white/10 rounded-full px-3 py-1 text-[10px] font-bold text-brand-300 uppercase tracking-widest z-10">
+            {item.category}
+          </div>
+
+          <div className="p-6 flex-grow">
+            {/* Header info */}
+            <div className="flex items-center space-x-3.5 mb-4">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white font-bold font-outfit text-xl shadow-md">
+                {item.name[0]}
+              </div>
+              <div>
+                <h4 className="font-bold text-lg text-white group-hover:text-brand-300 transition-colors flex items-center">
+                  {item.name}
+                </h4>
+                <p className="text-xs text-gray-400 truncate max-w-[180px]">{item.tagline}</p>
+              </div>
+            </div>
+
+            {/* Description */}
+            <p className="text-sm text-gray-300 line-clamp-3 mb-5 leading-relaxed">
+              {item.description}
+            </p>
+
+            {/* Metrics */}
+            <div className="grid grid-cols-2 gap-4 bg-black/25 rounded-xl p-3.5 border border-white/5 mb-4">
+              <div>
+                <span className="text-[10px] text-gray-400 block uppercase tracking-wider font-semibold">Monthly Rev (MRR)</span>
+                <span className="text-lg font-bold font-outfit text-green-400">${item.mrr.toLocaleString()}</span>
+              </div>
+              <div>
+                <span className="text-[10px] text-gray-400 block uppercase tracking-wider font-semibold">Profit Margin</span>
+                <span className="text-lg font-bold font-outfit text-white">{item.profitMargin}%</span>
+              </div>
+            </div>
+
+            {/* Tech Tags */}
+            <div className="flex flex-wrap gap-1.5 mb-2">
+              {item.techStack.slice(0, 3).map(tech => (
+                <span key={tech} className="bg-white/5 text-gray-300 text-[10px] px-2.5 py-1 rounded-lg border border-white/5">
+                  {tech}
+                </span>
+              ))}
+              {item.techStack.length > 3 && (
+                <span className="bg-white/5 text-brand-300 text-[10px] px-2 py-1 rounded-lg border border-white/5 font-semibold">
+                  +{item.techStack.length - 3} more
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Footer Action */}
+          <div className="border-t border-white/10 p-4 bg-white/[0.02] flex items-center justify-between">
+            <div>
+              <span className="text-[10px] text-gray-400 block uppercase tracking-wider">Asking Price</span>
+              <span className="text-xl font-black font-outfit text-brand-300">${item.askingPrice.toLocaleString()}</span>
+            </div>
+            <div className="flex space-x-2">
+              <button
+                onClick={() => onSelect(item)}
+                className="px-3.5 py-2 border border-white/10 text-xs font-semibold rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all"
+              >
+                Inspect
+              </button>
+              <button
+                onClick={() => onBuy(item, 'buy')}
+                className="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-xs font-semibold rounded-xl text-white shadow-md transition-all active:scale-95"
+              >
+                Acquire
+              </button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 3. DETAIL & INTERACTIVE DEMO VIEW
+    // ==========================================
+    function DetailView({ item, onBack, onBuy }) {
+      const [activeTab, setActiveTab] = useState('demo'); // demo | financials | specs
+
+      return (
+        <div className="space-y-6">
+          {/* Back btn */}
+          <button
+            onClick={onBack}
+            className="inline-flex items-center text-sm font-semibold text-gray-400 hover:text-white transition-colors"
+          >
+            <Icon name="arrow-left" className="w-4 h-4 mr-1.5" />
+            Back to Explore
+          </button>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* MAIN CONTENT (LEFT 2 COLUMNS) */}
+            <div className="lg:col-span-2 space-y-6">
+              {/* Header Info */}
+              <div className="glass-panel p-6 rounded-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div className="flex items-center space-x-4">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white font-bold font-outfit text-3xl shadow-lg">
+                    {item.name[0]}
+                  </div>
+                  <div>
+                    <div className="flex items-center space-x-2">
+                      <h1 className="text-2xl md:text-3xl font-extrabold font-outfit text-white">{item.name}</h1>
+                      <span className="bg-brand-500/20 text-brand-300 text-[10px] border border-brand-500/30 font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                        {item.category}
+                      </span>
+                    </div>
+                    <p className="text-gray-300 text-sm md:text-base mt-1">{item.tagline}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3 bg-white/5 border border-white/5 px-4 py-2.5 rounded-xl">
+                  <img src={item.owner.avatar} className="w-9 h-9 rounded-full border border-brand-500/30" alt="" />
+                  <div>
+                    <span className="text-[10px] text-gray-400 block uppercase">Seller</span>
+                    <span className="text-sm font-semibold text-gray-200">{item.owner.name}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* TABS */}
+              <div className="border-b border-white/10 flex space-x-6">
+                <button
+                  onClick={() => setActiveTab('demo')}
+                  className={`pb-3 text-sm font-semibold transition-colors relative ${activeTab === 'demo' ? 'text-brand-400 border-b-2 border-brand-500' : 'text-gray-400 hover:text-white'}`}
+                >
+                  Interactive Live Sandbox
+                </button>
+                <button
+                  onClick={() => setActiveTab('financials')}
+                  className={`pb-3 text-sm font-semibold transition-colors relative ${activeTab === 'financials' ? 'text-brand-400 border-b-2 border-brand-500' : 'text-gray-400 hover:text-white'}`}
+                >
+                  Key Financials
+                </button>
+                <button
+                  onClick={() => setActiveTab('specs')}
+                  className={`pb-3 text-sm font-semibold transition-colors relative ${activeTab === 'specs' ? 'text-brand-400 border-b-2 border-brand-500' : 'text-gray-400 hover:text-white'}`}
+                >
+                  Tech Spec & Codebase
+                </button>
+              </div>
+
+              {/* TAB CONTENT: INTERACTIVE SANDBOX */}
+              {activeTab === 'demo' && (
+                <div className="space-y-4">
+                  <div className="bg-amber-500/10 border border-amber-500/20 text-amber-300 px-4 py-3 rounded-xl flex items-start space-x-2 text-xs">
+                    <Icon name="info" className="w-5 h-5 flex-shrink-0" />
+                    <span>
+                      <strong>Interactive Sandbox:</strong> Below is a simulated live playground of the actual product. You can input data and test its core algorithm directly inside this page to verify performance.
+                    </span>
+                  </div>
+
+                  {item.id === 'logosgen' && <LogosGenDemo />}
+                  {item.id === 'seospider' && <SeoSpiderDemo />}
+                  {item.id === 'formspark' && <FormSparkDemo />}
+                  {item.id === 'writeeasily' && <WriteEasilyDemo />}
+                  {item.id === 'mockuppro' && <MockupProDemo />}
+                </div>
+              )}
+
+              {/* TAB CONTENT: FINANCIALS */}
+              {activeTab === 'financials' && (
+                <div className="glass-panel p-6 rounded-2xl grid grid-cols-2 md:grid-cols-3 gap-6">
+                  <div className="bg-black/20 p-4 rounded-xl border border-white/5">
+                    <span className="text-xs text-gray-400 block uppercase mb-1">Monthly Revenue (MRR)</span>
+                    <span className="text-2xl font-black text-green-400 font-outfit">${item.mrr.toLocaleString()}</span>
+                  </div>
+                  <div className="bg-black/20 p-4 rounded-xl border border-white/5">
+                    <span className="text-xs text-gray-400 block uppercase mb-1">Annual Revenue (ARR)</span>
+                    <span className="text-2xl font-black text-white font-outfit">${item.arr.toLocaleString()}</span>
+                  </div>
+                  <div className="bg-black/20 p-4 rounded-xl border border-white/5">
+                    <span className="text-xs text-gray-400 block uppercase mb-1">Profit Margin</span>
+                    <span className="text-2xl font-black text-brand-300 font-outfit">{item.profitMargin}%</span>
+                  </div>
+                  <div className="bg-black/20 p-4 rounded-xl border border-white/5">
+                    <span className="text-xs text-gray-400 block uppercase mb-1">CAC (Acquisition Cost)</span>
+                    <span className="text-2xl font-black text-white font-outfit">${item.cac}</span>
+                  </div>
+                  <div className="bg-black/20 p-4 rounded-xl border border-white/5">
+                    <span className="text-xs text-gray-400 block uppercase mb-1">LTV (Customer Value)</span>
+                    <span className="text-2xl font-black text-white font-outfit">${item.ltv}</span>
+                  </div>
+                  <div className="bg-black/20 p-4 rounded-xl border border-white/5">
+                    <span className="text-xs text-gray-400 block uppercase mb-1">LTV:CAC Ratio</span>
+                    <span className="text-2xl font-black text-green-400 font-outfit">
+                      {item.cac > 0 ? (item.ltv / item.cac).toFixed(1) : "Infinite"}x
+                    </span>
+                  </div>
+                </div>
+              )}
+
+              {/* TAB CONTENT: SPECS */}
+              {activeTab === 'specs' && (
+                <div className="glass-panel p-6 rounded-2xl space-y-6">
+                  <div>
+                    <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-3">Tech Stack</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {item.techStack.map(tech => (
+                        <span key={tech} className="bg-brand-500/10 text-brand-300 border border-brand-500/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="border-t border-white/10 pt-4">
+                    <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-2">Description</h4>
+                    <p className="text-sm text-gray-300 leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* OFFERS / ACQUISITION OPTIONS (RIGHT 1 COLUMN) */}
+            <div className="space-y-6">
+              <div className="glass-panel p-6 rounded-2xl border-brand-500/20 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-brand-500/10 rounded-full blur-2xl"></div>
+                <span className="text-xs text-gray-400 uppercase tracking-widest block mb-1">Buyout Price</span>
+                <span className="text-3xl font-black font-outfit text-white">${item.askingPrice.toLocaleString()}</span>
+
+                <div className="mt-6 space-y-3">
+                  <button
+                    onClick={() => onBuy('buy')}
+                    className="w-full py-3 bg-brand-600 hover:bg-brand-500 rounded-xl font-bold text-sm text-white shadow-lg shadow-brand-600/15 transition-all active:scale-95"
+                  >
+                    Acquire Outright
+                  </button>
+                  <button
+                    onClick={() => onBuy('rent')}
+                    className="w-full py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-bold text-sm text-gray-200 transition-all active:scale-95"
+                  >
+                    Rent / Lease-to-own (from ${(item.askingPrice / 24).toFixed(0)}/mo)
+                  </button>
+                  <button
+                    onClick={() => onBuy('invest')}
+                    className="w-full py-3 border border-dashed border-brand-500/30 hover:border-brand-500 text-brand-300 hover:text-brand-200 rounded-xl font-bold text-sm transition-all active:scale-95"
+                  >
+                    Acquire Equity (e.g. 10%)
+                  </button>
+                </div>
+              </div>
+
+              {/* REVIEWS & HISTORY */}
+              <div className="glass-panel p-6 rounded-2xl space-y-4">
+                <h3 className="font-bold text-base text-white font-outfit flex items-center">
+                  <Icon name="star" className="w-5 h-5 mr-2 text-yellow-400" />
+                  Due Diligence & Reviews
+                </h3>
+
+                {item.reviews.length === 0 ? (
+                  <p className="text-xs text-gray-400 italic">No buyer reviews submitted yet. Verification reports pending.</p>
+                ) : (
+                  <div className="space-y-4">
+                    {item.reviews.map((rev, idx) => (
+                      <div key={idx} className="border-b border-white/5 last:border-b-0 pb-3 last:pb-0">
+                        <div className="flex justify-between items-center mb-1">
+                          <span className="text-xs font-semibold text-gray-300">{rev.author}</span>
+                          <span className="text-yellow-400 text-xs flex items-center">
+                            {"★".repeat(rev.rating)}
+                          </span>
+                        </div>
+                        <p className="text-xs text-gray-400 leading-relaxed">{rev.comment}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 3A. LOGOSGEN INTERACTIVE DEMO
+    // ==========================================
+    function LogosGenDemo() {
+      const [companyName, setCompanyName] = useState('Brandly');
+      const [vibe, setVibe] = useState('Tech');
+      const [color, setColor] = useState('#8b5cf6');
+      const [isGenerating, setIsGenerating] = useState(false);
+      const [generated, setGenerated] = useState(false);
+
+      const handleGenerate = () => {
+        setIsGenerating(true);
+        setTimeout(() => {
+          setIsGenerating(false);
+          setGenerated(true);
+        }, 1200);
+      };
+
+      const getLogoIcon = () => {
+        if (vibe === 'Tech') return <rect x="30" y="30" width="40" height="40" rx="8" fill={color} opacity="0.8"/>;
+        if (vibe === 'Creative') return <polygon points="50,20 80,80 20,80" fill={color} opacity="0.8"/>;
+        if (vibe === 'Minimalist') return <circle cx="50" cy="50" r="25" fill="none" stroke={color} strokeWidth="8"/>;
+        return <circle cx="50" cy="50" r="30" fill={color} opacity="0.8"/>;
+      };
+
+      return (
+        <div className="bg-slate-900/60 border border-white/10 rounded-2xl p-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <h4 className="font-bold text-white text-sm uppercase">1. Design Parameters</h4>
+              <div>
+                <label className="text-xs text-gray-400 block mb-1">Brand Name</label>
+                <input
+                  type="text"
+                  value={companyName}
+                  onChange={(e) => setCompanyName(e.target.value)}
+                  className="w-full px-3 py-2 rounded-xl glass-input text-sm text-white"
+                />
+              </div>
+              <div>
+                <label className="text-xs text-gray-400 block mb-1">Industry/Vibe</label>
+                <select
+                  value={vibe}
+                  onChange={(e) => setVibe(e.target.value)}
+                  className="w-full px-3 py-2 rounded-xl glass-input text-sm text-white"
+                >
+                  <option value="Tech">Tech / Digital</option>
+                  <option value="Creative">Creative / Agency</option>
+                  <option value="Minimalist">Minimalist / Clean</option>
+                  <option value="Corporate">Corporate / Enterprise</option>
+                </select>
+              </div>
+              <div>
+                <label className="text-xs text-gray-400 block mb-1.5">Brand Accent Color</label>
+                <div className="flex space-x-2.5">
+                  {['#8b5cf6', '#ec4899', '#3b82f6', '#10b981', '#f59e0b'].map(c => (
+                    <button
+                      key={c}
+                      onClick={() => setColor(c)}
+                      className={`w-6 h-6 rounded-full border-2 transition-all ${color === c ? 'border-white scale-110' : 'border-transparent'}`}
+                      style={{ backgroundColor: c }}
+                    />
+                  ))}
+                </div>
+              </div>
+              <button
+                onClick={handleGenerate}
+                disabled={isGenerating}
+                className="w-full py-2.5 bg-brand-600 hover:bg-brand-500 rounded-xl text-xs font-bold text-white transition-all"
+              >
+                {isGenerating ? 'Rendering SVG assets...' : 'Generate Brand Identity'}
+              </button>
+            </div>
+
+            <div className="bg-black/30 rounded-2xl border border-white/5 flex flex-col items-center justify-center min-h-[220px] p-6 relative">
+              {isGenerating && (
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand-500"></div>
+                  <span className="text-xs text-gray-400">Assembling brand kit...</span>
+                </div>
+              )}
+
+              {!isGenerating && !generated && (
+                <span className="text-xs text-gray-400 text-center max-w-[200px]">Configure your brand parameters and click generate to view the live rendering engine output.</span>
+              )}
+
+              {!isGenerating && generated && (
+                <div className="text-center w-full space-y-4">
+                  <div className="bg-white/5 p-4 rounded-xl inline-block border border-white/5">
+                    <svg viewBox="0 0 100 100" className="w-16 h-16 mx-auto mb-2">
+                      {getLogoIcon()}
+                    </svg>
+                    <span className="text-lg font-bold font-outfit text-white tracking-wider" style={{ color: color }}>{companyName}</span>
+                  </div>
+                  <div className="text-[10px] text-gray-400">
+                    Generated: Primary SVG Logo • Color Guidelines • Vector Scalable Asset Kit
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 3B. SEO SPIDER INTERACTIVE DEMO
+    // ==========================================
+    function SeoSpiderDemo() {
+      const [url, setUrl] = useState('https://mystartup.io');
+      const [status, setStatus] = useState('idle'); // idle | crawling | done
+      const [progress, setProgress] = useState(0);
+
+      const runAudit = () => {
+        setStatus('crawling');
+        setProgress(0);
+        const interval = setInterval(() => {
+          setProgress(p => {
+            if (p >= 100) {
+              clearInterval(interval);
+              setStatus('done');
+              return 100;
+            }
+            return p + 20;
+          });
+        }, 300);
+      };
+
+      return (
+        <div className="bg-slate-900/60 border border-white/10 rounded-2xl p-6">
+          <div className="space-y-4">
+            <h4 className="font-bold text-white text-sm uppercase">Web Crawler & Audit Simulator</h4>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={url}
+                onChange={(e) => setUrl(e.target.value)}
+                placeholder="Enter URL to audit..."
+                className="flex-grow px-3 py-2 rounded-xl glass-input text-sm text-white"
+              />
+              <button
+                onClick={runAudit}
+                disabled={status === 'crawling'}
+                className="px-5 py-2 bg-brand-600 hover:bg-brand-500 rounded-xl text-xs font-bold text-white transition-all whitespace-nowrap"
+              >
+                {status === 'crawling' ? 'Crawling...' : 'Scan Domain'}
+              </button>
+            </div>
+
+            {status === 'crawling' && (
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs text-gray-400">
+                  <span>Crawling Pages & Asset Maps</span>
+                  <span>{progress}%</span>
+                </div>
+                <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                  <div className="bg-brand-500 h-full transition-all duration-300" style={{ width: `${progress}%` }}></div>
+                </div>
+              </div>
+            )}
+
+            {status === 'done' && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-white/5">
+                <div className="bg-black/20 p-4 rounded-xl border border-white/5 text-center flex flex-col justify-center">
+                  <span className="text-3xl font-black text-green-400 font-outfit">87</span>
+                  <span className="text-[10px] text-gray-400 uppercase tracking-wider mt-1">SEO Health Score</span>
+                </div>
+                <div className="md:col-span-2 space-y-2">
+                  <div className="text-xs font-semibold text-gray-300">Detailed Issues Discovered:</div>
+                  <div className="flex items-center space-x-2 text-xs text-red-400">
+                    <Icon name="x-circle" className="w-4 h-4 flex-shrink-0" />
+                    <span>3 images lack alt-tags (Critical for accessibility)</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-xs text-amber-400">
+                    <Icon name="alert-triangle" className="w-4 h-4 flex-shrink-0" />
+                    <span>LCP load time is slightly high (2.9s)</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-xs text-green-400">
+                    <Icon name="check-circle" className="w-4 h-4 flex-shrink-0" />
+                    <span>SSL certificate is valid and well configured</span>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 3C. FORMSPARK INTERACTIVE DEMO
+    // ==========================================
+    function FormSparkDemo() {
+      const [title, setTitle] = useState("Your Opinion Matters");
+      const [question, setQuestion] = useState("How satisfied are you with our platform?");
+      const [answer, setAnswer] = useState("");
+      const [submissions, setSubmissions] = useState([
+        { answer: "Incredible UI! Highly recommend.", date: "10 mins ago" },
+        { answer: "Saves a lot of time daily.", date: "1 hour ago" }
+      ]);
+
+      const handleSubmit = () => {
+        if (!answer.trim()) return;
+        setSubmissions([{ answer, date: "Just now" }, ...submissions]);
+        setAnswer("");
+      };
+
+      return (
+        <div className="bg-slate-900/60 border border-white/10 rounded-2xl p-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <h4 className="font-bold text-white text-sm uppercase">1. Form Builder Editor</h4>
+              <div>
+                <label className="text-xs text-gray-400 block mb-1">Form Heading</label>
+                <input
+                  type="text"
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
+                  className="w-full px-3 py-2 rounded-xl glass-input text-sm text-white"
+                />
+              </div>
+              <div>
+                <label className="text-xs text-gray-400 block mb-1">Active Question</label>
+                <input
+                  type="text"
+                  value={question}
+                  onChange={(e) => setQuestion(e.target.value)}
+                  className="w-full px-3 py-2 rounded-xl glass-input text-sm text-white"
+                />
+              </div>
+              <div className="pt-2">
+                <span className="text-[10px] text-gray-400 block uppercase mb-2">Simulated Live Responses Database:</span>
+                <div className="space-y-1.5 max-h-[100px] overflow-y-auto pr-1">
+                  {submissions.map((sub, i) => (
+                    <div key={i} className="flex justify-between bg-black/25 p-2 rounded-lg text-xs border border-white/5">
+                      <span className="text-gray-300 truncate max-w-[150px]">{sub.answer}</span>
+                      <span className="text-gray-500">{sub.date}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-black/35 rounded-2xl border border-white/5 p-5 flex flex-col justify-between min-h-[220px]">
+              <div>
+                <span className="text-[9px] text-brand-400 font-bold uppercase tracking-widest block mb-2">🔴 Live Form Preview</span>
+                <h5 className="font-bold text-white text-base mb-1">{title}</h5>
+                <p className="text-xs text-gray-400 mb-4">{question}</p>
+
+                <input
+                  type="text"
+                  placeholder="Type your response here..."
+                  value={answer}
+                  onChange={(e) => setAnswer(e.target.value)}
+                  className="w-full px-3 py-2 rounded-xl glass-input text-xs text-white mb-2"
+                />
+              </div>
+
+              <div className="flex justify-between items-center">
+                <span className="text-[10px] text-gray-500">Form ID: #fs-829</span>
+                <button
+                  onClick={handleSubmit}
+                  className="px-3.5 py-1.5 bg-brand-600 hover:bg-brand-500 text-xs font-semibold rounded-lg text-white"
+                >
+                  Submit Form
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 3D. WRITEEASILY INTERACTIVE DEMO
+    // ==========================================
+    function WriteEasilyDemo() {
+      const [rss, setRss] = useState('https://myblog.com/feed');
+      const [tone, setTone] = useState('witty');
+      const [isDrafting, setIsDrafting] = useState(false);
+      const [draft, setDraft] = useState('');
+
+      const runDraft = () => {
+        setIsDrafting(true);
+        setTimeout(() => {
+          setIsDrafting(false);
+          if (tone === 'witty') {
+            setDraft(`Hey there! 👋\n\nDid you hear about our latest release? We finally did it! We solved the most massive problem since "where are my keys?". Check out the full breakdown in our new post. \n\nSpoiler: It saves you 2 hours a day.`);
+          } else {
+            setDraft(`Dear subscriber,\n\nWe are pleased to announce our latest technical developments. Our recent platform update focuses on enhancing efficiency and reducing integration overhead. Read our detailed documentation for more information.`);
+          }
+        }, 1200);
+      };
+
+      return (
+        <div className="bg-slate-900/60 border border-white/10 rounded-2xl p-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <h4 className="font-bold text-white text-sm uppercase">Newsletter Auto-Draft Engine</h4>
+              <div>
+                <label className="text-xs text-gray-400 block mb-1">Source URL/RSS</label>
+                <input
+                  type="text"
+                  value={rss}
+                  onChange={(e) => setRss(e.target.value)}
+                  className="w-full px-3 py-2 rounded-xl glass-input text-sm text-white"
+                />
+              </div>
+              <div>
+                <label className="text-xs text-gray-400 block mb-1">Newsletter Tone</label>
+                <select
+                  value={tone}
+                  onChange={(e) => setTone(e.target.value)}
+                  className="w-full px-3 py-2 rounded-xl glass-input text-sm text-white"
+                >
+                  <option value="witty">Witty & Casual</option>
+                  <option value="professional">Professional & Technical</option>
+                </select>
+              </div>
+              <button
+                onClick={runDraft}
+                disabled={isDrafting}
+                className="w-full py-2.5 bg-brand-600 hover:bg-brand-500 rounded-xl text-xs font-bold text-white"
+              >
+                {isDrafting ? 'Drafting copy...' : 'Draft Newsletter'}
+              </button>
+            </div>
+
+            <div className="bg-black/30 rounded-2xl border border-white/5 p-4 flex flex-col justify-between min-h-[220px]">
+              {isDrafting && (
+                <div className="flex flex-col items-center justify-center h-full space-y-2">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand-500"></div>
+                  <span className="text-xs text-gray-400">Synthesizing draft...</span>
+                </div>
+              )}
+
+              {!isDrafting && !draft && (
+                <div className="flex items-center justify-center h-full">
+                  <span className="text-xs text-gray-400 text-center max-w-[200px]">Click Draft Newsletter to preview generated campaign copy.</span>
+                </div>
+              )}
+
+              {!isDrafting && draft && (
+                <div className="flex flex-col h-full justify-between">
+                  <div className="bg-white/5 p-3 rounded-lg border border-white/5 text-xs text-gray-300 font-mono whitespace-pre-wrap">
+                    {draft}
+                  </div>
+                  <div className="text-[10px] text-gray-500 pt-2 text-right">
+                    Ready to schedule via SendGrid
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 3E. MOCKUPPRO INTERACTIVE DEMO
+    // ==========================================
+    function MockupProDemo() {
+      const [device, setDevice] = useState('MacBook');
+      const [angle, setAngle] = useState('Frontal');
+      const [rendered, setRendered] = useState(false);
+
+      return (
+        <div className="bg-slate-900/60 border border-white/10 rounded-2xl p-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <h4 className="font-bold text-white text-sm uppercase">3D Device Mockup Simulator</h4>
+              <div>
+                <label className="text-xs text-gray-400 block mb-1">Target Device</label>
+                <select
+                  value={device}
+                  onChange={(e) => { setDevice(e.target.value); setRendered(true); }}
+                  className="w-full px-3 py-2 rounded-xl glass-input text-sm text-white"
+                >
+                  <option value="MacBook">MacBook Pro 16"</option>
+                  <option value="iPhone">iPhone 15 Pro</option>
+                  <option value="iPad">iPad Air</option>
+                </select>
+              </div>
+              <div>
+                <label className="text-xs text-gray-400 block mb-1">Camera Angle</label>
+                <select
+                  value={angle}
+                  onChange={(e) => { setAngle(e.target.value); setRendered(true); }}
+                  className="w-full px-3 py-2 rounded-xl glass-input text-sm text-white"
+                >
+                  <option value="Frontal">Frontal View</option>
+                  <option value="Isometric">Isometric Angle</option>
+                  <option value="Profile">Side Profile</option>
+                </select>
+              </div>
+              <div className="text-xs text-gray-400 bg-white/5 p-3 rounded-lg border border-white/5">
+                Upload mock screenshot directly (Drag & Drop mock interface).
+              </div>
+            </div>
+
+            <div className="bg-black/30 rounded-2xl border border-white/5 flex flex-col items-center justify-center p-6 min-h-[220px]">
+              <div className="relative border border-white/10 rounded-xl p-4 bg-white/5 w-full flex flex-col items-center justify-center">
+                <Icon name="monitor" className="w-12 h-12 text-brand-400 mb-2" />
+                <span className="text-xs font-bold text-white">{device}</span>
+                <span className="text-[10px] text-gray-400 mt-1">{angle} Perspective</span>
+              </div>
+              <span className="text-[10px] text-gray-500 mt-3">Rendered using WebGL / Three.js Mockup engine</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 4. BUYER/SELLER DASHBOARD
+    // ==========================================
+    function DashboardView({ myAcquisitions, sellerStats, setSellerStats, listings, onSelect }) {
+      const [viewMode, setViewMode] = useState('acquisitions'); // acquisitions | stats
+
+      const addMockSale = () => {
+        setSellerStats(prev => ({
+          ...prev,
+          totalSales: prev.totalSales + 1200,
+          activeSubscriptions: prev.activeSubscriptions + 1,
+          pageViews: prev.pageViews + 250,
+          history: [...prev.history.slice(1), prev.history[prev.history.length - 1] + 350]
+        }));
+      };
+
+      // Custom SVG Line Chart generator
+      const chartPoints = useMemo(() => {
+        const height = 120;
+        const width = 500;
+        const maxVal = Math.max(...sellerStats.history) || 1;
+        const minVal = Math.min(...sellerStats.history) || 0;
+        const range = maxVal - minVal || 1;
+
+        return sellerStats.history.map((val, idx) => {
+          const x = (idx / (sellerStats.history.length - 1)) * width;
+          const y = height - ((val - minVal) / range) * (height - 20) - 10;
+          return `${x},${y}`;
+        }).join(' ');
+      }, [sellerStats.history]);
+
+      return (
+        <div className="space-y-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div>
+              <h1 className="text-3xl font-extrabold font-outfit text-white">Your Dashboard</h1>
+              <p className="text-gray-400 text-sm">Manage acquired projects, monitor seller metrics, and simulate revenue streams.</p>
+            </div>
+
+            <div className="flex rounded-xl bg-white/5 p-1 border border-white/5">
+              <button
+                onClick={() => setViewMode('acquisitions')}
+                className={`px-4 py-2 text-xs font-semibold rounded-lg transition-all ${viewMode === 'acquisitions' ? 'bg-brand-600 text-white' : 'text-gray-400 hover:text-white'}`}
+              >
+                My Acquisitions ({myAcquisitions.length})
+              </button>
+              <button
+                onClick={() => setViewMode('stats')}
+                className={`px-4 py-2 text-xs font-semibold rounded-lg transition-all ${viewMode === 'stats' ? 'bg-brand-600 text-white' : 'text-gray-400 hover:text-white'}`}
+              >
+                Seller Analytics
+              </button>
+            </div>
+          </div>
+
+          {viewMode === 'acquisitions' && (
+            <div className="space-y-6">
+              {myAcquisitions.length === 0 ? (
+                <div className="glass-panel p-12 text-center rounded-2xl">
+                  <div className="inline-flex p-4 rounded-full bg-white/5 mb-4 text-gray-500">
+                    <Icon name="shopping-bag" className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">No acquisitions yet</h3>
+                  <p className="text-gray-400 text-sm max-w-sm mx-auto mb-6">
+                    Browse the marketplace to buy, rent, or invest in micro-SaaS projects.
+                  </p>
+                  <button
+                    onClick={() => window.location.reload()} // simplest route back
+                    className="px-5 py-2.5 bg-brand-600 hover:bg-brand-500 rounded-xl text-xs font-semibold text-white transition-all"
+                  >
+                    Go Explore
+                  </button>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {myAcquisitions.map((asset, i) => (
+                    <div key={i} className="glass-panel rounded-2xl overflow-hidden flex flex-col justify-between h-[280px]">
+                      <div className="p-6">
+                        <div className="flex justify-between items-start">
+                          <h4 className="font-bold text-lg text-white">{asset.name}</h4>
+                          <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
+                            asset.type === 'buy' ? 'bg-green-500/20 text-green-300 border border-green-500/30' :
+                            asset.type === 'rent' ? 'bg-blue-500/20 text-blue-300 border border-blue-500/30' :
+                            'bg-purple-500/20 text-purple-300 border border-purple-500/30'
+                          }`}>
+                            {asset.type === 'buy' ? 'Owned' : asset.type === 'rent' ? 'Leasing' : 'Partner/Equity'}
+                          </span>
+                        </div>
+                        <p className="text-xs text-gray-400 mt-1">{asset.tagline}</p>
+
+                        <div className="mt-5 space-y-2">
+                          <div className="flex justify-between text-xs text-gray-300 border-b border-white/5 pb-1.5">
+                            <span>Acquired On:</span>
+                            <span className="font-semibold text-white">{asset.purchaseDate}</span>
+                          </div>
+                          <div className="flex justify-between text-xs text-gray-300">
+                            <span>Value/Pricing:</span>
+                            <span className="font-bold text-brand-300">${asset.askingPrice.toLocaleString()}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="border-t border-white/10 p-4 bg-white/[0.02] flex gap-2">
+                        <button
+                          onClick={() => onSelect(asset)}
+                          className="flex-grow py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-xs font-bold text-gray-200 transition-all"
+                        >
+                          Launch App Sandbox
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {viewMode === 'stats' && (
+            <div className="space-y-6">
+              {/* Stats Cards */}
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="glass-panel p-5 rounded-2xl">
+                  <span className="text-[10px] text-gray-400 block uppercase tracking-wider">Total Sales Revenue</span>
+                  <span className="text-2xl font-black text-white font-outfit">${sellerStats.totalSales.toLocaleString()}</span>
+                </div>
+                <div className="glass-panel p-5 rounded-2xl">
+                  <span className="text-[10px] text-gray-400 block uppercase tracking-wider">Active Subscribers</span>
+                  <span className="text-2xl font-black text-green-400 font-outfit">{sellerStats.activeSubscriptions}</span>
+                </div>
+                <div className="glass-panel p-5 rounded-2xl">
+                  <span className="text-[10px] text-gray-400 block uppercase tracking-wider">Listing Views</span>
+                  <span className="text-2xl font-black text-white font-outfit">{sellerStats.pageViews.toLocaleString()}</span>
+                </div>
+                <div className="glass-panel p-5 rounded-2xl">
+                  <span className="text-[10px] text-gray-400 block uppercase tracking-wider">Visitor Conversion</span>
+                  <span className="text-2xl font-black text-brand-300 font-outfit">{sellerStats.conversionRate}%</span>
+                </div>
+              </div>
+
+              {/* Chart & Simulator */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div className="lg:col-span-2 glass-panel p-6 rounded-2xl">
+                  <div className="flex justify-between items-center mb-4">
+                    <h3 className="font-bold text-white text-base">Monthly Revenue Growth (USD)</h3>
+                    <span className="text-[10px] text-gray-500">Live Simulation</span>
+                  </div>
+                  <div className="h-40 w-full relative">
+                    <svg viewBox="0 0 500 120" className="w-full h-full" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0.4" />
+                          <stop offset="100%" stopColor="#8b5cf6" stopOpacity="0.0" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d={`M 0,120 L ${chartPoints} L 500,120 Z`}
+                        fill="url(#chartGradient)"
+                      />
+                      <polyline
+                        fill="none"
+                        stroke="#8b5cf6"
+                        strokeWidth="3"
+                        points={chartPoints}
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-bold text-white text-base mb-2">Sandbox Simulator</h3>
+                    <p className="text-xs text-gray-400 leading-relaxed mb-4">
+                      Simulate real-time revenue capture. Click the button to inject new transactions and observe how the metrics update dynamically.
+                    </p>
+                  </div>
+                  <button
+                    onClick={addMockSale}
+                    className="w-full py-3 bg-brand-600 hover:bg-brand-500 rounded-xl text-xs font-bold text-white transition-all shadow-md shadow-brand-600/10 active:scale-95"
+                  >
+                    Simulate +$1,200 Sale
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 5. NEW LISTING FORM
+    // ==========================================
+    function ListNewForm({ onSubmit, onCancel }) {
+      const [name, setName] = useState('');
+      const [tagline, setTagline] = useState('');
+      const [category, setCategory] = useState('AI');
+      const [mrr, setMrr] = useState(0);
+      const [askingPrice, setAskingPrice] = useState(1000);
+      const [techStackInput, setTechStackInput] = useState('');
+      const [description, setDescription] = useState('');
+
+      const handleFormSubmit = (e) => {
+        e.preventDefault();
+        if (!name || !tagline || !description) {
+          alert('Please fill out all mandatory fields.');
+          return;
+        }
+
+        const newSass = {
+          id: name.toLowerCase().replace(/\s+/g, '-'),
+          name,
+          tagline,
+          description,
+          category,
+          mrr: Number(mrr),
+          arr: Number(mrr) * 12,
+          askingPrice: Number(askingPrice),
+          profitMargin: 90,
+          cac: 15,
+          ltv: 120,
+          techStack: techStackInput.split(',').map(t => t.trim()).filter(t => t !== ''),
+          owner: {
+            name: "Current User",
+            avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=80&h=80&q=80"
+          },
+          reviews: [],
+          type: "saas"
+        };
+        onSubmit(newSass);
+      };
+
+      return (
+        <div className="max-w-3xl mx-auto glass-panel p-8 rounded-3xl border-white/10 shadow-2xl">
+          <h2 className="text-2xl font-extrabold font-outfit text-white mb-2">List Your Micro-SaaS</h2>
+          <p className="text-gray-400 text-sm mb-6">Create a verified listing on the TinyLaunch marketplace to find buyers, renters, or investors.</p>
+
+          <form onSubmit={handleFormSubmit} className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-1">Product Name *</label>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="e.g. LogosGen.ai"
+                  className="w-full px-3.5 py-2.5 rounded-xl glass-input text-sm text-white"
+                  required
+                />
+              </div>
+              <div>
+                <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-1">One-line Tagline *</label>
+                <input
+                  type="text"
+                  value={tagline}
+                  onChange={(e) => setTagline(e.target.value)}
+                  placeholder="e.g. AI-Powered Brand Identity Suite"
+                  className="w-full px-3.5 py-2.5 rounded-xl glass-input text-sm text-white"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-1">Category</label>
+                <select
+                  value={category}
+                  onChange={(e) => setCategory(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl glass-input text-sm text-white"
+                >
+                  <option value="AI">Artificial Intelligence</option>
+                  <option value="Productivity">Productivity</option>
+                  <option value="Marketing">Marketing</option>
+                  <option value="Design">Design</option>
+                  <option value="Developer Tools">Developer Tools</option>
+                </select>
+              </div>
+              <div>
+                <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-1">Monthly Revenue (USD) *</label>
+                <input
+                  type="number"
+                  value={mrr}
+                  onChange={(e) => setMrr(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl glass-input text-sm text-white"
+                  required
+                />
+              </div>
+              <div>
+                <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-1">Asking Price (USD) *</label>
+                <input
+                  type="number"
+                  value={askingPrice}
+                  onChange={(e) => setAskingPrice(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl glass-input text-sm text-white"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-1">Tech Stack (comma-separated)</label>
+              <input
+                type="text"
+                value={techStackInput}
+                onChange={(e) => setTechStackInput(e.target.value)}
+                placeholder="e.g. Next.js, OpenAI API, Supabase, Tailwind CSS"
+                className="w-full px-3.5 py-2.5 rounded-xl glass-input text-sm text-white"
+              />
+            </div>
+
+            <div>
+              <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-1">Detailed Description *</label>
+              <textarea
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                rows="4"
+                placeholder="Provide a breakdown of what the application does, who the customers are, and the current code setup..."
+                className="w-full px-3.5 py-2.5 rounded-xl glass-input text-sm text-white"
+                required
+              />
+            </div>
+
+            <div className="flex justify-end space-x-4 border-t border-white/10 pt-6">
+              <button
+                type="button"
+                onClick={onCancel}
+                className="px-5 py-2.5 border border-white/10 hover:bg-white/5 text-sm font-semibold rounded-xl text-gray-300 hover:text-white transition-all"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                className="px-6 py-2.5 bg-brand-600 hover:bg-brand-500 rounded-xl text-sm font-bold text-white shadow-lg transition-all"
+              >
+                Publish Listing
+              </button>
+            </div>
+          </form>
+        </div>
+      );
+    }
+
+    // ==========================================
+    // 6. CHECKOUT MODAL
+    // ==========================================
+    function CheckoutModal({ item, type, isSubmitting, isSuccess, onClose, onConfirm }) {
+      return (
+        <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <div className="relative max-w-md w-full glass-panel rounded-3xl p-8 border-white/10 shadow-2xl">
+            {/* Close */}
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors"
+            >
+              <Icon name="x" className="w-5 h-5" />
+            </button>
+
+            {!isSuccess ? (
+              <div>
+                <h3 className="text-xl font-bold font-outfit text-white mb-2">
+                  {type === 'buy' ? 'Confirm Acquisition' : type === 'rent' ? 'Confirm Rental Agreement' : 'Propose Investment'}
+                </h3>
+                <p className="text-xs text-gray-400 mb-6">You are initiating the transfer sequence for <strong>{item.name}</strong>.</p>
+
+                <div className="bg-black/25 rounded-2xl p-4 border border-white/5 space-y-3 mb-6">
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-400">Target Asset:</span>
+                    <span className="font-semibold text-white">{item.name}</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-400">Mode:</span>
+                    <span className="font-semibold text-white capitalize">{type}</span>
+                  </div>
+                  <div className="flex justify-between text-sm border-t border-white/5 pt-3">
+                    <span className="text-gray-400">Total Price:</span>
+                    <span className="font-bold text-brand-300">
+                      {type === 'buy' ? `$${item.askingPrice.toLocaleString()}` :
+                       type === 'rent' ? `$${(item.askingPrice / 24).toFixed(0)}/mo` :
+                       `$${(item.askingPrice * 0.1).toLocaleString()} (for 10% equity)`}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Simulated Payment Sheet */}
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <label className="text-[10px] text-gray-500 block uppercase mb-1">Simulated Card Details</label>
+                    <div className="flex items-center glass-input rounded-xl px-3.5 py-2.5">
+                      <Icon name="credit-card" className="w-4 h-4 text-gray-400 mr-2" />
+                      <input
+                        type="text"
+                        disabled
+                        value="••••  ••••  ••••  4242"
+                        className="bg-transparent text-sm text-gray-300 w-full outline-none border-none"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex space-x-3">
+                  <button
+                    onClick={onClose}
+                    className="w-1/2 py-2.5 border border-white/10 hover:bg-white/5 rounded-xl text-xs font-bold text-gray-300 transition-all"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    onClick={onConfirm}
+                    disabled={isSubmitting}
+                    className="w-1/2 py-2.5 bg-brand-600 hover:bg-brand-500 rounded-xl text-xs font-bold text-white shadow-lg transition-all flex items-center justify-center"
+                  >
+                    {isSubmitting ? (
+                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                    ) : (
+                      'Confirm Payment'
+                    )}
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className="text-center py-6">
+                <div className="inline-flex p-4 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 mb-4 animate-bounce">
+                  <Icon name="check" className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold font-outfit text-white mb-2">Acquisition Initiated!</h3>
+                <p className="text-xs text-gray-400 max-w-xs mx-auto mb-6">
+                  The smart contract escrow is set up, and the project is now added to your dashboard!
+                </p>
+                <button
+                  onClick={onClose}
+                  className="w-full py-2.5 bg-brand-600 hover:bg-brand-500 rounded-xl text-xs font-bold text-white transition-all"
+                >
+                  Return to Marketplace
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    // Render App
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
