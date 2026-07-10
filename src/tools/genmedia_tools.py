@@ -21,6 +21,8 @@ def _resolve_nanobanana_binary(root_dir: str) -> str:
 
 async def _generate_image_async(prompt: str) -> str:
     """Async core to call the nanobanana MCP server."""
+    # Clean prompt: replace double quotes with single quotes to prevent JSON/conversational model fallback
+    prompt = prompt.replace('"', "'")
     # Load config to get environment
     # Resolve project root relative to src/tools/
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -51,7 +53,7 @@ async def _generate_image_async(prompt: str) -> str:
         async with stdio_client(server_params) as (read, write):
             async with ClientSession(read, write) as session:
                 await session.initialize()
-                
+
                 # Make sure the output directory exists
                 out_dir = os.path.join(root_dir, "knowledge_base", "images")
                 os.makedirs(out_dir, exist_ok=True)
@@ -60,16 +62,16 @@ async def _generate_image_async(prompt: str) -> str:
                 result = await session.call_tool(
                     "nanobanana_image_generation",
                     arguments={
-                        "prompt": prompt, 
+                        "prompt": prompt,
                         "aspect_ratio": "16:9",
                         "model": "gemini-2.5-flash-image",
                         "output_directory": out_dir
                     }
                 )
-                
+
                 # Return the text content and parse the generated image path
                 text_output = "\\n".join([c.text for c in result.content if c.type == 'text'])
-                
+
                 # The tool output has format: "...Generated and saved 1 image(s): <path>"
                 # Search for the path. We will try to isolate just the generated image path.
                 match = re.search(r'saved \d+ image\(s\):\s*(.+)', text_output)
@@ -78,7 +80,7 @@ async def _generate_image_async(prompt: str) -> str:
                     filepath = match.group(1).strip()
                     # Convert to forward slashes for markdown
                     filepath = filepath.replace("\\\\", "/")
-                    
+
                     # Ensure path works relative to the knowledge_base folder since the final markdown is inside knowledge_base
                     # E.g., if path is c:/.../knowledge_base/images/file.png, we just want 'images/file.png'
                     if "knowledge_base" in filepath:
@@ -88,7 +90,7 @@ async def _generate_image_async(prompt: str) -> str:
                     # so image paths must go up one level to resolve correctly.
                     if filepath.startswith("images/"):
                         filepath = f"../{filepath}"
-                        
+
                     return filepath
                 return text_output
     except Exception as e:
