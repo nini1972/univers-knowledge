@@ -1,5 +1,10 @@
 import os
 import sys
+import time
+import random
+import threading
+import json
+import urllib.request
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -18,6 +23,41 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# --- AstralBridge SPECIFICATION ---
+PORT = int(os.getenv("PORT", 4004))
+BRIDGE_URL = os.getenv("BRIDGE_URL", "http://localhost:3001")
+PUBLIC_URL = os.getenv("PUBLIC_URL", f"http://localhost:{PORT}")
+
+agent_card = {
+    "name": "MathAgent",
+    "role": "Mathematical Proof Expert",
+    "description": "Solves, verifies, and documents complex mathematical proofs and derivations using python/sympy code.",
+    "capabilities": ["verify_derivation"],
+    "skills": [
+        {
+            "id": "verify_derivation",
+            "name": "Verify Derivation",
+            "description": "Performs a formal mathematical verification and derivation check using SymPy.",
+            "inputModes": ["text"],
+            "outputModes": ["text"],
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "concept": {"type": "string"},
+                    "equations": {"type": "array", "items": {"type": "string"}}
+                },
+                "required": ["concept", "equations"]
+            }
+        }
+    ],
+    "endpoint": f"{PUBLIC_URL}/a2a",
+    "status": "active",
+    "framework": "FastAPI + CrewAI",
+    "provider": "Local"
+}
+
+tasks = {}
+
 class DerivationRequest(BaseModel):
     concept: str
     equations: list[str]
@@ -27,9 +67,17 @@ class DerivationResponse(BaseModel):
     concept: str
     proof_report: str
 
+class A2ATaskRequest(BaseModel):
+    capability: str
+    payload: dict
+
 @app.get("/")
 def read_root():
     return {"service": "AstralBridge Math Agent Service", "status": "active"}
+
+@app.get("/.well-known/agent-card.json")
+def get_agent_card():
+    return agent_card
 
 @app.post("/verify-derivation", response_model=DerivationResponse)
 def verify_derivation(payload: DerivationRequest):
@@ -42,3 +90,86 @@ def verify_derivation(payload: DerivationRequest):
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/a2a/task")
+def run_a2a_task(req: A2ATaskRequest):
+    if req.capability != "verify_derivation":
+        raise HTTPException(status_code=400, detail="Unsupported capability")
+
+    concept = req.payload.get("concept", "")
+    equations = req.payload.get("equations", [])
+
+    task_id = "".join(random.choices("abcdefghijklmnopqrstuvwxyz0123456789", k=7))
+
+    # Run task synchronously to return result to bridge
+    try:
+        report = solve_math_derivation(concept, equations)
+        task = {
+            "id": task_id,
+            "status": "completed",
+            "result": {
+                "proof_report": report
+            },
+            "createdAt": int(time.time() * 1000),
+            "updatedAt": int(time.time() * 1000)
+        }
+        tasks[task_id] = task
+        return task
+    except Exception as e:
+        task = {
+            "id": task_id,
+            "status": "failed",
+            "result": {
+                "error": str(e)
+            },
+            "createdAt": int(time.time() * 1000),
+            "updatedAt": int(time.time() * 1000)
+        }
+        tasks[task_id] = task
+        return task
+
+@app.get("/a2a/task/{task_id}")
+def get_a2a_task(task_id: str):
+    task = tasks.get(task_id)
+    if not task:
+        raise HTTPException(status_code=404, detail="Task not found")
+    return task
+
+# --- Background Registration and Heartbeat Loop ---
+def background_registration_loop():
+    time.sleep(3) # Wait for FastAPI to bind
+    card_json = json.dumps(agent_card).encode("utf-8")
+
+    while True:
+        try:
+            req = urllib.request.Request(
+                f"{BRIDGE_URL}/agents/register",
+                data=card_json,
+                headers={"Content-Type": "application/json"}
+            )
+            with urllib.request.urlopen(req) as response:
+                print("Registered with AstralBridge")
+        except Exception as e:
+            print(f"Registration failed: {e}. Retrying in 5 seconds...")
+            time.sleep(5)
+            continue
+
+        while True:
+            try:
+                heartbeat_data = json.dumps({"status": "active"}).encode("utf-8")
+                req = urllib.request.Request(
+                    f"{BRIDGE_URL}/agents/{agent_card['name']}/heartbeat",
+                    data=heartbeat_data,
+                    headers={"Content-Type": "application/json"}
+                )
+                with urllib.request.urlopen(req) as response:
+                    pass
+            except Exception as e:
+                print(f"Heartbeat failed: {e}. Re-registering...")
+                break
+            time.sleep(5)
+
+@app.on_event("startup")
+def startup_event():
+    t = threading.Thread(target=background_registration_loop, daemon=True)
+    t.start()
