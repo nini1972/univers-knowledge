@@ -343,7 +343,7 @@ class UniverseTasks:
             agent=agent
         )
 
-    def document_knowledge_task(self, agent, output_path, include_visual=True, approved_summary=None, math_status=None, math_score=None):
+    def document_knowledge_task(self, agent, output_path, include_visual=True, approved_summary=None, math_status=None, math_score=None, math_report=None):
         from pathlib import Path
         repo_root = Path(__file__).resolve().parent.parent
         template_file = repo_root / "knowledge_base" / "templates" / "concept_template.md"
@@ -411,6 +411,20 @@ class UniverseTasks:
                 Use "0/4" if not available.
             """).strip()
 
+        # Build explicit math report instructions
+        if math_report:
+            math_report_instruction = dedent(f"""
+                IMPORTANT — Use this exact Math Physicist's verification report verbatim for Section '## 9. Mathematical Integrity Report':
+                ---
+                {math_report}
+                ---
+            """).strip()
+        else:
+            math_report_instruction = dedent("""
+                For section ## 9. Mathematical Integrity Report: copy the Math Physicist's full verification report from context.
+                If no math report is available, write "[MATH_PENDING — will be populated by math_enrichment.py]".
+            """).strip()
+
         return Task(
             description=dedent(f"""
                 {summary_source} {visual_source}
@@ -423,7 +437,7 @@ class UniverseTasks:
                 3. You must use the EXACT headings, numbering, and titles as defined in the template below. Do NOT omit any headings, and do NOT alter their names/numbers.
                 4. {visual_insert}
                 5. Do NOT wrap the entire output in markdown code fences like '```markdown'. Output raw markdown content directly.
-                6. For section ## 9. Mathematical Integrity Report: copy the Math Physicist's full verification report from context into this section. If no math report is available, write "[MATH_PENDING — will be populated by math_enrichment.py]".
+                6. {math_report_instruction}
 
                 TEMPLATE LAYOUT TO STRICTLY ADHERE TO:
                 {template_content}

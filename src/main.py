@@ -303,6 +303,7 @@ def run_level1_flow(next_concept: str):
         approved_summary=decision["summary_for_archivist"],
         math_status=math_status_val,
         math_score=math_score,
+        math_report=math_output,
     )
 
     final_agents = [archivist]
