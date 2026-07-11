@@ -62,6 +62,7 @@ graph TD
     neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics["Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics"]:::verified
     neutrinoless_double_beta_decay["Neutrinoless Double Beta Decay"]:::theoretical
     neutrino_oscillations["Neutrino Oscillations"]:::theoretical
+    are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups["Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?"]:::theoretical
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
@@ -71,6 +72,7 @@ graph TD
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
     supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration["Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration"]:::verified
     entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena["Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"]:::theoretical
+    conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions["Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions"]:::theoretical
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
     superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
     holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate["Holographic Principle vs Causal Set Theory in Quantum Gravity Debate"]:::theoretical
@@ -185,6 +187,7 @@ graph TD
 
 ## Level 1: Fundamental Physics
 
+- [Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?](level_1_fundamental_physics/are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups.md) [THEORETICAL]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
 - [Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?](level_1_fundamental_physics/can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance.md) [THEORETICAL]
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
@@ -250,6 +253,7 @@ graph TD
 - [Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks](level_2_advanced_frameworks/black_hole_models_debate_observational_techniques_vs_theoretical_frameworks.md) [VERIFIED]
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
 - [Causal Set Theory vs Spin Foam Models in Quantum Gravity Research](level_2_advanced_frameworks/causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research.md) [THEORETICAL]
+- [Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions](level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions.md) [THEORETICAL]
 - [Cosmological Constant versus Quintessence in Explaining Dark Energy](level_2_advanced_frameworks/cosmological_constant_versus_quintessence_in_explaining_dark_energy.md) [THEORETICAL]
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [Ekpyrotic Universe Model versus Inflationary Cosmology Debate](level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md) [VERIFIED]
