@@ -51,10 +51,10 @@ class MockDebateGenerator:
     @staticmethod
     def generate(concept: str) -> dict:
         timestamp = datetime.utcnow().isoformat() + "Z"
-        
+
         # We'll create custom scripts for a few popular ones, and a dynamic fallback for others
         concept_lower = concept.lower()
-        
+
         if "entanglement" in concept_lower:
             score = 88
             verdict = "Quantum Entanglement is mathematically indisputable and experimentally verified, yet continues to defy primitive spatial common sense."
@@ -176,7 +176,7 @@ class MockDebateGenerator:
                     "text": f"Both perspectives hold a piece of the truth. Grog's 'cosmic wind' is an elegant analogy for field force effects, while the Oracle's gauge symmetries provide the structural backbone. {concept} stands as a vital framework, balancing empirical grounding with theoretical elegance."
                 }
             ]
-            
+
         return {
             "id": f"debate_{int(time.time())}",
             "concept": concept,
@@ -187,49 +187,73 @@ class MockDebateGenerator:
         }
 
 def run_real_llm_debate(concept: str) -> dict:
-    """Invokes the OpenAI client to execute a live multi-turn debate between the agents."""
+    """Invokes the OpenAI client (or OpenRouter) to execute a live multi-turn debate between the agents."""
     if not OpenAI:
         raise ImportError("OpenAI package missing")
-        
+
+    # Support both OpenAI and OpenRouter key configurations
     api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key or "your_openai_api_key" in api_key:
-        raise ValueError("Valid OpenAI API key not found in environment")
-        
-    model = os.getenv("LLM_MODEL_ID", "gpt-4o-mini")
+    openrouter_key = os.getenv("OPENROUTER_API_KEY")
+    api_base = None
+
+    if api_key and "your_openai_api_key" not in api_key:
+        model = os.getenv("SANDBOX_MODEL_ID") or os.getenv("LLM_MODEL_ID", "gpt-4o-mini")
+    elif openrouter_key:
+        api_key = openrouter_key
+        api_base = "https://openrouter.ai/api/v1"
+        raw_model = os.getenv("SANDBOX_MODEL_ID") or os.getenv("OPENROUTER_MODEL") or "openai/gpt-4o-mini"
+        model = raw_model if "/" in raw_model else f"openai/{raw_model}"
+    else:
+        raise ValueError("No valid OPENAI_API_KEY or OPENROUTER_API_KEY found in environment")
+
     print(f"Initializing live multi-agent debate on '{concept}' using model '{model}'...")
-    
-    client = OpenAI(api_key=api_key)
-    
-    # System Instructions
+
+    if api_base:
+        client = OpenAI(api_key=api_key, base_url=api_base)
+    else:
+        client = OpenAI(api_key=api_key)
+
+    # --- System Instructions with strict role-boundary enforcement ---
+    # The CRITICAL rule at the end of each persona prevents role bleeding where
+    # the model spontaneously writes lines for other characters in the same turn.
     caveman_instructions = (
         "You are Grog, a wise prehistoric caveman representing raw empirical observation. "
-        "You speak in short, primitive, grunting sentences, combined with deep physical insights explained through rough, hands-on analogies. "
-        "You do not trust complex mathematical runes or invisible fields. You only trust what you can touch, see, feel, burn, or throw a rock at. "
-        "Always use monospace words like 'UG', 'GROG', 'ROCK', 'FIRE', 'CLAW' metaphorically. "
-        "Use plenty of prehistoric emojis (🪨, 🔥, 🦴, 🍖, 🦖, 🪵) to emphasize your points. "
-        "Keep your arguments highly grounded in direct, visceral, physical sensations. Do not speak in modern academic jargon."
+        "You speak in short, primitive, grunting sentences combined with deep physical insights "
+        "explained through rough, hands-on analogies (rocks, fire, bones, hunting). "
+        "You do not trust complex mathematical runes or invisible fields. "
+        "You only trust what you can touch, see, feel, burn, or throw a rock at. "
+        "Use phrases like 'UG!', 'GROG KNOW', 'GROG SAY' to emphasize your primitive yet wise nature. "
+        "Use prehistoric emojis (🪨, 🔥, 🦴, 🍖, 🦖, 🪵) to punctuate your points.\n"
+        "CRITICAL: You ONLY speak as Grog. NEVER write lines for the Oracle, the Student, "
+        "or any other character. Write only your own single response, then STOP."
     )
-    
+
     oracle_instructions = (
-        "You are the Oracle, a highly advanced artificial intelligence from the far future. "
-        "You possess infinite knowledge of mathematical physics and the quantum coordinate weave of the cosmos. "
-        "You speak with calm, enigmatic, transcendent, and highly poetic wisdom. "
-        "You formulate concepts using rigorous geometric symmetries, differential equations, and field theories. "
-        "Always include beautiful LaTeX math notations (e.g. $G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}$ or $\Psi$) in your arguments. "
-        "Challenge the primitive sensory limits of Grog with the infinite expanse of theoretical mathematical truth."
+        "You are the Transcendent Oracle, a highly advanced intellect from the far future. "
+        "You possess infinite knowledge of mathematical physics and the quantum weave of the cosmos. "
+        "You speak with calm, enigmatic, deeply poetic, and transcendent wisdom. "
+        "You formulate every concept using rigorous geometric symmetries, differential equations, and field theories. "
+        "You MUST include at least two LaTeX math expressions "
+        r"(e.g. $G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}$) "
+        "in your response. "
+        "You challenge the primitive sensory limits of Grog with the infinite expanse of mathematical truth.\n"
+        "CRITICAL: You ONLY speak as the Oracle. NEVER write lines for Grog, the Student, "
+        "or any other character. Write only your own single response, then STOP."
     )
-    
+
     student_instructions = (
-        "You are the Skeptical Student Explorer, an unyielding and highly analytical student examiner. "
-        "Your goal is to maintain strict epistemic hygiene by interrogating claims. "
-        "You are deeply skeptical of both raw empirical common-sense assertions (from Grog) and hyper-abstract, unverified mathematical elegant models (from the Oracle). "
-        "You ask biting, analytical, and highly precise questions to force both parties to defend their assumptions and bridge the gap between abstract math and physical reality."
+        "You are the Skeptical Student Explorer — unyielding, analytical, and epistemically rigorous. "
+        "Your goal is to maintain strict epistemic hygiene by interrogating the claims of both Grog and the Oracle. "
+        "You are deeply skeptical of both raw sensory intuition (Grog) and unverified mathematical elegance (Oracle). "
+        "You ask precise, biting questions that force both parties to confront the gap between abstraction and physical reality.\n"
+        "CRITICAL: You ONLY speak as the Skeptical Student. NEVER write lines for Grog, the Oracle, "
+        "or any other character. Write only your own single response, then STOP."
     )
-    
+
     # Transcript collector
     turns = []
-    
-    # helper to fetch completions
+
+    # helper to fetch completions — 1200 tokens gives Oracle space for full LaTeX derivations
     def get_completion(system_prompt, user_content):
         response = client.chat.completions.create(
             model=model,
@@ -238,7 +262,7 @@ def run_real_llm_debate(concept: str) -> dict:
                 {"role": "user", "content": user_content}
             ],
             temperature=0.75,
-            max_tokens=600
+            max_tokens=1200,
         )
         return response.choices[0].message.content.strip()
 
@@ -254,7 +278,7 @@ def run_real_llm_debate(concept: str) -> dict:
         "text": student_intro
     })
     print(" - grill_student completed opening.")
-    
+
     # --- Turn 2: Caveman Opening ---
     transcript_so_far = "\n\n".join([f"{t['role']}: {t['text']}" for t in turns])
     prompt_caveman_init = (
@@ -344,14 +368,14 @@ def run_real_llm_debate(concept: str) -> dict:
         "```\n"
         "Make sure the JSON block is perfectly parseable and on its own lines."
     )
-    
+
     # We will query and parse this block
     student_verdict_raw = get_completion(student_instructions, prompt_student_verdict)
-    
+
     # Extract score and short verdict
     score = 75
     verdict = "Theoretical model holds, but awaits conclusive empirical validation."
-    
+
     json_text = sanitize_json_text(student_verdict_raw)
     if json_text:
         try:
@@ -360,10 +384,10 @@ def run_real_llm_debate(concept: str) -> dict:
             verdict = parsed.get("verdict", verdict)
         except Exception as e:
             print(f"Warning: Failed to parse student final JSON: {e}")
-            
+
     # Clean up the verdict raw text to remove the raw JSON code block for visual cleanliness
     clean_verdict_text = re.sub(r"```json\s*\{.*?\}\s*```", "", student_verdict_raw, flags=re.DOTALL).strip()
-    
+
     turns.append({
         "agent": "grill_student",
         "role": "The Skeptical Student Explorer",
@@ -375,6 +399,7 @@ def run_real_llm_debate(concept: str) -> dict:
         "id": f"debate_{int(time.time())}",
         "concept": concept,
         "timestamp": datetime.utcnow().isoformat() + "Z",
+        "model_used": model,
         "score": score,
         "verdict": verdict,
         "turns": turns
@@ -385,7 +410,7 @@ def main():
     concept = None
     if len(sys.argv) > 1:
         concept = " ".join(sys.argv[1:]).strip()
-        
+
     if not concept:
         # Pick one randomly or display options
         print("SKEPTIC SANDBOX - DEBATE ORCHESTRATOR")
@@ -394,37 +419,39 @@ def main():
         for idx, item in enumerate(DEFAULT_CONCEPTS):
             print(f" {idx + 1}) {item}")
         print("")
-        
+
         # Select first one or ask (since it's non-interactive, we just pick the first default)
         concept = DEFAULT_CONCEPTS[0]
         print(f"Auto-selected concept: '{concept}'")
-        
+
     # Create logs folder if missing
     logs_dir = REPO_ROOT / "knowledge_base" / "logs"
     logs_dir.mkdir(parents=True, exist_ok=True)
-    
+
     debates_file = logs_dir / "sandbox_debates.jsonl"
     telemetry_file = logs_dir / "telemetry.jsonl"
-    
+
     # 1. Run debate
     debate_record = None
     try:
-        # Check if we have credentials
+        # Use live LLM if either OpenAI or OpenRouter key is available
         api_key = os.getenv("OPENAI_API_KEY")
-        if api_key and "your_openai_api_key" not in api_key and OpenAI:
+        openrouter_key = os.getenv("OPENROUTER_API_KEY")
+        has_live_key = (api_key and "your_openai_api_key" not in api_key) or bool(openrouter_key)
+        if has_live_key and OpenAI:
             debate_record = run_real_llm_debate(concept)
         else:
-            print("Notice: No valid OPENAI_API_KEY configured. Generating high-quality procedural debate.")
+            print("Notice: No valid OPENAI_API_KEY or OPENROUTER_API_KEY configured. Generating procedural debate.")
             debate_record = MockDebateGenerator.generate(concept)
     except Exception as exc:
         print(f"Error executing live debate: {exc}. Falling back to mock generator.")
         debate_record = MockDebateGenerator.generate(concept)
-        
+
     # 2. Log result to sandbox_debates.jsonl
     with open(debates_file, "a", encoding="utf-8") as f:
         f.write(json.dumps(debate_record) + "\n")
     print(f"Saved debate transcript to {debates_file.relative_to(REPO_ROOT)}")
-    
+
     # 3. Log event to telemetry.jsonl
     telemetry_record = {
         "stage": "skeptic_sandbox_debate",
