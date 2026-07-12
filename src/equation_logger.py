@@ -26,6 +26,7 @@ def log_equations(
     math_score: int | None = None,
     math_total: int | None = None,
     source: str = "crew_extraction",
+    a2a_proof_report: str | None = None,
 ) -> None:
     """Append discovered equations to the equation database.
 
@@ -37,6 +38,7 @@ def log_equations(
         math_score: Numerator of the math score (e.g., 4).
         math_total: Denominator of the math score (e.g., 4).
         source: Where the equations were extracted from.
+        a2a_proof_report: Full proof report from the A2A Math Service, if available.
     """
     if not equations:
         return
@@ -53,6 +55,8 @@ def log_equations(
         "source": source,
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }
+    if a2a_proof_report:
+        entry["a2a_proof_report"] = a2a_proof_report
 
     try:
         with open(EQUATIONS_LOG, "a", encoding="utf-8") as f:
