@@ -18,7 +18,8 @@ import urllib.error
 
 # Default to the known Cloud Run URL; can be overridden via env var.
 _DEFAULT_URL = "https://math-agent-907993744320.us-central1.run.app"
-_TIMEOUT_SECONDS = 30
+_TIMEOUT_SECONDS = 120
+_MAX_EQUATIONS = 5  # Cap to keep payload manageable for SymPy verification
 
 
 def extract_equations_from_report(math_report: str) -> list[str]:
@@ -61,16 +62,23 @@ def call_a2a_math_service(concept: str, equations: list[str]) -> dict | None:
     base_url = (os.getenv("MATH_SERVICE_URL") or _DEFAULT_URL).rstrip("/")
     endpoint = f"{base_url}/a2a/task"
 
+    # Cap equations to avoid overloading the Math Agent's SymPy verification
+    total_found = len(equations)
+    selected = equations[:_MAX_EQUATIONS] if equations else ["E = mc^2"]
+
     payload = {
         "capability": "verify_derivation",
         "payload": {
             "concept": concept,
-            "equations": equations if equations else ["E = mc^2"]  # Fallback test equation
+            "equations": selected
         }
     }
 
     print(f"[A2A MATH TEST] Calling Math Service at {endpoint}")
-    print(f"[A2A MATH TEST] Payload: concept={concept!r}, equations={len(equations)} found")
+    print(f"[A2A MATH TEST] Payload: concept={concept!r}, sending {len(selected)}/{total_found} equations (capped at {_MAX_EQUATIONS})")
+    for i, eq in enumerate(selected, 1):
+        print(f"[A2A MATH TEST]   eq{i}: {eq[:80]}{'...' if len(eq) > 80 else ''}")
+    print(f"[A2A MATH TEST] Timeout: {_TIMEOUT_SECONDS}s")
 
     try:
         data = json.dumps(payload).encode("utf-8")
