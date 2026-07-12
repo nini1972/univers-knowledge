@@ -34,6 +34,7 @@ graph TD
     neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
     how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures["Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures"]:::theoretical
+    how_can_upcoming_astrophysical_neutrino_observatories_enhance_flavor_and_spectral_resolution_to_better_distinguish_neutrino_decay_effects_from_standard_oscillations_or_source_variability["How can upcoming astrophysical neutrino observatories enhance flavor and spectral resolution to better distinguish neutrino decay effects from standard oscillations or source variability?"]:::theoretical
     neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
     cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
     what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay["What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?"]:::verified
@@ -146,6 +147,7 @@ graph TD
     neutrino_oscillations --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
     neutrinoless_double_beta_decay --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
     cosmic_neutrino_background --- how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures
+    neutrino_oscillations --- how_can_upcoming_astrophysical_neutrino_observatories_enhance_flavor_and_spectral_resolution_to_better_distinguish_neutrino_decay_effects_from_standard_oscillations_or_source_variability
     neutrino_oscillations --- what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay
     neutrinoless_double_beta_decay --- what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay
     quantum_measurement_problem --- quantum_decoherence
@@ -212,6 +214,7 @@ graph TD
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md) [THEORETICAL]
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?](level_1_fundamental_physics/has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification.md) [VERIFIED]
+- [How can upcoming astrophysical neutrino observatories enhance flavor and spectral resolution to better distinguish neutrino decay effects from standard oscillations or source variability?](level_1_fundamental_physics/how_can_upcoming_astrophysical_neutrino_observatories_enhance_flavor_and_spectral_resolution_to_better_distinguish_neutrino_decay_effects_from_standard_oscillations_or_source_variability.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Inflationary Reheating Mechanisms](level_1_fundamental_physics/inflationary_reheating_mechanisms.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md) [THEORETICAL]
