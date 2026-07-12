@@ -46,6 +46,7 @@ graph TD
     neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
     what_novel_detector_designs_might_improve_sensitivity_to_spectral_distortions_near_beta_decay_endpoints_beyond_current_capabilities_like_katrin["What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?"]:::theoretical
     matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
+    can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing["Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?"]:::theoretical
     neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
     the_higgs_boson["The Higgs Boson"]:::theoretical
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
@@ -114,6 +115,7 @@ graph TD
     causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity["Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity"]:::theoretical
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry["Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"]:::theoretical
+    baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics["Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics"]:::theoretical
     quantum_loop_gravity_vs_string_field_theory_debate["Quantum Loop Gravity vs String Field Theory Debate"]:::theoretical
     asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
     higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate["Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate"]:::theoretical
@@ -130,6 +132,11 @@ graph TD
     neutrinoless_double_beta_decay --- could_the_researchers_provide_simulation_studies_or_sensitivity_analyses_quantifying_the_discovery_potential_and_limits_achievable_with_current_technologies_under_realistic_experimental_conditions
     quantum_mechanics --- quantum_field_theory
     standard_model_of_particle_physics --- quantum_field_theory
+    quantum_field_theory --- quantum_chromodynamics_qcd
+    standard_model_of_particle_physics --- quantum_chromodynamics_qcd
+    the_higgs_boson --- quantum_chromodynamics_qcd
+    cp_violation --- quantum_chromodynamics_qcd
+    quantum_electrodynamics_qed --- quantum_chromodynamics_qcd
     neutrinoless_double_beta_decay --- what_future_experimental_technologies_or_techniques_could_realistically_reduce_the_uncertainties_in_nuclear_matrix_elements_impacting_neutrinoless_double_beta_decay_analyses
     quantum_gravity --- planck_epoch_and_the_initial_conditions_for_the_universe
     neutrino_oscillations --- neutrino_mass_hierarchies_and_their_implications
@@ -139,6 +146,10 @@ graph TD
     big_bang_nucleosynthesis --- cosmic_neutrino_background
     standard_model_of_particle_physics --- cosmic_neutrino_background
     neutrino_oscillations --- neutrino_cp_violation
+    cp_violation --- matterantimatter_asymmetry
+    big_bang_nucleosynthesis --- matterantimatter_asymmetry
+    neutrino_masses_and_leptogenesis --- matterantimatter_asymmetry
+    cosmic_microwave_background_radiation --- matterantimatter_asymmetry
     neutrino_oscillations --- standard_model_fermion_mass_hierarchies_and_mixing_matrices
     standard_model_of_particle_physics --- standard_model_fermion_mass_hierarchies_and_mixing_matrices
     cosmic_microwave_background_radiation --- big_bang_nucleosynthesis
@@ -150,6 +161,10 @@ graph TD
     quantum_field_theory --- quantum_vacuum_fluctuations_and_zeropoint_energy
     neutrino_oscillations --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
     neutrinoless_double_beta_decay --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
+    quantum_electrodynamics_qed --- standard_model_of_particle_physics
+    the_higgs_boson --- standard_model_of_particle_physics
+    electroweak_symmetry_breaking --- standard_model_of_particle_physics
+    cp_violation --- standard_model_of_particle_physics
     cosmic_neutrino_background --- how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures
     neutrino_oscillations --- how_can_upcoming_astrophysical_neutrino_observatories_enhance_flavor_and_spectral_resolution_to_better_distinguish_neutrino_decay_effects_from_standard_oscillations_or_source_variability
     neutrino_oscillations --- what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay
@@ -161,12 +176,20 @@ graph TD
     quantum_gravity --- general_relativity
     standard_model_of_particle_physics --- neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology
     cp_violation --- matterantimatter_asymmetry_mechanisms
+    quantum_gravity --- can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing
     standard_model_of_particle_physics --- neutrino_decoupling_and_its_effects_on_early_universe_cosmology
+    electroweak_symmetry_breaking --- the_higgs_boson
+    quantum_field_theory --- the_higgs_boson
+    standard_model_gauge_symmetries_and_their_spontaneous_breaking --- the_higgs_boson
     primordial_gravitational_waves --- inflationary_cosmology
     neutrino_oscillations --- has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification
     neutrino_oscillations --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
     standard_model_of_particle_physics --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
     cosmic_neutrino_background --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
+    quantum_field_theory --- quantum_electrodynamics_qed
+    quantum_vacuum_polarization --- quantum_electrodynamics_qed
+    electroweak_symmetry_breaking --- quantum_electrodynamics_qed
+    quantum_mechanics --- quantum_electrodynamics_qed
     cosmic_microwave_background_radiation --- dark_matter
     big_bang_nucleosynthesis --- inflationary_reheating_mechanisms
     general_relativity --- cosmological_constant_and_dark_energy
@@ -174,10 +197,17 @@ graph TD
     neutrino_oscillations --- neutrino_physics_and_its_implications_for_cosmology
     neutrinoless_double_beta_decay --- what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay
     neutrino_oscillations --- what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay
+    neutrino_cp_violation --- cp_violation
+    the_higgs_boson --- cp_violation
+    electroweak_symmetry_breaking --- cp_violation
     neutrino_oscillations --- neutrino_mass_generation_mechanisms
     standard_model_of_particle_physics --- neutrino_mass_generation_mechanisms
     neutrinoless_double_beta_decay --- neutrino_mass_generation_mechanisms
+    standard_model_gauge_symmetries_and_their_spontaneous_breaking --- electroweak_symmetry_breaking
+    quantum_field_theory --- electroweak_symmetry_breaking
     neutrino_oscillations --- neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics
+    neutrino_flavor_physics --- neutrino_oscillations
+    neutrino_mass_ordering_and_experimental_determination --- neutrino_oscillations
     quantum_gravity --> string_theory_vs_asymptotic_safety_in_quantum_gravity_debate
     standard_model_of_particle_physics --- randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem
     quantum_gravity --> holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research
@@ -188,6 +218,11 @@ graph TD
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
     quantum_gravity --- horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research
     quantum_gravity --- loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
+    quantum_gravity --> quantum_gravity_debate
+    general_relativity --> quantum_gravity_debate
+    quantum_mechanics --> quantum_gravity_debate
+    loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity --> quantum_gravity_debate
+    string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research --- quantum_gravity_debate
     quantum_chromodynamics_qcd --- dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem
     inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
@@ -198,6 +233,7 @@ graph TD
     dark_matter --- fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
+    quantum_field_theory --- baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics
     quantum_gravity --> quantum_loop_gravity_vs_string_field_theory_debate
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
     general_relativity --> massive_gravity_versus_fr_gravity_in_modified_gravity_debates
@@ -209,6 +245,7 @@ graph TD
 - [Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?](level_1_fundamental_physics/are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups.md) [THEORETICAL]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
 - [Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?](level_1_fundamental_physics/can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance.md) [THEORETICAL]
+- [Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?](level_1_fundamental_physics/can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing.md) [THEORETICAL]
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
@@ -273,6 +310,7 @@ graph TD
 - [Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_sterile_neutrino_dark_matter_in_explaining_dark_matter.md) [THEORETICAL]
 - [Axion Dark Matter vs WIMPs in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_wimps_in_explaining_dark_matter.md) [THEORETICAL]
+- [Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics](level_2_advanced_frameworks/baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics.md) [THEORETICAL]
 - [Beyond the Standard Model Solutions to the Hierarchy Problem](level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md) [THEORETICAL]
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]
 - [Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks](level_2_advanced_frameworks/black_hole_models_debate_observational_techniques_vs_theoretical_frameworks.md) [VERIFIED]
