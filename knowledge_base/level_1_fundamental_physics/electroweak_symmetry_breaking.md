@@ -172,6 +172,14 @@ The combination of gauge symmetry, spontaneous breaking, and scalar field dynami
 *This entry is stored under:*
 `knowledge_base/level_1_fundamental_physics/electroweak_symmetry_breaking.md`
 
+
+## 7. Related Concepts
+- The Higgs Boson
+- Standard Model of Particle Physics
+- Standard Model Gauge Symmetries and Their Spontaneous Breaking
+- Quantum Field Theory
+- CP Violation
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms

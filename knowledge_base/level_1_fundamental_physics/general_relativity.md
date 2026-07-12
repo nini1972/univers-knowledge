@@ -53,6 +53,14 @@ The transparent discussion of known deficiencies—quantum incompatibility, sing
 - Differential Geometry
 - Tensor Calculus
 
+
+## 7. Related Concepts
+- Cosmological Constant and Dark Energy
+- Quantum Gravity
+- Cosmic Inflation Mechanisms
+- Primordial Gravitational Waves
+- Planck Epoch and the Initial Conditions for the Universe
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms

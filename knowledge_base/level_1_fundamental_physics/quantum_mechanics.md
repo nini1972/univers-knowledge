@@ -41,6 +41,14 @@ Quantum Mechanics meets all critical verification thresholds and protocol requir
 - Standard Model of Particle Physics
 - Quantum Field Theory
 
+
+## 7. Related Concepts
+- Quantum Field Theory
+- Quantum Entanglement
+- Quantum Decoherence
+- Quantum Measurement Problem
+- Standard Model of Particle Physics
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms

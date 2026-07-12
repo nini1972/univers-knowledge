@@ -84,6 +84,14 @@ These experiments represent some of the most stringent tests of any physical the
 
 *This document is saved as* `knowledge_base/level_1_fundamental_physics/quantum_electrodynamics_qed.md`
 
+
+## 7. Related Concepts
+- Quantum Field Theory
+- Standard Model of Particle Physics
+- Quantum Vacuum Polarization
+- Electroweak Symmetry Breaking
+- Quantum Mechanics
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms

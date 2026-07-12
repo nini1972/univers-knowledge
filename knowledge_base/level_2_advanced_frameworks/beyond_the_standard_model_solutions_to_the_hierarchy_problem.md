@@ -31,7 +31,7 @@ The report explicitly addresses the empirical status of both frameworks. Despite
   - The super-Poincaré algebra extends the Poincaré group by introducing anticommuting generators (supercharges) that relate bosons and fermions.
   - Supersymmetric Lagrangians are formulated via superfields, combining SM fields with their superpartners.
   - The MSSM constructs the minimal particle content and interactions consistent with SUSY, featuring soft SUSY-breaking terms to accommodate observed mass spectra.
-  
+
 - **CHMs Mathematical Structure:**
   - Global symmetry groups \( G \) are spontaneously broken to subgroups \( H \), with the Higgs boson identified as a pNGB residing in the coset space \( G/H \).
   - Non-linear sigma model fields parametrize the coset, encoding the scalar dynamics.
@@ -65,3 +65,10 @@ The Skeptic's Verification Score of 5/5 is awarded, reflecting the report's rigo
 - Supersymmetric Quantum Field Theories
 - Effective Field Theories and Symmetry Breaking
 - Coleman-Weinberg Potential and Radiative Corrections
+
+## 7. Related Concepts
+- The Higgs Boson
+- Electroweak Symmetry Breaking
+- Standard Model of Particle Physics
+- Beyond the Standard Model: Supersymmetry vs Extra Dimensions
+- Supersymmetric GUTs vs Composite Higgs Models in Beyond Standard Model Physics

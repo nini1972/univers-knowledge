@@ -127,6 +127,15 @@ where \(\psi_L, \psi_R\) are left- and right-handed fermion fields, \(\phi\) is 
 
 *This entry represents Verified Knowledge, thoroughly supported by experimental evidence and authoritative sources. It will be maintained with periodic updates as new discoveries emerge.*
 
+
+## 7. Related Concepts
+- Quantum Field Theory
+- Quantum Electrodynamics (QED)
+- Quantum Chromodynamics (QCD)
+- The Higgs Boson
+- Electroweak Symmetry Breaking
+- CP Violation
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms

@@ -39,3 +39,10 @@ Importantly, the consensus favors SUSY as the more viable candidate for physics 
 - Quantum Field Theory
 - Particle Phenomenology
 - Standard Model Extensions
+
+## 7. Related Concepts
+- Electroweak Symmetry Breaking
+- The Higgs Boson
+- Standard Model Gauge Symmetries and Their Spontaneous Breaking
+- Supersymmetric Quantum Field Theories vs Composite Higgs Models
+- Beyond the Standard Model: Supersymmetry vs Extra Dimensions

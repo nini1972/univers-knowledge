@@ -136,6 +136,14 @@ https://www.mdpi.com/1099-4300/26/6/472
 *Last updated:* 2024-06-01
 *Category:* Fundamental Physics - Neutrino Phenomena
 
+
+## 7. Related Concepts
+- Neutrino Mass and its Role in Particle Physics and Cosmology
+- Neutrino Mass Hierarchies and Their Implications
+- Neutrino Flavor Physics
+- Neutrino CP Violation
+- Neutrino Mass Ordering and Experimental Determination
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms

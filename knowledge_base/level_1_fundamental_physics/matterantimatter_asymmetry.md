@@ -168,6 +168,14 @@ Key limitations include:
 
 *This document captures the current theoretical understanding and status of the matter-antimatter asymmetry problem as an open, actively researched question in fundamental physics and cosmology.*
 
+
+## 7. Related Concepts
+- CP Violation
+- Big Bang Nucleosynthesis
+- Neutrino Masses and Leptogenesis
+- Matter-Antimatter Asymmetry Mechanisms
+- Cosmic Microwave Background Radiation
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms

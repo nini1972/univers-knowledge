@@ -93,6 +93,14 @@ where \(\sigma\) is the string tension and \(C\) a constant offset.
 
 This entry on Quantum Chromodynamics has been verified as established knowledge supported by strong experimental and computational evidence, with clear attributions regarding limitations arising from the lack of rigorous analytic proof of color confinement and the computational nature of low-energy QCD models. The field remains active with ongoing theoretical and experimental research refining the understanding of strong interaction physics.
 
+
+## 7. Related Concepts
+- Quantum Field Theory
+- Standard Model of Particle Physics
+- The Higgs Boson
+- CP Violation
+- Quantum Electrodynamics (QED)
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms

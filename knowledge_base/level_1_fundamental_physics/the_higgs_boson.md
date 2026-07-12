@@ -150,6 +150,14 @@ The Higgs boson remains a gateway to potentially uncovering physics beyond the S
 
 *Verified knowledge compiled based on multiple independent credible sources, experimental data from CERN’s LHC, and peer-reviewed scientific literature.*
 
+
+## 7. Related Concepts
+- Standard Model of Particle Physics
+- Electroweak Symmetry Breaking
+- Quantum Field Theory
+- Quantum Chromodynamics (QCD)
+- Standard Model Gauge Symmetries and Their Spontaneous Breaking
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms

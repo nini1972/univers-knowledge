@@ -114,6 +114,14 @@ The mathematical formalism accurately models observed CP-violating asymmetries. 
 
 # End of Document
 
+
+## 7. Related Concepts
+- Standard Model of Particle Physics
+- Matter-Antimatter Asymmetry Mechanisms
+- Neutrino CP Violation
+- The Higgs Boson
+- Electroweak Symmetry Breaking
+
 ## 8. Mathematical Derivation
 
 ### Starting Axioms
