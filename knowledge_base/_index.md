@@ -28,6 +28,7 @@ graph TD
     standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
     big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
     neutrino_lifetime_and_decay_mechanisms["Neutrino Lifetime and Decay Mechanisms"]:::verified
+    what_are_the_prospects_and_timelines_for_observational_advances_eg_nextgeneration_eht_or_improved_gravitational_wave_detectors_to_resolve_current_degeneracies_between_kerr_and_alternative_black_hole_models["Prospects and Timelines for Observational Advances to Resolve Current Degeneracies between Kerr and Alternative Black Hole Models"]:::theoretical
     can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance["Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?"]:::theoretical
     quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
@@ -109,6 +110,7 @@ graph TD
     superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics["Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics"]:::theoretical
     quintessential_inflation_vs_kinflation_in_modeling_early_universe_dynamics["Quintessential Inflation vs K-Inflation in Modeling Early Universe Dynamics"]:::theoretical
     modified_gravity_vs_dark_matter_paradigm_debate["Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate"]:::theoretical
+    fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations["Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations"]:::theoretical
     causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity["Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity"]:::theoretical
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry["Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"]:::theoretical
@@ -193,6 +195,7 @@ graph TD
     general_relativity --- scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration
     cosmological_constant_and_dark_energy --> debate_on_modified_gravity_theories_teves_vs_fr_gravity
     quantum_measurement_problem --- quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
+    dark_matter --- fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     quantum_gravity --> quantum_loop_gravity_vs_string_field_theory_debate
@@ -241,6 +244,7 @@ graph TD
 - [Neutrinoless Double Beta Decay](level_1_fundamental_physics/neutrinoless_double_beta_decay.md) [THEORETICAL]
 - [Planck Epoch and the Initial Conditions for the Universe](level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md) [THEORETICAL]
 - [Primordial Gravitational Waves](level_1_fundamental_physics/primordial_gravitational_waves.md) [THEORETICAL]
+- [Prospects and Timelines for Observational Advances to Resolve Current Degeneracies between Kerr and Alternative Black Hole Models](level_1_fundamental_physics/what_are_the_prospects_and_timelines_for_observational_advances_eg_nextgeneration_eht_or_improved_gravitational_wave_detectors_to_resolve_current_degeneracies_between_kerr_and_alternative_black_hole_models.md) [THEORETICAL]
 - [Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications](level_1_fundamental_physics/quantum_chromodynamics_qcd.md) [THEORETICAL]
 - [Quantum Decoherence](level_1_fundamental_physics/quantum_decoherence.md) [VERIFIED]
 - [Quantum Electrodynamics (QED) — Verified Knowledge Summary](level_1_fundamental_physics/quantum_electrodynamics_qed.md) [THEORETICAL]
@@ -283,6 +287,7 @@ graph TD
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
 - [Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena](level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md) [THEORETICAL]
 - [Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md) [THEORETICAL]
+- [Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations](level_2_advanced_frameworks/fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations.md) [THEORETICAL]
 - [Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate](level_2_advanced_frameworks/freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate.md) [THEORETICAL]
 - [Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate](level_2_advanced_frameworks/higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate.md) [THEORETICAL]
 - [Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate](level_2_advanced_frameworks/higgs_portal_dark_matter_vs_sterile_neutrino_dark_matter_debate.md) [THEORETICAL]
