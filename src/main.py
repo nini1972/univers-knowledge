@@ -189,7 +189,8 @@ def run_level1_flow(next_concept: str):
 
             # ── TEMPORARY: Force-trigger A2A Math Service test ────────────────
             try:
-                a2a_equations = extract_equations_from_report(math_output)
+                all_crew_text = "\n".join(filter(None, [math_output, skeptic_output, evaluation_output]))
+                a2a_equations = extract_equations_from_report(all_crew_text)
                 a2a_result = call_a2a_math_service(next_concept, a2a_equations)
                 if a2a_result:
                     log_telemetry_event(
