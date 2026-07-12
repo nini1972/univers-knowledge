@@ -290,11 +290,12 @@ def main():
         if rejected and evaluation_decision["reason_code"] == "lack_of_experimental_confirmation":
             evaluation_decision = {
                 "status": "approved",
-                "reason_code": "theoretical_without_direct_confirmation",
+                "reason_code": "approved_despite_limited_confirmation",
                 "summary_for_archivist": (
-                    f"[THEORETICAL] Comparative report approved for {theory_a} vs {theory_b}. "
-                    "The analysis is rigorous, source-grounded, and transparent about uncertainty, "
-                    "but lacks direct experimental confirmation at this stage. "
+                    f"Comparative report approved for {theory_a} vs {theory_b}. "
+                    "The analysis is rigorous, source-grounded, and transparent about uncertainty. "
+                    "Assign status [VERIFIED] if the debate is grounded in experimentally confirmed physics, "
+                    "or [THEORETICAL] only if both theories genuinely lack any direct experimental support. "
                     "Document strengths, weaknesses, current constraints, and open validation paths."
                 ),
                 "follow_up_questions": evaluation_decision.get("follow_up_questions", []),

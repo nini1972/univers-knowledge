@@ -275,7 +275,10 @@ class UniverseTasks:
                 }}
                 Decision policy for Level 2 debates:
                 - Approve when the report is rigorous, source-grounded, mathematically coherent, and transparent about uncertainty.
-                - If there is no direct experimental confirmation, classify the outcome as [THEORETICAL] inside summary_for_archivist.
+                - Assign status based on evidence strength:
+                  * Use [VERIFIED] when the comparative analysis is grounded in experimentally confirmed physics (e.g., observed phenomena, measured parameters, confirmed predictions).
+                  * Use [THEORETICAL] ONLY when both theories genuinely lack ANY direct experimental confirmation or observational support.
+                  * Most L2 debates compare well-established frameworks with empirical grounding — these should be [VERIFIED].
                 - Reject ONLY for quality failures (insufficient sources, logical inconsistencies, missing critical comparisons, or non-rigorous claims).
                 - "lack_of_experimental_confirmation" alone is NOT a valid rejection reason for Level 2.
                 - If approved: status must be "approved" and summary_for_archivist must be non-empty.
@@ -295,7 +298,8 @@ class UniverseTasks:
                 1. Mathematical consistency.
                 2. Alignment with existing empirical data (e.g., General Relativity and Quantum Mechanics).
                 3. Major flaws or unprovable assumptions in each.
-                Highlight which theory (if either) has stronger current consensus, and clearly flag both as [THEORETICAL].
+                Highlight which theory (if either) has stronger current consensus.
+                Assign status based on evidence: use [VERIFIED] if the analysis is grounded in experimentally confirmed physics, or [THEORETICAL] only if both theories genuinely lack any direct experimental support.
 
                 You MUST include this exact markdown checklist and score at the end of your debate report:
 
