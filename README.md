@@ -23,22 +23,22 @@ graph TD
     classDef data fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#fff;
     classDef mcp fill:#7f1d1d,stroke:#f87171,stroke-width:2px,color:#fff;
     classDef eval fill:#701a75,stroke:#fb7185,stroke-width:2px,color:#fff;
-    
+
     A[(Knowledge Base Index)] --->|Reads proven concepts| B(🎓 Student Agent):::agent
     B -->|Selects new Uncharted Topic| C(🔬 Researcher Agent):::agent
     C -->|Web Search & Literature Review| D(⚖️ Skeptic Agent):::agent
     D -->|Verification Threshold Check| E{Student Evaluates}:::eval
-    
+
     E -->|Fails Verification| C
-    
+
     E -->|Passes Verification| F(🎨 Visualizer Agent):::agent
-    
+
     F -.->|Tool Call via Langchain| G[[Genmedia MCP Server (NanoBanana)]]:::mcp
     G -.->|Saves Image File| F
-    
+
     F -->|Markdown Image Tag| H(📚 Archivist Agent):::agent
     E -->|Verified Topic Summary| H
-    
+
     H -->|Saves Structured Format| I[Concept Markdown File]:::data
     H -->|Commits New Entry| A
 ```
@@ -89,3 +89,32 @@ The generated learning artifacts are preserved cleanly in the `knowledge_base` d
 - `_index.md`: The running table of contents.
 - `images/`: The output directory for the Gemini 2.5 flash generated visuals.
 - `level_X_.../`: Folders segregating physical mechanics by complexity (e.g., fundamental models vs theoretical physics).
+- `logs/equations.jsonl`: Structured database of all mathematical equations discovered across concepts (see Roadmap).
+
+## 🗺️ Roadmap
+
+### 🧮 Equation Database & Discovery Agent
+**Status:** Data collection active · Agent planned
+
+Every workflow run now logs all discovered LaTeX equations to `knowledge_base/logs/equations.jsonl`, linking each equation to its concept, level, math verification status, and timestamp. This builds a growing structured index across the entire knowledge base.
+
+**Future: Equation Archaeologist Agent** — A specialized agent that queries the equation database to discover:
+- 🔗 **Cross-concept bridges** — shared variables/constants appearing across unrelated domains
+- 🧬 **Structural homologies** — equations with identical operator structures in different physics areas
+- 📊 **Equation genealogies** — tracing which equations derive from which axioms
+- 🔍 **Gap detection** — inconsistent definitions of the same variable across debates
+
+### 🔬 A2A Math Verification Service
+**Status:** Testing · Integration planned
+
+An Agent-to-Agent (A2A) math verification service running on Google Cloud Run. Currently force-triggered as a test case during L1 runs. Will be integrated as an optional agent tool once stability is confirmed across diverse scenarios.
+
+### 🌌 Level 3: Cosmology & Astrophysics
+**Status:** Directory ready · Workflow not started
+
+The `level_3_cosmology_and_astrophysics/` directory exists but no workflow step produces L3 content yet. Planned as the third knowledge tier building on L1 fundamentals and L2 debates.
+
+### 📝 Math Enrichment Pipeline
+**Status:** Standalone tool · Integration optional
+
+`src/math_enrichment.py` can retroactively add detailed step-by-step derivations (Section 8) and permanent math audit reports (Section 9) to existing documents. Currently run on-demand via CLI.
