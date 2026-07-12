@@ -14,13 +14,19 @@ class ScholarlySearchTool(BaseTool):
         "and automatically generates citation/BibTeX links for academic papers."
     )
 
+    # Module-level circuit breaker: once Tavily returns a quota error (429/432),
+    # skip it for the rest of this process to avoid ~20+ wasted calls per run.
+    _tavily_quota_exhausted: bool = False
+
     def _run(self, query: str) -> str:
         print(f"[Scholarly Search] Executing optimized academic query: '{query}'")
         raw_results = []
         tavily_key = os.getenv("TAVILY_API_KEY")
-        
-        # 1. Try Tavily first
-        if tavily_key:
+
+        # 1. Try Tavily first (unless quota is known to be exhausted)
+        if ScholarlySearchTool._tavily_quota_exhausted:
+            print("[Scholarly Search] Tavily quota exhausted (cached). Skipping directly to fallback.")
+        elif tavily_key:
             try:
                 url = "https://api.tavily.com/search"
                 payload = {
@@ -37,6 +43,10 @@ class ScholarlySearchTool(BaseTool):
                     data = response.json()
                     raw_results = data.get("results", [])
                     print(f"[Scholarly Search] Tavily succeeded: found {len(raw_results)} results.")
+                elif response.status_code in (429, 432):
+                    ScholarlySearchTool._tavily_quota_exhausted = True
+                    print(f"Warning: Tavily quota exhausted (HTTP {response.status_code}). "
+                          f"Disabling Tavily for remaining searches this run.")
                 else:
                     print(f"Warning: Tavily returned status {response.status_code}: {response.text}")
             except Exception as exc:
@@ -110,26 +120,26 @@ class ScholarlySearchTool(BaseTool):
                 import urllib.request
                 import urllib.parse
                 import xml.etree.ElementTree as ET
-                
+
                 escaped_query = urllib.parse.quote(query)
                 arxiv_url = f"http://export.arxiv.org/api/query?search_query=all:{escaped_query}&max_results=12"
-                
+
                 with urllib.request.urlopen(arxiv_url, timeout=8) as conn:
                     xml_data = conn.read()
-                    
+
                 root = ET.fromstring(xml_data)
                 ns = {'atom': 'http://www.w3.org/2005/Atom'}
                 entries = root.findall('atom:entry', ns)
-                
+
                 for entry in entries:
                     title_el = entry.find('atom:title', ns)
                     summary_el = entry.find('atom:summary', ns)
                     id_el = entry.find('atom:id', ns)
-                    
+
                     title = title_el.text.strip().replace('\n', ' ') if title_el is not None else "ArXiv Paper"
                     summary = summary_el.text.strip().replace('\n', ' ') if summary_el is not None else ""
                     url = id_el.text.strip() if id_el is not None else ""
-                    
+
                     if url:
                         raw_results.append({
                             "url": url,
@@ -180,7 +190,7 @@ class ScholarlySearchTool(BaseTool):
             # Parse domain
             domain_match = re.search(r"https?://([^/]+)", url_str)
             domain = domain_match.group(1).lower() if domain_match else ""
-            
+
             # Standardize domain (strip www.)
             if domain.startswith("www."):
                 domain = domain[4:]
@@ -278,18 +288,18 @@ class ScholarlySearchTool(BaseTool):
 
             md_output.append(f"{idx}. **[{title_str}]({url_str})**")
             md_output.append(f"   * **Classification**: `{tier}` | **Domain**: `{item['domain']}`")
-            
+
             # Content verification note
             if not raw_content:
                 md_output.append("   * **Extraction Note**: *Metadata snippet only (restricted/full content unavailable)*")
-            
+
             # Generate Citation helpers
             # 1. arXiv ID
             arxiv_match = re.search(r"arxiv\.org/(?:abs|pdf)/(\d+\.\d+)", url_str, re.IGNORECASE)
             if arxiv_match:
                 arxiv_id = arxiv_match.group(1)
                 md_output.append(f"   * **Citation (BibTeX)**: [ArXiv BibTeX Export](https://arxiv.org/hypertex/bibstyles/) (ID: `{arxiv_id}`)")
-            
+
             # 2. DOI
             doi_match = re.search(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", url_str, re.IGNORECASE)
             if doi_match:

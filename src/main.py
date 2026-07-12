@@ -40,6 +40,10 @@ try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
 except ImportError:
     from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
+try:
+    from a2a_math_client import call_a2a_math_service, extract_equations_from_report
+except ImportError:
+    from src.a2a_math_client import call_a2a_math_service, extract_equations_from_report
 
 try:
     from evaluation_logger import (
@@ -182,6 +186,35 @@ def run_level1_flow(next_concept: str):
                 skeptic_output = str(verify_task.output.raw)
             if hasattr(math_task, 'output') and math_task.output:
                 math_output = str(math_task.output.raw)
+
+            # ── TEMPORARY: Force-trigger A2A Math Service test ────────────────
+            try:
+                a2a_equations = extract_equations_from_report(math_output)
+                a2a_result = call_a2a_math_service(next_concept, a2a_equations)
+                if a2a_result:
+                    log_telemetry_event(
+                        "a2a_math_test",
+                        "success",
+                        metadata={
+                            "task_id": a2a_result.get("id"),
+                            "status": a2a_result.get("status"),
+                            "equations_sent": len(a2a_equations),
+                        }
+                    )
+                else:
+                    log_telemetry_event(
+                        "a2a_math_test",
+                        "failed",
+                        metadata={"reason": "no_response"}
+                    )
+            except Exception as a2a_err:
+                print(f"[A2A MATH TEST] ⚠️ Exception during A2A test: {a2a_err}")
+                log_telemetry_event(
+                    "a2a_math_test",
+                    "error",
+                    metadata={"error": str(a2a_err)}
+                )
+            # ── END TEMPORARY A2A TEST ────────────────────────────────────────
 
         decision = parse_student_decision(evaluation_output)
         rejected = decision["status"] != "approved"
