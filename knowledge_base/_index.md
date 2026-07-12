@@ -45,6 +45,7 @@ graph TD
     neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
     the_higgs_boson["The Higgs Boson"]:::theoretical
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
+    has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification["Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?"]:::verified
     neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
     quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
     dark_matter["Dark Matter"]:::theoretical
@@ -65,6 +66,7 @@ graph TD
     neutrino_oscillations["Neutrino Oscillations"]:::theoretical
     are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups["Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?"]:::theoretical
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
+    randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem["Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem"]:::theoretical
     holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
     superfluid_dark_matter_vs_sterile_neutrino_dark_matter_debate["Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate"]:::verified
@@ -152,6 +154,7 @@ graph TD
     cp_violation --- matterantimatter_asymmetry_mechanisms
     standard_model_of_particle_physics --- neutrino_decoupling_and_its_effects_on_early_universe_cosmology
     primordial_gravitational_waves --- inflationary_cosmology
+    neutrino_oscillations --- has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification
     neutrino_oscillations --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
     standard_model_of_particle_physics --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
     cosmic_neutrino_background --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
@@ -167,6 +170,7 @@ graph TD
     neutrinoless_double_beta_decay --- neutrino_mass_generation_mechanisms
     neutrino_oscillations --- neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics
     quantum_gravity --> string_theory_vs_asymptotic_safety_in_quantum_gravity_debate
+    standard_model_of_particle_physics --- randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem
     quantum_gravity --> holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research
     quantum_gravity --> entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena
     electroweak_symmetry_breaking --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
@@ -204,6 +208,7 @@ graph TD
 - [Direct Detection of Neutrino Decay Experimental Strategies](level_1_fundamental_physics/what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay.md) [THEORETICAL]
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md) [THEORETICAL]
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
+- [Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?](level_1_fundamental_physics/has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification.md) [VERIFIED]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Inflationary Reheating Mechanisms](level_1_fundamental_physics/inflationary_reheating_mechanisms.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md) [THEORETICAL]
@@ -287,6 +292,7 @@ graph TD
 - [Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation](level_2_advanced_frameworks/quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation.md) [THEORETICAL]
 - [Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity](level_2_advanced_frameworks/quantum_gravity_debate.md) [THEORETICAL]
 - [Quantum Loop Gravity vs String Field Theory Debate](level_2_advanced_frameworks/quantum_loop_gravity_vs_string_field_theory_debate.md) [THEORETICAL]
+- [Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem](level_2_advanced_frameworks/randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem.md) [THEORETICAL]
 - [Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](level_2_advanced_frameworks/scalar_field_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
 - [String Theory versus Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
