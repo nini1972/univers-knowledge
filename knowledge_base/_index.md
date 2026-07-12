@@ -43,6 +43,7 @@ graph TD
     neutrino_masses_and_leptogenesis["Neutrino Masses and Leptogenesis"]:::verified
     general_relativity["General Relativity"]:::verified
     neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
+    what_novel_detector_designs_might_improve_sensitivity_to_spectral_distortions_near_beta_decay_endpoints_beyond_current_capabilities_like_katrin["What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?"]:::theoretical
     matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
     neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
     the_higgs_boson["The Higgs Boson"]:::theoretical
@@ -92,6 +93,7 @@ graph TD
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
+    dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem["DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem"]:::theoretical
     supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate["Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"]:::theoretical
     cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
@@ -184,6 +186,7 @@ graph TD
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
     quantum_gravity --- horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research
     quantum_gravity --- loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
+    quantum_chromodynamics_qcd --- dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem
     inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
@@ -257,6 +260,7 @@ graph TD
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?](level_1_fundamental_physics/what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay.md) [VERIFIED]
 - [What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?](level_1_fundamental_physics/what_future_experimental_technologies_or_techniques_could_realistically_reduce_the_uncertainties_in_nuclear_matrix_elements_impacting_neutrinoless_double_beta_decay_analyses.md) [THEORETICAL]
+- [What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?](level_1_fundamental_physics/what_novel_detector_designs_might_improve_sensitivity_to_spectral_distortions_near_beta_decay_endpoints_beyond_current_capabilities_like_katrin.md) [THEORETICAL]
 - [What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?](level_1_fundamental_physics/what_specific_experimental_observables_or_signatures_can_uniquely_discriminate_neutrino_decay_from_background_processes_and_alternative_new_physics_scenarios_in_dune_juno_or_icecube_datasets.md) [THEORETICAL]
 
 ## Level 2: Advanced Frameworks
@@ -274,6 +278,7 @@ graph TD
 - [Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution](level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution.md) [THEORETICAL]
 - [Cosmological Constant versus Quintessence in Explaining Dark Energy](level_2_advanced_frameworks/cosmological_constant_versus_quintessence_in_explaining_dark_energy.md) [THEORETICAL]
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
+- [DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem](level_2_advanced_frameworks/dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem.md) [THEORETICAL]
 - [Ekpyrotic Universe Model versus Inflationary Cosmology Debate](level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md) [VERIFIED]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
 - [Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena](level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md) [THEORETICAL]
