@@ -44,6 +44,15 @@ except ImportError:
     from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
 
 try:
+    from a2a_math_client import extract_equations_from_report
+except ImportError:
+    from src.a2a_math_client import extract_equations_from_report
+try:
+    from equation_logger import log_equations
+except ImportError:
+    from src.equation_logger import log_equations
+
+try:
     from evaluation_logger import (
         log_evaluation_outcome,
         get_top_failure_patterns,
@@ -311,6 +320,21 @@ def main():
         math_status_val = parse_math_status(math_output)
         if math_score is not None:
             print(f"[MATH] Score: {math_score}/{math_total} | Status: [{math_status_val}]")
+
+        # ── Log equations to the equation database ─────────────────────────
+        try:
+            all_crew_text_for_eqs = "\n".join(filter(None, [math_output, skeptic_output, evaluation_output]))
+            discovered_equations = extract_equations_from_report(all_crew_text_for_eqs)
+            log_equations(
+                concept=concept_name,
+                level=2,
+                equations=discovered_equations,
+                math_status=math_status_val,
+                math_score=math_score,
+                math_total=math_total,
+            )
+        except Exception as eq_err:
+            print(f"[EQ DB] Warning: {eq_err}")
 
         # Force a retry if no equations are found on the first attempt
         if math_status_val == "MATH_PENDING" and retries == 0:
