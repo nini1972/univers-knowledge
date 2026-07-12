@@ -58,7 +58,7 @@ def call_a2a_math_service(concept: str, equations: list[str]) -> dict | None:
     Returns:
         The task result dict on success, or None on failure.
     """
-    base_url = os.getenv("MATH_SERVICE_URL", _DEFAULT_URL).rstrip("/")
+    base_url = (os.getenv("MATH_SERVICE_URL") or _DEFAULT_URL).rstrip("/")
     endpoint = f"{base_url}/a2a/task"
 
     payload = {
