@@ -125,6 +125,7 @@ graph TD
     supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"]:::theoretical
     quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
     freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate["Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate"]:::theoretical
+    interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension["Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension"]:::theoretical
     massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
     conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution["Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution"]:::theoretical
 
@@ -236,6 +237,7 @@ graph TD
     quantum_field_theory --- baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics
     quantum_gravity --> quantum_loop_gravity_vs_string_field_theory_debate
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
+    quantum_field_theory --- interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension
     general_relativity --> massive_gravity_versus_fr_gravity_in_modified_gravity_debates
     quantum_gravity --- conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution
 ```
@@ -332,6 +334,7 @@ graph TD
 - [Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](level_2_advanced_frameworks/holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
+- [Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension](level_2_advanced_frameworks/interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension.md) [THEORETICAL]
 - [Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](level_2_advanced_frameworks/loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
 - [Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
