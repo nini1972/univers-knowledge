@@ -25,18 +25,37 @@ _MAX_EQUATIONS = 5  # Cap to keep payload manageable for SymPy verification
 def extract_equations_from_report(math_report: str) -> list[str]:
     """Extract LaTeX equations from a math verification report.
 
-    Looks for display math ($$...$$) and inline math ($...$) patterns.
-    Returns a list of equation strings, or a fallback if none found.
+    Looks for display math ($$...$$, \\[...\\]), inline math ($...$, \\(...\\)),
+    and filters out false positives (shell variables, short fragments).
+    Returns a list of equation strings.
     """
     if not math_report:
         return []
 
-    # Extract display math first ($$...$$)
+    # Extract display math: $$...$$ and \[...\]
     display_eqs = re.findall(r'\$\$(.+?)\$\$', math_report, re.DOTALL)
-    # Then inline math ($...$), avoiding already-matched display math
+    display_eqs += re.findall(r'\\\[(.+?)\\\]', math_report, re.DOTALL)
+
+    # Inline math: $...$ (avoiding $$) and \(...\)
     inline_eqs = re.findall(r'(?<!\$)\$([^$]+?)\$(?!\$)', math_report)
+    inline_eqs += re.findall(r'\\\((.+?)\\\)', math_report)
 
     equations = [eq.strip() for eq in display_eqs + inline_eqs if eq.strip()]
+
+    # Filter out false positives: shell variables, too-short fragments, paths
+    def is_valid_equation(eq: str) -> bool:
+        if len(eq) < 3:
+            return False
+        # Skip shell-like patterns (GITHUB_WORKSPACE, OPENAI_API_KEY, etc.)
+        if re.fullmatch(r'[A-Z_][A-Z0-9_./-]*', eq):
+            return False
+        # Skip file paths
+        if '/' in eq and '\\' not in eq:
+            return False
+        # Must contain at least one math-like character
+        return bool(re.search(r'[\\^_=+\-*/{}]', eq))
+
+    equations = [eq for eq in equations if is_valid_equation(eq)]
 
     # Deduplicate while preserving order
     seen = set()
