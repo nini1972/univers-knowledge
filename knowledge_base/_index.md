@@ -32,6 +32,7 @@ graph TD
     what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes["What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?"]:::theoretical
     can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance["Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?"]:::theoretical
     quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
+    which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys["Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?"]:::theoretical
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
     neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
@@ -131,6 +132,7 @@ graph TD
     interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension["Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension"]:::theoretical
     massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
     conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution["Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution"]:::theoretical
+    symmetric_teleparallel_gravity_vs_metricaffine_fr_gravity_in_addressing_latetime_cosmic_acceleration["Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration"]:::theoretical
 
     %% Connections & Prerequisites
     neutrinoless_double_beta_decay --- could_the_researchers_provide_simulation_studies_or_sensitivity_analyses_quantifying_the_discovery_potential_and_limits_achievable_with_current_technologies_under_realistic_experimental_conditions
@@ -310,6 +312,7 @@ graph TD
 - [What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?](level_1_fundamental_physics/what_novel_detector_designs_might_improve_sensitivity_to_spectral_distortions_near_beta_decay_endpoints_beyond_current_capabilities_like_katrin.md) [THEORETICAL]
 - [What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?](level_1_fundamental_physics/what_specific_experimental_observables_or_signatures_can_uniquely_discriminate_neutrino_decay_from_background_processes_and_alternative_new_physics_scenarios_in_dune_juno_or_icecube_datasets.md) [THEORETICAL]
 - [What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?](level_1_fundamental_physics/what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes.md) [THEORETICAL]
+- [Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?](level_1_fundamental_physics/which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys.md) [THEORETICAL]
 
 ## Level 2: Advanced Frameworks
 
@@ -372,6 +375,7 @@ graph TD
 - [Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics](level_2_advanced_frameworks/supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking](level_2_advanced_frameworks/supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking](level_2_advanced_frameworks/supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking.md) [THEORETICAL]
+- [Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration](level_2_advanced_frameworks/symmetric_teleparallel_gravity_vs_metricaffine_fr_gravity_in_addressing_latetime_cosmic_acceleration.md) [THEORETICAL]
 - [Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md) [THEORETICAL]
 
 ## Level 3: Cosmology and Astrophysics
