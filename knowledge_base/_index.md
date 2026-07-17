@@ -37,6 +37,7 @@ graph TD
     quantum_entanglement["Quantum Entanglement"]:::verified
     neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
     neutrino_oscillations["Neutrino Oscillations"]:::theoretical
+    what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models["What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?"]:::theoretical
     quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
     could_the_researchers_provide_simulation_studies_or_sensitivity_analyses_quantifying_the_discovery_potential_and_limits_achievable_with_current_technologies_under_realistic_experimental_conditions["Could the researchers provide simulation studies or sensitivity analyses quantifying the discovery potential and limits achievable with current technologies under realistic experimental conditions?"]:::verified
     standard_model_gauge_symmetries_and_their_spontaneous_breaking["Standard Model Gauge Symmetries and Their Spontaneous Breaking"]:::verified
@@ -74,6 +75,7 @@ graph TD
     what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay["Direct Detection of Neutrino Decay Experimental Strategies"]:::theoretical
     neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
     supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration["Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration"]:::verified
+    dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration["Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration"]:::theoretical
     symmetric_teleparallel_gravity_vs_metricaffine_fr_gravity_in_addressing_latetime_cosmic_acceleration["Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration"]:::theoretical
     conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution["Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution"]:::theoretical
     asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry["Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"]:::theoretical
@@ -174,6 +176,7 @@ graph TD
     neutrino_flavor_physics --- neutrino_oscillations
     neutrino_cp_violation --- neutrino_oscillations
     neutrino_mass_ordering_and_experimental_determination --- neutrino_oscillations
+    dark_matter --- what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models
     quantum_field_theory --- quantum_electrodynamics_qed
     quantum_vacuum_polarization --- quantum_electrodynamics_qed
     electroweak_symmetry_breaking --- quantum_electrodynamics_qed
@@ -313,6 +316,7 @@ graph TD
 - [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
+- [What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?](level_1_fundamental_physics/what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models.md) [THEORETICAL]
 - [What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?](level_1_fundamental_physics/what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay.md) [VERIFIED]
 - [What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?](level_1_fundamental_physics/what_future_experimental_technologies_or_techniques_could_realistically_reduce_the_uncertainties_in_nuclear_matrix_elements_impacting_neutrinoless_double_beta_decay_analyses.md) [THEORETICAL]
 - [What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?](level_1_fundamental_physics/what_novel_detector_designs_might_improve_sensitivity_to_spectral_distortions_near_beta_decay_endpoints_beyond_current_capabilities_like_katrin.md) [THEORETICAL]
@@ -338,6 +342,7 @@ graph TD
 - [Cosmological Constant versus Quintessence in Explaining Dark Energy](level_2_advanced_frameworks/cosmological_constant_versus_quintessence_in_explaining_dark_energy.md) [THEORETICAL]
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem](level_2_advanced_frameworks/dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem.md) [THEORETICAL]
+- [Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration](level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration.md) [THEORETICAL]
 - [Ekpyrotic Universe Model versus Inflationary Cosmology Debate](level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md) [VERIFIED]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
 - [Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics](level_2_advanced_frameworks/emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics.md) [THEORETICAL]
