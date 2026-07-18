@@ -17,6 +17,7 @@ graph TD
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
     can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance["Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?"]:::theoretical
     what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay["What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?"]:::verified
+    can_independent_publicly_available_datasets_from_juno_dune_or_hyperkamiokande_be_released_to_enable_external_verification_of_neutrino_decay_bounds["Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?"]:::theoretical
     planck_epoch_and_the_initial_conditions_for_the_universe["Planck Epoch and the Initial Conditions for the Universe"]:::theoretical
     neutrino_mass_ordering_and_experimental_determination["Neutrino Mass Ordering and Experimental Determination"]:::verified
     quantum_mechanics["Quantum Mechanics"]:::verified
@@ -89,6 +90,7 @@ graph TD
     emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics["Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics"]:::theoretical
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
     massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
+    randallsundrum_vs_add_models_in_hierarchy_problem_resolution["Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution"]:::theoretical
     ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
     dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem["DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem"]:::theoretical
     debate_on_modified_gravity_theories_teves_vs_fr_gravity["Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity"]:::verified
@@ -260,6 +262,7 @@ graph TD
 
 - [Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?](level_1_fundamental_physics/are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups.md) [THEORETICAL]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
+- [Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?](level_1_fundamental_physics/can_independent_publicly_available_datasets_from_juno_dune_or_hyperkamiokande_be_released_to_enable_external_verification_of_neutrino_decay_bounds.md) [THEORETICAL]
 - [Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?](level_1_fundamental_physics/can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance.md) [THEORETICAL]
 - [Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?](level_1_fundamental_physics/can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing.md) [THEORETICAL]
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
@@ -373,6 +376,7 @@ graph TD
 - [Quantum Loop Gravity vs String Field Theory Debate](level_2_advanced_frameworks/quantum_loop_gravity_vs_string_field_theory_debate.md) [THEORETICAL]
 - [Quintessential Inflation vs K-Inflation in Modeling Early Universe Dynamics](level_2_advanced_frameworks/quintessential_inflation_vs_kinflation_in_modeling_early_universe_dynamics.md) [THEORETICAL]
 - [Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem](level_2_advanced_frameworks/randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem.md) [THEORETICAL]
+- [Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution](level_2_advanced_frameworks/randallsundrum_vs_add_models_in_hierarchy_problem_resolution.md) [THEORETICAL]
 - [Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](level_2_advanced_frameworks/scalar_field_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale](level_2_advanced_frameworks/scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
