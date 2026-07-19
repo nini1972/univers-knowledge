@@ -51,6 +51,7 @@ graph TD
     cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
     quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
     the_higgs_boson["The Higgs Boson"]:::theoretical
+    could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports["Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?"]:::theoretical
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
     quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
     neutrino_anomalies_and_sterile_neutrino_hypothesis["Neutrino Anomalies and Sterile Neutrino Hypothesis"]:::theoretical
@@ -136,6 +137,7 @@ graph TD
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
     modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
     superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics["Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics"]:::theoretical
+    informationtheoretic_vs_thermodynamic_interpretations_of_gravity["Information-Theoretic vs. Thermodynamic Interpretations of Gravity"]:::theoretical
     scalar_field_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges["Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges"]:::theoretical
     scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale["Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale"]:::theoretical
     conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions["Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions"]:::theoretical
@@ -199,6 +201,8 @@ graph TD
     quantum_electrodynamics_qed --- quantum_chromodynamics_qcd
     quantum_field_theory --- the_higgs_boson
     standard_model_gauge_symmetries_and_their_spontaneous_breaking --- the_higgs_boson
+    neutrino_oscillations --- could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports
+    standard_model_of_particle_physics --- could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports
     cp_violation --- matterantimatter_asymmetry
     big_bang_nucleosynthesis --- matterantimatter_asymmetry
     neutrino_masses_and_leptogenesis --- matterantimatter_asymmetry
@@ -256,6 +260,7 @@ graph TD
     quantum_field_theory --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
     quantum_gravity --- horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research
+    quantum_gravity --- informationtheoretic_vs_thermodynamic_interpretations_of_gravity
 ```
 
 ## Level 1: Fundamental Physics
@@ -269,6 +274,7 @@ graph TD
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
+- [Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?](level_1_fundamental_physics/could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports.md) [THEORETICAL]
 - [Could the researchers provide simulation studies or sensitivity analyses quantifying the discovery potential and limits achievable with current technologies under realistic experimental conditions?](level_1_fundamental_physics/could_the_researchers_provide_simulation_studies_or_sensitivity_analyses_quantifying_the_discovery_potential_and_limits_achievable_with_current_technologies_under_realistic_experimental_conditions.md) [VERIFIED]
 - [CP Violation](level_1_fundamental_physics/cp_violation.md) [THEORETICAL]
 - [Dark Matter](level_1_fundamental_physics/dark_matter.md) [THEORETICAL]
@@ -358,6 +364,7 @@ graph TD
 - [Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](level_2_advanced_frameworks/holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
+- [Information-Theoretic vs. Thermodynamic Interpretations of Gravity](level_2_advanced_frameworks/informationtheoretic_vs_thermodynamic_interpretations_of_gravity.md) [THEORETICAL]
 - [Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension](level_2_advanced_frameworks/interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension.md) [THEORETICAL]
 - [Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](level_2_advanced_frameworks/loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
