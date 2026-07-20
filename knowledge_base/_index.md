@@ -47,6 +47,7 @@ graph TD
     electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
     neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics["Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics"]:::verified
     quantum_decoherence["Quantum Decoherence"]:::verified
+    is_it_possible_to_provide_more_detailed_mathematical_derivations_and_dimensional_consistency_checks_to_raise_the_math_verification_score["Is it possible to provide more detailed mathematical derivations and dimensional consistency checks to raise the math verification score?"]:::theoretical
     matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
     cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
     quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
@@ -286,6 +287,7 @@ graph TD
 - [How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?](level_1_fundamental_physics/how_might_future_experiments_or_observations_be_designed_to_effectively_distinguish_between_freezein_and_freezeout_dark_matter_production_mechanisms.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Inflationary Reheating Mechanisms](level_1_fundamental_physics/inflationary_reheating_mechanisms.md) [THEORETICAL]
+- [Is it possible to provide more detailed mathematical derivations and dimensional consistency checks to raise the math verification score?](level_1_fundamental_physics/is_it_possible_to_provide_more_detailed_mathematical_derivations_and_dimensional_consistency_checks_to_raise_the_math_verification_score.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry Mechanisms](level_1_fundamental_physics/matterantimatter_asymmetry_mechanisms.md) [THEORETICAL]
 - [Neutrino Anomalies and Sterile Neutrino Hypothesis](level_1_fundamental_physics/neutrino_anomalies_and_sterile_neutrino_hypothesis.md) [THEORETICAL]
