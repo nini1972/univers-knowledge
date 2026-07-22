@@ -67,6 +67,7 @@ graph TD
     neutrino_cp_violation["Neutrino CP Violation"]:::theoretical
     how_might_future_experiments_or_observations_be_designed_to_effectively_distinguish_between_freezein_and_freezeout_dark_matter_production_mechanisms["How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?"]:::theoretical
     neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
+    what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade["What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?"]:::theoretical
     what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes["What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?"]:::theoretical
     neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
     inflationary_reheating_mechanisms["Inflationary Reheating Mechanisms"]:::theoretical
@@ -222,6 +223,8 @@ graph TD
     dark_matter --- how_might_future_experiments_or_observations_be_designed_to_effectively_distinguish_between_freezein_and_freezeout_dark_matter_production_mechanisms
     cosmic_microwave_background_radiation --- how_might_future_experiments_or_observations_be_designed_to_effectively_distinguish_between_freezein_and_freezeout_dark_matter_production_mechanisms
     standard_model_of_particle_physics --- neutrino_decoupling_and_its_effects_on_early_universe_cosmology
+    neutrino_oscillations --- what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade
+    standard_model_of_particle_physics --- what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade
     big_bang_nucleosynthesis --- inflationary_reheating_mechanisms
     neutrino_oscillations --- neutrino_mass_generation_mechanisms
     standard_model_of_particle_physics --- neutrino_mass_generation_mechanisms
@@ -332,6 +335,7 @@ graph TD
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?](level_1_fundamental_physics/what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models.md) [THEORETICAL]
+- [What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?](level_1_fundamental_physics/what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade.md) [THEORETICAL]
 - [What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?](level_1_fundamental_physics/what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay.md) [VERIFIED]
 - [What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?](level_1_fundamental_physics/what_experimental_evidence_or_signatures_would_decisively_distinguish_neutrino_decay_from_sterile_neutrino_or_nonstandard_interaction_scenarios.md) [THEORETICAL]
 - [What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?](level_1_fundamental_physics/what_future_experimental_technologies_or_techniques_could_realistically_reduce_the_uncertainties_in_nuclear_matrix_elements_impacting_neutrinoless_double_beta_decay_analyses.md) [THEORETICAL]
