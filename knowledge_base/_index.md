@@ -9,6 +9,7 @@ graph TD
     classDef theoretical fill:#241d08,stroke:#f59e0b,stroke-width:2px,color:#fef3c7;
 
     %% Concept Nodes
+    what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range["What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?"]:::verified
     cosmic_neutrino_background["Cosmic Neutrino Background"]:::theoretical
     what_experimental_evidence_or_signatures_would_decisively_distinguish_neutrino_decay_from_sterile_neutrino_or_nonstandard_interaction_scenarios["What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?"]:::theoretical
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
@@ -134,6 +135,7 @@ graph TD
     causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity["Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity"]:::theoretical
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
     dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration["Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration"]:::theoretical
+    asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity["Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity"]:::theoretical
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
     modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
     conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution["Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution"]:::theoretical
@@ -152,6 +154,7 @@ graph TD
     cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
 
     %% Connections & Prerequisites
+    dark_matter --- what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range
     big_bang_nucleosynthesis --- cosmic_neutrino_background
     standard_model_of_particle_physics --- cosmic_neutrino_background
     standard_model_of_particle_physics --- what_experimental_evidence_or_signatures_would_decisively_distinguish_neutrino_decay_from_sterile_neutrino_or_nonstandard_interaction_scenarios
@@ -271,6 +274,7 @@ graph TD
     quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
     quantum_field_theory --> emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics
     quantum_field_theory --- interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension
+    quantum_gravity --- asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity
     inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     quantum_gravity --- conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
@@ -345,6 +349,7 @@ graph TD
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?](level_1_fundamental_physics/what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models.md) [THEORETICAL]
+- [What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?](level_1_fundamental_physics/what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range.md) [VERIFIED]
 - [What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?](level_1_fundamental_physics/what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade.md) [THEORETICAL]
 - [What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?](level_1_fundamental_physics/what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay.md) [VERIFIED]
 - [What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?](level_1_fundamental_physics/what_experimental_evidence_or_signatures_would_decisively_distinguish_neutrino_decay_from_sterile_neutrino_or_nonstandard_interaction_scenarios.md) [THEORETICAL]
@@ -360,6 +365,7 @@ graph TD
 - [Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry](level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry.md) [THEORETICAL]
 - [Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution.md) [THEORETICAL]
+- [Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity.md) [THEORETICAL]
 - [Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_sterile_neutrino_dark_matter_in_explaining_dark_matter.md) [THEORETICAL]
 - [Axion Dark Matter vs WIMPs in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_wimps_in_explaining_dark_matter.md) [THEORETICAL]
 - [Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics](level_2_advanced_frameworks/baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics.md) [THEORETICAL]
