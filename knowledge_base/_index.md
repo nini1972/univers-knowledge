@@ -102,6 +102,7 @@ graph TD
     quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
     superfluid_dark_matter_vs_sterile_neutrino_dark_matter_debate["Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate"]:::verified
     asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry["Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"]:::theoretical
+    interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges["Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges"]:::verified
     black_hole_models_debate_observational_techniques_vs_theoretical_frameworks["Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks"]:::verified
     supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"]:::theoretical
     quintessential_inflation_vs_kinflation_in_modeling_early_universe_dynamics["Quintessential Inflation vs K-Inflation in Modeling Early Universe Dynamics"]:::theoretical
@@ -257,6 +258,7 @@ graph TD
     quantum_measurement_problem --- quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
+    dark_matter --- interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
     quantum_gravity --- loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
     quantum_gravity --- asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution
@@ -403,6 +405,7 @@ graph TD
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Information-Theoretic vs. Thermodynamic Interpretations of Gravity](level_2_advanced_frameworks/informationtheoretic_vs_thermodynamic_interpretations_of_gravity.md) [THEORETICAL]
 - [Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension](level_2_advanced_frameworks/interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension.md) [THEORETICAL]
+- [Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](level_2_advanced_frameworks/interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges.md) [VERIFIED]
 - [Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](level_2_advanced_frameworks/loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
 - [Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
