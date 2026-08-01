@@ -2644,6 +2644,284 @@ html, body {
     border-radius: 10px;
 }
 
+/* ==========================================================================
+   📐 EQUATION ARCHAEOLOGY EXPLORER STYLING
+   ========================================================================== */
+.equations-explorer-view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.eq-header-summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--neon-cyan);
+    background: hsla(180, 100%, 50%, 0.08);
+    border: 1px solid hsla(180, 100%, 50%, 0.2);
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.equations-body-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    overflow: hidden;
+}
+
+.constants-ribbon-wrapper {
+    background: var(--bg-card);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ribbon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ribbon-header h3 {
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ribbon-sub {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.constants-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 10px;
+}
+
+.constant-card {
+    background: hsla(225, 20%, 10%, 0.6);
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    transition: var(--transition-elastic);
+}
+
+.constant-card:hover, .constant-card.active {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 12px hsla(180, 100%, 50%, 0.25);
+    transform: translateY(-2px);
+    background: hsla(180, 100%, 50%, 0.06);
+}
+
+.constant-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.constant-symbol {
+    font-family: var(--font-mono);
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--neon-cyan);
+}
+
+.constant-count-badge {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    font-weight: 700;
+    color: var(--text-muted);
+    background: hsla(225, 15%, 100%, 0.06);
+    padding: 2px 6px;
+    border-radius: 8px;
+}
+
+.constant-name {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.constant-value {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+.eq-toolbar-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eq-search-box {
+    flex: 1;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.eq-search-box i {
+    position: absolute;
+    left: 12px;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.eq-search-box input {
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    padding: 8px 12px 8px 34px;
+    font-size: 12px;
+    color: var(--text-primary);
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.eq-search-box input:focus {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 10px hsla(180, 100%, 50%, 0.2);
+}
+
+.eq-filter-group {
+    display: flex;
+    gap: 6px;
+}
+
+.eq-bridges-scroll-area {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.eq-bridges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 14px;
+}
+
+.eq-bridge-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-glass);
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: var(--transition-elastic);
+}
+
+.eq-bridge-card:hover {
+    border-color: var(--neon-blue);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px var(--neon-blue-glow);
+    transform: translateY(-2px);
+}
+
+.eq-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eq-bridge-badge {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--neon-cyan);
+    background: hsla(180, 100%, 50%, 0.1);
+    padding: 3px 8px;
+    border-radius: 10px;
+    border: 1px solid hsla(180, 100%, 50%, 0.2);
+}
+
+.eq-display-box {
+    background: hsla(225, 25%, 6%, 0.9);
+    border: 1px solid hsla(225, 15%, 100%, 0.08);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 13.5px;
+    color: #38bdf8;
+    overflow-x: auto;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eq-concepts-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.eq-concepts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    max-height: 90px;
+    overflow-y: auto;
+}
+
+.eq-concept-pill {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: hsla(225, 15%, 100%, 0.04);
+    border: 1px solid var(--border-glass);
+    padding: 3px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.eq-concept-pill:hover {
+    color: var(--text-primary);
+    background: hsla(225, 15%, 100%, 0.1);
+    border-color: var(--neon-blue);
+}
+
+.eq-concept-pill.lvl-3 {
+    border-color: hsla(280, 100%, 70%, 0.3);
+    color: #e0aaff;
+}
+.eq-concept-pill.lvl-2 {
+    border-color: hsla(38, 95%, 52%, 0.3);
+    color: #fde047;
+}
+
 .history-item-score.score-high {
     color: var(--status-verified);
     background: var(--status-verified-glow);

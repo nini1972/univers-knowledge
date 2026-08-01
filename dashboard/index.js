@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let allConcepts = [];
     let allEvaluationRuns = [];
     let allTelemetryEvents = [];
+    let allEquationData = null;
 
     // Core Active Application State (Filtered chronologically by Scrubber)
     let concepts = [];
@@ -15,7 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let chronologicalRuns = []; // Oldest first runs list
 
     let activeConceptId = null;
-    let activePerspective = 'codex'; // 'codex', 'network', 'ledger', 'agents'
+    let activePerspective = 'codex'; // 'codex', 'network', 'equations', 'ledger', 'agents'
+
+    let selectedEqConstant = null;
+    let currentEqSearch = '';
+    let currentEqCategory = 'all';
 
     let currentFilters = {
         search: '',
@@ -99,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         welcomeView: document.getElementById('welcome-view'),
         contentView: document.getElementById('content-view'),
         networkView: document.getElementById('network-view'),
+        equationsView: document.getElementById('equations-view'),
         ledgerView: document.getElementById('ledger-view'),
         agentsView: document.getElementById('agents-view'),
         perspectiveSelector: document.getElementById('perspective-selector'),
@@ -183,16 +189,18 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // Parallel Fetch execution with cache-busting query parameter to force dynamic reload
             const cacheBust = `?t=${Date.now()}`;
-            const [dbRes, evalRes, telRes, sandboxRes] = await Promise.all([
+            const [dbRes, evalRes, telRes, sandboxRes, eqRes] = await Promise.all([
                 fetch(`../knowledge_base/database.json${cacheBust}`),
                 fetch(`../knowledge_base/logs/evaluation_runs.jsonl${cacheBust}`),
                 fetch(`../knowledge_base/logs/telemetry.jsonl${cacheBust}`),
-                fetch(`../knowledge_base/logs/sandbox_debates.jsonl${cacheBust}`).catch(() => null)
+                fetch(`../knowledge_base/logs/sandbox_debates.jsonl${cacheBust}`).catch(() => null),
+                fetch(`../knowledge_base/equation_index.json${cacheBust}`).catch(() => null)
             ]);
 
             if (!dbRes.ok) throw new Error(`Database error! Status: ${dbRes.status}`);
 
             allConcepts = await dbRes.json();
+            allEquationData = eqRes && eqRes.ok ? await eqRes.json() : null;
 
             // Dynamic Relationship Inference
             const cleanText = (txt) => {
@@ -365,14 +373,26 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.welcomeView.style.display = activeConceptId ? 'none' : 'flex';
             elements.contentView.style.display = activeConceptId ? 'flex' : 'none';
             elements.networkView.style.display = 'none';
+            if (elements.equationsView) elements.equationsView.style.display = 'none';
             elements.ledgerView.style.display = 'none';
             elements.agentsView.style.display = 'none';
+            stopNetworkGraphLoop();
+        } else if (perspectiveId === 'equations') {
+            elements.sidebarPanel.style.display = 'none';
+            elements.welcomeView.style.display = 'none';
+            elements.contentView.style.display = 'none';
+            elements.networkView.style.display = 'none';
+            if (elements.equationsView) elements.equationsView.style.display = 'flex';
+            elements.ledgerView.style.display = 'none';
+            elements.agentsView.style.display = 'none';
+            renderEquationExplorer();
             stopNetworkGraphLoop();
         } else if (perspectiveId === 'ledger') {
             elements.sidebarPanel.style.display = 'none';
             elements.welcomeView.style.display = 'none';
             elements.contentView.style.display = 'none';
             elements.networkView.style.display = 'none';
+            if (elements.equationsView) elements.equationsView.style.display = 'none';
             elements.ledgerView.style.display = 'flex';
             elements.agentsView.style.display = 'none';
             renderOdysseyLedgerTimeline();
@@ -382,6 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.welcomeView.style.display = 'none';
             elements.contentView.style.display = 'none';
             elements.networkView.style.display = 'none';
+            if (elements.equationsView) elements.equationsView.style.display = 'none';
             elements.ledgerView.style.display = 'none';
             elements.agentsView.style.display = 'flex';
             stopNetworkGraphLoop();
@@ -390,6 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.welcomeView.style.display = 'none';
             elements.contentView.style.display = 'none';
             elements.networkView.style.display = 'flex';
+            if (elements.equationsView) elements.equationsView.style.display = 'none';
             elements.ledgerView.style.display = 'none';
             elements.agentsView.style.display = 'none';
             startNetworkGraphPhysicsLoop();
@@ -2940,6 +2962,161 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.btnSandboxStart.classList.remove('disabled');
         elements.btnSandboxStart.innerHTML = `<i class="fa-solid fa-play"></i> Initiate Debate`;
         isSandboxDebateRunning = false;
+    }
+
+    /* ==========================================================================
+       📐 MATHEMATICAL ARCHAEOLOGY & CONSTANT EXPLORER
+       ========================================================================== */
+    function renderEquationExplorer() {
+        if (!allEquationData) return;
+
+        const constantsGrid = document.getElementById('eq-constants-grid');
+        const searchInput = document.getElementById('eq-search-input');
+        const filterGroup = document.getElementById('eq-filter-group');
+
+        // Bind Search & Filter listeners once
+        if (searchInput && !searchInput.hasAttribute('data-bound')) {
+            searchInput.setAttribute('data-bound', 'true');
+            searchInput.addEventListener('input', (e) => {
+                currentEqSearch = e.target.value.toLowerCase().trim();
+                renderEquationBridgesGrid();
+            });
+        }
+
+        if (filterGroup && !filterGroup.hasAttribute('data-bound')) {
+            filterGroup.setAttribute('data-bound', 'true');
+            filterGroup.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterGroup.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentEqCategory = btn.getAttribute('data-eq-filter');
+                    renderEquationBridgesGrid();
+                });
+            });
+        }
+
+        // Render Constants Cards
+        if (constantsGrid && allEquationData.constant_index) {
+            constantsGrid.innerHTML = allEquationData.constant_index.map(c => {
+                const isActive = selectedEqConstant === c.symbol ? 'active' : '';
+                return `
+                    <div class="constant-card ${isActive}" data-symbol="${escapeHtml(c.symbol)}">
+                        <div class="constant-top">
+                            <span class="constant-symbol">${escapeHtml(c.symbol)}</span>
+                            <span class="constant-count-badge">${c.occurrence_count} concepts</span>
+                        </div>
+                        <div class="constant-name">${escapeHtml(c.name)}</div>
+                        <div class="constant-value">${escapeHtml(c.typical_value)} ${escapeHtml(c.unit)}</div>
+                    </div>
+                `;
+            }).join('');
+
+            constantsGrid.querySelectorAll('.constant-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const sym = card.getAttribute('data-symbol');
+                    if (selectedEqConstant === sym) {
+                        selectedEqConstant = null;
+                    } else {
+                        selectedEqConstant = sym;
+                    }
+                    renderEquationExplorer();
+                });
+            });
+        }
+
+        renderEquationBridgesGrid();
+    }
+
+    function renderEquationBridgesGrid() {
+        const bridgesGrid = document.getElementById('eq-bridges-grid');
+        if (!bridgesGrid || !allEquationData || !allEquationData.bridges) return;
+
+        let filtered = allEquationData.bridges.filter(b => {
+            // Constant filter
+            if (selectedEqConstant) {
+                if (!b.equation.includes(selectedEqConstant)) return false;
+            }
+
+            // Category filter
+            if (currentEqCategory === 'constants') {
+                const hasKnownConst = ['\\Lambda', 'G', '\\hbar', 'c', 'a_0', 'M_{Pl}', 'N_{eff}', '\\Omega_c'].some(sym => b.equation.includes(sym));
+                if (!hasKnownConst) return false;
+            } else if (currentEqCategory === 'l1') {
+                if (!b.concepts.some(c => c.level === 1)) return false;
+            } else if (currentEqCategory === 'l2') {
+                if (!b.concepts.some(c => c.level === 2)) return false;
+            } else if (currentEqCategory === 'l3') {
+                if (!b.concepts.some(c => c.level === 3)) return false;
+            }
+
+            // Search filter
+            if (currentEqSearch) {
+                const eqMatch = b.equation.toLowerCase().includes(currentEqSearch);
+                const conceptMatch = b.concepts.some(c => c.title.toLowerCase().includes(currentEqSearch));
+                if (!eqMatch && !conceptMatch) return false;
+            }
+
+            return true;
+        });
+
+        if (filtered.length === 0) {
+            bridgesGrid.innerHTML = `
+                <div class="no-results" style="grid-column: 1 / -1; padding: 40px; text-align: center; color: var(--text-muted);">
+                    <i class="fa-solid fa-square-root-variable" style="font-size: 32px; margin-bottom: 12px; color: var(--border-glow);"></i>
+                    <p style="font-size: 14px;">No equation bridges match your current filter or search criteria.</p>
+                </div>
+            `;
+            return;
+        }
+
+        bridgesGrid.innerHTML = filtered.map(b => {
+            let renderedMath = '';
+            if (window.katex && typeof window.katex.renderToString === 'function') {
+                try {
+                    renderedMath = window.katex.renderToString(b.equation, { throwOnError: false, displayMode: true });
+                } catch (e) {
+                    renderedMath = `<code>${escapeHtml(b.equation)}</code>`;
+                }
+            } else {
+                renderedMath = `<code>${escapeHtml(b.equation)}</code>`;
+            }
+
+            const conceptPills = b.concepts.map(c => {
+                const lvlClass = c.level === 3 ? 'lvl-3' : (c.level === 2 ? 'lvl-2' : 'lvl-1');
+                const matchedConcept = allConcepts.find(ac => ac.title.toLowerCase() === c.title.toLowerCase());
+                const targetId = matchedConcept ? matchedConcept.id : c.title.toLowerCase().replace(/[^a-z0-9]/g, '');
+                return `<span class="eq-concept-pill ${lvlClass}" data-concept-id="${targetId}" title="Open concept in Codex">L${c.level}: ${escapeHtml(c.title)}</span>`;
+            }).join('');
+
+            return `
+                <div class="eq-bridge-card">
+                    <div class="eq-card-header">
+                        <span class="eq-bridge-badge"><i class="fa-solid fa-link"></i> ${b.concept_count} CONCEPTS</span>
+                    </div>
+                    <div class="eq-display-box">${renderedMath}</div>
+                    <div>
+                        <div class="eq-concepts-label">Bridged Theoretical Frameworks:</div>
+                        <div class="eq-concepts-list">${conceptPills}</div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        // Bind click events on concept pills
+        bridgesGrid.querySelectorAll('.eq-concept-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                const conceptId = pill.getAttribute('data-concept-id');
+                if (conceptId) {
+                    switchPerspective('codex');
+                    selectConcept(conceptId);
+                }
+            });
+        });
+    }
+
+    function escapeHtml(text) {
+        if (!text) return '';
+        return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
     }
 
     // Launch parallel ingestion pipeline

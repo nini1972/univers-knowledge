@@ -10,7 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <!-- FontAwesome for Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="index.css?v=1.0.3">
+    <!-- KaTeX for LaTeX Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <link rel="stylesheet" href="index.css?v=1.0.4">
 </head>
 <body>
     <!-- Radiant background mesh glow -->
@@ -38,6 +41,9 @@
                 </button>
                 <button class="perspective-btn" data-perspective="network">
                     <i class="fa-solid fa-network-wired"></i> <span>Network Topology</span>
+                </button>
+                <button class="perspective-btn" data-perspective="equations">
+                    <i class="fa-solid fa-square-root-variable"></i> <span>Equation Explorer</span>
                 </button>
                 <button class="perspective-btn" data-perspective="ledger">
                     <i class="fa-solid fa-timeline"></i> <span>Odyssey Ledger</span>
@@ -293,6 +299,54 @@
                                 <button class="zoom-hud-btn" id="btn-zoom-in" title="Zoom In"><i class="fa-solid fa-plus"></i></button>
                                 <button class="zoom-hud-btn" id="btn-zoom-out" title="Zoom Out"><i class="fa-solid fa-minus"></i></button>
                                 <button class="zoom-hud-btn" id="btn-zoom-reset" title="Recenter & Reset Scale"><i class="fa-solid fa-arrows-to-dot"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Equation Archaeology Explorer View -->
+                <div class="equations-explorer-view" id="equations-view" style="display: none;">
+                    <div class="concept-header">
+                        <div class="title-area">
+                            <span class="badge level-badge">MATHEMATICAL ARCHAEOLOGY</span>
+                            <h2>Physical Equations & Constant Bridges</h2>
+                        </div>
+                        <div class="eq-header-summary" id="eq-header-summary">
+                            <span class="pulse-dot dot-verified"></span> 72 Cross-Concept Bridges Mined
+                        </div>
+                    </div>
+
+                    <div class="equations-body-container">
+                        <!-- Constants Ribbon -->
+                        <div class="constants-ribbon-wrapper">
+                            <div class="ribbon-header">
+                                <h3><i class="fa-solid fa-atom"></i> FUNDAMENTAL PHYSICAL CONSTANTS INDEX</h3>
+                                <span class="ribbon-sub">Click a constant to filter equation bridges</span>
+                            </div>
+                            <div class="constants-cards-grid" id="eq-constants-grid">
+                                <!-- Dynamic constant cards -->
+                            </div>
+                        </div>
+
+                        <!-- Toolbar -->
+                        <div class="eq-toolbar-container">
+                            <div class="eq-search-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="eq-search-input" placeholder="Search equations (e.g. \Lambda, G, \hbar, Planck, dark matter)...">
+                            </div>
+                            <div class="eq-filter-group" id="eq-filter-group">
+                                <button class="filter-btn active" data-eq-filter="all">All Bridges</button>
+                                <button class="filter-btn" data-eq-filter="constants">Physical Constants</button>
+                                <button class="filter-btn" data-eq-filter="l1">Level 1</button>
+                                <button class="filter-btn" data-eq-filter="l2">Level 2</button>
+                                <button class="filter-btn" data-eq-filter="l3">Level 3</button>
+                            </div>
+                        </div>
+
+                        <!-- Bridges Grid -->
+                        <div class="eq-bridges-scroll-area">
+                            <div class="eq-bridges-grid" id="eq-bridges-grid">
+                                <!-- Dynamic equation bridge cards -->
                             </div>
                         </div>
                     </div>
