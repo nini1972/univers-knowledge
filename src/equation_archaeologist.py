@@ -13,14 +13,14 @@ class EquationArchaeologist:
     """
 
     KNOWN_CONSTANTS = {
-        r"\Lambda": ("Cosmological Constant", "m^-2", "1.089 x 10^-52"),
-        r"c": ("Speed of Light", "m/s", "2.998 x 10^8"),
-        r"\hbar": ("Reduced Planck Constant", "J s", "1.054 x 10^-34"),
-        r"G": ("Gravitational Constant", "m^3 kg^-1 s^-2", "6.674 x 10^-11"),
-        r"a_0": ("MOND Acceleration Scale", "m s^-2", "1.2 x 10^-10"),
-        r"M_{\rm Pl}": ("Planck Mass", "GeV", "1.22 x 10^19"),
-        r"N_{\rm eff}": ("Effective Neutrino Species", "dimensionless", "3.044"),
-        r"\Omega_c": ("Cold Dark Matter Density Parameter", "dimensionless", "0.120"),
+        r"\Lambda": (r"\\Lambda", "Cosmological Constant", "m^-2", "1.089 x 10^-52"),
+        r"c": (r"(?<![a-zA-Z\\])c(?![a-zA-Z0-9_])", "Speed of Light", "m/s", "2.998 x 10^8"),
+        r"\hbar": (r"\\hbar", "Reduced Planck Constant", "J s", "1.054 x 10^-34"),
+        r"G": (r"(?<![a-zA-Z\\])G(?![a-zA-Z])", "Gravitational Constant", "m^3 kg^-1 s^-2", "6.674 x 10^-11"),
+        r"a_0": (r"a_0|a0", "MOND Acceleration Scale", "m s^-2", "1.2 x 10^-10"),
+        r"M_{\text{Pl}}": (r"M_{\\rm Pl}|M_{Pl}|M_{\\text{Pl}}|m_{\\text{Pl}}|M_{Planck}", "Planck Mass", "GeV", "1.22 x 10^19"),
+        r"N_{\text{eff}}": (r"N_{\\rm eff}|N_{eff}|N_{\\text{eff}}", "Effective Neutrino Species", "dimensionless", "3.044"),
+        r"\Omega_c": (r"\\Omega_c|Omega_c", "Cold Dark Matter Density Parameter", "dimensionless", "0.120"),
     }
 
     def __init__(self, repo_root: Path = None):
@@ -78,17 +78,17 @@ class EquationArchaeologist:
         return bridges
 
     def extract_constant_and_variable_index(self):
-        """Scans all equations for physical constants and parameters."""
+        """Scans all equations for physical constants and parameters using regex matching."""
         constant_occurrences = defaultdict(set)
         for entry in self.entries:
             concept = entry.get("concept", "Unknown")
             for eq in entry.get("equations", []):
-                for const_sym in self.KNOWN_CONSTANTS.keys():
-                    if const_sym in eq:
+                for const_sym, (pattern, name, unit, val) in self.KNOWN_CONSTANTS.items():
+                    if re.search(pattern, eq):
                         constant_occurrences[const_sym].add(concept)
 
         index = []
-        for const_sym, (name, unit, val) in self.KNOWN_CONSTANTS.items():
+        for const_sym, (pattern, name, unit, val) in self.KNOWN_CONSTANTS.items():
             occurring_concepts = list(constant_occurrences.get(const_sym, []))
             index.append({
                 "symbol": const_sym,

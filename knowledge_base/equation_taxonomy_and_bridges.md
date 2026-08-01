@@ -1,6 +1,6 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-01T12:55:23.119782+00:00  
+> **Generated:** 2026-08-01T14:30:43.391202+00:00  
 > **Total Analyzed Concepts:** 63 | **Total Discovered Equations:** 1777 | **Discovered Bridges:** 72
 
 ## 🌉 1. Cross-Concept Equation Bridges
@@ -132,14 +132,14 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 39 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 34 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 34 |
 | `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 27 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 22 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 14 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 12 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 11 |
-| `M_{\rm Pl}` | Planck Mass | `GeV` | `1.22 x 10^19` | 8 |
-| `N_{\rm eff}` | Effective Neutrino Species | `dimensionless` | `3.044` | 5 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 10 |
+| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 7 |
 
 ## 📊 3. Verification Status Summary
 - **MATH_PROVEN Entries:** 33

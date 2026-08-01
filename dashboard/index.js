@@ -2999,10 +2999,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (constantsGrid && allEquationData.constant_index) {
             constantsGrid.innerHTML = allEquationData.constant_index.map(c => {
                 const isActive = selectedEqConstant === c.symbol ? 'active' : '';
+                let renderedSym = escapeHtml(c.symbol);
+                if (window.katex && typeof window.katex.renderToString === 'function') {
+                    try {
+                        renderedSym = window.katex.renderToString(c.symbol, { throwOnError: false, displayMode: false });
+                    } catch (e) {}
+                }
                 return `
                     <div class="constant-card ${isActive}" data-symbol="${escapeHtml(c.symbol)}">
                         <div class="constant-top">
-                            <span class="constant-symbol">${escapeHtml(c.symbol)}</span>
+                            <span class="constant-symbol">${renderedSym}</span>
                             <span class="constant-count-badge">${c.occurrence_count} concepts</span>
                         </div>
                         <div class="constant-name">${escapeHtml(c.name)}</div>
