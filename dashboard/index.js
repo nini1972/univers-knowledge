@@ -804,7 +804,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        const concept = concepts.find(c => c.id === id);
+        const concept = allConcepts.find(c => c.id === id) || concepts.find(c => c.id === id);
         if (!concept) return;
 
         // View toggle
@@ -1389,11 +1389,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const bridgeIds = new Set();
             if (allOKFGraph && allOKFGraph.edges) {
                 allOKFGraph.edges.forEach(e => {
-                    const src = conceptsList.find(c => c.id === e.from);
-                    const tgt = conceptsList.find(c => c.id === e.to);
+                    const srcId = e.source || e.from;
+                    const tgtId = e.target || e.to;
+                    const src = conceptsList.find(c => c.id === srcId);
+                    const tgt = conceptsList.find(c => c.id === tgtId);
                     if (src && tgt && src.level !== tgt.level) {
                         bridgeIds.add(src.id);
                         bridgeIds.add(tgt.id);
+                    }
+                });
+            }
+            if (bridgeIds.size === 0) {
+                conceptsList.forEach(c => {
+                    if (c.related) {
+                        c.related.forEach(relId => {
+                            const rel = conceptsList.find(r => r.id === relId);
+                            if (rel && rel.level !== c.level) {
+                                bridgeIds.add(c.id);
+                                bridgeIds.add(rel.id);
+                            }
+                        });
                     }
                 });
             }
@@ -1447,16 +1462,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // 1. OKF Smart Directed Edges (from graph.json)
         if (allOKFGraph && allOKFGraph.edges && allOKFGraph.edges.length > 0) {
             allOKFGraph.edges.forEach(edge => {
-                const hasSource = graphState.nodesById.has(edge.from);
-                const hasTarget = graphState.nodesById.has(edge.to);
+                const srcId = edge.source || edge.from;
+                const tgtId = edge.target || edge.to;
+
+                const hasSource = graphState.nodesById.has(srcId);
+                const hasTarget = graphState.nodesById.has(tgtId);
 
                 if (hasSource && hasTarget) {
-                    const key = `${edge.from}->${edge.to}`;
+                    const key = `${srcId}->${tgtId}`;
                     activeKeys.add(key);
 
                     if (!graphState.linksByKey.has(key)) {
-                        const sourceNode = graphState.nodesById.get(edge.from);
-                        const targetNode = graphState.nodesById.get(edge.to);
+                        const sourceNode = graphState.nodesById.get(srcId);
+                        const targetNode = graphState.nodesById.get(tgtId);
 
                         const newLink = {
                             key,
@@ -2433,18 +2451,36 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        const netFilterGroup = document.getElementById('net-filter-group');
-        if (netFilterGroup) {
-            netFilterGroup.querySelectorAll('.net-pill-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    netFilterGroup.querySelectorAll('.net-pill-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    currentNetworkFilter = btn.getAttribute('data-net-filter');
-                    syncGraphWithConcepts(concepts);
-                    graphState.simulation.alpha = 1.0;
-                });
+    function recenterCameraOnNodes(nodes) {
+        if (!nodes || nodes.length === 0) return;
+        const canvas = elements.networkCanvas;
+        if (!canvas) return;
+
+        const width = canvas.clientWidth || 900;
+        const height = canvas.clientHeight || 520;
+
+        let sumX = 0, sumY = 0;
+        nodes.forEach(n => { sumX += n.x; sumY += n.y; });
+        const avgX = sumX / nodes.length;
+        const avgY = sumY / nodes.length;
+
+        canvasOffset.x = (width / 2) - (avgX * canvasZoom);
+        canvasOffset.y = (height / 2) - (avgY * canvasZoom);
+    }
+
+    const netFilterGroup = document.getElementById('net-filter-group');
+    if (netFilterGroup) {
+        netFilterGroup.querySelectorAll('.net-pill-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                netFilterGroup.querySelectorAll('.net-pill-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentNetworkFilter = btn.getAttribute('data-net-filter');
+                syncGraphWithConcepts(concepts);
+                graphState.simulation.alpha = 1.0;
+                setTimeout(() => recenterCameraOnNodes(graphNodes), 50);
             });
-        }
+        });
+    }
 
         // Canvas Interaction physics mouse hooks
         setupNetworkCanvasMouseListeners();
@@ -2551,15 +2587,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Check node hover collision thresholds
+            // Check node hover collision thresholds with comfortable touch buffer
             let foundHover = null;
             for (let i = 0; i < graphNodes.length; i++) {
                 const node = graphNodes[i];
                 const dx = canvasX - node.x;
                 const dy = canvasY - node.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
+                const hitRadius = Math.max(node.r + 8, 16);
 
-                if (dist <= node.r) {
+                if (dist <= hitRadius) {
                     foundHover = node;
                     break;
                 }
@@ -2581,7 +2618,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dx = canvasX - node.x;
                 const dy = canvasY - node.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
-                if (dist <= node.r) {
+                const hitRadius = Math.max(node.r + 8, 16);
+                if (dist <= hitRadius) {
                     clickedNode = node;
                     break;
                 }
