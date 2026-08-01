@@ -2583,8 +2583,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             for (let i = 0; i < graphNodes.length; i++) {
                 const node = graphNodes[i];
-                const dx = coords.x - node.x;
-                const dy = coords.y - node.y;
+                const pt = currentNetworkViewMode === 'topology' ? applyGravityWarp(node.x, node.y) : { x: node.x, y: node.y };
+                const dx = coords.x - pt.x;
+                const dy = coords.y - pt.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
                 const hitRadius = Math.max(node.r + 10, 18);
 
