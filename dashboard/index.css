@@ -1207,7 +1207,39 @@ html, body {
     border: 1px solid var(--border-glass);
     border-radius: 8px;
     padding: 3px;
-    gap: 2px;
+    gap: 6px;
+}
+
+.network-filter-pills {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.net-pill-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-glass);
+    color: var(--text-muted);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.net-pill-btn:hover {
+    background: rgba(0, 242, 254, 0.12);
+    color: var(--neon-blue);
+    border-color: rgba(0, 242, 254, 0.4);
+}
+
+.net-pill-btn.active {
+    background: rgba(0, 242, 254, 0.2);
+    color: var(--neon-blue);
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
 }
 
 .network-toggle-btn {

@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let canvasZoom = 1.0;
     let galacticRotationAngle = 0; // Milky Way spiral rotation
     let currentNetworkViewMode = 'topology'; // 'topology' or 'galaxy'
+    let currentNetworkFilter = 'all'; // 'all', 'l1', 'l2', 'l3', 'bridges'
     let animationFrameId = null;
     let particleFlows = []; // Micro-animation data flows
 
@@ -1251,14 +1252,17 @@ document.addEventListener('DOMContentLoaded', () => {
             return isLatestRun ? r + 3 : r; // latest-run star glows a bit bigger
         }
 
-        // Topology mode: original size logic
-        const relationBoost = Math.min(relationsCount * 1.5, 12);
+        // Topology mode: compact size logic so 159 nodes leave plenty of whitespace for links & flow arrows
+        if (concept.level === 3) {
+            return 14; // Level 3 emergence nodes stand out as structural hubs
+        }
+        const relationBoost = Math.min(relationsCount * 0.6, 4);
         let latestBoost = 0;
         if (evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, concept.title)) {
-            latestBoost = 6;
+            latestBoost = 3;
         }
-        const base = 18 + relationBoost + latestBoost;
-        return Math.max(18, Math.min(base, 32));
+        const base = 8 + relationBoost + latestBoost;
+        return Math.max(8, Math.min(base, 14));
     }
 
     // Returns the thematic arm colour for a concept based on its ID keywords (galaxy mode only)
@@ -1374,14 +1378,37 @@ document.addEventListener('DOMContentLoaded', () => {
         const canvas = elements.networkCanvas;
         if (!canvas) return;
 
-        const activeIds = new Set(conceptsList.map(c => c.id));
+        let filteredList = conceptsList;
+        if (currentNetworkFilter === 'l1') {
+            filteredList = conceptsList.filter(c => c.level === 1);
+        } else if (currentNetworkFilter === 'l2') {
+            filteredList = conceptsList.filter(c => c.level === 2);
+        } else if (currentNetworkFilter === 'l3') {
+            filteredList = conceptsList.filter(c => c.level === 3);
+        } else if (currentNetworkFilter === 'bridges') {
+            const bridgeIds = new Set();
+            if (allOKFGraph && allOKFGraph.edges) {
+                allOKFGraph.edges.forEach(e => {
+                    const src = conceptsList.find(c => c.id === e.from);
+                    const tgt = conceptsList.find(c => c.id === e.to);
+                    if (src && tgt && src.level !== tgt.level) {
+                        bridgeIds.add(src.id);
+                        bridgeIds.add(tgt.id);
+                    }
+                });
+            }
+            filteredList = conceptsList.filter(c => bridgeIds.has(c.id));
+        }
+
+        const activeIds = new Set(filteredList.map(c => c.id));
 
         conceptsList.forEach(c => {
             const isVerified = c.status === 'VERIFIED' || c.status === '[VERIFIED]';
+            const isVisible = activeIds.has(c.id);
 
             if (graphState.nodesById.has(c.id)) {
                 const node = graphState.nodesById.get(c.id);
-                node.visible = true;
+                node.visible = isVisible;
                 node.status = isVerified ? 'VERIFIED' : 'THEORETICAL';
                 node.r = computeNodeRadius(c);
             } else {
@@ -1397,7 +1424,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     vy: (Math.random() - 0.5) * 2,
                     r: computeNodeRadius(c),
                     pulse: Math.random() * Math.PI,
-                    visible: true
+                    visible: isVisible
                 };
                 graphState.nodesById.set(c.id, node);
             }
@@ -1411,7 +1438,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         graphNodes = Array.from(graphState.nodesById.values()).filter(n => n.visible);
 
-        syncGraphLinks(conceptsList);
+        syncGraphLinks(filteredList);
     }
 
     function syncGraphLinks(conceptsList) {
@@ -2403,6 +2430,19 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.btnViewGalaxy.addEventListener('click', () => {
                 // Open the dedicated Milky Way Galaxy page
                 window.location.href = 'galaxy.html';
+            });
+        }
+
+        const netFilterGroup = document.getElementById('net-filter-group');
+        if (netFilterGroup) {
+            netFilterGroup.querySelectorAll('.net-pill-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    netFilterGroup.querySelectorAll('.net-pill-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentNetworkFilter = btn.getAttribute('data-net-filter');
+                    syncGraphWithConcepts(concepts);
+                    graphState.simulation.alpha = 1.0;
+                });
             });
         }
 

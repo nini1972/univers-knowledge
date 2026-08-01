@@ -13,7 +13,7 @@
     <!-- KaTeX for LaTeX Math Rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <link rel="stylesheet" href="index.css?v=1.0.7">
+    <link rel="stylesheet" href="index.css?v=1.0.8">
 </head>
 <body>
     <!-- Radiant background mesh glow -->
@@ -282,6 +282,13 @@
                             <button class="network-toggle-btn" id="btn-view-galaxy" title="Cosmological Constellation">
                                 <i class="fa-solid fa-star"></i> <span>Milky Way Galaxy</span>
                             </button>
+                            <div class="network-filter-pills" id="net-filter-group">
+                                <button class="net-pill-btn active" data-net-filter="all">All (159)</button>
+                                <button class="net-pill-btn" data-net-filter="l1">L1 Physics</button>
+                                <button class="net-pill-btn" data-net-filter="l2">L2 Advanced</button>
+                                <button class="net-pill-btn" data-net-filter="l3">L3 Emergence</button>
+                                <button class="net-pill-btn" data-net-filter="bridges">Cross-Level Bridges</button>
+                            </div>
                         </div>
                     </div>
                     <div class="network-container">
@@ -626,6 +633,6 @@
     </div>
 
     <!-- Script loading -->
-    <script src="index.js?v=1.0.7"></script>
+    <script src="index.js?v=1.0.8"></script>
 </body>
 </html>
