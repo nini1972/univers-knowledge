@@ -1852,10 +1852,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         ctx.save();
-        ctx.fillStyle = isHighPriority ? 'var(--text-primary)' : 'var(--text-secondary)';
-        ctx.font = isHighPriority ? 'bold 12px var(--font-sans)' : '500 10.5px var(--font-sans)';
+        ctx.fillStyle = isHighPriority ? '#ffffff' : (node.level === 3 ? '#e0aaff' : 'hsla(210, 25%, 90%, 0.85)');
+        ctx.font = isHighPriority ? 'bold 12px "Inter", -apple-system, sans-serif' : '500 10.5px "Inter", -apple-system, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
+
+        if (isHighPriority) {
+            ctx.shadowColor = 'rgba(0, 0, 0, 0.95)';
+            ctx.shadowBlur = 8;
+        }
 
         const titleText = node.title;
         if (mode === 'compact' && !isHighPriority) {
