@@ -27,6 +27,7 @@ try:
         parse_skeptic_checklist_score,
         parse_math_score,
         parse_math_status,
+        is_concept_existing,
     )
 except ImportError:
     from src.workflow_contracts import (
@@ -37,6 +38,7 @@ except ImportError:
         parse_skeptic_checklist_score,
         parse_math_score,
         parse_math_status,
+        is_concept_existing,
     )
 try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
@@ -150,22 +152,68 @@ def main():
     if patterns:
         pattern_guidance = "\n\nCRITICAL HISTORICAL FAILURE GUIDANCE:\n" + "\n".join(f"- {p}" for p in patterns)
 
-    topic_task = tasks.determine_next_level2_topic_task(topic_student, current_index)
-    if pattern_guidance:
-        topic_task.description += pattern_guidance
+    max_topic_attempts = 4
+    excluded_concepts = []
+    theory_a, theory_b, concept_name = None, None, None
+    output_location = None
+    level_folder = "level_2_advanced_frameworks"
+    repo_root = Path(__file__).resolve().parent.parent
 
-    topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback("topic_crew_l2"))
+    for attempt in range(1, max_topic_attempts + 1):
+        topic_student = agents.student_agent()
+        topic_task = tasks.determine_next_level2_topic_task(topic_student, current_index)
 
-    if dry_run:
-        selection_output = json.dumps({
-            "theory_a": "Asymptotic Safety Gravity",
-            "theory_b": "Causal Dynamical Triangulations",
-            "concept_name": "Nonperturbative Quantum Gravity Debate"
-        })
-    else:
-        selection_output = topic_crew.kickoff()
+        exclusion_prompt = ""
+        if excluded_concepts:
+            exclusion_prompt = "\n\nCRITICAL DEDUPLICATION RULE:\nDo NOT select any of the following already-existing concepts:\n" + "\n".join(f"- {c}" for c in excluded_concepts)
 
-    theory_a, theory_b, concept_name = _extract_level2_selection(selection_output)
+        if pattern_guidance or exclusion_prompt:
+            topic_task.description += (pattern_guidance + exclusion_prompt)
+
+        topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback(f"topic_crew_l2_att{attempt}"))
+
+        if dry_run:
+            if attempt == 1 and os.getenv("TEST_DUPLICATE_RETRY", "false").lower() == "true":
+                selection_output = json.dumps({
+                    "theory_a": "Asymmetric Dark Matter",
+                    "theory_b": "WIMP Baryogenesis",
+                    "concept_name": "Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"
+                })
+            else:
+                selection_output = json.dumps({
+                    "theory_a": "Asymptotic Safety Gravity",
+                    "theory_b": "Causal Dynamical Triangulations",
+                    "concept_name": f"Nonperturbative Quantum Gravity Debate {attempt}"
+                })
+        else:
+            selection_output = topic_crew.kickoff()
+
+        theory_a, theory_b, concept_name = _extract_level2_selection(selection_output)
+        filename = sanitize_filename(concept_name)
+        output_location = f"knowledge_base/{level_folder}/{filename}"
+
+        if (repo_root / output_location).exists() or is_concept_existing(concept_name, level=2, repo_root=repo_root):
+            print(f"[TOPIC SELECTION RETRY] Attempt {attempt}/{max_topic_attempts}: Selected concept '{concept_name}' already exists. Retrying...")
+            excluded_concepts.append(concept_name)
+            log_telemetry_event(
+                "topic_selection_level2_retry",
+                "attempt_duplicate",
+                metadata={"attempt": attempt, "concept": concept_name}
+            )
+            continue
+        else:
+            print(f"[TOPIC SELECTION SUCCESS] Selected valid new topic on attempt {attempt}: '{concept_name}'")
+            break
+
+    if not concept_name or (repo_root / output_location).exists() or is_concept_existing(concept_name, level=2, repo_root=repo_root):
+        print(f"ERROR: Unable to select a non-existing Level 2 debate topic after {max_topic_attempts} attempts.")
+        log_telemetry_event(
+            "topic_selection_level2",
+            "end",
+            duration_seconds=time.time() - step1_start,
+            metadata={"status": "max_retries_exceeded", "excluded_count": len(excluded_concepts)}
+        )
+        return
 
     # Enforce prerequisite check (Issue 10)
     prereq_ok, missing_prereq = check_level2_prerequisites(theory_a, theory_b, concept_name, current_index)
@@ -190,21 +238,6 @@ def main():
             run_level1_flow(missing_prereq)
         except Exception as exc:
             print(f"ERROR executing automatic Level 1 learning flow: {exc}")
-        return
-
-    level_folder = "level_2_advanced_frameworks"
-    filename = sanitize_filename(concept_name)
-    output_location = f"knowledge_base/{level_folder}/{filename}"
-
-    repo_root = Path(__file__).resolve().parent.parent
-    if (repo_root / output_location).exists():
-        print(f"Concept file already exists, skipping write: {output_location}")
-        log_telemetry_event(
-            "topic_selection_level2",
-            "end",
-            duration_seconds=time.time() - step1_start,
-            metadata={"status": "already_exists", "selected_concept": concept_name}
-        )
         return
 
     log_telemetry_event(

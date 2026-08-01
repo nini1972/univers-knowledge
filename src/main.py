@@ -26,6 +26,7 @@ try:
         parse_skeptic_checklist_score,
         parse_math_score,
         parse_math_status,
+        is_concept_existing,
     )
 except ImportError:
     from src.workflow_contracts import (
@@ -35,6 +36,7 @@ except ImportError:
         parse_skeptic_checklist_score,
         parse_math_score,
         parse_math_status,
+        is_concept_existing,
     )
 try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
@@ -481,8 +483,51 @@ def main():
     elif dry_run:
         next_concept = "Quantum Entanglement"
     else:
-        next_concept = topic_crew.kickoff()
+        max_topic_attempts = 4
+        excluded_concepts = []
+        repo_root = Path(__file__).resolve().parent.parent
+        next_concept = None
 
+        for attempt in range(1, max_topic_attempts + 1):
+            topic_student = agents.student_agent()
+            topic_task = tasks.determine_next_topic_task(topic_student, current_index)
+
+            exclusion_prompt = ""
+            if excluded_concepts:
+                exclusion_prompt = "\n\nCRITICAL DEDUPLICATION RULE:\nDo NOT select any of the following already-existing concepts:\n" + "\n".join(f"- {c}" for c in excluded_concepts)
+
+            if pattern_guidance or exclusion_prompt:
+                topic_task.description += (pattern_guidance + exclusion_prompt)
+
+            topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback(f"topic_crew_att{attempt}"))
+            candidate_concept = str(topic_crew.kickoff()).strip()
+
+            filename = sanitize_filename(candidate_concept)
+            output_location = f"knowledge_base/level_1_fundamental_physics/{filename}"
+
+            if (repo_root / output_location).exists() or is_concept_existing(candidate_concept, level=1, repo_root=repo_root):
+                print(f"[TOPIC SELECTION RETRY] Attempt {attempt}/{max_topic_attempts}: Selected concept '{candidate_concept}' already exists. Retrying...")
+                excluded_concepts.append(candidate_concept)
+                log_telemetry_event(
+                    "topic_selection_retry",
+                    "attempt_duplicate",
+                    metadata={"attempt": attempt, "concept": candidate_concept}
+                )
+                continue
+            else:
+                next_concept = candidate_concept
+                print(f"[TOPIC SELECTION SUCCESS] Selected valid new topic on attempt {attempt}: '{next_concept}'")
+                break
+
+        if not next_concept:
+            print(f"ERROR: Unable to select a non-existing Level 1 topic after {max_topic_attempts} attempts.")
+            log_telemetry_event(
+                "topic_selection",
+                "end",
+                duration_seconds=time.time() - step1_start,
+                metadata={"status": "max_retries_exceeded", "excluded_count": len(excluded_concepts)}
+            )
+            return
 
     next_concept = str(next_concept).strip()
     print(f"Target Concept Selected: {next_concept}")

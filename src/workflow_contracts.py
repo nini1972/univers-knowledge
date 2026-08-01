@@ -450,3 +450,36 @@ def parse_math_status(math_output: str) -> str:
         if re.search(rf"\[?{re.escape(status)}\]?", text, re.IGNORECASE):
             return status
     return "MATH_UNKNOWN"
+
+
+def is_concept_existing(concept_name: str, level: int = 2, repo_root=None) -> bool:
+    """
+    Checks whether a concept file already exists on disk or in the index.
+    """
+    if not concept_name or not str(concept_name).strip():
+        return False
+
+    s = re.sub(r'[^a-zA-Z0-9\s]', '', str(concept_name)).strip().replace(' ', '_').lower()
+    filename = f"{s}.md"
+
+    if repo_root is None:
+        from pathlib import Path
+        repo_root = Path(__file__).resolve().parent.parent
+
+    level_folder = "level_1_fundamental_physics" if level == 1 else "level_2_advanced_frameworks"
+    filepath = repo_root / "knowledge_base" / level_folder / filename
+
+    if filepath.exists():
+        return True
+
+    index_path = repo_root / "knowledge_base" / "_index.md"
+    if index_path.exists():
+        try:
+            index_text = index_path.read_text(encoding="utf-8").lower()
+            if filename in index_text or s in index_text:
+                return True
+        except Exception:
+            pass
+
+    return False
+

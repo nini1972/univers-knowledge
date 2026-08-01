@@ -276,8 +276,19 @@ The electromagnetic force is one of the four fundamental forces.
         self.assertIn('  - arXiv:1234.5678', normalized)
         self.assertIn('  - http://example.com', normalized)
 
+    def test_is_concept_existing_returns_true_for_existing_file(self):
+        from src.workflow_contracts import is_concept_existing
+        concept_name = "Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"
+        self.assertTrue(is_concept_existing(concept_name, level=2))
+
+    def test_is_concept_existing_returns_false_for_new_file(self):
+        from src.workflow_contracts import is_concept_existing
+        concept_name = "Nonexistent Theoretical Framework 99999"
+        self.assertFalse(is_concept_existing(concept_name, level=2))
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
 
