@@ -309,6 +309,23 @@ The electromagnetic force is one of the four fundamental forces.
         self.assertGreater(graph_data["stats"]["total_edges"], 0, "Smart Edge Resolver should find directed edges")
         self.assertEqual(len(errors), 0, f"OKF Indexer produced schema errors: {errors}")
 
+    def test_equation_archaeologist(self):
+        from pathlib import Path
+        try:
+            from equation_archaeologist import EquationArchaeologist
+        except ImportError:
+            from src.equation_archaeologist import EquationArchaeologist
+
+        repo_root = Path(__file__).resolve().parent
+        archaeologist = EquationArchaeologist(repo_root)
+        catalog = archaeologist.run()
+
+        self.assertGreater(catalog["stats"]["total_entries"], 0, "Should load logged equation entries")
+        self.assertGreater(catalog["stats"]["total_equations"], 0, "Should count logged equations")
+        self.assertGreater(len(catalog["bridges"]), 0, "Should find cross-concept equation bridges")
+        self.assertTrue((repo_root / "knowledge_base" / "equation_index.json").exists())
+        self.assertTrue((repo_root / "knowledge_base" / "equation_taxonomy_and_bridges.md").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

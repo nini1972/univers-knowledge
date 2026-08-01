@@ -101,6 +101,15 @@ def update_index_file(index_path: str, concept_name: str, level_folder: str, fil
     except Exception as exc:
         print(f"Warning: Failed to auto-rebuild OKF graph.json: {exc}")
 
+    try:
+        try:
+            from equation_archaeologist import EquationArchaeologist
+        except ImportError:
+            from src.equation_archaeologist import EquationArchaeologist
+        EquationArchaeologist(repo_root).run()
+    except Exception as exc:
+        print(f"Warning: Failed to run Equation Archaeologist: {exc}")
+
 
 def run_level1_flow(next_concept: str):
     """Core Level 1 learning, research, verification, and documentation workflow."""
