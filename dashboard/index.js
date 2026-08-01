@@ -648,7 +648,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="pulse-dot ${statusDot}"></span> ${isVerified ? 'VERIFIED' : 'THEORETICAL'}
                         </span>
                     </div>
-                    <h3 class="card-title">${c.title}</h3>
+                    <h3 class="card-title" title="${c.title}">${c.title}</h3>
                     <p class="card-excerpt">${cleanExcerpts(c.overview || c.content || '')}</p>
                     <div class="card-footer">
                         <span><i class="fa-solid fa-link"></i> ${relationsCount} relations</span>
