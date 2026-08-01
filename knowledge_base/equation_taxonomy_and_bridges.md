@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-01T11:20:58.781268+00:00  
-> **Total Analyzed Concepts:** 59 | **Total Discovered Equations:** 1670 | **Discovered Bridges:** 66
+> **Generated:** 2026-08-01T12:05:05.108397+00:00  
+> **Total Analyzed Concepts:** 63 | **Total Discovered Equations:** 1777 | **Discovered Bridges:** 72
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 20 concepts:
+**Occurrences:** Appears in 21 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -28,6 +28,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration
 - **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
 - **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
+- **Level 3**: Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution
 
 ### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
 **Occurrences:** Appears in 7 concepts:
@@ -58,11 +59,12 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
 
 ### ` \gamma `
-**Occurrences:** Appears in 4 concepts:
+**Occurrences:** Appears in 5 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
 - **Level 2**: Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration
+- **Level 1**: What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?
 
 ### ` N_{\rm eff} `
 **Occurrences:** Appears in 4 concepts:
@@ -109,6 +111,12 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 
+### ` h = 6.62607015 \times 10^{-34} `
+**Occurrences:** Appears in 3 concepts:
+- **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
+- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
+- **Level 1**: What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?
+
 ### ` 1.380649 \times 10^{-23} `
 **Occurrences:** Appears in 3 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
@@ -121,24 +129,18 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
 
-### ` 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 3 concepts:
-- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
-
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 36 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 31 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 25 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 12 |
-| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 11 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 10 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 39 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 34 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 27 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 14 |
+| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 12 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 11 |
 | `M_{\rm Pl}` | Planck Mass | `GeV` | `1.22 x 10^19` | 8 |
 | `N_{\rm eff}` | Effective Neutrino Species | `dimensionless` | `3.044` | 5 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 30
+- **MATH_PROVEN Entries:** 33
 - **MATH_CONSISTENT Entries:** 20

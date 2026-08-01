@@ -30,6 +30,7 @@ graph TD
     neutrino_cp_violation["Neutrino CP Violation"]:::theoretical
     what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models["What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?"]:::theoretical
     has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification["Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?"]:::verified
+    what_concrete_experimental_signatures_could_distinguish_quantum_causal_sets_from_tensor_network_approaches["What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?"]:::theoretical
     could_the_researchers_provide_simulation_studies_or_sensitivity_analyses_quantifying_the_discovery_potential_and_limits_achievable_with_current_technologies_under_realistic_experimental_conditions["Could the researchers provide simulation studies or sensitivity analyses quantifying the discovery potential and limits achievable with current technologies under realistic experimental conditions?"]:::verified
     what_future_experimental_technologies_or_techniques_could_realistically_reduce_the_uncertainties_in_nuclear_matrix_elements_impacting_neutrinoless_double_beta_decay_analyses["What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?"]:::theoretical
     neutrino_anomalies_and_sterile_neutrino_hypothesis["Neutrino Anomalies and Sterile Neutrino Hypothesis"]:::theoretical
@@ -144,6 +145,7 @@ graph TD
     interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension["Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension"]:::theoretical
     causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity["Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity"]:::theoretical
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
+    axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness["Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness"]:::theoretical
     dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration["Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration"]:::theoretical
     asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity["Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity"]:::theoretical
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
@@ -193,6 +195,7 @@ graph TD
     neutrino_oscillations --- neutrino_cp_violation
     dark_matter --- what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models
     neutrino_oscillations --- has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification
+    quantum_gravity --- what_concrete_experimental_signatures_could_distinguish_quantum_causal_sets_from_tensor_network_approaches
     neutrinoless_double_beta_decay --- could_the_researchers_provide_simulation_studies_or_sensitivity_analyses_quantifying_the_discovery_potential_and_limits_achievable_with_current_technologies_under_realistic_experimental_conditions
     neutrinoless_double_beta_decay --- what_future_experimental_technologies_or_techniques_could_realistically_reduce_the_uncertainties_in_nuclear_matrix_elements_impacting_neutrinoless_double_beta_decay_analyses
     electroweak_symmetry_breaking --- the_higgs_boson
@@ -265,7 +268,7 @@ graph TD
     quantum_field_theory --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
     quantum_measurement_problem --> quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
-    dark_matter --- asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance
+    dark_matter --> asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
     dark_matter --> interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
@@ -290,10 +293,11 @@ graph TD
     quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
     quantum_field_theory --> emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics
     quantum_field_theory --> interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension
+    dark_matter --- axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
     quantum_gravity --> asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity
     inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     quantum_gravity --> conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution
-    general_relativity --- horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration
+    general_relativity --> horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     quantum_gravity --> entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena
@@ -371,6 +375,7 @@ graph TD
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?](level_1_fundamental_physics/what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models.md) [THEORETICAL]
 - [What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?](level_1_fundamental_physics/what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range.md) [VERIFIED]
+- [What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?](level_1_fundamental_physics/what_concrete_experimental_signatures_could_distinguish_quantum_causal_sets_from_tensor_network_approaches.md) [THEORETICAL]
 - [What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?](level_1_fundamental_physics/what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade.md) [THEORETICAL]
 - [What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?](level_1_fundamental_physics/what_experimental_advances_are_required_to_unambiguously_distinguish_neutrino_decay_effects_from_oscillation_nsi_and_decoherence_effects.md) [THEORETICAL]
 - [What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?](level_1_fundamental_physics/what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay.md) [VERIFIED]
@@ -395,6 +400,7 @@ graph TD
 - [Axion Dark Matter vs WIMPs in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_wimps_in_explaining_dark_matter.md) [THEORETICAL]
 - [Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics](level_2_advanced_frameworks/axion_monodromy_vs_natural_inflation_in_cosmic_inflationary_dynamics.md) [THEORETICAL]
 - [Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance](level_2_advanced_frameworks/axionlike_particles_vs_neutralino_wimps_in_explaining_cosmic_dark_matter_abundance.md) [THEORETICAL]
+- [Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness](level_2_advanced_frameworks/axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness.md) [THEORETICAL]
 - [Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics](level_2_advanced_frameworks/baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics.md) [THEORETICAL]
 - [Beyond the Standard Model Solutions to the Hierarchy Problem](level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md) [THEORETICAL]
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]

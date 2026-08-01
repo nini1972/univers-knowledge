@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-01T11:18:18.385065+00:00",
+  "updated_at": "2026-08-01T12:05:38.720541+00:00",
   "stats": {
-    "total_nodes": 156,
-    "level_1_count": 80,
-    "level_2_count": 75,
-    "level_3_count": 1,
-    "total_edges": 93,
+    "total_nodes": 159,
+    "level_1_count": 81,
+    "level_2_count": 76,
+    "level_3_count": 2,
+    "total_edges": 97,
     "frontier_count": 0
   },
   "nodes": [
@@ -1300,6 +1300,24 @@
       "path": "knowledge_base/level_1_fundamental_physics/what_are_the_prospects_and_timelines_for_observational_advances_eg_nextgeneration_eht_or_improved_gravitational_wave_detectors_to_resolve_current_degeneracies_between_kerr_and_alternative_black_hole_models.md"
     },
     {
+      "id": "whatconcreteexperimentalsignaturescoulddistinguishquantumcausalsetsfromtensornetworkapproaches",
+      "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Fermi-LAT",
+        "Planck"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_concrete_experimental_signatures_could_distinguish_quantum_causal_sets_from_tensor_network_approaches.md"
+    },
+    {
       "id": "whatexperimentaladvancementsornovelobservationalsignaturescouldmosteffectivelydistinguishbetweenhiggsportaldarkmatterandsterileneutrinodarkmatterinthenextdecade",
       "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
       "level": 1,
@@ -1758,6 +1776,7 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldness",
         "darkmatter"
       ],
       "tags": [
@@ -1769,6 +1788,28 @@
         "Experimental results from LHC/XENONnT for neutralinos"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/axionlike_particles_vs_neutralino_wimps_in_explaining_cosmic_dark_matter_abundance.md"
+    },
+    {
+      "id": "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldness",
+      "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Research report on ALPs and PBHs",
+        "CODATA 2018",
+        "Planck 2018 results"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness.md"
     },
     {
       "id": "baryogenesismechanismsthermalleptogenesisvsaffleckdinescalarfielddynamics",
@@ -2349,7 +2390,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
-      "dependencies": [],
+      "dependencies": [
+        "informationtheoreticcomplexityandemergenthierarchiesinthecosmicwebacomparativeanalysisofneuralnetworksandlargescalestructureevolution"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -3197,6 +3240,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md"
     },
     {
+      "id": "informationtheoreticcomplexityandemergenthierarchiesinthecosmicwebacomparativeanalysisofneuralnetworksandlargescalestructureevolution",
+      "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Research Report",
+        "Peer-Reviewed Journal",
+        "Authoritative Texts on Graph Theory and Cosmology"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md"
+    },
+    {
       "id": "structuralisomorphismbetweengalacticfilamentarynetworksandbiologicalneuralarchitecturesininformationflowoptimization",
       "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
       "level": 3,
@@ -3275,6 +3337,16 @@
     {
       "source": "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
       "target": "axiondarkmattervswimpsinexplainingdarkmatter",
+      "type": "component_theory"
+    },
+    {
+      "source": "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldness",
+      "target": "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
+      "type": "component_theory"
+    },
+    {
+      "source": "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
+      "target": "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldness",
       "type": "component_theory"
     },
     {
@@ -3390,6 +3462,11 @@
     {
       "source": "quantumgravity",
       "target": "holographicprinciplevsloopquantumgravityinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "informationtheoreticcomplexityandemergenthierarchiesinthecosmicwebacomparativeanalysisofneuralnetworksandlargescalestructureevolution",
+      "target": "informationtheoreticvsthermodynamicinterpretationsofgravity",
       "type": "component_theory"
     },
     {
@@ -3620,6 +3697,11 @@
     {
       "source": "darkmatter",
       "target": "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "darkmatter",
+      "target": "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldness",
       "type": "foundational_prerequisite"
     },
     {
