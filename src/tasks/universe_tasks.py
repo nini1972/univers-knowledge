@@ -407,13 +407,20 @@ class UniverseTasks:
         repo_root = Path(__file__).resolve().parent.parent
         template_file = repo_root / "knowledge_base" / "templates" / "concept_template.md"
         template_content = ""
+
+        target_level = 1
+        if "level_3" in str(output_path):
+            target_level = 3
+        elif "level_2" in str(output_path):
+            target_level = 2
+
         if template_file.exists():
             template_content = template_file.read_text(encoding="utf-8")
         else:
-            template_content = dedent("""
+            template_content = dedent(f"""
                 ---
-                title: "{Concept Name}"
-                level: 1
+                title: "{{Concept Name}}"
+                level: {target_level}
                 status: "[VERIFIED] or [THEORETICAL]"
                 sources:
                   - Source 1
@@ -421,7 +428,7 @@ class UniverseTasks:
                   - Source 3
                 ---
 
-                # {Concept Name}
+                # {{Concept Name}}
 
                 ## 1. Overview
                 ...
@@ -491,7 +498,8 @@ class UniverseTasks:
                 You MUST format the final output strictly following this exact template. Fill in all placeholder values (such as {{Concept Name}}, the level, the status, and sources list).
 
                 CRITICAL STRUCTURE INSTRUCTIONS:
-                1. You must include the complete YAML frontmatter block starting and ending with '---' containing: title, level, status, sources, math_status, and math_score.
+                1. You must include the complete YAML frontmatter block starting and ending with '---' containing: title, level: {target_level}, status, sources, math_status, and math_score.
+                2. Use `level: {target_level}` in the frontmatter verbatim.
                 2. {math_yaml_instruction}
                 3. You must use the EXACT headings, numbering, and titles as defined in the template below. Do NOT omit any headings, and do NOT alter their names/numbers.
                 4. {visual_insert}

@@ -57,7 +57,7 @@ except ImportError as e:
 LEVEL_DIRS = {
     "1": "level_1_fundamental_physics",
     "2": "level_2_advanced_frameworks",
-    "3": "level_3_cosmology_and_astrophysics",
+    "3": "level_3_emergence_and_intelligence",
 }
 KB_ROOT = REPO_ROOT / "knowledge_base"
 LOG_FILE = KB_ROOT / "logs" / "math_enrichment.jsonl"

@@ -1,13 +1,18 @@
 ---
+id: "informationtheoreticcomplexityandemergenthierarchiesinthecosmicwebacomparativeanalysisofneuralnetworksandlargescalestructureevolution"
 title: "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"
-level: 1
+level: 3
 status: "[THEORETICAL]"
 math_status: "MATH_TOPOLOGICAL"
 math_score: "4/4"
 sources:
-  - Research Report
-  - Peer-Reviewed Journal
-  - Authoritative Texts on Graph Theory and Cosmology
+  - "Research Report"
+  - "Peer-Reviewed Journal"
+  - "Authoritative Texts on Graph Theory and Cosmology"
+dependencies:
+  []
+tags:
+  - "3"
 ---
 
 # Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution

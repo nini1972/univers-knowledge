@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-01T12:05:38.720541+00:00",
+  "updated_at": "2026-08-01T12:55:15.009574+00:00",
   "stats": {
     "total_nodes": 159,
     "level_1_count": 81,
@@ -1309,7 +1309,8 @@
       "math_score": "0/4",
       "dependencies": [],
       "tags": [
-        "1"
+        "1",
+        "quantum_physics"
       ],
       "sources": [
         "Fermi-LAT",

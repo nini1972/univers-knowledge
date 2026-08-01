@@ -1,13 +1,18 @@
 ---
+id: "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldness"
 title: "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Research report on ALPs and PBHs
-  - CODATA 2018
-  - Planck 2018 results
+  - "Research report on ALPs and PBHs"
+  - "CODATA 2018"
+  - "Planck 2018 results"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness

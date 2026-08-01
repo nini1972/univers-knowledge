@@ -1,10 +1,18 @@
 ---
+id: "whatconcreteexperimentalsignaturescoulddistinguishquantumcausalsetsfromtensornetworkapproaches"
 title: "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?"
 level: 1
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Fermi-LAT
-  - Planck
+  - "Fermi-LAT"
+  - "Planck"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?

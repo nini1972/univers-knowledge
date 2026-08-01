@@ -7,7 +7,7 @@ def index_heading_for_level(level_folder: str, default_heading: str) -> str:
     mapping = {
         "level_1_fundamental_physics": "## Level 1: Fundamental Physics",
         "level_2_advanced_frameworks": "## Level 2: Advanced Frameworks",
-        "level_3_cosmology_and_astrophysics": "## Level 3: Cosmology and Astrophysics",
+        "level_3_emergence_and_intelligence": "## Level 3: Emergence and Intelligence",
     }
     return mapping.get(level_folder, default_heading)
 
@@ -226,7 +226,7 @@ def synchronize_index(index_path: str, repo_root: Path) -> str:
     levels = [
         ("level_1_fundamental_physics", "## Level 1: Fundamental Physics"),
         ("level_2_advanced_frameworks", "## Level 2: Advanced Frameworks"),
-        ("level_3_cosmology_and_astrophysics", "## Level 3: Cosmology and Astrophysics"),
+        ("level_3_emergence_and_intelligence", "## Level 3: Emergence and Intelligence"),
     ]
 
     all_concepts = []
