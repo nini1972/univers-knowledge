@@ -461,7 +461,23 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-right: 4px;
+    padding-right: 6px;
+}
+
+.concept-list::-webkit-scrollbar {
+    width: 6px;
+}
+.concept-list::-webkit-scrollbar-track {
+    background: hsla(225, 20%, 10%, 0.5);
+    border-radius: 4px;
+}
+.concept-list::-webkit-scrollbar-thumb {
+    background: var(--neon-blue);
+    box-shadow: 0 0 6px var(--neon-blue-glow);
+    border-radius: 4px;
+}
+.concept-list::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
 }
 
 /* Premium Card Design with HSL glass edges and glowing hover */
