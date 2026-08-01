@@ -26,6 +26,7 @@ graph TD
     which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys["Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?"]:::theoretical
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
     quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
+    what_specific_mathematical_or_conceptual_gaps_prevent_the_quantum_sequential_growth_process_from_being_fully_formulated["Quantum Sequential Growth (QSG) Process"]:::theoretical
     neutrino_cp_violation["Neutrino CP Violation"]:::theoretical
     what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models["What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?"]:::theoretical
     has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification["Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?"]:::verified
@@ -98,6 +99,7 @@ graph TD
     conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions["Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions"]:::theoretical
     superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics["Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics"]:::theoretical
     modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
+    asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance["Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance"]:::verified
     axionlike_particles_vs_neutralino_wimps_in_explaining_cosmic_dark_matter_abundance["Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance"]:::theoretical
     modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration["Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration"]:::theoretical
     causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research["Causal Set Theory vs Spin Foam Models in Quantum Gravity Research"]:::theoretical
@@ -187,6 +189,7 @@ graph TD
     big_bang_nucleosynthesis --- matterantimatter_asymmetry
     neutrino_masses_and_leptogenesis --- matterantimatter_asymmetry
     cosmic_microwave_background_radiation --- matterantimatter_asymmetry
+    quantum_gravity --- what_specific_mathematical_or_conceptual_gaps_prevent_the_quantum_sequential_growth_process_from_being_fully_formulated
     neutrino_oscillations --- neutrino_cp_violation
     dark_matter --- what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models
     neutrino_oscillations --- has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification
@@ -262,6 +265,7 @@ graph TD
     quantum_field_theory --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
     quantum_measurement_problem --> quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
+    dark_matter --- asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
     dark_matter --> interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
@@ -355,6 +359,7 @@ graph TD
 - [Quantum Gravity](level_1_fundamental_physics/quantum_gravity.md) [THEORETICAL]
 - [Quantum Measurement Problem](level_1_fundamental_physics/quantum_measurement_problem.md) [THEORETICAL]
 - [Quantum Mechanics](level_1_fundamental_physics/quantum_mechanics.md) [VERIFIED]
+- [Quantum Sequential Growth (QSG) Process](level_1_fundamental_physics/what_specific_mathematical_or_conceptual_gaps_prevent_the_quantum_sequential_growth_process_from_being_fully_formulated.md) [THEORETICAL]
 - [Quantum Vacuum and Spacetime Structure](level_1_fundamental_physics/quantum_vacuum_and_spacetime_structure.md) [THEORETICAL]
 - [Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation](level_1_fundamental_physics/quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation.md) [THEORETICAL]
 - [Quantum Vacuum Fluctuations and Zero-Point Energy](level_1_fundamental_physics/quantum_vacuum_fluctuations_and_zeropoint_energy.md) [VERIFIED]
@@ -380,6 +385,7 @@ graph TD
 
 ## Level 2: Advanced Frameworks
 
+- [Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance](level_2_advanced_frameworks/asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance.md) [VERIFIED]
 - [Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure](level_2_advanced_frameworks/asymmetric_dark_matter_vs_simp_dark_matter_in_explaining_dark_matter_abundance_and_smallscale_structure.md) [THEORETICAL]
 - [Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry](level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry.md) [THEORETICAL]
 - [Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md) [THEORETICAL]

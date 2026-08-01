@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-01T10:22:17.610894+00:00",
+  "updated_at": "2026-08-01T11:13:10.979595+00:00",
   "stats": {
-    "total_nodes": 153,
-    "level_1_count": 79,
-    "level_2_count": 74,
-    "level_3_count": 0,
+    "total_nodes": 156,
+    "level_1_count": 80,
+    "level_2_count": 75,
+    "level_3_count": 1,
     "total_edges": 0,
     "frontier_count": 0
   },
@@ -1455,6 +1455,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay.md"
     },
     {
+      "id": "whatspecificmathematicalorconceptualgapspreventthequantumsequentialgrowthprocessfrombeingfullyformulated",
+      "title": "Quantum Sequential Growth (QSG) Process",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Rideout, D., & Sorkin, R. D. (Theoretical foundations of sequential growth dynamics)",
+        "Research on quantum mechanics and causality",
+        "Various mathematical conjectures related to quantum gravity"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_specific_mathematical_or_conceptual_gaps_prevent_the_quantum_sequential_growth_process_from_being_fully_formulated.md"
+    },
+    {
       "id": "whatspecificmathematicalsubtletiesorunstatedassumptionspreventedfullmathematicalintegritycompliance",
       "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
       "level": 1,
@@ -1529,6 +1548,25 @@
         "Bayesian Analysis Studies"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification.md"
+    },
+    {
+      "id": "asymmetricdarkmattervsdarkmatterdecaytohiddensectorphotonsinexplainingdarkmatterrelicabundance",
+      "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance.md"
     },
     {
       "id": "asymmetricdarkmattervssimpdarkmatterinexplainingdarkmatterabundanceandsmallscalestructure",
@@ -3003,6 +3041,25 @@
         "Theoretical analyses addressing limitations of Cold Dark Matter models"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md"
+    },
+    {
+      "id": "structuralisomorphismbetweengalacticfilamentarynetworksandbiologicalneuralarchitecturesininformationflowoptimization",
+      "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Research Paper on Cosmic Web and Neural Networks",
+        "Journal of Theoretical Physics",
+        "Conference on Complex Networks"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md"
     }
   ],
   "edges": [],
