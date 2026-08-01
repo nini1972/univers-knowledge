@@ -479,7 +479,13 @@ def is_concept_existing(concept_name: str, level: int = 2, repo_root=None) -> bo
             pass
 
     # Check disk file
-    level_folder = "level_1_fundamental_physics" if level == 1 else "level_2_advanced_frameworks"
+    if level == 1:
+        level_folder = "level_1_fundamental_physics"
+    elif level == 3:
+        level_folder = "level_3_emergence_and_intelligence"
+    else:
+        level_folder = "level_2_advanced_frameworks"
+
     filepath = repo_root / "knowledge_base" / level_folder / filename
     if filepath.exists():
         return True

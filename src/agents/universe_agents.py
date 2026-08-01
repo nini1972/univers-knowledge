@@ -230,3 +230,40 @@ class UniverseAgents:
             tools=get_tier2_math_tools(),
             llm=_get_llm('math')
         )
+
+    def bio_digital_analyst_agent(self) -> Agent:
+        """Level 3 — Bio-Digital Analyst for emergence, biological information limits, and IIT."""
+        search_tools = _build_search_tools()
+        return Agent(
+            role='Bio-Digital Information Analyst',
+            goal='Investigate biological emergence, physicalist perspectives on consciousness, Integrated Information Theory (IIT), and information processing in biological networks.',
+            backstory=dedent("""
+                You are a pioneer in biophysics, quantum biology, and theoretical neuroscience.
+                You analyze how complex systems transition from raw information to emergent behavior.
+                You rigorously analyze Integrated Information Theory (IIT), physicalist models of consciousness,
+                and thermodynamic limits of computation in neural networks, searching for empirical gaps
+                and mathematical consistency.
+            """),
+            verbose=True,
+            allow_delegation=False,
+            tools=search_tools,
+            llm=_get_llm('researcher')
+        )
+
+    def cosmological_architect_agent(self) -> Agent:
+        """Level 3 — Cosmological Architect for macro-scale cosmic networks and thermodynamic limits."""
+        search_tools = _build_search_tools()
+        return Agent(
+            role='Cosmological Systems Architect',
+            goal='Investigate macro-scale cosmic structure, Cosmic Web topology, entropic gravity limits, and cosmological self-organization.',
+            backstory=dedent("""
+                You specialize in large-scale cosmic structure, non-equilibrium thermodynamics, and dark energy topology.
+                You explore the deep parallels between quantum information networks, neural connectivity, and the cosmic web,
+                evaluating the physicalist limits of cosmic information processing with absolute scientific rigor.
+            """),
+            verbose=True,
+            allow_delegation=False,
+            tools=search_tools,
+            llm=_get_llm('researcher')
+        )
+

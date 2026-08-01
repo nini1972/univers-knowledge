@@ -42,6 +42,34 @@ class UniverseTasks:
             agent=agent
         )
 
+    def determine_next_level3_topic_task(self, agent, current_index):
+        return Task(
+            description=dedent(f"""
+                Review the complete knowledge graph index across Level 1, Level 2, and Level 3:
+                ---
+                {current_index}
+                ---
+                Select the NEXT Level 3 research topic focusing on Emergence, Intelligence, and Cosmological Architecture.
+                Target themes:
+                - Integrated Information Theory (IIT) vs. Physicalist Emergence
+                - The 'Hard Problem' of Consciousness from Physicalist Principles
+                - Quantum Coherence and Information Limits in Biological Systems
+                - Cosmic Web Topology and Macro-Scale Self-Organization
+                - Thermodynamic Bounds of Neural and Cosmic Computation
+
+                Return ONLY valid JSON with these keys:
+                {{
+                  "focus_area": "...",
+                  "concept_name": "..."
+                }}
+                Constraints:
+                - Do not suggest a concept that is already listed in the index.
+                - concept_name must be a clear, formal academic topic title.
+            """),
+            expected_output='A JSON object containing focus_area and concept_name.',
+            agent=agent
+        )
+
     def research_concept_task(self, agent, concept, async_execution=False):
         return Task(
             description=dedent(f"""
@@ -281,6 +309,33 @@ class UniverseTasks:
                   * Most L2 debates compare well-established frameworks with empirical grounding — these should be [VERIFIED].
                 - Reject ONLY for quality failures (insufficient sources, logical inconsistencies, missing critical comparisons, or non-rigorous claims).
                 - "lack_of_experimental_confirmation" alone is NOT a valid rejection reason for Level 2.
+                - If approved: status must be "approved" and summary_for_archivist must be non-empty.
+                - If rejected: status must be "rejected" and follow_up_questions must contain at least one concrete question.
+                - Do not include markdown code fences or extra commentary.
+            """),
+            expected_output="A strict JSON object containing status, reason_code, summary_for_archivist, and follow_up_questions.",
+            agent=agent,
+            context=context
+        )
+
+    def student_level3_evaluation_task(self, agent, concept, context=None):
+        return Task(
+            description=dedent(f"""
+                Assess the Level 3 Emergence & Intelligence research and skeptic audit on: {concept}.
+
+                CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the concept and set "status" to "rejected" and "reason_code" to "insufficient_skeptic_score".
+
+                Return ONLY valid JSON with this exact schema:
+                {{
+                  "status": "approved" | "rejected",
+                  "reason_code": "short_snake_case_reason",
+                  "summary_for_archivist": "non-empty when approved",
+                  "follow_up_questions": ["question 1", "question 2"]
+                }}
+                Decision policy for Level 3 Emergence & Consciousness:
+                - Apply the 'Logical Skeptic' audit: filter out pure metaphysical speculation, requiring grounding in physicalist principles, information theory, or biophysics.
+                - Recognize that the 'Hard Problem' of consciousness and IIT remain active frontiers; require clear demarcation between [VERIFIED] physical mechanisms vs [THEORETICAL] hypotheses.
+                - Reject ONLY for lack of scientific rigor, logical fallacies, or ungrounded claims.
                 - If approved: status must be "approved" and summary_for_archivist must be non-empty.
                 - If rejected: status must be "rejected" and follow_up_questions must contain at least one concrete question.
                 - Do not include markdown code fences or extra commentary.

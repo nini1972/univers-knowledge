@@ -286,6 +286,11 @@ The electromagnetic force is one of the four fundamental forces.
         concept_name = "Nonexistent Theoretical Framework 99999"
         self.assertFalse(is_concept_existing(concept_name, level=2))
 
+    def test_is_concept_existing_level3(self):
+        from src.workflow_contracts import is_concept_existing
+        concept_name = "Nonexistent Level 3 Emergence Topic 99999"
+        self.assertFalse(is_concept_existing(concept_name, level=3))
+
 
 if __name__ == "__main__":
     unittest.main()
