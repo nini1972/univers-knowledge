@@ -291,6 +291,24 @@ The electromagnetic force is one of the four fundamental forces.
         concept_name = "Nonexistent Level 3 Emergence Topic 99999"
         self.assertFalse(is_concept_existing(concept_name, level=3))
 
+    def test_okf_indexer_smart_edges(self):
+        from pathlib import Path
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts"))
+        try:
+            from okf_indexer import scan_okf_bundle
+        except ImportError:
+            import importlib.util
+            spec = importlib.util.spec_from_file_location("okf_indexer", Path(__file__).resolve().parent / "scripts" / "okf_indexer.py")
+            okf_indexer = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(okf_indexer)
+            scan_okf_bundle = okf_indexer.scan_okf_bundle
+
+        repo_root = Path(__file__).resolve().parent
+        graph_data, errors, warnings = scan_okf_bundle(repo_root)
+        self.assertGreater(graph_data["stats"]["total_edges"], 0, "Smart Edge Resolver should find directed edges")
+        self.assertEqual(len(errors), 0, f"OKF Indexer produced schema errors: {errors}")
+
 
 if __name__ == "__main__":
     unittest.main()

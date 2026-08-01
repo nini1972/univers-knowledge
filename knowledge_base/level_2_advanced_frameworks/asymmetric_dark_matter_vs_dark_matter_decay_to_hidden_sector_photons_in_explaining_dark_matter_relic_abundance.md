@@ -1,6 +1,7 @@
 ---
+id: "asymmetricdarkmattervsdarkmatterdecaytohiddensectorphotonsinexplainingdarkmatterrelicabundance"
 title: "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance"
-level: 1
+level: 2
 status: "[VERIFIED]"
 math_status: "MATH_CONSISTENT"
 math_score: "3/4"
@@ -8,6 +9,10 @@ sources:
   - "Source 1"
   - "Source 2"
   - "Source 3"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance

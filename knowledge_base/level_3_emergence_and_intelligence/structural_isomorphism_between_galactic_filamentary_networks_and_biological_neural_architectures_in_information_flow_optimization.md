@@ -1,13 +1,18 @@
 ---
+id: "structuralisomorphismbetweengalacticfilamentarynetworksandbiologicalneuralarchitecturesininformationflowoptimization"
 title: "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"
-level: 1
+level: 3
 status: "[THEORETICAL]"
 math_status: "MATH_TOPOLOGICAL"
 math_score: "4/4"
 sources:
-  - Research Paper on Cosmic Web and Neural Networks
-  - Journal of Theoretical Physics
-  - Conference on Complex Networks
+  - "Research Paper on Cosmic Web and Neural Networks"
+  - "Journal of Theoretical Physics"
+  - "Conference on Complex Networks"
+dependencies:
+  []
+tags:
+  - "3"
 ---
 
 # Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization

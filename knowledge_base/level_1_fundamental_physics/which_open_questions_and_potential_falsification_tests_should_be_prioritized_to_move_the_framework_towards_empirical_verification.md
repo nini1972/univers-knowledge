@@ -1,13 +1,18 @@
 ---
+id: "whichopenquestionsandpotentialfalsificationtestsshouldbeprioritizedtomovetheframeworktowardsempiricalverification"
 title: "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Original Research Paper
-  - Cosmological Surveys
-  - Bayesian Analysis Studies
+  - "Original Research Paper"
+  - "Cosmological Surveys"
+  - "Bayesian Analysis Studies"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?

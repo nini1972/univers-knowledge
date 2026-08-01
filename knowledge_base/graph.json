@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-01T11:13:10.979595+00:00",
+  "updated_at": "2026-08-01T11:18:18.385065+00:00",
   "stats": {
     "total_nodes": 156,
     "level_1_count": 80,
     "level_2_count": 75,
     "level_3_count": 1,
-    "total_edges": 0,
+    "total_edges": 93,
     "frontier_count": 0
   },
   "nodes": [
@@ -1464,7 +1464,8 @@
       "math_score": "4/4",
       "dependencies": [],
       "tags": [
-        "1"
+        "1",
+        "quantum_physics"
       ],
       "sources": [
         "Rideout, D., & Sorkin, R. D. (Theoretical foundations of sequential growth dynamics)",
@@ -1557,7 +1558,9 @@
       "status": "VERIFIED",
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -1576,7 +1579,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONJECTURED",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -1595,7 +1600,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONJECTURED",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter",
+        "matterantimatterasymmetry"
+      ],
       "tags": [
         "2"
       ],
@@ -1614,7 +1622,11 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+        "emergentgravityvsquantumloopgravitydebate",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -1635,7 +1647,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONJECTURED",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+        "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofquantumgravity"
+      ],
       "tags": [
         "2"
       ],
@@ -1654,7 +1669,11 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+        "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -1675,7 +1694,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_TOPOLOGICAL",
       "math_score": "3/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -1694,7 +1715,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter",
+        "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance"
+      ],
       "tags": [
         "2"
       ],
@@ -1733,7 +1757,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -1791,7 +1817,9 @@
       "status": "VERIFIED",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem"
+      ],
       "tags": [
         "2"
       ],
@@ -1829,7 +1857,11 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravitybeyondstringtheoryloopquantumgravityvscausaldynamicaltriangulation",
+        "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -1850,7 +1882,11 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+        "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -1871,7 +1907,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
-      "dependencies": [],
+      "dependencies": [
+        "conformalcycliccosmologyvssteadystatemodelinexplainingcosmicevolution"
+      ],
       "tags": [
         "2",
         "cosmology"
@@ -1891,7 +1929,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "conformalcycliccosmologyvseternalinflationinexplainingprebigbanginitialconditions"
+      ],
       "tags": [
         "2"
       ],
@@ -1910,7 +1950,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "cosmologicalconstantanddarkenergy"
+      ],
       "tags": [
         "2"
       ],
@@ -1929,7 +1971,9 @@
       "status": "VERIFIED",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "massivegravityversusfrgravityinmodifiedgravitydebates"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -1950,7 +1994,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -1969,7 +2015,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -1989,7 +2037,9 @@
       "status": "VERIFIED",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "inflationarycosmology"
+      ],
       "tags": [
         "2",
         "cosmology"
@@ -2009,7 +2059,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2030,7 +2083,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
-      "dependencies": [],
+      "dependencies": [
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+        "darkmatter"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -2050,7 +2106,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -2109,7 +2167,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_TOPOLOGICAL",
       "math_score": "3/4",
-      "dependencies": [],
+      "dependencies": [
+        "howmightfutureexperimentsorobservationsbedesignedtoeffectivelydistinguishbetweenfreezeinandfreezeoutdarkmatterproductionmechanisms",
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -2128,7 +2189,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -2170,7 +2233,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -2189,7 +2254,11 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "holographicprinciplevsloopquantumgravityinquantumgravityresearch",
+        "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2210,7 +2279,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2234,7 +2306,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2257,7 +2331,8 @@
       "math_score": "3/4",
       "dependencies": [],
       "tags": [
-        "2"
+        "2",
+        "gravity"
       ],
       "sources": [
         "GW170817 observation",
@@ -2313,7 +2388,9 @@
       "status": "VERIFIED",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -2352,7 +2429,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravity",
+        "causalsettheoryvsspinfoammodelsinquantumgravityresearch"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2373,7 +2453,10 @@
       "status": "THEORETICAL",
       "math_status": "[MATH_TOPOLOGICAL]",
       "math_score": "3/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravity",
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2394,7 +2477,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "debateonmodifiedgravitytheoriestevesvsfrgravity"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -2414,7 +2499,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "electroweaksymmetrybreaking"
+      ],
       "tags": [
         "2"
       ],
@@ -2433,7 +2520,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "debateonmodifiedgravitytheoriestevesvsfrgravity",
+        "darkmatter"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -2454,7 +2544,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -2474,7 +2566,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2495,7 +2590,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -2554,7 +2651,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumdecoherence",
+        "quantummeasurementproblem"
+      ],
       "tags": [
         "2",
         "quantum_physics"
@@ -2576,7 +2676,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravity",
+        "quantumgravitybeyondstringtheoryloopquantumgravityvscausaldynamicaltriangulation"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2597,7 +2700,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravity",
+        "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2616,7 +2722,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravity"
+      ],
       "tags": [
         "[quantum-gravity, string-theory, loop-quantum-gravity, theoretical-physics, verification, scientific-consensus]"
       ],
@@ -2633,7 +2741,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "emergentgravityvsquantumloopgravitydebate"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2693,7 +2803,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem",
+        "randallsundrumvsaddmodelsinhierarchyproblemresolutioncomparativeanalysisofphenomenologicalsignatures"
+      ],
       "tags": [
         "2"
       ],
@@ -2711,7 +2824,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem",
+        "randallsundrumvsaddmodelsinhierarchyproblemresolution"
+      ],
       "tags": [
         "2"
       ],
@@ -2730,7 +2846,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -2749,7 +2867,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "scalartensorvsnonlocalgravitymodelsinexplaininglatetimecosmicacceleration",
+        "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution"
+      ],
       "tags": [
         "2"
       ],
@@ -2768,7 +2889,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONJECTURED",
       "math_score": "2/4",
-      "dependencies": [],
+      "dependencies": [
+        "scalartensorvsnoncommutativegeometryinaddressingsingularityresolutionattheplanckscale"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -2788,7 +2911,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravityapproachesloopquantumgravityvsstringtheory",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2809,7 +2935,11 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravityapproachesloopquantumgravityvsstringtheory",
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2830,7 +2960,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter",
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -2850,7 +2983,9 @@
       "status": "VERIFIED",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -2869,7 +3004,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "quantumgravity"
+      ],
       "tags": [
         "2",
         "gravity",
@@ -2890,7 +3027,9 @@
       "status": "VERIFIED",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "debateonmodifiedgravitytheoriestevesvsfrgravity"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -2910,7 +3049,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -2931,7 +3072,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking"
+      ],
       "tags": [
         "2"
       ],
@@ -2950,7 +3093,10 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking",
+        "electroweaksymmetrybreaking"
+      ],
       "tags": [
         "2",
         "quantum_physics"
@@ -2970,7 +3116,11 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking",
+        "supersymmetricgutsvscompositehiggsmodelsinbeyondstandardmodelphysics",
+        "electroweaksymmetrybreaking"
+      ],
       "tags": [
         "2",
         "quantum_physics"
@@ -2990,7 +3140,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking"
+      ],
       "tags": [
         "2"
       ],
@@ -3031,7 +3183,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "darkmatter"
+      ],
       "tags": [
         "2"
       ],
@@ -3062,6 +3216,472 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md"
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "source": "darkmatter",
+      "target": "asymmetricdarkmattervsdarkmatterdecaytohiddensectorphotonsinexplainingdarkmatterrelicabundance",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "asymmetricdarkmattervssimpdarkmatterinexplainingdarkmatterabundanceandsmallscalestructure",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "asymmetricdarkmattervswimpbaryogenesisinexplainingmatterantimatterasymmetry",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+      "target": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "emergentgravityvsquantumloopgravitydebate",
+      "target": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofquantumgravity",
+      "target": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofquantumgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+      "target": "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofquantumgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "axiondarkmattervssterileneutrinodarkmatterinexplainingdarkmatter",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "axiondarkmattervswimpsinexplainingdarkmatter",
+      "type": "component_theory"
+    },
+    {
+      "source": "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
+      "target": "axiondarkmattervswimpsinexplainingdarkmatter",
+      "type": "component_theory"
+    },
+    {
+      "source": "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem",
+      "target": "beyondthestandardmodelsupersymmetryvsextradimensions",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravitybeyondstringtheoryloopquantumgravityvscausaldynamicaltriangulation",
+      "target": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "target": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+      "target": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
+      "target": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "conformalcycliccosmologyvssteadystatemodelinexplainingcosmicevolution",
+      "target": "conformalcycliccosmologyvseternalinflationinexplainingprebigbanginitialconditions",
+      "type": "component_theory"
+    },
+    {
+      "source": "conformalcycliccosmologyvseternalinflationinexplainingprebigbanginitialconditions",
+      "target": "conformalcycliccosmologyvssteadystatemodelinexplainingcosmicevolution",
+      "type": "component_theory"
+    },
+    {
+      "source": "cosmologicalconstantanddarkenergy",
+      "target": "cosmologicalconstantversusquintessenceinexplainingdarkenergy",
+      "type": "component_theory"
+    },
+    {
+      "source": "massivegravityversusfrgravityinmodifiedgravitydebates",
+      "target": "debateonmodifiedgravitytheoriestevesvsfrgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting",
+      "target": "dynamicaldarkenergyvsmodifiedgravityinexplainingtheredshiftdependenceofcosmicacceleration",
+      "type": "component_theory"
+    },
+    {
+      "source": "inflationarycosmology",
+      "target": "ekpyroticuniversemodelversusinflationarycosmologydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "emergentgravityvsquantumloopgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "emergentgravityvsquantumloopgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "emergentgravityvsselfinteractingdarkmatterinexplaininggalaxyclusterdynamics",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "emergentgravityvsselfinteractingdarkmatterinexplaininggalaxyclusterdynamics",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "entropicgravityvsemergentgravityinexplaininggravitationalphenomena",
+      "type": "component_theory"
+    },
+    {
+      "source": "howmightfutureexperimentsorobservationsbedesignedtoeffectivelydistinguishbetweenfreezeinandfreezeoutdarkmatterproductionmechanisms",
+      "target": "freezeinversusfreezeoutmechanismsindarkmatterproductiondebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "fuzzydarkmattervswimpcolddarkmatterinresolvingsmallscalestructurechallenges",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "higgsportaldarkmattervssterileneutrinodarkmatterdebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "holographicprinciplevsloopquantumgravityinquantumgravityresearch",
+      "target": "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "target": "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+      "target": "holographicprinciplevsloopquantumgravityinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "holographicprinciplevsloopquantumgravityinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "interactingdarkmattervsselfinteractingdarkmatterinresolvingsmallscalestructurechallenges",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "loopquantumgravityversuscausalsettheoryinquantumgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "target": "loopquantumgravityversuscausalsettheoryinquantumgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "loopquantumgravityvsasymptoticsafetyinquantumgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "loopquantumgravityvsasymptoticsafetyinquantumgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "debateonmodifiedgravitytheoriestevesvsfrgravity",
+      "target": "massivegravityversusfrgravityinmodifiedgravitydebates",
+      "type": "component_theory"
+    },
+    {
+      "source": "debateonmodifiedgravitytheoriestevesvsfrgravity",
+      "target": "modifiedgravitytheoriesvsdarkmatterparticlemodelsdebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "modifiedgravitytheoriesvsdarkmatterparticlemodelsdebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "modifiedgravityvsdarkmatterparadigmdebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting",
+      "target": "modifiedgravityvsquantumgravityinducedgravityinexplainingcosmicacceleration",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "modifiedgravityvsquantumgravityinducedgravityinexplainingcosmicacceleration",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "modifiednewtoniandynamicsvsemergentgravityinexplaininggalacticrotationcurves",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumdecoherence",
+      "target": "quantumdecoherenceversusobjectivecollapseinquantummeasurementproblem",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "quantumgravityapproachesloopquantumgravityvsstringtheory",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravitybeyondstringtheoryloopquantumgravityvscausaldynamicaltriangulation",
+      "target": "quantumgravityapproachesloopquantumgravityvsstringtheory",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "quantumgravitybeyondstringtheoryloopquantumgravityvscausaldynamicaltriangulation",
+      "type": "component_theory"
+    },
+    {
+      "source": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
+      "target": "quantumgravitybeyondstringtheoryloopquantumgravityvscausaldynamicaltriangulation",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "quantumgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "emergentgravityvsquantumloopgravitydebate",
+      "target": "quantumloopgravityvsstringfieldtheorydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem",
+      "target": "randallsundrumvsaddmodelsinhierarchyproblemresolution",
+      "type": "component_theory"
+    },
+    {
+      "source": "randallsundrumvsaddmodelsinhierarchyproblemresolutioncomparativeanalysisofphenomenologicalsignatures",
+      "target": "randallsundrumvsaddmodelsinhierarchyproblemresolution",
+      "type": "component_theory"
+    },
+    {
+      "source": "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem",
+      "target": "randallsundrumvsaddmodelsinhierarchyproblemresolutioncomparativeanalysisofphenomenologicalsignatures",
+      "type": "component_theory"
+    },
+    {
+      "source": "randallsundrumvsaddmodelsinhierarchyproblemresolution",
+      "target": "randallsundrumvsaddmodelsinhierarchyproblemresolutioncomparativeanalysisofphenomenologicalsignatures",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "scalarfielddarkmattervsselfinteractingdarkmatterinresolvingsmallscalestructurechallenges",
+      "type": "component_theory"
+    },
+    {
+      "source": "scalartensorvsnonlocalgravitymodelsinexplaininglatetimecosmicacceleration",
+      "target": "scalartensorvsnoncommutativegeometryinaddressingsingularityresolutionattheplanckscale",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+      "target": "scalartensorvsnoncommutativegeometryinaddressingsingularityresolutionattheplanckscale",
+      "type": "component_theory"
+    },
+    {
+      "source": "scalartensorvsnoncommutativegeometryinaddressingsingularityresolutionattheplanckscale",
+      "target": "scalartensorvsnonlocalgravitymodelsinexplaininglatetimecosmicacceleration",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravityapproachesloopquantumgravityvsstringtheory",
+      "target": "stringtheoryversusloopquantumgravityinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "stringtheoryversusloopquantumgravityinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravityapproachesloopquantumgravityvsstringtheory",
+      "target": "stringtheoryvsasymptoticsafetyinquantumgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "stringtheoryvsasymptoticsafetyinquantumgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "superfluiddarkmattervsemergentgravityinexplaininggalacticdynamics",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "superfluiddarkmattervsemergentgravityinexplaininggalacticdynamics",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "superfluiddarkmattervssterileneutrinodarkmatterdebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "debateonmodifiedgravitytheoriestevesvsfrgravity",
+      "target": "supersymmetricdarkenergymodelsvsmodifiedgravitytheoriesinexplainingcosmicacceleration",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "supersymmetricdarkmattermodelsvsprimordialblackholedarkmatterhypothesisdebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking",
+      "target": "supersymmetricgutsvscompositehiggsmodelsinbeyondstandardmodelphysics",
+      "type": "component_theory"
+    },
+    {
+      "source": "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking",
+      "target": "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking",
+      "type": "component_theory"
+    },
+    {
+      "source": "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking",
+      "target": "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking",
+      "type": "component_theory"
+    },
+    {
+      "source": "supersymmetricgutsvscompositehiggsmodelsinbeyondstandardmodelphysics",
+      "target": "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking",
+      "type": "component_theory"
+    },
+    {
+      "source": "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking",
+      "target": "supersymmetryvsextradimensionsinbeyondstandardmodelphysics",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "warmdarkmattervsselfinteractingdarkmatterinexplainingsmallscalestructureformation",
+      "type": "component_theory"
+    },
+    {
+      "source": "matterantimatterasymmetry",
+      "target": "asymmetricdarkmattervswimpbaryogenesisinexplainingmatterantimatterasymmetry",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofquantumgravity",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "darkmatter",
+      "target": "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "darkmatter",
+      "target": "dfszvsksvzaxionmodelsinexplainingdarkmatterandstrongcpproblem",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "darkmatter",
+      "target": "freezeinversusfreezeoutmechanismsindarkmatterproductiondebate",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "horavalifshitzgravityvsasymptoticallysafegravityinquantumgravityresearch",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "electroweaksymmetrybreaking",
+      "target": "mechanismsofelectroweaksymmetrybreakingbeyondthestandardmodel",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantummeasurementproblem",
+      "target": "quantumdecoherenceversusobjectivecollapseinquantummeasurementproblem",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "stringtheoryvsasymptoticsafetyinquantumgravitydebate",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "superstringtheoryvstwistortheoryinunifyingquantumgravityandparticlephysics",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "electroweaksymmetrybreaking",
+      "target": "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "electroweaksymmetrybreaking",
+      "target": "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking",
+      "type": "foundational_prerequisite"
+    }
+  ],
   "frontier": []
 }

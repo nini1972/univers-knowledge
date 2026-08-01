@@ -1,13 +1,19 @@
 ---
+id: "horndeskigravityvsgalileongravityinaddressingcosmicacceleration"
 title: "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONSISTENT"
 math_score: "3/4"
 sources:
-  - GW170817 observation
-  - Horndeski gravity literature
-  - Galileon gravity framework studies
+  - "GW170817 observation"
+  - "Horndeski gravity literature"
+  - "Galileon gravity framework studies"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration

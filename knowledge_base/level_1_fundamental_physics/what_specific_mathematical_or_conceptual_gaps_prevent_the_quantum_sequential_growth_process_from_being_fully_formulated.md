@@ -1,13 +1,19 @@
 ---
+id: "whatspecificmathematicalorconceptualgapspreventthequantumsequentialgrowthprocessfrombeingfullyformulated"
 title: "Quantum Sequential Growth (QSG) Process"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "4/4"
 sources:
-  - Rideout, D., & Sorkin, R. D. (Theoretical foundations of sequential growth dynamics)
-  - Research on quantum mechanics and causality
-  - Various mathematical conjectures related to quantum gravity
+  - "Rideout, D., & Sorkin, R. D. (Theoretical foundations of sequential growth dynamics)"
+  - "Research on quantum mechanics and causality"
+  - "Various mathematical conjectures related to quantum gravity"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Sequential Growth (QSG) Process
