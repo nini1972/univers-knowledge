@@ -3032,15 +3032,29 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!bridgesGrid || !allEquationData || !allEquationData.bridges) return;
 
         let filtered = allEquationData.bridges.filter(b => {
-            // Constant filter
+            // Constant filter (when a specific constant card is selected)
             if (selectedEqConstant) {
-                if (!b.equation.includes(selectedEqConstant)) return false;
+                const constObj = allEquationData.constant_index.find(ci => ci.symbol === selectedEqConstant);
+                const refTitles = constObj ? (constObj.referenced_in || []) : [];
+
+                const symbolMatch = b.equation.includes(selectedEqConstant) ||
+                                    (selectedEqConstant.includes('Pl') && (b.equation.includes('Pl') || b.equation.includes('hbar') || b.equation.includes('\\hbar')));
+                const conceptRefMatch = b.concepts.some(c => refTitles.includes(c.title));
+
+                if (!symbolMatch && !conceptRefMatch) return false;
             }
 
             // Category filter
             if (currentEqCategory === 'constants') {
-                const hasKnownConst = ['\\Lambda', 'G', '\\hbar', 'c', 'a_0', 'M_{Pl}', 'N_{eff}', '\\Omega_c'].some(sym => b.equation.includes(sym));
-                if (!hasKnownConst) return false;
+                const allRefTitles = new Set();
+                allEquationData.constant_index.forEach(ci => {
+                    (ci.referenced_in || []).forEach(t => allRefTitles.add(t));
+                });
+
+                const hasKnownConst = ['\\Lambda', 'G', '\\hbar', 'c', 'a_0', 'M_{\\rm Pl}', 'M_{Pl}', 'M_{\\text{Pl}}', 'N_{\\rm eff}', 'N_{eff}', '\\Omega_c'].some(sym => b.equation.includes(sym));
+                const conceptRefMatch = b.concepts.some(c => allRefTitles.has(c.title));
+
+                if (!hasKnownConst && !conceptRefMatch) return false;
             } else if (currentEqCategory === 'l1') {
                 if (!b.concepts.some(c => c.level === 1)) return false;
             } else if (currentEqCategory === 'l2') {
@@ -3053,7 +3067,25 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentEqSearch) {
                 const eqMatch = b.equation.toLowerCase().includes(currentEqSearch);
                 const conceptMatch = b.concepts.some(c => c.title.toLowerCase().includes(currentEqSearch));
-                if (!eqMatch && !conceptMatch) return false;
+
+                let constMatch = false;
+                if (allEquationData.constant_index) {
+                    const matchingConsts = allEquationData.constant_index.filter(ci =>
+                        ci.name.toLowerCase().includes(currentEqSearch) ||
+                        ci.symbol.toLowerCase().includes(currentEqSearch)
+                    );
+                    if (matchingConsts.length > 0) {
+                        const matchingRefTitles = new Set();
+                        matchingConsts.forEach(ci => (ci.referenced_in || []).forEach(t => matchingRefTitles.add(t)));
+                        const constSymbols = matchingConsts.map(ci => ci.symbol);
+
+                        const eqHasSym = constSymbols.some(sym => b.equation.includes(sym));
+                        const concHasTitle = b.concepts.some(c => matchingRefTitles.has(c.title));
+                        if (eqHasSym || concHasTitle) constMatch = true;
+                    }
+                }
+
+                if (!eqMatch && !conceptMatch && !constMatch) return false;
             }
 
             return true;
