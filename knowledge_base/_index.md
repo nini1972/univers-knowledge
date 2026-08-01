@@ -85,6 +85,7 @@ graph TD
     what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade["What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?"]:::theoretical
     what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes["What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?"]:::theoretical
     neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics["Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics"]:::verified
+    which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification["Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?"]:::theoretical
     quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
     massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
@@ -147,6 +148,7 @@ graph TD
     modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
     conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution["Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution"]:::theoretical
     higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate["Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate"]:::theoretical
+    horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration["Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration"]:::theoretical
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena["Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"]:::theoretical
     freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate["Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate"]:::theoretical
@@ -255,42 +257,43 @@ graph TD
     quantum_electrodynamics_qed --- quantum_vacuum_and_spacetime_structure
     primordial_gravitational_waves --- inflationary_cosmology
     general_relativity --> massive_gravity_versus_fr_gravity_in_modified_gravity_debates
-    quantum_chromodynamics_qcd --- dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem
+    quantum_chromodynamics_qcd --> dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem
     electroweak_symmetry_breaking --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
     quantum_field_theory --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
-    quantum_measurement_problem --- quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
+    quantum_measurement_problem --> quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
-    dark_matter --- interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
+    dark_matter --> interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
-    quantum_gravity --- loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
-    quantum_gravity --- asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution
+    quantum_gravity --> loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
+    quantum_gravity --> asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution
     quantum_gravity --> holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research
-    quantum_gravity --- informationtheoretic_vs_thermodynamic_interpretations_of_gravity
-    quantum_gravity --- horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research
-    general_relativity --- scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration
+    quantum_gravity --> informationtheoretic_vs_thermodynamic_interpretations_of_gravity
+    quantum_gravity --> horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research
+    general_relativity --> scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration
     cosmological_constant_and_dark_energy --> debate_on_modified_gravity_theories_teves_vs_fr_gravity
     quantum_gravity --> string_theory_vs_asymptotic_safety_in_quantum_gravity_debate
-    dark_matter --- fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations
+    dark_matter --> fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations
     quantum_gravity --> quantum_loop_gravity_vs_string_field_theory_debate
     quantum_gravity --> quantum_gravity_debate
     general_relativity --> quantum_gravity_debate
     quantum_mechanics --> quantum_gravity_debate
-    loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity --> quantum_gravity_debate
+    loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity --- quantum_gravity_debate
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research --- quantum_gravity_debate
-    standard_model_of_particle_physics --- randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem
-    quantum_field_theory --- baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics
+    standard_model_of_particle_physics --> randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem
+    quantum_field_theory --> baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
     quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
     quantum_field_theory --> emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics
-    quantum_field_theory --- interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension
-    quantum_gravity --- asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity
+    quantum_field_theory --> interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension
+    quantum_gravity --> asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity
     inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
-    quantum_gravity --- conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution
+    quantum_gravity --> conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution
+    general_relativity --- horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     quantum_gravity --> entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena
-    dark_matter --- fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges
+    dark_matter --> fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges
 ```
 
 ## Level 1: Fundamental Physics
@@ -373,6 +376,7 @@ graph TD
 - [What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?](level_1_fundamental_physics/what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance.md) [VERIFIED]
 - [What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?](level_1_fundamental_physics/what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes.md) [THEORETICAL]
 - [Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?](level_1_fundamental_physics/which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys.md) [THEORETICAL]
+- [Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?](level_1_fundamental_physics/which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification.md) [THEORETICAL]
 
 ## Level 2: Advanced Frameworks
 
@@ -409,6 +413,7 @@ graph TD
 - [Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate](level_2_advanced_frameworks/higgs_portal_dark_matter_vs_sterile_neutrino_dark_matter_debate.md) [THEORETICAL]
 - [Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](level_2_advanced_frameworks/holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
+- [Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration](level_2_advanced_frameworks/horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Information-Theoretic vs. Thermodynamic Interpretations of Gravity](level_2_advanced_frameworks/informationtheoretic_vs_thermodynamic_interpretations_of_gravity.md) [THEORETICAL]
 - [Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension](level_2_advanced_frameworks/interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension.md) [THEORETICAL]
