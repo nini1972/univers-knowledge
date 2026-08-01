@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let allEvaluationRuns = [];
     let allTelemetryEvents = [];
     let allEquationData = null;
+    let allOKFGraph = null;
 
     // Core Active Application State (Filtered chronologically by Scrubber)
     let concepts = [];
@@ -189,18 +190,20 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // Parallel Fetch execution with cache-busting query parameter to force dynamic reload
             const cacheBust = `?t=${Date.now()}`;
-            const [dbRes, evalRes, telRes, sandboxRes, eqRes] = await Promise.all([
+            const [dbRes, evalRes, telRes, sandboxRes, eqRes, graphRes] = await Promise.all([
                 fetch(`../knowledge_base/database.json${cacheBust}`),
                 fetch(`../knowledge_base/logs/evaluation_runs.jsonl${cacheBust}`),
                 fetch(`../knowledge_base/logs/telemetry.jsonl${cacheBust}`),
                 fetch(`../knowledge_base/logs/sandbox_debates.jsonl${cacheBust}`).catch(() => null),
-                fetch(`../knowledge_base/equation_index.json${cacheBust}`).catch(() => null)
+                fetch(`../knowledge_base/equation_index.json${cacheBust}`).catch(() => null),
+                fetch(`../knowledge_base/graph.json${cacheBust}`).catch(() => null)
             ]);
 
             if (!dbRes.ok) throw new Error(`Database error! Status: ${dbRes.status}`);
 
             allConcepts = await dbRes.json();
             allEquationData = eqRes && eqRes.ok ? await eqRes.json() : null;
+            allOKFGraph = graphRes && graphRes.ok ? await graphRes.json() : null;
 
             // Dynamic Relationship Inference
             const cleanText = (txt) => {
@@ -1414,6 +1417,39 @@ document.addEventListener('DOMContentLoaded', () => {
     function syncGraphLinks(conceptsList) {
         const activeKeys = new Set();
 
+        // 1. OKF Smart Directed Edges (from graph.json)
+        if (allOKFGraph && allOKFGraph.edges && allOKFGraph.edges.length > 0) {
+            allOKFGraph.edges.forEach(edge => {
+                const hasSource = graphState.nodesById.has(edge.from);
+                const hasTarget = graphState.nodesById.has(edge.to);
+
+                if (hasSource && hasTarget) {
+                    const key = `${edge.from}->${edge.to}`;
+                    activeKeys.add(key);
+
+                    if (!graphState.linksByKey.has(key)) {
+                        const sourceNode = graphState.nodesById.get(edge.from);
+                        const targetNode = graphState.nodesById.get(edge.to);
+
+                        const newLink = {
+                            key,
+                            source: sourceNode,
+                            target: targetNode,
+                            isDirected: true,
+                            pulseOffset: Math.random() * Math.PI,
+                            visible: true
+                        };
+                        graphState.linksByKey.set(key, newLink);
+                    } else {
+                        const existing = graphState.linksByKey.get(key);
+                        existing.visible = true;
+                        existing.isDirected = true;
+                    }
+                }
+            });
+        }
+
+        // 2. Inferred Content Relations
         conceptsList.forEach(c => {
             if (c.related && c.related.length > 0) {
                 c.related.forEach(relId => {
@@ -1432,6 +1468,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 key,
                                 source: sourceNode,
                                 target: targetNode,
+                                isDirected: false,
                                 pulseOffset: Math.random() * Math.PI,
                                 visible: true
                             };
@@ -1939,16 +1976,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const isBothVerified = s.status === 'VERIFIED' && t.status === 'VERIFIED';
             if (isHoveredLink) {
-                ctx.strokeStyle = isBothVerified ? 'hsl(180, 100%, 45%)' : 'hsl(38, 95%, 52%)';
+                ctx.strokeStyle = isBothVerified ? 'hsl(180, 100%, 45%)' : (s.level === 3 || t.level === 3 ? '#e0aaff' : 'hsl(38, 95%, 52%)');
                 ctx.lineWidth = 2.5;
-                ctx.shadowColor = isBothVerified ? 'rgba(0, 242, 254, 0.4)' : 'rgba(255, 179, 0, 0.4)';
+                ctx.shadowColor = isBothVerified ? 'rgba(0, 242, 254, 0.4)' : (s.level === 3 || t.level === 3 ? 'rgba(224, 170, 255, 0.5)' : 'rgba(255, 179, 0, 0.4)');
                 ctx.shadowBlur = 8;
             } else {
-                ctx.strokeStyle = isBothVerified ? 'hsla(180, 100%, 45%, 0.16)' : 'hsla(38, 95%, 52%, 0.14)';
+                ctx.strokeStyle = isBothVerified ? 'hsla(180, 100%, 45%, 0.16)' : (s.level === 3 || t.level === 3 ? 'hsla(280, 100%, 75%, 0.25)' : 'hsla(38, 95%, 52%, 0.14)');
                 ctx.lineWidth = 1.2;
                 ctx.shadowBlur = 0;
             }
             ctx.stroke();
+
+            // Draw directed arrowhead for OKF directed links
+            if (link.isDirected || isHoveredLink) {
+                const dx = t.x - midX;
+                const dy = t.y - midY;
+                const dist = Math.hypot(dx, dy);
+                if (dist > 0) {
+                    const targetRadius = (t.r || 10) + 4;
+                    const arrowX = t.x - (dx / dist) * targetRadius;
+                    const arrowY = t.y - (dy / dist) * targetRadius;
+                    const angle = Math.atan2(dy, dx);
+                    const headLen = 7;
+
+                    ctx.save();
+                    ctx.fillStyle = isHoveredLink ? (isBothVerified ? 'hsl(180, 100%, 45%)' : '#e0aaff') : 'hsla(180, 100%, 50%, 0.65)';
+                    ctx.beginPath();
+                    ctx.moveTo(arrowX, arrowY);
+                    ctx.lineTo(arrowX - headLen * Math.cos(angle - Math.PI / 6), arrowY - headLen * Math.sin(angle - Math.PI / 6));
+                    ctx.lineTo(arrowX - headLen * Math.cos(angle + Math.PI / 6), arrowY - headLen * Math.sin(angle + Math.PI / 6));
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.restore();
+                }
+            }
 
             link.midX = midX;
             link.midY = midY;
@@ -1983,7 +2044,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.arc(x, y, 3, 0, Math.PI * 2);
 
             const isBothVerified = s.status === 'VERIFIED' && t.status === 'VERIFIED';
-            ctx.fillStyle = isBothVerified ? 'hsl(180, 100%, 50%)' : 'hsl(38, 95%, 52%)';
+            ctx.fillStyle = (s.level === 3 || t.level === 3) ? '#e0aaff' : (isBothVerified ? 'hsl(180, 100%, 50%)' : 'hsl(38, 95%, 52%)');
             ctx.shadowColor = ctx.fillStyle;
             ctx.shadowBlur = 10;
             ctx.fill();
@@ -2001,6 +2062,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const isLatestRun = evaluationRuns.length > 0 && areConceptsEquivalent(evaluationRuns[0].concept, node.title);
             const isVerified = node.status === 'VERIFIED';
+            const isLevel3 = node.level === 3;
             const isHovered = hoveredNode && hoveredNode.id === node.id;
 
             // Pulse calculations
@@ -2008,19 +2070,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const pulseRadius = node.r + Math.sin(node.pulse) * 2.5;
 
             // Coronary halo ring glows
-            if (isLatestRun || isHovered) {
+            if (isLatestRun || isHovered || isLevel3) {
                 ctx.save();
                 ctx.beginPath();
                 ctx.arc(node.x, node.y, pulseRadius + 6, 0, Math.PI * 2);
-                ctx.fillStyle = isLatestRun ? 'rgba(0, 242, 254, 0.08)' : (isVerified ? 'rgba(0, 230, 118, 0.06)' : 'rgba(255, 179, 0, 0.06)');
-                ctx.strokeStyle = isLatestRun ? 'hsla(180, 100%, 50%, 0.4)' : (isVerified ? 'hsla(152, 90%, 45%, 0.3)' : 'hsla(38, 95%, 52%, 0.3)');
-                ctx.lineWidth = 1;
+                ctx.fillStyle = isLatestRun ? 'rgba(0, 242, 254, 0.08)' : (isLevel3 ? 'rgba(224, 170, 255, 0.12)' : (isVerified ? 'rgba(0, 230, 118, 0.06)' : 'rgba(255, 179, 0, 0.06)'));
+                ctx.strokeStyle = isLatestRun ? 'hsla(180, 100%, 50%, 0.4)' : (isLevel3 ? 'hsla(280, 100%, 75%, 0.6)' : (isVerified ? 'hsla(152, 90%, 45%, 0.3)' : 'hsla(38, 95%, 52%, 0.3)'));
+                ctx.lineWidth = 1.2;
                 ctx.fill();
                 ctx.stroke();
                 ctx.restore();
             }
 
-            // Central Node Circle — themed colour in Galaxy mode, status colour in Topology mode
+            // Central Node Circle — themed colour in Galaxy mode, status/level colour in Topology mode
             ctx.save();
             ctx.beginPath();
             ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
@@ -2033,11 +2095,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.shadowColor = armColour.glow;
                 ctx.shadowBlur  = isHovered ? 18 : (isLatestRun ? 14 : 8);
             } else {
-                ctx.fillStyle   = isVerified ? 'hsl(152, 90%, 8%)' : 'hsl(38, 95%, 6%)';
-                ctx.strokeStyle = isVerified ? 'hsl(152, 90%, 45%)' : 'hsl(38, 95%, 52%)';
+                ctx.fillStyle   = isLevel3 ? 'hsl(280, 80%, 10%)' : (isVerified ? 'hsl(152, 90%, 8%)' : 'hsl(38, 95%, 6%)');
+                ctx.strokeStyle = isLevel3 ? '#e0aaff' : (isVerified ? 'hsl(152, 90%, 45%)' : 'hsl(38, 95%, 52%)');
                 ctx.lineWidth   = isHovered ? 2.5 : 1.5;
-                ctx.shadowColor = isVerified ? 'rgba(0, 230, 118, 0.3)' : 'rgba(255, 179, 0, 0.3)';
-                ctx.shadowBlur  = isHovered ? 12 : 6;
+                ctx.shadowColor = isLevel3 ? 'rgba(224, 170, 255, 0.6)' : (isVerified ? 'rgba(0, 230, 118, 0.3)' : 'rgba(255, 179, 0, 0.3)');
+                ctx.shadowBlur  = isHovered ? 14 : (isLevel3 ? 10 : 6);
             }
 
             ctx.fill();

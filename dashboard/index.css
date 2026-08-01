@@ -417,6 +417,11 @@ html, body {
     box-shadow: 0 0 8px var(--status-theoretical);
 }
 
+.dot-emergence {
+    background-color: #e0aaff;
+    box-shadow: 0 0 8px #e0aaff;
+}
+
 .filter-btn.active .dot-verified {
     animation: pulseVerified 1.5s infinite;
 }
@@ -1189,6 +1194,11 @@ html, body {
 .legend-dot.dot-theoretical {
     background-color: var(--status-theoretical);
     box-shadow: 0 0 8px var(--status-theoretical);
+}
+
+.legend-dot.dot-emergence {
+    background-color: #e0aaff;
+    box-shadow: 0 0 8px #e0aaff;
 }
 
 .network-toggle-controls {
