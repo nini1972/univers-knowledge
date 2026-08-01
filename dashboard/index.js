@@ -2559,26 +2559,50 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!canvas) return;
         let isPanning = false;
         let panStart = { x: 0, y: 0 };
+        let mouseMovedDuringClick = false;
+        let mouseDownPos = { x: 0, y: 0 };
 
-        const getMousePos = (e) => {
+        const getCanvasCoords = (e) => {
             const rect = canvas.getBoundingClientRect();
+            const scaleX = (canvas.width / window.devicePixelRatio) / rect.width;
+            const scaleY = (canvas.height / window.devicePixelRatio) / rect.height;
+
+            const mouseX = (e.clientX - rect.left) * scaleX;
+            const mouseY = (e.clientY - rect.top) * scaleY;
+
             return {
-                x: e.clientX - rect.left,
-                y: e.clientY - rect.top
+                x: (mouseX - canvasOffset.x) / canvasZoom,
+                y: (mouseY - canvasOffset.y) / canvasZoom
             };
         };
 
-        canvas.addEventListener('mousemove', (e) => {
-            const m = getMousePos(e);
+        const getNodeAtMouse = (e) => {
+            const coords = getCanvasCoords(e);
+            let closestNode = null;
+            let minDistance = Infinity;
 
-            // Adjust coordinates based on pan offset & zoom
-            const canvasX = (m.x - canvasOffset.x) / canvasZoom;
-            const canvasY = (m.y - canvasOffset.y) / canvasZoom;
+            for (let i = 0; i < graphNodes.length; i++) {
+                const node = graphNodes[i];
+                const dx = coords.x - node.x;
+                const dy = coords.y - node.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                const hitRadius = Math.max(node.r + 10, 18);
+
+                if (dist <= hitRadius && dist < minDistance) {
+                    minDistance = dist;
+                    closestNode = node;
+                }
+            }
+
+            return closestNode;
+        };
+
+        canvas.addEventListener('mousemove', (e) => {
+            const coords = getCanvasCoords(e);
 
             if (draggedNode) {
-                draggedNode.x = canvasX;
-                draggedNode.y = canvasY;
-                // Reheat physics loop for organic real-time adjustments around the dragged node
+                draggedNode.x = coords.x;
+                draggedNode.y = coords.y;
                 graphState.simulation.alpha = Math.max(graphState.simulation.alpha, 0.45);
                 return;
             }
@@ -2586,50 +2610,24 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isPanning) {
                 const dx = e.clientX - panStart.x;
                 const dy = e.clientY - panStart.y;
+                if (Math.hypot(e.clientX - mouseDownPos.x, e.clientY - mouseDownPos.y) > 5) {
+                    mouseMovedDuringClick = true;
+                }
                 canvasOffset.x += dx;
                 canvasOffset.y += dy;
                 panStart = { x: e.clientX, y: e.clientY };
                 return;
             }
 
-            // Check node hover collision thresholds with comfortable touch buffer
-            let foundHover = null;
-            for (let i = 0; i < graphNodes.length; i++) {
-                const node = graphNodes[i];
-                const dx = canvasX - node.x;
-                const dy = canvasY - node.y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-                const hitRadius = Math.max(node.r + 8, 16);
-
-                if (dist <= hitRadius) {
-                    foundHover = node;
-                    break;
-                }
-            }
-
-            hoveredNode = foundHover;
-            canvas.style.cursor = foundHover ? 'pointer' : (isPanning ? 'grabbing' : 'grab');
+            hoveredNode = getNodeAtMouse(e);
+            canvas.style.cursor = hoveredNode ? 'pointer' : 'grab';
         });
 
         canvas.addEventListener('mousedown', (e) => {
-            const m = getMousePos(e);
-            const canvasX = (m.x - canvasOffset.x) / canvasZoom;
-            const canvasY = (m.y - canvasOffset.y) / canvasZoom;
+            mouseDownPos = { x: e.clientX, y: e.clientY };
+            mouseMovedDuringClick = false;
 
-            // Check if we clicked on top of a node
-            let clickedNode = null;
-            for (let i = 0; i < graphNodes.length; i++) {
-                const node = graphNodes[i];
-                const dx = canvasX - node.x;
-                const dy = canvasY - node.y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-                const hitRadius = Math.max(node.r + 8, 16);
-                if (dist <= hitRadius) {
-                    clickedNode = node;
-                    break;
-                }
-            }
-
+            const clickedNode = getNodeAtMouse(e);
             if (clickedNode) {
                 draggedNode = clickedNode;
                 canvas.style.cursor = 'grabbing';
@@ -2641,25 +2639,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         window.addEventListener('mouseup', () => {
-            if (draggedNode) {
-                draggedNode = null;
-                canvas.style.cursor = hoveredNode ? 'pointer' : 'grab';
-            }
-            if (isPanning) {
-                isPanning = false;
-                canvas.style.cursor = hoveredNode ? 'pointer' : 'grab';
-            }
+            draggedNode = null;
+            isPanning = false;
+            canvas.style.cursor = hoveredNode ? 'pointer' : 'grab';
         });
 
         canvas.addEventListener('mouseleave', () => {
-            if (isPanning) {
-                isPanning = false;
-            }
+            isPanning = false;
+            draggedNode = null;
         });
 
         canvas.addEventListener('wheel', (e) => {
             e.preventDefault();
-            const m = getMousePos(e);
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = (e.clientX - rect.left) * ((canvas.width / window.devicePixelRatio) / rect.width);
+            const mouseY = (e.clientY - rect.top) * ((canvas.height / window.devicePixelRatio) / rect.height);
 
             const zoomIntensity = 0.04;
             const delta = -e.deltaY;
@@ -2671,15 +2665,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 canvasZoom = Math.max(0.5, canvasZoom - zoomIntensity);
             }
 
-            // Zoom centered on current mouse coordinates
-            canvasOffset.x = m.x - (m.x - canvasOffset.x) * (canvasZoom / oldZoom);
-            canvasOffset.y = m.y - (m.y - canvasOffset.y) * (canvasZoom / oldZoom);
+            canvasOffset.x = mouseX - (mouseX - canvasOffset.x) * (canvasZoom / oldZoom);
+            canvasOffset.y = mouseY - (mouseY - canvasOffset.y) * (canvasZoom / oldZoom);
         });
 
         canvas.addEventListener('click', (e) => {
-            if (hoveredNode && !draggedNode && !isPanning) {
-                const id = hoveredNode.id;
-                selectConcept(id);
+            if (!mouseMovedDuringClick) {
+                const targetNode = getNodeAtMouse(e);
+                if (targetNode) {
+                    selectConcept(targetNode.id);
+                }
             }
         });
     }
