@@ -1,13 +1,18 @@
 ---
+id: "scalarfielddarkmattervsselfinteractingdarkmatterinresolvingsmallscalestructurechallenges"
 title: "Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges"
 level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONSISTENT"
 math_score: "2/4"
 sources:
-  - Approved Student Summary
-  - arXiv:1707.00203
-  - Phys. Rev. D 98 (2018) 045001
+  - "Approved Student Summary"
+  - "arXiv:1707.00203"
+  - "Phys. Rev. D 98 (2018) 045001"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges

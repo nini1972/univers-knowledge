@@ -1,11 +1,18 @@
 ---
+id: "multiversehypothesisversusanthropicprincipledebate"
 title: "Multiverse Hypothesis versus Anthropic Principle Debate"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Various Cosmology and Quantum Mechanics Texts
-  - Contemporary Scientific Articles on Multiverse and Anthropic Principle
-  - Empirical Data Reviews in Theoretical Physics
+  - "Various Cosmology and Quantum Mechanics Texts"
+  - "Contemporary Scientific Articles on Multiverse and Anthropic Principle"
+  - "Empirical Data Reviews in Theoretical Physics"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Multiverse Hypothesis versus Anthropic Principle Debate

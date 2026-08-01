@@ -1,13 +1,19 @@
 ---
+id: "dynamicaldarkenergyvsmodifiedgravityinexplainingtheredshiftdependenceofcosmicacceleration"
 title: "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Current astrophysical literature
-  - Cosmological observations
-  - Reviews on modified gravity theories
+  - "Current astrophysical literature"
+  - "Cosmological observations"
+  - "Reviews on modified gravity theories"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration

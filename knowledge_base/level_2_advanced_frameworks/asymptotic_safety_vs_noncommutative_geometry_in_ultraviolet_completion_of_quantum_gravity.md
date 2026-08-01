@@ -1,13 +1,20 @@
 ---
+id: "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofquantumgravity"
 title: "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Academic Journals on Quantum Gravity
-  - Conference Proceedings on Theoretical Physics
-  - Preprints on arXiv
+  - "Academic Journals on Quantum Gravity"
+  - "Conference Proceedings on Theoretical Physics"
+  - "Preprints on arXiv"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity

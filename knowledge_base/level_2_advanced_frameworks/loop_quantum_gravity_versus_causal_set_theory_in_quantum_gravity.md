@@ -1,11 +1,20 @@
 ---
+id: "loopquantumgravityversuscausalsettheoryinquantumgravity"
 title: "Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"
-level: 1
+level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Multiple independent, peer-reviewed sources on Loop Quantum Gravity and Causal Set Theory comparative analyses
-  - Rigorous debate reports on quantum gravity frameworks
-  - Scholarly assessments of mathematical consistency and empirical alignment in quantum gravity research
+  - "Multiple independent, peer-reviewed sources on Loop Quantum Gravity and Causal Set Theory comparative analyses"
+  - "Rigorous debate reports on quantum gravity frameworks"
+  - "Scholarly assessments of mathematical consistency and empirical alignment in quantum gravity research"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity

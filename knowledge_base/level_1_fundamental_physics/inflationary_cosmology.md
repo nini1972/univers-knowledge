@@ -1,13 +1,19 @@
 ---
+id: "inflationarycosmology"
 title: "Inflationary Cosmology"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
-sources:
-  - Cosmic Microwave Background Anisotropies Observations
-  - Large-Scale Structure Surveys
-  - Standard Scalar Field Dynamics in Cosmology
 math_status: "[MATH_PENDING]"
 math_score: "1/4"
+sources:
+  - "Cosmic Microwave Background Anisotropies Observations"
+  - "Large-Scale Structure Surveys"
+  - "Standard Scalar Field Dynamics in Cosmology"
+dependencies:
+  []
+tags:
+  - "1"
+  - "cosmology"
 ---
 
 # Inflationary Cosmology

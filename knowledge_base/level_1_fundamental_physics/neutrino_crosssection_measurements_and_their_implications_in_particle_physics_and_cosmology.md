@@ -1,13 +1,18 @@
 ---
+id: "neutrinocrosssectionmeasurementsandtheirimplicationsinparticlephysicsandcosmology"
 title: "Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"
-level: "1"
+level: 1
 status: "[VERIFIED]"
-sources:
-  - Peer-reviewed neutrino physics journals
-  - Cosmology theoretical analyses
-  - Experimental neutrino measurement data repositories
 math_status: "[MATH_PENDING]"
 math_score: "1/4"
+sources:
+  - "Peer-reviewed neutrino physics journals"
+  - "Cosmology theoretical analyses"
+  - "Experimental neutrino measurement data repositories"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology

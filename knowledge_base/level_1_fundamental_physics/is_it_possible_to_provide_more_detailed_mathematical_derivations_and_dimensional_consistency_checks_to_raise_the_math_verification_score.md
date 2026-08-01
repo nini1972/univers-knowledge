@@ -1,13 +1,18 @@
 ---
+id: "isitpossibletoprovidemoredetailedmathematicalderivationsanddimensionalconsistencycheckstoraisethemathverificationscore"
 title: "Is it possible to provide more detailed mathematical derivations and dimensional consistency checks to raise the math verification score?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Research Report
-  - Academic Journals
-  - Peer-reviewed Articles
+  - "Research Report"
+  - "Academic Journals"
+  - "Peer-reviewed Articles"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Is it possible to provide more detailed mathematical derivations and dimensional consistency checks to raise the math verification score?

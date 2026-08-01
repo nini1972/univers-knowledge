@@ -1,4 +1,5 @@
 ---
+id: "howcancosmologicalobservationsberefinedtobetterdiscriminatebetweenwarmdarkmattereffectspredictedbysterileneutrinosandcolddarkmatterscenarios"
 title: "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?"
 level: 1
 status: "[THEORETICAL]"
@@ -8,6 +9,10 @@ sources:
   - "Lyman-α forest studies"
   - "Gravitational lensing observations"
   - "JWST early-universe structure formation data"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?

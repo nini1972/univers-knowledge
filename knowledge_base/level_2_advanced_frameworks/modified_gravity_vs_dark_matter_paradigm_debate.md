@@ -1,11 +1,19 @@
 ---
+id: "modifiedgravityvsdarkmatterparadigmdebate"
 title: "Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Empirical studies in galaxy rotation curves and cosmological observations"
   - "Mathematical formulations and LaTeX derivations of MOND and CDM frameworks"
   - "Contemporary scientific consensus reviews on dark matter and alternative gravity theories"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate

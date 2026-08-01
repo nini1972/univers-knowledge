@@ -1,12 +1,20 @@
 ---
+id: "debateonmodifiedgravitytheoriestevesvsfrgravity"
 title: "Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity"
 level: 2
 status: "[VERIFIED]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Peer-reviewed journals on Modified Gravity Theories
-  - Foundational papers on Tensor-Vector-Scalar Gravity (TeVeS)
-  - Research articles on f(R) Modified Gravity models
-  - Cosmology datasets analyzing galactic and cosmological scale phenomena
+  - "Peer-reviewed journals on Modified Gravity Theories"
+  - "Foundational papers on Tensor-Vector-Scalar Gravity (TeVeS)"
+  - "Research articles on f(R) Modified Gravity models"
+  - "Cosmology datasets analyzing galactic and cosmological scale phenomena"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity

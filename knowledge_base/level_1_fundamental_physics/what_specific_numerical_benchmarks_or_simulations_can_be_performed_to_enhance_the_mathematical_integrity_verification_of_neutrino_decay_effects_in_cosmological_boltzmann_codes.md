@@ -1,13 +1,18 @@
 ---
+id: "whatspecificnumericalbenchmarksorsimulationscanbeperformedtoenhancethemathematicalintegrityverificationofneutrinodecayeffectsincosmologicalboltzmanncodes"
 title: "What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "2/4"
 sources:
-  - Student Summary Approval
-  - Cosmological Physics Review Journal
-  - Neutrino Research Papers Collection
+  - "Student Summary Approval"
+  - "Cosmological Physics Review Journal"
+  - "Neutrino Research Papers Collection"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?

@@ -1,6 +1,7 @@
 ---
+id: "conformalcycliccosmologyvseternalinflationinexplainingprebigbanginitialconditions"
 title: "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONSISTENT"
 math_score: "2/4"
@@ -8,6 +9,11 @@ sources:
   - "Student summary on CCC and EI"
   - "Cyclic Cosmology: An Overview"
   - "Inflationary Universe: An Overview"
+dependencies:
+  []
+tags:
+  - "2"
+  - "cosmology"
 ---
 
 # Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions

@@ -1,13 +1,18 @@
 ---
+id: "whatarethemostpromisingnearfutureexperimentalstrategiestoimprovedetectionsensitivityforaxiondarkmatterinthelowmassrange"
 title: "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?"
 level: 1
 status: "[VERIFIED]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - DMRadio
-  - HAYSTAC
-  - MADMAX
+  - "DMRadio"
+  - "HAYSTAC"
+  - "MADMAX"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?

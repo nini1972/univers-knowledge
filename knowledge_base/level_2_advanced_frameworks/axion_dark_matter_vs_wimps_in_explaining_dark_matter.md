@@ -1,11 +1,18 @@
 ---
+id: "axiondarkmattervswimpsinexplainingdarkmatter"
 title: "Axion Dark Matter vs WIMPs in Explaining Dark Matter"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Planck Collaboration (2018). Planck 2018 results. VI. Cosmological parameters."
   - "Preskill, M., Wise, M. B., & Wilczek, F. (1983). Cosmology of the invisible axion."
   - "Jungman, G., Kamionkowski, M., & Griest, K. (1996). Supersymmetric dark matter."
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Axion Dark Matter vs WIMPs in Explaining Dark Matter

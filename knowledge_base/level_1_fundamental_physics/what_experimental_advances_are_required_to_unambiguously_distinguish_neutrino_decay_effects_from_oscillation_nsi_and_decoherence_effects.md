@@ -1,13 +1,18 @@
 ---
+id: "whatexperimentaladvancesarerequiredtounambiguouslydistinguishneutrinodecayeffectsfromoscillationnsianddecoherenceeffects"
 title: "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Source 1
-  - Source 2
-  - Source 3
+  - "Source 1"
+  - "Source 2"
+  - "Source 3"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?

@@ -1,11 +1,20 @@
 ---
+id: "causalsettheoryvsspinfoammodelsinquantumgravityresearch"
 title: "Causal Set Theory vs Spin Foam Models in Quantum Gravity Research"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Multiple independent peer-reviewed articles on Causal Set Theory and Spin Foam Models
-  - Comparative review reports on quantum gravity frameworks
-  - Expert assessments on empirical gaps and unresolved theoretical issues
+  - "Multiple independent peer-reviewed articles on Causal Set Theory and Spin Foam Models"
+  - "Comparative review reports on quantum gravity frameworks"
+  - "Expert assessments on empirical gaps and unresolved theoretical issues"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Causal Set Theory vs Spin Foam Models in Quantum Gravity Research

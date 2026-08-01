@@ -1,13 +1,19 @@
 ---
+id: "quantumvacuumfluctuationsandzeropointenergy"
 title: "Quantum Vacuum Fluctuations and Zero-Point Energy"
-level: "1"
+level: 1
 status: "[VERIFIED]"
-sources:
-  - Casimir Effect Experimental Studies
-  - Lamb Shift Spectroscopic Measurements
-  - Theoretical Frameworks on Quantum Field Theory and Vacuum States
 math_status: "[MATH_PENDING]"
 math_score: "1/4"
+sources:
+  - "Casimir Effect Experimental Studies"
+  - "Lamb Shift Spectroscopic Measurements"
+  - "Theoretical Frameworks on Quantum Field Theory and Vacuum States"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Vacuum Fluctuations and Zero-Point Energy

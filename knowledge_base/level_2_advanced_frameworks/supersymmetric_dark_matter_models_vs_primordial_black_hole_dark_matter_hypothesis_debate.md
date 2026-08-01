@@ -1,13 +1,20 @@
 ---
+id: "supersymmetricdarkmattermodelsvsprimordialblackholedarkmatterhypothesisdebate"
 title: "Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Collider data analyses
-  - Direct dark matter detection experiments
-  - Microlensing surveys
-  - Gravitational wave observations
-  - Cosmological measurements
+  - "Collider data analyses"
+  - "Direct dark matter detection experiments"
+  - "Microlensing surveys"
+  - "Gravitational wave observations"
+  - "Cosmological measurements"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate

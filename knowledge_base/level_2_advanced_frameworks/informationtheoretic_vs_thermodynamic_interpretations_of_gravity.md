@@ -1,13 +1,19 @@
 ---
+id: "informationtheoreticvsthermodynamicinterpretationsofgravity"
 title: "Information-Theoretic vs. Thermodynamic Interpretations of Gravity"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONSISTENT"
 math_score: "2/4"
 sources:
-  - Bekenstein, J. D. "Black holes and the second law." *Lettere al Nuovo Cimento*, 1972.
-  - Hawking, S. W. "Black hole explosions?" *Nature*, 1975.
-  - Verlinde, E. "Emergent Gravity and the Dark Universe." *Journal of High Energy Physics*, 2011.
+  - "Bekenstein, J. D. "Black holes and the second law." *Lettere al Nuovo Cimento*, 1972."
+  - "Hawking, S. W. "Black hole explosions?" *Nature*, 1975."
+  - "Verlinde, E. "Emergent Gravity and the Dark Universe." *Journal of High Energy Physics*, 2011."
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Information-Theoretic vs. Thermodynamic Interpretations of Gravity

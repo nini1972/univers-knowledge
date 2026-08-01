@@ -1,11 +1,19 @@
 ---
+id: "ekpyroticuniversemodelversusinflationarycosmologydebate"
 title: "Ekpyrotic Universe Model versus Inflationary Cosmology Debate"
-level: 1
+level: 2
 status: "[VERIFIED]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Peer-reviewed Cosmology Journals"
   - "Empirical Data from Cosmic Microwave Background Observations"
   - "Theoretical Physics Conference Proceedings"
+dependencies:
+  []
+tags:
+  - "2"
+  - "cosmology"
 ---
 
 # Ekpyrotic Universe Model versus Inflationary Cosmology Debate

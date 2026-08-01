@@ -1,13 +1,18 @@
 ---
+id: "matterantimatterasymmetrymechanisms"
 title: "Matter-Antimatter Asymmetry Mechanisms"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Extensive citation of experimental constraints and theoretical models in current physics literature"
   - "Skeptic's verification score evaluations within peer-reviewed academic reviews"
   - "Present scientific consensus on theoretical particle physics and cosmology"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Matter-Antimatter Asymmetry Mechanisms

@@ -1,10 +1,17 @@
 ---
+id: "randallsundrumvsaddmodelsinhierarchyproblemresolution"
 title: "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution"
-level: 1
+level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Comparative Report on Brane-World Models
-  - LHC and Torsion-Balance Experiment Data
+  - "Comparative Report on Brane-World Models"
+  - "LHC and Torsion-Balance Experiment Data"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution

@@ -1,13 +1,19 @@
 ---
+id: "quantummeasurementproblem"
 title: "Quantum Measurement Problem"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
-sources:
-  - Multiple recent independent research reports and reviews on quantum measurement theory and interpretations
-  - Conceptual and mathematical analyses from foundational quantum mechanics literature
-  - Empirical constraints and ongoing experimental tests in quantum decoherence and collapse hypotheses
 math_status: "[MATH_TOPOLOGICAL]"
 math_score: "4/4"
+sources:
+  - "Multiple recent independent research reports and reviews on quantum measurement theory and interpretations"
+  - "Conceptual and mathematical analyses from foundational quantum mechanics literature"
+  - "Empirical constraints and ongoing experimental tests in quantum decoherence and collapse hypotheses"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Measurement Problem

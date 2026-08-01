@@ -1,13 +1,20 @@
 ---
+id: "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting"
 title: "Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_TOPOLOGICAL"
 math_score: "4/4"
 sources:
-  - LIGO/Virgo collaborations
-  - PBH observations
-  - Theoretical framework studies
+  - "LIGO/Virgo collaborations"
+  - "PBH observations"
+  - "Theoretical framework studies"
+dependencies:
+  []
+tags:
+  - "1"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?

@@ -1,6 +1,17 @@
 ---
+id: "quantumelectrodynamicsqed"
+title: "Quantum Electrodynamics (QED) — Verified Knowledge Summary"
+level: 1
+status: "[THEORETICAL]"
 math_status: "[MATH_TOPOLOGICAL]"
 math_score: "4/4"
+sources:
+  - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Electrodynamics (QED) — Verified Knowledge Summary

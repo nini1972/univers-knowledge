@@ -1,15 +1,21 @@
 ---
+id: "inflationaryreheatingmechanisms"
 title: "Inflationary Reheating Mechanisms"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
-sources:
-  - Canonical literature on inflationary cosmology and reheating dynamics
-  - Key peer-reviewed papers on preheating and perturbative decay models
-  - Theoretical analyses estimating reheating temperature and its implications
-  - Reviews discussing uncertainties and limitations in reheating scenarios
-  - Authoritative reports integrating schematic visualizations and conceptual frameworks
 math_status: "[MATH_CONJECTURED]"
 math_score: "1/4"
+sources:
+  - "Canonical literature on inflationary cosmology and reheating dynamics"
+  - "Key peer-reviewed papers on preheating and perturbative decay models"
+  - "Theoretical analyses estimating reheating temperature and its implications"
+  - "Reviews discussing uncertainties and limitations in reheating scenarios"
+  - "Authoritative reports integrating schematic visualizations and conceptual frameworks"
+dependencies:
+  []
+tags:
+  - "1"
+  - "cosmology"
 ---
 
 # Inflationary Reheating Mechanisms

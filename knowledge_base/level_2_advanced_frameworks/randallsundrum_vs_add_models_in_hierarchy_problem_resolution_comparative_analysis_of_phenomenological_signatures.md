@@ -1,13 +1,18 @@
 ---
+id: "randallsundrumvsaddmodelsinhierarchyproblemresolutioncomparativeanalysisofphenomenologicalsignatures"
 title: "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - LHC Studies and Limits
-  - Astrophysical Implications of ADD Models
-  - Theoretical Insights on the Hierarchy Problem
+  - "LHC Studies and Limits"
+  - "Astrophysical Implications of ADD Models"
+  - "Theoretical Insights on the Hierarchy Problem"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures

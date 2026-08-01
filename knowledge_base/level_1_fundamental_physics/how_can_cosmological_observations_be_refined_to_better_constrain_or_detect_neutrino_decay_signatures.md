@@ -1,4 +1,5 @@
 ---
+id: "howcancosmologicalobservationsberefinedtobetterconstrainordetectneutrinodecaysignatures"
 title: "Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures"
 level: 1
 status: "[THEORETICAL]"
@@ -8,6 +9,10 @@ sources:
   - "Cosmological Perturbation Theory and Neutrino Physics Literature"
   - "Multiple Independent Publications on Neutrino Decay and Cosmology"
   - "Verification Report on Theoretical and Observational Assessments"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures

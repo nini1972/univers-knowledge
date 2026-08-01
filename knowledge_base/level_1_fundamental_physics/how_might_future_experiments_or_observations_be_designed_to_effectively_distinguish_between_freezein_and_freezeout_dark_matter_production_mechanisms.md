@@ -1,4 +1,5 @@
 ---
+id: "howmightfutureexperimentsorobservationsbedesignedtoeffectivelydistinguishbetweenfreezeinandfreezeoutdarkmatterproductionmechanisms"
 title: "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?"
 level: 1
 status: "[THEORETICAL]"
@@ -8,6 +9,10 @@ sources:
   - "Research Report on Dark Matter Mechanisms"
   - "Astrophysical Journal"
   - "Physical Review D"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?

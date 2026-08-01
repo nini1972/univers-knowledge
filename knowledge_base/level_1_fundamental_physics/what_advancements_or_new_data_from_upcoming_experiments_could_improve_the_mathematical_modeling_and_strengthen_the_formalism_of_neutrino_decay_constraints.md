@@ -1,13 +1,18 @@
 ---
+id: "whatadvancementsornewdatafromupcomingexperimentscouldimprovethemathematicalmodelingandstrengthentheformalismofneutrinodecayconstraints"
 title: "Neutrino Decay"
 level: 1
 status: "[VERIFIED]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Experimental data from JUNO, DUNE, and IceCube
-  - Theoretical frameworks in BSM physics
-  - Principles of quantum mechanics and particle physics
+  - "Experimental data from JUNO, DUNE, and IceCube"
+  - "Theoretical frameworks in BSM physics"
+  - "Principles of quantum mechanics and particle physics"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Decay

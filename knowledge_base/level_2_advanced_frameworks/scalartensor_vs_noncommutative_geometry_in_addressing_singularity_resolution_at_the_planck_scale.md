@@ -1,13 +1,18 @@
 ---
+id: "scalartensorvsnoncommutativegeometryinaddressingsingularityresolutionattheplanckscale"
 title: "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Source 1
-  - Source 2
-  - Source 3
+  - "Source 1"
+  - "Source 2"
+  - "Source 3"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale

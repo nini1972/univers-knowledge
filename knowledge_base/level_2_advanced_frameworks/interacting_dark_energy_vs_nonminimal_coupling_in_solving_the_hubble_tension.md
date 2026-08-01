@@ -1,6 +1,7 @@
 ---
+id: "interactingdarkenergyvsnonminimalcouplinginsolvingthehubbletension"
 title: "Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
@@ -8,6 +9,10 @@ sources:
   - "Current Astronomical Data"
   - "Theoretical Frameworks in Cosmology"
   - "Quantum Field Theoretical Approaches"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension

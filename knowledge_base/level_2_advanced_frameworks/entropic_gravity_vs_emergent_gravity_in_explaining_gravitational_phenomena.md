@@ -1,12 +1,20 @@
 ---
+id: "entropicgravityvsemergentgravityinexplaininggravitationalphenomena"
 title: "Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Verlinde, E. (2011). "On the Origin of Gravity and the Laws of Newton"
-  - Bianconi, M. (2025). "Recent Advances in Emergent Gravity Theories"
-  - Jacobson, T. (1995). "Thermodynamics of Spacetime: The Einstein Equation of State"
-  - Jenkins, A. (2009). "Foundations of Entropic and Emergent Gravity"
+  - "Verlinde, E. (2011). "On the Origin of Gravity and the Laws of Newton"
+  - "Bianconi, M. (2025). "Recent Advances in Emergent Gravity Theories"
+  - "Jacobson, T. (1995). "Thermodynamics of Spacetime: The Einstein Equation of State"
+  - "Jenkins, A. (2009). "Foundations of Entropic and Emergent Gravity"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena

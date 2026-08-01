@@ -1,6 +1,16 @@
 ---
+id: "standardmodelofparticlephysics"
+title: "Standard Model of Particle Physics"
+level: 1
+status: "[THEORETICAL]"
 math_status: "[MATH_TOPOLOGICAL]"
 math_score: "3/4"
+sources:
+  - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Standard Model of Particle Physics

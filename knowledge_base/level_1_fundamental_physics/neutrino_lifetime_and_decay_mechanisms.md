@@ -1,13 +1,18 @@
 ---
+id: "neutrinolifetimeanddecaymechanisms"
 title: "Neutrino Lifetime and Decay Mechanisms"
-level: "1"
+level: 1
 status: "[VERIFIED]"
-sources:
-  - Astrophysical Neutrino Experiments
-  - Nuclear Neutrino Experiments
-  - Reactor Neutrino Experiments
 math_status: "[MATH_CONSISTENT]"
 math_score: "2/4"
+sources:
+  - "Astrophysical Neutrino Experiments"
+  - "Nuclear Neutrino Experiments"
+  - "Reactor Neutrino Experiments"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Lifetime and Decay Mechanisms

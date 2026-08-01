@@ -1,6 +1,7 @@
 ---
+id: "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance"
 title: "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
@@ -8,6 +9,10 @@ sources:
   - "Current cosmological paradigms"
   - "Experimental results from ADMX for ALPs"
   - "Experimental results from LHC/XENONnT for neutralinos"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance

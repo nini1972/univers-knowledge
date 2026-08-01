@@ -1,13 +1,19 @@
 ---
+id: "quantummechanics"
 title: "Quantum Mechanics"
-level: "1"
+level: 1
 status: "[VERIFIED]"
-sources:
-  - Comprehensive research evidence in physics literature
-  - Rigorous mathematical formulations in quantum theory
-  - Skeptic verification protocols and evaluations
 math_status: "[MATH_TOPOLOGICAL]"
 math_score: "3/4"
+sources:
+  - "Comprehensive research evidence in physics literature"
+  - "Rigorous mathematical formulations in quantum theory"
+  - "Skeptic verification protocols and evaluations"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Mechanics

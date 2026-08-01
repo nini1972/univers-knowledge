@@ -1,13 +1,18 @@
 ---
+id: "couldacomprehensivevisualschematicoftheneutrinodecayexperimentsbeproducedandincludedwithfuturereports"
 title: "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Initial proposal for visual schematic development.
-  - Constraints on neutrino decay mechanisms literature.
-  - Current standard-model references.
+  - "Initial proposal for visual schematic development."
+  - "Constraints on neutrino decay mechanisms literature."
+  - "Current standard-model references."
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?

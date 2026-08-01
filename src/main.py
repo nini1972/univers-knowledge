@@ -85,13 +85,21 @@ def sanitize_filename(name):
 
 
 def update_index_file(index_path: str, concept_name: str, level_folder: str, filename: str):
-    """Deterministically synchronize the entire index to match current files on disk."""
+    """Deterministically synchronize the entire index to match current files on disk and rebuild OKF graph.json."""
     repo_root = Path(__file__).resolve().parent.parent
     try:
         from index_utils import synchronize_index
     except ImportError:
         from src.index_utils import synchronize_index
     synchronize_index(index_path, repo_root)
+
+    try:
+        import subprocess
+        indexer_script = repo_root / "scripts" / "okf_indexer.py"
+        if indexer_script.exists():
+            subprocess.run([sys.executable, str(indexer_script), "--build", "--repo-root", str(repo_root)], check=False)
+    except Exception as exc:
+        print(f"Warning: Failed to auto-rebuild OKF graph.json: {exc}")
 
 
 def run_level1_flow(next_concept: str):

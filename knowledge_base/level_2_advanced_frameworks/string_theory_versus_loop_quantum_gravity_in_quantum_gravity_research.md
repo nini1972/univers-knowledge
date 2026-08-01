@@ -1,11 +1,20 @@
 ---
+id: "stringtheoryversusloopquantumgravityinquantumgravityresearch"
 title: "String Theory versus Loop Quantum Gravity in Quantum Gravity Research"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Academic Journals on Quantum Gravity"
   - "Verified Mathematical Frameworks in Theoretical Physics"
   - "Community Consensus Reviews on Theoretical Physics"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # String Theory versus Loop Quantum Gravity in Quantum Gravity Research

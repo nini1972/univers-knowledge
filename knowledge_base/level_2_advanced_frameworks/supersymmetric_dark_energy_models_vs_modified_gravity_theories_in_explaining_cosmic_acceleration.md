@@ -1,11 +1,19 @@
 ---
+id: "supersymmetricdarkenergymodelsvsmodifiedgravitytheoriesinexplainingcosmicacceleration"
 title: "Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration"
 level: 2
 status: "[VERIFIED]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Multiple independent theoretical and empirical studies on Supersymmetric Dark Energy Models
-  - Observational data including collider experiments, gravitational wave detections, and cosmological surveys
-  - Peer-reviewed comparative analyses on Modified Gravity Theories and their cosmological implications
+  - "Multiple independent theoretical and empirical studies on Supersymmetric Dark Energy Models"
+  - "Observational data including collider experiments, gravitational wave detections, and cosmological surveys"
+  - "Peer-reviewed comparative analyses on Modified Gravity Theories and their cosmological implications"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration

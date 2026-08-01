@@ -1,11 +1,20 @@
 ---
+id: "quantumloopgravityvsstringfieldtheorydebate"
 title: "Quantum Loop Gravity vs String Field Theory Debate"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Rovelli, C. (2004). Quantum Gravity. Cambridge University Press."
   - "Zwiebach, B. (2009). A First Course in String Theory. Cambridge University Press."
   - "Ashtekar, A., & Lewandowski, J. (2004). Background Independent Quantum Gravity: A Status Report."
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Quantum Loop Gravity vs String Field Theory Debate

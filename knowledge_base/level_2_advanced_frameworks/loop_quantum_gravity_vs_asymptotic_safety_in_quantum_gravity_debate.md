@@ -1,13 +1,20 @@
 ---
+id: "loopquantumgravityvsasymptoticsafetyinquantumgravitydebate"
 title: "Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate"
-level: "1"
+level: 2
 status: "[THEORETICAL]"
+math_status: "[MATH_TOPOLOGICAL]"
+math_score: "3/4"
 sources:
   - "Ashtekar, A. (1986). New Variables for Classical and Quantum Gravity. Physical Review Letters."
   - "Reuter, M. (1998). Nonperturbative Evolution Equation for Quantum Gravity. Physical Review D."
   - "Niedermaier, M., & Reuter, M. (2006). The Asymptotic Safety Scenario in Quantum Gravity. Living Reviews in Relativity."
-math_status: "[MATH_TOPOLOGICAL]"
-math_score: "3/4"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate

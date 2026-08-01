@@ -1,12 +1,20 @@
 ---
+id: "modifiedgravitytheoriesvsdarkmatterparticlemodelsdebate"
 title: "Modified Gravity Theories vs Dark Matter Particle Models Debate"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Peer-reviewed journals on f(R) gravity and dark matter models
-  - Observational cosmology data archives
-  - Recent comprehensive debate reports on dark matter and modified gravity
-  - Skeptic verification checklist for theoretical physics debates
+  - "Peer-reviewed journals on f(R) gravity and dark matter models"
+  - "Observational cosmology data archives"
+  - "Recent comprehensive debate reports on dark matter and modified gravity"
+  - "Skeptic verification checklist for theoretical physics debates"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Modified Gravity Theories vs Dark Matter Particle Models Debate

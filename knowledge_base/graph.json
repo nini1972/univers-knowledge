@@ -1,0 +1,2972 @@
+{
+  "version": "1.0.0",
+  "format": "Open Knowledge Format (OKF)",
+  "updated_at": "2026-08-01T09:05:21.013446+00:00",
+  "stats": {
+    "total_nodes": 151,
+    "level_1_count": 78,
+    "level_2_count": 73,
+    "level_3_count": 0,
+    "total_edges": 0,
+    "frontier_count": 0
+  },
+  "nodes": [
+    {
+      "id": "arethereproposedorongoingcalibrationorcontrolmeasurementsdesignedtoruleoutconfoundingeffectsmimickingneutrinodecaysignalsinplannedorcurrentdetectorsetups",
+      "title": "Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Current and planned neutrino experiments reports",
+        "DUNE collaboration documentation",
+        "IceCube project publications"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups.md"
+    },
+    {
+      "id": "bigbangnucleosynthesis",
+      "title": "Big Bang Nucleosynthesis",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Nuclear Physics and Cosmology Journals",
+        "Astrophysical Observations of Primordial Element Abundances",
+        "Standard Cosmology Texts and Reviews"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/big_bang_nucleosynthesis.md"
+    },
+    {
+      "id": "canadetailedquantitativebreakdownofsystematicuncertaintiesinneutrinodecaylifetimemeasurementsbeprovidedforeachmajorexperimentalcollaboration",
+      "title": "Neutrino Decay Lifetime Limits",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "SNO Collaboration",
+        "Super-Kamiokande Collaboration",
+        "T2K Collaboration",
+        "NOvA Collaboration",
+        "IceCube Collaboration"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_a_detailed_quantitative_breakdown_of_systematic_uncertainties_in_neutrino_decay_lifetime_measurements_be_provided_for_each_major_experimental_collaboration.md"
+    },
+    {
+      "id": "canindependentpubliclyavailabledatasetsfromjunoduneorhyperkamiokandebereleasedtoenableexternalverificationofneutrinodecaybounds",
+      "title": "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Investigation Reports on JUNO, DUNE, and Hyper-Kamiokande collaborations",
+        "Collaborative Public Policy Documentation",
+        "Pilot Program Proposals"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_independent_publicly_available_datasets_from_juno_dune_or_hyperkamiokande_be_released_to_enable_external_verification_of_neutrino_decay_bounds.md"
+    },
+    {
+      "id": "canthedimensionalconsistencybeconclusivelyverifiedusingadvancedsymbolicmethodsbeyondcurrentautomatedtools",
+      "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Student-approved summary on dimensional consistency",
+        "Research papers on automated symbolic regression methods",
+        "Discussion on physical validity of dimensionful constants (Duff-Okun-Veneziano)"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_the_dimensional_consistency_be_conclusively_verified_using_advanced_symbolic_methods_beyond_current_automated_tools.md"
+    },
+    {
+      "id": "canthemathematicalframeworkforneutrinodecaysurvivalprobabilitiesandflavoroscillationmodificationsberigorouslyrevisedandpeerreviewedtoachievefullmathematicalintegritycompliance",
+      "title": "Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Peer-reviewed journals on neutrino physics",
+        "T2K collaboration reports",
+        "NOvA experimental findings"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance.md"
+    },
+    {
+      "id": "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting",
+      "title": "Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "LIGO/Virgo collaborations",
+        "PBH observations",
+        "Theoretical framework studies"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing.md"
+    },
+    {
+      "id": "cosmicinflationmechanisms",
+      "title": "Cosmic Inflation Mechanisms",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "cosmology"
+      ],
+      "sources": [
+        "Dodelson, S. (2003). Modern Cosmology. Academic Press.",
+        "Guth, A. H. (1981). Inflationary universe: A possible solution to the horizon and flatness problems. Physical Review D, 23(2), 347.",
+        "Linde, A. (1982). A new inflationary universe scenario: A possible solution of the horizon, flatness, homogeneity, isotropy and primordial monopole problems. Physics Letters B, 108(6), 389-393."
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_inflation_mechanisms.md"
+    },
+    {
+      "id": "cosmicmicrowavebackgroundradiation",
+      "title": "Cosmic Microwave Background Radiation",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "COBE Mission Data",
+        "WMAP Satellite Observations",
+        "Planck Satellite Results"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_microwave_background_radiation.md"
+    },
+    {
+      "id": "cosmicneutrinobackground",
+      "title": "Cosmic Neutrino Background",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Multiple independent high-quality cosmology and particle physics sources",
+        "Standard cosmological and particle physics frameworks",
+        "Skeptic’s assessment and verification reports"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_neutrino_background.md"
+    },
+    {
+      "id": "cosmologicalconstantanddarkenergy",
+      "title": "Cosmological Constant and Dark Energy",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_CONSISTENT]",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Type Ia Supernovae Observations, Riess et al. (1998)",
+        "Cosmic Microwave Background Measurements, Planck Collaboration (2020)",
+        "Baryon Acoustic Oscillations, SDSS Collaboration (2017)"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmological_constant_and_dark_energy.md"
+    },
+    {
+      "id": "couldacomprehensivevisualschematicoftheneutrinodecayexperimentsbeproducedandincludedwithfuturereports",
+      "title": "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Initial proposal for visual schematic development.",
+        "Constraints on neutrino decay mechanisms literature.",
+        "Current standard-model references."
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports.md"
+    },
+    {
+      "id": "couldtheresearchersprovidesimulationstudiesorsensitivityanalysesquantifyingthediscoverypotentialandlimitsachievablewithcurrenttechnologiesunderrealisticexperimentalconditions",
+      "title": "Could the researchers provide simulation studies or sensitivity analyses quantifying the discovery potential and limits achievable with current technologies under realistic experimental conditions?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Expert Review Report",
+        "Simulation Study Documentation",
+        "Sensitivity Analysis Case Studies"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/could_the_researchers_provide_simulation_studies_or_sensitivity_analyses_quantifying_the_discovery_potential_and_limits_achievable_with_current_technologies_under_realistic_experimental_conditions.md"
+    },
+    {
+      "id": "cpviolation",
+      "title": "CP Violation",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "[CP symmetry, charge conjugation, parity, CKM matrix, weak interactions, meson decay, matter-antimatter asymmetry, baryogenesis]"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cp_violation.md"
+    },
+    {
+      "id": "darkmatter",
+      "title": "Dark Matter",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Astrophysics and Particle Physics Journals",
+        "Standard Cosmological and Particle Physics Equations",
+        "Experimental Searches in Dark Matter Detection"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/dark_matter.md"
+    },
+    {
+      "id": "electroweaksymmetrybreaking",
+      "title": "Electroweak Symmetry Breaking (EWSB)",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/electroweak_symmetry_breaking.md"
+    },
+    {
+      "id": "generalrelativity",
+      "title": "General Relativity",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Experimental Evidence: Observations of perihelion precession of Mercury, gravitational redshift, gravitational lensing, frame-dragging, and gravitational waves by LIGO",
+        "Mathematical Foundations: Einstein's field equations and differential geometry",
+        "Cosmological Perspectives: Discussions on the cosmological constant problem and singularities"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/general_relativity.md"
+    },
+    {
+      "id": "hastherebeenengagementwiththeoreticalandexperimentalneutrinophysicscollaborationstoimprovemodelconsistencyandempiricalteststrategiestomovebeyondpurelytheoreticalclassification",
+      "title": "Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research Report on Neutrino Physics",
+        "Comprehensive Studies of Neutrino Mass Mechanisms",
+        "Collaborative Findings from NuFIT, DUNE, KATRIN, KamLAND-Zen"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification.md"
+    },
+    {
+      "id": "howcancosmologicalobservationsberefinedtobetterconstrainordetectneutrinodecaysignatures",
+      "title": "Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Cosmological Perturbation Theory and Neutrino Physics Literature",
+        "Multiple Independent Publications on Neutrino Decay and Cosmology",
+        "Verification Report on Theoretical and Observational Assessments"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures.md"
+    },
+    {
+      "id": "howcancosmologicalobservationsberefinedtobetterdiscriminatebetweenwarmdarkmattereffectspredictedbysterileneutrinosandcolddarkmatterscenarios",
+      "title": "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Lyman-α forest studies",
+        "Gravitational lensing observations",
+        "JWST early-universe structure formation data"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/how_can_cosmological_observations_be_refined_to_better_discriminate_between_warm_dark_matter_effects_predicted_by_sterile_neutrinos_and_cold_dark_matter_scenarios.md"
+    },
+    {
+      "id": "howcanupcomingastrophysicalneutrinoobservatoriesenhanceflavorandspectralresolutiontobetterdistinguishneutrinodecayeffectsfromstandardoscillationsorsourcevariability",
+      "title": "How can upcoming astrophysical neutrino observatories enhance flavor and spectral resolution to better distinguish neutrino decay effects from standard oscillations or source variability?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Approved Student Summary"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/how_can_upcoming_astrophysical_neutrino_observatories_enhance_flavor_and_spectral_resolution_to_better_distinguish_neutrino_decay_effects_from_standard_oscillations_or_source_variability.md"
+    },
+    {
+      "id": "howdononminimalextensionsorultravioletcompletionsofthesemodelsaffecttheirtestabilityandtheoreticalrobustnessinlightofplannedfutureexperiments",
+      "title": "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Current Task Document",
+        "Research Report Dynamics",
+        "Effective Field Theory Analysis"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/how_do_nonminimal_extensions_or_ultraviolet_completions_of_these_models_affect_their_testability_and_theoretical_robustness_in_light_of_planned_future_experiments.md"
+    },
+    {
+      "id": "howmightfutureexperimentsorobservationsbedesignedtoeffectivelydistinguishbetweenfreezeinandfreezeoutdarkmatterproductionmechanisms",
+      "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research Report on Dark Matter Mechanisms",
+        "Astrophysical Journal",
+        "Physical Review D"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/how_might_future_experiments_or_observations_be_designed_to_effectively_distinguish_between_freezein_and_freezeout_dark_matter_production_mechanisms.md"
+    },
+    {
+      "id": "inflationarycosmology",
+      "title": "Inflationary Cosmology",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "cosmology"
+      ],
+      "sources": [
+        "Cosmic Microwave Background Anisotropies Observations",
+        "Large-Scale Structure Surveys",
+        "Standard Scalar Field Dynamics in Cosmology"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/inflationary_cosmology.md"
+    },
+    {
+      "id": "inflationaryreheatingmechanisms",
+      "title": "Inflationary Reheating Mechanisms",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "cosmology"
+      ],
+      "sources": [
+        "Canonical literature on inflationary cosmology and reheating dynamics",
+        "Key peer-reviewed papers on preheating and perturbative decay models",
+        "Theoretical analyses estimating reheating temperature and its implications",
+        "Reviews discussing uncertainties and limitations in reheating scenarios",
+        "Authoritative reports integrating schematic visualizations and conceptual frameworks"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/inflationary_reheating_mechanisms.md"
+    },
+    {
+      "id": "isitpossibletoprovidemoredetailedmathematicalderivationsanddimensionalconsistencycheckstoraisethemathverificationscore",
+      "title": "Is it possible to provide more detailed mathematical derivations and dimensional consistency checks to raise the math verification score?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research Report",
+        "Academic Journals",
+        "Peer-reviewed Articles"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/is_it_possible_to_provide_more_detailed_mathematical_derivations_and_dimensional_consistency_checks_to_raise_the_math_verification_score.md"
+    },
+    {
+      "id": "matterantimatterasymmetry",
+      "title": "Matter-Antimatter Asymmetry",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/matterantimatter_asymmetry.md"
+    },
+    {
+      "id": "matterantimatterasymmetrymechanisms",
+      "title": "Matter-Antimatter Asymmetry Mechanisms",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Extensive citation of experimental constraints and theoretical models in current physics literature",
+        "Skeptic's verification score evaluations within peer-reviewed academic reviews",
+        "Present scientific consensus on theoretical particle physics and cosmology"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/matterantimatter_asymmetry_mechanisms.md"
+    },
+    {
+      "id": "neutrinoanomaliesandsterileneutrinohypothesis",
+      "title": "Neutrino Anomalies and Sterile Neutrino Hypothesis",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Multiple independent research reports on neutrino anomalies and sterile neutrino theory",
+        "Experimental data and analyses from KATRIN, IceCube, and MicroBooNE collaborations",
+        "Theoretical frameworks including extensions of PMNS mixing matrices and neutrino mass models"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_anomalies_and_sterile_neutrino_hypothesis.md"
+    },
+    {
+      "id": "neutrinocpviolation",
+      "title": "Neutrino CP Violation",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Theoretical Reviews on Three-Flavor Neutrino Oscillations",
+        "Latest Experimental Results from Neutrino Oscillation Experiments",
+        "Research Reports on CP Violation and the PMNS Mixing Matrix"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_cp_violation.md"
+    },
+    {
+      "id": "neutrinocrosssectionmeasurementsandtheirimplicationsinparticlephysicsandcosmology",
+      "title": "Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Peer-reviewed neutrino physics journals",
+        "Cosmology theoretical analyses",
+        "Experimental neutrino measurement data repositories"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology.md"
+    },
+    {
+      "id": "neutrinodecouplinganditseffectsonearlyuniversecosmology",
+      "title": "Neutrino Decoupling and Its Effects on Early Universe Cosmology",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Theoretical frameworks on neutrino decoupling in cosmology",
+        "Indirect cosmological observational evidence",
+        "Scientific consensus assessments and skeptic evaluations"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_decoupling_and_its_effects_on_early_universe_cosmology.md"
+    },
+    {
+      "id": "neutrinoflavorphysics",
+      "title": "Neutrino Flavor Physics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Super-Kamiokande Experiment",
+        "Sudbury Neutrino Observatory (SNO)",
+        "KamLAND Collaboration",
+        "Daya Bay Reactor Neutrino Experiment",
+        "T2K Experiment",
+        "NOvA Experiment"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_flavor_physics.md"
+    },
+    {
+      "id": "neutrinolifetimeanddecaymechanisms",
+      "title": "Neutrino Lifetime and Decay Mechanisms",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_CONSISTENT]",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Astrophysical Neutrino Experiments",
+        "Nuclear Neutrino Experiments",
+        "Reactor Neutrino Experiments"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_lifetime_and_decay_mechanisms.md"
+    },
+    {
+      "id": "neutrinomassanditsroleinparticlephysicsandcosmology",
+      "title": "Neutrino Mass and its Role in Particle Physics and Cosmology",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Neutrino Oscillation Experiments",
+        "Particle Data Group Reviews",
+        "Recent Cosmological Constraints on Neutrino Mass"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_mass_and_its_role_in_particle_physics_and_cosmology.md"
+    },
+    {
+      "id": "neutrinomassgenerationmechanisms",
+      "title": "Neutrino Mass Generation Mechanisms",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_CONSISTENT]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Particle Data Group (PDG) Review of Neutrino Masses and Mixing, 2022",
+        "Mohapatra, R. N., & Pal, P. B. (2004). Massive Neutrinos in Physics and Astrophysics",
+        "King, S. F. (2004). Neutrino mass models. Reports on Progress in Physics, 67(2), 107"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_mass_generation_mechanisms.md"
+    },
+    {
+      "id": "neutrinomasshierarchiesandtheirimplications",
+      "title": "Neutrino Mass Hierarchies and Their Implications",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Experimental Evidence from Neutrino Oscillation Studies",
+        "Theoretical Frameworks including the PMNS Matrix and Seesaw Mechanism",
+        "Review Articles on Neutrino Mass Models and Hierarchies"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_mass_hierarchies_and_their_implications.md"
+    },
+    {
+      "id": "neutrinomassmechanismsbeyondstandardseesawmodels",
+      "title": "Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Mohapatra, R. N., et al., 'Theory of Neutrinos: A White Paper', Reports on Progress in Physics, 2007",
+        "King, S. F., 'Neutrino mass models', Reports on Progress in Physics, 2007",
+        "Schechter, J. and Valle, J. W. F., 'Neutrino masses in SU(2) × U(1) theories', Phys. Rev. D, 1980"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_mass_mechanisms_beyond_standard_seesaw_models.md"
+    },
+    {
+      "id": "neutrinomassorderingandexperimentaldetermination",
+      "title": "Neutrino Mass Ordering and Experimental Determination",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Multiple Independent Experimental Results on Neutrino Oscillations",
+        "Theoretical Reviews on Neutrino Mass and Oscillation Formalism",
+        "Skeptical Verification Report on Neutrino Mass Ordering"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_mass_ordering_and_experimental_determination.md"
+    },
+    {
+      "id": "neutrinomassesandleptogenesis",
+      "title": "Neutrino Masses and Leptogenesis",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Neutrino Oscillation Experimental Data",
+        "Cosmological Constraints on Neutrino Masses",
+        "Seesaw Mechanism Framework Literature",
+        "Theoretical Models of Leptogenesis",
+        "Research Reports on Baryon Asymmetry"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_masses_and_leptogenesis.md"
+    },
+    {
+      "id": "neutrinooscillationmechanisms",
+      "title": "Neutrino Oscillation Mechanisms",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_CONSISTENT]",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Independent experimental evidence from multiple detector types",
+        "Phenomenological analyses of neutrino flavor transitions",
+        "Mathematical formulations involving the PMNS matrix and oscillation probabilities"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_oscillation_mechanisms.md"
+    },
+    {
+      "id": "neutrinooscillations",
+      "title": "Neutrino Oscillations",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_CONSISTENT]",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_oscillations.md"
+    },
+    {
+      "id": "neutrinophysicsanditsimplicationsforcosmology",
+      "title": "Neutrino Physics and Its Implications for Cosmology",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Particle Data Group Reviews",
+        "Physical Review Letters",
+        "Journal of Cosmology and Astroparticle Physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_physics_and_its_implications_for_cosmology.md"
+    },
+    {
+      "id": "neutrinosectoranomaliesandtheirimplicationsforbeyondstandardmodelphysics",
+      "title": "Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research report on neutrino masses and oscillations",
+        "Literature on sterile neutrinos and Non-Standard Interactions (NSI)",
+        "Articles on CPT/Lorentz symmetry violations in neutrino physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics.md"
+    },
+    {
+      "id": "neutrinolessdoublebetadecay",
+      "title": "Neutrinoless Double Beta Decay",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Rigorous mathematical formulations and theoretical physics literature on Neutrinoless Double Beta Decay",
+        "Comprehensive experimental search reports and data reviews",
+        "Skeptical verification and evaluation studies addressing the phenomenon's verification criteria"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrinoless_double_beta_decay.md"
+    },
+    {
+      "id": "planckepochandtheinitialconditionsfortheuniverse",
+      "title": "Planck Epoch and the Initial Conditions for the Universe",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Canonical Quantum Gravity Literature",
+        "String Theory Reviews",
+        "Loop Quantum Gravity Studies"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md"
+    },
+    {
+      "id": "primordialgravitationalwaves",
+      "title": "Primordial Gravitational Waves",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_CONJECTURED]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Multiple Independent Credible Scientific Publications",
+        "Observational Reports from Cosmic Microwave Background Experiments",
+        "Peer-reviewed Theoretical Physics Journals"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/primordial_gravitational_waves.md"
+    },
+    {
+      "id": "quantumchromodynamicsqcd",
+      "title": "Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_chromodynamics_qcd.md"
+    },
+    {
+      "id": "quantumdecoherence",
+      "title": "Quantum Decoherence",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Comprehensive empirical studies on decoherence phenomena in quantum systems",
+        "Theoretical analyses addressing interpretational aspects of quantum mechanics",
+        "Experimental verification meeting skeptical criteria for physical process validation"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_decoherence.md"
+    },
+    {
+      "id": "quantumelectrodynamicsqed",
+      "title": "Quantum Electrodynamics (QED) — Verified Knowledge Summary",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_electrodynamics_qed.md"
+    },
+    {
+      "id": "quantumentanglement",
+      "title": "Quantum Entanglement",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Seminal reviews on quantum entanglement",
+        "Encyclopedia entries on quantum theory",
+        "Rigorous mathematical formulations in Hilbert spaces",
+        "Landmark experiments including loophole-free Bell tests and satellite-based entanglement distribution"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_entanglement.md"
+    },
+    {
+      "id": "quantumfieldtheory",
+      "title": "Quantum Field Theory",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Canonical Quantization and Path Integrals in Quantum Field Theory, Peskin & Schroeder",
+        "Experimental Tests of Quantum Electrodynamics (Electron Magnetic Moment, Lamb Shift), Physical Review Letters",
+        "Gauge Theories and the Standard Model, Weinberg"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_field_theory.md"
+    },
+    {
+      "id": "quantumgravity",
+      "title": "Quantum Gravity",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Loop Quantum Gravity and String Theory studies",
+        "Peer-reviewed articles on Quantum Gravity mathematical formalism",
+        "Comprehensive reviews on experimental challenges in Quantum Gravity research"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_gravity.md"
+    },
+    {
+      "id": "quantummeasurementproblem",
+      "title": "Quantum Measurement Problem",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Multiple recent independent research reports and reviews on quantum measurement theory and interpretations",
+        "Conceptual and mathematical analyses from foundational quantum mechanics literature",
+        "Empirical constraints and ongoing experimental tests in quantum decoherence and collapse hypotheses"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_measurement_problem.md"
+    },
+    {
+      "id": "quantummechanics",
+      "title": "Quantum Mechanics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Comprehensive research evidence in physics literature",
+        "Rigorous mathematical formulations in quantum theory",
+        "Skeptic verification protocols and evaluations"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_mechanics.md"
+    },
+    {
+      "id": "quantumvacuumandspacetimestructure",
+      "title": "Quantum Vacuum and Spacetime Structure",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Lamb shift measurements and interpretations in quantum electrodynamics",
+        "Casimir effect experiments and applications",
+        "Theoretical models of spacetime discretization and pixelation",
+        "Vacuum energy integration proposals in gravity theories",
+        "Comprehensive review articles combining quantum vacuum physics and gravitational theory"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_vacuum_and_spacetime_structure.md"
+    },
+    {
+      "id": "quantumvacuumentanglementanditsroleincosmologicalstructureformation",
+      "title": "Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Quantum Field Theory texts on vacuum fluctuations and entanglement",
+        "Topological methods applied to cosmological quantum fields research papers",
+        "Review articles on cosmological structure formation and quantum origins"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation.md"
+    },
+    {
+      "id": "quantumvacuumfluctuationsandzeropointenergy",
+      "title": "Quantum Vacuum Fluctuations and Zero-Point Energy",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Casimir Effect Experimental Studies",
+        "Lamb Shift Spectroscopic Measurements",
+        "Theoretical Frameworks on Quantum Field Theory and Vacuum States"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_vacuum_fluctuations_and_zeropoint_energy.md"
+    },
+    {
+      "id": "quantumvacuumpolarization",
+      "title": "Quantum Vacuum Polarization",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Precision Measurements of the Lamb Shift in Hydrogen and Deuterium, Phys. Rev. Lett.",
+        "Anomalous Magnetic Moment of the Electron and Muon, Reviews of Modern Physics",
+        "Running of the Fine-Structure Constant and QED Corrections, Physical Review D"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_vacuum_polarization.md"
+    },
+    {
+      "id": "standardmodelfermionmasshierarchiesandmixingmatrices",
+      "title": "Standard Model Fermion Mass Hierarchies and Mixing Matrices",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_PENDING]",
+      "math_score": "1/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Experimental measurements of fermion masses",
+        "CKM and PMNS mixing parameter data",
+        "Theoretical model reports on exponent matrix framework, seesaw neutrino mechanisms, and algebraic approaches"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/standard_model_fermion_mass_hierarchies_and_mixing_matrices.md"
+    },
+    {
+      "id": "standardmodelgaugesymmetriesandtheirspontaneousbreaking",
+      "title": "Standard Model Gauge Symmetries and Their Spontaneous Breaking",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Seminal references on the Standard Model gauge symmetries and Higgs mechanism consistent with scientific consensus",
+        "Experimental data on W/Z boson mass measurements and Higgs boson discovery",
+        "Peer-reviewed Verification Report evaluating mathematical rigor and classification of concepts"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md"
+    },
+    {
+      "id": "standardmodelofparticlephysics",
+      "title": "Standard Model of Particle Physics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/standard_model_of_particle_physics.md"
+    },
+    {
+      "id": "thehiggsboson",
+      "title": "The Higgs Boson",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/the_higgs_boson.md"
+    },
+    {
+      "id": "whatadvancementsornewdatafromupcomingexperimentscouldimprovethemathematicalmodelingandstrengthentheformalismofneutrinodecayconstraints",
+      "title": "Neutrino Decay",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Experimental data from JUNO, DUNE, and IceCube",
+        "Theoretical frameworks in BSM physics",
+        "Principles of quantum mechanics and particle physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_advancements_or_new_data_from_upcoming_experiments_could_improve_the_mathematical_modeling_and_strengthen_the_formalism_of_neutrino_decay_constraints.md"
+    },
+    {
+      "id": "whataretheimplicationsofnonstandardearlyuniversecosmologiesonthepredictedrelicabundancesforfreezeinversusfreezeoutmodels",
+      "title": "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research on early universe cosmologies",
+        "Analysis of dark matter relic yields",
+        "Cosmological models and their parameters"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models.md"
+    },
+    {
+      "id": "whatarethemostpromisingnearfutureexperimentalstrategiestoimprovedetectionsensitivityforaxiondarkmatterinthelowmassrange",
+      "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "DMRadio",
+        "HAYSTAC",
+        "MADMAX"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range.md"
+    },
+    {
+      "id": "whataretheprospectsandtimelinesforobservationaladvancesegnextgenerationehtorimprovedgravitationalwavedetectorstoresolvecurrentdegeneraciesbetweenkerrandalternativeblackholemodels",
+      "title": "Prospects and Timelines for Observational Advances to Resolve Current Degeneracies between Kerr and Alternative Black Hole Models",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Event Horizon Telescope",
+        "LIGO-Virgo-KAGRA",
+        "Next Generation Event Horizon Telescope (ngEHT)",
+        "Laser Interferometer Space Antenna (LISA)",
+        "Einstein Telescope",
+        "Cosmic Explorer"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_prospects_and_timelines_for_observational_advances_eg_nextgeneration_eht_or_improved_gravitational_wave_detectors_to_resolve_current_degeneracies_between_kerr_and_alternative_black_hole_models.md"
+    },
+    {
+      "id": "whatexperimentaladvancementsornovelobservationalsignaturescouldmosteffectivelydistinguishbetweenhiggsportaldarkmatterandsterileneutrinodarkmatterinthenextdecade",
+      "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research on Higgs Portal Dark Matter",
+        "Studies on Sterile Neutrino Dark Matter",
+        "Comparative analysis of dark matter candidates"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade.md"
+    },
+    {
+      "id": "whatexperimentaladvancesarerequiredtounambiguouslydistinguishneutrinodecayeffectsfromoscillationnsianddecoherenceeffects",
+      "title": "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_advances_are_required_to_unambiguously_distinguish_neutrino_decay_effects_from_oscillation_nsi_and_decoherence_effects.md"
+    },
+    {
+      "id": "whatexperimentalcollaborationscouldprovidethelatestboundsorevidencerelevanttoneutrinodecay",
+      "title": "What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "NOvA Collaboration",
+        "T2K Collaboration",
+        "Planck Satellite Data",
+        "Baryon Acoustic Oscillation (BAO) Observations",
+        "CUPID-Mo Nuclear Decay Experiment",
+        "KATRIN Experiment"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay.md"
+    },
+    {
+      "id": "whatexperimentalevidenceorsignatureswoulddecisivelydistinguishneutrinodecayfromsterileneutrinoornonstandardinteractionscenarios",
+      "title": "What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Current analysis on BSM neutrino physics scenarios",
+        "Experimental constraints on neutrino decay and NSI",
+        "Theoretical frameworks in neutrino physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_evidence_or_signatures_would_decisively_distinguish_neutrino_decay_from_sterile_neutrino_or_nonstandard_interaction_scenarios.md"
+    },
+    {
+      "id": "whatfutureexperimentaltechnologiesortechniquescouldrealisticallyreducetheuncertaintiesinnuclearmatrixelementsimpactingneutrinolessdoublebetadecayanalyses",
+      "title": "What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Experimental programs on neutrinoless double-beta decay",
+        "Charge-exchange reactions studies",
+        "Bayesian uncertainty framework research"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_future_experimental_technologies_or_techniques_could_realistically_reduce_the_uncertainties_in_nuclear_matrix_elements_impacting_neutrinoless_double_beta_decay_analyses.md"
+    },
+    {
+      "id": "whatnoveldetectordesignsmightimprovesensitivitytospectraldistortionsnearbetadecayendpointsbeyondcurrentcapabilitieslikekatrin",
+      "title": "What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "KATRIN Collaboration",
+        "Project 8 Team",
+        "HOLMES/ECHo Collaboration"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_novel_detector_designs_might_improve_sensitivity_to_spectral_distortions_near_beta_decay_endpoints_beyond_current_capabilities_like_katrin.md"
+    },
+    {
+      "id": "whatspecificexperimentalobservablesorsignaturescanuniquelydiscriminateneutrinodecayfrombackgroundprocessesandalternativenewphysicsscenariosindunejunooricecubedatasets",
+      "title": "What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_specific_experimental_observables_or_signatures_can_uniquely_discriminate_neutrino_decay_from_background_processes_and_alternative_new_physics_scenarios_in_dune_juno_or_icecube_datasets.md"
+    },
+    {
+      "id": "whatspecificexperimentalstrategiesaremostpromisingforachievingdirectdetectionofneutrinodecay",
+      "title": "Direct Detection of Neutrino Decay Experimental Strategies",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Credible Independent Experimental Collaborations",
+        "Peer-Reviewed Journals on Neutrino Physics",
+        "Theoretical Frameworks in Particle Physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay.md"
+    },
+    {
+      "id": "whatspecificmathematicalsubtletiesorunstatedassumptionspreventedfullmathematicalintegritycompliance",
+      "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research Paper on Mathematical Integrity in Physics",
+        "Verification Report on Standard Models",
+        "Analysis of Path Integrals and Perturbative Techniques"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance.md"
+    },
+    {
+      "id": "whatspecificnumericalbenchmarksorsimulationscanbeperformedtoenhancethemathematicalintegrityverificationofneutrinodecayeffectsincosmologicalboltzmanncodes",
+      "title": "What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Student Summary Approval",
+        "Cosmological Physics Review Journal",
+        "Neutrino Research Papers Collection"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes.md"
+    },
+    {
+      "id": "whichobservationalstrategiesornovelcrosscorrelationmethodscouldmosteffectivelybreakdegeneraciesbetweenneutrinodecaysignaturesandotherneutrinopropertyvariationsinupcomingsurveys",
+      "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research outlines a rigorous, theoretically consistent framework",
+        "Core strategy relies on joint analysis of early-Universe CMB and late-Universe multi-tracer cross-correlations",
+        "Efficacy supported by Fisher-matrix forecasting and standard cosmological perturbation theory"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys.md"
+    },
+    {
+      "id": "asymmetricdarkmattervssimpdarkmatterinexplainingdarkmatterabundanceandsmallscalestructure",
+      "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Peer-Reviewed Cosmology Journals",
+        "Current Theoretical Frameworks in Particle Physics",
+        "Reviews of Dark Matter Candidates"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymmetric_dark_matter_vs_simp_dark_matter_in_explaining_dark_matter_abundance_and_smallscale_structure.md"
+    },
+    {
+      "id": "asymmetricdarkmattervswimpbaryogenesisinexplainingmatterantimatterasymmetry",
+      "title": "Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry.md"
+    },
+    {
+      "id": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "title": "Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Quantum field theory and renormalization group literature on Asymptotic Safety",
+        "Key papers on Emergent Gravity linking thermodynamics and information theory",
+        "Comparative debate report on ASG and EG frameworks"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md"
+    },
+    {
+      "id": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+      "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Comparative report on quantum gravity frameworks",
+        "Review of Asymptotic Safety and Non-Commutative Geometry in theoretical physics",
+        "Recent advancements in quantifying Higgs boson predictions"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution.md"
+    },
+    {
+      "id": "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofquantumgravity",
+      "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Academic Journals on Quantum Gravity",
+        "Conference Proceedings on Theoretical Physics",
+        "Preprints on arXiv"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity.md"
+    },
+    {
+      "id": "axiondarkmattervssterileneutrinodarkmatterinexplainingdarkmatter",
+      "title": "Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Multiple Independent Research Publications on Axion and Sterile Neutrino Models",
+        "Cosmological, Astrophysical, and Laboratory Data Reviews",
+        "Community Consensus Reports on Dark Matter Candidates"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/axion_dark_matter_vs_sterile_neutrino_dark_matter_in_explaining_dark_matter.md"
+    },
+    {
+      "id": "axiondarkmattervswimpsinexplainingdarkmatter",
+      "title": "Axion Dark Matter vs WIMPs in Explaining Dark Matter",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck Collaboration (2018). Planck 2018 results. VI. Cosmological parameters.",
+        "Preskill, M., Wise, M. B., & Wilczek, F. (1983). Cosmology of the invisible axion.",
+        "Jungman, G., Kamionkowski, M., & Griest, K. (1996). Supersymmetric dark matter."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/axion_dark_matter_vs_wimps_in_explaining_dark_matter.md"
+    },
+    {
+      "id": "axionmonodromyvsnaturalinflationincosmicinflationarydynamics",
+      "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "cosmology"
+      ],
+      "sources": [
+        "Planck Collaboration. \"Planck 2018 results — I. Overview and the cosmological legacy of Planck.\" A&A 641 (2020): A1.",
+        "BICEP/Keck Collaboration. \"BICEP3: a next-generation cosmic microwave background polarization experiment.\" Proceedings of the 55th Rencontres de Moriond on Cosmology (2020).",
+        "Silverstein, E. and Westphal, A. \"Monodromy in the String Theory Landscape.\" Physical Review D 78.10 (2008): 106003."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/axion_monodromy_vs_natural_inflation_in_cosmic_inflationary_dynamics.md"
+    },
+    {
+      "id": "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
+      "title": "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Current cosmological paradigms",
+        "Experimental results from ADMX for ALPs",
+        "Experimental results from LHC/XENONnT for neutralinos"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/axionlike_particles_vs_neutralino_wimps_in_explaining_cosmic_dark_matter_abundance.md"
+    },
+    {
+      "id": "baryogenesismechanismsthermalleptogenesisvsaffleckdinescalarfielddynamics",
+      "title": "Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Current Cosmology Studies",
+        "Particle Physics Reviews",
+        "Journal of High Energy Physics"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics.md"
+    },
+    {
+      "id": "beyondthestandardmodelsolutionstothehierarchyproblem",
+      "title": "Beyond the Standard Model Solutions to the Hierarchy Problem",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Wikipedia",
+        "CERN",
+        "Primary literature",
+        "arXiv reviews"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md"
+    },
+    {
+      "id": "beyondthestandardmodelsupersymmetryvsextradimensions",
+      "title": "Beyond the Standard Model: Supersymmetry vs Extra Dimensions",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Theoretical and Experimental Status of Supersymmetry, Journal of High Energy Physics, 2023",
+        "Large Extra Dimensions and Randall-Sundrum Models Review, Physics Reports, 2024",
+        "Latest Results from the LHC on Beyond Standard Model Theories, CERN, 2024"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md"
+    },
+    {
+      "id": "blackholemodelsdebateobservationaltechniquesvstheoreticalframeworks",
+      "title": "Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Event Horizon Telescope Collaboration publications",
+        "Gravitational Wave Astronomy reports from LIGO/Virgo",
+        "Research articles on modified gravity theories and quantum extremal surface methods"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/black_hole_models_debate_observational_techniques_vs_theoretical_frameworks.md"
+    },
+    {
+      "id": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
+      "title": "Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Ambjorn, J., Jurkiewicz, J., & Loll, R. (2005). The Universe from Scratch. *Contemporary Physics*.",
+        "Perez, A. (2013). The Spin Foam Approach to Quantum Gravity. *Living Reviews in Relativity*.",
+        "Rovelli, C. (2004). Quantum Gravity. *Cambridge University Press*."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md"
+    },
+    {
+      "id": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "title": "Causal Set Theory vs Spin Foam Models in Quantum Gravity Research",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Multiple independent peer-reviewed articles on Causal Set Theory and Spin Foam Models",
+        "Comparative review reports on quantum gravity frameworks",
+        "Expert assessments on empirical gaps and unresolved theoretical issues"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research.md"
+    },
+    {
+      "id": "conformalcycliccosmologyvseternalinflationinexplainingprebigbanginitialconditions",
+      "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "cosmology"
+      ],
+      "sources": [
+        "Student summary on CCC and EI",
+        "Cyclic Cosmology: An Overview",
+        "Inflationary Universe: An Overview"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions.md"
+    },
+    {
+      "id": "conformalcycliccosmologyvssteadystatemodelinexplainingcosmicevolution",
+      "title": "Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Independent statistical validation reports",
+        "Peer-reviewed studies on cosmic microwave background (CMB) data",
+        "Publications on theoretical cosmology"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution.md"
+    },
+    {
+      "id": "cosmologicalconstantversusquintessenceinexplainingdarkenergy",
+      "title": "Cosmological Constant versus Quintessence in Explaining Dark Energy",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck Collaboration data on Cosmic Microwave Background measurements",
+        "Supernova Legacy Survey and other Type Ia supernovae distance measurements",
+        "Theoretical cosmology literature on ΛCDM and quintessence models"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/cosmological_constant_versus_quintessence_in_explaining_dark_energy.md"
+    },
+    {
+      "id": "debateonmodifiedgravitytheoriestevesvsfrgravity",
+      "title": "Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Peer-reviewed journals on Modified Gravity Theories",
+        "Foundational papers on Tensor-Vector-Scalar Gravity (TeVeS)",
+        "Research articles on f(R) Modified Gravity models",
+        "Cosmology datasets analyzing galactic and cosmological scale phenomena"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md"
+    },
+    {
+      "id": "dfszvsksvzaxionmodelsinexplainingdarkmatterandstrongcpproblem",
+      "title": "DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Primary research papers on DFSZ and KSVZ models",
+        "Reviews of axion physics in astrophysical contexts",
+        "Contemporary experimental searches for axions"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem.md"
+    },
+    {
+      "id": "dynamicaldarkenergyvsmodifiedgravityinexplainingtheredshiftdependenceofcosmicacceleration",
+      "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Current astrophysical literature",
+        "Cosmological observations",
+        "Reviews on modified gravity theories"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration.md"
+    },
+    {
+      "id": "ekpyroticuniversemodelversusinflationarycosmologydebate",
+      "title": "Ekpyrotic Universe Model versus Inflationary Cosmology Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "cosmology"
+      ],
+      "sources": [
+        "Peer-reviewed Cosmology Journals",
+        "Empirical Data from Cosmic Microwave Background Observations",
+        "Theoretical Physics Conference Proceedings"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md"
+    },
+    {
+      "id": "emergentgravityvsquantumloopgravitydebate",
+      "title": "Emergent Gravity vs Loop Quantum Gravity Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Comparative Level 2 Debate Report on Emergent Gravity and Loop Quantum Gravity",
+        "Empirical Data from Galactic and Cosmological Observations",
+        "Scholarly Peer-Reviewed Articles on Quantum Gravity Frameworks"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md"
+    },
+    {
+      "id": "emergentgravityvsselfinteractingdarkmatterinexplaininggalaxyclusterdynamics",
+      "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Planck 2018",
+        "Verlinde’s original work on Emergent Gravity",
+        "Studies on Velocity-Dependent Self-Interacting Dark Matter"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics.md"
+    },
+    {
+      "id": "entropicgravityvsemergentgravityinexplaininggravitationalphenomena",
+      "title": "Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Verlinde, E. (2011). \"On the Origin of Gravity and the Laws of Newton",
+        "Bianconi, M. (2025). \"Recent Advances in Emergent Gravity Theories",
+        "Jacobson, T. (1995). \"Thermodynamics of Spacetime: The Einstein Equation of State",
+        "Jenkins, A. (2009). \"Foundations of Entropic and Emergent Gravity"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md"
+    },
+    {
+      "id": "falsifiablemultiversetheoriesversussimulationhypothesisincosmologicalcontext",
+      "title": "Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Multiple independent high-quality academic sources across cosmology, quantum mechanics, and computational theory",
+        "Empirical data sets including CMB observations, quantum experimental results, cosmic ray experiments, and astrophysical constraints",
+        "Philosophical and scientific community consensus reviews and verification checklists"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md"
+    },
+    {
+      "id": "fermionicwimpsvsbosonicultralightaxionsingalaxyformationsimulations",
+      "title": "Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Current cosmological and astrophysical data",
+        "Lyman-alpha forest observations",
+        "Direct detection experiments (LZ, XENONnT)"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations.md"
+    },
+    {
+      "id": "freezeinversusfreezeoutmechanismsindarkmatterproductiondebate",
+      "title": "Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Theoretical Models from Contemporary Particle Cosmology",
+        "Experimental Results from LZ and XENONnT Collaborations",
+        "Planck 2018 Cosmological Data"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate.md"
+    },
+    {
+      "id": "fuzzydarkmattervswimpcolddarkmatterinresolvingsmallscalestructurechallenges",
+      "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "LZ Experiment",
+        "XENONnT Experiment",
+        "Large Hadron Collider (LHC)",
+        "Fermi-LAT"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges.md"
+    },
+    {
+      "id": "higgsinflationvsstarobinskyinflationincosmicinflationmodelsdebate",
+      "title": "Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "cosmology"
+      ],
+      "sources": [
+        "Planck Collaboration et al., \"Planck 2018 results. X. Constraints on inflation,\" Astronomy & Astrophysics (2018)",
+        "BICEP/Keck Array Collaborations, \"Improved Constraints on Cosmology and Foregrounds from BICEP/Keck Array Cosmic Microwave Background Data,\" Physical Review Letters (2021)",
+        "F. L. Bezrukov and M. Shaposhnikov, \"The Standard Model Higgs boson as the inflaton,\" Physics Letters B (2008)",
+        "A. A. Starobinsky, \"A New Type of Isotropic Cosmological Models Without Singularity,\" Physics Letters B (1980)",
+        "D. Baumann, \"TASI Lectures on Inflation,\" arXiv:0907.5424 [hep-th] (2009)"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate.md"
+    },
+    {
+      "id": "higgsportaldarkmattervssterileneutrinodarkmatterdebate",
+      "title": "Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Peer-reviewed articles and reviews integrating experimental data on dark matter models",
+        "Foundational theoretical frameworks in particle physics and cosmology",
+        "Recent observational constraints from astrophysical and collider experiments"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/higgs_portal_dark_matter_vs_sterile_neutrino_dark_matter_debate.md"
+    },
+    {
+      "id": "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+      "title": "Holographic Principle vs Causal Set Theory in Quantum Gravity Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Multi-source academic data integrating theoretical analyses",
+        "Skeptic verification checklist scoring documentation",
+        "Current quantum gravity research consensus reviews"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate.md"
+    },
+    {
+      "id": "holographicprinciplevsloopquantumgravityinquantumgravityresearch",
+      "title": "Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Maldacena, J. (1998). The Large N Limit of Superconformal Field Theories and Supergravity. *Advances in Theoretical and Mathematical Physics*, 2(2), 231-252.",
+        "Rovelli, C. (2004). *Quantum Gravity*. Cambridge University Press.",
+        "Bousso, R. (2002). The Holographic Principle. *Reviews of Modern Physics*, 74(3), 825-874.",
+        "Thiemann, T. (2007). *Modern Canonical Quantum General Relativity*. Cambridge University Press.",
+        "Polchinski, J. (1995). Dirichlet-Branes and Ramond-Ramond Charges. *Physical Review Letters*, 75(26), 4724-4727.",
+        "Ashtekar, A. & Lewandowski, J. (2004). Background Independent Quantum Gravity: A Status Report. *Classical and Quantum Gravity*, 21(15), R53-R152."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md"
+    },
+    {
+      "id": "horavalifshitzgravityvsasymptoticallysafegravityinquantumgravityresearch",
+      "title": "Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Peer-reviewed journals on Hořava-Lifshitz Gravity and Asymptotically Safe Gravity",
+        "Multi-source comparative analyses in quantum gravity frameworks",
+        "Skeptic verification report with score 5/5"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md"
+    },
+    {
+      "id": "informationtheoreticvsthermodynamicinterpretationsofgravity",
+      "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Bekenstein, J. D. \"Black holes and the second law.\" *Lettere al Nuovo Cimento*, 1972.",
+        "Hawking, S. W. \"Black hole explosions?\" *Nature*, 1975.",
+        "Verlinde, E. \"Emergent Gravity and the Dark Universe.\" *Journal of High Energy Physics*, 2011."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/informationtheoretic_vs_thermodynamic_interpretations_of_gravity.md"
+    },
+    {
+      "id": "interactingdarkenergyvsnonminimalcouplinginsolvingthehubbletension",
+      "title": "Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Current Astronomical Data",
+        "Theoretical Frameworks in Cosmology",
+        "Quantum Field Theoretical Approaches"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension.md"
+    },
+    {
+      "id": "interactingdarkmattervsselfinteractingdarkmatterinresolvingsmallscalestructurechallenges",
+      "title": "Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck 2018",
+        "Comparative Audit Report",
+        "Current Observational Data"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges.md"
+    },
+    {
+      "id": "loopquantumcosmologyvsstringgascosmologyinearlyuniversemodelsdebate",
+      "title": "Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Comparative debate report on Loop Quantum Cosmology and String Gas Cosmology frameworks",
+        "Empirical constraints and theoretical analyses in early universe cosmology literature",
+        "Mathematical verification and skepticism assessments by domain experts"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate.md"
+    },
+    {
+      "id": "loopquantumgravityversuscausalsettheoryinquantumgravity",
+      "title": "Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Multiple independent, peer-reviewed sources on Loop Quantum Gravity and Causal Set Theory comparative analyses",
+        "Rigorous debate reports on quantum gravity frameworks",
+        "Scholarly assessments of mathematical consistency and empirical alignment in quantum gravity research"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md"
+    },
+    {
+      "id": "loopquantumgravityvsasymptoticsafetyinquantumgravitydebate",
+      "title": "Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_TOPOLOGICAL]",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Ashtekar, A. (1986). New Variables for Classical and Quantum Gravity. Physical Review Letters.",
+        "Reuter, M. (1998). Nonperturbative Evolution Equation for Quantum Gravity. Physical Review D.",
+        "Niedermaier, M., & Reuter, M. (2006). The Asymptotic Safety Scenario in Quantum Gravity. Living Reviews in Relativity."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate.md"
+    },
+    {
+      "id": "massivegravityversusfrgravityinmodifiedgravitydebates",
+      "title": "Massive Gravity versus f(R) Gravity in Modified Gravity Debates",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "de Rham, Claudia. 'Massive Gravity.' Living Reviews in Relativity (2014).",
+        "Sotiriou, Thomas P., and Valerio Faraoni. 'f(R) Theories Of Gravity.' Reviews of Modern Physics (2010).",
+        "Joyce, Austin et al. 'Beyond the Cosmological Standard Model.' Physics Reports (2015)."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/massive_gravity_versus_fr_gravity_in_modified_gravity_debates.md"
+    },
+    {
+      "id": "mechanismsofelectroweaksymmetrybreakingbeyondthestandardmodel",
+      "title": "Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Experimental and theoretical high-energy physics literature",
+        "Quantum field theory and particle phenomenology studies",
+        "Current scientific consensus reviews on Supersymmetry and Technicolor"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md"
+    },
+    {
+      "id": "modifiedgravitytheoriesvsdarkmatterparticlemodelsdebate",
+      "title": "Modified Gravity Theories vs Dark Matter Particle Models Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Peer-reviewed journals on f(R) gravity and dark matter models",
+        "Observational cosmology data archives",
+        "Recent comprehensive debate reports on dark matter and modified gravity",
+        "Skeptic verification checklist for theoretical physics debates"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/modified_gravity_theories_vs_dark_matter_particle_models_debate.md"
+    },
+    {
+      "id": "modifiedgravityvsdarkmatterparadigmdebate",
+      "title": "Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Empirical studies in galaxy rotation curves and cosmological observations",
+        "Mathematical formulations and LaTeX derivations of MOND and CDM frameworks",
+        "Contemporary scientific consensus reviews on dark matter and alternative gravity theories"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/modified_gravity_vs_dark_matter_paradigm_debate.md"
+    },
+    {
+      "id": "modifiedgravityvsquantumgravityinducedgravityinexplainingcosmicacceleration",
+      "title": "Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Comparative Level 2 Debate Report on Modified Gravity and Quantum Gravity Induced Gravity Models",
+        "Starobinsky A. A., 'A New Type of Isotropic Cosmological Models Without Singularity,' Physics Letters B, 1980",
+        "Clifton T., Ferreira P. G., Padilla A., Skordis C., 'Modified Gravity and Cosmology,' Physics Reports, 2012"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration.md"
+    },
+    {
+      "id": "modifiednewtoniandynamicsvsemergentgravityinexplaininggalacticrotationcurves",
+      "title": "Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Comparative debate report on Modified Newtonian Dynamics and Emergent Gravity Theory",
+        "Primary scientific literature on MOND and Emergent Gravity",
+        "Cosmological data analyses including gravitational wave integrations"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves.md"
+    },
+    {
+      "id": "multiversehypothesisversusanthropicprincipledebate",
+      "title": "Multiverse Hypothesis versus Anthropic Principle Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Various Cosmology and Quantum Mechanics Texts",
+        "Contemporary Scientific Articles on Multiverse and Anthropic Principle",
+        "Empirical Data Reviews in Theoretical Physics"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md"
+    },
+    {
+      "id": "primordialnongaussianityinflationarymultifieldmodelsvscosmicdefects",
+      "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "cosmology"
+      ],
+      "sources": [
+        "Cosmological Inflation and Non-Gaussianity: Current Status",
+        "Theoretical Approaches to Cosmic String Networks",
+        "Planck Collaborations on Non-Gaussianity Constraints"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/primordial_nongaussianity_inflationary_multifield_models_vs_cosmic_defects.md"
+    },
+    {
+      "id": "quantumdecoherenceversusobjectivecollapseinquantummeasurementproblem",
+      "title": "Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Zurek, W.H. (2003). Decoherence and the transition from quantum to classical—Revisited. Los Alamos Science.",
+        "Bassi, A., Ghirardi, G.C. (2003). Dynamical reduction models. Physics Reports.",
+        "Schlosshauer, M. (2005). Decoherence, the measurement problem, and interpretations of quantum mechanics. Reviews of Modern Physics.",
+        "Adler, S.L. (2007). Collapse models with non-white noises. Journal of Physics A.",
+        "Arndt, M., Hornberger, K. (2014). Testing the limits of quantum mechanical superpositions. Nature Physics."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem.md"
+    },
+    {
+      "id": "quantumgravityapproachesloopquantumgravityvsstringtheory",
+      "title": "Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Multiple peer-reviewed journal articles on quantum gravity frameworks",
+        "Authoritative textbooks on Loop Quantum Gravity and String Theory",
+        "Recent review papers summarizing empirical constraints and theoretical status"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory.md"
+    },
+    {
+      "id": "quantumgravitybeyondstringtheoryloopquantumgravityvscausaldynamicaltriangulation",
+      "title": "Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation.md"
+    },
+    {
+      "id": "quantumgravitydebate",
+      "title": "Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "[quantum-gravity, string-theory, loop-quantum-gravity, theoretical-physics, verification, scientific-consensus]"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/quantum_gravity_debate.md"
+    },
+    {
+      "id": "quantumloopgravityvsstringfieldtheorydebate",
+      "title": "Quantum Loop Gravity vs String Field Theory Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Rovelli, C. (2004). Quantum Gravity. Cambridge University Press.",
+        "Zwiebach, B. (2009). A First Course in String Theory. Cambridge University Press.",
+        "Ashtekar, A., & Lewandowski, J. (2004). Background Independent Quantum Gravity: A Status Report."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/quantum_loop_gravity_vs_string_field_theory_debate.md"
+    },
+    {
+      "id": "quintessentialinflationvskinflationinmodelingearlyuniversedynamics",
+      "title": "Quintessential Inflation vs K-Inflation in Modeling Early Universe Dynamics",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "cosmology"
+      ],
+      "sources": [
+        "Current CMB and cosmological data",
+        "Mathematical analyses of inflationary models",
+        "Theoretical frameworks in cosmology"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/quintessential_inflation_vs_kinflation_in_modeling_early_universe_dynamics.md"
+    },
+    {
+      "id": "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem",
+      "title": "Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "LHC Experimental Results",
+        "Theoretical Considerations in Higher Dimensions",
+        "General Relativity and Quantum Field Theory"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem.md"
+    },
+    {
+      "id": "randallsundrumvsaddmodelsinhierarchyproblemresolution",
+      "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Comparative Report on Brane-World Models",
+        "LHC and Torsion-Balance Experiment Data"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/randallsundrum_vs_add_models_in_hierarchy_problem_resolution.md"
+    },
+    {
+      "id": "randallsundrumvsaddmodelsinhierarchyproblemresolutioncomparativeanalysisofphenomenologicalsignatures",
+      "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "LHC Studies and Limits",
+        "Astrophysical Implications of ADD Models",
+        "Theoretical Insights on the Hierarchy Problem"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/randallsundrum_vs_add_models_in_hierarchy_problem_resolution_comparative_analysis_of_phenomenological_signatures.md"
+    },
+    {
+      "id": "scalarfielddarkmattervsselfinteractingdarkmatterinresolvingsmallscalestructurechallenges",
+      "title": "Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Approved Student Summary",
+        "arXiv:1707.00203",
+        "Phys. Rev. D 98 (2018) 045001"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/scalar_field_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges.md"
+    },
+    {
+      "id": "scalartensorvsnoncommutativegeometryinaddressingsingularityresolutionattheplanckscale",
+      "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale.md"
+    },
+    {
+      "id": "scalartensorvsnonlocalgravitymodelsinexplaininglatetimecosmicacceleration",
+      "title": "Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Scientific Skeptic",
+        "Verifier",
+        "Approved Student Summary"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md"
+    },
+    {
+      "id": "stringtheoryversusloopquantumgravityinquantumgravityresearch",
+      "title": "String Theory versus Loop Quantum Gravity in Quantum Gravity Research",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Academic Journals on Quantum Gravity",
+        "Verified Mathematical Frameworks in Theoretical Physics",
+        "Community Consensus Reviews on Theoretical Physics"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md"
+    },
+    {
+      "id": "stringtheoryvsasymptoticsafetyinquantumgravitydebate",
+      "title": "String Theory vs Asymptotic Safety in Quantum Gravity Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Level 2 Debate Report on Comparative Evaluation of String Theory and Asymptotic Safety Quantum Gravity",
+        "Polyakov, A.M., 'Quantum Geometry of Bosonic Strings', Physics Letters B, 1981",
+        "Reuter, M., 'Nonperturbative Evolution Equation for Quantum Gravity', Physical Review D, 1998"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md"
+    },
+    {
+      "id": "superfluiddarkmattervsemergentgravityinexplaininggalacticdynamics",
+      "title": "Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Peer-reviewed astrophysics journals analyzing MOND-like theories",
+        "Theoretical reviews on Superfluid Dark Matter and Emergent Gravity",
+        "Community consensus statements on dark matter alternatives"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md"
+    },
+    {
+      "id": "superfluiddarkmattervssterileneutrinodarkmatterdebate",
+      "title": "Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Review of Particle Physics, Particle Data Group",
+        "Astrophysical Constraints on Dark Matter Models, Journal of Cosmology and Astroparticle Physics",
+        "Superfluid Dark Matter: Theoretical Advances and Challenges, Physical Review Letters"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/superfluid_dark_matter_vs_sterile_neutrino_dark_matter_debate.md"
+    },
+    {
+      "id": "superstringtheoryvstwistortheoryinunifyingquantumgravityandparticlephysics",
+      "title": "Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Green, M.B., Schwarz, J.H., & Witten, E. (1987). Superstring Theory. Cambridge University Press.",
+        "Penrose, R. (1976). Nonlinear Gravitons and Curved Twistor Theory. General Relativity and Gravitation.",
+        "Witten, E. (2004). Perturbative Gauge Theory as a String Theory in Twistor Space. Communications in Mathematical Physics."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics.md"
+    },
+    {
+      "id": "supersymmetricdarkenergymodelsvsmodifiedgravitytheoriesinexplainingcosmicacceleration",
+      "title": "Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Multiple independent theoretical and empirical studies on Supersymmetric Dark Energy Models",
+        "Observational data including collider experiments, gravitational wave detections, and cosmological surveys",
+        "Peer-reviewed comparative analyses on Modified Gravity Theories and their cosmological implications"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration.md"
+    },
+    {
+      "id": "supersymmetricdarkmattermodelsvsprimordialblackholedarkmatterhypothesisdebate",
+      "title": "Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Collider data analyses",
+        "Direct dark matter detection experiments",
+        "Microlensing surveys",
+        "Gravitational wave observations",
+        "Cosmological measurements"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate.md"
+    },
+    {
+      "id": "supersymmetricgutsvscompositehiggsmodelsinbeyondstandardmodelphysics",
+      "title": "Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Peer-reviewed journals on SUSY GUTs and Composite Higgs Models",
+        "Experimental LHC search data and proton decay constraints",
+        "Theoretical physics textbooks on SUSY algebra and coset constructions"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics.md"
+    },
+    {
+      "id": "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking",
+      "title": "Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Peer-reviewed literature on Supersymmetric Quantum Field Theories and Technicolor Theories",
+        "Institutional reviews of quantum field theory and electroweak symmetry breaking",
+        "Canonical lecture notes on supersymmetry, gauge theories, and dynamical symmetry breaking"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking.md"
+    },
+    {
+      "id": "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking",
+      "title": "Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Peer-reviewed Publications on Supersymmetric Quantum Field Theories",
+        "Experimental Collider Data and Analysis Reports",
+        "Theoretical Reviews on Composite Higgs Models"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking.md"
+    },
+    {
+      "id": "supersymmetryvsextradimensionsinbeyondstandardmodelphysics",
+      "title": "Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Wess, J., & Bagger, J. (1992). Supersymmetry and Supergravity. Princeton University Press.",
+        "Randall, L., & Sundrum, R. (1999). An Alternative to Compactification. Physical Review Letters, 83(23), 4690.",
+        "LHC Experimental Constraints on Supersymmetry and Extra Dimensions. CERN Reports, 2023.",
+        "Polchinski, J. (1998). String Theory, Vol. 2: Superstring Theory and Beyond. Cambridge University Press.",
+        "Rubakov, V. (2001). Large and Infinite Extra Dimensions. Physics-Uspekhi, 44(9), 871–893."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics.md"
+    },
+    {
+      "id": "symmetricteleparallelgravityvsmetricaffinefrgravityinaddressinglatetimecosmicacceleration",
+      "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2",
+        "gravity"
+      ],
+      "sources": [
+        "Peer-Reviewed Journal Article",
+        "Theoretical Physics Conference Proceedings",
+        "Preprint Archive (arXiv)"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/symmetric_teleparallel_gravity_vs_metricaffine_fr_gravity_in_addressing_latetime_cosmic_acceleration.md"
+    },
+    {
+      "id": "warmdarkmattervsselfinteractingdarkmatterinexplainingsmallscalestructureformation",
+      "title": "Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Peer-reviewed studies on Warm Dark Matter and Self-Interacting Dark Matter",
+        "Empirical data comparing small-scale cosmological structures",
+        "Theoretical analyses addressing limitations of Cold Dark Matter models"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md"
+    }
+  ],
+  "edges": [],
+  "frontier": []
+}

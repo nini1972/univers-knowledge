@@ -1,13 +1,18 @@
 ---
+id: "darkmatter"
 title: "Dark Matter"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Astrophysics and Particle Physics Journals"
   - "Standard Cosmological and Particle Physics Equations"
   - "Experimental Searches in Dark Matter Detection"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Dark Matter

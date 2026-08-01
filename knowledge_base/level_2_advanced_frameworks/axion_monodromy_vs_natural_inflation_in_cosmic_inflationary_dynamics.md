@@ -1,13 +1,19 @@
 ---
+id: "axionmonodromyvsnaturalinflationincosmicinflationarydynamics"
 title: "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Planck Collaboration. "Planck 2018 results — I. Overview and the cosmological legacy of Planck." A&A 641 (2020): A1.
-  - BICEP/Keck Collaboration. "BICEP3: a next-generation cosmic microwave background polarization experiment." Proceedings of the 55th Rencontres de Moriond on Cosmology (2020).
-  - Silverstein, E. and Westphal, A. "Monodromy in the String Theory Landscape." Physical Review D 78.10 (2008): 106003.
+  - "Planck Collaboration. "Planck 2018 results — I. Overview and the cosmological legacy of Planck." A&A 641 (2020): A1."
+  - "BICEP/Keck Collaboration. "BICEP3: a next-generation cosmic microwave background polarization experiment." Proceedings of the 55th Rencontres de Moriond on Cosmology (2020)."
+  - "Silverstein, E. and Westphal, A. "Monodromy in the String Theory Landscape." Physical Review D 78.10 (2008): 106003."
+dependencies:
+  []
+tags:
+  - "2"
+  - "cosmology"
 ---
 
 # Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics

@@ -1,13 +1,18 @@
 ---
+id: "neutrinosectoranomaliesandtheirimplicationsforbeyondstandardmodelphysics"
 title: "Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics"
-level: "1"
+level: 1
 status: "[VERIFIED]"
-sources:
-  - Research report on neutrino masses and oscillations
-  - Literature on sterile neutrinos and Non-Standard Interactions (NSI)
-  - Articles on CPT/Lorentz symmetry violations in neutrino physics
 math_status: "[MATH_CONJECTURED]"
 math_score: "1/4"
+sources:
+  - "Research report on neutrino masses and oscillations"
+  - "Literature on sterile neutrinos and Non-Standard Interactions (NSI)"
+  - "Articles on CPT/Lorentz symmetry violations in neutrino physics"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics

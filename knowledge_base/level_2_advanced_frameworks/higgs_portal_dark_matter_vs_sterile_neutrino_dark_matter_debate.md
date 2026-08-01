@@ -1,13 +1,18 @@
 ---
+id: "higgsportaldarkmattervssterileneutrinodarkmatterdebate"
 title: "Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONSISTENT"
 math_score: "3/4"
 sources:
-  - Peer-reviewed articles and reviews integrating experimental data on dark matter models
-  - Foundational theoretical frameworks in particle physics and cosmology
-  - Recent observational constraints from astrophysical and collider experiments
+  - "Peer-reviewed articles and reviews integrating experimental data on dark matter models"
+  - "Foundational theoretical frameworks in particle physics and cosmology"
+  - "Recent observational constraints from astrophysical and collider experiments"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate

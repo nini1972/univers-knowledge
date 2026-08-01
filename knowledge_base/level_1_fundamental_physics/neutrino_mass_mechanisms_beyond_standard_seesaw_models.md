@@ -1,13 +1,18 @@
 ---
+id: "neutrinomassmechanismsbeyondstandardseesawmodels"
 title: "Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
+math_status: "[MATH_TOPOLOGICAL]"
+math_score: "3/4"
 sources:
   - "Mohapatra, R. N., et al., 'Theory of Neutrinos: A White Paper', Reports on Progress in Physics, 2007"
   - "King, S. F., 'Neutrino mass models', Reports on Progress in Physics, 2007"
   - "Schechter, J. and Valle, J. W. F., 'Neutrino masses in SU(2) × U(1) theories', Phys. Rev. D, 1980"
-math_status: "[MATH_TOPOLOGICAL]"
-math_score: "3/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models

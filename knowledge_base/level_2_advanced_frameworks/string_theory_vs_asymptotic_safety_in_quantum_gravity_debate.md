@@ -1,11 +1,20 @@
 ---
+id: "stringtheoryvsasymptoticsafetyinquantumgravitydebate"
 title: "String Theory vs Asymptotic Safety in Quantum Gravity Debate"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Level 2 Debate Report on Comparative Evaluation of String Theory and Asymptotic Safety Quantum Gravity"
   - "Polyakov, A.M., 'Quantum Geometry of Bosonic Strings', Physics Letters B, 1981"
   - "Reuter, M., 'Nonperturbative Evolution Equation for Quantum Gravity', Physical Review D, 1998"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # String Theory vs Asymptotic Safety in Quantum Gravity Debate

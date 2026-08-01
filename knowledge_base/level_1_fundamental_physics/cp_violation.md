@@ -1,10 +1,16 @@
 ---
+id: "cpviolation"
 title: "CP Violation"
-category: "level_1_fundamental_physics"
-tags: "[CP symmetry, charge conjugation, parity, CKM matrix, weak interactions, meson decay, matter-antimatter asymmetry, baryogenesis]"
-filepath: "knowledge_base/level_1_fundamental_physics/cp_violation.md"
+level: 1
+status: "[THEORETICAL]"
 math_status: "[MATH_CONJECTURED]"
 math_score: "1/4"
+sources:
+  - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "[CP symmetry, charge conjugation, parity, CKM matrix, weak interactions, meson decay, matter-antimatter asymmetry, baryogenesis]"
 ---
 
 # CP Violation

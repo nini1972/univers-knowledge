@@ -1,13 +1,18 @@
 ---
+id: "conformalcycliccosmologyvssteadystatemodelinexplainingcosmicevolution"
 title: "Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Independent statistical validation reports
-  - Peer-reviewed studies on cosmic microwave background (CMB) data
-  - Publications on theoretical cosmology
+  - "Independent statistical validation reports"
+  - "Peer-reviewed studies on cosmic microwave background (CMB) data"
+  - "Publications on theoretical cosmology"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution

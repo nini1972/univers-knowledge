@@ -1,11 +1,18 @@
 ---
+id: "supersymmetricgutsvscompositehiggsmodelsinbeyondstandardmodelphysics"
 title: "Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Peer-reviewed journals on SUSY GUTs and Composite Higgs Models"
   - "Experimental LHC search data and proton decay constraints"
   - "Theoretical physics textbooks on SUSY algebra and coset constructions"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics

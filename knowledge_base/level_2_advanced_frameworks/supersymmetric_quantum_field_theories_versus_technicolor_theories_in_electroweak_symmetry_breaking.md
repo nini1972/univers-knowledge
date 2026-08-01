@@ -1,11 +1,19 @@
 ---
+id: "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking"
 title: "Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Peer-reviewed literature on Supersymmetric Quantum Field Theories and Technicolor Theories
-  - Institutional reviews of quantum field theory and electroweak symmetry breaking
-  - Canonical lecture notes on supersymmetry, gauge theories, and dynamical symmetry breaking
+  - "Peer-reviewed literature on Supersymmetric Quantum Field Theories and Technicolor Theories"
+  - "Institutional reviews of quantum field theory and electroweak symmetry breaking"
+  - "Canonical lecture notes on supersymmetry, gauge theories, and dynamical symmetry breaking"
+dependencies:
+  []
+tags:
+  - "2"
+  - "quantum_physics"
 ---
 
 # Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking

@@ -1,13 +1,19 @@
 ---
+id: "quantumvacuumpolarization"
 title: "Quantum Vacuum Polarization"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Precision Measurements of the Lamb Shift in Hydrogen and Deuterium, Phys. Rev. Lett."
   - "Anomalous Magnetic Moment of the Electron and Muon, Reviews of Modern Physics"
   - "Running of the Fine-Structure Constant and QED Corrections, Physical Review D"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Vacuum Polarization

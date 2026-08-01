@@ -1,13 +1,21 @@
 ---
+id: "quantumdecoherenceversusobjectivecollapseinquantummeasurementproblem"
 title: "Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"
-level: 1
+level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Zurek, W.H. (2003). Decoherence and the transition from quantum to classical—Revisited. Los Alamos Science."
   - "Bassi, A., Ghirardi, G.C. (2003). Dynamical reduction models. Physics Reports."
   - "Schlosshauer, M. (2005). Decoherence, the measurement problem, and interpretations of quantum mechanics. Reviews of Modern Physics."
   - "Adler, S.L. (2007). Collapse models with non-white noises. Journal of Physics A."
   - "Arndt, M., Hornberger, K. (2014). Testing the limits of quantum mechanical superpositions. Nature Physics."
+dependencies:
+  []
+tags:
+  - "2"
+  - "quantum_physics"
 ---
 
 # Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem

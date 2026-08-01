@@ -1,16 +1,21 @@
 ---
+id: "whataretheprospectsandtimelinesforobservationaladvancesegnextgenerationehtorimprovedgravitationalwavedetectorstoresolvecurrentdegeneraciesbetweenkerrandalternativeblackholemodels"
 title: "Prospects and Timelines for Observational Advances to Resolve Current Degeneracies between Kerr and Alternative Black Hole Models"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Event Horizon Telescope
-  - LIGO-Virgo-KAGRA
-  - Next Generation Event Horizon Telescope (ngEHT)
-  - Laser Interferometer Space Antenna (LISA)
-  - Einstein Telescope
-  - Cosmic Explorer
+  - "Event Horizon Telescope"
+  - "LIGO-Virgo-KAGRA"
+  - "Next Generation Event Horizon Telescope (ngEHT)"
+  - "Laser Interferometer Space Antenna (LISA)"
+  - "Einstein Telescope"
+  - "Cosmic Explorer"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Prospects and Timelines for Observational Advances to Resolve Current Degeneracies between Kerr and Alternative Black Hole Models

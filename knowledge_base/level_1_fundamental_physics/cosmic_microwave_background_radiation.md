@@ -1,13 +1,18 @@
 ---
+id: "cosmicmicrowavebackgroundradiation"
 title: "Cosmic Microwave Background Radiation"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_CONJECTURED]"
+math_score: "1/4"
 sources:
   - "COBE Mission Data"
   - "WMAP Satellite Observations"
   - "Planck Satellite Results"
-math_status: "[MATH_CONJECTURED]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Cosmic Microwave Background Radiation

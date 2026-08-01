@@ -1,13 +1,18 @@
 ---
+id: "canindependentpubliclyavailabledatasetsfromjunoduneorhyperkamiokandebereleasedtoenableexternalverificationofneutrinodecaybounds"
 title: "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Investigation Reports on JUNO, DUNE, and Hyper-Kamiokande collaborations
-  - Collaborative Public Policy Documentation
-  - Pilot Program Proposals
+  - "Investigation Reports on JUNO, DUNE, and Hyper-Kamiokande collaborations"
+  - "Collaborative Public Policy Documentation"
+  - "Pilot Program Proposals"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?

@@ -1,11 +1,19 @@
 ---
+id: "modifiednewtoniandynamicsvsemergentgravityinexplaininggalacticrotationcurves"
 title: "Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"
-level: 1
+level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Comparative debate report on Modified Newtonian Dynamics and Emergent Gravity Theory
-  - Primary scientific literature on MOND and Emergent Gravity
-  - Cosmological data analyses including gravitational wave integrations
+  - "Comparative debate report on Modified Newtonian Dynamics and Emergent Gravity Theory"
+  - "Primary scientific literature on MOND and Emergent Gravity"
+  - "Cosmological data analyses including gravitational wave integrations"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves

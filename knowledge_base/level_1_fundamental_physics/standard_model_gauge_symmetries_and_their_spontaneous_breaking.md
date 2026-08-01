@@ -1,13 +1,18 @@
 ---
+id: "standardmodelgaugesymmetriesandtheirspontaneousbreaking"
 title: "Standard Model Gauge Symmetries and Their Spontaneous Breaking"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_TOPOLOGICAL]"
+math_score: "3/4"
 sources:
   - "Seminal references on the Standard Model gauge symmetries and Higgs mechanism consistent with scientific consensus"
   - "Experimental data on W/Z boson mass measurements and Higgs boson discovery"
   - "Peer-reviewed Verification Report evaluating mathematical rigor and classification of concepts"
-math_status: "[MATH_TOPOLOGICAL]"
-math_score: "3/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Standard Model Gauge Symmetries and Their Spontaneous Breaking

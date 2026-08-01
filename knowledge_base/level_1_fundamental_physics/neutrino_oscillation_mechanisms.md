@@ -1,13 +1,18 @@
 ---
+id: "neutrinooscillationmechanisms"
 title: "Neutrino Oscillation Mechanisms"
-level: "1"
+level: 1
 status: "[VERIFIED]"
-sources:
-  - Independent experimental evidence from multiple detector types
-  - Phenomenological analyses of neutrino flavor transitions
-  - Mathematical formulations involving the PMNS matrix and oscillation probabilities
 math_status: "[MATH_CONSISTENT]"
 math_score: "2/4"
+sources:
+  - "Independent experimental evidence from multiple detector types"
+  - "Phenomenological analyses of neutrino flavor transitions"
+  - "Mathematical formulations involving the PMNS matrix and oscillation probabilities"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Oscillation Mechanisms

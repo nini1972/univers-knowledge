@@ -1,13 +1,18 @@
 ---
+id: "interactingdarkmattervsselfinteractingdarkmatterinresolvingsmallscalestructurechallenges"
 title: "Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges"
-level: 1
+level: 2
 status: "[VERIFIED]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Planck 2018
-  - Comparative Audit Report
-  - Current Observational Data
+  - "Planck 2018"
+  - "Comparative Audit Report"
+  - "Current Observational Data"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges

@@ -1,13 +1,18 @@
 ---
+id: "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution"
 title: "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "4/4"
 sources:
-  - Comparative report on quantum gravity frameworks
-  - Review of Asymptotic Safety and Non-Commutative Geometry in theoretical physics
-  - Recent advancements in quantifying Higgs boson predictions
+  - "Comparative report on quantum gravity frameworks"
+  - "Review of Asymptotic Safety and Non-Commutative Geometry in theoretical physics"
+  - "Recent advancements in quantifying Higgs boson predictions"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution

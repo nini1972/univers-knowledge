@@ -1,7 +1,16 @@
 ---
+id: "quantumgravitydebate"
 title: "Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"
-path: knowledge_base/level_2_advanced_frameworks/quantum_gravity_debate.md
-tags: [quantum-gravity, string-theory, loop-quantum-gravity, theoretical-physics, verification, scientific-consensus]
+level: 2
+status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
+sources:
+  - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "[quantum-gravity, string-theory, loop-quantum-gravity, theoretical-physics, verification, scientific-consensus]"
 ---
 
 # Quantum Gravity Debate: String Theory vs Loop Quantum Gravity (LQG)

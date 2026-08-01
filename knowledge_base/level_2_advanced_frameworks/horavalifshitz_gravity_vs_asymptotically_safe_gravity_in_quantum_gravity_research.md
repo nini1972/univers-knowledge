@@ -1,11 +1,20 @@
 ---
+id: "horavalifshitzgravityvsasymptoticallysafegravityinquantumgravityresearch"
 title: "Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"
-level: 1
+level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Peer-reviewed journals on Hořava-Lifshitz Gravity and Asymptotically Safe Gravity
-  - Multi-source comparative analyses in quantum gravity frameworks
-  - Skeptic verification report with score 5/5
+  - "Peer-reviewed journals on Hořava-Lifshitz Gravity and Asymptotically Safe Gravity"
+  - "Multi-source comparative analyses in quantum gravity frameworks"
+  - "Skeptic verification report with score 5/5"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research

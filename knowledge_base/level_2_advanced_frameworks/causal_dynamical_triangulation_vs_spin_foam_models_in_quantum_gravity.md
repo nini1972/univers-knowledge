@@ -1,11 +1,20 @@
 ---
+id: "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity"
 title: "Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Ambjorn, J., Jurkiewicz, J., & Loll, R. (2005). The Universe from Scratch. *Contemporary Physics*."
   - "Perez, A. (2013). The Spin Foam Approach to Quantum Gravity. *Living Reviews in Relativity*."
   - "Rovelli, C. (2004). Quantum Gravity. *Cambridge University Press*."
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity

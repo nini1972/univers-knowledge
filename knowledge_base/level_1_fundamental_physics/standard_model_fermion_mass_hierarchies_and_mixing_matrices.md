@@ -1,13 +1,18 @@
 ---
+id: "standardmodelfermionmasshierarchiesandmixingmatrices"
 title: "Standard Model Fermion Mass Hierarchies and Mixing Matrices"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Experimental measurements of fermion masses"
   - "CKM and PMNS mixing parameter data"
   - "Theoretical model reports on exponent matrix framework, seesaw neutrino mechanisms, and algebraic approaches"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Standard Model Fermion Mass Hierarchies and Mixing Matrices

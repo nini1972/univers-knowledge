@@ -454,7 +454,7 @@ def parse_math_status(math_output: str) -> str:
 
 def is_concept_existing(concept_name: str, level: int = 2, repo_root=None) -> bool:
     """
-    Checks whether a concept file already exists on disk or in the index.
+    Checks whether a concept file or OKF node ID already exists on disk, in graph.json, or in _index.md.
     """
     if not concept_name or not str(concept_name).strip():
         return False
@@ -466,12 +466,25 @@ def is_concept_existing(concept_name: str, level: int = 2, repo_root=None) -> bo
         from pathlib import Path
         repo_root = Path(__file__).resolve().parent.parent
 
+    # Check OKF graph.json manifest first
+    graph_path = repo_root / "knowledge_base" / "graph.json"
+    if graph_path.exists():
+        try:
+            with open(graph_path, "r", encoding="utf-8") as f:
+                graph_data = json.load(f)
+                for node in graph_data.get("nodes", []):
+                    if node.get("id") == s or node.get("path", "").endswith(filename):
+                        return True
+        except Exception:
+            pass
+
+    # Check disk file
     level_folder = "level_1_fundamental_physics" if level == 1 else "level_2_advanced_frameworks"
     filepath = repo_root / "knowledge_base" / level_folder / filename
-
     if filepath.exists():
         return True
 
+    # Check _index.md fallback
     index_path = repo_root / "knowledge_base" / "_index.md"
     if index_path.exists():
         try:

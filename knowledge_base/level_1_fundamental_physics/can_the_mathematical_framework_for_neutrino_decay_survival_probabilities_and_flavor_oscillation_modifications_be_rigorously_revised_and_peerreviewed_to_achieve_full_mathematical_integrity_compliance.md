@@ -1,13 +1,18 @@
 ---
+id: "canthemathematicalframeworkforneutrinodecaysurvivalprobabilitiesandflavoroscillationmodificationsberigorouslyrevisedandpeerreviewedtoachievefullmathematicalintegritycompliance"
 title: "Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Peer-reviewed journals on neutrino physics
-  - T2K collaboration reports
-  - NOvA experimental findings
+  - "Peer-reviewed journals on neutrino physics"
+  - "T2K collaboration reports"
+  - "NOvA experimental findings"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?

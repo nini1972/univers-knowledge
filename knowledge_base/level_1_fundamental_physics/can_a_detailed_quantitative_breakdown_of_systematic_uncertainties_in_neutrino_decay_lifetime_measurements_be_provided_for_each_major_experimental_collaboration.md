@@ -1,13 +1,20 @@
 ---
+id: "canadetailedquantitativebreakdownofsystematicuncertaintiesinneutrinodecaylifetimemeasurementsbeprovidedforeachmajorexperimentalcollaboration"
 title: "Neutrino Decay Lifetime Limits"
 level: 1
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - SNO Collaboration
-  - Super-Kamiokande Collaboration
-  - T2K Collaboration
-  - NOvA Collaboration
-  - IceCube Collaboration
+  - "SNO Collaboration"
+  - "Super-Kamiokande Collaboration"
+  - "T2K Collaboration"
+  - "NOvA Collaboration"
+  - "IceCube Collaboration"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Decay Lifetime Limits

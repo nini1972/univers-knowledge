@@ -1,11 +1,19 @@
 ---
+id: "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking"
 title: "Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"
-level: 1
+level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Peer-reviewed Publications on Supersymmetric Quantum Field Theories"
   - "Experimental Collider Data and Analysis Reports"
   - "Theoretical Reviews on Composite Higgs Models"
+dependencies:
+  []
+tags:
+  - "2"
+  - "quantum_physics"
 ---
 
 # Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking

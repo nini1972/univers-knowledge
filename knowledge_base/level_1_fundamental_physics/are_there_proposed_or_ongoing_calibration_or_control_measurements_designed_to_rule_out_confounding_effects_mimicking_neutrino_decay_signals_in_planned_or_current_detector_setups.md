@@ -1,13 +1,18 @@
 ---
+id: "arethereproposedorongoingcalibrationorcontrolmeasurementsdesignedtoruleoutconfoundingeffectsmimickingneutrinodecaysignalsinplannedorcurrentdetectorsetups"
 title: "Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Current and planned neutrino experiments reports
-  - DUNE collaboration documentation
-  - IceCube project publications
+  - "Current and planned neutrino experiments reports"
+  - "DUNE collaboration documentation"
+  - "IceCube project publications"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?

@@ -1,4 +1,5 @@
 ---
+id: "hastherebeenengagementwiththeoreticalandexperimentalneutrinophysicscollaborationstoimprovemodelconsistencyandempiricalteststrategiestomovebeyondpurelytheoreticalclassification"
 title: "Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?"
 level: 1
 status: "[VERIFIED]"
@@ -8,6 +9,10 @@ sources:
   - "Research Report on Neutrino Physics"
   - "Comprehensive Studies of Neutrino Mass Mechanisms"
   - "Collaborative Findings from NuFIT, DUNE, KATRIN, KamLAND-Zen"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?

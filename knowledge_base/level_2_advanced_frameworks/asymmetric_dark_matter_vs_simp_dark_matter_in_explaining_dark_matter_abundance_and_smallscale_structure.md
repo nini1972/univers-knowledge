@@ -1,13 +1,18 @@
 ---
+id: "asymmetricdarkmattervssimpdarkmatterinexplainingdarkmatterabundanceandsmallscalestructure"
 title: "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "4/4"
 sources:
-  - Peer-Reviewed Cosmology Journals
-  - Current Theoretical Frameworks in Particle Physics
-  - Reviews of Dark Matter Candidates
+  - "Peer-Reviewed Cosmology Journals"
+  - "Current Theoretical Frameworks in Particle Physics"
+  - "Reviews of Dark Matter Candidates"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure

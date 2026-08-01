@@ -1,13 +1,18 @@
 ---
+id: "fermionicwimpsvsbosonicultralightaxionsingalaxyformationsimulations"
 title: "Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Current cosmological and astrophysical data
-  - Lyman-alpha forest observations
-  - Direct detection experiments (LZ, XENONnT)
+  - "Current cosmological and astrophysical data"
+  - "Lyman-alpha forest observations"
+  - "Direct detection experiments (LZ, XENONnT)"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations

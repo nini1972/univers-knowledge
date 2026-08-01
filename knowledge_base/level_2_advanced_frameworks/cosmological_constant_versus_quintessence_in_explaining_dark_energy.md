@@ -1,11 +1,18 @@
 ---
+id: "cosmologicalconstantversusquintessenceinexplainingdarkenergy"
 title: "Cosmological Constant versus Quintessence in Explaining Dark Energy"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Planck Collaboration data on Cosmic Microwave Background measurements
-  - Supernova Legacy Survey and other Type Ia supernovae distance measurements
-  - Theoretical cosmology literature on ΛCDM and quintessence models
+  - "Planck Collaboration data on Cosmic Microwave Background measurements"
+  - "Supernova Legacy Survey and other Type Ia supernovae distance measurements"
+  - "Theoretical cosmology literature on ΛCDM and quintessence models"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Cosmological Constant versus Quintessence in Explaining Dark Energy

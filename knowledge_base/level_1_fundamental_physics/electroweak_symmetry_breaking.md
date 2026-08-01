@@ -1,6 +1,16 @@
 ---
+id: "electroweaksymmetrybreaking"
+title: "Electroweak Symmetry Breaking (EWSB)"
+level: 1
+status: "[THEORETICAL]"
 math_status: "[MATH_TOPOLOGICAL]"
 math_score: "4/4"
+sources:
+  - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Electroweak Symmetry Breaking (EWSB)

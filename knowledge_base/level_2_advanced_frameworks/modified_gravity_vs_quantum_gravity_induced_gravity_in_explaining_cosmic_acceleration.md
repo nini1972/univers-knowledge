@@ -1,6 +1,7 @@
 ---
+id: "modifiedgravityvsquantumgravityinducedgravityinexplainingcosmicacceleration"
 title: "Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
@@ -8,6 +9,12 @@ sources:
   - "Comparative Level 2 Debate Report on Modified Gravity and Quantum Gravity Induced Gravity Models"
   - "Starobinsky A. A., 'A New Type of Isotropic Cosmological Models Without Singularity,' Physics Letters B, 1980"
   - "Clifton T., Ferreira P. G., Padilla A., Skordis C., 'Modified Gravity and Cosmology,' Physics Reports, 2012"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration

@@ -1,13 +1,18 @@
 ---
+id: "howdononminimalextensionsorultravioletcompletionsofthesemodelsaffecttheirtestabilityandtheoreticalrobustnessinlightofplannedfutureexperiments"
 title: "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Current Task Document
-  - Research Report Dynamics
-  - Effective Field Theory Analysis
+  - "Current Task Document"
+  - "Research Report Dynamics"
+  - "Effective Field Theory Analysis"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?

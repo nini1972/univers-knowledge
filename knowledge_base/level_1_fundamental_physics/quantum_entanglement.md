@@ -1,14 +1,20 @@
 ---
+id: "quantumentanglement"
 title: "Quantum Entanglement"
-level: "1"
+level: 1
 status: "[VERIFIED]"
-sources:
-  - Seminal reviews on quantum entanglement
-  - Encyclopedia entries on quantum theory
-  - Rigorous mathematical formulations in Hilbert spaces
-  - Landmark experiments including loophole-free Bell tests and satellite-based entanglement distribution
 math_status: "[MATH_TOPOLOGICAL]"
 math_score: "3/4"
+sources:
+  - "Seminal reviews on quantum entanglement"
+  - "Encyclopedia entries on quantum theory"
+  - "Rigorous mathematical formulations in Hilbert spaces"
+  - "Landmark experiments including loophole-free Bell tests and satellite-based entanglement distribution"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Entanglement

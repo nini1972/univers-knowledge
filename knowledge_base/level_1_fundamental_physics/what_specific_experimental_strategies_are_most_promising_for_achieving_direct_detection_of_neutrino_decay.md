@@ -1,13 +1,18 @@
 ---
+id: "whatspecificexperimentalstrategiesaremostpromisingforachievingdirectdetectionofneutrinodecay"
 title: "Direct Detection of Neutrino Decay Experimental Strategies"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_TOPOLOGICAL"
 math_score: "4/4"
 sources:
-  - Credible Independent Experimental Collaborations
-  - Peer-Reviewed Journals on Neutrino Physics
-  - Theoretical Frameworks in Particle Physics
+  - "Credible Independent Experimental Collaborations"
+  - "Peer-Reviewed Journals on Neutrino Physics"
+  - "Theoretical Frameworks in Particle Physics"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Direct Detection of Neutrino Decay Experimental Strategies

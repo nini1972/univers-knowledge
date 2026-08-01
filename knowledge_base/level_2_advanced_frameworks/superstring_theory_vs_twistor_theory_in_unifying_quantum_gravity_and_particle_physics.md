@@ -1,11 +1,20 @@
 ---
+id: "superstringtheoryvstwistortheoryinunifyingquantumgravityandparticlephysics"
 title: "Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Green, M.B., Schwarz, J.H., & Witten, E. (1987). Superstring Theory. Cambridge University Press."
   - "Penrose, R. (1976). Nonlinear Gravitons and Curved Twistor Theory. General Relativity and Gravitation."
   - "Witten, E. (2004). Perturbative Gauge Theory as a String Theory in Twistor Space. Communications in Mathematical Physics."
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics

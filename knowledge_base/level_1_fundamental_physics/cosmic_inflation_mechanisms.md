@@ -1,13 +1,19 @@
 ---
+id: "cosmicinflationmechanisms"
 title: "Cosmic Inflation Mechanisms"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Dodelson, S. (2003). Modern Cosmology. Academic Press."
   - "Guth, A. H. (1981). Inflationary universe: A possible solution to the horizon and flatness problems. Physical Review D, 23(2), 347."
   - "Linde, A. (1982). A new inflationary universe scenario: A possible solution of the horizon, flatness, homogeneity, isotropy and primordial monopole problems. Physics Letters B, 108(6), 389-393."
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
+  - "cosmology"
 ---
 
 # Cosmic Inflation Mechanisms

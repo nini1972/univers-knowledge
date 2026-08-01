@@ -1,13 +1,18 @@
 ---
+id: "baryogenesismechanismsthermalleptogenesisvsaffleckdinescalarfielddynamics"
 title: "Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "2/4"
 sources:
-  - Current Cosmology Studies
-  - Particle Physics Reviews
-  - Journal of High Energy Physics
+  - "Current Cosmology Studies"
+  - "Particle Physics Reviews"
+  - "Journal of High Energy Physics"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics

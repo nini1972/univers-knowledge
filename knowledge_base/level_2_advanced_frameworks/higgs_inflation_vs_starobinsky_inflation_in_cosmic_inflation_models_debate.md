@@ -1,13 +1,21 @@
 ---
+id: "higgsinflationvsstarobinskyinflationincosmicinflationmodelsdebate"
 title: "Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate"
-level: 1
+level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Planck Collaboration et al., "Planck 2018 results. X. Constraints on inflation," Astronomy & Astrophysics (2018)
-  - BICEP/Keck Array Collaborations, "Improved Constraints on Cosmology and Foregrounds from BICEP/Keck Array Cosmic Microwave Background Data," Physical Review Letters (2021)
-  - F. L. Bezrukov and M. Shaposhnikov, "The Standard Model Higgs boson as the inflaton," Physics Letters B (2008)
-  - A. A. Starobinsky, "A New Type of Isotropic Cosmological Models Without Singularity," Physics Letters B (1980)
-  - D. Baumann, "TASI Lectures on Inflation," arXiv:0907.5424 [hep-th] (2009)
+  - "Planck Collaboration et al., "Planck 2018 results. X. Constraints on inflation," Astronomy & Astrophysics (2018)"
+  - "BICEP/Keck Array Collaborations, "Improved Constraints on Cosmology and Foregrounds from BICEP/Keck Array Cosmic Microwave Background Data," Physical Review Letters (2021)"
+  - "F. L. Bezrukov and M. Shaposhnikov, "The Standard Model Higgs boson as the inflaton," Physics Letters B (2008)"
+  - "A. A. Starobinsky, "A New Type of Isotropic Cosmological Models Without Singularity," Physics Letters B (1980)"
+  - "D. Baumann, "TASI Lectures on Inflation," arXiv:0907.5424 [hep-th] (2009)"
+dependencies:
+  []
+tags:
+  - "2"
+  - "cosmology"
 ---
 
 # Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate

@@ -1,13 +1,18 @@
 ---
+id: "neutrinophysicsanditsimplicationsforcosmology"
 title: "Neutrino Physics and Its Implications for Cosmology"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Particle Data Group Reviews"
   - "Physical Review Letters"
   - "Journal of Cosmology and Astroparticle Physics"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Physics and Its Implications for Cosmology

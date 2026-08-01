@@ -1,13 +1,19 @@
 ---
+id: "quantumdecoherence"
 title: "Quantum Decoherence"
-level: "1"
+level: 1
 status: "[VERIFIED]"
-sources:
-  - Comprehensive empirical studies on decoherence phenomena in quantum systems
-  - Theoretical analyses addressing interpretational aspects of quantum mechanics
-  - Experimental verification meeting skeptical criteria for physical process validation
 math_status: "[MATH_PENDING]"
 math_score: "1/4"
+sources:
+  - "Comprehensive empirical studies on decoherence phenomena in quantum systems"
+  - "Theoretical analyses addressing interpretational aspects of quantum mechanics"
+  - "Experimental verification meeting skeptical criteria for physical process validation"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Decoherence

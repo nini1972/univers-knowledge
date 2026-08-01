@@ -1,13 +1,18 @@
 ---
+id: "whataretheimplicationsofnonstandardearlyuniversecosmologiesonthepredictedrelicabundancesforfreezeinversusfreezeoutmodels"
 title: "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_CONSISTENT"
 math_score: "3/4"
 sources:
-  - Research on early universe cosmologies
-  - Analysis of dark matter relic yields
-  - Cosmological models and their parameters
+  - "Research on early universe cosmologies"
+  - "Analysis of dark matter relic yields"
+  - "Cosmological models and their parameters"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?

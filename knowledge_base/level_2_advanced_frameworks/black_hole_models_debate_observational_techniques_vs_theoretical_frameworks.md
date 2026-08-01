@@ -1,13 +1,18 @@
 ---
+id: "blackholemodelsdebateobservationaltechniquesvstheoreticalframeworks"
 title: "Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks"
-level: 1
+level: 2
 status: "[VERIFIED]"
 math_status: "MATH_TOPOLOGICAL"
 math_score: "4/4"
 sources:
-  - Event Horizon Telescope Collaboration publications
-  - Gravitational Wave Astronomy reports from LIGO/Virgo
-  - Research articles on modified gravity theories and quantum extremal surface methods
+  - "Event Horizon Telescope Collaboration publications"
+  - "Gravitational Wave Astronomy reports from LIGO/Virgo"
+  - "Research articles on modified gravity theories and quantum extremal surface methods"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks

@@ -1,13 +1,18 @@
 ---
+id: "dfszvsksvzaxionmodelsinexplainingdarkmatterandstrongcpproblem"
 title: "DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Primary research papers on DFSZ and KSVZ models
-  - Reviews of axion physics in astrophysical contexts
-  - Contemporary experimental searches for axions
+  - "Primary research papers on DFSZ and KSVZ models"
+  - "Reviews of axion physics in astrophysical contexts"
+  - "Contemporary experimental searches for axions"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem

@@ -1,4 +1,5 @@
 ---
+id: "whatspecificmathematicalsubtletiesorunstatedassumptionspreventedfullmathematicalintegritycompliance"
 title: "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?"
 level: 1
 status: "[VERIFIED]"
@@ -8,6 +9,10 @@ sources:
   - "Research Paper on Mathematical Integrity in Physics"
   - "Verification Report on Standard Models"
   - "Analysis of Path Integrals and Perturbative Techniques"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?

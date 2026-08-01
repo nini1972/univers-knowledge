@@ -1,13 +1,18 @@
 ---
+id: "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem"
 title: "Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONSISTENT"
 math_score: "3/4"
 sources:
-  - LHC Experimental Results
-  - Theoretical Considerations in Higher Dimensions
-  - General Relativity and Quantum Field Theory
+  - "LHC Experimental Results"
+  - "Theoretical Considerations in Higher Dimensions"
+  - "General Relativity and Quantum Field Theory"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem

@@ -1,7 +1,10 @@
 ---
+id: "neutrinoflavorphysics"
 title: "Neutrino Flavor Physics"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_CONJECTURED]"
+math_score: "1/4"
 sources:
   - "Super-Kamiokande Experiment"
   - "Sudbury Neutrino Observatory (SNO)"
@@ -9,8 +12,10 @@ sources:
   - "Daya Bay Reactor Neutrino Experiment"
   - "T2K Experiment"
   - "NOvA Experiment"
-math_status: "[MATH_CONJECTURED]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Flavor Physics

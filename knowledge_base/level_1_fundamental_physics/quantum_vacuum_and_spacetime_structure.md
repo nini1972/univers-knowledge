@@ -1,15 +1,21 @@
 ---
+id: "quantumvacuumandspacetimestructure"
 title: "Quantum Vacuum and Spacetime Structure"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
+math_status: "[MATH_TOPOLOGICAL]"
+math_score: "3/4"
 sources:
   - "Lamb shift measurements and interpretations in quantum electrodynamics"
   - "Casimir effect experiments and applications"
   - "Theoretical models of spacetime discretization and pixelation"
   - "Vacuum energy integration proposals in gravity theories"
   - "Comprehensive review articles combining quantum vacuum physics and gravitational theory"
-math_status: "[MATH_TOPOLOGICAL]"
-math_score: "3/4"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Vacuum and Spacetime Structure

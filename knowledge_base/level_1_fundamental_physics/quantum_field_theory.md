@@ -1,13 +1,19 @@
 ---
+id: "quantumfieldtheory"
 title: "Quantum Field Theory"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Canonical Quantization and Path Integrals in Quantum Field Theory, Peskin & Schroeder"
   - "Experimental Tests of Quantum Electrodynamics (Electron Magnetic Moment, Lamb Shift), Physical Review Letters"
   - "Gauge Theories and the Standard Model, Weinberg"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Field Theory

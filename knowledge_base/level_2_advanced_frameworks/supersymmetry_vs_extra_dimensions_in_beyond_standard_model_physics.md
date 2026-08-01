@@ -1,13 +1,20 @@
 ---
+id: "supersymmetryvsextradimensionsinbeyondstandardmodelphysics"
 title: "Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Wess, J., & Bagger, J. (1992). Supersymmetry and Supergravity. Princeton University Press."
   - "Randall, L., & Sundrum, R. (1999). An Alternative to Compactification. Physical Review Letters, 83(23), 4690."
   - "LHC Experimental Constraints on Supersymmetry and Extra Dimensions. CERN Reports, 2023."
   - "Polchinski, J. (1998). String Theory, Vol. 2: Superstring Theory and Beyond. Cambridge University Press."
   - "Rubakov, V. (2001). Large and Infinite Extra Dimensions. Physics-Uspekhi, 44(9), 871–893."
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics

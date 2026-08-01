@@ -1,13 +1,18 @@
 ---
+id: "whatexperimentalevidenceorsignatureswoulddecisivelydistinguishneutrinodecayfromsterileneutrinoornonstandardinteractionscenarios"
 title: "What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "4/4"
 sources:
-  - Current analysis on BSM neutrino physics scenarios
-  - Experimental constraints on neutrino decay and NSI
-  - Theoretical frameworks in neutrino physics
+  - "Current analysis on BSM neutrino physics scenarios"
+  - "Experimental constraints on neutrino decay and NSI"
+  - "Theoretical frameworks in neutrino physics"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?

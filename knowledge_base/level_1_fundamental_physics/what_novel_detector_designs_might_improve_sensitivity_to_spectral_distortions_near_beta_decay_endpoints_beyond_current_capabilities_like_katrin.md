@@ -1,13 +1,18 @@
 ---
+id: "whatnoveldetectordesignsmightimprovesensitivitytospectraldistortionsnearbetadecayendpointsbeyondcurrentcapabilitieslikekatrin"
 title: "What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - KATRIN Collaboration
-  - Project 8 Team
-  - HOLMES/ECHo Collaboration
+  - "KATRIN Collaboration"
+  - "Project 8 Team"
+  - "HOLMES/ECHo Collaboration"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?

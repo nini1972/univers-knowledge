@@ -1,11 +1,20 @@
 ---
+id: "quantumgravityapproachesloopquantumgravityvsstringtheory"
 title: "Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Multiple peer-reviewed journal articles on quantum gravity frameworks
-  - Authoritative textbooks on Loop Quantum Gravity and String Theory
-  - Recent review papers summarizing empirical constraints and theoretical status
+  - "Multiple peer-reviewed journal articles on quantum gravity frameworks"
+  - "Authoritative textbooks on Loop Quantum Gravity and String Theory"
+  - "Recent review papers summarizing empirical constraints and theoretical status"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory

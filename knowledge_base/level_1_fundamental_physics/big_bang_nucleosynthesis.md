@@ -1,13 +1,18 @@
 ---
+id: "bigbangnucleosynthesis"
 title: "Big Bang Nucleosynthesis"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Nuclear Physics and Cosmology Journals"
   - "Astrophysical Observations of Primordial Element Abundances"
   - "Standard Cosmology Texts and Reviews"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Big Bang Nucleosynthesis

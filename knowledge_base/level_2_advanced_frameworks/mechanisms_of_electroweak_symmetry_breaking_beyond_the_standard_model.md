@@ -1,11 +1,18 @@
 ---
+id: "mechanismsofelectroweaksymmetrybreakingbeyondthestandardmodel"
 title: "Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Experimental and theoretical high-energy physics literature
-  - Quantum field theory and particle phenomenology studies
-  - Current scientific consensus reviews on Supersymmetry and Technicolor
+  - "Experimental and theoretical high-energy physics literature"
+  - "Quantum field theory and particle phenomenology studies"
+  - "Current scientific consensus reviews on Supersymmetry and Technicolor"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model

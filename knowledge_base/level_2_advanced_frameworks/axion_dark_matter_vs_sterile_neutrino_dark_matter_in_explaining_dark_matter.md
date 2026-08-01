@@ -1,6 +1,7 @@
 ---
+id: "axiondarkmattervssterileneutrinodarkmatterinexplainingdarkmatter"
 title: "Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_TOPOLOGICAL"
 math_score: "3/4"
@@ -8,6 +9,10 @@ sources:
   - "Multiple Independent Research Publications on Axion and Sterile Neutrino Models"
   - "Cosmological, Astrophysical, and Laboratory Data Reviews"
   - "Community Consensus Reports on Dark Matter Candidates"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter

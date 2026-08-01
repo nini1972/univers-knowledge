@@ -1,13 +1,18 @@
 ---
+id: "neutrinolessdoublebetadecay"
 title: "Neutrinoless Double Beta Decay"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
-sources:
-  - Rigorous mathematical formulations and theoretical physics literature on Neutrinoless Double Beta Decay
-  - Comprehensive experimental search reports and data reviews
-  - Skeptical verification and evaluation studies addressing the phenomenon's verification criteria
 math_status: "[MATH_PENDING]"
 math_score: "1/4"
+sources:
+  - "Rigorous mathematical formulations and theoretical physics literature on Neutrinoless Double Beta Decay"
+  - "Comprehensive experimental search reports and data reviews"
+  - "Skeptical verification and evaluation studies addressing the phenomenon's verification criteria"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrinoless Double Beta Decay

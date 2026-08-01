@@ -1,6 +1,16 @@
 ---
+id: "thehiggsboson"
+title: "The Higgs Boson"
+level: 1
+status: "[THEORETICAL]"
 math_status: "[MATH_TOPOLOGICAL]"
 math_score: "3/4"
+sources:
+  - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # The Higgs Boson

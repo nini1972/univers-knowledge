@@ -1,13 +1,18 @@
 ---
+id: "whatfutureexperimentaltechnologiesortechniquescouldrealisticallyreducetheuncertaintiesinnuclearmatrixelementsimpactingneutrinolessdoublebetadecayanalyses"
 title: "What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Experimental programs on neutrinoless double-beta decay
-  - Charge-exchange reactions studies
-  - Bayesian uncertainty framework research
+  - "Experimental programs on neutrinoless double-beta decay"
+  - "Charge-exchange reactions studies"
+  - "Bayesian uncertainty framework research"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?

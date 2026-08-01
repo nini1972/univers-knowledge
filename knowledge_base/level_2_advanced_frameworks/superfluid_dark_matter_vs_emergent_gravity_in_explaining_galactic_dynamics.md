@@ -1,11 +1,19 @@
 ---
+id: "superfluiddarkmattervsemergentgravityinexplaininggalacticdynamics"
 title: "Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Peer-reviewed astrophysics journals analyzing MOND-like theories"
   - "Theoretical reviews on Superfluid Dark Matter and Emergent Gravity"
   - "Community consensus statements on dark matter alternatives"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics

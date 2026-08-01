@@ -1,13 +1,18 @@
 ---
+id: "neutrinomassorderingandexperimentaldetermination"
 title: "Neutrino Mass Ordering and Experimental Determination"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Multiple Independent Experimental Results on Neutrino Oscillations"
   - "Theoretical Reviews on Neutrino Mass and Oscillation Formalism"
   - "Skeptical Verification Report on Neutrino Mass Ordering"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Mass Ordering and Experimental Determination

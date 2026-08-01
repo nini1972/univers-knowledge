@@ -1,11 +1,18 @@
 ---
+id: "beyondthestandardmodelsupersymmetryvsextradimensions"
 title: "Beyond the Standard Model: Supersymmetry vs Extra Dimensions"
 level: 2
 status: "[VERIFIED]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Theoretical and Experimental Status of Supersymmetry, Journal of High Energy Physics, 2023"
   - "Large Extra Dimensions and Randall-Sundrum Models Review, Physics Reports, 2024"
   - "Latest Results from the LHC on Beyond Standard Model Theories, CERN, 2024"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Beyond the Standard Model: Supersymmetry vs Extra Dimensions

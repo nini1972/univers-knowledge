@@ -1,6 +1,17 @@
 ---
+id: "quantumchromodynamicsqcd"
+title: "Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"
+level: 1
+status: "[THEORETICAL]"
 math_status: "[MATH_TOPOLOGICAL]"
 math_score: "3/4"
+sources:
+  - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications

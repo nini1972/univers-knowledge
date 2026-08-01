@@ -1,13 +1,19 @@
 ---
+id: "quintessentialinflationvskinflationinmodelingearlyuniversedynamics"
 title: "Quintessential Inflation vs K-Inflation in Modeling Early Universe Dynamics"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "4/4"
 sources:
-  - Current CMB and cosmological data
-  - Mathematical analyses of inflationary models
-  - Theoretical frameworks in cosmology
+  - "Current CMB and cosmological data"
+  - "Mathematical analyses of inflationary models"
+  - "Theoretical frameworks in cosmology"
+dependencies:
+  []
+tags:
+  - "2"
+  - "cosmology"
 ---
 
 # Quintessential Inflation vs K-Inflation in Modeling Early Universe Dynamics

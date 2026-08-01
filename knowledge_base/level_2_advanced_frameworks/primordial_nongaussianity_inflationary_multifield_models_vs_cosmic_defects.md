@@ -1,13 +1,19 @@
 ---
+id: "primordialnongaussianityinflationarymultifieldmodelsvscosmicdefects"
 title: "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "4/4"
 sources:
-  - Cosmological Inflation and Non-Gaussianity: Current Status
-  - Theoretical Approaches to Cosmic String Networks
-  - Planck Collaborations on Non-Gaussianity Constraints
+  - "Cosmological Inflation and Non-Gaussianity: Current Status"
+  - "Theoretical Approaches to Cosmic String Networks"
+  - "Planck Collaborations on Non-Gaussianity Constraints"
+dependencies:
+  []
+tags:
+  - "2"
+  - "cosmology"
 ---
 
 # Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects

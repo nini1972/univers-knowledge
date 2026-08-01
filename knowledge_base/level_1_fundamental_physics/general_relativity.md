@@ -1,13 +1,18 @@
 ---
+id: "generalrelativity"
 title: "General Relativity"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_TOPOLOGICAL]"
+math_score: "3/4"
 sources:
   - "Experimental Evidence: Observations of perihelion precession of Mercury, gravitational redshift, gravitational lensing, frame-dragging, and gravitational waves by LIGO"
   - "Mathematical Foundations: Einstein's field equations and differential geometry"
   - "Cosmological Perspectives: Discussions on the cosmological constant problem and singularities"
-math_status: "[MATH_TOPOLOGICAL]"
-math_score: "3/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # General Relativity

@@ -1,13 +1,20 @@
 ---
+id: "quantumgravity"
 title: "Quantum Gravity"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
+math_status: "[MATH_TOPOLOGICAL]"
+math_score: "3/4"
 sources:
   - "Loop Quantum Gravity and String Theory studies"
   - "Peer-reviewed articles on Quantum Gravity mathematical formalism"
   - "Comprehensive reviews on experimental challenges in Quantum Gravity research"
-math_status: "[MATH_TOPOLOGICAL]"
-math_score: "3/4"
+dependencies:
+  []
+tags:
+  - "1"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Quantum Gravity

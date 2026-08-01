@@ -1,11 +1,18 @@
 ---
+id: "warmdarkmattervsselfinteractingdarkmatterinexplainingsmallscalestructureformation"
 title: "Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Peer-reviewed studies on Warm Dark Matter and Self-Interacting Dark Matter
-  - Empirical data comparing small-scale cosmological structures
-  - Theoretical analyses addressing limitations of Cold Dark Matter models
+  - "Peer-reviewed studies on Warm Dark Matter and Self-Interacting Dark Matter"
+  - "Empirical data comparing small-scale cosmological structures"
+  - "Theoretical analyses addressing limitations of Cold Dark Matter models"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation

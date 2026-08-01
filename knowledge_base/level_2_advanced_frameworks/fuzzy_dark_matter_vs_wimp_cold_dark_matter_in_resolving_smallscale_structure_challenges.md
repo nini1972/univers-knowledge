@@ -1,14 +1,19 @@
 ---
+id: "fuzzydarkmattervswimpcolddarkmatterinresolvingsmallscalestructurechallenges"
 title: "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONSISTENT"
 math_score: "2/4"
 sources:
-  - LZ Experiment
-  - XENONnT Experiment
-  - Large Hadron Collider (LHC)
-  - Fermi-LAT
+  - "LZ Experiment"
+  - "XENONnT Experiment"
+  - "Large Hadron Collider (LHC)"
+  - "Fermi-LAT"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges

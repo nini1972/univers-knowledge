@@ -1,4 +1,5 @@
 ---
+id: "canthedimensionalconsistencybeconclusivelyverifiedusingadvancedsymbolicmethodsbeyondcurrentautomatedtools"
 title: "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?"
 level: 1
 status: "[VERIFIED]"
@@ -8,6 +9,10 @@ sources:
   - "Student-approved summary on dimensional consistency"
   - "Research papers on automated symbolic regression methods"
   - "Discussion on physical validity of dimensionful constants (Duff-Okun-Veneziano)"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?

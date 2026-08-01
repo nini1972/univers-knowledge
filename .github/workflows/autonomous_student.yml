@@ -149,6 +149,11 @@ jobs:
             echo "No knowledge_base/images directory found."
           fi
 
+      - name: Validate and Index OKF Bundle
+        run: |
+          set -euo pipefail
+          python scripts/okf_indexer.py --build --validate
+
       - name: Commit and Push Knowledge Base Updates
         run: |
           set -euo pipefail

@@ -1,13 +1,18 @@
 ---
+id: "whatexperimentaladvancementsornovelobservationalsignaturescouldmosteffectivelydistinguishbetweenhiggsportaldarkmatterandsterileneutrinodarkmatterinthenextdecade"
 title: "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Research on Higgs Portal Dark Matter
-  - Studies on Sterile Neutrino Dark Matter
-  - Comparative analysis of dark matter candidates
+  - "Research on Higgs Portal Dark Matter"
+  - "Studies on Sterile Neutrino Dark Matter"
+  - "Comparative analysis of dark matter candidates"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?

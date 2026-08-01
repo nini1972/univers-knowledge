@@ -1,11 +1,16 @@
 ---
+id: "howcanupcomingastrophysicalneutrinoobservatoriesenhanceflavorandspectralresolutiontobetterdistinguishneutrinodecayeffectsfromstandardoscillationsorsourcevariability"
 title: "How can upcoming astrophysical neutrino observatories enhance flavor and spectral resolution to better distinguish neutrino decay effects from standard oscillations or source variability?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Approved Student Summary
+  - "Approved Student Summary"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # How can upcoming astrophysical neutrino observatories enhance flavor and spectral resolution to better distinguish neutrino decay effects from standard oscillations or source variability?

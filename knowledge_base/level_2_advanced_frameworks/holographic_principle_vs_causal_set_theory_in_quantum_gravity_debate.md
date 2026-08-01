@@ -1,11 +1,20 @@
 ---
+id: "holographicprinciplevscausalsettheoryinquantumgravitydebate"
 title: "Holographic Principle vs Causal Set Theory in Quantum Gravity Debate"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Multi-source academic data integrating theoretical analyses
-  - Skeptic verification checklist scoring documentation
-  - Current quantum gravity research consensus reviews
+  - "Multi-source academic data integrating theoretical analyses"
+  - "Skeptic verification checklist scoring documentation"
+  - "Current quantum gravity research consensus reviews"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Holographic Principle vs Causal Set Theory in Quantum Gravity Debate

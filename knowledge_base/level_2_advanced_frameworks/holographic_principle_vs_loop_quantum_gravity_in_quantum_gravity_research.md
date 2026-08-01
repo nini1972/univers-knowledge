@@ -1,7 +1,10 @@
 ---
+id: "holographicprinciplevsloopquantumgravityinquantumgravityresearch"
 title: "Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Maldacena, J. (1998). The Large N Limit of Superconformal Field Theories and Supergravity. *Advances in Theoretical and Mathematical Physics*, 2(2), 231-252."
   - "Rovelli, C. (2004). *Quantum Gravity*. Cambridge University Press."
@@ -9,6 +12,12 @@ sources:
   - "Thiemann, T. (2007). *Modern Canonical Quantum General Relativity*. Cambridge University Press."
   - "Polchinski, J. (1995). Dirichlet-Branes and Ramond-Ramond Charges. *Physical Review Letters*, 75(26), 4724-4727."
   - "Ashtekar, A. & Lewandowski, J. (2004). Background Independent Quantum Gravity: A Status Report. *Classical and Quantum Gravity*, 21(15), R53-R152."
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research

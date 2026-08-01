@@ -1,13 +1,18 @@
 ---
+id: "planckepochandtheinitialconditionsfortheuniverse"
 title: "Planck Epoch and the Initial Conditions for the Universe"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
+math_status: "[MATH_TOPOLOGICAL]"
+math_score: "3/4"
 sources:
   - "Canonical Quantum Gravity Literature"
   - "String Theory Reviews"
   - "Loop Quantum Gravity Studies"
-math_status: "[MATH_TOPOLOGICAL]"
-math_score: "3/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Planck Epoch and the Initial Conditions for the Universe

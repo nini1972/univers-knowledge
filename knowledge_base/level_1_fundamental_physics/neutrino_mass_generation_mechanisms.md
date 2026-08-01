@@ -1,13 +1,18 @@
 ---
+id: "neutrinomassgenerationmechanisms"
 title: "Neutrino Mass Generation Mechanisms"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_CONSISTENT]"
+math_score: "3/4"
 sources:
   - "Particle Data Group (PDG) Review of Neutrino Masses and Mixing, 2022"
   - "Mohapatra, R. N., & Pal, P. B. (2004). Massive Neutrinos in Physics and Astrophysics"
   - "King, S. F. (2004). Neutrino mass models. Reports on Progress in Physics, 67(2), 107"
-math_status: "[MATH_CONSISTENT]"
-math_score: "3/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Mass Generation Mechanisms

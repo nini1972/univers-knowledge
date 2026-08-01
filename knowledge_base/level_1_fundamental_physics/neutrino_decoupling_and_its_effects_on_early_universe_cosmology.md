@@ -1,13 +1,18 @@
 ---
+id: "neutrinodecouplinganditseffectsonearlyuniversecosmology"
 title: "Neutrino Decoupling and Its Effects on Early Universe Cosmology"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Theoretical frameworks on neutrino decoupling in cosmology"
   - "Indirect cosmological observational evidence"
   - "Scientific consensus assessments and skeptic evaluations"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Decoupling and Its Effects on Early Universe Cosmology

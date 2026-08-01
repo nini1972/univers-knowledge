@@ -1,11 +1,19 @@
 ---
+id: "massivegravityversusfrgravityinmodifiedgravitydebates"
 title: "Massive Gravity versus f(R) Gravity in Modified Gravity Debates"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "de Rham, Claudia. 'Massive Gravity.' Living Reviews in Relativity (2014)."
   - "Sotiriou, Thomas P., and Valerio Faraoni. 'f(R) Theories Of Gravity.' Reviews of Modern Physics (2010)."
   - "Joyce, Austin et al. 'Beyond the Cosmological Standard Model.' Physics Reports (2015)."
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Massive Gravity versus f(R) Gravity in Modified Gravity Debates

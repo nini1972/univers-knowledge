@@ -1,11 +1,20 @@
 ---
+id: "emergentgravityvsquantumloopgravitydebate"
 title: "Emergent Gravity vs Loop Quantum Gravity Debate"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Comparative Level 2 Debate Report on Emergent Gravity and Loop Quantum Gravity
-  - Empirical Data from Galactic and Cosmological Observations
-  - Scholarly Peer-Reviewed Articles on Quantum Gravity Frameworks
+  - "Comparative Level 2 Debate Report on Emergent Gravity and Loop Quantum Gravity"
+  - "Empirical Data from Galactic and Cosmological Observations"
+  - "Scholarly Peer-Reviewed Articles on Quantum Gravity Frameworks"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Emergent Gravity vs Loop Quantum Gravity Debate

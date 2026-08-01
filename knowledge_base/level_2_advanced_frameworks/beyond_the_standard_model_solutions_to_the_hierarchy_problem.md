@@ -1,12 +1,19 @@
 ---
+id: "beyondthestandardmodelsolutionstothehierarchyproblem"
 title: "Beyond the Standard Model Solutions to the Hierarchy Problem"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Wikipedia
-  - CERN
-  - Primary literature
-  - arXiv reviews
+  - "Wikipedia"
+  - "CERN"
+  - "Primary literature"
+  - "arXiv reviews"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Beyond the Standard Model Solutions to the Hierarchy Problem

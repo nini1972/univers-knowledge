@@ -1,6 +1,7 @@
 ---
+id: "freezeinversusfreezeoutmechanismsindarkmatterproductiondebate"
 title: "Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_TOPOLOGICAL"
 math_score: "3/4"
@@ -8,6 +9,10 @@ sources:
   - "Theoretical Models from Contemporary Particle Cosmology"
   - "Experimental Results from LZ and XENONnT Collaborations"
   - "Planck 2018 Cosmological Data"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate

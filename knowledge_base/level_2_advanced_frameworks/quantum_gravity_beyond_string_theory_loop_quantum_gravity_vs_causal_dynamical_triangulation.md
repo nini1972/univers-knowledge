@@ -1,9 +1,18 @@
 ---
+id: "quantumgravitybeyondstringtheoryloopquantumgravityvscausaldynamicaltriangulation"
 title: "Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"
-level: 1
+level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation

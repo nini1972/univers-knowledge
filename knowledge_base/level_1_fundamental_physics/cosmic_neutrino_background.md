@@ -1,11 +1,18 @@
 ---
+id: "cosmicneutrinobackground"
 title: "Cosmic Neutrino Background"
 level: 1
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Multiple independent high-quality cosmology and particle physics sources
-  - Standard cosmological and particle physics frameworks
-  - Skeptic’s assessment and verification reports
+  - "Multiple independent high-quality cosmology and particle physics sources"
+  - "Standard cosmological and particle physics frameworks"
+  - "Skeptic’s assessment and verification reports"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Cosmic Neutrino Background

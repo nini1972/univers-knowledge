@@ -1,13 +1,19 @@
 ---
+id: "scalartensorvsnonlocalgravitymodelsinexplaininglatetimecosmicacceleration"
 title: "Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "2/4"
 sources:
-  - Scientific Skeptic
-  - Verifier
-  - Approved Student Summary
+  - "Scientific Skeptic"
+  - "Verifier"
+  - "Approved Student Summary"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration

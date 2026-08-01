@@ -1,13 +1,19 @@
 ---
+id: "symmetricteleparallelgravityvsmetricaffinefrgravityinaddressinglatetimecosmicacceleration"
 title: "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Peer-Reviewed Journal Article
-  - Theoretical Physics Conference Proceedings
-  - Preprint Archive (arXiv)
+  - "Peer-Reviewed Journal Article"
+  - "Theoretical Physics Conference Proceedings"
+  - "Preprint Archive (arXiv)"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration

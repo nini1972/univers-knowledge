@@ -1,13 +1,18 @@
 ---
+id: "primordialgravitationalwaves"
 title: "Primordial Gravitational Waves"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
-sources:
-  - Multiple Independent Credible Scientific Publications
-  - Observational Reports from Cosmic Microwave Background Experiments
-  - Peer-reviewed Theoretical Physics Journals
 math_status: "[MATH_CONJECTURED]"
 math_score: "1/4"
+sources:
+  - "Multiple Independent Credible Scientific Publications"
+  - "Observational Reports from Cosmic Microwave Background Experiments"
+  - "Peer-reviewed Theoretical Physics Journals"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Primordial Gravitational Waves

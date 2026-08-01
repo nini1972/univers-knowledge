@@ -1,4 +1,5 @@
 ---
+id: "whichobservationalstrategiesornovelcrosscorrelationmethodscouldmosteffectivelybreakdegeneraciesbetweenneutrinodecaysignaturesandotherneutrinopropertyvariationsinupcomingsurveys"
 title: "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?"
 level: 1
 status: "[THEORETICAL]"
@@ -8,6 +9,10 @@ sources:
   - "Research outlines a rigorous, theoretically consistent framework"
   - "Core strategy relies on joint analysis of early-Universe CMB and late-Universe multi-tracer cross-correlations"
   - "Efficacy supported by Fisher-matrix forecasting and standard cosmological perturbation theory"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?

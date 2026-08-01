@@ -1,11 +1,18 @@
 ---
+id: "falsifiablemultiversetheoriesversussimulationhypothesisincosmologicalcontext"
 title: "Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Multiple independent high-quality academic sources across cosmology, quantum mechanics, and computational theory
-  - Empirical data sets including CMB observations, quantum experimental results, cosmic ray experiments, and astrophysical constraints
-  - Philosophical and scientific community consensus reviews and verification checklists
+  - "Multiple independent high-quality academic sources across cosmology, quantum mechanics, and computational theory"
+  - "Empirical data sets including CMB observations, quantum experimental results, cosmic ray experiments, and astrophysical constraints"
+  - "Philosophical and scientific community consensus reviews and verification checklists"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context

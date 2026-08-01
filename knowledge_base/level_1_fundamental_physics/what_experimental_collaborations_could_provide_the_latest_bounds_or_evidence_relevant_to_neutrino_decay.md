@@ -1,16 +1,21 @@
 ---
+id: "whatexperimentalcollaborationscouldprovidethelatestboundsorevidencerelevanttoneutrinodecay"
 title: "What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?"
 level: 1
 status: "[VERIFIED]"
 math_status: "MATH_CONSISTENT"
 math_score: "2/4"
 sources:
-  - NOvA Collaboration
-  - T2K Collaboration
-  - Planck Satellite Data
-  - Baryon Acoustic Oscillation (BAO) Observations
-  - CUPID-Mo Nuclear Decay Experiment
-  - KATRIN Experiment
+  - "NOvA Collaboration"
+  - "T2K Collaboration"
+  - "Planck Satellite Data"
+  - "Baryon Acoustic Oscillation (BAO) Observations"
+  - "CUPID-Mo Nuclear Decay Experiment"
+  - "KATRIN Experiment"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?

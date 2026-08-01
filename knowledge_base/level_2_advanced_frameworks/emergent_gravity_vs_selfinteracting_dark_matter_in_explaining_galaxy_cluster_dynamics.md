@@ -1,13 +1,19 @@
 ---
+id: "emergentgravityvsselfinteractingdarkmatterinexplaininggalaxyclusterdynamics"
 title: "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics"
 level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONSISTENT"
 math_score: "3/4"
 sources:
-  - Planck 2018
-  - Verlinde’s original work on Emergent Gravity
-  - Studies on Velocity-Dependent Self-Interacting Dark Matter
+  - "Planck 2018"
+  - "Verlinde’s original work on Emergent Gravity"
+  - "Studies on Velocity-Dependent Self-Interacting Dark Matter"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
 ---
 
 # Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics

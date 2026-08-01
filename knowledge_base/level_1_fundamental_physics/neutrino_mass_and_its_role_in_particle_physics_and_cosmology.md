@@ -1,13 +1,18 @@
 ---
+id: "neutrinomassanditsroleinparticlephysicsandcosmology"
 title: "Neutrino Mass and its Role in Particle Physics and Cosmology"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_TOPOLOGICAL]"
+math_score: "3/4"
 sources:
   - "Neutrino Oscillation Experiments"
   - "Particle Data Group Reviews"
   - "Recent Cosmological Constraints on Neutrino Mass"
-math_status: "[MATH_TOPOLOGICAL]"
-math_score: "3/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Mass and its Role in Particle Physics and Cosmology

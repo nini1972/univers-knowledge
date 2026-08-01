@@ -1,13 +1,18 @@
 ---
+id: "cosmologicalconstantanddarkenergy"
 title: "Cosmological Constant and Dark Energy"
-level: "1"
+level: 1
 status: "[VERIFIED]"
+math_status: "[MATH_CONSISTENT]"
+math_score: "2/4"
 sources:
   - "Type Ia Supernovae Observations, Riess et al. (1998)"
   - "Cosmic Microwave Background Measurements, Planck Collaboration (2020)"
   - "Baryon Acoustic Oscillations, SDSS Collaboration (2017)"
-math_status: "[MATH_CONSISTENT]"
-math_score: "2/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Cosmological Constant and Dark Energy

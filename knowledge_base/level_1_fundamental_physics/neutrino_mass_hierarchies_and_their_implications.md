@@ -1,13 +1,18 @@
 ---
+id: "neutrinomasshierarchiesandtheirimplications"
 title: "Neutrino Mass Hierarchies and Their Implications"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
+math_status: "[MATH_PENDING]"
+math_score: "1/4"
 sources:
   - "Experimental Evidence from Neutrino Oscillation Studies"
   - "Theoretical Frameworks including the PMNS Matrix and Seesaw Mechanism"
   - "Review Articles on Neutrino Mass Models and Hierarchies"
-math_status: "[MATH_PENDING]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Mass Hierarchies and Their Implications

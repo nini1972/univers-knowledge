@@ -1,13 +1,18 @@
 ---
+id: "neutrinocpviolation"
 title: "Neutrino CP Violation"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
+math_status: "[MATH_CONJECTURED]"
+math_score: "1/4"
 sources:
   - "Theoretical Reviews on Three-Flavor Neutrino Oscillations"
   - "Latest Experimental Results from Neutrino Oscillation Experiments"
   - "Research Reports on CP Violation and the PMNS Mixing Matrix"
-math_status: "[MATH_CONJECTURED]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino CP Violation

@@ -1,6 +1,7 @@
 ---
+id: "superfluiddarkmattervssterileneutrinodarkmatterdebate"
 title: "Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate"
-level: 1
+level: 2
 status: "[VERIFIED]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
@@ -8,6 +9,10 @@ sources:
   - "Review of Particle Physics, Particle Data Group"
   - "Astrophysical Constraints on Dark Matter Models, Journal of Cosmology and Astroparticle Physics"
   - "Superfluid Dark Matter: Theoretical Advances and Challenges, Physical Review Letters"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate

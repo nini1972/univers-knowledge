@@ -1,10 +1,16 @@
 ---
+id: "neutrinooscillations"
 title: "Neutrino Oscillations"
-description: "Quantum mechanical transformations between neutrino flavor states due to mixing of mass eigenstates, with extensive experimental confirmation and important implications for particle physics."
-category: "level_1_fundamental_physics"
-aliases: ""
+level: 1
+status: "[THEORETICAL]"
 math_status: "[MATH_CONSISTENT]"
 math_score: "2/4"
+sources:
+  - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Oscillations

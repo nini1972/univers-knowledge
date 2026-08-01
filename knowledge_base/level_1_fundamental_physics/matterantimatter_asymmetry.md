@@ -1,6 +1,16 @@
 ---
+id: "matterantimatterasymmetry"
+title: "Matter-Antimatter Asymmetry"
+level: 1
+status: "[THEORETICAL]"
 math_status: "[MATH_CONJECTURED]"
 math_score: "1/4"
+sources:
+  - "Standard scientific consensus"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Matter-Antimatter Asymmetry

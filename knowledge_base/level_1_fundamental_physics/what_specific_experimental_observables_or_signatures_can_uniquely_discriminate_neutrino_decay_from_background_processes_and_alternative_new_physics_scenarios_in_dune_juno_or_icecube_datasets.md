@@ -1,13 +1,18 @@
 ---
+id: "whatspecificexperimentalobservablesorsignaturescanuniquelydiscriminateneutrinodecayfrombackgroundprocessesandalternativenewphysicsscenariosindunejunooricecubedatasets"
 title: "What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?"
 level: 1
 status: "[THEORETICAL]"
 math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
-  - Source 1
-  - Source 2
-  - Source 3
+  - "Source 1"
+  - "Source 2"
+  - "Source 3"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?

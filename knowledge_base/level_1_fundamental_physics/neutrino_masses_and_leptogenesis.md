@@ -1,15 +1,20 @@
 ---
+id: "neutrinomassesandleptogenesis"
 title: "Neutrino Masses and Leptogenesis"
-level: "1"
+level: 1
 status: "[VERIFIED] and [THEORETICAL]"
+math_status: "[MATH_CONJECTURED]"
+math_score: "1/4"
 sources:
   - "Neutrino Oscillation Experimental Data"
   - "Cosmological Constraints on Neutrino Masses"
   - "Seesaw Mechanism Framework Literature"
   - "Theoretical Models of Leptogenesis"
   - "Research Reports on Baryon Asymmetry"
-math_status: "[MATH_CONJECTURED]"
-math_score: "1/4"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Masses and Leptogenesis

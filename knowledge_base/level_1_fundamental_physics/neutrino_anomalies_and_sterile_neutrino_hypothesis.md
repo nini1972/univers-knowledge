@@ -1,13 +1,18 @@
 ---
+id: "neutrinoanomaliesandsterileneutrinohypothesis"
 title: "Neutrino Anomalies and Sterile Neutrino Hypothesis"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
-sources:
-  - Multiple independent research reports on neutrino anomalies and sterile neutrino theory
-  - Experimental data and analyses from KATRIN, IceCube, and MicroBooNE collaborations
-  - Theoretical frameworks including extensions of PMNS mixing matrices and neutrino mass models
 math_status: "[MATH_CONJECTURED]"
 math_score: "1/4"
+sources:
+  - "Multiple independent research reports on neutrino anomalies and sterile neutrino theory"
+  - "Experimental data and analyses from KATRIN, IceCube, and MicroBooNE collaborations"
+  - "Theoretical frameworks including extensions of PMNS mixing matrices and neutrino mass models"
+dependencies:
+  []
+tags:
+  - "1"
 ---
 
 # Neutrino Anomalies and Sterile Neutrino Hypothesis

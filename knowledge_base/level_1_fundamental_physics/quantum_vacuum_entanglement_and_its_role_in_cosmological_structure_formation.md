@@ -1,13 +1,19 @@
 ---
+id: "quantumvacuumentanglementanditsroleincosmologicalstructureformation"
 title: "Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"
-level: "1"
+level: 1
 status: "[THEORETICAL]"
-sources:
-  - Quantum Field Theory texts on vacuum fluctuations and entanglement
-  - Topological methods applied to cosmological quantum fields research papers
-  - Review articles on cosmological structure formation and quantum origins
 math_status: "[MATH_TOPOLOGICAL]"
 math_score: "3/4"
+sources:
+  - "Quantum Field Theory texts on vacuum fluctuations and entanglement"
+  - "Topological methods applied to cosmological quantum fields research papers"
+  - "Review articles on cosmological structure formation and quantum origins"
+dependencies:
+  []
+tags:
+  - "1"
+  - "quantum_physics"
 ---
 
 # Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation

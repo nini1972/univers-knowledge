@@ -1,11 +1,19 @@
 ---
+id: "loopquantumcosmologyvsstringgascosmologyinearlyuniversemodelsdebate"
 title: "Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate"
-level: 1
+level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
-  - Comparative debate report on Loop Quantum Cosmology and String Gas Cosmology frameworks
-  - Empirical constraints and theoretical analyses in early universe cosmology literature
-  - Mathematical verification and skepticism assessments by domain experts
+  - "Comparative debate report on Loop Quantum Cosmology and String Gas Cosmology frameworks"
+  - "Empirical constraints and theoretical analyses in early universe cosmology literature"
+  - "Mathematical verification and skepticism assessments by domain experts"
+dependencies:
+  []
+tags:
+  - "2"
+  - "quantum_physics"
 ---
 
 # Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate

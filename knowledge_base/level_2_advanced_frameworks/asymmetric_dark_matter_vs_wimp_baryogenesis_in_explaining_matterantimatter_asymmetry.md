@@ -1,13 +1,18 @@
 ---
+id: "asymmetricdarkmattervswimpbaryogenesisinexplainingmatterantimatterasymmetry"
 title: "Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"
-level: 1
+level: 2
 status: "[THEORETICAL]"
 math_status: "MATH_CONJECTURED"
 math_score: "4/4"
 sources:
-  - Source 1
-  - Source 2
-  - Source 3
+  - "Source 1"
+  - "Source 2"
+  - "Source 3"
+dependencies:
+  []
+tags:
+  - "2"
 ---
 
 # Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry

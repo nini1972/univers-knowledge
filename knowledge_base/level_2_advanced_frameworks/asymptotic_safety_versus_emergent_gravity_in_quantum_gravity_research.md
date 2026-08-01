@@ -1,11 +1,20 @@
 ---
+id: "asymptoticsafetyversusemergentgravityinquantumgravityresearch"
 title: "Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"
 level: 2
 status: "[THEORETICAL]"
+math_status: "MATH_UNKNOWN"
+math_score: "0/4"
 sources:
   - "Quantum field theory and renormalization group literature on Asymptotic Safety"
   - "Key papers on Emergent Gravity linking thermodynamics and information theory"
   - "Comparative debate report on ASG and EG frameworks"
+dependencies:
+  []
+tags:
+  - "2"
+  - "gravity"
+  - "quantum_physics"
 ---
 
 # Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research
