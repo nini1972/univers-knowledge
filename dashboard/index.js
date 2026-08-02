@@ -2270,13 +2270,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 4. Concept Codex section scrolling tab highlighting tracker
         if (elements.scrollContainer && elements.tabLinks) {
+            let isManualSectionNav = false;
+            let manualNavTimeout = null;
+
             elements.scrollContainer.addEventListener('scroll', () => {
+                if (isManualSectionNav) return;
+
                 const sections = document.querySelectorAll('.concept-section');
                 let activeId = 'sec-overview';
 
                 sections.forEach(sec => {
                     const rect = sec.getBoundingClientRect();
-                    if (rect.top <= 140) {
+                    if (rect.top <= 160) {
                         activeId = sec.getAttribute('id');
                     }
                 });
@@ -2293,6 +2298,8 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.tabLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
+                    isManualSectionNav = true;
+
                     elements.tabLinks.forEach(l => l.classList.remove('active'));
                     link.classList.add('active');
 
@@ -2301,6 +2308,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (targetSec) {
                         targetSec.scrollIntoView({ behavior: 'smooth' });
                     }
+
+                    if (manualNavTimeout) clearTimeout(manualNavTimeout);
+                    manualNavTimeout = setTimeout(() => {
+                        isManualSectionNav = false;
+                    }, 700);
                 });
             });
         }
