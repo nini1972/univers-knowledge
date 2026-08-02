@@ -859,7 +859,7 @@ html, body {
 
 /* Content Area Sections Wrapper */
 .sections-wrapper {
-    padding: 32px;
+    padding: 32px 32px 140px 32px;
     display: flex;
     flex-direction: column;
     gap: 40px;
