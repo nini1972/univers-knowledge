@@ -879,17 +879,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Relations linking grid compiler
-        if (concept.related && concept.related.length > 0) {
-            const relationsHtml = concept.related.map(relId => {
-                const target = concepts.find(item => item.id === relId);
-                const titleText = target ? target.title : relId.replace(/_/g, ' ').toUpperCase();
+        let activeRelated = (concept.related && concept.related.length > 0) ? [...concept.related] : [];
+        if (activeRelated.length === 0 && allOKFGraph && allOKFGraph.edges) {
+            allOKFGraph.edges.forEach(edge => {
+                const srcId = edge.source || edge.from;
+                const tgtId = edge.target || edge.to;
+                if (srcId === concept.id) activeRelated.push(tgtId);
+                else if (tgtId === concept.id) activeRelated.push(srcId);
+            });
+            activeRelated = [...new Set(activeRelated)];
+        }
+
+        if (activeRelated.length > 0) {
+            const relationsHtml = activeRelated.map(relId => {
+                const target = allConcepts.find(item => item.id === relId || item.title.toLowerCase().replace(/[^a-z0-9]/g, '') === relId.toLowerCase().replace(/[^a-z0-9]/g, ''));
+                const titleText = target ? target.title : relId.replace(/_/g, ' ');
                 const isRelVerified = target && (target.status === 'VERIFIED' || target.status === '[VERIFIED]');
                 const icon = isRelVerified ? 'fa-circle-check text-verified' : 'fa-circle-dot text-theoretical';
+                const targetId = target ? target.id : relId;
                 return `
-                    <div class="related-link-card" data-target-id="${relId}">
+                    <div class="related-link-card" data-target-id="${targetId}">
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <i class="fa-solid ${icon}"></i>
-                            <span class="related-link-title">${titleText}</span>
+                            <span class="related-link-title">${escapeHtml(titleText)}</span>
                         </div>
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </div>
@@ -905,6 +917,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     selectConcept(targetId);
                 });
             });
+        } else if (relatedRaw) {
+            elements.viewRelated.innerHTML = compileMarkdownToHTML(relatedRaw);
         } else {
             elements.viewRelated.innerHTML = '<p style="color: var(--text-muted); font-size: 12.5px;"><i class="fa-solid fa-link-slash"></i> No connected prerequisites documented.</p>';
         }
