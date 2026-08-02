@@ -1271,6 +1271,13 @@ html, body {
     box-shadow: 0 0 10px rgba(0, 242, 254, 0.1);
 }
 
+#btn-view-brain.active {
+    color: #e0aaff;
+    background: rgba(224, 170, 255, 0.15);
+    border: 1px solid rgba(224, 170, 255, 0.35);
+    box-shadow: 0 0 14px rgba(224, 170, 255, 0.25);
+}
+
 
 .map-info i {
     color: var(--neon-cyan);

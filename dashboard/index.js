@@ -166,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnZoomReset: document.getElementById('btn-zoom-reset'),
         btnViewTopology: document.getElementById('btn-view-topology'),
         btnViewGalaxy: document.getElementById('btn-view-galaxy'),
+        btnViewBrain: document.getElementById('btn-view-brain'),
 
         // Tab switcher
         commandTabBtns: document.querySelectorAll('.command-tab-btn'),
@@ -1656,7 +1657,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const centerX = width / 2;
         const centerY = height / 2;
 
-        if (currentNetworkViewMode === 'topology') {
+        if (currentNetworkViewMode === 'brain') {
+            // Cosmic Brain 3-Tier Emergent Synaptic Layout
+            nodes.forEach(node => {
+                if (node === draggedNode) return;
+                let targetY = height * 0.5;
+                if (node.level === 1) targetY = height * 0.78;      // Base physical substrate
+                else if (node.level === 2) targetY = height * 0.48; // Cortical processing layer
+                else if (node.level === 3) targetY = height * 0.18; // Emergence apex crown
+
+                const dy = targetY - node.y;
+                node.vy += dy * 0.012;
+
+                const dx = centerX - node.x;
+                node.vx += dx * 0.003;
+            });
+        } else if (currentNetworkViewMode === 'topology') {
             // Original Clean vertical bands layout
             const gravityStrength = 0.006;
             nodes.forEach(node => {
@@ -2488,25 +2504,40 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Network View Mode Toggle click handlers (Topological Flow vs Milky Way Galaxy)
+        // Network View Mode Toggle click handlers (Prerequisite Flow vs Milky Way Galaxy vs Cosmic Brain)
         if (elements.btnViewTopology) {
             elements.btnViewTopology.addEventListener('click', () => {
                 if (currentNetworkViewMode === 'topology') return;
                 currentNetworkViewMode = 'topology';
                 elements.btnViewTopology.classList.add('active');
-                elements.btnViewGalaxy.classList.remove('active');
+                if (elements.btnViewGalaxy) elements.btnViewGalaxy.classList.remove('active');
+                if (elements.btnViewBrain) elements.btnViewBrain.classList.remove('active');
                 canvasZoom = 1.0;
                 canvasOffset = { x: 0, y: 0 };
-                // Re-sync so computeNodeRadius reverts to topology circle sizes
                 syncGraphWithConcepts(concepts);
                 graphState.simulation.alpha = 1.0;
+                recenterCameraOnNodes(graphNodes);
             });
         }
 
         if (elements.btnViewGalaxy) {
             elements.btnViewGalaxy.addEventListener('click', () => {
-                // Open the dedicated Milky Way Galaxy page
                 window.location.href = 'galaxy.html';
+            });
+        }
+
+        if (elements.btnViewBrain) {
+            elements.btnViewBrain.addEventListener('click', () => {
+                if (currentNetworkViewMode === 'brain') return;
+                currentNetworkViewMode = 'brain';
+                if (elements.btnViewTopology) elements.btnViewTopology.classList.remove('active');
+                if (elements.btnViewGalaxy) elements.btnViewGalaxy.classList.remove('active');
+                elements.btnViewBrain.classList.add('active');
+                canvasZoom = 1.0;
+                canvasOffset = { x: 0, y: 0 };
+                syncGraphWithConcepts(concepts);
+                graphState.simulation.alpha = 1.0;
+                recenterCameraOnNodes(graphNodes);
             });
         }
 
@@ -2637,7 +2668,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             for (let i = 0; i < graphNodes.length; i++) {
                 const node = graphNodes[i];
-                const pt = currentNetworkViewMode === 'topology' ? applyGravityWarp(node.x, node.y) : { x: node.x, y: node.y };
+                const pt = (currentNetworkViewMode === 'topology' || currentNetworkViewMode === 'brain') ? applyGravityWarp(node.x, node.y) : { x: node.x, y: node.y };
                 const dx = coords.x - pt.x;
                 const dy = coords.y - pt.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
