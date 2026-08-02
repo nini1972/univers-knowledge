@@ -787,25 +787,53 @@ document.addEventListener('DOMContentLoaded', () => {
        📬 CONCEPT SPECIFIC VIEWER & DATA ROUTING
        ========================================================================== */
 
-    function selectConcept(id, preservePerspective = false) {
-        activeConceptId = id;
+    function findConceptByAnyId(id) {
+        if (!id) return null;
+        const cleanQuery = id.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-        // Ensure we are in Codex mode to read content unless explicitly requested to preserve current perspective (e.g. during timeline play)
+        // 1. Direct ID match
+        let concept = allConcepts.find(c => c.id === id || c.id.toLowerCase() === id.toLowerCase());
+        if (concept) return concept;
+
+        // 2. Normalized ID or Title match
+        concept = allConcepts.find(c => {
+            const cleanId = c.id.toLowerCase().replace(/[^a-z0-9]/g, '');
+            const cleanTitle = c.title.toLowerCase().replace(/[^a-z0-9]/g, '');
+            return cleanId === cleanQuery || cleanTitle === cleanQuery;
+        });
+        if (concept) return concept;
+
+        // 3. Partial title substring match
+        return allConcepts.find(c => {
+            const cleanTitle = c.title.toLowerCase().replace(/[^a-z0-9]/g, '');
+            return cleanTitle.includes(cleanQuery) || cleanQuery.includes(cleanTitle);
+        });
+    }
+
+    function selectConcept(id, preservePerspective = false) {
+        const concept = findConceptByAnyId(id);
+        if (!concept) return;
+
+        activeConceptId = concept.id;
+
+        // Ensure we are in Codex mode to read content unless explicitly requested to preserve current perspective
         if (!preservePerspective && activePerspective !== 'codex') {
             switchPerspective('codex');
         }
 
+        // Reset scroll position to top when opening document
+        if (elements.scrollContainer) {
+            elements.scrollContainer.scrollTop = 0;
+        }
+
         // Sidebar card active highlighting
         document.querySelectorAll('.concept-card').forEach(c => {
-            if (c.getAttribute('data-id') === id) {
+            if (c.getAttribute('data-id') === concept.id) {
                 c.classList.add('active');
             } else {
                 c.classList.remove('active');
             }
         });
-
-        const concept = allConcepts.find(c => c.id === id) || concepts.find(c => c.id === id);
-        if (!concept) return;
 
         // View toggle
         elements.welcomeView.style.display = 'none';
@@ -2326,7 +2354,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (manualNavTimeout) clearTimeout(manualNavTimeout);
                     manualNavTimeout = setTimeout(() => {
                         isManualSectionNav = false;
-                    }, 700);
+                    }, 1200);
                 });
             });
         }
