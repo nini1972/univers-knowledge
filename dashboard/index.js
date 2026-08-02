@@ -1658,19 +1658,43 @@ document.addEventListener('DOMContentLoaded', () => {
         const centerY = height / 2;
 
         if (currentNetworkViewMode === 'brain') {
-            // Cosmic Brain 3-Tier Emergent Synaptic Layout
-            nodes.forEach(node => {
+            // Cosmic Brain 3-Tier Emergent Synaptic Neural Hemisphere Layout
+            const lvl3Nodes = nodes.filter(n => n.level === 3);
+            const lvl2Nodes = nodes.filter(n => n.level === 2);
+            const lvl1Nodes = nodes.filter(n => n.level === 1);
+
+            // 1. Level 3 Apex Crown (Top Tiers)
+            lvl3Nodes.forEach((node, idx) => {
                 if (node === draggedNode) return;
-                let targetY = height * 0.5;
-                if (node.level === 1) targetY = height * 0.78;      // Base physical substrate
-                else if (node.level === 2) targetY = height * 0.48; // Cortical processing layer
-                else if (node.level === 3) targetY = height * 0.18; // Emergence apex crown
+                const step = width / (lvl3Nodes.length + 1);
+                const targetX = step * (idx + 1);
+                const targetY = height * 0.16;
 
-                const dy = targetY - node.y;
-                node.vy += dy * 0.012;
+                node.vx += (targetX - node.x) * 0.05;
+                node.vy += (targetY - node.y) * 0.05;
+            });
 
-                const dx = centerX - node.x;
-                node.vx += dx * 0.003;
+            // 2. Level 2 Cortical Hemisphere (Arching Cerebral Dome)
+            lvl2Nodes.forEach((node, idx) => {
+                if (node === draggedNode) return;
+                const ratio = (idx + 0.5) / lvl2Nodes.length;
+                const targetX = width * 0.08 + ratio * (width * 0.84);
+                const archOffset = Math.sin(ratio * Math.PI) * 60;
+                const targetY = (height * 0.48) - archOffset;
+
+                node.vx += (targetX - node.x) * 0.035;
+                node.vy += (targetY - node.y) * 0.035;
+            });
+
+            // 3. Level 1 Foundation Substrate (Base Physics Tiers)
+            lvl1Nodes.forEach((node, idx) => {
+                if (node === draggedNode) return;
+                const ratio = (idx + 0.5) / lvl1Nodes.length;
+                const targetX = width * 0.05 + ratio * (width * 0.90);
+                const targetY = height * 0.82;
+
+                node.vx += (targetX - node.x) * 0.03;
+                node.vy += (targetY - node.y) * 0.03;
             });
         } else if (currentNetworkViewMode === 'topology') {
             // Original Clean vertical bands layout
@@ -1941,6 +1965,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function applyGravityWarp(gx, gy) {
+        if (currentNetworkViewMode !== 'topology') return { x: gx, y: gy };
+
         let warpedX = gx;
         let warpedY = gy;
 
