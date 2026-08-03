@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-02T01:28:55.658855+00:00",
+  "updated_at": "2026-08-03T01:14:14.474241+00:00",
   "stats": {
-    "total_entries": 67,
-    "total_equations": 1979,
+    "total_entries": 69,
+    "total_equations": 2116,
     "math_proven_entries": 35,
-    "math_consistent_entries": 21,
-    "total_bridges": 80,
+    "math_consistent_entries": 22,
+    "total_bridges": 85,
     "tracked_constants": 8
   },
   "bridges": [
@@ -109,6 +109,44 @@
       ]
     },
     {
+      "equation": "\\gamma",
+      "concept_count": 8,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
+          "level": 1
+        },
+        {
+          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
+          "level": 1
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\Omega_c h^2 = 0.120 \\pm 0.001",
       "concept_count": 7,
       "concepts": [
@@ -139,40 +177,6 @@
         {
           "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\gamma",
-      "concept_count": 7,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
-          "level": 1
-        },
-        {
-          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
-          "level": 1
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
         }
       ]
     },
@@ -267,6 +271,32 @@
       ]
     },
     {
+      "equation": "10^{-15}",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "level": 2
+        },
+        {
+          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
+          "level": 1
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+          "level": 2
+        },
+        {
+          "title": "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
+          "level": 1
+        }
+      ]
+    },
+    {
       "equation": "N_{\\rm eff}",
       "concept_count": 4,
       "concepts": [
@@ -307,28 +337,6 @@
         {
           "title": "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
           "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "10^{-15}",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
-          "level": 2
-        },
-        {
-          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
-          "level": 1
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
         }
       ]
     },
@@ -417,6 +425,28 @@
         {
           "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_\\Lambda",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
+          "level": 1
+        },
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
         }
       ]
     },
@@ -543,24 +573,6 @@
         {
           "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\Omega_\\Lambda",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
-          "level": 1
-        },
-        {
-          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
-          "level": 1
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
         }
       ]
     },
@@ -1189,6 +1201,20 @@
       ]
     },
     {
+      "equation": "\\sigma_{\\rm SI}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "level": 1
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\geq 3/4",
       "concept_count": 2,
       "concepts": [
@@ -1212,6 +1238,34 @@
         },
         {
           "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_c h^2 = 0.120",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+          "level": 2
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_c h^2",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+          "level": 2
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
           "level": 2
         }
       ]
@@ -1301,6 +1355,20 @@
       ]
     },
     {
+      "equation": "\\sigma/m_\\chi",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "x \\prec y,\\quad y \\prec z \\Rightarrow x \\prec z",
       "concept_count": 2,
       "concepts": [
@@ -1371,6 +1439,20 @@
       ]
     },
     {
+      "equation": "H^2(a)=H_0^2[\\Omega_r a^{-4}+\\Omega_m a^{-3}+\\Omega_k a^{-2}+\\Omega_\\Lambda]",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
+          "level": 3
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\ddot{\\delta}+2H\\dot{\\delta}-4\\pi G\\bar{\\rho}_m\\delta=0",
       "concept_count": 2,
       "concepts": [
@@ -1405,7 +1487,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 37,
+      "occurrence_count": 38,
       "referenced_in": [
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -1418,6 +1500,7 @@
         "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?",
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -1451,7 +1534,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 30,
+      "occurrence_count": 32,
       "referenced_in": [
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -1461,6 +1544,7 @@
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
@@ -1479,6 +1563,7 @@
         "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
+        "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
         "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
@@ -1490,7 +1575,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 25,
+      "occurrence_count": 27,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -1499,6 +1584,7 @@
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
@@ -1515,6 +1601,7 @@
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
         "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
+        "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
         "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?"
       ]
@@ -1524,7 +1611,7 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 17,
+      "occurrence_count": 19,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -1533,6 +1620,7 @@
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
         "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
@@ -1541,6 +1629,7 @@
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
         "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
+        "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?"
       ]
@@ -1550,11 +1639,12 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 13,
+      "occurrence_count": 14,
       "referenced_in": [
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
         "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
@@ -1572,11 +1662,12 @@
       "name": "Cold Dark Matter Density Parameter",
       "unit": "dimensionless",
       "typical_value": "0.120",
-      "occurrence_count": 13,
+      "occurrence_count": 14,
       "referenced_in": [
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+        "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
         "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
@@ -4383,6 +4474,166 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-02T01:28:25.238061+00:00"
+    },
+    {
+      "concept": "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
+      "level": 1,
+      "equations": [
+        "10^{-15}",
+        "|\\Psi\\rangle",
+        "|\\gamma_A|\\ln D",
+        "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu}=8\\pi G_N T_{\\mu\\nu}.",
+        "|\\Psi\\rangle = \\sum_{\\{i_b\\}} \\left[ \\sum_{\\{j_e\\}} \\prod_{x\\in \\mathcal G} T^{[x]}_{\\{j_e\\},\\{i_b\\}} \\right] |\\{i_b\\}\\rangle",
+        "S(A)\\simeq |\\gamma_A|\\ln D",
+        "S(A)=\\frac{\\mathrm{Area}(\\gamma_A)}{4G_N}+S_{\\mathrm{bulk}}(\\Sigma_A)+O(G_N)",
+        "T_x^\\dagger T_x=\\mathbf 1",
+        "|\\Psi_{\\Sigma'}\\rangle = U_{\\Sigma\\rightarrow \\Sigma'} |\\Psi_\\Sigma\\rangle",
+        "\\delta S_A=\\delta \\langle K_A\\rangle",
+        "\\delta G_{\\mu\\nu} + \\Lambda \\delta g_{\\mu\\nu} = 8\\pi G_N \\delta \\langle T_{\\mu\\nu}\\rangle",
+        "S(\\rho_A\\|\\sigma_A) = \\Delta \\langle H_A\\rangle - \\Delta S_A",
+        "Z_{\\mathrm{Regge}} = \\int \\prod_e d\\ell_e\\, \\mu(\\ell) \\, e^{iS_R[\\ell]/\\hbar}",
+        "S_R = \\frac{1}{8\\pi G} \\sum_h A_h \\epsilon_h - \\Lambda \\sum_\\sigma V_\\sigma",
+        "Z_{\\mathrm{TN}} = \\mathrm{tTr} \\prod_v T_v",
+        "Z_{\\mathrm{spinfoam}} = \\sum_{\\{j_f,i_e\\}} \\prod_f A_f(j_f) \\prod_e A_e(i_e) \\prod_v A_v(j_f,i_e)",
+        "Z_{\\mathrm{CDT}} = \\sum_{\\mathcal T\\in \\mathrm{causal}} \\frac{1}{C_{\\mathcal T}} e^{iS_R[\\mathcal T]/\\hbar}",
+        "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu}=8\\pi G_N T_{\\mu\\nu}",
+        "T_x",
+        "Z_{\\mathrm{spinfoam}}",
+        "Z_{\\mathrm{CDT}}",
+        "(6.62607015 \\times 10^{-34} \\text{ J·s})",
+        "e^{iS_R/\\hbar}",
+        "\\sim 10^{-15}",
+        "10^{-37}"
+      ],
+      "equation_count": 25,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-03T00:59:46.930880+00:00",
+      "a2a_proof_report": "Mathematical Proof Report\n=========================\n\nAxioms and Symbols Defined\n--------------------------\n- **Quantum State Symbols:**  \n  \\(|\\Psi\\rangle\\): Quantum many-body state ket symbol (non-commutative).  \n  \\(T^{[x]}_{\\{j_e\\}, \\{i_b\\}}\\): Tensor associated with node \\(x\\) in the tensor network, taking indices \\(\\{j_e\\}\\) and \\(\\{i_b\\}\\).  \n  \\(|\\{i_b\\}\\rangle\\): Basis ket indexed by \\(\\{i_b\\}\\).\n\n- **Einstein Field Equation (EFE) Symbols:**  \n  \\(G_{\\mu\\nu}\\): Einstein tensor, function of indices \\(\\mu,\\nu\\).  \n  \\(\\Lambda\\): Cosmological constant, real scalar.  \n  \\(g_{\\mu\\nu}\\): Metric tensor, function of indices \\(\\mu,\\nu\\).  \n  \\(G_N\\): Newton's gravitational constant, positive real scalar.  \n  \\(T_{\\mu\\nu}\\): Stress-energy tensor, function of indices \\(\\mu,\\nu\\).\n\n- **Mathematical Scalars:**  \n  \\(\\gamma_A \\in \\mathbb{R}^+\\), \\(D \\in \\mathbb{R}^+\\),  \n  \\(\\ln D = \\log(D)\\), logarithm of dimension \\(D\\).\n\n- **Tolerance for numerical approximation:** \\(10^{-15}\\).\n\nDerivation Steps and Verification\n---------------------------------\n1. **Check positivity of \\(\\gamma_A \\ln D\\):**  \n   Since both \\(\\gamma_A > 0\\) and \\(D > 0\\) by assumption, \\(\\ln D\\) is real but sign depends on \\(D > 1\\) or \\(D < 1\\). The positivity cannot be guaranteed symbolically without additional assumptions on \\(D > 1\\). SymPy returns `None` because positivity is indeterminate at symbolic level.  \n   *Result:* Cannot confirm positivity without additional constraints.\n\n2. **Numerical tolerance check \\(10^{-16} < 10^{-15}\\):**  \n   Direct numeric comparison confirms \\(10^{-16} < 10^{-15}\\).  \n   *Result:* Tolerance condition can hold for sufficiently small values numerically.\n\n3. **Einstein field equation verification:**  \n   Using symbolic placeholders for tensors and constants, the difference  \n   \\[\n   (G_{\\mu\\nu} + \\Lambda g_{\\mu\\nu}) - 8 \\pi G_N T_{\\mu\\nu}\n   \\]  \n   is simplified but cannot be shown to be zero without explicit functional forms or equations for tensors, as expected.  \n   *Result:* Algebraically the equation is correctly represented but not proven to hold identically without dynamics or metric solution data.\n\n4. **Tensor-network quantum state equation:**  \n   \\[\n   |\\Psi\\rangle = \\sum_{\\{i_b\\}} \\left[ \\sum_{\\{j_e\\}} \\prod_{x \\in \\mathcal G} T^{[x]}_{\\{j_e\\},\\{i_b\\}} \\right] |\\{i_b\\}\\rangle\n   \\]  \n   We represented sums and product symbolically using SymPy's Sum and Product over infinite index ranges symbolically. No direct algebraic simplification or proof can be performed because this is a state definition, not an equation to simplify.  \n   *Result:* Confirmed proper symbolic structure, no contradictions.\n\nSimplification Result\n---------------------\n- Positive check on \\(\\gamma_A \\ln D\\) symbolic sign: indeterminate.  \n- Numerical tolerance ordering confirmed.  \n- Einstein equation difference not zero without physical input — consistent symbolic representation.  \n- Tensor network state definition structurally consistent in symbolic terms.\n\nCode Artifact (SymPy Python code)\n---------------------------------\n```python\nimport sympy as sp\n\n# Symbols for tensor network scalars\ngamma_A, D = sp.symbols('gamma_A D', real=True, positive=True)\nln_D = sp.log(D)\n\n# Einstein field equation symbols\nG = sp.symbols('G', real=True)\nLambda = sp.symbols('Lambda', real=True)\nmu, nu = sp.symbols('mu nu', integer=True)\nG_mn = sp.Function('G_mn')(mu, nu)\ng_mn = sp.Function('g_mn')(mu, nu)\nT_mn = sp.Function('T_mn')(mu, nu)\n\n# Einstein equation LHS and RHS\neinstein_equation_lhs = G_mn + Lambda * g_mn\neinstein_equation_rhs = 8 * sp.pi * G * T_mn\n\n# Tolerance setup\ntolerance = 1e-15\n\n# Check positivity of gamma_A * ln(D)\nis_positive = (gamma_A * ln_D).is_positive\n\n# Check tolerance comparison function\ndef check_tolerance(val, tol):\n    return abs(val) < tol\n\ntest_value = 1e-16\ntol_check = check_tolerance(test_value, tolerance)\n\n# Simplify Einstein equation (LHS - RHS)\ndiff_einstein_eq = sp.simplify(einstein_equation_lhs - einstein_equation_rhs)\n\n# Tensor network state symbolic definition\nPsi = sp.symbols('Psi', commutative=False)\nx = sp.symbols('x', integer=True)\nindices_ib = sp.symbols('i_b', integer=True)\nindices_je = sp.symbols('j_e', integer=True)\nT_x = sp.Function('T_x')\nket_i_b = sp.Function('ket_i_b')\nsum_over_je = sp.Sum(sp.Product(T_x(indices_je, indices_ib), (x, 0, sp.oo)), (indices_je, -sp.oo, sp.oo))\nsum_over_ib = sp.Sum(sum_over_je * ket_i_b(indices_ib), (indices_ib, -sp.oo, sp.oo))\nPsi_definition = sp.Eq(Psi, sum_over_ib)\n\n# Output results\nresults = {\n    'gamma_ln_positive': is_positive,\n    'tolerance_check': tol_check,\n    'einstein_equation_difference': diff_einstein_eq,\n    'ket_equation': Psi_definition\n}\nprint(results)\n```\n\nSummary\n-------\n- The main physics equation (Einstein field equation) is symbolically correctly framed but requires physical content (metric solution, stress-energy tensor) for explicit proof.  \n- The tensor network quantum state is correctly modeled symbolically as infinite sums and products over tensors and basis kets.  \n- Numerical precision check for \\(10^{-15}\\) is confirmed for example values, consistent with precision in physics computations.  \n- The product \\(\\gamma_A \\ln D\\) positivity is indeterminate symbolically; further domain constraints on \\(D\\) needed.\n\nThis completes the formal verification and symbolic derivation check requested for the tensor network state and the Einstein equations within this theoretical framework."
+    },
+    {
+      "concept": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+      "level": 2,
+      "equations": [
+        "S_{\\text{W}} = -\\alpha_g\\int d^4x\\sqrt{-g}\\,C_{\\mu\\nu\\rho\\sigma}C^{\\mu\\nu\\rho\\sigma},",
+        "4\\alpha_g B_{\\mu\\nu} = T_{\\mu\\nu},",
+        "B_{\\mu\\nu} = 2\\nabla^\\alpha\\nabla^\\beta C_{\\mu\\alpha\\nu\\beta} + R^{\\alpha\\beta}C_{\\mu\\alpha\\nu\\beta}.",
+        "ds^2 = -B(r)c^2dt^2 + \\frac{dr^2}{B(r)} + r^2 d\\Omega^2,",
+        "B(r) = 1 - \\frac{2\\beta}{r} + \\gamma r - \\kappa r^2.",
+        "\\Phi(r) = -\\frac{\\beta c^2}{r} + \\frac{\\gamma c^2 r}{2} - \\frac{\\kappa c^2 r^2}{2}.",
+        "\\mathcal{L}_S = -\\frac{1}{2}\\partial_\\mu S\\partial^\\mu S - \\frac{1}{12}S^2 R - \\lambda S^4.",
+        "H^2(a) = H_0^2\\left[\\Omega_r a^{-4} + \\Omega_m a^{-3} + \\Omega_k a^{-2} + \\Omega_\\Lambda\\right],",
+        "\\Omega_c h^2 = 0.1200 \\pm 0.0012, \\qquad \n\\Omega_b h^2 = 0.02237 \\pm 0.00015,",
+        "H_0 = 67.4 \\pm 0.5\\ \\text{km s}^{-1}\\text{Mpc}^{-1}, \\qquad \n\\Omega_\\Lambda \\approx 0.685.",
+        "\\ddot{\\delta}_c + 2H\\dot{\\delta}_c - 4\\pi G\\bar{\\rho}_m\\delta_c = 0,",
+        "P(k,z) = A_s\\left(\\frac{k}{k_*}\\right)^{n_s-1} T^2(k) D^2(z)",
+        "g_{\\mu\\nu}(x)\\rightarrow \\Omega^2(x)g_{\\mu\\nu}(x)",
+        "S_W=-\\alpha_g\\int d^4x\\sqrt{-g}\\,C_{\\lambda\\mu\\nu\\rho}C^{\\lambda\\mu\\nu\\rho}",
+        "C_{\\mu\\nu\\rho\\sigma}=R_{\\mu\\nu\\rho\\sigma}-\\frac{1}{2}(\\ldots)+\\frac{R}{6}(\\ldots)",
+        "4\\alpha_g B_{\\mu\\nu}=T_{\\mu\\nu}",
+        "B_{\\mu\\nu}=2\\nabla^\\alpha\\nabla^\\beta C_{\\mu\\alpha\\nu\\beta}+R^{\\alpha\\beta}C_{\\mu\\alpha\\nu\\beta}",
+        "B(r)=1-\\frac{2\\beta}{r}+\\gamma r-\\kappa r^2",
+        "\\Phi(r)=-\\frac{\\beta c^2}{r}+\\frac{\\gamma c^2 r}{2}-\\frac{\\kappa c^2 r^2}{2}",
+        "v^2(r)=\\frac{\\beta c^2}{r}+\\frac{\\gamma c^2 r}{2}-\\kappa c^2 r^2",
+        "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu}=8\\pi GT_{\\mu\\nu}",
+        "H^2(a)=H_0^2[\\Omega_r a^{-4}+\\Omega_m a^{-3}+\\Omega_k a^{-2}+\\Omega_\\Lambda]",
+        "\\rho_{\\mathrm{crit},0}=\\frac{3H_0^2}{8\\pi G}",
+        "v^4 \\approx GM_b a_0",
+        "a_0\\simeq 1.2\\times 10^{-10}\\ \\mathrm{m\\,s^{-2}}",
+        "\\rho_{\\mathrm{NFW}}(r)=\\frac{\\rho_s}{(r/r_s)(1+r/r_s)^2}",
+        "\\frac{dn_\\chi}{dt}+3Hn_\\chi=-\\langle\\sigma v\\rangle(n_\\chi^2-n_{\\chi,\\mathrm{eq}}^2)",
+        "\\Omega_\\chi h^2\\approx 0.12\\left(\\frac{3\\times 10^{-26}\\ \\mathrm{cm^3\\,s^{-1}}}{\\langle\\sigma v\\rangle}\\right)",
+        "\\Gamma_{\\nu_s\\to\\nu_a\\gamma}\\approx\\frac{9\\alpha G_F^2}{1024\\pi^4}\\sin^2(2\\theta)m_s^5",
+        "m_a \\approx 5.7\\ \\mu\\mathrm{eV}\\left(\\frac{10^{12}\\ \\mathrm{GeV}}{f_a}\\right)",
+        "\\lambda_{\\mathrm{dB}}=\\frac{2\\pi\\hbar}{mv}\\approx 1.2\\ \\mathrm{kpc}\\left(\\frac{10^{-22}\\ \\mathrm{eV}}{m}\\right)\\left(\\frac{100\\ \\mathrm{km/s}}{v}\\right)",
+        "\\Omega_c h^2 = 0.1200 \\pm 0.0012",
+        "H_0 \\simeq 67.4\\ \\mathrm{km\\,s^{-1}\\,Mpc^{-1}}",
+        "\\gamma_{\\rm PPN}-1=(2.1\\pm 2.3)\\times 10^{-5}",
+        "\\sigma_{\\rm SI}\\simeq 5.9\\times 10^{-48}\\ \\mathrm{cm^2}",
+        "\\sqrt{-g}\\,C^2",
+        "\\alpha_g",
+        "L^{-4}",
+        "B(r)=1-2\\beta/r+\\gamma r-\\kappa r^2",
+        "\\beta\\sim L",
+        "\\gamma\\sim L^{-1}",
+        "\\kappa\\sim L^{-2}",
+        "\\Phi(r)=-\\beta c^2/r+\\gamma c^2 r/2-\\kappa c^2 r^2/2",
+        "\\sim L^2/T^2",
+        "v^2(r)=\\beta c^2/r+\\gamma c^2 r/2-\\kappa c^2 r^2",
+        "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu}=8\\pi G T_{\\mu\\nu}",
+        "L^{-2}",
+        "G\\sim L^2/M^2",
+        "T\\sim M/L^4",
+        "H^2=H_0^2[\\Omega_r a^{-4}+\\cdots]",
+        "T^{-2}",
+        "\\rho_{\\rm crit}=3H_0^2/(8\\pi G)",
+        "T^{-2}\\times M T^2/L^3 = M/L^3",
+        "v^4\\approx GM_b a_0",
+        "L^3/(MT^2)\\times M\\times L/T^2 = L^4/T^4",
+        "\\Gamma\\propto \\alpha G_F^2 \\sin^2(2\\theta) m_s^5",
+        "T^{-1}",
+        "G_F^2\\sim (E^{-2})^2=E^{-4}",
+        "m_s^5\\sim E^5",
+        "E\\sim T^{-1}",
+        "\\lambda_{dB}=2\\pi\\hbar/(mv)",
+        "E\\cdot T/(E\\cdot L/T)=T^2\\cdot T^{-1}\\cdot L^{-1}\\cdot... = L",
+        "C_{\\mu\\nu\\rho\\sigma}C^{\\mu\\nu\\rho\\sigma}=2R_{\\mu\\nu}R^{\\mu\\nu}-\\frac{2}{3}R^2",
+        "\\Omega_c h^2",
+        "0.1200 \\pm 0.0012",
+        "\\Omega_b h^2",
+        "0.02237 \\pm 0.00015",
+        "67.36\\ \\mathrm{km\\,s^{-1}\\,Mpc^{-1}}",
+        "67.36 \\pm 0.54",
+        "\\Omega_\\Lambda",
+        "\\approx 0.685",
+        "\\Omega_c/\\Omega_b",
+        "\\approx 5.3",
+        "0.120/0.0224 \\approx 5.36",
+        "\\gamma_{\\rm PPN}-1",
+        "(2.1\\pm 2.3)\\times 10^{-5}",
+        "\\sigma_{\\rm SI}",
+        "5.9\\times 10^{-48}\\ \\mathrm{cm^2}",
+        "\\langle\\sigma v\\rangle",
+        "3\\times 10^{-26}\\ \\mathrm{cm^3\\,s^{-1}}",
+        "a_0",
+        "1.2\\times 10^{-10}\\ \\mathrm{m\\,s^{-2}}",
+        "|v_{\\rm GW}/c - 1|",
+        "\\lesssim 10^{-15}",
+        "C_{\\mu\\nu\\rho\\sigma}",
+        "g_{\\mu\\nu}\\to\\Omega^2(x)g_{\\mu\\nu}",
+        "S_{\\text{W}}",
+        "B_{\\mu\\nu}=0",
+        "\\frac{\\gamma c^2 r}{2}",
+        "\\propto r^2",
+        "T^\\mu_{\\ \\mu}=0",
+        "\\sim S_0^2 R",
+        "m_f = h S_0",
+        "\\Omega_m = \\Omega_b + \\Omega_c",
+        "w_c = p_c/\\rho_c ≈ 0",
+        "\\delta_c \\propto a",
+        "\\sigma/m_\\chi",
+        "\\gamma r",
+        "\\gamma_0\\sim10^{-30}\\,\\text{cm}^{-1}",
+        "\\gamma_{\\text{PPN}}-1\\approx2\\times10^{-5}",
+        "\\gamma_{\\text{PPN}}-1=(2.1\\pm2.3)\\times10^{-5}",
+        "\\Phi_\\gamma(r)=\\gamma c^2 r/2",
+        "\\gamma",
+        "C_{\\mu\\nu\\rho\\sigma}=0",
+        "\\Omega_c h^2 = 0.120",
+        "\\Omega_b h^2 = 0.0224",
+        "z\\sim0.15",
+        "\\sigma_{\\chi N}^{\\mathrm{SI}} \\lesssim 5\\times10^{-48}\\,\\text{cm}^2",
+        "m_\\chi\\sim30",
+        "\\nu_s\\to\\nu_a+\\gamma",
+        "T^\\mu_{\\ \\mu}",
+        "\\beta,\\gamma,\\kappa"
+      ],
+      "equation_count": 112,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-03T01:13:09.812919+00:00"
     }
   ]
 }
