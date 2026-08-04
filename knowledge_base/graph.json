@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-03T01:42:39.465917+00:00",
+  "updated_at": "2026-08-04T01:51:47.552692+00:00",
   "stats": {
-    "total_nodes": 164,
-    "level_1_count": 83,
-    "level_2_count": 78,
-    "level_3_count": 3,
+    "total_nodes": 167,
+    "level_1_count": 84,
+    "level_2_count": 79,
+    "level_3_count": 4,
     "total_edges": 102,
     "frontier_count": 0
   },
@@ -1319,6 +1319,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/what_are_the_prospects_and_timelines_for_observational_advances_eg_nextgeneration_eht_or_improved_gravitational_wave_detectors_to_resolve_current_degeneracies_between_kerr_and_alternative_black_hole_models.md"
     },
     {
+      "id": "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
+      "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Benincasa, D. M., & Dowker, H. (2005). Action for causal sets.",
+        "R. D. Sorkin (1991). On the problem of time in quantum gravity.",
+        "D. E. D. J. O. D. Sorkin (2019). Causal set theory: An Overview."
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory.md"
+    },
+    {
       "id": "whatconcreteexperimentalsignaturescoulddistinguishquantumcausalsetsfromtensornetworkapproaches",
       "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
       "level": 1,
@@ -1987,7 +2006,7 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
       "dependencies": [
-        "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+        "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
         "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
         "quantumgravity"
       ],
@@ -2131,6 +2150,25 @@
         "Contemporary experimental searches for axions"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem.md"
+    },
+    {
+      "id": "dgpgravityvsftteleparallelgravityinexplaininglatetimecosmicacceleration",
+      "title": "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck 2018",
+        "Bertotti et al. (2003)",
+        "Abbott et al. (2017)"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md"
     },
     {
       "id": "dynamicaldarkenergyvsmodifiedgravityinexplainingtheredshiftdependenceofcosmicacceleration",
@@ -2381,7 +2419,7 @@
       "math_score": "0/4",
       "dependencies": [
         "holographicprinciplevsloopquantumgravityinquantumgravityresearch",
-        "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+        "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
         "quantumgravity"
       ],
       "tags": [
@@ -2558,7 +2596,7 @@
       "math_score": "0/4",
       "dependencies": [
         "quantumgravity",
-        "causalsettheoryvsspinfoammodelsinquantumgravityresearch"
+        "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory"
       ],
       "tags": [
         "2",
@@ -3362,6 +3400,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md"
     },
     {
+      "id": "nontrivialquantumcoherenceinbiologicalphotosyntheticcomplexesvssimulateddecoherenceratesincosmologicallargescalestructures",
+      "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Research Article on Photosynthetic Excitonic Dynamics",
+        "Cosmological Quantum Decoherence Frameworks",
+        "Spectroscopic Verification of Vibronic Dynamics"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md"
+    },
+    {
       "id": "structuralisomorphismbetweengalacticfilamentarynetworksandbiologicalneuralarchitecturesininformationflowoptimization",
       "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
       "level": 3,
@@ -3483,7 +3540,7 @@
       "type": "component_theory"
     },
     {
-      "source": "holographicprinciplevscausalsettheoryinquantumgravitydebate",
+      "source": "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
       "target": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
       "type": "component_theory"
     },
@@ -3573,7 +3630,7 @@
       "type": "component_theory"
     },
     {
-      "source": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "source": "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
       "target": "holographicprinciplevscausalsettheoryinquantumgravitydebate",
       "type": "component_theory"
     },
@@ -3603,7 +3660,7 @@
       "type": "component_theory"
     },
     {
-      "source": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "source": "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
       "target": "loopquantumgravityversuscausalsettheoryinquantumgravity",
       "type": "component_theory"
     },

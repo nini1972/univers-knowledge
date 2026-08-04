@@ -66,6 +66,7 @@ graph TD
     what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay["Direct Detection of Neutrino Decay Experimental Strategies"]:::theoretical
     what_advancements_or_new_data_from_upcoming_experiments_could_improve_the_mathematical_modeling_and_strengthen_the_formalism_of_neutrino_decay_constraints["Neutrino Decay"]:::verified
     how_can_cosmological_observations_be_refined_to_better_discriminate_between_warm_dark_matter_effects_predicted_by_sterile_neutrinos_and_cold_dark_matter_scenarios["How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?"]:::theoretical
+    what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory["What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?"]:::theoretical
     quantum_gravity["Quantum Gravity"]:::theoretical
     what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay["What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?"]:::verified
     neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
@@ -157,6 +158,7 @@ graph TD
     conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution["Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution"]:::theoretical
     higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate["Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate"]:::theoretical
     horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration["Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration"]:::theoretical
+    dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration["DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena["Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"]:::theoretical
     freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate["Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate"]:::theoretical
@@ -172,6 +174,7 @@ graph TD
     cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution["Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
+    nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures["Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures"]:::theoretical
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
 
     %% Connections & Prerequisites
@@ -238,6 +241,7 @@ graph TD
     neutrino_oscillations --- what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay
     quantum_mechanics --- what_advancements_or_new_data_from_upcoming_experiments_could_improve_the_mathematical_modeling_and_strengthen_the_formalism_of_neutrino_decay_constraints
     standard_model_of_particle_physics --- what_advancements_or_new_data_from_upcoming_experiments_could_improve_the_mathematical_modeling_and_strengthen_the_formalism_of_neutrino_decay_constraints
+    quantum_gravity --- what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory
     general_relativity --- quantum_gravity
     quantum_field_theory --- quantum_gravity
     neutrino_oscillations --- what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay
@@ -387,6 +391,7 @@ graph TD
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?](level_1_fundamental_physics/what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models.md) [THEORETICAL]
 - [What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?](level_1_fundamental_physics/what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range.md) [VERIFIED]
+- [What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?](level_1_fundamental_physics/what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory.md) [THEORETICAL]
 - [What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?](level_1_fundamental_physics/what_concrete_experimental_signatures_could_distinguish_quantum_causal_sets_from_tensor_network_approaches.md) [THEORETICAL]
 - [What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?](level_1_fundamental_physics/what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade.md) [THEORETICAL]
 - [What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?](level_1_fundamental_physics/what_experimental_advances_are_required_to_unambiguously_distinguish_neutrino_decay_effects_from_oscillation_nsi_and_decoherence_effects.md) [THEORETICAL]
@@ -427,6 +432,7 @@ graph TD
 - [Cosmological Constant versus Quintessence in Explaining Dark Energy](level_2_advanced_frameworks/cosmological_constant_versus_quintessence_in_explaining_dark_energy.md) [THEORETICAL]
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem](level_2_advanced_frameworks/dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem.md) [THEORETICAL]
+- [DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
 - [Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration](level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration.md) [THEORETICAL]
 - [Ekpyrotic Universe Model versus Inflationary Cosmology Debate](level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md) [VERIFIED]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
@@ -486,4 +492,5 @@ graph TD
 
 - [Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md) [THEORETICAL]
 - [Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md) [THEORETICAL]
+- [Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures](level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]
