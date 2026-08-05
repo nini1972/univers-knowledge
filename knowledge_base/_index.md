@@ -49,6 +49,7 @@ graph TD
     matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
     cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
     quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
+    what_specific_operatortheoretic_proofs_can_be_developed_to_ensure_full_mathematical_integrity_compliance_of_the_neutrino_decay_survival_probability_framework["What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?"]:::verified
     how_do_nonminimal_extensions_or_ultraviolet_completions_of_these_models_affect_their_testability_and_theoretical_robustness_in_light_of_planned_future_experiments["How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?"]:::theoretical
     neutrino_lifetime_and_decay_mechanisms["Neutrino Lifetime and Decay Mechanisms"]:::verified
     can_the_dimensional_consistency_be_conclusively_verified_using_advanced_symbolic_methods_beyond_current_automated_tools["Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?"]:::verified
@@ -165,6 +166,7 @@ graph TD
     loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate["Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
     warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation["Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"]:::theoretical
+    nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime["Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime"]:::theoretical
     fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges["Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges"]:::theoretical
     asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
@@ -173,6 +175,7 @@ graph TD
     superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
     cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution["Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"]:::theoretical
+    can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness["Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
     nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures["Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures"]:::theoretical
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
@@ -227,6 +230,7 @@ graph TD
     quantum_vacuum_polarization --- quantum_electrodynamics_qed
     electroweak_symmetry_breaking --- quantum_electrodynamics_qed
     quantum_mechanics --- quantum_electrodynamics_qed
+    quantum_decoherence --- what_specific_operatortheoretic_proofs_can_be_developed_to_ensure_full_mathematical_integrity_compliance_of_the_neutrino_decay_survival_probability_framework
     neutrino_oscillations --- neutrino_lifetime_and_decay_mechanisms
     standard_model_of_particle_physics --- neutrino_lifetime_and_decay_mechanisms
     standard_model_of_particle_physics --- neutrino_decoupling_and_its_effects_on_early_universe_cosmology
@@ -316,6 +320,7 @@ graph TD
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     quantum_gravity --> entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena
+    quantum_gravity --> nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime
     dark_matter --> fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges
 ```
 
@@ -403,6 +408,7 @@ graph TD
 - [What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?](level_1_fundamental_physics/what_specific_experimental_observables_or_signatures_can_uniquely_discriminate_neutrino_decay_from_background_processes_and_alternative_new_physics_scenarios_in_dune_juno_or_icecube_datasets.md) [THEORETICAL]
 - [What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?](level_1_fundamental_physics/what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance.md) [VERIFIED]
 - [What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?](level_1_fundamental_physics/what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes.md) [THEORETICAL]
+- [What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?](level_1_fundamental_physics/what_specific_operatortheoretic_proofs_can_be_developed_to_ensure_full_mathematical_integrity_compliance_of_the_neutrino_decay_survival_probability_framework.md) [VERIFIED]
 - [Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?](level_1_fundamental_physics/which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys.md) [THEORETICAL]
 - [Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?](level_1_fundamental_physics/which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification.md) [THEORETICAL]
 
@@ -461,6 +467,7 @@ graph TD
 - [Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate](level_2_advanced_frameworks/modified_gravity_vs_dark_matter_paradigm_debate.md) [THEORETICAL]
 - [Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves](level_2_advanced_frameworks/modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves.md) [THEORETICAL]
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
+- [Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime](level_2_advanced_frameworks/nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime.md) [THEORETICAL]
 - [Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects](level_2_advanced_frameworks/primordial_nongaussianity_inflationary_multifield_models_vs_cosmic_defects.md) [THEORETICAL]
 - [Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem](level_2_advanced_frameworks/quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem.md) [THEORETICAL]
 - [Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory](level_2_advanced_frameworks/quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory.md) [THEORETICAL]
@@ -490,6 +497,7 @@ graph TD
 
 ## Level 3: Emergence and Intelligence
 
+- [Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?](level_3_emergence_and_intelligence/can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness.md) [THEORETICAL]
 - [Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md) [THEORETICAL]
 - [Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md) [THEORETICAL]
 - [Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures](level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md) [THEORETICAL]

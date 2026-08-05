@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-04T01:51:47.552692+00:00",
+  "updated_at": "2026-08-05T01:43:42.258920+00:00",
   "stats": {
-    "total_nodes": 167,
-    "level_1_count": 84,
-    "level_2_count": 79,
-    "level_3_count": 4,
-    "total_edges": 102,
+    "total_nodes": 170,
+    "level_1_count": 85,
+    "level_2_count": 80,
+    "level_3_count": 5,
+    "total_edges": 105,
     "frontier_count": 0
   },
   "nodes": [
@@ -1589,6 +1589,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes.md"
     },
     {
+      "id": "whatspecificoperatortheoreticproofscanbedevelopedtoensurefullmathematicalintegritycomplianceoftheneutrinodecaysurvivalprobabilityframework",
+      "title": "What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Original Research Paper on Neutrino Decay",
+        "Quantum Mechanics Textbook",
+        "Review of Operator Theory Applications"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_specific_operatortheoretic_proofs_can_be_developed_to_ensure_full_mathematical_integrity_compliance_of_the_neutrino_decay_survival_probability_framework.md"
+    },
+    {
       "id": "whichobservationalstrategiesornovelcrosscorrelationmethodscouldmosteffectivelybreakdegeneraciesbetweenneutrinodecaysignaturesandotherneutrinopropertyvariationsinupcomingsurveys",
       "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
       "level": 1,
@@ -2470,6 +2489,7 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
       "dependencies": [
+        "nonlocalquantumgravityvsasymptoticallysafegravityinultravioletcompletionofspacetime",
         "quantumgravity"
       ],
       "tags": [
@@ -2787,6 +2807,28 @@
         "Empirical Data Reviews in Theoretical Physics"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md"
+    },
+    {
+      "id": "nonlocalquantumgravityvsasymptoticallysafegravityinultravioletcompletionofspacetime",
+      "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "quantumgravity",
+        "horavalifshitzgravityvsasymptoticallysafegravityinquantumgravityresearch"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Comparative Report on Quantum Gravity Theories",
+        "Recent Advances in Theoretical Physics",
+        "Mathematical Analysis of Spacetime Frameworks"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime.md"
     },
     {
       "id": "primordialnongaussianityinflationarymultifieldmodelsvscosmicdefects",
@@ -3362,6 +3404,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md"
     },
     {
+      "id": "canintegratedinformationtheoryiitbeformalizedwithinspacetimegeometrytoaddressthehardproblemofconsciousness",
+      "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness.md"
+    },
+    {
       "id": "computationalcomplexityandscalabilityofselforganizingsystemsincosmologicalandbiologicalneuralnetworks",
       "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
       "level": 3,
@@ -3645,6 +3706,11 @@
       "type": "component_theory"
     },
     {
+      "source": "nonlocalquantumgravityvsasymptoticallysafegravityinultravioletcompletionofspacetime",
+      "target": "horavalifshitzgravityvsasymptoticallysafegravityinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
       "source": "informationtheoreticcomplexityandemergenthierarchiesinthecosmicwebacomparativeanalysisofneuralnetworksandlargescalestructureevolution",
       "target": "informationtheoreticvsthermodynamicinterpretationsofgravity",
       "type": "component_theory"
@@ -3707,6 +3773,16 @@
     {
       "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
       "target": "modifiednewtoniandynamicsvsemergentgravityinexplaininggalacticrotationcurves",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "nonlocalquantumgravityvsasymptoticallysafegravityinultravioletcompletionofspacetime",
+      "type": "component_theory"
+    },
+    {
+      "source": "horavalifshitzgravityvsasymptoticallysafegravityinquantumgravityresearch",
+      "target": "nonlocalquantumgravityvsasymptoticallysafegravityinultravioletcompletionofspacetime",
       "type": "component_theory"
     },
     {
