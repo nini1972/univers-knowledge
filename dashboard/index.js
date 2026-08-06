@@ -1470,6 +1470,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
             filteredList = conceptsList.filter(c => bridgeIds.has(c.id));
+        } else if (currentNetworkFilter === 'seeds') {
+            const seedSymbols = ['\\hbar', '\\Lambda', 'G_{\\mu\\nu}', 'T_{\\mu\\nu}', 'g_{\\mu\\nu}', '\\Phi', 'k_B', 'M_{\\text{Pl}}', 'H_0', '\\Omega_\\Lambda', '\\Omega_m', '\\tau'];
+            filteredList = conceptsList.filter(c => {
+                const text = c.content || '';
+                return seedSymbols.some(sym => text.includes(sym) || text.includes(sym.replace('\\\\', '\\')));
+            });
         }
 
         const activeIds = new Set(filteredList.map(c => c.id));
@@ -2217,14 +2223,16 @@ document.addEventListener('DOMContentLoaded', () => {
             node.pulse += 0.035;
             const pulseRadius = node.r + Math.sin(node.pulse) * 2.5;
 
+            const isSeedActive = currentNetworkFilter === 'seeds';
+
             // Coronary halo ring glows
-            if (isLatestRun || isHovered || isLevel3) {
+            if (isLatestRun || isHovered || isLevel3 || isSeedActive) {
                 ctx.save();
                 ctx.beginPath();
-                ctx.arc(node.x, node.y, pulseRadius + 6, 0, Math.PI * 2);
-                ctx.fillStyle = isLatestRun ? 'rgba(0, 242, 254, 0.08)' : (isLevel3 ? 'rgba(224, 170, 255, 0.12)' : (isVerified ? 'rgba(0, 230, 118, 0.06)' : 'rgba(255, 179, 0, 0.06)'));
-                ctx.strokeStyle = isLatestRun ? 'hsla(180, 100%, 50%, 0.4)' : (isLevel3 ? 'hsla(280, 100%, 75%, 0.6)' : (isVerified ? 'hsla(152, 90%, 45%, 0.3)' : 'hsla(38, 95%, 52%, 0.3)'));
-                ctx.lineWidth = 1.2;
+                ctx.arc(node.x, node.y, pulseRadius + (isSeedActive ? 8 : 6), 0, Math.PI * 2);
+                ctx.fillStyle = isSeedActive ? 'rgba(255, 215, 0, 0.15)' : (isLatestRun ? 'rgba(0, 242, 254, 0.08)' : (isLevel3 ? 'rgba(224, 170, 255, 0.12)' : (isVerified ? 'rgba(0, 230, 118, 0.06)' : 'rgba(255, 179, 0, 0.06)')));
+                ctx.strokeStyle = isSeedActive ? '#ffd700' : (isLatestRun ? 'hsla(180, 100%, 50%, 0.4)' : (isLevel3 ? 'hsla(280, 100%, 75%, 0.6)' : (isVerified ? 'hsla(152, 90%, 45%, 0.3)' : 'hsla(38, 95%, 52%, 0.3)')));
+                ctx.lineWidth = isSeedActive ? 1.8 : 1.2;
                 ctx.fill();
                 ctx.stroke();
                 ctx.restore();
