@@ -60,39 +60,60 @@ document.addEventListener('DOMContentLoaded', () => {
         let hudText = '';
         let expText = '';
 
-        if (factor > 0.7) {
-            // Present Day -> Recombination
-            const yr = (factor * 13.8).toFixed(1);
-            timeStr = `t = ${yr} Gyr`;
-            rhoPhi = (68.3 * (1 - factor * 0.3)).toFixed(1);
-            bitDensityStr = `${(1.24 * Math.pow(10, 8 * (1 - factor))).toExponential(2)} bits/m³`;
-            holoPct = (0.001 + (1 - factor) * 0.1).toFixed(4);
-            hudText = `EPOCH: LATE-TIME COSMIC WEB (t = ${yr} Gyr) — Filaments & Neural Isomorphisms`;
+        if (factor > 0.6) {
+            // Present Day (13.8 Gyr) down to CMB Recombination (380k yr)
+            const alpha = (factor - 0.6) / 0.4; // 1.0 down to 0.0
+            if (alpha > 0.95) {
+                timeStr = `t = 13.8 Gyr`;
+            } else if (alpha > 0.05) {
+                const yr = (0.00038 + alpha * 13.79962).toFixed(1);
+                timeStr = `t = ${yr} Gyr`;
+            } else {
+                timeStr = `t = 380k yr`;
+            }
+            rhoPhi = (68.3 + (1 - alpha) * 11.7).toFixed(1);
+            bitDensityStr = `${(1.24 * Math.pow(10, 8 + (1 - alpha) * 6)).toExponential(2)} bits/m³`;
+            holoPct = (0.001 + (1 - alpha) * 11.499).toFixed(3);
+            hudText = `EPOCH: LATE-TIME COSMIC WEB (${timeStr}) — Filaments & Neural Isomorphisms`;
             expText = `At late times ($t = 13.8\\text{ Gyr}$), dark energy ($\\Lambda$) and dark matter ($\\rho_m$) drive cosmic web structure formation.`;
-        } else if (factor > 0.3) {
-            // Recombination -> BBN
-            const kYr = Math.round(factor * 380);
-            timeStr = `t = ${kYr}k yr`;
-            rhoPhi = (80.0 + (1 - factor) * 15).toFixed(1);
-            bitDensityStr = `${(1.0 * Math.pow(10, 14 * (1 - factor))).toExponential(2)} bits/m³`;
-            holoPct = (1.5 + (1 - factor) * 20).toFixed(2);
-            hudText = `EPOCH: RECOMBINATION & PLASMA (t = ${kYr}k yr) — Gaussian Density Perturbations`;
-            expText = `Matter density ($\\rho_m$) rises as photon-baryon fluid decouples, generating cosmic microwave background fluctuations.`;
-        } else if (factor > 0.05) {
-            // BBN -> Inflation
-            const sec = (factor * 100).toFixed(2);
-            timeStr = `t = ${sec} s`;
-            rhoPhi = (95.0 + (1 - factor) * 4.9).toFixed(1);
-            bitDensityStr = `${(1.0 * Math.pow(10, 30 * (1 - factor))).toExponential(2)} bits/m³`;
-            holoPct = (45.0 + (1 - factor) * 50).toFixed(1);
-            hudText = `EPOCH: BIG BANG NUCLEOSYNTHESIS (t = ${sec} s) — Radiation Dominated Era`;
+        } else if (factor > 0.2) {
+            // CMB Recombination (380k yr) down to BBN (1 s)
+            const alpha = (factor - 0.2) / 0.4; // 1.0 down to 0.0
+            if (alpha > 0.9) {
+                timeStr = `t = 380k yr`;
+            } else if (alpha < 0.1) {
+                timeStr = `t = 1.00 s`;
+            } else {
+                const kYr = Math.round(1 + alpha * 379);
+                timeStr = `t = ${kYr}k yr`;
+            }
+            rhoPhi = (80.0 + (1 - alpha) * 15.2).toFixed(1);
+            bitDensityStr = `${(1.0 * Math.pow(10, 14 + (1 - alpha) * 11)).toExponential(2)} bits/m³`;
+            holoPct = (11.5 + (1 - alpha) * 76.0).toFixed(2);
+            hudText = `EPOCH: CMB RECOMBINATION & PLASMA (${timeStr}) — Gaussian Density Perturbations`;
+            expText = `Matter density ($\\rho_m$) rises as photon-baryon fluid decouples at $z \\approx 1100$, generating cosmic microwave background fluctuations.`;
+        } else if (factor > 0.02) {
+            // BBN (1 s) down to Inflation (10^-35 s)
+            const alpha = (factor - 0.02) / 0.18; // 1.0 down to 0.0
+            if (alpha > 0.8) {
+                timeStr = `t = 1.00 s`;
+            } else if (alpha < 0.1) {
+                timeStr = `t = 10⁻³⁵ s`;
+            } else {
+                const sec = (alpha * 1.0).toFixed(2);
+                timeStr = `t = ${sec} s`;
+            }
+            rhoPhi = (95.2 + (1 - alpha) * 4.7).toFixed(1);
+            bitDensityStr = `${(1.0 * Math.pow(10, 25 + (1 - alpha) * 50)).toExponential(2)} bits/m³`;
+            holoPct = (87.5 + (1 - alpha) * 12.4).toFixed(1);
+            hudText = `EPOCH: BIG BANG NUCLEOSYNTHESIS & INFLATION (${timeStr}) — Radiation Dominated Era`;
             expText = `Classical matter density vanishes ($\\rho_m \\to 0$). Radiation and Integrated Information scalar ($\\Phi$) dominate Friedmann expansion.`;
         } else {
             // Pure Singularity Rewind (t -> 0)
             timeStr = `t → 0 (Planck Origin)`;
-            rhoPhi = 100.0;
+            rhoPhi = '100.0';
             bitDensityStr = `1.42 × 10¹⁰⁶ bits/m³ (Planck Bit Density)`;
-            holoPct = 100.0;
+            holoPct = '100.0';
             hudText = `EPOCH: PURE INFORMATION SINGULARITY (t → 0) — Holographic Saturation (100%)`;
             expText = `Classical matter density $\\rho_m \\equiv 0$. The expansion rate $H^2(t)$ is driven entirely by Pure Information Critical Density $\\rho_c = \\frac{3H^2}{8\\pi G}$, 100% saturating the Bekenstein Holographic Bound.`;
         }
