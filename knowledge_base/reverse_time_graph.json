@@ -4954,7 +4954,7 @@
     },
     {
       "symbol": "\\Omega_\\Lambda",
-      "description": "Dark Energy Density Parameter",
+      "description": "Acceleration Scale / MOND Threshold",
       "levels": [
         1,
         2,
