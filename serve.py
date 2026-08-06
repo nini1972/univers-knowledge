@@ -1,8 +1,10 @@
-#!/usr/bin/env python3
+import sys
 import http.server
 import socket
 import webbrowser
 from threading import Timer
+
+sys.stdout.reconfigure(encoding='utf-8')
 
 DEFAULT_PORT = 8000
 MAX_PORT_ATTEMPTS = 100
@@ -23,14 +25,14 @@ def find_free_port(start_port):
 def open_browser(port):
     """Opens the system web browser to the dashboard URL."""
     url = f"http://localhost:{port}/dashboard/"
-    print(f"\n🚀 System web browser opening: {url}\n")
+    print(f"\n[INFO] System web browser opening: {url}\n")
     webbrowser.open(url)
 
 def main():
     try:
         port = find_free_port(DEFAULT_PORT)
     except RuntimeError as e:
-        print(f"❌ Error: {e}")
+        print(f"[ERROR] Error: {e}")
         return
 
     # Set up the request handler and server
@@ -49,16 +51,16 @@ def main():
         try:
             server = server_class(("127.0.0.1", port), handler)
         except OSError as e:
-            print(f"❌ Failed to bind to port {port}: {e}")
+            print(f"[ERROR] Failed to bind to port {port}: {e}")
             return
 
     print("=" * 60)
-    print(f"📡 Univers Knowledge Dashboard Server")
-    print(f"📂 Serving directory: .")
-    print(f"🔗 Local Address:      http://localhost:{port}/")
-    print(f"🌌 Dashboard Link:     http://localhost:{port}/dashboard/")
+    print(f"[SERVER] Univers Knowledge Dashboard Server")
+    print(f"Serving directory: .")
+    print(f"Local Address:      http://localhost:{port}/")
+    print(f"Dashboard Link:     http://localhost:{port}/dashboard/")
     if port != DEFAULT_PORT:
-        print(f"⚠️ Note: Port {DEFAULT_PORT} was already in use. Switched to {port}.")
+        print(f"[WARN] Note: Port {DEFAULT_PORT} was already in use. Switched to {port}.")
     print("=" * 60)
     print("Press Ctrl+C to stop the server.\n")
 
@@ -68,7 +70,7 @@ def main():
     try:
         server.serve_forever()
     except KeyboardInterrupt:
-        print("\n👋 Stopping Univers Knowledge Dashboard Server. Goodbye!")
+        print("\nStopping Univers Knowledge Dashboard Server. Goodbye!")
 
 if __name__ == "__main__":
     main()
