@@ -24,7 +24,7 @@
         3
       ],
       "is_seed_crystal": true,
-      "concept_count": 54,
+      "concept_count": 56,
       "concepts": [
         {
           "id": "what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance",
@@ -114,6 +114,11 @@
         {
           "id": "how_can_cosmological_observations_be_refined_to_better_discriminate_between_warm_dark_matter_effects_predicted_by_sterile_neutrinos_and_cold_dark_matter_scenarios",
           "title": "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
+          "level": 1
+        },
+        {
+          "id": "can_rigorous_manual_dimensional_consistency_checks_be_performed_by_experts_to_supplement_the_automated_undecidable_result",
+          "title": "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
           "level": 1
         },
         {
@@ -289,6 +294,11 @@
         {
           "id": "can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness",
           "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
           "level": 3
         },
         {
@@ -480,7 +490,7 @@
         3
       ],
       "is_seed_crystal": true,
-      "concept_count": 29,
+      "concept_count": 31,
       "concepts": [
         {
           "id": "what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range",
@@ -550,6 +560,11 @@
         {
           "id": "what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory",
           "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
+          "level": 1
+        },
+        {
+          "id": "can_rigorous_manual_dimensional_consistency_checks_be_performed_by_experts_to_supplement_the_automated_undecidable_result",
+          "title": "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
           "level": 1
         },
         {
@@ -626,6 +641,11 @@
           "id": "nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures",
           "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
           "level": 3
+        },
+        {
+          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3
         }
       ]
     },
@@ -638,7 +658,7 @@
         3
       ],
       "is_seed_crystal": true,
-      "concept_count": 26,
+      "concept_count": 28,
       "concepts": [
         {
           "id": "what_experimental_evidence_or_signatures_would_decisively_distinguish_neutrino_decay_from_sterile_neutrino_or_nonstandard_interaction_scenarios",
@@ -678,6 +698,11 @@
         {
           "id": "what_advancements_or_new_data_from_upcoming_experiments_could_improve_the_mathematical_modeling_and_strengthen_the_formalism_of_neutrino_decay_constraints",
           "title": "Neutrino Decay",
+          "level": 1
+        },
+        {
+          "id": "can_rigorous_manual_dimensional_consistency_checks_be_performed_by_experts_to_supplement_the_automated_undecidable_result",
+          "title": "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
           "level": 1
         },
         {
@@ -763,6 +788,11 @@
         {
           "id": "structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization",
           "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
           "level": 3
         },
         {
@@ -919,7 +949,7 @@
         3
       ],
       "is_seed_crystal": true,
-      "concept_count": 20,
+      "concept_count": 22,
       "concepts": [
         {
           "id": "what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance",
@@ -959,6 +989,11 @@
         {
           "id": "what_advancements_or_new_data_from_upcoming_experiments_could_improve_the_mathematical_modeling_and_strengthen_the_formalism_of_neutrino_decay_constraints",
           "title": "Neutrino Decay",
+          "level": 1
+        },
+        {
+          "id": "can_rigorous_manual_dimensional_consistency_checks_be_performed_by_experts_to_supplement_the_automated_undecidable_result",
+          "title": "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
           "level": 1
         },
         {
@@ -1014,6 +1049,11 @@
         {
           "id": "nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures",
           "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
+          "level": 3
+        },
+        {
+          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
           "level": 3
         },
         {
@@ -1130,7 +1170,7 @@
         3
       ],
       "is_seed_crystal": true,
-      "concept_count": 15,
+      "concept_count": 16,
       "concepts": [
         {
           "id": "what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range",
@@ -1200,6 +1240,11 @@
         {
           "id": "structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization",
           "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
           "level": 3
         },
         {
@@ -1382,14 +1427,14 @@
     },
     {
       "symbol": "\\Omega_\\Lambda",
-      "description": "Cosmological Constant (Dark Energy Density)",
+      "description": "Dark Energy Density Parameter",
       "levels": [
         1,
         2,
         3
       ],
       "is_seed_crystal": true,
-      "concept_count": 11,
+      "concept_count": 12,
       "concepts": [
         {
           "id": "what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance",
@@ -1442,6 +1487,11 @@
           "level": 3
         },
         {
+          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3
+        },
+        {
           "id": "computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks",
           "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
           "level": 3
@@ -1457,7 +1507,7 @@
         3
       ],
       "is_seed_crystal": true,
-      "concept_count": 10,
+      "concept_count": 11,
       "concepts": [
         {
           "id": "what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance",
@@ -1502,6 +1552,11 @@
         {
           "id": "nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures",
           "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
+          "level": 3
+        },
+        {
+          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
           "level": 3
         },
         {
