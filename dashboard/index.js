@@ -1471,7 +1471,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             filteredList = conceptsList.filter(c => bridgeIds.has(c.id));
         } else if (currentNetworkFilter === 'seeds') {
-            const seedSymbols = ['\\hbar', '\\Lambda', 'G_{\\mu\\nu}', 'T_{\\mu\\nu}', 'g_{\\mu\\nu}', '\\Phi', 'k_B', 'M_{\\text{Pl}}', 'H_0', '\\Omega_\\Lambda', '\\Omega_m', '\\tau'];
+            const seedSymbols = ['\\hbar', '\\Lambda', 'G_{\\mu\\nu}', 'T_{\\mu\\nu}', 'g_{\\mu\\nu}', '\\Phi', 'k_B', 'M_{\\text{Pl}}', 'H_0', '\\Omega_\\Lambda', '\\Omega_m', 'a_0', '\\tau'];
             filteredList = conceptsList.filter(c => {
                 const text = c.content || '';
                 return seedSymbols.some(sym => text.includes(sym) || text.includes(sym.replace('\\\\', '\\')));
