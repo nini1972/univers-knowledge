@@ -2581,6 +2581,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        const btnViewRewind = document.getElementById('btn-view-rewind');
+        if (btnViewRewind) {
+            btnViewRewind.addEventListener('click', () => {
+                window.location.href = 'rewind.html';
+            });
+        }
+
         if (elements.btnViewTopology) {
             elements.btnViewTopology.addEventListener('click', () => {
                 currentNetworkViewMode = 'topology';

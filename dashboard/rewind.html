@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe Knowledge — Singularity Rewind Simulator</title>
+    <meta name="description" content="Interactive mathematical simulation rewinding cosmological time from 13.8 Gyr to t -> 0, proving Pure Information Critical Density at the Big Bang.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <link rel="stylesheet" href="rewind.css?v=1.0.0">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="rw-header">
+    <a href="index.html" class="back-btn">
+        <i class="fa-solid fa-chevron-left"></i> Dashboard
+    </a>
+    <div class="rw-brand">
+        <i class="fa-solid fa-backward-fast rw-brand-icon"></i>
+        <h1>SINGULARITY <span>REWIND SIMULATOR</span></h1>
+        <span class="rw-brand-sub">Information Density &amp; Holographic Bound Saturation ($t = 13.8\text{ Gyr} \to t \to 0$)</span>
+    </div>
+    <div class="rw-stats">
+        <div class="rwstat">
+            <span class="rwstat-label">Cosmological Time</span>
+            <span class="rwstat-value" id="val-time-display" style="color: #00f2fe;">t = 13.8 Gyr</span>
+        </div>
+        <div class="rwstat">
+            <span class="rwstat-label">Information Density (\rho_\Phi)</span>
+            <span class="rwstat-value" id="val-rho-phi-display" style="color: #ffd700;">68.3% \rho_c</span>
+        </div>
+        <div class="rwstat">
+            <span class="rwstat-label">Holographic Saturation</span>
+            <span class="rwstat-value" id="val-holo-display" style="color: #e0aaff;">0.001%</span>
+        </div>
+    </div>
+</header>
+
+<!-- MAIN SIMULATOR LAYOUT -->
+<main class="rw-container">
+    <!-- LEFT PANEL: VISUAL CANVAS & SCRUBBER CONTROLS -->
+    <section class="rw-stage-panel">
+        <div class="canvas-header">
+            <h2><i class="fa-solid fa-atom" style="color: #00f2fe;"></i> Cosmological Density Field Simulator</h2>
+            <div class="preset-group">
+                <button class="preset-btn active" data-preset="13.8gyr">Today (13.8 Gyr)</button>
+                <button class="preset-btn" data-preset="380kyr">CMB (380k yr)</button>
+                <button class="preset-btn" data-preset="1sec">BBN (1 s)</button>
+                <button class="preset-btn" data-preset="inflation">Inflation (10⁻³⁵ s)</button>
+                <button class="preset-btn gold-preset" data-preset="singularity">t → 0 (Pure Info)</button>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="rewind-canvas"></canvas>
+            <div class="hud-overlay" id="hud-epoch-title">
+                EPOCH: PRESENT DAY (t = 13.8 Gyr) — Filaments &amp; Cosmic Web Dominated
+            </div>
+        </div>
+
+        <!-- SCRUBBER BAR -->
+        <div class="scrubber-container">
+            <button class="play-btn" id="btn-play-pause"><i class="fa-solid fa-play"></i></button>
+            <input type="range" id="time-slider" min="0" max="1000" value="1000" step="1">
+            <span class="slider-val-label" id="slider-epoch-readout">t = 13.8 Gyr</span>
+        </div>
+    </section>
+
+    <!-- RIGHT PANEL: DYNAMIC KATEX MATHEMATICAL ENGINE -->
+    <aside class="rw-math-panel">
+        <div class="math-card">
+            <h3><i class="fa-solid fa-calculator" style="color: #ffd700;"></i> Modified Friedmann Equation</h3>
+            <div class="katex-box" id="eq-friedmann">
+                \[ H^2(t) = \frac{8\pi G}{3} \left[ \rho_m(t) + \rho_\Phi(t) \right] + \frac{\Lambda}{3} \]
+            </div>
+            <p class="eq-explanation" id="exp-friedmann">
+                At present day ($t = 13.8\text{ Gyr}$), dark energy ($\Lambda$) and dark matter ($\rho_m$) dominate expansion.
+            </p>
+        </div>
+
+        <div class="math-card">
+            <h3><i class="fa-solid fa-database" style="color: #00f2fe;"></i> Landauer Information Density</h3>
+            <div class="katex-box" id="eq-landauer">
+                \[ I_{\text{density}}(t) = \frac{\rho_\Phi(t)}{k_B T(t) \ln 2} \]
+            </div>
+            <div class="metric-row">
+                <span>Calculated Bit Density:</span>
+                <strong id="val-bit-density" style="color: #00f2fe; font-family: 'JetBrains Mono';">1.24 × 10⁸ bits/m³</strong>
+            </div>
+        </div>
+
+        <div class="math-card gold-card">
+            <h3><i class="fa-solid fa-shield-halved" style="color: #ffd700;"></i> Bekenstein Holographic Bound</h3>
+            <div class="katex-box" id="eq-bekenstein">
+                \[ I_{\text{max}} = \frac{2\pi E R}{\hbar c \ln 2} \]
+            </div>
+            <div class="progress-bar-wrapper">
+                <div class="progress-bar-fill" id="holo-progress-fill" style="width: 0.1%;"></div>
+            </div>
+            <span class="progress-label" id="holo-progress-text">Holographic Limit Saturation: 0.001%</span>
+        </div>
+
+        <div class="math-card">
+            <h3><i class="fa-solid fa-code-compare" style="color: #e0aaff;"></i> Modified Stress-Energy Tensor ($T_{\mu\nu}^\Phi$)</h3>
+            <div class="katex-box" id="eq-tensor">
+                \[ G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G \left( T_{\mu\nu}^{\text{matter}} + \lambda T_{\mu\nu}^\Phi \right) \]
+            </div>
+            <p class="eq-explanation" id="exp-tensor">
+                Derived variationally as $T_{\mu\nu}^\Phi \equiv -\frac{2}{\sqrt{-g}} \frac{\delta S_\Phi}{\delta g^{\mu\nu}}$. Obeying Bianchi energy conservation $\nabla^\mu T_{\mu\nu}^\Phi = 0$.
+            </p>
+        </div>
+    </aside>
+</main>
+
+<script src="rewind.js?v=1.0.0"></script>
+</body>
+</html>

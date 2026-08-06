@@ -13,7 +13,7 @@
     <!-- KaTeX for LaTeX Math Rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <link rel="stylesheet" href="index.css?v=1.5.0">
+    <link rel="stylesheet" href="index.css?v=1.6.0">
 </head>
 <body>
     <!-- Radiant background mesh glow -->
@@ -288,6 +288,9 @@
                             </button>
                             <button class="network-toggle-btn" id="btn-view-reversetime" title="2,352-Node Dual-Source Reverse-Time Graph (Matplotlib / NetworkX Archetype)">
                                 <i class="fa-solid fa-clock-rotate-left" style="color: #ffd700;"></i> <span>Reverse-Time Graph</span>
+                            </button>
+                            <button class="network-toggle-btn" id="btn-view-rewind" title="Interactive Singularity Rewind Simulator (t = 13.8 Gyr -> t -> 0)">
+                                <i class="fa-solid fa-backward-fast" style="color: #00f2fe;"></i> <span>Singularity Rewind</span>
                             </button>
                             <div class="network-filter-pills" id="net-filter-group">
                                 <button class="net-pill-btn active" data-net-filter="all" id="net-btn-filter-all">All (173)</button>
@@ -641,6 +644,6 @@
     </div>
 
     <!-- Script loading -->
-    <script src="index.js?v=1.5.0"></script>
+    <script src="index.js?v=1.6.0"></script>
 </body>
 </html>
