@@ -2575,19 +2575,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const btnViewReverseTime = document.getElementById('btn-view-reversetime');
-        const reversetimeContainer = document.getElementById('reversetime-view-container');
-        const networkCanvas = elements.networkCanvas;
-
         if (btnViewReverseTime) {
             btnViewReverseTime.addEventListener('click', () => {
-                currentNetworkViewMode = 'reversetime';
-                if (elements.btnViewTopology) elements.btnViewTopology.classList.remove('active');
-                if (elements.btnViewGalaxy) elements.btnViewGalaxy.classList.remove('active');
-                if (elements.btnViewBrain) elements.btnViewBrain.classList.remove('active');
-                btnViewReverseTime.classList.add('active');
-
-                if (networkCanvas) networkCanvas.style.display = 'none';
-                if (reversetimeContainer) reversetimeContainer.style.display = 'block';
+                window.location.href = 'reversetime.html';
             });
         }
 
@@ -2597,8 +2587,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (elements.btnViewBrain) elements.btnViewBrain.classList.remove('active');
                 if (btnViewReverseTime) btnViewReverseTime.classList.remove('active');
                 elements.btnViewTopology.classList.add('active');
-                if (networkCanvas) networkCanvas.style.display = 'block';
-                if (reversetimeContainer) reversetimeContainer.style.display = 'none';
                 syncGraphWithConcepts(concepts);
                 recenterCameraOnNodes(graphNodes);
             });

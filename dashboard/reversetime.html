@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe Knowledge — Reverse-Time Graph</title>
+    <meta name="description" content="Dual-source topological graph mapping 2,352 nodes and 13 mathematical Seed Crystals across cosmic levels.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <link rel="stylesheet" href="reversetime.css?v=1.0.0">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="rt-header">
+    <a href="index.html" class="back-btn">
+        <i class="fa-solid fa-chevron-left"></i> Dashboard
+    </a>
+    <div class="rt-brand">
+        <i class="fa-solid fa-clock-rotate-left rt-brand-icon"></i>
+        <h1>REVERSE-TIME <span>GRAPH</span></h1>
+        <span class="rt-brand-sub">Dual-Source Mathematical Seed Crystals across Cosmic Levels</span>
+    </div>
+    <div class="rt-stats">
+        <div class="rtstat">
+            <span class="rtstat-label">Total Nodes</span>
+            <span class="rtstat-value">2,352</span>
+        </div>
+        <div class="rtstat">
+            <span class="rtstat-label">Seed Crystals</span>
+            <span class="rtstat-value" style="color: #ffd700;">13</span>
+        </div>
+        <div class="rtstat">
+            <span class="rtstat-label">Concepts</span>
+            <span class="rtstat-value" style="color: #00f2fe;">173</span>
+        </div>
+    </div>
+</header>
+
+<!-- MAIN FULLSCREEN VIEWPORT -->
+<main class="rt-viewport" id="rt-viewport">
+    <div class="rt-image-stage" id="rt-image-stage">
+        <img src="../knowledge_base/images/reverse_time_graph.png" id="rt-graph-image" alt="Reverse-Time Dual-Source Graph" draggable="false">
+    </div>
+
+    <!-- HUD ZOOM CONTROLS -->
+    <div class="rt-zoom-hud">
+        <button class="rt-hud-btn" id="btn-rt-zoom-in" title="Zoom In"><i class="fa-solid fa-plus"></i></button>
+        <button class="rt-hud-btn" id="btn-rt-zoom-out" title="Zoom Out"><i class="fa-solid fa-minus"></i></button>
+        <button class="rt-hud-btn" id="btn-rt-reset" title="Recenter Graph"><i class="fa-solid fa-arrows-to-dot"></i></button>
+    </div>
+
+    <!-- SIDEBAR LEGEND & SEED CRYSTALS -->
+    <aside class="rt-sidebar" id="rt-sidebar">
+        <div class="sidebar-header">
+            <h3><i class="fa-solid fa-gem" style="color: #ffd700;"></i> 13 SEED CRYSTALS</h3>
+            <span class="sidebar-sub">Variables bridging Level 1 -> 2 -> 3</span>
+        </div>
+        <div class="seed-list" id="seed-list-container">
+            <!-- Dynamic Seed Cards -->
+        </div>
+    </aside>
+
+    <button class="sidebar-toggle-btn" id="btn-toggle-sidebar" title="Toggle Seed Crystals Panel">
+        <i class="fa-solid fa-gem"></i>
+    </button>
+</main>
+
+<script src="reversetime.js?v=1.0.0"></script>
+</body>
+</html>
