@@ -165,11 +165,11 @@ def visualize_graph(G, seed_variables, output_img_path):
         print("Matplotlib / NetworkX not available. Skipping static plot generation.")
         return
 
-    plt.figure(figsize=(18, 12), facecolor='#ffffff')
+    plt.figure(figsize=(18, 12), facecolor='#050811')
     ax = plt.gca()
-    ax.set_facecolor('#ffffff')
+    ax.set_facecolor('#050811')
 
-    # Color map & sizes matching GLM visual architecture
+    # Color map & sizes matching dark dashboard theme
     color_map = []
     node_sizes = []
 
@@ -179,52 +179,44 @@ def visualize_graph(G, seed_variables, output_img_path):
         if node_type == 'concept':
             level = G.nodes[node].get('level')
             if level == 1:
-                color_map.append('lightblue')
-                node_sizes.append(60)
-            elif level == 2:
-                color_map.append('lightgreen')
+                color_map.append('#00f2fe')   # Cyan for L1
                 node_sizes.append(70)
+            elif level == 2:
+                color_map.append('#ffab00')   # Amber for L2
+                node_sizes.append(80)
             elif level == 3:
-                color_map.append('salmon')
-                node_sizes.append(110)
+                color_map.append('#e0aaff')   # Electric Magenta for L3
+                node_sizes.append(130)
             else:
-                color_map.append('grey')
+                color_map.append('#888888')
                 node_sizes.append(50)
 
         elif node_type == 'symbol':
             if node in seed_variables:
                 color_map.append('#ffd700')   # Highlight Seed Variables in Gold
-                node_sizes.append(240)
+                node_sizes.append(280)
             else:
-                color_map.append('black')
+                color_map.append('#556677')
                 node_sizes.append(40)
         else:
             # Equation nodes
-            color_map.append('#2b2b2b')
-            node_sizes.append(25)
+            color_map.append('#223040')
+            node_sizes.append(22)
 
     print(f"Calculating spring layout for {len(G)} nodes...")
     pos = nx.spring_layout(G, k=0.14, iterations=50, seed=42)
 
     # Draw faint edges
-    nx.draw_networkx_edges(G, pos, alpha=0.18, edge_color='#888888', width=0.6)
+    nx.draw_networkx_edges(G, pos, alpha=0.15, edge_color='#334455', width=0.5)
 
     # Draw nodes
-    nx.draw_networkx_nodes(G, pos, node_color=color_map, node_size=node_sizes, alpha=0.85)
+    nx.draw_networkx_nodes(G, pos, node_color=color_map, node_size=node_sizes, alpha=0.9)
 
-    # Draw labels ONLY for the Seed Variables so the graph isn't cluttered
-    labels = {node: node for node in seed_variables if node in G}
-    nx.draw_networkx_labels(G, pos, labels=labels, font_size=11, font_color='darkred', font_weight='bold')
-
-    plt.title(
-        "Reverse-Time Graph: Mathematical Bridges Across Cosmic Levels\n"
-        "(Gold Nodes = Seed Variables present in Levels 1, 2, & 3)",
-        color='#000000', fontsize=14, pad=20, fontweight='bold'
-    )
     plt.axis('off')
+    plt.tight_layout()
 
     os.makedirs(os.path.dirname(output_img_path), exist_ok=True)
-    plt.savefig(output_img_path, dpi=300, bbox_inches='tight', facecolor='#ffffff')
+    plt.savefig(output_img_path, dpi=300, bbox_inches='tight', facecolor='#050811', edgecolor='none')
     plt.close()
 
     print(f"Saved high-resolution visualization to: {output_img_path}")
