@@ -73,6 +73,7 @@ graph TD
     neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
     neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
     quantum_entanglement["Quantum Entanglement"]:::verified
+    can_rigorous_manual_dimensional_consistency_checks_be_performed_by_experts_to_supplement_the_automated_undecidable_result["Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?"]:::verified
     general_relativity["General Relativity"]:::verified
     neutrino_mass_generation_mechanisms["Neutrino Mass Generation Mechanisms"]:::verified
     electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
@@ -139,6 +140,7 @@ graph TD
     randallsundrum_vs_add_models_in_hierarchy_problem_resolution["Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution"]:::theoretical
     modified_gravity_vs_dark_matter_paradigm_debate["Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate"]:::theoretical
     axion_monodromy_vs_natural_inflation_in_cosmic_inflationary_dynamics["Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics"]:::theoretical
+    stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition["Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition"]:::theoretical
     randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem["Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem"]:::theoretical
     scalar_field_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges["Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges"]:::theoretical
     baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics["Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics"]:::theoretical
@@ -178,6 +180,7 @@ graph TD
     can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness["Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
     nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures["Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures"]:::theoretical
+    landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures["Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures"]:::theoretical
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
 
     %% Connections & Prerequisites
@@ -306,6 +309,7 @@ graph TD
     quantum_mechanics --> quantum_gravity_debate
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity --- quantum_gravity_debate
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research --- quantum_gravity_debate
+    quantum_gravity --> stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition
     standard_model_of_particle_physics --> randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem
     quantum_field_theory --> baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
@@ -329,6 +333,7 @@ graph TD
 - [Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?](level_1_fundamental_physics/are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups.md) [THEORETICAL]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
 - [Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?](level_1_fundamental_physics/can_independent_publicly_available_datasets_from_juno_dune_or_hyperkamiokande_be_released_to_enable_external_verification_of_neutrino_decay_bounds.md) [THEORETICAL]
+- [Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?](level_1_fundamental_physics/can_rigorous_manual_dimensional_consistency_checks_be_performed_by_experts_to_supplement_the_automated_undecidable_result.md) [VERIFIED]
 - [Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?](level_1_fundamental_physics/can_the_dimensional_consistency_be_conclusively_verified_using_advanced_symbolic_methods_beyond_current_automated_tools.md) [VERIFIED]
 - [Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?](level_1_fundamental_physics/can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance.md) [THEORETICAL]
 - [Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?](level_1_fundamental_physics/can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing.md) [THEORETICAL]
@@ -481,6 +486,7 @@ graph TD
 - [Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](level_2_advanced_frameworks/scalar_field_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale](level_2_advanced_frameworks/scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
+- [Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition](level_2_advanced_frameworks/stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition.md) [THEORETICAL]
 - [String Theory versus Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
 - [Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics](level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md) [THEORETICAL]
@@ -500,5 +506,6 @@ graph TD
 - [Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?](level_3_emergence_and_intelligence/can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness.md) [THEORETICAL]
 - [Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md) [THEORETICAL]
 - [Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md) [THEORETICAL]
+- [Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures](level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md) [THEORETICAL]
 - [Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures](level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]

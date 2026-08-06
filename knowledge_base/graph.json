@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-05T01:43:42.258920+00:00",
+  "updated_at": "2026-08-06T01:45:09.410955+00:00",
   "stats": {
-    "total_nodes": 170,
-    "level_1_count": 85,
-    "level_2_count": 80,
-    "level_3_count": 5,
-    "total_edges": 105,
+    "total_nodes": 173,
+    "level_1_count": 86,
+    "level_2_count": 81,
+    "level_3_count": 6,
+    "total_edges": 106,
     "frontier_count": 0
   },
   "nodes": [
@@ -88,6 +88,25 @@
         "Pilot Program Proposals"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/can_independent_publicly_available_datasets_from_juno_dune_or_hyperkamiokande_be_released_to_enable_external_verification_of_neutrino_decay_bounds.md"
+    },
+    {
+      "id": "canrigorousmanualdimensionalconsistencychecksbeperformedbyexpertstosupplementtheautomatedundecidableresult",
+      "title": "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_rigorous_manual_dimensional_consistency_checks_be_performed_by_experts_to_supplement_the_automated_undecidable_result.md"
     },
     {
       "id": "canthedimensionalconsistencybeconclusivelyverifiedusingadvancedsymbolicmethodsbeyondcurrentautomatedtools",
@@ -2860,6 +2879,7 @@
       "math_score": "0/4",
       "dependencies": [
         "quantumdecoherence",
+        "stochasticgravityvsdiosipenroseobjectivecollapseinexplainingthequantumtoclassicaltransition",
         "quantummeasurementproblem"
       ],
       "tags": [
@@ -3109,6 +3129,26 @@
         "Approved Student Summary"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md"
+    },
+    {
+      "id": "stochasticgravityvsdiosipenroseobjectivecollapseinexplainingthequantumtoclassicaltransition",
+      "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Einstein-Langevin framework",
+        "Diósi-Penrose model",
+        "Pikovski time-dilation decoherence",
+        "BMV gravitational entanglement"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition.md"
     },
     {
       "id": "stringtheoryversusloopquantumgravityinquantumgravityresearch",
@@ -3461,6 +3501,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md"
     },
     {
+      "id": "landauersprincipleandtheinformationprocessingefficiencyofgalacticscalefilamentarystructures",
+      "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Research Report on Landauer's Principle",
+        "Insights into Cosmic Filamentary Structures",
+        "Entropy and Information Processing in Cosmology"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md"
+    },
+    {
       "id": "nontrivialquantumcoherenceinbiologicalphotosyntheticcomplexesvssimulateddecoherenceratesincosmologicallargescalestructures",
       "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
       "level": 3,
@@ -3787,6 +3846,11 @@
     },
     {
       "source": "quantumdecoherence",
+      "target": "quantumdecoherenceversusobjectivecollapseinquantummeasurementproblem",
+      "type": "component_theory"
+    },
+    {
+      "source": "stochasticgravityvsdiosipenroseobjectivecollapseinexplainingthequantumtoclassicaltransition",
       "target": "quantumdecoherenceversusobjectivecollapseinquantummeasurementproblem",
       "type": "component_theory"
     },
