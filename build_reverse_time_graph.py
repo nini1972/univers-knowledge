@@ -1,12 +1,12 @@
 """
 ===============================================================================
-🌌 REVERSE-TIME GRAPH & SEED CRYSTAL ARCHAEOLOGY BUILDER
+🌌 REVERSE-TIME GRAPH & SEED CRYSTAL ARCHAEOLOGY BUILDER (DUAL-SOURCE)
 ===============================================================================
-Treats Universe Knowledge concepts as nodes and mathematical variables
-(\\hbar, \\Lambda, \\Phi, G_{\\mu\\nu}, g_{\\mu\\nu}, k_B, M_{\\text{Pl}}) as bridges.
+Parses both `knowledge_base/logs/equations.jsonl` AND `knowledge_base/database.json`.
+Builds the topological network mapping Concepts <-> Equations <-> Seed Variables.
 
-Identifies 'Seed Crystals' — mathematical variables that originate in Level 1 (Fundamental),
-survive through Level 2 (Advanced Framework Debates), and emerge in Level 3 (Intelligence & Emergence).
+Seed Crystals: Mathematical symbols present across Level 1 (Fundamental),
+Level 2 (Advanced Frameworks), and Level 3 (Emergence / Intelligence).
 ===============================================================================
 """
 
@@ -28,18 +28,20 @@ except ImportError:
     HAS_PLOT_LIBS = False
 
 
-KNOWN_SYMBOL_DEFINITIONS = [
+# Symbol Definitions with exact Regex patterns and display names
+SYMBOL_PATTERNS = [
     (r'\\hbar|\bhbar\b', r'\hbar', 'Reduced Planck Constant (Quantum Action)'),
-    (r'\\Lambda|\bLambda\b', r'\Lambda', 'Cosmological Constant (Dark Energy Density)'),
+    (r'\\Lambda|\bLambda\b', r'\Lambda', 'Cosmological Constant (Dark Energy Vacuum)'),
     (r'G_\{?\\?\\?mu\\?\\?nu\}?|G_{\\mu\\nu}', r'G_{\mu\nu}', 'Einstein Tensor (Spacetime Curvature)'),
     (r'T_\{?\\?\\?mu\\?\\?nu\}?|T_{\\mu\\nu}', r'T_{\mu\nu}', 'Stress-Energy Tensor (Matter-Energy Density)'),
     (r'g_\{?\\?\\?mu\\?\\?nu\}?|g_{\\mu\\nu}', r'g_{\mu\nu}', 'Spacetime Metric Tensor (Gravitational Geometry)'),
     (r'\\Phi|\bPhi\b', r'\Phi', 'Integrated Information / Scalar Field Potential'),
     (r'k_B|k_\{?\\rm B\}?|k_\{?\\text\{B\}\}?', r'k_B', 'Boltzmann Constant (Thermodynamic Entropy)'),
-    (r'M_\{?\\rm Pl\}?|M_\{?Pl\}?|M_\{?\\text\{Pl\}\}?|m_\{?\\text\{Pl\}\}?', r'M_{\text{Pl}}', 'Planck Mass (Quantum Gravity Energy Scale)'),
+    (r'M_\{?\\rm Pl\}?|M_\{?Pl\}?|M_\{?\\text\{Pl\}\}?|m_\{?\\text\{Pl\}\}?', r'M_{\text{Pl}}', 'Planck Mass (Quantum Gravity Scale)'),
     (r'H_0', r'H_0', 'Hubble Expansion Parameter'),
     (r'\\Omega_\\Lambda|\\Omega_\{?\\Lambda\}?', r'\Omega_\Lambda', 'Dark Energy Density Parameter'),
     (r'\\Omega_m|\\Omega_\{?m\}?', r'\Omega_m', 'Matter Density Parameter'),
+    (r'a_0|a_\\Lambda', r'a_0', 'Acceleration Scale / MOND Threshold'),
     (r'S_\{?\\rm EH\}?|S_\{?EH\}?', r'S_{\text{EH}}', 'Einstein-Hilbert Action Integral'),
     (r'D_\{?\\rm KL\}?|D_\{?KL\}?', r'D_{\text{KL}}', 'Kullback-Leibler Relative Entropy Divergence'),
     (r'R_\{?\\?\\?mu\\?\\?nu\}?|R_{\\mu\\nu}', r'R_{\mu\nu}', 'Ricci Curvature Tensor'),
@@ -47,60 +49,75 @@ KNOWN_SYMBOL_DEFINITIONS = [
 ]
 
 
-def extract_symbols_from_text(text):
-    """Extracts known mathematical symbols from markdown text using regex matching."""
+def extract_symbols(text):
+    """Extracts known mathematical symbols from LaTeX equation or markdown text."""
     found = set()
-    for regex_pat, canonical_sym, desc in KNOWN_SYMBOL_DEFINITIONS:
+    for regex_pat, canonical_sym, desc in SYMBOL_PATTERNS:
         if re.search(regex_pat, text):
             found.add((canonical_sym, desc))
     return found
 
 
-def build_reverse_time_graph(db_file_path):
-    """Builds the topological NetworkX graph and extracts Seed Crystals."""
-    if not os.path.exists(db_file_path):
-        raise FileNotFoundError(f"Database file not found at: {db_file_path}")
-
-    with open(db_file_path, 'r', encoding='utf-8') as f:
-        concepts = json.load(f)
-
+def build_reverse_time_graph(db_path, eq_log_path):
+    """Builds the topological dual-source NetworkX graph and extracts Seed Crystals."""
     G = nx.Graph() if HAS_PLOT_LIBS else None
     symbol_levels = defaultdict(set)
     symbol_concepts = defaultdict(list)
-    concept_nodes = []
+
+    # 1. Parse equations.jsonl if available
+    eq_records = []
+    if os.path.exists(eq_log_path):
+        with open(eq_log_path, 'r', encoding='utf-8') as f:
+            eq_records = [json.loads(line) for line in f if line.strip()]
+
+    for entry in eq_records:
+        concept_title = entry.get('concept', 'Unknown')
+        level = entry.get('level', 1)
+        equations = entry.get('equations', [])
+
+        if G is not None:
+            G.add_node(concept_title, type='concept', level=level)
+
+        for idx, eq_str in enumerate(equations):
+            eq_node_id = f"{concept_title}_eq_{idx}"
+            if G is not None:
+                G.add_node(eq_node_id, type='equation', raw=eq_str, level=level)
+                G.add_edge(concept_title, eq_node_id)
+
+            symbols = extract_symbols(eq_str)
+            for sym, desc in symbols:
+                symbol_levels[sym].add(level)
+                symbol_concepts[sym].append({'title': concept_title, 'level': level})
+
+                if G is not None:
+                    G.add_node(sym, type='symbol', description=desc)
+                    G.add_edge(eq_node_id, sym)
+
+    # 2. Parse database.json for master concept coverage
+    concepts = []
+    if os.path.exists(db_path):
+        with open(db_path, 'r', encoding='utf-8') as f:
+            concepts = json.load(f)
 
     for entry in concepts:
-        concept_id = entry.get('id')
         concept_title = entry.get('title')
         level = entry.get('level', 1)
-        status = entry.get('status', 'THEORETICAL')
         content = entry.get('content', '')
 
-        concept_nodes.append({
-            'id': concept_id,
-            'title': concept_title,
-            'level': level,
-            'status': status
-        })
+        if G is not None and not G.has_node(concept_title):
+            G.add_node(concept_title, type='concept', level=level)
 
-        if G:
-            G.add_node(concept_id, type='concept', label=concept_title, level=level, status=status)
-
-        symbols = extract_symbols_from_text(content)
-
+        symbols = extract_symbols(content)
         for sym, desc in symbols:
             symbol_levels[sym].add(level)
-            symbol_concepts[sym].append({
-                'id': concept_id,
-                'title': concept_title,
-                'level': level
-            })
+            symbol_concepts[sym].append({'title': concept_title, 'level': level})
 
-            if G:
-                G.add_node(sym, type='symbol', label=sym, description=desc)
-                G.add_edge(concept_id, sym)
+            if G is not None:
+                if not G.has_node(sym):
+                    G.add_node(sym, type='symbol', description=desc)
+                G.add_edge(concept_title, sym)
 
-    # Find Seed Crystals (symbols present in Level 1, Level 2, and Level 3)
+    # 3. Find Seed Crystals (variables present across Levels 1, 2, & 3)
     seed_variables = []
     symbol_stats = []
 
@@ -109,8 +126,7 @@ def build_reverse_time_graph(db_file_path):
         if is_seed:
             seed_variables.append(sym)
 
-        # Get description
-        desc = next((d for s, d in extract_symbols_from_text(sym)), 'Mathematical Variable')
+        desc = next((d for s, d in extract_symbols(sym)), 'Mathematical Variable')
 
         symbol_stats.append({
             'symbol': sym,
@@ -124,8 +140,7 @@ def build_reverse_time_graph(db_file_path):
     return {
         'networkx_graph': G,
         'seed_variables': sorted(seed_variables),
-        'symbol_stats': sorted(symbol_stats, key=lambda x: x['concept_count'], reverse=True),
-        'concepts': concept_nodes
+        'symbol_stats': sorted(symbol_stats, key=lambda x: x['concept_count'], reverse=True)
     }
 
 
@@ -150,61 +165,66 @@ def visualize_graph(G, seed_variables, output_img_path):
         print("Matplotlib / NetworkX not available. Skipping static plot generation.")
         return
 
-    plt.figure(figsize=(18, 12), facecolor='#050811')
+    plt.figure(figsize=(18, 12), facecolor='#ffffff')
     ax = plt.gca()
-    ax.set_facecolor('#050811')
+    ax.set_facecolor('#ffffff')
 
-    # Color map for nodes
+    # Color map & sizes matching GLM visual architecture
     color_map = []
     node_sizes = []
 
     for node in G:
         node_type = G.nodes[node].get('type')
+
         if node_type == 'concept':
             level = G.nodes[node].get('level')
             if level == 1:
-                color_map.append('#00f2fe')   # Cyan for L1
-                node_sizes.append(40)
+                color_map.append('lightblue')
+                node_sizes.append(60)
             elif level == 2:
-                color_map.append('#ffab00')   # Amber for L2
-                node_sizes.append(50)
+                color_map.append('lightgreen')
+                node_sizes.append(70)
             elif level == 3:
-                color_map.append('#e0aaff')   # Electric Magenta for L3
-                node_sizes.append(120)
+                color_map.append('salmon')
+                node_sizes.append(110)
             else:
-                color_map.append('#888888')
-                node_sizes.append(30)
-        else:
-            # Symbol Node
-            if node in seed_variables:
-                color_map.append('#ffd700')   # Radiant Gold for Seed Crystals
-                node_sizes.append(220)
-            else:
-                color_map.append('#445566')
-                node_sizes.append(30)
+                color_map.append('grey')
+                node_sizes.append(50)
 
-    # Layout calculation
-    pos = nx.spring_layout(G, k=0.18, iterations=60, seed=42)
+        elif node_type == 'symbol':
+            if node in seed_variables:
+                color_map.append('#ffd700')   # Highlight Seed Variables in Gold
+                node_sizes.append(240)
+            else:
+                color_map.append('black')
+                node_sizes.append(40)
+        else:
+            # Equation nodes
+            color_map.append('#2b2b2b')
+            node_sizes.append(25)
+
+    print(f"Calculating spring layout for {len(G)} nodes...")
+    pos = nx.spring_layout(G, k=0.14, iterations=50, seed=42)
 
     # Draw faint edges
-    nx.draw_networkx_edges(G, pos, alpha=0.15, edge_color='#4a607a', width=0.8)
+    nx.draw_networkx_edges(G, pos, alpha=0.18, edge_color='#888888', width=0.6)
 
     # Draw nodes
-    nx.draw_networkx_nodes(G, pos, node_color=color_map, node_size=node_sizes, alpha=0.9)
+    nx.draw_networkx_nodes(G, pos, node_color=color_map, node_size=node_sizes, alpha=0.85)
 
-    # Draw labels ONLY for Seed Crystals
+    # Draw labels ONLY for the Seed Variables so the graph isn't cluttered
     labels = {node: node for node in seed_variables if node in G}
-    nx.draw_networkx_labels(G, pos, labels=labels, font_size=11, font_color='#ffffff', font_weight='bold')
+    nx.draw_networkx_labels(G, pos, labels=labels, font_size=11, font_color='darkred', font_weight='bold')
 
     plt.title(
-        "REVERSE-TIME GRAPH: Mathematical Seed Crystals Across Cosmic Levels\n"
-        "(Gold Nodes = Seed Crystals Bridging Level 1 -> Level 2 -> Level 3)",
-        color='#ffffff', fontsize=14, pad=20, fontweight='bold'
+        "Reverse-Time Graph: Mathematical Bridges Across Cosmic Levels\n"
+        "(Gold Nodes = Seed Variables present in Levels 1, 2, & 3)",
+        color='#000000', fontsize=14, pad=20, fontweight='bold'
     )
     plt.axis('off')
 
     os.makedirs(os.path.dirname(output_img_path), exist_ok=True)
-    plt.savefig(output_img_path, dpi=300, bbox_inches='tight', facecolor='#050811')
+    plt.savefig(output_img_path, dpi=300, bbox_inches='tight', facecolor='#ffffff')
     plt.close()
 
     print(f"Saved high-resolution visualization to: {output_img_path}")
@@ -212,23 +232,20 @@ def visualize_graph(G, seed_variables, output_img_path):
 
 if __name__ == "__main__":
     db_path = os.path.join('knowledge_base', 'database.json')
+    eq_log_path = os.path.join('knowledge_base', 'logs', 'equations.jsonl')
+
     output_json = os.path.join('knowledge_base', 'reverse_time_graph.json')
     output_png = os.path.join('knowledge_base', 'images', 'reverse_time_graph.png')
 
     print("==================================================================")
-    print("🌌 BUILDING THE REVERSE-TIME GRAPH & SEED CRYSTALS")
+    print("🌌 BUILDING THE REVERSE-TIME GRAPH & SEED CRYSTALS (DUAL-SOURCE)")
     print("==================================================================")
 
-    data = build_reverse_time_graph(db_path)
+    data = build_reverse_time_graph(db_path, eq_log_path)
 
-    print("\n=== 🌟 QUALIFIED SEED CRYSTALS (Variables present in Levels 1, 2, & 3) ===")
+    print(f"\n=== 🌟 DISCOVERED SEED CRYSTALS ({len(data['seed_variables'])}) ===")
     for seed in data['seed_variables']:
         print(f"  - 🌟 {seed}")
-
-    print("\n=== TOP MATHEMATICAL SYMBOL BRIDGES ===")
-    for s in data['symbol_stats'][:10]:
-        seed_badge = " [SEED CRYSTAL]" if s['is_seed_crystal'] else ""
-        print(f"  - {s['symbol']:<15} ({s['concept_count']} concepts | Levels {s['levels']}){seed_badge}")
 
     export_graph_json(data, output_json)
     if HAS_PLOT_LIBS:
