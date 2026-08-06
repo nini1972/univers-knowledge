@@ -13,7 +13,7 @@
     <!-- KaTeX for LaTeX Math Rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <link rel="stylesheet" href="index.css?v=1.3.1">
+    <link rel="stylesheet" href="index.css?v=1.4.0">
 </head>
 <body>
     <!-- Radiant background mesh glow -->
@@ -286,6 +286,9 @@
                             <button class="network-toggle-btn" id="btn-view-brain" title="3-Tier Emergent Synaptic Neural Brain">
                                 <i class="fa-solid fa-brain"></i> <span>Cosmic Brain</span>
                             </button>
+                            <button class="network-toggle-btn" id="btn-view-reversetime" title="2,352-Node Dual-Source Reverse-Time Graph (Matplotlib / NetworkX Archetype)">
+                                <i class="fa-solid fa-clock-rotate-left" style="color: #ffd700;"></i> <span>Reverse-Time Graph</span>
+                            </button>
                             <div class="network-filter-pills" id="net-filter-group">
                                 <button class="net-pill-btn active" data-net-filter="all" id="net-btn-filter-all">All (173)</button>
                                 <button class="net-pill-btn" data-net-filter="l1">L1 Physics</button>
@@ -308,6 +311,12 @@
                         </div>
                         <div class="network-visualizer-canvas-wrapper">
                             <canvas id="network-canvas" class="network-canvas"></canvas>
+                            <div id="reversetime-view-container" style="display: none; width: 100%; height: 580px; background: #ffffff; border-radius: 12px; position: relative; overflow: hidden; text-align: center;">
+                                <img src="../knowledge_base/images/reverse_time_graph.png" id="img-reversetime-graph" alt="Reverse-Time Graph" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+                                <div style="position: absolute; top: 16px; left: 16px; background: rgba(5, 8, 17, 0.85); color: #ffd700; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1px solid #ffd700; backdrop-filter: blur(8px); box-shadow: 0 4px 16px rgba(0,0,0,0.4);">
+                                    <i class="fa-solid fa-gem"></i> 2,352 NODES & 13 SEED CRYSTALS (DUAL-SOURCE GRAPH)
+                                </div>
+                            </div>
                             <div class="canvas-zoom-controls">
                                 <button class="zoom-hud-btn" id="btn-zoom-in" title="Zoom In"><i class="fa-solid fa-plus"></i></button>
                                 <button class="zoom-hud-btn" id="btn-zoom-out" title="Zoom Out"><i class="fa-solid fa-minus"></i></button>
@@ -638,6 +647,6 @@
     </div>
 
     <!-- Script loading -->
-    <script src="index.js?v=1.3.1"></script>
+    <script src="index.js?v=1.4.0"></script>
 </body>
 </html>

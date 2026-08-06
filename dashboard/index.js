@@ -2574,13 +2574,45 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        const btnViewReverseTime = document.getElementById('btn-view-reversetime');
+        const reversetimeContainer = document.getElementById('reversetime-view-container');
+        const networkCanvas = elements.networkCanvas;
+
+        if (btnViewReverseTime) {
+            btnViewReverseTime.addEventListener('click', () => {
+                currentNetworkViewMode = 'reversetime';
+                if (elements.btnViewTopology) elements.btnViewTopology.classList.remove('active');
+                if (elements.btnViewGalaxy) elements.btnViewGalaxy.classList.remove('active');
+                if (elements.btnViewBrain) elements.btnViewBrain.classList.remove('active');
+                btnViewReverseTime.classList.add('active');
+
+                if (networkCanvas) networkCanvas.style.display = 'none';
+                if (reversetimeContainer) reversetimeContainer.style.display = 'block';
+            });
+        }
+
+        if (elements.btnViewTopology) {
+            elements.btnViewTopology.addEventListener('click', () => {
+                currentNetworkViewMode = 'topology';
+                if (elements.btnViewBrain) elements.btnViewBrain.classList.remove('active');
+                if (btnViewReverseTime) btnViewReverseTime.classList.remove('active');
+                elements.btnViewTopology.classList.add('active');
+                if (networkCanvas) networkCanvas.style.display = 'block';
+                if (reversetimeContainer) reversetimeContainer.style.display = 'none';
+                syncGraphWithConcepts(concepts);
+                recenterCameraOnNodes(graphNodes);
+            });
+        }
+
         if (elements.btnViewBrain) {
             elements.btnViewBrain.addEventListener('click', () => {
-                if (currentNetworkViewMode === 'brain') return;
                 currentNetworkViewMode = 'brain';
                 if (elements.btnViewTopology) elements.btnViewTopology.classList.remove('active');
                 if (elements.btnViewGalaxy) elements.btnViewGalaxy.classList.remove('active');
+                if (btnViewReverseTime) btnViewReverseTime.classList.remove('active');
                 elements.btnViewBrain.classList.add('active');
+                if (networkCanvas) networkCanvas.style.display = 'block';
+                if (reversetimeContainer) reversetimeContainer.style.display = 'none';
                 canvasZoom = 1.0;
                 canvasOffset = { x: 0, y: 0 };
                 syncGraphWithConcepts(concepts);
