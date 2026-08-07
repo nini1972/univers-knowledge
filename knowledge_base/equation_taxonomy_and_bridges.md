@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-06T01:44:38.036619+00:00  
-> **Total Analyzed Concepts:** 87 | **Total Discovered Equations:** 2772 | **Discovered Bridges:** 113
+> **Generated:** 2026-08-07T02:14:52.702661+00:00  
+> **Total Analyzed Concepts:** 91 | **Total Discovered Equations:** 2932 | **Discovered Bridges:** 119
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -70,6 +70,16 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
 - **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
 
+### ` \phi `
+**Occurrences:** Appears in 7 concepts:
+- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
+- **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
+- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
+- **Level 1**: What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?
+- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
+- **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
+- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
+
 ### ` h = 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 7 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
@@ -80,14 +90,25 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 1**: Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?
 
-### ` \phi `
-**Occurrences:** Appears in 6 concepts:
-- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
-- **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
-- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
-- **Level 1**: What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?
-- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
-- **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
+### ` 1.380649 \times 10^{-23} `
+**Occurrences:** Appears in 7 concepts:
+- **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
+- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
+- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
+- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
+- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
+
+### ` \Phi `
+**Occurrences:** Appears in 7 concepts:
+- **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
+- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
+- **Level 3**: Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics
+- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
+- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
 
 ### ` 10^{-15} `
 **Occurrences:** Appears in 6 concepts:
@@ -98,23 +119,14 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?
 - **Level 2**: DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration
 
-### ` 1.380649 \times 10^{-23} `
+### ` 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 6 concepts:
-- **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
+- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
 - **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
 - **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
-
-### ` \Phi `
-**Occurrences:** Appears in 6 concepts:
-- **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
-- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
-- **Level 3**: Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics
-- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
+- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
 
 ### ` \alpha `
 **Occurrences:** Appears in 5 concepts:
@@ -140,14 +152,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
 
-### ` 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 5 concepts:
-- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
-- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
-- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
-
 ### ` N_{\rm eff} `
 **Occurrences:** Appears in 4 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
@@ -165,15 +169,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 47 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 39 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 33 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 25 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 18 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 49 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 41 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 36 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 26 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 19 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 15 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 13 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 14 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 7 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 40
-- **MATH_CONSISTENT Entries:** 29
+- **MATH_PROVEN Entries:** 41
+- **MATH_CONSISTENT Entries:** 31

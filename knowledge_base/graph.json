@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-06T01:45:09.410955+00:00",
+  "updated_at": "2026-08-07T02:15:37.630341+00:00",
   "stats": {
-    "total_nodes": 173,
-    "level_1_count": 86,
-    "level_2_count": 81,
-    "level_3_count": 6,
+    "total_nodes": 177,
+    "level_1_count": 87,
+    "level_2_count": 82,
+    "level_3_count": 8,
     "total_edges": 106,
     "frontier_count": 0
   },
@@ -1436,6 +1436,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay.md"
     },
     {
+      "id": "whatexperimentaldesignsordataanalysescandefinitivelydistinguishneutrinodecayeffectsfromalternativedampingmechanismssuchasdecoherenceornonstandardinteractions",
+      "title": "What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Comprehensive research on neutrino mechanisms",
+        "Theoretical frameworks in particle physics",
+        "Studies on neutrino decay and damping mechanisms"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_designs_or_data_analyses_can_definitively_distinguish_neutrino_decay_effects_from_alternative_damping_mechanisms_such_as_decoherence_or_nonstandard_interactions.md"
+    },
+    {
       "id": "whatexperimentalevidenceorsignatureswoulddecisivelydistinguishneutrinodecayfromsterileneutrinoornonstandardinteractionscenarios",
       "title": "What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?",
       "level": 1,
@@ -1979,7 +1998,7 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
       "dependencies": [
-        "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem"
+        "braneworldwarpedextradimensionsvsdynamicaltechnicolorinresolvingthehierarchyproblem"
       ],
       "tags": [
         "2"
@@ -2009,6 +2028,25 @@
         "Research articles on modified gravity theories and quantum extremal surface methods"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/black_hole_models_debate_observational_techniques_vs_theoretical_frameworks.md"
+    },
+    {
+      "id": "braneworldwarpedextradimensionsvsdynamicaltechnicolorinresolvingthehierarchyproblem",
+      "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Comparative Report on Randall-Sundrum and Technicolor Frameworks",
+        "LHC Collaboration Findings on Higgs Boson",
+        "Precision Electroweak Data Analysis"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem.md"
     },
     {
       "id": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
@@ -3482,6 +3520,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md"
     },
     {
+      "id": "entropyproductionratesinneuralinformationprocessingvsgravitationalstructureformationacomparativethermodynamicanalysis",
+      "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md"
+    },
+    {
       "id": "informationtheoreticcomplexityandemergenthierarchiesinthecosmicwebacomparativeanalysisofneuralnetworksandlargescalestructureevolution",
       "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
       "level": 3,
@@ -3537,6 +3594,25 @@
         "Spectroscopic Verification of Vibronic Dynamics"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md"
+    },
+    {
+      "id": "quantifyingphicomplexityingravitationalcollapseandcosmicwebformation",
+      "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Tononi, G. (2004). An information integration theory of consciousness. BMC Neuroscience, 5(1), 42.",
+        "Vazza, F., & Feletti, A. (2020). The quantitative comparison between the neuronal network and the cosmic web. Frontiers in Physics, 8, 525731.",
+        "Zel'dovich, Y. B. (1970). Gravitational instability: An approximate theory for large density perturbations. Astronomy and Astrophysics, 5, 84-89."
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md"
     },
     {
       "id": "structuralisomorphismbetweengalacticfilamentarynetworksandbiologicalneuralarchitecturesininformationflowoptimization",
@@ -3645,7 +3721,7 @@
       "type": "component_theory"
     },
     {
-      "source": "randallsundrummodelvslargeextradimensionsinsolvingthehierarchyproblem",
+      "source": "braneworldwarpedextradimensionsvsdynamicaltechnicolorinresolvingthehierarchyproblem",
       "target": "beyondthestandardmodelsupersymmetryvsextradimensions",
       "type": "component_theory"
     },
