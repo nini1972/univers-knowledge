@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-07T02:14:52.702661+00:00",
+  "updated_at": "2026-08-08T01:05:59.564719+00:00",
   "stats": {
-    "total_entries": 91,
-    "total_equations": 2932,
-    "math_proven_entries": 41,
+    "total_entries": 94,
+    "total_equations": 3002,
+    "math_proven_entries": 43,
     "math_consistent_entries": 31,
-    "total_bridges": 119,
+    "total_bridges": 124,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 28,
+      "concept_count": 30,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -125,12 +125,20 @@
         {
           "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
           "level": 3
+        },
+        {
+          "title": "What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?",
+          "level": 1
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
         }
       ]
     },
     {
       "equation": "\\gamma",
-      "concept_count": 9,
+      "concept_count": 10,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -166,6 +174,10 @@
         },
         {
           "title": "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
           "level": 2
         }
       ]
@@ -517,6 +529,32 @@
       ]
     },
     {
+      "equation": "\\neq",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
+          "level": 1
+        },
+        {
+          "title": "What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?",
+          "level": 1
+        },
+        {
+          "title": "What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?",
+          "level": 1
+        }
+      ]
+    },
+    {
       "equation": "N_{\\rm eff}",
       "concept_count": 4,
       "concepts": [
@@ -535,6 +573,50 @@
         {
           "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "^{-2}",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
+          "level": 1
+        },
+        {
+          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
+          "level": 3
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "^{-1}",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
+          "level": 2
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "level": 3
         }
       ]
     },
@@ -605,28 +687,6 @@
       ]
     },
     {
-      "equation": "\\neq",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
-          "level": 1
-        },
-        {
-          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
-          "level": 1
-        },
-        {
-          "title": "What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\ddot{\\delta}+2H\\dot{\\delta}-4\\pi G\\bar{\\rho}_m\\delta=0",
       "concept_count": 4,
       "concepts": [
@@ -663,24 +723,6 @@
         {
           "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "^{-2}",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
-          "level": 1
-        },
-        {
-          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
-          "level": 3
         }
       ]
     },
@@ -775,6 +817,24 @@
       ]
     },
     {
+      "equation": "\\kappa",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+          "level": 1
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\chi^2",
       "concept_count": 3,
       "concepts": [
@@ -806,6 +866,24 @@
         },
         {
           "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\sim",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
+          "level": 2
+        },
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
           "level": 2
         }
       ]
@@ -955,6 +1033,24 @@
       ]
     },
     {
+      "equation": "\\Omega_c h^2 = 0.1200 \\pm 0.0012",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\chi",
       "concept_count": 2,
       "concepts": [
@@ -1067,20 +1163,6 @@
       ]
     },
     {
-      "equation": "^{-1}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "G_i(\\phi,X)",
       "concept_count": 2,
       "concepts": [
@@ -1091,6 +1173,20 @@
         {
           "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "n_s \\simeq 0.965",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "level": 3
         }
       ]
     },
@@ -1118,20 +1214,6 @@
         },
         {
           "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\kappa",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
-          "level": 1
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
           "level": 2
         }
       ]
@@ -1501,20 +1583,6 @@
       ]
     },
     {
-      "equation": "\\sim",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
-          "level": 2
-        },
-        {
-          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\eta",
       "concept_count": 2,
       "concepts": [
@@ -1781,6 +1849,20 @@
       ]
     },
     {
+      "equation": "\\mu(x)",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\sigma/m_\\chi",
       "concept_count": 2,
       "concepts": [
@@ -1791,6 +1873,20 @@
         {
           "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_m \\simeq 0.315",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "level": 3
         }
       ]
     },
@@ -1818,6 +1914,20 @@
         },
         {
           "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "H_0 \\simeq 67.4",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
           "level": 3
         }
       ]
@@ -2061,15 +2171,15 @@
       ]
     },
     {
-      "equation": "\\Omega_c h^2 = 0.1200 \\pm 0.0012",
+      "equation": "\\ddot{\\delta} + 2H\\dot{\\delta} - 4\\pi G\\bar{\\rho}_m\\delta = 0",
       "concept_count": 2,
       "concepts": [
         {
-          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
-          "level": 2
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
         },
         {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
           "level": 3
         }
       ]
@@ -2123,7 +2233,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 49,
+      "occurrence_count": 50,
       "referenced_in": [
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -2154,6 +2264,7 @@
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+        "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
@@ -2181,7 +2292,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 41,
+      "occurrence_count": 44,
       "referenced_in": [
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -2207,6 +2318,7 @@
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
         "Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+        "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
@@ -2215,12 +2327,14 @@
         "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+        "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
         "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
         "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
         "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
+        "What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
         "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
         "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?"
@@ -2231,7 +2345,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 36,
+      "occurrence_count": 38,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -2253,6 +2367,7 @@
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+        "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
@@ -2262,6 +2377,7 @@
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+        "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
         "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
@@ -2311,7 +2427,7 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 19,
+      "occurrence_count": 21,
       "referenced_in": [
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
@@ -2325,9 +2441,11 @@
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
         "Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+        "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
         "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+        "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
         "What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?",
@@ -2339,7 +2457,7 @@
       "name": "Cold Dark Matter Density Parameter",
       "unit": "dimensionless",
       "typical_value": "0.120",
-      "occurrence_count": 15,
+      "occurrence_count": 16,
       "referenced_in": [
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
@@ -2350,6 +2468,7 @@
         "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
         "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
+        "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
         "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
         "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
@@ -6379,6 +6498,110 @@
       "math_score": "3/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-07T02:14:18.311240+00:00"
+    },
+    {
+      "concept": "What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?",
+      "level": 1,
+      "equations": [
+        "\\{\\text{accept},\\text{reject},\\text{pending}\\}",
+        "V(x) = \\frac{\\lambda}{4}x^4",
+        "p(d|M_1) \\approx p(d|M_2)",
+        "\\epsilon(d)",
+        "\\Lambda",
+        "C = (M, A, \\mathcal{L}, P, O, \\ell, D, \\mathcal{F})",
+        "\\neq",
+        "\\Gamma \\vdash P : C"
+      ],
+      "equation_count": 8,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-08T00:41:38.321563+00:00",
+      "a2a_proof_report": "# Formal Mathematical Verification and Derivation Report\n\n---\n\n## Axioms and Definitions\n\nWe start with the following specified variables and concepts:\n\n- States: \\(\\{\\text{accept}, \\text{reject}, \\text{pending}\\}\\) — categorical states, no further algebraic definition required here.\n- Potential function: \n  \\[\n  V(x) = \\frac{\\lambda}{4} x^4\n  \\]\n  where \\( \\lambda \\) is a parameter (real).\n- Probability approximation condition:\n  \\[\n  p(d|M_1) \\approx p(d|M_2)\n  \\]\n  meaning the likelihoods of data \\(d\\) under models \\(M_1\\) and \\(M_2\\) are approximately equal.\n- \\(\\epsilon(d)\\): an error tolerance or bound characterizing the allowable difference in probability.\n- \\(\\Lambda\\): an unspecified symbolic constant.\n\n---\n\n## Derivation and Verification Steps\n\n### Step 1: Define the potential \\(V(x)\\) and its derivative\n\nWe define:\n\\[\nV(x) = \\frac{\\lambda}{4} x^4\n\\]\n\nDifferentiating with respect to \\(x\\):\n\\[\n\\frac{dV}{dx} = \\lambda x^3\n\\]\n\nThis shows a well-known polynomial power differentiation result is consistent.\n\n### Step 2: Define symbolic probability variables and approximation condition\n\nDefine positive real variables \\(p(d|M_1) = p_{d,M_1}\\), \\(p(d|M_2) = p_{d,M_2}\\) representing likelihoods.\n\nSet the deviation:\n\\[\n\\Delta p = p_{d,M_1} - p_{d,M_2}\n\\]\n\nDefine the approximation condition using an error bound \\(\\epsilon(d)\\):\n\\[\n|\\Delta p| = |p_{d,M_1} - p_{d,M_2}| < \\epsilon(d)\n\\]\n\nThis condition formalizes \\(p(d|M_1) \\approx p(d|M_2)\\).\n\n### Step 3: Summary of symbolic variables\n\n- \\(V(x) = \\frac{\\lambda}{4} x^4\\)\n- \\(\\frac{dV}{dx} = \\lambda x^3\\)\n- \\(p(d|M_1) = p_{d,M_1}\\)\n- \\(p(d|M_2) = p_{d,M_2}\\)\n- \\(\\epsilon(d) = \\epsilon_d\\)\n- \\(\\Lambda\\) remains symbolic\n- The approximation inequality:\n\\[\n|p_{d,M_1} - p_{d,M_2}| < \\epsilon_d\n\\]\n\nNo contradictions arise in these definitions. All expressions are internally consistent and mathematically valid.\n\n---\n\n## Simplification Result\n\nThe differentiation of the potential function yields a valid polynomial expression. The approximation inequality condition is a standard absolute value inequality used to describe closeness of probabilities.\n\nNo further algebraic identities are contradictory or violated.\n\n---\n\n## Code Artifact\n\n```python\nimport sympy as sp\n\n# Define symbols\nx, lambda_ = sp.symbols('x lambda', real=True)\np_d_M1, p_d_M2 = sp.symbols('p_d_M1 p_d_M2', positive=True, real=True)\nepsilon_d = sp.symbols('epsilon_d')\nLambda = sp.symbols('Lambda', real=True)\n\n# Define V(x)\nV = (lambda_/4)*x**4\n\n# Derivative dV/dx\ndV_dx = sp.diff(V, x)\n\n# Probability difference and approximation condition\nprob_diff = p_d_M1 - p_d_M2\napprox_condition = sp.Lt(sp.Abs(prob_diff), epsilon_d)\n\n# Print all components for verification\nprint(f\"V(x) = {V}\")\nprint(f\"dV/dx = {dV_dx}\")\nprint(f\"Approximation condition: |p(d|M1) - p(d|M2)| < epsilon(d) represented as: {approx_condition}\")\n```\n\n---\n\n# Final Remarks\n\n- The potential function and its derivative have been confirmed correct.\n- The probability approximation is properly formalized as an inequality involving absolute difference and an error tolerance.\n- \\(\\Lambda\\) remains symbolic and requires further contextual definitions for algebraic manipulation.\n- The categorical states \\(\\{\\text{accept}, \\text{reject}, \\text{pending}\\}\\) are domain concepts rather than algebraic expressions requiring proof.\n\nThis completes the verification and validation of the current mathematical expressions and relations for the given problem context."
+    },
+    {
+      "concept": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+      "level": 2,
+      "equations": [
+        "G_{\\mu\\nu} = 8\\pi G \\left(T_{\\mu\\nu}^{\\rm SM} + T_{\\mu\\nu}^{\\rm DM}\\right),",
+        "\\frac{\\partial f}{\\partial t} + \\mathbf{v}\\cdot\\nabla_{\\mathbf{x}}f - \\nabla\\Phi\\cdot\\nabla_{\\mathbf{v}}f = 0, \\quad \\nabla^2\\Phi = 4\\pi G(\\rho_{\\rm baryon} + \\rho_{\\rm DM}).",
+        "\\mu\\left(\\frac{a}{a_0}\\right)\\mathbf{a} = \\mathbf{a}_{\\rm N},",
+        "\\frac{dn_\\chi}{dt} + 3Hn_\\chi = -\\langle\\sigma v\\rangle\\left(n_\\chi^2 - n_{\\chi,{\\rm eq}}^2\\right),",
+        "\\Omega_\\chi h^2 \\simeq \\frac{3\\times 10^{-27} {\\rm cm}^3{\\rm s}^{-1}}{\\langle\\sigma v\\rangle}.",
+        "\\frac{dR}{dE_R} = \\frac{\\rho_\\chi}{m_\\chi}\\frac{C_T}{m_T}\\int_{v_{\\min}}^{v_{\\rm esc}} d^3v\\, f(\\mathbf{v})\\,v\\,\\frac{d\\sigma_T}{dE_R},",
+        "\\Lambda",
+        "T_{\\mu\\nu}^{\\rm DM} \\approx \\rho_{\\rm DM}u_\\mu u_\\nu",
+        "w \\approx 0",
+        "\\rho_{\\rm NFW}(r) = \\rho_s/[(r/r_s)(1+r/r_s)^2]",
+        "\\sigma/m \\ll 1",
+        "a_0 \\approx 1.2\\times 10^{-10}",
+        "^{-2}",
+        "\\mu(x) \\to x",
+        "x \\ll 1",
+        "v^4 = GM a_0",
+        "a_0",
+        "c_g = c",
+        "v_{\\min} = \\sqrt{m_T E_R/2\\mu_{\\chi T}^2}",
+        "\\langle\\sigma v\\rangle \\sim 10^{-26}",
+        "^{-1}",
+        "\\Omega_c h^2 \\approx 0.12",
+        "v_c(r) \\approx {\\rm constant}",
+        "\\sim",
+        "M(<r) \\propto r",
+        "\\kappa",
+        "\\Omega_c h^2 = 0.1200 \\pm 0.0012",
+        "\\ll 10^{-10}",
+        "\\sigma_{\\rm SI} \\sim 3.8\\times 10^{-49}",
+        "m_\\chi \\sim 30",
+        "10^{-47}",
+        "\\gamma",
+        "m_\\chi \\lesssim 100",
+        "\\Omega_{\\rm DM} \\approx 5\\Omega_{\\rm baryon}",
+        "a_0 \\approx cH_0/2\\pi",
+        "\\times",
+        "T \\sim m_\\chi",
+        "\\mu(x)"
+      ],
+      "equation_count": 38,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-08T00:54:24.882906+00:00"
+    },
+    {
+      "concept": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+      "level": 3,
+      "equations": [
+        "H_k(K_\\epsilon) = \\frac{\\ker \\partial_k}{\\operatorname{im}\\partial_{k+1}}",
+        "\\beta_k(\\epsilon) = \\dim H_k(K_\\epsilon)",
+        "d_B\\left(\\operatorname{Dgm}(f),\\operatorname{Dgm}(g)\\right) \\leq \\|f-g\\|_\\infty",
+        "\\ddot{\\delta} + 2H\\dot{\\delta} - 4\\pi G\\bar{\\rho}_m\\delta = 0",
+        "H^2(z) = H_0^2 \\left[ \\Omega_m(1+z)^3+ \\Omega_r(1+z)^4+ \\Omega_\\Lambda+ \\Omega_k(1+z)^2 \\right]",
+        "\\mu\\left(\\frac{|a|}{a_0}\\right)\\mathbf{a} = \\mathbf{a}_N",
+        "H_0 \\simeq 67.4 \\ \\mathrm{km\\,s^{-1}\\,Mpc^{-1}}",
+        "\\Omega_m \\simeq 0.315",
+        "\\Omega_\\Lambda \\simeq 0.685",
+        "n_s \\simeq 0.965",
+        "a_0 \\simeq 1.2\\times 10^{-10}\\ \\mathrm{m\\,s^{-2}}",
+        "\\sum m_\\nu \\lesssim 0.12\\,\\mathrm{eV}",
+        "d \\sim 10^2-10^4",
+        "L_\\infty",
+        "H_0 \\simeq 67.4",
+        "^{-1}",
+        "\\beta_0=1, \\beta_{k\\geq 1}=0",
+        "_\\epsilon",
+        "H_k = \\ker \\partial_k / \\operatorname{im} \\partial_{k+1}",
+        "\\operatorname{Dgm}_k = \\{(b_i,d_i)\\}",
+        "d_B(D(f),D(g)) \\leq \\|f-g\\|_\\infty",
+        "H^2(a) = H_0^2[\\Omega_r a^{-4} + \\Omega_m a^{-3} + \\Omega_k a^{-2} + \\Omega_\\Lambda]",
+        "\\mu(a/a_0)a = a_N",
+        "K_\\epsilon \\rightarrow H_k \\rightarrow \\beta_k"
+      ],
+      "equation_count": 24,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-08T01:04:43.481904+00:00"
     }
   ]
 }

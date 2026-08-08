@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-07T02:14:52.702661+00:00  
-> **Total Analyzed Concepts:** 91 | **Total Discovered Equations:** 2932 | **Discovered Bridges:** 119
+> **Generated:** 2026-08-08T01:05:59.564719+00:00  
+> **Total Analyzed Concepts:** 94 | **Total Discovered Equations:** 3002 | **Discovered Bridges:** 124
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 28 concepts:
+**Occurrences:** Appears in 30 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -36,9 +36,11 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures
 - **Level 2**: Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime
 - **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
+- **Level 1**: What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?
+- **Level 2**: Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics
 
 ### ` \gamma `
-**Occurrences:** Appears in 9 concepts:
+**Occurrences:** Appears in 10 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
@@ -48,6 +50,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
 - **Level 2**: Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves
 - **Level 2**: DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration
+- **Level 2**: Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics
 
 ### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
 **Occurrences:** Appears in 8 concepts:
@@ -152,6 +155,14 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
 
+### ` \neq `
+**Occurrences:** Appears in 5 concepts:
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 1**: Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?
+- **Level 1**: How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?
+- **Level 1**: What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?
+- **Level 1**: What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?
+
 ### ` N_{\rm eff} `
 **Occurrences:** Appears in 4 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
@@ -159,25 +170,18 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?
 - **Level 2**: Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure
 
-### ` \tau_i/m_i `
-**Occurrences:** Appears in 4 concepts:
-- **Level 1**: Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?
-- **Level 1**: Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?
-- **Level 1**: Can a detailed quantitative breakdown of systematic uncertainties in neutrino decay lifetime measurements be provided for each major experimental collaboration?
-- **Level 1**: What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?
-
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 49 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 41 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 36 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 50 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 44 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 38 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 26 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 19 |
-| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 15 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 21 |
+| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 16 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 14 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 7 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 41
+- **MATH_PROVEN Entries:** 43
 - **MATH_CONSISTENT Entries:** 31

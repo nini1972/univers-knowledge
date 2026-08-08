@@ -11,6 +11,7 @@ graph TD
     %% Concept Nodes
     what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range["What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?"]:::verified
     cosmic_neutrino_background["Cosmic Neutrino Background"]:::theoretical
+    what_specific_mathematical_proofs_or_validations_are_needed_to_resolve_the_current_mathpending_status["Formal Meta-Validation Framework for Resolving 'MATH_PENDING' Status"]:::theoretical
     what_experimental_evidence_or_signatures_would_decisively_distinguish_neutrino_decay_from_sterile_neutrino_or_nonstandard_interaction_scenarios["What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?"]:::theoretical
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
     how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures["Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures"]:::theoretical
@@ -106,6 +107,7 @@ graph TD
     supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
     conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions["Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions"]:::theoretical
     superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics["Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics"]:::theoretical
+    modified_newtonian_dynamics_mond_vs_wimp_dark_matter_in_galaxy_cluster_dynamics["Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics"]:::verified
     modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
     asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance["Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance"]:::verified
     axionlike_particles_vs_neutralino_wimps_in_explaining_cosmic_dark_matter_abundance["Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance"]:::theoretical
@@ -180,6 +182,7 @@ graph TD
     cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution["Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"]:::theoretical
     can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness["Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?"]:::theoretical
+    topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
     quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation["Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation"]:::theoretical
     entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis["Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis"]:::verified
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
@@ -292,6 +295,8 @@ graph TD
     quantum_field_theory --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
     quantum_measurement_problem --> quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
+    dark_matter --> modified_newtonian_dynamics_mond_vs_wimp_dark_matter_in_galaxy_cluster_dynamics
+    general_relativity --> modified_newtonian_dynamics_mond_vs_wimp_dark_matter_in_galaxy_cluster_dynamics
     dark_matter --> asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
     dark_matter --> interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
@@ -356,6 +361,7 @@ graph TD
 - [Dark Matter](level_1_fundamental_physics/dark_matter.md) [THEORETICAL]
 - [Direct Detection of Neutrino Decay Experimental Strategies](level_1_fundamental_physics/what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay.md) [THEORETICAL]
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md) [THEORETICAL]
+- [Formal Meta-Validation Framework for Resolving 'MATH_PENDING' Status](level_1_fundamental_physics/what_specific_mathematical_proofs_or_validations_are_needed_to_resolve_the_current_mathpending_status.md) [THEORETICAL]
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?](level_1_fundamental_physics/has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification.md) [VERIFIED]
 - [How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?](level_1_fundamental_physics/how_can_cosmological_observations_be_refined_to_better_discriminate_between_warm_dark_matter_effects_predicted_by_sterile_neutrinos_and_cold_dark_matter_scenarios.md) [THEORETICAL]
@@ -481,6 +487,7 @@ graph TD
 - [Modified Gravity Theories vs Dark Matter Particle Models Debate](level_2_advanced_frameworks/modified_gravity_theories_vs_dark_matter_particle_models_debate.md) [THEORETICAL]
 - [Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration](level_2_advanced_frameworks/modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration.md) [THEORETICAL]
 - [Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate](level_2_advanced_frameworks/modified_gravity_vs_dark_matter_paradigm_debate.md) [THEORETICAL]
+- [Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics](level_2_advanced_frameworks/modified_newtonian_dynamics_mond_vs_wimp_dark_matter_in_galaxy_cluster_dynamics.md) [VERIFIED]
 - [Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves](level_2_advanced_frameworks/modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves.md) [THEORETICAL]
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
 - [Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime](level_2_advanced_frameworks/nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime.md) [THEORETICAL]
@@ -522,3 +529,4 @@ graph TD
 - [Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures](level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md) [THEORETICAL]
 - [Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation](level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]
+- [Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks](level_3_emergence_and_intelligence/topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks.md) [THEORETICAL]
