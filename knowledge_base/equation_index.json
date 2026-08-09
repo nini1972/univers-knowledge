@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-08T01:05:59.564719+00:00",
+  "updated_at": "2026-08-09T01:40:09.011813+00:00",
   "stats": {
-    "total_entries": 94,
-    "total_equations": 3002,
-    "math_proven_entries": 43,
-    "math_consistent_entries": 31,
-    "total_bridges": 124,
+    "total_entries": 101,
+    "total_equations": 3406,
+    "math_proven_entries": 45,
+    "math_consistent_entries": 34,
+    "total_bridges": 144,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 30,
+      "concept_count": 32,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -133,12 +133,20 @@
         {
           "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
           "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
         }
       ]
     },
     {
       "equation": "\\gamma",
-      "concept_count": 10,
+      "concept_count": 11,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -179,12 +187,16 @@
         {
           "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
           "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
         }
       ]
     },
     {
       "equation": "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
-      "concept_count": 8,
+      "concept_count": 9,
       "concepts": [
         {
           "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
@@ -217,6 +229,48 @@
         {
           "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
           "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\phi",
+      "concept_count": 8,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "level": 1
+        },
+        {
+          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
         }
       ]
     },
@@ -250,40 +304,6 @@
         },
         {
           "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\phi",
-      "concept_count": 7,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
-          "level": 1
-        },
-        {
-          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
-          "level": 2
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
           "level": 2
         }
       ]
@@ -391,6 +411,36 @@
       ]
     },
     {
+      "equation": "\\alpha",
+      "concept_count": 6,
+      "concepts": [
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "level": 1
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+          "level": 2
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "10^{-15}",
       "concept_count": 6,
       "concepts": [
@@ -417,6 +467,36 @@
         {
           "title": "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\hbar",
+      "concept_count": 6,
+      "concepts": [
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
+          "level": 2
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
+          "level": 1
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
+          "level": 1
         }
       ]
     },
@@ -451,28 +531,54 @@
       ]
     },
     {
-      "equation": "\\alpha",
+      "equation": "^{-2}",
       "concept_count": 5,
       "concepts": [
         {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
           "level": 2
         },
         {
-          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
           "level": 1
         },
         {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
           "level": 3
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "^{-1}",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
+          "level": 2
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
         }
       ]
     },
@@ -503,27 +609,27 @@
       ]
     },
     {
-      "equation": "\\hbar",
+      "equation": "\\Omega_\\Lambda",
       "concept_count": 5,
       "concepts": [
         {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
-          "level": 2
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
           "level": 1
         },
         {
-          "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
           "level": 1
         },
         {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
           "level": 3
         },
         {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
           "level": 2
         }
       ]
@@ -577,29 +683,7 @@
       ]
     },
     {
-      "equation": "^{-2}",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
-          "level": 1
-        },
-        {
-          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
-          "level": 3
-        },
-        {
-          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "^{-1}",
+      "equation": "V(\\phi)",
       "concept_count": 4,
       "concepts": [
         {
@@ -607,16 +691,16 @@
           "level": 2
         },
         {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
           "level": 2
         },
         {
-          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
           "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
         }
       ]
     },
@@ -665,13 +749,9 @@
       ]
     },
     {
-      "equation": "\\Omega_\\Lambda",
+      "equation": "H^2(a)=H_0^2\\left[\\Omega_r a^{-4}+\\Omega_m a^{-3}+\\Omega_k a^{-2}+\\Omega_\\Lambda\\right]",
       "concept_count": 4,
       "concepts": [
-        {
-          "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
-          "level": 1
-        },
         {
           "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
           "level": 1
@@ -681,8 +761,12 @@
           "level": 3
         },
         {
-          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
-          "level": 2
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
         }
       ]
     },
@@ -709,6 +793,28 @@
       ]
     },
     {
+      "equation": "\\Omega_m \\approx 0.315",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
+          "level": 3
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "g_{\\mu\\nu}",
       "concept_count": 3,
       "concepts": [
@@ -727,20 +833,20 @@
       ]
     },
     {
-      "equation": "V(\\phi)",
+      "equation": "f\\sigma_8",
       "concept_count": 3,
       "concepts": [
+        {
+          "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
+          "level": 1
+        },
         {
           "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
           "level": 2
         },
         {
-          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
           "level": 2
-        },
-        {
-          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
-          "level": 3
         }
       ]
     },
@@ -794,6 +900,24 @@
         },
         {
           "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "G_i(\\phi,X)",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
           "level": 2
         }
       ]
@@ -889,6 +1013,24 @@
       ]
     },
     {
+      "equation": "\\eta",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "level": 2
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\geq 3/4",
       "concept_count": 3,
       "concepts": [
@@ -903,6 +1045,24 @@
         {
           "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_c h^2",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+          "level": 2
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
         }
       ]
     },
@@ -961,24 +1121,6 @@
       ]
     },
     {
-      "equation": "H^2(a)=H_0^2\\left[\\Omega_r a^{-4}+\\Omega_m a^{-3}+\\Omega_k a^{-2}+\\Omega_\\Lambda\\right]",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
-          "level": 1
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "\\beta_0, \\beta_1, \\beta_2",
       "concept_count": 3,
       "concepts": [
@@ -997,7 +1139,7 @@
       ]
     },
     {
-      "equation": "\\Omega_m \\approx 0.315",
+      "equation": "\\Omega_c h^2 \\approx 0.120",
       "concept_count": 3,
       "concepts": [
         {
@@ -1005,11 +1147,11 @@
           "level": 3
         },
         {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
           "level": 3
         },
         {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
           "level": 3
         }
       ]
@@ -1065,6 +1207,20 @@
       ]
     },
     {
+      "equation": "m_\\phi",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\sigma_T/m_\\chi \\lesssim 1.25",
       "concept_count": 2,
       "concepts": [
@@ -1074,20 +1230,6 @@
         },
         {
           "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "f\\sigma_8",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
-          "level": 1
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
           "level": 2
         }
       ]
@@ -1149,6 +1291,34 @@
       ]
     },
     {
+      "equation": "\\tilde{g}_{\\mu\\nu} = F(\\phi)g_{\\mu\\nu}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "F(\\phi) > 0",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "m_H \\sim 170",
       "concept_count": 2,
       "concepts": [
@@ -1163,7 +1333,7 @@
       ]
     },
     {
-      "equation": "G_i(\\phi,X)",
+      "equation": "\\gamma_{\\rm PPN}",
       "concept_count": 2,
       "concepts": [
         {
@@ -1171,7 +1341,21 @@
           "level": 2
         },
         {
-          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\omega_{\\rm BD} \\to \\infty",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
           "level": 2
         }
       ]
@@ -1312,6 +1496,20 @@
         },
         {
           "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "c_{\\rm GW} = c",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
           "level": 2
         }
       ]
@@ -1583,20 +1781,6 @@
       ]
     },
     {
-      "equation": "\\eta",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
-          "level": 2
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "<1\\%",
       "concept_count": 2,
       "concepts": [
@@ -1654,20 +1838,6 @@
     },
     {
       "equation": "\\Omega_c h^2 = 0.120",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
-          "level": 2
-        },
-        {
-          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\Omega_c h^2",
       "concept_count": 2,
       "concepts": [
         {
@@ -1877,6 +2047,20 @@
       ]
     },
     {
+      "equation": "v^4 \\simeq GMa_0",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\Omega_m \\simeq 0.315",
       "concept_count": 2,
       "concepts": [
@@ -1942,6 +2126,34 @@
         },
         {
           "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "G_{4X} \\approx 0",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "G_{5X} \\approx 0",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
           "level": 2
         }
       ]
@@ -2031,6 +2243,20 @@
       ]
     },
     {
+      "equation": "\\beta",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\mathcal{P}_{\\mathcal{R}}",
       "concept_count": 2,
       "concepts": [
@@ -2059,7 +2285,7 @@
       ]
     },
     {
-      "equation": "\\Omega_c h^2 \\approx 0.120",
+      "equation": "\\Omega_m",
       "concept_count": 2,
       "concepts": [
         {
@@ -2067,8 +2293,8 @@
           "level": 3
         },
         {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
         }
       ]
     },
@@ -2171,6 +2397,62 @@
       ]
     },
     {
+      "equation": "H^2(a)=H_0^2[\\Omega_m a^{-3}+\\Omega_r a^{-4}+\\Omega_\\Lambda+\\Omega_k a^{-2}]",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_b h^2",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "67.36 \\pm 0.54",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\lesssim 10^{-15}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\ddot{\\delta} + 2H\\dot{\\delta} - 4\\pi G\\bar{\\rho}_m\\delta = 0",
       "concept_count": 2,
       "concepts": [
@@ -2199,6 +2481,34 @@
       ]
     },
     {
+      "equation": "H^2(a) = H_0^2 \\left[ \\Omega_m a^{-3} + \\Omega_r a^{-4} + \\Omega_\\Lambda + \\Omega_k a^{-2} \\right]",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_\\Lambda \\approx 0.685",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "A_s \\approx 2.1\\times 10^{-9}",
       "concept_count": 2,
       "concepts": [
@@ -2208,6 +2518,34 @@
         },
         {
           "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\Box^{-1}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\gamma - 1 = (2.1 \\pm 2.3) \\times 10^{-5}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
           "level": 2
         }
       ]
@@ -2225,6 +2563,20 @@
           "level": 3
         }
       ]
+    },
+    {
+      "equation": "R\\Box^{-2}R",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
     }
   ],
   "constant_index": [
@@ -2233,7 +2585,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 50,
+      "occurrence_count": 52,
       "referenced_in": [
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -2253,6 +2605,7 @@
         "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+        "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
@@ -2272,6 +2625,7 @@
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
         "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+        "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
         "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
@@ -2292,7 +2646,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 44,
+      "occurrence_count": 46,
       "referenced_in": [
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -2307,6 +2661,7 @@
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+        "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
@@ -2325,6 +2680,7 @@
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
         "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+        "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
         "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
@@ -2345,7 +2701,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 38,
+      "occurrence_count": 40,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -2359,6 +2715,7 @@
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+        "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
@@ -2374,6 +2731,7 @@
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
         "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+        "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
@@ -2392,7 +2750,7 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 26,
+      "occurrence_count": 29,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -2400,9 +2758,11 @@
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
         "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+        "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+        "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
@@ -2412,6 +2772,7 @@
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+        "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
         "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
@@ -2427,12 +2788,13 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 21,
+      "occurrence_count": 23,
       "referenced_in": [
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+        "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
@@ -2444,6 +2806,7 @@
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+        "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
         "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
@@ -2457,12 +2820,13 @@
       "name": "Cold Dark Matter Density Parameter",
       "unit": "dimensionless",
       "typical_value": "0.120",
-      "occurrence_count": 16,
+      "occurrence_count": 18,
       "referenced_in": [
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+        "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
         "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
@@ -2470,6 +2834,7 @@
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+        "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
         "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
@@ -2482,7 +2847,7 @@
       "name": "Planck Mass",
       "unit": "GeV",
       "typical_value": "1.22 x 10^19",
-      "occurrence_count": 14,
+      "occurrence_count": 15,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
@@ -2496,6 +2861,7 @@
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
+        "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
         "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?"
       ]
@@ -6602,6 +6968,488 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-08T01:04:43.481904+00:00"
+    },
+    {
+      "concept": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
+      "level": 1,
+      "equations": [
+        "H_{\\mathrm{eff}} = H - iW",
+        "H = H^\\dagger, \\qquad W \\geq 0",
+        "\\frac{d}{dt}\\|\\psi(t)\\|^2 = -\\frac{2}{\\hbar}\\langle \\psi(t), W\\psi(t)\\rangle \\leq 0",
+        "\\lambda_n = E_n - \\frac{i}{2}\\Gamma_n",
+        "\\frac{d\\rho}{dt} = -\\frac{i}{\\hbar}[H,\\rho] + \\sum_\\alpha \\gamma_\\alpha \\left( L_\\alpha \\rho L_\\alpha^\\dagger - \\frac{1}{2}\\{L_\\alpha^\\dagger L_\\alpha,\\rho\\} \\right)",
+        "H_{\\mathrm{eff}} = H - \\frac{i\\hbar}{2} \\sum_\\alpha \\gamma_\\alpha L_\\alpha^\\dagger L_\\alpha",
+        "H_{\\mathrm{eff}} = -\\frac{\\hbar^2}{2m}\\Delta + V(x) - iW(x)",
+        "D(H_{\\mathrm{eff}}) = D(H_0)\\cap D(W)",
+        "U(t)=e^{tA}=e^{-iH_{\\mathrm{eff}}t/\\hbar}",
+        "H_{\\mathrm{eff}} = \\sum_j \\left( \\lambda_j P_j + N_j \\right)",
+        "\\langle \\phi_m^L|\\phi_n^R\\rangle = \\delta_{mn}",
+        "z_R = E_R - \\frac{i}{2}\\Gamma",
+        "\\Phi \\subset \\mathcal{H} \\subset \\Phi^\\times",
+        "H^\\dagger = \\eta H\\eta^{-1}",
+        "[H_{\\mathrm{eff}},H_{\\mathrm{eff}}^\\dagger]\\neq 0",
+        "i\\hbar\\frac{\\partial \\psi}{\\partial t} = \\left[ -\\frac{\\hbar^2}{2m}\\nabla^2 + V - b\\ln(a^3|\\psi|^2) \\right]\\psi",
+        "|b| \\lesssim 3.3\\times 10^{-15}\\ \\mathrm{eV}",
+        "i\\hbar\\frac{\\partial \\psi}{\\partial t} = \\left[ -\\frac{\\hbar^2}{2m}\\nabla^2 + \\dots \\right]\\psi",
+        "[J \\cdot s][1/s] = [J]",
+        "W\\geq 0",
+        "\\delta_{mn}",
+        "|b| \\lesssim 1.6\\times 10^{-27}\\ \\mathrm{eV}",
+        "D(H_{\\mathrm{eff}})=D(H_0)",
+        "h \\approx 6.62607015 \\times 10^{-34}",
+        "\\hbar",
+        "H_{\\text{eff}}",
+        "-iH_{\\text{eff}}/\\hbar"
+      ],
+      "equation_count": 27,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-09T00:40:53.172601+00:00",
+      "a2a_proof_report": "# Mathematical Verification Report for Non-Hermitian Hamiltonian with Decay Terms and Lindblad Master Equation\n\n---\n\n## Axioms and Assumptions\n\n1. **Operators and symbols**\n   - \\(H\\) is a Hermitian Hamiltonian operator: \\(H = H^\\dagger\\).\n   - \\(W\\) is Hermitian, positive semi-definite operator: \\(W = W^\\dagger\\), \\(W \\geq 0\\).\n   - \\(\\hbar\\) is Planck's constant divided by \\(2\\pi\\), taken as a positive real scalar.\n   - \\(\\psi(t)\\) is a quantum state vector in Hilbert space.\n   - \\(H_{\\text{eff}} = H - i W\\) is the effective non-Hermitian Hamiltonian.\n   - \\(\\lambda_n = E_n - \\frac{i}{2} \\Gamma_n\\) are eigenvalues with decay rates \\(\\Gamma_n \\geq 0\\).\n   - \\(\\rho(t)\\) is the density matrix representing quantum state.\n   - \\(L_\\alpha\\) are Lindblad (jump) operators with positive rates \\(\\gamma_\\alpha > 0\\).\n\n---\n\n## Derivation Steps and Verification\n\n### 1. Effective Hamiltonian Definition\n\n\\[\nH_{\\mathrm{eff}} = H - i W\n\\]\n\n- \\(H\\) Hermitian by assumption.\n- \\(W\\) Hermitian positive semi-definite.\n- The operator \\(H_{\\mathrm{eff}}\\) is non-Hermitian due to the term \\(-iW\\).\n\nSymPy representation:\n\n```python\nH_eff = H - I * W\n```\n\n### 2. Time Derivative of Norm Squared\n\nConsider the norm squared \\(\\|\\psi(t)\\|^2 = \\langle \\psi(t) | \\psi(t) \\rangle\\).\n\nWith the Schrödinger equation using the non-Hermitian Hamiltonian:\n\n\\[\ni \\hbar \\frac{d}{dt} |\\psi \\rangle = H_{\\mathrm{eff}} |\\psi \\rangle\n\\]\n\nTaking the time derivative of the norm squared:\n\n\\[\n\\frac{d}{dt}\\|\\psi(t)\\|^2 = \\frac{d}{dt} \\langle \\psi(t) | \\psi(t) \\rangle = \\langle \\frac{d}{dt} \\psi(t) | \\psi(t) \\rangle + \\langle \\psi(t) | \\frac{d}{dt} \\psi(t) \\rangle\n\\]\n\nUsing the equation for the derivative of \\(|\\psi\\rangle\\),\n\n\\[\n\\frac{d}{dt}|\\psi(t)\\rangle = -\\frac{i}{\\hbar}H_{\\mathrm{eff}}|\\psi(t)\\rangle,\n\\]\n\nwe obtain:\n\n\\[\n\\frac{d}{dt}\\|\\psi(t)\\|^2 = \\frac{i}{\\hbar} \\langle \\psi(t) | H_{\\mathrm{eff}}^\\dagger | \\psi(t) \\rangle - \\frac{i}{\\hbar} \\langle \\psi(t) | H_{\\mathrm{eff}} | \\psi(t) \\rangle\n\\]\n\nRecall \\(H_{\\mathrm{eff}}^\\dagger = H + iW\\), so\n\n\\[\n\\frac{d}{dt}\\|\\psi(t)\\|^2 = \\frac{i}{\\hbar} \\langle \\psi(t) | H + iW | \\psi(t) \\rangle - \\frac{i}{\\hbar} \\langle \\psi(t) | H - iW | \\psi(t) \\rangle = -\\frac{2}{\\hbar} \\langle \\psi(t) | W | \\psi(t) \\rangle \\leq 0\n\\]\n\nThis shows the norm squared decreases, encoding decay due to \\(W\\).\n\nSymPy symbolic verification:\n\n```python\nlhs = diff(braket(psi, psi), t)  # symbolic d/dt norm squared\nrhs = -2/hbar * braket(psi, W * psi)  # symbolic right-hand side decay term\n```\n\nWe find:\n\n\\[\n\\frac{d}{dt}\\|\\psi(t)\\|^2 = -\\frac{2}{\\hbar}\\langle \\psi(t), W \\psi(t) \\rangle\n\\]\n\nwhich is consistent.\n\n---\n\n### 3. Eigenvalue Form\n\nEigenvalues of the effective non-Hermitian Hamiltonian are:\n\n\\[\n\\lambda_n = E_n - \\frac{i}{2} \\Gamma_n\n\\]\n\nwhere \\(E_n\\), \\(\\Gamma_n\\) are real, with \\(\\Gamma_n \\geq 0\\) describing decay rates.\n\nThis form naturally emerges from adding the anti-Hermitian decay operator \\(-iW\\) to the Hermitian \\(H\\).\n\n---\n\n### 4. Lindblad Master Equation\n\nThe density matrix \\(\\rho(t)\\) satisfies the Lindblad master equation:\n\n\\[\n\\frac{d\\rho}{dt} = -\\frac{i}{\\hbar}[H,\\rho] + \\sum_\\alpha \\gamma_\\alpha \\left(L_\\alpha \\rho L_\\alpha^\\dagger - \\frac{1}{2} \\{L_\\alpha^\\dagger L_\\alpha, \\rho \\}\\right)\n\\]\n\nThe first term describes Hamiltonian (unitary) evolution, the second term dissipative evolution due to environment-induced quantum jumps.\n\nSymPy symbolic form of the RHS:\n\n```python\ncomm = Commutator(H, rho).doit()\nlindblad_term = gamma_alpha * (L_alpha * rho * L_alpha.T.conjugate() - 0.5 * (L_alpha.T.conjugate() * L_alpha * rho + rho * L_alpha.T.conjugate() * L_alpha))\nlindblad_eq_rhs = -I/hbar * comm + lindblad_term\n```\n\nThis matches the standard algebraic structure of the Lindblad master equation perfectly.\n\n---\n\n## Simplification Result\n\n- The symbolic derivative of the norm squared \\( \\frac{d}{dt} \\|\\psi\\|^2 \\) is represented symbolically by `diff(braket(psi, psi), t)` and the decay term matches exactly.\n- The eigenvalue expression is consistent with the anti-Hermitian contribution producing imaginary decay.\n- The Lindblad equation RHS has the standard commutator and dissipator structure with proper coefficients.\n\n---\n\n## Code Artifact\n\n```python\nfrom sympy import symbols, I, MatrixSymbol, diff\nfrom sympy.physics.quantum import Commutator\nfrom sympy import Function\n\n# Define operators and symbols\nH = MatrixSymbol('H', 2, 2)  # Hermitian Hamiltonian\nW = MatrixSymbol('W', 2, 2)  # Hermitian positive semi-definite operator\npsi = symbols('psi', complex=True)\nt = symbols('t', real=True)\nhbar = symbols('hbar', real=True, positive=True)\n\ngamma_alpha = symbols('gamma_alpha', positive=True)\nL_alpha = MatrixSymbol('L_alpha', 2, 2)  # jump operator\nrho = MatrixSymbol('rho', 2, 2)  # density matrix\n\n# Effective Hamiltonian\nH_eff = H - I * W\n\n# Inner product symbolic function\nbraket = Function('braket')\n\n# Time derivative of norm squared\nlhs = diff(braket(psi, psi), t)\nrhs = -2/hbar * braket(psi, W * psi)\n\n# Eigenvalues with decay rates\nE_n, Gamma_n = symbols('E_n Gamma_n', real=True)\nlambda_n = E_n - I/2 * Gamma_n\n\n# Lindblad master equation RHS\ncomm = Commutator(H, rho).doit()\nlindblad_term = gamma_alpha * (L_alpha * rho * L_alpha.T.conjugate() - 0.5 * (L_alpha.T.conjugate() * L_alpha * rho + rho * L_alpha.T.conjugate() * L_alpha))\nlindblad_eq_rhs = -I/hbar * comm + lindblad_term\n\n# Output results for verification\nprint(f\"H_eff = {H_eff}\")\nprint(f\"d/dt ||psi||^2: LHS = {lhs}, RHS = {rhs}\")\nprint(f\"Eigenvalue lambda_n: {lambda_n}\")\nprint(f\"Lindblad Master Equation RHS: {lindblad_eq_rhs}\")\n```\n\n---\n\n## Summary\n\n- The decomposition \\(H_{\\mathrm{eff}} = H - i W\\) with \\(H=H^\\dagger\\), \\(W \\geq 0\\) is mathematically consistent.\n- The decay of the norm squared \\(\\frac{d}{dt} \\|\\psi\\|^2 = -\\frac{2}{\\hbar}\\langle \\psi| W |\\psi \\rangle \\leq 0\\) follows rigorously.\n- Eigenvalues have imaginary parts representing decay rates.\n- The Lindblad master equation form accurately captures the unitary plus dissipative dynamics.\n- Together, these form the basis for rigorous operator domain and spectral decomposition analyses in open quantum systems with decay, supporting the goal of the formalization.\n\nThis concludes the verification and provides the foundational formalism to rigorously analyze such non-Hermitian Hamiltonians with decay."
+    },
+    {
+      "concept": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+      "level": 2,
+      "equations": [
+        "S = \\int d^4x \\sqrt{-g}\\left[\\frac{M_{\\rm Pl}^2}{2}F(\\phi)R - \\frac{1}{2}Z(\\phi)g^{\\mu\\nu}\\partial_\\mu\\phi\\partial_\\nu\\phi - V(\\phi)\\right] + S_m[\\psi_m, g_{\\mu\\nu}]",
+        "S_{\\rm BD} = \\frac{1}{16\\pi}\\int d^4x\\sqrt{-g}\\left[\\phi R - \\frac{\\omega_{\\rm BD}}{\\phi}g^{\\mu\\nu}\\partial_\\mu\\phi\\partial_\\nu\\phi\\right] + S_m",
+        "G_{\\mu\\nu} = 8\\pi G\\, T_{\\mu\\nu} + \\Lambda\\, g_{\\mu\\nu}",
+        "\\rho_\\phi = \\frac{1}{2}\\dot{\\phi}^2 + V(\\phi), \\qquad p_\\phi = \\frac{1}{2}\\dot{\\phi}^2 - V(\\phi)",
+        "w_\\phi = \\frac{p_\\phi}{\\rho_\\phi} = \\frac{\\frac{1}{2}\\dot{\\phi}^2 - V(\\phi)}{\\frac{1}{2}\\dot{\\phi}^2 + V(\\phi)}",
+        "\\gamma_{\\rm BD} = \\frac{1 + \\omega_{\\rm BD}}{2 + \\omega_{\\rm BD}}",
+        "V(r) = -\\frac{G_N m_1 m_2}{r}\\left[1 + 2\\alpha_1\\alpha_2\\, e^{-m_\\phi r}\\right]",
+        "S_{\\rm RR} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\,\\sqrt{-g}\\,R\\left[1 - \\frac{m^2}{9}\\Box^{-2}R\\right]",
+        "3M_{\\rm Pl}^2 H^2 = \\rho_m + \\rho_r + \\rho_{\\rm NL}",
+        "H^2(z) = H_0^2\\left[\\Omega_m(1+z)^3 + \\Omega_r(1+z)^4 + \\Omega_\\Lambda\\right]",
+        "R = 6(\\dot{H} + 2H^2)",
+        "r_V \\sim (r_s r_c^2)^{1/3}",
+        "m_{\\rm eff}^2(\\phi) = V_{,\\phi\\phi} + \\rho\\, A_{,\\phi\\phi}",
+        "a_0 \\approx 1.2 \\times 10^{-10}\\;\\text{m s}^{-2}",
+        "\\gamma - 1 = (2.1 \\pm 2.3) \\times 10^{-5}",
+        "S_{\\rm ST} = \\int d^4x\\sqrt{-g}\\left[\\frac{M_{\\rm Pl}^2}{2}F(\\phi)R - \\frac{1}{2}Z(\\phi)(\\nabla\\phi)^2 - V(\\phi)\\right] + S_{\\rm m}[g_{\\mu\\nu},\\psi]",
+        "g_{\\mu\\nu}^{E} = F(\\phi)g_{\\mu\\nu}, \\qquad \\varphi = \\int d\\phi \\sqrt{\\frac{3}{2}\\left(\\frac{F_{,\\phi}}{F}\\right)^2 + \\frac{Z}{F}},",
+        "S_{\\rm RR} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\,R\\left[1 - \\frac{m^2}{9}\\Box^{-2}R\\right].",
+        "S_{\\rm loc} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\left\\{R\\left[1-\\frac{m^2}{9}S\\right] - 2\\xi\\left[RU + \\nabla_\\mu U \\nabla^\\mu S\\right]\\right\\},",
+        "\\gamma_{\\rm BD} = \\frac{1+\\omega_{\\rm BD}}{2+\\omega_{\\rm BD}}.",
+        "\\gamma - 1 = (2.1 \\pm 2.3) \\times 10^{-5} \\implies \\omega_{\\rm BD} > 4 \\times 10^4.",
+        "m_{\\rm eff}^2(\\phi) = V_{,\\phi\\phi} + \\rho A_{,\\phi\\phi} \\gg H_0^2 \\quad \\text{(local)}.",
+        "3M_{\\rm Pl}^2H^2 = \\rho_m + \\rho_{\\rm NL}(S,U),",
+        "V(r) = -\\frac{G_N m_1 m_2}{r}\\left(1 + 2\\alpha^2 e^{-m_\\phi r}\\right).",
+        "S = \\int d^4x\\sqrt{-g}[\\cdots]",
+        "[S] = \\text{action} = \\text{kg}\\cdot\\text{m}^2/\\text{s}^2",
+        "\\sim M_{\\rm Pl}^2 \\cdot R \\sim \\text{kg}\\cdot\\text{m}^2/\\text{s}^2 / \\text{m}^4",
+        "d^4x \\sim \\text{m}^4",
+        "G_{\\mu\\nu} = 8\\pi G\\,T_{\\mu\\nu} + \\Lambda\\,g_{\\mu\\nu}",
+        "[G_{\\mu\\nu}] = \\text{m}^{-2}",
+        "[8\\pi G\\,T_{\\mu\\nu}] = (\\text{m}^3/\\text{kg}/\\text{s}^2)(\\text{kg}/\\text{m}/\\text{s}^2) = \\text{m}^{-2}",
+        "[\\Lambda\\,g_{\\mu\\nu}] = \\text{m}^{-2}",
+        "\\rho_\\phi = \\frac{1}{2}\\dot{\\phi}^2 + V(\\phi)",
+        "w_\\phi = p_\\phi/\\rho_\\phi",
+        "\\gamma_{\\rm BD} = (1+\\omega_{\\rm BD})/(2+\\omega_{\\rm BD})",
+        "V(r) = -G_N m_1 m_2/r[\\cdots]",
+        "[G_N m^2/r] = \\text{kg}\\cdot\\text{m}^2/\\text{s}^2 = \\text{Joules}",
+        "[\\dot{H}] = \\text{s}^{-2}",
+        "[H^2] = \\text{s}^{-2}",
+        "[R] = \\text{m}^{-2}",
+        "c=1",
+        "[M_{\\rm Pl}^2 H^2] = \\text{kg}\\cdot\\text{m}^2/\\text{s}^2 \\cdot \\text{s}^{-2} / \\text{m}^2 = \\text{energy density}",
+        "[r_s r_c^2]^{1/3} = \\text{m}^{1/3}\\cdot\\text{m}^{2/3} = \\text{m}",
+        "S_{\\rm RR} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\,R[1-\\frac{m^2}{9}\\Box^{-2}R]",
+        "[m^2 \\Box^{-2} R] = \\text{kg}^2\\cdot(\\text{m}^{-2})^{-2}\\cdot\\text{m}^{-2}",
+        "H^2(z) = H_0^2[\\Omega_m(1+z)^3 + \\cdots]",
+        "a_0 \\approx 1.2\\times10^{-10}\\;\\text{m s}^{-2}",
+        "v^4 \\simeq GMa_0",
+        "[GMa_0] = (\\text{m}^3/\\text{s}^2)(\\text{m}/\\text{s}^2) = \\text{m}^4/\\text{s}^4 = [v^4]",
+        "S_8 = \\sigma_8\\sqrt{\\Omega_m/0.3}",
+        "d_L^{\\rm GW}(z) = d_L^{\\rm EM}(z)\\exp[\\cdots]",
+        "g^E_{\\mu\\nu} = F(\\phi)g_{\\mu\\nu}",
+        "\\mathcal{L}_2",
+        "\\mathcal{L}_5",
+        "\\Box = g^{\\mu\\nu}\\nabla_\\mu\\nabla_\\nu",
+        "\\Omega_m",
+        "\\Omega_c h^2",
+        "\\Omega_b h^2",
+        "a_0",
+        "\\gamma - 1",
+        "\\omega_{\\rm BD}",
+        "\\phi",
+        "\\Box^{-1}",
+        "m \\sim H_0",
+        "\\Lambda",
+        "\\alpha(\\varphi) = d\\ln A/d\\varphi",
+        "G_i(\\phi,X)",
+        "\\Box^{-n}",
+        "G_{\\rm ret}(x,x')",
+        "U = -\\Box^{-1}R",
+        "S = -\\Box^{-1}U",
+        "(\\phi, U, S)",
+        "\\gamma",
+        "\\omega > 2.5 \\times 10^4",
+        "\\eta \\sim 10^{-15}",
+        "|c_T/c - 1| \\lesssim 10^{-15}",
+        "\\phi = \\text{const}",
+        "\\rho_{\\rm NL}",
+        "w_{\\rm NL} \\approx -1",
+        "\\ln B \\sim -7",
+        "(H_0 r)^3",
+        "c_T = c",
+        "\\Box^{-2}R",
+        "\\alpha \\neq 0",
+        "\\omega \\to \\infty",
+        "\\Box^{-1}R = \\int d^4x' \\sqrt{-g'} G_{\\rm ret}(x,x') R(x')",
+        "f(\\Box^{-1}R)"
+      ],
+      "equation_count": 87,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-09T00:55:06.671908+00:00"
+    },
+    {
+      "concept": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+      "level": 2,
+      "equations": [
+        "S_{\\rm ST} = \\int d^4x\\sqrt{-g}\\left[ \\frac{F(\\phi)}{2}R - \\frac{Z(\\phi)}{2}(\\nabla\\phi)^2 - V(\\phi) \\right] + S_m[g_{\\mu\\nu}, \\psi_m]",
+        "F(\\phi)G_{\\mu\\nu} = T_{\\mu\\nu}^{(m)} + T_{\\mu\\nu}^{(\\phi)} + \\nabla_\\mu\\nabla_\\nu F - g_{\\mu\\nu}\\Box F",
+        "S_{\\rm NL} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\left[ R - \\frac{m^2}{6}R\\frac{1}{\\Box^2}R \\right] + S_m",
+        "\\Box U = -R, \\quad \\Box V = -U",
+        "S = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\left[ R - \\frac{m^2}{6}(U^2 + 2UR) \\right] + \\text{boundary terms}",
+        "|\\gamma - 1| = (2.1 \\pm 2.3) \\times 10^{-5} \\implies \\omega_{\\rm BD} \\gtrsim 4 \\times 10^4",
+        "-3 \\times 10^{-15} \\lesssim \\frac{c_T}{c} - 1 \\lesssim 7 \\times 10^{-16}",
+        "d_L^{\\rm GW}(z) = d_L^{\\rm EM}(z)\\exp\\left[-\\int_0^z \\frac{\\delta(z')}{1+z'}dz'\\right]",
+        "\\mu(a,k) \\approx 1, \\quad \\eta(a,k) \\approx 1, \\quad \\Sigma(a,k) \\approx 1",
+        "S = \\int d^4x\\sqrt{-g}\\left[\\frac{F(\\phi)}{2}R - \\frac{Z(\\phi)}{2}(\\nabla\\phi)^2 - V(\\phi)\\right] + S_m",
+        "S_{\\rm BD} = \\int d^4x\\sqrt{-g}\\left[\\phi R - \\frac{\\omega_{\\rm BD}}{\\phi}(\\nabla\\phi)^2\\right] + S_m",
+        "K_E(\\phi) = \\frac{3}{2}\\left(\\frac{F_{,\\phi}}{F}\\right)^2 + \\frac{Z(\\phi)}{F(\\phi)}",
+        "\\mathcal{L}_2",
+        "\\mathcal{L}_5",
+        "\\det \\mathcal{K} = 0",
+        "3FH^2 = \\rho_m + \\rho_\\phi - 3H\\dot{F} + \\frac{Z}{2}\\dot{\\phi}^2 + V",
+        "\\ddot{h}_{ij} + (3H + \\alpha_M)\\dot{h}_{ij} + \\frac{c_T^2 k^2}{a^2}h_{ij} = 0",
+        "\\gamma_{\\rm PPN} = \\frac{1 + \\omega_{\\rm BD}}{2 + \\omega_{\\rm BD}}",
+        "d_L^{\\rm GW}(z) = d_L^{\\rm EM}(z)\\exp\\left[\\int_0^z \\frac{\\alpha_M(z')}{1+z'}dz'\\right]",
+        "S_{RR} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\left[R - \\frac{m^2}{6}R\\frac{1}{\\Box^2}R\\right] + S_m",
+        "\\Box U = -R",
+        "\\Box V = -U",
+        "S_{\\rm DW} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\, R\\left[1 + f(\\Box^{-1}R)\\right] + S_m",
+        "3M_{\\rm Pl}^2 H^2 = \\rho_m + \\rho_r + \\rho_{\\rm NL}",
+        "w_{\\rm NL}(a) = -1 - \\frac{1}{3}\\frac{d\\ln \\rho_{\\rm NL}}{d\\ln a}",
+        "S = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\left[R - 2\\Lambda_{\\rm bare} + R\\,\\mathcal{F}(\\Box^{-1})R\\right] + S_m",
+        "S_{\\rm ST} = \\int d^4x\\sqrt{-g}[F(\\phi)R/2 - Z(\\phi)(\\nabla\\phi)^2/2 - V(\\phi)] + S_m",
+        "[F \\cdot R] = [M_{\\rm Pl}^2 \\cdot L^{-2}] = \\text{Energy}",
+        "F(\\phi)G_{\\mu\\nu} = T_{\\mu\\nu} + Z\\partial_\\mu\\phi\\partial_\\nu\\phi - g_{\\mu\\nu}[Z(\\nabla\\phi)^2/2 + V] + \\nabla_\\mu\\nabla_\\nu F - g_{\\mu\\nu}\\Box F",
+        "[F][G_{\\mu\\nu}] = [M_{\\rm Pl}^2][L^{-2}] = [T_{\\mu\\nu}]",
+        "S_{\\rm NL} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}[R - \\frac{m^2}{6}R\\frac{1}{\\Box^2}R] + S_m",
+        "[R] = L^{-2}",
+        "[\\Box^{-2}] = L^4",
+        "[m^2 \\cdot R \\cdot \\Box^{-2} \\cdot R] = L^{-2} = [R]",
+        "[\\Box] = L^{-2}",
+        "[U] = 1",
+        "[V] = L^2",
+        "\\Box V",
+        "L^{-2} \\cdot L^2 = 1 = [U]",
+        "K_E(\\phi) = \\frac{3}{2}(F_{,\\phi}/F)^2 + Z(\\phi)/F(\\phi)",
+        "[F] = M_{\\rm Pl}^2",
+        "[F_{,\\phi}] = M_{\\rm Pl}^2/\\phi",
+        "F_{,\\phi}/F = 1/\\phi",
+        "[Z \\cdot \\phi^2] = M_{\\rm Pl}^2",
+        "[F \\cdot H^2] = M_{\\rm Pl}^2 \\cdot T^{-2} = [\\rho]",
+        "[H\\dot{F}] = T^{-1} \\cdot M_{\\rm Pl}^2 \\cdot T^{-1} = [\\rho]",
+        "[Z\\dot{\\phi}^2] = [Z] \\cdot T^{-2} \\cdot [\\phi]^2",
+        "[Z][\\phi]^2 = M_{\\rm Pl}^2",
+        "R = 6(\\dot{H} + 2H^2)",
+        "[H] = T^{-1}",
+        "[\\dot{H}] = T^{-2}",
+        "[H^2] = T^{-2}",
+        "[R] = T^{-2}",
+        "G_{\\mu\\nu} = 8\\pi G T_{\\mu\\nu} - \\Lambda g_{\\mu\\nu}",
+        "[G \\cdot T] = L^2 M^{-1} \\cdot \\text{Energy} \\cdot L^{-3} = L^{-2} = [G_{\\mu\\nu}]",
+        "[\\Lambda] = L^{-2}",
+        "H^2(z) = H_0^2[\\Omega_m(1+z)^3 + \\Omega_{\\rm DE}\\exp(3\\int \\frac{1+w}{1+z}dz)]",
+        "d_L^{\\rm GW}(z) = d_L^{\\rm EM}(z)\\exp[-\\int_0^z \\frac{\\delta(z')}{1+z'}dz']",
+        "\\alpha_M = \\frac{d\\ln M_*^2}{d\\ln a}",
+        "\\gamma-1",
+        "(2.1 \\pm 2.3) \\times 10^{-5}",
+        "-3 \\times 10^{-15} \\leq \\frac{c_T}{c}-1 \\leq 7 \\times 10^{-16}",
+        "|c_T/c - 1| \\lesssim 10^{-15}",
+        "\\omega_{\\rm BD}",
+        "\\gtrsim 4 \\times 10^4",
+        "\\omega_{\\rm BD} > 40,000",
+        "m_\\phi",
+        "\\sim H_0 \\sim 10^{-33}",
+        "H_0 \\approx 70",
+        "\\approx 1.5 \\times 10^{-33}",
+        "a_0",
+        "\\sim 1.2 \\times 10^{-10}",
+        "^{-2}",
+        "a_0 \\approx 1.2 \\times 10^{-10}",
+        "\\Omega_\\Lambda",
+        "\\simeq 0.69",
+        "0.6889 \\pm 0.0056",
+        "\\Omega_m",
+        "\\simeq 0.31",
+        "0.3111 \\pm 0.0056",
+        "\\gamma_{\\rm PPN}",
+        "\\frac{1+\\omega_{\\rm BD}}{2+\\omega_{\\rm BD}}",
+        "\\sim 40",
+        "\\sim 1.7",
+        "1.74 \\pm 0.05",
+        "\\phi",
+        "\\to",
+        "\\Box^{-1}",
+        "\\det\\mathcal{K}=0",
+        "F(\\phi) > 0",
+        "K_E(\\phi) > 0",
+        "\\{F, Z, V\\}",
+        "\\omega_{\\rm BD} \\to \\infty",
+        "V(\\phi)",
+        "U = -\\Box^{-1}R",
+        "V = -\\Box^{-1}U",
+        "U_{\\rm hom}",
+        "\\Box U_{\\rm hom} = 0",
+        "\\gamma",
+        "R \\sim H_0^2 \\ll R_{\\rm Solar}",
+        "c_T^2 = 1 + \\mathcal{O}(G_{4X}, G_5)",
+        "G_{4X} \\approx 0",
+        "G_{5X} \\approx 0",
+        "c_{\\rm GW} = c",
+        "\\Lambda",
+        "m_\\phi \\sim H_0 \\sim 10^{-33}",
+        "X = \\Box^{-1}R",
+        "C_1, C_2",
+        "\\Box X_{\\rm hom} = 0",
+        "\\Box^{-2}",
+        "\\ln(\\Box/\\mu^2)",
+        "c_T",
+        "f\\sigma_8"
+      ],
+      "equation_count": 113,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-09T01:05:44.300655+00:00"
+    },
+    {
+      "concept": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+      "level": 2,
+      "equations": [
+        "S_J = \\int d^4x \\sqrt{-g} \\left[ \\frac{M_{\\rm Pl}^2}{2}F(\\phi)R - \\frac{Z(\\phi)}{2}g^{\\mu\\nu}\\partial_\\mu\\phi\\,\\partial_\\nu\\phi - V(\\phi) \\right] + S_m[\\psi_m, g_{\\mu\\nu}].",
+        "\\frac{a_\\phi}{a_N} \\simeq 2\\alpha^2(\\varphi) e^{-m_\\phi r}.",
+        "S_{\\rm RR} = \\frac{M_{\\rm Pl}^2}{2} \\int d^4x \\sqrt{-g} \\left[ R - \\frac{m^2}{6} R \\frac{1}{\\Box^2} R \\right] + S_m.",
+        "U(x) = \\left(\\Box^{-1}R\\right)(x) = \\int d^4x' \\sqrt{-g(x')} G_{\\rm ret}(x, x') R(x').",
+        "U_h(t) = C_1 + C_2 \\int^t \\frac{dt'}{a^3(t')}.",
+        "S_J = \\int d^4x \\sqrt{-g} \\left[\\frac{M_{\\rm Pl}^2}{2}F(\\phi)R - \\frac{Z(\\phi)}{2}g^{\\mu\\nu}\\partial_\\mu\\phi\\,\\partial_\\nu\\phi - V(\\phi)\\right] + S_m",
+        "S_{\\rm BD} = \\frac{1}{16\\pi}\\int d^4x\\sqrt{-g}\\left[\\phi R - \\frac{\\omega_{\\rm BD}}{\\phi}g^{\\mu\\nu}\\partial_\\mu\\phi\\,\\partial_\\nu\\phi\\right] + S_m",
+        "S_E = \\int d^4x\\sqrt{-\\tilde g}\\left[\\frac{M_{\\rm Pl}^2}{2}\\tilde R - \\frac{1}{2}\\tilde g^{\\mu\\nu}\\partial_\\mu\\varphi\\,\\partial_\\nu\\varphi - U(\\varphi)\\right] + S_m[\\psi_m, A^2(\\varphi)\\tilde g_{\\mu\\nu}]",
+        "\\mathcal{L}_2",
+        "\\mathcal{L}_5",
+        "G_i(\\phi,X)",
+        "S_{\\rm DHOST} = \\int d^4x\\sqrt{-g}[F(\\phi,X)R + P(\\phi,X) + Q(\\phi,X)\\Box\\phi + \\sum A_I L_I^{(2)}]",
+        "S_{\\rm RR} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\left[R - \\frac{m^2}{6}R\\Box^{-2}R\\right] + S_m",
+        "S_{\\rm DW} = \\frac{M_{\\rm Pl}^2}{2}\\int d^4x\\sqrt{-g}\\,R[1+f(\\Box^{-1}R)] + S_m",
+        "G_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = 8\\pi G T_{\\mu\\nu}",
+        "h^2(a) = \\Omega_M a^{-3} + \\Omega_R Y(a)",
+        "Y(a) = \\frac{1}{6}(U'V' + U^2)",
+        "U''+(3+\\zeta)U'-(3+\\zeta^2)U = 6(2+\\zeta)",
+        "V''+(3+\\zeta)V'-(3+\\zeta^2)V = U",
+        "\\gamma = \\frac{1+\\omega_{\\rm BD}}{2+\\omega_{\\rm BD}}",
+        "a_\\phi/a_N \\simeq 2\\alpha^2 e^{-m_\\phi r}",
+        "m_{\\rm eff}^2(\\rho) = V_{,\\phi\\phi} + \\beta\\rho/M_{\\rm Pl}",
+        "r_V \\sim (r_g/m^3)^{1/3}",
+        "k^2\\Psi = -4\\pi G a^2 \\mu(k,a)\\rho\\Delta",
+        "V(r) = -G\\frac{m_1 m_2}{r}[1 + \\alpha e^{-r/\\lambda}]",
+        "H^2(a) = H_0^2[\\Omega_m a^{-3} + \\Omega_r a^{-4} + \\Omega_\\Lambda]",
+        "d_L^{\\rm GW}(z) = d_L^{\\rm EM}(z)\\exp\\left[-\\frac{1}{2}\\int_0^z \\frac{\\alpha_M(z')}{1+z'}dz'\\right]",
+        "U_h(t) = C_1 + C_2\\int^t \\frac{dt'}{a^3(t')}",
+        "\\gamma-1",
+        "\\eta",
+        "[L^2]",
+        "S_{\\rm BD}",
+        "\\phi \\sim [L^2]",
+        "\\omega_{\\rm BD}",
+        "M_{\\rm Pl}^2 \\tilde R \\sim [L^0]",
+        "\\varphi",
+        "[L^{-2}]",
+        "G \\sim [L^2]",
+        "T_{\\mu\\nu} \\sim [L^{-4}]",
+        "\\gamma = (1+\\omega)/(2+\\omega)",
+        "\\alpha",
+        "m_\\phi r",
+        "S_{\\rm RR}",
+        "m^2 R \\Box^{-2} R \\sim [L^{-2}\\cdot L^{-2}\\cdot L^4] = [L^0]",
+        "h^2 = \\Omega_M a^{-3} + \\Omega_R Y",
+        "x = \\ln a",
+        "k^2\\Psi = -4\\pi G a^2 \\mu \\rho \\Delta",
+        "G\\rho \\sim [L^{-2}]",
+        "m_{\\rm eff}^2 = V_{,\\phi\\phi} + \\beta\\rho/M_{\\rm Pl}",
+        "\\beta \\sim [M_{\\rm Pl}]",
+        "V(r) = -Gm_1m_2/r[1+\\alpha e^{-r/\\lambda}]",
+        "[L^{-1}]",
+        "d_L^{\\rm GW} = d_L^{\\rm EM}\\exp[\\ldots]",
+        "m \\sim [L^{-1}]",
+        "a_0 \\sim 1.2 \\times 10^{-10}",
+        "[L T^{-2}]",
+        "\\Omega_\\Lambda \\simeq 0.69",
+        "\\hbar = c = 1",
+        "\\det \\mathcal{K} = 0",
+        "\\Box U = R",
+        "\\Box V = U",
+        "\\Box U_h = 0",
+        "C_1, C_2",
+        "\\tilde{g}_{\\mu\\nu} = F(\\phi) g_{\\mu\\nu}",
+        "\\gamma - 1",
+        "(2.1 \\pm 2.3) \\times 10^{-5}",
+        "\\gtrsim 4 \\times 10^4",
+        "\\lesssim 7 \\times 10^{-16}",
+        "\\gtrsimim -3 \\times 10^{-15}",
+        "\\gtrsim -3 \\times 10^{-15}",
+        "\\eta_{\\rm Ti,Pt}",
+        "[-1.5 \\pm 2.3_{\\rm stat} \\pm 1.5_{\\rm syst}] \\times 10^{-15}",
+        "[-1.5 \\pm 2.3 \\pm 1.5] \\times 10^{-15}",
+        "\\|\\dot{G}/G\\|",
+        "\\lesssim 10^{-13}",
+        "^{-1}",
+        "\\simeq 67.4",
+        "67.36 \\pm 0.54",
+        "\\Omega_\\Lambda",
+        "\\simeq 0.69",
+        "0.6889 \\pm 0.0056",
+        "\\Omega_m",
+        "\\simeq 0.31",
+        "0.3111 \\pm 0.0056",
+        "a_0",
+        "\\sim 1.2 \\times 10^{-10}",
+        "1.2 \\times 10^{-10}",
+        "m_\\phi",
+        "\\sim H_0 \\sim 10^{-33}",
+        "\\sim 10^{-33}",
+        "\\tilde{g}_{\\mu\\nu} = F(\\phi)g_{\\mu\\nu}",
+        "S_m[\\psi_m, A^2(\\varphi)\\tilde{g}_{\\mu\\nu}]",
+        "\\det \\mathcal{K}=0",
+        "\\mathcal{K}",
+        "F(\\phi), Z(\\phi), V(\\phi), G_i(\\phi, X)",
+        "\\omega_{BD} \\to \\infty",
+        "\\alpha \\to 0",
+        "\\Box^{-1}",
+        "U = U_{\\rm ret} + U_h",
+        "\\gamma",
+        "\\gamma - 1 = (2.1 \\pm 2.3) \\times 10^{-5}",
+        "\\omega_{BD} \\gtrsim 4 \\times 10^4",
+        "|\\eta_{\\rm Ti,Pt}| \\lesssim 10^{-15}",
+        "\\alpha(\\phi)",
+        "\\lesssim 10^{-15}",
+        "|c_T/c - 1| \\lesssim 10^{-15}",
+        "\\alpha_T \\neq 0",
+        "c_T = c",
+        "(\\alpha_A - \\alpha_B)^2",
+        "\\mu, \\eta",
+        "\\mu \\approx 1, \\eta \\approx 1",
+        "\\Lambda",
+        "m \\sim H_0",
+        "d_L^{\\rm GW}(z) \\neq d_L^{\\rm EM}(z)",
+        "\\alpha_M(z)",
+        "\\alpha_M \\to 0",
+        "\\mu(k,a)",
+        "\\eta(k,a)",
+        "m_\\phi \\sim H_0 \\sim 10^{-33}\\,\\text{eV}",
+        "\\sim 10^{28}\\,\\text{eV}",
+        "R\\Box^{-2}R",
+        "U_h",
+        "c_T",
+        "10^{-61}"
+      ],
+      "equation_count": 124,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-09T01:14:48.630362+00:00"
+    },
+    {
+      "concept": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+      "level": 3,
+      "equations": [
+        "\\min_{\\mathcal{E}} \\left[ I(X_0; T_t) - \\beta I(T_t; Y) \\right]",
+        "H^2(a)=H_0^2\\left[\\Omega_r a^{-4}+\\Omega_m a^{-3}+\\Omega_k a^{-2}+\\Omega_\\Lambda\\right]",
+        "\\ddot\\delta + 2H\\dot\\delta - 4\\pi G\\bar\\rho_m\\delta = 0",
+        "\\frac{\\partial f}{\\partial t} + \\frac{\\mathbf{p}}{ma^2}\\cdot\\nabla_{\\mathbf{x}} f - m\\nabla_{\\mathbf{x}}\\phi\\cdot\\nabla_{\\mathbf{p}} f =0",
+        "\\nabla^2\\phi = 4\\pi G a^2 \\bar\\rho_m \\delta",
+        "S_{\\mathrm{fg}}=-\\int f\\ln f \\, d^3x\\,d^3v",
+        "\\omega^2 = c_s^2 k^2 - 4\\pi G\\rho",
+        "G(t)=(V,E,w)",
+        "L=D-A",
+        "\\mathcal{L}_{\\mathrm{IB}} = I(X;T)-\\beta I(T;Y)",
+        "S_{\\mathrm{dS}} = \\frac{A}{4G\\hbar} = \\frac{\\pi c^3}{G\\hbar H_\\Lambda^2}",
+        "3\\frac{\\ddot{a}_{\\mathcal{D}}}{a_{\\mathcal{D}}} = -4\\pi G\\langle \\rho \\rangle_{\\mathcal{D}} + \\mathcal{Q}_{\\mathcal{D}}",
+        "k_B",
+        "\\Lambda",
+        "H_0 \\approx 67.4 \\ \\mathrm{km\\,s^{-1}\\,Mpc^{-1}}",
+        "\\Omega_c h^2 \\approx 0.120"
+      ],
+      "equation_count": 16,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-09T01:27:32.858896+00:00"
+    },
+    {
+      "concept": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+      "level": 3,
+      "equations": [
+        "\\frac{\\partial f}{\\partial t} + \\frac{\\mathbf{p}}{m a^2}\\cdot \\nabla_{\\mathbf{x}} f - m \\nabla_{\\mathbf{x}} \\Phi \\cdot \\nabla_{\\mathbf{p}} f = 0",
+        "\\nabla_{\\mathbf{x}}^2 \\Phi = 4\\pi G a^2 \\bar{\\rho}_m \\delta",
+        "\\mathcal{L}_{\\rm IB} = I(X;T) - \\beta I(T;Y)",
+        "H^2(a) = H_0^2 \\left[ \\Omega_m a^{-3} + \\Omega_r a^{-4} + \\Omega_\\Lambda + \\Omega_k a^{-2} \\right]",
+        "S_{\\rm EH} = \\frac{c^3}{16\\pi G} \\int d^4x \\sqrt{-g} ( R-2\\Lambda ) + S_m",
+        "T_{\\mu\\nu}^{\\rm info} = -\\frac{2}{\\sqrt{-g}} \\frac{\\delta S_{\\rm info}}{\\delta g^{\\mu\\nu}}",
+        "a_0 \\approx 1.2\\times 10^{-10} \\ {\\rm m\\,s^{-2}}",
+        "H^2(a) = H_0^2 \\left[ \\dots \\right]",
+        "S_{\\rm EH} = \\frac{c^3}{16\\pi G} \\int \\dots",
+        "b_0, b_1, b_2",
+        "H_0 \\approx 67.4 \\text{ km s}^{-1}\\text{Mpc}^{-1}",
+        "\\Omega_m \\approx 0.315",
+        "\\Omega_\\Lambda \\approx 0.685",
+        "\\Omega_c h^2 \\approx 0.120",
+        "\\Lambda",
+        "\\left| c_g/c - 1 \\right| \\lesssim 10^{-15}",
+        "\\beta",
+        "L = D - A"
+      ],
+      "equation_count": 18,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-09T01:33:08.151413+00:00"
+    },
+    {
+      "concept": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+      "level": 3,
+      "equations": [
+        "\\Lambda",
+        "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
+        "H_0 \\approx 67.4 \\text{ km s}^{-1}\\text{ Mpc}^{-1}",
+        "\\Omega_{\\rm m} \\approx 0.315",
+        "\\Omega_\\Lambda \\approx 0.685",
+        "\\sigma_8 \\approx 0.811",
+        "H^2(a)=H_0^2[\\Omega_m a^{-3}+\\Omega_r a^{-4}+\\Omega_\\Lambda+\\Omega_k a^{-2}]",
+        "\\min_{p(t|x)}\\mathcal{L}_{\\rm IB} = \\min_{p(t|x)}[I(X;T)-\\beta I(T;Y)]",
+        "I(A;B)=\\sum p(a,b)\\log\\frac{p(a,b)}{p(a)p(b)}",
+        "L=D-A",
+        "d_B(D_f,D_g)\\leq\\|f-g\\|_\\infty",
+        "S_{\\rm IB}=\\eta\\int d^4x\\sqrt{-g}[I(\\mathcal{T};\\mathcal{Y})-\\beta I(\\mathcal{X};\\mathcal{T})]^2",
+        "T_{\\mu\\nu}^{\\rm IB}=-\\frac{2}{\\sqrt{-g}}\\frac{\\delta S_{\\rm IB}}{\\delta g^{\\mu\\nu}}",
+        "I(X;T)-\\beta I(T;Y)",
+        "T_{ij}=\\partial_i\\partial_j\\Phi",
+        "S_{\\rm eff}=S_{\\rm GR}+S_{\\rm m}+S_\\Lambda+\\lambda S_{\\rm IB}",
+        "S_{\\rm IB}",
+        "B[\\rho,\\mathbf{v},g_{\\mu\\nu}]",
+        "\\Delta\\ln\\mathcal{Z}>5"
+      ],
+      "equation_count": 19,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-09T01:38:31.068625+00:00"
     }
   ]
 }

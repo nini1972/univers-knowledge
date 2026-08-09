@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-08T01:06:30.365304+00:00",
+  "updated_at": "2026-08-09T01:40:36.000368+00:00",
   "stats": {
-    "total_nodes": 180,
-    "level_1_count": 88,
+    "total_nodes": 182,
+    "level_1_count": 89,
     "level_2_count": 83,
-    "level_3_count": 9,
+    "level_3_count": 10,
     "total_edges": 109,
     "frontier_count": 0
   },
@@ -88,6 +88,25 @@
         "Pilot Program Proposals"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/can_independent_publicly_available_datasets_from_juno_dune_or_hyperkamiokande_be_released_to_enable_external_verification_of_neutrino_decay_bounds.md"
+    },
+    {
+      "id": "canoperatordomainandspectraldecompositionanalysesforthenonhermitianhamiltonianwithdecaytermsberigorouslyestablished",
+      "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Existing experimental constraints on nonlinear deviations",
+        "Functional analysis literature",
+        "Rigged Hilbert space studies"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_operator_domain_and_spectral_decomposition_analyses_for_the_nonhermitian_hamiltonian_with_decay_terms_be_rigorously_established.md"
     },
     {
       "id": "canrigorousmanualdimensionalconsistencychecksbeperformedbyexpertstosupplementtheautomatedundecidableresult",
@@ -3560,6 +3579,25 @@
         "Empirical studies on graph-theoretic descriptors"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md"
+    },
+    {
+      "id": "dynamicalstabilityandinformationbottleneckconstraintsinnonequilibriumselforganizingcosmologicalnetworks",
+      "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md"
     },
     {
       "id": "entropyproductionratesinneuralinformationprocessingvsgravitationalstructureformationacomparativethermodynamicanalysis",
