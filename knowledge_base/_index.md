@@ -98,6 +98,8 @@ graph TD
     what_experimental_designs_or_data_analyses_can_definitively_distinguish_neutrino_decay_effects_from_alternative_damping_mechanisms_such_as_decoherence_or_nonstandard_interactions["What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?"]:::theoretical
     quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
+    are_there_experimental_strategies_to_better_constrain_neutrino_decay_widths_j_and_confirm_decayinclusive_oscillation_modifications["Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?"]:::theoretical
+    symmetryprotected_topological_phases_vs_holographic_dualities_in_nonequilibrium_quantum_systems["Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems"]:::theoretical
     massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
     dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem["DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem"]:::theoretical
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
@@ -187,6 +189,7 @@ graph TD
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
     quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation["Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation"]:::theoretical
     entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis["Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis"]:::verified
+    landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding["Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
     nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures["Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures"]:::theoretical
     landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures["Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures"]:::theoretical
@@ -291,6 +294,7 @@ graph TD
     neutrino_oscillations --- what_experimental_designs_or_data_analyses_can_definitively_distinguish_neutrino_decay_effects_from_alternative_damping_mechanisms_such_as_decoherence_or_nonstandard_interactions
     quantum_electrodynamics_qed --- quantum_vacuum_and_spacetime_structure
     primordial_gravitational_waves --- inflationary_cosmology
+    neutrino_oscillations --- are_there_experimental_strategies_to_better_constrain_neutrino_decay_widths_j_and_confirm_decayinclusive_oscillation_modifications
     general_relativity --> massive_gravity_versus_fr_gravity_in_modified_gravity_debates
     quantum_chromodynamics_qcd --> dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem
     electroweak_symmetry_breaking --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
@@ -346,6 +350,7 @@ graph TD
 
 ## Level 1: Fundamental Physics
 
+- [Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?](level_1_fundamental_physics/are_there_experimental_strategies_to_better_constrain_neutrino_decay_widths_j_and_confirm_decayinclusive_oscillation_modifications.md) [THEORETICAL]
 - [Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?](level_1_fundamental_physics/are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups.md) [THEORETICAL]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
 - [Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?](level_1_fundamental_physics/can_independent_publicly_available_datasets_from_juno_dune_or_hyperkamiokande_be_released_to_enable_external_verification_of_neutrino_decay_bounds.md) [THEORETICAL]
@@ -520,6 +525,7 @@ graph TD
 - [Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking](level_2_advanced_frameworks/supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking.md) [THEORETICAL]
 - [Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking](level_2_advanced_frameworks/supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking.md) [THEORETICAL]
 - [Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration](level_2_advanced_frameworks/symmetric_teleparallel_gravity_vs_metricaffine_fr_gravity_in_addressing_latetime_cosmic_acceleration.md) [THEORETICAL]
+- [Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_dualities_in_nonequilibrium_quantum_systems.md) [THEORETICAL]
 - [Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md) [THEORETICAL]
 
 ## Level 3: Emergence and Intelligence
@@ -530,6 +536,7 @@ graph TD
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md) [THEORETICAL]
 - [Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures](level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md) [THEORETICAL]
+- [Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding](level_3_emergence_and_intelligence/landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding.md) [THEORETICAL]
 - [Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures](level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md) [THEORETICAL]
 - [Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation](level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]

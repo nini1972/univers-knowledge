@@ -1,16 +1,37 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-09T01:40:36.000368+00:00",
+  "updated_at": "2026-08-10T01:17:44.828867+00:00",
   "stats": {
-    "total_nodes": 182,
-    "level_1_count": 89,
-    "level_2_count": 83,
-    "level_3_count": 10,
+    "total_nodes": 185,
+    "level_1_count": 90,
+    "level_2_count": 84,
+    "level_3_count": 11,
     "total_edges": 109,
     "frontier_count": 0
   },
   "nodes": [
+    {
+      "id": "arethereexperimentalstrategiestobetterconstrainneutrinodecaywidthsjandconfirmdecayinclusiveoscillationmodifications",
+      "title": "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "JUNO Collaboration",
+        "KamLAND Collaboration",
+        "DUNE Collaboration",
+        "T2K Collaboration",
+        "IceCube Collaboration"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/are_there_experimental_strategies_to_better_constrain_neutrino_decay_widths_j_and_confirm_decayinclusive_oscillation_modifications.md"
+    },
     {
       "id": "arethereproposedorongoingcalibrationorcontrolmeasurementsdesignedtoruleoutconfoundingeffectsmimickingneutrinodecaysignalsinplannedorcurrentdetectorsetups",
       "title": "Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?",
@@ -3522,6 +3543,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/symmetric_teleparallel_gravity_vs_metricaffine_fr_gravity_in_addressing_latetime_cosmic_acceleration.md"
     },
     {
+      "id": "symmetryprotectedtopologicalphasesvsholographicdualitiesinnonequilibriumquantumsystems",
+      "title": "Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Approved Student Summary",
+        "Research reports on SPT phases and holographic dualities",
+        "Related literature on mathematical physics"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_dualities_in_nonequilibrium_quantum_systems.md"
+    },
+    {
       "id": "warmdarkmattervsselfinteractingdarkmatterinexplainingsmallscalestructureformation",
       "title": "Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation",
       "level": 2,
@@ -3636,6 +3676,25 @@
         "Authoritative Texts on Graph Theory and Cosmology"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md"
+    },
+    {
+      "id": "landauerbekensteinscalingrelationsinneuralprocessingandblackholeinformationencoding",
+      "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Research Report on Neural Processing and Gravitational Entropy",
+        "Landauer’s Principle and Bekenstein Bound Overview",
+        "Modern Black Hole Holography and Neural Models"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding.md"
     },
     {
       "id": "landauersprincipleandtheinformationprocessingefficiencyofgalacticscalefilamentarystructures",

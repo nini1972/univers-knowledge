@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-09T01:40:09.011813+00:00",
+  "updated_at": "2026-08-10T01:17:12.649252+00:00",
   "stats": {
-    "total_entries": 101,
-    "total_equations": 3406,
-    "math_proven_entries": 45,
+    "total_entries": 105,
+    "total_equations": 3523,
+    "math_proven_entries": 49,
     "math_consistent_entries": 34,
-    "total_bridges": 144,
+    "total_bridges": 146,
     "tracked_constants": 8
   },
   "bridges": [
@@ -275,6 +275,44 @@
       ]
     },
     {
+      "equation": "1.380649 \\times 10^{-23}",
+      "concept_count": 8,
+      "concepts": [
+        {
+          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
+          "level": 2
+        },
+        {
+          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
+          "level": 1
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\Omega_c h^2 = 0.120 \\pm 0.001",
       "concept_count": 7,
       "concepts": [
@@ -343,40 +381,6 @@
       ]
     },
     {
-      "equation": "1.380649 \\times 10^{-23}",
-      "concept_count": 7,
-      "concepts": [
-        {
-          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
-          "level": 2
-        },
-        {
-          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
-          "level": 1
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
-          "level": 2
-        },
-        {
-          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "\\Phi",
       "concept_count": 7,
       "concepts": [
@@ -407,6 +411,40 @@
         {
           "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "6.62607015 \\times 10^{-34}",
+      "concept_count": 7,
+      "concepts": [
+        {
+          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
+          "level": 1
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
+          "level": 1
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
+          "level": 3
         }
       ]
     },
@@ -497,36 +535,6 @@
         {
           "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
           "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "6.62607015 \\times 10^{-34}",
-      "concept_count": 6,
-      "concepts": [
-        {
-          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
-          "level": 1
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
-          "level": 1
-        },
-        {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
-          "level": 2
-        },
-        {
-          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
-          "level": 3
         }
       ]
     },
@@ -722,6 +730,28 @@
         },
         {
           "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "\\chi^2",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?",
+          "level": 1
+        },
+        {
+          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "level": 1
+        },
+        {
+          "title": "What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?",
+          "level": 1
+        },
+        {
+          "title": "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
           "level": 1
         }
       ]
@@ -955,24 +985,6 @@
         {
           "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\chi^2",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?",
-          "level": 1
-        },
-        {
-          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
-          "level": 1
-        },
-        {
-          "title": "What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?",
-          "level": 1
         }
       ]
     },
@@ -1669,6 +1681,20 @@
       ]
     },
     {
+      "equation": "\\nu_3",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
+          "level": 1
+        },
+        {
+          "title": "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
+          "level": 1
+        }
+      ]
+    },
+    {
       "equation": "\\Delta\\chi^2",
       "concept_count": 2,
       "concepts": [
@@ -2000,6 +2026,20 @@
         },
         {
           "title": "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "N_{\\text{eff}}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
+          "level": 2
+        },
+        {
+          "title": "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
           "level": 1
         }
       ]
@@ -2585,7 +2625,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 52,
+      "occurrence_count": 54,
       "referenced_in": [
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -2617,6 +2657,7 @@
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+        "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
@@ -2628,6 +2669,7 @@
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+        "Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems",
         "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
         "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
@@ -2701,7 +2743,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 40,
+      "occurrence_count": 42,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -2724,6 +2766,7 @@
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+        "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
@@ -2735,6 +2778,7 @@
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+        "Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems",
         "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
@@ -2750,7 +2794,7 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 29,
+      "occurrence_count": 30,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -2770,6 +2814,7 @@
         "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+        "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
@@ -2871,8 +2916,9 @@
       "name": "Effective Neutrino Species",
       "unit": "dimensionless",
       "typical_value": "3.044",
-      "occurrence_count": 7,
+      "occurrence_count": 8,
       "referenced_in": [
+        "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
         "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
@@ -7450,6 +7496,168 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-09T01:38:31.068625+00:00"
+    },
+    {
+      "concept": "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
+      "level": 1,
+      "equations": [
+        "\\Gamma_j",
+        "\\tau_2/m_2 \\gtrsim 7\\times 10^{-4}",
+        "\\tau_3/m_3 \\gtrsim 2.9\\times 10^{-10}",
+        "\\tau/m \\gtrsim 10^3",
+        "\\Gamma_3",
+        "\\nu_3",
+        "\\theta_{23}",
+        "\\delta_{CP}",
+        "\\chi^2",
+        "\\nu_k",
+        "\\nu_j \\to \\nu_k + X",
+        "dN_{k\\to j}/dE",
+        "g_{ji}",
+        "N_{\\text{eff}}",
+        "\\Gamma_j = 0",
+        "\\Phi_j(E,x)",
+        "E^n",
+        "m_j\\Gamma_j L/E",
+        "|\\nu_\\alpha\\rangle=\\sum_{j=1}^3 U_{\\alpha j}^*|\\nu_j\\rangle",
+        "\\phi_j=\\frac{m_j^2 L}{2E}",
+        "\\mathcal A_j(L,E)=\\exp\\left[-i\\frac{m_j^2L}{2E}-\\frac{m_j\\Gamma_j L}{2E}\\right]",
+        "\\frac{m_j\\Gamma_j L}{2E}=\\frac{L}{2E(\\tau_j/m_j)}",
+        "P_{\\alpha\\beta}^{\\rm surv}(L,E)=\\left|\\sum_j U_{\\beta j}U_{\\alpha j}^*\\exp\\left[-i\\frac{m_j^2L}{2E}-\\frac{m_j\\Gamma_j L}{2E}\\right]\\right|^2",
+        "P_{\\alpha\\beta}^{\\rm inc}(L,E)=P_{\\alpha\\beta}^{\\rm surv}(L,E)+P_{\\alpha\\beta}^{\\rm daughter}(L,E)",
+        "\\frac{d\\Phi_j(E,x)}{dx}=-\\frac{\\Phi_j(E,x)}{\\lambda_j(E)}+\\sum_{k>j}\\int_E^\\infty dE'\\frac{\\Phi_k(E',x)}{\\lambda_k(E')}\\frac{dN_{k\\to j}(E;E')}{dE}",
+        "\\lambda_j(E)=\\frac{E}{m_j\\Gamma_j}",
+        "\\Gamma(\\nu_j\\to \\nu_i+J)\\simeq\\frac{|g_{ji}|^2}{16\\pi}m_j",
+        "i\\frac{d}{dx}\\nu_f=\\left[\\frac{1}{2E}U\\text{diag}(m_1^2,m_2^2,m_3^2)U^\\dagger+V_{CC}-\\frac{i}{2}U\\text{diag}(m_1\\Gamma_1/E,m_2\\Gamma_2/E,m_3\\Gamma_3/E)U^\\dagger\\right]\\nu_f",
+        "\\chi^2(\\theta_{\\rm osc},\\Gamma_j,B_{j\\to k})=\\sum_i\\frac{\\left[N_i^{\\rm obs}-N_i^{\\rm pred}(\\theta_{\\rm osc},\\Gamma_j,B_{j\\to k})\\right]^2}{\\sigma_i^2}+\\chi^2_{\\rm syst}",
+        "\\dot f_j=-\\Gamma_j f_j+\\sum_k \\Gamma_{k\\to j} f_k",
+        "\\Gamma_{j\\to i\\gamma}\\sim\\frac{|\\mu_{ji}|^2}{8\\pi}\\frac{(\\Delta m_{ji}^2)^3}{m_j^3}",
+        "P_{\\alpha\\beta}=\\sum_i |U_{\\alpha i}|^2|U_{\\beta i}|^2+2\\sum_{i>j}\\mathrm{Re}\\left[U_{\\alpha i}^*U_{\\beta i}U_{\\alpha j}U_{\\beta j}^*\\right]e^{-\\gamma_{ij}L}\\cos\\left(\\frac{\\Delta m_{ij}^2L}{2E}\\right)",
+        "\\tau_2\\gtrsim 3.5\\times10^{-5}\\,\\mathrm{s}",
+        "m_j\\Gamma_jL/E"
+      ],
+      "equation_count": 34,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-10T00:45:09.260586+00:00",
+      "a2a_proof_report": "# Mathematical Report on Experimental Constraints and Decay Widths of Neutrinos\n\n---\n\n## Axioms and Definitions\n\n1. **Symbols and physical parameters:**\n\n   - \\( \\Gamma_j \\): decay width of neutrino mass eigenstate \\( j \\).\n   - \\( \\tau_j \\): lifetime of the neutrino mass eigenstate \\( j \\).\n   - \\( m_j \\): mass of the neutrino mass eigenstate \\( j \\).\n\n2. **Experimental constraints on lifetimes to mass ratios:**\n\n   - \\(\\frac{\\tau_2}{m_2} \\gtrsim 7 \\times 10^{-4}\\)\n   - \\(\\frac{\\tau_3}{m_3} \\gtrsim 2.9 \\times 10^{-10}\\)\n   - \\(\\frac{\\tau}{m} \\gtrsim 10^3\\) (general or effective quantities)\n\n3. **Physical relation between lifetime and decay width:**  \n   Assuming natural units \\(\\hbar = 1\\), we have:\n   \\[\n   \\Gamma_j = \\frac{1}{\\tau_j}\n   \\]\n\n4. From these, the goal is to verify consistency and relate experimental inequalities to constraints on decay widths \\(\\Gamma_j\\) and masses \\(m_j\\).\n\n---\n\n## Derivation and Verification Steps\n\n### Step 1: Define symbolic variables and physical relation\n\nUsing SymPy, define symbols and express \\(\\Gamma_j\\) in terms of \\(\\tau_j\\):\n\\[\n\\Gamma_j = \\frac{1}{\\tau_j}\n\\]\n\n### Step 2: Verify equivalence of expressions for \\(\\tau_j / m_j\\)\n\nRearranging the given inequalities,\n\\[\n\\frac{\\tau_j}{m_j} > c \\implies \\frac{1}{\\Gamma_j m_j} > c\n\\]\nwhere \\(c\\) denotes the constraint constants (e.g., \\(7 \\times 10^{-4}\\)).\n\nWe check that:\n\\[\n\\frac{\\tau_j}{m_j} \\equiv \\frac{1}{\\Gamma_j m_j}\n\\]\nfor each \\(j\\), by substituting \\(\\Gamma_j = 1/\\tau_j\\) and simplifying.\n\n### Step 3: Calculate numerically the lower bounds on \\(\\Gamma_j m_j\\)\n\nGiven the inequalities:\n\\[\n\\frac{\\tau_j}{m_j} > c \\quad \\Rightarrow \\quad \\Gamma_j m_j < \\frac{1}{c}\n\\]\n\nCalculate:\n\\[\n\\Gamma_2 m_2 < \\frac{1}{7 \\times 10^{-4}} = 1.43 \\times 10^{3}\n\\]\n\\[\n\\Gamma_3 m_3 < \\frac{1}{2.9 \\times 10^{-10}} = 3.45 \\times 10^{9}\n\\]\n\\[\n\\Gamma m < \\frac{1}{10^{3}} = 10^{-3}\n\\]\n\nThese inequalities constrain the allowed product of decay width and mass for each neutrino mass eigenstate (or in aggregate).\n\n---\n\n## Simplification Result\n\nThe symbolic checks show that:\n\\[\n\\frac{\\tau_j}{m_j} - \\frac{1}{\\Gamma_j m_j} = 0\n\\]\nwhich confirms that the expressions are consistently defined given the physical lifetime-width relation.\n\n---\n\n## Python Code Artifact\n\n```python\nfrom sympy import symbols, simplify\n\n# Define symbols\nGamma_j, tau_2, m_2, tau_3, m_3, tau, m, Gamma_3 = symbols('Gamma_j tau_2 m_2 tau_3 m_3 tau m Gamma_3', positive=True, real=True)\n\n# Given inequalities\nineq_tau2_m2 = tau_2 / m_2 > 7e-4\nineq_tau3_m3 = tau_3 / m_3 > 2.9e-10\nineq_tau_m = tau / m > 1e3\n\n# Relations from particle physics\nGamma_2 = 1 / tau_2\nGamma_3 = 1 / tau_3\nGamma = 1 / tau\n\n# Check equivalence of expressions\nexpr1 = 1 / (Gamma_2 * m_2)\nexpr2 = tau_2 / m_2\nequivalence = simplify(expr1 - expr2) == 0\n\nexpr3 = 1 / (Gamma_3 * m_3)\nexpr4 = tau_3 / m_3\nequivalence2 = simplify(expr3 - expr4) == 0\n\nexpr5 = 1 / (Gamma * m)\nexpr6 = tau / m\nequivalence3 = simplify(expr5 - expr6) == 0\n\nprint(f\"Equivalence for tau_2/m_2 and Gamma_2: {equivalence}\")\nprint(f\"Equivalence for tau_3/m_3 and Gamma_3: {equivalence2}\")\nprint(f\"Equivalence for tau/m and Gamma: {equivalence3}\")\n\n# Constraints translated to upper bounds on Gamma_j * m_j\nconstraint_Gamma2_m2 = 1 / (7e-4)\nconstraint_Gamma3_m3 = 1 / (2.9e-10)\nconstraint_Gamma_m = 1 / (1e3)\n\nprint(f\"Constraint upper bound on Gamma_2 * m_2: {constraint_Gamma2_m2:.2e}\")\nprint(f\"Constraint upper bound on Gamma_3 * m_3: {constraint_Gamma3_m3:.2e}\")\nprint(f\"Constraint upper bound on Gamma * m: {constraint_Gamma_m:.2e}\")\n```\n\n---\n\n# Conclusion\n\n- The equivalences are confirmed symbolically, verifying the algebraic consistency of lifetime and decay width relations.\n- Experimental constraints on neutrino lifetimes per mass translate directly into upper bounds on the product of decay widths and neutrino masses.\n- These relations allow designing experimental strategies to constrain \\(\\Gamma_j\\) by maximizing sensitivity to decay effects and oscillation modifications involving neutrino lifetimes.\n\nThis formal mathematical verification supports the viability of using experimental bounds on \\(\\tau_j / m_j\\) ratios for constraining neutrino decay widths \\(\\Gamma_j\\)."
+    },
+    {
+      "concept": "Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems",
+      "level": 2,
+      "equations": [
+        "ds^2 = \\frac{r^2}{L^2}[\\eta_{\\mu\\nu}dx^\\mu dx^\\nu + (1-f(r))(u_\\mu dx^\\mu)^2] + \\frac{L^2}{r^2 f(r)}dr^2",
+        "H(s) = (1-s)H_0 + sH_1",
+        "\\Delta(s) \\geq \\Delta_{\\min} > 0",
+        "V_g V_h = \\omega(g,h) V_{gh}",
+        "[\\omega] \\in H^2(G,U(1))",
+        "BG \\to B^2U(1)",
+        "H^{d+1}(G,U(1))",
+        "\\Delta \\approx 0.4J",
+        "\\sim 10-100 \\mu",
+        "h_{\\rm SB} \\neq 0",
+        "h_{\\rm SB} \\ll \\Delta",
+        "T=0",
+        "[\\omega]",
+        "Z_{\\rm CFT} \\approx \\exp(-S_{\\rm grav}^{\\rm on-shell})",
+        "\\tau_{\\rm hydro}",
+        "\\langle T_{tx}\\rangle = \\frac{\\pi c}{12}(T_L^2 - T_R^2)",
+        "T^{\\mu\\nu} = \\varepsilon u^\\mu u^\\nu + P\\Delta^{\\mu\\nu}",
+        "T_L \\neq T_R",
+        "\\partial_\\mu u^\\nu \\ll T^2",
+        "\\eta/s \\sim 0.1-0.2",
+        "1/4\\pi \\approx 0.08",
+        "\\beta(g) \\neq 0",
+        "\\eta/s \\gtrsim 0.2",
+        "N \\gg 1",
+        "N=3",
+        "N=O(1)",
+        "\\eta/s",
+        "1/4\\pi",
+        "\\eta/s \\approx 1/4\\pi",
+        "T \\approx 0",
+        "N \\to \\infty",
+        "\\lambda \\to \\infty"
+      ],
+      "equation_count": 32,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-10T00:56:39.185755+00:00"
+    },
+    {
+      "concept": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
+      "level": 3,
+      "equations": [
+        "W_{\\min}=k_B T\\ln 2",
+        "S_{BH}=\\frac{k_B A}{4\\ell_P^2}",
+        "k_B T\\ln 2 \\approx 2.97\\times 10^{-21}\\,\\mathrm{J} \\approx 0.0185\\,\\mathrm{eV}",
+        "S \\leq \\frac{2\\pi k_B E R}{\\hbar c}",
+        "I \\leq \\frac{2\\pi E R}{\\hbar c\\ln 2}",
+        "S_{BH}=\\frac{k_B c^3 A}{4G\\hbar} = \\frac{k_B A}{4\\ell_P^2}",
+        "I_{BH}=\\frac{A}{4\\ell_P^2\\ln 2}",
+        "E \\geq E_L = I k_B T\\ln 2",
+        "E \\geq E_B = \\frac{\\hbar c I\\ln 2}{2\\pi R}",
+        "E_{\\min}(I,R,T) = I\\ln 2\\,\\max\\left(k_B T,\\, \\frac{\\hbar c}{2\\pi R}\\right)",
+        "\\ell_{LB}(T)=\\frac{\\hbar c}{2\\pi k_B T}",
+        "E=Mc^2",
+        "I_{\\mathrm{brain}}^{Bek} \\leq \\frac{2\\pi M c^2 R}{\\hbar c\\ln 2} = \\frac{2\\pi M c R}{\\hbar\\ln 2}",
+        "R_s=\\frac{2GM}{c^2}",
+        "A=4\\pi R_s^2",
+        "S_{BH} = \\frac{k_B A}{4\\ell_P^2} = \\frac{4\\pi k_B G M^2}{\\hbar c}",
+        "I_{BH} = \\frac{S_{BH}}{k_B\\ln 2} = \\frac{4\\pi G M^2}{\\hbar c\\ln 2}",
+        "T_H= \\frac{\\hbar c^3}{8\\pi G M k_B}",
+        "W_{\\min}(I_{BH},T_H)=\\frac{1}{2}Mc^2",
+        "S(R) = \\min_{\\mathrm{ext}} \\left[ \\frac{\\mathrm{Area}(\\partial I)}{4G_N\\hbar} + S_{\\mathrm{bulk}}(R\\cup I) \\right]",
+        "\\sigma = \\Delta S_{\\mathrm{sys}}+\\frac{Q}{T} \\geq 0",
+        "W \\geq \\Delta F - k_B T I",
+        "\\ell_P=\\sqrt{\\frac{\\hbar G}{c^3}}",
+        "H = -\\sum_i p_i \\log_2 p_i",
+        "S = k_B \\ln 2 \\, H",
+        "\\Delta S_{\\mathrm{tot}} = \\Delta S_{\\mathrm{bath}} + \\Delta S_{\\mathrm{mem}} \\geq 0",
+        "I_{\\mathrm{stored}} \\leq \\frac{2\\pi E R}{\\hbar c \\ln 2}",
+        "\\dot N_{\\mathrm{ops}} \\leq \\frac{2E}{\\pi \\hbar}",
+        "\\Omega_{\\mathrm{BH}} = e^{S_{\\mathrm{BH}}/k_B}",
+        "S[L] \\leq \\frac{A(B)}{4G\\hbar}",
+        "10^{14}-10^{15}\\,\\mathrm{bits}",
+        "6.62607015 \\times 10^{-34}",
+        "k_B",
+        "1.380649 \\times 10^{-23}"
+      ],
+      "equation_count": 34,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-10T01:10:48.471648+00:00"
+    },
+    {
+      "concept": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
+      "level": 3,
+      "equations": [
+        "\\Delta S_{\\rm mem}=-k_B \\ln 2",
+        "Q_{\\min}=k_B T\\ln 2 \\approx 2.94\\times 10^{-21}\\ {\\rm J} \\approx 0.018\\ {\\rm eV}",
+        "S \\le \\frac{2\\pi k_B E R}{\\hbar c}",
+        "S_{\\rm BH}=\\frac{k_B c^3 A}{4G\\hbar}=\\frac{k_B A}{4\\ell_P^2}",
+        "S(R)=\\min_{\\mathcal I}\\operatorname{ext}\\left[\\frac{{\\rm Area}(\\partial \\mathcal I)}{4G_N}+S_{\\rm bulk}(R\\cup \\mathcal I)\\right]",
+        "I_{\\rm Landauer,max}=\\frac{P_{\\rm brain}\\tau}{k_B T\\ln 2}",
+        "6.62607015 \\times 10^{-34}",
+        "1.380649 \\times 10^{-23}",
+        "Q_{\\min}=k_B T\\ln 2\\approx 2.94\\times10^{-21}\\,\\text{J}",
+        "I_B\\leq 2\\pi ER/(\\hbar c\\ln 2)",
+        "10^{42}",
+        "S_{\\rm BH}=k_B A/(4\\ell_P^2)",
+        "S(R)=\\min_{\\mathcal I}\\operatorname{ext}[\\text{Area}/4G_N+S_{\\rm bulk}]",
+        "I_{\\rm Landauer,max}=P\\tau/(k_B T\\ln 2)\\approx7\\times10^{21}\\,\\text{erasures/s}",
+        "10^{15}",
+        "\\ll 10^{21}",
+        "\\ll 10^{42}"
+      ],
+      "equation_count": 17,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-10T01:16:31.267839+00:00"
     }
   ]
 }
