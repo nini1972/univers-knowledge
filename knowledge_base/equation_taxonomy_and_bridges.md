@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-10T01:17:12.649252+00:00  
-> **Total Analyzed Concepts:** 105 | **Total Discovered Equations:** 3523 | **Discovered Bridges:** 146
+> **Generated:** 2026-08-11T01:02:25.744381+00:00  
+> **Total Analyzed Concepts:** 108 | **Total Discovered Equations:** 3626 | **Discovered Bridges:** 147
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 32 concepts:
+**Occurrences:** Appears in 33 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -40,6 +40,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics
 - **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
 - **Level 3**: Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks
+- **Level 3**: Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures
 
 ### ` \gamma `
 **Occurrences:** Appears in 11 concepts:
@@ -56,7 +57,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
 
 ### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
-**Occurrences:** Appears in 9 concepts:
+**Occurrences:** Appears in 10 concepts:
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 1**: How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?
@@ -66,6 +67,18 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration
 - **Level 3**: Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics
 - **Level 3**: Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks
+- **Level 3**: Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures
+
+### ` \Omega_c h^2 = 0.120 \pm 0.001 `
+**Occurrences:** Appears in 8 concepts:
+- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
+- **Level 1**: What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?
+- **Level 2**: Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure
+- **Level 1**: What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?
+- **Level 2**: Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance
+- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
+- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
+- **Level 2**: Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution
 
 ### ` \phi `
 **Occurrences:** Appears in 8 concepts:
@@ -88,16 +101,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
 - **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
 - **Level 3**: Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding
-
-### ` \Omega_c h^2 = 0.120 \pm 0.001 `
-**Occurrences:** Appears in 7 concepts:
-- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
-- **Level 1**: What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?
-- **Level 2**: Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure
-- **Level 1**: What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?
-- **Level 2**: Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance
-- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
-- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
 
 ### ` h = 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 7 concepts:
@@ -183,15 +186,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 54 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 46 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 42 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 30 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 23 |
-| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 18 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 56 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 48 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 44 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 31 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 24 |
+| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 20 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 15 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 8 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 49
+- **MATH_PROVEN Entries:** 51
 - **MATH_CONSISTENT Entries:** 34

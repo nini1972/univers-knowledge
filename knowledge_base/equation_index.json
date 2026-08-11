@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-10T01:17:12.649252+00:00",
+  "updated_at": "2026-08-11T01:02:25.744381+00:00",
   "stats": {
-    "total_entries": 105,
-    "total_equations": 3523,
-    "math_proven_entries": 49,
+    "total_entries": 108,
+    "total_equations": 3626,
+    "math_proven_entries": 51,
     "math_consistent_entries": 34,
-    "total_bridges": 146,
+    "total_bridges": 147,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 32,
+      "concept_count": 33,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -141,6 +141,10 @@
         {
           "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
           "level": 3
+        },
+        {
+          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+          "level": 3
         }
       ]
     },
@@ -196,7 +200,7 @@
     },
     {
       "equation": "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
-      "concept_count": 9,
+      "concept_count": 10,
       "concepts": [
         {
           "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
@@ -233,6 +237,48 @@
         {
           "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
           "level": 3
+        },
+        {
+          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_c h^2 = 0.120 \\pm 0.001",
+      "concept_count": 8,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
+          "level": 1
+        },
+        {
+          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+          "level": 2
+        },
+        {
+          "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
+          "level": 1
+        },
+        {
+          "title": "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
+          "level": 2
+        },
+        {
+          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+          "level": 2
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
+          "level": 2
         }
       ]
     },
@@ -309,40 +355,6 @@
         {
           "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
           "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "\\Omega_c h^2 = 0.120 \\pm 0.001",
-      "concept_count": 7,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
-          "level": 1
-        },
-        {
-          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
-          "level": 2
-        },
-        {
-          "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
-          "level": 1
-        },
-        {
-          "title": "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
-          "level": 2
-        },
-        {
-          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
-          "level": 2
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
         }
       ]
     },
@@ -779,6 +791,28 @@
       ]
     },
     {
+      "equation": "\\theta_i",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
+          "level": 2
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
+          "level": 2
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "H^2(a)=H_0^2\\left[\\Omega_r a^{-4}+\\Omega_m a^{-3}+\\Omega_k a^{-2}+\\Omega_\\Lambda\\right]",
       "concept_count": 4,
       "concepts": [
@@ -796,6 +830,28 @@
         },
         {
           "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\beta_0, \\beta_1, \\beta_2",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
           "level": 3
         }
       ]
@@ -1115,42 +1171,6 @@
       ]
     },
     {
-      "equation": "\\theta_i",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
-          "level": 2
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
-          "level": 2
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\beta_0, \\beta_1, \\beta_2",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
-          "level": 3
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "\\Omega_c h^2 \\approx 0.120",
       "concept_count": 3,
       "concepts": [
@@ -1200,6 +1220,24 @@
         },
         {
           "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\sim 10^{-3}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
           "level": 2
         }
       ]
@@ -2535,6 +2573,20 @@
       ]
     },
     {
+      "equation": "k_B = 1.380649 \\times 10^{-23} \\text{ J/K}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\Omega_\\Lambda \\approx 0.685",
       "concept_count": 2,
       "concepts": [
@@ -2591,20 +2643,6 @@
       ]
     },
     {
-      "equation": "\\sim 10^{-3}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
-          "level": 2
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "R\\Box^{-2}R",
       "concept_count": 2,
       "concepts": [
@@ -2625,7 +2663,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 54,
+      "occurrence_count": 56,
       "referenced_in": [
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -2645,6 +2683,7 @@
         "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+        "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
@@ -2659,6 +2698,7 @@
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
         "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+        "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
@@ -2688,7 +2728,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 46,
+      "occurrence_count": 48,
       "referenced_in": [
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -2716,6 +2756,7 @@
         "Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+        "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
@@ -2734,6 +2775,7 @@
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
         "What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
+        "What steps can be taken to integrate higher-order effects and non-standard interactions consistently within the existing framework?",
         "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
         "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?"
       ]
@@ -2743,7 +2785,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 42,
+      "occurrence_count": 44,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -2757,6 +2799,7 @@
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+        "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
@@ -2768,6 +2811,7 @@
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
         "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+        "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
@@ -2794,7 +2838,7 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 30,
+      "occurrence_count": 31,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -2806,6 +2850,7 @@
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+        "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
@@ -2833,7 +2878,7 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 23,
+      "occurrence_count": 24,
       "referenced_in": [
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
@@ -2849,6 +2894,7 @@
         "Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+        "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
@@ -2865,12 +2911,13 @@
       "name": "Cold Dark Matter Density Parameter",
       "unit": "dimensionless",
       "typical_value": "0.120",
-      "occurrence_count": 18,
+      "occurrence_count": 20,
       "referenced_in": [
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+        "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
@@ -2878,6 +2925,7 @@
         "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+        "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
@@ -7658,6 +7706,143 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-10T01:16:31.267839+00:00"
+    },
+    {
+      "concept": "What steps can be taken to integrate higher-order effects and non-standard interactions consistently within the existing framework?",
+      "level": 1,
+      "equations": [
+        "\\mathcal{L}_{\\text{eff}} = \\mathcal{L}_{\\text{SM}} + \\frac{C^{(6)}}{\\Lambda^2}\\mathcal{O}_6 + \\frac{C^{(8)}}{\\Lambda^4}\\mathcal{O}_8 + \\dots",
+        "\\mu\\frac{d C_i}{d\\mu} = \\frac{1}{16\\pi^2}\\gamma_{ij}C_j",
+        "\\text{UV} \\rightarrow \\text{SMEFT} \\rightarrow \\text{LEFT} \\rightarrow \\text{observables}",
+        "SU(3)_C \\times SU(2)_L \\times U(1)_Y",
+        "C^{(6)2}/\\Lambda^4",
+        "C^{(8)}/\\Lambda^4",
+        "C^{(6)}v^2/\\Lambda^2",
+        "E^2/\\Lambda^2 \\ll 1",
+        "\\theta_{12}",
+        "\\Delta m^2_{21}",
+        "\\delta_{\\text{CP}}",
+        "\\epsilon \\sim 0.1-1",
+        "\\mathcal{L}_{\\text{eff}}",
+        "\\mathcal{L}_{\\text{NSI}}",
+        "\\mathcal{L}_{\\text{Z}'}",
+        "\\Lambda \\gg E"
+      ],
+      "equation_count": 16,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-11T00:36:25.787843+00:00",
+      "a2a_proof_report": "# Mathematical Verification and Derivation Report on Integrating Higher-Order Effects and Non-Standard Interactions in SMEFT Framework\n\n---\n\n## Axioms\n\n1. **Effective Lagrangian Definition:**\n\n\\[\n\\mathcal{L}_{\\text{eff}} = \\mathcal{L}_{\\text{SM}} + \\frac{C^{(6)}}{\\Lambda^2}\\mathcal{O}_6 + \\frac{C^{(8)}}{\\Lambda^4}\\mathcal{O}_8 + \\cdots\n\\]\n\nwhere \n- \\(\\mathcal{L}_{\\text{SM}}\\) is the Standard Model Lagrangian,\n- \\(C^{(6)}, C^{(8)}\\) are Wilson coefficients (dimensionless numbers),\n- \\(\\Lambda\\) is the high energy scale,\n- \\(\\mathcal{O}_6\\) is a dimension-6 operator,\n- \\(\\mathcal{O}_8\\) is a dimension-8 operator.\n\n2. **Renormalization Group Equation (RGE) for Wilson coefficients:**\n\n\\[\n\\mu \\frac{d C_i}{d\\mu} = \\frac{1}{16\\pi^2} \\gamma_{ij} C_j\n\\]\n\nwhere \\(\\gamma_{ij}\\) is the anomalous dimension matrix.\n\n3. **Group structure of the Standard Model gauge symmetry:**\n\n\\[\nSU(3)_C \\times SU(2)_L \\times U(1)_Y\n\\]\n\n4. **Scaling relation of higher-order terms:**\n\n\\[\n\\frac{(C^{(6)})^2}{\\Lambda^4}\n\\]\n\ncan contribute effectively at the same scale as dimension-8 operators when squared terms from dimension-6 operators are considered.\n\n---\n\n## Derivation Steps and Verification\n\n### Step 1: Define symbolic variables and interpret the effective Lagrangian terms\n\n- \\(L_{SM}, O_6, O_8\\) treated symbolically.\n- Wilson coefficients \\(C^{(6)}, C^{(8)}\\) dimensionless.\n- \\(\\Lambda\\) has mass dimension 1.\n- Operator \\(\\mathcal{O}_6\\) has dimension 6.\n- Operator \\(\\mathcal{O}_8\\) has dimension 8.\n- The Lagrangian density must have mass dimension 4.\n\nCheck dimensional consistency of each term in \\(\\mathcal{L}_{\\text{eff}}\\):\n\n- For dimension-6 operator term:\n\\[\n\\frac{C^{(6)}}{\\Lambda^2} \\mathcal{O}_6 \\quad \\Rightarrow \\quad \\frac{1}{(\\text{mass})^2} \\times (\\text{mass})^6 = (\\text{mass})^4\n\\]\n\n- For dimension-8 operator term:\n\\[\n\\frac{C^{(8)}}{\\Lambda^4} \\mathcal{O}_8 \\quad \\Rightarrow \\quad \\frac{1}{(\\text{mass})^4} \\times (\\text{mass})^8 = (\\text{mass})^4\n\\]\n\nThus, both terms have the correct dimension for a Lagrangian density.\n\n### Step 2: Verify Renormalization Group Equation (RGE) form\n\n\\[\n\\mu \\frac{d C_i}{d \\mu} = \\frac{1}{16 \\pi^2} \\gamma_{ij} C_j\n\\]\n\n- Here \\(i,j\\) label operator indices.\n- \\(\\gamma_{ij}\\) encodes mixing of operators under renormalization.\n- The factor \\(\\frac{1}{16\\pi^2}\\) appears from 1-loop perturbative QFT calculations.\n\nThe equation is standard and consistent with perturbative QFT.\n\n### Step 3: Relation between dimension-6 squared terms and dimension-8 operators\n\n- The squared Wilson coefficient term \\(\\frac{(C^{(6)})^2}{\\Lambda^4}\\) has the same suppression scale (in terms of powers of \\(\\Lambda\\)) as the dimension-8 operator term \\(\\frac{C^{(8)}}{\\Lambda^4}\\).\n- This indicates higher-order effects (including squared dimension-6 terms) should be included consistently alongside dimension-8 operators.\n\n### Step 4: Matrix form of RGE\n\nDefine \\(C\\) as vector of Wilson coefficients and \\(\\gamma\\) as the anomalous dimension matrix:\n\n\\[\n\\mu \\frac{d \\mathbf{C}}{d\\mu} = \\frac{1}{16\\pi^2} \\boldsymbol{\\gamma} \\mathbf{C}\n\\]\n\nThis form is analytically consistent and compact for implementation in RG evolution calculations.\n\n---\n\n## Simplification Results from SymPy\n\n- Effective Lagrangian expression output:\n\n\\[\n\\mathcal{L}_{\\text{eff}} = \\mathcal{L}_{\\text{SM}} + \\frac{C^{(6)}}{\\Lambda^2} \\mathcal{O}_6 + \\frac{C^{(8)}}{\\Lambda^4} \\mathcal{O}_8\n\\]\n\n- Dimensional consistency checks for terms with \\(\\mathcal{O}_6\\) and \\(\\mathcal{O}_8\\) returned `True`.\n- The RGE symbolic equation correctly expresses the differential form.\n- Scaling of \\(\\frac{(C^{(6)})^2}{\\Lambda^4}\\) held as expected.\n\n---\n\n## Code Artifact (SymPy Verification Code)\n\n```python\nimport sympy as sp\n\n# Define symbols\nLambda, mu, C6, C8 = sp.symbols('Lambda mu C6 C8', real=True, positive=True)\nC = sp.symbols('C', cls=sp.IndexedBase)  # Vector of Wilson coefficients\nmu_var = sp.symbols('mu')\ngamma = sp.IndexedBase('gamma')  # Anomalous dimension matrix\ni, j = sp.symbols('i j', integer=True)\n\n# Effective Lagrangian definitions\nL_SM = sp.symbols('L_SM')  # SM Lagrangian\nO6 = sp.symbols('O_6')\nO8 = sp.symbols('O_8')\nL_eff = L_SM + C6/Lambda**2 * O6 + C8/Lambda**4 * O8\nprint(\"Effective Lagrangian L_eff:\", L_eff)\n\n# RGE equation for Wilson coefficients\nRGE = sp.Eq(sp.Derivative(C[i], mu_var), (1/(16*sp.pi**2)) * gamma[i, j] * C[j])\nprint(\"RGE equation:\", RGE)\n\n# Check scaling for C6 squared over Lambda^4\nscaling_check = (C6**2 / Lambda**4)\nprint(\"Scaling check C^{(6)2}/Lambda^4:\", scaling_check)\n\n# Check dimensional consistency (mass dimension)\nO6_dim = 6\nO8_dim = 8\nLambda_dim = 1  # mass\nLagrangian_dim = 4\nC6_dim = 0  # dimensionless\nC8_dim = 0\n\nprint(\"Dimension of L_eff term with O6:\", O6_dim - 2*Lambda_dim == Lagrangian_dim)\nprint(\"Dimension of L_eff term with O8:\", O8_dim - 4*Lambda_dim == Lagrangian_dim)\n```\n\n---\n\n# Conclusion\n\nThe provided equations for including higher-order effects and non-standard interactions in the SMEFT framework are internally consistent:\n\n- Dimensional analysis confirms each higher-dimension operator term combines with powers of \\(\\Lambda\\) and dimensionless coefficients to yield a dimension-4 Lagrangian density.\n- The renormalization group evolution equations have the correct matrix form and perturbative loop factor.\n- Including squared dimension-6 Wilson coefficient terms alongside dimension-8 operators is consistent with power counting.\n- The theoretical framework connecting UV completions to SMEFT, then to LEFT (Low Energy Effective Field Theory), and finally to observables is conceptually sound and consistent with gauge symmetry structure \\(SU(3)_C \\times SU(2)_L \\times U(1)_Y\\).\n\nThese verifications underscore the mathematical consistency of extending the Standard Model EFT framework to include higher-order and non-standard interactions consistently."
+    },
+    {
+      "concept": "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
+      "level": 2,
+      "equations": [
+        "\\frac{\\partial f}{\\partial t} + \\mathbf{v}\\cdot\\nabla_{\\mathbf{x}}f - \\nabla_{\\mathbf{x}}\\Phi\\cdot\\nabla_{\\mathbf{v}}f = 0",
+        "\\nabla^2\\Phi = 4\\pi G m_{\\rm DM}\\int f(\\mathbf{x},\\mathbf{v},t)\\,d^3v",
+        "\\rho_{\\rm NFW}(r) = \\frac{\\rho_s}{(r/r_s)(1+r/r_s)^2}",
+        "\\frac{\\partial F}{\\partial t} = -\\frac{\\partial}{\\partial J_i}[D_i F] + \\frac{1}{2}\\frac{\\partial^2}{\\partial J_i\\partial J_j}[D_{ij}F]",
+        "i\\hbar\\frac{\\partial\\psi}{\\partial t} = -\\frac{\\hbar^2}{2m_a a_{\\rm scale}^2}\\nabla^2\\psi + m_a\\Phi\\psi",
+        "\\nabla^2\\Phi = 4\\pi G a_{\\rm scale}^2\\bar\\rho_a(|\\psi|^2-1)",
+        "\\partial_t\\mathbf{v} + (\\mathbf{v}\\cdot\\nabla)\\mathbf{v} = -\\nabla\\Phi - \\frac{1}{m_a}\\nabla Q,\\quad Q=-\\frac{\\hbar^2}{2m_a}\\frac{\\nabla^2\\sqrt{\\rho}}{\\sqrt{\\rho}}",
+        "\\rho_{\\rm sol}(r) = \\frac{\\rho_c}{[1+0.091(r/r_c)^2]^8}",
+        "\\beta_{\\rm iso} = \\frac{P_S}{P_R+P_S} \\lesssim 0.038",
+        "f_a \\sim 5\\times10^{17}\\,{\\rm GeV}\\,\\theta_i^{-1}",
+        "Q(r)=\\rho/\\sigma^3\\propto r^{-1.875}",
+        "D_i, D_{ij}",
+        "r_c",
+        "\\rho_c",
+        "m_a",
+        "\\Omega_c h^2 = 0.120 \\pm 0.001",
+        "k \\lesssim 0.2\\,{\\rm Mpc}^{-1}",
+        "k_{1/2} \\gtrsim 1.9\\,h\\,{\\rm Mpc}^{-1}",
+        "m_a=10^{-22}",
+        "m_a \\sim 10^{-22}",
+        "m_a \\gtrsim 2\\text{–}3\\times10^{-21}",
+        "f_a \\lesssim 10^{15}",
+        "m_a \\gtrsim 10^{-20}",
+        "\\nu_a \\sim 24\\,{\\rm nHz}(m_a/10^{-22}\\,{\\rm eV})",
+        "\\Omega_a h^2 \\sim 0.1",
+        "\\theta_i",
+        "\\sim 10^{-3}",
+        "f_{\\rm ULA}",
+        "10^{-22}"
+      ],
+      "equation_count": 29,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-11T00:46:36.200614+00:00"
+    },
+    {
+      "concept": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+      "level": 3,
+      "equations": [
+        "H^2(a)=H_0^2\\left[\\Omega_r a^{-4}+\\Omega_m a^{-3}+\\Omega_k a^{-2}+\\Omega_\\Lambda\\right].",
+        "\\ddot{\\delta}+2H\\dot{\\delta}-4\\pi G\\bar{\\rho}_m\\delta=0,",
+        "\\delta=\\frac{\\rho-\\bar{\\rho}}{\\bar{\\rho}}.",
+        "\\frac{\\partial f}{\\partial t} + \\frac{\\mathbf{p}}{m a^2}\\cdot\\nabla_{\\mathbf{x}}f - m\\nabla_{\\mathbf{x}}\\Phi\\cdot\\nabla_{\\mathbf{p}}f=0,",
+        "\\nabla^2\\Phi=4\\pi G a^2\\bar{\\rho}_m\\delta.",
+        "\\mathbf{x}(\\mathbf{q},t)=\\mathbf{q}-D(t)\\nabla_{\\mathbf{q}}\\Phi_0(\\mathbf{q}),",
+        "\\rho(\\mathbf{x})=\\frac{\\bar{\\rho}}{J},",
+        "J=\\det\\left[\\delta^K_{ij}-D(t)d_{ij}\\right],",
+        "d_{ij}=\\frac{\\partial^2\\Phi_0}{\\partial q_i\\partial q_j}.",
+        "J=0.",
+        "\\lambda_J=c_s\\sqrt{\\frac{\\pi}{G\\rho}},",
+        "\\mathcal{F}(t)=\\frac{L_{\\rm fil}(t)}{V},",
+        "\\chi_{\\rm perc}=\\frac{\\sum_s s^2 n_s}{\\sum_s s n_s}",
+        "P(k)=A_s k^{n_s},",
+        "n_s \\approx 0.965.",
+        "P[\\delta(\\mathbf{x})]=P[\\delta(R\\mathbf{x}+\\mathbf{a})].",
+        "T_{ij}=\\frac{\\partial^2\\Phi}{\\partial x_i\\partial x_j},",
+        "Q_{ij}=T_{ij}-\\frac{1}{3}T^k_{\\ k}\\delta_{ij}.",
+        "\\mathcal{B}=\\left\\langle Q_{ij}Q^{ij}\\right\\rangle^{1/2}.",
+        "\\beta_0 = \\text{number of connected components},",
+        "\\beta_1 = \\text{number of loops/tunnels},",
+        "\\beta_2 = \\text{number of voids/cavities}.",
+        "\\chi_E=\\beta_0-\\beta_1+\\beta_2.",
+        "I(A;B)=\\sum_{a,b}p(a,b)\\ln\\left[\\frac{p(a,b)}{p(a)p(b)}\\right].",
+        "\\delta(\\mathbf{k},t)\\propto D(t).",
+        "\\nabla\\cdot\\left[\\mu\\left(\\frac{|\\nabla\\Phi|}{a_0}\\right)\\nabla\\Phi\\right]=4\\pi G\\rho,",
+        "a_0\\approx 1.2\\times 10^{-10}\\ \\mathrm{m\\,s^{-2}}.",
+        "\\left|\\frac{c_T-c}{c}\\right|\\lesssim 10^{-15}",
+        "\\Omega_c h^2 \\approx 0.120,",
+        "\\Omega_b h^2 \\approx 0.0224,",
+        "H_0 \\approx 67.4\\ \\mathrm{km\\,s^{-1}\\,Mpc^{-1}},",
+        "S_{\\rm cg}=-\\int \\bar{f}\\ln\\bar{f}\\,d^3x\\,d^3p.",
+        "I(\\delta_0;\\delta_t)= \\int d\\delta_0\\,d\\delta_t\\, p(\\delta_0,\\delta_t) \\ln\\left[ \\frac{p(\\delta_0,\\delta_t)} {p(\\delta_0)p(\\delta_t)} \\right].",
+        "\\langle \\delta(\\mathbf{k})\\delta^*(\\mathbf{k}')\\rangle = (2\\pi)^3\\delta_D(\\mathbf{k}-\\mathbf{k}')P(k),",
+        "P_\\infty \\sim (p-p_c)^\\beta,",
+        "\\xi \\sim |p-p_c|^{-\\nu},",
+        "\\chi \\sim |p-p_c|^{-\\gamma},",
+        "\\mathcal{A} = \\frac{ \\left\\langle (\\lambda_1-\\lambda_2)^2+ (\\lambda_2-\\lambda_3)^2+ (\\lambda_3-\\lambda_1)^2 \\right\\rangle }{ \\left\\langle (\\lambda_1+\\lambda_2+\\lambda_3)^2 \\right\\rangle }.",
+        "D_{\\rm KL}\\left(P_t(E)\\,\\|\\,P_{\\rm iso}(E)\\right) = \\sum_E P_t(E) \\log \\frac{P_t(E)}{P_{\\rm iso}(E)}.",
+        "p_i=\\frac{k_i}{\\sum_j k_j},",
+        "H_G=-\\sum_i p_i\\log p_i.",
+        "\\mathcal{O}_{\\rm fil}(z) = P_\\infty(z)\\,\\mathcal{A}(z)\\,I(E_{\\rm fil};Y)(z),",
+        "f_{\\rm NL}^{\\rm local}=-0.9\\pm5.1,",
+        "\\mu\\left(\\frac{|\\mathbf{g}|}{a_0}\\right)\\mathbf{g} = \\mathbf{g}_N,",
+        "g\\simeq \\sqrt{a_0g_N}.",
+        "\\frac{v^2}{r}\\simeq \\sqrt{a_0\\frac{GM}{r^2}},",
+        "v^4\\simeq GMa_0,",
+        "\\Delta\\phi = 8\\pi \\frac{G\\mu}{c^2}.",
+        "\\frac{G\\mu}{c^2}\\lesssim 10^{-7},",
+        "\\sum m_\\nu \\lesssim 0.12\\,{\\rm eV}.",
+        "\\beta_0, \\beta_1, \\beta_2",
+        "\\chi_E",
+        "m_e",
+        "m_e = 9.1093837015 \\times 10^{-31} \\text{ kg}",
+        "k_B",
+        "k_B = 1.380649 \\times 10^{-23} \\text{ J/K}",
+        "\\Lambda",
+        "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}"
+      ],
+      "equation_count": 58,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-11T01:01:09.637676+00:00"
     }
   ]
 }

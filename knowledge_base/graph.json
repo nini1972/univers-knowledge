@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-10T01:17:44.828867+00:00",
+  "updated_at": "2026-08-11T01:02:59.786933+00:00",
   "stats": {
-    "total_nodes": 185,
-    "level_1_count": 90,
-    "level_2_count": 84,
-    "level_3_count": 11,
+    "total_nodes": 188,
+    "level_1_count": 91,
+    "level_2_count": 85,
+    "level_3_count": 12,
     "total_edges": 109,
     "frontier_count": 0
   },
@@ -1705,6 +1705,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/what_specific_operatortheoretic_proofs_can_be_developed_to_ensure_full_mathematical_integrity_compliance_of_the_neutrino_decay_survival_probability_framework.md"
     },
     {
+      "id": "whatstepscanbetakentointegratehigherordereffectsandnonstandardinteractionsconsistentlywithintheexistingframework",
+      "title": "Integrating Higher-Order Effects and Non-Standard Interactions Consistently Within the Existing Framework",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "[Source Needed]",
+        "[Source Needed]",
+        "[Source Needed]"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_steps_can_be_taken_to_integrate_higherorder_effects_and_nonstandard_interactions_consistently_within_the_existing_framework.md"
+    },
+    {
       "id": "whichobservationalstrategiesornovelcrosscorrelationmethodscouldmosteffectivelybreakdegeneraciesbetweenneutrinodecaysignaturesandotherneutrinopropertyvariationsinupcomingsurveys",
       "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
       "level": 1,
@@ -2326,6 +2345,25 @@
         "Reviews on modified gravity theories"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration.md"
+    },
+    {
+      "id": "dynamicalrelaxationvswavelikecondensationingalacticcorecuspresolution",
+      "title": "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Research report on CDM halo models and ULA wave-like condensate models",
+        "Relevant astrophysical literature",
+        "Verified experimental studies in dark matter research"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution.md"
     },
     {
       "id": "ekpyroticuniversemodelversusinflationarycosmologydebate",
@@ -3714,6 +3752,25 @@
         "Entropy and Information Processing in Cosmology"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md"
+    },
+    {
+      "id": "nonequilibriumphasetransitionsandinformationsymmetrybreakingintheevolutionoffilamentarycosmicstructures",
+      "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Research on cosmic-web evolution",
+        "ΛCDM gravitational dynamics literature",
+        "Persistent homology studies"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures.md"
     },
     {
       "id": "nontrivialquantumcoherenceinbiologicalphotosyntheticcomplexesvssimulateddecoherenceratesincosmologicallargescalestructures",
