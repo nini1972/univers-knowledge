@@ -62,6 +62,7 @@ graph TD
     cp_violation["CP Violation"]:::theoretical
     dark_matter["Dark Matter"]:::theoretical
     can_a_detailed_quantitative_breakdown_of_systematic_uncertainties_in_neutrino_decay_lifetime_measurements_be_provided_for_each_major_experimental_collaboration["Neutrino Decay Lifetime Limits"]:::theoretical
+    how_might_ambiguities_in_neutrino_state_definitions_during_decay_be_theoretically_and_experimentally_clarified["How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?"]:::verified
     how_might_the_assumptions_of_fundamental_spacetime_discreteness_or_entanglementgeometry_duality_be_tested_or_challenged_empirically["How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?"]:::theoretical
     are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups["Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?"]:::theoretical
     big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
@@ -126,6 +127,7 @@ graph TD
     quintessential_inflation_vs_kinflation_in_modeling_early_universe_dynamics["Quintessential Inflation vs K-Inflation in Modeling Early Universe Dynamics"]:::theoretical
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
     asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution["Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution"]:::theoretical
+    asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime["Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime"]:::theoretical
     emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
     braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem["Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem"]:::theoretical
     supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate["Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"]:::theoretical
@@ -197,6 +199,7 @@ graph TD
     nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures["Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures"]:::theoretical
     landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures["Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures"]:::theoretical
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
+    algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
 
     %% Connections & Prerequisites
     dark_matter --- what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range
@@ -256,6 +259,7 @@ graph TD
     the_higgs_boson --- cp_violation
     electroweak_symmetry_breaking --- cp_violation
     cosmic_microwave_background_radiation --- dark_matter
+    quantum_decoherence --- how_might_ambiguities_in_neutrino_state_definitions_during_decay_be_theoretically_and_experimentally_clarified
     cosmic_microwave_background_radiation --- big_bang_nucleosynthesis
     neutrino_oscillations --- could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports
     standard_model_of_particle_physics --- could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports
@@ -313,6 +317,7 @@ graph TD
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
     quantum_gravity --> loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
     quantum_gravity --> asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution
+    quantum_gravity --> asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime
     electroweak_symmetry_breaking --> braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem
     quantum_gravity --> holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research
     dark_matter --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure
@@ -379,6 +384,7 @@ graph TD
 - [How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?](level_1_fundamental_physics/how_can_cosmological_observations_be_refined_to_better_discriminate_between_warm_dark_matter_effects_predicted_by_sterile_neutrinos_and_cold_dark_matter_scenarios.md) [THEORETICAL]
 - [How can upcoming astrophysical neutrino observatories enhance flavor and spectral resolution to better distinguish neutrino decay effects from standard oscillations or source variability?](level_1_fundamental_physics/how_can_upcoming_astrophysical_neutrino_observatories_enhance_flavor_and_spectral_resolution_to_better_distinguish_neutrino_decay_effects_from_standard_oscillations_or_source_variability.md) [THEORETICAL]
 - [How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?](level_1_fundamental_physics/how_do_nonminimal_extensions_or_ultraviolet_completions_of_these_models_affect_their_testability_and_theoretical_robustness_in_light_of_planned_future_experiments.md) [THEORETICAL]
+- [How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?](level_1_fundamental_physics/how_might_ambiguities_in_neutrino_state_definitions_during_decay_be_theoretically_and_experimentally_clarified.md) [VERIFIED]
 - [How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?](level_1_fundamental_physics/how_might_future_experiments_or_observations_be_designed_to_effectively_distinguish_between_freezein_and_freezeout_dark_matter_production_mechanisms.md) [THEORETICAL]
 - [How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?](level_1_fundamental_physics/how_might_the_assumptions_of_fundamental_spacetime_discreteness_or_entanglementgeometry_duality_be_tested_or_challenged_empirically.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
@@ -454,6 +460,7 @@ graph TD
 - [Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution.md) [THEORETICAL]
 - [Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity.md) [THEORETICAL]
+- [Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime.md) [THEORETICAL]
 - [Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_sterile_neutrino_dark_matter_in_explaining_dark_matter.md) [THEORETICAL]
 - [Axion Dark Matter vs WIMPs in Explaining Dark Matter](level_2_advanced_frameworks/axion_dark_matter_vs_wimps_in_explaining_dark_matter.md) [THEORETICAL]
 - [Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics](level_2_advanced_frameworks/axion_monodromy_vs_natural_inflation_in_cosmic_inflationary_dynamics.md) [THEORETICAL]
@@ -536,6 +543,7 @@ graph TD
 
 ## Level 3: Emergence and Intelligence
 
+- [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?](level_3_emergence_and_intelligence/can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness.md) [THEORETICAL]
 - [Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md) [THEORETICAL]
 - [Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md) [THEORETICAL]

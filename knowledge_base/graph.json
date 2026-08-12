@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-11T01:02:59.786933+00:00",
+  "updated_at": "2026-08-12T01:25:26.151519+00:00",
   "stats": {
-    "total_nodes": 188,
-    "level_1_count": 91,
-    "level_2_count": 85,
-    "level_3_count": 12,
-    "total_edges": 109,
+    "total_nodes": 191,
+    "level_1_count": 92,
+    "level_2_count": 86,
+    "level_3_count": 13,
+    "total_edges": 111,
     "frontier_count": 0
   },
   "nodes": [
@@ -486,6 +486,25 @@
         "Effective Field Theory Analysis"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/how_do_nonminimal_extensions_or_ultraviolet_completions_of_these_models_affect_their_testability_and_theoretical_robustness_in_light_of_planned_future_experiments.md"
+    },
+    {
+      "id": "howmightambiguitiesinneutrinostatedefinitionsduringdecaybetheoreticallyandexperimentallyclarified",
+      "title": "How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Daya Bay Oscillation Experiment",
+        "KATRIN Experiment",
+        "Quantum Mechanics Literature"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/how_might_ambiguities_in_neutrino_state_definitions_during_decay_be_theoretically_and_experimentally_clarified.md"
     },
     {
       "id": "howmightfutureexperimentsorobservationsbedesignedtoeffectivelydistinguishbetweenfreezeinandfreezeoutdarkmatterproductionmechanisms",
@@ -1896,6 +1915,28 @@
         "Preprints on arXiv"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity.md"
+    },
+    {
+      "id": "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofspacetime",
+      "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "3/4",
+      "dependencies": [
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+        "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Comparative report on theoretical candidates for quantum gravity",
+        "Functional renormalization group flow studies",
+        "Noncommutative geometry and its implications in physics"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime.md"
     },
     {
       "id": "axiondarkmattervssterileneutrinodarkmatterinexplainingdarkmatter",
@@ -3621,6 +3662,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md"
     },
     {
+      "id": "algorithmiccomplexitylimitsofhierarchicalstructureformationinselforganizingcosmologicalnetworks",
+      "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Verified Research Study",
+        "Astrophysical Journal",
+        "Network Science Review"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md"
+    },
+    {
       "id": "canintegratedinformationtheoryiitbeformalizedwithinspacetimegeometrytoaddressthehardproblemofconsciousness",
       "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
       "level": 3,
@@ -3893,6 +3953,16 @@
     {
       "source": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
       "target": "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofquantumgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofspacetime",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+      "target": "asymptoticsafetyvsnoncommutativegeometryinultravioletcompletionofspacetime",
       "type": "component_theory"
     },
     {

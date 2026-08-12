@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-11T01:02:25.744381+00:00  
-> **Total Analyzed Concepts:** 108 | **Total Discovered Equations:** 3626 | **Discovered Bridges:** 147
+> **Generated:** 2026-08-12T01:24:57.332281+00:00  
+> **Total Analyzed Concepts:** 112 | **Total Discovered Equations:** 3712 | **Discovered Bridges:** 156
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 33 concepts:
+**Occurrences:** Appears in 34 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -41,6 +41,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
 - **Level 3**: Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks
 - **Level 3**: Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures
+- **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
 
 ### ` \gamma `
 **Occurrences:** Appears in 11 concepts:
@@ -69,6 +70,18 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks
 - **Level 3**: Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures
 
+### ` 1.380649 \times 10^{-23} `
+**Occurrences:** Appears in 9 concepts:
+- **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
+- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
+- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
+- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
+- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
+- **Level 3**: Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding
+- **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
+
 ### ` \Omega_c h^2 = 0.120 \pm 0.001 `
 **Occurrences:** Appears in 8 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
@@ -91,19 +104,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
 - **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
 
-### ` 1.380649 \times 10^{-23} `
-**Occurrences:** Appears in 8 concepts:
-- **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
-- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
-- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
-- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
-- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
-- **Level 3**: Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding
-
 ### ` h = 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 7 concepts:
+**Occurrences:** Appears in 8 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?
@@ -111,6 +113,28 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 1**: Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?
+- **Level 1**: How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?
+
+### ` 6.62607015 \times 10^{-34} `
+**Occurrences:** Appears in 8 concepts:
+- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
+- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
+- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
+- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
+- **Level 3**: Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding
+- **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
+
+### ` \alpha `
+**Occurrences:** Appears in 7 concepts:
+- **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
+- **Level 1**: What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
+- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
+- **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
+- **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
 
 ### ` \Phi `
 **Occurrences:** Appears in 7 concepts:
@@ -122,24 +146,14 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
 
-### ` 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 7 concepts:
-- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
-- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
-- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
-- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
-- **Level 3**: Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding
-
-### ` \alpha `
+### ` ^{-2} `
 **Occurrences:** Appears in 6 concepts:
-- **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
-- **Level 1**: What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
-- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
+- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
+- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
+- **Level 3**: Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures
+- **Level 2**: Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics
 - **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
+- **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
 
 ### ` 10^{-15} `
 **Occurrences:** Appears in 6 concepts:
@@ -158,14 +172,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
 - **Level 1**: Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?
-
-### ` ^{-2} `
-**Occurrences:** Appears in 5 concepts:
-- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
-- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
-- **Level 3**: Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures
-- **Level 2**: Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics
-- **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
 
 ### ` ^{-1} `
 **Occurrences:** Appears in 5 concepts:
@@ -186,15 +192,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 56 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 48 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 44 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 31 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 24 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 58 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 50 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 45 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 33 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 25 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 20 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 15 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 16 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 8 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 51
+- **MATH_PROVEN Entries:** 55
 - **MATH_CONSISTENT Entries:** 34
