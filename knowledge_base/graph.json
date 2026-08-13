@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-12T01:25:26.151519+00:00",
+  "updated_at": "2026-08-13T01:37:05.606588+00:00",
   "stats": {
-    "total_nodes": 191,
-    "level_1_count": 92,
-    "level_2_count": 86,
+    "total_nodes": 193,
+    "level_1_count": 93,
+    "level_2_count": 87,
     "level_3_count": 13,
-    "total_edges": 111,
+    "total_edges": 113,
     "frontier_count": 0
   },
   "nodes": [
@@ -1373,6 +1373,25 @@
         "MADMAX"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range.md"
+    },
+    {
+      "id": "whatarethemostpromisingupcomingobservationalorexperimentalteststhatcoulddirectlydetectsignaturesuniquetosuperfluiddarkmatter",
+      "title": "Superfluid Dark Matter",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Scientific Literature on Dark Matter Models",
+        "Pioneering Theories in Cosmology",
+        "Recent Observational Tests of Dark Matter"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_most_promising_upcoming_observational_or_experimental_tests_that_could_directly_detect_signatures_unique_to_superfluid_dark_matter.md"
     },
     {
       "id": "whataretheprospectsandtimelinesforobservationaladvancesegnextgenerationehtorimprovedgravitationalwavedetectorstoresolvecurrentdegeneraciesbetweenkerrandalternativeblackholemodels",
@@ -3629,7 +3648,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "symmetryprotectedtopologicalphasesvsholographicentanglementrenormalizationgroupflowsinquantuminformationtheory"
+      ],
       "tags": [
         "2"
       ],
@@ -3639,6 +3660,27 @@
         "Related literature on mathematical physics"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_dualities_in_nonequilibrium_quantum_systems.md"
+    },
+    {
+      "id": "symmetryprotectedtopologicalphasesvsholographicentanglementrenormalizationgroupflowsinquantuminformationtheory",
+      "title": "Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [
+        "symmetryprotectedtopologicalphasesvsholographicdualitiesinnonequilibriumquantumsystems"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Research Report on SPT and Holographic ERG",
+        "AdS/CFT Correspondence and Its Applications",
+        "Quantum Information Theory Articles"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory.md"
     },
     {
       "id": "warmdarkmattervsselfinteractingdarkmatterinexplainingsmallscalestructureformation",
@@ -4368,6 +4410,16 @@
     {
       "source": "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking",
       "target": "supersymmetryvsextradimensionsinbeyondstandardmodelphysics",
+      "type": "component_theory"
+    },
+    {
+      "source": "symmetryprotectedtopologicalphasesvsholographicentanglementrenormalizationgroupflowsinquantuminformationtheory",
+      "target": "symmetryprotectedtopologicalphasesvsholographicdualitiesinnonequilibriumquantumsystems",
+      "type": "component_theory"
+    },
+    {
+      "source": "symmetryprotectedtopologicalphasesvsholographicdualitiesinnonequilibriumquantumsystems",
+      "target": "symmetryprotectedtopologicalphasesvsholographicentanglementrenormalizationgroupflowsinquantuminformationtheory",
       "type": "component_theory"
     },
     {
