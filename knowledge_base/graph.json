@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-13T01:37:05.606588+00:00",
+  "updated_at": "2026-08-14T01:58:40.348887+00:00",
   "stats": {
-    "total_nodes": 193,
-    "level_1_count": 93,
-    "level_2_count": 87,
+    "total_nodes": 195,
+    "level_1_count": 94,
+    "level_2_count": 88,
     "level_3_count": 13,
-    "total_edges": 113,
+    "total_edges": 115,
     "frontier_count": 0
   },
   "nodes": [
@@ -450,6 +450,25 @@
         "JWST early-universe structure formation data"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/how_can_cosmological_observations_be_refined_to_better_discriminate_between_warm_dark_matter_effects_predicted_by_sterile_neutrinos_and_cold_dark_matter_scenarios.md"
+    },
+    {
+      "id": "howcansterileneutrinoproductionmechanismsbeconstrainedorclarifiedbyfutureneutrinooscillationorcosmologicalprobes",
+      "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/how_can_sterile_neutrino_production_mechanisms_be_constrained_or_clarified_by_future_neutrino_oscillation_or_cosmological_probes.md"
     },
     {
       "id": "howcanupcomingastrophysicalneutrinoobservatoriesenhanceflavorandspectralresolutiontobetterdistinguishneutrinodecayeffectsfromstandardoscillationsorsourcevariability",
@@ -3683,6 +3702,28 @@
       "path": "knowledge_base/level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory.md"
     },
     {
+      "id": "symmetryprotectedtopologicalphasesvstopologicalinsulatorsinquantumgravity",
+      "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "symmetryprotectedtopologicalphasesvsholographicdualitiesinnonequilibriumquantumsystems",
+        "quantumgravity"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Rigorous mathematical classification literature",
+        "Empirical observations in condensed matter physics",
+        "Reports on theoretical implications in quantum gravity"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity.md"
+    },
+    {
       "id": "warmdarkmattervsselfinteractingdarkmatterinexplainingsmallscalestructureformation",
       "title": "Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation",
       "level": 2,
@@ -4423,6 +4464,11 @@
       "type": "component_theory"
     },
     {
+      "source": "symmetryprotectedtopologicalphasesvsholographicdualitiesinnonequilibriumquantumsystems",
+      "target": "symmetryprotectedtopologicalphasesvstopologicalinsulatorsinquantumgravity",
+      "type": "component_theory"
+    },
+    {
       "source": "darkmatter",
       "target": "warmdarkmattervsselfinteractingdarkmatterinexplainingsmallscalestructureformation",
       "type": "component_theory"
@@ -4515,6 +4561,11 @@
     {
       "source": "electroweaksymmetrybreaking",
       "target": "supersymmetricquantumfieldtheoriesvscompositehiggsmodelsinexplainingelectroweaksymmetrybreaking",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "symmetryprotectedtopologicalphasesvstopologicalinsulatorsinquantumgravity",
       "type": "foundational_prerequisite"
     }
   ],
