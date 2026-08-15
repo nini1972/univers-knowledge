@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-14T01:30:26.934614+00:00",
+  "updated_at": "2026-08-15T00:59:13.138987+00:00",
   "stats": {
-    "total_entries": 123,
-    "total_equations": 4139,
-    "math_proven_entries": 59,
-    "math_consistent_entries": 34,
-    "total_bridges": 171,
+    "total_entries": 131,
+    "total_equations": 4391,
+    "math_proven_entries": 62,
+    "math_consistent_entries": 35,
+    "total_bridges": 189,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 37,
+      "concept_count": 39,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -161,6 +161,118 @@
         {
           "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
           "level": 2
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "1.380649 \\times 10^{-23}",
+      "concept_count": 12,
+      "concepts": [
+        {
+          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
+          "level": 2
+        },
+        {
+          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
+          "level": 1
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
+          "level": 3
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\phi",
+      "concept_count": 11,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "level": 1
+        },
+        {
+          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
+          "level": 1
+        },
+        {
+          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
+          "level": 1
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
         }
       ]
     },
@@ -265,59 +377,9 @@
       ]
     },
     {
-      "equation": "\\phi",
-      "concept_count": 10,
+      "equation": "6.62607015 \\times 10^{-34}",
+      "concept_count": 11,
       "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
-          "level": 1
-        },
-        {
-          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
-          "level": 2
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
-          "level": 1
-        },
-        {
-          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
-          "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "1.380649 \\times 10^{-23}",
-      "concept_count": 10,
-      "concepts": [
-        {
-          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
-          "level": 2
-        },
         {
           "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
           "level": 1
@@ -327,8 +389,8 @@
           "level": 1
         },
         {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
+          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
+          "level": 1
         },
         {
           "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
@@ -353,6 +415,102 @@
         {
           "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
           "level": 2
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\Phi",
+      "concept_count": 10,
+      "concepts": [
+        {
+          "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
+          "level": 2
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "\\alpha",
+      "concept_count": 9,
+      "concepts": [
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "level": 1
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+          "level": 2
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
+          "level": 1
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
         }
       ]
     },
@@ -399,48 +557,6 @@
       ]
     },
     {
-      "equation": "6.62607015 \\times 10^{-34}",
-      "concept_count": 9,
-      "concepts": [
-        {
-          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
-          "level": 1
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
-          "level": 1
-        },
-        {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
-          "level": 2
-        },
-        {
-          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
-          "level": 3
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "\\Omega_c h^2 = 0.120 \\pm 0.001",
       "concept_count": 8,
       "concepts": [
@@ -479,28 +595,24 @@
       ]
     },
     {
-      "equation": "\\alpha",
+      "equation": "^{-2}",
       "concept_count": 8,
       "concepts": [
         {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
           "level": 2
         },
         {
-          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
           "level": 1
         },
         {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
           "level": 3
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
         },
         {
           "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
@@ -511,46 +623,12 @@
           "level": 3
         },
         {
-          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
-          "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "\\Phi",
-      "concept_count": 8,
-      "concepts": [
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
         {
-          "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
-          "level": 3
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
-          "level": 2
-        },
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
         }
       ]
     },
@@ -585,36 +663,6 @@
         {
           "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "^{-2}",
-      "concept_count": 6,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
-          "level": 1
-        },
-        {
-          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
-          "level": 3
-        },
-        {
-          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
         }
       ]
     },
@@ -679,6 +727,36 @@
       ]
     },
     {
+      "equation": "\\approx 1.089 \\times 10^{-52}",
+      "concept_count": 6,
+      "concepts": [
+        {
+          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
+          "level": 1
+        },
+        {
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\beta_0, \\beta_1, \\beta_2",
       "concept_count": 6,
       "concepts": [
@@ -705,6 +783,32 @@
         {
           "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "g_{\\mu\\nu}",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
         }
       ]
     },
@@ -839,23 +943,27 @@
       ]
     },
     {
-      "equation": "g_{\\mu\\nu}",
-      "concept_count": 4,
+      "equation": "n_s \\approx 0.965",
+      "concept_count": 5,
       "concepts": [
         {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
           "level": 3
         },
         {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
           "level": 2
         },
         {
-          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
         }
       ]
@@ -922,6 +1030,28 @@
         },
         {
           "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "10^{-5}",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Can a detailed quantitative breakdown of systematic uncertainties in neutrino decay lifetime measurements be provided for each major experimental collaboration?",
+          "level": 1
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
         }
       ]
@@ -1015,6 +1145,28 @@
       ]
     },
     {
+      "equation": "\\eta",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "level": 2
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\theta_i",
       "concept_count": 4,
       "concepts": [
@@ -1055,28 +1207,6 @@
         {
           "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
           "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "\\approx 1.089 \\times 10^{-52}",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
-          "level": 1
-        },
-        {
-          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
-          "level": 2
         }
       ]
     },
@@ -1125,7 +1255,7 @@
       ]
     },
     {
-      "equation": "n_s \\approx 0.965",
+      "equation": "\\Omega_c h^2 \\approx 0.120",
       "concept_count": 4,
       "concepts": [
         {
@@ -1137,11 +1267,11 @@
           "level": 3
         },
         {
-          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
-          "level": 2
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
         },
         {
-          "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
         }
       ]
@@ -1178,6 +1308,24 @@
         },
         {
           "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "5\\sigma",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
+          "level": 1
+        },
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
         }
       ]
@@ -1273,24 +1421,6 @@
       ]
     },
     {
-      "equation": "10^{-5}",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Can a detailed quantitative breakdown of systematic uncertainties in neutrino decay lifetime measurements be provided for each major experimental collaboration?",
-          "level": 1
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "(\\mathcal{A}, \\mathcal{H}, D)",
       "concept_count": 3,
       "concepts": [
@@ -1363,19 +1493,19 @@
       ]
     },
     {
-      "equation": "\\eta",
+      "equation": "T_H = \\frac{\\hbar c^3}{8\\pi G M k_B}",
       "concept_count": 3,
       "concepts": [
         {
-          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
           "level": 2
         },
         {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+          "level": 2
         },
         {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
         }
       ]
@@ -1412,6 +1542,24 @@
         },
         {
           "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "9.1093837015 \\times 10^{-31}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
+          "level": 1
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
         }
       ]
@@ -1471,20 +1619,20 @@
       ]
     },
     {
-      "equation": "\\Omega_c h^2 \\approx 0.120",
+      "equation": "\\Sigma",
       "concept_count": 3,
       "concepts": [
         {
-          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
-          "level": 3
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
         },
         {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
         },
         {
-          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
-          "level": 3
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
         }
       ]
     },
@@ -1521,6 +1669,24 @@
         {
           "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "10^{-3}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+          "level": 2
+        },
+        {
+          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
+          "level": 1
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
         }
       ]
     },
@@ -1636,20 +1802,6 @@
     },
     {
       "equation": "\\Omega_c",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
-          "level": 1
-        },
-        {
-          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
-          "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "5\\sigma",
       "concept_count": 2,
       "concepts": [
         {
@@ -1812,6 +1964,20 @@
         },
         {
           "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\ddot{\\phi} + 3H\\dot{\\phi} + V_{,\\phi} = 0",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
         }
       ]
@@ -2055,20 +2221,6 @@
       ]
     },
     {
-      "equation": "T_H = \\frac{\\hbar c^3}{8\\pi G M k_B}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
-          "level": 2
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "T_H = \\frac{\\hbar \\kappa}{2\\pi k_B c}",
       "concept_count": 2,
       "concepts": [
@@ -2106,6 +2258,20 @@
         },
         {
           "title": "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "f_{\\rm NL}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
         }
       ]
@@ -2261,20 +2427,6 @@
         {
           "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
           "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "9.1093837015 \\times 10^{-31}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
-          "level": 1
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
         }
       ]
     },
@@ -2559,6 +2711,34 @@
       ]
     },
     {
+      "equation": "n_s = 0.9649 \\pm 0.0042",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "r_{0.05} < 0.036",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "H_0 \\simeq 67.4",
       "concept_count": 2,
       "concepts": [
@@ -2569,20 +2749,6 @@
         {
           "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
           "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "\\Sigma",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
-          "level": 1
-        },
-        {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
-          "level": 2
         }
       ]
     },
@@ -2639,6 +2805,34 @@
         {
           "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
           "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "\\epsilon",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\delta(\\mathbf{x},t)=\\frac{\\rho(\\mathbf{x},t)-\\bar{\\rho}(t)}{\\bar{\\rho}(t)}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+          "level": 3
         }
       ]
     },
@@ -2727,6 +2921,20 @@
       ]
     },
     {
+      "equation": "S(A)=\\frac{\\mathrm{Area}(\\gamma_A)}{4G_N\\hbar}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
+          "level": 1
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "10^4",
       "concept_count": 2,
       "concepts": [
@@ -2737,20 +2945,6 @@
         {
           "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "10^{-3}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
-        },
-        {
-          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
-          "level": 1
         }
       ]
     },
@@ -2853,6 +3047,20 @@
       ]
     },
     {
+      "equation": "\\Psi",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
+          "level": 1
+        }
+      ]
+    },
+    {
       "equation": "\\Omega_b h^2",
       "concept_count": 2,
       "concepts": [
@@ -2895,6 +3103,20 @@
       ]
     },
     {
+      "equation": "B_{\\mu\\nu}=0",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\ddot{\\delta} + 2H\\dot{\\delta} - 4\\pi G\\bar{\\rho}_m\\delta = 0",
       "concept_count": 2,
       "concepts": [
@@ -2909,6 +3131,20 @@
       ]
     },
     {
+      "equation": "\\Omega_b h^2 \\approx 0.0224",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
       "concept_count": 2,
       "concepts": [
@@ -2918,6 +3154,20 @@
         },
         {
           "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "S_{\\mathrm{BH}} = \\frac{k_B A}{4\\ell_P^2}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
           "level": 3
         }
       ]
@@ -2960,6 +3210,20 @@
         },
         {
           "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\left|\\frac{c_g}{c}-1\\right|\\lesssim 10^{-15}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
           "level": 3
         }
       ]
@@ -3049,6 +3313,34 @@
       ]
     },
     {
+      "equation": "\\lambda",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "A_s \\approx 2.1 \\times 10^{-9}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "N\\to\\infty",
       "concept_count": 2,
       "concepts": [
@@ -3059,6 +3351,48 @@
         {
           "title": "Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "a_0 \\simeq 1.2\\times 10^{-10}\\ \\mathrm{m\\,s^{-2}}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "level": 3
+        },
+        {
+          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "a_0 \\approx 1.2 \\times 10^{-10}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "T_{ij}=\\partial_i\\partial_j\\Phi",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+          "level": 3
         }
       ]
     },
@@ -3159,6 +3493,20 @@
           "level": 2
         }
       ]
+    },
+    {
+      "equation": "10^{68}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
     }
   ],
   "constant_index": [
@@ -3167,7 +3515,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 61,
+      "occurrence_count": 64,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -3184,6 +3532,7 @@
         "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
@@ -3192,6 +3541,7 @@
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+        "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
         "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
         "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
@@ -3207,6 +3557,7 @@
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
+        "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
@@ -3237,7 +3588,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 54,
+      "occurrence_count": 56,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -3251,12 +3602,14 @@
         "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
         "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+        "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
         "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
         "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
@@ -3300,7 +3653,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 49,
+      "occurrence_count": 52,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -3312,6 +3665,7 @@
         "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
@@ -3319,6 +3673,7 @@
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+        "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
         "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
         "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
@@ -3329,6 +3684,7 @@
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
+        "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution",
@@ -3358,7 +3714,7 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 35,
+      "occurrence_count": 37,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
@@ -3370,11 +3726,13 @@
         "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+        "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
         "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
         "How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?",
@@ -3402,16 +3760,18 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 27,
+      "occurrence_count": 30,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+        "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
         "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
         "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
@@ -3420,6 +3780,7 @@
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
         "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+        "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
         "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
@@ -3438,11 +3799,12 @@
       "name": "Cold Dark Matter Density Parameter",
       "unit": "dimensionless",
       "typical_value": "0.120",
-      "occurrence_count": 20,
+      "occurrence_count": 21,
       "referenced_in": [
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+        "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
@@ -3467,13 +3829,14 @@
       "name": "Planck Mass",
       "unit": "GeV",
       "typical_value": "1.22 x 10^19",
-      "occurrence_count": 17,
+      "occurrence_count": 18,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
         "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
         "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+        "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
         "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
         "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
@@ -9057,6 +9420,347 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-14T01:28:29.451087+00:00"
+    },
+    {
+      "concept": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+      "level": 3,
+      "equations": [
+        "\\Phi(S)=\\min_{\\psi}\\left[\\mathrm{EI}(S)-\\sum_{M\\in \\psi}\\mathrm{EI}(M)\\right]",
+        "S(A)=\\frac{\\mathrm{Area}(\\gamma_A)}{4G_N\\hbar}",
+        "S(A)=\\min_{\\mathrm{ext}}\\left[\\frac{\\mathrm{Area}(X_A)}{4G_N\\hbar}+S_{\\mathrm{bulk}}(\\Sigma_{X_A})\\right]",
+        "S_A \\sim n_{\\mathrm{cut}}\\log \\chi",
+        "\\delta G_{ab}+\\Lambda \\delta g_{ab} = 8\\pi G_N \\delta \\langle T_{ab}\\rangle",
+        "A_j=8\\pi\\gamma \\ell_P^2\\sum_i\\sqrt{j_i(j_i+1)}",
+        "6.62607015 \\times 10^{-34}",
+        "k_B",
+        "1.380649 \\times 10^{-23}",
+        "\\Lambda",
+        "\\approx 1.089 \\times 10^{-52}",
+        "^{-2}"
+      ],
+      "equation_count": 12,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-14T01:41:15.082544+00:00"
+    },
+    {
+      "concept": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+      "level": 3,
+      "equations": [
+        "\\Phi(S,x_t) = \\max_{\\text{complexes}} \\min \\left( \\varphi_{\\text{cause}}, \\varphi_{\\text{effect}} \\right)",
+        "S_{\\text{HEE}}(A) = \\frac{\\mathrm{Area}(\\gamma_A)}{4G_N\\hbar}",
+        "\\Phi_{\\text{IIT}}(S,x) \\stackrel{?}{=} \\frac{S_{\\text{HEE}}(A)}{k_B \\ln 2}",
+        "\\ell_P^2 = \\frac{G\\hbar}{c^3}",
+        "S_{\\text{LQG}} \\approx \\frac{\\gamma_0}{\\gamma} \\frac{A}{4\\ell_P^2}",
+        "\\min_{\\pi} \\Delta I",
+        "k_B",
+        "\\Phi \\stackrel{?}{=} S_{\\text{HEE}}"
+      ],
+      "equation_count": 8,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-14T01:48:38.853826+00:00"
+    },
+    {
+      "concept": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+      "level": 3,
+      "equations": [
+        "\\alpha = \\frac{\\Phi}{S_{\\text{HEE}}} \\sim 10^{-59} \\text{ to } 10^{-68}",
+        "\\boxed{\\text{[THEORETICAL / SPECULATIVE]}}",
+        "\\approx 2.61 \\times 10^{-70} \\, \\mathrm{m}^2",
+        "10^{68}",
+        "\\Phi",
+        "\\sim 10^{-35}",
+        "10^{-20}",
+        "10^{50}",
+        "S_{\\text{HEE}}",
+        "\\alpha",
+        "\\mathbf{StochGraph}",
+        "\\mathbf{Hilb}_{\\text{CFT}}",
+        "10^{59}",
+        "\\Phi_{\\mathcal{P}} = \\mathrm{EI}(T) - \\sum_{k\\in \\mathcal{P}} \\mathrm{EI}(T_k)",
+        "S_A = \\frac{\\mathrm{Area}(\\gamma_A)}{4G_N\\hbar}",
+        "\\Phi_{\\mathrm{IIT}} \\;\\longleftrightarrow\\; S_{\\mathrm{HEE}}",
+        "S_A = -\\mathrm{Tr}(\\rho_A \\log \\rho_A)",
+        "S_{\\mathrm{BH}} = \\frac{k_B A}{4\\ell_P^2}",
+        "\\ell_P^2 = \\frac{G\\hbar}{c^3} \\approx 2.61\\times 10^{-70}\\,\\mathrm{m}^2",
+        "\\Delta A_{1\\ \\mathrm{bit}} = 4l_P^2\\ln 2 \\approx 7.2\\times 10^{-70}\\ \\mathrm{m}^2"
+      ],
+      "equation_count": 20,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-14T01:58:39.630056+00:00"
+    },
+    {
+      "concept": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
+      "level": 1,
+      "equations": [
+        "m \\sim 10^{-22}",
+        "m \\gtrsim 10^{-21}",
+        ">1\\sigma",
+        "M_{\\rm sol} \\propto m^{-1}M_{\\rm halo}^{1/3}",
+        "\\Psi",
+        "\\Phi",
+        "\\lambda_{\\rm dB} \\sim 1.2\\,{\\rm kpc}(10^{-22}\\,{\\rm eV}/m)",
+        "k_J"
+      ],
+      "equation_count": 8,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-15T00:27:39.417735+00:00",
+      "a2a_proof_report": "Mathematical Verification and Derivation Report on Scalar Field Dark Matter (SFDM) vs ΛCDM structure formation modeling\n\n---\n\n### 1. Axioms: Definitions and Symbol Declaration\n\n- Let \\( m \\) denote the boson mass of the scalar field dark matter particle.\n- \\( M_{\\rm sol} \\) is the solitonic core mass as a function of \\( m \\) and \\( M_{\\rm halo} \\).\n- \\( M_{\\rm halo} \\) is the halo mass of the dark matter structure.\n- \\( k \\) is a positive proportionality constant in the relation \\( M_{\\rm sol} \\propto m^{-1} M_{\\rm halo}^{1/3} \\).\n- \\( \\sim \\), \\( \\gtrsim \\) are approximate relations indicating order of magnitude and lower bounds respectively.\n- Numerical values: \\( m \\sim 10^{-22} \\) eV, and \\( m \\gtrsim 10^{-21} \\) eV are approximate constraints from literature.\n- \\( \\Psi \\) is a general scalar field wavefunction symbol without further provided explicit relations.\n- \\( >1\\sigma \\) notation indicates confidence or statistical significance, not expressible algebraically here.\n\n---\n\n### 2. Derivation Steps and Verification Using SymPy\n\n#### Step 2.1: Symbol definition and relations\n\nDefined positive real symbols \\( m, M_{\\rm sol}, M_{\\rm halo}, k \\) in SymPy.\n\nWe represent the key proportionality:\n\n\\[\nM_{\\rm sol} = k m^{-1} M_{\\rm halo}^{1/3}\n\\]\n\nAlgebraically solving for \\( m \\):\n\n\\[\nm = \\frac{k M_{\\rm halo}^{1/3}}{M_{\\rm sol}}\n\\]\n\nThis consistent rearrangement confirms the algebraic validity of the proportionality relation.\n\n#### Step 2.2: Numerical consistency check\n\nSubstituting example plausible halo mass \\( M_{\\rm halo} = 10^{12} \\) solar masses and \\( k=1 \\), the soliton mass scales as:\n\n- For \\( m \\sim 10^{-22} \\):\n\n\\[\nM_{\\rm sol} = 1 \\times (10^{-22})^{-1} \\times (10^{12})^{1/3} = 10^{22} \\times 10^{4} = 10^{26}\n\\]\n\n- For \\( m \\gtrsim 10^{-21} \\):\n\n\\[\nM_{\\rm sol} = 1 \\times (10^{-21})^{-1} \\times (10^{12})^{1/3} = 10^{21} \\times 10^{4} = 10^{25}\n\\]\n\nThese numerical results match the printed outputs, confirming mathematical consistency.\n\n#### Step 2.3: Notes on other concepts\n\n- The statistic \\( >1\\sigma \\) confidence is qualitative and not subject to symbolic proof here.\n- The scalar field \\( \\Psi \\) is not explicitly defined for verification.\n\n---\n\n### 3. Simplification Result\n\nThe core algebraic identity:\n\n\\[\nM_{\\rm sol} = k m^{-1} M_{\\rm halo}^{1/3}\n\\]\n\nis consistent and reversible. SymPy confirms:\n\n- Rearranging for \\( m \\):\n\n\\[\nm = \\frac{k M_{\\rm halo}^{1/3}}{M_{\\rm sol}}\n\\]\n\n- No contradictions arise; expressions simplify correctly.\n\n---\n\n### 4. Code Artifact: Clean Python Code Using SymPy\n\n```python\nfrom sympy import symbols, Eq, solve\n\n# Define symbols\nm, M_sol, M_halo = symbols('m M_sol M_halo', positive=True, real=True)\nk = symbols('k', positive=True, real=True)\n\n# Key relation: M_sol proportional to m^{-1} * M_halo^{1/3}\nM_sol_expr = k * m**(-1) * M_halo**(1/3)\n\n# Solve for m as function of M_sol and M_halo\nm_expr = solve(Eq(M_sol, M_sol_expr), m)[0]\n\nprint(\"Expression for m in terms of M_sol and M_halo:\", m_expr)\n\n# Numerical values for m\nm1 = 10**(-22)\nm2 = 10**(-21)\n\nprint(f\"m ~ 10^{{-22}}: {m1}\")\nprint(f\"m >= 10^{{-21}}: {m2}\")\n\n# Example halo mass (solar masses)\nM_halo_val = 1e12\n\n# Calculate M_sol values for m1 and m2 with k=1\nM_sol_val_1 = M_sol_expr.subs({k: 1, m: m1, M_halo: M_halo_val})\nM_sol_val_2 = M_sol_expr.subs({k: 1, m: m2, M_halo: M_halo_val})\n\nprint(f\"M_sol for m ~ 10^-22 and M_halo = 10^12: {M_sol_val_1:.3e}\")\nprint(f\"M_sol for m ~ 10^-21 and M_halo = 10^12: {M_sol_val_2:.3e}\")\n```\n\n---\n\n# Summary\n\nThe fundamental SFDM scaling relation between solitonic core mass, particle mass, and halo mass is mathematically consistent and verified by symbolic algebra and numeric checks.\n\nIn advancing relativistic modeling and numerical simulations to distinguish SFDM from ΛCDM, the key lies in precisely simulating this scaling and the accompanying wavefunction dynamics (\\(\\Psi\\)) under relativistic gravitational collapse. While the statistical significance \\((>1\\sigma)\\) and exact form of \\(\\Psi\\) require context beyond algebraic validation, verifying the core proportionality relation is essential groundwork.\n\nThis establishes a rigorous mathematical base for further developments in predictive SFDM modeling and comparison with \\(\\Lambda\\)CDM structure formation."
+    },
+    {
+      "concept": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+      "level": 2,
+      "equations": [
+        "\\tilde{g}_{ab} = \\Omega^2(x)g_{ab}",
+        "H^2 = \\frac{\\Lambda c^2}{3} + \\mathcal{O}(e^{-2Ht})",
+        "S = \\int d^4x \\sqrt{-g}\\left[\\frac{M_{\\rm Pl}^2}{2}R - \\frac{1}{2}g^{\\mu\\nu}\\partial_\\mu\\phi\\partial_\\nu\\phi - V(\\phi)\\right]",
+        "\\frac{d\\phi}{dN} = -\\frac{V_{,\\phi}}{3H^2} + \\frac{H}{2\\pi}\\xi(N), \\quad \\langle\\xi(N)\\xi(N')\\rangle = \\delta(N-N')",
+        "\\dot{p}_i = \\sum_j \\kappa_{ij}p_j - \\sum_j \\kappa_{ji}p_i + 3H_i p_i",
+        "G_{ab}+\\Lambda g_{ab}=\\frac{8\\pi G}{c^4}T_{ab}",
+        "\\tilde g_{ab}=\\Omega^2 g_{ab}",
+        "\\tilde C^a{}_{bcd}=C^a{}_{bcd}",
+        "\\tilde R=\\Omega^{-2}\\left(R-6\\frac{\\Box \\Omega}{\\Omega}\\right)",
+        "H^2=\\frac{8\\pi G}{3}\\rho-\\frac{k c^2}{a^2}+\\frac{\\Lambda c^2}{3}",
+        "\\frac{\\ddot a}{a}=-\\frac{4\\pi G}{3}\\left(\\rho+\\frac{3p}{c^2}\\right)+\\frac{\\Lambda c^2}{3}",
+        "H_\\Lambda=c\\sqrt{\\frac{\\Lambda}{3}}",
+        "C_{abcd}C^{abcd}\\rightarrow 0",
+        "T_H=\\frac{\\hbar c^3}{8\\pi G M k_B}",
+        "t_{\\rm evap}\\sim \\frac{5120\\pi G^2M^3}{\\hbar c^4}",
+        "\\mathcal{P}_{\\mathcal{R}}(k)=A_s\\left(\\frac{k}{k_\\ast}\\right)^{n_s-1}",
+        "S=\\int d^4x\\sqrt{-g}\\left[\\frac{M_{\\rm Pl}^2}{2}R - \\frac{1}{2}g^{\\mu\\nu}\\partial_\\mu\\phi\\,\\partial_\\nu\\phi - V(\\phi)\\right]",
+        "H^2=\\frac{1}{3M_{\\rm Pl}^2}\\left(\\frac{1}{2}\\dot{\\phi}^2+V(\\phi)\\right)-\\frac{k}{a^2}",
+        "\\ddot{\\phi}+3H\\dot{\\phi}+V_{,\\phi}=0",
+        "\\epsilon \\equiv \\frac{M_{\\rm Pl}^2}{2}\\left(\\frac{V_{,\\phi}}{V}\\right)^2",
+        "\\eta \\equiv M_{\\rm Pl}^2\\frac{V_{,\\phi\\phi}}{V}",
+        "\\mathcal{P}_\\zeta \\simeq \\frac{1}{24\\pi^2M_{\\rm Pl}^4}\\frac{V}{\\epsilon}",
+        "\\frac{d\\phi}{dN}=-\\frac{V_{,\\phi}}{3H^2}+\\frac{H}{2\\pi}\\xi(N)",
+        "\\frac{\\partial P}{\\partial N}=\\frac{\\partial}{\\partial \\phi}\\left[\\frac{V_{,\\phi}}{3H^2}P\\right]+\\frac{\\partial^2}{\\partial \\phi^2}\\left[\\frac{H^2}{8\\pi^2}P\\right]",
+        "\\Gamma \\sim A e^{-B}",
+        "\\dot{p}_i=\\sum_j \\kappa_{ij}p_j - \\sum_j \\kappa_{ji}p_i + 3H_i p_i",
+        "S_{BH} = k_B A/4\\ell_P^2",
+        "n_s = 0.9649 \\pm 0.0042",
+        "\\Omega_K = 0.0007 \\pm 0.0019",
+        "r_{0.05} < 0.036",
+        "f_{\\rm NL}^{\\rm local} = -0.9 \\pm 5.1",
+        "H^2=\\frac{8\\pi G}{3}\\rho\\left(1-\\frac{\\rho}{\\rho_c}\\right)",
+        "V(\\phi)=-V_0 e^{-c\\phi/M_{\\rm Pl}}",
+        "w \\simeq \\frac{c^2}{3}-1",
+        "\\mu\\left(\\frac{|a|}{a_0}\\right)a=a_N",
+        "a_0\\approx 1.2\\times 10^{-10}\\ \\mathrm{m\\,s^{-2}}",
+        "S=\\int d^4x\\sqrt{-g}[\\cdots]",
+        "n_s",
+        "f_{\\rm NL}",
+        "\\mathcal{P}_\\zeta",
+        "\\epsilon",
+        "\\eta",
+        "\\Gamma/H_F^4",
+        "6.62607015 \\times 10^{-34}",
+        "k_B",
+        "1.380649 \\times 10^{-23}",
+        "\\Omega_c h^2 \\approx 0.120",
+        "\\Omega_b h^2 \\approx 0.0224",
+        "\\mathcal{P}_\\zeta \\approx 2.1 \\times 10^{-9}",
+        "a_0 \\approx 1.2 \\times 10^{-10}",
+        "^{-2}",
+        "\\Omega",
+        "\\mathcal{X}",
+        "\\tilde{C}^a{}_{bcd} = C^a{}_{bcd}",
+        "\\Omega_{\\rm old}^{-2}g_{ab}",
+        "\\Omega_{\\rm new}^2g_{ab}",
+        "C_{abcd}C^{abcd} \\rightarrow 0",
+        "V \\propto e^{3Ht}",
+        "S \\sim k_B \\ln \\Omega",
+        "10^{100}",
+        "3H_i p_i",
+        "\\langle\\Omega_\\Lambda\\rangle",
+        "\\Gamma \\sim Ae^{-B}",
+        "\\Gamma/H_F^4 \\ll 1",
+        "\\sim 10^{-5}",
+        "\\mathcal{B} < 1",
+        "\\sim 5\\sigma",
+        "<1\\sigma",
+        "\\mathcal{P}_\\mathcal{R}(k) = A_s(k/k_\\ast)^{n_s-1}",
+        "v = 246",
+        "10^{34}",
+        "10^{60}",
+        "10^{67}",
+        "n_s \\approx 0.965",
+        "\\Gamma/H_F^4 < 10^{-4}",
+        "10^{10^{120}}",
+        "10^{68}",
+        "10^{90}"
+      ],
+      "equation_count": 78,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-15T00:36:20.927748+00:00"
+    },
+    {
+      "concept": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+      "level": 2,
+      "equations": [
+        "\\hat g_{ab} = \\Omega^2 \\check g_{ab}, \\quad \\Omega|_{\\mathscr X}=0, \\quad \\nabla_a\\Omega|_{\\mathscr X}\\neq 0,",
+        "\\nabla_a\\Omega \\nabla^a\\Omega = \\lambda \\quad \\text{on } \\mathscr X,",
+        "H^2 = \\frac{8\\pi G}{3}\\left[\\frac{1}{2}\\dot\\phi^2 + V(\\phi)\\right], \\quad \\ddot\\phi + 3H\\dot\\phi + V'(\\phi) = 0.",
+        "\\frac{\\delta\\phi_q}{\\Delta\\phi_{\\rm cl}} \\sim \\frac{H^2}{2\\pi \\dot\\phi} \\gtrsim 1,",
+        "p_i = \\lim_{\\tau \\to \\tau_c} \\frac{N_i(\\tau)}{\\sum_j N_j(\\tau)},",
+        "\\frac{dP_i}{dt} = \\sum_j \\kappa_{ij}P_j - \\left(\\sum_j \\kappa_{ji} + \\Gamma_i\\right)P_i,",
+        "C_\\ell^{TT} = 4\\pi\\int\\frac{dk}{k} P_\\zeta(k) \\Delta_\\ell^T(k)^2,",
+        "\\mathscr X",
+        "\\Omega",
+        "\\lambda",
+        "C^a{}_{bcd}[\\Omega^2 g] = C^a{}_{bcd}[g]",
+        "a(t) \\sim e^{H_\\Lambda t}",
+        "m \\to 0",
+        "S_m = -m\\int ds",
+        "t_{\\rm evap} \\sim 5120\\pi G^2M^3/\\hbar c^4",
+        "M \\sim 10^9 M_\\odot",
+        "10^{90}",
+        "\\delta\\phi_q \\sim H/2\\pi",
+        "\\Delta\\phi_{\\rm cl} \\sim \\dot\\phi/H",
+        "\\Gamma \\sim A e^{-B/\\hbar}",
+        "p_i = N_i/\\sum_j N_j",
+        "N_i \\to \\infty",
+        "\\tau_c",
+        "\\langle H \\rangle > 0",
+        "\\kappa_{ij}",
+        "P_\\zeta(k) = A_s (k/k_*)^{n_s-1}",
+        "A_s = 2.1\\times10^{-9}",
+        "n_s = 0.9649 \\pm 0.0042",
+        "S_{\\rm BH} = k_B A/4G\\hbar",
+        "n_s-1 \\approx -6\\epsilon + 2\\eta",
+        "f_{\\rm NL}^{\\rm local} = -0.9 \\pm 5.1",
+        "r_{0.05} < 0.036",
+        "\\epsilon < 0.0023",
+        "\\Gamma/H^4",
+        "\\Omega_k \\lesssim 10^{-3}",
+        "\\Omega_k \\approx 0",
+        "10^{-3}",
+        "\\nabla_a\\Omega \\nabla^a\\Omega = \\lambda",
+        "10^{500}",
+        "M_{\\rm Pl}|V'|/V \\gtrsim \\mathcal{O}(1)",
+        "\\Delta T/T \\sim 10^{-6}",
+        "C_\\ell",
+        "m_\\nu \\sim 0.1",
+        "\\theta_c > 5^\\circ",
+        "|\\Omega_k| > 10^{-3}",
+        "n_s"
+      ],
+      "equation_count": 46,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-15T00:42:41.887067+00:00"
+    },
+    {
+      "concept": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+      "level": 2,
+      "equations": [
+        "\\tilde{g}_{\\mu\\nu} = \\Omega^2 g_{\\mu\\nu}, \\quad \\Omega \\to 0 \\text{ at crossover}",
+        "B_{\\mu\\nu} = \\nabla^\\rho \\nabla^\\sigma C_{\\mu\\rho\\nu\\sigma} + \\frac{1}{2}R^{\\rho\\sigma}C_{\\mu\\rho\\nu\\sigma}",
+        "m_i(\\Omega) \\to 0 \\text{ as } \\Omega \\to 0",
+        "\\frac{\\partial P(\\phi,t)}{\\partial t} = \\frac{\\partial}{\\partial\\phi}\\left[\\frac{V_{,\\phi}}{3H}P\\right] + \\frac{\\partial^2}{\\partial\\phi^2}\\left[\\frac{H^3}{8\\pi^2}P\\right] + 3HP",
+        "\\Gamma/V = A e^{-B/\\hbar}",
+        "\\epsilon_V = \\frac{M_{\\text{Pl}}^2}{2}\\left(\\frac{V_{,\\phi}}{V}\\right)^2 \\ll 1, \\quad |\\eta_V| = \\left|M_{\\text{Pl}}^2\\frac{V_{,\\phi\\phi}}{V}\\right| \\ll 1",
+        "p_i = \\lim_{\\tau_c\\to\\infty}\\frac{N_i(\\tau_c)}{\\sum_j N_j(\\tau_c)}",
+        "\\text{Significance evaporates after look-elsewhere correction}",
+        "r_{0.05} < 0.036 \\quad (95\\%\\ \\text{CL})",
+        "\\ell_1 \\approx 220, \\quad \\ell_2 \\approx 540, \\quad \\ell_3 \\approx 800",
+        "\\Omega_b h^2 \\approx 0.0224, \\quad \\Omega_c h^2 \\approx 0.120, \\quad \\theta_* \\approx 0.0104",
+        "\\mathcal{P_R}(k) = A_s\\left(\\frac{k}{k_*}\\right)^{n_s-1}, \\quad A_s \\approx 2.1\\times10^{-9}, \\quad n_s \\approx 0.965",
+        "n_s-1 \\simeq -6\\epsilon_V + 2\\eta_V",
+        "n_s = 0.9649 \\pm 0.0042",
+        "\\frac{\\Delta T}{T}(\\theta) \\sim z\\cos\\theta + a(1-\\cos\\theta)^2",
+        "\\Omega_k \\simeq 0.0007 \\pm 0.0019",
+        "H_{\\rm av} > 0 \\quad \\Rightarrow \\quad \\text{past geodesic incompleteness}",
+        "\\tilde{g}_{\\mu\\nu} = \\Omega^2 g_{\\mu\\nu}",
+        "T_H = \\frac{\\hbar c^3}{8\\pi G M k_B}",
+        "t_{\\text{evap}} \\sim \\frac{5120\\pi G^2 M^3}{\\hbar c^4}",
+        "B_{\\mu\\nu} = \\nabla^\\rho \\nabla^\\sigma C_{\\mu\\rho\\nu\\sigma} + \\frac{1}{2} R^{\\rho\\sigma} C_{\\mu\\rho\\nu\\sigma}",
+        "\\mathcal{P}_{\\mathcal{R}}(k) = A_s \\left(\\frac{k}{k_*}\\right)^{n_s-1}",
+        "S = \\int d^4x \\sqrt{-g} \\left[\\frac{M_{\\rm Pl}^2}{2}R - \\frac{1}{2}g^{\\mu\\nu}\\partial_\\mu\\phi\\,\\partial_\\nu\\phi - V(\\phi)\\right]",
+        "H^2 = \\frac{1}{3M_{\\rm Pl}^2}\\left[\\frac{1}{2}\\dot{\\phi}^2 + V(\\phi)\\right]",
+        "\\ddot{\\phi} + 3H\\dot{\\phi} + V_{,\\phi} = 0",
+        "\\epsilon_V = \\frac{M_{\\rm Pl}^2}{2}\\left(\\frac{V_{,\\phi}}{V}\\right)^2 \\ll 1",
+        "|\\eta_V| = \\left|M_{\\rm Pl}^2\\frac{V_{\\phi\\phi}}{V}\\right| \\ll 1",
+        "n_s - 1 \\simeq -6\\epsilon_V + 2\\eta_V",
+        "r \\simeq 16\\epsilon_V",
+        "\\frac{\\partial P}{\\partial t} = \\frac{\\partial}{\\partial\\phi}\\left[\\frac{V_{,\\phi}}{3H}P\\right] + \\frac{\\partial^2}{\\partial\\phi^2}\\left[\\frac{H^3}{8\\pi^2}P\\right] + 3HP",
+        "H^2 = \\frac{8\\pi G}{3}\\rho\\left(1 - \\frac{\\rho}{\\rho_c}\\right)",
+        "C_\\ell^{TT} = 4\\pi \\int d\\ln k\\, P_{\\mathcal{R}}(k) [\\Delta_\\ell^T(k)]^2",
+        "\\Omega_K \\simeq 0.0007 \\pm 0.0019",
+        "r_{0.05} < 0.036",
+        "p_i = \\lim_{\\tau_c\\to\\infty} \\frac{N_i(\\tau_c)}{\\sum_j N_j(\\tau_c)}",
+        "\\Delta T/T \\sim 10^{-5}",
+        "n_s \\approx 0.965",
+        "g_{\\mu\\nu} \\rightarrow \\hat{g}_{\\mu\\nu} = \\Omega^2 g_{\\mu\\nu}",
+        "S = \\int d^4x \\sqrt{-g} [\\cdots]",
+        "T_H = \\hbar c^3 / (8\\pi G M k_B)",
+        "\\Sigma",
+        "6.62607015 \\times 10^{-34}",
+        "m_e",
+        "9.1093837015 \\times 10^{-31}",
+        "k_B",
+        "1.380649 \\times 10^{-23}",
+        "\\Lambda",
+        "\\approx 1.089 \\times 10^{-52}",
+        "^{-2}",
+        "A_s \\approx 2.1 \\times 10^{-9}",
+        "\\Omega_b h^2 \\approx 0.0224",
+        "\\Omega_c h^2 \\approx 0.120",
+        "m_i(\\Omega) \\to 0",
+        "p_i = \\lim_{\\tau_c\\to\\infty} N_i(\\tau_c)/\\sum_j N_j(\\tau_c)",
+        "\\tilde{g}_{\\mu\\nu}",
+        "g_{\\mu\\nu}",
+        "B_{\\mu\\nu}=0",
+        "\\Omega\\to 0",
+        "m_e(\\Omega)",
+        "m_{\\text{DM}}(\\Omega)",
+        "\\phi",
+        "n_s",
+        "f_{\\text{NL}}^{\\text{local}} \\approx 0",
+        "C_{\\mu\\nu\\rho\\sigma}\\approx 0",
+        "\\Omega_k < 0",
+        "p \\to e^+\\pi^0",
+        ">10^{34}",
+        "10^{-5}",
+        "5\\sigma"
+      ],
+      "equation_count": 69,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-15T00:49:42.100577+00:00"
+    },
+    {
+      "concept": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+      "level": 3,
+      "equations": [
+        "P(X_{t+\\Delta t}\\mid \\mathcal H_t)=P(X_{t+\\Delta t}\\mid X_t)",
+        "\\tau_c \\dot c = -c +c_{\\rm pre}\\sum_i \\delta(t-t_i^{\\rm pre}) +c_{\\rm post}\\sum_j \\delta(t-t_j^{\\rm post})",
+        "\\frac{\\partial f}{\\partial t} +\\frac{\\mathbf p}{ma^2}\\cdot\\nabla_x f -m\\nabla_x\\Phi\\cdot\\nabla_p f =0",
+        "\\nabla^2\\Phi = 4\\pi G a^2 \\bar\\rho_m \\delta",
+        "T_{ij}=\\partial_i\\partial_j\\Phi",
+        "\\dot x(t) = -\\int_0^t K(t-s)x(s)\\,ds + \\eta(t)",
+        "a_0 \\simeq 1.2\\times 10^{-10}\\ \\mathrm{m\\,s^{-2}}",
+        "\\left|\\frac{c_g}{c}-1\\right|\\lesssim 10^{-15}",
+        "\\mu(a/a_0)|\\mathbf a|=\\mathbf a_N",
+        "v^4 \\approx GMa_0",
+        "\\delta(\\mathbf{x},t)=\\frac{\\rho(\\mathbf{x},t)-\\bar{\\rho}(t)}{\\bar{\\rho}(t)}"
+      ],
+      "equation_count": 11,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-15T00:58:16.236566+00:00"
     }
   ]
 }
