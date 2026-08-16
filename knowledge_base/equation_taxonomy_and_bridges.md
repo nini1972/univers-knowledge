@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-15T00:59:13.138987+00:00  
-> **Total Analyzed Concepts:** 131 | **Total Discovered Equations:** 4391 | **Discovered Bridges:** 189
+> **Generated:** 2026-08-16T00:43:57.703220+00:00  
+> **Total Analyzed Concepts:** 133 | **Total Discovered Equations:** 4514 | **Discovered Bridges:** 202
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 39 concepts:
+**Occurrences:** Appears in 40 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -47,6 +47,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity
 - **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
 - **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
+- **Level 2**: Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics
 
 ### ` 1.380649 \times 10^{-23} `
 **Occurrences:** Appears in 12 concepts:
@@ -62,6 +63,21 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity
 - **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
 - **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
+
+### ` 6.62607015 \times 10^{-34} `
+**Occurrences:** Appears in 12 concepts:
+- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
+- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
+- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
+- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
+- **Level 3**: Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding
+- **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
+- **Level 2**: Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity
+- **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
+- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
+- **Level 2**: Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics
 
 ### ` \phi `
 **Occurrences:** Appears in 11 concepts:
@@ -105,19 +121,19 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures
 - **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
 
-### ` 6.62607015 \times 10^{-34} `
+### ` \alpha `
 **Occurrences:** Appears in 11 concepts:
-- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
+- **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
+- **Level 1**: What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
-- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
-- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
-- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
-- **Level 3**: Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding
+- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
+- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
+- **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
 - **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
-- **Level 2**: Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity
+- **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
 - **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
-- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
+- **Level 1**: How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?
+- **Level 2**: Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics
 
 ### ` \Phi `
 **Occurrences:** Appears in 10 concepts:
@@ -131,18 +147,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures
 - **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
 - **Level 1**: What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?
-
-### ` \alpha `
-**Occurrences:** Appears in 9 concepts:
-- **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
-- **Level 1**: What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
-- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
-- **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
-- **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
-- **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
-- **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
 
 ### ` h = 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 9 concepts:
@@ -218,15 +222,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 64 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 56 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 52 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 37 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 30 |
-| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 21 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 18 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 65 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 58 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 53 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 39 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 32 |
+| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 22 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 20 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 9 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 62
+- **MATH_PROVEN Entries:** 64
 - **MATH_CONSISTENT Entries:** 35

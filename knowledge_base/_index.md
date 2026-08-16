@@ -13,6 +13,7 @@ graph TD
     what_advancements_or_new_data_from_upcoming_experiments_could_improve_the_mathematical_modeling_and_strengthen_the_formalism_of_neutrino_decay_constraints["Neutrino Decay"]:::verified
     quantum_gravity["Quantum Gravity"]:::theoretical
     neutrino_lifetime_and_decay_mechanisms["Neutrino Lifetime and Decay Mechanisms"]:::verified
+    how_might_potential_degeneracies_in_astrophysical_signals_between_sfdm_phonon_effects_and_alternative_dark_matter_models_be_resolved_observationally["Superfluid Dark Matter Phonon Effects"]:::theoretical
     standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
     what_experimental_designs_or_data_analyses_can_definitively_distinguish_neutrino_decay_effects_from_alternative_damping_mechanisms_such_as_decoherence_or_nonstandard_interactions["What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?"]:::theoretical
@@ -107,6 +108,7 @@ graph TD
     dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration["Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation["Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"]:::theoretical
+    galileaninvariant_vs_nonminimally_coupled_scalar_dark_matter_in_galactic_dynamics["Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics"]:::theoretical
     axion_monodromy_vs_natural_inflation_in_cosmic_inflationary_dynamics["Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics"]:::theoretical
     quantum_loop_gravity_vs_string_field_theory_debate["Quantum Loop Gravity vs String Field Theory Debate"]:::theoretical
     nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime["Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime"]:::theoretical
@@ -443,6 +445,7 @@ graph TD
 - [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
 - [Superfluid Dark Matter](level_1_fundamental_physics/what_are_the_most_promising_upcoming_observational_or_experimental_tests_that_could_directly_detect_signatures_unique_to_superfluid_dark_matter.md) [THEORETICAL]
+- [Superfluid Dark Matter Phonon Effects](level_1_fundamental_physics/how_might_potential_degeneracies_in_astrophysical_signals_between_sfdm_phonon_effects_and_alternative_dark_matter_models_be_resolved_observationally.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?](level_1_fundamental_physics/what_advancements_in_relativistic_modeling_and_numerical_simulations_are_needed_to_more_conclusively_differentiate_sfdm_predictions_from_cdm_scenarios_in_structure_formation.md) [THEORETICAL]
 - [What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?](level_1_fundamental_physics/what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models.md) [THEORETICAL]
@@ -504,6 +507,7 @@ graph TD
 - [Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations](level_2_advanced_frameworks/fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations.md) [THEORETICAL]
 - [Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate](level_2_advanced_frameworks/freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate.md) [THEORETICAL]
 - [Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges](level_2_advanced_frameworks/fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges.md) [THEORETICAL]
+- [Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics](level_2_advanced_frameworks/galileaninvariant_vs_nonminimally_coupled_scalar_dark_matter_in_galactic_dynamics.md) [THEORETICAL]
 - [Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate](level_2_advanced_frameworks/higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate.md) [THEORETICAL]
 - [Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate](level_2_advanced_frameworks/higgs_portal_dark_matter_vs_sterile_neutrino_dark_matter_debate.md) [THEORETICAL]
 - [Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](level_2_advanced_frameworks/holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate.md) [THEORETICAL]

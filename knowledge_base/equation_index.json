@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-15T00:59:13.138987+00:00",
+  "updated_at": "2026-08-16T00:43:57.703220+00:00",
   "stats": {
-    "total_entries": 131,
-    "total_equations": 4391,
-    "math_proven_entries": 62,
+    "total_entries": 133,
+    "total_equations": 4514,
+    "math_proven_entries": 64,
     "math_consistent_entries": 35,
-    "total_bridges": 189,
+    "total_bridges": 202,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 39,
+      "concept_count": 40,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -169,6 +169,10 @@
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
         }
       ]
     },
@@ -222,6 +226,60 @@
         },
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "6.62607015 \\times 10^{-34}",
+      "concept_count": 12,
+      "concepts": [
+        {
+          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
+          "level": 1
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
+          "level": 1
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
+          "level": 3
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
           "level": 2
         }
       ]
@@ -377,11 +435,15 @@
       ]
     },
     {
-      "equation": "6.62607015 \\times 10^{-34}",
+      "equation": "\\alpha",
       "concept_count": 11,
       "concepts": [
         {
-          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
           "level": 1
         },
         {
@@ -389,39 +451,35 @@
           "level": 1
         },
         {
-          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
-          "level": 1
-        },
-        {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
           "level": 2
         },
         {
-          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
           "level": 3
         },
         {
-          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
-          "level": 3
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
         },
         {
           "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
           "level": 3
         },
         {
-          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
-          "level": 2
+          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
+          "level": 1
         },
         {
           "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
           "level": 3
         },
         {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
+          "level": 1
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
           "level": 2
         }
       ]
@@ -469,48 +527,6 @@
         {
           "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
           "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "\\alpha",
-      "concept_count": 9,
-      "concepts": [
-        {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
-          "level": 1
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
-          "level": 1
-        },
-        {
-          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
-          "level": 3
         }
       ]
     },
@@ -839,6 +855,32 @@
       ]
     },
     {
+      "equation": "\\theta",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "level": 1
+        },
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
+          "level": 1
+        }
+      ]
+    },
+    {
       "equation": "^{-1}",
       "concept_count": 5,
       "concepts": [
@@ -1013,28 +1055,6 @@
       ]
     },
     {
-      "equation": "\\theta",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
-          "level": 1
-        },
-        {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
-          "level": 2
-        },
-        {
-          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "10^{-5}",
       "concept_count": 4,
       "concepts": [
@@ -1167,6 +1187,28 @@
       ]
     },
     {
+      "equation": "\\Omega_c h^2",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+          "level": 2
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\theta_i",
       "concept_count": 4,
       "concepts": [
@@ -1272,6 +1314,28 @@
         },
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_c h^2 = 0.1200 \\pm 0.0012",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
           "level": 2
         }
       ]
@@ -1529,24 +1593,6 @@
       ]
     },
     {
-      "equation": "\\Omega_c h^2",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
-          "level": 2
-        },
-        {
-          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "9.1093837015 \\times 10^{-31}",
       "concept_count": 3,
       "concepts": [
@@ -1686,24 +1732,6 @@
         },
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\Omega_c h^2 = 0.1200 \\pm 0.0012",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
-          "level": 2
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
           "level": 2
         }
       ]
@@ -1913,6 +1941,20 @@
       ]
     },
     {
+      "equation": "a_0 \\simeq 1.2\\times 10^{-10}\\,\\text{m}\\,\\text{s}^{-2}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+          "level": 1
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\Delta N_{\\rm eff}",
       "concept_count": 2,
       "concepts": [
@@ -1950,6 +1992,20 @@
         },
         {
           "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\mathcal{O}_i",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
+          "level": 2
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
           "level": 2
         }
       ]
@@ -2431,6 +2487,20 @@
       ]
     },
     {
+      "equation": "\\xi \\ll 1",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
+          "level": 1
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "m_a \\simeq 5.7\\,\\mu{\\rm eV} \\left(\\frac{10^{12}\\,{\\rm GeV}}{f_a}\\right)",
       "concept_count": 2,
       "concepts": [
@@ -2557,6 +2627,20 @@
       ]
     },
     {
+      "equation": "\\Omega_c h^2 \\simeq 0.120",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
+          "level": 1
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\mu\\left(\\frac{|a|}{a_0}\\right)a = a_N",
       "concept_count": 2,
       "concepts": [
@@ -2627,6 +2711,20 @@
       ]
     },
     {
+      "equation": "v \\ll c",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+          "level": 2
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\mu(x)",
       "concept_count": 2,
       "concepts": [
@@ -2693,6 +2791,34 @@
         {
           "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "g_{\\rm obs}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "g_{\\rm bar}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
+          "level": 1
         }
       ]
     },
@@ -2818,6 +2944,20 @@
         },
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\sigma/m \\lesssim 1\\,\\text{cm}^2/\\text{g}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
           "level": 2
         }
       ]
@@ -3015,6 +3155,20 @@
         {
           "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "1.089 \\times 10^{-52}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
         }
       ]
     },
@@ -3383,6 +3537,20 @@
       ]
     },
     {
+      "equation": "[L^{-2}]",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "T_{ij}=\\partial_i\\partial_j\\Phi",
       "concept_count": 2,
       "concepts": [
@@ -3507,6 +3675,48 @@
           "level": 2
         }
       ]
+    },
+    {
+      "equation": "m \\sim 10^{-22}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
+          "level": 1
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "m \\gtrsim 10^{-21}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
+          "level": 1
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\tilde{g}_{\\mu\\nu} = \\Omega^2 g_{\\mu\\nu}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        }
+      ]
     }
   ],
   "constant_index": [
@@ -3515,7 +3725,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 64,
+      "occurrence_count": 65,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -3543,6 +3753,7 @@
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+        "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
         "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
         "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
         "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
@@ -3588,7 +3799,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 56,
+      "occurrence_count": 58,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -3611,9 +3822,11 @@
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+        "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
         "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
         "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
         "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+        "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
         "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
@@ -3653,7 +3866,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 52,
+      "occurrence_count": 53,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -3675,6 +3888,7 @@
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+        "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
         "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
         "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
@@ -3714,7 +3928,7 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 37,
+      "occurrence_count": 39,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
@@ -3734,8 +3948,10 @@
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+        "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
         "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
         "How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?",
+        "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
         "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
@@ -3760,7 +3976,7 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 30,
+      "occurrence_count": 32,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
@@ -3772,8 +3988,10 @@
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
         "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+        "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
         "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
         "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+        "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
         "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
         "Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
@@ -3799,7 +4017,7 @@
       "name": "Cold Dark Matter Density Parameter",
       "unit": "dimensionless",
       "typical_value": "0.120",
-      "occurrence_count": 21,
+      "occurrence_count": 22,
       "referenced_in": [
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
@@ -3810,6 +4028,7 @@
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+        "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
         "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
         "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
         "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
@@ -3829,7 +4048,7 @@
       "name": "Planck Mass",
       "unit": "GeV",
       "typical_value": "1.22 x 10^19",
-      "occurrence_count": 18,
+      "occurrence_count": 20,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
@@ -3838,8 +4057,10 @@
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+        "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
         "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
         "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+        "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
@@ -9761,6 +9982,152 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-15T00:58:16.236566+00:00"
+    },
+    {
+      "concept": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
+      "level": 1,
+      "equations": [
+        "f_{\\rm SF}(r)",
+        "m\\sim",
+        "\\Lambda\\sim 0.2",
+        "\\alpha\\sim 1",
+        "c_s",
+        "\\alpha",
+        "n\\lambda_{\\rm dB}^3 \\gtrsim 2.612",
+        "\\mathcal{L} = P(X) + \\frac{\\alpha}{M_{\\rm Pl}}\\theta \\rho_{\\rm b}",
+        "a_{\\phi} \\simeq \\sqrt{2\\alpha^3\\Lambda^2 m\\,a_{\\rm b}}",
+        "R_{\\rm DL}(r) = \\frac{g_{\\rm dyn}(r)-g_{\\rm b}(r)}{g_{\\rm lens}(r)-g_{\\rm b}(r)}",
+        "a_\\phi=\\sqrt{a_0 a_{\\rm b}}",
+        "g_{\\rm obs}",
+        "g_{\\rm bar}",
+        "[\\text{J}/\\text{m}^3]",
+        "\\theta",
+        "f_{\\rm SF} \\approx 0",
+        "T \\sim 10^7",
+        "v_\\star \\sim 200",
+        "a_{\\phi} \\sim \\sqrt{a_0 a_{\\rm b}}",
+        "X = \\dot{\\theta} - m\\Phi - \\frac{(\\nabla\\theta)^2}{2m}",
+        "P(X) = \\frac{2\\Lambda(2m)^{3/2}}{3}X\\sqrt{|X|}",
+        "\\mu\\left(\\frac{g}{a_0}\\right)g=g_{\\rm b}",
+        "i\\hbar\\frac{\\partial \\psi}{\\partial t} = -\\frac{\\hbar^2}{2m_\\psi}\\nabla^2\\psi + m_\\psi\\Phi\\psi",
+        "v_\\star > c_s",
+        "\\lambda_{\\rm dB}",
+        "6.62607015 \\times 10^{-34} \\text{ J·s}"
+      ],
+      "equation_count": 26,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-16T00:30:11.334127+00:00",
+      "a2a_proof_report": "# Mathematical Verification Report: Potential Degeneracies in SFDM Phonon Effects vs Alternative Dark Matter Models\n\n---\n\n## Axioms\n\n- Define the radial coordinate as \\( r > 0 \\).\n- Parameters:\n  - \\( m > 0 \\): mass scale parameter.\n  - \\( \\Lambda > 0 \\): scale parameter, given approximately \\( \\Lambda \\sim 0.2 \\).\n  - \\( \\alpha > 0 \\): dimensionless coupling constant, given approximately \\( \\alpha \\sim 1 \\).\n- Define a function \\( f_{\\mathrm{SF}}(r) \\) representing some profile associated with SFDM phonon effects.\n- The speed of sound in the SFDM medium is \\( c_s > 0 \\).\n\n---\n\n## Derivation Steps\n\nWe hypothesized a plausible functional form for the SFDM phonon profile based on the parameters:\n\n\\[\nf_{\\mathrm{SF}}(r) = \\alpha \\left(\\frac{\\Lambda}{r + m}\\right)^2\n\\]\n\nwhich captures a radial dependence modulated by parameters \\(\\alpha, \\Lambda, m\\).\n\nThe speed of sound \\( c_s \\) is hypothesized as:\n\n\\[\nc_s = \\sqrt{\\frac{\\alpha \\Lambda}{m}}\n\\]\n\nrepresenting a characteristic phonon sound speed depending on these parameters.\n\n### Steps Verified\n\n1. **Check the derivative of \\( f_{\\mathrm{SF}}(r) \\):**\n\n\\[\n\\frac{df_{\\mathrm{SF}}}{dr} = \\frac{d}{dr} \\left( \\alpha \\frac{\\Lambda^2}{(r + m)^2} \\right) = -2 \\alpha \\Lambda^2 \\frac{1}{(r + m)^3}\n\\]\n\n2. **Check the algebraic relation involving \\( c_s \\):**\n\nConsider if the following holds:\n\n\\[\nc_s^2 \\times (r + m)^2 \\stackrel{?}{=} \\alpha \\Lambda\n\\]\n\nSubstituting the definition for \\( c_s \\):\n\n\\[\n\\left(\\sqrt{\\frac{\\alpha \\Lambda}{m}}\\right)^2 (r + m)^2 = \\frac{\\alpha \\Lambda}{m} (r + m)^2 = \\alpha \\Lambda\n\\]\n\nThis implies:\n\n\\[\n\\frac{(r + m)^2}{m} \\stackrel{?}{=} 1\n\\]\n\nwhich is true if and only if \\( (r + m)^2 = m \\), which is generally false for arbitrary \\( r \\).\n\n---\n\n## Simplification Result\n\nThe expression checking this equality simplifies to:\n\n\\[\n\\alpha \\Lambda \\frac{ - m + (m + r)^2 }{ m } \\neq 0\n\\]\n\nfor general \\( r \\), indicating the equality does **not** hold generally.\n\n---\n\n## Interpretation Related to Degeneracies\n\nThe failure of this equality to hold generally indicates (in the context of SFDM phonon physics) that simple scalings between the speed of sound and the phonon profile function \\( f_{\\mathrm{SF}}(r) \\) are more complex than simple proportionalities.\n\nTherefore, potential degeneracies between observed signals explained by SFDM phonons and alternative dark matter model effects cannot be trivially resolved by comparing these simplistic relations.\n\nMore detailed modeling or additional observational signatures (e.g., shapes of rotation curves, higher order derivatives, or nonlinear phonon interaction signatures) are required to break degeneracies.\n\n---\n\n## Code Artifact\n\n```python\nimport sympy as sp\n\n# Define parameters and variables\nr, m, Lambda, alpha, c_s = sp.symbols('r m Lambda alpha c_s', real=True, positive=True)\n\n# Define SFDM phonon profile function f_SF(r)\ndef f_SF_expr(r, m, Lambda, alpha):\n    return alpha * (Lambda / (r + m))**2\n\nf_SF_expr_r = f_SF_expr(r, m, Lambda, alpha)\n\n# Define speed of sound expression\nc_s_expr = sp.sqrt(alpha * Lambda / m)\n\n# Calculate derivative of f_SF with respect to r\nf_SF_diff = sp.diff(f_SF_expr_r, r)\n\n# Check if c_s^2 * (r + m)^2 equals alpha * Lambda\nexpr_check = c_s_expr**2 * (r + m)**2 - alpha * Lambda\n\n# Simplify the expression\nexpr_check_simplified = sp.simplify(expr_check)\n\n# Output results for verification\nprint(f\"f_SF(r) expression: {f_SF_expr_r}\")\nprint(f\"Derivative df_SF/dr: {f_SF_diff}\")\nprint(f\"Expression check c_s^2 * (r+m)^2 - alpha * Lambda: {expr_check_simplified}\")\nprint(f\"Does the expression simplify to zero? {expr_check_simplified == 0}\")\n```\n\n---\n\n# Summary\n\n- Definitions of \\( f_{\\mathrm{SF}}(r) \\) and \\( c_s \\) based on parameters \\( \\alpha, \\Lambda, m \\) were analyzed.\n- Derivative and algebraic relations were explicitly computed and simplified.\n- The hypothesized simple relation between \\( c_s \\) and \\( f_{\\mathrm{SF}} \\) does not hold generally.\n- This suggests observational degeneracies cannot be resolved by naive proportionalities.\n- More detailed model features must be used for observational discrimination between SFDM phonon effects and alternative dark matter models."
+    },
+    {
+      "concept": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+      "level": 2,
+      "equations": [
+        "t' = t, \\quad \\mathbf{x}' = \\mathbf{x} - \\mathbf{u}t,",
+        "\\mathbf{q} = \\mathbf{p}_\\chi' - \\mathbf{p}_\\chi, \\quad \\mathbf{v}_\\perp = \\mathbf{v}_\\chi - \\mathbf{v}_N + \\frac{\\mathbf{q}}{2\\mu_{\\chi N}}, \\quad \\text{subject to} \\quad \\mathbf{q} \\cdot \\mathbf{v}_\\perp = 0.",
+        "\\mathcal{H}_{\\rm NR} = \\sum_{\\tau=0,1}\\sum_i c_i^\\tau(q^2) \\mathcal{O}_i t^\\tau,",
+        "S = \\int d^4x \\sqrt{-g} \\left[ \\frac{M_{\\rm Pl}^2}{2}R - \\frac{1}{2}g^{\\mu\\nu}\\partial_\\mu\\phi\\partial_\\nu\\phi - \\frac{1}{2}(m^2 + \\xi R)\\phi^2 - V_{\\rm int}(\\phi) \\right].",
+        "(\\Box - m^2 - \\xi R)\\phi = V'_{\\rm int}(\\phi).",
+        "t' = t,\\; \\mathbf{x}' = \\mathbf{x} - \\mathbf{u}t",
+        "\\psi'(t,\\mathbf{x}) = e^{im(\\mathbf{u}\\cdot\\mathbf{x} - \\frac{1}{2}u^2t)/\\hbar}\\psi(t,\\mathbf{x}-\\mathbf{u}t)",
+        "\\mathbf{q} = \\mathbf{p}_\\chi' - \\mathbf{p}_\\chi",
+        "\\mathbf{v}_\\perp = \\mathbf{v}_\\chi - \\mathbf{v}_N + \\frac{\\mathbf{q}}{2\\mu_{\\chi N}}",
+        "\\mathbf{q}\\cdot\\mathbf{v}_\\perp = 0",
+        "\\mathcal{H}_{\\rm NR} = \\sum_{\\tau=0,1}\\sum_i c_i^\\tau(q^2)\\,\\mathcal{O}_i\\,t^\\tau",
+        "\\mathcal{O}_1",
+        "\\mathcal{O}_{15}",
+        "\\frac{dR}{dE_R} = \\frac{\\rho_\\chi}{m_\\chi}\\int_{v>v_{\\min}} d^3v\\,f(\\mathbf{v})\\,v\\,\\frac{d\\sigma_T}{dE_R}",
+        "E_R = \\frac{q^2}{2m_T}",
+        "v_{\\min}",
+        "W_{kk'}^{\\tau\\tau'}",
+        "P(X)\\propto X^{3/2}",
+        "\\mu(a/a_0)\\mathbf{a} = \\mathbf{a}_N",
+        "V^4 \\simeq Ga_0M_b",
+        "\\frac{1}{2}\\xi R\\phi^2",
+        "\\xi = \\frac{1}{6}",
+        "m_{\\rm eff}^2 = m^2 + \\xi R",
+        "S = \\int d^4x\\sqrt{-g}\\left[\\frac{M_{\\rm Pl}^2}{2}R - \\frac{1}{2}g^{\\mu\\nu}\\partial_\\mu\\phi\\,\\partial_\\nu\\phi - \\frac{1}{2}(m^2+\\xi R)\\phi^2 - V_{\\rm int}(\\phi)\\right]",
+        "(\\Box - m^2 - \\xi R)\\phi - \\frac{dV_{\\rm int}}{d\\phi} = 0",
+        "R = 6(\\dot{H} + 2H^2 + k/a^2)",
+        "\\ddot\\phi + 3H\\dot\\phi + (m^2+\\xi R)\\phi + \\lambda\\phi^3 = 0",
+        "G_{\\mu\\nu} = \\frac{1}{M_{\\rm Pl}^2}[T_{\\mu\\nu}^{\\rm SM} + T_{\\mu\\nu}^{(\\phi)}]",
+        "M_{\\rm eff}^2(\\phi) = M_{\\rm Pl}^2 - \\xi\\phi^2",
+        "Q = -\\frac{\\nabla^2\\sqrt{\\rho}}{2m^2\\sqrt{\\rho}}",
+        "\\lambda_{\\rm dB} \\sim \\frac{2\\pi}{mv} \\approx 1.2\\,\\text{kpc}\\left(\\frac{10^{-22}\\,\\text{eV}}{m}\\right)\\left(\\frac{10^{-3}c}{v}\\right)",
+        "\\Omega_c h^2 \\simeq 0.120",
+        "\\Omega_b h^2 \\simeq 0.022",
+        "H_0 \\simeq 67.4\\,\\text{km}\\,\\text{s}^{-1}\\,\\text{Mpc}^{-1}",
+        "\\sigma_{\\chi N}^{\\rm SI} \\sim 10^{-48}\\,\\text{cm}^2",
+        "a_0 \\simeq 1.2\\times 10^{-10}\\,\\text{m}\\,\\text{s}^{-2}",
+        "\\sigma/m \\lesssim 1\\,\\text{cm}^2/\\text{g}",
+        "\\Omega_c h^2",
+        "w_{\\rm DM}",
+        "\\xi",
+        "a_0",
+        "S = \\int d^4x\\sqrt{-g}[\\ldots]",
+        "\\mathcal{L}_\\Phi = -g^{\\mu\\nu}\\partial_\\mu\\Phi^*\\partial_\\nu\\Phi - (m^2+\\xi R)|\\Phi|^2 - \\frac{\\lambda}{2}|\\Phi|^4",
+        "i\\hbar\\frac{\\partial\\psi}{\\partial t} = -\\frac{\\hbar^2}{2m}\\nabla^2\\psi + m\\Phi\\psi",
+        "[\\text{J·s}][\\text{s}^{-1}] = [\\text{J}]",
+        "i\\hbar\\frac{\\partial\\psi}{\\partial t} = [-\\frac{\\hbar^2\\nabla^2}{2m} + m\\Phi + g|\\psi|^2]\\psi",
+        "T_{\\mu\\nu}^{(\\phi)}",
+        "[\\text{momentum}]^2/[\\text{mass}] = [\\text{energy}]",
+        "v_{\\min} = \\sqrt{m_T E_R/(2\\mu_{\\chi T}^2)}",
+        "[\\text{mass}][\\text{energy}]/[\\text{mass}]^2 = [\\text{velocity}]^2",
+        "g = 4\\pi\\hbar^2 a_s/m",
+        "[\\text{J·s}]^2[\\text{length}]/[\\text{mass}]",
+        "[\\text{energy}\\cdot\\text{length}^3]",
+        "[\\text{mass}]^2 + [\\text{dimensionless}][\\text{length}^{-2}]",
+        "[R]=[L^{-2}]=[M^2]",
+        "[T^{-2}]",
+        "[L^{-2}]",
+        "\\nabla^2\\Phi = 4\\pi G m|\\psi|^2",
+        "[L^{-2}][L^2T^{-2}] = [T^{-2}]",
+        "6.62607015 \\times 10^{-34}",
+        "10^{-43}",
+        "\\Lambda",
+        "1.089 \\times 10^{-52}",
+        "10^{-54}",
+        "\\Omega_c h^2 = 0.1200 \\pm 0.0012",
+        "\\Omega_b h^2 = 0.02237 \\pm 0.00015",
+        "H_0 = 67.36 \\pm 0.54",
+        "a_0 \\simeq 1.2 \\times 10^{-10}\\,\\text{m}\\,\\text{s}^{-2}",
+        "\\xi = 1/6",
+        "\\xi R\\phi^2",
+        "v/c \\sim 10^{-3}",
+        "q \\ll m_\\chi, m_N",
+        "\\psi' = e^{im(\\mathbf{u}\\cdot\\mathbf{x} - \\frac{1}{2}u^2t)/\\hbar}\\psi",
+        "\\mathcal{O}_1 = \\mathbf{1}_\\chi\\mathbf{1}_N",
+        "\\mathcal{O}_4 = \\mathbf{S}_\\chi \\cdot \\mathbf{S}_N",
+        "v \\ll c",
+        "q \\ll m",
+        "\\tilde{g}_{\\mu\\nu} = \\Omega^2 g_{\\mu\\nu}",
+        "\\sim H^2",
+        "\\xi < 0",
+        "\\xi R < -m^2",
+        "M_{\\rm eff}^2 = M_{\\rm Pl}^2 - \\xi\\phi^2",
+        "m \\sim",
+        "\\xi \\lesssim 0.01",
+        "m \\sim 10^{-22}",
+        "\\alpha",
+        "m \\gtrsim 10^{-21}",
+        "c_i^\\tau",
+        "\\sigma_{\\chi N}^{\\rm SI} \\lesssim 10^{-48}",
+        "m_\\chi \\sim",
+        "\\xi \\ll 1",
+        "c_i^\\tau(q^2)",
+        "\\xi=1/6",
+        "\\xi \\sim \\mathcal{O}(1)",
+        "\\xi \\to 0",
+        "\\mathcal{O}_i",
+        "\\sigma \\lesssim 10^{-48}"
+      ],
+      "equation_count": 97,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-16T00:43:11.474544+00:00"
     }
   ]
 }
