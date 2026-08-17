@@ -10,16 +10,15 @@ def _get_llm(role: str) -> LLM | None:
         model_env = f"OPENROUTER_MODEL_{role.upper()}"
         model = os.getenv(model_env) or os.getenv("OPENROUTER_MODEL") or "meta-llama/llama-3.1-70b-instruct"
 
-        # Self-healing: if role uses tools, ensure the model supports tool use on OpenRouter.
-        # Overrule models known to crash/fail tool calls on OpenRouter (like the default Llama 70B, Gemini Flash, or Haiku).
-        roles_using_tools = ['visualizer', 'math', 'researcher']
+        # Self-healing: if role uses tools or delegates, ensure the model supports tool use on OpenRouter.
+        # CrewAI treats delegation as a tool call under the hood, so 'student' needs stable tool calling.
+        roles_using_tools = ['student', 'visualizer', 'math', 'researcher']
         if role in roles_using_tools:
             model_lower = model.lower()
-            is_default_llama = "llama-3.1-70b" in model_lower
-            is_gemini_flash = "gemini" in model_lower and "flash" in model_lower
-            is_haiku = "haiku" in model_lower
+            # Verify if the model is a known stable tool-calling model on OpenRouter (e.g. gpt-4o or claude-3-5-sonnet)
+            is_stable_tool_model = any(m in model_lower for m in ["gpt-4o", "claude-3-5-sonnet", "claude-3.5-sonnet"])
 
-            if is_default_llama or is_gemini_flash or is_haiku:
+            if not is_stable_tool_model:
                 print(f"Info: Overriding tool-using role '{role}' model '{model}' to 'openai/gpt-4o-mini' on OpenRouter for stable tool execution.")
                 model = "openai/gpt-4o-mini"
 
@@ -33,6 +32,7 @@ def _get_llm(role: str) -> LLM | None:
         except Exception as exc:
             print(f"Warning: Failed to initialize CrewAI LLM wrapper for {role}: {exc}")
     return None
+
 
 
 def _build_search_tools():
