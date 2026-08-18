@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-16T00:43:57.703220+00:00",
+  "updated_at": "2026-08-18T17:52:43.914706+00:00",
   "stats": {
-    "total_entries": 133,
-    "total_equations": 4514,
-    "math_proven_entries": 64,
+    "total_entries": 136,
+    "total_equations": 4596,
+    "math_proven_entries": 65,
     "math_consistent_entries": 35,
-    "total_bridges": 202,
+    "total_bridges": 207,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 40,
+      "concept_count": 41,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -173,6 +173,118 @@
         {
           "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
           "level": 2
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\gamma",
+      "concept_count": 12,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
+          "level": 1
+        },
+        {
+          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
+          "level": 1
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
+      "concept_count": 12,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
+          "level": 1
+        },
+        {
+          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+          "level": 1
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
+          "level": 2
+        },
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+          "level": 3
+        },
+        {
+          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
+          "level": 1
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
         }
       ]
     },
@@ -331,106 +443,6 @@
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\gamma",
-      "concept_count": 11,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
-          "level": 1
-        },
-        {
-          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
-          "level": 1
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
-          "level": 2
-        },
-        {
-          "title": "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
-      "concept_count": 11,
-      "concepts": [
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
-          "level": 1
-        },
-        {
-          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
-          "level": 1
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
-          "level": 2
-        },
-        {
-          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
-          "level": 1
-        },
-        {
-          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
-          "level": 3
-        },
-        {
-          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
-          "level": 1
         }
       ]
     },
@@ -985,6 +997,32 @@
       ]
     },
     {
+      "equation": "\\Omega_m \\approx 0.315",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
+          "level": 3
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "n_s \\approx 0.965",
       "concept_count": 5,
       "concepts": [
@@ -1275,28 +1313,6 @@
       ]
     },
     {
-      "equation": "\\Omega_m \\approx 0.315",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
-          "level": 3
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "\\Omega_c h^2 \\approx 0.120",
       "concept_count": 4,
       "concepts": [
@@ -1503,6 +1519,24 @@
       ]
     },
     {
+      "equation": "\\boxed{\\text{[THEORETICAL]}}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\mathcal{L}_{\\rm int}",
       "concept_count": 3,
       "concepts": [
@@ -1571,6 +1605,24 @@
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "<1\\%",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "level": 2
+        },
+        {
+          "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
         }
       ]
     },
@@ -1683,6 +1735,24 @@
       ]
     },
     {
+      "equation": "\\delta(\\mathbf{x},t)=\\frac{\\rho(\\mathbf{x},t)-\\bar{\\rho}(t)}{\\bar{\\rho}(t)}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+          "level": 3
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\Omega_m",
       "concept_count": 3,
       "concepts": [
@@ -1737,6 +1807,24 @@
       ]
     },
     {
+      "equation": "H_0 \\approx 67.4",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\sim 10^{-3}",
       "concept_count": 3,
       "concepts": [
@@ -1751,6 +1839,24 @@
         {
           "title": "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "T_{ij}=\\partial_i\\partial_j\\Phi",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+          "level": 3
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
         }
       ]
     },
@@ -2039,20 +2145,6 @@
       ]
     },
     {
-      "equation": "\\boxed{\\text{[THEORETICAL]}}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "c_{\\rm GW} = c",
       "concept_count": 2,
       "concepts": [
@@ -2328,20 +2420,6 @@
         },
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "<1\\%",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
-          "level": 2
-        },
-        {
-          "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
           "level": 2
         }
       ]
@@ -2879,6 +2957,34 @@
       ]
     },
     {
+      "equation": "w=-1",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\beta_i",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "G_{4X} \\approx 0",
       "concept_count": 2,
       "concepts": [
@@ -2959,20 +3065,6 @@
         {
           "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\delta(\\mathbf{x},t)=\\frac{\\rho(\\mathbf{x},t)-\\bar{\\rho}(t)}{\\bar{\\rho}(t)}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
-          "level": 3
-        },
-        {
-          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
-          "level": 3
         }
       ]
     },
@@ -3173,20 +3265,6 @@
       ]
     },
     {
-      "equation": "H_0 \\approx 67.4",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "H^2(a)=H_0^2[\\Omega_m a^{-3}+\\Omega_r a^{-4}+\\Omega_\\Lambda+\\Omega_k a^{-2}]",
       "concept_count": 2,
       "concepts": [
@@ -3280,6 +3358,34 @@
         },
         {
           "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\sigma_8 \\approx 0.81",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\mathbf{x}(\\mathbf{q},t)=\\mathbf{q}-D(t)\\nabla_{\\mathbf{q}}\\psi(\\mathbf{q})",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
           "level": 3
         }
       ]
@@ -3523,6 +3629,20 @@
       ]
     },
     {
+      "equation": "d_B(D(f),D(g)) \\leq \\|f-g\\|_\\infty",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "level": 3
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "a_0 \\approx 1.2 \\times 10^{-10}",
       "concept_count": 2,
       "concepts": [
@@ -3547,20 +3667,6 @@
         {
           "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "T_{ij}=\\partial_i\\partial_j\\Phi",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
-          "level": 3
         }
       ]
     },
@@ -3725,7 +3831,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 65,
+      "occurrence_count": 66,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -3774,6 +3880,7 @@
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
+        "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
         "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
@@ -3799,7 +3906,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 58,
+      "occurrence_count": 59,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -3840,6 +3947,7 @@
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
         "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+        "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
         "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
@@ -3866,7 +3974,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 53,
+      "occurrence_count": 54,
       "referenced_in": [
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
@@ -3904,6 +4012,7 @@
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution",
         "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
         "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+        "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
         "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
@@ -10128,6 +10237,121 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-16T00:43:11.474544+00:00"
+    },
+    {
+      "concept": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+      "level": 3,
+      "equations": [
+        "\\frac{dI_L}{d\\ell} = -\\Delta_I I_L + \\eta(\\ell)",
+        "\\frac{d}{dt}\\int d^3x\\,d^3p\\, f\\ln f = 0",
+        "n_s",
+        "\\Delta_I",
+        "w=-1",
+        "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
+        "\\mathcal{S}(L)",
+        "I_L(A;B)",
+        "H_q(L)",
+        "I_{\\rm filament}(L)",
+        "\\beta_i",
+        "\\Lambda",
+        "k_{\\rm eq}, k_{\\rm BAO}, k_{\\rm NL}",
+        "\\rho/\\bar{\\rho}",
+        "b\\sim 2",
+        "b_1, b_2, \\ldots",
+        "\\sigma_8, \\Omega_m, n_s",
+        "q=1",
+        "z=0",
+        "k_{\\rm NL}"
+      ],
+      "equation_count": 20,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-16T00:52:56.451833+00:00"
+    },
+    {
+      "concept": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+      "level": 3,
+      "equations": [
+        "\\delta(\\mathbf{x},t)=\\frac{\\rho(\\mathbf{x},t)-\\bar{\\rho}(t)}{\\bar{\\rho}(t)}",
+        "\\mathbf{x}(\\mathbf{q},t)=\\mathbf{q}-D(t)\\nabla_{\\mathbf{q}}\\psi(\\mathbf{q})",
+        "\\mathcal{I}(R) = D_{\\mathrm{KL}}\\!\\left[ P_R[\\delta_R] \\,\\Vert\\, P_R^{(0)}[\\delta_R] \\right]",
+        "\\frac{d\\mathcal{I}}{d\\ell} = \\beta_{\\mathcal{I}} \\left( \\mathcal{I}, g_1, g_2, \\dots \\right)",
+        "\\beta_p(\\nu,L) = \\operatorname{rank} H_p\\left(K_\\nu^L\\right)",
+        "H_0 \\approx 67.4",
+        "\\Omega_m \\approx 0.315",
+        "\\sigma_8 \\approx 0.81",
+        "\\sum m_\\nu < 0.071",
+        "y_{\\mathcal{I}}",
+        "\\beta_{\\mathcal{I}}",
+        "\\Lambda",
+        "\\mathcal{I}(R)",
+        "d_B(D(f),D(g)) \\leq \\|f-g\\|_\\infty",
+        "\\frac{d\\mathcal{I}}{d\\ln L}",
+        "\\sim 1.74",
+        "\\mathcal{I}(R) \\propto R^{y_{\\mathcal{I}}}",
+        "b_1, b_2",
+        "R_*",
+        "L_{\\rm NL}",
+        "<1\\%",
+        "M_\\nu",
+        "\\mathcal{I}(R) = D_{\\mathrm{KL}}[P_R \\| P_R^{(0)}]",
+        "\\frac{d\\mathcal{I}}{d\\ell} = \\beta_{\\mathcal{I}}",
+        "\\beta_p(\\nu,L) = \\operatorname{rank} H_p(K_\\nu^L)",
+        "\\boxed{\\text{[THEORETICAL]}}",
+        "\\boxed{\\text{[VERIFIED]}}"
+      ],
+      "equation_count": 27,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-16T01:01:18.391044+00:00"
+    },
+    {
+      "concept": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+      "level": 3,
+      "equations": [
+        "\\beta_I = d\\mathcal{I}/d\\ln R",
+        "\\mathcal{I}_R^{\\rm NG}",
+        "D_{\\rm KL}(p_R \\| p_R^{\\rm Gauss})",
+        "J_I(R) = -\\partial \\mathcal{I}_R^{\\rm NG}/\\partial \\ln R",
+        "\\beta_I",
+        "S_{\\rm fg}",
+        "dS_{\\rm fg}/dt = 0",
+        "\\Delta \\mathcal{I}_R",
+        "\\mathcal{F}_A",
+        "\\mathcal{F}_B",
+        "|\\beta_I^{(A)} - \\beta_I^{(B)}|",
+        "p(\\beta_I|d)",
+        "B(k_1,k_2,k_3)",
+        "B_p(R)",
+        "I_{\\rm cond} > 0",
+        "\\Lambda",
+        "\\gamma",
+        "\\delta_R(\\mathbf{x})",
+        "\\sigma_R^2",
+        "R^{-\\gamma}",
+        "\\beta_I(R,z)",
+        "P(k) + B(k_1,k_2,k_3) + {\\rm Betti\\ numbers}",
+        "\\delta(\\mathbf{x},z)=\\frac{\\rho(\\mathbf{x},z)}{\\bar{\\rho}(z)}-1",
+        "\\langle \\delta(\\mathbf{k})\\delta^\\ast(\\mathbf{k}')\\rangle = (2\\pi)^3\\delta_D(\\mathbf{k}-\\mathbf{k}')P(k,z)",
+        "\\delta_R(\\mathbf{x}) = \\int d^3y\\, W_R(|\\mathbf{x}-\\mathbf{y}|)\\delta(\\mathbf{y})",
+        "\\sigma_R^2 = \\int_0^\\infty d\\ln k\\, \\Delta^2(k)|\\widetilde{W}(kR)|^2",
+        "T_{ij}=\\partial_i\\partial_j\\Phi",
+        "\\nabla^2\\Phi=4\\pi G a^2\\bar{\\rho}\\delta",
+        "\\partial_\\eta \\Psi_a(\\mathbf{k},\\eta) + \\Omega_{ab}\\Psi_b(\\mathbf{k},\\eta) = \\gamma_{abc}(\\mathbf{k}) \\Psi_b(\\mathbf{k}_1,\\eta) \\Psi_c(\\mathbf{k}_2,\\eta)",
+        "h_R = \\frac{1}{2}\\ln\\left[(2\\pi e)^N\\det C_R\\right]",
+        "\\mathcal{I}_R^{\\rm NG} = D_{\\rm KL}\\left[p_R(X)\\,\\|\\,p_R^{\\rm Gauss}(X;C_R)\\right]",
+        "\\beta_I \\equiv \\frac{d\\mathcal{I}_R^{\\rm NG}}{d\\ln R} = -\\gamma \\mathcal{I}_R^{\\rm NG}",
+        "\\frac{df}{dt} = \\frac{\\partial f}{\\partial t} + \\mathbf{v}\\cdot\\nabla_{\\mathbf{x}}f - \\nabla\\Phi\\cdot\\nabla_{\\mathbf{v}}f = 0",
+        "\\dot{S}_{\\rm baryon} = \\int dV \\left[ \\frac{\\Gamma-\\Lambda}{T} + \\frac{4\\eta\\sigma_{ij}\\sigma^{ij} + \\zeta(\\nabla\\cdot\\mathbf{v})^2}{T} + \\frac{\\kappa|\\nabla T|^2}{T^2} \\right]",
+        "\\Omega_m\\approx 0.315,\\qquad \\Omega_\\Lambda\\approx 0.685,\\qquad H_0\\approx 67.4\\ {\\rm km\\,s^{-1}\\,Mpc^{-1}}"
+      ],
+      "equation_count": 35,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-16T01:09:34.472446+00:00"
     }
   ]
 }

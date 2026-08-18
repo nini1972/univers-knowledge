@@ -15,8 +15,14 @@ def _get_llm(role: str) -> LLM | None:
         roles_using_tools = ['student', 'visualizer', 'math', 'researcher']
         if role in roles_using_tools:
             model_lower = model.lower()
-            # Verify if the model is a known stable tool-calling model on OpenRouter (e.g. gpt-4o or claude-3-5-sonnet)
-            is_stable_tool_model = any(m in model_lower for m in ["gpt-4o", "claude-3-5-sonnet", "claude-3.5-sonnet"])
+            # Verify if the model is a known stable tool-calling model on OpenRouter to avoid override
+            stable_keywords = [
+                "gpt-4o", "claude-3-5", "claude-3.5", "claude-opus", "claude-3-haiku",
+                "gemini-3.1", "gemini-3.7", "gemini-2.5", "nex-n2", "kimi-k2", 
+                "glm-5.2", "qwen-2.5", "deepseek-chat", "deepseek-v4", "minimax-m3", 
+                "laguna-s", "mimo-v", "hy3", "scout-17b"
+            ]
+            is_stable_tool_model = any(kw in model_lower for kw in stable_keywords)
 
             if not is_stable_tool_model:
                 print(f"Info: Overriding tool-using role '{role}' model '{model}' to 'openai/gpt-4o-mini' on OpenRouter for stable tool execution.")
