@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-19T01:12:16.407598+00:00",
+  "updated_at": "2026-08-20T00:55:59.560035+00:00",
   "stats": {
-    "total_nodes": 203,
-    "level_1_count": 97,
-    "level_2_count": 91,
-    "level_3_count": 15,
-    "total_edges": 119,
+    "total_nodes": 206,
+    "level_1_count": 98,
+    "level_2_count": 92,
+    "level_3_count": 16,
+    "total_edges": 122,
     "frontier_count": 0
   },
   "nodes": [
@@ -1876,6 +1876,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification.md"
     },
     {
+      "id": "willyouperformacompletedimensionalanalysistableforyourproposedmodifiedsurvivalequationsshowingexplicitsiunittracingtoprovetheyaredimensionless",
+      "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Submitted research report on modified survival equations",
+        "Dimensional analysis methodology and verification processes",
+        "Mathematical integration of survival probability metrics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/will_you_perform_a_complete_dimensional_analysis_table_for_your_proposed_modified_survival_equations_showing_explicit_si_unit_tracing_to_prove_they_are_dimensionless.md"
+    },
+    {
       "id": "asymmetricdarkmattervsdarkmatterdecaytohiddensectorphotonsinexplainingdarkmatterrelicabundance",
       "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
       "level": 2,
@@ -2482,6 +2501,29 @@
       "path": "knowledge_base/level_2_advanced_frameworks/dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md"
     },
     {
+      "id": "dynamicaldarkenergyvsmodifiedgravityinaddressingthehubbletension",
+      "title": "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "3/4",
+      "dependencies": [
+        "dynamicaldarkenergyvsmodifiedgravityinexplainingtheredshiftdependenceofcosmicacceleration",
+        "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck Collaboration",
+        "DESI Collaboration",
+        "GW170817 Observational Data",
+        "Cassini Mission Results"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension.md"
+    },
+    {
       "id": "dynamicaldarkenergyvsmodifiedgravityinexplainingtheredshiftdependenceofcosmicacceleration",
       "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
       "level": 2,
@@ -2490,6 +2532,7 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "dynamicaldarkenergyvsmodifiedgravityinaddressingthehubbletension",
         "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting"
       ],
       "tags": [
@@ -4019,6 +4062,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks.md"
     },
     {
+      "id": "landauerbekensteinthermodynamiclimitsontheinformationstoragecapacityofselforganizingcosmologicalfilaments",
+      "title": "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Research on cosmological filaments and thermodynamic principles",
+        "Landauer’s principle on information erasure",
+        "Bekenstein bound and entropy limitations"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments.md"
+    },
+    {
       "id": "landauersprincipleandtheinformationprocessingefficiencyofgalacticscalefilamentarystructures",
       "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
       "level": 3,
@@ -4301,6 +4363,21 @@
     {
       "source": "massivegravityversusfrgravityinmodifiedgravitydebates",
       "target": "debateonmodifiedgravitytheoriestevesvsfrgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "dynamicaldarkenergyvsmodifiedgravityinexplainingtheredshiftdependenceofcosmicacceleration",
+      "target": "dynamicaldarkenergyvsmodifiedgravityinaddressingthehubbletension",
+      "type": "component_theory"
+    },
+    {
+      "source": "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting",
+      "target": "dynamicaldarkenergyvsmodifiedgravityinaddressingthehubbletension",
+      "type": "component_theory"
+    },
+    {
+      "source": "dynamicaldarkenergyvsmodifiedgravityinaddressingthehubbletension",
+      "target": "dynamicaldarkenergyvsmodifiedgravityinexplainingtheredshiftdependenceofcosmicacceleration",
       "type": "component_theory"
     },
     {

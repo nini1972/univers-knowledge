@@ -68,6 +68,7 @@ graph TD
     what_specific_operatortheoretic_proofs_can_be_developed_to_ensure_full_mathematical_integrity_compliance_of_the_neutrino_decay_survival_probability_framework["What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?"]:::verified
     is_it_possible_to_provide_more_detailed_mathematical_derivations_and_dimensional_consistency_checks_to_raise_the_math_verification_score["Is it possible to provide more detailed mathematical derivations and dimensional consistency checks to raise the math verification score?"]:::theoretical
     how_can_upcoming_astrophysical_neutrino_observatories_enhance_flavor_and_spectral_resolution_to_better_distinguish_neutrino_decay_effects_from_standard_oscillations_or_source_variability["How can upcoming astrophysical neutrino observatories enhance flavor and spectral resolution to better distinguish neutrino decay effects from standard oscillations or source variability?"]:::theoretical
+    will_you_perform_a_complete_dimensional_analysis_table_for_your_proposed_modified_survival_equations_showing_explicit_si_unit_tracing_to_prove_they_are_dimensionless["Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?"]:::theoretical
     can_you_provide_a_rigorous_derivationbased_proof_of_the_modified_survival_probability_equations_using_nonhermitian_hamiltonians_and_lindblad_operator_formalism["Modified Neutrino Survival Probabilities and Vacuum Decoherence"]:::theoretical
     can_the_dimensional_consistency_be_conclusively_verified_using_advanced_symbolic_methods_beyond_current_automated_tools["Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?"]:::verified
     quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
@@ -165,6 +166,7 @@ graph TD
     loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate["Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate"]:::theoretical
     modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration["Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration"]:::theoretical
     holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate["Holographic Principle vs Causal Set Theory in Quantum Gravity Debate"]:::theoretical
+    dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension["Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension"]:::theoretical
     axion_dark_matter_vs_sterile_neutrino_dark_matter_in_explaining_dark_matter["Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter"]:::theoretical
     supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate["Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"]:::theoretical
     informationtheoretic_vs_thermodynamic_interpretations_of_gravity["Information-Theoretic vs. Thermodynamic Interpretations of Gravity"]:::theoretical
@@ -211,6 +213,7 @@ graph TD
     nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures["Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures"]:::theoretical
     entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis["Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis"]:::verified
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution["Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"]:::theoretical
+    landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments["Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments"]:::theoretical
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
 
     %% Connections & Prerequisites
@@ -354,6 +357,7 @@ graph TD
     general_relativity --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure
     quantum_chromodynamics_qcd --> dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem
     quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
+    cosmic_microwave_background_radiation --> dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension
     quantum_gravity --> informationtheoretic_vs_thermodynamic_interpretations_of_gravity
     quantum_field_theory --> emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
@@ -471,6 +475,7 @@ graph TD
 - [What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?](level_1_fundamental_physics/what_specific_operatortheoretic_proofs_can_be_developed_to_ensure_full_mathematical_integrity_compliance_of_the_neutrino_decay_survival_probability_framework.md) [VERIFIED]
 - [Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?](level_1_fundamental_physics/which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys.md) [THEORETICAL]
 - [Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?](level_1_fundamental_physics/which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification.md) [THEORETICAL]
+- [Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?](level_1_fundamental_physics/will_you_perform_a_complete_dimensional_analysis_table_for_your_proposed_modified_survival_equations_showing_explicit_si_unit_tracing_to_prove_they_are_dimensionless.md) [THEORETICAL]
 
 ## Level 2: Advanced Frameworks
 
@@ -502,6 +507,7 @@ graph TD
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem](level_2_advanced_frameworks/dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem.md) [THEORETICAL]
 - [DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
+- [Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension](level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension.md) [THEORETICAL]
 - [Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration](level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration.md) [THEORETICAL]
 - [Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution](level_2_advanced_frameworks/dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution.md) [THEORETICAL]
 - [Ekpyrotic Universe Model versus Inflationary Cosmology Debate](level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md) [VERIFIED]
@@ -577,6 +583,7 @@ graph TD
 - [Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures](level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md) [THEORETICAL]
 - [Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding](level_3_emergence_and_intelligence/landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding.md) [THEORETICAL]
 - [Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks.md) [VERIFIED]
+- [Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments](level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments.md) [THEORETICAL]
 - [Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures](level_3_emergence_and_intelligence/nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures.md) [THEORETICAL]
 - [Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution](level_3_emergence_and_intelligence/nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution.md) [THEORETICAL]
 - [Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures](level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md) [THEORETICAL]
