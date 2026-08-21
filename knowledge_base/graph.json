@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-20T00:55:59.560035+00:00",
+  "updated_at": "2026-08-21T01:03:30.515345+00:00",
   "stats": {
-    "total_nodes": 206,
-    "level_1_count": 98,
-    "level_2_count": 92,
-    "level_3_count": 16,
-    "total_edges": 122,
+    "total_nodes": 209,
+    "level_1_count": 99,
+    "level_2_count": 93,
+    "level_3_count": 17,
+    "total_edges": 124,
     "frontier_count": 0
   },
   "nodes": [
@@ -206,6 +206,25 @@
         "Theoretical framework studies"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing.md"
+    },
+    {
+      "id": "canyouclarifythecommutationrelationsmandprovidetheexplicitcalculationshowingtheconvergenceofthebchseriesforyournonhermitianeffectivehamiltonian",
+      "title": "Non-Hermitian Effective Hamiltonian for Neutral-Meson Systems",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Original Research Article on Non-Hermitian Hamiltonians",
+        "Textbook on Quantum Mechanics and Effective Field Theories",
+        "Relevant Review Papers on Particle Physics and Quantum Decoherence"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_you_clarify_the_commutation_relations_m__and_provide_the_explicit_calculation_showing_the_convergence_of_the_bch_series_for_your_nonhermitian_effective_hamiltonian.md"
     },
     {
       "id": "canyouprovidearigorousderivationbasedproofofthemodifiedsurvivalprobabilityequationsusingnonhermitianhamiltoniansandlindbladoperatorformalism",
@@ -3075,6 +3094,27 @@
       "path": "knowledge_base/level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md"
     },
     {
+      "id": "metricaffinegravityvssymmetricteleparallelgravityinresolvingcosmicsingularityconstraints",
+      "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "symmetricteleparallelgravityvsmetricaffinefrgravityinaddressinglatetimecosmicacceleration"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Research on Metric-Affine Gravity and Symmetric Teleparallel Gravity",
+        "Gravitational Wave Observations and Cosmological Implications",
+        "Lorentz-violation Tests in Gravity Theories"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/metricaffine_gravity_vs_symmetric_teleparallel_gravity_in_resolving_cosmic_singularity_constraints.md"
+    },
+    {
       "id": "modifiedgravitytheoriesvsdarkmatterparticlemodelsdebate",
       "title": "Modified Gravity Theories vs Dark Matter Particle Models Debate",
       "level": 2,
@@ -3812,7 +3852,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "metricaffinegravityvssymmetricteleparallelgravityinresolvingcosmicsingularityconstraints"
+      ],
       "tags": [
         "2",
         "gravity"
@@ -4176,6 +4218,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md"
     },
     {
+      "id": "quantifyingscaleinvariantinformationbottlenecksinthemorphogenesisofcosmicfilamentsandneuralsynaptichierarchies",
+      "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies.md"
+    },
+    {
       "id": "structuralisomorphismbetweengalacticfilamentarynetworksandbiologicalneuralarchitecturesininformationflowoptimization",
       "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
       "level": 3,
@@ -4501,6 +4562,11 @@
       "type": "component_theory"
     },
     {
+      "source": "symmetricteleparallelgravityvsmetricaffinefrgravityinaddressinglatetimecosmicacceleration",
+      "target": "metricaffinegravityvssymmetricteleparallelgravityinresolvingcosmicsingularityconstraints",
+      "type": "component_theory"
+    },
+    {
       "source": "debateonmodifiedgravitytheoriestevesvsfrgravity",
       "target": "modifiedgravitytheoriesvsdarkmatterparticlemodelsdebate",
       "type": "component_theory"
@@ -4708,6 +4774,11 @@
     {
       "source": "supersymmetricquantumfieldtheoriesversustechnicolortheoriesinelectroweaksymmetrybreaking",
       "target": "supersymmetryvsextradimensionsinbeyondstandardmodelphysics",
+      "type": "component_theory"
+    },
+    {
+      "source": "metricaffinegravityvssymmetricteleparallelgravityinresolvingcosmicsingularityconstraints",
+      "target": "symmetricteleparallelgravityvsmetricaffinefrgravityinaddressinglatetimecosmicacceleration",
       "type": "component_theory"
     },
     {
