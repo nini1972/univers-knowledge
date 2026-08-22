@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-21T01:03:02.941537+00:00  
-> **Total Analyzed Concepts:** 164 | **Total Discovered Equations:** 5316 | **Discovered Bridges:** 257
+> **Generated:** 2026-08-22T00:47:36.251427+00:00  
+> **Total Analyzed Concepts:** 166 | **Total Discovered Equations:** 5429 | **Discovered Bridges:** 264
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -76,6 +76,23 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension
 - **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
 
+### ` \phi `
+**Occurrences:** Appears in 14 concepts:
+- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
+- **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
+- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
+- **Level 1**: What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?
+- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
+- **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
+- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
+- **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
+- **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
+- **Level 1**: How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?
+- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
+- **Level 2**: Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics
+- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension
+- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
+
 ### ` \alpha `
 **Occurrences:** Appears in 14 concepts:
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
@@ -110,24 +127,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks
 - **Level 3**: Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies
 
-### ` \phi `
-**Occurrences:** Appears in 13 concepts:
-- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
-- **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
-- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
-- **Level 1**: What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?
-- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
-- **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
-- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
-- **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
-- **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
-- **Level 1**: How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?
-- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
-- **Level 2**: Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics
-- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension
-
 ### ` 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 13 concepts:
+**Occurrences:** Appears in 14 concepts:
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
@@ -141,6 +142,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
 - **Level 2**: Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics
 - **Level 3**: Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks
+- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
 
 ### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
 **Occurrences:** Appears in 12 concepts:
@@ -198,6 +200,18 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures
 - **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
 
+### ` \hbar `
+**Occurrences:** Appears in 9 concepts:
+- **Level 2**: Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 1**: What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?
+- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
+- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
+- **Level 1**: Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?
+- **Level 1**: Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?
+- **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
+- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
+
 ### ` \Omega_c h^2 = 0.120 \pm 0.001 `
 **Occurrences:** Appears in 8 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
@@ -231,17 +245,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
 - **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
 
-### ` \hbar `
-**Occurrences:** Appears in 8 concepts:
-- **Level 2**: Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 1**: What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?
-- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
-- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
-- **Level 1**: Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?
-- **Level 1**: Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?
-- **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
-
 ### ` \Gamma `
 **Occurrences:** Appears in 7 concepts:
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
@@ -255,15 +258,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 75 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 77 |
 | `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 67 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 63 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 46 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 64 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 48 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 38 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 23 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 21 |
-| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 9 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 22 |
+| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 10 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 72
-- **MATH_CONSISTENT Entries:** 38
+- **MATH_PROVEN Entries:** 73
+- **MATH_CONSISTENT Entries:** 39

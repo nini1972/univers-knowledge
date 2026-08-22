@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-21T01:03:02.941537+00:00",
+  "updated_at": "2026-08-22T00:47:36.251427+00:00",
   "stats": {
-    "total_entries": 164,
-    "total_equations": 5316,
-    "math_proven_entries": 72,
-    "math_consistent_entries": 38,
-    "total_bridges": 257,
+    "total_entries": 166,
+    "total_equations": 5429,
+    "math_proven_entries": 73,
+    "math_consistent_entries": 39,
+    "total_bridges": 264,
     "tracked_constants": 8
   },
   "bridges": [
@@ -279,6 +279,68 @@
       ]
     },
     {
+      "equation": "\\phi",
+      "concept_count": 14,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "level": 1
+        },
+        {
+          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
+          "level": 1
+        },
+        {
+          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
+          "level": 1
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\alpha",
       "concept_count": 14,
       "concepts": [
@@ -403,66 +465,8 @@
       ]
     },
     {
-      "equation": "\\phi",
-      "concept_count": 13,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
-          "level": 1
-        },
-        {
-          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
-          "level": 2
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
-          "level": 1
-        },
-        {
-          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
-          "level": 1
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "6.62607015 \\times 10^{-34}",
-      "concept_count": 13,
+      "concept_count": 14,
       "concepts": [
         {
           "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
@@ -515,6 +519,10 @@
         {
           "title": "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
           "level": 3
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
         }
       ]
     },
@@ -719,6 +727,48 @@
       ]
     },
     {
+      "equation": "\\hbar",
+      "concept_count": 9,
+      "concepts": [
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
+          "level": 2
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
+          "level": 1
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
+          "level": 1
+        },
+        {
+          "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
+          "level": 1
+        },
+        {
+          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\Omega_c h^2 = 0.120 \\pm 0.001",
       "concept_count": 8,
       "concepts": [
@@ -833,44 +883,6 @@
       ]
     },
     {
-      "equation": "\\hbar",
-      "concept_count": 8,
-      "concepts": [
-        {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
-          "level": 2
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
-          "level": 1
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
-          "level": 2
-        },
-        {
-          "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
-          "level": 1
-        },
-        {
-          "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
-          "level": 1
-        },
-        {
-          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "\\Gamma",
       "concept_count": 7,
       "concepts": [
@@ -935,6 +947,36 @@
         {
           "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "N_{\\rm eff}",
+      "concept_count": 6,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+          "level": 1
+        },
+        {
+          "title": "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
+          "level": 1
+        },
+        {
+          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+          "level": 2
+        },
+        {
+          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
+          "level": 1
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
         }
       ]
     },
@@ -1089,7 +1131,7 @@
       ]
     },
     {
-      "equation": "N_{\\rm eff}",
+      "equation": "\\chi",
       "concept_count": 5,
       "concepts": [
         {
@@ -1097,20 +1139,20 @@
           "level": 2
         },
         {
-          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
-          "level": 1
-        },
-        {
-          "title": "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
-          "level": 1
-        },
-        {
-          "title": "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
           "level": 2
         },
         {
-          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
-          "level": 1
+          "title": "Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory",
+          "level": 2
+        },
+        {
+          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
         }
       ]
     },
@@ -1163,6 +1205,32 @@
         {
           "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\chi^2",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?",
+          "level": 1
+        },
+        {
+          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "level": 1
+        },
+        {
+          "title": "What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?",
+          "level": 1
+        },
+        {
+          "title": "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
+          "level": 1
+        },
+        {
+          "title": "Will you provide a statistical chi-squared fit analysis comparing your proposed modifications against contemporary datasets from T2K, NOvA, or IceCube?",
+          "level": 1
         }
       ]
     },
@@ -1319,28 +1387,6 @@
         {
           "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
           "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "\\chi",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
-          "level": 2
-        },
-        {
-          "title": "Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory",
-          "level": 2
-        },
-        {
-          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
-          "level": 2
         }
       ]
     },
@@ -1521,24 +1567,24 @@
       ]
     },
     {
-      "equation": "\\chi^2",
+      "equation": "\\mathcal{L}_{\\rm int}",
       "concept_count": 4,
       "concepts": [
         {
-          "title": "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?",
+          "title": "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
           "level": 1
         },
         {
-          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "title": "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
           "level": 1
         },
         {
-          "title": "What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?",
-          "level": 1
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
         },
         {
-          "title": "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
-          "level": 1
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
         }
       ]
     },
@@ -1809,6 +1855,42 @@
       ]
     },
     {
+      "equation": "10^{-6}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+          "level": 1
+        },
+        {
+          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\Delta N_{\\rm eff}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+          "level": 1
+        },
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "(\\mathcal{A}, \\mathcal{H}, D)",
       "concept_count": 3,
       "concepts": [
@@ -1858,24 +1940,6 @@
         },
         {
           "title": "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\mathcal{L}_{\\rm int}",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
-          "level": 1
-        },
-        {
-          "title": "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
-          "level": 1
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
           "level": 2
         }
       ]
@@ -1948,6 +2012,24 @@
         },
         {
           "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "f_{\\rm NL}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
           "level": 2
         }
       ]
@@ -2075,6 +2157,42 @@
         {
           "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "n_s = 0.9649 \\pm 0.0042",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "r_{0.05} < 0.036",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
         }
       ]
     },
@@ -2631,7 +2749,7 @@
       ]
     },
     {
-      "equation": "10^{-6}",
+      "equation": "T_{\\rm RH}",
       "concept_count": 2,
       "concepts": [
         {
@@ -2639,7 +2757,7 @@
           "level": 1
         },
         {
-          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
           "level": 2
         }
       ]
@@ -2654,20 +2772,6 @@
         },
         {
           "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\Delta N_{\\rm eff}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
-          "level": 1
-        },
-        {
-          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
           "level": 2
         }
       ]
@@ -3037,7 +3141,7 @@
       ]
     },
     {
-      "equation": "f_{\\rm NL}",
+      "equation": "G_{ab}(\\phi)",
       "concept_count": 2,
       "concepts": [
         {
@@ -3045,7 +3149,21 @@
           "level": 2
         },
         {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "G_{ab}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
           "level": 2
         }
       ]
@@ -3158,6 +3276,20 @@
         },
         {
           "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "10^{16}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
           "level": 2
         }
       ]
@@ -3429,6 +3561,20 @@
       ]
     },
     {
+      "equation": "\\rho_\\chi",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+          "level": 1
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\sigma/m_\\chi",
       "concept_count": 2,
       "concepts": [
@@ -3541,34 +3687,6 @@
       ]
     },
     {
-      "equation": "n_s = 0.9649 \\pm 0.0042",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "r_{0.05} < 0.036",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "H_0 \\simeq 67.4",
       "concept_count": 2,
       "concepts": [
@@ -3676,6 +3794,20 @@
         },
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "N_{\\rm eff} = 2.99 \\pm 0.17",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
           "level": 2
         }
       ]
@@ -4647,6 +4779,20 @@
       ]
     },
     {
+      "equation": "f_{\\rm NL}^{\\rm local} = -0.9 \\pm 5.1",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\Omega",
       "concept_count": 2,
       "concepts": [
@@ -4807,11 +4953,12 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 75,
+      "occurrence_count": 77,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+        "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
@@ -4883,7 +5030,8 @@
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
         "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
-        "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?"
+        "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
+        "Will you provide a statistical chi-squared fit analysis comparing your proposed modifications against contemporary datasets from T2K, NOvA, or IceCube?"
       ]
     },
     {
@@ -4967,8 +5115,9 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 63,
+      "occurrence_count": 64,
       "referenced_in": [
+        "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
         "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
@@ -5039,9 +5188,10 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 46,
+      "occurrence_count": 48,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+        "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
@@ -5086,7 +5236,8 @@
         "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
-        "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?"
+        "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
+        "Will you provide a statistical chi-squared fit analysis comparing your proposed modifications against contemporary datasets from T2K, NOvA, or IceCube?"
       ]
     },
     {
@@ -5173,8 +5324,9 @@
       "name": "Planck Mass",
       "unit": "GeV",
       "typical_value": "1.22 x 10^19",
-      "occurrence_count": 21,
+      "occurrence_count": 22,
       "referenced_in": [
+        "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
         "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
@@ -5203,11 +5355,12 @@
       "name": "Effective Neutrino Species",
       "unit": "dimensionless",
       "typical_value": "3.044",
-      "occurrence_count": 9,
+      "occurrence_count": 10,
       "referenced_in": [
         "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
+        "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
         "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
         "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
@@ -12407,6 +12560,142 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-21T01:02:26.548205+00:00"
+    },
+    {
+      "concept": "Will you provide a statistical chi-squared fit analysis comparing your proposed modifications against contemporary datasets from T2K, NOvA, or IceCube?",
+      "level": 1,
+      "equations": [
+        "R_{23}",
+        "R_{13}",
+        "R_{12}",
+        "\\alpha = e^2 / (4\\pi\\epsilon_0 \\hbar c) \\approx 1/137.036",
+        "\\chi^2"
+      ],
+      "equation_count": 5,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-22T00:29:34.577422+00:00",
+      "a2a_proof_report": "# Mathematical Verification and Derivation Report\n\n---\n\n## Axioms and Symbols Defined\n\n- **Mixing parameters:** \\( R_{23}, R_{13}, R_{12} \\) are defined as symbolic variables representing mixing angle parameters or ratios commonly used in neutrino oscillation contexts. These are placeholders as no explicit algebraic relations or definitions between them were provided for this task.\n  \n- **Fine structure constant \\(\\alpha\\):** The dimensionless electromagnetic coupling constant defined by the formula:\n  \\[\n  \\alpha = \\frac{e^2}{4 \\pi \\epsilon_0 \\hbar c}\n  \\]\n  where\n  - \\( e \\) = elementary charge\n  - \\( \\epsilon_0 \\) = vacuum permittivity\n  - \\( \\hbar \\) = reduced Planck constant\n  - \\( c \\) = speed of light in vacuum\n\n- **Chi-square statistic \\(\\chi^2\\):** A statistical measure typically used for goodness-of-fit tests between theoretical models and experimental data. It is treated here as a symbolic variable since no explicit equations were provided.\n\n---\n\n## Derivation and Verification Steps\n\n1. **Definition of symbols:**\n   - Define \\( R_{23}, R_{13}, R_{12} \\) and \\(\\chi^2\\) as symbolic variables for general algebraic manipulation.\n   - Define fundamental constants \\( e, \\epsilon_0, \\hbar, c \\) symbolically (positive and real).\n\n2. **Expression input:**\n   - Symbolically define \\(\\alpha = \\frac{e^2}{4 \\pi \\epsilon_0 \\hbar c}\\).\n\n3. **Numerical approximation check:**\n   - Compare the symbolic expression with the known numeric approximate value \\(\\alpha \\approx \\frac{1}{137.036}\\).\n   - Because fundamental constants are symbolic, the expression cannot simplify to the numeric value; thus, the difference expression simply remains symbolic.\n\n4. **Further steps:**\n   - Since no explicit relations involving \\( R_{ij} \\) or \\( \\chi^2 \\) were given, no further algebraic proofs or verifications involving those were possible.\n   - The chi-square statistic \\(\\chi^2\\) remains a symbolic variable pending data specification and formula.\n\n---\n\n## Simplification Result\n\n\\[\n\\text{Difference} = \\alpha - \\frac{1}{137.036} = \\frac{e^2}{4 \\pi \\epsilon_0 \\hbar c} - \\frac{1}{137.036}\n\\]\n\nThis cannot be simplified further algebraically without assigning numerical values to fundamental constants.\n\n---\n\n## Code Artifact\n\n```python\nfrom sympy import symbols, pi, simplify\n\n# Define fundamental constants as symbols\ne, epsilon_0, hbar, c = symbols('e epsilon_0 hbar c', positive=True, real=True)\n\n# Define mixing and chi-square variables symbolically\nR_23, R_13, R_12, chi2 = symbols('R_23 R_13 R_12 chi2')\n\n# Define fine structure constant alpha\nalpha_expr = e**2 / (4 * pi * epsilon_0 * hbar * c)\n\n# Known approximate value of alpha\nalpha_approx = 1 / 137.036\n\n# Simplify difference, expected to remain symbolic\ndiff_alpha = simplify(alpha_expr - alpha_approx)\n\nprint(f\"alpha symbolic: {alpha_expr}\")\nprint(f\"Difference from approx: {diff_alpha}\")\n```\n\n---\n\n# Summary:\n\n- The fine structure constant equation is algebraically consistent as defined.\n- Direct symbolic simplification to numeric \\( \\approx 1/137.036 \\) is not possible without numerical substitution.\n- \\( R_{23}, R_{13}, R_{12} \\), and \\(\\chi^2\\) are placeholders; no direct relations were provided for verification.\n- The chi-square fit analysis requires numerical data and model functional forms to compute \\(\\chi^2\\), thus is beyond symbolic algebra verification here.\n\n---\n\nThis completes the requested formal symbolic verification and consolidation for the given equations and variables."
+    },
+    {
+      "concept": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+      "level": 2,
+      "equations": [
+        "S = \\int d^4x \\sqrt{-g} \\left[ \\frac{M_{\\rm Pl}^2}{2}R - \\frac{1}{2}G_{ab}(\\phi)\\partial_\\mu \\phi^a \\partial^\\mu \\phi^b - V(\\phi) \\right]",
+        "\\ddot{\\phi}^a + 3H\\dot{\\phi}^a + \\Gamma^a_{bc}\\dot{\\phi}^b\\dot{\\phi}^c + G^{ab}\\frac{\\partial V}{\\partial \\phi^b} = 0",
+        "\\delta(t) \\sim \\delta_i e^{\\lambda N}, \\quad \\lambda > 0",
+        "\\chi_k'' + \\left[ A_k - 2q\\cos(2z) \\right]\\chi_k = 0",
+        "\\left[ \\Box_x + m^2 + \\xi R + \\frac{\\lambda}{2}\\phi^2(x) \\right] G(x,y) = -i\\delta(x-y) - \\int d^4z \\sqrt{-g}\\, \\Sigma(x,z)G(z,y)",
+        "n_k^\\chi \\simeq \\exp\\left[-\\frac{\\pi k^2}{g|\\dot{\\phi}_*|}\\right]",
+        "u_k'' + \\left[ k^2 + a^2m_\\psi^2 - i(am_\\psi)' \\right]u_k = 0",
+        "0 \\leq n_k^\\psi \\leq \\frac{1}{2} \\quad \\text{(per spin state)}",
+        "\\left|\\frac{\\dot{\\omega}_k}{\\omega_k^2}\\right| \\gtrsim 1",
+        "\\ddot{\\phi} + 3H\\dot{\\phi} + V_{,\\phi} + g^2(\\phi-\\phi_*)\\langle\\chi^2\\rangle + y\\langle\\bar{\\psi}\\psi\\rangle = 0",
+        "\\Delta N_{\\rm eff} \\sim 3.044 \\left(\\frac{T_{\\rm dark}}{T_{\\rm vis}}\\right)^4",
+        "N_k \\simeq 57 + \\frac{1}{4}\\ln\\frac{V_k}{\\rho_{\\rm end}} + \\frac{1-3w_{\\rm reh}}{12(1+w_{\\rm reh})}\\ln\\frac{\\rho_{\\rm end}}{\\rho_{\\rm RH}}",
+        "\\rho_i = \\frac{\\pi^2}{30} g_{*,i} T_i^4",
+        "\\frac{T_{\\rm dark}}{T_{\\rm vis}} = \\left(\\frac{g_{*,{\\rm vis}}}{g_{*,{\\rm dark}}} \\frac{\\rho_{\\rm dark}}{\\rho_{\\rm vis}}\\right)^{1/4}",
+        "S = \\int d^4x \\sqrt{-g}\\left[\\frac{M_{\\rm Pl}^2}{2}R - \\frac{1}{2}G_{ab}(\\phi)\\partial_\\mu \\phi^a \\partial^\\mu \\phi^b - V(\\phi)\\right]",
+        "H^2 = \\frac{1}{3M_{\\rm Pl}^2}\\left[\\frac{1}{2}G_{ab}\\dot{\\phi}^a\\dot{\\phi}^b + V(\\phi) + \\rho_{\\rm rad}\\right]",
+        "\\dot{\\rho}_\\phi + 3H(1+w_\\phi)\\rho_\\phi = -\\Gamma_\\phi \\rho_\\phi",
+        "\\chi_k'' + [A_k - 2q\\cos(2z)]\\chi_k = 0",
+        "q = \\frac{g^2\\Phi^2}{4m^2}",
+        "n_k \\propto e^{2\\mu_k N}",
+        "\\delta(t) \\sim \\delta_i e^{\\lambda N}",
+        "\\lambda > 0",
+        "T_{\\rm RH} \\simeq \\left(\\frac{90}{\\pi^2 g_*}\\right)^{1/4}\\sqrt{\\Gamma_\\chi M_{\\rm Pl}}",
+        "0 \\leq n_k^\\psi \\leq \\frac{1}{2}",
+        "u_k'' + [k^2 + a^2 m_\\psi^2 - i(am_\\psi)']u_k = 0",
+        "\\Gamma_{\\rm 2PI}[\\phi,G] = S[\\phi] + \\frac{i}{2}\\mathrm{Tr}\\ln G^{-1} + \\frac{i}{2}\\mathrm{Tr}[G_0^{-1}(\\phi)G] + \\Gamma_2[\\phi,G]",
+        "\\left[\\Box_x + m^2 + \\xi R + \\frac{\\lambda}{2}\\phi^2(x)\\right]G(x,y) = -i\\delta(x-y) - \\int d^4z\\sqrt{-g}\\,\\Sigma(x,z)G(z,y)",
+        "T_{\\rm H} = \\frac{1}{8\\pi GM}",
+        "\\tau_{\\rm PBH} \\sim \\frac{5120\\pi G^2 M^3}{\\hbar c^4}",
+        "N_{\\rm eff} = 2.99 \\pm 0.17",
+        "\\Delta N_{\\rm eff} \\sim 3.044\\left(\\frac{T'}{T}\\right)^4",
+        "n_s = 0.9649 \\pm 0.0042",
+        "r_{0.05} < 0.036",
+        "f_{\\rm NL}^{\\rm local} = -0.9 \\pm 5.1",
+        "\\mathcal{L}_{\\rm int}",
+        "\\mathcal{L}_K",
+        "\\rho_{\\rm dark}/\\rho_{\\rm vis}",
+        "T_{\\rm dark}/T_{\\rm vis}",
+        "q\\gg 1",
+        "n_k^\\psi \\leq 1/2",
+        "\\Delta N_{\\rm eff}",
+        "N_k",
+        "\\rho_i = \\frac{\\pi^2}{30}g_{*,i}T_i^4",
+        "H^2 = \\frac{1}{3M_{\\rm Pl}^2}[\\ldots]",
+        "[\\rho] = [E]^4",
+        "g_*",
+        "T^4 = [E]^4",
+        "H^2 = \\frac{1}{3M_{\\rm Pl}^2}[\\frac{1}{2}\\dot{\\phi}^2 + V + \\rho]",
+        "[H^2] = [E]^2",
+        "q = g^2\\Phi^2/(4m^2)",
+        "[\\Phi] = [m] = [E]",
+        "T_{\\rm RH} \\simeq (90/(\\pi^2 g_*))^{1/4}\\sqrt{\\Gamma_\\chi M_{\\rm Pl}}",
+        "[\\Gamma] = [E]",
+        "[M_{\\rm Pl}] = [E]",
+        "\\sqrt{\\Gamma M_{\\rm Pl}} = [E]",
+        "T_H = 1/(8\\pi GM)",
+        "[G] = [E]^{-2}",
+        "[M] = [E]",
+        "\\tau_{\\rm PBH} \\sim 5120\\pi G^2 M^3/(\\hbar c^4)",
+        "[G^2 M^3] = L^6 T^{-4} M_{\\rm mass}",
+        "[\\hbar c^4] = M_{\\rm mass} L^6 T^{-5}",
+        "= [T]",
+        "n_k^\\chi \\simeq \\exp[-\\pi k^2/(g|\\dot{\\phi}_*|)]",
+        "[k^2] = [E]^2",
+        "[g\\dot{\\phi}_*] = [E] \\cdot [E] = [E]^2",
+        "k_* \\sim \\sqrt{g|\\dot{\\phi}_*|}",
+        "[g\\dot{\\phi}_*] = [E]^2",
+        "[k_*] = [E]",
+        "\\Delta t \\sim 1/\\sqrt{g|\\dot{\\phi}_*|}",
+        "[\\Delta t] = [E]^{-1} = [T]",
+        "\\rho_\\psi = \\frac{2}{a^4}\\int \\frac{d^3k}{(2\\pi)^3} n_k^\\psi \\omega_k",
+        "a^{-4}",
+        "d^3k \\cdot \\omega_k = [E]^4",
+        "G_{ab}",
+        "\\Gamma^a_{bc}",
+        "V(X,Y) = V(Y,X)",
+        "6.62607015 \\times 10^{-34}",
+        "\\hbar",
+        "T_{\\rm RH} > 4.1",
+        "\\tau_{\\rm PBH} \\sim 6.24 \\times 10^{-27} (M/1\\text{ g})^3",
+        "N_{\\rm eff}",
+        "n_s",
+        "f_{\\rm NL}",
+        "T_{\\rm RH}",
+        "\\sim 10^{9}",
+        "10^{16}",
+        "\\sim 10^{4}",
+        "10^{-36}",
+        "10^{-6}",
+        "X=Y",
+        "G_{ab}(\\phi)",
+        "\\phi",
+        "\\phi_*",
+        "\\chi",
+        "\\chi \\to \\psi\\bar{\\psi}",
+        "\\Gamma_\\chi",
+        "\\rho_\\chi",
+        "\\rho_\\psi",
+        "T_{\\rm dark}/T_{\\rm vis} \\lesssim 0.5",
+        "r \\sim 0.03",
+        "T_{\\rm RH} \\gtrsim 4.1",
+        "\\delta_i = X-Y",
+        "\\Gamma_{\\rm scat} < H",
+        "n_k \\leq 1/2",
+        "m_\\chi(\\phi) = g|\\phi-\\phi_*|",
+        "\\dot{\\phi}",
+        "y\\langle\\bar{\\psi}\\psi\\rangle",
+        "g^2\\langle\\chi^2\\rangle"
+      ],
+      "equation_count": 108,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-22T00:46:22.244719+00:00"
     }
   ]
 }

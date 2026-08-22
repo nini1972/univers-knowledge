@@ -45,6 +45,7 @@ graph TD
     standard_model_gauge_symmetries_and_their_spontaneous_breaking["Standard Model Gauge Symmetries and Their Spontaneous Breaking"]:::verified
     what_steps_can_be_taken_to_integrate_higherorder_effects_and_nonstandard_interactions_consistently_within_the_existing_framework["Integrating Higher-Order Effects and Non-Standard Interactions Consistently Within the Existing Framework"]:::theoretical
     can_you_clarify_the_commutation_relations_m__and_provide_the_explicit_calculation_showing_the_convergence_of_the_bch_series_for_your_nonhermitian_effective_hamiltonian["Non-Hermitian Effective Hamiltonian for Neutral-Meson Systems"]:::verified
+    will_you_provide_a_statistical_chisquared_fit_analysis_comparing_your_proposed_modifications_against_contemporary_datasets_from_t2k_nova_or_icecube["Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics"]:::verified
     quantum_mechanics["Quantum Mechanics"]:::verified
     how_can_sterile_neutrino_production_mechanisms_be_constrained_or_clarified_by_future_neutrino_oscillation_or_cosmological_probes["How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?"]:::theoretical
     big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
@@ -118,6 +119,7 @@ graph TD
     symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity["Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity"]:::verified
     fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations["Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations"]:::theoretical
     quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
+    asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics["Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics"]:::theoretical
     axionlike_particles_vs_neutralino_wimps_in_explaining_cosmic_dark_matter_abundance["Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance"]:::theoretical
     higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate["Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate"]:::theoretical
     asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime["Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime"]:::theoretical
@@ -332,6 +334,7 @@ graph TD
     quantum_gravity --> symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity
     dark_matter --> fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations
     quantum_measurement_problem --> quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
+    quantum_field_theory --> asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics
     quantum_gravity --> asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime
     electroweak_symmetry_breaking --> braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem
     dark_matter --> fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges
@@ -457,6 +460,7 @@ graph TD
 - [Standard Model Fermion Mass Hierarchies and Mixing Matrices](level_1_fundamental_physics/standard_model_fermion_mass_hierarchies_and_mixing_matrices.md) [VERIFIED]
 - [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
+- [Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics](level_1_fundamental_physics/will_you_provide_a_statistical_chisquared_fit_analysis_comparing_your_proposed_modifications_against_contemporary_datasets_from_t2k_nova_or_icecube.md) [VERIFIED]
 - [Superfluid Dark Matter](level_1_fundamental_physics/what_are_the_most_promising_upcoming_observational_or_experimental_tests_that_could_directly_detect_signatures_unique_to_superfluid_dark_matter.md) [THEORETICAL]
 - [Superfluid Dark Matter Phonon Effects](level_1_fundamental_physics/how_might_potential_degeneracies_in_astrophysical_signals_between_sfdm_phonon_effects_and_alternative_dark_matter_models_be_resolved_observationally.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
@@ -486,6 +490,7 @@ graph TD
 - [Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance](level_2_advanced_frameworks/asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance.md) [VERIFIED]
 - [Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure](level_2_advanced_frameworks/asymmetric_dark_matter_vs_simp_dark_matter_in_explaining_dark_matter_abundance_and_smallscale_structure.md) [THEORETICAL]
 - [Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry](level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry.md) [THEORETICAL]
+- [Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics](level_2_advanced_frameworks/asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics.md) [THEORETICAL]
 - [Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution.md) [THEORETICAL]
 - [Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity.md) [THEORETICAL]

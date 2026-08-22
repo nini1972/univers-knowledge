@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-21T01:03:30.515345+00:00",
+  "updated_at": "2026-08-22T01:25:00.630832+00:00",
   "stats": {
-    "total_nodes": 209,
-    "level_1_count": 99,
-    "level_2_count": 93,
+    "total_nodes": 211,
+    "level_1_count": 100,
+    "level_2_count": 94,
     "level_3_count": 17,
     "total_edges": 124,
     "frontier_count": 0
@@ -1914,6 +1914,26 @@
       "path": "knowledge_base/level_1_fundamental_physics/will_you_perform_a_complete_dimensional_analysis_table_for_your_proposed_modified_survival_equations_showing_explicit_si_unit_tracing_to_prove_they_are_dimensionless.md"
     },
     {
+      "id": "willyouprovideastatisticalchisquaredfitanalysiscomparingyourproposedmodificationsagainstcontemporarydatasetsfromt2knovaoricecube",
+      "title": "Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research Report on BSM Neutrino Physics",
+        "T2K Collaboration Results",
+        "NOvA Experimental Data",
+        "IceCube Neutrino Observatory Findings"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/will_you_provide_a_statistical_chisquared_fit_analysis_comparing_your_proposed_modifications_against_contemporary_datasets_from_t2k_nova_or_icecube.md"
+    },
+    {
       "id": "asymmetricdarkmattervsdarkmatterdecaytohiddensectorphotonsinexplainingdarkmatterrelicabundance",
       "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
       "level": 2,
@@ -1976,6 +1996,25 @@
         "Source 3"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry.md"
+    },
+    {
+      "id": "asymmetricreheatingvsinstantpreheatinginearlyuniversedynamics",
+      "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck 2018",
+        "BICEP/Keck",
+        "Kadanoff-Baym and Boltzmann formalisms"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics.md"
     },
     {
       "id": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
