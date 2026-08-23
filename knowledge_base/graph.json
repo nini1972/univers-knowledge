@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-22T01:25:00.630832+00:00",
+  "updated_at": "2026-08-23T01:24:21.853873+00:00",
   "stats": {
-    "total_nodes": 211,
-    "level_1_count": 100,
-    "level_2_count": 94,
+    "total_nodes": 213,
+    "level_1_count": 101,
+    "level_2_count": 95,
     "level_3_count": 17,
-    "total_edges": 124,
+    "total_edges": 126,
     "frontier_count": 0
   },
   "nodes": [
@@ -225,6 +225,25 @@
         "Relevant Review Papers on Particle Physics and Quantum Decoherence"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/can_you_clarify_the_commutation_relations_m__and_provide_the_explicit_calculation_showing_the_convergence_of_the_bch_series_for_your_nonhermitian_effective_hamiltonian.md"
+    },
+    {
+      "id": "canyouprovideacorrectedandverifiablebibliographyreplacingthefuturedated2025referencewithestablishedpeerreviewedmaterial",
+      "title": "Can you provide a corrected and verifiable bibliography, replacing the future-dated 2025 reference with established peer-reviewed material?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Peer-reviewed literature on bibliometric error rates",
+        "Studies on DOI resolution techniques",
+        "Scholarly communication standards resources"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_you_provide_a_corrected_and_verifiable_bibliography_replacing_the_futuredated_2025_reference_with_established_peerreviewed_material.md"
     },
     {
       "id": "canyouprovidearigorousderivationbasedproofofthemodifiedsurvivalprobabilityequationsusingnonhermitianhamiltoniansandlindbladoperatorformalism",
@@ -2026,7 +2045,7 @@
       "math_score": "0/4",
       "dependencies": [
         "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
-        "emergentgravityvsquantumloopgravitydebate",
+        "emergentgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
         "quantumgravity"
       ],
       "tags": [
@@ -2644,6 +2663,28 @@
         "Theoretical Physics Conference Proceedings"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md"
+    },
+    {
+      "id": "emergentgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
+      "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "4/4",
+      "dependencies": [
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "General Relativity",
+        "Planck 2018 cosmological parameters",
+        "LZ dark matter constraints"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/emergent_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies.md"
     },
     {
       "id": "emergentgravityvsquantumloopgravitydebate",
@@ -4336,7 +4377,7 @@
       "type": "component_theory"
     },
     {
-      "source": "emergentgravityvsquantumloopgravitydebate",
+      "source": "emergentgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
       "target": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
       "type": "component_theory"
     },
@@ -4488,6 +4529,16 @@
     {
       "source": "inflationarycosmology",
       "target": "ekpyroticuniversemodelversusinflationarycosmologydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "emergentgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "emergentgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
       "type": "component_theory"
     },
     {

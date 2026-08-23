@@ -89,6 +89,7 @@ graph TD
     what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance["What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?"]:::verified
     neutrino_masses_and_leptogenesis["Neutrino Masses and Leptogenesis"]:::verified
     inflationary_reheating_mechanisms["Inflationary Reheating Mechanisms"]:::theoretical
+    can_you_provide_a_corrected_and_verifiable_bibliography_replacing_the_futuredated_2025_reference_with_established_peerreviewed_material["Can you provide a corrected and verifiable bibliography, replacing the future-dated 2025 reference with established peer-reviewed material?"]:::verified
     what_specific_experimental_observables_or_signatures_can_uniquely_discriminate_neutrino_decay_from_background_processes_and_alternative_new_physics_scenarios_in_dune_juno_or_icecube_datasets["What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?"]:::theoretical
     quantum_vacuum_polarization["Quantum Vacuum Polarization"]:::verified
     primordial_gravitational_waves["Primordial Gravitational Waves"]:::theoretical
@@ -174,6 +175,7 @@ graph TD
     axion_dark_matter_vs_sterile_neutrino_dark_matter_in_explaining_dark_matter["Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter"]:::theoretical
     supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate["Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"]:::theoretical
     informationtheoretic_vs_thermodynamic_interpretations_of_gravity["Information-Theoretic vs. Thermodynamic Interpretations of Gravity"]:::theoretical
+    emergent_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies["Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies"]:::verified
     emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics["Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics"]:::theoretical
     supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics["Supersymmetric Grand Unified Theories vs Composite Higgs Models in Beyond Standard Model Physics"]:::theoretical
     superfluid_dark_matter_vs_sterile_neutrino_dark_matter_debate["Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate"]:::verified
@@ -393,6 +395,7 @@ graph TD
 - [Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?](level_1_fundamental_physics/can_the_dimensional_consistency_be_conclusively_verified_using_advanced_symbolic_methods_beyond_current_automated_tools.md) [VERIFIED]
 - [Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?](level_1_fundamental_physics/can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance.md) [THEORETICAL]
 - [Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?](level_1_fundamental_physics/can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing.md) [THEORETICAL]
+- [Can you provide a corrected and verifiable bibliography, replacing the future-dated 2025 reference with established peer-reviewed material?](level_1_fundamental_physics/can_you_provide_a_corrected_and_verifiable_bibliography_replacing_the_futuredated_2025_reference_with_established_peerreviewed_material.md) [VERIFIED]
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
@@ -522,6 +525,7 @@ graph TD
 - [Ekpyrotic Universe Model versus Inflationary Cosmology Debate](level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md) [VERIFIED]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
 - [Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics](level_2_advanced_frameworks/emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics.md) [THEORETICAL]
+- [Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies](level_2_advanced_frameworks/emergent_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies.md) [VERIFIED]
 - [Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena](level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md) [THEORETICAL]
 - [Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md) [THEORETICAL]
 - [Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations](level_2_advanced_frameworks/fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations.md) [THEORETICAL]
