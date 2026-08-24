@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-23T00:49:32.113280+00:00  
-> **Total Analyzed Concepts:** 171 | **Total Discovered Equations:** 5577 | **Discovered Bridges:** 272
+> **Generated:** 2026-08-24T00:52:28.059275+00:00  
+> **Total Analyzed Concepts:** 177 | **Total Discovered Equations:** 5727 | **Discovered Bridges:** 278
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 51 concepts:
+**Occurrences:** Appears in 54 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -59,6 +59,9 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies
 - **Level 3**: Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning
 - **Level 2**: Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
+- **Level 3**: Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing
+- **Level 1**: What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?
+- **Level 3**: Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology
 
 ### ` \gamma `
 **Occurrences:** Appears in 15 concepts:
@@ -149,7 +152,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?
 
 ### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
-**Occurrences:** Appears in 12 concepts:
+**Occurrences:** Appears in 13 concepts:
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 1**: How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?
@@ -162,6 +165,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures
 - **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
 - **Level 3**: Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments
+- **Level 1**: What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?
 
 ### ` \Phi `
 **Occurrences:** Appears in 12 concepts:
@@ -265,15 +269,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 79 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 69 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 66 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 50 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 40 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 82 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 73 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 68 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 52 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 41 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 25 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 22 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 24 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 10 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 74
-- **MATH_CONSISTENT Entries:** 40
+- **MATH_PROVEN Entries:** 76
+- **MATH_CONSISTENT Entries:** 41

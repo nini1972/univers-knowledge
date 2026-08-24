@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-23T00:49:32.113280+00:00",
+  "updated_at": "2026-08-24T00:52:28.059275+00:00",
   "stats": {
-    "total_entries": 171,
-    "total_equations": 5577,
-    "math_proven_entries": 74,
-    "math_consistent_entries": 40,
-    "total_bridges": 272,
+    "total_entries": 177,
+    "total_equations": 5727,
+    "math_proven_entries": 76,
+    "math_consistent_entries": 41,
+    "total_bridges": 278,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 51,
+      "concept_count": 54,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -217,6 +217,18 @@
         {
           "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
           "level": 2
+        },
+        {
+          "title": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+          "level": 3
+        },
+        {
+          "title": "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
+          "level": 1
+        },
+        {
+          "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
+          "level": 3
         }
       ]
     },
@@ -544,7 +556,7 @@
     },
     {
       "equation": "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
-      "concept_count": 12,
+      "concept_count": 13,
       "concepts": [
         {
           "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
@@ -593,6 +605,10 @@
         {
           "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
           "level": 3
+        },
+        {
+          "title": "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
+          "level": 1
         }
       ]
     },
@@ -1141,6 +1157,36 @@
       ]
     },
     {
+      "equation": "\\eta",
+      "concept_count": 6,
+      "concepts": [
+        {
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "level": 2
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
+          "level": 1
+        },
+        {
+          "title": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\beta",
       "concept_count": 6,
       "concepts": [
@@ -1166,6 +1212,36 @@
         },
         {
           "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_m \\approx 0.315",
+      "concept_count": 6,
+      "concepts": [
+        {
+          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
+          "level": 3
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        },
+        {
+          "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
           "level": 3
         }
       ]
@@ -1357,32 +1433,6 @@
       ]
     },
     {
-      "equation": "\\eta",
-      "concept_count": 5,
-      "concepts": [
-        {
-          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
-          "level": 2
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\Omega_c h^2",
       "concept_count": 5,
       "concepts": [
@@ -1483,32 +1533,6 @@
         {
           "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\Omega_m \\approx 0.315",
-      "concept_count": 5,
-      "concepts": [
-        {
-          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
-          "level": 3
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
-          "level": 3
         }
       ]
     },
@@ -1751,6 +1775,28 @@
         {
           "title": "Can you clarify the commutation relations [M, Γ] and provide the explicit calculation showing the convergence of the BCH series for your non-Hermitian effective Hamiltonian?",
           "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "k \\sim 1/r",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
+          "level": 2
         }
       ]
     },
@@ -2041,6 +2087,24 @@
       ]
     },
     {
+      "equation": "3\\sigma",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
+          "level": 1
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
+          "level": 1
+        }
+      ]
+    },
+    {
       "equation": "\\Gamma_{ij}",
       "concept_count": 3,
       "concepts": [
@@ -2203,7 +2267,7 @@
       ]
     },
     {
-      "equation": "k \\sim 1/r",
+      "equation": "g_{\\mu\\nu} = \\bar{g}_{\\mu\\nu} + h_{\\mu\\nu}",
       "concept_count": 3,
       "concepts": [
         {
@@ -2215,7 +2279,7 @@
           "level": 2
         },
         {
-          "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+          "title": "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
           "level": 2
         }
       ]
@@ -2235,6 +2299,24 @@
         {
           "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\mu\\left(\\frac{|a|}{a_0}\\right)a = a_N",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
+          "level": 1
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
+          "level": 3
         }
       ]
     },
@@ -2545,6 +2627,60 @@
       ]
     },
     {
+      "equation": "\\Omega_\\Lambda \\approx 0.685",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "|c_g/c - 1| \\lesssim 10^{-15}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
+          "level": 3
+        },
+        {
+          "title": "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\mathcal{L}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
+          "level": 3
+        },
+        {
+          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
+          "level": 1
+        },
+        {
+          "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\gamma - 1 = (2.1 \\pm 2.3) \\times 10^{-5}",
       "concept_count": 3,
       "concepts": [
@@ -2558,6 +2694,24 @@
         },
         {
           "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\Gamma_k",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
           "level": 2
         }
       ]
@@ -2577,6 +2731,24 @@
         {
           "title": "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "Q_{\\min}=k_B T \\ln 2",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+          "level": 3
         }
       ]
     },
@@ -2757,6 +2929,24 @@
         {
           "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "Q_{\\min} = k_B T \\ln 2",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+          "level": 3
         }
       ]
     },
@@ -3041,6 +3231,20 @@
       ]
     },
     {
+      "equation": "\\bar{g}_{\\mu\\nu}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
+          "level": 2
+        },
+        {
+          "title": "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\mathcal{A}_F = \\mathbb{C} \\oplus \\mathbb{H} \\oplus M_3(\\mathbb{C})",
       "concept_count": 2,
       "concepts": [
@@ -3275,20 +3479,6 @@
         {
           "title": "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
           "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "3\\sigma",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
-          "level": 1
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
-          "level": 2
         }
       ]
     },
@@ -3643,20 +3833,6 @@
       ]
     },
     {
-      "equation": "g_{\\mu\\nu} = \\bar{g}_{\\mu\\nu} + h_{\\mu\\nu}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
-          "level": 2
-        },
-        {
-          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "m_H \\approx 125",
       "concept_count": 2,
       "concepts": [
@@ -3667,20 +3843,6 @@
         {
           "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\mu\\left(\\frac{|a|}{a_0}\\right)a = a_N",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
-          "level": 1
-        },
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
         }
       ]
     },
@@ -4077,6 +4239,20 @@
       ]
     },
     {
+      "equation": "Q_{\\min}=k_BT\\ln2",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "S(A)=\\frac{\\mathrm{Area}(\\gamma_A)}{4G_N\\hbar}",
       "concept_count": 2,
       "concepts": [
@@ -4385,20 +4561,6 @@
       ]
     },
     {
-      "equation": "\\Omega_\\Lambda \\approx 0.685",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "\\left|\\frac{c_g}{c}-1\\right|\\lesssim 10^{-15}",
       "concept_count": 2,
       "concepts": [
@@ -4408,20 +4570,6 @@
         },
         {
           "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
-          "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "|c_g/c - 1| \\lesssim 10^{-15}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
           "level": 3
         }
       ]
@@ -4469,20 +4617,6 @@
       ]
     },
     {
-      "equation": "\\mathcal{L}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
-          "level": 3
-        },
-        {
-          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\Box^{-1}",
       "concept_count": 2,
       "concepts": [
@@ -4492,20 +4626,6 @@
         },
         {
           "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\Gamma_k",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
-          "level": 2
-        },
-        {
-          "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
           "level": 2
         }
       ]
@@ -4591,20 +4711,6 @@
         {
           "title": "Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "Q_{\\min}=k_B T \\ln 2",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
-          "level": 3
         }
       ]
     },
@@ -4749,6 +4855,34 @@
       ]
     },
     {
+      "equation": "H_0 \\approx 67.4 \\ \\mathrm{km\\,s^{-1}\\,Mpc^{-1}}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "L = D - A",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\theta_{23}",
       "concept_count": 2,
       "concepts": [
@@ -4857,6 +4991,20 @@
         {
           "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "a_0 \\approx 1.2 \\times 10^{-10} \\ \\mathrm{m\\,s^{-2}}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
+          "level": 3
         }
       ]
     },
@@ -5113,6 +5261,20 @@
       ]
     },
     {
+      "equation": "c_g \\neq c",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\sim 10^{-43}",
       "concept_count": 2,
       "concepts": [
@@ -5139,20 +5301,6 @@
           "level": 2
         }
       ]
-    },
-    {
-      "equation": "Q_{\\min} = k_B T \\ln 2",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
-          "level": 3
-        }
-      ]
     }
   ],
   "constant_index": [
@@ -5161,7 +5309,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 79,
+      "occurrence_count": 82,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -5169,6 +5317,7 @@
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+        "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
@@ -5207,6 +5356,7 @@
         "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
         "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
         "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
+        "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
         "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
         "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
@@ -5237,6 +5387,7 @@
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
         "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
         "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
+        "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
         "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
@@ -5249,7 +5400,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 69,
+      "occurrence_count": 73,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -5257,6 +5408,7 @@
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
         "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+        "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
         "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
@@ -5286,6 +5438,7 @@
         "Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
         "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
         "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
+        "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
         "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
         "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
         "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
@@ -5303,6 +5456,7 @@
         "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+        "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
         "Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory",
@@ -5314,6 +5468,7 @@
         "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
         "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
+        "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
         "What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?",
         "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
@@ -5327,12 +5482,13 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 66,
+      "occurrence_count": 68,
       "referenced_in": [
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
         "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+        "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
@@ -5393,6 +5549,7 @@
         "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
         "What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?",
         "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
+        "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
         "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?"
       ]
@@ -5402,12 +5559,13 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 50,
+      "occurrence_count": 52,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+        "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
         "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
@@ -5436,6 +5594,7 @@
         "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
         "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
         "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
+        "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
         "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
         "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
@@ -5461,7 +5620,7 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 40,
+      "occurrence_count": 41,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance",
@@ -5496,6 +5655,7 @@
         "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+        "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
         "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
         "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
@@ -5544,11 +5704,12 @@
       "name": "Planck Mass",
       "unit": "GeV",
       "typical_value": "1.22 x 10^19",
-      "occurrence_count": 22,
+      "occurrence_count": 24,
       "referenced_in": [
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
         "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+        "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
         "Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics",
         "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
@@ -5567,7 +5728,8 @@
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
         "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
-        "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?"
+        "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
+        "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?"
       ]
     },
     {
@@ -13120,6 +13282,223 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-23T00:48:28.459172+00:00"
+    },
+    {
+      "concept": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+      "level": 3,
+      "equations": [
+        "\\dot q_L = k_B T_f \\ln 2 \\, \\dot n_{\\rm irr}",
+        "\\frac{P_{\\min}}{V}=n_I r\\, k_B T \\ln 2",
+        "Q_{\\min}=k_B T \\ln 2",
+        "\\Delta S = k_B \\ln 2",
+        "Q \\geq T\\Delta S = k_B T \\ln 2",
+        "W(\\tau) \\geq k_B T \\ln 2 + \\frac{k_B T \\mathcal{L}^2}{\\tau}",
+        "T \\sim 10^5 - 10^7 \\ \\mathrm{K}",
+        "\\delta_b \\sim 10 - 100",
+        "\\nu_{\\max} \\leq \\frac{2E}{\\pi \\hbar}",
+        "I \\leq \\frac{2\\pi E R}{\\hbar c \\ln 2}",
+        "I \\leq \\frac{A}{4 \\ell_P^2 \\ln 2}",
+        "\\bar{n}_b = \\frac{\\Omega_b \\rho_{\\mathrm{crit}}}{m_p}",
+        "\\frac{\\partial \\mathbf{B}}{\\partial t} = \\nabla \\times (\\mathbf{v}\\times\\mathbf{B}) + \\eta_m \\nabla^2 \\mathbf{B}",
+        "\\dot n_{\\rm irr}",
+        "\\eta_L \\ll 1",
+        "k_B T \\ln 2"
+      ],
+      "equation_count": 16,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-23T00:58:13.577983+00:00"
+    },
+    {
+      "concept": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+      "level": 3,
+      "equations": [
+        "W_{\\rm diss} \\ge \\frac{k_B T}{\\tau}\\left[\\int_0^\\tau \\sqrt{\\dot{\\lambda}^T g(\\lambda)\\dot{\\lambda}}\\,dt\\right]^2",
+        "Q_{\\min} = k_B T \\ln 2",
+        "\\Gamma_L = k_B T \\ln 2 \\, \\dot{n}_{\\rm erase}",
+        "\\dot{s}_L = k_B \\ln 2 \\, \\dot{n}_{\\rm erase}",
+        "\\langle \\Sigma \\rangle = \\frac{\\Delta S_{\\rm sys}}{k_B} + \\frac{Q}{k_B T} \\ge 0",
+        "\\frac{\\partial i_{\\rm bit}}{\\partial t} + \\nabla \\cdot \\mathbf{J}_{\\rm bit} = -\\dot{i}_{\\rm erase}",
+        "\\rho \\frac{D}{Dt} \\left( \\frac{3}{2} \\frac{k_B T}{\\mu m_p} \\right) = -p \\nabla \\cdot \\mathbf{v} - n_e n_i \\Lambda(T,Z) + \\Gamma_{\\rm shock} + \\Gamma_{\\rm fb} + \\Gamma_{\\rm turb} + \\Gamma_{\\rm cond} + \\Gamma_L",
+        "\\Gamma_{\\rm shock} \\sim \\frac{1}{2} \\rho v_s^3 \\frac{1}{L}",
+        "Q_{\\min}(\\epsilon) = k_B T \\left[\\ln 2 - H_2(\\epsilon)\\right]",
+        "i_{\\rm bit}",
+        "\\dot{n}_{\\rm erase}",
+        "k_B",
+        "m_e",
+        "m_p",
+        "\\Delta U \\gg k_B T",
+        "\\Gamma_L = k_B T \\ln 2 \\,\\dot{n}_{\\rm erase}",
+        "\\Gamma_L",
+        "\\Gamma_{\\rm shock}",
+        "n_b \\sim 10^{-6}-10^{-4}\\,\\text{cm}^{-3}",
+        "I \\sim N_b",
+        "I \\le 2\\pi ER/\\hbar c",
+        "10^{70}",
+        "\\dot{N}_{\\rm ops} \\le 2E/\\pi\\hbar",
+        "\\partial_t i_{\\rm bit} + \\nabla \\cdot \\mathbf{J}_{\\rm bit} = -\\dot{i}_{\\rm erase}",
+        "\\Gamma_{\\rm shock} \\sim \\frac{1}{2}\\rho v_s^3/L",
+        "\\dot{n}_{\\rm erase} \\sim \\eta n_b/t_{\\rm erase}",
+        "\\eta",
+        "Q_{\\min}=k_BT\\ln2",
+        "\\propto n_b T",
+        "n_b^2\\Lambda(T)"
+      ],
+      "equation_count": 30,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-23T01:06:47.971468+00:00"
+    },
+    {
+      "concept": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+      "level": 3,
+      "equations": [
+        "m_e",
+        "m_p",
+        "k_B",
+        "\\Lambda",
+        "\\dot n_{\\rm erase}",
+        "\\ell \\to 0",
+        "Q_{\\min}=k_B T \\ln 2",
+        "\\dot q_L",
+        "S \\le 2\\pi k_B E R/\\hbar c",
+        "\\tau_{\\rm op} \\ge \\pi\\hbar/2(E-E_0)",
+        "10^{12} M_\\odot",
+        "\\dot N_{\\rm erase} \\lesssim 6\\times10^{51} \\rm s^{-1}",
+        "Q \\ge k_B T \\ln 2",
+        "[m][kg\\cdot m/s] = [J\\cdot s]",
+        "10^{-18} \\rm s^{-1}"
+      ],
+      "equation_count": 15,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-23T01:24:20.774905+00:00"
+    },
+    {
+      "concept": "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
+      "level": 1,
+      "equations": [
+        "\\Lambda",
+        "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
+        "m_g \\lesssim 10^{-23}\\text{ eV}/c^2",
+        "\\alpha_A = \\partial \\ln M_A/\\partial \\phi",
+        "U=-\\Box^{-1}R",
+        "\\beta_{\\rm dip}u^{-7}",
+        "\\dot E_{\\rm dip} = \\frac{G}{3c^3} \\mu^2 (\\alpha_1-\\alpha_2)^2 r^2\\omega^4",
+        "r_V",
+        "\\ddot h_A + [3H+\\nu(t)]\\dot h_A + (c_T^2 k^2/a^2)h_A = 0",
+        "\\nu(t)",
+        "d_L^{\\rm GW}\\neq d_L^{\\rm EM}",
+        "\\Delta R/R \\simeq (\\phi_\\infty-\\phi_c)/(6\\beta M_{\\rm Pl}\\Phi_c)",
+        "r_V \\sim (GM/M_{\\rm Pl}M_\\Lambda^3)^{1/3}",
+        "M_\\Lambda",
+        "d_L",
+        "<0.1\\%",
+        "z=0.5",
+        "3\\sigma",
+        "\\beta_{\\rm dip}",
+        "r_V(t)",
+        "\\alpha_A",
+        "d_L^{\\rm GW}(z)\\neq d_L^{\\rm EM}(z)",
+        "S_{\\rm GR} = \\frac{M_{\\rm Pl}^2}{2} \\int d^4x \\sqrt{-g}\\,R + S_m[g_{\\mu\\nu},\\psi_m]",
+        "h(t)=F_+ h_+(t)+F_\\times h_\\times(t)",
+        "m_g \\lesssim 10^{-23}\\,{\\rm eV}/c^2",
+        "S_{\\rm EsGB} = \\frac{M_{\\rm Pl}^2}{2} \\int d^4x\\sqrt{-g} \\left[ R -\\frac{1}{2}(\\nabla\\phi)^2 +\\alpha_{\\rm GB} f(\\phi)\\mathcal G \\right] + S_m",
+        "\\frac{\\dot E_{\\rm dip}}{\\dot E_{\\rm quad}} \\simeq \\frac{5}{96} \\frac{(\\alpha_1-\\alpha_2)^2}{v^2/c^2}",
+        "\\ddot h_A + \\left[3H+\\nu(t)\\right]\\dot h_A + \\frac{c_T^2 k^2}{a^2}h_A = 0"
+      ],
+      "equation_count": 28,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-24T00:30:19.010992+00:00",
+      "a2a_proof_report": "# Mathematical Verification Report on Screening-Protected Scalar Fields vs Non-Local Interactions in Strong-Field Gravity Context\n\n---\n\n## Axioms\n\n- \\(\\Lambda\\) is the cosmological constant with magnitude approximately\n  \\[\n  \\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}.\n  \\]\n\n- The graviton mass upper bound is given as\n  \\[\n  m_g \\lesssim 10^{-23} \\text{ eV}/c^2.\n  \\]\n\n- The scalar coupling parameter \\(\\alpha_A\\) related to body \\(A\\) is defined by\n  \\[\n  \\alpha_A = \\frac{\\partial \\ln M_A}{\\partial \\phi}\n  \\]\n  where \\(M_A\\) is the scalar-dependent mass of body \\(A\\), and \\(\\phi\\) is the scalar field.\n\n- The non-local scalar field \\(U\\) is defined by\n  \\[\n  U = -\\Box^{-1} R,\n  \\]\n  where \\(\\Box\\) is the d'Alembertian operator and \\(R\\) is the Ricci scalar curvature. This is equivalently expressed as an operator equation:\n  \\[\n  \\Box U + R = 0.\n  \\]\n\n---\n\n## Derivation Steps and Verification\n\n### 1. Verifying \\(\\alpha_A = \\partial \\ln M_A / \\partial \\phi\\)\n\n- Let the scalar-dependent mass be \\(M_A(\\phi)\\).\n- Then:\n  \\[\n  \\alpha_A = \\frac{\\partial \\ln M_A}{\\partial \\phi} = \\frac{1}{M_A} \\frac{\\partial M_A}{\\partial \\phi}\n  \\]\n\nUsing SymPy, we verified symbolically that:\n\n```python\nimport sympy as sp\n\nphi = sp.Symbol('phi')\nM_A_func = sp.Function('M_A')(phi)\nalpha_A_expr = sp.diff(sp.log(M_A_func), phi).simplify()\nprint(\"alpha_A expression:\", alpha_A_expr)\n```\nOutput is:\n\\[\n\\alpha_A = \\frac{M_A'(\\phi)}{M_A(\\phi)} \\quad \\text{(where } M_A'(\\phi) = \\frac{dM_A}{d\\phi}\\text{)}\n\\]\n\nThis precisely matches the definition given.\n\n- For a trial function \\(M_A = e^{k \\phi}\\), the derivative simplifies further:\n  \\[\n  \\alpha_A = \\frac{d}{d \\phi} \\ln e^{k \\phi} = k,\n  \\]\nwhich is verified by:\n\n```python\nk = sp.Symbol('k')\ntrial_M_A = sp.exp(k*phi)\ntrial_alpha_A = sp.diff(sp.log(trial_M_A), phi)\nprint(\"Trial alpha_A for M_A=exp(k phi):\", trial_alpha_A)\n```\nOutput:\n\\[\nk\n\\]\n\n### 2. Verifying the Non-Local Definition of \\(U\\)\n\nBy definition,\n\\[\nU = -\\Box^{-1} R \\implies \\Box U = -R,\n\\]\nwhich rearranges to:\n\\[\n\\Box U + R = 0.\n\\]\n\nSince \\(\\Box\\) is a non-local operator (d'Alembertian inverse), this is not an algebraic equation but an operator identity.\n\nWe defined symbolically:\n```python\nBox = sp.Function('Box')\nU, R = sp.symbols('U R')\nboxU_eq = sp.Eq(Box(U) + R, 0)\nprint(\"Non-local field U equation:\", boxU_eq)\n```\nOutput:\n\\[\n\\Box U + R = 0\n\\]\n\nwhich is consistent by definition.\n\n### 3. Constants Consistency and Units\n\n- \\(\\Lambda = 1.089 \\times 10^{-52} \\text{ m}^{-2}\\) is consistent with cosmological measurements.\n\n- \\(m_g \\lesssim 10^{-23} \\text{ eV}/c^2\\) is consistent with bounds from gravitational wave tests on graviton mass.\n\n---\n\n## Simplification Result\n\n- The expression for \\(\\alpha_A = \\partial \\ln M_A/\\partial \\phi\\) is a direct application of the chain rule and holds symbolically.\n\n- The definition of \\(U\\) via the inverse d'Alembertian operator is consistent by construction as an integral equation.\n\n---\n\n## Code Artifact for Verification\n\n```python\nimport sympy as sp\n\n# Define scalar field and functions\nphi = sp.Symbol('phi')\nM_A_func = sp.Function('M_A')(phi)\n\n# Define alpha_A as derivative of log mass wrt scalar field\nalpha_A_expr = sp.diff(sp.log(M_A_func), phi).simplify()\nprint(\"alpha_A expression:\", alpha_A_expr)\n\n# Trial example: M_A = exp(k * phi)\nk = sp.Symbol('k')\ntrial_M_A = sp.exp(k*phi)\ntrial_alpha_A = sp.diff(sp.log(trial_M_A), phi)\nprint(\"Trial alpha_A for M_A=exp(k phi):\", trial_alpha_A)\n\n# Define non-local operator equation\nU, R = sp.symbols('U R')\nBox = sp.Function('Box')\nboxU_eq = sp.Eq(Box(U) + R, 0)\nprint(\"Non-local field U equation:\", boxU_eq)\n\n# Numerical constants:\nLambda_val = 1.089e-52  # m^-2\nm_g_val = 1e-23         # eV/c^2 (approximate upper bound)\n\nprint(\"Lambda approximation:\", Lambda_val)\nprint(\"Graviton mass bound (m_g):\", m_g_val, \"eV/c^2\")\n```\n\n---\n\n# Summary\n\nThe mathematical expressions given are consistent and verified symbolically. The scalar coupling parameter \\(\\alpha_A\\) is formally the derivative of the logarithm of the scalar-dependent mass, and the non-local field \\(U\\) satisfies the defining operator equation involving the inverse d'Alembertian. These provide a robust foundation to explore how screening mechanisms and non-local interactions could be differentiated in strong-field regimes like binary black hole mergers.\n\n---\n\nIf needed, the next step in the physics derivation would be to analyze predicted observable signatures in gravitational waveforms or effective potentials that differ due to local screening (affecting \\(\\alpha_A\\)) vs non-local forces (encoded in \\(U\\))."
+    },
+    {
+      "concept": "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
+      "level": 2,
+      "equations": [
+        "\\partial_t \\Gamma_k = \\frac{1}{2}\\text{STr}\\left[(\\Gamma_k^{(2)} + R_k)^{-1} \\partial_t R_k\\right], \\quad t = \\ln k.",
+        "Z_{\\text{CDT}} = \\sum_{\\mathcal{T} \\in \\mathcal{T}_{\\text{causal}}} \\frac{1}{C_{\\mathcal{T}}} e^{-S_{\\text{Regge}}[\\mathcal{T}]/\\hbar},",
+        "\\Gamma_k",
+        "(g,\\lambda)",
+        "R^2",
+        "R, R^2, R_{\\mu\\nu}R^{\\mu\\nu}, R^3, \\dots",
+        "R_k",
+        "g_{\\mu\\nu} = \\bar{g}_{\\mu\\nu} + h_{\\mu\\nu}",
+        "\\bar{g}_{\\mu\\nu}",
+        "\\mathcal{T}",
+        "S_{\\text{Regge}} = \\frac{1}{8\\pi G}\\sum_h A_h \\delta_h - \\frac{\\Lambda}{8\\pi G}\\sum_s V_s",
+        "Z = \\text{Tr}\\,T^{N_t}",
+        "\\xi/a \\to \\infty",
+        "M \\simeq \\Sigma \\times [0,1]",
+        "S^3",
+        "\\Lambda_{\\text{obs}}",
+        "d_s \\to 2",
+        "k \\sim 1/r",
+        "42 \\pm 3\\,\\mu",
+        "r \\sim \\ell_P",
+        "E \\sim M_{\\text{Pl}} \\sim 10^{19}",
+        "|c_g/c - 1| \\lesssim 10^{-15}",
+        "c_g \\neq c",
+        "52\\,\\mu",
+        "\\langle N_3(t) \\rangle \\propto \\cos^3(t/B)",
+        "D_S \\approx 4",
+        "D_S \\to 2"
+      ],
+      "equation_count": 27,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-24T00:40:33.116656+00:00"
+    },
+    {
+      "concept": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
+      "level": 3,
+      "equations": [
+        "D_q(\\ell) \\approx d_s(\\ell)",
+        "L = D - A",
+        "\\mathcal{L} = I - D^{-1/2} A D^{-1/2}",
+        "Z(t)=\\frac{1}{N}\\sum_{i=1}^{N} e^{-\\lambda_i t}",
+        "d_s(t) = -2 \\frac{d \\ln Z(t)}{d \\ln t}",
+        "N(\\lambda) \\sim \\lambda^{d_s/2}",
+        "d_s = \\frac{2d_f}{d_w}",
+        "C(r) \\sim r^{D_2}",
+        "\\delta_v = \\frac{\\rho_v-\\bar{\\rho}}{\\bar{\\rho}} < 0",
+        "H^2(a)=H_0^2 \\left[ \\Omega_m a^{-3} + \\Omega_r a^{-4} + \\Omega_\\Lambda + \\Omega_k a^{-2} \\right]",
+        "\\Omega_m \\approx 0.315",
+        "\\Omega_\\Lambda \\approx 0.685",
+        "H_0 \\approx 67.4 \\ \\mathrm{km\\,s^{-1}\\,Mpc^{-1}}",
+        "\\mu\\left(\\frac{|a|}{a_0}\\right)a = a_N",
+        "a_0 \\approx 1.2 \\times 10^{-10} \\ \\mathrm{m\\,s^{-2}}",
+        "\\mathcal{L}",
+        "d_s \\neq d_f",
+        "\\mathcal{L} = I - D^{-1/2}AD^{-1/2}",
+        "Z(t)=\\frac{1}{N}\\sum_i e^{-\\lambda_i t}",
+        "d_s(t) = -2 \\frac{d\\ln Z(t)}{d\\ln t}",
+        "D_2 = \\frac{d\\ln C(r)}{d\\ln r}",
+        "N_B(\\ell) \\sim \\ell^{-d_B}",
+        "D_q",
+        "H^2(a)=H_0^2[\\Omega_m a^{-3} + \\Omega_\\Lambda + ...]",
+        "\\delta_v = (\\rho_v-\\bar{\\rho})/\\bar{\\rho}",
+        "D_2 \\approx 3-\\gamma",
+        "\\mathcal{C}_{\\mathrm{SFDC}} = 1 - \\langle |D_q-d_s|/(\\sigma_{D_q}+\\sigma_{d_s}) \\rangle",
+        "\\mathcal{C}_{\\mathrm{SFDC}}",
+        "d_s(t)",
+        "D_q(\\ell)",
+        "d_s",
+        "\\Lambda",
+        "d_w \\approx 2",
+        "d_w \\neq 2"
+      ],
+      "equation_count": 34,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-24T00:51:21.823122+00:00"
     }
   ]
 }
