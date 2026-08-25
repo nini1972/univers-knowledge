@@ -106,6 +106,7 @@ graph TD
     cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
     cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
     are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups["Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?"]:::theoretical
+    given_that_current_observational_constraints_force_both_theories_toward_the_limit_of_gr_what_is_the_minimum_viable_degree_of_modification_that_remains_mathematically_stable_and_physically_motivated_for_either_model["Minimum Viable Modification to General Relativity"]:::theoretical
     neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
     quantum_decoherence["Quantum Decoherence"]:::verified
     general_relativity["General Relativity"]:::verified
@@ -137,6 +138,7 @@ graph TD
     asymmetric_dark_matter_vs_simp_dark_matter_in_explaining_dark_matter_abundance_and_smallscale_structure["Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure"]:::theoretical
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
     scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration["Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration"]:::theoretical
+    bransdicke_vs_fq_symmetric_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration["Brans-Dicke vs f(Q) Symmetric Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance["Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance"]:::verified
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
     stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition["Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition"]:::theoretical
@@ -216,6 +218,7 @@ graph TD
     landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks["Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks"]:::verified
     quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies["Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies"]:::theoretical
     spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology["Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology"]:::theoretical
+    quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures["Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures"]:::verified
     nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures["Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures"]:::theoretical
     dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks["Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks"]:::theoretical
     quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation["Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation"]:::theoretical
@@ -325,6 +328,7 @@ graph TD
     quantum_gravity --- can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing
     neutrino_oscillations --- could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports
     standard_model_of_particle_physics --- could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports
+    general_relativity --- given_that_current_observational_constraints_force_both_theories_toward_the_limit_of_gr_what_is_the_minimum_viable_degree_of_modification_that_remains_mathematically_stable_and_physically_motivated_for_either_model
     standard_model_of_particle_physics --- neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology
     quantum_measurement_problem --- quantum_decoherence
     quantum_mechanics --- general_relativity
@@ -426,6 +430,7 @@ graph TD
 - [Is it possible to provide more detailed mathematical derivations and dimensional consistency checks to raise the math verification score?](level_1_fundamental_physics/is_it_possible_to_provide_more_detailed_mathematical_derivations_and_dimensional_consistency_checks_to_raise_the_math_verification_score.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry Mechanisms](level_1_fundamental_physics/matterantimatter_asymmetry_mechanisms.md) [THEORETICAL]
+- [Minimum Viable Modification to General Relativity](level_1_fundamental_physics/given_that_current_observational_constraints_force_both_theories_toward_the_limit_of_gr_what_is_the_minimum_viable_degree_of_modification_that_remains_mathematically_stable_and_physically_motivated_for_either_model.md) [THEORETICAL]
 - [Modified Neutrino Survival Probabilities and Vacuum Decoherence](level_1_fundamental_physics/can_you_provide_a_rigorous_derivationbased_proof_of_the_modified_survival_probability_equations_using_nonhermitian_hamiltonians_and_lindblad_operator_formalism.md) [THEORETICAL]
 - [Neutrino Anomalies and Sterile Neutrino Hypothesis](level_1_fundamental_physics/neutrino_anomalies_and_sterile_neutrino_hypothesis.md) [THEORETICAL]
 - [Neutrino CP Violation](level_1_fundamental_physics/neutrino_cp_violation.md) [THEORETICAL]
@@ -515,6 +520,7 @@ graph TD
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]
 - [Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks](level_2_advanced_frameworks/black_hole_models_debate_observational_techniques_vs_theoretical_frameworks.md) [VERIFIED]
 - [Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem](level_2_advanced_frameworks/braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem.md) [THEORETICAL]
+- [Brans-Dicke vs f(Q) Symmetric Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/bransdicke_vs_fq_symmetric_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
 - [Causal Set Theory vs Spin Foam Models in Quantum Gravity Research](level_2_advanced_frameworks/causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research.md) [THEORETICAL]
 - [Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions](level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions.md) [THEORETICAL]
@@ -607,6 +613,7 @@ graph TD
 - [Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures](level_3_emergence_and_intelligence/nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures.md) [THEORETICAL]
 - [Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution](level_3_emergence_and_intelligence/nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution.md) [THEORETICAL]
 - [Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures](level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md) [THEORETICAL]
+- [Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures](level_3_emergence_and_intelligence/quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures.md) [VERIFIED]
 - [Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies](level_3_emergence_and_intelligence/quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies.md) [THEORETICAL]
 - [Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation](level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md) [THEORETICAL]
 - [Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](level_3_emergence_and_intelligence/spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology.md) [THEORETICAL]

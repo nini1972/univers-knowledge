@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-24T00:52:54.915117+00:00",
+  "updated_at": "2026-08-25T01:24:46.190193+00:00",
   "stats": {
-    "total_nodes": 216,
-    "level_1_count": 102,
-    "level_2_count": 96,
-    "level_3_count": 18,
+    "total_nodes": 219,
+    "level_1_count": 103,
+    "level_2_count": 97,
+    "level_3_count": 19,
     "total_edges": 127,
     "frontier_count": 0
   },
@@ -450,6 +450,25 @@
         "Cosmological Perspectives: Discussions on the cosmological constant problem and singularities"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/general_relativity.md"
+    },
+    {
+      "id": "giventhatcurrentobservationalconstraintsforceboththeoriestowardthelimitofgrwhatistheminimumviabledegreeofmodificationthatremainsmathematicallystableandphysicallymotivatedforeithermodel",
+      "title": "Minimum Viable Modification to General Relativity",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Current observational constraints in gravity theories",
+        "PPN parameters and their implications",
+        "Analysis of Scalar-Tensor, f(R), Horndeski, and MOND frameworks"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/given_that_current_observational_constraints_force_both_theories_toward_the_limit_of_gr_what_is_the_minimum_viable_degree_of_modification_that_remains_mathematically_stable_and_physically_motivated_for_either_model.md"
     },
     {
       "id": "hastherebeenengagementwiththeoreticalandexperimentalneutrinophysicscollaborationstoimprovemodelconsistencyandempiricalteststrategiestomovebeyondpurelytheoreticalclassification",
@@ -2399,6 +2418,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem.md"
     },
     {
+      "id": "bransdickevsfqsymmetricteleparallelgravityinexplaininglatetimecosmicacceleration",
+      "title": "Brans-Dicke vs f(Q) Symmetric Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Current research report on Brans-Dicke and f(Q) symmetric teleparallel gravity",
+        "Literature on scalar-tensor theories and geometric frameworks",
+        "Cosmological implications of alternative gravitational theories"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/bransdicke_vs_fq_symmetric_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md"
+    },
+    {
       "id": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
       "title": "Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity",
       "level": 2,
@@ -3222,7 +3260,7 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "symmetricteleparallelgravityvsmetricaffinefrgravityinaddressinglatetimecosmicacceleration"
+        "bransdickevsfqsymmetricteleparallelgravityinexplaininglatetimecosmicacceleration"
       ],
       "tags": [
         "2"
@@ -3973,7 +4011,7 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "metricaffinegravityvssymmetricteleparallelgravityinresolvingcosmicsingularityconstraints"
+        "bransdickevsfqsymmetricteleparallelgravityinexplaininglatetimecosmicacceleration"
       ],
       "tags": [
         "2",
@@ -4317,6 +4355,25 @@
         "Spectroscopic Verification of Vibronic Dynamics"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md"
+    },
+    {
+      "id": "quantifyingcausalemergenceinnonequilibriumsystemslinkingthermodynamicentropyproductiontointegratedinformationmeasuresincosmicandbiologicalarchitectures",
+      "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Research Report on Causal Emergence and Integrated Information",
+        "Stochastic Thermodynamics Literature",
+        "Causal Inference Methodology Studies"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures.md"
     },
     {
       "id": "quantifyingphicomplexityingravitationalcollapseandcosmicwebformation",
@@ -4716,7 +4773,7 @@
       "type": "component_theory"
     },
     {
-      "source": "symmetricteleparallelgravityvsmetricaffinefrgravityinaddressinglatetimecosmicacceleration",
+      "source": "bransdickevsfqsymmetricteleparallelgravityinexplaininglatetimecosmicacceleration",
       "target": "metricaffinegravityvssymmetricteleparallelgravityinresolvingcosmicsingularityconstraints",
       "type": "component_theory"
     },
@@ -4931,7 +4988,7 @@
       "type": "component_theory"
     },
     {
-      "source": "metricaffinegravityvssymmetricteleparallelgravityinresolvingcosmicsingularityconstraints",
+      "source": "bransdickevsfqsymmetricteleparallelgravityinexplaininglatetimecosmicacceleration",
       "target": "symmetricteleparallelgravityvsmetricaffinefrgravityinaddressinglatetimecosmicacceleration",
       "type": "component_theory"
     },
