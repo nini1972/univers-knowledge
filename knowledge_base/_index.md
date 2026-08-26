@@ -95,6 +95,7 @@ graph TD
     quantum_vacuum_polarization["Quantum Vacuum Polarization"]:::verified
     primordial_gravitational_waves["Primordial Gravitational Waves"]:::theoretical
     has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification["Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?"]:::verified
+    what_specific_nonmarkovian_memory_kernels_would_arise_if_neutrino_propagation_through_earths_matter_density_is_treated_as_a_truly_nonadiabatic_process["What specific non-Markovian memory kernels would arise if neutrino propagation through Earth's matter density is treated as a truly non-adiabatic process?"]:::theoretical
     what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay["What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?"]:::verified
     neutrino_mass_mechanisms_beyond_standard_seesaw_models["Neutrino Mass Mechanisms Beyond Standard Type-I Seesaw Models"]:::theoretical
     what_advancements_in_relativistic_modeling_and_numerical_simulations_are_needed_to_more_conclusively_differentiate_sfdm_predictions_from_cdm_scenarios_in_structure_formation["What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?"]:::theoretical
@@ -120,6 +121,7 @@ graph TD
     quantum_loop_gravity_vs_string_field_theory_debate["Quantum Loop Gravity vs String Field Theory Debate"]:::theoretical
     nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime["Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime"]:::theoretical
     symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity["Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity"]:::verified
+    leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation["Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation"]:::theoretical
     fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations["Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations"]:::theoretical
     quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
     asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics["Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics"]:::theoretical
@@ -341,6 +343,7 @@ graph TD
     quantum_gravity --> quantum_loop_gravity_vs_string_field_theory_debate
     quantum_gravity --> nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime
     quantum_gravity --> symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity
+    neutrino_oscillations --> leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation
     dark_matter --> fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations
     quantum_measurement_problem --> quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
     quantum_field_theory --> asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics
@@ -492,6 +495,7 @@ graph TD
 - [What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?](level_1_fundamental_physics/what_specific_experimental_observables_or_signatures_can_uniquely_discriminate_neutrino_decay_from_background_processes_and_alternative_new_physics_scenarios_in_dune_juno_or_icecube_datasets.md) [THEORETICAL]
 - [What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?](level_1_fundamental_physics/what_specific_experimental_signature_could_unambiguously_differentiate_a_screeningprotected_scalar_field_from_a_nonlocal_interaction_in_the_context_of_strongfield_gravity_eg_binary_black_hole_mergers.md) [THEORETICAL]
 - [What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?](level_1_fundamental_physics/what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance.md) [VERIFIED]
+- [What specific non-Markovian memory kernels would arise if neutrino propagation through Earth's matter density is treated as a truly non-adiabatic process?](level_1_fundamental_physics/what_specific_nonmarkovian_memory_kernels_would_arise_if_neutrino_propagation_through_earths_matter_density_is_treated_as_a_truly_nonadiabatic_process.md) [THEORETICAL]
 - [What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?](level_1_fundamental_physics/what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes.md) [THEORETICAL]
 - [What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?](level_1_fundamental_physics/what_specific_operatortheoretic_proofs_can_be_developed_to_ensure_full_mathematical_integrity_compliance_of_the_neutrino_decay_survival_probability_framework.md) [VERIFIED]
 - [Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?](level_1_fundamental_physics/which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys.md) [THEORETICAL]
@@ -553,6 +557,7 @@ graph TD
 - [Information-Theoretic vs. Thermodynamic Interpretations of Gravity](level_2_advanced_frameworks/informationtheoretic_vs_thermodynamic_interpretations_of_gravity.md) [THEORETICAL]
 - [Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension](level_2_advanced_frameworks/interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension.md) [THEORETICAL]
 - [Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](level_2_advanced_frameworks/interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges.md) [VERIFIED]
+- [Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation](level_2_advanced_frameworks/leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation.md) [THEORETICAL]
 - [Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](level_2_advanced_frameworks/loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
 - [Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
