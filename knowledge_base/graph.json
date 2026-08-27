@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-26T01:47:32.247285+00:00",
+  "updated_at": "2026-08-27T02:51:16.943805+00:00",
   "stats": {
-    "total_nodes": 221,
+    "total_nodes": 223,
     "level_1_count": 104,
-    "level_2_count": 98,
-    "level_3_count": 19,
-    "total_edges": 128,
+    "level_2_count": 99,
+    "level_3_count": 20,
+    "total_edges": 129,
     "frontier_count": 0
   },
   "nodes": [
@@ -2072,6 +2072,27 @@
         "Source 3"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry.md"
+    },
+    {
+      "id": "asymmetricdarkmattervswimpdarkmatterinaddressingthecoincidenceproblem",
+      "title": "Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Current Task Summary",
+        "Recent direct-detection experiments (LZ, XENONnT)",
+        "Collider experiments"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_dark_matter_in_addressing_the_coincidence_problem.md"
     },
     {
       "id": "asymmetricreheatingvsinstantpreheatinginearlyuniversedynamics",
@@ -4264,6 +4285,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md"
     },
     {
+      "id": "landauerbekensteinentropyboundsandcomputationalefficiencyinselforganizingneuralmanifoldsversusgravitationalfilaments",
+      "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Approved Student Summary",
+        "Previous Research on Landauer's Principle",
+        "Studies on Bekenstein Bound and Cosmology"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments.md"
+    },
+    {
       "id": "landauerbekensteinscalingrelationsinneuralprocessingandblackholeinformationencoding",
       "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
       "level": 3,
@@ -4525,6 +4565,11 @@
     {
       "source": "darkmatter",
       "target": "asymmetricdarkmattervswimpbaryogenesisinexplainingmatterantimatterasymmetry",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "asymmetricdarkmattervswimpdarkmatterinaddressingthecoincidenceproblem",
       "type": "component_theory"
     },
     {

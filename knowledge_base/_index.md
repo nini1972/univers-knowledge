@@ -113,6 +113,7 @@ graph TD
     general_relativity["General Relativity"]:::verified
     what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory["What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?"]:::theoretical
     how_might_the_assumptions_of_fundamental_spacetime_discreteness_or_entanglementgeometry_duality_be_tested_or_challenged_empirically["How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?"]:::theoretical
+    asymmetric_dark_matter_vs_wimp_dark_matter_in_addressing_the_coincidence_problem["Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem"]:::verified
     dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration["Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation["Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation"]:::theoretical
@@ -212,6 +213,7 @@ graph TD
     quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
     nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution["Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution"]:::theoretical
+    landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments["Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments"]:::theoretical
     can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness["Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?"]:::theoretical
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
@@ -335,6 +337,7 @@ graph TD
     quantum_measurement_problem --- quantum_decoherence
     quantum_mechanics --- general_relativity
     quantum_gravity --- what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory
+    dark_matter --> asymmetric_dark_matter_vs_wimp_dark_matter_in_addressing_the_coincidence_problem
     quantum_gravity --> quantum_gravity_debate
     general_relativity --> quantum_gravity_debate
     quantum_mechanics --> quantum_gravity_debate
@@ -507,6 +510,7 @@ graph TD
 - [Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance](level_2_advanced_frameworks/asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance.md) [VERIFIED]
 - [Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure](level_2_advanced_frameworks/asymmetric_dark_matter_vs_simp_dark_matter_in_explaining_dark_matter_abundance_and_smallscale_structure.md) [THEORETICAL]
 - [Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry](level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry.md) [THEORETICAL]
+- [Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem](level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_dark_matter_in_addressing_the_coincidence_problem.md) [VERIFIED]
 - [Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics](level_2_advanced_frameworks/asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics.md) [THEORETICAL]
 - [Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution.md) [THEORETICAL]
@@ -612,6 +616,7 @@ graph TD
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md) [THEORETICAL]
 - [Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures](level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md) [THEORETICAL]
+- [Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments](level_3_emergence_and_intelligence/landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments.md) [THEORETICAL]
 - [Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding](level_3_emergence_and_intelligence/landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding.md) [THEORETICAL]
 - [Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks.md) [VERIFIED]
 - [Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments](level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments.md) [THEORETICAL]
