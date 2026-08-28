@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-27T02:50:44.244879+00:00  
-> **Total Analyzed Concepts:** 195 | **Total Discovered Equations:** 6305 | **Discovered Bridges:** 304
+> **Generated:** 2026-08-28T03:45:19.858704+00:00  
+> **Total Analyzed Concepts:** 198 | **Total Discovered Equations:** 6441 | **Discovered Bridges:** 317
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 59 concepts:
+**Occurrences:** Appears in 60 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -67,9 +67,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes
 - **Level 2**: Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem
 - **Level 3**: Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments
+- **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
 
 ### ` 1.380649 \times 10^{-23} `
-**Occurrences:** Appears in 17 concepts:
+**Occurrences:** Appears in 19 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
@@ -87,6 +88,29 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning
 - **Level 3**: Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures
 - **Level 3**: Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes
+- **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
+- **Level 3**: Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations
+
+### ` 6.62607015 \times 10^{-34} `
+**Occurrences:** Appears in 18 concepts:
+- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
+- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
+- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
+- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
+- **Level 3**: Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding
+- **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
+- **Level 2**: Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity
+- **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
+- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
+- **Level 2**: Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics
+- **Level 3**: Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks
+- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
+- **Level 3**: Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning
+- **Level 3**: Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures
+- **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
+- **Level 3**: Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations
 
 ### ` \gamma `
 **Occurrences:** Appears in 16 concepts:
@@ -125,25 +149,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?
 - **Level 1**: Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?
 - **Level 3**: Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes
-
-### ` 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 16 concepts:
-- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
-- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
-- **Level 3**: Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures
-- **Level 3**: Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis
-- **Level 3**: Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding
-- **Level 3**: Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks
-- **Level 2**: Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity
-- **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
-- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
-- **Level 2**: Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics
-- **Level 3**: Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks
-- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
-- **Level 3**: Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning
-- **Level 3**: Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures
 
 ### ` \phi `
 **Occurrences:** Appears in 15 concepts:
@@ -196,6 +201,20 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments
 - **Level 1**: What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?
 
+### ` \Omega_c h^2 = 0.120 \pm 0.001 `
+**Occurrences:** Appears in 11 concepts:
+- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
+- **Level 1**: What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?
+- **Level 2**: Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure
+- **Level 1**: What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?
+- **Level 2**: Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance
+- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
+- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
+- **Level 2**: Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution
+- **Level 1**: Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?
+- **Level 2**: Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem
+- **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
+
 ### ` ^{-2} `
 **Occurrences:** Appears in 11 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
@@ -223,19 +242,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
 - **Level 3**: Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning
 - **Level 3**: Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments
-
-### ` \Omega_c h^2 = 0.120 \pm 0.001 `
-**Occurrences:** Appears in 10 concepts:
-- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
-- **Level 1**: What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?
-- **Level 2**: Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure
-- **Level 1**: What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?
-- **Level 2**: Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance
-- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
-- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
-- **Level 2**: Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution
-- **Level 1**: Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?
-- **Level 2**: Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem
 
 ### ` 10^{-15} `
 **Occurrences:** Appears in 10 concepts:
@@ -290,15 +296,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 89 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 78 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 76 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 54 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 45 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 91 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 79 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 78 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 56 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 46 |
+| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 28 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 27 |
-| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 27 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 11 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 87
+- **MATH_PROVEN Entries:** 89
 - **MATH_CONSISTENT Entries:** 44

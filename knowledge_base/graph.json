@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-27T02:51:16.943805+00:00",
+  "updated_at": "2026-08-28T03:45:46.519423+00:00",
   "stats": {
-    "total_nodes": 223,
-    "level_1_count": 104,
-    "level_2_count": 99,
-    "level_3_count": 20,
-    "total_edges": 129,
+    "total_nodes": 226,
+    "level_1_count": 105,
+    "level_2_count": 100,
+    "level_3_count": 21,
+    "total_edges": 131,
     "frontier_count": 0
   },
   "nodes": [
@@ -657,6 +657,26 @@
         "Recent Phenomenological Tests in Quantum Physics"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/how_might_the_assumptions_of_fundamental_spacetime_discreteness_or_entanglementgeometry_duality_be_tested_or_challenged_empirically.md"
+    },
+    {
+      "id": "howwouldajointbayesianevidenceanalysissignificantlyalterthecurrentfrequentistconclusionthatthedecayhypothesisisonlya15fluctuation",
+      "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "GERDA Collaboration",
+        "KamLAND-Zen Collaboration",
+        "CUORE Collaboration",
+        "EXO-200 Collaboration"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/how_would_a_joint_bayesian_evidence_analysis_significantly_alter_the_current_frequentist_conclusion_that_the_decay_hypothesis_is_only_a_15_fluctuation.md"
     },
     {
       "id": "inflationarycosmology",
@@ -2783,6 +2803,27 @@
       "path": "knowledge_base/level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md"
     },
     {
+      "id": "emergententropicgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
+      "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Research report on Modified Newtonian Dynamics (MOND) and Lambda-CDM model comparisons",
+        "Verlinde's papers on Emergent Gravity",
+        "Recent astrophysical studies on galactic dynamics"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/emergent_entropic_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies.md"
+    },
+    {
       "id": "emergentgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
       "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
       "level": 2,
@@ -2860,6 +2901,7 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
       "dependencies": [
+        "emergententropicgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
         "asymptoticsafetyversusemergentgravityinquantumgravityresearch"
       ],
       "tags": [
@@ -4494,6 +4536,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies.md"
     },
     {
+      "id": "quantifyingthermodynamicdissipationcostsinneuralinformationprocessingversusgravitationalstructureformationvialandauerbekensteinscalingrelations",
+      "title": "Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Peer-reviewed journals",
+        "ArXiv preprints",
+        "Relevant academic conferences"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md"
+    },
+    {
       "id": "spectralfractaldimensionconvergencequantifyingselfsimilarityincosmicwebvoidsandbiologicalneuralnetworktopology",
       "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
       "level": 3,
@@ -4738,6 +4799,11 @@
       "type": "component_theory"
     },
     {
+      "source": "darkmatter",
+      "target": "emergententropicgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
+      "type": "component_theory"
+    },
+    {
       "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
       "target": "emergentgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
       "type": "component_theory"
@@ -4765,6 +4831,11 @@
     {
       "source": "darkmatter",
       "target": "emergentgravityvsselfinteractingdarkmatterinexplaininggalaxyclusterdynamics",
+      "type": "component_theory"
+    },
+    {
+      "source": "emergententropicgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
+      "target": "entropicgravityvsemergentgravityinexplaininggravitationalphenomena",
       "type": "component_theory"
     },
     {
