@@ -5,13 +5,13 @@ class UniverseTasks:
     def determine_next_topic_task(self, agent, current_index):
         return Task(
             description=dedent(f"""
-                Review the current knowledge graph index below:
+                Review the knowledge base summary of already covered concepts below:
                 ---
                 {current_index}
                 ---
                 Based on what is already known, identify ONE logical next concept in fundamental physics
                 or cosmology that is currently missing and should form the foundation of our next learning step.
-                Do NOT suggest a topic that is already explicitly listed in the index.
+                Do NOT suggest a topic that is already explicitly listed in the summary.
                 Your response must ONLY be the name of the concept, so it can be passed directly to the Researcher.
                 For example: "Dark Matter" or "The Higgs Boson".
             """),
@@ -22,11 +22,11 @@ class UniverseTasks:
     def determine_next_level2_topic_task(self, agent, current_index):
         return Task(
             description=dedent(f"""
-                Review the full knowledge graph index below, including all Level 1 and Level 2 entries:
+                Review the knowledge base summary of already covered concepts below, including all Level 1 and Level 2 entries:
                 ---
                 {current_index}
                 ---
-                Choose the NEXT Level 2 debate topic that builds on existing Level 1 foundations and is not already in the index.
+                Choose the NEXT Level 2 debate topic that builds on existing Level 1 foundations and is not already in the summary.
                 Select exactly two competing theories/frameworks that should be compared in a rigorous debate.
                 Return ONLY valid JSON with these keys:
                 {{
@@ -35,7 +35,7 @@ class UniverseTasks:
                   "concept_name": "..."
                 }}
                 Constraints:
-                - Do not reuse a concept already listed in the index.
+                - Do not reuse a concept already listed in the summary.
                 - concept_name should be a concise debate title for the two selected theories.
             """),
             expected_output='A JSON object containing theory_a, theory_b, and concept_name.',
@@ -45,7 +45,7 @@ class UniverseTasks:
     def determine_next_level3_topic_task(self, agent, current_index):
         return Task(
             description=dedent(f"""
-                Review the complete knowledge graph index across Level 1, Level 2, and Level 3:
+                Review the complete knowledge base summary across Level 1, Level 2, and Level 3:
                 ---
                 {current_index}
                 ---
@@ -63,7 +63,7 @@ class UniverseTasks:
                   "concept_name": "..."
                 }}
                 Constraints:
-                - Do not suggest a concept that is already listed in the index.
+                - Do not suggest a concept that is already listed in the summary.
                 - concept_name must be a clear, formal academic topic title.
             """),
             expected_output='A JSON object containing focus_area and concept_name.',

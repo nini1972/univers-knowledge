@@ -1,4 +1,5 @@
 import unittest
+from pathlib import Path
 
 from src.workflow_contracts import (
     parse_student_decision,
@@ -325,6 +326,22 @@ The electromagnetic force is one of the four fundamental forces.
         self.assertGreater(len(catalog["bridges"]), 0, "Should find cross-concept equation bridges")
         self.assertTrue((repo_root / "knowledge_base" / "equation_index.json").exists())
         self.assertTrue((repo_root / "knowledge_base" / "equation_taxonomy_and_bridges.md").exists())
+
+    def test_clean_topic_digest(self):
+        """Verifies that generate_clean_topic_digest creates a compact, Mermaid-free summary."""
+        try:
+            from index_utils import generate_clean_topic_digest
+        except ImportError:
+            from src.index_utils import generate_clean_topic_digest
+
+        repo_root = Path(__file__).resolve().parent
+        digest = generate_clean_topic_digest(repo_root=repo_root)
+
+        self.assertIn("# Knowledge Base Summary", digest)
+        self.assertIn("## Level 1: Fundamental Physics", digest)
+        self.assertNotIn("graph TD", digest, "Digest must not contain raw Mermaid graph code")
+        self.assertNotIn("classDef", digest, "Digest must not contain raw Mermaid CSS classes")
+        self.assertGreater(len(digest), 100, "Digest should contain topics from database")
 
 
 if __name__ == "__main__":

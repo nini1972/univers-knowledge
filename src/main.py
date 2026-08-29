@@ -39,9 +39,9 @@ except ImportError:
         is_concept_existing,
     )
 try:
-    from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
+    from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file, generate_clean_topic_digest
 except ImportError:
-    from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
+    from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file, generate_clean_topic_digest
 try:
     from a2a_math_client import call_a2a_math_service, extract_equations_from_report
 except ImportError:
@@ -478,7 +478,8 @@ def main():
     if patterns:
         pattern_guidance = "\n\nCRITICAL HISTORICAL FAILURE GUIDANCE:\n" + "\n".join(f"- {p}" for p in patterns)
 
-    topic_task = tasks.determine_next_topic_task(topic_student, current_index)
+    topic_digest = generate_clean_topic_digest(repo_root=Path(__file__).resolve().parent.parent)
+    topic_task = tasks.determine_next_topic_task(topic_student, topic_digest)
     if pattern_guidance:
         topic_task.description += pattern_guidance
 
@@ -507,7 +508,7 @@ def main():
 
         for attempt in range(1, max_topic_attempts + 1):
             topic_student = agents.student_agent()
-            topic_task = tasks.determine_next_topic_task(topic_student, current_index)
+            topic_task = tasks.determine_next_topic_task(topic_student, topic_digest)
 
             exclusion_prompt = ""
             if excluded_concepts:

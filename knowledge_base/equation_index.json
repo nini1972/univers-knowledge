@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-29T01:12:17.451451+00:00",
+  "updated_at": "2026-08-29T21:47:37.290232+00:00",
   "stats": {
-    "total_entries": 201,
-    "total_equations": 6612,
+    "total_entries": 204,
+    "total_equations": 6712,
     "math_proven_entries": 91,
     "math_consistent_entries": 45,
-    "total_bridges": 326,
+    "total_bridges": 332,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 61,
+      "concept_count": 62,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -257,12 +257,16 @@
         {
           "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
           "level": 1
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
     {
       "equation": "1.380649 \\times 10^{-23}",
-      "concept_count": 19,
+      "concept_count": 20,
       "concepts": [
         {
           "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
@@ -339,12 +343,16 @@
         {
           "title": "Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations",
           "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
     {
       "equation": "6.62607015 \\times 10^{-34}",
-      "concept_count": 18,
+      "concept_count": 19,
       "concepts": [
         {
           "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
@@ -416,6 +424,84 @@
         },
         {
           "title": "Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\alpha",
+      "concept_count": 17,
+      "concepts": [
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "level": 1
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
+          "level": 2
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
+          "level": 1
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
+          "level": 1
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
+          "level": 1
+        },
+        {
+          "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
+          "level": 1
+        },
+        {
+          "title": "Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?",
+          "level": 1
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
           "level": 3
         }
       ]
@@ -491,71 +577,71 @@
       ]
     },
     {
-      "equation": "\\alpha",
+      "equation": "\\Phi",
       "concept_count": 16,
       "concepts": [
         {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
           "level": 2
-        },
-        {
-          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
-          "level": 1
         },
         {
           "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
           "level": 1
         },
         {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure",
-          "level": 2
+          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
         },
         {
           "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
           "level": 3
         },
         {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
           "level": 3
         },
         {
-          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
-          "level": 1
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
         },
         {
           "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
           "level": 3
         },
         {
-          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
+          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
           "level": 1
         },
         {
-          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
-          "level": 2
+          "title": "Exploring the Integrative Dimensions of Information Theory in Consciousness and Cosmic Self-Organization",
+          "level": 3
         },
         {
-          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
-          "level": 2
+          "title": "Exploring the Formalization of Integrated Information Theory within Cosmological Contexts",
+          "level": 3
         },
         {
-          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
+          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
           "level": 1
         },
         {
-          "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
-          "level": 1
-        },
-        {
-          "title": "Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?",
-          "level": 1
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
           "level": 3
         }
       ]
@@ -627,72 +713,6 @@
       ]
     },
     {
-      "equation": "\\Phi",
-      "concept_count": 15,
-      "concepts": [
-        {
-          "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
-          "level": 2
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
-          "level": 3
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
-          "level": 2
-        },
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
-          "level": 3
-        },
-        {
-          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
-          "level": 1
-        },
-        {
-          "title": "Exploring the Integrative Dimensions of Information Theory in Consciousness and Cosmic Self-Organization",
-          "level": 3
-        },
-        {
-          "title": "Exploring the Formalization of Integrated Information Theory within Cosmological Contexts",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
       "concept_count": 13,
       "concepts": [
@@ -747,6 +767,60 @@
         {
           "title": "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
           "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "^{-2}",
+      "concept_count": 12,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
+          "level": 1
+        },
+        {
+          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
+          "level": 3
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem",
+          "level": 2
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -850,56 +924,6 @@
         },
         {
           "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "^{-2}",
-      "concept_count": 11,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
-          "level": 1
-        },
-        {
-          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
-          "level": 3
-        },
-        {
-          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
-          "level": 3
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
-          "level": 3
-        },
-        {
-          "title": "Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem",
           "level": 2
         }
       ]
@@ -1081,6 +1105,90 @@
       ]
     },
     {
+      "equation": "\\approx 1.089 \\times 10^{-52}",
+      "concept_count": 9,
+      "concepts": [
+        {
+          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
+          "level": 1
+        },
+        {
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\beta_0, \\beta_1, \\beta_2",
+      "concept_count": 9,
+      "concepts": [
+        {
+          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+          "level": 3
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\Gamma",
       "concept_count": 8,
       "concepts": [
@@ -1153,82 +1261,6 @@
         {
           "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
           "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "\\approx 1.089 \\times 10^{-52}",
-      "concept_count": 8,
-      "concepts": [
-        {
-          "title": "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
-          "level": 1
-        },
-        {
-          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
-          "level": 2
-        },
-        {
-          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
-          "level": 3
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
-          "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "\\beta_0, \\beta_1, \\beta_2",
-      "concept_count": 8,
-      "concepts": [
-        {
-          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
-          "level": 3
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
-          "level": 3
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
-          "level": 3
         }
       ]
     },
@@ -1467,6 +1499,36 @@
       ]
     },
     {
+      "equation": "\\kappa",
+      "concept_count": 6,
+      "concepts": [
+        {
+          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+          "level": 1
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
+          "level": 2
+        },
+        {
+          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\chi^2",
       "concept_count": 6,
       "concepts": [
@@ -1523,6 +1585,36 @@
         {
           "title": "Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\epsilon",
+      "concept_count": 6,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
+          "level": 2
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
+          "level": 1
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -1665,28 +1757,28 @@
       ]
     },
     {
-      "equation": "\\kappa",
+      "equation": "\\boxed{\\text{[THEORETICAL]}}",
       "concept_count": 5,
       "concepts": [
         {
-          "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
           "level": 1
         },
         {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
-          "level": 2
-        },
-        {
-          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
-          "level": 2
-        },
-        {
-          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
-          "level": 2
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -1713,6 +1805,32 @@
         {
           "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
           "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "\\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "level": 1
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -1769,32 +1887,6 @@
       ]
     },
     {
-      "equation": "\\epsilon",
-      "concept_count": 5,
-      "concepts": [
-        {
-          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
-          "level": 2
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
-          "level": 3
-        },
-        {
-          "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
-          "level": 2
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\ddot{\\delta}+2H\\dot{\\delta}-4\\pi G\\bar{\\rho}_m\\delta=0",
       "concept_count": 5,
       "concepts": [
@@ -1817,6 +1909,32 @@
         {
           "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "1.380649 \\times 10^{-23} \\text{ J/K}",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -1953,28 +2071,6 @@
       ]
     },
     {
-      "equation": "\\boxed{\\text{[THEORETICAL]}}",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
-          "level": 2
-        },
-        {
-          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
-          "level": 3
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\mathcal{L}_{\\rm int}",
       "concept_count": 4,
       "concepts": [
@@ -2063,23 +2159,23 @@
       ]
     },
     {
-      "equation": "\\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
+      "equation": "10^{16}",
       "concept_count": 4,
       "concepts": [
         {
-          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
           "level": 1
         },
         {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
           "level": 3
         }
       ]
@@ -2195,6 +2291,28 @@
       ]
     },
     {
+      "equation": "\\nabla^2\\Phi = 4\\pi G a^2 \\bar{\\rho}_m \\delta",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\Omega_c h^2 \\approx 0.120",
       "concept_count": 4,
       "concepts": [
@@ -2213,6 +2331,28 @@
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\Omega_m",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
+          "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -2367,28 +2507,6 @@
         {
           "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "1.380649 \\times 10^{-23} \\text{ J/K}",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
         }
       ]
     },
@@ -2833,24 +2951,6 @@
       ]
     },
     {
-      "equation": "10^{16}",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\frac{\\tau_i}{m_i}",
       "concept_count": 3,
       "concepts": [
@@ -3139,24 +3239,6 @@
       ]
     },
     {
-      "equation": "\\nabla^2\\Phi = 4\\pi G a^2 \\bar{\\rho}_m \\delta",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "H^2(a)=H_0^2[\\Omega_r a^{-4}+\\Omega_m a^{-3}+\\Omega_k a^{-2}+\\Omega_\\Lambda]",
       "concept_count": 3,
       "concepts": [
@@ -3171,24 +3253,6 @@
         {
           "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\Omega_m",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
-          "level": 3
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
         }
       ]
     },
@@ -3247,6 +3311,24 @@
       ]
     },
     {
+      "equation": "\\tau",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "H_0 \\approx 67.4",
       "concept_count": 3,
       "concepts": [
@@ -3279,6 +3361,24 @@
         {
           "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "H^2(a) = H_0^2 \\left[ \\Omega_m a^{-3} + \\Omega_r a^{-4} + \\Omega_\\Lambda + \\Omega_k a^{-2} \\right]",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -3603,6 +3703,24 @@
         {
           "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\nabla^2 \\Phi = 4\\pi G a^2 \\bar{\\rho}_m \\delta",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -4419,6 +4537,20 @@
       ]
     },
     {
+      "equation": "H^2(a)",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "level": 1
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\xi \\ll 1",
       "concept_count": 2,
       "concepts": [
@@ -4541,6 +4673,20 @@
         {
           "title": "Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\approx 1/137.036",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
+          "level": 1
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -5035,20 +5181,6 @@
       ]
     },
     {
-      "equation": "\\tau",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "I(X;Y) = \\sum_{x,y} p(x,y) \\log \\frac{p(x,y)}{p(x)p(y)}",
       "concept_count": 2,
       "concepts": [
@@ -5273,20 +5405,6 @@
       ]
     },
     {
-      "equation": "H^2(a) = H_0^2 \\left[ \\Omega_m a^{-3} + \\Omega_r a^{-4} + \\Omega_\\Lambda + \\Omega_k a^{-2} \\right]",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "k_B = 1.380649 \\times 10^{-23} \\text{ J/K}",
       "concept_count": 2,
       "concepts": [
@@ -5296,6 +5414,20 @@
         },
         {
           "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\beta_0 = \\text{number of connected components}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
           "level": 3
         }
       ]
@@ -5833,6 +5965,20 @@
       ]
     },
     {
+      "equation": "6.62607015 \\times 10^{-34} \\text{ J}\\cdot\\text{s}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "a_0 \\approx 1.2 \\times 10^{-10} \\ \\mathrm{m\\,s^{-2}}",
       "concept_count": 2,
       "concepts": [
@@ -5899,6 +6045,20 @@
         {
           "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
           "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "10^{19}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -6197,7 +6357,7 @@
       ]
     },
     {
-      "equation": "\\nabla^2 \\Phi = 4\\pi G a^2 \\bar{\\rho}_m \\delta",
+      "equation": "G_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
       "concept_count": 2,
       "concepts": [
         {
@@ -6205,7 +6365,7 @@
           "level": 3
         },
         {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
           "level": 3
         }
       ]
@@ -6329,7 +6489,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 92,
+      "occurrence_count": 93,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -6392,6 +6552,7 @@
         "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+        "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
         "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
         "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
@@ -6430,7 +6591,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 81,
+      "occurrence_count": 82,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -6482,6 +6643,7 @@
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+        "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
         "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
         "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
         "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
@@ -6520,7 +6682,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 79,
+      "occurrence_count": 80,
       "referenced_in": [
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
@@ -6570,6 +6732,7 @@
         "Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime",
         "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
         "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+        "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
         "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
         "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
         "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
@@ -6608,7 +6771,7 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 58,
+      "occurrence_count": 59,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
@@ -6652,6 +6815,7 @@
         "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+        "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
         "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
         "Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations",
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
@@ -6675,7 +6839,7 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 46,
+      "occurrence_count": 47,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem",
@@ -6708,6 +6872,7 @@
         "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
         "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
         "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+        "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
         "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
         "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
         "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
@@ -15725,6 +15890,139 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-08-29T01:11:24.609674+00:00"
+    },
+    {
+      "concept": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+      "level": 3,
+      "equations": [
+        "\\Phi_N(\\epsilon) = N^\\alpha \\mathcal{F}(\\epsilon N^{1/\\nu})",
+        "\\Phi_N = N^\\alpha \\mathcal{F}\\left(\\epsilon N^{1/\\nu}, \\frac{\\tau_{\\text{int}}}{\\tau_{\\text{dyn}}}, \\frac{d_{\\text{manifold}}}{N}\\right)",
+        "\\Phi(S,x_t)=\\min_{\\psi \\in \\Pi}\\left[EI(S,x_t)-EI^{\\psi}(S,x_t)\\right]",
+        "p^{\\psi}(x_{t+1}|x_t)=\\prod_{\\alpha=1}^{m}p(x^{\\alpha}_{t+1}|x^{\\alpha}_{t})",
+        "\\Phi_N(\\epsilon)=N^{\\alpha}\\mathcal{F}\\left(\\epsilon N^{1/\\nu}\\right)",
+        "d_{\\mathrm{eff}}=\\frac{\\left(\\sum_i \\lambda_i \\right)^2}{\\sum_i \\lambda_i^2}",
+        "\\ddot{\\delta}+2H\\dot{\\delta}-4\\pi G\\bar{\\rho}_m \\delta=0",
+        "H^2(a)=H_0^2\\left[\\Omega_m a^{-3}+\\Omega_r a^{-4}+\\Omega_\\Lambda+\\Omega_k a^{-2}\\right]",
+        "J=\\det\\left[\\delta_{ij}-D(a)\\frac{\\partial^2 \\Phi_0}{\\partial q_i \\partial q_j}\\right]=0",
+        "m = \\tanh[\\beta(Jm+h)]",
+        "\\mathcal{I}_N(\\epsilon)=N^{\\alpha_{\\mathrm{cosmic}}}\\mathcal{G}\\left(\\epsilon N^{1/\\nu_{\\mathrm{cosmic}}}\\right)",
+        "\\Phi_N=N^{\\alpha}\\mathcal{F}\\left(\\epsilon N^{1/\\nu},\\frac{\\tau_{\\mathrm{int}}}{\\tau_{\\mathrm{dyn}}},\\frac{d_{\\mathrm{manifold}}}{N}\\right)",
+        "\\mu\\left(\\frac{a}{a_0}\\right)\\mathbf{a}=\\mathbf{a}_N",
+        "S_{\\rm dS} = \\frac{3\\pi c^3}{G\\hbar \\Lambda}",
+        "E_{\\rm bit} \\geq k_B T \\ln 2",
+        "\\alpha",
+        "\\approx 1/137.036",
+        "6.62607015 \\times 10^{-34}",
+        "k_B",
+        "1.380649 \\times 10^{-23}",
+        "\\Lambda",
+        "\\approx 1.089 \\times 10^{-52}",
+        "^{-2}",
+        "\\Phi",
+        "p(x_{t+1}|x_t)",
+        "\\tau",
+        "\\Omega_m",
+        "\\epsilon",
+        "\\nu",
+        "\\tau_{\\text{int}}/\\tau_{\\text{dyn}}",
+        "\\tau_{\\text{int}}",
+        "\\Phi(S,x_t)"
+      ],
+      "equation_count": 32,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-29T01:22:17.405641+00:00"
+    },
+    {
+      "concept": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+      "level": 3,
+      "equations": [
+        "\\mathcal{I}(N,\\epsilon) \\sim N^\\alpha f\\left(N^{1/\\nu}\\epsilon\\right)",
+        "\\Phi = \\min_{\\pi \\in \\mathrm{MIP}} D\\left(P(Z \\mid X) \\,\\|\\, P^\\pi(Z \\mid X)\\right)",
+        "H^2(a) = H_0^2 \\left[ \\Omega_m a^{-3} + \\Omega_r a^{-4} + \\Omega_\\Lambda + \\Omega_k a^{-2} \\right]",
+        "\\ddot{\\delta} + 2H\\dot{\\delta} - 4\\pi G \\bar{\\rho}_m \\delta = 0",
+        "\\nabla^2 \\Phi = 4\\pi G a^2 \\bar{\\rho}_m \\delta",
+        "P_\\infty(p) \\sim (p-p_c)^\\beta",
+        "\\beta_0 = \\text{number of connected components}",
+        "\\beta_1 = \\text{number of loops/tunnels}",
+        "\\beta_2 = \\text{number of enclosed voids}",
+        "G_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
+        "E_{\\mathrm{bit}} \\ge k_B T \\ln 2",
+        "\\beta_0, \\beta_1, \\beta_2",
+        "6.62607015 \\times 10^{-34} \\text{ J}\\cdot\\text{s}",
+        "k_B",
+        "1.380649 \\times 10^{-23} \\text{ J/K}",
+        "\\Lambda",
+        "\\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
+        "P_\\infty \\sim (p-p_c)^\\beta",
+        "\\dot{z} = F(z;\\lambda) + \\eta(t)",
+        "m \\approx 1",
+        "\\Phi",
+        "\\sim 10^{16}-10^{20}",
+        "\\tilde{t}",
+        "\\Phi_{\\mathrm{eff}}",
+        "S_i=1",
+        "K_\\tau",
+        "\\alpha",
+        "N^\\alpha f(N^{1/\\nu}\\epsilon)",
+        "\\delta = 0.5, 2, 5",
+        "z=0",
+        "z=2",
+        "H^2(a)",
+        "\\nabla^2\\Phi = 4\\pi G a^2 \\bar{\\rho}_m \\delta",
+        "\\beta_0 = 1240, \\beta_1 = 8560, \\beta_2 = 320",
+        "J_{ij}",
+        "\\dot{\\mathbf{x}} = -\\mathbf{x} + J\\phi(\\mathbf{x}) + B\\mathbf{u}",
+        "T_{xy}",
+        "\\mathcal{I}(N,\\epsilon) = N^{-\\kappa}F[(\\lambda-\\lambda_c)N^{1/\\nu}]",
+        "\\tau_{\\mathrm{cosmic}}/\\tau_{\\mathrm{neural}} \\sim 10^{18}"
+      ],
+      "equation_count": 39,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-29T01:27:45.595027+00:00"
+    },
+    {
+      "concept": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+      "level": 3,
+      "equations": [
+        "10^{16}",
+        "10^{20}",
+        "\\Phi_N(\\lambda) \\sim N^\\alpha F\\!\\left((\\lambda-\\lambda_c)N^{1/\\nu}\\right)",
+        "p(x_{t+1}\\mid x_t)",
+        "\\theta^\\* = \\arg\\min_{\\theta} D\\!\\left(P_{\\mathrm{CES}}(s), P_{\\mathrm{CES}}^{\\theta}(s)\\right)",
+        "\\frac{\\partial f}{\\partial t} + \\mathbf{v}\\cdot\\nabla_{\\mathbf{x}}f - \\nabla_{\\mathbf{x}}\\Phi \\cdot \\nabla_{\\mathbf{v}}f = 0",
+        "P_\\infty(\\nu) \\sim (\\nu-\\nu_c)^{\\beta_{\\rm perc}}",
+        "\\Phi_\\tau(X;\\pi) = I(X_t;X_{t+\\tau}) - \\sum_{m} I(X_t^{A_m};X_{t+\\tau}^{A_m})",
+        "\\boxed{\\text{[THEORETICAL]}}",
+        "\\tau_{\\rm neural} = t/\\tau_m",
+        "\\tau_{\\rm grav} = t/t_{\\rm dyn}",
+        "\\Phi_{\\rm grav}",
+        "\\beta_i(\\nu)",
+        "P_\\infty(\\nu)",
+        "\\kappa",
+        "\\Phi",
+        "\\Delta\\gamma_t",
+        "\\Lambda",
+        "\\nabla_{\\mathbf{x}}^2\\Phi = 4\\pi G a^2 \\bar{\\rho}_m \\delta",
+        "K_\\nu = \\{\\mathbf{x} : \\delta(\\mathbf{x}) \\geq \\nu\\}",
+        "\\beta_k(\\nu) = \\mathrm{rank}\\,H_k(K_\\nu)",
+        "\\Delta\\gamma_t(R,z) = \\gamma_{t,\\rm obs}(R,z) - \\gamma_{t,\\Lambda{\\rm CDM}}(R,z)",
+        "\\mathcal{L}(\\pi)",
+        "\\sigma=1",
+        "10^{19}",
+        "\\theta^\\*",
+        "\\mathcal{F}",
+        "\\beta_0, \\beta_1, \\beta_2",
+        "K_\\nu"
+      ],
+      "equation_count": 29,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-08-29T01:37:12.339009+00:00"
     }
   ]
 }

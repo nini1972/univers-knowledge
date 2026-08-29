@@ -281,3 +281,50 @@ def synchronize_index(index_path: str, repo_root: Path) -> str:
 
 def sanitize_index_file(index_path: str, repo_root: Path) -> str:
     return synchronize_index(index_path, repo_root)
+
+
+def generate_clean_topic_digest(all_concepts: list = None, repo_root: Path = None, target_level: int = None) -> str:
+    """
+    Generates a clean, structured, and lightweight topic digest for CrewAI agents.
+    Completely excludes Mermaid diagrams, visual formatting syntax, and file paths to minimize token load.
+    """
+    if all_concepts is None:
+        if repo_root is None:
+            repo_root = Path(__file__).resolve().parent.parent
+        db_file = repo_root / "knowledge_base" / "database.json"
+        if db_file.exists():
+            try:
+                all_concepts = json.loads(db_file.read_text(encoding="utf-8"))
+            except Exception:
+                all_concepts = []
+        else:
+            all_concepts = []
+
+    level_headings = {
+        1: "Level 1: Fundamental Physics",
+        2: "Level 2: Advanced Frameworks (Debates & Competing Theories)",
+        3: "Level 3: Emergence, Intelligence & Cosmological Architecture",
+    }
+
+    lines = [f"# Knowledge Base Summary ({len(all_concepts)} Topics Already Covered)", ""]
+
+    for lvl in [1, 2, 3]:
+        lvl_concepts = [c for c in all_concepts if c.get("level") == lvl or (lvl == 1 and "level_1" in c.get("path", "")) or (lvl == 2 and "level_2" in c.get("path", "")) or (lvl == 3 and "level_3" in c.get("path", ""))]
+        lvl_concepts.sort(key=lambda x: x["title"].lower())
+
+        heading = level_headings.get(lvl, f"Level {lvl}")
+        lines.append(f"## {heading} ({len(lvl_concepts)} covered)")
+        lines.append("")
+        for c in lvl_concepts:
+            status = str(c.get("status", "THEORETICAL")).strip("[]")
+            status_tag = f"[{status}]"
+            math_status = str(c.get("math_status", "")).strip("[]")
+            math_tag = f" [{math_status}]" if math_status and math_status != "MATH_UNKNOWN" else ""
+            lines.append(f"- {c['title']} {status_tag}{math_tag}")
+
+        if not lvl_concepts:
+            lines.append("- (no entries yet)")
+        lines.append("")
+
+    return "\n".join(lines).strip()
+

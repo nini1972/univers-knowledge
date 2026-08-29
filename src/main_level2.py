@@ -41,9 +41,9 @@ except ImportError:
         is_concept_existing,
     )
 try:
-    from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
+    from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file, generate_clean_topic_digest
 except ImportError:
-    from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file
+    from src.index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file, generate_clean_topic_digest
 
 try:
     from a2a_math_client import extract_equations_from_report
@@ -175,10 +175,11 @@ def main():
     output_location = None
     level_folder = "level_2_advanced_frameworks"
     repo_root = Path(__file__).resolve().parent.parent
+    topic_digest = generate_clean_topic_digest(repo_root=repo_root)
 
     for attempt in range(1, max_topic_attempts + 1):
         topic_student = agents.student_agent()
-        topic_task = tasks.determine_next_level2_topic_task(topic_student, current_index)
+        topic_task = tasks.determine_next_level2_topic_task(topic_student, topic_digest)
 
         exclusion_prompt = ""
         if excluded_concepts:
