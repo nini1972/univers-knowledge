@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-28T03:45:46.519423+00:00",
+  "updated_at": "2026-08-29T01:37:13.544979+00:00",
   "stats": {
-    "total_nodes": 226,
-    "level_1_count": 105,
-    "level_2_count": 100,
+    "total_nodes": 228,
+    "level_1_count": 106,
+    "level_2_count": 101,
     "level_3_count": 21,
-    "total_edges": 131,
+    "total_edges": 134,
     "frontier_count": 0
   },
   "nodes": [
@@ -90,6 +90,25 @@
         "IceCube Collaboration"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/can_a_detailed_quantitative_breakdown_of_systematic_uncertainties_in_neutrino_decay_lifetime_measurements_be_provided_for_each_major_experimental_collaboration.md"
+    },
+    {
+      "id": "canindependentlaboratoryexperimentsdefinitivelydisentangleactivefluxlossduetoinvisibledecayfromfluxnormalizationsystematicerrors",
+      "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Current research papers on neutrino physics",
+        "DUNE experiment documentation",
+        "Statistical methods in particle physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_independent_laboratory_experiments_definitively_disentangle_activeflux_loss_due_to_invisible_decay_from_flux_normalization_systematic_errors.md"
     },
     {
       "id": "canindependentpubliclyavailabledatasetsfromjunoduneorhyperkamiokandebereleasedtoenableexternalverificationofneutrinodecaybounds",
@@ -2142,7 +2161,7 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
       "dependencies": [
-        "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+        "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
         "emergentgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
         "quantumgravity"
       ],
@@ -2157,6 +2176,28 @@
         "Comparative debate report on ASG and EG frameworks"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md"
+    },
+    {
+      "id": "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
+      "title": "Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+        "asymptoticallysafegravityvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Current research reports on Quantum Gravity",
+        "Comparative analysis of theoretical frameworks",
+        "Documentation on effective field theory"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities.md"
     },
     {
       "id": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
@@ -2236,7 +2277,8 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "horavalifshitzgravityvsasymptoticallysafegravityinquantumgravityresearch"
+        "horavalifshitzgravityvsasymptoticallysafegravityinquantumgravityresearch",
+        "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities"
       ],
       "tags": [
         "2"
@@ -2505,7 +2547,7 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
       "dependencies": [
-        "asymptoticallysafegravityvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
+        "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
         "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
         "quantumgravity"
       ],
@@ -3611,7 +3653,7 @@
       "math_score": "0/4",
       "dependencies": [
         "quantumgravity",
-        "asymptoticallysafegravityvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities"
+        "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities"
       ],
       "tags": [
         "2",
@@ -4634,13 +4676,23 @@
       "type": "component_theory"
     },
     {
-      "source": "asymptoticsafetyvsnoncommutativegeometryinaddressingultravioletcompletionandsingularityresolution",
+      "source": "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
       "target": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
       "type": "component_theory"
     },
     {
       "source": "emergentgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
       "target": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
+      "target": "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticallysafegravityvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
+      "target": "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
       "type": "component_theory"
     },
     {
@@ -4675,6 +4727,11 @@
     },
     {
       "source": "horavalifshitzgravityvsasymptoticallysafegravityinquantumgravityresearch",
+      "target": "asymptoticallysafegravityvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
       "target": "asymptoticallysafegravityvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
       "type": "component_theory"
     },
@@ -4724,7 +4781,7 @@
       "type": "component_theory"
     },
     {
-      "source": "asymptoticallysafegravityvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
+      "source": "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
       "target": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
       "type": "component_theory"
     },
@@ -5019,7 +5076,7 @@
       "type": "component_theory"
     },
     {
-      "source": "asymptoticallysafegravityvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
+      "source": "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
       "target": "quantumgravitybeyondstringtheoryloopquantumgravityvscausaldynamicaltriangulation",
       "type": "component_theory"
     },

@@ -114,6 +114,7 @@ graph TD
     general_relativity["General Relativity"]:::verified
     what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory["What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?"]:::theoretical
     how_might_the_assumptions_of_fundamental_spacetime_discreteness_or_entanglementgeometry_duality_be_tested_or_challenged_empirically["How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?"]:::theoretical
+    can_independent_laboratory_experiments_definitively_disentangle_activeflux_loss_due_to_invisible_decay_from_flux_normalization_systematic_errors["Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?"]:::theoretical
     asymmetric_dark_matter_vs_wimp_dark_matter_in_addressing_the_coincidence_problem["Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem"]:::verified
     dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration["Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
@@ -192,6 +193,7 @@ graph TD
     supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration["Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration"]:::verified
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
+    asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities["Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities"]:::theoretical
     symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory["Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory"]:::theoretical
     cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
     supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
@@ -387,6 +389,7 @@ graph TD
     quantum_field_theory --> emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
     quantum_gravity --> loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
+    quantum_gravity --> asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities
     dark_matter --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
@@ -407,6 +410,7 @@ graph TD
 - [Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?](level_1_fundamental_physics/are_there_experimental_strategies_to_better_constrain_neutrino_decay_widths_j_and_confirm_decayinclusive_oscillation_modifications.md) [THEORETICAL]
 - [Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?](level_1_fundamental_physics/are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups.md) [THEORETICAL]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
+- [Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?](level_1_fundamental_physics/can_independent_laboratory_experiments_definitively_disentangle_activeflux_loss_due_to_invisible_decay_from_flux_normalization_systematic_errors.md) [THEORETICAL]
 - [Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?](level_1_fundamental_physics/can_independent_publicly_available_datasets_from_juno_dune_or_hyperkamiokande_be_released_to_enable_external_verification_of_neutrino_decay_bounds.md) [THEORETICAL]
 - [Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?](level_1_fundamental_physics/can_operator_domain_and_spectral_decomposition_analyses_for_the_nonhermitian_hamiltonian_with_decay_terms_be_rigorously_established.md) [THEORETICAL]
 - [Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?](level_1_fundamental_physics/can_rigorous_manual_dimensional_consistency_checks_be_performed_by_experts_to_supplement_the_automated_undecidable_result.md) [VERIFIED]
@@ -518,6 +522,7 @@ graph TD
 - [Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem](level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_dark_matter_in_addressing_the_coincidence_problem.md) [VERIFIED]
 - [Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics](level_2_advanced_frameworks/asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics.md) [THEORETICAL]
 - [Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](level_2_advanced_frameworks/asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research.md) [THEORETICAL]
+- [Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities](level_2_advanced_frameworks/asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities.md) [THEORETICAL]
 - [Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_addressing_ultraviolet_completion_and_singularity_resolution.md) [THEORETICAL]
 - [Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_quantum_gravity.md) [THEORETICAL]
 - [Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime](level_2_advanced_frameworks/asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime.md) [THEORETICAL]
