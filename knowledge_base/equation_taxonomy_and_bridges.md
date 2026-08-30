@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-08-29T21:47:37.290232+00:00  
-> **Total Analyzed Concepts:** 204 | **Total Discovered Equations:** 6712 | **Discovered Bridges:** 332
+> **Generated:** 2026-08-30T01:11:07.205294+00:00  
+> **Total Analyzed Concepts:** 206 | **Total Discovered Equations:** 6760 | **Discovered Bridges:** 336
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 62 concepts:
+**Occurrences:** Appears in 63 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -70,6 +70,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
 - **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
 - **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
+- **Level 2**: f(T) Gravity vs. K-Essence in Addressing Cosmic Acceleration
 
 ### ` 1.380649 \times 10^{-23} `
 **Occurrences:** Appears in 20 concepts:
@@ -95,7 +96,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
 
 ### ` 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 19 concepts:
+**Occurrences:** Appears in 20 concepts:
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
@@ -115,9 +116,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
 - **Level 3**: Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations
 - **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
+- **Level 1**: What specific laboratory-based experiment, such as an axion haloscope or light-mediator search, could definitively falsify the most plausible variants of SIDM or SFDM?
 
 ### ` \alpha `
-**Occurrences:** Appears in 17 concepts:
+**Occurrences:** Appears in 18 concepts:
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 1**: What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
@@ -135,9 +137,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?
 - **Level 3**: Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes
 - **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
+- **Level 1**: What specific laboratory-based experiment, such as an axion haloscope or light-mediator search, could definitively falsify the most plausible variants of SIDM or SFDM?
 
 ### ` \gamma `
-**Occurrences:** Appears in 16 concepts:
+**Occurrences:** Appears in 17 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
@@ -154,6 +157,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension
 - **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
 - **Level 1**: Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?
+- **Level 2**: f(T) Gravity vs. K-Essence in Addressing Cosmic Acceleration
 
 ### ` \Phi `
 **Occurrences:** Appears in 16 concepts:
@@ -305,15 +309,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 93 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 82 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 80 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 94 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 83 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 81 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 59 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 47 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 28 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 28 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 27 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 11 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 91
-- **MATH_CONSISTENT Entries:** 45
+- **MATH_PROVEN Entries:** 92
+- **MATH_CONSISTENT Entries:** 46
