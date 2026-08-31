@@ -30,7 +30,7 @@ def _get_llm(role: str) -> LLM | None:
 
         api_base = "https://openrouter.ai/api/v1"
         try:
-            max_tokens = int(os.getenv("MAX_TOKENS", "8192"))
+            max_tokens = int(os.getenv("MAX_TOKENS", "32768"))
             return LLM(
                 model=f"openrouter/{model}",
                 api_key=api_key,
