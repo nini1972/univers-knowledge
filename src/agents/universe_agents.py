@@ -30,10 +30,12 @@ def _get_llm(role: str) -> LLM | None:
 
         api_base = "https://openrouter.ai/api/v1"
         try:
+            max_tokens = int(os.getenv("MAX_TOKENS", "8192"))
             return LLM(
                 model=f"openrouter/{model}",
                 api_key=api_key,
-                base_url=api_base
+                base_url=api_base,
+                max_tokens=max_tokens
             )
         except Exception as exc:
             print(f"Warning: Failed to initialize CrewAI LLM wrapper for {role}: {exc}")
