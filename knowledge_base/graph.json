@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-08-30T01:33:45.241013+00:00",
+  "updated_at": "2026-09-01T01:55:27.837424+00:00",
   "stats": {
-    "total_nodes": 230,
-    "level_1_count": 107,
+    "total_nodes": 232,
+    "level_1_count": 108,
     "level_2_count": 102,
-    "level_3_count": 21,
-    "total_edges": 134,
+    "level_3_count": 22,
+    "total_edges": 135,
     "frontier_count": 0
   },
   "nodes": [
@@ -545,6 +545,25 @@
         "JWST early-universe structure formation data"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/how_can_cosmological_observations_be_refined_to_better_discriminate_between_warm_dark_matter_effects_predicted_by_sterile_neutrinos_and_cold_dark_matter_scenarios.md"
+    },
+    {
+      "id": "howcanhydrodynamicsimulationsbestructuredtoconclusivelybreakthedegeneracybetweenbaryonicfeedbackeffectsanddarksectorphysicssfdmwaveeffectsvssidmcollisionsindwarfgalaxycores",
+      "title": "How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/how_can_hydrodynamic_simulations_be_structured_to_conclusively_break_the_degeneracy_between_baryonic_feedback_effects_and_darksector_physics_sfdm_wave_effects_vs_sidm_collisions_in_dwarf_galaxy_cores.md"
     },
     {
       "id": "howcansterileneutrinoproductionmechanismsbeconstrainedorclarifiedbyfutureneutrinooscillationorcosmologicalprobes",
@@ -4350,6 +4369,27 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md"
     },
     {
+      "id": "computationalirreducibilityandalgorithmicinformationcompressioninneuralmanifoldsversuscosmologicalstructureformation",
+      "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "quantumvacuumentanglementanditsroleincosmologicalstructureformation"
+      ],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Peer-reviewed Journal Article",
+        "Conference Proceedings",
+        "Research Monograph"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md"
+    },
+    {
       "id": "dynamicalstabilityandinformationbottleneckconstraintsinnonequilibriumselforganizingcosmologicalnetworks",
       "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
       "level": 3,
@@ -5266,6 +5306,11 @@
     {
       "source": "darkmatter",
       "target": "warmdarkmattervsselfinteractingdarkmatterinexplainingsmallscalestructureformation",
+      "type": "component_theory"
+    },
+    {
+      "source": "quantumvacuumentanglementanditsroleincosmologicalstructureformation",
+      "target": "computationalirreducibilityandalgorithmicinformationcompressioninneuralmanifoldsversuscosmologicalstructureformation",
       "type": "component_theory"
     },
     {
