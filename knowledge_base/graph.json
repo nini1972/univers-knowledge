@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-02T02:23:40.932080+00:00",
+  "updated_at": "2026-09-03T02:04:11.814307+00:00",
   "stats": {
-    "total_nodes": 235,
-    "level_1_count": 109,
-    "level_2_count": 103,
+    "total_nodes": 237,
+    "level_1_count": 110,
+    "level_2_count": 104,
     "level_3_count": 23,
-    "total_edges": 136,
+    "total_edges": 139,
     "frontier_count": 0
   },
   "nodes": [
@@ -1509,6 +1509,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/the_higgs_boson.md"
     },
     {
+      "id": "towhatdegreedocurrentuncertaintiesindunesnuclearcrossmodelbackgroundsegrpa2p2heffectsoverlapwiththeenergydependentspectraldistortionpredictedbyvisibleneutrinodecay",
+      "title": "The degeneracy between DUNE's nuclear cross-section modeling uncertainties and visible neutrino decay",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Original analysis report",
+        "DUNE Collaboration publications",
+        "Theoretical framework discussions on neutrino decay"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/to_what_degree_do_current_uncertainties_in_dunes_nuclear_crossmodel_backgrounds_eg_rpa_2p2h_effects_overlap_with_the_energydependent_spectral_distortion_predicted_by_visible_neutrino_decay.md"
+    },
+    {
       "id": "whatadvancementsinrelativisticmodelingandnumericalsimulationsareneededtomoreconclusivelydifferentiatesfdmpredictionsfromcdmscenariosinstructureformation",
       "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
       "level": 1,
@@ -2718,6 +2737,7 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "conformalgravityvsnfwdarkmattermodelsinresolvingthecorecuspproblem",
         "darkmatter"
       ],
       "tags": [
@@ -2729,6 +2749,28 @@
         "Data from Planck satellite observations"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/conformal_gravity_vs_cold_dark_matter_in_explaining_galactic_rotation_curves.md"
+    },
+    {
+      "id": "conformalgravityvsnfwdarkmattermodelsinresolvingthecorecuspproblem",
+      "title": "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "conformalgravityvscolddarkmatterinexplaininggalacticrotationcurves",
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Current research reports on Lambda Cold Dark Matter (ΛCDM) model",
+        "Empirical analyses of cosmic microwave background (CMB) and large-scale structures",
+        "Studies on the effects of baryonic feedback in dark matter halo profiles"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/conformal_gravity_vs_nfw_dark_matter_models_in_resolving_the_corecusp_problem.md"
     },
     {
       "id": "cosmologicalconstantversusquintessenceinexplainingdarkenergy",
@@ -4953,8 +4995,23 @@
       "type": "component_theory"
     },
     {
+      "source": "conformalgravityvsnfwdarkmattermodelsinresolvingthecorecuspproblem",
+      "target": "conformalgravityvscolddarkmatterinexplaininggalacticrotationcurves",
+      "type": "component_theory"
+    },
+    {
       "source": "darkmatter",
       "target": "conformalgravityvscolddarkmatterinexplaininggalacticrotationcurves",
+      "type": "component_theory"
+    },
+    {
+      "source": "conformalgravityvscolddarkmatterinexplaininggalacticrotationcurves",
+      "target": "conformalgravityvsnfwdarkmattermodelsinresolvingthecorecuspproblem",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "conformalgravityvsnfwdarkmattermodelsinresolvingthecorecuspproblem",
       "type": "component_theory"
     },
     {
