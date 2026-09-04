@@ -343,6 +343,18 @@ The electromagnetic force is one of the four fundamental forces.
         self.assertNotIn("classDef", digest, "Digest must not contain raw Mermaid CSS classes")
         self.assertGreater(len(digest), 100, "Digest should contain topics from database")
 
+    def test_sanitize_long_filename(self):
+        """Verifies that sanitize_filename caps filenames under Linux NAME_MAX limit."""
+        try:
+            from workflow_contracts import sanitize_filename
+        except ImportError:
+            from src.workflow_contracts import sanitize_filename
+
+        ultra_long_name = "How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test given that the current statistics for nearby neutrino sources like NGC 1068 remain low"
+        filename = sanitize_filename(ultra_long_name)
+        self.assertLessEqual(len(filename), 184)
+        self.assertTrue(filename.endswith(".md"))
+
 
 if __name__ == "__main__":
     unittest.main()

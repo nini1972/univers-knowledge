@@ -31,6 +31,7 @@ try:
         parse_math_score,
         parse_math_status,
         is_concept_existing,
+        sanitize_filename,
     )
 except ImportError:
     from src.workflow_contracts import (
@@ -41,6 +42,7 @@ except ImportError:
         parse_math_score,
         parse_math_status,
         is_concept_existing,
+        sanitize_filename,
     )
 
 try:
@@ -74,12 +76,7 @@ except ImportError:
     )
 
 
-def sanitize_filename(name):
-    try:
-        from main import sanitize_filename as _shared_sanitize_filename
-    except ImportError:
-        from src.main import sanitize_filename as _shared_sanitize_filename
-    return _shared_sanitize_filename(name)
+
 
 
 def _extract_level3_selection(raw_output: str):

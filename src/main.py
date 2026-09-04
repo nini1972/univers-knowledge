@@ -27,6 +27,7 @@ try:
         parse_math_score,
         parse_math_status,
         is_concept_existing,
+        sanitize_filename,
     )
 except ImportError:
     from src.workflow_contracts import (
@@ -37,6 +38,7 @@ except ImportError:
         parse_math_score,
         parse_math_status,
         is_concept_existing,
+        sanitize_filename,
     )
 try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file, generate_clean_topic_digest
@@ -77,11 +79,6 @@ def read_index(filepath):
             return f.read()
     except FileNotFoundError:
         return "Index not found. Start with basic physics."
-
-def sanitize_filename(name):
-    # Convert "The Standard Model!" to "the_standard_model.md"
-    s = re.sub(r'[^a-zA-Z0-9\s]', '', name).strip().replace(' ', '_').lower()
-    return f"{s}.md"
 
 
 def update_index_file(index_path: str, concept_name: str, level_folder: str, filename: str):

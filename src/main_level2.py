@@ -28,6 +28,7 @@ try:
         parse_math_score,
         parse_math_status,
         is_concept_existing,
+        sanitize_filename,
     )
 except ImportError:
     from src.workflow_contracts import (
@@ -39,6 +40,7 @@ except ImportError:
         parse_math_score,
         parse_math_status,
         is_concept_existing,
+        sanitize_filename,
     )
 try:
     from index_utils import index_heading_for_level, prune_stale_index_links, sanitize_index_file, generate_clean_topic_digest
@@ -70,15 +72,6 @@ except ImportError:
     )
 
 import time
-
-
-
-def sanitize_filename(name):
-    try:
-        from main import sanitize_filename as _shared_sanitize_filename
-    except ImportError:
-        from src.main import sanitize_filename as _shared_sanitize_filename
-    return _shared_sanitize_filename(name)
 
 
 

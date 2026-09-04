@@ -452,14 +452,23 @@ def parse_math_status(math_output: str) -> str:
     return "MATH_UNKNOWN"
 
 
-def is_concept_existing(concept_name: str, level: int = 2, repo_root=None) -> bool:
+def sanitize_filename(name: str, max_len: int = 180) -> str:
+    """Sanitizes a concept name into a valid markdown filename, capped at max_len characters."""
+    s = re.sub(r'[^a-zA-Z0-9\s]', '', str(name)).strip().replace(' ', '_').lower()
+    if len(s) > max_len:
+        s = s[:max_len].rstrip('_')
+    return f"{s}.md"
+
+
+def is_concept_existing(concept_name: str, level: int = 2, repo_root=None, max_len: int = 180) -> bool:
     """
     Checks whether a concept file or OKF node ID already exists on disk, in graph.json, or in _index.md.
     """
     if not concept_name or not str(concept_name).strip():
         return False
 
-    s = re.sub(r'[^a-zA-Z0-9\s]', '', str(concept_name)).strip().replace(' ', '_').lower()
+    raw_s = re.sub(r'[^a-zA-Z0-9\s]', '', str(concept_name)).strip().replace(' ', '_').lower()
+    s = raw_s[:max_len].rstrip('_') if len(raw_s) > max_len else raw_s
     filename = f"{s}.md"
 
     if repo_root is None:
@@ -473,7 +482,7 @@ def is_concept_existing(concept_name: str, level: int = 2, repo_root=None) -> bo
             with open(graph_path, "r", encoding="utf-8") as f:
                 graph_data = json.load(f)
                 for node in graph_data.get("nodes", []):
-                    if node.get("id") == s or node.get("path", "").endswith(filename):
+                    if node.get("id") in [s, raw_s] or node.get("path", "").endswith(filename):
                         return True
         except Exception:
             pass
@@ -495,7 +504,7 @@ def is_concept_existing(concept_name: str, level: int = 2, repo_root=None) -> bo
     if index_path.exists():
         try:
             index_text = index_path.read_text(encoding="utf-8").lower()
-            if filename in index_text or s in index_text:
+            if filename in index_text or s in index_text or raw_s in index_text:
                 return True
         except Exception:
             pass
