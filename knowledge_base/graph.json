@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-03T02:04:11.814307+00:00",
+  "updated_at": "2026-09-04T07:24:49.874384+00:00",
   "stats": {
-    "total_nodes": 237,
+    "total_nodes": 238,
     "level_1_count": 110,
-    "level_2_count": 104,
+    "level_2_count": 105,
     "level_3_count": 23,
     "total_edges": 139,
     "frontier_count": 0
@@ -4371,6 +4371,25 @@
         "Popławski, N. J. (2011). **Cosmology with torsion: An alternative to cosmic inflation.** Phys. Rev. D, 84(2), 024021."
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md"
+    },
+    {
+      "id": "vacuumdecayandcosmologicalinflationaryterminationdebate",
+      "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Research report on Stochastic Inflationary Dynamics and Quantum Tunneling.",
+        "Analysis of vacuum decay mechanisms.",
+        "Overview of multiverse landscapes in theoretical physics."
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/vacuum_decay_and_cosmological_inflationary_termination_debate.md"
     },
     {
       "id": "warmdarkmattervsselfinteractingdarkmatterinexplainingsmallscalestructureformation",
