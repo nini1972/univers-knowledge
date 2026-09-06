@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-05T01:44:06.178409+00:00",
+  "updated_at": "2026-09-06T01:50:58.370731+00:00",
   "stats": {
-    "total_nodes": 240,
-    "level_1_count": 111,
-    "level_2_count": 106,
-    "level_3_count": 23,
+    "total_nodes": 243,
+    "level_1_count": 112,
+    "level_2_count": 107,
+    "level_3_count": 24,
     "total_edges": 139,
     "frontier_count": 0
   },
@@ -452,6 +452,25 @@
         "J. Smith, et al. (2022). \"Self-interacting Dark Matter and Structure Formation.\" Physical Review D."
       ],
       "path": "knowledge_base/level_1_fundamental_physics/does_the_inclusion_of_dark_acoustic_oscillations_or_dissipation_in_complex_darksector_models_alter_the_largescale_structure_success_of_sidm_compared_to_standard_collisionless_cdm.md"
+    },
+    {
+      "id": "doestheinclusionofpotentialnonstandardinteractionsnsiinthematterevolutionhamiltonianqualitativelyshifttheexistingboundsonneutrinodecaylifetimesatdune",
+      "title": "Does the inclusion of potential Non-Standard Interactions (NSI) in the matter-evolution Hamiltonian qualitatively shift the existing bounds on neutrino decay lifetimes at DUNE?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "DUNE Collaboration",
+        "IceCube Collaboration",
+        "COHERENT Experiment"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/does_the_inclusion_of_potential_nonstandard_interactions_nsi_in_the_matterevolution_hamiltonian_qualitatively_shift_the_existing_bounds_on_neutrino_decay_lifetimes_at_dune.md"
     },
     {
       "id": "electroweaksymmetrybreaking",
@@ -3381,6 +3400,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/initial_condition_entropy_and_arrow_of_time.md"
     },
     {
+      "id": "initialstateentropyandinformationlossparadoxes",
+      "title": "Initial State Entropy and Information Loss Paradoxes",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Comparative Assessment of Conformal Cyclic Cosmology and the Eternal Inflationary Multiverse (2023)",
+        "Overview of Conformal Geometry in Cosmology",
+        "Report on Inflationary Physics and Quantum Field Theory"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/initial_state_entropy_and_information_loss_paradoxes.md"
+    },
+    {
       "id": "interactingdarkenergyvsnonminimalcouplinginsolvingthehubbletension",
       "title": "Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension",
       "level": 2,
@@ -4812,6 +4850,25 @@
         "Cosmological Network Topologies Overview"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics.md"
+    },
+    {
+      "id": "quantifyingthecausalpowerofnonequilibriuminformationbottlenecksinbiologicalvscosmologicalphasetransitions",
+      "title": "Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Research on non-equilibrium information bottlenecks",
+        "Information bottleneck theory literature",
+        "Non-equilibrium thermodynamics studies"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions.md"
     },
     {
       "id": "quantifyingthermodynamicdissipationcostsinneuralinformationprocessingversusgravitationalstructureformationvialandauerbekensteinscalingrelations",
