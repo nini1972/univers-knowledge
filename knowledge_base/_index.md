@@ -24,6 +24,7 @@ graph TD
     which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification["Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?"]:::theoretical
     what_experimental_advances_are_required_to_unambiguously_distinguish_neutrino_decay_effects_from_oscillation_nsi_and_decoherence_effects["What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?"]:::theoretical
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
+    what_specific_experimental_thresholds_in_nextgeneration_skipperccd_or_subgev_dark_matter_detectors_are_required_to_provide_a_meaningful_falsification_test_for_the_5_gev_adm_mass_sc["5 GeV Asymmetric Dark Matter (ADM) Mass Scale"]:::theoretical
     how_can_cosmological_observations_be_refined_to_better_discriminate_between_warm_dark_matter_effects_predicted_by_sterile_neutrinos_and_cold_dark_matter_scenarios["How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?"]:::theoretical
     how_might_potential_degeneracies_in_astrophysical_signals_between_sfdm_phonon_effects_and_alternative_dark_matter_models_be_resolved_observationally["Superfluid Dark Matter Phonon Effects"]:::theoretical
     what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade["What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?"]:::theoretical
@@ -192,6 +193,7 @@ graph TD
     fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations["Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations"]:::theoretical
     holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
+    conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem["Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem"]:::verified
     scalartensor_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration["Scalar-Tensor Gravity vs Galileon Gravity in Addressing Cosmic Acceleration"]:::theoretical
     symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory["Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory"]:::theoretical
     vacuum_decay_and_cosmological_inflationary_termination_debate["Vacuum Decay and Cosmological Inflationary Termination Debate"]:::theoretical
@@ -398,6 +400,7 @@ graph TD
     dark_matter --> fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations
     quantum_gravity --> holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
+    quantum_chromodynamics_qcd --> conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem
     dark_matter --> asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance
     dark_matter --> interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
     dark_matter --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure
@@ -426,6 +429,7 @@ graph TD
 
 ## Level 1: Fundamental Physics
 
+- [5 GeV Asymmetric Dark Matter (ADM) Mass Scale](level_1_fundamental_physics/what_specific_experimental_thresholds_in_nextgeneration_skipperccd_or_subgev_dark_matter_detectors_are_required_to_provide_a_meaningful_falsification_test_for_the_5_gev_adm_mass_sc.md) [THEORETICAL]
 - [Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?](level_1_fundamental_physics/are_there_experimental_strategies_to_better_constrain_neutrino_decay_widths_j_and_confirm_decayinclusive_oscillation_modifications.md) [THEORETICAL]
 - [Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?](level_1_fundamental_physics/are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups.md) [THEORETICAL]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
@@ -571,6 +575,7 @@ graph TD
 - [Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution](level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution.md) [THEORETICAL]
 - [Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves](level_2_advanced_frameworks/conformal_gravity_vs_cold_dark_matter_in_explaining_galactic_rotation_curves.md) [VERIFIED]
 - [Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem](level_2_advanced_frameworks/conformal_gravity_vs_nfw_dark_matter_models_in_resolving_the_corecusp_problem.md) [VERIFIED]
+- [Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem](level_2_advanced_frameworks/conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem.md) [VERIFIED]
 - [Cosmological Constant versus Quintessence in Explaining Dark Energy](level_2_advanced_frameworks/cosmological_constant_versus_quintessence_in_explaining_dark_energy.md) [THEORETICAL]
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem](level_2_advanced_frameworks/dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem.md) [THEORETICAL]
