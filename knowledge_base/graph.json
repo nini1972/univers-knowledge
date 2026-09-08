@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-07T02:13:38.225746+00:00",
+  "updated_at": "2026-09-08T01:57:07.018281+00:00",
   "stats": {
-    "total_nodes": 245,
-    "level_1_count": 113,
-    "level_2_count": 108,
+    "total_nodes": 247,
+    "level_1_count": 114,
+    "level_2_count": 109,
     "level_3_count": 24,
-    "total_edges": 139,
+    "total_edges": 141,
     "frontier_count": 0
   },
   "nodes": [
@@ -90,6 +90,25 @@
         "IceCube Collaboration"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/can_a_detailed_quantitative_breakdown_of_systematic_uncertainties_in_neutrino_decay_lifetime_measurements_be_provided_for_each_major_experimental_collaboration.md"
+    },
+    {
+      "id": "canarigorousmodelofwimpbaryogenesisbeconstructedthatnaturallysatisfiesthewashoutconstraintwithoutinvokingfinetunedflavorstructuresorheavymasshierarchies",
+      "title": "WIMP Baryogenesis Models",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Various academic journals on particle physics",
+        "Reviews on baryogenesis and dark matter models",
+        "Current literature in theoretical cosmology"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/can_a_rigorous_model_of_wimp_baryogenesis_be_constructed_that_naturally_satisfies_the_washout_constraint_without_invoking_finetuned_flavor_structures_or_heavy_mass_hierarchies.md"
     },
     {
       "id": "canindependentlaboratoryexperimentsdefinitivelydisentangleactivefluxlossduetoinvisibledecayfromfluxnormalizationsystematicerrors",
@@ -2233,6 +2252,7 @@
       "math_score": "4/4",
       "dependencies": [
         "darkmatter",
+        "canarigorousmodelofwimpbaryogenesisbeconstructedthatnaturallysatisfiesthewashoutconstraintwithoutinvokingfinetunedflavorstructuresorheavymasshierarchies",
         "matterantimatterasymmetry"
       ],
       "tags": [
@@ -4109,6 +4129,27 @@
       "path": "knowledge_base/level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md"
     },
     {
+      "id": "screeningmechanismsinmodifiedgravityvscosmicacceleration",
+      "title": "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "bransdickevsfqsymmetricteleparallelgravityinexplaininglatetimecosmicacceleration"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "GW170817 constraint reports",
+        "Large-scale structure observations",
+        "Research papers on DGP and Galileon gravity"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration.md"
+    },
+    {
       "id": "stochasticgravityvsdiosipenroseobjectivecollapseinexplainingthequantumtoclassicaltransition",
       "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
       "level": 2,
@@ -5003,6 +5044,11 @@
       "type": "component_theory"
     },
     {
+      "source": "canarigorousmodelofwimpbaryogenesisbeconstructedthatnaturallysatisfiesthewashoutconstraintwithoutinvokingfinetunedflavorstructuresorheavymasshierarchies",
+      "target": "asymmetricdarkmattervswimpbaryogenesisinexplainingmatterantimatterasymmetry",
+      "type": "component_theory"
+    },
+    {
       "source": "darkmatter",
       "target": "asymmetricdarkmattervswimpdarkmatterinaddressingthecoincidenceproblem",
       "type": "component_theory"
@@ -5480,6 +5526,11 @@
     {
       "source": "scalartensorgravityvsgalileongravityinaddressingcosmicacceleration",
       "target": "scalartensorvsnonlocalgravitymodelsinexplaininglatetimecosmicacceleration",
+      "type": "component_theory"
+    },
+    {
+      "source": "bransdickevsfqsymmetricteleparallelgravityinexplaininglatetimecosmicacceleration",
+      "target": "screeningmechanismsinmodifiedgravityvscosmicacceleration",
       "type": "component_theory"
     },
     {

@@ -19,6 +19,7 @@ graph TD
     what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory["What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?"]:::theoretical
     can_independent_laboratory_experiments_definitively_disentangle_activeflux_loss_due_to_invisible_decay_from_flux_normalization_systematic_errors["Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?"]:::theoretical
     neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
+    can_a_rigorous_model_of_wimp_baryogenesis_be_constructed_that_naturally_satisfies_the_washout_constraint_without_invoking_finetuned_flavor_structures_or_heavy_mass_hierarchies["WIMP Baryogenesis Models"]:::theoretical
     could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports["Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?"]:::theoretical
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
     which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification["Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?"]:::theoretical
@@ -192,6 +193,7 @@ graph TD
     asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime["Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime"]:::theoretical
     fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations["Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations"]:::theoretical
     holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
+    screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration["Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
     conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem["Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem"]:::verified
     scalartensor_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration["Scalar-Tensor Gravity vs Galileon Gravity in Addressing Cosmic Acceleration"]:::theoretical
@@ -266,6 +268,8 @@ graph TD
     neutrinoless_double_beta_decay --- what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay
     quantum_gravity --- what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory
     standard_model_of_particle_physics --- neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology
+    dark_matter --- can_a_rigorous_model_of_wimp_baryogenesis_be_constructed_that_naturally_satisfies_the_washout_constraint_without_invoking_finetuned_flavor_structures_or_heavy_mass_hierarchies
+    quantum_field_theory --- can_a_rigorous_model_of_wimp_baryogenesis_be_constructed_that_naturally_satisfies_the_washout_constraint_without_invoking_finetuned_flavor_structures_or_heavy_mass_hierarchies
     neutrino_oscillations --- could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports
     standard_model_of_particle_physics --- could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports
     quantum_field_theory --- quantum_vacuum_fluctuations_and_zeropoint_energy
@@ -542,6 +546,7 @@ graph TD
 - [Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?](level_1_fundamental_physics/which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys.md) [THEORETICAL]
 - [Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?](level_1_fundamental_physics/which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification.md) [THEORETICAL]
 - [Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?](level_1_fundamental_physics/will_you_perform_a_complete_dimensional_analysis_table_for_your_proposed_modified_survival_equations_showing_explicit_si_unit_tracing_to_prove_they_are_dimensionless.md) [THEORETICAL]
+- [WIMP Baryogenesis Models](level_1_fundamental_physics/can_a_rigorous_model_of_wimp_baryogenesis_be_constructed_that_naturally_satisfies_the_washout_constraint_without_invoking_finetuned_flavor_structures_or_heavy_mass_hierarchies.md) [THEORETICAL]
 
 ## Level 2: Advanced Frameworks
 
@@ -634,6 +639,7 @@ graph TD
 - [Scalar-Tensor Gravity vs Galileon Gravity in Addressing Cosmic Acceleration](level_2_advanced_frameworks/scalartensor_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale](level_2_advanced_frameworks/scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
+- [Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration](level_2_advanced_frameworks/screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration.md) [THEORETICAL]
 - [Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition](level_2_advanced_frameworks/stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition.md) [THEORETICAL]
 - [String Theory versus Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
