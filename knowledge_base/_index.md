@@ -57,6 +57,7 @@ graph TD
     standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
     what_steps_can_be_taken_to_integrate_higherorder_effects_and_nonstandard_interactions_consistently_within_the_existing_framework["Integrating Higher-Order Effects and Non-Standard Interactions Consistently Within the Existing Framework"]:::theoretical
     will_you_provide_a_statistical_chisquared_fit_analysis_comparing_your_proposed_modifications_against_contemporary_datasets_from_t2k_nova_or_icecube["Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics"]:::verified
+    to_what_extent_can_future_gravitational_wave_observatories_eg_lisa_distinguish_between_admdriven_firstorder_phase_transitions_and_other_highenergy_cosmic_events["To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?"]:::theoretical
     can_operator_domain_and_spectral_decomposition_analyses_for_the_nonhermitian_hamiltonian_with_decay_terms_be_rigorously_established["Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
     what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models["What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?"]:::theoretical
@@ -192,6 +193,7 @@ graph TD
     entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena["Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena"]:::theoretical
     asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime["Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime"]:::theoretical
     fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations["Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations"]:::theoretical
+    typei_seesaw_vs_radiative_neutrino_mass_generation["Type-I Seesaw vs Radiative Neutrino Mass Generation"]:::theoretical
     holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research["Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration["Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration"]:::theoretical
     beyond_the_standard_model_solutions_to_the_hierarchy_problem["Beyond the Standard Model Solutions to the Hierarchy Problem"]:::theoretical
@@ -249,6 +251,7 @@ graph TD
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution["Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"]:::theoretical
     landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks["Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks"]:::verified
     quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures["Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures"]:::verified
+    causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness["Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness"]:::theoretical
     entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis["Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis"]:::verified
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
     spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology["Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology"]:::theoretical
@@ -402,6 +405,8 @@ graph TD
     quantum_gravity --> entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena
     quantum_gravity --> asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime
     dark_matter --> fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations
+    neutrinoless_double_beta_decay --> typei_seesaw_vs_radiative_neutrino_mass_generation
+    quantum_field_theory --> typei_seesaw_vs_radiative_neutrino_mass_generation
     quantum_gravity --> holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
     quantum_chromodynamics_qcd --> conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem
@@ -523,6 +528,7 @@ graph TD
 - [Superfluid Dark Matter Phonon Effects](level_1_fundamental_physics/how_might_potential_degeneracies_in_astrophysical_signals_between_sfdm_phonon_effects_and_alternative_dark_matter_models_be_resolved_observationally.md) [THEORETICAL]
 - [The degeneracy between DUNE's nuclear cross-section modeling uncertainties and visible neutrino decay](level_1_fundamental_physics/to_what_degree_do_current_uncertainties_in_dunes_nuclear_crossmodel_backgrounds_eg_rpa_2p2h_effects_overlap_with_the_energydependent_spectral_distortion_predicted_by_visible_neutrino_decay.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
+- [To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?](level_1_fundamental_physics/to_what_extent_can_future_gravitational_wave_observatories_eg_lisa_distinguish_between_admdriven_firstorder_phase_transitions_and_other_highenergy_cosmic_events.md) [THEORETICAL]
 - [What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?](level_1_fundamental_physics/what_advancements_in_relativistic_modeling_and_numerical_simulations_are_needed_to_more_conclusively_differentiate_sfdm_predictions_from_cdm_scenarios_in_structure_formation.md) [THEORETICAL]
 - [What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?](level_1_fundamental_physics/what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models.md) [THEORETICAL]
 - [What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?](level_1_fundamental_physics/what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range.md) [VERIFIED]
@@ -657,6 +663,7 @@ graph TD
 - [Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory.md) [THEORETICAL]
 - [Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity.md) [VERIFIED]
 - [Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md) [THEORETICAL]
+- [Type-I Seesaw vs Radiative Neutrino Mass Generation](level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md) [THEORETICAL]
 - [Vacuum Decay and Cosmological Inflationary Termination Debate](level_2_advanced_frameworks/vacuum_decay_and_cosmological_inflationary_termination_debate.md) [THEORETICAL]
 - [Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md) [THEORETICAL]
 
@@ -664,6 +671,7 @@ graph TD
 
 - [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?](level_3_emergence_and_intelligence/can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness.md) [THEORETICAL]
+- [Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md) [THEORETICAL]
 - [Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md) [THEORETICAL]
 - [Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation](level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md) [THEORETICAL]
 - [Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md) [THEORETICAL]

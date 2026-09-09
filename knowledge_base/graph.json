@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-08T01:57:07.018281+00:00",
+  "updated_at": "2026-09-09T17:27:18.862060+00:00",
   "stats": {
-    "total_nodes": 247,
-    "level_1_count": 114,
-    "level_2_count": 109,
-    "level_3_count": 24,
+    "total_nodes": 250,
+    "level_1_count": 115,
+    "level_2_count": 110,
+    "level_3_count": 25,
     "total_edges": 141,
     "frontier_count": 0
   },
@@ -1583,6 +1583,25 @@
         "Theoretical framework discussions on neutrino decay"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/to_what_degree_do_current_uncertainties_in_dunes_nuclear_crossmodel_backgrounds_eg_rpa_2p2h_effects_overlap_with_the_energydependent_spectral_distortion_predicted_by_visible_neutrino_decay.md"
+    },
+    {
+      "id": "towhatextentcanfuturegravitationalwaveobservatorieseglisadistinguishbetweenadmdrivenfirstorderphasetransitionsandotherhighenergycosmicevents",
+      "title": "To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Source on LISA and dark-sector transitions",
+        "Experimental physics literature on gravitational waves",
+        "Mathematical theories of phase transitions"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/to_what_extent_can_future_gravitational_wave_observatories_eg_lisa_distinguish_between_admdriven_firstorder_phase_transitions_and_other_highenergy_cosmic_events.md"
     },
     {
       "id": "whatadvancementsinrelativisticmodelingandnumericalsimulationsareneededtomoreconclusivelydifferentiatesfdmpredictionsfromcdmscenariosinstructureformation",
@@ -4529,6 +4548,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md"
     },
     {
+      "id": "typeiseesawvsradiativeneutrinomassgeneration",
+      "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Loualidi et al. (2026) - Fabricated Reference Rejected",
+        "Experimental Observations & Constraints by KATRIN, Planck, and Oscillation Experiments",
+        "NuFIT (2023) Data Analysis"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md"
+    },
+    {
       "id": "vacuumdecayandcosmologicalinflationaryterminationdebate",
       "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
       "level": 2,
@@ -4605,6 +4643,27 @@
         "Source 3"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness.md"
+    },
+    {
+      "id": "causalclosuremultiplerealizabilityandtheexplanatorygapanaxiomaticandempiricallyfalsifiablephysicalistframeworkforconsciousness",
+      "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Approved as a Level 3 theoretical framework, not as verified physical law.",
+        "The skeptic score is 5/6, equivalent to 4.17/5 and above the required threshold.",
+        "The report has adequate source diversity and mathematical grounding.",
+        "Explicit limitations noted in the report.",
+        "Causal closure, multiple realizability, explanatory-gap resolution, and IIT must remain classified as [THEORETICAL] pending reproducible operational measurements and decisive falsification tests."
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md"
     },
     {
       "id": "computationalcomplexityandscalabilityofselforganizingsystemsincosmologicalandbiologicalneuralnetworks",

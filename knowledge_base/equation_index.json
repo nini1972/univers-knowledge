@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-09-08T01:30:10.416276+00:00",
+  "updated_at": "2026-09-09T17:26:50.979519+00:00",
   "stats": {
-    "total_entries": 255,
-    "total_equations": 8739,
-    "math_proven_entries": 109,
-    "math_consistent_entries": 58,
-    "total_bridges": 451,
+    "total_entries": 261,
+    "total_equations": 8886,
+    "math_proven_entries": 110,
+    "math_consistent_entries": 59,
+    "total_bridges": 458,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 80,
+      "concept_count": 82,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -333,12 +333,20 @@
         {
           "title": "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
           "level": 2
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        },
+        {
+          "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+          "level": 2
         }
       ]
     },
     {
       "equation": "1.380649 \\times 10^{-23}",
-      "concept_count": 27,
+      "concept_count": 28,
       "concepts": [
         {
           "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
@@ -447,12 +455,16 @@
         {
           "title": "Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes",
           "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
         }
       ]
     },
     {
       "equation": "6.62607015 \\times 10^{-34}",
-      "concept_count": 26,
+      "concept_count": 27,
       "concepts": [
         {
           "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
@@ -556,6 +568,10 @@
         },
         {
           "title": "Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
           "level": 3
         }
       ]
@@ -664,7 +680,7 @@
     },
     {
       "equation": "\\Phi",
-      "concept_count": 21,
+      "concept_count": 22,
       "concepts": [
         {
           "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
@@ -749,6 +765,92 @@
         {
           "title": "Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions",
           "level": 3
+        },
+        {
+          "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\gamma",
+      "concept_count": 19,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
+          "level": 1
+        },
+        {
+          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
+          "level": 1
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
+          "level": 2
+        },
+        {
+          "title": "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
+          "level": 3
+        },
+        {
+          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
+          "level": 2
+        },
+        {
+          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?",
+          "level": 1
+        },
+        {
+          "title": "f(T) Gravity vs. K-Essence in Addressing Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -826,84 +928,6 @@
         },
         {
           "title": "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\gamma",
-      "concept_count": 18,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
-          "level": 1
-        },
-        {
-          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
-          "level": 1
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
-          "level": 2
-        },
-        {
-          "title": "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments",
-          "level": 3
-        },
-        {
-          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
-          "level": 2
-        },
-        {
-          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?",
-          "level": 1
-        },
-        {
-          "title": "f(T) Gravity vs. K-Essence in Addressing Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
           "level": 2
         }
       ]
@@ -1054,7 +1078,7 @@
     },
     {
       "equation": "\\hbar",
-      "concept_count": 15,
+      "concept_count": 16,
       "concepts": [
         {
           "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
@@ -1115,6 +1139,126 @@
         {
           "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
           "level": 2
+        },
+        {
+          "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "g_{\\mu\\nu}",
+      "concept_count": 13,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Exploring the Formalization of Integrated Information Theory within Cosmological Contexts",
+          "level": 3
+        },
+        {
+          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
+          "level": 2
+        },
+        {
+          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
+          "level": 2
+        },
+        {
+          "title": "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\beta_0, \\beta_1, \\beta_2",
+      "concept_count": 13,
+      "concepts": [
+        {
+          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+          "level": 3
+        },
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+          "level": 3
+        },
+        {
+          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
+          "level": 3
+        },
+        {
+          "title": "Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -1168,60 +1312,6 @@
         },
         {
           "title": "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "g_{\\mu\\nu}",
-      "concept_count": 12,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
-          "level": 2
-        },
-        {
-          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
-          "level": 2
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Exploring the Formalization of Integrated Information Theory within Cosmological Contexts",
-          "level": 3
-        },
-        {
-          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
-          "level": 2
-        },
-        {
-          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
-          "level": 2
-        },
-        {
-          "title": "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
           "level": 2
         }
       ]
@@ -1330,60 +1420,6 @@
         },
         {
           "title": "Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes",
-          "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "\\beta_0, \\beta_1, \\beta_2",
-      "concept_count": 12,
-      "concepts": [
-        {
-          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
-          "level": 3
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
-          "level": 3
-        },
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
-          "level": 3
-        },
-        {
-          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
-          "level": 3
-        },
-        {
-          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
-          "level": 3
-        },
-        {
-          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
-          "level": 3
-        },
-        {
-          "title": "Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks",
           "level": 3
         }
       ]
@@ -1981,6 +2017,40 @@
       ]
     },
     {
+      "equation": "\\theta",
+      "concept_count": 7,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "level": 1
+        },
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
+          "level": 1
+        },
+        {
+          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\kappa",
       "concept_count": 7,
       "concepts": [
@@ -2237,36 +2307,6 @@
         {
           "title": "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\theta",
-      "concept_count": 6,
-      "concepts": [
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
-          "level": 1
-        },
-        {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
-          "level": 2
-        },
-        {
-          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
-          "level": 2
-        },
-        {
-          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
-          "level": 1
-        },
-        {
-          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
-          "level": 3
         }
       ]
     },
@@ -3009,6 +3049,32 @@
       ]
     },
     {
+      "equation": "|c_g/c - 1| \\lesssim 10^{-15}",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
+          "level": 3
+        },
+        {
+          "title": "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
+          "level": 2
+        },
+        {
+          "title": "Initial Condition Entropy and Arrow of Time",
+          "level": 2
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\lambda",
       "concept_count": 5,
       "concepts": [
@@ -3057,6 +3123,32 @@
         {
           "title": "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\beta_k",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -3733,7 +3825,7 @@
       ]
     },
     {
-      "equation": "|c_g/c - 1| \\lesssim 10^{-15}",
+      "equation": "S_{\\mathrm{BH}} = \\frac{k_B A}{4\\ell_P^2}",
       "concept_count": 4,
       "concepts": [
         {
@@ -3741,16 +3833,16 @@
           "level": 3
         },
         {
-          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
           "level": 3
         },
         {
-          "title": "Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
-          "level": 2
+          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
+          "level": 3
         },
         {
-          "title": "Initial Condition Entropy and Arrow of Time",
-          "level": 2
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -3861,28 +3953,6 @@
         {
           "title": "Does the inclusion of potential Non-Standard Interactions (NSI) in the matter-evolution Hamiltonian qualitatively shift the existing bounds on neutrino decay lifetimes at DUNE?",
           "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "\\beta_k",
-      "concept_count": 4,
-      "concepts": [
-        {
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3
-        },
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
-          "level": 3
-        },
-        {
-          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
-          "level": 3
         }
       ]
     },
@@ -4637,7 +4707,7 @@
       ]
     },
     {
-      "equation": "S_{\\mathrm{BH}} = \\frac{k_B A}{4\\ell_P^2}",
+      "equation": "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
       "concept_count": 3,
       "concepts": [
         {
@@ -4645,11 +4715,11 @@
           "level": 3
         },
         {
-          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
           "level": 3
         },
         {
-          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
           "level": 3
         }
       ]
@@ -5015,6 +5085,24 @@
       ]
     },
     {
+      "equation": "\\Delta m^2",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?",
+          "level": 1
+        },
+        {
+          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
+          "level": 1
+        },
+        {
+          "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\nu_\\mu",
       "concept_count": 3,
       "concepts": [
@@ -5195,6 +5283,24 @@
       ]
     },
     {
+      "equation": "k_B T \\ln 2",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\eta_B",
       "concept_count": 3,
       "concepts": [
@@ -5209,6 +5315,78 @@
         {
           "title": "What specific experimental thresholds in next-generation Skipper-CCD or sub-GeV dark matter detectors are required to provide a meaningful falsification test for the 5 GeV ADM mass scale?",
           "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "0\\nu\\beta\\beta",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation",
+          "level": 2
+        },
+        {
+          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
+          "level": 1
+        },
+        {
+          "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\ell_P",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\sim 10^{25}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
+          "level": 1
+        },
+        {
+          "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "S_{\\text{BH}} = \\frac{k_B c^3 A}{4G\\hbar} = \\frac{k_B A}{4\\ell_P^2}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -5627,6 +5805,20 @@
         {
           "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\beta \\neq 0",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -7031,20 +7223,6 @@
       ]
     },
     {
-      "equation": "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "P(n;V)=e^{-\\rho V}\\frac{(\\rho V)^n}{n!}",
       "concept_count": 2,
       "concepts": [
@@ -7251,6 +7429,20 @@
         {
           "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "g^F_{ab}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
         }
       ]
     },
@@ -7689,20 +7881,6 @@
       ]
     },
     {
-      "equation": "\\Delta m^2",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?",
-          "level": 1
-        },
-        {
-          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\eta_N",
       "concept_count": 2,
       "concepts": [
@@ -8137,6 +8315,20 @@
       ]
     },
     {
+      "equation": "m_\\nu \\sim 0.1",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\tilde{g}_{\\mu\\nu} = \\Omega^2 g_{\\mu\\nu}",
       "concept_count": 2,
       "concepts": [
@@ -8487,6 +8679,20 @@
       ]
     },
     {
+      "equation": "\\dot{\\Sigma} \\geq 0",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "Q \\geq k_B T \\ln 2",
       "concept_count": 2,
       "concepts": [
@@ -8496,6 +8702,20 @@
         },
         {
           "title": "Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "Q_{\\text{erase}} \\geq k_B T \\ln 2",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
           "level": 3
         }
       ]
@@ -8525,20 +8745,6 @@
         {
           "title": "Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "k_B T \\ln 2",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
         }
       ]
     },
@@ -8627,20 +8833,6 @@
       ]
     },
     {
-      "equation": "0\\nu\\beta\\beta",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation",
-          "level": 2
-        },
-        {
-          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "\\langle \\sigma v \\rangle",
       "concept_count": 2,
       "concepts": [
@@ -8693,48 +8885,6 @@
         {
           "title": "Can a rigorous model of WIMP baryogenesis be constructed that naturally satisfies the washout constraint without invoking fine-tuned flavor structures or heavy mass hierarchies?",
           "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "\\ell_P",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
-        },
-        {
-          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
-          "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "\\sim 10^{25}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
-        },
-        {
-          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
-          "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "S_{\\text{BH}} = \\frac{k_B c^3 A}{4G\\hbar} = \\frac{k_B A}{4\\ell_P^2}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations",
-          "level": 3
         }
       ]
     },
@@ -8823,6 +8973,20 @@
       ]
     },
     {
+      "equation": "\\mathcal{F}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "S_{\\rm BH}=\\frac{k_B A}{4\\ell_P^2}",
       "concept_count": 2,
       "concepts": [
@@ -8846,6 +9010,20 @@
         },
         {
           "title": "Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "2.9 \\times 10^{-21}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Landauer-Bekenstein Thermodynamic Constraints on Information Processing in Non-Equilibrium Phase Transitions of Cosmological Intelligence",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
           "level": 3
         }
       ]
@@ -9067,7 +9245,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 115,
+      "occurrence_count": 117,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -9091,6 +9269,7 @@
         "Can you clarify the commutation relations [M, Γ] and provide the explicit calculation showing the convergence of the BCH series for your non-Hermitian effective Hamiltonian?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
         "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+        "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
         "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
@@ -9166,6 +9345,7 @@
         "Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems",
         "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
         "To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?",
+        "To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?",
         "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
         "Vacuum Decay and Cosmological Inflationary Termination Debate",
         "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
@@ -9191,7 +9371,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 103,
+      "occurrence_count": 105,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -9211,6 +9391,7 @@
         "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
         "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+        "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
         "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
@@ -9280,6 +9461,7 @@
         "To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?",
         "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
         "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
+        "Type-I Seesaw vs Radiative Neutrino Mass Generation",
         "Vacuum Decay and Cosmological Inflationary Termination Debate",
         "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
         "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
@@ -9303,7 +9485,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 100,
+      "occurrence_count": 101,
       "referenced_in": [
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
@@ -9321,6 +9503,7 @@
         "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
         "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+        "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
         "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
@@ -9412,7 +9595,7 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 71,
+      "occurrence_count": 73,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
@@ -9429,7 +9612,9 @@
         "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
         "Can you clarify the commutation relations [M, Γ] and provide the explicit calculation showing the convergence of the BCH series for your non-Hermitian effective Hamiltonian?",
         "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
+        "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+        "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
         "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
@@ -9492,7 +9677,7 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 62,
+      "occurrence_count": 63,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem",
@@ -9502,6 +9687,7 @@
         "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
         "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
         "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+        "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
         "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
@@ -21312,6 +21498,220 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-09-08T01:29:45.620958+00:00"
+    },
+    {
+      "concept": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+      "level": 3,
+      "equations": [
+        "x_{t+1}=F(x_t)",
+        "W_{\\text{erase}} \\geq k_B T \\ln 2",
+        "k_B T \\ln 2 \\approx 2.8 \\times 10^{-21}\\,\\text{J}",
+        "F[p]=\\langle H\\rangle_p - T S[p]",
+        "\\frac{\\mathrm{Var}(J)}{\\langle J\\rangle^2} \\geq \\frac{2}{\\Sigma}",
+        "\\varepsilon_J^2 \\Sigma \\geq 2",
+        "\\mathbf{r}(t) \\in \\mathbb{R}^N",
+        "I(S;Z)=\\int p(s,z)\\log\\frac{p(z|s)}{p(z)}\\,ds\\,dz",
+        "S_{\\text{EH}}= \\frac{c^3}{16\\pi G}\\int d^4x\\sqrt{-g}\\,R + S_{\\text{matter}}",
+        "S_{\\text{BH}}= \\frac{k_B c^3 A}{4G\\hbar} = \\frac{k_B A}{4\\ell_P^2}",
+        "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
+        "S(A)=\\frac{\\mathrm{Area}(\\gamma_A)}{4G\\hbar}+S_{\\text{bulk}}",
+        "C_{\\text{CA}}=\\frac{I_{\\text{WdW}}}{\\pi\\hbar}",
+        "\\lambda_L \\leq \\frac{2\\pi k_B T}{\\hbar}",
+        "a\\,\\mu\\left(\\frac{a}{a_0}\\right)=a_N",
+        "6.62607015 \\times 10^{-34}",
+        "k_B",
+        "1.380649 \\times 10^{-23}",
+        "\\langle W\\rangle \\geq \\Delta F + T\\Sigma",
+        "\\ell_P^{-2}",
+        "\\ell_P"
+      ],
+      "equation_count": 21,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-08T01:39:10.571067+00:00"
+    },
+    {
+      "concept": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+      "level": 3,
+      "equations": [
+        "\\chi = \\frac{\\sigma \\tau}{k_B \\mathcal{L}^2}",
+        "\\mathcal{F}: (M_N, p_t, g^F, \\sigma_N) \\longrightarrow (M_G, g_{\\mu\\nav}, S_{\\text{gen}}, \\sigma_G)",
+        "W_{\\text{diss}} \\gtrsim k_B T \\frac{\\mathcal{L}^2}{\\tau}",
+        "\\sigma(t)=\\frac{dS_{\\text{sys}}}{dt}-\\sum_a \\beta_a \\dot{Q}_a \\geq 0",
+        "\\mathcal{F}: (M_N, p_t, g^F, \\sigma_N) \\longrightarrow (M_G, g_{\\mu\\nu}, S_{\\text{gen}}, \\sigma_G)",
+        "S_{\\text{BH}} = \\frac{k_B c^3 A}{4G\\hbar} = \\frac{k_B A}{4\\ell_P^2}",
+        "T_H=\\frac{\\hbar \\kappa}{2\\pi k_B c}",
+        "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
+        "\\beta_0, \\beta_1, \\beta_2",
+        "k_B",
+        "|c_g/c - 1| \\lesssim 10^{-15}",
+        "2.9 \\times 10^{-21}",
+        "\\ell_P \\approx 1.6 \\times 10^{-35}",
+        "\\mathcal{F}",
+        "\\Lambda",
+        "W_{\\text{diss}}",
+        "\\mathcal{L}_F^2/\\tau",
+        "\\beta_k",
+        "\\sigma_G",
+        "g^F_{ij} = \\mathbb{E}[\\partial_i \\log p \\partial_j \\log p]",
+        "(M, g_{\\mu\\nu})",
+        "G_{\\mu\\nu} = 8\\pi G T_{\\mu\\nu}/c^4",
+        "r(t) \\in \\mathbb{R}^N",
+        "x^\\mu",
+        "\\gamma",
+        "W_{\\text{diss}} \\gtrsim k_B T \\mathcal{L}^2/\\tau"
+      ],
+      "equation_count": 26,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-08T01:47:51.074583+00:00"
+    },
+    {
+      "concept": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+      "level": 3,
+      "equations": [
+        "g^{N}_{ab} \\sim g^{G}_{\\mu\\nu}",
+        "L_N^2 R^G \\sim 10^{-25}",
+        "\\Delta \\mathcal{R}^N = \\beta L_N^2 \\Delta \\sqrt{K_G}",
+        "\\Sigma_{\\text{total}} = \\Sigma_{\\text{stoch}} + \\gamma \\int R^G_{\\mu\\nu\\rho\\sigma}R^{G\\mu\\nu\\rho\\sigma}\\,dt",
+        "g^{N}_{ab}(\\theta) = \\mathbb{E}_{r\\sim p_\\theta} \\left[ \\partial_a \\log p_\\theta(r) \\partial_b \\log p_\\theta(r) \\right]",
+        "ds^2 = g^{G}_{\\mu\\nu} dx^\\mu dx^\\nu",
+        "G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
+        "\\dot{\\Sigma} = \\frac{1}{2} \\sum_{i,j} J_{ij} \\log \\left( \\frac{W_{ij}p_j}{W_{ji}p_i} \\right) \\geq 0",
+        "Q_{\\mathrm{diss}} \\geq k_BT\\ln 2",
+        "S_{\\mathrm{BH}} = \\frac{k_B A}{4\\ell_P^2}",
+        "g^{N}_{ab}(\\theta,t) = g^{N,0}_{ab}(\\theta) + \\beta L_N^2 R^G_{\\mu\\nu\\rho\\sigma}(x(t)) u^\\mu e^\\nu_a u^\\rho e^\\sigma_b + \\epsilon_{ab}(t)",
+        "6.62607015 \\times 10^{-34}",
+        "k_B",
+        "1.380649 \\times 10^{-23}",
+        "k_B T \\ln 2",
+        "10^{-25}",
+        "\\sim 10^{-25}",
+        "g^F_{ab}",
+        "(+,+,+,...)",
+        "g_{\\mu\\nu}",
+        "(-+++)",
+        "(+---)",
+        "L_N \\sim 0.1\\,\\text{m}",
+        "\\mathcal{R}^N",
+        "p_T = P^T p_0",
+        "\\dot{\\Sigma} \\geq 0",
+        "Q_{\\text{erase}} \\geq k_B T \\ln 2",
+        "\\langle W_{\\text{diss}} \\rangle \\gtrsim k_B T \\mathcal{L}_F^2/\\tau",
+        "\\gamma",
+        "\\theta",
+        "p_\\theta(\\mathbf{r})",
+        "\\Phi: \\Theta_{\\text{neural}} \\rightarrow \\Sigma_{\\text{grav}}",
+        "\\beta \\neq 0"
+      ],
+      "equation_count": 33,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-08T01:57:05.895063+00:00"
+    },
+    {
+      "concept": "To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?",
+      "level": 1,
+      "equations": [
+        "h^{2}\\Omega_{\\text{GW}}(f)=\\frac{A(f)}{f^{3}}",
+        "h_{c}(f)\\sim\\left(\\frac{T_{c}}{100\\,\\text{GeV}}\\right)^{2}\\left(\\frac{\\alpha}{0.1}\\right)^{2}\\left(\\frac{v_{b}}{0.01}\\right)^{3}",
+        "\\sim f^{3}",
+        "\\sim f^{-2}",
+        "f^{-3}"
+      ],
+      "equation_count": 5,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-09T17:16:02.316837+00:00",
+      "a2a_proof_report": "# Mathematical Verification and Derivation Report\n\n## Axioms\n\n- Symbols defined (all positive and real):\n  - \\( f \\) : frequency\n  - \\( A(f) \\) : amplitude function dependent on frequency\n  - \\( h \\) : dimensionless Hubble parameter scaling factor\n  - \\( \\Omega_{\\text{GW}}(f) \\) : fractional gravitational wave energy density spectrum\n  - \\( h_c(f) \\) : characteristic strain of gravitational waves\n  - \\( T_c \\) : critical temperature scale (normalized by 100 GeV)\n  - \\( \\alpha \\) : coupling parameter reflecting strength of phase transition\n  - \\( v_b \\) : bubble wall velocity parameter during phase transition\n\n## Equations under Verification:\n\n1. \\( h^{2} \\Omega_{\\text{GW}}(f) = \\frac{A(f)}{f^{3}} \\)\n\n2. \\( h_c(f) \\sim \\left(\\frac{T_c}{100}\\right)^2 \\left(\\frac{\\alpha}{0.1}\\right)^2 \\left(\\frac{v_b}{0.01}\\right)^3 \\)\n\n3. Frequency scaling relations mentioned: \\( \\sim f^{3} \\), \\( \\sim f^{-2} \\), \\( \\sim f^{-3} \\)\n\n## Derivation Steps and Verification\n\n1. **Check consistency of \\( h^{2} \\Omega_{\\text{GW}} = \\frac{A}{f^{3}} \\)**\n\n   This defines the frequency dependence of the gravitational wave energy density scaled by \\( h^2 \\).\n\n   Using SymPy:\n   ```python\n   Eq(h**2 * Omega_GW, A / f**3)\n   ```\n\n2. **Relation between characteristic strain \\( h_c(f) \\) and energy density \\( \\Omega_{\\text{GW}}(f) \\)**\n\n   The known approximate relation (in gravitational wave physics) relates characteristic strain and energy density as:\n\n   \\[\n   h_c^2(f) \\sim \\frac{\\Omega_{\\text{GW}}(f)}{f^2}\n   \\]\n\n   Substituting \\( \\Omega_{\\text{GW}} \\sim \\frac{A}{h^2 f^3} \\), it follows:\n\n   \\[\n   h_c^2(f) \\sim \\frac{A}{h^2 f^5} \\implies h_c(f) \\sim \\frac{\\sqrt{A}}{h f^{5/2}}\n   \\]\n\n3. **Frequency power laws verification:**\n\n   Given power laws:\n\n   - \\( h_c \\sim f^3 \\rightarrow \\Omega_{\\text{GW}} \\sim h_c^2 f^2 = f^{8} \\)\n   - \\( h_c \\sim f^{-2} \\rightarrow \\Omega_{\\text{GW}} \\sim f^{-2} \\)\n   - \\( h_c \\sim f^{-3} \\rightarrow \\Omega_{\\text{GW}} \\sim f^{-4} \\)\n\n   Comparing with Eq. 1, where \\( \\Omega_{\\text{GW}} \\sim f^{-3} \\), none of the \\( h_c \\) scalings listed (except \\( h_c \\sim f^{-5/2} \\)) perfectly matches the expected relation.\n\n4. **Interpretation:**\n\n   - The given scaling in Eq. 2 for \\( h_c(f) \\) is frequency-independent; the frequency dependence is derived from the known relations above.\n   - With \\( \\Omega_{\\text{GW}} \\sim f^{-3} \\), the characteristic strain behaves as \\( h_c \\sim f^{-5/2} \\), consistent with general gravitational wave theory.\n   - The alternative power laws \\( f^{3}, f^{-2}, f^{-3} \\) mentioned do not directly satisfy the relation with \\( \\Omega_{\\text{GW}} \\sim f^{-3} \\).\n\n## Simplification Result:\n\nThe equations are mathematically consistent under the known physics relations, except for the frequency scalings \\( f^{3}, f^{-2}, f^{-3} \\) given separately, which represent different regimes or assumptions.\n\n## Code Artifact\n\n```python\nimport sympy as sp\n\n# Define symbols\nf, A, Tc, alpha, vb = sp.symbols('f A Tc alpha vb', positive=True, real=True)\nh = sp.Symbol('h', positive=True, real=True)\nOmega_GW = sp.Function('Omega_GW')(f)\n\n# Eq. 1: h^2 Omega_GW = A / f^3\nOmega_GW_def = sp.Eq(h**2 * Omega_GW, A / f**3)\nprint(\"Eq check h^2 Omega_GW = A/f^3:\", Omega_GW_def)\n\n# Characteristic strain frequency dependence from Omega_GW\n# h_c^2 ~ Omega_GW / f^2 => h_c ~ sqrt(A) / (h * f^(5/2))\nh_c_from_OmegaGW = sp.sqrt(A / f**5)\nprint(\"h_c frequency dependence from Omega_GW:\", h_c_from_OmegaGW)\n\n# Frequency scaling checks\npowers = [3, -2, -3]\npower_exprs = [f**p for p in powers]\nfor p, expr in zip(powers, power_exprs):\n    print(f\"Scaling ~ f^{p}: {expr}\")\n\n# Corresponding Omega_GW(f) for given h_c scaling\nhc_f3 = f**3\nOmega_for_hc_f3 = hc_f3**2 * f**2\nprint(\"Omega_GW if h_c ~ f^3:\", Omega_for_hc_f3)\n\nhc_f_neg2 = f**-2\nOmega_for_hc_f_neg2 = hc_f_neg2**2 * f**2\nprint(\"Omega_GW if h_c ~ f^{-2}:\", Omega_for_hc_f_neg2)\n\nhc_f_neg3 = f**-3\nOmega_for_hc_f_neg3 = hc_f_neg3**2 * f**2\nprint(\"Omega_GW if h_c ~ f^{-3}:\", Omega_for_hc_f_neg3)\n```\n\n---\n\nThis completes the verification: The main relation \\( h^2 \\Omega_{\\text{GW}}(f) = \\frac{A(f)}{f^{3}} \\) is mathematically consistent, and the relation \\( h_c^2 \\sim \\frac{\\Omega_{\\text{GW}}}{f^2} \\) gives frequency dependence \\( h_c \\sim f^{-5/2} \\) consistent with the theory. The other power laws \\( f^{3} \\), \\( f^{-2} \\), \\( f^{-3} \\) do not satisfy this particular set of relations simultaneously, indicating they might correspond to other physical models or approximations."
+    },
+    {
+      "concept": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+      "level": 2,
+      "equations": [
+        "\\mathcal{M} = \\begin{pmatrix} 0 & m_D \\\\ m_D^T & M_R \\end{pmatrix}",
+        "m_\\nu \\approx -m_D M_R^{-1} m_D^T",
+        "m_\\nu \\approx \\frac{m_D^2}{M_R}",
+        "(m_\\nu)_{ij} = \\frac{1}{16\\pi^2} \\sum_{k} y_{ik} y_{jk} \\frac{M_k}{m_0^2 - M_k^2} \\left( m_0^2 \\ln\\frac{m_0^2}{\\mu^2} - M_k^2 \\ln\\frac{M_k^2}{\\mu^2} \\right)",
+        "m_\\nu \\approx \\frac{y^2 v^2}{16\\pi^2 M} \\ln\\left(\\frac{\\Lambda^2}{M^2}\\right)",
+        "\\mathcal{M} = \\begin{pmatrix} \n0 & m_D \\\\ \nm_D^T & M_R \n\\end{pmatrix}",
+        "\\Delta m_{21}^2 \\approx 7.5 \\times 10^{-5}",
+        "\\Delta m_{31}^2 \\approx 2.5 \\times 10^{-3}",
+        "m_\\nu < 0.8",
+        "\\Sigma m_\\nu < 0.12",
+        "W\\gamma^* \\to \\ell N \\to \\ell \\ell jj",
+        "m_\\nu \\approx m_D^2/M_R",
+        "(m_\\nu)_{ij} = \\frac{1}{16\\pi^2} \\sum_k \\cdots",
+        "m_\\nu \\approx \\frac{y^2 v^2}{16\\pi^2 M}\\ln(\\Lambda^2/M^2)",
+        "[m_D] = M",
+        "[M_R] = M",
+        "[m_D^2/M_R] = M^2/M = M = [m_\\nu]",
+        "[M_R^{-1}] = M^{-1}",
+        "M \\cdot M^{-1} \\cdot M = M = [m_\\nu]",
+        "[v] = M",
+        "[M] = M",
+        "\\ln(\\cdot)",
+        "M^2/M = M = [m_\\nu]",
+        "y_{ik}, y_{jk}",
+        "[m_0^2 \\ln(\\cdot) - M_k^2 \\ln(\\cdot)] = M^2",
+        "M^{-1} \\cdot M^2 = M = [m_\\nu]",
+        "0, m_D, m_D^T, M_R",
+        "\\Delta m^2",
+        "7.42 \\times 10^{-5}",
+        "2.51 \\times 10^{-3}",
+        "m_D \\sim 100",
+        "M_R \\sim 10^{12}",
+        "m_\\nu \\sim 0.01",
+        "0\\nu\\beta\\beta",
+        "\\nu_L",
+        "m_D",
+        "\\sim 100",
+        "M_R \\gg m_D",
+        "m_\\nu \\sim 0.1",
+        "\\Lambda",
+        "y < \\sqrt{4\\pi}",
+        "\\ll",
+        "\\sim M_{\\text{Planck}}",
+        "|m_{ee}|",
+        "10^{-3}-0.1",
+        "\\sim 10^{25}",
+        "M_R \\sim",
+        "M_R > 200-1500",
+        "V_{\\ell N}",
+        "\\sim 1",
+        "\\sim 10^{15}",
+        "M \\sim 100",
+        "y \\sim 10^{-6}"
+      ],
+      "equation_count": 53,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-09T17:21:45.350320+00:00"
+    },
+    {
+      "concept": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
+      "level": 3,
+      "equations": [
+        "\\Phi",
+        "\\Phi = \\text{min} \\sum_{i} \\frac{H(X_i)}{\\mathcal{C}(X_i)}",
+        "\\hbar",
+        "M \\equiv \\{ S_1...S_n \\}",
+        "M \\equiv \\{ S_1, S_2, S_3, ... S_n \\}",
+        "\\Phi: X \\rightarrow Y",
+        "S_n",
+        "H(X_i)",
+        "\\mathcal{C}(X_i)"
+      ],
+      "equation_count": 9,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-09T17:26:24.814267+00:00"
     }
   ]
 }
