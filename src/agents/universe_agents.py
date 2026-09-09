@@ -1,40 +1,98 @@
 from crewai import Agent, LLM
+import json
 import os
-import importlib.util
 from textwrap import dedent
+from urllib.error import URLError
+from urllib.request import Request, urlopen
+
+_OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
+_OPENROUTER_FALLBACK_MODEL = "openai/gpt-4o-mini"
+_OPENROUTER_MODEL_INDEX: set[str] | None = None
+
+
+def _normalize_openrouter_model(model: str) -> str:
+    normalized = (model or "").strip()
+    if normalized.startswith("openrouter/"):
+        normalized = normalized[len("openrouter/"):]
+    return normalized
+
+
+def _fetch_openrouter_model_index(api_key: str) -> set[str] | None:
+    global _OPENROUTER_MODEL_INDEX
+    if _OPENROUTER_MODEL_INDEX is not None:
+        return _OPENROUTER_MODEL_INDEX
+
+    try:
+        request = Request(
+            f"{_OPENROUTER_API_BASE}/models",
+            headers={
+                "Accept": "application/json",
+                "Authorization": "Bearer " + api_key,
+            },
+        )
+        with urlopen(request, timeout=10) as response:
+            payload = json.load(response)
+        _OPENROUTER_MODEL_INDEX = {
+            _normalize_openrouter_model(item.get("id", ""))
+            for item in payload.get("data", [])
+            if item.get("id")
+        }
+    except (OSError, URLError, ValueError, json.JSONDecodeError) as exc:
+        print(f"Warning: Could not validate OpenRouter model catalog: {exc}")
+        return None
+
+    return _OPENROUTER_MODEL_INDEX
+
+
+def _resolve_openrouter_model(api_key: str, role: str) -> str:
+    model_env = f"OPENROUTER_MODEL_{role.upper()}"
+    configured_model = os.getenv(model_env) or os.getenv("OPENROUTER_MODEL") or "meta-llama/llama-3.1-70b-instruct"
+    model = _normalize_openrouter_model(configured_model)
+
+    # Self-healing: if role uses tools or delegates, ensure the model supports tool use on OpenRouter.
+    # CrewAI treats delegation as a tool call under the hood, so 'student' needs stable tool calling.
+    roles_using_tools = ['student', 'visualizer', 'math', 'researcher']
+    if role in roles_using_tools:
+        model_lower = model.lower()
+        stable_keywords = [
+            "gpt-4o", "claude-3-5", "claude-3.5", "claude-opus", "claude-3-haiku",
+            "gemini-3.1", "gemini-3.7", "gemini-2.5", "nex-n2", "kimi-k2",
+            "glm-5.2", "qwen-2.5", "deepseek-chat", "deepseek-v4", "minimax-m3",
+            "laguna-s", "mimo-v", "hy3", "scout-17b"
+        ]
+        is_stable_tool_model = any(kw in model_lower for kw in stable_keywords)
+
+        if not is_stable_tool_model:
+            print(f"Info: Overriding tool-using role '{role}' model '{model}' to '{_OPENROUTER_FALLBACK_MODEL}' on OpenRouter for stable tool execution.")
+            model = _OPENROUTER_FALLBACK_MODEL
+
+    available_models = _fetch_openrouter_model_index(api_key)
+    if available_models is not None and model not in available_models:
+        if _OPENROUTER_FALLBACK_MODEL in available_models:
+            print(
+                f"Warning: OpenRouter model '{model}' for role '{role}' is unavailable; "
+                f"falling back to '{_OPENROUTER_FALLBACK_MODEL}'."
+            )
+            model = _OPENROUTER_FALLBACK_MODEL
+        else:
+            print(
+                f"Warning: OpenRouter model '{model}' for role '{role}' is unavailable, "
+                f"and fallback '{_OPENROUTER_FALLBACK_MODEL}' was not listed by OpenRouter."
+            )
+
+    return model
 
 def _get_llm(role: str) -> LLM | None:
     """Retrieve custom LLM configuration for OpenRouter if configured, otherwise fallback."""
     api_key = os.getenv("OPENROUTER_API_KEY")
     if api_key:
-        model_env = f"OPENROUTER_MODEL_{role.upper()}"
-        model = os.getenv(model_env) or os.getenv("OPENROUTER_MODEL") or "meta-llama/llama-3.1-70b-instruct"
-
-        # Self-healing: if role uses tools or delegates, ensure the model supports tool use on OpenRouter.
-        # CrewAI treats delegation as a tool call under the hood, so 'student' needs stable tool calling.
-        roles_using_tools = ['student', 'visualizer', 'math', 'researcher']
-        if role in roles_using_tools:
-            model_lower = model.lower()
-            # Verify if the model is a known stable tool-calling model on OpenRouter to avoid override
-            stable_keywords = [
-                "gpt-4o", "claude-3-5", "claude-3.5", "claude-opus", "claude-3-haiku",
-                "gemini-3.1", "gemini-3.7", "gemini-2.5", "nex-n2", "kimi-k2", 
-                "glm-5.2", "qwen-2.5", "deepseek-chat", "deepseek-v4", "minimax-m3", 
-                "laguna-s", "mimo-v", "hy3", "scout-17b"
-            ]
-            is_stable_tool_model = any(kw in model_lower for kw in stable_keywords)
-
-            if not is_stable_tool_model:
-                print(f"Info: Overriding tool-using role '{role}' model '{model}' to 'openai/gpt-4o-mini' on OpenRouter for stable tool execution.")
-                model = "openai/gpt-4o-mini"
-
-        api_base = "https://openrouter.ai/api/v1"
+        model = _resolve_openrouter_model(api_key, role)
         try:
             max_tokens = int(os.getenv("MAX_TOKENS", "32768"))
             return LLM(
                 model=f"openrouter/{model}",
                 api_key=api_key,
-                base_url=api_base,
+                base_url=_OPENROUTER_API_BASE,
                 max_tokens=max_tokens
             )
         except Exception as exc:
@@ -274,4 +332,3 @@ class UniverseAgents:
             tools=search_tools,
             llm=_get_llm('researcher')
         )
-
