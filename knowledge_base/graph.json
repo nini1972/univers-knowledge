@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-09T17:27:18.862060+00:00",
+  "updated_at": "2026-09-10T01:23:24.254241+00:00",
   "stats": {
-    "total_nodes": 250,
+    "total_nodes": 251,
     "level_1_count": 115,
     "level_2_count": 110,
-    "level_3_count": 25,
+    "level_3_count": 26,
     "total_edges": 141,
     "frontier_count": 0
   },
@@ -4605,6 +4605,23 @@
         "Theoretical analyses addressing limitations of Cold Dark Matter models"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md"
+    },
+    {
+      "id": "afalsifiablethermodynamicresourcetheoryofbiologicalquantumcoherencedecoherenceworkextractionandinformationprocessing",
+      "title": "A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Student Summary"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md"
     },
     {
       "id": "algorithmiccomplexitylimitsofhierarchicalstructureformationinselforganizingcosmologicalnetworks",
