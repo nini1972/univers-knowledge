@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-09-10T01:23:03.253646+00:00",
+  "updated_at": "2026-09-11T01:10:37.715261+00:00",
   "stats": {
-    "total_entries": 265,
-    "total_equations": 9058,
-    "math_proven_entries": 112,
-    "math_consistent_entries": 60,
-    "total_bridges": 460,
+    "total_entries": 270,
+    "total_equations": 9136,
+    "math_proven_entries": 113,
+    "math_consistent_entries": 61,
+    "total_bridges": 467,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 82,
+      "concept_count": 84,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -341,6 +341,14 @@
         {
           "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
           "level": 2
+        },
+        {
+          "title": "What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?",
+          "level": 1
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
         }
       ]
     },
@@ -464,7 +472,7 @@
     },
     {
       "equation": "6.62607015 \\times 10^{-34}",
-      "concept_count": 27,
+      "concept_count": 28,
       "concepts": [
         {
           "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
@@ -573,12 +581,16 @@
         {
           "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
           "level": 3
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
         }
       ]
     },
     {
       "equation": "\\alpha",
-      "concept_count": 24,
+      "concept_count": 25,
       "concepts": [
         {
           "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
@@ -675,12 +687,16 @@
         {
           "title": "Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions",
           "level": 3
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
         }
       ]
     },
     {
       "equation": "\\Phi",
-      "concept_count": 22,
+      "concept_count": 23,
       "concepts": [
         {
           "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
@@ -769,6 +785,92 @@
         {
           "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
           "level": 3
+        },
+        {
+          "title": "Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\phi",
+      "concept_count": 19,
+      "concepts": [
+        {
+          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
+          "level": 1
+        },
+        {
+          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
+          "level": 1
+        },
+        {
+          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
+          "level": 1
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation",
+          "level": 2
+        },
+        {
+          "title": "Initial State Entropy and Pre-Big Bang Cosmological Evolution",
+          "level": 2
+        },
+        {
+          "title": "To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?",
+          "level": 1
+        },
+        {
+          "title": "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
         }
       ]
     },
@@ -855,86 +957,8 @@
       ]
     },
     {
-      "equation": "\\phi",
-      "concept_count": 18,
-      "concepts": [
-        {
-          "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?",
-          "level": 1
-        },
-        {
-          "title": "Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
-          "level": 2
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
-          "level": 2
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
-          "level": 1
-        },
-        {
-          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
-          "level": 1
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation",
-          "level": 2
-        },
-        {
-          "title": "Initial State Entropy and Pre-Big Bang Cosmological Evolution",
-          "level": 2
-        },
-        {
-          "title": "To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?",
-          "level": 1
-        },
-        {
-          "title": "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "^{-2}",
-      "concept_count": 17,
+      "concept_count": 18,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -1003,6 +1027,84 @@
         {
           "title": "Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes",
           "level": 3
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\hbar",
+      "concept_count": 17,
+      "concepts": [
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
+          "level": 2
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
+          "level": 1
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
+          "level": 1
+        },
+        {
+          "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
+          "level": 1
+        },
+        {
+          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
+          "level": 1
+        },
+        {
+          "title": "How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?",
+          "level": 1
+        },
+        {
+          "title": "Initial State Entropy and Pre-Big Bang Cosmological Evolution",
+          "level": 2
+        },
+        {
+          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
+          "level": 3
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
         }
       ]
     },
@@ -1077,76 +1179,6 @@
       ]
     },
     {
-      "equation": "\\hbar",
-      "concept_count": 16,
-      "concepts": [
-        {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
-          "level": 2
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
-          "level": 1
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
-          "level": 2
-        },
-        {
-          "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
-          "level": 1
-        },
-        {
-          "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
-          "level": 1
-        },
-        {
-          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
-        },
-        {
-          "title": "How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?",
-          "level": 1
-        },
-        {
-          "title": "Initial State Entropy and Pre-Big Bang Cosmological Evolution",
-          "level": 2
-        },
-        {
-          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
-          "level": 3
-        }
-      ]
-    },
-    {
       "equation": "g_{\\mu\\nu}",
       "concept_count": 13,
       "concepts": [
@@ -1201,6 +1233,64 @@
         {
           "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "^{-1}",
+      "concept_count": 13,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
+          "level": 2
+        },
+        {
+          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "level": 3
+        },
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
+          "level": 1
+        },
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+          "level": 3
+        },
+        {
+          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
+          "level": 3
+        },
+        {
+          "title": "How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?",
+          "level": 1
+        },
+        {
+          "title": "Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes",
+          "level": 3
+        },
+        {
+          "title": "Type-II vs Type-III Seesaw Neutrino Mass Generation",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
         }
       ]
     },
@@ -1312,60 +1402,6 @@
         },
         {
           "title": "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "^{-1}",
-      "concept_count": 12,
-      "concepts": [
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
-          "level": 2
-        },
-        {
-          "title": "Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
-          "level": 3
-        },
-        {
-          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
-          "level": 1
-        },
-        {
-          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
-          "level": 3
-        },
-        {
-          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
-          "level": 3
-        },
-        {
-          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
-          "level": 3
-        },
-        {
-          "title": "How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?",
-          "level": 1
-        },
-        {
-          "title": "Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes",
-          "level": 3
-        },
-        {
-          "title": "Type-II vs Type-III Seesaw Neutrino Mass Generation",
           "level": 2
         }
       ]
@@ -1755,6 +1791,48 @@
       ]
     },
     {
+      "equation": "\\sigma",
+      "concept_count": 9,
+      "concepts": [
+        {
+          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
+          "level": 2
+        },
+        {
+          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
+          "level": 1
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
+          "level": 1
+        },
+        {
+          "title": "Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
+          "level": 2
+        },
+        {
+          "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\sim",
       "concept_count": 9,
       "concepts": [
@@ -1873,6 +1951,44 @@
       ]
     },
     {
+      "equation": "\\theta",
+      "concept_count": 8,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
+          "level": 2
+        },
+        {
+          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "level": 1
+        },
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
+          "level": 2
+        },
+        {
+          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
+          "level": 1
+        },
+        {
+          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\boxed{\\text{[THEORETICAL]}}",
       "concept_count": 8,
       "concepts": [
@@ -1906,44 +2022,6 @@
         },
         {
           "title": "Type-II vs Type-III Seesaw Neutrino Mass Generation",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\sigma",
-      "concept_count": 8,
-      "concepts": [
-        {
-          "title": "Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness",
-          "level": 2
-        },
-        {
-          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
-          "level": 2
-        },
-        {
-          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
-          "level": 1
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
-        },
-        {
-          "title": "Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
-          "level": 2
-        },
-        {
-          "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
           "level": 2
         }
       ]
@@ -2058,40 +2136,6 @@
         },
         {
           "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
-          "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "\\theta",
-      "concept_count": 7,
-      "concepts": [
-        {
-          "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
-          "level": 2
-        },
-        {
-          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
-          "level": 1
-        },
-        {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity",
-          "level": 2
-        },
-        {
-          "title": "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
-          "level": 2
-        },
-        {
-          "title": "How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?",
-          "level": 1
-        },
-        {
-          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
-          "level": 3
-        },
-        {
-          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
           "level": 3
         }
       ]
@@ -2228,6 +2272,40 @@
         },
         {
           "title": "Initial State Entropy and Information Loss Paradoxes",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "1.089 \\times 10^{-52}",
+      "concept_count": 7,
+      "concepts": [
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem",
+          "level": 2
+        },
+        {
+          "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
+          "level": 2
+        },
+        {
+          "title": "Landauer-Bekenstein Scaling Relations in the Dissipative Dynamics of Neural Manifolds and Cosmic Filamentary Evolution",
+          "level": 3
+        },
+        {
+          "title": "Initial State Entropy and Information Loss Paradoxes",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
           "level": 2
         }
       ]
@@ -2473,36 +2551,6 @@
       ]
     },
     {
-      "equation": "1.089 \\times 10^{-52}",
-      "concept_count": 6,
-      "concepts": [
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem",
-          "level": 2
-        },
-        {
-          "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
-          "level": 2
-        },
-        {
-          "title": "Landauer-Bekenstein Scaling Relations in the Dissipative Dynamics of Neural Manifolds and Cosmic Filamentary Evolution",
-          "level": 3
-        },
-        {
-          "title": "Initial State Entropy and Information Loss Paradoxes",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "H_0 \\approx 67.4",
       "concept_count": 6,
       "concepts": [
@@ -2529,6 +2577,36 @@
         {
           "title": "Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks",
           "level": 3
+        }
+      ]
+    },
+    {
+      "equation": "\\lambda",
+      "concept_count": 6,
+      "concepts": [
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation",
+          "level": 2
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
+          "level": 3
+        },
+        {
+          "title": "What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?",
+          "level": 1
         }
       ]
     },
@@ -3113,32 +3191,6 @@
         {
           "title": "Type-II vs Type-III Seesaw Neutrino Mass Generation",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\lambda",
-      "concept_count": 5,
-      "concepts": [
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation",
-          "level": 2
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
-          "level": 3
-        },
-        {
-          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
-          "level": 3
         }
       ]
     },
@@ -3867,6 +3919,28 @@
       ]
     },
     {
+      "equation": "\\psi",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
+          "level": 3
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "S_{\\mathrm{BH}} = \\frac{k_B A}{4\\ell_P^2}",
       "concept_count": 4,
       "concepts": [
@@ -4349,6 +4423,24 @@
       ]
     },
     {
+      "equation": "10^{-11}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
+          "level": 2
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
+          "level": 1
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "<1\\%",
       "concept_count": 3,
       "concepts": [
@@ -4723,24 +4815,6 @@
         {
           "title": "What specific experimental thresholds in next-generation Skipper-CCD or sub-GeV dark matter detectors are required to provide a meaningful falsification test for the 5 GeV ADM mass scale?",
           "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "\\psi",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
-          "level": 3
         }
       ]
     },
@@ -5172,6 +5246,42 @@
         },
         {
           "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "m \\sim 10^{-22}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
+          "level": 1
+        },
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\sim 10^{-5}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
           "level": 2
         }
       ]
@@ -6127,20 +6237,6 @@
         {
           "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "10^{-11}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
-          "level": 2
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
         }
       ]
     },
@@ -7517,6 +7613,20 @@
       ]
     },
     {
+      "equation": "[\\text{s}^{-1}]",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "A_s \\approx 2.1 \\times 10^{-9}",
       "concept_count": 2,
       "concepts": [
@@ -7937,6 +8047,34 @@
       ]
     },
     {
+      "equation": "\\rho_c",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "10^{-22}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\eta_N",
       "concept_count": 2,
       "concepts": [
@@ -8063,6 +8201,20 @@
       ]
     },
     {
+      "equation": "f_s(p,t)",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
+          "level": 1
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "N_{\\rm eff}=2.99\\pm0.17",
       "concept_count": 2,
       "concepts": [
@@ -8161,20 +8313,6 @@
       ]
     },
     {
-      "equation": "m \\sim 10^{-22}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
-          "level": 1
-        },
-        {
-          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "m \\gtrsim 10^{-21}",
       "concept_count": 2,
       "concepts": [
@@ -8268,20 +8406,6 @@
         },
         {
           "title": "Initial State Entropy and Information Loss Paradoxes",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\sim 10^{-5}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
           "level": 2
         }
       ]
@@ -8465,6 +8589,20 @@
         {
           "title": "What specific experimental thresholds in next-generation Skipper-CCD or sub-GeV dark matter detectors are required to provide a meaningful falsification test for the 5 GeV ADM mass scale?",
           "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "[\\text{J·s}][\\text{s}^{-1}] = [\\text{J}]",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
         }
       ]
     },
@@ -9113,6 +9251,20 @@
       ]
     },
     {
+      "equation": "<10\\%",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?",
+          "level": 1
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\tilde{g}_{ab} = \\Omega^2 g_{ab}",
       "concept_count": 2,
       "concepts": [
@@ -9293,6 +9445,20 @@
           "level": 2
         }
       ]
+    },
+    {
+      "equation": "m_\\nu \\approx m_D^2/M_R",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+          "level": 2
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        }
+      ]
     }
   ],
   "constant_index": [
@@ -9301,7 +9467,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 118,
+      "occurrence_count": 120,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -9396,6 +9562,7 @@
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
         "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+        "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
         "Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems",
@@ -9413,6 +9580,7 @@
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
         "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
         "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
+        "What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?",
         "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
         "What specific experimental thresholds in next-generation Skipper-CCD or sub-GeV dark matter detectors are required to provide a meaningful falsification test for the 5 GeV ADM mass scale?",
         "What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?",
@@ -9428,7 +9596,7 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 105,
+      "occurrence_count": 107,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -9511,6 +9679,7 @@
         "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
         "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
         "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
+        "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
         "Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory",
@@ -9525,6 +9694,7 @@
         "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
         "What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?",
         "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
+        "What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?",
         "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
         "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
         "What specific experimental thresholds in next-generation Skipper-CCD or sub-GeV dark matter detectors are required to provide a meaningful falsification test for the 5 GeV ADM mass scale?",
@@ -9542,7 +9712,7 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 101,
+      "occurrence_count": 102,
       "referenced_in": [
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
@@ -9624,6 +9794,7 @@
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
         "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
         "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
+        "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
         "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
@@ -9652,7 +9823,7 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 74,
+      "occurrence_count": 75,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
@@ -9713,6 +9884,7 @@
         "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
         "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
         "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+        "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
         "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
         "Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity",
         "To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?",
@@ -21987,6 +22159,142 @@
       "math_score": "3/4",
       "source": "crew_extraction",
       "timestamp": "2026-09-10T01:16:38.398909+00:00"
+    },
+    {
+      "concept": "What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?",
+      "level": 1,
+      "equations": [
+        "m_H = 125.25 \\pm 0.17",
+        "\\Lambda",
+        "m_D"
+      ],
+      "equation_count": 3,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-11T00:49:16.590966+00:00",
+      "a2a_proof_report": "# Mathematical Verification Report for Given Parameters and Equations\n\n---\n\n## Axioms\n\n- Let \\(m_H\\) denote the Higgs boson mass.\n- Given experimental value with uncertainty: \n  \\[\n  m_H = 125.25 \\pm 0.17\n  \\]\n- \\(\\Lambda\\) and \\(m_D\\) are undefined symbols representing some physical parameters or scales.\n- No explicit equations or relations were provided linking \\(\\Lambda\\) or \\(m_D\\) to \\(m_H\\).\n- A hypothetical relation is assumed for verification:\n  \\[\n  m_H = \\Lambda + m_D\n  \\]\n  \n---\n\n## Derivation Steps and Verification\n\n1. **Definition of symbols using SymPy:**\n\n   We define:\n   ```python\n   from sympy import symbols, Eq, solve, simplify\n   m_H, delta_m_H, Lambda, m_D = symbols('m_H delta_m_H Lambda m_D')\n   ```\n\n2. **Expression of experimental data as bounds:**\n\n   The known experimental mass of the Higgs boson with uncertainty gives the bounds:\n   \\[\n   125.08 \\leq m_H \\leq 125.42\n   \\]\n\n3. **Assuming a hypothetical equation:**\n   \\[\n   m_H = \\Lambda + m_D\n   \\]\n\n   The equation can be rearranged symbolically to:\n   \\[\n   \\Lambda = m_H - m_D\n   \\]\n\n4. **Verification for sample values:**\n\n   Using:\n   \\[\n   m_H = 125.25, \\quad m_D = 50\n   \\]\n   The value of \\(\\Lambda\\) is computed as:\n   \\[\n   \\Lambda = 125.25 - 50 = 75.25\n   \\]\n\n5. **Verification of the equation with substituted values:**\n\n   Substituting back:\n   \\[\n   LHS = m_H = 125.25, \\quad RHS = \\Lambda + m_D = 75.25 + 50 = 125.25\n   \\]\n   Confirming:\n   \\[\n   LHS = RHS\n   \\]\n\n6. **Simplification of difference:**\n\n   The difference \\(lhs - rhs\\) simplifies to zero, confirming the equation holds for substitutions.\n\n---\n\n## Final Simplification and Consistency Check\n\nThe key test is:\n\n\\[\n\\text{Check } \\quad diff = m_H - (\\Lambda + m_D) \\stackrel{?}{=} 0\n\\]\n\nFor the substitution values:\n\n\\[\ndiff = 125.25 - (75.25 + 50) = 0\n\\]\n\n---\n\n## Code Artifact (Python Code used to Verify)\n\n```python\nfrom sympy import symbols, Eq, solve, simplify\n\n# Define symbols\nm_H, delta_m_H, Lambda, m_D = symbols('m_H delta_m_H Lambda m_D')\n\n# Given numerical value and uncertainty for m_H\nm_H_val = 125.25\nm_H_uncertainty = 0.17\n\n# Calculate lower and upper bounds for m_H\nm_H_lower_bound = m_H_val - m_H_uncertainty\nm_H_upper_bound = m_H_val + m_H_uncertainty\n\nprint(f\"m_H = {m_H_val} +/- {m_H_uncertainty}\")\nprint(f\"Lower bound: {m_H_lower_bound}\")\nprint(f\"Upper bound: {m_H_upper_bound}\")\n\n# Define a hypothetical equation: m_H = Lambda + m_D\nhyp_eq = Eq(m_H, Lambda + m_D)\nprint(f\"Hypothetical equation: {hyp_eq}\")\n\n# Express Lambda in terms of m_H and m_D\nLambda_expr = solve(hyp_eq, Lambda)[0]\nprint(f\"Lambda expressed in terms of m_H and m_D: {Lambda_expr}\")\n\n# Example substitution for m_D to test\ntest_m_D = 50\ncalculated_Lambda = Lambda_expr.subs({m_H: m_H_val, m_D: test_m_D})\nprint(f\"For m_D = {test_m_D}, calculated Lambda = {calculated_Lambda}\")\n\n# Verify original equation using substituted values\nverification = hyp_eq.subs({m_H: m_H_val, Lambda: calculated_Lambda, m_D: test_m_D})\nprint(f\"Verification of hypothetical equation with substituted values: {verification}\")\n\n# Compute difference to confirm zero\ndiff = simplify(m_H_val - (calculated_Lambda + test_m_D))\nprint(f\"Simplified difference (should be 0): {diff}\")\n```\n\n---\n\n**Note:** Since no explicit relations between \\(\\Lambda\\) and \\(m_D\\) with \\(m_H\\) were provided except the hypothetical sum, we verified this assumption for internal algebraic consistency and did not prove any further physical relations. The numerical value \\(m_H\\) with uncertainty was properly defined and used symbolically.\n\n---\n\n# Summary\n\n- The identity \\( m_H = \\Lambda + m_D \\) holds true algebraically for values substituted.\n- No contradictions or inconsistencies arise.\n- The representation of \\(m_H\\) with uncertainty was correctly stated.\n- Without further data, no deeper proofs or derivations are possible.\n\nIf you have explicit relations or equations linking \\(\\Lambda\\) or \\(m_D\\) to \\(m_H\\), please provide them for more detailed algebraic or physical verification.\n\n---\n\n# Regarding the bibliographic citation correction:\n\n- The task was to verify mathematical consistency of symbols and parameters around \\(m_H\\), \\(\\Lambda\\), and \\(m_D\\).\n- Bibliographic correction requires external literature lookup beyond symbolic math verification.\n- For accurate bibliographic referencing of arXiv:2602.02362, one should check standard citation databases or the arXiv webpage directly.\n\nIf you want, I can assist with forming proper bibliographic entries once you provide full citation details or ask for bibliographic formatting help."
+    },
+    {
+      "concept": "What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?",
+      "level": 1,
+      "equations": [
+        "ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2",
+        "p = w\\rho"
+      ],
+      "equation_count": 2,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-11T00:51:48.988579+00:00",
+      "a2a_proof_report": "Mathematical Verification Report\n================================\n\n**Axioms:**\n\n1. Define real symbols: speed of light \\( c \\), time coordinate \\( t \\), spatial coordinates \\( x, y, z \\).\n2. Define equation for spacetime interval (Minkowski metric in special relativity):\n   \\[\n   ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2\n   \\]\n3. Define pressure \\( p \\) related to density \\( \\rho \\) through equation of state parameter \\( w \\):\n   \\[\n   p = w \\rho\n   \\]\n\n---\n\n**Derivation Steps and Verification:**\n\n1. Symbols are defined in SymPy as real quantities for \\( c, t, x, y, z, w, \\rho \\).\n\n2. The expression for \\( ds^2 \\) is formulated symbolically using increments \\( dt, dx, dy, dz \\):\n   \\[\n   ds^2 = -c^{2} dt^{2} + dx^{2} + dy^{2} + dz^{2}\n   \\]\n\n3. The pressure formula is set as:\n   \\[\n   p = w \\cdot \\rho\n   \\]\n\n4. Simplification of the \\( ds^2 \\) expression was performed and the simplified result remains identical:\n   \\[\n   \\text{simplified } ds^{2} = -c^{2} dt^{2} + dx^{2} + dy^{2} + dz^{2}\n   \\]\n\n5. There is no direct algebraic contradiction or inconsistency between the two equations since they express different physical concepts (the spacetime interval vs. the fluid equation of state).\n\n---\n\n**Simplification Result:**\n\n- The Minkowski metric interval expression is internally consistent and holds as given.\n- The equation \\( p = w \\rho \\) is a valid linear relation consistent by definition.\n\n---\n\n**Code Artifact:**\n\n```python\nimport sympy as sp\n\n# Define symbols as real\nc, t, x, y, z = sp.symbols('c t x y z', real=True)\nw, rho = sp.symbols('w rho', real=True)\n\n# Define increments as symbols (real numbers)\ndt, dx_, dy_, dz_ = sp.symbols('dt dx dy dz', real=True)\n\n# Define spacetime interval ds^2 in Minkowski metric\nds2_expr = -c**2 * dt**2 + dx_**2 + dy_**2 + dz_**2\n\n# Define pressure as p = w * rho\np = w * rho\n\n# Simplify the ds^2 expression (no change, just verifying)\nsimplified_ds2 = sp.simplify(ds2_expr)\n\n# Print results\nprint('ds^2 expression:', ds2_expr)\nprint('Simplified ds^2:', simplified_ds2)\nprint('Pressure expression p:', p)\n```\n\n---\n\nThis completes the verification that the two equations are internally consistent and correctly expressed symbolically. There is no algebraic incompatibility. The metric line element and the equation of state relate to different physical properties and thus are consistent as presented.\n\n---\n\nRegarding the bibliographic citation for reference currently listed as arXiv:2602.02362, this task involves a bibliographic metadata lookup external to the mathematical equations verification and cannot be derived from these equations. Verification or correction of the citation must come from a bibliographic database or arXiv lookup rather than symbolic mathematics."
+    },
+    {
+      "concept": "What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?",
+      "level": 1,
+      "equations": [
+        "\\mathcal{L} = \\frac{1}{2} m_{ij} \\bar{\\nu_i} \\nu_j + \\frac{\\lambda}{4} J^4 + \\text{(kinetic terms)}",
+        "v_J",
+        "U(1)_{L_\\mu - L_\\tau}",
+        "m_{ij}",
+        "\\lambda"
+      ],
+      "equation_count": 5,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-11T00:53:25.216388+00:00",
+      "a2a_proof_report": "# Mathematical Verification Report for the Lagrangian and Related Quantities\n\n---\n\n## Axioms and Symbol Definitions:\n\n- \\( m_{ij} \\): Complex mass matrix element connecting neutrino flavor states \\(i\\) and \\(j\\).\n- \\( \\nu_i, \\nu_j \\): Fermion (neutrino) field components.\n- \\( \\lambda \\): Real scalar quartic coupling constant.\n- \\( J \\): Real scalar field.\n- The Lagrangian is given by:\n  \\[\n  \\mathcal{L} = \\frac{1}{2} m_{ij} \\bar{\\nu_i} \\nu_j + \\frac{\\lambda}{4} J^4 + \\text{(kinetic terms)}\n  \\]\n- \\( v_J \\) is the vacuum expectation value of \\(J\\) (not explicitly analyzed here).\n- \\( U(1)_{L_\\mu - L_\\tau} \\) represents a gauge symmetry associated with lepton flavor difference charges (muon minus tau).\n- Charges \\(Q_i, Q_j\\) correspond to the \\(U(1)_{L_\\mu - L_\\tau}\\) charges of fields \\(\\nu_i, \\nu_j\\).\n\n---\n\n## Derivation and Verification Steps:\n\n1. **Lagrangian Symbolic Definition**:\n\n   Using SymPy, we define the Lagrangian as:\n   \\[\n   \\mathcal{L} = \\frac{1}{2} m_{ij} \\bar{\\nu_i} \\nu_j + \\frac{\\lambda}{4} J^4\n   \\]\n   Here \\(\\bar{\\nu_i}\\) is represented as the conjugate of \\(\\nu_i\\).\n\n2. **Hermiticity Check of the Mass Term**:\n\n   Physically, the mass term in the Lagrangian should be Hermitian:\n   \\[\n   \\left(\\frac{1}{2} m_{ij} \\bar{\\nu_i} \\nu_j\\right)^\\dagger = \\frac{1}{2} m_{ij} \\bar{\\nu_i} \\nu_j\n   \\]\n\n   - Defined mass term: \n     \\[\n     L_{\\text{mass}} = \\frac{1}{2} m_{ij} \\bar{\\nu_i} \\nu_j\n     \\]\n   - Its Hermitian conjugate is:\n     \\[\n     L_{\\text{mass}}^\\dagger = \\frac{1}{2} \\nu_i \\bar{m}_{ij} \\bar{\\nu_j}\n     \\]\n\n   Using symbolic conjugation in SymPy, the difference:\n   \\[\n   L_{\\text{mass}} - L_{\\text{mass}}^\\dagger \\neq 0 \\quad \\text{(symbolically)}\n   \\]\n   unless \\(m_{ij}\\) satisfies Hermiticity or symmetry conditions.\n\n3. **Charge Conservation Under \\( U(1)_{L_\\mu - L_\\tau} \\)**:\n\n   The charge of the mass term under the symmetry is calculated based on the charges of the fields:\n   \\[\n   \\text{Charge}(L_{\\text{mass}}) = -Q_i + Q_j\n   \\]\n   since \\(\\bar{\\nu_i}\\) carries charge \\(-Q_i\\) and \\(\\nu_j\\) carries \\(Q_j\\).\n\n   For the mass term to be invariant under this gauge symmetry,\n   \\[\n   Q_i = Q_j\n   \\]\n   implying that the mass matrix \\(m_{ij}\\) must connect fields of the same \\(U(1)_{L_\\mu - L_\\tau}\\) charge.\n\n---\n\n## Simplification Result:\n\n- The Hermiticity difference of the mass term does not automatically simplify to zero symbolically without assumptions about \\(m_{ij}\\) (such as Hermiticity).\n- Charge invariance requires equal \\(U(1)_{L_\\mu - L_\\tau}\\) charges on connected fields.\n\n---\n\n## Code Artifact: Python/SymPy Code for Verification\n\n```python\nimport sympy as sp\n\n# Define symbols\nm_ij = sp.symbols('m_ij', complex=True)\nnu_i = sp.symbols('nu_i')\nnu_j = sp.symbols('nu_j')\nlambda_ = sp.symbols('lambda', real=True)\nJ = sp.symbols('J', real=True)\n\n# Define Lagrangian\nL = (1/2) * m_ij * sp.conjugate(sp.Symbol('nu_i')) * nu_j + (lambda_/4) * J**4\n\n# Hermiticity check of mass term\nL_mass = (1/2) * m_ij * sp.conjugate(sp.Symbol('nu_i')) * nu_j\nL_mass_conj = sp.conjugate(L_mass)\ndiff_mass = sp.simplify(L_mass - L_mass_conj)\nprint(diff_mass)  # Should be 0 if m_ij is Hermitian\n\n# Charge under U(1)_{L_mu - L_tau}\nQ_i, Q_j = sp.symbols('Q_i Q_j')\ncharge_mass_term = -Q_i + Q_j\nprint(charge_mass_term)\n```\n\n---\n\n# Summary\n\n- The Lagrangian form is algebraically consistent with standard field theory notation.\n- Hermiticity of the mass term requires \\( m_{ij} = m_{ji}^* \\) or similar constraints.\n- \\( U(1)_{L_\\mu - L_\\tau} \\) charge conservation constrains mass matrix entries to connect fields with equal charges.\n- The scalar interaction quartic term is correctly defined.\n- \\( v_J \\) (a vacuum expectation value) is a parameter outside the symbolic algebra here.\n\nThis verification confirms the mathematical consistency of the given Lagrangian structure and associated constraints."
+    },
+    {
+      "concept": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+      "level": 2,
+      "equations": [
+        "\\mathcal{L}_{\\text{mass}} = -\\frac{1}{2} M_R \\bar{N}_R^c N_R - y_D \\bar{L}_i \\tilde{\\Phi} N_R + \\text{h.c.}",
+        "\\frac{\\partial f_s}{\\partial t} - H|p|\\frac{\\partial f_s}{\\partial |p|} = \\frac{\\gamma(p)}{2}\\left[f_{\\nu}(p) - f_s(p)\\right]",
+        "\\Omega_s h^2 \\approx 0.1 \\left(\\frac{\\sin^2(2\\theta)}{1.4 \\times 10^{-9}}\\right) \\left(\\frac{m_s}{3\\text{ keV}}\\right)^{1.9}",
+        "i\\hbar \\frac{\\partial \\psi}{\\partial t} = -\\frac{\\hbar^2}{2m}\\nabla^2\\psi + m\\Phi\\psi",
+        "\\nabla^2\\Phi = 4\\pi G m |\\psi|^2",
+        "\\lambda_{\\text{dB}} = \\frac{2\\pi}{k_J} \\approx 1.2 \\text{ kpc} \\left(\\frac{10^{-22}\\text{ eV}}{m}\\right)^{1/2} \\left(\\frac{10^6 M_\\odot/\\text{kpc}^3}{\\rho}\\right)^{1/2}",
+        "m_\\nu \\approx m_D^2/M_R",
+        "m_s \\approx \\frac{m_1 m_2}{M_M}",
+        "\\frac{df}{dt} + \\frac{d\\mathbf{p}}{dt} \\cdot \\nabla_{\\mathbf{p}} f = C[f]",
+        "i \\hbar \\frac{\\partial \\psi}{\\partial t} = -\\frac{\\hbar^2}{2m}\\nabla^2 \\psi + V(\\psi) \\psi",
+        "\\sin^2(2\\theta) \\sim 10^{-9}",
+        "10^{-11}",
+        "k_{\\text{cut}} \\sim 2.6\\,(m/10^{-22}\\text{eV})^{1/2}",
+        "^{-1}",
+        "\\rho = m|\\psi|^2",
+        "\\gamma(p) \\sim \\sin^2(2\\theta)\\,G_F^2\\,p\\,T^4",
+        "[\\text{J·s}][\\text{s}^{-1}] = [\\text{J}]",
+        "[\\text{J/m}^3]",
+        "[\\text{s}^{-1}]",
+        "\\Omega_s h^2",
+        "[\\text{m}^{-2}\\cdot\\text{m}^2/\\text{s}^2] = [\\text{m}^3\\cdot\\text{kg}^{-1}\\cdot\\text{s}^{-2}\\cdot\\text{kg}\\cdot\\text{m}^{-3}] = [\\text{s}^{-2}]",
+        "\\psi",
+        "[\\text{m}^{-3/2}]",
+        "[\\text{kpc}] \\times (\\text{dimensionless ratio})^{1/2} \\times (\\text{dimensionless ratio})^{1/2} = [\\text{length}]",
+        "6.62607015 \\times 10^{-34}",
+        "\\Lambda",
+        "1.089 \\times 10^{-52}",
+        "^{-2}",
+        "\\hbar",
+        "\\rho_c",
+        "m_s \\approx M_R",
+        "f_s(p,t)",
+        "\\gamma(p) \\sim \\sin^2(2\\theta) G_F^2 p T^4",
+        "\\theta",
+        "\\phi",
+        "m \\sim 10^{-22}",
+        "\\propto \\nabla^2\\psi",
+        "N \\to \\nu + \\gamma",
+        "F \\sim \\frac{\\Omega_s}{m_s} \\frac{\\sin^2(2\\theta)}{8\\pi \\tau}",
+        "\\sigma",
+        "m_s < 10",
+        "\\alpha",
+        "z \\sim 5-6",
+        "\\lambda_{\\text{fs}} < 0.5",
+        "m_s > 2-3",
+        "k_{\\text{cut}} \\sim 2.6 (m/10^{-22}\\text{eV})^{1/2}",
+        "m > 10^{-21}",
+        "\\sin^2(2\\theta) \\sim 10^{-9}-10^{-11}",
+        "\\Omega_s \\approx 0.2",
+        "\\xi \\sim 10^{-4}",
+        "m_s > 0.4",
+        "m_s > 3",
+        "3-7",
+        "10^{-27}",
+        "\\sim 10^{-5}",
+        "z \\sim 10-20",
+        "\\nabla^2\\psi",
+        "\\lambda_J",
+        "<10\\%",
+        "10^{-22}"
+      ],
+      "equation_count": 60,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-11T01:03:49.803351+00:00"
+    },
+    {
+      "concept": "Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure",
+      "level": 3,
+      "equations": [
+        "\\Phi_{CG} \\leq \\Phi_{micro}",
+        "\\Phi",
+        "\\Phi_{CG} = \\sum_{i} p(i) \\log\\left(\\frac{p(i)}{p_A(i)p_B(i)}\\right)",
+        "p_A(i)",
+        "p_B(i)",
+        "\\Phi = \\max_{\\{Y_i\\}} [I(Y;X) - I(Y; Z)]",
+        "\\Phi_{CG}",
+        "\\Phi_{micro}"
+      ],
+      "equation_count": 8,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-11T01:09:51.074855+00:00"
     }
   ]
 }

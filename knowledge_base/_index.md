@@ -180,6 +180,7 @@ graph TD
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
     quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
+    sterile_neutrino_vs_fuzzy_dark_matter_in_explaining_structure_formation["Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation"]:::theoretical
     scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale["Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale"]:::theoretical
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration["DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration"]:::theoretical
@@ -245,6 +246,7 @@ graph TD
     landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments["Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments"]:::theoretical
     landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments["Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments"]:::theoretical
     nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution["Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution"]:::theoretical
+    renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure["Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure"]:::theoretical
     dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks["Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks"]:::theoretical
     quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation["Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation"]:::theoretical
     computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation["Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation"]:::theoretical
@@ -398,6 +400,7 @@ graph TD
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research --- quantum_gravity_debate
     quantum_measurement_problem --> quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
     quantum_gravity --> string_theory_vs_asymptotic_safety_in_quantum_gravity_debate
+    dark_matter --> sterile_neutrino_vs_fuzzy_dark_matter_in_explaining_structure_formation
     quantum_gravity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
@@ -647,6 +650,7 @@ graph TD
 - [Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale](level_2_advanced_frameworks/scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
 - [Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration](level_2_advanced_frameworks/screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration.md) [THEORETICAL]
+- [Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation](level_2_advanced_frameworks/sterile_neutrino_vs_fuzzy_dark_matter_in_explaining_structure_formation.md) [THEORETICAL]
 - [Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition](level_2_advanced_frameworks/stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition.md) [THEORETICAL]
 - [String Theory versus Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [String Theory vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
@@ -693,6 +697,7 @@ graph TD
 - [Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions](level_3_emergence_and_intelligence/quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions.md) [THEORETICAL]
 - [Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations](level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md) [THEORETICAL]
 - [Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation](level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md) [THEORETICAL]
+- [Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure](level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md) [THEORETICAL]
 - [Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](level_3_emergence_and_intelligence/spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]
 - [Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks](level_3_emergence_and_intelligence/topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks.md) [THEORETICAL]
