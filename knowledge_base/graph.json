@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-11T01:11:00.189579+00:00",
+  "updated_at": "2026-09-12T01:14:35.567238+00:00",
   "stats": {
-    "total_nodes": 253,
+    "total_nodes": 254,
     "level_1_count": 115,
     "level_2_count": 111,
-    "level_3_count": 27,
+    "level_3_count": 28,
     "total_edges": 143,
     "frontier_count": 0
   },
@@ -4663,6 +4663,25 @@
         "Network Science Review"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md"
+    },
+    {
+      "id": "axiomaticbridgeprinciplesfrommicrophysicalcausalstructuretophenomenalunityafalsifiabletestofintegratedinformationtheoryunderphysicalistclosure",
+      "title": "Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md"
     },
     {
       "id": "canintegratedinformationtheoryiitbeformalizedwithinspacetimegeometrytoaddressthehardproblemofconsciousness",
