@@ -355,6 +355,66 @@ The electromagnetic force is one of the four fundamental forces.
         self.assertLessEqual(len(filename), 184)
         self.assertTrue(filename.endswith(".md"))
 
+    def test_parse_student_decision_enriched_payload(self):
+        raw = """
+        {
+          "status": "approved",
+          "reason_code": "theoretically_sound_conjecture",
+          "epistemic_status": "[THEORETICAL]",
+          "confidence_score": 0.92,
+          "summary_for_archivist": "Mathematically sound framework with clear empirical limits.",
+          "detailed_rationale": "Strong mathematical model satisfying all axioms, with appropriate caveats.",
+          "agent_needs": {
+            "researcher_needs": [],
+            "math_needs": [],
+            "human_advisor_needed": false
+          },
+          "follow_up_questions": []
+        }
+        """
+        decision = parse_student_decision(raw)
+        self.assertEqual(decision["status"], "approved")
+        self.assertEqual(decision["reason_code"], "theoretically_sound_conjecture")
+        self.assertEqual(decision["epistemic_status"], "[THEORETICAL]")
+        self.assertEqual(decision["confidence_score"], 0.92)
+        self.assertEqual(decision["detailed_rationale"], "Strong mathematical model satisfying all axioms, with appropriate caveats.")
+        self.assertFalse(decision["agent_needs"]["human_advisor_needed"])
+
+    def test_parse_student_decision_rejection_with_agent_needs(self):
+        raw = """
+        {
+          "status": "rejected",
+          "reason_code": "ontological_category_error",
+          "epistemic_status": "theoretical",
+          "confidence_score": 0.35,
+          "summary_for_archivist": "",
+          "detailed_rationale": "Signature mismatch between Euclidean Fisher metric and Lorentzian metric.",
+          "agent_needs": {
+            "researcher_needs": ["Search for Lorentzian metric reformulation in information geometry."],
+            "math_needs": ["Verify if Wick rotation resolves signature discrepancy."],
+            "human_advisor_needed": true
+          },
+          "follow_up_questions": ["How can the metric signature discrepancy be resolved?"]
+        }
+        """
+        decision = parse_student_decision(raw)
+        self.assertEqual(decision["status"], "rejected")
+        self.assertEqual(decision["reason_code"], "ontological_category_error")
+        self.assertEqual(decision["epistemic_status"], "[THEORETICAL]")
+        self.assertEqual(decision["confidence_score"], 0.35)
+        self.assertTrue(decision["agent_needs"]["human_advisor_needed"])
+        self.assertIn("Wick rotation", decision["agent_needs"]["math_needs"][0])
+        self.assertEqual(len(decision["follow_up_questions"]), 1)
+
+    def test_confidence_score_clamping(self):
+        raw_high = '{"status": "approved", "confidence_score": 1.75}'
+        decision_high = parse_student_decision(raw_high)
+        self.assertEqual(decision_high["confidence_score"], 1.0)
+
+        raw_low = '{"status": "rejected", "confidence_score": -0.5}'
+        decision_low = parse_student_decision(raw_low)
+        self.assertEqual(decision_low["confidence_score"], 0.0)
+
 
 if __name__ == "__main__":
     unittest.main()

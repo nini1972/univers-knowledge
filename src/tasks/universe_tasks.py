@@ -79,8 +79,12 @@ class UniverseTasks:
                 frameworks associated with this concept.
 
                 SEARCH STRATEGY & SPECIFICITY INSTRUCTIONS:
+                - Use your dedicated academic tools:
+                  * ArXiv Preprint Search: to find preprints and read complete abstracts with formal mathematical formulas.
+                  * OpenAlex Scholarly Graph Search: to find highly-cited peer-reviewed papers, authentic DOIs, and verified publication years.
+                  * Europe PMC Literature Search: to cross-reference open-access peer-reviewed literature and biophysics.
                 - When searching, generate highly specific queries. Append terms like "review article", "recent advances", "experimental constraints", or "mathematical framework" (e.g., "{concept} experimental constraints" or "{concept} review article").
-                - Prioritize peer-reviewed journals, institutional PDFs (.edu/.ac), and open-access preprint portals (like arXiv.org).
+                - Run the Pre-Flight Citation Verifier tool on your draft to audit all citations, ensuring 0 future-dated years, 0 unresolvable DOIs, and 0 placeholder sources before submitting.
 
                 CRITICAL REQUIREMENTS - Your research report MUST satisfy these 5 criteria:
                 1. Cite at least 3 independent scientific/academic sources with clear references.
@@ -263,26 +267,50 @@ class UniverseTasks:
     def student_evaluation_task(self, agent, concept, context=None):
         return Task(
             description=dedent(f"""
-                Assess the Researcher's report and the Skeptic's verification on: {concept}.
+                Assess the Researcher's report, the Math Physicist's verification, and the Skeptic's audit on: {concept}.
                 Decide if this concept has passed the Verification Threshold.
 
-                CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the concept and set "status" to "rejected" and "reason_code" to "insufficient_skeptic_score".
+                VERIFICATION THRESHOLD RULES:
+                1. Check the Skeptic's Verification Score (out of 6). If the score is less than 4 out of 6 (4/6), you MUST reject the concept.
+                2. Check the Math Physicist's report. If math_status is [MATH_FLAWED] or dimensional consistency fails, you MUST reject the concept.
+                3. Epistemic Status Rule: Per protocol, unproven hypotheses with sound mathematical models and clear caveats MUST be approved as [THEORETICAL] or [CONJECTURED]. Do NOT reject solely because direct experimental confirmation is absent.
+
+                STANDARD REASON CODES:
+                - Approved:
+                  * "empirically_verified": Grounded in direct experimental or observational confirmation (CERN, LIGO, Planck, etc.).
+                  * "theoretically_sound_conjecture": Internally consistent, mathematically sound model approved with appropriate caveats.
+                - Rejected:
+                  * "insufficient_skeptic_score": Skeptic verification score is below 4/6.
+                  * "mathematical_flaw_or_inconsistency": Dimensional failure, unit mismatch, or algebraic error identified by the Math Physicist.
+                  * "ontological_category_error": Incompatible mathematical/physical domains unified without justification.
+                  * "unfalsifiable_or_unmeasurable_scale": Effect sizes predicted are physically unmeasurable without a feasible experimental protocol.
+                  * "insufficient_independent_sources": Fewer than 3 peer-reviewed/academic sources cited.
+                  * "missing_empirical_anchoring": Mainstream/theoretical claims asserted as proven fact without experimental constraints.
+                  * "logical_fallacy_or_speculation": Unfounded speculation or metaphysical assertions without physics grounding.
 
                 Return ONLY valid JSON with this exact schema:
                 {{
                   "status": "approved" | "rejected",
-                  "reason_code": "short_snake_case_reason",
-                  "summary_for_archivist": "non-empty when approved",
+                  "reason_code": "one_of_the_standard_codes_above",
+                  "epistemic_status": "[VERIFIED]" | "[THEORETICAL]" | "[CONJECTURED]",
+                  "confidence_score": 0.85,
+                  "summary_for_archivist": "non-empty summary when approved",
+                  "detailed_rationale": "A 2-3 sentence explanation of your scientific judgment and reasons for this decision.",
+                  "agent_needs": {{
+                    "researcher_needs": ["Actionable guidance or literature needs for Researcher on retry"],
+                    "math_needs": ["Mathematical clarifications, unit conventions, or proofs required"],
+                    "human_advisor_needed": false,
+                    "professor_question": "Optional concrete question for the Professor if human_advisor_needed is true"
+                  }},
                   "follow_up_questions": ["question 1", "question 2"]
                 }}
                 Rules:
                 - If approved: status must be "approved" and summary_for_archivist must be non-empty.
-                - If rejected: status must be "rejected" and follow_up_questions must contain at least one concrete question.
-                - Per protocol, unproven but mathematically consistent concepts can still be approved as [THEORETICAL].
-                - Do NOT reject solely because experimental confirmation is absent.
+                - If rejected: status must be "rejected", agent_needs must specify what specialist agents need to fix, and follow_up_questions must contain at least one concrete question.
+                - Set human_advisor_needed to true and provide professor_question if repeated fundamental contradictions require human operator guidance.
                 - Do not include markdown code fences or extra commentary.
             """),
-            expected_output="A strict JSON object containing status, reason_code, summary_for_archivist, and follow_up_questions.",
+            expected_output="A strict JSON object containing status, reason_code, epistemic_status, confidence_score, summary_for_archivist, detailed_rationale, agent_needs, and follow_up_questions.",
             agent=agent,
             context=context
         )
@@ -290,30 +318,45 @@ class UniverseTasks:
     def student_level2_debate_evaluation_task(self, agent, concept, context=None):
         return Task(
             description=dedent(f"""
-                Assess the comparative Level 2 debate report and skeptic review on: {concept}.
+                Assess the comparative Level 2 debate report, math verification, and skeptic review on: {concept}.
 
-                CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the concept and set "status" to "rejected" and "reason_code" to "insufficient_skeptic_score".
+                CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the debate concept.
+
+                Decision policy for Level 2 debates:
+                - Approve when the report is rigorous, source-grounded, mathematically coherent, and transparent about uncertainty.
+                - Assign epistemic_status based on evidence strength:
+                  * Use [VERIFIED] when the comparative analysis is grounded in experimentally confirmed physics (e.g. observed parameters, confirmed predictions).
+                  * Use [THEORETICAL] when both theories genuinely lack direct experimental confirmation or observational support.
+                  * Most L2 debates compare well-established frameworks with empirical grounding — these should be [VERIFIED].
+                - Reject ONLY for quality failures (insufficient sources, logical inconsistencies, missing critical comparisons, or non-rigorous claims).
+                - "lack_of_experimental_confirmation" alone is NOT a valid rejection reason for Level 2 debates.
+
+                STANDARD REASON CODES:
+                - Approved: "comparative_consensus_reached", "theoretically_sound_conjecture"
+                - Rejected: "insufficient_skeptic_score", "mathematical_flaw_or_inconsistency", "insufficient_independent_sources", "missing_critical_comparisons", "logical_fallacy_or_speculation"
 
                 Return ONLY valid JSON with this exact schema:
                 {{
                   "status": "approved" | "rejected",
-                  "reason_code": "short_snake_case_reason",
+                  "reason_code": "one_of_the_standard_codes_above",
+                  "epistemic_status": "[VERIFIED]" | "[THEORETICAL]" | "[CONJECTURED]",
+                  "confidence_score": 0.85,
                   "summary_for_archivist": "non-empty when approved",
+                  "detailed_rationale": "A 2-3 sentence explanation of the comparative debate verdict and rationale.",
+                  "agent_needs": {{
+                    "researcher_needs": ["Missing comparison points or source requirements on retry"],
+                    "math_needs": ["Mathematical derivations needed for comparison"],
+                    "human_advisor_needed": false,
+                    "professor_question": "Optional concrete question for the Professor if human_advisor_needed is true"
+                  }},
                   "follow_up_questions": ["question 1", "question 2"]
                 }}
-                Decision policy for Level 2 debates:
-                - Approve when the report is rigorous, source-grounded, mathematically coherent, and transparent about uncertainty.
-                - Assign status based on evidence strength:
-                  * Use [VERIFIED] when the comparative analysis is grounded in experimentally confirmed physics (e.g., observed phenomena, measured parameters, confirmed predictions).
-                  * Use [THEORETICAL] ONLY when both theories genuinely lack ANY direct experimental confirmation or observational support.
-                  * Most L2 debates compare well-established frameworks with empirical grounding — these should be [VERIFIED].
-                - Reject ONLY for quality failures (insufficient sources, logical inconsistencies, missing critical comparisons, or non-rigorous claims).
-                - "lack_of_experimental_confirmation" alone is NOT a valid rejection reason for Level 2.
+                Rules:
                 - If approved: status must be "approved" and summary_for_archivist must be non-empty.
                 - If rejected: status must be "rejected" and follow_up_questions must contain at least one concrete question.
                 - Do not include markdown code fences or extra commentary.
             """),
-            expected_output="A strict JSON object containing status, reason_code, summary_for_archivist, and follow_up_questions.",
+            expected_output="A strict JSON object containing status, reason_code, epistemic_status, confidence_score, summary_for_archivist, detailed_rationale, agent_needs, and follow_up_questions.",
             agent=agent,
             context=context
         )
@@ -321,26 +364,43 @@ class UniverseTasks:
     def student_level3_evaluation_task(self, agent, concept, context=None):
         return Task(
             description=dedent(f"""
-                Assess the Level 3 Emergence & Intelligence research and skeptic audit on: {concept}.
+                Assess the Level 3 Emergence & Intelligence research, math verification, and skeptic audit on: {concept}.
 
-                CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the concept and set "status" to "rejected" and "reason_code" to "insufficient_skeptic_score".
+                CRITICAL RULE: Check the Skeptic's Verification Score (out of 6). If the score is less than 4 out of 6 (4/6), you MUST reject the concept.
+
+                Decision policy for Level 3 Emergence & Consciousness:
+                - Apply the 'Logical Skeptic' audit: filter out pure metaphysical speculation, requiring grounding in physicalist principles, information theory, or biophysics.
+                - Recognize that the 'Hard Problem' of consciousness and IIT remain active frontiers; require clear demarcation between [VERIFIED] physical mechanisms vs [THEORETICAL] hypotheses.
+                - Check for ontological category errors (e.g. conflating statistical information manifolds with physical spacetime metrics without signature matching).
+                - Check for unfalsifiable effect scales (e.g. predictions of 10^-25 effects that lack any conceivable measurement protocol).
+                - Reject ONLY for lack of scientific rigor, logical fallacies, category errors, or ungrounded claims.
+
+                STANDARD REASON CODES:
+                - Approved: "physicalist_emergence_grounded", "theoretically_sound_conjecture"
+                - Rejected: "insufficient_skeptic_score", "ontological_category_error", "unfalsifiable_or_unmeasurable_scale", "mathematical_flaw_or_inconsistency", "insufficient_independent_sources", "logical_fallacy_or_speculation"
 
                 Return ONLY valid JSON with this exact schema:
                 {{
                   "status": "approved" | "rejected",
-                  "reason_code": "short_snake_case_reason",
+                  "reason_code": "one_of_the_standard_codes_above",
+                  "epistemic_status": "[VERIFIED]" | "[THEORETICAL]" | "[CONJECTURED]",
+                  "confidence_score": 0.85,
                   "summary_for_archivist": "non-empty when approved",
+                  "detailed_rationale": "A 2-3 sentence explanation of the Level 3 evaluation verdict and scientific reasoning.",
+                  "agent_needs": {{
+                    "researcher_needs": ["Clarifications or empirical limits needed for Researcher on retry"],
+                    "math_needs": ["Dimensional, topological, or formal proofs required"],
+                    "human_advisor_needed": false,
+                    "professor_question": "Optional concrete question for the Professor if human_advisor_needed is true"
+                  }},
                   "follow_up_questions": ["question 1", "question 2"]
                 }}
-                Decision policy for Level 3 Emergence & Consciousness:
-                - Apply the 'Logical Skeptic' audit: filter out pure metaphysical speculation, requiring grounding in physicalist principles, information theory, or biophysics.
-                - Recognize that the 'Hard Problem' of consciousness and IIT remain active frontiers; require clear demarcation between [VERIFIED] physical mechanisms vs [THEORETICAL] hypotheses.
-                - Reject ONLY for lack of scientific rigor, logical fallacies, or ungrounded claims.
+                Rules:
                 - If approved: status must be "approved" and summary_for_archivist must be non-empty.
                 - If rejected: status must be "rejected" and follow_up_questions must contain at least one concrete question.
                 - Do not include markdown code fences or extra commentary.
             """),
-            expected_output="A strict JSON object containing status, reason_code, summary_for_archivist, and follow_up_questions.",
+            expected_output="A strict JSON object containing status, reason_code, epistemic_status, confidence_score, summary_for_archivist, detailed_rationale, agent_needs, and follow_up_questions.",
             agent=agent,
             context=context
         )

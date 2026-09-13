@@ -3,6 +3,8 @@
 #Ignore vscode AI rules
 .github\instructions\codacy.instructions.md
 .env
+.venv/
+knowledge_base/logs/*.backup_*.jsonl
 
 # Local scratch utilities and cache
 scratch/*.py

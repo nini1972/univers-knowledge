@@ -6,6 +6,7 @@ VENV_SITE_PACKAGES = Path(__file__).resolve().parent.parent / ".venv" / "Lib" / 
 if VENV_SITE_PACKAGES.exists():
     import site
     site.addsitedir(str(VENV_SITE_PACKAGES))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import re
 import json
@@ -69,6 +70,19 @@ except ImportError:
         get_top_failure_patterns,
         log_telemetry_event,
         log_rejected_concept,
+    )
+
+try:
+    from advisory_manager import (
+        create_advisory_request,
+        get_active_directive_for_concept,
+        get_active_general_directives,
+    )
+except ImportError:
+    from src.advisory_manager import (
+        create_advisory_request,
+        get_active_directive_for_concept,
+        get_active_general_directives,
     )
 
 import time
@@ -170,6 +184,11 @@ def main():
     repo_root = Path(__file__).resolve().parent.parent
     topic_digest = generate_clean_topic_digest(repo_root=repo_root)
 
+    standing_directives = get_active_general_directives("level_2")
+    directives_prompt = ""
+    if standing_directives:
+        directives_prompt = "\n\nPROFESSOR STANDING DIRECTIVES:\n" + "\n".join(f"- {d}" for d in standing_directives)
+
     for attempt in range(1, max_topic_attempts + 1):
         topic_student = agents.student_agent()
         topic_task = tasks.determine_next_level2_topic_task(topic_student, topic_digest)
@@ -178,8 +197,9 @@ def main():
         if excluded_concepts:
             exclusion_prompt = "\n\nCRITICAL DEDUPLICATION RULE:\nDo NOT select any of the following already-existing concepts:\n" + "\n".join(f"- {c}" for c in excluded_concepts)
 
-        if pattern_guidance or exclusion_prompt:
-            topic_task.description += (pattern_guidance + exclusion_prompt)
+        combined_topic_prompt = (pattern_guidance or "") + (directives_prompt or "") + (exclusion_prompt or "")
+        if combined_topic_prompt:
+            topic_task.description += combined_topic_prompt
 
         topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback(f"topic_crew_l2_att{attempt}"))
 
@@ -288,6 +308,18 @@ def main():
             metadata={"concept": concept_name, "attempt": retries + 1}
         )
 
+        concept_directive = get_active_directive_for_concept(concept_name, level=2)
+        general_directives = get_active_general_directives("level_2")
+        directive_lines = []
+        if concept_directive:
+            directive_lines.append(f"- DIRECTIVE FOR '{concept_name}': {concept_directive}")
+        if general_directives:
+            directive_lines.extend(f"- STANDING DIRECTIVE: {d}" for d in general_directives)
+
+        professor_guidance = ""
+        if directive_lines:
+            professor_guidance = "\n\nPROFESSOR DIRECTIVES & GUIDANCE:\n" + "\n".join(directive_lines)
+
         evaluation_student = agents.student_agent()
         researcher_a = agents.researcher_agent()
         researcher_b = agents.researcher_agent()
@@ -310,6 +342,10 @@ def main():
         )
         if pattern_guidance:
             evaluate_task.description += pattern_guidance
+        if professor_guidance:
+            research_task_a.description += professor_guidance
+            research_task_b.description += professor_guidance
+            evaluate_task.description += professor_guidance
 
         evaluation_crew = Crew(
             agents=[researcher_a, researcher_b, skeptic, math_physicist, evaluation_student],
@@ -404,7 +440,11 @@ def main():
             score=score,
             total_score=total_score,
             follow_up_questions=evaluation_decision["follow_up_questions"],
-            attempt=retries + 1
+            attempt=retries + 1,
+            epistemic_status=evaluation_decision.get("epistemic_status", "[THEORETICAL]"),
+            confidence_score=evaluation_decision.get("confidence_score"),
+            detailed_rationale=evaluation_decision.get("detailed_rationale"),
+            agent_needs=evaluation_decision.get("agent_needs"),
         )
 
         log_telemetry_event(
@@ -414,6 +454,8 @@ def main():
             metadata={
                 "status": evaluation_decision["status"],
                 "reason_code": evaluation_decision["reason_code"],
+                "epistemic_status": evaluation_decision.get("epistemic_status"),
+                "confidence_score": evaluation_decision.get("confidence_score"),
                 "score": score,
                 "total_score": total_score,
                 "math_score": math_score,
@@ -422,6 +464,7 @@ def main():
             }
         )
 
+        agent_needs = evaluation_decision.get("agent_needs", {})
         if not rejected:
             break
         if retries >= max_retries:
@@ -440,24 +483,50 @@ def main():
                 math_status=math_status_val,
                 last_skeptic_score=score,
                 last_skeptic_total=total_score,
+                epistemic_status=evaluation_decision.get("epistemic_status"),
+                detailed_rationale=evaluation_decision.get("detailed_rationale"),
+                agent_needs=agent_needs,
             )
             try:
                 import backlog_manager
             except ImportError:
                 from src import backlog_manager
             backlog_manager.add_to_backlog(concept_name, level=2, questions=evaluation_decision.get("follow_up_questions", []))
+            create_advisory_request(
+                concept=concept_name,
+                level=2,
+                initiator="Student Orchestrator",
+                question=agent_needs.get("professor_question") or f"Level 2 debate '{concept_name}' was rejected after {max_retries} attempts ({evaluation_decision['reason_code']}). How should the debate research proceed?",
+                detailed_rationale=evaluation_decision.get("detailed_rationale", ""),
+                agent_needs=agent_needs,
+                reason_code=evaluation_decision.get("reason_code", ""),
+            )
             break
 
-
         retries += 1
+        if agent_needs.get("human_advisor_needed"):
+            print(f"[STUDENT ADVISORY ALERT] Student requested human guidance for Level 2 debate '{concept_name}': {evaluation_decision.get('detailed_rationale')}")
+            create_advisory_request(
+                concept=concept_name,
+                level=2,
+                initiator="Student Orchestrator",
+                question=agent_needs.get("professor_question") or f"Student requested guidance for Level 2 debate '{concept_name}': {evaluation_decision.get('detailed_rationale') or evaluation_decision.get('reason_code')}",
+                detailed_rationale=evaluation_decision.get("detailed_rationale", ""),
+                agent_needs=agent_needs,
+                reason_code=evaluation_decision.get("reason_code", ""),
+            )
+
         follow_up_context = json.dumps(
             {
                 "reason_code": evaluation_decision["reason_code"],
-                "follow_up_questions": evaluation_decision["follow_up_questions"],
+                "detailed_rationale": evaluation_decision.get("detailed_rationale", ""),
+                "agent_needs": agent_needs,
+                "follow_up_questions": evaluation_decision.get("follow_up_questions", []),
             },
-            ensure_ascii=True,
+            ensure_ascii=False,
+            indent=2,
         )
-        print(f"Evaluation rejected. Retrying research with follow-up context (attempt {retries}/{max_retries}).")
+        print(f"Evaluation rejected. Retrying debate research with rich diagnostic context (attempt {retries}/{max_retries}).")
 
     log_telemetry_event(
         "research_evaluation_level2",
@@ -535,6 +604,7 @@ def main():
             import backlog_manager
         except ImportError:
             from src import backlog_manager
+        backlog_manager.resolve_backlog_item(concept_name)
         backlog_manager.add_to_backlog(concept_name, level=2, questions=evaluation_decision.get("follow_up_questions", []))
 
         log_telemetry_event(

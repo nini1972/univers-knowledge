@@ -1,11 +1,21 @@
 import json
 import re
+from typing import Literal, Optional
+from pydantic import BaseModel, Field
 
 
 DEFAULT_REJECTION = {
     "status": "rejected",
     "reason_code": "parse_error",
+    "epistemic_status": "[THEORETICAL]",
+    "confidence_score": 0.0,
     "summary_for_archivist": "",
+    "detailed_rationale": "Failed to parse a structured JSON evaluation output from the Student Orchestrator.",
+    "agent_needs": {
+        "researcher_needs": ["Re-run research report with strict adherence to required sections."],
+        "math_needs": ["Ensure equations are formatted in standard LaTeX."],
+        "human_advisor_needed": False,
+    },
     "follow_up_questions": [
         "Reformat the student evaluation as strict JSON following the required schema."
     ],
@@ -43,6 +53,58 @@ def _normalize_reason_code(raw_reason: str):
     return reason or "unspecified"
 
 
+def _normalize_epistemic_status(raw: str, default: str = "[THEORETICAL]") -> str:
+    s = str(raw or "").strip().upper()
+    if not s:
+        return default
+    if not s.startswith("[") and not s.endswith("]"):
+        s = f"[{s}]"
+    if s in {"[VERIFIED]", "[THEORETICAL]", "[CONJECTURED]", "[HYPOTHETICAL]"}:
+        return s
+    return default
+
+
+def _normalize_confidence_score(raw: any, default: float = 0.5) -> float:
+    try:
+        val = float(raw)
+        return max(0.0, min(1.0, round(val, 2)))
+    except (ValueError, TypeError):
+        return default
+
+
+def _normalize_agent_needs(raw: any) -> dict:
+    if not isinstance(raw, dict):
+        return {
+            "researcher_needs": [],
+            "math_needs": [],
+            "human_advisor_needed": False,
+        }
+    researcher_needs = raw.get("researcher_needs", [])
+    if isinstance(researcher_needs, str):
+        researcher_needs = [researcher_needs.strip()] if researcher_needs.strip() else []
+    elif isinstance(researcher_needs, list):
+        researcher_needs = [str(x).strip() for x in researcher_needs if str(x).strip()]
+    else:
+        researcher_needs = []
+
+    math_needs = raw.get("math_needs", [])
+    if isinstance(math_needs, str):
+        math_needs = [math_needs.strip()] if math_needs.strip() else []
+    elif isinstance(math_needs, list):
+        math_needs = [str(x).strip() for x in math_needs if str(x).strip()]
+    else:
+        math_needs = []
+
+    human_needed = bool(raw.get("human_advisor_needed", False))
+    prof_q = str(raw.get("professor_question", "")).strip()
+    return {
+        "researcher_needs": researcher_needs,
+        "math_needs": math_needs,
+        "human_advisor_needed": human_needed,
+        "professor_question": prof_q,
+    }
+
+
 def parse_student_decision(raw_output: str):
     blob = _extract_json_blob(raw_output)
     if not blob:
@@ -72,10 +134,33 @@ def parse_student_decision(raw_output: str):
     else:
         follow_up_questions = []
 
+    epistemic_status = _normalize_epistemic_status(
+        data.get("epistemic_status") or data.get("status_classification"),
+        default="[VERIFIED]" if status == "approved" else "[THEORETICAL]"
+    )
+    confidence_score = _normalize_confidence_score(
+        data.get("confidence_score"),
+        default=0.9 if status == "approved" else 0.4
+    )
+    detailed_rationale = str(
+        data.get("detailed_rationale")
+        or data.get("rationale")
+        or data.get("reason_description")
+        or ""
+    ).strip()
+    if not detailed_rationale:
+        detailed_rationale = summary if status == "approved" else f"Rejected due to {data.get('reason_code', 'unspecified')}."
+
+    agent_needs = _normalize_agent_needs(data.get("agent_needs"))
+
     decision = {
         "status": status,
         "reason_code": _normalize_reason_code(data.get("reason_code", "unspecified")),
+        "epistemic_status": epistemic_status,
+        "confidence_score": confidence_score,
         "summary_for_archivist": summary,
+        "detailed_rationale": detailed_rationale,
+        "agent_needs": agent_needs,
         "follow_up_questions": follow_up_questions,
     }
 
@@ -510,4 +595,70 @@ def is_concept_existing(concept_name: str, level: int = 2, repo_root=None, max_l
             pass
 
     return False
+
+
+class PeerReviewRequest(BaseModel):
+    """Input contract for requesting a peer-review or critique resolution."""
+    critique_text_or_path: str = Field(
+        ...,
+        description="Text of the critique/objection or path to an archived/pending review file."
+    )
+    target_concept: Optional[str] = Field(
+        None,
+        description="Name or slug of the target physics concept being critiqued."
+    )
+    review_type: Literal[
+        "auto",
+        "dimensional_analysis",
+        "bibliography_verification",
+        "derivation_proof",
+        "axiomatic_assumptions"
+    ] = Field(
+        default="auto",
+        description="Category of peer review to perform."
+    )
+    context_markdown: Optional[str] = Field(
+        None,
+        description="Optional current markdown text of the concept being critiqued."
+    )
+
+
+class PeerReviewResolution(BaseModel):
+    """Output contract containing structured resolution of a peer-review critique."""
+    resolution_status: Literal["RESOLVED", "PARTIALLY_RESOLVED", "CONJECTURAL_LIMIT"] = Field(
+        ...,
+        description="Overall resolution verdict."
+    )
+    review_type: str = Field(
+        ...,
+        description="Determined or requested review category."
+    )
+    critique_addressed: str = Field(
+        ...,
+        description="Summary of the specific critique or objection addressed."
+    )
+    target_concepts: list[str] = Field(
+        default_factory=list,
+        description="Target or related canonical concepts."
+    )
+    technical_resolution: str = Field(
+        ...,
+        description="Detailed mathematical, dimensional, or bibliographic resolution."
+    )
+    verified_equations: list[str] = Field(
+        default_factory=list,
+        description="List of equations verified or derived."
+    )
+    verified_sources: list[str] = Field(
+        default_factory=list,
+        description="Verified peer-reviewed sources or replacements."
+    )
+    axiomatic_boundaries: list[str] = Field(
+        default_factory=list,
+        description="Documented assumptions, limits, or proof boundaries."
+    )
+    suggested_patch_markdown: str = Field(
+        ...,
+        description="Markdown snippet that can be integrated into the knowledge base."
+    )
 

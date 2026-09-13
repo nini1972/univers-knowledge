@@ -51,7 +51,7 @@ def _resolve_openrouter_model(api_key: str, role: str) -> str:
 
     # Self-healing: if role uses tools or delegates, ensure the model supports tool use on OpenRouter.
     # CrewAI treats delegation as a tool call under the hood, so 'student' needs stable tool calling.
-    roles_using_tools = ['student', 'visualizer', 'math', 'researcher']
+    roles_using_tools = ['student', 'visualizer', 'math', 'researcher', 'peer_reviewer']
     if role in roles_using_tools:
         model_lower = model.lower()
         stable_keywords = [
@@ -104,36 +104,71 @@ def _get_llm(role: str) -> LLM | None:
 def _build_search_tools():
     """Create search tools lazily so missing deps/keys do not crash startup.
 
-    Preferred order:
-    1) Custom ScholarlySearchTool when TAVILY_API_KEY is available.
-    2) SerperDevTool from crewai_tools when SERPER_API_KEY is available.
-    3) No search tool (graceful degradation).
+    Foundational tools:
+    - ArxivSearchTool: Direct arXiv REST API with category filtering & OpenAlex failover.
+    - OpenAlexSearchTool: 250M+ scholarly works with verified DOIs, publication years & citation graphs.
+    - EuropePmcSearchTool: Life sciences, biophysics, and complex emergence literature.
+    - CitationAuditTool: Pre-flight citation integrity verifier.
 
-    Note: CrewAI Agent.tools expects CrewAI-compatible BaseTool instances.
+    Commercial additions:
+    - ScholarlySearchTool when TAVILY_API_KEY is available.
+    - SerperDevTool when SERPER_API_KEY is available.
     """
+    tools = []
+    try:
+        try:
+            from tools.scientific_literature_tools import (
+                ArxivSearchTool,
+                OpenAlexSearchTool,
+                EuropePmcSearchTool,
+                CitationAuditTool,
+            )
+        except ImportError:
+            from src.tools.scientific_literature_tools import (
+                ArxivSearchTool,
+                OpenAlexSearchTool,
+                EuropePmcSearchTool,
+                CitationAuditTool,
+            )
+        tools.extend([
+            ArxivSearchTool(),
+            OpenAlexSearchTool(),
+            EuropePmcSearchTool(),
+            CitationAuditTool(),
+        ])
+    except Exception as exc:
+        print(f"Warning: Failed to load open scientific literature tools: {exc}")
+
+    # Add commercial search engines if keys are configured
     if os.getenv("TAVILY_API_KEY"):
         try:
             from tools.scholarly_search import ScholarlySearchTool
-            return [ScholarlySearchTool()]
+            tools.append(ScholarlySearchTool())
         except ImportError:
             try:
                 from src.tools.scholarly_search import ScholarlySearchTool
-                return [ScholarlySearchTool()]
+                tools.append(ScholarlySearchTool())
             except Exception as exc:
                 print(f"Warning: Custom ScholarlySearchTool disabled ({exc})")
 
     if os.getenv("SERPER_API_KEY"):
         try:
             from crewai_tools import SerperDevTool
-            return [SerperDevTool()]
+            tools.append(SerperDevTool())
         except Exception as exc:
             print(f"Warning: Serper search disabled ({exc})")
 
-    print("Warning: No search API key configured; researcher will run without web search tools.")
-    return []
+    return tools
 
 class UniverseAgents:
     def student_agent(self) -> Agent:
+        try:
+            from tools.peer_review_tool import PeerReviewSubagentTool
+            peer_tools = [PeerReviewSubagentTool()]
+        except ImportError:
+            from src.tools.peer_review_tool import PeerReviewSubagentTool
+            peer_tools = [PeerReviewSubagentTool()]
+
         return Agent(
             role='The Student Orchestrator',
             goal='Understand the universe by seeking knowledge, delegating research, and verifying all claims before accepting them into the knowledge base.',
@@ -145,6 +180,7 @@ class UniverseAgents:
             """),
             verbose=True,
             allow_delegation=True,
+            tools=peer_tools,
             llm=_get_llm('student')
         )
 
@@ -159,11 +195,14 @@ class UniverseAgents:
                 but as a rigorous thinker, you always identify and contrast mainstream claims with viable alternative
                 hypotheses (e.g. MOND vs Dark Matter), detailing their exact experimental limits.
 
-                SOURCE SELECTION MANDATES:
+                SOURCE SELECTION & CITATION MANDATES:
+                - Use your dedicated academic tools (ArXiv Preprint Search, OpenAlex Scholarly Graph Search, Europe PMC) to find genuine peer-reviewed literature.
+                - Use OpenAlex to extract authoritative publication years, true DOIs, and citation counts.
+                - When investigating preprints, use arXiv to retrieve the full abstract, including formal mathematical equations.
                 - Always prioritize Peer-Reviewed & Institutional materials first (arXiv, CERN, NASA, IOP, APS, and universities).
                 - Completely avoid citing low-quality general blogs, social media, forums, or unvetted pages.
                 - For every source cited, capture its exact URL and include DOI or arXiv numbers where available.
-                - If Tavily notes raw content is unavailable (metadata only), clearly flag that full-text access is restricted but cite the abstract/findings.
+                - Before finalizing your research report, invoke the Pre-Flight Citation Verifier tool to audit all citations and ensure 0 future-dated or hallucinated references.
             """),
             verbose=True,
             allow_delegation=False,
@@ -331,4 +370,36 @@ class UniverseAgents:
             allow_delegation=False,
             tools=search_tools,
             llm=_get_llm('researcher')
+        )
+
+    def peer_reviewer_agent(self) -> Agent:
+        """Dedicated Peer-Review Subagent for resolving critiques, dimensional undecidability, and citations."""
+        try:
+            from tools.peer_review_tool import PeerReviewSubagentTool
+            from tools.math_tools import get_tier1_math_tools
+        except ImportError:
+            from src.tools.peer_review_tool import PeerReviewSubagentTool
+            from src.tools.math_tools import get_tier1_math_tools
+
+        review_tools = [PeerReviewSubagentTool()] + get_tier1_math_tools()
+        return Agent(
+            role='Peer Review Specialist & Critique Resolver',
+            goal=dedent("""
+                Autonomously resolve scientific peer-review objections, dimensional undecidability
+                verdicts, hallucinated/future-dated citations, and unstated axiomatic assumptions.
+                Produce mathematically rigorous resolution reports with verified SI unit balance,
+                established peer-reviewed DOIs, and formal domain-of-validity proof boundaries.
+            """),
+            backstory=dedent("""
+                You are a senior journal editor and mathematical physicist specializing in resolving
+                formal objections raised during peer review. You do not merely point out flaws; you
+                resolve them by proving dimensional homogeneity using Buckingham-Pi matrix analysis,
+                verifying and updating citations against standard physical databases (PDG, Planck,
+                NuFIT, PRL), formulating step-by-step derivation boundaries, and documenting axiomatic
+                assumptions (such as Haag's theorem or SMEFT truncation).
+            """),
+            verbose=True,
+            allow_delegation=False,
+            tools=review_tools,
+            llm=_get_llm('skeptic')
         )

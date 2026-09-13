@@ -6,6 +6,7 @@ VENV_SITE_PACKAGES = Path(__file__).resolve().parent.parent / ".venv" / "Lib" / 
 if VENV_SITE_PACKAGES.exists():
     import site
     site.addsitedir(str(VENV_SITE_PACKAGES))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import re
 import json
@@ -68,6 +69,19 @@ except ImportError:
         log_telemetry_event,
         get_last_missing_prerequisite,
         log_rejected_concept,
+    )
+
+try:
+    from advisory_manager import (
+        create_advisory_request,
+        get_active_directive_for_concept,
+        get_active_general_directives,
+    )
+except ImportError:
+    from src.advisory_manager import (
+        create_advisory_request,
+        get_active_directive_for_concept,
+        get_active_general_directives,
     )
 
 import time
@@ -167,6 +181,18 @@ def run_level1_flow(next_concept: str):
             metadata={"concept": next_concept, "attempt": retries + 1}
         )
 
+        concept_directive = get_active_directive_for_concept(next_concept, level=1)
+        general_directives = get_active_general_directives("level_1")
+        directive_lines = []
+        if concept_directive:
+            directive_lines.append(f"- DIRECTIVE FOR '{next_concept}': {concept_directive}")
+        if general_directives:
+            directive_lines.extend(f"- STANDING DIRECTIVE: {d}" for d in general_directives)
+
+        professor_guidance = ""
+        if directive_lines:
+            professor_guidance = "\n\nPROFESSOR DIRECTIVES & GUIDANCE:\n" + "\n".join(directive_lines)
+
         research_student = agents.student_agent()
         research_concept_prompt = next_concept
         if follow_up_context:
@@ -180,6 +206,9 @@ def run_level1_flow(next_concept: str):
         evaluate_task = tasks.student_evaluation_task(research_student, next_concept, context=[research_task, math_task, verify_task])
         if pattern_guidance:
             evaluate_task.description += pattern_guidance
+        if professor_guidance:
+            research_task.description += professor_guidance
+            evaluate_task.description += professor_guidance
 
         evaluation_crew = Crew(
             agents=[research_student, researcher, math_physicist, skeptic],
@@ -189,6 +218,7 @@ def run_level1_flow(next_concept: str):
             step_callback=make_step_callback("evaluation_crew"),
         )
 
+        a2a_proof = None
         if dry_run:
             evaluation_output = json.dumps({
                 "status": "approved",
@@ -295,7 +325,11 @@ def run_level1_flow(next_concept: str):
             score=score,
             total_score=total_score,
             follow_up_questions=decision["follow_up_questions"],
-            attempt=retries + 1
+            attempt=retries + 1,
+            epistemic_status=decision.get("epistemic_status", "[THEORETICAL]"),
+            confidence_score=decision.get("confidence_score"),
+            detailed_rationale=decision.get("detailed_rationale"),
+            agent_needs=decision.get("agent_needs"),
         )
 
         log_telemetry_event(
@@ -305,6 +339,8 @@ def run_level1_flow(next_concept: str):
             metadata={
                 "status": decision["status"],
                 "reason_code": decision["reason_code"],
+                "epistemic_status": decision.get("epistemic_status"),
+                "confidence_score": decision.get("confidence_score"),
                 "score": score,
                 "total_score": total_score,
                 "math_score": math_score,
@@ -313,6 +349,7 @@ def run_level1_flow(next_concept: str):
             }
         )
 
+        agent_needs = decision.get("agent_needs", {})
         if not rejected:
             break
         if retries >= max_retries:
@@ -331,24 +368,50 @@ def run_level1_flow(next_concept: str):
                 math_status=math_status_val,
                 last_skeptic_score=score,
                 last_skeptic_total=total_score,
+                epistemic_status=decision.get("epistemic_status"),
+                detailed_rationale=decision.get("detailed_rationale"),
+                agent_needs=agent_needs,
             )
             try:
                 import backlog_manager
             except ImportError:
                 from src import backlog_manager
             backlog_manager.add_to_backlog(next_concept, level=1, questions=decision.get("follow_up_questions", []))
+            create_advisory_request(
+                concept=next_concept,
+                level=1,
+                initiator="Student Orchestrator",
+                question=agent_needs.get("professor_question") or f"Concept '{next_concept}' was rejected after {max_retries} attempts ({decision['reason_code']}). How should the agents proceed?",
+                detailed_rationale=decision.get("detailed_rationale", ""),
+                agent_needs=agent_needs,
+                reason_code=decision.get("reason_code", ""),
+            )
             break
 
-
         retries += 1
+        if agent_needs.get("human_advisor_needed"):
+            print(f"[STUDENT ADVISORY ALERT] Student requested human guidance for '{next_concept}': {decision.get('detailed_rationale')}")
+            create_advisory_request(
+                concept=next_concept,
+                level=1,
+                initiator="Student Orchestrator",
+                question=agent_needs.get("professor_question") or f"Student requested guidance on '{next_concept}': {decision.get('detailed_rationale') or decision.get('reason_code')}",
+                detailed_rationale=decision.get("detailed_rationale", ""),
+                agent_needs=agent_needs,
+                reason_code=decision.get("reason_code", ""),
+            )
+
         follow_up_context = json.dumps(
             {
                 "reason_code": decision["reason_code"],
-                "follow_up_questions": decision["follow_up_questions"],
+                "detailed_rationale": decision.get("detailed_rationale", ""),
+                "agent_needs": agent_needs,
+                "follow_up_questions": decision.get("follow_up_questions", []),
             },
-            ensure_ascii=True,
+            ensure_ascii=False,
+            indent=2,
         )
-        print(f"Evaluation rejected. Retrying research with follow-up context (attempt {retries}/{max_retries}).")
+        print(f"Evaluation rejected. Retrying research with rich diagnostic context (attempt {retries}/{max_retries}).")
 
     log_telemetry_event(
         "research_evaluation",
@@ -480,21 +543,30 @@ def main():
     if pattern_guidance:
         topic_task.description += pattern_guidance
 
-    topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback("topic_crew"))
-
     try:
         import backlog_manager
     except ImportError:
         from src import backlog_manager
-    backlog_item = backlog_manager.get_next_backlog_item()
+    backlog_item = backlog_manager.get_next_backlog_item(level=1)
+
+    curriculum_suggestions = backlog_manager.get_candidate_curriculum_digest(level=1, limit=5)
+    suggestions_prompt = ""
+    if curriculum_suggestions:
+        suggestions_prompt = "\n\nPENDING CURRICULUM SUGGESTIONS (you may select one or propose another fundamental topic):\n" + curriculum_suggestions
+
+    standing_directives = get_active_general_directives("level_1")
+    directives_prompt = ""
+    if standing_directives:
+        directives_prompt = "\n\nPROFESSOR STANDING DIRECTIVES:\n" + "\n".join(f"- {d}" for d in standing_directives)
 
     missing_prereq = get_last_missing_prerequisite(current_index)
-    if backlog_item:
-        print(f"[CLOSED-LOOP FEEDBACK] Prioritizing backlog research point: '{backlog_item['question']}'")
-        next_concept = backlog_item['question']
-    elif missing_prereq:
+    if missing_prereq:
         print(f"[CLOSED-LOOP FEEDBACK] Prioritizing missing Level 2 prerequisite: '{missing_prereq}'")
         next_concept = missing_prereq
+    elif backlog_item:
+        candidate_name = backlog_item.get("concept") or backlog_item.get("question")
+        print(f"[CLOSED-LOOP FEEDBACK] Prioritizing curriculum candidate: '{candidate_name}'")
+        next_concept = candidate_name
     elif dry_run:
         next_concept = "Quantum Entanglement"
     else:
@@ -511,8 +583,9 @@ def main():
             if excluded_concepts:
                 exclusion_prompt = "\n\nCRITICAL DEDUPLICATION RULE:\nDo NOT select any of the following already-existing concepts:\n" + "\n".join(f"- {c}" for c in excluded_concepts)
 
-            if pattern_guidance or exclusion_prompt:
-                topic_task.description += (pattern_guidance + exclusion_prompt)
+            combined_guidance = (pattern_guidance or "") + (directives_prompt or "") + (suggestions_prompt or "") + (exclusion_prompt or "")
+            if combined_guidance:
+                topic_task.description += combined_guidance
 
             topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback(f"topic_crew_att{attempt}"))
             candidate_concept = str(topic_crew.kickoff()).strip()
