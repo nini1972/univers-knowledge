@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-12T01:14:08.286183+00:00  
-> **Total Analyzed Concepts:** 276 | **Total Discovered Equations:** 9235 | **Discovered Bridges:** 470
+> **Generated:** 2026-09-13T01:21:24.591563+00:00  
+> **Total Analyzed Concepts:** 281 | **Total Discovered Equations:** 9355 | **Discovered Bridges:** 473
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 85 concepts:
+**Occurrences:** Appears in 86 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -93,6 +93,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
+- **Level 2**: Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry
 
 ### ` 1.380649 \times 10^{-23} `
 **Occurrences:** Appears in 28 concepts:
@@ -185,7 +186,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
 
 ### ` \Phi `
-**Occurrences:** Appears in 24 concepts:
+**Occurrences:** Appears in 25 concepts:
 - **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
@@ -210,6 +211,30 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness
 - **Level 3**: Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure
 - **Level 3**: Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure
+- **Level 1**: What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?
+
+### ` \phi `
+**Occurrences:** Appears in 20 concepts:
+- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
+- **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
+- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
+- **Level 1**: What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?
+- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
+- **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
+- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
+- **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
+- **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
+- **Level 1**: How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?
+- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
+- **Level 2**: Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics
+- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension
+- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
+- **Level 2**: Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation
+- **Level 2**: Initial State Entropy and Pre-Big Bang Cosmological Evolution
+- **Level 1**: To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?
+- **Level 2**: Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem
+- **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
+- **Level 2**: Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry
 
 ### ` \gamma `
 **Occurrences:** Appears in 20 concepts:
@@ -233,28 +258,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints
 - **Level 3**: Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
-
-### ` \phi `
-**Occurrences:** Appears in 19 concepts:
-- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
-- **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
-- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
-- **Level 1**: What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?
-- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
-- **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
-- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
-- **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
-- **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
-- **Level 1**: How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?
-- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
-- **Level 2**: Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics
-- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension
-- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
-- **Level 2**: Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation
-- **Level 2**: Initial State Entropy and Pre-Big Bang Cosmological Evolution
-- **Level 1**: To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?
-- **Level 2**: Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem
-- **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
 
 ### ` ^{-2} `
 **Occurrences:** Appears in 19 concepts:
@@ -401,8 +404,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 121 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 108 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 122 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 109 |
 | `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 103 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 75 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 63 |
@@ -411,5 +414,5 @@ These equations appear across multiple distinct concepts, serving as mathematica
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 13 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 116
-- **MATH_CONSISTENT Entries:** 63
+- **MATH_PROVEN Entries:** 117
+- **MATH_CONSISTENT Entries:** 65

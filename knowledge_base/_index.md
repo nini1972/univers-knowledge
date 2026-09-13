@@ -226,6 +226,7 @@ graph TD
     stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition["Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition"]:::theoretical
     loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity["Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity"]:::theoretical
     horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration["Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration"]:::theoretical
+    electroweak_vs_spontaneous_baryogenesis_in_explaining_matterantimatter_asymmetry["Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry"]:::theoretical
     asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry["Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"]:::theoretical
     ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
     dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem["DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem"]:::theoretical
@@ -256,6 +257,7 @@ graph TD
     quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures["Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures"]:::verified
     causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness["Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness"]:::theoretical
     entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis["Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis"]:::verified
+    quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence["Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence"]:::theoretical
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
     spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology["Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology"]:::theoretical
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
@@ -432,6 +434,7 @@ graph TD
     quantum_gravity --> stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition
     quantum_gravity --> loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
     general_relativity --> horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration
+    quantum_field_theory --> electroweak_vs_spontaneous_baryogenesis_in_explaining_matterantimatter_asymmetry
     quantum_chromodynamics_qcd --> dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem
     neutrino_oscillations --> leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation
     quantum_gravity --> symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity
@@ -439,6 +442,7 @@ graph TD
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution --- quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation
     can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness --- quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation
     landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures --- quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation
+    quantum_mechanics --> quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence
 ```
 
 ## Level 1: Fundamental Physics
@@ -600,6 +604,7 @@ graph TD
 - [Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration](level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration.md) [THEORETICAL]
 - [Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution](level_2_advanced_frameworks/dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution.md) [THEORETICAL]
 - [Ekpyrotic Universe Model versus Inflationary Cosmology Debate](level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md) [VERIFIED]
+- [Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry](level_2_advanced_frameworks/electroweak_vs_spontaneous_baryogenesis_in_explaining_matterantimatter_asymmetry.md) [THEORETICAL]
 - [Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies](level_2_advanced_frameworks/emergent_entropic_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies.md) [THEORETICAL]
 - [Emergent Gravity vs Loop Quantum Gravity Debate](level_2_advanced_frameworks/emergent_gravity_vs_quantum_loop_gravity_debate.md) [THEORETICAL]
 - [Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics](level_2_advanced_frameworks/emergent_gravity_vs_selfinteracting_dark_matter_in_explaining_galaxy_cluster_dynamics.md) [THEORETICAL]
@@ -699,6 +704,7 @@ graph TD
 - [Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions](level_3_emergence_and_intelligence/quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions.md) [THEORETICAL]
 - [Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations](level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md) [THEORETICAL]
 - [Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation](level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md) [THEORETICAL]
+- [Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence](level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md) [THEORETICAL]
 - [Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure](level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md) [THEORETICAL]
 - [Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](level_3_emergence_and_intelligence/spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]
