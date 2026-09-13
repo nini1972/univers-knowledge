@@ -95,6 +95,7 @@ graph TD
     quantum_mechanics["Quantum Mechanics"]:::verified
     quantum_sequential_growth_process_in_causal_set_cosmology["Quantum Sequential Growth (QSG) Process in Causal Set Cosmology"]:::theoretical
     quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
+    quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem["Quantum Vacuum Energy Contributions to the Cosmological Constant Problem"]:::theoretical
     quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
     quantum_vacuum_polarization["Quantum Vacuum Polarization"]:::verified
@@ -525,6 +526,7 @@ graph TD
 - [Quantum Mechanics](level_1_fundamental_physics/quantum_mechanics.md) [VERIFIED]
 - [Quantum Sequential Growth (QSG) Process in Causal Set Cosmology](level_1_fundamental_physics/quantum_sequential_growth_process_in_causal_set_cosmology.md) [THEORETICAL]
 - [Quantum Vacuum and Spacetime Structure](level_1_fundamental_physics/quantum_vacuum_and_spacetime_structure.md) [THEORETICAL]
+- [Quantum Vacuum Energy Contributions to the Cosmological Constant Problem](level_1_fundamental_physics/quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem.md) [THEORETICAL]
 - [Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation](level_1_fundamental_physics/quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation.md) [THEORETICAL]
 - [Quantum Vacuum Fluctuations and Zero-Point Energy](level_1_fundamental_physics/quantum_vacuum_fluctuations_and_zeropoint_energy.md) [VERIFIED]
 - [Quantum Vacuum Polarization](level_1_fundamental_physics/quantum_vacuum_polarization.md) [VERIFIED]

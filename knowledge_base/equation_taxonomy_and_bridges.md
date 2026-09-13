@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-13T09:31:24.286074+00:00  
-> **Total Analyzed Concepts:** 281 | **Total Discovered Equations:** 9355 | **Discovered Bridges:** 473
+> **Generated:** 2026-09-13T09:54:28.129890+00:00  
+> **Total Analyzed Concepts:** 282 | **Total Discovered Equations:** 9368 | **Discovered Bridges:** 473
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 86 concepts:
+**Occurrences:** Appears in 87 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -94,6 +94,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
 - **Level 2**: Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry
+- **Level 1**: Quantum Vacuum Energy Contributions to the Cosmological Constant Problem
 
 ### ` 1.380649 \times 10^{-23} `
 **Occurrences:** Appears in 28 concepts:
@@ -404,12 +405,12 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 122 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 109 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 103 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 75 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 123 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 110 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 104 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 76 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 63 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 37 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 38 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 33 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 13 |
 
