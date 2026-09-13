@@ -1,19 +1,19 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-08T01:57:07.018281+00:00",
+  "updated_at": "2026-09-13T09:30:52.914831+00:00",
   "stats": {
-    "total_nodes": 247,
-    "level_1_count": 114,
-    "level_2_count": 109,
-    "level_3_count": 24,
-    "total_edges": 141,
+    "total_nodes": 250,
+    "level_1_count": 109,
+    "level_2_count": 112,
+    "level_3_count": 29,
+    "total_edges": 147,
     "frontier_count": 0
   },
   "nodes": [
     {
-      "id": "arethereexperimentalstrategiestobetterconstrainneutrinodecaywidthsjandconfirmdecayinclusiveoscillationmodifications",
-      "title": "Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?",
+      "id": "howcanupcomingastrophysicalneutrinoobservatoriesenhanceflavorandspectralresolutiontobetterdistinguishneutrinodecayeffectsfromstandardoscillationsorsourcevariability",
+      "title": "Astrophysical Neutrino Flavor and Spectral Resolution Enhancement",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -24,17 +24,13 @@
         "1"
       ],
       "sources": [
-        "JUNO Collaboration",
-        "KamLAND Collaboration",
-        "DUNE Collaboration",
-        "T2K Collaboration",
-        "IceCube Collaboration"
+        "Approved Student Summary"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/are_there_experimental_strategies_to_better_constrain_neutrino_decay_widths_j_and_confirm_decayinclusive_oscillation_modifications.md"
+      "path": "knowledge_base/level_1_fundamental_physics/astrophysical_neutrino_flavor_and_spectral_resolution_enhancement.md"
     },
     {
-      "id": "arethereproposedorongoingcalibrationorcontrolmeasurementsdesignedtoruleoutconfoundingeffectsmimickingneutrinodecaysignalsinplannedorcurrentdetectorsetups",
-      "title": "Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?",
+      "id": "bayesianevidenceanalysisneutrinodecayhypothesis",
+      "title": "Joint Bayesian Evidence Analysis of the Neutrino Decay Hypothesis",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -45,11 +41,12 @@
         "1"
       ],
       "sources": [
-        "Current and planned neutrino experiments reports",
-        "DUNE collaboration documentation",
-        "IceCube project publications"
+        "GERDA Collaboration",
+        "KamLAND-Zen Collaboration",
+        "CUORE Collaboration",
+        "EXO-200 Collaboration"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/are_there_proposed_or_ongoing_calibration_or_control_measurements_designed_to_rule_out_confounding_effects_mimicking_neutrino_decay_signals_in_planned_or_current_detector_setups.md"
+      "path": "knowledge_base/level_1_fundamental_physics/bayesian_evidence_analysis_neutrino_decay_hypothesis.md"
     },
     {
       "id": "bigbangnucleosynthesis",
@@ -71,48 +68,8 @@
       "path": "knowledge_base/level_1_fundamental_physics/big_bang_nucleosynthesis.md"
     },
     {
-      "id": "canadetailedquantitativebreakdownofsystematicuncertaintiesinneutrinodecaylifetimemeasurementsbeprovidedforeachmajorexperimentalcollaboration",
-      "title": "Neutrino Decay Lifetime Limits",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_UNKNOWN",
-      "math_score": "0/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "SNO Collaboration",
-        "Super-Kamiokande Collaboration",
-        "T2K Collaboration",
-        "NOvA Collaboration",
-        "IceCube Collaboration"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_a_detailed_quantitative_breakdown_of_systematic_uncertainties_in_neutrino_decay_lifetime_measurements_be_provided_for_each_major_experimental_collaboration.md"
-    },
-    {
-      "id": "canarigorousmodelofwimpbaryogenesisbeconstructedthatnaturallysatisfiesthewashoutconstraintwithoutinvokingfinetunedflavorstructuresorheavymasshierarchies",
-      "title": "WIMP Baryogenesis Models",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONSISTENT",
-      "math_score": "3/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Various academic journals on particle physics",
-        "Reviews on baryogenesis and dark matter models",
-        "Current literature in theoretical cosmology"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_a_rigorous_model_of_wimp_baryogenesis_be_constructed_that_naturally_satisfies_the_washout_constraint_without_invoking_finetuned_flavor_structures_or_heavy_mass_hierarchies.md"
-    },
-    {
-      "id": "canindependentlaboratoryexperimentsdefinitivelydisentangleactivefluxlossduetoinvisibledecayfromfluxnormalizationsystematicerrors",
-      "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
+      "id": "arethereproposedorongoingcalibrationorcontrolmeasurementsdesignedtoruleoutconfoundingeffectsmimickingneutrinodecaysignalsinplannedorcurrentdetectorsetups",
+      "title": "Calibration Strategies to Rule Out Confounding Neutrino Decay Signals",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -123,72 +80,15 @@
         "1"
       ],
       "sources": [
-        "Current research papers on neutrino physics",
-        "DUNE experiment documentation",
-        "Statistical methods in particle physics"
+        "Current and planned neutrino experiments reports",
+        "DUNE collaboration documentation",
+        "IceCube project publications"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_independent_laboratory_experiments_definitively_disentangle_activeflux_loss_due_to_invisible_decay_from_flux_normalization_systematic_errors.md"
+      "path": "knowledge_base/level_1_fundamental_physics/calibration_strategies_for_neutrino_decay_signals.md"
     },
     {
-      "id": "canindependentpubliclyavailabledatasetsfromjunoduneorhyperkamiokandebereleasedtoenableexternalverificationofneutrinodecaybounds",
-      "title": "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Investigation Reports on JUNO, DUNE, and Hyper-Kamiokande collaborations",
-        "Collaborative Public Policy Documentation",
-        "Pilot Program Proposals"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_independent_publicly_available_datasets_from_juno_dune_or_hyperkamiokande_be_released_to_enable_external_verification_of_neutrino_decay_bounds.md"
-    },
-    {
-      "id": "canoperatordomainandspectraldecompositionanalysesforthenonhermitianhamiltonianwithdecaytermsberigorouslyestablished",
-      "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONSISTENT",
-      "math_score": "3/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Existing experimental constraints on nonlinear deviations",
-        "Functional analysis literature",
-        "Rigged Hilbert space studies"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_operator_domain_and_spectral_decomposition_analyses_for_the_nonhermitian_hamiltonian_with_decay_terms_be_rigorously_established.md"
-    },
-    {
-      "id": "canrigorousmanualdimensionalconsistencychecksbeperformedbyexpertstosupplementtheautomatedundecidableresult",
-      "title": "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_CONSISTENT",
-      "math_score": "3/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Source 1",
-        "Source 2",
-        "Source 3"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_rigorous_manual_dimensional_consistency_checks_be_performed_by_experts_to_supplement_the_automated_undecidable_result.md"
-    },
-    {
-      "id": "canthedimensionalconsistencybeconclusivelyverifiedusingadvancedsymbolicmethodsbeyondcurrentautomatedtools",
-      "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+      "id": "hastherebeenengagementwiththeoreticalandexperimentalneutrinophysicscollaborationstoimprovemodelconsistencyandempiricalteststrategiestomovebeyondpurelytheoreticalclassification",
+      "title": "Collaborative Empirical Test Strategies for Theoretical Neutrino Models",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "VERIFIED",
@@ -199,108 +99,11 @@
         "1"
       ],
       "sources": [
-        "Student-approved summary on dimensional consistency",
-        "Research papers on automated symbolic regression methods",
-        "Discussion on physical validity of dimensionful constants (Duff-Okun-Veneziano)"
+        "Research Report on Neutrino Physics",
+        "Comprehensive Studies of Neutrino Mass Mechanisms",
+        "Collaborative Findings from NuFIT, DUNE, KATRIN, KamLAND-Zen"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_the_dimensional_consistency_be_conclusively_verified_using_advanced_symbolic_methods_beyond_current_automated_tools.md"
-    },
-    {
-      "id": "canthemathematicalframeworkforneutrinodecaysurvivalprobabilitiesandflavoroscillationmodificationsberigorouslyrevisedandpeerreviewedtoachievefullmathematicalintegritycompliance",
-      "title": "Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Peer-reviewed journals on neutrino physics",
-        "T2K collaboration reports",
-        "NOvA experimental findings"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_the_mathematical_framework_for_neutrino_decay_survival_probabilities_and_flavor_oscillation_modifications_be_rigorously_revised_and_peerreviewed_to_achieve_full_mathematical_integrity_compliance.md"
-    },
-    {
-      "id": "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting",
-      "title": "Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_TOPOLOGICAL",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1",
-        "gravity",
-        "quantum_physics"
-      ],
-      "sources": [
-        "LIGO/Virgo collaborations",
-        "PBH observations",
-        "Theoretical framework studies"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_the_theoretical_predictions_from_quantum_extremal_surface_computations_and_modified_gravity_approaches_be_linked_to_potentially_observable_signatures_eg_in_black_hole_evaporation_or_gravitational_wave_echoes_to_enable_empirical_testing.md"
-    },
-    {
-      "id": "canyouclarifythecommutationrelationsmandprovidetheexplicitcalculationshowingtheconvergenceofthebchseriesforyournonhermitianeffectivehamiltonian",
-      "title": "Non-Hermitian Effective Hamiltonian for Neutral-Meson Systems",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Original Research Article on Non-Hermitian Hamiltonians",
-        "Textbook on Quantum Mechanics and Effective Field Theories",
-        "Relevant Review Papers on Particle Physics and Quantum Decoherence"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_you_clarify_the_commutation_relations_m__and_provide_the_explicit_calculation_showing_the_convergence_of_the_bch_series_for_your_nonhermitian_effective_hamiltonian.md"
-    },
-    {
-      "id": "canyouprovideacorrectedandverifiablebibliographyreplacingthefuturedated2025referencewithestablishedpeerreviewedmaterial",
-      "title": "Can you provide a corrected and verifiable bibliography, replacing the future-dated 2025 reference with established peer-reviewed material?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_TOPOLOGICAL",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Peer-reviewed literature on bibliometric error rates",
-        "Studies on DOI resolution techniques",
-        "Scholarly communication standards resources"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_you_provide_a_corrected_and_verifiable_bibliography_replacing_the_futuredated_2025_reference_with_established_peerreviewed_material.md"
-    },
-    {
-      "id": "canyouprovidearigorousderivationbasedproofofthemodifiedsurvivalprobabilityequationsusingnonhermitianhamiltoniansandlindbladoperatorformalism",
-      "title": "Modified Neutrino Survival Probabilities and Vacuum Decoherence",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research Paper on Modified Neutrino Survival Probabilities",
-        "Review on the Gorini-Kossakowski-Sudarshan-Lindblad Master Equation",
-        "Experimental Limits on Lorentz Violation and Quantum Gravity Effects"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/can_you_provide_a_rigorous_derivationbased_proof_of_the_modified_survival_probability_equations_using_nonhermitian_hamiltonians_and_lindblad_operator_formalism.md"
+      "path": "knowledge_base/level_1_fundamental_physics/collaborative_empirical_test_strategies_for_neutrino_models.md"
     },
     {
       "id": "cosmicinflationmechanisms",
@@ -380,8 +183,8 @@
       "path": "knowledge_base/level_1_fundamental_physics/cosmological_constant_and_dark_energy.md"
     },
     {
-      "id": "couldacomprehensivevisualschematicoftheneutrinodecayexperimentsbeproducedandincludedwithfuturereports",
-      "title": "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
+      "id": "covariantquantummeasureconstructionincausalsettheory",
+      "title": "Covariant Quantum Measure Construction in Causal Set Theory",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -392,30 +195,11 @@
         "1"
       ],
       "sources": [
-        "Initial proposal for visual schematic development.",
-        "Constraints on neutrino decay mechanisms literature.",
-        "Current standard-model references."
+        "Benincasa, D. M., & Dowker, H. (2005). Action for causal sets.",
+        "R. D. Sorkin (1991). On the problem of time in quantum gravity.",
+        "D. E. D. J. O. D. Sorkin (2019). Causal set theory: An Overview."
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/could_a_comprehensive_visual_schematic_of_the_neutrino_decay_experiments_be_produced_and_included_with_future_reports.md"
-    },
-    {
-      "id": "couldtheresearchersprovidesimulationstudiesorsensitivityanalysesquantifyingthediscoverypotentialandlimitsachievablewithcurrenttechnologiesunderrealisticexperimentalconditions",
-      "title": "Could the researchers provide simulation studies or sensitivity analyses quantifying the discovery potential and limits achievable with current technologies under realistic experimental conditions?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_CONSISTENT",
-      "math_score": "3/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Expert Review Report",
-        "Simulation Study Documentation",
-        "Sensitivity Analysis Case Studies"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/could_the_researchers_provide_simulation_studies_or_sensitivity_analyses_quantifying_the_discovery_potential_and_limits_achievable_with_current_technologies_under_realistic_experimental_conditions.md"
+      "path": "knowledge_base/level_1_fundamental_physics/covariant_quantum_measure_construction_in_causal_set_theory.md"
     },
     {
       "id": "cpviolation",
@@ -433,6 +217,44 @@
         "Standard scientific consensus"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cp_violation.md"
+    },
+    {
+      "id": "whichobservationalstrategiesornovelcrosscorrelationmethodscouldmosteffectivelybreakdegeneraciesbetweenneutrinodecaysignaturesandotherneutrinopropertyvariationsinupcomingsurveys",
+      "title": "Cross-Correlation Methods Breaking Degeneracies in Neutrino Decay Surveys",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research outlines a rigorous, theoretically consistent framework",
+        "Core strategy relies on joint analysis of early-Universe CMB and late-Universe multi-tracer cross-correlations",
+        "Efficacy supported by Fisher-matrix forecasting and standard cosmological perturbation theory"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cross_correlation_methods_breaking_neutrino_decay_degeneracies.md"
+    },
+    {
+      "id": "darkacousticoscillationsanddissipationindarksectormodels",
+      "title": "Dark Acoustic Oscillations and Dissipation in Complex Dark-Sector Models",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "ArXiv: 2109.12345",
+        "S. Das, et al. (2021). \"Dark Acoustic Oscillations and the Coproduction of Dark Matter.\" Journal of Cosmology and Astroparticle Physics.",
+        "J. Smith, et al. (2022). \"Self-interacting Dark Matter and Structure Formation.\" Physical Review D."
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/dark_acoustic_oscillations_and_dissipation_in_dark_sector_models.md"
     },
     {
       "id": "darkmatter",
@@ -454,8 +276,67 @@
       "path": "knowledge_base/level_1_fundamental_physics/dark_matter.md"
     },
     {
-      "id": "doestheinclusionofdarkacousticoscillationsordissipationincomplexdarksectormodelsalterthelargescalestructuresuccessofsidmcomparedtostandardcollisionlesscdm",
-      "title": "Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?",
+      "id": "dimensionalanalysisandunittracingofmodifiedsurvivalequations",
+      "title": "Dimensional Analysis and Unit Tracing of Modified Survival Equations",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Submitted research report on modified survival equations",
+        "Dimensional analysis methodology and verification processes",
+        "Mathematical integration of survival probability metrics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/dimensional_analysis_and_unit_tracing_of_modified_survival_equations.md"
+    },
+    {
+      "id": "whatspecificexperimentalstrategiesaremostpromisingforachievingdirectdetectionofneutrinodecay",
+      "title": "Direct Detection Strategies for Neutrino Decay",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Credible Independent Experimental Collaborations",
+        "Peer-Reviewed Journals on Neutrino Physics",
+        "Theoretical Frameworks in Particle Physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/direct_detection_strategies_for_neutrino_decay.md"
+    },
+    {
+      "id": "howcancosmologicalobservationsberefinedtobetterdiscriminatebetweenwarmdarkmattereffectspredictedbysterileneutrinosandcolddarkmatterscenarios",
+      "title": "Discriminating Warm vs Cold Dark Matter via Cosmological Probes",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "darkmatter"
+      ],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Lyman-α forest studies",
+        "Gravitational lensing observations",
+        "JWST early-universe structure formation data"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/discriminating_warm_vs_cold_dark_matter_via_cosmological_probes.md"
+    },
+    {
+      "id": "whatexperimentaladvancesarerequiredtounambiguouslydistinguishneutrinodecayeffectsfromoscillationnsianddecoherenceeffects",
+      "title": "Disentangling Neutrino Decay from NSI and Environmental Decoherence",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -466,30 +347,106 @@
         "1"
       ],
       "sources": [
-        "ArXiv: 2109.12345",
-        "S. Das, et al. (2021). \"Dark Acoustic Oscillations and the Coproduction of Dark Matter.\" Journal of Cosmology and Astroparticle Physics.",
-        "J. Smith, et al. (2022). \"Self-interacting Dark Matter and Structure Formation.\" Physical Review D."
+        "Source 1",
+        "Source 2",
+        "Source 3"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/does_the_inclusion_of_dark_acoustic_oscillations_or_dissipation_in_complex_darksector_models_alter_the_largescale_structure_success_of_sidm_compared_to_standard_collisionless_cdm.md"
+      "path": "knowledge_base/level_1_fundamental_physics/disentangling_neutrino_decay_from_nsi_and_decoherence.md"
     },
     {
-      "id": "doestheinclusionofpotentialnonstandardinteractionsnsiinthematterevolutionhamiltonianqualitativelyshifttheexistingboundsonneutrinodecaylifetimesatdune",
-      "title": "Does the inclusion of potential Non-Standard Interactions (NSI) in the matter-evolution Hamiltonian qualitatively shift the existing bounds on neutrino decay lifetimes at DUNE?",
+      "id": "disentanglingneutrinoinvisibledecayfromfluxnormalizationerrors",
+      "title": "Disentangling Neutrino Invisible Decay from Flux Normalization Errors",
       "level": 1,
       "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_CONJECTURED",
-      "math_score": "2/4",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
       "dependencies": [],
       "tags": [
         "1"
       ],
       "sources": [
-        "DUNE Collaboration",
-        "IceCube Collaboration",
-        "COHERENT Experiment"
+        "Current research papers on neutrino physics",
+        "DUNE experiment documentation",
+        "Statistical methods in particle physics"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/does_the_inclusion_of_potential_nonstandard_interactions_nsi_in_the_matterevolution_hamiltonian_qualitatively_shift_the_existing_bounds_on_neutrino_decay_lifetimes_at_dune.md"
+      "path": "knowledge_base/level_1_fundamental_physics/disentangling_neutrino_invisible_decay_from_flux_normalization_errors.md"
+    },
+    {
+      "id": "howmightfutureexperimentsorobservationsbedesignedtoeffectivelydistinguishbetweenfreezeinandfreezeoutdarkmatterproductionmechanisms",
+      "title": "Distinguishing Freeze-In and Freeze-Out Dark Matter Mechanisms",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research Report on Dark Matter Mechanisms",
+        "Astrophysical Journal",
+        "Physical Review D"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/distinguishing_freeze_in_and_freeze_out_dark_matter_mechanisms.md"
+    },
+    {
+      "id": "whatexperimentaladvancementsornovelobservationalsignaturescouldmosteffectivelydistinguishbetweenhiggsportaldarkmatterandsterileneutrinodarkmatterinthenextdecade",
+      "title": "Distinguishing Higgs Portal from Sterile Neutrino Dark Matter",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research on Higgs Portal Dark Matter",
+        "Studies on Sterile Neutrino Dark Matter",
+        "Comparative analysis of dark matter candidates"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/distinguishing_higgs_portal_from_sterile_neutrino_dark_matter.md"
+    },
+    {
+      "id": "distinguishingneutrinodecayfromdampinganddecoherence",
+      "title": "Distinguishing Neutrino Decay from Damping and Decoherence Mechanisms",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Comprehensive research on neutrino mechanisms",
+        "Theoretical frameworks in particle physics",
+        "Studies on neutrino decay and damping mechanisms"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/distinguishing_neutrino_decay_from_damping_and_decoherence.md"
+    },
+    {
+      "id": "dunenuclearcrosssectionuncertaintiesvsvisibleneutrinodecay",
+      "title": "DUNE Nuclear Cross-Section Uncertainties vs Visible Neutrino Decay",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Original analysis report",
+        "DUNE Collaboration publications",
+        "Theoretical framework discussions on neutrino decay"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/dune_nuclear_cross_section_uncertainties_vs_visible_neutrino_decay.md"
     },
     {
       "id": "electroweaksymmetrybreaking",
@@ -507,6 +464,161 @@
         "Standard scientific consensus"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/electroweak_symmetry_breaking.md"
+    },
+    {
+      "id": "whichopenquestionsandpotentialfalsificationtestsshouldbeprioritizedtomovetheframeworktowardsempiricalverification",
+      "title": "Empirical Falsification Priorities for Theoretical Physics Extensions",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Original Research Paper",
+        "Cosmological Surveys",
+        "Bayesian Analysis Studies"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/empirical_falsification_priorities_for_theoretical_physics.md"
+    },
+    {
+      "id": "empiricaltestsofspacetimediscretenessandentanglementgeometryduality",
+      "title": "Empirical Tests of Spacetime Discreteness and Entanglement-Geometry Duality",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research Report on Spacetime Discreteness and Entanglement",
+        "Candidate Theories of Quantum Gravity",
+        "Recent Phenomenological Tests in Quantum Physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/empirical_tests_of_spacetime_discreteness_and_entanglement_geometry_duality.md"
+    },
+    {
+      "id": "whatadvancementsornewdatafromupcomingexperimentscouldimprovethemathematicalmodelingandstrengthentheformalismofneutrinodecayconstraints",
+      "title": "Experimental Advancements in Neutrino Decay Constraints",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Experimental data from JUNO, DUNE, and IceCube",
+        "Theoretical frameworks in BSM physics",
+        "Principles of quantum mechanics and particle physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/experimental_advancements_in_neutrino_decay_constraints.md"
+    },
+    {
+      "id": "whatexperimentalcollaborationscouldprovidethelatestboundsorevidencerelevanttoneutrinodecay",
+      "title": "Experimental Collaboration Bounds on Neutrino Decay",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "NOvA Collaboration",
+        "T2K Collaboration",
+        "Planck Satellite Data",
+        "Baryon Acoustic Oscillation (BAO) Observations",
+        "CUPID-Mo Nuclear Decay Experiment",
+        "KATRIN Experiment"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/experimental_collaboration_bounds_on_neutrino_decay.md"
+    },
+    {
+      "id": "couldacomprehensivevisualschematicoftheneutrinodecayexperimentsbeproducedandincludedwithfuturereports",
+      "title": "Experimental Schematics and Layouts for Neutrino Decay Detection",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Initial proposal for visual schematic development.",
+        "Constraints on neutrino decay mechanisms literature.",
+        "Current standard-model references."
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/experimental_schematics_for_neutrino_decay_detection.md"
+    },
+    {
+      "id": "whatconcreteexperimentalsignaturescoulddistinguishquantumcausalsetsfromtensornetworkapproaches",
+      "title": "Experimental Signatures Distinguishing Causal Sets from Tensor Networks",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Fermi-LAT",
+        "Planck"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/experimental_signatures_distinguishing_causal_sets_from_tensor_networks.md"
+    },
+    {
+      "id": "canindependentpubliclyavailabledatasetsfromjunoduneorhyperkamiokandebereleasedtoenableexternalverificationofneutrinodecaybounds",
+      "title": "External Verification of Neutrino Decay Bounds via Open Datasets",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Investigation Reports on JUNO, DUNE, and Hyper-Kamiokande collaborations",
+        "Collaborative Public Policy Documentation",
+        "Pilot Program Proposals"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/external_verification_of_neutrino_decay_bounds_via_open_datasets.md"
+    },
+    {
+      "id": "fivegevasymmetricdarkmatterskipperccdconstraints",
+      "title": "5 GeV Asymmetric Dark Matter Mass Scale and Skipper-CCD Constraints",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Planck 2018",
+        "Experimental design specifications for Skipper-CCD detectors",
+        "Current dark matter theoretical frameworks"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/five_gev_asymmetric_dark_matter_skipper_ccd_constraints.md"
     },
     {
       "id": "generalrelativity",
@@ -528,8 +640,8 @@
       "path": "knowledge_base/level_1_fundamental_physics/general_relativity.md"
     },
     {
-      "id": "giventhatcurrentobservationalconstraintsforceboththeoriestowardthelimitofgrwhatistheminimumviabledegreeofmodificationthatremainsmathematicallystableandphysicallymotivatedforeithermodel",
-      "title": "Minimum Viable Modification to General Relativity",
+      "id": "higherordereffectsandnonstandardinteractionsinneutrinodynamics",
+      "title": "Integrating Higher-Order Effects and Non-Standard Interactions in Neutrino Dynamics",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -540,72 +652,15 @@
         "1"
       ],
       "sources": [
-        "Current observational constraints in gravity theories",
-        "PPN parameters and their implications",
-        "Analysis of Scalar-Tensor, f(R), Horndeski, and MOND frameworks"
+        "[Source Needed]",
+        "[Source Needed]",
+        "[Source Needed]"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/given_that_current_observational_constraints_force_both_theories_toward_the_limit_of_gr_what_is_the_minimum_viable_degree_of_modification_that_remains_mathematically_stable_and_physically_motivated_for_either_model.md"
+      "path": "knowledge_base/level_1_fundamental_physics/higher_order_effects_and_non_standard_interactions_in_neutrino_dynamics.md"
     },
     {
-      "id": "hastherebeenengagementwiththeoreticalandexperimentalneutrinophysicscollaborationstoimprovemodelconsistencyandempiricalteststrategiestomovebeyondpurelytheoreticalclassification",
-      "title": "Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research Report on Neutrino Physics",
-        "Comprehensive Studies of Neutrino Mass Mechanisms",
-        "Collaborative Findings from NuFIT, DUNE, KATRIN, KamLAND-Zen"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/has_there_been_engagement_with_theoretical_and_experimental_neutrino_physics_collaborations_to_improve_model_consistency_and_empirical_test_strategies_to_move_beyond_purely_theoretical_classification.md"
-    },
-    {
-      "id": "howcancosmologicalobservationsberefinedtobetterconstrainordetectneutrinodecaysignatures",
-      "title": "Refining Cosmological Observations to Better Constrain or Detect Neutrino Decay Signatures",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONSISTENT",
-      "math_score": "2/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Cosmological Perturbation Theory and Neutrino Physics Literature",
-        "Multiple Independent Publications on Neutrino Decay and Cosmology",
-        "Verification Report on Theoretical and Observational Assessments"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_can_cosmological_observations_be_refined_to_better_constrain_or_detect_neutrino_decay_signatures.md"
-    },
-    {
-      "id": "howcancosmologicalobservationsberefinedtobetterdiscriminatebetweenwarmdarkmattereffectspredictedbysterileneutrinosandcolddarkmatterscenarios",
-      "title": "How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Lyman-α forest studies",
-        "Gravitational lensing observations",
-        "JWST early-universe structure formation data"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_can_cosmological_observations_be_refined_to_better_discriminate_between_warm_dark_matter_effects_predicted_by_sterile_neutrinos_and_cold_dark_matter_scenarios.md"
-    },
-    {
-      "id": "howcanhydrodynamicsimulationsbestructuredtoconclusivelybreakthedegeneracybetweenbaryonicfeedbackeffectsanddarksectorphysicssfdmwaveeffectsvssidmcollisionsindwarfgalaxycores",
-      "title": "How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?",
+      "id": "hydrodynamicsimulationsbaryonicfeedbacksfdmsidm",
+      "title": "Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -620,177 +675,7 @@
         "Source 2",
         "Source 3"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_can_hydrodynamic_simulations_be_structured_to_conclusively_break_the_degeneracy_between_baryonic_feedback_effects_and_darksector_physics_sfdm_wave_effects_vs_sidm_collisions_in_dwarf_galaxy_cores.md"
-    },
-    {
-      "id": "howcansterileneutrinoproductionmechanismsbeconstrainedorclarifiedbyfutureneutrinooscillationorcosmologicalprobes",
-      "title": "How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Source 1",
-        "Source 2",
-        "Source 3"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_can_sterile_neutrino_production_mechanisms_be_constrained_or_clarified_by_future_neutrino_oscillation_or_cosmological_probes.md"
-    },
-    {
-      "id": "howcantheproposedcomparisonbetweennearbysteadyastrophysicalsourcesandthediffuseneutrinopopulationbestatisticallyquantifiedtoyieldanunambiguoustestgiventhat",
-      "title": "How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "NGC 1068 Research Papers",
-        "Astrophysical Journal Articles",
-        "Neutrino Physics Reviews"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_can_the_proposed_comparison_between_nearby_steady_astrophysical_sources_and_the_diffuse_neutrino_population_be_statistically_quantified_to_yield_an_unambiguous_test_given_that.md"
-    },
-    {
-      "id": "howcanupcomingastrophysicalneutrinoobservatoriesenhanceflavorandspectralresolutiontobetterdistinguishneutrinodecayeffectsfromstandardoscillationsorsourcevariability",
-      "title": "How can upcoming astrophysical neutrino observatories enhance flavor and spectral resolution to better distinguish neutrino decay effects from standard oscillations or source variability?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Approved Student Summary"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_can_upcoming_astrophysical_neutrino_observatories_enhance_flavor_and_spectral_resolution_to_better_distinguish_neutrino_decay_effects_from_standard_oscillations_or_source_variability.md"
-    },
-    {
-      "id": "howdononminimalextensionsorultravioletcompletionsofthesemodelsaffecttheirtestabilityandtheoreticalrobustnessinlightofplannedfutureexperiments",
-      "title": "How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Current Task Document",
-        "Research Report Dynamics",
-        "Effective Field Theory Analysis"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_do_nonminimal_extensions_or_ultraviolet_completions_of_these_models_affect_their_testability_and_theoretical_robustness_in_light_of_planned_future_experiments.md"
-    },
-    {
-      "id": "howmightambiguitiesinneutrinostatedefinitionsduringdecaybetheoreticallyandexperimentallyclarified",
-      "title": "How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Daya Bay Oscillation Experiment",
-        "KATRIN Experiment",
-        "Quantum Mechanics Literature"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_might_ambiguities_in_neutrino_state_definitions_during_decay_be_theoretically_and_experimentally_clarified.md"
-    },
-    {
-      "id": "howmightfutureexperimentsorobservationsbedesignedtoeffectivelydistinguishbetweenfreezeinandfreezeoutdarkmatterproductionmechanisms",
-      "title": "How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONSISTENT",
-      "math_score": "3/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research Report on Dark Matter Mechanisms",
-        "Astrophysical Journal",
-        "Physical Review D"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_might_future_experiments_or_observations_be_designed_to_effectively_distinguish_between_freezein_and_freezeout_dark_matter_production_mechanisms.md"
-    },
-    {
-      "id": "howmightpotentialdegeneraciesinastrophysicalsignalsbetweensfdmphononeffectsandalternativedarkmattermodelsberesolvedobservationally",
-      "title": "Superfluid Dark Matter Phonon Effects",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research on Superfluid Dark Matter phonon effects and alternative dark matter models",
-        "Studies addressing MOND-like phenomenology",
-        "Empirical strategies for testing superfluidity in dark matter"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_might_potential_degeneracies_in_astrophysical_signals_between_sfdm_phonon_effects_and_alternative_dark_matter_models_be_resolved_observationally.md"
-    },
-    {
-      "id": "howmighttheassumptionsoffundamentalspacetimediscretenessorentanglementgeometrydualitybetestedorchallengedempirically",
-      "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_TOPOLOGICAL",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research Report on Spacetime Discreteness and Entanglement",
-        "Candidate Theories of Quantum Gravity",
-        "Recent Phenomenological Tests in Quantum Physics"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_might_the_assumptions_of_fundamental_spacetime_discreteness_or_entanglementgeometry_duality_be_tested_or_challenged_empirically.md"
-    },
-    {
-      "id": "howwouldajointbayesianevidenceanalysissignificantlyalterthecurrentfrequentistconclusionthatthedecayhypothesisisonlya15fluctuation",
-      "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "GERDA Collaboration",
-        "KamLAND-Zen Collaboration",
-        "CUORE Collaboration",
-        "EXO-200 Collaboration"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/how_would_a_joint_bayesian_evidence_analysis_significantly_alter_the_current_frequentist_conclusion_that_the_decay_hypothesis_is_only_a_15_fluctuation.md"
+      "path": "knowledge_base/level_1_fundamental_physics/hydrodynamic_simulations_baryonic_feedback_sfdm_sidm.md"
     },
     {
       "id": "inflationarycosmology",
@@ -835,8 +720,8 @@
       "path": "knowledge_base/level_1_fundamental_physics/inflationary_reheating_mechanisms.md"
     },
     {
-      "id": "isitpossibletoprovidemoredetailedmathematicalderivationsanddimensionalconsistencycheckstoraisethemathverificationscore",
-      "title": "Is it possible to provide more detailed mathematical derivations and dimensional consistency checks to raise the math verification score?",
+      "id": "laboratorytestsofsidmandsfdmvariants",
+      "title": "Laboratory Haloscope and Light-Mediator Tests of SIDM and SFDM",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -847,11 +732,68 @@
         "1"
       ],
       "sources": [
-        "Research Report",
-        "Academic Journals",
-        "Peer-reviewed Articles"
+        "[PandaX Collaboration](https://example.com/pandax)",
+        "[LUX-ZEPLIN Collaboration](https://example.com/lz)",
+        "[Haloscopes and Atomic Clock Programs](https://example.com/haloscopes)"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/is_it_possible_to_provide_more_detailed_mathematical_derivations_and_dimensional_consistency_checks_to_raise_the_math_verification_score.md"
+      "path": "knowledge_base/level_1_fundamental_physics/laboratory_tests_of_sidm_and_sfdm_variants.md"
+    },
+    {
+      "id": "lisagravitationalwavesandadmphasetransitions",
+      "title": "To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Source on LISA and dark-sector transitions",
+        "Experimental physics literature on gravitational waves",
+        "Mathematical theories of phase transitions"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/lisa_gravitational_waves_and_adm_phase_transitions.md"
+    },
+    {
+      "id": "whatarethemostpromisingnearfutureexperimentalstrategiestoimprovedetectionsensitivityforaxiondarkmatterinthelowmassrange",
+      "title": "Low-Mass Axion Dark Matter Detection Strategies",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "DMRadio",
+        "HAYSTAC",
+        "MADMAX"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/low_mass_axion_dark_matter_detection_strategies.md"
+    },
+    {
+      "id": "canthemathematicalframeworkforneutrinodecaysurvivalprobabilitiesandflavoroscillationmodificationsberigorouslyrevisedandpeerreviewedtoachievefullmathematicalintegritycompliance",
+      "title": "Mathematical Formulation of Neutrino Decay Survival Probabilities",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Peer-reviewed journals on neutrino physics",
+        "T2K collaboration reports",
+        "NOvA experimental findings"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/mathematical_formulation_of_neutrino_decay_survival_probabilities.md"
     },
     {
       "id": "matterantimatterasymmetry",
@@ -888,6 +830,44 @@
         "Present scientific consensus on theoretical particle physics and cosmology"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/matterantimatter_asymmetry_mechanisms.md"
+    },
+    {
+      "id": "minimumviablemodificationstogeneralrelativity",
+      "title": "Minimum Viable Modifications to General Relativity",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Current observational constraints in gravity theories",
+        "PPN parameters and their implications",
+        "Analysis of Scalar-Tensor, f(R), Horndeski, and MOND frameworks"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/minimum_viable_modifications_to_general_relativity.md"
+    },
+    {
+      "id": "modifiedneutrinosurvivalprobabilitiesandvacuumdecoherence",
+      "title": "Modified Neutrino Survival Probabilities and Vacuum Decoherence",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research Paper on Modified Neutrino Survival Probabilities",
+        "Review on the Gorini-Kossakowski-Sudarshan-Lindblad Master Equation",
+        "Experimental Limits on Lorentz Violation and Quantum Gravity Effects"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/modified_neutrino_survival_probabilities_and_vacuum_decoherence.md"
     },
     {
       "id": "neutrinoanomaliesandsterileneutrinohypothesis",
@@ -945,6 +925,48 @@
         "Experimental neutrino measurement data repositories"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology.md"
+    },
+    {
+      "id": "canadetailedquantitativebreakdownofsystematicuncertaintiesinneutrinodecaylifetimemeasurementsbeprovidedforeachmajorexperimentalcollaboration",
+      "title": "Neutrino Decay Lifetime Limits and Systematic Uncertainties",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "SNO Collaboration",
+        "Super-Kamiokande Collaboration",
+        "T2K Collaboration",
+        "NOvA Collaboration",
+        "IceCube Collaboration"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_decay_lifetime_limits_and_systematic_uncertainties.md"
+    },
+    {
+      "id": "neutrinodecaywidthconstraintsanddecayinclusiveoscillations",
+      "title": "Neutrino Decay Width Constraints and Decay-Inclusive Oscillations",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "JUNO Collaboration",
+        "KamLAND Collaboration",
+        "DUNE Collaboration",
+        "T2K Collaboration",
+        "IceCube Collaboration"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_decay_width_constraints_and_decay_inclusive_oscillations.md"
     },
     {
       "id": "neutrinodecouplinganditseffectsonearlyuniversecosmology",
@@ -1197,6 +1219,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics.md"
     },
     {
+      "id": "neutrinostatedefinitionsandasymptoticdecaystates",
+      "title": "Neutrino State Definitions and Asymptotic States During Decay",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Daya Bay Oscillation Experiment",
+        "KATRIN Experiment",
+        "Quantum Mechanics Literature"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/neutrino_state_definitions_and_asymptotic_decay_states.md"
+    },
+    {
       "id": "neutrinolessdoublebetadecay",
       "title": "Neutrinoless Double Beta Decay",
       "level": 1,
@@ -1214,6 +1255,179 @@
         "Skeptical verification and evaluation studies addressing the phenomenon's verification criteria"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/neutrinoless_double_beta_decay.md"
+    },
+    {
+      "id": "whatnoveldetectordesignsmightimprovesensitivitytospectraldistortionsnearbetadecayendpointsbeyondcurrentcapabilitieslikekatrin",
+      "title": "Next-Generation Beta Decay Endpoint Spectrometry Beyond KATRIN",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "KATRIN Collaboration",
+        "Project 8 Team",
+        "HOLMES/ECHo Collaboration"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/next_generation_beta_decay_endpoint_spectrometry.md"
+    },
+    {
+      "id": "nonhermitianeffectivehamiltonianneutralmesonsystems",
+      "title": "Non-Hermitian Effective Hamiltonian for Neutral-Meson Systems",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Original Research Article on Non-Hermitian Hamiltonians",
+        "Textbook on Quantum Mechanics and Effective Field Theories",
+        "Relevant Review Papers on Particle Physics and Quantum Decoherence"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/non_hermitian_effective_hamiltonian_neutral_meson_systems.md"
+    },
+    {
+      "id": "nonmarkovianmemorykernelsinneutrinomatterpropagation",
+      "title": "Non-Markovian Memory Kernels in Non-Adiabatic Neutrino Matter Propagation",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "IceCube Collaboration, Phys. Rev. Lett.",
+        "DeepCore Collaboration, Phys. Rev. D",
+        "General Physics Concepts"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/non_markovian_memory_kernels_in_neutrino_matter_propagation.md"
+    },
+    {
+      "id": "whataretheimplicationsofnonstandardearlyuniversecosmologiesonthepredictedrelicabundancesforfreezeinversusfreezeoutmodels",
+      "title": "Non-Standard Early Cosmologies and Dark Matter Relic Abundances",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research on early universe cosmologies",
+        "Analysis of dark matter relic yields",
+        "Cosmological models and their parameters"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/non_standard_early_cosmologies_and_dark_matter_relic_abundances.md"
+    },
+    {
+      "id": "nonstandardinteractionsandneutrinodecaylifetimeboundsatdune",
+      "title": "Non-Standard Interactions and Neutrino Decay Lifetime Bounds at DUNE",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "DUNE Collaboration",
+        "IceCube Collaboration",
+        "COHERENT Experiment"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/non_standard_interactions_and_neutrino_decay_lifetime_bounds_at_dune.md"
+    },
+    {
+      "id": "whatspecificnumericalbenchmarksorsimulationscanbeperformedtoenhancethemathematicalintegrityverificationofneutrinodecayeffectsincosmologicalboltzmanncodes",
+      "title": "Numerical Benchmarks for Neutrino Decay in Cosmological Boltzmann Codes",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Student Summary Approval",
+        "Cosmological Physics Review Journal",
+        "Neutrino Research Papers Collection"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/numerical_benchmarks_for_neutrino_decay_in_boltzmann_codes.md"
+    },
+    {
+      "id": "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting",
+      "title": "Observational Signatures of Quantum Extremal Surfaces and Black Hole Evaporation",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "gravity",
+        "quantum_physics"
+      ],
+      "sources": [
+        "LIGO/Virgo collaborations",
+        "PBH observations",
+        "Theoretical framework studies"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/observational_signatures_of_quantum_extremal_surfaces_and_black_hole_evaporation.md"
+    },
+    {
+      "id": "observationalsignaturesuniquetosuperfluiddarkmatter",
+      "title": "Observational Signatures Unique to Superfluid Dark Matter",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Scientific Literature on Dark Matter Models",
+        "Pioneering Theories in Cosmology",
+        "Recent Observational Tests of Dark Matter"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/observational_signatures_unique_to_superfluid_dark_matter.md"
+    },
+    {
+      "id": "operatortheoreticfoundationsofneutrinodecay",
+      "title": "Operator-Theoretic Foundations of Neutrino Decay Survival Probabilities",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Original Research Paper on Neutrino Decay",
+        "Quantum Mechanics Textbook",
+        "Review of Operator Theory Applications"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/operator_theoretic_foundations_of_neutrino_decay.md"
     },
     {
       "id": "planckepochandtheinitialconditionsfortheuniverse",
@@ -1412,6 +1626,26 @@
       "path": "knowledge_base/level_1_fundamental_physics/quantum_mechanics.md"
     },
     {
+      "id": "whatspecificmathematicalorconceptualgapspreventthequantumsequentialgrowthprocessfrombeingfullyformulated",
+      "title": "Quantum Sequential Growth (QSG) Process in Causal Set Cosmology",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1",
+        "quantum_physics"
+      ],
+      "sources": [
+        "Rideout, D., & Sorkin, R. D. (Theoretical foundations of sequential growth dynamics)",
+        "Research on quantum mechanics and causality",
+        "Various mathematical conjectures related to quantum gravity"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_sequential_growth_process_in_causal_set_cosmology.md"
+    },
+    {
       "id": "quantumvacuumandspacetimestructure",
       "title": "Quantum Vacuum and Spacetime Structure",
       "level": 1,
@@ -1494,6 +1728,163 @@
       "path": "knowledge_base/level_1_fundamental_physics/quantum_vacuum_polarization.md"
     },
     {
+      "id": "whatfutureexperimentaltechnologiesortechniquescouldrealisticallyreducetheuncertaintiesinnuclearmatrixelementsimpactingneutrinolessdoublebetadecayanalyses",
+      "title": "Reducing Nuclear Matrix Element Uncertainties in 0vbb Decay",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Experimental programs on neutrinoless double-beta decay",
+        "Charge-exchange reactions studies",
+        "Bayesian uncertainty framework research"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/reducing_nuclear_matrix_element_uncertainties_in_0vbb_decay.md"
+    },
+    {
+      "id": "howcancosmologicalobservationsberefinedtobetterconstrainordetectneutrinodecaysignatures",
+      "title": "Refining Cosmological Observations for Neutrino Decay Signatures",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Cosmological Perturbation Theory and Neutrino Physics Literature",
+        "Multiple Independent Publications on Neutrino Decay and Cosmology",
+        "Verification Report on Theoretical and Observational Assessments"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/refining_cosmological_observations_for_neutrino_decay_signatures.md"
+    },
+    {
+      "id": "relativisticsimulationsdifferentiatingsfdmfromlambdacdm",
+      "title": "Relativistic Simulations Differentiating SFDM from Lambda-CDM",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Current research on Scalar Field Dark Matter (SFDM)",
+        "Studies in relativistic modeling and numerical simulations",
+        "Theoretical frameworks in cosmology"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/relativistic_simulations_differentiating_sfdm_from_lambda_cdm.md"
+    },
+    {
+      "id": "whataretheprospectsandtimelinesforobservationaladvancesegnextgenerationehtorimprovedgravitationalwavedetectorstoresolvecurrentdegeneraciesbetweenkerrandalternativeblackholemodels",
+      "title": "Resolving Kerr vs Alternative Black Hole Degeneracies via Next-Gen Probes",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Event Horizon Telescope",
+        "LIGO-Virgo-KAGRA",
+        "Next Generation Event Horizon Telescope (ngEHT)",
+        "Laser Interferometer Space Antenna (LISA)",
+        "Einstein Telescope",
+        "Cosmic Explorer"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/resolving_kerr_vs_alternative_black_hole_degeneracies.md"
+    },
+    {
+      "id": "screeningprotectedscalarfieldsvsnonlocalgravity",
+      "title": "Screening-Protected Scalar Fields vs Non-Local Gravity in Black Hole Mergers",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "scalartensorvsnonlocalgravitymodelsinexplaininglatetimecosmicacceleration"
+      ],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "LIGO Collaboration",
+        "Virgo Collaboration",
+        "KAGRA Collaboration"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/screening_protected_scalar_fields_vs_non_local_gravity.md"
+    },
+    {
+      "id": "whatexperimentalevidenceorsignatureswoulddecisivelydistinguishneutrinodecayfromsterileneutrinoornonstandardinteractionscenarios",
+      "title": "Signatures Distinguishing Neutrino Decay from Sterile Neutrino Scenarios",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Current analysis on BSM neutrino physics scenarios",
+        "Experimental constraints on neutrino decay and NSI",
+        "Theoretical frameworks in neutrino physics"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/signatures_distinguishing_neutrino_decay_from_sterile_neutrinos.md"
+    },
+    {
+      "id": "couldtheresearchersprovidesimulationstudiesorsensitivityanalysesquantifyingthediscoverypotentialandlimitsachievablewithcurrenttechnologiesunderrealisticexperimentalconditions",
+      "title": "Simulation Studies and Sensitivity Limits for Neutrino Decay Detectors",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Expert Review Report",
+        "Simulation Study Documentation",
+        "Sensitivity Analysis Case Studies"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors.md"
+    },
+    {
+      "id": "spectraldecompositionofnonhermitiandecayhamiltonians",
+      "title": "Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Existing experimental constraints on nonlinear deviations",
+        "Functional analysis literature",
+        "Rigged Hilbert space studies"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/spectral_decomposition_of_non_hermitian_decay_hamiltonians.md"
+    },
+    {
       "id": "standardmodelfermionmasshierarchiesandmixingmatrices",
       "title": "Standard Model Fermion Mass Hierarchies and Mixing Matrices",
       "level": 1,
@@ -1549,6 +1940,102 @@
       "path": "knowledge_base/level_1_fundamental_physics/standard_model_of_particle_physics.md"
     },
     {
+      "id": "statisticalchisquaredfitanalysisbsmneutrinophysics",
+      "title": "Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research Report on BSM Neutrino Physics",
+        "T2K Collaboration Results",
+        "NOvA Experimental Data",
+        "IceCube Neutrino Observatory Findings"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/statistical_chi_squared_fit_analysis_bsm_neutrino_physics.md"
+    },
+    {
+      "id": "statisticaltestsofpointsourcevsdiffuseastrophysicalneutrinos",
+      "title": "Statistical Tests of Point-Source vs Diffuse Astrophysical Neutrinos",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "NGC 1068 Research Papers",
+        "Astrophysical Journal Articles",
+        "Neutrino Physics Reviews"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/statistical_tests_of_point_source_vs_diffuse_astrophysical_neutrinos.md"
+    },
+    {
+      "id": "sterileneutrinoproductionmechanismsandcosmologicalconstraints",
+      "title": "Sterile Neutrino Production Mechanisms and Cosmological Constraints",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/sterile_neutrino_production_mechanisms_and_cosmological_constraints.md"
+    },
+    {
+      "id": "superfluiddarkmatterphononeffects",
+      "title": "Superfluid Dark Matter Phonon Effects",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Research on Superfluid Dark Matter phonon effects and alternative dark matter models",
+        "Studies addressing MOND-like phenomenology",
+        "Empirical strategies for testing superfluidity in dark matter"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/superfluid_dark_matter_phonon_effects.md"
+    },
+    {
+      "id": "tensornetworksindynamicallorentzianspacetimes",
+      "title": "Tensor Networks in Dynamical Lorentzian Spacetimes",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "[Ryu-Takayanagi Entanglement-Area Relation](https://arxiv.org/abs/0905.1317)",
+        "[Error-Correcting Codes in Quantum Gravity](https://arxiv.org/abs/1503.00014)",
+        "[Discrete Regge Calculus](https://arxiv.org/abs/1004.3293)"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/tensor_networks_in_dynamical_lorentzian_spacetimes.md"
+    },
+    {
       "id": "thehiggsboson",
       "title": "The Higgs Boson",
       "level": 1,
@@ -1566,337 +2053,8 @@
       "path": "knowledge_base/level_1_fundamental_physics/the_higgs_boson.md"
     },
     {
-      "id": "towhatdegreedocurrentuncertaintiesindunesnuclearcrossmodelbackgroundsegrpa2p2heffectsoverlapwiththeenergydependentspectraldistortionpredictedbyvisibleneutrinodecay",
-      "title": "The degeneracy between DUNE's nuclear cross-section modeling uncertainties and visible neutrino decay",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Original analysis report",
-        "DUNE Collaboration publications",
-        "Theoretical framework discussions on neutrino decay"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/to_what_degree_do_current_uncertainties_in_dunes_nuclear_crossmodel_backgrounds_eg_rpa_2p2h_effects_overlap_with_the_energydependent_spectral_distortion_predicted_by_visible_neutrino_decay.md"
-    },
-    {
-      "id": "whatadvancementsinrelativisticmodelingandnumericalsimulationsareneededtomoreconclusivelydifferentiatesfdmpredictionsfromcdmscenariosinstructureformation",
-      "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Current research on Scalar Field Dark Matter (SFDM)",
-        "Studies in relativistic modeling and numerical simulations",
-        "Theoretical frameworks in cosmology"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_advancements_in_relativistic_modeling_and_numerical_simulations_are_needed_to_more_conclusively_differentiate_sfdm_predictions_from_cdm_scenarios_in_structure_formation.md"
-    },
-    {
-      "id": "whatadvancementsornewdatafromupcomingexperimentscouldimprovethemathematicalmodelingandstrengthentheformalismofneutrinodecayconstraints",
-      "title": "Neutrino Decay",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Experimental data from JUNO, DUNE, and IceCube",
-        "Theoretical frameworks in BSM physics",
-        "Principles of quantum mechanics and particle physics"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_advancements_or_new_data_from_upcoming_experiments_could_improve_the_mathematical_modeling_and_strengthen_the_formalism_of_neutrino_decay_constraints.md"
-    },
-    {
-      "id": "whataretheimplicationsofnonstandardearlyuniversecosmologiesonthepredictedrelicabundancesforfreezeinversusfreezeoutmodels",
-      "title": "What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONSISTENT",
-      "math_score": "3/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research on early universe cosmologies",
-        "Analysis of dark matter relic yields",
-        "Cosmological models and their parameters"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_implications_of_nonstandard_early_universe_cosmologies_on_the_predicted_relic_abundances_for_freezein_versus_freezeout_models.md"
-    },
-    {
-      "id": "whatarethemostpromisingnearfutureexperimentalstrategiestoimprovedetectionsensitivityforaxiondarkmatterinthelowmassrange",
-      "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "DMRadio",
-        "HAYSTAC",
-        "MADMAX"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_most_promising_nearfuture_experimental_strategies_to_improve_detection_sensitivity_for_axion_dark_matter_in_the_low_mass_range.md"
-    },
-    {
-      "id": "whatarethemostpromisingupcomingobservationalorexperimentalteststhatcoulddirectlydetectsignaturesuniquetosuperfluiddarkmatter",
-      "title": "Superfluid Dark Matter",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONJECTURED",
-      "math_score": "3/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Scientific Literature on Dark Matter Models",
-        "Pioneering Theories in Cosmology",
-        "Recent Observational Tests of Dark Matter"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_most_promising_upcoming_observational_or_experimental_tests_that_could_directly_detect_signatures_unique_to_superfluid_dark_matter.md"
-    },
-    {
-      "id": "whataretheprospectsandtimelinesforobservationaladvancesegnextgenerationehtorimprovedgravitationalwavedetectorstoresolvecurrentdegeneraciesbetweenkerrandalternativeblackholemodels",
-      "title": "Prospects and Timelines for Observational Advances to Resolve Current Degeneracies between Kerr and Alternative Black Hole Models",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Event Horizon Telescope",
-        "LIGO-Virgo-KAGRA",
-        "Next Generation Event Horizon Telescope (ngEHT)",
-        "Laser Interferometer Space Antenna (LISA)",
-        "Einstein Telescope",
-        "Cosmic Explorer"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_prospects_and_timelines_for_observational_advances_eg_nextgeneration_eht_or_improved_gravitational_wave_detectors_to_resolve_current_degeneracies_between_kerr_and_alternative_black_hole_models.md"
-    },
-    {
-      "id": "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
-      "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Benincasa, D. M., & Dowker, H. (2005). Action for causal sets.",
-        "R. D. Sorkin (1991). On the problem of time in quantum gravity.",
-        "D. E. D. J. O. D. Sorkin (2019). Causal set theory: An Overview."
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_are_the_prospects_for_constructing_a_quantum_measure_satisfying_all_covariant_and_causality_requirements_in_causal_set_theory.md"
-    },
-    {
-      "id": "whatconcreteexperimentalsignaturescoulddistinguishquantumcausalsetsfromtensornetworkapproaches",
-      "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_UNKNOWN",
-      "math_score": "0/4",
-      "dependencies": [],
-      "tags": [
-        "1",
-        "quantum_physics"
-      ],
-      "sources": [
-        "Fermi-LAT",
-        "Planck"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_concrete_experimental_signatures_could_distinguish_quantum_causal_sets_from_tensor_network_approaches.md"
-    },
-    {
-      "id": "whatexperimentaladvancementsornovelobservationalsignaturescouldmosteffectivelydistinguishbetweenhiggsportaldarkmatterandsterileneutrinodarkmatterinthenextdecade",
-      "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research on Higgs Portal Dark Matter",
-        "Studies on Sterile Neutrino Dark Matter",
-        "Comparative analysis of dark matter candidates"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_advancements_or_novel_observational_signatures_could_most_effectively_distinguish_between_higgs_portal_dark_matter_and_sterile_neutrino_dark_matter_in_the_next_decade.md"
-    },
-    {
-      "id": "whatexperimentaladvancesarerequiredtounambiguouslydistinguishneutrinodecayeffectsfromoscillationnsianddecoherenceeffects",
-      "title": "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Source 1",
-        "Source 2",
-        "Source 3"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_advances_are_required_to_unambiguously_distinguish_neutrino_decay_effects_from_oscillation_nsi_and_decoherence_effects.md"
-    },
-    {
-      "id": "whatexperimentalcollaborationscouldprovidethelatestboundsorevidencerelevanttoneutrinodecay",
-      "title": "What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_CONSISTENT",
-      "math_score": "2/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "NOvA Collaboration",
-        "T2K Collaboration",
-        "Planck Satellite Data",
-        "Baryon Acoustic Oscillation (BAO) Observations",
-        "CUPID-Mo Nuclear Decay Experiment",
-        "KATRIN Experiment"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_collaborations_could_provide_the_latest_bounds_or_evidence_relevant_to_neutrino_decay.md"
-    },
-    {
-      "id": "whatexperimentaldesignsordataanalysescandefinitivelydistinguishneutrinodecayeffectsfromalternativedampingmechanismssuchasdecoherenceornonstandardinteractions",
-      "title": "What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Comprehensive research on neutrino mechanisms",
-        "Theoretical frameworks in particle physics",
-        "Studies on neutrino decay and damping mechanisms"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_designs_or_data_analyses_can_definitively_distinguish_neutrino_decay_effects_from_alternative_damping_mechanisms_such_as_decoherence_or_nonstandard_interactions.md"
-    },
-    {
-      "id": "whatexperimentalevidenceorsignatureswoulddecisivelydistinguishneutrinodecayfromsterileneutrinoornonstandardinteractionscenarios",
-      "title": "What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONJECTURED",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Current analysis on BSM neutrino physics scenarios",
-        "Experimental constraints on neutrino decay and NSI",
-        "Theoretical frameworks in neutrino physics"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_experimental_evidence_or_signatures_would_decisively_distinguish_neutrino_decay_from_sterile_neutrino_or_nonstandard_interaction_scenarios.md"
-    },
-    {
-      "id": "whatfutureexperimentaltechnologiesortechniquescouldrealisticallyreducetheuncertaintiesinnuclearmatrixelementsimpactingneutrinolessdoublebetadecayanalyses",
-      "title": "What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Experimental programs on neutrinoless double-beta decay",
-        "Charge-exchange reactions studies",
-        "Bayesian uncertainty framework research"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_future_experimental_technologies_or_techniques_could_realistically_reduce_the_uncertainties_in_nuclear_matrix_elements_impacting_neutrinoless_double_beta_decay_analyses.md"
-    },
-    {
-      "id": "whatnoveldetectordesignsmightimprovesensitivitytospectraldistortionsnearbetadecayendpointsbeyondcurrentcapabilitieslikekatrin",
-      "title": "What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "KATRIN Collaboration",
-        "Project 8 Team",
-        "HOLMES/ECHo Collaboration"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_novel_detector_designs_might_improve_sensitivity_to_spectral_distortions_near_beta_decay_endpoints_beyond_current_capabilities_like_katrin.md"
-    },
-    {
-      "id": "whatprogresshasbeenmadeinextendingtensornetworkmethodstofullydynamicallorentzianspacetimesreproducingclassicalgravity",
-      "title": "What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_TOPOLOGICAL",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "[Ryu-Takayanagi Entanglement-Area Relation](https://arxiv.org/abs/0905.1317)",
-        "[Error-Correcting Codes in Quantum Gravity](https://arxiv.org/abs/1503.00014)",
-        "[Discrete Regge Calculus](https://arxiv.org/abs/1004.3293)"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_progress_has_been_made_in_extending_tensor_network_methods_to_fully_dynamical_lorentzian_spacetimes_reproducing_classical_gravity.md"
-    },
-    {
       "id": "whatspecificexperimentalobservablesorsignaturescanuniquelydiscriminateneutrinodecayfrombackgroundprocessesandalternativenewphysicsscenariosindunejunooricecubedatasets",
-      "title": "What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?",
+      "title": "Unique Observables for Neutrino Decay in Major Detectors",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -1911,11 +2069,30 @@
         "Source 2",
         "Source 3"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_experimental_observables_or_signatures_can_uniquely_discriminate_neutrino_decay_from_background_processes_and_alternative_new_physics_scenarios_in_dune_juno_or_icecube_datasets.md"
+      "path": "knowledge_base/level_1_fundamental_physics/unique_observables_for_neutrino_decay_in_major_detectors.md"
     },
     {
-      "id": "whatspecificexperimentalsignaturecouldunambiguouslydifferentiateascreeningprotectedscalarfieldfromanonlocalinteractioninthecontextofstrongfieldgravityegbinaryblackholemergers",
-      "title": "What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?",
+      "id": "howdononminimalextensionsorultravioletcompletionsofthesemodelsaffecttheirtestabilityandtheoreticalrobustnessinlightofplannedfutureexperiments",
+      "title": "Ultraviolet Completions and Experimental Testability of BSM Physics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Current Task Document",
+        "Research Report Dynamics",
+        "Effective Field Theory Analysis"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/uv_completions_and_experimental_testability_of_bsm_models.md"
+    },
+    {
+      "id": "wimpbaryogenesismodelsandwashoutconstraints",
+      "title": "WIMP Baryogenesis Models and Washout Constraints",
       "level": 1,
       "category": "level_1_fundamental_physics",
       "status": "THEORETICAL",
@@ -1926,279 +2103,11 @@
         "1"
       ],
       "sources": [
-        "LIGO Collaboration",
-        "Virgo Collaboration",
-        "KAGRA Collaboration"
+        "Various academic journals on particle physics",
+        "Reviews on baryogenesis and dark matter models",
+        "Current literature in theoretical cosmology"
       ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_experimental_signature_could_unambiguously_differentiate_a_screeningprotected_scalar_field_from_a_nonlocal_interaction_in_the_context_of_strongfield_gravity_eg_binary_black_hole_mergers.md"
-    },
-    {
-      "id": "whatspecificexperimentalstrategiesaremostpromisingforachievingdirectdetectionofneutrinodecay",
-      "title": "Direct Detection of Neutrino Decay Experimental Strategies",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_TOPOLOGICAL",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Credible Independent Experimental Collaborations",
-        "Peer-Reviewed Journals on Neutrino Physics",
-        "Theoretical Frameworks in Particle Physics"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_experimental_strategies_are_most_promising_for_achieving_direct_detection_of_neutrino_decay.md"
-    },
-    {
-      "id": "whatspecificexperimentalthresholdsinnextgenerationskipperccdorsubgevdarkmatterdetectorsarerequiredtoprovideameaningfulfalsificationtestforthe5gevadmmasssc",
-      "title": "5 GeV Asymmetric Dark Matter (ADM) Mass Scale",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Planck 2018",
-        "Experimental design specifications for Skipper-CCD detectors",
-        "Current dark matter theoretical frameworks"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_experimental_thresholds_in_nextgeneration_skipperccd_or_subgev_dark_matter_detectors_are_required_to_provide_a_meaningful_falsification_test_for_the_5_gev_adm_mass_sc.md"
-    },
-    {
-      "id": "whatspecificlaboratorybasedexperimentsuchasanaxionhaloscopeorlightmediatorsearchcoulddefinitivelyfalsifythemostplausiblevariantsofsidmorsfdm",
-      "title": "What specific laboratory-based experiment, such as an axion haloscope or light-mediator search, could definitively falsify the most plausible variants of SIDM or SFDM?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "[PandaX Collaboration](https://example.com/pandax)",
-        "[LUX-ZEPLIN Collaboration](https://example.com/lz)",
-        "[Haloscopes and Atomic Clock Programs](https://example.com/haloscopes)"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_laboratorybased_experiment_such_as_an_axion_haloscope_or_lightmediator_search_could_definitively_falsify_the_most_plausible_variants_of_sidm_or_sfdm.md"
-    },
-    {
-      "id": "whatspecificmathematicalorconceptualgapspreventthequantumsequentialgrowthprocessfrombeingfullyformulated",
-      "title": "Quantum Sequential Growth (QSG) Process",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONJECTURED",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1",
-        "quantum_physics"
-      ],
-      "sources": [
-        "Rideout, D., & Sorkin, R. D. (Theoretical foundations of sequential growth dynamics)",
-        "Research on quantum mechanics and causality",
-        "Various mathematical conjectures related to quantum gravity"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_mathematical_or_conceptual_gaps_prevent_the_quantum_sequential_growth_process_from_being_fully_formulated.md"
-    },
-    {
-      "id": "whatspecificmathematicalproofsorvalidationsareneededtoresolvethecurrentmathpendingstatus",
-      "title": "Formal Meta-Validation Framework for Resolving 'MATH_PENDING' Status",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Student Summary",
-        "Interactive Theorem Proving Literature",
-        "Bayesian Model Comparison Studies"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_mathematical_proofs_or_validations_are_needed_to_resolve_the_current_mathpending_status.md"
-    },
-    {
-      "id": "whatspecificmathematicalsubtletiesorunstatedassumptionspreventedfullmathematicalintegritycompliance",
-      "title": "What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_CONJECTURED",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research Paper on Mathematical Integrity in Physics",
-        "Verification Report on Standard Models",
-        "Analysis of Path Integrals and Perturbative Techniques"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_mathematical_subtleties_or_unstated_assumptions_prevented_full_mathematical_integrity_compliance.md"
-    },
-    {
-      "id": "whatspecificnonmarkovianmemorykernelswouldariseifneutrinopropagationthroughearthsmatterdensityistreatedasatrulynonadiabaticprocess",
-      "title": "What specific non-Markovian memory kernels would arise if neutrino propagation through Earth's matter density is treated as a truly non-adiabatic process?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "IceCube Collaboration, Phys. Rev. Lett.",
-        "DeepCore Collaboration, Phys. Rev. D",
-        "General Physics Concepts"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_nonmarkovian_memory_kernels_would_arise_if_neutrino_propagation_through_earths_matter_density_is_treated_as_a_truly_nonadiabatic_process.md"
-    },
-    {
-      "id": "whatspecificnumericalbenchmarksorsimulationscanbeperformedtoenhancethemathematicalintegrityverificationofneutrinodecayeffectsincosmologicalboltzmanncodes",
-      "title": "What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONJECTURED",
-      "math_score": "2/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Student Summary Approval",
-        "Cosmological Physics Review Journal",
-        "Neutrino Research Papers Collection"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_numerical_benchmarks_or_simulations_can_be_performed_to_enhance_the_mathematical_integrity_verification_of_neutrino_decay_effects_in_cosmological_boltzmann_codes.md"
-    },
-    {
-      "id": "whatspecificoperatortheoreticproofscanbedevelopedtoensurefullmathematicalintegritycomplianceoftheneutrinodecaysurvivalprobabilityframework",
-      "title": "What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Original Research Paper on Neutrino Decay",
-        "Quantum Mechanics Textbook",
-        "Review of Operator Theory Applications"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_specific_operatortheoretic_proofs_can_be_developed_to_ensure_full_mathematical_integrity_compliance_of_the_neutrino_decay_survival_probability_framework.md"
-    },
-    {
-      "id": "whatstepscanbetakentointegratehigherordereffectsandnonstandardinteractionsconsistentlywithintheexistingframework",
-      "title": "Integrating Higher-Order Effects and Non-Standard Interactions Consistently Within the Existing Framework",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "[Source Needed]",
-        "[Source Needed]",
-        "[Source Needed]"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/what_steps_can_be_taken_to_integrate_higherorder_effects_and_nonstandard_interactions_consistently_within_the_existing_framework.md"
-    },
-    {
-      "id": "whichobservationalstrategiesornovelcrosscorrelationmethodscouldmosteffectivelybreakdegeneraciesbetweenneutrinodecaysignaturesandotherneutrinopropertyvariationsinupcomingsurveys",
-      "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research outlines a rigorous, theoretically consistent framework",
-        "Core strategy relies on joint analysis of early-Universe CMB and late-Universe multi-tracer cross-correlations",
-        "Efficacy supported by Fisher-matrix forecasting and standard cosmological perturbation theory"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/which_observational_strategies_or_novel_crosscorrelation_methods_could_most_effectively_break_degeneracies_between_neutrino_decay_signatures_and_other_neutrino_property_variations_in_upcoming_surveys.md"
-    },
-    {
-      "id": "whichopenquestionsandpotentialfalsificationtestsshouldbeprioritizedtomovetheframeworktowardsempiricalverification",
-      "title": "Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Original Research Paper",
-        "Cosmological Surveys",
-        "Bayesian Analysis Studies"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/which_open_questions_and_potential_falsification_tests_should_be_prioritized_to_move_the_framework_towards_empirical_verification.md"
-    },
-    {
-      "id": "willyouperformacompletedimensionalanalysistableforyourproposedmodifiedsurvivalequationsshowingexplicitsiunittracingtoprovetheyaredimensionless",
-      "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "THEORETICAL",
-      "math_status": "MATH_CONSISTENT",
-      "math_score": "3/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Submitted research report on modified survival equations",
-        "Dimensional analysis methodology and verification processes",
-        "Mathematical integration of survival probability metrics"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/will_you_perform_a_complete_dimensional_analysis_table_for_your_proposed_modified_survival_equations_showing_explicit_si_unit_tracing_to_prove_they_are_dimensionless.md"
-    },
-    {
-      "id": "willyouprovideastatisticalchisquaredfitanalysiscomparingyourproposedmodificationsagainstcontemporarydatasetsfromt2knovaoricecube",
-      "title": "Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics",
-      "level": 1,
-      "category": "level_1_fundamental_physics",
-      "status": "VERIFIED",
-      "math_status": "MATH_PROVEN",
-      "math_score": "4/4",
-      "dependencies": [],
-      "tags": [
-        "1"
-      ],
-      "sources": [
-        "Research Report on BSM Neutrino Physics",
-        "T2K Collaboration Results",
-        "NOvA Experimental Data",
-        "IceCube Neutrino Observatory Findings"
-      ],
-      "path": "knowledge_base/level_1_fundamental_physics/will_you_provide_a_statistical_chisquared_fit_analysis_comparing_your_proposed_modifications_against_contemporary_datasets_from_t2k_nova_or_icecube.md"
+      "path": "knowledge_base/level_1_fundamental_physics/wimp_baryogenesis_models_and_washout_constraints.md"
     },
     {
       "id": "asymmetricdarkmattervsdarkmatterdecaytohiddensectorphotonsinexplainingdarkmatterrelicabundance",
@@ -2252,7 +2161,7 @@
       "math_score": "4/4",
       "dependencies": [
         "darkmatter",
-        "canarigorousmodelofwimpbaryogenesisbeconstructedthatnaturallysatisfiesthewashoutconstraintwithoutinvokingfinetunedflavorstructuresorheavymasshierarchies",
+        "wimpbaryogenesismodelsandwashoutconstraints",
         "matterantimatterasymmetry"
       ],
       "tags": [
@@ -2725,7 +2634,7 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
       "dependencies": [
-        "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
+        "covariantquantummeasureconstructionincausalsettheory",
         "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
         "quantumgravity"
       ],
@@ -3041,6 +2950,28 @@
       "path": "knowledge_base/level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md"
     },
     {
+      "id": "electroweakvsspontaneousbaryogenesisinexplainingmatterantimatterasymmetry",
+      "title": "Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "electroweaksymmetrybreaking",
+        "matterantimatterasymmetry"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/electroweak_vs_spontaneous_baryogenesis_in_explaining_matterantimatter_asymmetry.md"
+    },
+    {
       "id": "emergententropicgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
       "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
       "level": 2,
@@ -3329,7 +3260,7 @@
       "math_score": "0/4",
       "dependencies": [
         "holographicprinciplevsloopquantumgravityinquantumgravityresearch",
-        "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
+        "covariantquantummeasureconstructionincausalsettheory",
         "quantumgravity"
       ],
       "tags": [
@@ -3568,7 +3499,7 @@
       "math_score": "0/4",
       "dependencies": [
         "quantumgravity",
-        "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory"
+        "covariantquantummeasureconstructionincausalsettheory"
       ],
       "tags": [
         "2",
@@ -4150,6 +4081,28 @@
       "path": "knowledge_base/level_2_advanced_frameworks/screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration.md"
     },
     {
+      "id": "sterileneutrinovsfuzzydarkmatterinexplainingstructureformation",
+      "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "howcancosmologicalobservationsberefinedtobetterdiscriminatebetweenwarmdarkmattereffectspredictedbysterileneutrinosandcolddarkmatterscenarios",
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Independent X-ray Studies",
+        "Lyman-alpha Observations",
+        "Structure Formation Models"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/sterile_neutrino_vs_fuzzy_dark_matter_in_explaining_structure_formation.md"
+    },
+    {
       "id": "stochasticgravityvsdiosipenroseobjectivecollapseinexplainingthequantumtoclassicaltransition",
       "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
       "level": 2,
@@ -4529,6 +4482,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md"
     },
     {
+      "id": "typeiseesawvsradiativeneutrinomassgeneration",
+      "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Loualidi et al. (2026) - Fabricated Reference Rejected",
+        "Experimental Observations & Constraints by KATRIN, Planck, and Oscillation Experiments",
+        "NuFIT (2023) Data Analysis"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md"
+    },
+    {
       "id": "vacuumdecayandcosmologicalinflationaryterminationdebate",
       "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
       "level": 2,
@@ -4569,6 +4541,23 @@
       "path": "knowledge_base/level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md"
     },
     {
+      "id": "afalsifiablethermodynamicresourcetheoryofbiologicalquantumcoherencedecoherenceworkextractionandinformationprocessing",
+      "title": "A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Student Summary"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md"
+    },
+    {
       "id": "algorithmiccomplexitylimitsofhierarchicalstructureformationinselforganizingcosmologicalnetworks",
       "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
       "level": 3,
@@ -4588,13 +4577,13 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md"
     },
     {
-      "id": "canintegratedinformationtheoryiitbeformalizedwithinspacetimegeometrytoaddressthehardproblemofconsciousness",
-      "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+      "id": "axiomaticbridgeprinciplesfrommicrophysicalcausalstructuretophenomenalunityafalsifiabletestofintegratedinformationtheoryunderphysicalistclosure",
+      "title": "Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure",
       "level": 3,
       "category": "level_3_emergence_and_intelligence",
       "status": "THEORETICAL",
       "math_status": "MATH_CONJECTURED",
-      "math_score": "4/4",
+      "math_score": "2/4",
       "dependencies": [],
       "tags": [
         "3"
@@ -4604,7 +4593,28 @@
         "Source 2",
         "Source 3"
       ],
-      "path": "knowledge_base/level_3_emergence_and_intelligence/can_integrated_information_theory_iit_be_formalized_within_spacetime_geometry_to_address_the_hard_problem_of_consciousness.md"
+      "path": "knowledge_base/level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md"
+    },
+    {
+      "id": "causalclosuremultiplerealizabilityandtheexplanatorygapanaxiomaticandempiricallyfalsifiablephysicalistframeworkforconsciousness",
+      "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Approved as a Level 3 theoretical framework, not as verified physical law.",
+        "The skeptic score is 5/6, equivalent to 4.17/5 and above the required threshold.",
+        "The report has adequate source diversity and mathematical grounding.",
+        "Explicit limitations noted in the report.",
+        "Causal closure, multiple realizability, explanatory-gap resolution, and IIT must remain classified as [THEORETICAL] pending reproducible operational measurements and decisive falsification tests."
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md"
     },
     {
       "id": "computationalcomplexityandscalabilityofselforganizingsystemsincosmologicalandbiologicalneuralnetworks",
@@ -4683,6 +4693,25 @@
         "Source 3"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md"
+    },
+    {
+      "id": "formalizingintegratedinformationtheorywithinspacetimegeometry",
+      "title": "Formalizing Integrated Information Theory (IIT) within Spacetime Geometry",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Source 1",
+        "Source 2",
+        "Source 3"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md"
     },
     {
       "id": "informationtheoreticcomplexityandemergenthierarchiesinthecosmicwebacomparativeanalysisofneuralnetworksandlargescalestructureevolution",
@@ -4970,6 +4999,44 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md"
     },
     {
+      "id": "quantumfisherinformationboundsonavianradicalpairmagnetoreceptiontestingquantumenhancementovertheclassicalfisherboundunderdecoherence",
+      "title": "Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Current Task Student Summary",
+        "Quantum Mechanics Literature",
+        "Biological Quantum Effects Research"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md"
+    },
+    {
+      "id": "renormalizationgroupconstraintsonintegratedinformationtestingcgmicrounderphysicalistcausalclosure",
+      "title": "Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Verified Skeptic Audit Report",
+        "Theoretical Literature on Renormalization Group and Integrated Information",
+        "Published Empirical Limitations in Physicalist Causal Closure Studies"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md"
+    },
+    {
       "id": "spectralfractaldimensionconvergencequantifyingselfsimilarityincosmicwebvoidsandbiologicalneuralnetworktopology",
       "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
       "level": 3,
@@ -5030,6 +5097,16 @@
   "edges": [
     {
       "source": "darkmatter",
+      "target": "howcancosmologicalobservationsberefinedtobetterdiscriminatebetweenwarmdarkmattereffectspredictedbysterileneutrinosandcolddarkmatterscenarios",
+      "type": "component_theory"
+    },
+    {
+      "source": "scalartensorvsnonlocalgravitymodelsinexplaininglatetimecosmicacceleration",
+      "target": "screeningprotectedscalarfieldsvsnonlocalgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
       "target": "asymmetricdarkmattervsdarkmatterdecaytohiddensectorphotonsinexplainingdarkmatterrelicabundance",
       "type": "component_theory"
     },
@@ -5044,7 +5121,7 @@
       "type": "component_theory"
     },
     {
-      "source": "canarigorousmodelofwimpbaryogenesisbeconstructedthatnaturallysatisfiesthewashoutconstraintwithoutinvokingfinetunedflavorstructuresorheavymasshierarchies",
+      "source": "wimpbaryogenesismodelsandwashoutconstraints",
       "target": "asymmetricdarkmattervswimpbaryogenesisinexplainingmatterantimatterasymmetry",
       "type": "component_theory"
     },
@@ -5169,7 +5246,7 @@
       "type": "component_theory"
     },
     {
-      "source": "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
+      "source": "covariantquantummeasureconstructionincausalsettheory",
       "target": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
       "type": "component_theory"
     },
@@ -5249,6 +5326,11 @@
       "type": "component_theory"
     },
     {
+      "source": "electroweaksymmetrybreaking",
+      "target": "electroweakvsspontaneousbaryogenesisinexplainingmatterantimatterasymmetry",
+      "type": "component_theory"
+    },
+    {
       "source": "darkmatter",
       "target": "emergententropicgravityvscolddarkmatterinresolvinggalacticrotationcurvediscrepancies",
       "type": "component_theory"
@@ -5319,7 +5401,7 @@
       "type": "component_theory"
     },
     {
-      "source": "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
+      "source": "covariantquantummeasureconstructionincausalsettheory",
       "target": "holographicprinciplevscausalsettheoryinquantumgravitydebate",
       "type": "component_theory"
     },
@@ -5364,7 +5446,7 @@
       "type": "component_theory"
     },
     {
-      "source": "whataretheprospectsforconstructingaquantummeasuresatisfyingallcovariantandcausalityrequirementsincausalsettheory",
+      "source": "covariantquantummeasureconstructionincausalsettheory",
       "target": "loopquantumgravityversuscausalsettheoryinquantumgravity",
       "type": "component_theory"
     },
@@ -5534,6 +5616,16 @@
       "type": "component_theory"
     },
     {
+      "source": "howcancosmologicalobservationsberefinedtobetterdiscriminatebetweenwarmdarkmattereffectspredictedbysterileneutrinosandcolddarkmatterscenarios",
+      "target": "sterileneutrinovsfuzzydarkmatterinexplainingstructureformation",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "sterileneutrinovsfuzzydarkmatterinexplainingstructureformation",
+      "type": "component_theory"
+    },
+    {
       "source": "quantumgravityapproachesloopquantumgravityvsstringtheory",
       "target": "stringtheoryversusloopquantumgravityinquantumgravityresearch",
       "type": "component_theory"
@@ -5681,6 +5773,11 @@
     {
       "source": "darkmatter",
       "target": "dfszvsksvzaxionmodelsinexplainingdarkmatterandstrongcpproblem",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "matterantimatterasymmetry",
+      "target": "electroweakvsspontaneousbaryogenesisinexplainingmatterantimatterasymmetry",
       "type": "foundational_prerequisite"
     },
     {
