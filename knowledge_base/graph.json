@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-13T09:54:28.057387+00:00",
+  "updated_at": "2026-09-14T01:32:37.492039+00:00",
   "stats": {
-    "total_nodes": 251,
-    "level_1_count": 110,
-    "level_2_count": 112,
+    "total_nodes": 253,
+    "level_1_count": 111,
+    "level_2_count": 113,
     "level_3_count": 29,
     "total_edges": 147,
     "frontier_count": 0
@@ -27,6 +27,25 @@
         "Approved Student Summary"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/astrophysical_neutrino_flavor_and_spectral_resolution_enhancement.md"
+    },
+    {
+      "id": "baryonacousticoscillations",
+      "title": "Baryon Acoustic Oscillations",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Empirical galaxy clustering observations",
+        "Cosmic Microwave Background (CMB) observations",
+        "Cosmological models and frameworks"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/baryon_acoustic_oscillations.md"
     },
     {
       "id": "bayesianevidenceanalysisneutrinodecayhypothesis",
@@ -4189,6 +4208,25 @@
         "Reuter, M., 'Nonperturbative Evolution Equation for Quantum Gravity', Physical Review D, 1998"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/string_theory_vs_asymptotic_safety_in_quantum_gravity_debate.md"
+    },
+    {
+      "id": "su5vsso10grandunificationfermionmassesandprotondecay",
+      "title": "SU(5) vs SO(10) Grand Unification: Fermion Masses and Proton Decay",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Research on Grand Unification Theories",
+        "Super-Kamiokande proton decay data",
+        "Particle Data Group (PDG) review"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/su5_vs_so10_grand_unification_fermion_masses_and_proton_decay.md"
     },
     {
       "id": "superfluiddarkmattervsemergentgravityinexplaininggalacticdynamics",
