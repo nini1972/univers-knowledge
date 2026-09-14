@@ -255,6 +255,7 @@ def main():
     max_retries = 2
     retries = 0
     follow_up_context = ""
+    research_output = ""
     evaluation_decision = {
         "status": "rejected",
         "reason_code": "missing_evaluation",
@@ -320,12 +321,19 @@ def main():
                 "summary_for_archivist": f"Dry-run approved summary for Level 3 concept: {concept_name}.",
                 "follow_up_questions": []
             })
+            research_output = f"Research report for {concept_name}.\nSources:\n- Author A (2020), https://doi.org/10.1234/test"
             skeptic_output = "Verification Score: 6/6"
             math_output = "**Math Score:** 4/4\n[MATH_PROVEN]"
         else:
             evaluation_output = str(evaluation_crew.kickoff()).strip()
             skeptic_output = ""
             math_output = ""
+            research_parts = []
+            if hasattr(research_task_a, 'output') and research_task_a.output:
+                research_parts.append(str(research_task_a.output.raw))
+            if hasattr(research_task_b, 'output') and research_task_b.output:
+                research_parts.append(str(research_task_b.output.raw))
+            research_output = "\n\n".join(research_parts)
             if hasattr(verify_task, 'output') and verify_task.output:
                 skeptic_output = str(verify_task.output.raw)
             if hasattr(math_task, 'output') and math_task.output:
@@ -478,6 +486,7 @@ def main():
         math_status=math_status_val,
         math_score=math_score,
         math_report=math_output,
+        research_report=research_output,
     )
 
     final_agents = [archivist]

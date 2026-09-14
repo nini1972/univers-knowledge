@@ -213,6 +213,63 @@ The electromagnetic force is one of the four fundamental forces.
         self.assertIn('status: "[THEORETICAL]"', normalized)
 
 
+    def test_normalize_markdown_preserves_rich_academic_citations(self):
+        raw = r"""---
+title: "Baryon Acoustic Oscillations"
+level: 1
+status: "[VERIFIED]"
+sources:
+  - "Eisenstein, D. J., et al. (2005), 'Detection of the Baryon Acoustic Peak in SDSS', https://doi.org/10.1086/466512"
+  - "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
+  - "Anderson, L., et al. (2014), 'The clustering of galaxies in SDSS-III', https://arxiv.org/abs/1312.4877"
+---
+
+# Baryon Acoustic Oscillations
+
+## 1. Overview
+BAO overview.
+
+## 2. Detailed Explanation
+Detailed explanation.
+
+## 3. Mathematical Framework
+$r_s = \int_0^{t_{\text{dec}}} \frac{c_s dt}{a(t)}$
+
+## 4. Skeptical Perspectives & Alternative Hypotheses
+Skepticism notes.
+
+## 5. Verification & Skeptic's Notes
+Verification info.
+
+## 6. Visual Representation
+[VISUAL_PENDING: pending]
+
+## 7. Related Concepts
+- [Cosmic Microwave Background]
+"""
+        normalized = normalize_markdown_output(raw)
+        valid, errors = validate_concept_markdown(normalized)
+        self.assertTrue(valid, f"Validation failed with errors: {errors}")
+        self.assertIn("https://doi.org/10.1086/466512", normalized)
+        self.assertIn("Eisenstein, D. J.", normalized)
+        self.assertIn("https://arxiv.org/abs/1312.4877", normalized)
+
+    def test_document_knowledge_task_includes_citation_preservation(self):
+        from src.tasks.universe_tasks import UniverseTasks
+        from src.agents.universe_agents import UniverseAgents
+        tasks = UniverseTasks()
+        agents = UniverseAgents()
+        archivist = agents.archivist_agent()
+        task = tasks.document_knowledge_task(
+            archivist,
+            "knowledge_base/level_1/test.md",
+            approved_summary="Test summary",
+            research_report="Research found paper: Eisenstein (2005) doi:10.1086/466512"
+        )
+        self.assertIn("SOURCE CITATION PRESERVATION MANDATE", task.description)
+        self.assertIn("Eisenstein (2005) doi:10.1086/466512", task.description)
+        self.assertIn("sources:", task.description)
+
     def test_parse_skeptic_checklist_score_explicit(self):
         text = "Some critique here.\nVerification Score: 4/5\nOther notes."
         score, total = parse_skeptic_checklist_score(text)
@@ -414,6 +471,34 @@ The electromagnetic force is one of the four fundamental forces.
         raw_low = '{"status": "rejected", "confidence_score": -0.5}'
         decision_low = parse_student_decision(raw_low)
         self.assertEqual(decision_low["confidence_score"], 0.0)
+
+
+    def test_parse_student_decision_with_raw_latex_escapes(self):
+        # LLMs often output unescaped LaTeX like \mid, \(, \perp in JSON strings.
+        raw = r'''
+        {
+          "status": "rejected",
+          "reason_code": "ontological_category_error",
+          "epistemic_status": "[CONJECTURED]",
+          "confidence_score": 0.96,
+          "summary_for_archivist": "Reject because \(I(X_t;X_{t+1}\mid M_t)=0\) is unproven.",
+          "detailed_rationale": "Markov pair \(I(X_t;X_{t+1}\mid M_t)=0\) and \(M_t=\arg\max_{S\subseteq X_t}\Phi(S)\).",
+          "agent_needs": {
+            "researcher_needs": ["Specify whether \(S\) denotes system states."],
+            "math_needs": ["Define \(M_t=X_t^{(S)}\)."],
+            "human_advisor_needed": false,
+            "professor_question": ""
+          },
+          "follow_up_questions": ["Which \(\Phi(S)\) definition is intended?"]
+        }
+        '''
+        decision = parse_student_decision(raw)
+        self.assertEqual(decision["status"], "rejected")
+        self.assertEqual(decision["reason_code"], "ontological_category_error")
+        self.assertEqual(decision["epistemic_status"], "[CONJECTURED]")
+        self.assertEqual(decision["confidence_score"], 0.96)
+        self.assertIn("Markov pair", decision["detailed_rationale"])
+        self.assertEqual(len(decision["follow_up_questions"]), 1)
 
 
 if __name__ == "__main__":

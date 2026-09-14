@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-09-14T01:07:14.697787+00:00",
+  "updated_at": "2026-09-14T20:49:48.069118+00:00",
   "stats": {
-    "total_entries": 284,
-    "total_equations": 9462,
-    "math_proven_entries": 118,
-    "math_consistent_entries": 66,
-    "total_bridges": 476,
+    "total_entries": 287,
+    "total_equations": 9553,
+    "math_proven_entries": 119,
+    "math_consistent_entries": 67,
+    "total_bridges": 477,
     "tracked_constants": 8
   },
   "bridges": [
@@ -605,6 +605,116 @@
       ]
     },
     {
+      "equation": "\\Phi",
+      "concept_count": 26,
+      "concepts": [
+        {
+          "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
+          "level": 2
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
+          "level": 3
+        },
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
+          "level": 3
+        },
+        {
+          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
+          "level": 1
+        },
+        {
+          "title": "Exploring the Integrative Dimensions of Information Theory in Consciousness and Cosmic Self-Organization",
+          "level": 3
+        },
+        {
+          "title": "Exploring the Formalization of Integrated Information Theory within Cosmological Contexts",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
+          "level": 1
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Thermodynamic Constraints on Information Processing in Non-Equilibrium Phase Transitions of Cosmological Intelligence",
+          "level": 3
+        },
+        {
+          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
+          "level": 3
+        },
+        {
+          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
+          "level": 3
+        },
+        {
+          "title": "Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions",
+          "level": 3
+        },
+        {
+          "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
+          "level": 3
+        },
+        {
+          "title": "Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure",
+          "level": 3
+        },
+        {
+          "title": "Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure",
+          "level": 3
+        },
+        {
+          "title": "What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?",
+          "level": 1
+        },
+        {
+          "title": "Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \\(X_{t+1}\\perp X_t\\mid M_t\\), \\(H(M_t)<H(X_t)\\), and \\(M_t=\\arg\\max_{S\\subseteq X_t}\\Phi(S)\\)",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\alpha",
       "concept_count": 25,
       "concepts": [
@@ -707,112 +817,6 @@
         {
           "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\Phi",
-      "concept_count": 25,
-      "concepts": [
-        {
-          "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
-          "level": 2
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
-          "level": 3
-        },
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
-          "level": 2
-        },
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry",
-          "level": 3
-        },
-        {
-          "title": "What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?",
-          "level": 1
-        },
-        {
-          "title": "Exploring the Integrative Dimensions of Information Theory in Consciousness and Cosmic Self-Organization",
-          "level": 3
-        },
-        {
-          "title": "Exploring the Formalization of Integrated Information Theory within Cosmological Contexts",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
-        },
-        {
-          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Thermodynamic Constraints on Information Processing in Non-Equilibrium Phase Transitions of Cosmological Intelligence",
-          "level": 3
-        },
-        {
-          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
-          "level": 3
-        },
-        {
-          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
-          "level": 3
-        },
-        {
-          "title": "Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions",
-          "level": 3
-        },
-        {
-          "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
-          "level": 3
-        },
-        {
-          "title": "Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure",
-          "level": 3
-        },
-        {
-          "title": "Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure",
-          "level": 3
-        },
-        {
-          "title": "What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?",
-          "level": 1
         }
       ]
     },
@@ -5739,6 +5743,24 @@
       ]
     },
     {
+      "equation": "P(X_{t+1}|X_t)",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
+          "level": 3
+        },
+        {
+          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
+          "level": 3
+        },
+        {
+          "title": "Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \\(X_{t+1}\\perp X_t\\mid M_t\\), \\(H(M_t)<H(X_t)\\), and \\(M_t=\\arg\\max_{S\\subseteq X_t}\\Phi(S)\\)",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "M_D(r)",
       "concept_count": 2,
       "concepts": [
@@ -7513,6 +7535,20 @@
         {
           "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "P(X_{t+1} | X_t)",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \\(X_{t+1}\\perp X_t\\mid M_t\\), \\(H(M_t)<H(X_t)\\), and \\(M_t=\\arg\\max_{S\\subseteq X_t}\\Phi(S)\\)",
+          "level": 3
         }
       ]
     },
@@ -9599,20 +9635,6 @@
         {
           "title": "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "P(X_{t+1}|X_t)",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
-          "level": 3
-        },
-        {
-          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
-          "level": 3
         }
       ]
     },
@@ -23022,6 +23044,130 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-09-14T01:06:07.645477+00:00"
+    },
+    {
+      "concept": "Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \\(X_{t+1}\\perp X_t\\mid M_t\\), \\(H(M_t)<H(X_t)\\), and \\(M_t=\\arg\\max_{S\\subseteq X_t}\\Phi(S)\\)",
+      "level": 3,
+      "equations": [
+        "X_{t+1}\\perp X_t\\mid M_t",
+        "H(M_t)<H(X_t)",
+        "M_t=\\arg\\max_{S\\subseteq X_t}\\Phi(S)",
+        "\\Phi(X) = \\min \\left\\{ H(X \\mid X') \\text{ for all valid partitions } X' \\right\\}",
+        "H(M_t) < H(X_t)",
+        "M_t = \\arg\\max_{S \\subseteq X_t} \\Phi(S)",
+        "H(X) = -\\sum_{x \\in X} P(x) \\log P(x)",
+        "\\Phi(S) = H(S) - H(S|R)",
+        "X_{t+1} \\perp X_t \\mid M_t",
+        "M_t",
+        "\\Phi",
+        "M_t = \\arg \\max_{S \\subseteq X_t} \\Phi(S)",
+        "X_t",
+        "X_{t+1}",
+        "\\Phi(S)",
+        "\\Phi(X) = \\min\\{H(X \\mid X') \\text{ for all valid partitions } X'\\}",
+        "M_t = \\arg\\max \\Phi(S)",
+        "\\arg\\max \\Phi(S)",
+        "\\\\Phi(X)=\\\\min\\\\{H(X\\\\mid X')\\\\}\\",
+        "X_{t+1}\\\\perp X_t\\\\mid M_t\\",
+        "H(M_t)<H(X_t)\\",
+        "M_t=\\\\arg\\\\max_{S\\\\subseteq X_t}\\\\Phi(S)\\",
+        "P(X_{t+1}\\\\mid X_t)\\",
+        "\\\\pi:X_t\\\\mapsto M_t\\",
+        "\\\\Phi\\",
+        "M_t=\\\\arg\\\\max\\\\Phi(S)\\"
+      ],
+      "equation_count": 26,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-14T01:17:49.049576+00:00"
+    },
+    {
+      "concept": "Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \\(X_{t+1}\\perp X_t\\mid M_t\\), \\(H(M_t)<H(X_t)\\), and \\(M_t=\\arg\\max_{S\\subseteq X_t}\\Phi(S)\\)",
+      "level": 3,
+      "equations": [
+        "P(X_{t+1} \\mid X_t)",
+        "H(X) = -\\sum p(x) \\log p(x)",
+        "M_t = \\arg \\max_{S \\subseteq X_t}\\Phi(S)",
+        "X_{t+1} \\perp X_t \\mid M_t",
+        "H(M_t) < H(X_t)",
+        "\\Phi",
+        "M_t",
+        "X_{t+1}",
+        "X_t",
+        "\\pi: X_t \\mapsto M_t",
+        "\\Phi(S)",
+        "P(X_{t+1}|X_t)",
+        "P(X_{t+1}|M_t) = P(X_{t+1}|X_t)",
+        "P(X_t)",
+        "\\arg\\max \\Phi(S)",
+        "X_{t+1}\\perp X_t\\mid M_t",
+        "H(M_t)<H(X_t)",
+        "M_t=\\arg\\max_{S\\subseteq X_t}\\Phi(S)",
+        "\\Phi(X) = \\min \\{H(X | X')\\}",
+        "P(X_{t+1} | X_t)",
+        "X_{t+1} \\perp X_t",
+        "I(X_t;X_{t+1}\\\\mid M_t)=0\\",
+        "P(X_{t+1}\\\\mid X_t,M_t)=P(X_{t+1}\\\\mid M_t)\\",
+        "H(M_t)<H(X_t)\\",
+        "M_t=\\\\arg\\\\max_{S\\\\subseteq X_t}\\\\Phi(S)\\",
+        "\\\\Phi(X)=\\\\min\\\\{H(X\\\\mid X')\\\\}\\",
+        "X'\\",
+        "M_t\\",
+        "M_t=\\\\pi(X_t)\\",
+        "I(X_t;X_{t+1}\\\\mid M_t)\\",
+        "\\\\Phi\\",
+        "\\\\pi\\",
+        "I(X_t;X_{t+1}\\\\mid \\\\pi(X_t))=0\\",
+        "H(\\\\pi(X_t))<H(X_t)\\",
+        "\\\\arg\\\\max_{S\\\\subseteq X_t}\\\\Phi(S)\\"
+      ],
+      "equation_count": 35,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-14T01:22:40.024583+00:00"
+    },
+    {
+      "concept": "Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \\(X_{t+1}\\perp X_t\\mid M_t\\), \\(H(M_t)<H(X_t)\\), and \\(M_t=\\arg\\max_{S\\subseteq X_t}\\Phi(S)\\)",
+      "level": 3,
+      "equations": [
+        "\\Phi",
+        "\\Phi(S) = \\min\\{H(X \\mid X')\\}",
+        "M_t = \\arg\\max_{S\\subseteq X_t}\\Phi(S)",
+        "X_{t+1} \\perp X_t \\mid M_t",
+        "X_t",
+        "M_t",
+        "\\pi(X_t)",
+        "X_{t+1}\\perp X_t\\mid M_t",
+        "H(M_t)<H(X_t)",
+        "M_t=\\arg\\max_{S\\subseteq X_t}\\Phi(S)",
+        "I(X;Y \\mid Z) = H(X \\mid Z) + H(Y \\mid Z) - H(X,Y \\mid Z)",
+        "H(X) = -\\sum p(x) \\log p(x)",
+        "M_t = \\pi(X_t)",
+        "I(X_t; X_{t+1} | M_t) = 0 \\iff P(X_{t+1} | X_t, M_t) = P(X_{t+1} | M_t)",
+        "M_t = \\arg\\max_{S \\subseteq X_t} \\Phi(S)",
+        "\\Phi(X) = \\min\\{H(X | X')\\} \\quad \\text{with defined } X'",
+        "I(X_t;X_{t+1} \\mid M_t) = 0",
+        "H(M_t) < H(X_t)",
+        "I(X_t; X_{t+1} | \\pi(X_t)) = 0",
+        "H(\\pi(X_t)) \\geq H(X_t)",
+        "X_{t+1}",
+        "\\Phi(S)",
+        "t+1",
+        "\\pi",
+        "H(M_t)",
+        "I(X_t;X_{t+1}\\mid M_t)=0",
+        "M_t=\\pi(X_t)",
+        "\\arg\\max_{S\\subseteq X_t}\\Phi(S)",
+        "\\Phi(S)=\\min H(X\\mid X')",
+        "M_t=X_t^{(S)}"
+      ],
+      "equation_count": 30,
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-14T01:32:36.204458+00:00"
     }
   ]
 }

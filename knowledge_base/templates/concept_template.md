@@ -5,9 +5,9 @@ status: "[VERIFIED] or [THEORETICAL] or [REJECTED]"
 math_status: "[MATH_PROVEN] or [MATH_CONSISTENT] or [MATH_CONJECTURED] or [MATH_TOPOLOGICAL] or [MATH_FLAWED] or [MATH_PENDING]"
 math_score: "X/4"
 sources:
-  - Source 1 URL/Name
-  - Source 2 URL/Name
-  - Source 3 URL/Name
+  - "Author et al. (Year), 'Paper Title', https://doi.org/..."
+  - "Author et al. (Year), 'Paper Title', https://arxiv.org/abs/..."
+  - "Author et al. (Year), 'Paper Title', https://doi.org/..."
 ---
 
 # {Concept Name}

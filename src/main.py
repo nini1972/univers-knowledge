@@ -165,6 +165,7 @@ def run_level1_flow(next_concept: str):
     max_retries = 2
     retries = 0
     follow_up_context = ""
+    research_output = ""
     decision = {
         "status": "rejected",
         "reason_code": "missing_evaluation",
@@ -226,12 +227,16 @@ def run_level1_flow(next_concept: str):
                 "summary_for_archivist": f"Dry-run approved summary for {next_concept}.",
                 "follow_up_questions": []
             })
+            research_output = f"Research report for {next_concept}.\nSources:\n- Author A (2020), https://doi.org/10.1234/test"
             skeptic_output = "Verification Score: 6/6"
             math_output = "**Math Score:** 4/4\n[MATH_PROVEN]"
         else:
             evaluation_output = str(evaluation_crew.kickoff()).strip()
+            research_output = ""
             skeptic_output = ""
             math_output = ""
+            if hasattr(research_task, 'output') and research_task.output:
+                research_output = str(research_task.output.raw)
             if hasattr(verify_task, 'output') and verify_task.output:
                 skeptic_output = str(verify_task.output.raw)
             if hasattr(math_task, 'output') and math_task.output:
@@ -439,6 +444,7 @@ def run_level1_flow(next_concept: str):
         math_status=math_status_val,
         math_score=math_score,
         math_report=math_output,
+        research_report=research_output,
     )
 
     final_agents = [archivist]

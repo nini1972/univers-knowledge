@@ -113,7 +113,13 @@ def parse_student_decision(raw_output: str):
     try:
         data = json.loads(blob)
     except json.JSONDecodeError:
-        return {**DEFAULT_REJECTION}
+        try:
+            # LLMs frequently output raw LaTeX like \mid, \(, \arg, \phi in JSON strings without escaping.
+            # Replace single backslashes that are not valid JSON escape sequences with double backslashes.
+            repaired_blob = re.sub(r'\\(?!["\\/bfnrt]|u[0-9a-fA-F]{4})', r'\\\\', blob)
+            data = json.loads(repaired_blob)
+        except Exception:
+            return {**DEFAULT_REJECTION}
 
     status = _normalize_status(data.get("status", ""))
     if not status:
@@ -380,6 +386,10 @@ def normalize_markdown_output(raw_output: str):
     if sources_lines:
         for s in sources_lines:
             s_clean = s.strip().lstrip("-").strip()
+            if not ((s_clean.startswith('"') and s_clean.endswith('"')) or (s_clean.startswith("'") and s_clean.endswith("'"))):
+                if ": " in s_clean or s_clean.startswith("[") or s_clean.startswith("{"):
+                    escaped = s_clean.replace('"', '\\"')
+                    s_clean = f'"{escaped}"'
             repaired_lines.append(f"  - {s_clean}")
     else:
         repaired_lines.append(default_fm_keys["sources"])

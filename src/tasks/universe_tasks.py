@@ -462,7 +462,7 @@ class UniverseTasks:
             agent=agent
         )
 
-    def document_knowledge_task(self, agent, output_path, include_visual=True, approved_summary=None, math_status=None, math_score=None, math_report=None):
+    def document_knowledge_task(self, agent, output_path, include_visual=True, approved_summary=None, math_status=None, math_score=None, math_report=None, research_report=None):
         from pathlib import Path
         repo_root = Path(__file__).resolve().parent.parent
         template_file = repo_root / "knowledge_base" / "templates" / "concept_template.md"
@@ -483,9 +483,9 @@ class UniverseTasks:
                 level: {target_level}
                 status: "[VERIFIED] or [THEORETICAL]"
                 sources:
-                  - Source 1
-                  - Source 2
-                  - Source 3
+                  - "Author et al. (Year), 'Paper Title', https://doi.org/..."
+                  - "Author et al. (Year), 'Paper Title', https://arxiv.org/abs/..."
+                  - "Author et al. (Year), 'Paper Title', https://doi.org/..."
                 ---
 
                 # {{Concept Name}}
@@ -551,6 +551,36 @@ class UniverseTasks:
                 If no math report is available, write "[MATH_PENDING — will be populated by math_enrichment.py]".
             """).strip()
 
+        # Build explicit citation preservation instructions
+        if research_report:
+            research_context = research_report[:12000]
+            citation_instruction = dedent(f"""
+                IMPORTANT — SOURCE CITATION PRESERVATION MANDATE:
+                The specialist research report contains authentic scientific sources, papers, author names, DOIs, arXiv IDs, and publication years:
+                ---
+                {research_context}
+                ---
+                In the YAML frontmatter `sources:` list, you MUST extract and preserve the exact verified citations found in the research report above.
+                - Each source line MUST be formatted as: `"Author(s) (Year), 'Title', DOI or arXiv URL"`
+                  For example:
+                  sources:
+                    - "Eisenstein, D. J., et al. (2005), 'Detection of the Baryon Acoustic Peak in the Large-Scale Correlation Function of SDSS Luminous Red Galaxies', https://doi.org/10.1086/466512"
+                    - "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
+                    - "Author et al. (Year), 'Title', https://arxiv.org/abs/..."
+                - Do NOT condense or generalize sources into generic descriptions like 'Empirical observations' or 'Cosmological models'.
+                - Ensure all entries in `sources:` are enclosed in double quotes to prevent YAML formatting errors.
+                - You must include at least 3 distinct verified sources.
+            """).strip()
+        else:
+            citation_instruction = dedent("""
+                IMPORTANT — SOURCE CITATION PRESERVATION MANDATE:
+                In the YAML frontmatter `sources:` list, you MUST list specific authentic academic sources:
+                - Format each source as: `"Author(s) (Year), 'Title', DOI or arXiv URL"`
+                - Do NOT use generic placeholder categories like 'Empirical observations'.
+                - Ensure all entries in `sources:` are enclosed in double quotes.
+                - List at least 3 distinct verified sources.
+            """).strip()
+
         return Task(
             description=dedent(f"""
                 {summary_source} {visual_source}
@@ -560,11 +590,12 @@ class UniverseTasks:
                 CRITICAL STRUCTURE INSTRUCTIONS:
                 1. You must include the complete YAML frontmatter block starting and ending with '---' containing: title, level: {target_level}, status, sources, math_status, and math_score.
                 2. Use `level: {target_level}` in the frontmatter verbatim.
-                2. {math_yaml_instruction}
-                3. You must use the EXACT headings, numbering, and titles as defined in the template below. Do NOT omit any headings, and do NOT alter their names/numbers.
-                4. {visual_insert}
-                5. Do NOT wrap the entire output in markdown code fences like '```markdown'. Output raw markdown content directly.
-                6. {math_report_instruction}
+                3. {math_yaml_instruction}
+                4. {citation_instruction}
+                5. You must use the EXACT headings, numbering, and titles as defined in the template below. Do NOT omit any headings, and do NOT alter their names/numbers.
+                6. {visual_insert}
+                7. Do NOT wrap the entire output in markdown code fences like '```markdown'. Output raw markdown content directly.
+                8. {math_report_instruction}
 
                 TEMPLATE LAYOUT TO STRICTLY ADHERE TO:
                 {template_content}

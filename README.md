@@ -118,3 +118,13 @@ The `level_3_cosmology_and_astrophysics/` directory exists but no workflow step 
 **Status:** Standalone tool · Integration optional
 
 `src/math_enrichment.py` can retroactively add detailed step-by-step derivations (Section 8) and permanent math audit reports (Section 9) to existing documents. Currently run on-demand via CLI.
+
+how to check on Professor.md
+# View pending inquiries
+.venv\Scripts\python.exe scripts/consult_professor.py list
+
+# Provide guidance to the Student (e.g. instructing how to reformulate the Level 3 topic)
+.venv\Scripts\python.exe scripts/consult_professor.py answer adv-20260914-79ec8f "Separate the information-theoretic Markov sufficiency condition from the IIT postulate, and test them as distinct hypotheses."
+
+# Or dismiss it if you prefer to move to another topic
+.venv\Scripts\python.exe scripts/consult_professor.py dismiss adv-20260914-79ec8f

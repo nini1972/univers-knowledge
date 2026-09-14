@@ -292,6 +292,7 @@ def main():
     retries = 0
     follow_up_context = ""
     evaluation_output = ""
+    research_output = ""
     evaluation_decision = {
         "status": "rejected",
         "reason_code": "missing_evaluation",
@@ -362,12 +363,21 @@ def main():
                 "summary_for_archivist": f"Dry-run approved summary for debate: {theory_a} vs {theory_b}.",
                 "follow_up_questions": []
             })
+            research_output = f"Debate research for {theory_a} vs {theory_b}.\nSources:\n- Author A (2020), https://doi.org/10.1234/test"
             skeptic_output = "Verification Score: 6/6"
             math_output = "**Math Score:** 4/4\n[MATH_PROVEN]"
         else:
             evaluation_output = str(evaluation_crew.kickoff()).strip()
             skeptic_output = ""
             math_output = ""
+            research_parts = []
+            if hasattr(research_task_a, 'output') and research_task_a.output:
+                research_parts.append(str(research_task_a.output.raw))
+            if hasattr(research_task_b, 'output') and research_task_b.output:
+                research_parts.append(str(research_task_b.output.raw))
+            if hasattr(debate_task, 'output') and debate_task.output:
+                research_parts.append(str(debate_task.output.raw))
+            research_output = "\n\n".join(research_parts)
             if hasattr(debate_task, 'output') and debate_task.output:
                 skeptic_output = str(debate_task.output.raw)
             if hasattr(math_task, 'output') and math_task.output:
@@ -554,6 +564,7 @@ def main():
         math_status=math_status_val,
         math_score=math_score,
         math_report=math_output,
+        research_report=research_output,
     )
 
     final_agents = [archivist]
