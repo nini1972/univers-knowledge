@@ -58,13 +58,14 @@ async def _generate_image_async(prompt: str) -> str:
                 out_dir = os.path.join(root_dir, "knowledge_base", "images")
                 os.makedirs(out_dir, exist_ok=True)
 
-                # Need to use the fallback model gemini-2.5-flash-image if 3.x is unavailable
+                # Use Gemini 3.1 Flash Image (Nano Banana 2) by default, configurable via NANOBANANA_IMAGE_MODEL
+                image_model = os.getenv("NANOBANANA_IMAGE_MODEL", "gemini-3.1-flash-image-preview")
                 result = await session.call_tool(
                     "nanobanana_image_generation",
                     arguments={
                         "prompt": prompt,
                         "aspect_ratio": "16:9",
-                        "model": "gemini-2.5-flash-image",
+                        "model": image_model,
                         "output_directory": out_dir
                     }
                 )
