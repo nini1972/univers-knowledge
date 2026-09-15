@@ -58,10 +58,16 @@ async def _generate_image_async(prompt: str) -> str:
                 out_dir = os.path.join(root_dir, "knowledge_base", "images")
                 os.makedirs(out_dir, exist_ok=True)
 
-                # Try preferred model first, with automatic fallback if not yet provisioned in the GCP project/region
-                preferred_model = os.getenv("NANOBANANA_IMAGE_MODEL", "gemini-3.1-flash-image-preview")
+                # Try Generally Available (GA) model first, with automatic fallback across GA & legacy endpoints
+                preferred_model = os.getenv("NANOBANANA_IMAGE_MODEL", "gemini-3.1-flash-image")
                 candidate_models = [preferred_model]
-                for fallback in ["gemini-2.5-flash-image", "gemini-3-pro-image-preview"]:
+                for fallback in [
+                    "gemini-3.1-flash-image",
+                    "gemini-3.1-flash-lite-image",
+                    "gemini-3.1-flash-image-preview",
+                    "gemini-2.5-flash-image",
+                    "gemini-3-pro-image",
+                ]:
                     if fallback not in candidate_models:
                         candidate_models.append(fallback)
 
