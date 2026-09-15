@@ -31,22 +31,26 @@ async def _generate_image_async(prompt: str) -> str:
     if os.getenv("ENABLE_GENMEDIA", "true").lower() == "false":
         return "GENMEDIA_UNAVAILABLE: disabled by ENABLE_GENMEDIA=false"
 
-    try:
-        config_path = os.path.join(root_dir, "mcp-config.json")
-        with open(config_path) as f:
+    # Merge environment variables: defaults from mcp-config.json, overridden by os.environ
+    config_path = os.path.join(root_dir, "mcp-config.json")
+    env_vars = {}
+    if os.path.exists(config_path):
+        with open(config_path, "r") as f:
             config = json.load(f)
-        env_vars = config['mcpServers']['genmedia-nanobanana']['env']
-    except Exception:
-        env_vars = {}
+        env_vars = config.get('mcpServers', {}).get('genmedia-nanobanana', {}).get('env', {})
+
+    merged_env = {**env_vars, **os.environ.copy()}
+    if "GOOGLE_CLOUD_LOCATION" in merged_env and "LOCATION" not in os.environ:
+        merged_env["LOCATION"] = merged_env["GOOGLE_CLOUD_LOCATION"]
 
     bin_path = _resolve_nanobanana_binary(root_dir)
-    if not bin_path:
+    if not bin_path or not os.path.exists(bin_path):
         return "GENMEDIA_UNAVAILABLE: nanobanana MCP binary not found for this OS"
 
     server_params = StdioServerParameters(
         command=bin_path,
         args=[],
-        env={**os.environ.copy(), **env_vars}
+        env=merged_env
     )
 
     try:
