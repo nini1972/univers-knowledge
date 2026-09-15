@@ -5,7 +5,7 @@
       "args": [],
       "env": {
         "PROJECT_ID": "city-future-storyteller",
-        "LOCATION": "us-central1"
+        "LOCATION": "global"
       }
     },
     "genmedia-veo": {

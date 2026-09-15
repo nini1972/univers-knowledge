@@ -25,7 +25,7 @@ async def run():
             print("Available tools:", tools)
             
             # Call tool
-            image_model = os.getenv("NANOBANANA_IMAGE_MODEL", "gemini-3.1-flash-image-preview")
+            image_model = os.getenv("NANOBANANA_IMAGE_MODEL", "gemini-3.1-flash-image")
             result = await session.call_tool(
                 "nanobanana_image_generation",
                 arguments={
