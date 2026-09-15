@@ -58,42 +58,55 @@ async def _generate_image_async(prompt: str) -> str:
                 out_dir = os.path.join(root_dir, "knowledge_base", "images")
                 os.makedirs(out_dir, exist_ok=True)
 
-                # Use Gemini 3.1 Flash Image (Nano Banana 2) by default, configurable via NANOBANANA_IMAGE_MODEL
-                image_model = os.getenv("NANOBANANA_IMAGE_MODEL", "gemini-3.1-flash-image-preview")
-                result = await session.call_tool(
-                    "nanobanana_image_generation",
-                    arguments={
-                        "prompt": prompt,
-                        "aspect_ratio": "16:9",
-                        "model": image_model,
-                        "output_directory": out_dir
-                    }
-                )
+                # Try preferred model first, with automatic fallback if not yet provisioned in the GCP project/region
+                preferred_model = os.getenv("NANOBANANA_IMAGE_MODEL", "gemini-3.1-flash-image-preview")
+                candidate_models = [preferred_model]
+                for fallback in ["gemini-2.5-flash-image", "gemini-3-pro-image-preview"]:
+                    if fallback not in candidate_models:
+                        candidate_models.append(fallback)
 
-                # Return the text content and parse the generated image path
-                text_output = "\\n".join([c.text for c in result.content if c.type == 'text'])
+                last_error_text = ""
+                for model_candidate in candidate_models:
+                    result = await session.call_tool(
+                        "nanobanana_image_generation",
+                        arguments={
+                            "prompt": prompt,
+                            "aspect_ratio": "16:9",
+                            "model": model_candidate,
+                            "output_directory": out_dir
+                        }
+                    )
 
-                # The tool output has format: "...Generated and saved 1 image(s): <path>"
-                # Search for the path. We will try to isolate just the generated image path.
-                match = re.search(r'saved \d+ image\(s\):\s*(.+)', text_output)
-                if match:
-                    # Return path relative to the workspace root if possible, or just the filename for markdown
-                    filepath = match.group(1).strip()
-                    # Convert to forward slashes for markdown
-                    filepath = filepath.replace("\\\\", "/")
+                    # Return the text content and parse the generated image path
+                    text_output = "\n".join([c.text for c in result.content if c.type == 'text'])
 
-                    # Ensure path works relative to the knowledge_base folder since the final markdown is inside knowledge_base
-                    # E.g., if path is c:/.../knowledge_base/images/file.png, we just want 'images/file.png'
-                    if "knowledge_base" in filepath:
-                        filepath = filepath.split("knowledge_base/")[-1]
+                    # If the model is not found / unauthorized on Vertex AI, attempt the next candidate
+                    lower_text = text_output.lower()
+                    if "404" in text_output or "not found" in lower_text or "not have access" in lower_text:
+                        last_error_text = text_output
+                        continue
 
-                    # Generated concept docs are saved under knowledge_base/level_*/,
-                    # so image paths must go up one level to resolve correctly.
-                    if filepath.startswith("images/"):
-                        filepath = f"../{filepath}"
+                    # The tool output has format: "...Generated and saved 1 image(s): <path>"
+                    match = re.search(r'saved \d+ image\(s\):\s*(.+)', text_output)
+                    if match:
+                        # Return path relative to the workspace root if possible, or just the filename for markdown
+                        filepath = match.group(1).strip()
+                        # Convert to forward slashes for markdown
+                        filepath = filepath.replace("\\", "/")
 
-                    return filepath
-                return text_output
+                        # Ensure path works relative to the knowledge_base folder since the final markdown is inside knowledge_base
+                        if "knowledge_base" in filepath:
+                            filepath = filepath.split("knowledge_base/")[-1]
+
+                        # Generated concept docs are saved under knowledge_base/level_*/,
+                        # so image paths must go up one level to resolve correctly.
+                        if filepath.startswith("images/"):
+                            filepath = f"../{filepath}"
+
+                        return filepath
+                    return text_output
+
+                return last_error_text or "GENMEDIA_UNAVAILABLE: all candidate image models failed"
     except Exception as e:
         return f"GENMEDIA_UNAVAILABLE: {str(e)}"
 

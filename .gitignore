@@ -4,7 +4,7 @@
 .github\instructions\codacy.instructions.md
 .env
 .venv/
-knowledge_base/logs/*.backup_*.jsonl
+knowledge_base/logs/*backup*
 
 # Local scratch utilities and cache
 scratch/*.py
@@ -14,8 +14,10 @@ scratch/__pycache__/
 **/__pycache__/
 *.py[cod]
 
-# Agent step logs (generated at runtime)
-logs/
+# Agent step logs (generated at runtime in workspace root)
+/logs/
+!knowledge_base/logs/*.jsonl
+knowledge_base/logs/*backup*
 
 # One-off build helper scripts (not part of deployed dashboard)
 dashboard/write_galaxy.py
