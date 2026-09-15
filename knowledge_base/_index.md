@@ -21,6 +21,7 @@ graph TD
     disentangling_neutrino_decay_from_nsi_and_decoherence["Disentangling Neutrino Decay from NSI and Environmental Decoherence"]:::theoretical
     sterile_neutrino_production_mechanisms_and_cosmological_constraints["Sterile Neutrino Production Mechanisms and Cosmological Constraints"]:::theoretical
     neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
+    noethers_theorem["Noether's Theorem"]:::verified
     quantum_vacuum_fluctuations_and_zeropoint_energy["Quantum Vacuum Fluctuations and Zero-Point Energy"]:::verified
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
     dune_nuclear_cross_section_uncertainties_vs_visible_neutrino_decay["DUNE Nuclear Cross-Section Uncertainties vs Visible Neutrino Decay"]:::theoretical
@@ -509,6 +510,7 @@ graph TD
 - [Neutrino State Definitions and Asymptotic States During Decay](level_1_fundamental_physics/neutrino_state_definitions_and_asymptotic_decay_states.md) [VERIFIED]
 - [Neutrinoless Double Beta Decay](level_1_fundamental_physics/neutrinoless_double_beta_decay.md) [THEORETICAL]
 - [Next-Generation Beta Decay Endpoint Spectrometry Beyond KATRIN](level_1_fundamental_physics/next_generation_beta_decay_endpoint_spectrometry.md) [THEORETICAL]
+- [Noether's Theorem](level_1_fundamental_physics/noethers_theorem.md) [VERIFIED]
 - [Non-Hermitian Effective Hamiltonian for Neutral-Meson Systems](level_1_fundamental_physics/non_hermitian_effective_hamiltonian_neutral_meson_systems.md) [VERIFIED]
 - [Non-Markovian Memory Kernels in Non-Adiabatic Neutrino Matter Propagation](level_1_fundamental_physics/non_markovian_memory_kernels_in_neutrino_matter_propagation.md) [THEORETICAL]
 - [Non-Standard Early Cosmologies and Dark Matter Relic Abundances](level_1_fundamental_physics/non_standard_early_cosmologies_and_dark_matter_relic_abundances.md) [THEORETICAL]

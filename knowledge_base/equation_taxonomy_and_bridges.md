@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-14T21:07:36.936623+00:00  
-> **Total Analyzed Concepts:** 287 | **Total Discovered Equations:** 9553 | **Discovered Bridges:** 477
+> **Generated:** 2026-09-15T00:57:48.438637+00:00  
+> **Total Analyzed Concepts:** 289 | **Total Discovered Equations:** 9611 | **Discovered Bridges:** 478
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -417,5 +417,5 @@ These equations appear across multiple distinct concepts, serving as mathematica
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 13 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 119
+- **MATH_PROVEN Entries:** 121
 - **MATH_CONSISTENT Entries:** 67

@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-14T01:32:37.492039+00:00",
+  "updated_at": "2026-09-15T01:37:16.413023+00:00",
   "stats": {
-    "total_nodes": 253,
-    "level_1_count": 111,
+    "total_nodes": 254,
+    "level_1_count": 112,
     "level_2_count": 113,
     "level_3_count": 29,
     "total_edges": 147,
@@ -1293,6 +1293,25 @@
         "HOLMES/ECHo Collaboration"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/next_generation_beta_decay_endpoint_spectrometry.md"
+    },
+    {
+      "id": "noetherstheorem",
+      "title": "Noether's Theorem",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Bartosiewicz, Z., & Torres, D. F. M. (2008), 'Noether's theorem on time scales', https://doi.org/10.1016/j.jmaa.2008.01.018",
+        "Frederico, G. S. F., & Torres, D. F. M. (2007), 'A formulation of Noether's theorem for fractional problems of the calculus of variations', https://doi.org/10.1016/j.jmaa.2007.01.013",
+        "Brading, K., & Brown, H. R. (2000), 'Noether's Theorems and Gauge Symmetries', http://arxiv.org/abs/hep-th/0009058"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/noethers_theorem.md"
     },
     {
       "id": "nonhermitianeffectivehamiltonianneutralmesonsystems",
