@@ -220,6 +220,78 @@ def get_active_directive_for_concept(concept: str, level: int = None) -> str | N
     return matched_response
 
 
+def get_next_retryable_advisory(level: int = None, repo_root: Path = None) -> dict | None:
+    """
+    Finds the oldest answered advisory request for the specified level
+    whose concept markdown file does NOT yet exist on disk in knowledge_base/.
+    Returns the advisory record dictionary or None if none are awaiting retry.
+    """
+    if not ADVISORY_FILE.exists():
+        return None
+
+    if repo_root is None:
+        repo_root = REPO_ROOT
+
+    try:
+        from workflow_contracts import is_concept_existing
+    except ImportError:
+        from src.workflow_contracts import is_concept_existing
+
+    with open(ADVISORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            try:
+                record = json.loads(line)
+                if record.get("status") == "answered":
+                    rec_level = record.get("level")
+                    if level is not None and rec_level != level:
+                        continue
+                    concept = record.get("concept", "").strip()
+                    if not concept:
+                        continue
+                    if not is_concept_existing(concept, level=rec_level or level or 1, repo_root=repo_root):
+                        return record
+            except Exception:
+                continue
+
+    return None
+
+
+def get_all_retryable_advisories(level: int = None, repo_root: Path = None) -> list[dict]:
+    """Returns all answered advisories whose concept has not yet been verified."""
+    if not ADVISORY_FILE.exists():
+        return []
+
+    if repo_root is None:
+        repo_root = REPO_ROOT
+
+    try:
+        from workflow_contracts import is_concept_existing
+    except ImportError:
+        from src.workflow_contracts import is_concept_existing
+
+    retryable = []
+    with open(ADVISORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            try:
+                record = json.loads(line)
+                if record.get("status") == "answered":
+                    rec_level = record.get("level")
+                    if level is not None and rec_level != level:
+                        continue
+                    concept = record.get("concept", "").strip()
+                    if not concept:
+                        continue
+                    if not is_concept_existing(concept, level=rec_level or level or 1, repo_root=repo_root):
+                        retryable.append(record)
+            except Exception:
+                continue
+    return retryable
+
+
 def get_active_general_directives(scope: str = None) -> list[str]:
     """Retrieves all active standing directives from the Professor."""
     if not DIRECTIVES_FILE.exists():

@@ -77,12 +77,14 @@ try:
         create_advisory_request,
         get_active_directive_for_concept,
         get_active_general_directives,
+        get_next_retryable_advisory,
     )
 except ImportError:
     from src.advisory_manager import (
         create_advisory_request,
         get_active_directive_for_concept,
         get_active_general_directives,
+        get_next_retryable_advisory,
     )
 
 import time
@@ -189,62 +191,77 @@ def main():
     if standing_directives:
         directives_prompt = "\n\nPROFESSOR STANDING DIRECTIVES:\n" + "\n".join(f"- {d}" for d in standing_directives)
 
-    for attempt in range(1, max_topic_attempts + 1):
-        topic_student = agents.student_agent()
-        topic_task = tasks.determine_next_level2_topic_task(topic_student, topic_digest)
-
-        exclusion_prompt = ""
-        if excluded_concepts:
-            exclusion_prompt = "\n\nCRITICAL DEDUPLICATION RULE:\nDo NOT select any of the following already-existing concepts:\n" + "\n".join(f"- {c}" for c in excluded_concepts)
-
-        combined_topic_prompt = (pattern_guidance or "") + (directives_prompt or "") + (exclusion_prompt or "")
-        if combined_topic_prompt:
-            topic_task.description += combined_topic_prompt
-
-        topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback(f"topic_crew_l2_att{attempt}"))
-
-        if dry_run:
-            if attempt == 1 and os.getenv("TEST_DUPLICATE_RETRY", "false").lower() == "true":
-                selection_output = json.dumps({
-                    "theory_a": "Asymmetric Dark Matter",
-                    "theory_b": "WIMP Baryogenesis",
-                    "concept_name": "Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"
-                })
-            else:
-                selection_output = json.dumps({
-                    "theory_a": "Asymptotic Safety Gravity",
-                    "theory_b": "Causal Dynamical Triangulations",
-                    "concept_name": f"Nonperturbative Quantum Gravity Debate {attempt}"
-                })
-        else:
-            selection_output = topic_crew.kickoff()
-
-        theory_a, theory_b, concept_name = _extract_level2_selection(selection_output)
+    retryable_advisory = get_next_retryable_advisory(level=2, repo_root=repo_root)
+    if retryable_advisory:
+        concept_name = retryable_advisory.get("concept", "").strip()
         filename = sanitize_filename(concept_name)
         output_location = f"knowledge_base/{level_folder}/{filename}"
-
-        if (repo_root / output_location).exists() or is_concept_existing(concept_name, level=2, repo_root=repo_root):
-            print(f"[TOPIC SELECTION RETRY] Attempt {attempt}/{max_topic_attempts}: Selected concept '{concept_name}' already exists. Retrying...")
-            excluded_concepts.append(concept_name)
-            log_telemetry_event(
-                "topic_selection_level2_retry",
-                "attempt_duplicate",
-                metadata={"attempt": attempt, "concept": concept_name}
-            )
-            continue
+        if " vs " in concept_name:
+            parts = concept_name.split(" vs ", 1)
+            theory_a = parts[0].strip()
+            sub_parts = re.split(r'\s+(?:in|for|explaining|addressing|and)\s+', parts[1], flags=re.IGNORECASE)
+            theory_b = sub_parts[0].strip()
         else:
-            print(f"[TOPIC SELECTION SUCCESS] Selected valid new topic on attempt {attempt}: '{concept_name}'")
-            break
+            theory_a = concept_name
+            theory_b = "Alternative Framework"
+        print(f"[OFFICE HOURS CLOSED-LOOP] Prioritizing answered advisory retry for Level 2: '{concept_name}' (Ticket [{retryable_advisory.get('id')}])")
+    else:
+        for attempt in range(1, max_topic_attempts + 1):
+            topic_student = agents.student_agent()
+            topic_task = tasks.determine_next_level2_topic_task(topic_student, topic_digest)
 
-    if not concept_name or (repo_root / output_location).exists() or is_concept_existing(concept_name, level=2, repo_root=repo_root):
-        print(f"ERROR: Unable to select a non-existing Level 2 debate topic after {max_topic_attempts} attempts.")
-        log_telemetry_event(
-            "topic_selection_level2",
-            "end",
-            duration_seconds=time.time() - step1_start,
-            metadata={"status": "max_retries_exceeded", "excluded_count": len(excluded_concepts)}
-        )
-        return
+            exclusion_prompt = ""
+            if excluded_concepts:
+                exclusion_prompt = "\n\nCRITICAL DEDUPLICATION RULE:\nDo NOT select any of the following already-existing concepts:\n" + "\n".join(f"- {c}" for c in excluded_concepts)
+
+            combined_topic_prompt = (pattern_guidance or "") + (directives_prompt or "") + (exclusion_prompt or "")
+            if combined_topic_prompt:
+                topic_task.description += combined_topic_prompt
+
+            topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback(f"topic_crew_l2_att{attempt}"))
+
+            if dry_run:
+                if attempt == 1 and os.getenv("TEST_DUPLICATE_RETRY", "false").lower() == "true":
+                    selection_output = json.dumps({
+                        "theory_a": "Asymmetric Dark Matter",
+                        "theory_b": "WIMP Baryogenesis",
+                        "concept_name": "Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"
+                    })
+                else:
+                    selection_output = json.dumps({
+                        "theory_a": "Asymptotic Safety Gravity",
+                        "theory_b": "Causal Dynamical Triangulations",
+                        "concept_name": f"Nonperturbative Quantum Gravity Debate {attempt}"
+                    })
+            else:
+                selection_output = topic_crew.kickoff()
+
+            theory_a, theory_b, concept_name = _extract_level2_selection(selection_output)
+            filename = sanitize_filename(concept_name)
+            output_location = f"knowledge_base/{level_folder}/{filename}"
+
+            if (repo_root / output_location).exists() or is_concept_existing(concept_name, level=2, repo_root=repo_root):
+                print(f"[TOPIC SELECTION RETRY] Attempt {attempt}/{max_topic_attempts}: Selected concept '{concept_name}' already exists. Retrying...")
+                excluded_concepts.append(concept_name)
+                log_telemetry_event(
+                    "topic_selection_level2_retry",
+                    "attempt_duplicate",
+                    metadata={"attempt": attempt, "concept": concept_name}
+                )
+                continue
+            else:
+                print(f"[TOPIC SELECTION SUCCESS] Selected valid new topic on attempt {attempt}: '{concept_name}'")
+                break
+
+        if not concept_name or (repo_root / output_location).exists() or is_concept_existing(concept_name, level=2, repo_root=repo_root):
+            print(f"ERROR: Unable to select a non-existing Level 2 debate topic after {max_topic_attempts} attempts.")
+            log_telemetry_event(
+                "topic_selection_level2",
+                "end",
+                duration_seconds=time.time() - step1_start,
+                metadata={"status": "max_retries_exceeded", "excluded_count": len(excluded_concepts)}
+            )
+            return
 
     # Enforce prerequisite check (Issue 10)
     prereq_ok, missing_prereq = check_level2_prerequisites(theory_a, theory_b, concept_name, current_index)
@@ -346,6 +363,8 @@ def main():
         if professor_guidance:
             research_task_a.description += professor_guidance
             research_task_b.description += professor_guidance
+            debate_task.description += professor_guidance
+            math_task.description += professor_guidance
             evaluate_task.description += professor_guidance
 
         evaluation_crew = Crew(

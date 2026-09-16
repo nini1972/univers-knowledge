@@ -183,6 +183,38 @@ class TestAdvisoryManager(unittest.TestCase):
         self.assertIn("Cosmic Inflation", md_content)
         self.assertIn("Starobinsky R^2 inflation", md_content)
 
+    def test_get_next_retryable_advisory(self):
+        # 1. Initially no retryable advisories
+        self.assertIsNone(self.am.get_next_retryable_advisory(level=1, repo_root=Path(self.temp_dir)))
+
+        # 2. File an inquiry
+        req_id = self.am.create_advisory_request(
+            concept="Cosmological Perturbation Theory",
+            level=1,
+            question="Which gauge to use?",
+        )
+        # Still pending, so not retryable yet
+        self.assertIsNone(self.am.get_next_retryable_advisory(level=1, repo_root=Path(self.temp_dir)))
+
+        # 3. Answer inquiry
+        self.am.answer_advisory_request(req_id, "Use Conformal Newtonian Gauge.")
+
+        # 4. Now it should be returned as next retryable
+        retryable = self.am.get_next_retryable_advisory(level=1, repo_root=Path(self.temp_dir))
+        self.assertIsNotNone(retryable)
+        self.assertEqual(retryable["concept"], "Cosmological Perturbation Theory")
+
+        # Level 2 should return None
+        self.assertIsNone(self.am.get_next_retryable_advisory(level=2, repo_root=Path(self.temp_dir)))
+
+        # 5. Create the file on disk (simulating completion)
+        level_dir = Path(self.temp_dir) / "knowledge_base" / "level_1_fundamental_physics"
+        level_dir.mkdir(parents=True, exist_ok=True)
+        (level_dir / "cosmological_perturbation_theory.md").write_text("# Completed", encoding="utf-8")
+
+        # Now it should no longer be returned as retryable
+        self.assertIsNone(self.am.get_next_retryable_advisory(level=1, repo_root=Path(self.temp_dir)))
+
 
 if __name__ == "__main__":
     unittest.main()

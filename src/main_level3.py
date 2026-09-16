@@ -81,12 +81,14 @@ try:
         create_advisory_request,
         get_active_directive_for_concept,
         get_active_general_directives,
+        get_next_retryable_advisory,
     )
 except ImportError:
     from src.advisory_manager import (
         create_advisory_request,
         get_active_directive_for_concept,
         get_active_general_directives,
+        get_next_retryable_advisory,
     )
 
 
@@ -187,54 +189,62 @@ def main():
     if standing_directives:
         directives_prompt = "\n\nPROFESSOR STANDING DIRECTIVES:\n" + "\n".join(f"- {d}" for d in standing_directives)
 
-    for attempt in range(1, max_topic_attempts + 1):
-        topic_student = agents.student_agent()
-        topic_task = tasks.determine_next_level3_topic_task(topic_student, topic_digest)
-
-        exclusion_prompt = ""
-        if excluded_concepts:
-            exclusion_prompt = "\n\nCRITICAL DEDUPLICATION RULE:\nDo NOT select any of the following already-existing concepts:\n" + "\n".join(f"- {c}" for c in excluded_concepts)
-
-        combined_topic_prompt = (pattern_guidance or "") + (directives_prompt or "") + (exclusion_prompt or "")
-        if combined_topic_prompt:
-            topic_task.description += combined_topic_prompt
-
-        topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback(f"topic_crew_l3_att{attempt}"))
-
-        if dry_run:
-            selection_output = json.dumps({
-                "focus_area": "Integrated Information Theory & Neural Thermodynamics",
-                "concept_name": f"Thermodynamic Limits of Neural Information Processing {attempt}"
-            })
-        else:
-            selection_output = topic_crew.kickoff()
-
-        focus_area, concept_name = _extract_level3_selection(selection_output)
+    retryable_advisory = get_next_retryable_advisory(level=3, repo_root=repo_root)
+    if retryable_advisory:
+        concept_name = retryable_advisory.get("concept", "").strip()
         filename = sanitize_filename(concept_name)
         output_location = f"knowledge_base/{level_folder}/{filename}"
+        focus_area = retryable_advisory.get("agent_needs", {}).get("focus_area") or "Integrated Information & Physicalist Emergence"
+        print(f"[OFFICE HOURS CLOSED-LOOP] Prioritizing answered advisory retry for Level 3: '{concept_name}' (Ticket [{retryable_advisory.get('id')}])")
+    else:
+        for attempt in range(1, max_topic_attempts + 1):
+            topic_student = agents.student_agent()
+            topic_task = tasks.determine_next_level3_topic_task(topic_student, topic_digest)
 
-        if (repo_root / output_location).exists() or is_concept_existing(concept_name, level=3, repo_root=repo_root):
-            print(f"[TOPIC SELECTION RETRY] Attempt {attempt}/{max_topic_attempts}: Selected Level 3 concept '{concept_name}' already exists. Retrying...")
-            excluded_concepts.append(concept_name)
+            exclusion_prompt = ""
+            if excluded_concepts:
+                exclusion_prompt = "\n\nCRITICAL DEDUPLICATION RULE:\nDo NOT select any of the following already-existing concepts:\n" + "\n".join(f"- {c}" for c in excluded_concepts)
+
+            combined_topic_prompt = (pattern_guidance or "") + (directives_prompt or "") + (exclusion_prompt or "")
+            if combined_topic_prompt:
+                topic_task.description += combined_topic_prompt
+
+            topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback(f"topic_crew_l3_att{attempt}"))
+
+            if dry_run:
+                selection_output = json.dumps({
+                    "focus_area": "Integrated Information Theory & Neural Thermodynamics",
+                    "concept_name": f"Thermodynamic Limits of Neural Information Processing {attempt}"
+                })
+            else:
+                selection_output = topic_crew.kickoff()
+
+            focus_area, concept_name = _extract_level3_selection(selection_output)
+            filename = sanitize_filename(concept_name)
+            output_location = f"knowledge_base/{level_folder}/{filename}"
+
+            if (repo_root / output_location).exists() or is_concept_existing(concept_name, level=3, repo_root=repo_root):
+                print(f"[TOPIC SELECTION RETRY] Attempt {attempt}/{max_topic_attempts}: Selected Level 3 concept '{concept_name}' already exists. Retrying...")
+                excluded_concepts.append(concept_name)
+                log_telemetry_event(
+                    "topic_selection_level3_retry",
+                    "attempt_duplicate",
+                    metadata={"attempt": attempt, "concept": concept_name}
+                )
+                continue
+            else:
+                print(f"[TOPIC SELECTION SUCCESS] Selected valid new Level 3 topic on attempt {attempt}: '{concept_name}'")
+                break
+
+        if not concept_name or (repo_root / output_location).exists() or is_concept_existing(concept_name, level=3, repo_root=repo_root):
+            print(f"ERROR: Unable to select a non-existing Level 3 topic after {max_topic_attempts} attempts.")
             log_telemetry_event(
-                "topic_selection_level3_retry",
-                "attempt_duplicate",
-                metadata={"attempt": attempt, "concept": concept_name}
+                "topic_selection_level3",
+                "end",
+                duration_seconds=time.time() - step1_start,
+                metadata={"status": "max_retries_exceeded", "excluded_count": len(excluded_concepts)}
             )
-            continue
-        else:
-            print(f"[TOPIC SELECTION SUCCESS] Selected valid new Level 3 topic on attempt {attempt}: '{concept_name}'")
-            break
-
-    if not concept_name or (repo_root / output_location).exists() or is_concept_existing(concept_name, level=3, repo_root=repo_root):
-        print(f"ERROR: Unable to select a non-existing Level 3 topic after {max_topic_attempts} attempts.")
-        log_telemetry_event(
-            "topic_selection_level3",
-            "end",
-            duration_seconds=time.time() - step1_start,
-            metadata={"status": "max_retries_exceeded", "excluded_count": len(excluded_concepts)}
-        )
-        return
+            return
 
     log_telemetry_event(
         "topic_selection_level3",
@@ -304,6 +314,8 @@ def main():
         if professor_guidance:
             research_task_a.description += professor_guidance
             research_task_b.description += professor_guidance
+            math_task.description += professor_guidance
+            verify_task.description += professor_guidance
             evaluate_task.description += professor_guidance
 
         evaluation_crew = Crew(

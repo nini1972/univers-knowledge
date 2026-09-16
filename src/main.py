@@ -76,12 +76,14 @@ try:
         create_advisory_request,
         get_active_directive_for_concept,
         get_active_general_directives,
+        get_next_retryable_advisory,
     )
 except ImportError:
     from src.advisory_manager import (
         create_advisory_request,
         get_active_directive_for_concept,
         get_active_general_directives,
+        get_next_retryable_advisory,
     )
 
 import time
@@ -209,6 +211,7 @@ def run_level1_flow(next_concept: str):
             evaluate_task.description += pattern_guidance
         if professor_guidance:
             research_task.description += professor_guidance
+            math_task.description += professor_guidance
             evaluate_task.description += professor_guidance
 
         evaluation_crew = Crew(
@@ -565,10 +568,16 @@ def main():
     if standing_directives:
         directives_prompt = "\n\nPROFESSOR STANDING DIRECTIVES:\n" + "\n".join(f"- {d}" for d in standing_directives)
 
+    repo_root = Path(__file__).resolve().parent.parent
     missing_prereq = get_last_missing_prerequisite(current_index)
+    retryable_advisory = get_next_retryable_advisory(level=1, repo_root=repo_root)
     if missing_prereq:
         print(f"[CLOSED-LOOP FEEDBACK] Prioritizing missing Level 2 prerequisite: '{missing_prereq}'")
         next_concept = missing_prereq
+    elif retryable_advisory:
+        candidate_name = retryable_advisory.get("concept")
+        print(f"[OFFICE HOURS CLOSED-LOOP] Prioritizing answered advisory retry for Level 1: '{candidate_name}' (Ticket [{retryable_advisory.get('id')}])")
+        next_concept = candidate_name
     elif backlog_item:
         candidate_name = backlog_item.get("concept") or backlog_item.get("question")
         print(f"[CLOSED-LOOP FEEDBACK] Prioritizing curriculum candidate: '{candidate_name}'")
