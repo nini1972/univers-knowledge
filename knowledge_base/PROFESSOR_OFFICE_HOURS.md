@@ -12,9 +12,30 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (1)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20260917-f0037e` | L2 | **Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime** | Student Orchestrator | Can the Benincasa-Dowker action be written with explicit ell, G, c, and hbar factors so that S_BD/hbar is demonstrably dimensionless, and what is the justified status of the proposed Euclidean causal-set path integral? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20260917-f0037e` — Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
+- **Timestamp**: `2026-09-17T00:59:46.039412+00:00`
+- **Level**: Level 2
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Can the Benincasa-Dowker action be written with explicit ell, G, c, and hbar factors so that S_BD/hbar is demonstrably dimensionless, and what is the justified status of the proposed Euclidean causal-set path integral?
+- **Scientific Rationale**: The report correctly assigns both CDT and CST a theoretical status because neither has direct experimental confirmation, and lack of confirmation is not by itself a rejection reason. It nevertheless fails the Level 2 quality standard because the central CST action is schematic and dimensionally under-specified, while the report incorrectly states that S/h is dimensionally wrong; both h and hbar have dimensions of action, although the quantum phase convention uses hbar. The claimed 5/5 verification is also inconsistent with the 2/4 math report and its UNDECIDABLE dimensional result, while citation misattribution and overstatements about CDT foliation and CST dynamics further weaken the comparison.
+- **Agent Blockers**:
+  * Researcher: Replace the misattributed CDT review in the CST source discussion with independent causal-set literature
+  * Researcher: Add a source-grounded comparison of continuum recovery, observables, Lorentz and diffeomorphism status, and empirical testability
+  * Researcher: Qualify claims about CDT's foliation, Lorentz restoration, and the availability of causal-set dynamical measures
+  * Math Physicist: Provide the fully normalized Benincasa-Dowker action with explicit discreteness scale, G, c, and hbar conventions
+  * Math Physicist: Verify explicitly that each CDT and CST path-integral exponent is dimensionless
+  * Math Physicist: Resolve the 2/4 math verification and correct the h-versus-hbar dimensional statement
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20260917-f0037e "Your guidance"`
+
 
 ---
 

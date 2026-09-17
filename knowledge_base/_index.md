@@ -106,6 +106,7 @@ graph TD
     neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
     neutrino_decay_lifetime_limits_and_systematic_uncertainties["Neutrino Decay Lifetime Limits and Systematic Uncertainties"]:::theoretical
     neutrino_masses_and_leptogenesis["Neutrino Masses and Leptogenesis"]:::verified
+    cosmological_perturbation_theory["Cosmological Perturbation Theory"]:::verified
     quantum_decoherence["Quantum Decoherence"]:::verified
     cross_correlation_methods_breaking_neutrino_decay_degeneracies["Cross-Correlation Methods Breaking Degeneracies in Neutrino Decay Surveys"]:::theoretical
     matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
@@ -243,6 +244,7 @@ graph TD
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
     a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing["A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing"]:::theoretical
     landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments["Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments"]:::theoretical
+    quantum_thermodynamic_speed_limits_and_energetic_advantage_in_biological_sensing_a_falsifiable_benchmarkrelative_test_of_coherenceenhanced_information_processing["Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing"]:::theoretical
     landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments["Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments"]:::theoretical
     nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution["Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution"]:::theoretical
     renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure["Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure"]:::theoretical
@@ -372,6 +374,7 @@ graph TD
     quantum_field_theory --- electroweak_symmetry_breaking
     dark_matter --- low_mass_axion_dark_matter_detection_strategies
     cosmic_neutrino_background --- refining_cosmological_observations_for_neutrino_decay_signatures
+    cosmological_perturbation_theory --- refining_cosmological_observations_for_neutrino_decay_signatures
     quantum_gravity --- experimental_signatures_distinguishing_causal_sets_from_tensor_networks
     quantum_gravity --> informationtheoretic_vs_thermodynamic_interpretations_of_gravity
     quantum_gravity --> initial_condition_entropy_and_arrow_of_time
@@ -406,6 +409,7 @@ graph TD
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
     dark_matter --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
+    cosmological_perturbation_theory --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
     quantum_gravity --> conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution
     quantum_gravity --> entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena
     quantum_gravity --> asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime
@@ -454,6 +458,7 @@ graph TD
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
+- [Cosmological Perturbation Theory](level_1_fundamental_physics/cosmological_perturbation_theory.md) [VERIFIED]
 - [Covariant Quantum Measure Construction in Causal Set Theory](level_1_fundamental_physics/covariant_quantum_measure_construction_in_causal_set_theory.md) [THEORETICAL]
 - [CP Violation](level_1_fundamental_physics/cp_violation.md) [THEORETICAL]
 - [Cross-Correlation Methods Breaking Degeneracies in Neutrino Decay Surveys](level_1_fundamental_physics/cross_correlation_methods_breaking_neutrino_decay_degeneracies.md) [THEORETICAL]
@@ -700,6 +705,7 @@ graph TD
 - [Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations](level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md) [THEORETICAL]
 - [Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation](level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md) [THEORETICAL]
 - [Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence](level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md) [THEORETICAL]
+- [Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing](level_3_emergence_and_intelligence/quantum_thermodynamic_speed_limits_and_energetic_advantage_in_biological_sensing_a_falsifiable_benchmarkrelative_test_of_coherenceenhanced_information_processing.md) [THEORETICAL]
 - [Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure](level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md) [THEORETICAL]
 - [Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](level_3_emergence_and_intelligence/spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]

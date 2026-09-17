@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-16T02:23:13.167821+00:00",
+  "updated_at": "2026-09-17T01:20:29.894017+00:00",
   "stats": {
-    "total_nodes": 254,
-    "level_1_count": 112,
+    "total_nodes": 256,
+    "level_1_count": 113,
     "level_2_count": 113,
-    "level_3_count": 29,
+    "level_3_count": 30,
     "total_edges": 147,
     "frontier_count": 0
   },
@@ -200,6 +200,27 @@
         "Baryon Acoustic Oscillations, SDSS Collaboration (2017)"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cosmological_constant_and_dark_energy.md"
+    },
+    {
+      "id": "cosmologicalperturbationtheory",
+      "title": "Cosmological Perturbation Theory",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Aghanim, N., et al. (2020), 'Planck 2018 results', https://doi.org/10.1051/0004-6361/201833910",
+        "Mukhanov, V. F. (2005), 'Physical Foundations of Cosmology', https://doi.org/...",
+        "Dodelson, S., & Schmidt, F. (2010), 'Modern Cosmology', https://doi.org/...",
+        "Kobayashi, T. (2019), 'Horndeski theory and beyond: a review', https://doi.org/10.1088/1361-6633/ab2429",
+        "Riess, A. G., et al. (1998), 'Observational Evidence from Supernovae for an Accelerating Universe', https://doi.org/10.1086/300499"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmological_perturbation_theory.md"
     },
     {
       "id": "covariantquantummeasureconstructionincausalsettheory",
@@ -5092,6 +5113,25 @@
         "Biological Quantum Effects Research"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md"
+    },
+    {
+      "id": "quantumthermodynamicspeedlimitsandenergeticadvantageinbiologicalsensingafalsifiablebenchmarkrelativetestofcoherenceenhancedinformationprocessing",
+      "title": "Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Barry, J. F. et al. (2020), 'Sensitivity optimization for NV-diamond magnetometry', https://doi.org/10.1103/revmodphys.92.015004",
+        "Streltsov, A. et al. (2017), 'Colloquium: Quantum coherence as a resource', https://doi.org/10.1103/revmodphys.89.041003",
+        "Wolpert, D. H. et al. (2024), 'Is stochastic thermodynamics the key to understanding the energy costs of computation?', https://doi.org/10.1073/pnas.2321112121"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/quantum_thermodynamic_speed_limits_and_energetic_advantage_in_biological_sensing_a_falsifiable_benchmarkrelative_test_of_coherenceenhanced_information_processing.md"
     },
     {
       "id": "renormalizationgroupconstraintsonintegratedinformationtestingcgmicrounderphysicalistcausalclosure",

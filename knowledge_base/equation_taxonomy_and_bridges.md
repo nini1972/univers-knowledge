@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-15T08:57:01.170981+00:00  
-> **Total Analyzed Concepts:** 295 | **Total Discovered Equations:** 9724 | **Discovered Bridges:** 481
+> **Generated:** 2026-09-17T01:20:07.567411+00:00  
+> **Total Analyzed Concepts:** 308 | **Total Discovered Equations:** 9967 | **Discovered Bridges:** 494
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 89 concepts:
+**Occurrences:** Appears in 91 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -97,6 +97,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Quantum Vacuum Energy Contributions to the Cosmological Constant Problem
 - **Level 1**: Baryon Acoustic Oscillations
 - **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
+- **Level 1**: Cosmological Perturbation Theory
+- **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
 
 ### ` 1.380649 \times 10^{-23} `
 **Occurrences:** Appears in 29 concepts:
@@ -131,7 +133,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing
 
 ### ` 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 28 concepts:
+**Occurrences:** Appears in 29 concepts:
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
@@ -160,9 +162,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes
 - **Level 3**: Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
+- **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
 
 ### ` \Phi `
-**Occurrences:** Appears in 26 concepts:
+**Occurrences:** Appears in 27 concepts:
 - **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
@@ -189,6 +192,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure
 - **Level 1**: What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?
 - **Level 3**: Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \(X_{t+1}\perp X_t\mid M_t\), \(H(M_t)<H(X_t)\), and \(M_t=\arg\max_{S\subseteq X_t}\Phi(S)\)
+- **Level 3**: Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory
 
 ### ` \alpha `
 **Occurrences:** Appears in 25 concepts:
@@ -219,7 +223,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
 
 ### ` \phi `
-**Occurrences:** Appears in 20 concepts:
+**Occurrences:** Appears in 21 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
@@ -240,9 +244,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
 - **Level 2**: Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry
+- **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
 
 ### ` \gamma `
-**Occurrences:** Appears in 20 concepts:
+**Occurrences:** Appears in 21 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
@@ -263,6 +268,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints
 - **Level 3**: Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
+- **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
 
 ### ` ^{-2} `
 **Occurrences:** Appears in 19 concepts:
@@ -287,7 +293,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
 
 ### ` \hbar `
-**Occurrences:** Appears in 17 concepts:
+**Occurrences:** Appears in 19 concepts:
 - **Level 2**: Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?
@@ -305,6 +311,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints
 - **Level 3**: Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
+- **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
+- **Level 3**: Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing
 
 ### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
 **Occurrences:** Appears in 16 concepts:
@@ -344,7 +352,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
 
 ### ` ^{-1} `
-**Occurrences:** Appears in 13 concepts:
+**Occurrences:** Appears in 14 concepts:
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
 - **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness
 - **Level 2**: Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics
@@ -358,6 +366,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes
 - **Level 2**: Type-II vs Type-III Seesaw Neutrino Mass Generation
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
+- **Level 1**: Cosmological Perturbation Theory
 
 ### ` \approx 1.089 \times 10^{-52} `
 **Occurrences:** Appears in 13 concepts:
@@ -409,15 +418,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 126 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 112 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 105 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 128 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 114 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 107 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 79 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 64 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 65 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 39 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 33 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 13 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 121
-- **MATH_CONSISTENT Entries:** 69
+- **MATH_PROVEN Entries:** 122
+- **MATH_CONSISTENT Entries:** 77
