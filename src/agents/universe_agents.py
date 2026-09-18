@@ -57,8 +57,9 @@ def _resolve_openrouter_model(api_key: str, role: str) -> str:
         stable_keywords = [
             "gpt-4o", "claude-3-5", "claude-3.5", "claude-opus", "claude-3-haiku",
             "gemini-3.1", "gemini-3.7", "gemini-2.5", "nex-n2", "kimi-k2",
-            "glm-5.2", "qwen-2.5", "deepseek-chat", "deepseek-v4", "minimax-m3",
-            "laguna-s", "mimo-v", "hy3", "scout-17b","gpt-luna","glm-5.3","gpt-luna-latest"
+            "glm-5.2", "glm-5.3", "glm-flash", "glm-flash-latest", "glm-4", "glm-5",
+            "qwen-2.5", "deepseek-chat", "deepseek-v4", "minimax-m3",
+            "laguna-s", "mimo-v", "hy3", "scout-17b", "gpt-luna", "gpt-luna-latest"
         ]
         is_stable_tool_model = any(kw in model_lower for kw in stable_keywords)
 

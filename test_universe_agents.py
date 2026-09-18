@@ -32,11 +32,29 @@ class TestUniverseAgentsOpenRouterModels(unittest.TestCase):
             with patch.object(
                 module,
                 "_fetch_openrouter_model_index",
-                return_value={"openai/gpt-4o-mini", "anthropic/claude-3.5-sonnet"},
+                return_value={module._OPENROUTER_FALLBACK_MODEL, "anthropic/claude-3.5-sonnet"},
             ):
                 resolved = module._resolve_openrouter_model("test-key", "researcher")
 
-        self.assertEqual(resolved, "openai/gpt-4o-mini")
+        self.assertEqual(resolved, module._OPENROUTER_FALLBACK_MODEL)
+
+    def test_resolve_openrouter_model_preserves_glm_flash_for_researcher(self):
+        module = _load_module()
+        module._OPENROUTER_MODEL_INDEX = None
+
+        with patch.dict(
+            module.os.environ,
+            {"OPENROUTER_MODEL_RESEARCHER": "~z-ai/glm-flash-latest"},
+            clear=False,
+        ):
+            with patch.object(
+                module,
+                "_fetch_openrouter_model_index",
+                return_value={"~z-ai/glm-flash-latest", module._OPENROUTER_FALLBACK_MODEL},
+            ):
+                resolved = module._resolve_openrouter_model("test-key", "researcher")
+
+        self.assertEqual(resolved, "~z-ai/glm-flash-latest")
 
     def test_resolve_openrouter_model_keeps_valid_non_tool_model(self):
         module = _load_module()
