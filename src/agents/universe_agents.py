@@ -6,7 +6,7 @@ from urllib.error import URLError
 from urllib.request import Request, urlopen
 
 _OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
-_OPENROUTER_FALLBACK_MODEL = "openai/gpt-4o-mini"
+_OPENROUTER_FALLBACK_MODEL = "~openai/gpt-luna-latest"
 _OPENROUTER_MODEL_INDEX: set[str] | None = None
 
 
@@ -58,7 +58,7 @@ def _resolve_openrouter_model(api_key: str, role: str) -> str:
             "gpt-4o", "claude-3-5", "claude-3.5", "claude-opus", "claude-3-haiku",
             "gemini-3.1", "gemini-3.7", "gemini-2.5", "nex-n2", "kimi-k2",
             "glm-5.2", "qwen-2.5", "deepseek-chat", "deepseek-v4", "minimax-m3",
-            "laguna-s", "mimo-v", "hy3", "scout-17b"
+            "laguna-s", "mimo-v", "hy3", "scout-17b","gpt-luna","glm-5.3","gpt-luna-latest"
         ]
         is_stable_tool_model = any(kw in model_lower for kw in stable_keywords)
 
