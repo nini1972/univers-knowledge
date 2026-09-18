@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-17T01:20:07.567411+00:00  
-> **Total Analyzed Concepts:** 308 | **Total Discovered Equations:** 9967 | **Discovered Bridges:** 494
+> **Generated:** 2026-09-18T01:06:54.832294+00:00  
+> **Total Analyzed Concepts:** 314 | **Total Discovered Equations:** 10103 | **Discovered Bridges:** 497
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 91 concepts:
+**Occurrences:** Appears in 92 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -99,6 +99,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
 - **Level 1**: Cosmological Perturbation Theory
 - **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
+- **Level 1**: Friedmann–Lemaître–Robertson–Walker Cosmology
 
 ### ` 1.380649 \times 10^{-23} `
 **Occurrences:** Appears in 29 concepts:
@@ -384,6 +385,22 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
 
+### ` \epsilon `
+**Occurrences:** Appears in 13 concepts:
+- **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
+- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
+- **Level 3**: Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes
+- **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
+- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
+- **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
+- **Level 2**: Initial State Entropy and Pre-Big Bang Cosmological Evolution
+- **Level 1**: To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?
+- **Level 2**: Vacuum Decay and Cosmological Inflationary Termination Debate
+- **Level 1**: Can a rigorous model of WIMP baryogenesis be constructed that naturally satisfies the washout constraint without invoking fine-tuned flavor structures or heavy mass hierarchies?
+- **Level 1**: Noether's Theorem
+- **Level 3**: Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing
+- **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
+
 ### ` \beta_0, \beta_1, \beta_2 `
 **Occurrences:** Appears in 13 concepts:
 - **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
@@ -400,27 +417,12 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks
 - **Level 3**: Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds
 
-### ` \Omega_c h^2 = 0.120 \pm 0.001 `
-**Occurrences:** Appears in 12 concepts:
-- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
-- **Level 1**: What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?
-- **Level 2**: Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure
-- **Level 1**: What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?
-- **Level 2**: Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance
-- **Level 2**: Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges
-- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
-- **Level 2**: Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution
-- **Level 1**: Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?
-- **Level 2**: Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem
-- **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
-- **Level 2**: Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem
-
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 128 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 114 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 107 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 129 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 115 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 108 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 79 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 65 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 39 |
@@ -429,4 +431,4 @@ These equations appear across multiple distinct concepts, serving as mathematica
 
 ## 📊 3. Verification Status Summary
 - **MATH_PROVEN Entries:** 122
-- **MATH_CONSISTENT Entries:** 77
+- **MATH_CONSISTENT Entries:** 79

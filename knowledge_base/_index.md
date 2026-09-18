@@ -14,6 +14,7 @@ graph TD
     collaborative_empirical_test_strategies_for_neutrino_models["Collaborative Empirical Test Strategies for Theoretical Neutrino Models"]:::verified
     neutrino_oscillations["Neutrino Oscillations"]:::theoretical
     dimensional_analysis_and_unit_tracing_of_modified_survival_equations["Dimensional Analysis and Unit Tracing of Modified Survival Equations"]:::theoretical
+    friedmannlematrerobertsonwalker_cosmology["Friedmann–Lemaître–Robertson–Walker Cosmology"]:::verified
     observational_signatures_of_quantum_extremal_surfaces_and_black_hole_evaporation["Observational Signatures of Quantum Extremal Surfaces and Black Hole Evaporation"]:::theoretical
     empirical_tests_of_spacetime_discreteness_and_entanglement_geometry_duality["Empirical Tests of Spacetime Discreteness and Entanglement-Geometry Duality"]:::theoretical
     higher_order_effects_and_non_standard_interactions_in_neutrino_dynamics["Integrating Higher-Order Effects and Non-Standard Interactions in Neutrino Dynamics"]:::theoretical
@@ -259,6 +260,7 @@ graph TD
     entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis["Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis"]:::verified
     quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence["Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence"]:::theoretical
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
+    dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory["Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory"]:::theoretical
     spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology["Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology"]:::theoretical
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
@@ -481,6 +483,7 @@ graph TD
 - [Experimental Schematics and Layouts for Neutrino Decay Detection](level_1_fundamental_physics/experimental_schematics_for_neutrino_decay_detection.md) [THEORETICAL]
 - [Experimental Signatures Distinguishing Causal Sets from Tensor Networks](level_1_fundamental_physics/experimental_signatures_distinguishing_causal_sets_from_tensor_networks.md) [THEORETICAL]
 - [External Verification of Neutrino Decay Bounds via Open Datasets](level_1_fundamental_physics/external_verification_of_neutrino_decay_bounds_via_open_datasets.md) [THEORETICAL]
+- [Friedmann–Lemaître–Robertson–Walker Cosmology](level_1_fundamental_physics/friedmannlematrerobertsonwalker_cosmology.md) [VERIFIED]
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM](level_1_fundamental_physics/hydrodynamic_simulations_baryonic_feedback_sfdm_sidm.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
@@ -686,6 +689,7 @@ graph TD
 - [Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md) [THEORETICAL]
 - [Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md) [THEORETICAL]
 - [Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation](level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md) [THEORETICAL]
+- [Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory](level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md) [THEORETICAL]
 - [Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]

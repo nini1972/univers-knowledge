@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-17T01:20:29.894017+00:00",
+  "updated_at": "2026-09-18T01:07:18.536952+00:00",
   "stats": {
-    "total_nodes": 256,
-    "level_1_count": 113,
+    "total_nodes": 258,
+    "level_1_count": 114,
     "level_2_count": 113,
-    "level_3_count": 30,
+    "level_3_count": 31,
     "total_edges": 147,
     "frontier_count": 0
   },
@@ -659,6 +659,25 @@
         "Current dark matter theoretical frameworks"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/five_gev_asymmetric_dark_matter_skipper_ccd_constraints.md"
+    },
+    {
+      "id": "friedmannlematrerobertsonwalkercosmology",
+      "title": "Friedmann–Lemaître–Robertson–Walker Cosmology",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s<sup>−1</sup>Mpc<sup>−1</sup> Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "Ashtekar, A., & Singh, P. (2011), 'Loop quantum cosmology: a status report', https://doi.org/10.1088/0264-9381/28/21/213001",
+        "Ade, P. A. R., et al. (2014), 'Planck 2013 results. XXII. Constraints on inflation', https://doi.org/10.1051/0004-6361/201321569"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/friedmannlematrerobertsonwalker_cosmology.md"
     },
     {
       "id": "generalrelativity",
@@ -4752,6 +4771,25 @@
         "Research Monograph"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md"
+    },
+    {
+      "id": "dissociatingphenomenalstructurefromcognitiveaccessafalsifiablecausalperturbationtestofintegratedinformationtheoryandglobalneuronalworkspacetheory",
+      "title": "Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Block, N. (2011), 'Perceptual consciousness overflows cognitive access', https://doi.org/10.1016/j.tics.2011.11.001",
+        "Melloni, L., Mudrik, L., & Pitts, M. (2023), 'An adversarial collaboration protocol for testing contrasting predictions of global neuronal workspace and integrated information theory', https://doi.org/10.1371/journal.pone.0268577",
+        "Aksyuk, V. (2023), 'Consciousness is entailed by compositional learning of new causal structures in deep predictive processing systems', https://doi.org/10.48550/arxiv.2301.07016"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md"
     },
     {
       "id": "dynamicalstabilityandinformationbottleneckconstraintsinnonequilibriumselforganizingcosmologicalnetworks",
