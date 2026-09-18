@@ -106,6 +106,7 @@ graph TD
     tensor_networks_in_dynamical_lorentzian_spacetimes["Tensor Networks in Dynamical Lorentzian Spacetimes"]:::theoretical
     neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
     neutrino_decay_lifetime_limits_and_systematic_uncertainties["Neutrino Decay Lifetime Limits and Systematic Uncertainties"]:::theoretical
+    special_relativity["Special Relativity"]:::verified
     neutrino_masses_and_leptogenesis["Neutrino Masses and Leptogenesis"]:::verified
     cosmological_perturbation_theory["Cosmological Perturbation Theory"]:::verified
     quantum_decoherence["Quantum Decoherence"]:::verified
@@ -154,6 +155,7 @@ graph TD
     conformal_gravity_vs_cold_dark_matter_in_explaining_galactic_rotation_curves["Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves"]:::verified
     dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution["Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution"]:::theoretical
     scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration["Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration"]:::theoretical
+    causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime["Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
     axion_dark_matter_vs_sterile_neutrino_dark_matter_in_explaining_dark_matter["Axion Dark Matter versus Sterile Neutrino Dark Matter in Explaining Dark Matter"]:::theoretical
     initial_state_entropy_and_information_loss_paradoxes["Initial State Entropy and Information Loss Paradoxes"]:::theoretical
@@ -262,6 +264,7 @@ graph TD
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
     dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory["Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory"]:::theoretical
     spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology["Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology"]:::theoretical
+    a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure["A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure"]:::theoretical
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
@@ -349,6 +352,7 @@ graph TD
     primordial_gravitational_waves --- inflationary_cosmology
     dark_matter --- distinguishing_freeze_in_and_freeze_out_dark_matter_mechanisms
     cosmic_microwave_background_radiation --- distinguishing_freeze_in_and_freeze_out_dark_matter_mechanisms
+    special_relativity --- quantum_field_theory
     neutrino_oscillations --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
     neutrinoless_double_beta_decay --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
     quantum_decoherence --- modified_neutrino_survival_probabilities_and_vacuum_decoherence
@@ -366,6 +370,8 @@ graph TD
     neutrino_oscillations --- direct_detection_strategies_for_neutrino_decay
     big_bang_nucleosynthesis --- inflationary_reheating_mechanisms
     quantum_gravity --- tensor_networks_in_dynamical_lorentzian_spacetimes
+    general_relativity --- special_relativity
+    quantum_mechanics --- special_relativity
     neutrino_oscillations --- neutrino_masses_and_leptogenesis
     neutrinoless_double_beta_decay --- neutrino_masses_and_leptogenesis
     quantum_measurement_problem --- quantum_decoherence
@@ -390,6 +396,7 @@ graph TD
     inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     quantum_gravity --> quantum_loop_gravity_vs_string_field_theory_debate
     general_relativity --> scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration
+    quantum_gravity --> causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime
     standard_model_of_particle_physics --> randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
     quantum_gravity --> horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research
@@ -550,6 +557,7 @@ graph TD
 - [Screening-Protected Scalar Fields vs Non-Local Gravity in Black Hole Mergers](level_1_fundamental_physics/screening_protected_scalar_fields_vs_non_local_gravity.md) [THEORETICAL]
 - [Signatures Distinguishing Neutrino Decay from Sterile Neutrino Scenarios](level_1_fundamental_physics/signatures_distinguishing_neutrino_decay_from_sterile_neutrinos.md) [THEORETICAL]
 - [Simulation Studies and Sensitivity Limits for Neutrino Decay Detectors](level_1_fundamental_physics/simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors.md) [VERIFIED]
+- [Special Relativity](level_1_fundamental_physics/special_relativity.md) [VERIFIED]
 - [Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms](level_1_fundamental_physics/spectral_decomposition_of_non_hermitian_decay_hamiltonians.md) [THEORETICAL]
 - [Standard Model Fermion Mass Hierarchies and Mixing Matrices](level_1_fundamental_physics/standard_model_fermion_mass_hierarchies_and_mixing_matrices.md) [VERIFIED]
 - [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
@@ -591,6 +599,7 @@ graph TD
 - [Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem](level_2_advanced_frameworks/braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem.md) [THEORETICAL]
 - [Brans-Dicke vs f(Q) Symmetric Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/bransdicke_vs_fq_symmetric_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
+- [Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime](level_2_advanced_frameworks/causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime.md) [THEORETICAL]
 - [Causal Set Theory vs Spin Foam Models in Quantum Gravity Research](level_2_advanced_frameworks/causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research.md) [THEORETICAL]
 - [Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions](level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions.md) [THEORETICAL]
 - [Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions](level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_the_entropy_of_initial_conditions.md) [THEORETICAL]
@@ -683,6 +692,7 @@ graph TD
 
 ## Level 3: Emergence and Intelligence
 
+- [A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure](level_3_emergence_and_intelligence/a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md) [THEORETICAL]

@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-18T01:07:18.536952+00:00",
+  "updated_at": "2026-09-18T12:11:49.151849+00:00",
   "stats": {
-    "total_nodes": 258,
-    "level_1_count": 114,
-    "level_2_count": 113,
-    "level_3_count": 31,
-    "total_edges": 147,
+    "total_nodes": 261,
+    "level_1_count": 115,
+    "level_2_count": 114,
+    "level_3_count": 32,
+    "total_edges": 149,
     "frontier_count": 0
   },
   "nodes": [
@@ -1963,6 +1963,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors.md"
     },
     {
+      "id": "specialrelativity",
+      "title": "Special Relativity",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Bailey et al. (1977), 'Measurements of relativistic time dilatation for positive and negative muons in a circular orbit', https://doi.org/10.1038/268301a0",
+        "Nagel et al. (2015), 'Direct terrestrial test of Lorentz symmetry in electrodynamics to \\(10^{-18}\\)', https://doi.org/10.1038/ncomms9174",
+        "Mattingly (2005), 'Modern Tests of Lorentz Invariance', https://doi.org/10.12942/lrr-2005-5"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/special_relativity.md"
+    },
+    {
       "id": "spectraldecompositionofnonhermitiandecayhamiltonians",
       "title": "Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms",
       "level": 1,
@@ -2721,6 +2740,28 @@
         "Rovelli, C. (2004). Quantum Gravity. *Cambridge University Press*."
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md"
+    },
+    {
+      "id": "causaldynamicaltriangulationsvscausalsettheoryinrecoveringcontinuumspacetime",
+      "title": "Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
+        "covariantquantummeasureconstructionincausalsettheory"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Ambjørn, J., Jurkiewicz, J., and Loll, R. (2011), 'The semiclassical limit of causal dynamical triangulations', https://doi.org/10.1016/j.nuclphysb.2011.03.019",
+        "Coumbe, D. N. and Jurkiewicz, J. (2015), 'Evidence for asymptotic safety from dimensional reduction in causal dynamical triangulations', https://doi.org/10.1007/JHEP03(2015)151",
+        "Loll, R. (2020), 'Quantum Gravity', https://arxiv.org/abs/2004.01910"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime.md"
     },
     {
       "id": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
@@ -4657,6 +4698,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md"
     },
     {
+      "id": "afalsifiablecausalinformationboundaryframeworkforthehardproblemtestingphenomenalcausationepiphenomenalismandstrongemergenceundermicrophysicalclosure",
+      "title": "A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Hoel, E. P., Albantakis, L., and Tononi, G. (2013), 'Quantifying causal emergence shows that macro variables can have more causal power than micro variables', https://doi.org/10.1371/journal.pone.0072104",
+        "Chang, L., et al. (2019), 'Neural processing across multiple scales: a proposal for the information closure framework', https://doi.org/10.1016/j.neuroimage.2018.05.014",
+        "Oizumi, M., et al. (2014), 'A unified framework for information integration and the study of consciousness', https://doi.org/10.1038/srep06295"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure.md"
+    },
+    {
       "id": "afalsifiablethermodynamicresourcetheoryofbiologicalquantumcoherencedecoherenceworkextractionandinformationprocessing",
       "title": "A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing",
       "level": 3,
@@ -5397,6 +5457,16 @@
     {
       "source": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
       "target": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
+      "type": "component_theory"
+    },
+    {
+      "source": "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
+      "target": "causaldynamicaltriangulationsvscausalsettheoryinrecoveringcontinuumspacetime",
+      "type": "component_theory"
+    },
+    {
+      "source": "covariantquantummeasureconstructionincausalsettheory",
+      "target": "causaldynamicaltriangulationsvscausalsettheoryinrecoveringcontinuumspacetime",
       "type": "component_theory"
     },
     {
