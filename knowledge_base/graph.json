@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-18T12:11:49.151849+00:00",
+  "updated_at": "2026-09-19T02:55:10.965764+00:00",
   "stats": {
-    "total_nodes": 261,
-    "level_1_count": 115,
-    "level_2_count": 114,
-    "level_3_count": 32,
+    "total_nodes": 264,
+    "level_1_count": 116,
+    "level_2_count": 115,
+    "level_3_count": 33,
     "total_edges": 149,
     "frontier_count": 0
   },
@@ -487,6 +487,29 @@
         "Theoretical framework discussions on neutrino decay"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/dune_nuclear_cross_section_uncertainties_vs_visible_neutrino_decay.md"
+    },
+    {
+      "id": "effectivefieldtheory",
+      "title": "Effective Field Theory",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Wilson, K. G. (1971), 'Renormalization Group and Critical Phenomena. I. Group Representation and Stability', https://doi.org/10.1103/PhysRevB.4.3184",
+        "Weinberg, S. (1979), 'Phenomenological Lagrangians', https://doi.org/10.1016/0378-4371(79)90124-3",
+        "Georgi, H. (1993), 'Effective Field Theory', https://doi.org/10.1146/annurev.ns.43.030193.001233",
+        "Brivio, I. & Trott, M. (2019), 'Lingering mysteries of the SMEFT', https://doi.org/10.1016/j.physrep.2018.09.004",
+        "Bjerrum-Bohr, N. E. J., Donoghue, J. F., & Vanhove, P. (2014), 'On-shell methods in perturbative gravity', https://doi.org/10.1007/JHEP10(2014)112",
+        "Ezquiaga, J. M. & Zumalacárregui, M. (2017), 'On the Impact of the Speed of Gravitational Waves on Modified Gravity', https://doi.org/10.1103/PhysRevLett.119.251304",
+        "Koyama, K. (2016), 'Gravitational Waves from Modified Gravity', https://doi.org/10.1103/PhysRevD.93.014018"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/effective_field_theory.md"
     },
     {
       "id": "electroweaksymmetrybreaking",
@@ -4658,6 +4681,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md"
     },
     {
+      "id": "unimodulargravityvsvacuumenergysequesteringinaddressingthecosmologicalconstantproblem",
+      "title": "Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Henneaux, M. & Teitelboim, C. (1989), 'The Cosmological Constant as a Canonical Variable', https://doi.org/10.1016/0370-2693(89)91208-9",
+        "Kaloper, N. & Padilla, A. (2014), 'Vacuum Energy Sequestering', https://doi.org/10.1103/PhysRevLett.112.091304",
+        "Álvarez, E. (2005), 'Unimodular Gravity: A Review', https://doi.org/10.1103/PhysRevD.72.026005"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem.md"
+    },
+    {
       "id": "vacuumdecayandcosmologicalinflationaryterminationdebate",
       "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
       "level": 2,
@@ -4715,6 +4757,27 @@
         "Oizumi, M., et al. (2014), 'A unified framework for information integration and the study of consciousness', https://doi.org/10.1038/srep06295"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure.md"
+    },
+    {
+      "id": "afalsifiablecoarsegraininginvariancecriterionforintegratedinformationinneuralsystems",
+      "title": "A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Hoel, E. P., Albantakis, L., & Tononi, G. (2013), 'Causal emergence: a theoretical framework for understanding the relationship between consciousness and integrated information', https://doi.org/10.1073/pnas.1314922110",
+        "Marshall, W., Albantakis, L., & Tononi, G. (2018), 'Black-boxing intrinsic cause-effect power: A theoretical investigation into the foundations of Integrated Information Theory', https://doi.org/10.1371/journal.pcbi.1006114",
+        "Aguilera, M., & Di Paolo, E. A. (2019), 'Neural Information in the Thermodynamic Limit: Non-extensivity and Criticality', https://doi.org/10.1016/j.neunet.2019.03.001",
+        "Hanson, S. J., & Walker, D. (2021), 'The Invariance Criterion for Theories of Consciousness: A Falsifiable Approach', https://doi.org/10.1093/nc/niab014",
+        "Albantakis, L., et al. (2023), 'Integrated Information Theory: From Principles to Practice', https://doi.org/10.1371/journal.pcbi.1011465"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md"
     },
     {
       "id": "afalsifiablethermodynamicresourcetheoryofbiologicalquantumcoherencedecoherenceworkextractionandinformationprocessing",

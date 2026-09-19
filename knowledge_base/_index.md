@@ -81,6 +81,7 @@ graph TD
     signatures_distinguishing_neutrino_decay_from_sterile_neutrinos["Signatures Distinguishing Neutrino Decay from Sterile Neutrino Scenarios"]:::theoretical
     distinguishing_neutrino_decay_from_damping_and_decoherence["Distinguishing Neutrino Decay from Damping and Decoherence Mechanisms"]:::theoretical
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
+    effective_field_theory["Effective Field Theory"]:::verified
     distinguishing_freeze_in_and_freeze_out_dark_matter_mechanisms["Distinguishing Freeze-In and Freeze-Out Dark Matter Mechanisms"]:::theoretical
     quantum_field_theory["Quantum Field Theory"]:::verified
     superfluid_dark_matter_phonon_effects["Superfluid Dark Matter Phonon Effects"]:::theoretical
@@ -232,6 +233,7 @@ graph TD
     asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry["Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"]:::theoretical
     ekpyrotic_universe_model_versus_inflationary_cosmology_debate["Ekpyrotic Universe Model versus Inflationary Cosmology Debate"]:::verified
     dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem["DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem"]:::theoretical
+    unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem["Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem"]:::theoretical
     leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation["Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation"]:::theoretical
     axion_monodromy_vs_natural_inflation_in_cosmic_inflationary_dynamics["Axion Monodromy vs Natural Inflation in Cosmic Inflationary Dynamics"]:::theoretical
     symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity["Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity"]:::verified
@@ -269,6 +271,7 @@ graph TD
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
+    a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems["A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems"]:::theoretical
     formalizing_integrated_information_theory_within_spacetime_geometry["Formalizing Integrated Information Theory (IIT) within Spacetime Geometry"]:::theoretical
 
     %% Connections & Prerequisites
@@ -381,6 +384,7 @@ graph TD
     standard_model_gauge_symmetries_and_their_spontaneous_breaking --- electroweak_symmetry_breaking
     quantum_field_theory --- electroweak_symmetry_breaking
     dark_matter --- low_mass_axion_dark_matter_detection_strategies
+    effective_field_theory --- non_hermitian_effective_hamiltonian_neutral_meson_systems
     cosmic_neutrino_background --- refining_cosmological_observations_for_neutrino_decay_signatures
     cosmological_perturbation_theory --- refining_cosmological_observations_for_neutrino_decay_signatures
     quantum_gravity --- experimental_signatures_distinguishing_causal_sets_from_tensor_networks
@@ -401,6 +405,7 @@ graph TD
     standard_model_of_particle_physics --> beyond_the_standard_model_supersymmetry_vs_extra_dimensions
     quantum_gravity --> horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research
     quantum_gravity --> asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities
+    effective_field_theory --> asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities
     cosmic_microwave_background_radiation --> dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension
     dark_matter --> modified_newtonian_dynamics_mond_vs_wimp_dark_matter_in_galaxy_cluster_dynamics
     general_relativity --> modified_newtonian_dynamics_mond_vs_wimp_dark_matter_in_galaxy_cluster_dynamics
@@ -418,16 +423,19 @@ graph TD
     general_relativity --> string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research
     quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
     dark_matter --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
+    effective_field_theory --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
     cosmological_perturbation_theory --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
     quantum_gravity --> conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution
     quantum_gravity --> entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena
     quantum_gravity --> asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime
+    effective_field_theory --> asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime
     dark_matter --> fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations
     neutrinoless_double_beta_decay --> typei_seesaw_vs_radiative_neutrino_mass_generation
     quantum_field_theory --> typei_seesaw_vs_radiative_neutrino_mass_generation
     quantum_gravity --> holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
     quantum_chromodynamics_qcd --> conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem
+    effective_field_theory --> scalartensor_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration
     dark_matter --> asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance
     dark_matter --> interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
     dark_matter --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure
@@ -446,9 +454,12 @@ graph TD
     quantum_gravity --> loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
     general_relativity --> horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration
     quantum_field_theory --> electroweak_vs_spontaneous_baryogenesis_in_explaining_matterantimatter_asymmetry
+    effective_field_theory --> asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry
     quantum_chromodynamics_qcd --> dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem
+    quantum_gravity --> unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem
     neutrino_oscillations --> leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation
     quantum_gravity --> symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity
+    effective_field_theory --> symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity
     quantum_field_theory --> interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution --- quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation
     landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures --- quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation
@@ -482,6 +493,7 @@ graph TD
 - [Distinguishing Higgs Portal from Sterile Neutrino Dark Matter](level_1_fundamental_physics/distinguishing_higgs_portal_from_sterile_neutrino_dark_matter.md) [THEORETICAL]
 - [Distinguishing Neutrino Decay from Damping and Decoherence Mechanisms](level_1_fundamental_physics/distinguishing_neutrino_decay_from_damping_and_decoherence.md) [THEORETICAL]
 - [DUNE Nuclear Cross-Section Uncertainties vs Visible Neutrino Decay](level_1_fundamental_physics/dune_nuclear_cross_section_uncertainties_vs_visible_neutrino_decay.md) [THEORETICAL]
+- [Effective Field Theory](level_1_fundamental_physics/effective_field_theory.md) [VERIFIED]
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md) [THEORETICAL]
 - [Empirical Falsification Priorities for Theoretical Physics Extensions](level_1_fundamental_physics/empirical_falsification_priorities_for_theoretical_physics.md) [THEORETICAL]
 - [Empirical Tests of Spacetime Discreteness and Entanglement-Geometry Duality](level_1_fundamental_physics/empirical_tests_of_spacetime_discreteness_and_entanglement_geometry_duality.md) [THEORETICAL]
@@ -687,12 +699,14 @@ graph TD
 - [Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity.md) [VERIFIED]
 - [Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md) [THEORETICAL]
 - [Type-I Seesaw vs Radiative Neutrino Mass Generation](level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md) [THEORETICAL]
+- [Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem](level_2_advanced_frameworks/unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem.md) [THEORETICAL]
 - [Vacuum Decay and Cosmological Inflationary Termination Debate](level_2_advanced_frameworks/vacuum_decay_and_cosmological_inflationary_termination_debate.md) [THEORETICAL]
 - [Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md) [THEORETICAL]
 
 ## Level 3: Emergence and Intelligence
 
 - [A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure](level_3_emergence_and_intelligence/a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure.md) [THEORETICAL]
+- [A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md) [THEORETICAL]
