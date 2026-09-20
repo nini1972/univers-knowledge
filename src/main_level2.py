@@ -348,8 +348,8 @@ def main():
             theory_a_prompt = f"{theory_a}\nFollow-up context from prior rejection:\n{follow_up_context}"
             theory_b_prompt = f"{theory_b}\nFollow-up context from prior rejection:\n{follow_up_context}"
 
-        research_task_a = tasks.research_concept_task(researcher_a, theory_a_prompt, async_execution=True)
-        research_task_b = tasks.research_concept_task(researcher_b, theory_b_prompt, async_execution=True)
+        research_task_a = tasks.research_concept_task(researcher_a, theory_a_prompt, async_execution=False)
+        research_task_b = tasks.research_concept_task(researcher_b, theory_b_prompt, async_execution=False)
         debate_task = tasks.debate_theories_task(skeptic, theory_a, theory_b, context=[research_task_a, research_task_b])
         # ── NEW: Tier 1 Math Verification after debate report ─────────────
         math_task = tasks.math_verification_task(math_physicist, concept_name, context=[research_task_a, research_task_b, debate_task])
@@ -386,7 +386,17 @@ def main():
             skeptic_output = "Verification Score: 6/6"
             math_output = "**Math Score:** 4/4\n[MATH_PROVEN]"
         else:
-            evaluation_output = str(evaluation_crew.kickoff()).strip()
+            try:
+                evaluation_output = str(evaluation_crew.kickoff()).strip()
+            except Exception as kickoff_err:
+                print(f"[LEVEL 2 CREW ERROR] Evaluation crew kickoff failed on attempt {retries + 1}: {kickoff_err}")
+                evaluation_decision = {
+                    "status": "rejected",
+                    "reason_code": "crew_kickoff_error",
+                    "summary_for_archivist": "",
+                    "follow_up_questions": [f"Execution failed with error: {str(kickoff_err)[:200]}"]
+                }
+                evaluation_output = json.dumps(evaluation_decision)
             skeptic_output = ""
             math_output = ""
             research_parts = []
@@ -610,7 +620,17 @@ def main():
             metadata={"status": "skipped_dry_run"}
         )
     else:
-        result = normalize_markdown_output(str(final_crew.kickoff()).strip())
+        try:
+            result = normalize_markdown_output(str(final_crew.kickoff()).strip())
+        except Exception as final_err:
+            print(f"[LEVEL 2 ARCHIVIST ERROR] Final crew kickoff failed: {final_err}")
+            log_telemetry_event(
+                "documentation_validation_level2",
+                "end",
+                duration_seconds=time.time() - step3_start,
+                metadata={"status": "crew_error", "error": str(final_err)[:200]}
+            )
+            return
         valid, validation_errors = validate_concept_markdown(result)
         if not valid:
             print("ERROR: Document validation failed; file/index update was blocked.")

@@ -90,12 +90,26 @@ def _get_llm(role: str) -> LLM | None:
         model = _resolve_openrouter_model(api_key, role)
         try:
             max_tokens = int(os.getenv("MAX_TOKENS", "32768"))
-            return LLM(
-                model=f"openrouter/{model}",
-                api_key=api_key,
-                base_url=_OPENROUTER_API_BASE,
-                max_tokens=max_tokens
-            )
+            timeout = float(os.getenv("OPENROUTER_TIMEOUT", "180"))
+
+            # Configure reasoning effort (e.g., 'low', 'high', 'max').
+            # Default to 'low' for fast-acting tool-using roles to avoid gateway timeouts.
+            role_effort_env = f"OPENROUTER_REASONING_EFFORT_{role.upper()}"
+            reasoning_effort = os.getenv(role_effort_env) or os.getenv("OPENROUTER_REASONING_EFFORT")
+            if not reasoning_effort and role in ("researcher", "student", "visualizer", "peer_reviewer"):
+                reasoning_effort = "low"
+
+            llm_kwargs = {
+                "model": f"openrouter/{model}",
+                "api_key": api_key,
+                "base_url": _OPENROUTER_API_BASE,
+                "max_tokens": max_tokens,
+                "timeout": timeout,
+            }
+            if reasoning_effort:
+                llm_kwargs["reasoning_effort"] = reasoning_effort
+
+            return LLM(**llm_kwargs)
         except Exception as exc:
             print(f"Warning: Failed to initialize CrewAI LLM wrapper for {role}: {exc}")
     return None
