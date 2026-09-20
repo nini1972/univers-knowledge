@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-19T02:54:44.470756+00:00  
-> **Total Analyzed Concepts:** 320 | **Total Discovered Equations:** 10424 | **Discovered Bridges:** 505
+> **Generated:** 2026-09-20T17:50:14.563989+00:00  
+> **Total Analyzed Concepts:** 324 | **Total Discovered Equations:** 10582 | **Discovered Bridges:** 508
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -135,6 +135,38 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure
 - **Level 3**: A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems
 
+### ` \Phi `
+**Occurrences:** Appears in 29 concepts:
+- **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
+- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
+- **Level 3**: Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics
+- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
+- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
+- **Level 3**: Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures
+- **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
+- **Level 1**: What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?
+- **Level 3**: Exploring the Integrative Dimensions of Information Theory in Consciousness and Cosmic Self-Organization
+- **Level 3**: Exploring the Formalization of Integrated Information Theory within Cosmological Contexts
+- **Level 3**: Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures
+- **Level 3**: Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments
+- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
+- **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
+- **Level 3**: Landauer-Bekenstein Thermodynamic Constraints on Information Processing in Non-Equilibrium Phase Transitions of Cosmological Intelligence
+- **Level 3**: Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics
+- **Level 3**: Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage
+- **Level 3**: Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks
+- **Level 3**: Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions
+- **Level 3**: Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness
+- **Level 3**: Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure
+- **Level 3**: Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure
+- **Level 1**: What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?
+- **Level 3**: Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \(X_{t+1}\perp X_t\mid M_t\), \(H(M_t)<H(X_t)\), and \(M_t=\arg\max_{S\subseteq X_t}\Phi(S)\)
+- **Level 3**: Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory
+- **Level 3**: A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure
+- **Level 3**: Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems
+
 ### ` 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 29 concepts:
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
@@ -166,37 +198,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
 - **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
-
-### ` \Phi `
-**Occurrences:** Appears in 28 concepts:
-- **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
-- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
-- **Level 3**: Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics
-- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
-- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
-- **Level 3**: Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures
-- **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
-- **Level 1**: What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?
-- **Level 3**: Exploring the Integrative Dimensions of Information Theory in Consciousness and Cosmic Self-Organization
-- **Level 3**: Exploring the Formalization of Integrated Information Theory within Cosmological Contexts
-- **Level 3**: Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures
-- **Level 3**: Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments
-- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
-- **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
-- **Level 3**: Landauer-Bekenstein Thermodynamic Constraints on Information Processing in Non-Equilibrium Phase Transitions of Cosmological Intelligence
-- **Level 3**: Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics
-- **Level 3**: Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage
-- **Level 3**: Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks
-- **Level 3**: Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions
-- **Level 3**: Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness
-- **Level 3**: Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure
-- **Level 3**: Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure
-- **Level 1**: What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?
-- **Level 3**: Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \(X_{t+1}\perp X_t\mid M_t\), \(H(M_t)<H(X_t)\), and \(M_t=\arg\max_{S\subseteq X_t}\Phi(S)\)
-- **Level 3**: Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory
-- **Level 3**: A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure
 
 ### ` \alpha `
 **Occurrences:** Appears in 25 concepts:
@@ -320,6 +321,26 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
 
+### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
+**Occurrences:** Appears in 17 concepts:
+- **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
+- **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
+- **Level 1**: How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?
+- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
+- **Level 2**: Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance
+- **Level 1**: Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?
+- **Level 2**: Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration
+- **Level 3**: Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics
+- **Level 3**: Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks
+- **Level 3**: Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures
+- **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
+- **Level 3**: Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments
+- **Level 1**: What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?
+- **Level 3**: Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation
+- **Level 1**: To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?
+- **Level 1**: How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?
+- **Level 1**: Gravitational Lensing
+
 ### ` g_{\mu\nu} `
 **Occurrences:** Appears in 16 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
@@ -338,25 +359,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
 - **Level 1**: Special Relativity
-
-### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
-**Occurrences:** Appears in 16 concepts:
-- **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
-- **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
-- **Level 1**: How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?
-- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
-- **Level 2**: Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance
-- **Level 1**: Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?
-- **Level 2**: Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration
-- **Level 3**: Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics
-- **Level 3**: Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks
-- **Level 3**: Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures
-- **Level 1**: What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?
-- **Level 3**: Renormalization Group Analysis of Information Scaling in Self-Organizing Cosmological Filaments
-- **Level 1**: What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?
-- **Level 3**: Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation
-- **Level 1**: To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?
-- **Level 1**: How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?
 
 ### ` ^{-1} `
 **Occurrences:** Appears in 14 concepts:
@@ -426,15 +428,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 131 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 117 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 111 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 81 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 133 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 118 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 112 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 82 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 65 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 40 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 33 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 13 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 127
-- **MATH_CONSISTENT Entries:** 80
+- **MATH_PROVEN Entries:** 129
+- **MATH_CONSISTENT Entries:** 81

@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-19T02:55:10.965764+00:00",
+  "updated_at": "2026-09-20T17:50:35.793379+00:00",
   "stats": {
-    "total_nodes": 264,
-    "level_1_count": 116,
-    "level_2_count": 115,
-    "level_3_count": 33,
+    "total_nodes": 267,
+    "level_1_count": 117,
+    "level_2_count": 116,
+    "level_3_count": 34,
     "total_edges": 149,
     "frontier_count": 0
   },
@@ -720,6 +720,25 @@
         "Cosmological Perspectives: Discussions on the cosmological constant problem and singularities"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/general_relativity.md"
+    },
+    {
+      "id": "gravitationallensing",
+      "title": "Gravitational Lensing",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Wong, K. C., Suyu, S. H., Chen, G. C.-F., et al. (2019), 'H0LiCOW XIII: A 2.4 per cent measurement of H0 from lensed quasars: 5.3σ tension between early- and late-Universe probes', https://doi.org/10.1093/mnras/stz3094",
+        "Clowe, D., Gonzalez, A., & Markevitch, M. (2004), 'Weak-Lensing Mass Reconstruction of the Interacting Cluster 1E 0657−558: Direct Evidence for the Existence of Dark Matter', https://doi.org/10.1086/381970",
+        "Aghanim, N., et al. (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/gravitational_lensing.md"
     },
     {
       "id": "higherordereffectsandnonstandardinteractionsinneutrinodynamics",
@@ -3919,6 +3938,27 @@
       "path": "knowledge_base/level_2_advanced_frameworks/nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime.md"
     },
     {
+      "id": "parityviolationvsscalarchargeinstrongfieldgravity",
+      "title": "Parity Violation vs Scalar Charge in Strong-Field Gravity",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Yunes, N., & Pretorius, F. (2009), 'Dynamical Chern-Simons gravity', https://doi.org/10.1103/PhysRevD.79.084043",
+        "Srivastava, S., et al. (2021), 'Scalar hair in dynamical Chern-Simons gravity', https://doi.org/10.1103/physrevd.104.064034",
+        "Yagi, K., Stein, L. C., Yunes, N., & Tanaka, T. (2012), 'Gravitational-wave birefringence from dynamical Chern-Simons gravity', https://doi.org/10.1103/physrevd.85.064022",
+        "Smith, T. L., et al. (2008), 'Lense-Thirring precession in dynamical Chern-Simons gravity', https://doi.org/10.1103/physrevd.77.024015",
+        "McNees, R. A., Stein, L. C., & Yunes, N. (2016), 'Dynamical Chern-Simons gravity with rapid rotation', https://doi.org/10.1088/0264-9381/33/23/235013"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/parity_violation_vs_scalar_charge_in_strongfield_gravity.md"
+    },
+    {
       "id": "primordialnongaussianityinflationarymultifieldmodelsvscosmicdefects",
       "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
       "level": 2,
@@ -5084,6 +5124,27 @@
         "Entropy and Information Processing in Cosmology"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md"
+    },
+    {
+      "id": "macrolevelcausalautonomywithoutphenomenalcommitmentaninterventionalfalsificationtestofintegratedinformationtheoryversusmechanisticphysicalisminrecurrentneuralsy",
+      "title": "Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Albantakis, L., et al. (2023), 'Ensuring Physicalism: A Computational Approach to Assessing Integrated Information Theory', https://doi.org/10.1371/journal.pcbi.1011465",
+        "Hoel, E. P. (2017), 'The Information Theoretical Principles of Emergence and the Role of Entropy in Self-Organization', https://doi.org/10.3390/e19050188",
+        "Rosas, F., et al. (2020), 'Causal Structure and Nested Causal Decoupling in Neural Networks', https://doi.org/10.1371/journal.pcbi.1008289",
+        "Rosas, F., et al. (2024), 'Software in the natural world', https://doi.org/10.48550/arxiv.2402.09090",
+        "Comolatti, R. & Hoel, E. P. (2022), 'Interventionist Approaches to Understanding the Causal Powers of Complex Systems', https://doi.org/10.48550/arxiv.2010.13871"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy.md"
     },
     {
       "id": "nonequilibriumphasetransitionsandinformationsymmetrybreakingintheevolutionoffilamentarycosmicstructures",

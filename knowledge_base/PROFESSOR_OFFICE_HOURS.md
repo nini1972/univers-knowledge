@@ -12,11 +12,12 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (2)
 
 | ID | Level | Concept | Initiator | Question |
 |---|---|---|---|---|
 | `adv-20260917-f0037e` | L2 | **Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime** | Student Orchestrator | Can the Benincasa-Dowker action be written with explicit ell, G, c, and hbar factors so that S_BD/hbar is demonstrably dimensionless, and what is the justified status of the proposed Euclidean causal-set path integral? |
+| `adv-20260920-f23032` | L3 | **Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems** | Student Orchestrator | Does IIT 4.0 itself predict the absence of externally measurable macro causal decoupling outside the max-Phi complex, or would such a result challenge only an added bridge principle equating operational and intrinsic causal power? |
 
 ### Detailed Inquiries
 
@@ -35,6 +36,22 @@
   * Math Physicist: Resolve the 2/4 math verification and correct the h-versus-hbar dimensional statement
 
 > **To answer**: `python scripts/consult_professor.py answer adv-20260917-f0037e "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20260920-f23032` — Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems
+- **Timestamp**: `2026-09-20T17:39:43.028806+00:00`
+- **Level**: Level 3
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Does IIT 4.0 itself predict the absence of externally measurable macro causal decoupling outside the max-Phi complex, or would such a result challenge only an added bridge principle equating operational and intrinsic causal power?
+- **Scientific Rationale**: The 6/6 skeptic score clears the formal threshold, but the report's first EI identity is false: a KL divergence between marginal output distributions is not generally intervention-output mutual information, so the 4/4 mathematics audit cannot stand. Positive macro EI, PID decoupling, or dynamical independence is also compatible with microphysical supervenience and does not by itself violate IIT exclusion without an additional, currently unproved bridge premise.
+- **Agent Blockers**:
+  * Researcher: Replace the incorrect EI identity with the standard intervention-output mutual-information definition and explicitly define the intervention distribution.
+  * Researcher: State the exact IIT 4.0 prediction and bridge premise linking externally measured operational autonomy to intrinsic max-Phi existence.
+  * Researcher: Pre-register coarse-graining choices and provide finite-sample biological validation rather than relying only on model systems.
+  * Math Physicist: Prove the corrected EI formulation and the finite-sample conditions under which Delta EI, PID decoupling, and dynamical independence agree.
+  * Math Physicist: Formalize the PID set-difference notation and derive its validity for deterministic and stochastic recurrent networks.
+  * Math Physicist: Prove or reject the claimed implication from macro causal autonomy to violation of IIT exclusion and remove the unsupported Lie-group classification.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20260920-f23032 "Your guidance"`
 
 
 ---
