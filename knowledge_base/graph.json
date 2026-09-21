@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-20T17:50:35.793379+00:00",
+  "updated_at": "2026-09-21T01:29:51.156291+00:00",
   "stats": {
-    "total_nodes": 267,
-    "level_1_count": 117,
-    "level_2_count": 116,
-    "level_3_count": 34,
+    "total_nodes": 270,
+    "level_1_count": 118,
+    "level_2_count": 117,
+    "level_3_count": 35,
     "total_edges": 149,
     "frontier_count": 0
   },
@@ -104,6 +104,28 @@
         "IceCube project publications"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/calibration_strategies_for_neutrino_decay_signals.md"
+    },
+    {
+      "id": "classicalmechanics",
+      "title": "Classical Mechanics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "V. I. Arnold (1989), 'Mathematical Methods of Classical Mechanics', https://doi.org/10.1007/978-1-4757-2063-1",
+        "N. Román-Roy (2009), 'Multisymplectic Lagrangian and Hamiltonian Formalisms of Classical Field Theories', https://doi.org/10.3842/SIGMA.2009.100; arXiv: math-ph/0506022",
+        "C. M. Will (2014), 'The Confrontation between General Relativity and Experiment', https://doi.org/10.12942/lrr-2014-4; arXiv:1403.7377",
+        "K. Koyama (2016), 'Cosmological tests of modified gravity', https://doi.org/10.1088/0034-4885/79/4/046902; arXiv:1504.04623",
+        "C. P. Burgess (2004), 'Quantum Gravity in Everyday Life: General Relativity as an Effective Field Theory', https://doi.org/10.12942/lrr-2004-5; arXiv: gr-qc/0311082",
+        "G. Gallavotti & E. G. D. Cohen (1995), 'Dynamical Ensembles in Nonequilibrium Statistical Mechanics', https://doi.org/10.1103/PhysRevLett.74.2694; arXiv: chao-dyn/9410007"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/classical_mechanics.md"
     },
     {
       "id": "hastherebeenengagementwiththeoreticalandexperimentalneutrinophysicscollaborationstoimprovemodelconsistencyandempiricalteststrategiestomovebeyondpurelytheoreticalclassification",
@@ -4282,6 +4304,27 @@
       "path": "knowledge_base/level_2_advanced_frameworks/screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration.md"
     },
     {
+      "id": "slowrollinflationvsmatterbouncecosmologyinexplainingprimordialperturbations",
+      "title": "Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck Collaboration (Y. Akrami et al.) (2020), 'Planck 2018 results. X. Constraints on inflation', https://doi.org/10.1051/0004-6361/201833887",
+        "Planck Collaboration (N. Aghanim et al.) (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "X. Chen, M.-x. Huang, S. Kachru, G. Shiu (2007), 'Observational signatures and non-Gaussianities of general single-field inflation', https://doi.org/10.1088/1475-7516/2007/01/002",
+        "A. Ashtekar, P. Singh (2011), 'Loop quantum cosmology: a status report', https://doi.org/10.1088/0264-9381/28/21/213001",
+        "R. Brandenberger, Z. Wang (2020), 'Nonsingular ekpyrotic cosmology with a nearly scale-invariant spectrum of cosmological perturbations and gravitational waves', https://doi.org/10.1103/PhysRevD.101.063522"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/slowroll_inflation_vs_matterbounce_cosmology_in_explaining_primordial_perturbations.md"
+    },
+    {
       "id": "sterileneutrinovsfuzzydarkmatterinexplainingstructureformation",
       "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
       "level": 2,
@@ -5145,6 +5188,25 @@
         "Comolatti, R. & Hoel, E. P. (2022), 'Interventionist Approaches to Understanding the Causal Powers of Complex Systems', https://doi.org/10.48550/arxiv.2010.13871"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy.md"
+    },
+    {
+      "id": "noiserobustgeneralizedcontextualitywitnessesforbenchmarkrelativequantumadvantageinwarmbiologicalinformationprocessing",
+      "title": "Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Spekkens, R. W. (2005), 'Contextuality for preparations, transformations, and unsharp measurements.', https://doi.org/10.1103/PhysRevA.71.052108",
+        "Schmid, D., Spekkens, R. W. (2018), 'Contextual Advantage for State Discrimination.', https://doi.org/10.1103/physrevx.8.011015",
+        "de Gois, C., Moreno, G., Nery, R., Brito, S., et al. (2021), 'General Method for Classicality Certification in the Prepare and Measure Scenario.', https://doi.org/10.1103/prxquantum.2.030311"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/noiserobust_generalizedcontextuality_witnesses_for_benchmarkrelative_quantum_advantage_in_warm_biological_information_processing.md"
     },
     {
       "id": "nonequilibriumphasetransitionsandinformationsymmetrybreakingintheevolutionoffilamentarycosmicstructures",
