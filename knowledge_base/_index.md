@@ -79,6 +79,7 @@ graph TD
     neutrino_mass_hierarchies_and_their_implications["Neutrino Mass Hierarchies and Their Implications"]:::theoretical
     cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
     reducing_nuclear_matrix_element_uncertainties_in_0vbb_decay["Reducing Nuclear Matrix Element Uncertainties in 0vbb Decay"]:::theoretical
+    statistical_mechanics["Statistical Mechanics"]:::verified
     signatures_distinguishing_neutrino_decay_from_sterile_neutrinos["Signatures Distinguishing Neutrino Decay from Sterile Neutrino Scenarios"]:::theoretical
     distinguishing_neutrino_decay_from_damping_and_decoherence["Distinguishing Neutrino Decay from Damping and Decoherence Mechanisms"]:::theoretical
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
@@ -157,6 +158,7 @@ graph TD
     asymmetric_dark_matter_vs_simp_dark_matter_in_explaining_dark_matter_abundance_and_smallscale_structure["Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure"]:::theoretical
     conformal_gravity_vs_cold_dark_matter_in_explaining_galactic_rotation_curves["Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves"]:::verified
     dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution["Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution"]:::theoretical
+    teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing["TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing"]:::theoretical
     scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration["Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime["Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
@@ -276,6 +278,7 @@ graph TD
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
+    a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue["A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
     a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems["A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems"]:::theoretical
     formalizing_integrated_information_theory_within_spacetime_geometry["Formalizing Integrated Information Theory (IIT) within Spacetime Geometry"]:::theoretical
@@ -356,6 +359,7 @@ graph TD
     standard_model_of_particle_physics --- distinguishing_higgs_portal_from_sterile_neutrino_dark_matter
     neutrino_oscillations --- astrophysical_neutrino_flavor_and_spectral_resolution_enhancement
     neutrinoless_double_beta_decay --- reducing_nuclear_matrix_element_uncertainties_in_0vbb_decay
+    quantum_mechanics --- statistical_mechanics
     standard_model_of_particle_physics --- signatures_distinguishing_neutrino_decay_from_sterile_neutrinos
     quantum_field_theory --- signatures_distinguishing_neutrino_decay_from_sterile_neutrinos
     neutrino_oscillations --- distinguishing_neutrino_decay_from_damping_and_decoherence
@@ -589,6 +593,7 @@ graph TD
 - [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
 - [Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics](level_1_fundamental_physics/statistical_chi_squared_fit_analysis_bsm_neutrino_physics.md) [VERIFIED]
+- [Statistical Mechanics](level_1_fundamental_physics/statistical_mechanics.md) [VERIFIED]
 - [Statistical Tests of Point-Source vs Diffuse Astrophysical Neutrinos](level_1_fundamental_physics/statistical_tests_of_point_source_vs_diffuse_astrophysical_neutrinos.md) [THEORETICAL]
 - [Sterile Neutrino Production Mechanisms and Cosmological Constraints](level_1_fundamental_physics/sterile_neutrino_production_mechanisms_and_cosmological_constraints.md) [THEORETICAL]
 - [Superfluid Dark Matter Phonon Effects](level_1_fundamental_physics/superfluid_dark_matter_phonon_effects.md) [THEORETICAL]
@@ -713,6 +718,7 @@ graph TD
 - [Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_dualities_in_nonequilibrium_quantum_systems.md) [THEORETICAL]
 - [Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory.md) [THEORETICAL]
 - [Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity.md) [VERIFIED]
+- [TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing](level_2_advanced_frameworks/teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing.md) [THEORETICAL]
 - [Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md) [THEORETICAL]
 - [Type-I Seesaw vs Radiative Neutrino Mass Generation](level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md) [THEORETICAL]
 - [Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem](level_2_advanced_frameworks/unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem.md) [THEORETICAL]
@@ -723,6 +729,7 @@ graph TD
 
 - [A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure](level_3_emergence_and_intelligence/a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure.md) [THEORETICAL]
 - [A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md) [THEORETICAL]
+- [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md) [THEORETICAL]
