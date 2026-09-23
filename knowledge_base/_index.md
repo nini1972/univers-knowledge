@@ -81,6 +81,7 @@ graph TD
     reducing_nuclear_matrix_element_uncertainties_in_0vbb_decay["Reducing Nuclear Matrix Element Uncertainties in 0vbb Decay"]:::theoretical
     statistical_mechanics["Statistical Mechanics"]:::verified
     signatures_distinguishing_neutrino_decay_from_sterile_neutrinos["Signatures Distinguishing Neutrino Decay from Sterile Neutrino Scenarios"]:::theoretical
+    cosmic_recombination_and_photon_decoupling["Cosmic Recombination and Photon Decoupling"]:::verified
     distinguishing_neutrino_decay_from_damping_and_decoherence["Distinguishing Neutrino Decay from Damping and Decoherence Mechanisms"]:::theoretical
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
     effective_field_theory["Effective Field Theory"]:::verified
@@ -211,6 +212,7 @@ graph TD
     vacuum_decay_and_cosmological_inflationary_termination_debate["Vacuum Decay and Cosmological Inflationary Termination Debate"]:::theoretical
     metricaffine_gravity_vs_symmetric_teleparallel_gravity_in_resolving_cosmic_singularity_constraints["Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints"]:::theoretical
     symmetryprotected_topological_phases_vs_holographic_dualities_in_nonequilibrium_quantum_systems["Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems"]:::theoretical
+    cuscuton_gravity_vs_ghost_condensate_cosmology_in_stable_accelerated_expansion["Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion"]:::theoretical
     asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance["Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance"]:::verified
     interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges["Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges"]:::verified
     supersymmetric_dark_energy_models_vs_modified_gravity_theories_in_explaining_cosmic_acceleration["Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration"]:::verified
@@ -494,6 +496,7 @@ graph TD
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
+- [Cosmic Recombination and Photon Decoupling](level_1_fundamental_physics/cosmic_recombination_and_photon_decoupling.md) [VERIFIED]
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
 - [Cosmological Perturbation Theory](level_1_fundamental_physics/cosmological_perturbation_theory.md) [VERIFIED]
 - [Covariant Quantum Measure Construction in Causal Set Theory](level_1_fundamental_physics/covariant_quantum_measure_construction_in_causal_set_theory.md) [THEORETICAL]
@@ -639,6 +642,7 @@ graph TD
 - [Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem](level_2_advanced_frameworks/conformal_gravity_vs_nfw_dark_matter_models_in_resolving_the_corecusp_problem.md) [VERIFIED]
 - [Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem](level_2_advanced_frameworks/conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem.md) [VERIFIED]
 - [Cosmological Constant versus Quintessence in Explaining Dark Energy](level_2_advanced_frameworks/cosmological_constant_versus_quintessence_in_explaining_dark_energy.md) [THEORETICAL]
+- [Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion](level_2_advanced_frameworks/cuscuton_gravity_vs_ghost_condensate_cosmology_in_stable_accelerated_expansion.md) [THEORETICAL]
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem](level_2_advanced_frameworks/dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem.md) [THEORETICAL]
 - [DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]

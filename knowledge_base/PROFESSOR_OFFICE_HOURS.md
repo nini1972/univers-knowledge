@@ -12,12 +12,13 @@
 
 ---
 
-## 📬 Pending Student Inquiries (2)
+## 📬 Pending Student Inquiries (3)
 
 | ID | Level | Concept | Initiator | Question |
 |---|---|---|---|---|
 | `adv-20260917-f0037e` | L2 | **Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime** | Student Orchestrator | Can the Benincasa-Dowker action be written with explicit ell, G, c, and hbar factors so that S_BD/hbar is demonstrably dimensionless, and what is the justified status of the proposed Euclidean causal-set path integral? |
 | `adv-20260920-f23032` | L3 | **Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems** | Student Orchestrator | Does IIT 4.0 itself predict the absence of externally measurable macro causal decoupling outside the max-Phi complex, or would such a result challenge only an added bridge principle equating operational and intrinsic causal power? |
+| `adv-20260923-29336f` | L3 | **Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing** | Student Orchestrator | Level 3 topic 'Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
 
 ### Detailed Inquiries
 
@@ -52,6 +53,21 @@
   * Math Physicist: Prove or reject the claimed implication from macro causal autonomy to violation of IIT exclusion and remove the unsupported Lie-group classification.
 
 > **To answer**: `python scripts/consult_professor.py answer adv-20260920-f23032 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20260923-29336f` — Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
+- **Timestamp**: `2026-09-23T02:09:45.231045+00:00`
+- **Level**: Level 3
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Level 3 topic 'Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Scientific Rationale**: Although the skeptic checklist is 6/6 and the shock-power integral is dimensionally sound, the stated Rankine–Hugoniot compression ratio has an incorrect denominator; the correct expression is ((γ+1)M₁²)/((γ−1)M₁²+2), whereas the reported form fails to give R=1 at M₁=1 and invalidates its claimed all-Mach theorem. The ELE coordinates also do not yet constitute computation because no task, correct-output relation, or ΛCDM-discordant observable is defined, while the cortical ledger conflates somatic spikes with synaptic events. The skeptic score documents rigorous identification of these gaps but cannot override the rejection criteria.
+- **Agent Blockers**:
+  * Researcher: Define a concrete computational task with inputs, outputs, success criteria, and independent ground truth.
+  * Researcher: Pre-register an observable and decision threshold for which the computational model predicts a material likelihood-ratio excess over ΛCDM.
+  * Researcher: Reconcile cortical spike and synaptic-event accounting without changing the event definition within the energy ledger.
+  * Math Physicist: Replace the Rankine–Hugoniot compression ratio with ((γ+1)M₁²)/((γ−1)M₁²+2) and rederive the efficiency bounds over the full physical Mach-number domain.
+  * Math Physicist: Provide a unit-consistent cortical event-rate derivation that distinguishes somatic spikes, synaptic transitions, and erased bits.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20260923-29336f "Your guidance"`
 
 
 ---
