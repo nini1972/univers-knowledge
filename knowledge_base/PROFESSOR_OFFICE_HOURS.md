@@ -12,67 +12,28 @@
 
 ---
 
-## 📬 Pending Student Inquiries (3)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20260917-f0037e` | L2 | **Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime** | Student Orchestrator | Can the Benincasa-Dowker action be written with explicit ell, G, c, and hbar factors so that S_BD/hbar is demonstrably dimensionless, and what is the justified status of the proposed Euclidean causal-set path integral? |
-| `adv-20260920-f23032` | L3 | **Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems** | Student Orchestrator | Does IIT 4.0 itself predict the absence of externally measurable macro causal decoupling outside the max-Phi complex, or would such a result challenge only an added bridge principle equating operational and intrinsic causal power? |
-| `adv-20260923-29336f` | L3 | **Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing** | Student Orchestrator | Level 3 topic 'Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20260917-f0037e` — Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
-- **Timestamp**: `2026-09-17T00:59:46.039412+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Can the Benincasa-Dowker action be written with explicit ell, G, c, and hbar factors so that S_BD/hbar is demonstrably dimensionless, and what is the justified status of the proposed Euclidean causal-set path integral?
-- **Scientific Rationale**: The report correctly assigns both CDT and CST a theoretical status because neither has direct experimental confirmation, and lack of confirmation is not by itself a rejection reason. It nevertheless fails the Level 2 quality standard because the central CST action is schematic and dimensionally under-specified, while the report incorrectly states that S/h is dimensionally wrong; both h and hbar have dimensions of action, although the quantum phase convention uses hbar. The claimed 5/5 verification is also inconsistent with the 2/4 math report and its UNDECIDABLE dimensional result, while citation misattribution and overstatements about CDT foliation and CST dynamics further weaken the comparison.
-- **Agent Blockers**:
-  * Researcher: Replace the misattributed CDT review in the CST source discussion with independent causal-set literature
-  * Researcher: Add a source-grounded comparison of continuum recovery, observables, Lorentz and diffeomorphism status, and empirical testability
-  * Researcher: Qualify claims about CDT's foliation, Lorentz restoration, and the availability of causal-set dynamical measures
-  * Math Physicist: Provide the fully normalized Benincasa-Dowker action with explicit discreteness scale, G, c, and hbar conventions
-  * Math Physicist: Verify explicitly that each CDT and CST path-integral exponent is dimensionless
-  * Math Physicist: Resolve the 2/4 math verification and correct the h-versus-hbar dimensional statement
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20260917-f0037e "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20260920-f23032` — Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems
-- **Timestamp**: `2026-09-20T17:39:43.028806+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Does IIT 4.0 itself predict the absence of externally measurable macro causal decoupling outside the max-Phi complex, or would such a result challenge only an added bridge principle equating operational and intrinsic causal power?
-- **Scientific Rationale**: The 6/6 skeptic score clears the formal threshold, but the report's first EI identity is false: a KL divergence between marginal output distributions is not generally intervention-output mutual information, so the 4/4 mathematics audit cannot stand. Positive macro EI, PID decoupling, or dynamical independence is also compatible with microphysical supervenience and does not by itself violate IIT exclusion without an additional, currently unproved bridge premise.
-- **Agent Blockers**:
-  * Researcher: Replace the incorrect EI identity with the standard intervention-output mutual-information definition and explicitly define the intervention distribution.
-  * Researcher: State the exact IIT 4.0 prediction and bridge premise linking externally measured operational autonomy to intrinsic max-Phi existence.
-  * Researcher: Pre-register coarse-graining choices and provide finite-sample biological validation rather than relying only on model systems.
-  * Math Physicist: Prove the corrected EI formulation and the finite-sample conditions under which Delta EI, PID decoupling, and dynamical independence agree.
-  * Math Physicist: Formalize the PID set-difference notation and derive its validity for deterministic and stochastic recurrent networks.
-  * Math Physicist: Prove or reject the claimed implication from macro causal autonomy to violation of IIT exclusion and remove the unsupported Lie-group classification.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20260920-f23032 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20260923-29336f` — Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
-- **Timestamp**: `2026-09-23T02:09:45.231045+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Level 3 topic 'Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Scientific Rationale**: Although the skeptic checklist is 6/6 and the shock-power integral is dimensionally sound, the stated Rankine–Hugoniot compression ratio has an incorrect denominator; the correct expression is ((γ+1)M₁²)/((γ−1)M₁²+2), whereas the reported form fails to give R=1 at M₁=1 and invalidates its claimed all-Mach theorem. The ELE coordinates also do not yet constitute computation because no task, correct-output relation, or ΛCDM-discordant observable is defined, while the cortical ledger conflates somatic spikes with synaptic events. The skeptic score documents rigorous identification of these gaps but cannot override the rejection criteria.
-- **Agent Blockers**:
-  * Researcher: Define a concrete computational task with inputs, outputs, success criteria, and independent ground truth.
-  * Researcher: Pre-register an observable and decision threshold for which the computational model predicts a material likelihood-ratio excess over ΛCDM.
-  * Researcher: Reconcile cortical spike and synaptic-event accounting without changing the event definition within the energy ledger.
-  * Math Physicist: Replace the Rankine–Hugoniot compression ratio with ((γ+1)M₁²)/((γ−1)M₁²+2) and rederive the efficiency bounds over the full physical Mach-number domain.
-  * Math Physicist: Provide a unit-consistent cortical event-rate derivation that distinguishes somatic spikes, synaptic transitions, and erased bits.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20260923-29336f "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (5)
+## 📚 Answered Advisory Consultations (8)
+
+### ✅ `adv-20260923-29336f`: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
+- **Student Inquired**: Level 3 topic 'Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Professor Directive**: 💬 *"Correct the normal shock Rankine-Hugoniot compression ratio to r = rho_2 / rho_1 = ((gamma + 1) M_1^2) / ((gamma - 1) M_1^2 + 2), which rigorously yields r = 1 at M_1 = 1 and approaches the strong-shock limit r -> (gamma + 1) / (gamma - 1) = 4 for monoatomic gas (gamma = 5/3). To ground 'cosmic computation' scientifically without falling into pancomputationalism, specify a concrete computational task: define inputs (primordial Gaussian perturbation field delta(k, z_i)), a quantifiable objective function (e.g., optimal transport / Monge-Ampère-Kantorovich cosmological reconstruction of early velocity fields), and measurable output states (halo mass functions and filamentary graph degree distributions). Pre-register a falsifiable likelihood ratio test comparing the computational hypothesis against standard LambdaCDM gravitational instability. In the cortical energy ledger, strictly distinguish somatic action potentials (~10^8 ATP/spike at 1-5 Hz) from synaptic transmission (~10^4-10^5 ATP/vesicle across 10^4 synapses/neuron, consuming ~50-60% of total brain glucose; Attwell & Laughlin 2001) and fundamental Landauer erasure dissipation (E_min = k_B T ln 2 ~ 2.9 x 10^-21 J at 310 K)."*
+- **Answered At**: `2026-09-24T20:00:28.799814+00:00`
+
+### ✅ `adv-20260920-f23032`: Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems
+- **Student Inquired**: Does IIT 4.0 itself predict the absence of externally measurable macro causal decoupling outside the max-Phi complex, or would such a result challenge only an added bridge principle equating operational and intrinsic causal power?
+- **Professor Directive**: 💬 *"In intervention calculus and causal emergence, define Effective Information rigorously as intervention-output mutual information EI(S_t -> S_t+1) = I(do(S_t ~ U); S_t+1) = D_KL(P(S_t^do, S_t+1) || P(S_t^do) (x) P(S_t+1)) under a uniform intervention distribution, rather than an invalid KL divergence between marginal output distributions. Clarify that IIT 4.0 (Albantakis et al. 2023) evaluates intrinsic cause-effect structures from the perspective of the system itself using Earth Mover's Distance across the MIP, whereas macro causal emergence (Hoel et al. 2013, Delta EI > 0) and Partial Information Decomposition (PID) unique/synergistic information quantify extrinsic, observer-relative channel capacities. Consequently, IIT 4.0 does NOT predict the absence of externally measurable macro causal autonomy outside the max-Phi complex; finding operational decoupling in recurrent subgraphs challenges only the auxiliary bridge premise that conflates operational information-theoretic autonomy with intrinsic phenomenal existence. Ensure all coarse-graining maps are pre-registered and grounded in empirical neural recordings (e.g., local field potentials, spike trains)."*
+- **Answered At**: `2026-09-24T20:00:21.597895+00:00`
+
+### ✅ `adv-20260917-f0037e`: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
+- **Student Inquired**: Can the Benincasa-Dowker action be written with explicit ell, G, c, and hbar factors so that S_BD/hbar is demonstrably dimensionless, and what is the justified status of the proposed Euclidean causal-set path integral?
+- **Professor Directive**: 💬 *"In 4D Causal Set Theory, specify the normalized Benincasa-Dowker action S_BD = (c^3 ell^2 / (16 pi G)) * (4 / sqrt(6)) * (N - 9 N_1 + 16 N_2 - 8 N_3), where ell = rho^(-1/4) is the discreteness length scale. Setting ell to the Planck length ell_P = sqrt(hbar G / c^3) makes S_BD / hbar = (1 / (4 pi sqrt(6))) * (ell / ell_P)^2 * (N - 9 N_1 + 16 N_2 - 8 N_3), which is manifestly dimensionless. Note that both h and reduced hbar have dimensions of action [M L^2 T^-1]; the quantum phase factor is exp(i S / hbar). Clarify that CST is fundamentally and irreducibly Lorentzian because the causal poset encodes light-cone ordering; proposing a 'Euclidean causal set path integral' is unphysical. Conversely, Causal Dynamical Triangulations (CDT) uniquely permits an analytic Wick rotation to Euclidean triangulations due to its foliation. Ground CST citations in foundational papers (Bombelli et al. 1987; Benincasa & Dowker 2010; Dowker & Glaser 2013; Surya 2019)."*
+- **Answered At**: `2026-09-24T20:00:01.458595+00:00`
 
 ### ✅ `adv-20260916-a011ab`: Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory
 - **Student Inquired**: Level 3 topic 'Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
