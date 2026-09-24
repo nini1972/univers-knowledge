@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-23T02:09:46.375747+00:00",
+  "updated_at": "2026-09-24T02:17:12.178980+00:00",
   "stats": {
-    "total_nodes": 275,
-    "level_1_count": 120,
-    "level_2_count": 119,
-    "level_3_count": 36,
-    "total_edges": 151,
+    "total_nodes": 278,
+    "level_1_count": 121,
+    "level_2_count": 120,
+    "level_3_count": 37,
+    "total_edges": 155,
     "frontier_count": 0
   },
   "nodes": [
@@ -1595,6 +1595,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/operator_theoretic_foundations_of_neutrino_decay.md"
     },
     {
+      "id": "pathintegralformulation",
+      "title": "Path Integral Formulation",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Feynman, R. P. (1948), 'Space-Time Approach to Non-Relativistic Quantum Mechanics', https://doi.org/10.1103/RevModPhys.20.367",
+        "Wen, X. J., et al. (2026), 'First direct experimental test of the path integral formulation', https://doi.org/10.1126/sciadv.eaeh1011",
+        "Feynman, R. P., & Vernon, F. L. (1963), 'Theory of a General Quantum System Interacting with a Linear Dissipative System', https://doi.org/10.1016/0003-4916(63)90068-X"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/path_integral_formulation.md"
+    },
+    {
       "id": "planckepochandtheinitialconditionsfortheuniverse",
       "title": "Planck Epoch and the Initial Conditions for the Universe",
       "level": 1,
@@ -3038,7 +3057,8 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
       "dependencies": [
-        "cosmologicalconstantanddarkenergy"
+        "cosmologicalconstantanddarkenergy",
+        "earlydarkenergyvsquintessenceinresolvingthehubbletension"
       ],
       "tags": [
         "2"
@@ -3196,6 +3216,31 @@
         "Verified experimental studies in dark matter research"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution.md"
+    },
+    {
+      "id": "earlydarkenergyvsquintessenceinresolvingthehubbletension",
+      "title": "Early Dark Energy vs Quintessence in Resolving the Hubble Tension",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "cosmologicalconstantversusquintessenceinexplainingdarkenergy"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Poulin, V., Smith, T.L., Karwal, T., Kamionkowski, M. (2019), 'Early dark energy can resolve the Hubble tension.', https://doi.org/10.1103/PhysRevLett.122.221301",
+        "Smith, T.L., Poulin, V., Amin, M.A. (2020), 'Oscillating scalar fields and the Hubble tension: A resolution with novel signatures.', https://doi.org/10.1103/PhysRevD.101.063523",
+        "Ivanov, M.M., McDonough, E., Hill, J.C., Simonović, M. et al. (2020), 'Constraining early dark energy with large-scale structure.', https://doi.org/10.1103/PhysRevD.102.103502",
+        "Hill, J.C., Calabrese, E., Aiola, S. et al. (2022), 'Atacama Cosmology Telescope: Constraints on prerecombination early dark energy.', https://doi.org/10.1103/PhysRevD.105.123536",
+        "Vagnozzi, S. (2023), 'Seven hints that early-time new physics alone is not sufficient to solve the Hubble tension.', https://doi.org/10.3390/universe9090393",
+        "Niedermann, F., Sloth, M.S. (2022), 'Hot new early dark energy.', https://doi.org/10.1103/PhysRevD.105.063509",
+        "Braglia, M., Ballardini, M., Finelli, F., Koyama, K. (2021), 'Early modified gravity in light of the H₀ tension and LSS data.', https://doi.org/10.1103/PhysRevD.103.043528"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/early_dark_energy_vs_quintessence_in_resolving_the_hubble_tension.md"
     },
     {
       "id": "ekpyroticuniversemodelversusinflationarycosmologydebate",
@@ -5168,6 +5213,33 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md"
     },
     {
+      "id": "identifiabilitylimitsofpsychophysicalbridgelawsanadversarialtestofintegratedinformationtheoryversusmechanisticphysicalism",
+      "title": "Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "macrolevelcausalautonomywithoutphenomenalcommitmentaninterventionalfalsificationtestofintegratedinformationtheoryversusmechanisticphysicalisminrecurrentneuralsy"
+      ],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Tononi, G. (2004), 'An information integration theory of consciousness', https://doi.org/10.1186/1471-2202-5-42",
+        "Oizumi, M., Albantakis, L., & Tononi, G. (2014), 'From the Phenomenology to the Mathematics of Consciousness: Integrated Information Theory 3.0', https://doi.org/10.1371/journal.pcbi.1003588",
+        "Tononi, G., & Koch, C. (2015), 'Consciousness: Here, there and everywhere?', https://doi.org/10.1098/rstb.2014.0167",
+        "Casali, A. G., et al. (2013), 'A theoretically based index of consciousness independent of behaviour', https://www.science.org/doi/10.1126/scitranslmed.3001372",
+        "Moon, E. & Pae, H. (2018), 'Identifiability, Intractability, and Computational Complexity in Integrated Information Theory', https://arxiv.org/abs/1807.02103",
+        "Bailey, C., & Schneider, M. (2026), 'Exact computation of causal $\\Phi$ remains intractable except in very small systems', https://doi.org/10.3390/e28040380",
+        "Bayne, T. (2018), 'The Phenomenal Basis of Consciousness', https://doi.org/10.1093/nc/niy007",
+        "Merker, B., Williford, R., et al. (2021), 'The integrated information theory of consciousness: A case of mistaken identity', https://doi.org/10.31234/osf.io/km4bn",
+        "Ganesh, S. (2020), 'Thermodynamic constraints on consciousness', https://arxiv.org/abs/2005.02801"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md"
+    },
+    {
       "id": "informationtheoreticcomplexityandemergenthierarchiesinthecosmicwebacomparativeanalysisofneuralnetworksandlargescalestructureevolution",
       "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
       "level": 3,
@@ -5289,7 +5361,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
-      "dependencies": [],
+      "dependencies": [
+        "identifiabilitylimitsofpsychophysicalbridgelawsanadversarialtestofintegratedinformationtheoryversusmechanisticphysicalism"
+      ],
       "tags": [
         "3"
       ],
@@ -5819,6 +5893,11 @@
       "type": "component_theory"
     },
     {
+      "source": "earlydarkenergyvsquintessenceinresolvingthehubbletension",
+      "target": "cosmologicalconstantversusquintessenceinexplainingdarkenergy",
+      "type": "component_theory"
+    },
+    {
       "source": "massivegravityversusfrgravityinmodifiedgravitydebates",
       "target": "debateonmodifiedgravitytheoriestevesvsfrgravity",
       "type": "component_theory"
@@ -5841,6 +5920,11 @@
     {
       "source": "canthetheoreticalpredictionsfromquantumextremalsurfacecomputationsandmodifiedgravityapproachesbelinkedtopotentiallyobservablesignatureseginblackholeevaporationorgravitationalwaveechoestoenableempiricaltesting",
       "target": "dynamicaldarkenergyvsmodifiedgravityinexplainingtheredshiftdependenceofcosmicacceleration",
+      "type": "component_theory"
+    },
+    {
+      "source": "cosmologicalconstantversusquintessenceinexplainingdarkenergy",
+      "target": "earlydarkenergyvsquintessenceinresolvingthehubbletension",
       "type": "component_theory"
     },
     {
@@ -6261,6 +6345,16 @@
     {
       "source": "quantumvacuumentanglementanditsroleincosmologicalstructureformation",
       "target": "computationalirreducibilityandalgorithmicinformationcompressioninneuralmanifoldsversuscosmologicalstructureformation",
+      "type": "component_theory"
+    },
+    {
+      "source": "macrolevelcausalautonomywithoutphenomenalcommitmentaninterventionalfalsificationtestofintegratedinformationtheoryversusmechanisticphysicalisminrecurrentneuralsy",
+      "target": "identifiabilitylimitsofpsychophysicalbridgelawsanadversarialtestofintegratedinformationtheoryversusmechanisticphysicalism",
+      "type": "component_theory"
+    },
+    {
+      "source": "identifiabilitylimitsofpsychophysicalbridgelawsanadversarialtestofintegratedinformationtheoryversusmechanisticphysicalism",
+      "target": "macrolevelcausalautonomywithoutphenomenalcommitmentaninterventionalfalsificationtestofintegratedinformationtheoryversusmechanisticphysicalisminrecurrentneuralsy",
       "type": "component_theory"
     },
     {

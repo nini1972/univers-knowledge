@@ -63,6 +63,7 @@ graph TD
     quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
     quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
     experimental_collaboration_bounds_on_neutrino_decay["Experimental Collaboration Bounds on Neutrino Decay"]:::verified
+    path_integral_formulation["Path Integral Formulation"]:::verified
     simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors["Simulation Studies and Sensitivity Limits for Neutrino Decay Detectors"]:::verified
     neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
     discriminating_warm_vs_cold_dark_matter_via_cosmological_probes["Discriminating Warm vs Cold Dark Matter via Cosmological Probes"]:::theoretical
@@ -160,6 +161,7 @@ graph TD
     conformal_gravity_vs_cold_dark_matter_in_explaining_galactic_rotation_curves["Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves"]:::verified
     dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution["Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution"]:::theoretical
     teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing["TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing"]:::theoretical
+    early_dark_energy_vs_quintessence_in_resolving_the_hubble_tension["Early Dark Energy vs Quintessence in Resolving the Hubble Tension"]:::theoretical
     scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration["Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime["Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
@@ -281,6 +283,7 @@ graph TD
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
     a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue["A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue"]:::theoretical
+    identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism["Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
     a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems["A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems"]:::theoretical
     formalizing_integrated_information_theory_within_spacetime_geometry["Formalizing Integrated Information Theory (IIT) within Spacetime Geometry"]:::theoretical
@@ -349,6 +352,9 @@ graph TD
     quantum_mechanics --- quantum_electrodynamics_qed
     neutrino_oscillations --- experimental_collaboration_bounds_on_neutrino_decay
     neutrinoless_double_beta_decay --- experimental_collaboration_bounds_on_neutrino_decay
+    quantum_mechanics --- path_integral_formulation
+    quantum_field_theory --- path_integral_formulation
+    quantum_gravity --- path_integral_formulation
     neutrinoless_double_beta_decay --- simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors
     standard_model_of_particle_physics --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
     cosmic_neutrino_background --- neutrino_mass_and_its_role_in_particle_physics_and_cosmology
@@ -567,6 +573,7 @@ graph TD
 - [Observational Signatures of Quantum Extremal Surfaces and Black Hole Evaporation](level_1_fundamental_physics/observational_signatures_of_quantum_extremal_surfaces_and_black_hole_evaporation.md) [THEORETICAL]
 - [Observational Signatures Unique to Superfluid Dark Matter](level_1_fundamental_physics/observational_signatures_unique_to_superfluid_dark_matter.md) [THEORETICAL]
 - [Operator-Theoretic Foundations of Neutrino Decay Survival Probabilities](level_1_fundamental_physics/operator_theoretic_foundations_of_neutrino_decay.md) [VERIFIED]
+- [Path Integral Formulation](level_1_fundamental_physics/path_integral_formulation.md) [VERIFIED]
 - [Planck Epoch and the Initial Conditions for the Universe](level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md) [THEORETICAL]
 - [Primordial Gravitational Waves](level_1_fundamental_physics/primordial_gravitational_waves.md) [THEORETICAL]
 - [Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications](level_1_fundamental_physics/quantum_chromodynamics_qcd.md) [THEORETICAL]
@@ -649,6 +656,7 @@ graph TD
 - [Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension](level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension.md) [THEORETICAL]
 - [Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration](level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration.md) [THEORETICAL]
 - [Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution](level_2_advanced_frameworks/dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution.md) [THEORETICAL]
+- [Early Dark Energy vs Quintessence in Resolving the Hubble Tension](level_2_advanced_frameworks/early_dark_energy_vs_quintessence_in_resolving_the_hubble_tension.md) [THEORETICAL]
 - [Ekpyrotic Universe Model versus Inflationary Cosmology Debate](level_2_advanced_frameworks/ekpyrotic_universe_model_versus_inflationary_cosmology_debate.md) [VERIFIED]
 - [Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry](level_2_advanced_frameworks/electroweak_vs_spontaneous_baryogenesis_in_explaining_matterantimatter_asymmetry.md) [THEORETICAL]
 - [Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies](level_2_advanced_frameworks/emergent_entropic_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies.md) [THEORETICAL]
@@ -744,6 +752,7 @@ graph TD
 - [Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]
+- [Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism](level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md) [THEORETICAL]
 - [Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md) [THEORETICAL]
 - [Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures](level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md) [THEORETICAL]
 - [Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments](level_3_emergence_and_intelligence/landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments.md) [THEORETICAL]
