@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-24T02:17:12.178980+00:00",
+  "updated_at": "2026-09-25T02:29:45.309881+00:00",
   "stats": {
-    "total_nodes": 278,
-    "level_1_count": 121,
+    "total_nodes": 280,
+    "level_1_count": 122,
     "level_2_count": 120,
-    "level_3_count": 37,
+    "level_3_count": 38,
     "total_edges": 155,
     "frontier_count": 0
   },
@@ -1986,6 +1986,30 @@
         "Theoretical frameworks in cosmology"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/relativistic_simulations_differentiating_sfdm_from_lambda_cdm.md"
+    },
+    {
+      "id": "renormalizationandtherenormalizationgroup",
+      "title": "Renormalization and the Renormalization Group",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "K. G. Wilson (1971), 'Renormalization Group and Critical Phenomena. I', https://doi.org/10.1103/PhysRevB.4.3174",
+        "D. J. Gross & F. Wilczek (1973), 'Ultraviolet Behavior of Non-Abelian Gauge Theories', https://doi.org/10.1103/physrevlett.30.1343",
+        "H. D. Politzer (1973), 'Reliable Perturbative Results for Strong Interactions?', https://doi.org/10.1103/physrevlett.30.1346",
+        "O. J. Rosten (2012), 'Fundamentals of the exact renormalization group', https://doi.org/10.1016/j.physrep.2011.12.003",
+        "M. Niedermaier & M. Reuter (2006), 'The Asymptotic Safety Scenario in Quantum Gravity', https://doi.org/10.12942/lrr-2006-5",
+        "A. Eichhorn (2015), 'The Renormalization Group flow of unimodular f(R) gravity', https://doi.org/10.1007/jhep04(2015)096",
+        "A. Perez (2017), 'Black holes in loop quantum gravity', https://doi.org/10.1088/1361-6633/aa7e14",
+        "A. Eichhorn, M. Pauly & S. Ray (2021), 'Quantum gravity: A review', https://arxiv.org/abs/2107.07949"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/renormalization_and_the_renormalization_group.md"
     },
     {
       "id": "whataretheprospectsandtimelinesforobservationaladvancesegnextgenerationehtorimprovedgravitationalwavedetectorstoresolvecurrentdegeneraciesbetweenkerrandalternativeblackholemodels",
@@ -5451,6 +5475,25 @@
         "Spectroscopic Verification of Vibronic Dynamics"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md"
+    },
+    {
+      "id": "operationalcriteriaforcosmiccomputationafalsifiableenergylatencyerrorbenchmarkcomparingcosmicwebselforganizationwithbiologicalneuralinformationprocessing",
+      "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Attwell, D., & Laughlin, S. B. (2001), 'An Energy Budget for Signaling in the Grey Matter of the Brain', https://doi.org/10.1097/00004647-200110000-00001",
+        "Bormashenko, E. (2024), 'Landauer Bound in the Context of Minimal Physical Principles: Meaning, Experimental Verification, Controversies and Perspectives', https://doi.org/10.3390/e26050423",
+        "Libeskind, N. I., van de Weygaert, R., Cautun, M., et al. (2017), 'Tracing the cosmic web', https://doi.org/10.1093/mnras/stx1976"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/operational_criteria_for_cosmic_computation_a_falsifiable_energylatencyerror_benchmark_comparing_cosmicweb_selforganization_with_biological_neural_information_processing.md"
     },
     {
       "id": "quantifyingcausalemergenceinnonequilibriumsystemslinkingthermodynamicentropyproductiontointegratedinformationmeasuresincosmicandbiologicalarchitectures",
