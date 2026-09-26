@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-25T02:29:21.392662+00:00  
-> **Total Analyzed Concepts:** 345 | **Total Discovered Equations:** 11500 | **Discovered Bridges:** 539
+> **Generated:** 2026-09-26T03:12:42.858684+00:00  
+> **Total Analyzed Concepts:** 350 | **Total Discovered Equations:** 11759 | **Discovered Bridges:** 554
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -108,7 +108,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
 
 ### ` 1.380649 \times 10^{-23} `
-**Occurrences:** Appears in 35 concepts:
+**Occurrences:** Appears in 36 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
@@ -144,6 +144,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Statistical Mechanics
 - **Level 3**: A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue
 - **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
+- **Level 3**: Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure
 
 ### ` 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 31 concepts:
@@ -456,13 +457,13 @@ These equations appear across multiple distinct concepts, serving as mathematica
 | :--- | :--- | :--- | :--- | :--- |
 | `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 140 |
 | `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 126 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 118 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 121 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 86 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 68 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 46 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 33 |
-| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 14 |
+| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 15 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 137
-- **MATH_CONSISTENT Entries:** 90
+- **MATH_PROVEN Entries:** 140
+- **MATH_CONSISTENT Entries:** 91

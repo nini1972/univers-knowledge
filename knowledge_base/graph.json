@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-25T02:29:45.309881+00:00",
+  "updated_at": "2026-09-26T03:13:04.163100+00:00",
   "stats": {
-    "total_nodes": 280,
-    "level_1_count": 122,
-    "level_2_count": 120,
-    "level_3_count": 38,
+    "total_nodes": 283,
+    "level_1_count": 123,
+    "level_2_count": 121,
+    "level_3_count": 39,
     "total_edges": 155,
     "frontier_count": 0
   },
@@ -1650,6 +1650,25 @@
         "Peer-reviewed Theoretical Physics Journals"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/primordial_gravitational_waves.md"
+    },
+    {
+      "id": "primordialnucleosynthesisandlightelementabundances",
+      "title": "Primordial Nucleosynthesis and Light-Element Abundances",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Fields, B.D., Olive, K.A., Yeh, T.-H. & Young, C. (2020), 'Big-Bang Nucleosynthesis after Planck', https://doi.org/10.1088/1475-7516/2020/03/010",
+        "Coc, A., Uzan, J.-P. & Vangioni, E. (2014), 'Standard BBN and primordial CNO abundances after Planck', https://doi.org/10.1088/1475-7516/2014/10/050",
+        "Serpico, P.D. et al. (2004), 'Nuclear reaction network for primordial nucleosynthesis', https://doi.org/10.1088/1475-7516/2004/12/010"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/primordial_nucleosynthesis_and_lightelement_abundances.md"
     },
     {
       "id": "quantumchromodynamicsqcd",
@@ -4441,6 +4460,27 @@
       "path": "knowledge_base/level_2_advanced_frameworks/screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration.md"
     },
     {
+      "id": "singlefieldinflationvsthecurvatonscenarioingeneratingprimordialperturbations",
+      "title": "Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck Collaboration (Aghanim et al.) (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "BICEP/Keck Collaboration (Ade et al.) (2021), 'Improved Constraints on Primordial Gravitational Waves from Planck2015 and BICEP/Keck through the 2018 Observing Season', https://doi.org/10.1103/PhysRevLett.127.151301",
+        "Lyth, D.H. & Wands, D. (2002), 'Generating the curvature perturbation without an inflaton', https://doi.org/10.1016/S0370-2693(01)01366-1",
+        "Sasaki, M., Valiviita, J. & Wands, D. (2006), 'Non-Gaussianity of the primordial curvature perturbation from vector-like curvaton models', https://doi.org/10.1103/PhysRevD.74.023010",
+        "Maldacena, J. (2003), 'Non-Gaussian features of primordial fluctuations in single field inflationary models', https://doi.org/10.1088/1126-6708/2003/05/013"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/singlefield_inflation_vs_the_curvaton_scenario_in_generating_primordial_perturbations.md"
+    },
+    {
       "id": "slowrollinflationvsmatterbouncecosmologyinexplainingprimordialperturbations",
       "title": "Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations",
       "level": 2,
@@ -5197,6 +5237,25 @@
         "Source 3"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md"
+    },
+    {
+      "id": "empiricalidentifiabilityofintegratedinformationmeasuresunderphysicalistcausalclosure",
+      "title": "Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Landauer, R. (1961), 'Irreversibility and Heat Generation in the Computing Process', https://doi.org/10.1147/rd.53.0183",
+        "Doerig, A., Schurger, A., Harvey, A. F., & Herzog, M. H. (2019), 'On the Relationship Between Recurrent and Feedforward Neural Networks', https://doi.org/10.1016/j.concog.2019.04.006",
+        "Barrett, A. B., & Mediano, P. A. M. (2019), 'The Integrated Information Theory of Consciousness: A Review', https://doi.org/10.48550/arxiv.1902.04321"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure.md"
     },
     {
       "id": "entropyproductionratesinneuralinformationprocessingvsgravitationalstructureformationacomparativethermodynamicanalysis",

@@ -38,6 +38,7 @@ graph TD
     spectral_decomposition_of_non_hermitian_decay_hamiltonians["Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms"]:::theoretical
     quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
     cosmological_constant_and_dark_energy["Cosmological Constant and Dark Energy"]:::verified
+    primordial_nucleosynthesis_and_lightelement_abundances["Primordial Nucleosynthesis and Light-Element Abundances"]:::verified
     empirical_falsification_priorities_for_theoretical_physics["Empirical Falsification Priorities for Theoretical Physics Extensions"]:::theoretical
     cross_correlation_methods_breaking_neutrino_decay_degeneracies["Cross-Correlation Methods Breaking Degeneracies in Neutrino Decay Surveys"]:::theoretical
     electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
@@ -135,6 +136,7 @@ graph TD
     asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics["Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics"]:::theoretical
     torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints["Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints"]:::theoretical
     asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities["Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities"]:::theoretical
+    singlefield_inflation_vs_the_curvaton_scenario_in_generating_primordial_perturbations["Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations"]:::theoretical
     cosmological_constant_versus_quintessence_in_explaining_dark_energy["Cosmological Constant versus Quintessence in Explaining Dark Energy"]:::theoretical
     debate_on_modified_gravity_theories_teves_vs_fr_gravity["Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity"]:::verified
     dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension["Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension"]:::theoretical
@@ -285,6 +287,7 @@ graph TD
     dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks["Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks"]:::theoretical
     causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness["Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness"]:::theoretical
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
+    empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure["Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure"]:::theoretical
     computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation["Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation"]:::theoretical
     landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks["Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks"]:::verified
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
@@ -314,6 +317,7 @@ graph TD
     neutrino_oscillations --- neutrino_decay_width_constraints_and_decay_inclusive_oscillations
     quantum_decoherence --- disentangling_neutrino_decay_from_nsi_and_decoherence
     general_relativity --- cosmological_constant_and_dark_energy
+    dark_matter --- primordial_nucleosynthesis_and_lightelement_abundances
     the_higgs_boson --- electroweak_symmetry_breaking
     standard_model_of_particle_physics --- electroweak_symmetry_breaking
     standard_model_gauge_symmetries_and_their_spontaneous_breaking --- electroweak_symmetry_breaking
@@ -416,6 +420,7 @@ graph TD
     general_relativity --> torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints
     quantum_gravity --> asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities
     effective_field_theory --> asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities
+    inflationary_cosmology --> singlefield_inflation_vs_the_curvaton_scenario_in_generating_primordial_perturbations
     cosmological_constant_and_dark_energy --> debate_on_modified_gravity_theories_teves_vs_fr_gravity
     cosmic_microwave_background_radiation --> dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension
     dark_matter --> fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges
@@ -578,6 +583,7 @@ graph TD
 - [Path Integral Formulation](level_1_fundamental_physics/path_integral_formulation.md) [VERIFIED]
 - [Planck Epoch and the Initial Conditions for the Universe](level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md) [THEORETICAL]
 - [Primordial Gravitational Waves](level_1_fundamental_physics/primordial_gravitational_waves.md) [THEORETICAL]
+- [Primordial Nucleosynthesis and Light-Element Abundances](level_1_fundamental_physics/primordial_nucleosynthesis_and_lightelement_abundances.md) [VERIFIED]
 - [Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications](level_1_fundamental_physics/quantum_chromodynamics_qcd.md) [THEORETICAL]
 - [Quantum Decoherence](level_1_fundamental_physics/quantum_decoherence.md) [VERIFIED]
 - [Quantum Electrodynamics (QED) — Verified Knowledge Summary](level_1_fundamental_physics/quantum_electrodynamics_qed.md) [THEORETICAL]
@@ -714,6 +720,7 @@ graph TD
 - [Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale](level_2_advanced_frameworks/scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
 - [Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration](level_2_advanced_frameworks/screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration.md) [THEORETICAL]
+- [Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations](level_2_advanced_frameworks/singlefield_inflation_vs_the_curvaton_scenario_in_generating_primordial_perturbations.md) [THEORETICAL]
 - [Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations](level_2_advanced_frameworks/slowroll_inflation_vs_matterbounce_cosmology_in_explaining_primordial_perturbations.md) [VERIFIED]
 - [Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation](level_2_advanced_frameworks/sterile_neutrino_vs_fuzzy_dark_matter_in_explaining_structure_formation.md) [THEORETICAL]
 - [Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition](level_2_advanced_frameworks/stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition.md) [THEORETICAL]
@@ -753,6 +760,7 @@ graph TD
 - [Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation](level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md) [THEORETICAL]
 - [Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory](level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md) [THEORETICAL]
 - [Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md) [THEORETICAL]
+- [Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]
 - [Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism](level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md) [THEORETICAL]
