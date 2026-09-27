@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-26T03:13:04.163100+00:00",
+  "updated_at": "2026-09-27T01:59:06.525218+00:00",
   "stats": {
-    "total_nodes": 283,
-    "level_1_count": 123,
+    "total_nodes": 285,
+    "level_1_count": 124,
     "level_2_count": 121,
-    "level_3_count": 39,
+    "level_3_count": 40,
     "total_edges": 155,
     "frontier_count": 0
   },
@@ -226,6 +226,27 @@
         "G. Giesen, J. Lesgourgues, B. Audren, Y. Ali-Haïmoud (2012), 'CMB photons shedding light on dark matter', https://doi.org/10.1088/1475-7516/2012/12/008"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cosmic_recombination_and_photon_decoupling.md"
+    },
+    {
+      "id": "cosmicthermalhistoryoftheuniverse",
+      "title": "Cosmic Thermal History of the Universe",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Seager, S., Sasselov, D. D., & Scott, D. (2000), 'How Exactly Did the Universe Become Neutral?', https://doi.org/10.1086/313388 | arXiv:astro-ph/9912182",
+        "Chiang, Y.-K., Makiya, R., Ménard, B., et al. (2020), 'The Cosmic Thermal History Probed by Sunyaev–Zeldovich Effect Tomography.', https://doi.org/10.3847/1538-4357/abb403",
+        "Pritchard, J. R., & Loeb, A. (2012), '21 cm cosmology in the 21st century.', https://doi.org/10.1088/0034-4885/75/8/086901 | arXiv:1109.6012",
+        "Fukugita, M., Hogan, C. J., & Peebles, P. J. E. (1998), 'The Cosmic Baryon Budget.', https://doi.org/10.1086/306025",
+        "Planck Collaboration (2016), 'Planck 2015 results. XIII. Cosmological parameters.', https://doi.org/10.1051/0004-6361/201525830 | arXiv:1502.01589"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_thermal_history_of_the_universe.md"
     },
     {
       "id": "cosmologicalconstantanddarkenergy",
@@ -5256,6 +5277,30 @@
         "Barrett, A. B., & Mediano, P. A. M. (2019), 'The Integrated Information Theory of Consciousness: A Review', https://doi.org/10.48550/arxiv.1902.04321"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure.md"
+    },
+    {
+      "id": "empiricalidentifiabilityofintegratedinformationtheoryandphysicalistemergenceundermatchedcausalinterventionmodels",
+      "title": "Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Albantakis, L., et al. (2022), 'An Information-Theoretic Perspective on Integrated Information Theory', https://arxiv.org/abs/2212.14787",
+        "Tegmark, M. (2016), 'Integrated Information Theory', PLoS Comput. Biol. 12(11):e1005123, https://doi.org/10.1371/journal.pcbi.1005123",
+        "Casali, A. G., et al. (2013), 'A Theoretical Framework for Studying Consciousness', Sci. Transl. Med. 5(198):198ra105, https://doi.org/10.1126/scitranslmed.3006294",
+        "Kleiner, M., & Hoel, E. P. (2021), 'Falsifiability of Integrated Information Theory', Neurosci. Conscious. 2021(1):niab001, https://doi.org/10.1093/nc/niab001",
+        "Farisco, G., et al. (2023), 'Comparing PCI and Global Neuronal Workspace Theory metrics', PMC10279414",
+        "Berjaga-Buisan, M., et al. (2026), 'Non-equilibrium thermodynamics in neural dynamics', https://doi.org/10.1016/j.celrep.2026.117782",
+        "Melloni, L., et al. (2023), 'Adversarial Collaborations in Consciousness Research', PLoS ONE 18(2):e0268577, https://doi.org/10.1371/journal.pone.0268577",
+        "O'Reilly-Shah, V., Selvitella, C., & Schurger, A. (2022), 'Plasticity and Networks', Neurosci. Conscious. 2022(1):niag027, https://doi.org/10.1093/nc/niag027"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md"
     },
     {
       "id": "entropyproductionratesinneuralinformationprocessingvsgravitationalstructureformationacomparativethermodynamicanalysis",

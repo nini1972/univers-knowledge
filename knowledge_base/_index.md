@@ -92,6 +92,7 @@ graph TD
     lisa_gravitational_waves_and_adm_phase_transitions["To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?"]:::theoretical
     matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
     observational_signatures_unique_to_superfluid_dark_matter["Observational Signatures Unique to Superfluid Dark Matter"]:::theoretical
+    cosmic_thermal_history_of_the_universe["Cosmic Thermal History of the Universe"]:::verified
     experimental_schematics_for_neutrino_decay_detection["Experimental Schematics and Layouts for Neutrino Decay Detection"]:::theoretical
     non_standard_interactions_and_neutrino_decay_lifetime_bounds_at_dune["Non-Standard Interactions and Neutrino Decay Lifetime Bounds at DUNE"]:::verified
     standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
@@ -273,6 +274,7 @@ graph TD
     landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding["Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding"]:::theoretical
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
     quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures["Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures"]:::verified
+    empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models["Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models"]:::theoretical
     quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies["Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies"]:::theoretical
     landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures["Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures"]:::theoretical
     quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions["Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions"]:::theoretical
@@ -510,6 +512,7 @@ graph TD
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
 - [Cosmic Recombination and Photon Decoupling](level_1_fundamental_physics/cosmic_recombination_and_photon_decoupling.md) [VERIFIED]
+- [Cosmic Thermal History of the Universe](level_1_fundamental_physics/cosmic_thermal_history_of_the_universe.md) [VERIFIED]
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
 - [Cosmological Perturbation Theory](level_1_fundamental_physics/cosmological_perturbation_theory.md) [VERIFIED]
 - [Covariant Quantum Measure Construction in Causal Set Theory](level_1_fundamental_physics/covariant_quantum_measure_construction_in_causal_set_theory.md) [THEORETICAL]
@@ -761,6 +764,7 @@ graph TD
 - [Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory](level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md) [THEORETICAL]
 - [Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure.md) [THEORETICAL]
+- [Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]
 - [Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism](level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md) [THEORETICAL]
