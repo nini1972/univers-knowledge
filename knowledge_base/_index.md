@@ -129,6 +129,7 @@ graph TD
     neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
     quantum_chromodynamics_qcd["Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications"]:::theoretical
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
+    electroweak_phase_transition_and_its_cosmological_implications["Electroweak Phase Transition and Its Cosmological Implications"]:::verified
     general_relativity["General Relativity"]:::verified
     statistical_tests_of_point_source_vs_diffuse_astrophysical_neutrinos["Statistical Tests of Point-Source vs Diffuse Astrophysical Neutrinos"]:::theoretical
     neutrino_state_definitions_and_asymptotic_decay_states["Neutrino State Definitions and Asymptotic States During Decay"]:::verified
@@ -221,6 +222,7 @@ graph TD
     causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research["Causal Set Theory vs Spin Foam Models in Quantum Gravity Research"]:::theoretical
     axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure["Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure"]:::theoretical
     axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness["Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness"]:::theoretical
+    inflationary_perturbations_vs_cosmicstring_loops_as_primordial_black_hole_origins["Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins"]:::theoretical
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
     stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition["Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition"]:::theoretical
     dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution["Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution"]:::theoretical
@@ -255,6 +257,7 @@ graph TD
     black_hole_models_debate_observational_techniques_vs_theoretical_frameworks["Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks"]:::verified
     unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem["Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem"]:::theoretical
     identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism["Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism"]:::theoretical
+    interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems["Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems"]:::theoretical
     a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue["A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue"]:::theoretical
     quantum_thermodynamic_speed_limits_and_energetic_advantage_in_biological_sensing_a_falsifiable_benchmarkrelative_test_of_coherenceenhanced_information_processing["Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing"]:::theoretical
     nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution["Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution"]:::theoretical
@@ -414,6 +417,7 @@ graph TD
     cp_violation --- quantum_chromodynamics_qcd
     quantum_electrodynamics_qed --- quantum_chromodynamics_qcd
     primordial_gravitational_waves --- inflationary_cosmology
+    electroweak_symmetry_breaking --- electroweak_phase_transition_and_its_cosmological_implications
     quantum_mechanics --- general_relativity
     quantum_decoherence --- neutrino_state_definitions_and_asymptotic_decay_states
     standard_model_of_particle_physics --- neutrino_decoupling_and_its_effects_on_early_universe_cosmology
@@ -530,6 +534,7 @@ graph TD
 - [Distinguishing Neutrino Decay from Damping and Decoherence Mechanisms](level_1_fundamental_physics/distinguishing_neutrino_decay_from_damping_and_decoherence.md) [THEORETICAL]
 - [DUNE Nuclear Cross-Section Uncertainties vs Visible Neutrino Decay](level_1_fundamental_physics/dune_nuclear_cross_section_uncertainties_vs_visible_neutrino_decay.md) [THEORETICAL]
 - [Effective Field Theory](level_1_fundamental_physics/effective_field_theory.md) [VERIFIED]
+- [Electroweak Phase Transition and Its Cosmological Implications](level_1_fundamental_physics/electroweak_phase_transition_and_its_cosmological_implications.md) [VERIFIED]
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md) [THEORETICAL]
 - [Empirical Falsification Priorities for Theoretical Physics Extensions](level_1_fundamental_physics/empirical_falsification_priorities_for_theoretical_physics.md) [THEORETICAL]
 - [Empirical Tests of Spacetime Discreteness and Entanglement-Geometry Duality](level_1_fundamental_physics/empirical_tests_of_spacetime_discreteness_and_entanglement_geometry_duality.md) [THEORETICAL]
@@ -688,6 +693,7 @@ graph TD
 - [Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/holographic_principle_vs_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration](level_2_advanced_frameworks/horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
+- [Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins](level_2_advanced_frameworks/inflationary_perturbations_vs_cosmicstring_loops_as_primordial_black_hole_origins.md) [THEORETICAL]
 - [Information-Theoretic vs. Thermodynamic Interpretations of Gravity](level_2_advanced_frameworks/informationtheoretic_vs_thermodynamic_interpretations_of_gravity.md) [THEORETICAL]
 - [Initial Condition Entropy and Arrow of Time](level_2_advanced_frameworks/initial_condition_entropy_and_arrow_of_time.md) [THEORETICAL]
 - [Initial State Entropy and Information Loss Paradoxes](level_2_advanced_frameworks/initial_state_entropy_and_information_loss_paradoxes.md) [THEORETICAL]
@@ -769,6 +775,7 @@ graph TD
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]
 - [Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism](level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md) [THEORETICAL]
 - [Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md) [THEORETICAL]
+- [Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems](level_3_emergence_and_intelligence/interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems.md) [THEORETICAL]
 - [Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures](level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md) [THEORETICAL]
 - [Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments](level_3_emergence_and_intelligence/landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments.md) [THEORETICAL]
 - [Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding](level_3_emergence_and_intelligence/landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding.md) [THEORETICAL]

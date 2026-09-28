@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-27T01:59:06.525218+00:00",
+  "updated_at": "2026-09-28T03:17:03.035433+00:00",
   "stats": {
-    "total_nodes": 285,
-    "level_1_count": 124,
-    "level_2_count": 121,
-    "level_3_count": 40,
+    "total_nodes": 288,
+    "level_1_count": 125,
+    "level_2_count": 122,
+    "level_3_count": 41,
     "total_edges": 155,
     "frontier_count": 0
   },
@@ -576,6 +576,27 @@
         "Koyama, K. (2016), 'Gravitational Waves from Modified Gravity', https://doi.org/10.1103/PhysRevD.93.014018"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/effective_field_theory.md"
+    },
+    {
+      "id": "electroweakphasetransitionanditscosmologicalimplications",
+      "title": "Electroweak Phase Transition and Its Cosmological Implications",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "F. Csikor, Z. Fodor, J. Heitger (1999), 'Electroweak Phase Transition and Its Cosmological Implications', https://doi.org/10.1103/physrevlett.82.21",
+        "K. Kajantie, M. Laine, K. Rummukainen, M. Shaposhnikov (1996), 'Electroweak Phase Transition and Its Cosmological Implications', https://doi.org/10.1103/physrevlett.77.2887",
+        "M. D'Onofrio, K. Rummukainen, A. Tranberg (2014), 'Electroweak Phase Transition and Its Cosmological Implications', https://doi.org/10.1103/physrevlett.113.141602",
+        "D. E. Morrissey, M. J. Ramsey-Musolf (2012), 'Electroweak Phase Transition and Its Cosmological Implications', https://doi.org/10.1088/1367-2630/14/12/125003",
+        "M. Laine, M. Meyer (2015), 'Electroweak Phase Transition and Its Cosmological Implications', https://doi.org/10.1088/1475-7516/2015/07/035"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/electroweak_phase_transition_and_its_cosmological_implications.md"
     },
     {
       "id": "electroweaksymmetrybreaking",
@@ -3337,7 +3358,7 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "electroweaksymmetrybreaking",
+        "electroweakphasetransitionanditscosmologicalimplications",
         "matterantimatterasymmetry"
       ],
       "tags": [
@@ -3726,6 +3747,25 @@
         "Galileon gravity framework studies"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration.md"
+    },
+    {
+      "id": "inflationaryperturbationsvscosmicstringloopsasprimordialblackholeorigins",
+      "title": "Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Hawking, S. W. (1989), 'Black holes and evaporation', https://doi.org/10.1016/0370-2693(89)90935-8",
+        "Musco, I. (2019), 'Primordial Black Hole formation in the Early Universe: a companion to numerical simulations', https://arxiv.org/abs/1809.02127",
+        "Franciolini, G., Iovino, A., Vaskonen, V. & Veermäe, H. (2023), 'Primordial Black Holes from Scalar-induced Gravitational Waves', https://doi.org/10.1103/PhysRevLett.131.201401"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/inflationary_perturbations_vs_cosmicstring_loops_as_primordial_black_hole_origins.md"
     },
     {
       "id": "informationtheoreticvsthermodynamicinterpretationsofgravity",
@@ -5387,6 +5427,27 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md"
     },
     {
+      "id": "interventionalidentifiabilityofintegratedinformationtheoryandphysicalistemergenceinmultiscaleneuralsystems",
+      "title": "Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Albantakis, L., Barbosa, L., Findlay, G., et al. (2023), 'Integrated information theory (IIT) 4.0: Formulating the properties of phenomenal existence in physical terms', https://doi.org/10.1371/journal.pcbi.1011465",
+        "Casali, A. G., et al. (2013), 'A theoretically based index of consciousness independent of sensory processing and behavior', https://doi.org/10.1126/scitranslmed.3006294",
+        "Rosas, F. E., Mediano, P. A. M., Jensen, H. J., Seth, A. K., et al. (2020), 'Reconciling emergences: An information-theoretic approach to identify causal emergence in multivariate data', https://doi.org/10.1371/journal.pcbi.1008289",
+        "Klein, C. & Hoel, E. (2020), 'A fresh perspective on causal emergence in complex systems', https://doi.org/10.1155/2020/8932526",
+        "Findlay, G. et al. (2024), 'Insights into macro-level intrinsic cause-effect power', arXiv:2412.04571"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems.md"
+    },
+    {
       "id": "landauerbekensteinentropyboundsandcomputationalefficiencyinselforganizingneuralmanifoldsversusgravitationalfilaments",
       "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
       "level": 3,
@@ -6080,7 +6141,7 @@
       "type": "component_theory"
     },
     {
-      "source": "electroweaksymmetrybreaking",
+      "source": "electroweakphasetransitionanditscosmologicalimplications",
       "target": "electroweakvsspontaneousbaryogenesisinexplainingmatterantimatterasymmetry",
       "type": "component_theory"
     },
