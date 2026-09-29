@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-28T03:16:38.178542+00:00  
-> **Total Analyzed Concepts:** 364 | **Total Discovered Equations:** 12570 | **Discovered Bridges:** 583
+> **Generated:** 2026-09-29T02:08:46.404473+00:00  
+> **Total Analyzed Concepts:** 369 | **Total Discovered Equations:** 12749 | **Discovered Bridges:** 593
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 99 concepts:
+**Occurrences:** Appears in 100 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -107,9 +107,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations
 - **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
+- **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 
 ### ` 1.380649 \times 10^{-23} `
-**Occurrences:** Appears in 37 concepts:
+**Occurrences:** Appears in 38 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
@@ -147,6 +148,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
 - **Level 3**: Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure
 - **Level 1**: Cosmic Thermal History of the Universe
+- **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 
 ### ` \alpha `
 **Occurrences:** Appears in 33 concepts:
@@ -185,7 +187,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 
 ### ` \Phi `
-**Occurrences:** Appears in 32 concepts:
+**Occurrences:** Appears in 33 concepts:
 - **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
@@ -218,6 +220,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism
 - **Level 3**: Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models
 - **Level 3**: Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems
+- **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 
 ### ` 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 31 concepts:
@@ -282,6 +285,32 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 
+### ` \hbar `
+**Occurrences:** Appears in 23 concepts:
+- **Level 2**: Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 1**: What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?
+- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
+- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
+- **Level 1**: Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?
+- **Level 1**: Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?
+- **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
+- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
+- **Level 3**: Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning
+- **Level 3**: Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments
+- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
+- **Level 1**: How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?
+- **Level 2**: Initial State Entropy and Pre-Big Bang Cosmological Evolution
+- **Level 2**: Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints
+- **Level 3**: Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness
+- **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
+- **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
+- **Level 3**: Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing
+- **Level 1**: Effective Field Theory
+- **Level 1**: Classical Mechanics
+- **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
+- **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
+
 ### ` \phi `
 **Occurrences:** Appears in 22 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
@@ -307,33 +336,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
 - **Level 2**: Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations
 
-### ` \hbar `
-**Occurrences:** Appears in 22 concepts:
-- **Level 2**: Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 1**: What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?
-- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
-- **Level 2**: Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition
-- **Level 1**: Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?
-- **Level 1**: Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?
-- **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
-- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
-- **Level 3**: Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning
-- **Level 3**: Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments
-- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
-- **Level 1**: How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?
-- **Level 2**: Initial State Entropy and Pre-Big Bang Cosmological Evolution
-- **Level 2**: Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints
-- **Level 3**: Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness
-- **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
-- **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
-- **Level 3**: Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing
-- **Level 1**: Effective Field Theory
-- **Level 1**: Classical Mechanics
-- **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
-
 ### ` ^{-2} `
-**Occurrences:** Appears in 19 concepts:
+**Occurrences:** Appears in 20 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
 - **Level 3**: Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures
@@ -353,9 +357,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes
 - **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
 - **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
+- **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 
 ### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
-**Occurrences:** Appears in 17 concepts:
+**Occurrences:** Appears in 18 concepts:
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 1**: How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?
@@ -373,6 +378,27 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?
 - **Level 1**: How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?
 - **Level 1**: Gravitational Lensing
+- **Level 1**: Cosmic Structure Formation and Growth of Large-Scale Structure
+
+### ` \epsilon `
+**Occurrences:** Appears in 17 concepts:
+- **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
+- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
+- **Level 3**: Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes
+- **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
+- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
+- **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
+- **Level 2**: Initial State Entropy and Pre-Big Bang Cosmological Evolution
+- **Level 1**: To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?
+- **Level 2**: Vacuum Decay and Cosmological Inflationary Termination Debate
+- **Level 1**: Can a rigorous model of WIMP baryogenesis be constructed that naturally satisfies the washout constraint without invoking fine-tuned flavor structures or heavy mass hierarchies?
+- **Level 1**: Noether's Theorem
+- **Level 3**: Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing
+- **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
+- **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
+- **Level 2**: Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations
+- **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
+- **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 
 ### ` g_{\mu\nu} `
 **Occurrences:** Appears in 16 concepts:
@@ -412,25 +438,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Cosmic Recombination and Photon Decoupling
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 
-### ` \epsilon `
-**Occurrences:** Appears in 16 concepts:
-- **Level 2**: Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance
-- **Level 2**: Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions
-- **Level 3**: Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes
-- **Level 2**: Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies
-- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
-- **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
-- **Level 2**: Initial State Entropy and Pre-Big Bang Cosmological Evolution
-- **Level 1**: To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?
-- **Level 2**: Vacuum Decay and Cosmological Inflationary Termination Debate
-- **Level 1**: Can a rigorous model of WIMP baryogenesis be constructed that naturally satisfies the washout constraint without invoking fine-tuned flavor structures or heavy mass hierarchies?
-- **Level 1**: Noether's Theorem
-- **Level 3**: Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing
-- **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
-- **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
-- **Level 2**: Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations
-- **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
-
 ### ` 10^{-15} `
 **Occurrences:** Appears in 15 concepts:
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
@@ -449,34 +456,35 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion
 - **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
 
-### ` \sigma `
-**Occurrences:** Appears in 13 concepts:
-- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
-- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness
-- **Level 2**: MOND vs Emergent Gravity in Explaining Galactic Dynamics
-- **Level 2**: Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics
-- **Level 1**: How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?
-- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
-- **Level 2**: Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities
-- **Level 2**: Vacuum Decay and Cosmological Inflationary Termination Debate
-- **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
-- **Level 1**: Baryon Acoustic Oscillations
-- **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
-- **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
-- **Level 2**: Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations
+### ` h = 6.62607015 \times 10^{-34} `
+**Occurrences:** Appears in 14 concepts:
+- **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
+- **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
+- **Level 1**: What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?
+- **Level 1**: How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?
+- **Level 3**: Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures
+- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
+- **Level 1**: Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?
+- **Level 1**: How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?
+- **Level 3**: Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures
+- **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
+- **Level 1**: Effective Field Theory
+- **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
+- **Level 1**: Path Integral Formulation
+- **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 144 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 127 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 125 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 89 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 70 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 146 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 130 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 128 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 90 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 71 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 48 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 33 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 16 |
 
 ## 📊 3. Verification Status Summary
 - **MATH_PROVEN Entries:** 144
-- **MATH_CONSISTENT Entries:** 99
+- **MATH_CONSISTENT Entries:** 102

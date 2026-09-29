@@ -65,6 +65,7 @@ graph TD
     non_markovian_memory_kernels_in_neutrino_matter_propagation["Non-Markovian Memory Kernels in Non-Adiabatic Neutrino Matter Propagation"]:::theoretical
     neutrino_masses_and_leptogenesis["Neutrino Masses and Leptogenesis"]:::verified
     neutrino_oscillations["Neutrino Oscillations"]:::theoretical
+    cosmic_structure_formation_and_growth_of_largescale_structure["Cosmic Structure Formation and Growth of Large-Scale Structure"]:::verified
     reducing_nuclear_matrix_element_uncertainties_in_0vbb_decay["Reducing Nuclear Matrix Element Uncertainties in 0vbb Decay"]:::theoretical
     cosmic_microwave_background_radiation["Cosmic Microwave Background Radiation"]:::verified
     neutrino_mass_generation_mechanisms["Neutrino Mass Generation Mechanisms"]:::verified
@@ -220,6 +221,7 @@ graph TD
     conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions["Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions"]:::theoretical
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
     causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research["Causal Set Theory vs Spin Foam Models in Quantum Gravity Research"]:::theoretical
+    dirac_vs_majorana_neutrino_mass_frameworks["Dirac vs Majorana Neutrino Mass Frameworks"]:::verified
     axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure["Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure"]:::theoretical
     axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness["Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness"]:::theoretical
     inflationary_perturbations_vs_cosmicstring_loops_as_primordial_black_hole_origins["Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins"]:::theoretical
@@ -283,6 +285,7 @@ graph TD
     quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions["Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions"]:::theoretical
     landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments["Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
+    a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems["A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems"]:::theoretical
     entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis["Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis"]:::verified
     spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology["Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology"]:::theoretical
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
@@ -351,6 +354,8 @@ graph TD
     neutrino_flavor_physics --- neutrino_oscillations
     neutrino_cp_violation --- neutrino_oscillations
     neutrino_mass_ordering_and_experimental_determination --- neutrino_oscillations
+    dark_matter --- cosmic_structure_formation_and_growth_of_largescale_structure
+    inflationary_cosmology --- cosmic_structure_formation_and_growth_of_largescale_structure
     neutrinoless_double_beta_decay --- reducing_nuclear_matrix_element_uncertainties_in_0vbb_decay
     neutrino_oscillations --- neutrino_mass_generation_mechanisms
     standard_model_of_particle_physics --- neutrino_mass_generation_mechanisms
@@ -474,6 +479,7 @@ graph TD
     electroweak_symmetry_breaking --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
     quantum_field_theory --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
     quantum_gravity --> causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research
+    neutrino_oscillations --> dirac_vs_majorana_neutrino_mass_frameworks
     dark_matter --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure
     quantum_field_theory --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure
     general_relativity --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure
@@ -516,6 +522,7 @@ graph TD
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
 - [Cosmic Recombination and Photon Decoupling](level_1_fundamental_physics/cosmic_recombination_and_photon_decoupling.md) [VERIFIED]
+- [Cosmic Structure Formation and Growth of Large-Scale Structure](level_1_fundamental_physics/cosmic_structure_formation_and_growth_of_largescale_structure.md) [VERIFIED]
 - [Cosmic Thermal History of the Universe](level_1_fundamental_physics/cosmic_thermal_history_of_the_universe.md) [VERIFIED]
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
 - [Cosmological Perturbation Theory](level_1_fundamental_physics/cosmological_perturbation_theory.md) [VERIFIED]
@@ -670,6 +677,7 @@ graph TD
 - [Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](level_2_advanced_frameworks/debate_on_modified_gravity_theories_teves_vs_fr_gravity.md) [VERIFIED]
 - [DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem](level_2_advanced_frameworks/dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem.md) [THEORETICAL]
 - [DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
+- [Dirac vs Majorana Neutrino Mass Frameworks](level_2_advanced_frameworks/dirac_vs_majorana_neutrino_mass_frameworks.md) [VERIFIED]
 - [Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension](level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension.md) [THEORETICAL]
 - [Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration](level_2_advanced_frameworks/dynamical_dark_energy_vs_modified_gravity_in_explaining_the_redshift_dependence_of_cosmic_acceleration.md) [THEORETICAL]
 - [Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution](level_2_advanced_frameworks/dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution.md) [THEORETICAL]
@@ -762,6 +770,7 @@ graph TD
 - [A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md) [THEORETICAL]
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
+- [A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
 - [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md) [THEORETICAL]
 - [Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md) [THEORETICAL]

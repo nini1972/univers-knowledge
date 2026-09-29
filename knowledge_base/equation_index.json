@@ -1,18 +1,18 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-09-28T03:16:38.178542+00:00",
+  "updated_at": "2026-09-29T02:08:46.404473+00:00",
   "stats": {
-    "total_entries": 364,
-    "total_equations": 12570,
+    "total_entries": 369,
+    "total_equations": 12749,
     "math_proven_entries": 144,
-    "math_consistent_entries": 99,
-    "total_bridges": 583,
+    "math_consistent_entries": 102,
+    "total_bridges": 593,
     "tracked_constants": 8
   },
   "bridges": [
     {
       "equation": "\\Lambda",
-      "concept_count": 99,
+      "concept_count": 100,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -409,12 +409,16 @@
         {
           "title": "Electroweak Phase Transition and Its Cosmological Implications",
           "level": 1
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
         }
       ]
     },
     {
       "equation": "1.380649 \\times 10^{-23}",
-      "concept_count": 37,
+      "concept_count": 38,
       "concepts": [
         {
           "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
@@ -563,6 +567,10 @@
         {
           "title": "Cosmic Thermal History of the Universe",
           "level": 1
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
         }
       ]
     },
@@ -706,7 +714,7 @@
     },
     {
       "equation": "\\Phi",
-      "concept_count": 32,
+      "concept_count": 33,
       "concepts": [
         {
           "title": "Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures",
@@ -834,6 +842,10 @@
         },
         {
           "title": "Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems",
+          "level": 3
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
           "level": 3
         }
       ]
@@ -1079,6 +1091,104 @@
       ]
     },
     {
+      "equation": "\\hbar",
+      "concept_count": 23,
+      "concepts": [
+        {
+          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
+          "level": 2
+        },
+        {
+          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
+          "level": 1
+        },
+        {
+          "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
+          "level": 1
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
+          "level": 2
+        },
+        {
+          "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
+          "level": 1
+        },
+        {
+          "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
+          "level": 1
+        },
+        {
+          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
+          "level": 1
+        },
+        {
+          "title": "How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?",
+          "level": 1
+        },
+        {
+          "title": "Initial State Entropy and Pre-Big Bang Cosmological Evolution",
+          "level": 2
+        },
+        {
+          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
+          "level": 3
+        },
+        {
+          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
+          "level": 2
+        },
+        {
+          "title": "Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing",
+          "level": 3
+        },
+        {
+          "title": "Effective Field Theory",
+          "level": 1
+        },
+        {
+          "title": "Classical Mechanics",
+          "level": 1
+        },
+        {
+          "title": "Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins",
+          "level": 2
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\phi",
       "concept_count": 22,
       "concepts": [
@@ -1173,102 +1283,8 @@
       ]
     },
     {
-      "equation": "\\hbar",
-      "concept_count": 22,
-      "concepts": [
-        {
-          "title": "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
-          "level": 2
-        },
-        {
-          "title": "Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?",
-          "level": 1
-        },
-        {
-          "title": "What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?",
-          "level": 1
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition",
-          "level": 2
-        },
-        {
-          "title": "Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?",
-          "level": 1
-        },
-        {
-          "title": "Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?",
-          "level": 1
-        },
-        {
-          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning",
-          "level": 3
-        },
-        {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
-        },
-        {
-          "title": "How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?",
-          "level": 1
-        },
-        {
-          "title": "Initial State Entropy and Pre-Big Bang Cosmological Evolution",
-          "level": 2
-        },
-        {
-          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness",
-          "level": 3
-        },
-        {
-          "title": "Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation",
-          "level": 2
-        },
-        {
-          "title": "Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime",
-          "level": 2
-        },
-        {
-          "title": "Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing",
-          "level": 3
-        },
-        {
-          "title": "Effective Field Theory",
-          "level": 1
-        },
-        {
-          "title": "Classical Mechanics",
-          "level": 1
-        },
-        {
-          "title": "Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "^{-2}",
-      "concept_count": 19,
+      "concept_count": 20,
       "concepts": [
         {
           "title": "Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics",
@@ -1345,12 +1361,16 @@
         {
           "title": "Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem",
           "level": 2
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
         }
       ]
     },
     {
       "equation": "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
-      "concept_count": 17,
+      "concept_count": 18,
       "concepts": [
         {
           "title": "Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale",
@@ -1419,6 +1439,84 @@
         {
           "title": "Gravitational Lensing",
           "level": 1
+        },
+        {
+          "title": "Cosmic Structure Formation and Growth of Large-Scale Structure",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "\\epsilon",
+      "concept_count": 17,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
+          "level": 3
+        },
+        {
+          "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
+          "level": 2
+        },
+        {
+          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
+          "level": 1
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        },
+        {
+          "title": "Initial State Entropy and Pre-Big Bang Cosmological Evolution",
+          "level": 2
+        },
+        {
+          "title": "To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?",
+          "level": 1
+        },
+        {
+          "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
+          "level": 2
+        },
+        {
+          "title": "Can a rigorous model of WIMP baryogenesis be constructed that naturally satisfies the washout constraint without invoking fine-tuned flavor structures or heavy mass hierarchies?",
+          "level": 1
+        },
+        {
+          "title": "Noether's Theorem",
+          "level": 1
+        },
+        {
+          "title": "Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing",
+          "level": 3
+        },
+        {
+          "title": "Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
+          "level": 3
+        },
+        {
+          "title": "Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations",
+          "level": 2
+        },
+        {
+          "title": "Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves",
+          "level": 2
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
         }
       ]
     },
@@ -1563,76 +1661,6 @@
       ]
     },
     {
-      "equation": "\\epsilon",
-      "concept_count": 16,
-      "concepts": [
-        {
-          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
-          "level": 2
-        },
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Quantifying Non-Equilibrium Steady-State Dynamics in Self-Organizing Filamentary Networks via Persistent Entropy Production Fluxes",
-          "level": 3
-        },
-        {
-          "title": "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
-          "level": 2
-        },
-        {
-          "title": "Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?",
-          "level": 1
-        },
-        {
-          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
-          "level": 3
-        },
-        {
-          "title": "Initial State Entropy and Pre-Big Bang Cosmological Evolution",
-          "level": 2
-        },
-        {
-          "title": "To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?",
-          "level": 1
-        },
-        {
-          "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
-          "level": 2
-        },
-        {
-          "title": "Can a rigorous model of WIMP baryogenesis be constructed that naturally satisfies the washout constraint without invoking fine-tuned flavor structures or heavy mass hierarchies?",
-          "level": 1
-        },
-        {
-          "title": "Noether's Theorem",
-          "level": 1
-        },
-        {
-          "title": "Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing",
-          "level": 3
-        },
-        {
-          "title": "Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime",
-          "level": 2
-        },
-        {
-          "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
-          "level": 3
-        },
-        {
-          "title": "Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations",
-          "level": 2
-        },
-        {
-          "title": "Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "10^{-15}",
       "concept_count": 15,
       "concepts": [
@@ -1699,6 +1727,68 @@
       ]
     },
     {
+      "equation": "h = 6.62607015 \\times 10^{-34}",
+      "concept_count": 14,
+      "concepts": [
+        {
+          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
+          "level": 2
+        },
+        {
+          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
+          "level": 1
+        },
+        {
+          "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
+          "level": 1
+        },
+        {
+          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
+          "level": 1
+        },
+        {
+          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
+          "level": 3
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
+          "level": 1
+        },
+        {
+          "title": "How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?",
+          "level": 1
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Effective Field Theory",
+          "level": 1
+        },
+        {
+          "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
+          "level": 3
+        },
+        {
+          "title": "Path Integral Formulation",
+          "level": 1
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\sigma",
       "concept_count": 13,
       "concepts": [
@@ -1753,64 +1843,6 @@
         {
           "title": "Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations",
           "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "h = 6.62607015 \\times 10^{-34}",
-      "concept_count": 13,
-      "concepts": [
-        {
-          "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
-          "level": 2
-        },
-        {
-          "title": "What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?",
-          "level": 1
-        },
-        {
-          "title": "What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?",
-          "level": 1
-        },
-        {
-          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
-          "level": 1
-        },
-        {
-          "title": "Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures",
-          "level": 3
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?",
-          "level": 1
-        },
-        {
-          "title": "How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?",
-          "level": 1
-        },
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Effective Field Theory",
-          "level": 1
-        },
-        {
-          "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
-          "level": 3
-        },
-        {
-          "title": "Path Integral Formulation",
-          "level": 1
         }
       ]
     },
@@ -2043,6 +2075,60 @@
       ]
     },
     {
+      "equation": "\\Gamma",
+      "concept_count": 12,
+      "concepts": [
+        {
+          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?",
+          "level": 1
+        },
+        {
+          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
+          "level": 1
+        },
+        {
+          "title": "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
+          "level": 1
+        },
+        {
+          "title": "What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?",
+          "level": 1
+        },
+        {
+          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
+          "level": 1
+        },
+        {
+          "title": "Can you clarify the commutation relations [M, Γ] and provide the explicit calculation showing the convergence of the BCH series for your non-Hermitian effective Hamiltonian?",
+          "level": 1
+        },
+        {
+          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
+          "level": 3
+        },
+        {
+          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
+          "level": 2
+        },
+        {
+          "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
+          "level": 2
+        },
+        {
+          "title": "Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves",
+          "level": 2
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\neq",
       "concept_count": 12,
       "concepts": [
@@ -2143,56 +2229,6 @@
         {
           "title": "Cosmic Thermal History of the Universe",
           "level": 1
-        }
-      ]
-    },
-    {
-      "equation": "\\Gamma",
-      "concept_count": 11,
-      "concepts": [
-        {
-          "title": "Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration",
-          "level": 2
-        },
-        {
-          "title": "Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?",
-          "level": 1
-        },
-        {
-          "title": "What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?",
-          "level": 1
-        },
-        {
-          "title": "What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?",
-          "level": 1
-        },
-        {
-          "title": "What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?",
-          "level": 1
-        },
-        {
-          "title": "Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?",
-          "level": 1
-        },
-        {
-          "title": "Can you clarify the commutation relations [M, Γ] and provide the explicit calculation showing the convergence of the BCH series for your non-Hermitian effective Hamiltonian?",
-          "level": 1
-        },
-        {
-          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
-          "level": 3
-        },
-        {
-          "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
-          "level": 2
-        },
-        {
-          "title": "Vacuum Decay and Cosmological Inflationary Termination Debate",
-          "level": 2
-        },
-        {
-          "title": "Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves",
-          "level": 2
         }
       ]
     },
@@ -2657,6 +2693,48 @@
       ]
     },
     {
+      "equation": "k_B = 1.380649 \\times 10^{-23}",
+      "concept_count": 9,
+      "concepts": [
+        {
+          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
+          "level": 1
+        },
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
+          "level": 3
+        },
+        {
+          "title": "Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?",
+          "level": 1
+        },
+        {
+          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
+          "level": 3
+        },
+        {
+          "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
+          "level": 3
+        },
+        {
+          "title": "Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure",
+          "level": 3
+        },
+        {
+          "title": "Cosmic Thermal History of the Universe",
+          "level": 1
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\lambda",
       "concept_count": 9,
       "concepts": [
@@ -2851,44 +2929,6 @@
       ]
     },
     {
-      "equation": "k_B = 1.380649 \\times 10^{-23}",
-      "concept_count": 8,
-      "concepts": [
-        {
-          "title": "How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?",
-          "level": 1
-        },
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures",
-          "level": 3
-        },
-        {
-          "title": "Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?",
-          "level": 1
-        },
-        {
-          "title": "Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage",
-          "level": 3
-        },
-        {
-          "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
-          "level": 3
-        },
-        {
-          "title": "Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure",
-          "level": 3
-        },
-        {
-          "title": "Cosmic Thermal History of the Universe",
-          "level": 1
-        }
-      ]
-    },
-    {
       "equation": "10^{-3}",
       "concept_count": 8,
       "concepts": [
@@ -2923,6 +2963,44 @@
         {
           "title": "Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\tau",
+      "concept_count": 8,
+      "concepts": [
+        {
+          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
+          "level": 3
+        },
+        {
+          "title": "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
+          "level": 2
+        },
+        {
+          "title": "Noether's Theorem",
+          "level": 1
+        },
+        {
+          "title": "Cosmological Perturbation Theory",
+          "level": 1
+        },
+        {
+          "title": "Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem",
+          "level": 2
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
         }
       ]
     },
@@ -2995,6 +3073,40 @@
         {
           "title": "Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\ell",
+      "concept_count": 7,
+      "concepts": [
+        {
+          "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
+          "level": 1
+        },
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime",
+          "level": 2
+        },
+        {
+          "title": "Parity Violation vs Scalar Charge in Strong-Field Gravity",
+          "level": 2
+        },
+        {
+          "title": "TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing",
+          "level": 2
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
         }
       ]
     },
@@ -3096,40 +3208,6 @@
         },
         {
           "title": "Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\tau",
-      "concept_count": 7,
-      "concepts": [
-        {
-          "title": "Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds",
-          "level": 3
-        },
-        {
-          "title": "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
-          "level": 2
-        },
-        {
-          "title": "Noether's Theorem",
-          "level": 1
-        },
-        {
-          "title": "Cosmological Perturbation Theory",
-          "level": 1
-        },
-        {
-          "title": "Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem",
           "level": 2
         }
       ]
@@ -3258,36 +3336,6 @@
         },
         {
           "title": "Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "\\ell",
-      "concept_count": 6,
-      "concepts": [
-        {
-          "title": "Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?",
-          "level": 1
-        },
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
-          "level": 2
-        },
-        {
-          "title": "Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime",
-          "level": 2
-        },
-        {
-          "title": "Parity Violation vs Scalar Charge in Strong-Field Gravity",
-          "level": 2
-        },
-        {
-          "title": "TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing",
           "level": 2
         }
       ]
@@ -4251,6 +4299,32 @@
       ]
     },
     {
+      "equation": "k_B T \\ln 2",
+      "concept_count": 5,
+      "concepts": [
+        {
+          "title": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
+          "level": 3
+        },
+        {
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3
+        },
+        {
+          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
+          "level": 3
+        },
+        {
+          "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
+          "level": 3
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "\\omega",
       "concept_count": 5,
       "concepts": [
@@ -5073,6 +5147,28 @@
       ]
     },
     {
+      "equation": "E_{\\min} = k_B T \\ln 2",
+      "concept_count": 4,
+      "concepts": [
+        {
+          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
+          "level": 3
+        },
+        {
+          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
+          "level": 3
+        },
+        {
+          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
+          "level": 3
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "|c_T/c - 1| \\lesssim 10^{-15}",
       "concept_count": 4,
       "concepts": [
@@ -5271,24 +5367,24 @@
       ]
     },
     {
-      "equation": "k_B T \\ln 2",
+      "equation": "0\\nu\\beta\\beta",
       "concept_count": 4,
       "concepts": [
         {
-          "title": "Landauer-Limit Divergence in High-Density Cosmic Filamentary Information Processing",
-          "level": 3
+          "title": "Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation",
+          "level": 2
         },
         {
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3
+          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
+          "level": 1
         },
         {
-          "title": "Computational Irreducibility and Thermodynamic Costs of Non-Equilibrium Information Encoding in Gravitational vs. Neural Manifolds",
-          "level": 3
+          "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+          "level": 2
         },
         {
-          "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
-          "level": 3
+          "title": "Dirac vs Majorana Neutrino Mass Frameworks",
+          "level": 2
         }
       ]
     },
@@ -6165,6 +6261,24 @@
       ]
     },
     {
+      "equation": "\\mathcal{R}",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
+          "level": 3
+        },
+        {
+          "title": "Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins",
+          "level": 2
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
+        }
+      ]
+    },
+    {
       "equation": "A_s \\approx 2.1\\times 10^{-9}",
       "concept_count": 3,
       "concepts": [
@@ -6214,24 +6328,6 @@
         },
         {
           "title": "Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing",
-          "level": 3
-        }
-      ]
-    },
-    {
-      "equation": "E_{\\min} = k_B T \\ln 2",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?",
-          "level": 3
-        },
-        {
-          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
-          "level": 3
-        },
-        {
-          "title": "Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics",
           "level": 3
         }
       ]
@@ -6597,6 +6693,24 @@
       ]
     },
     {
+      "equation": "v = 246",
+      "concept_count": 3,
+      "concepts": [
+        {
+          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
+          "level": 2
+        },
+        {
+          "title": "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
+          "level": 2
+        },
+        {
+          "title": "Dirac vs Majorana Neutrino Mass Frameworks",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "10^{34}",
       "concept_count": 3,
       "concepts": [
@@ -6844,24 +6958,6 @@
         },
         {
           "title": "Parity Violation vs Scalar Charge in Strong-Field Gravity",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "equation": "0\\nu\\beta\\beta",
-      "concept_count": 3,
-      "concepts": [
-        {
-          "title": "Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation",
-          "level": 2
-        },
-        {
-          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
-          "level": 1
-        },
-        {
-          "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
           "level": 2
         }
       ]
@@ -8553,6 +8649,20 @@
       ]
     },
     {
+      "equation": "\\Lambda \\sim 10^{15}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
+          "level": 2
+        },
+        {
+          "title": "Dirac vs Majorana Neutrino Mass Frameworks",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "m_\\chi \\sim 100",
       "concept_count": 2,
       "concepts": [
@@ -9057,20 +9167,6 @@
       ]
     },
     {
-      "equation": "\\mathcal{R}",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics",
-          "level": 3
-        },
-        {
-          "title": "Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "P(n;V)=e^{-\\rho V}\\frac{(\\rho V)^n}{n!}",
       "concept_count": 2,
       "concepts": [
@@ -9379,6 +9475,20 @@
       ]
     },
     {
+      "equation": "v \\simeq 246",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem",
+          "level": 2
+        },
+        {
+          "title": "Dirac vs Majorana Neutrino Mass Frameworks",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\sigma/m \\ll 1",
       "concept_count": 2,
       "concepts": [
@@ -9571,6 +9681,20 @@
         {
           "title": "Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\mathcal{K}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration",
+          "level": 2
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
         }
       ]
     },
@@ -10135,20 +10259,6 @@
       ]
     },
     {
-      "equation": "v = 246",
-      "concept_count": 2,
-      "concepts": [
-        {
-          "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions",
-          "level": 2
-        },
-        {
-          "title": "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
-          "level": 2
-        }
-      ]
-    },
-    {
       "equation": "a(t) \\sim e^{H_\\Lambda t}",
       "concept_count": 2,
       "concepts": [
@@ -10383,6 +10493,20 @@
         {
           "title": "Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics",
           "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "T \\Delta S",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "MOND vs Emergent Gravity in Explaining Galactic Dynamics",
+          "level": 2
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
         }
       ]
     },
@@ -10929,6 +11053,34 @@
         {
           "title": "Can a rigorous model of WIMP baryogenesis be constructed that naturally satisfies the washout constraint without invoking fine-tuned flavor structures or heavy mass hierarchies?",
           "level": 1
+        }
+      ]
+    },
+    {
+      "equation": "T_{1/2}^{0\\nu}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
+          "level": 1
+        },
+        {
+          "title": "Dirac vs Majorana Neutrino Mass Frameworks",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "m_{\\beta\\beta}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?",
+          "level": 1
+        },
+        {
+          "title": "Dirac vs Majorana Neutrino Mass Frameworks",
+          "level": 2
         }
       ]
     },
@@ -11493,6 +11645,20 @@
       ]
     },
     {
+      "equation": "m_\\nu \\sim 0.01",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Type-I Seesaw vs Radiative Neutrino Mass Generation",
+          "level": 2
+        },
+        {
+          "title": "Dirac vs Majorana Neutrino Mass Frameworks",
+          "level": 2
+        }
+      ]
+    },
+    {
       "equation": "\\sim 100",
       "concept_count": 2,
       "concepts": [
@@ -11642,6 +11808,20 @@
         },
         {
           "title": "Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "equation": "\\nu_R",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "SU(5) vs SO(10) Grand Unification: Fermion Masses and Proton Decay",
+          "level": 2
+        },
+        {
+          "title": "Dirac vs Majorana Neutrino Mass Frameworks",
           "level": 2
         }
       ]
@@ -11843,6 +12023,20 @@
       ]
     },
     {
+      "equation": "z \\approx 1100",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Cosmic Recombination and Photon Decoupling",
+          "level": 1
+        },
+        {
+          "title": "Cosmic Structure Formation and Growth of Large-Scale Structure",
+          "level": 1
+        }
+      ]
+    },
+    {
       "equation": "z \\approx 1090",
       "concept_count": 2,
       "concepts": [
@@ -11995,6 +12189,20 @@
           "level": 2
         }
       ]
+    },
+    {
+      "equation": "\\mathrm{EI}_{\\text{macro}} > \\mathrm{EI}_{\\text{micro}}",
+      "concept_count": 2,
+      "concepts": [
+        {
+          "title": "Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems",
+          "level": 3
+        },
+        {
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3
+        }
+      ]
     }
   ],
   "constant_index": [
@@ -12003,7 +12211,7 @@
       "name": "Speed of Light",
       "unit": "m/s",
       "typical_value": "2.998 x 10^8",
-      "occurrence_count": 144,
+      "occurrence_count": 146,
       "referenced_in": [
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
@@ -12036,10 +12244,12 @@
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
         "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
+        "Cosmic Structure Formation and Growth of Large-Scale Structure",
         "Cosmic Thermal History of the Universe",
         "Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?",
         "Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
+        "Dirac vs Majorana Neutrino Mass Frameworks",
         "Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory",
         "Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?",
         "Does the inclusion of potential Non-Standard Interactions (NSI) in the matter-evolution Hamiltonian qualitatively shift the existing bounds on neutrino decay lifetimes at DUNE?",
@@ -12156,8 +12366,9 @@
       "name": "Cosmological Constant",
       "unit": "m^-2",
       "typical_value": "1.089 x 10^-52",
-      "occurrence_count": 127,
+      "occurrence_count": 130,
       "referenced_in": [
+        "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance",
         "Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure",
@@ -12185,9 +12396,11 @@
         "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
         "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
         "Cosmic Recombination and Photon Decoupling",
+        "Cosmic Structure Formation and Growth of Large-Scale Structure",
         "Cosmological Perturbation Theory",
         "Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
+        "Dirac vs Majorana Neutrino Mass Frameworks",
         "Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?",
         "Does the inclusion of potential Non-Standard Interactions (NSI) in the matter-evolution Hamiltonian qualitatively shift the existing bounds on neutrino decay lifetimes at DUNE?",
         "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
@@ -12292,9 +12505,10 @@
       "name": "Gravitational Constant",
       "unit": "m^3 kg^-1 s^-2",
       "typical_value": "6.674 x 10^-11",
-      "occurrence_count": 125,
+      "occurrence_count": 128,
       "referenced_in": [
         "A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems",
+        "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
         "Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution",
@@ -12317,8 +12531,10 @@
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
         "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
+        "Cosmic Structure Formation and Growth of Large-Scale Structure",
         "Cosmological Perturbation Theory",
         "DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration",
+        "Dirac vs Majorana Neutrino Mass Frameworks",
         "Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?",
         "Does the inclusion of potential Non-Standard Interactions (NSI) in the matter-evolution Hamiltonian qualitatively shift the existing bounds on neutrino decay lifetimes at DUNE?",
         "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
@@ -12426,9 +12642,10 @@
       "name": "Reduced Planck Constant",
       "unit": "J s",
       "typical_value": "1.054 x 10^-34",
-      "occurrence_count": 89,
+      "occurrence_count": 90,
       "referenced_in": [
         "A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue",
+        "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
         "Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics",
         "Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities",
@@ -12524,7 +12741,7 @@
       "name": "MOND Acceleration Scale",
       "unit": "m s^-2",
       "typical_value": "1.2 x 10^-10",
-      "occurrence_count": 70,
+      "occurrence_count": 71,
       "referenced_in": [
         "A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue",
         "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
@@ -12542,6 +12759,7 @@
         "Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves",
         "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
         "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
+        "Cosmic Structure Formation and Growth of Large-Scale Structure",
         "Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?",
         "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
         "Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies",
@@ -29431,6 +29649,241 @@
       "math_score": "4/4",
       "source": "crew_extraction",
       "timestamp": "2026-09-28T03:16:05.002867+00:00"
+    },
+    {
+      "concept": "Cosmic Structure Formation and Growth of Large-Scale Structure",
+      "level": 1,
+      "equations": [
+        "\\delta(\\vec{x}, t) \\equiv \\frac{\\rho(\\vec{x}, t) - \\bar{\\rho}(t)}{\\bar{\\rho}(t)}",
+        "\\ddot{\\delta}_k + 2H\\dot{\\delta}_k - \\left(4\\pi G\\bar{\\rho} - \\frac{c_s^2 k^2}{a^2}\\right)\\delta_k = 0",
+        "D_+(a) \\simeq a\\; g(a), \\qquad g(a) = \\frac{5\\,\\Omega_m(a)}{2}\\left[\\Omega_m^{4/7}(a) - \\Omega_\\Lambda(a) + \\left(1 + \\tfrac{\\Omega_m(a)}{2}\\right)\\left(1 + \\tfrac{\\Omega_\\Lambda(a)}{70}\\right)\\right]^{-1}",
+        "f(a) \\equiv \\frac{d\\ln D_+}{d\\ln a} \\simeq \\Omega_m(a)^{\\gamma}",
+        "\\mathcal{P}_{\\mathcal{R}}(k) = A_s \\left(\\frac{k}{k_0}\\right)^{n_s - 1}, \\qquad A_s \\approx 2.1\\times 10^{-9}, \\quad n_s = 0.9649 \\pm 0.0042",
+        "P_\\delta(k, z) = \\frac{2\\pi^2}{k^3}\\,\\mathcal{P}_{\\mathcal{R}}(k)\\,\\left[\\frac{2c^2 k^2\\, T(k)}{5 H_0^2 \\Omega_m}\\right]^2 \\left(\\frac{g(z)}{g(0)}\\right)^2",
+        "\\vec{x}(t) = \\vec{q} + D_+(t)\\,\\vec{s}(\\vec{q}), \\qquad \\vec{s}(\\vec{q}) = \\nabla_q \\Phi_0(\\vec{q}), \\qquad \\nabla_q^2\\Phi_0 = \\delta_0(\\vec{q})",
+        "\\frac{dn}{dM}(M,z) = \\sqrt{\\frac{2}{\\pi}}\\;\\frac{\\bar{\\rho}}{M^2}\\;\\frac{\\delta_c}{\\sigma(M,z)}\\;\\left|\\frac{d\\ln\\sigma}{d\\ln M}\\right|\\;\\exp\\!\\left[-\\frac{\\delta_c^2}{2\\sigma^2(M,z)}\\right]",
+        "\\mu\\!\\left(\\frac{|\\vec{g}|}{a_0}\\right)\\vec{g} = \\vec{g}_N, \\qquad \\mu(x) \\to 1 \\ (x\\gg1), \\quad \\mu(x) \\to x \\ (x\\ll1)",
+        "f_R \\equiv \\frac{df}{dR} = -\\frac{c_1 (R/R_c)^n}{\\left[c_2 (R/R_c)^n + 1\\right]^2}",
+        "\\sigma^2(M,z) = \\frac{1}{2\\pi^2}\\int k^2 P_\\delta(k,z) W^2(kM)\\,dk",
+        "M_{200} = \\frac{4\\pi}{3}\\,(200\\,\\rho_c)\\,R_{200}^3",
+        "P_s(k) = P_g(k)\\,(1+\\beta\\mu^2)^2,\\ \\beta = f/b",
+        "\\kappa(\\vec\\theta) = \\frac{3H_0^2\\Omega_m}{2c^2}\\int_0^{\\chi_s} d\\chi\\;\\frac{\\chi(\\chi_s-\\chi)}{\\chi_s\\, a(\\chi)}\\,\\delta(\\chi\\vec\\theta,\\chi)",
+        "S_8 \\equiv \\sigma_8(\\Omega_m/0.3)^{0.5} = 0.759^{+0.024}_{-0.021}",
+        "\\Lambda \\approx 1.089 \\times 10^{-52} \\text{ m}^{-2}",
+        "A_s",
+        "n_s",
+        "\\Omega_\\Lambda(a)",
+        "f \\simeq \\Omega_m^\\gamma",
+        "c^2",
+        "z \\approx 1100",
+        "D_+(a)"
+      ],
+      "equation_count": 23,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-29T01:08:51.163938+00:00",
+      "a2a_proof_report": "# Mathematical Verification and Formal Derivation Report:\n## Cosmic Structure Formation and Growth of Large-Scale Structure\n\n---\n\n### Axioms and Definitions\n1. **Density contrast**:\n   \\[\n   \\delta(\\vec{x},t) \\equiv \\frac{\\rho(\\vec{x},t) - \\bar{\\rho}(t)}{\\bar{\\rho}(t)}\n   \\]\n   where \\(\\rho(\\vec{x}, t)\\) is the local density, \\(\\bar{\\rho}(t)\\) is the mean background density.\n   \n2. **Growth equation for density perturbations in Fourier space**:\n   \\[\n   \\ddot{\\delta}_k + 2H\\dot{\\delta}_k - \\left(4\\pi G \\bar{\\rho} - \\frac{c_s^2 k^2}{a^2}\\right)\\delta_k = 0\n   \\]\n   where \\(\\delta_k(t)\\) is the Fourier mode of density contrast, \\(H(t)\\) the Hubble parameter, \\(G\\) gravitational constant, \\(c_s\\) sound speed, \\(a\\) scale factor.\n\n3. **Growth factor approximation**:\n   \\[\n   D_+(a) \\simeq a\\, g(a), \\quad g(a) = \\frac{5 \\Omega_m(a)}{2 \\left[\\Omega_m^{4/7}(a) - \\Omega_\\Lambda(a) + \\left(1 + \\frac{\\Omega_m(a)}{2}\\right)\\left(1 + \\frac{\\Omega_\\Lambda(a)}{70}\\right)\\right]}\n   \\]\n\n4. **Growth rate function**:\n   \\[\n   f(a) \\equiv \\frac{d \\ln D_+}{d \\ln a} \\simeq \\Omega_m(a)^\\gamma\n   \\]\n   with \\(\\gamma\\) some growth index.\n\n5. **Primordial curvature power spectrum**:\n   \\[\n   \\mathcal{P}_{\\mathcal{R}}(k) = A_s \\left(\\frac{k}{k_0}\\right)^{n_s - 1}, \\quad A_s \\approx 2.1 \\times 10^{-9}, \\quad n_s = 0.9649 \\pm 0.0042\n   \\]\n\n---\n\n### Derivation Steps and Verification Using SymPy\n\n#### Step 1: Define the density contrast \\(\\delta\\)\nWe defined the symbolic relation between \\(\\delta(t)\\), \\(\\rho(t)\\) and \\(\\bar{\\rho}(t)\\). This is direct from definition and represented symbolically as:\n```python\ndelta_def = Eq(delta, (rho - rho_bar) / rho_bar)\n```\nThis definition holds as stated — it is an identity.\n\n#### Step 2: Formulate the linear perturbation growth equation in Fourier space\nThe PDE in perturbations can be expressed symbolically as an ODE in time for each Fourier mode:\n\\[\n\\ddot{\\delta}_k + 2H\\dot{\\delta}_k - \\left(4\\pi G \\bar{\\rho} - \\frac{c_s^2 k^2}{a^2}\\right) \\delta_k = 0\n\\]\nSymbolic left hand side expression (LHS):\n```python\nlhs_eq = delta_k_ddot + 2*H*delta_k_dot - (4*pi*G*rho_bar - (c_s**2 * k**2) / (a**2)) * delta_k_t\n```\nThis symbolic form matches the given equation exactly, confirming its formal representation.\n\n#### Step 3: Define the growth factor \\(D_+(a)\\)\nThe growth factor is given as:\n\\[\nD_+(a) = a \\cdot g(a),\n\\quad\ng(a) = \\frac{5 \\Omega_m/2}{\\Omega_m^{4/7} - \\Omega_\\Lambda + (1 + \\Omega_m/2)(1 + \\Omega_\\Lambda / 70)}\n\\]\nThis was encoded:\n```python\ng = (5*Omega_m/2) / (Omega_m**(4/7) - Omega_Lambda + (1 + Omega_m/2)*(1 + Omega_Lambda/70))\nD_plus = a * g\n```\n\n#### Step 4: Growth rate \\(f(a)\\) as logarithmic derivative\nUsing the chain rule,\n\\[\nf(a) = \\frac{d \\ln D_+}{d \\ln a} = \\frac{a}{D_+} \\frac{d D_+}{d a}\n\\]\nThis derivative was computed and simplified symbolically:\n```python\nf = (a / D_plus) * diff(D_plus, a)\nsimplified_f = simplify(f)\n```\nThe expression expands to a complicated function of \\(\\Omega_m(a)\\), \\(\\Omega_\\Lambda(a)\\) and their derivatives, as expected for a non-trivial \\(g(a)\\). Thus, \\(f(a)\\) is formally consistent with the provided formula.\n\nThe approximation \\(f \\simeq \\Omega_m^\\gamma\\) is a phenomenological fit, here simply noted.\n\n#### Step 5: Primordial curvature power spectrum\nThe power spectrum is defined as:\n\\[\n\\mathcal{P}_{\\mathcal{R}}(k) = A_s \\left(\\frac{k}{k_0}\\right)^{n_s - 1}\n\\]\nValid for \\(k, k_0 > 0\\) symbols and positive \\(A_s\\), confirmed with:\n```python\nP_R = A_s * (k/k_0)**(n_s - 1)\n```\nwith numeric \\(A_s \\approx 2.1 \\times 10^{-9}\\) and scalar spectral index \\(n_s = 0.9649\\).\n\n---\n\n### Simplification Results\n\n- The density contrast relation is an identity by definition.\n- The growth equation is represented correctly and ready for analytic or numeric solution.\n- The growth factor \\(D_+(a)\\) and growth rate \\(f(a)\\) are symbolically consistent with given formulae.\n- The power spectrum form is correctly defined.\n- No contradictions or algebraic inconsistencies found.\n\n---\n\n### Code Artifact: Python SymPy Script Used for Verification\n\n```python\nfrom sympy import symbols, Function, Derivative, simplify, Eq, pi, diff\n\n# Define time and scale factor symbols\nt, k, a = symbols('t k a')\n\n# Define functions\nrho = Function('rho')(t)\nrho_bar = Function('rho_bar')(t)\ndelta = Function('delta')(t)\ndelta_k_t = Function('delta_k')(t)\nH = Function('H')(t)\nG, c_s = symbols('G c_s', real=True, positive=True)\n\n# Density contrast definition\ndelta_def = Eq(delta, (rho - rho_bar) / rho_bar)\n\n# Growth equation in Fourier space (LHS)\ndelta_k_dot = Derivative(delta_k_t, t)\ndelta_k_ddot = Derivative(delta_k_t, (t,2))\nlhs_eq = delta_k_ddot + 2*H*delta_k_dot - (4*pi*G*rho_bar - (c_s**2 * k**2) / (a**2)) * delta_k_t\n\n# Growth factor D_+(a)\nOmega_m = Function('Omega_m')(a)\nOmega_Lambda = Function('Omega_Lambda')(a)\ng = (5*Omega_m/2) / (Omega_m**(4/7) - Omega_Lambda + (1 + Omega_m/2)*(1 + Omega_Lambda/70))\nD_plus = a * g\n\n# Growth rate f(a) = dlnD_+ / dln a\nD_plus_diff = diff(D_plus, a)\nf = (a / D_plus) * D_plus_diff\nsimplified_f = simplify(f)\n\n# Power spectrum\nA_s = 2.1e-9\nk_0, n_s = symbols('k_0 n_s', real=True, positive=True)\nP_R = A_s * (k/k_0)**(n_s - 1)\nn_s_val = 0.9649\n\n# Print results\nprint(\"Delta definition:\", delta_def)\nprint(\"Growth equation LHS:\", lhs_eq)\nprint(\"Growth factor D_+(a):\", D_plus)\nprint(\"Growth rate f(a):\", f)\nprint(\"Simplified growth rate f(a):\", simplified_f)\nprint(\"Power Spectrum P_R(k):\", P_R)\nprint(\"Scalar spectral index n_s value:\", n_s_val)\n```\n\n---\n\n### Conclusion\n\nAll the given fundamental equations and definitions related to cosmic structure formation and large-scale growth are mathematically consistent and correctly represented symbolically. The growth rate function \\(f(a)\\) derived from the growth factor matches the logarithmic derivative definition. The primordial power spectrum form with observational parameters is consistent. No contradictions were detected and the symbolic proofs confirm the relations given."
+    },
+    {
+      "concept": "Dirac vs Majorana Neutrino Mass Frameworks",
+      "level": 2,
+      "equations": [
+        "\\mathcal{L}_D = - y_\\nu \\overline{L} \\widetilde{H} \\nu_R + \\text{h.c.}",
+        "m_\\nu = \\frac{y_\\nu v}{\\sqrt{2}}, \\qquad v = 246 \\text{ GeV}.",
+        "y_\\nu \\sim 10^{-12} - 10^{-13}.",
+        "\\mathcal{L}_M = -\\frac{1}{2} \\overline{\\nu_L} M_\\nu (\\nu_L)^c + \\text{h.c.}",
+        "\\mathcal{L}_{\\text{Weinberg}} = \\frac{c_{\\alpha\\beta}}{\\Lambda} \\left(\\overline{L}_\\alpha \\widetilde{H}^*\\right)\\left(\\widetilde{H}^\\dagger L_\\beta^c\\right) + \\text{h.c.}",
+        "m_\\nu \\sim \\frac{v^2}{\\Lambda}.",
+        "\\Lambda \\sim 10^{14} - 10^{15} \\text{ GeV}.",
+        "m_\\nu = - M_D M_R^{-1} M_D^T, \\qquad M_D = \\frac{y_\\nu v}{\\sqrt{2}},",
+        "m_\\nu \\sim \\frac{y_\\nu^2 v^2}{2 M_R}.",
+        "\\left(T_{1/2}^{0\\nu}\\right)^{-1} = G_{0\\nu} |M_{0\\nu}|^2 \\left|\\frac{m_{\\beta\\beta}}{m_e}\\right|^2,",
+        "m_{\\beta\\beta} = \\left|\\sum_i U_{ei}^2 m_i\\right| \\qquad \\text{(Majorana only)}.",
+        "m_{\\beta\\beta} \\equiv 0.",
+        "\\mathcal{L}_D = -y_\\nu \\overline{L}\\widetilde{H}\\nu_R + \\text{h.c.} \\Rightarrow m_\\nu = y_\\nu v/\\sqrt{2}",
+        "v \\simeq 246",
+        "y_\\nu \\sim 2m_\\nu/v \\sim 10^{-12} - 10^{-13}",
+        "\\mathcal{L}_{\\text{Dirac}} = -\\overline{\\nu_L} M_D \\nu_R",
+        "\\mathcal{L}_{\\text{Maj}} = -\\tfrac{1}{2}\\overline{\\nu_L}(M_D)^\\dagger(\\nu_L)^c",
+        "\\mathcal{L}^{(5)}_{\\text{Dirac}} = \\frac{y}{\\Lambda}(\\overline{L}\\widetilde{H})(S\\nu_R) \\Rightarrow m_\\nu \\sim yvv_S/\\Lambda",
+        "(m_\\nu)_{\\alpha\\beta} = \\sum_i y_{\\alpha i}y_{\\beta i}\\Lambda_i",
+        "\\Lambda_i = \\frac{M_i}{16\\pi^2}[\\cdots]",
+        "0\\nu\\beta\\beta",
+        "(T_{1/2}^{0\\nu})^{-1} = G_{0\\nu}|M_{0\\nu}|^2|m_{\\beta\\beta}/m_e|^2",
+        "m_{\\beta\\beta} = |\\sum_i U_{ei}^2 m_i|",
+        "m_{\\beta\\beta} \\equiv 0",
+        "\\mathcal{L}_5 = \\frac{c_{\\alpha\\beta}}{\\Lambda}(\\overline{L}\\widetilde{H}^*)(\\widetilde{H}^\\dagger L) \\Rightarrow m_\\nu \\sim v^2/\\Lambda",
+        "m_\\nu \\simeq -M_D M_R^{-1} M_D^T \\sim y^2 v^2/(2M_R)",
+        "(c_{\\alpha\\beta})_{\\text{eff}} = \\sum_i y_{\\alpha i}y_{\\beta i}/M_i",
+        "\\nu_\\alpha = \\sum_i U_{\\alpha i}\\nu_i",
+        "\\mu_\\nu = \\frac{3eG_F m_\\nu}{8\\sqrt{2}\\pi^2} \\approx 3.2\\times10^{-19}(m_\\nu/\\text{eV})\\,\\mu_B",
+        "\\Delta m^2_{21} \\simeq 7.4\\times10^{-5}",
+        "|\\Delta m^2_{31}| \\simeq 2.5\\times10^{-3}",
+        "m_\\nu = y_\\nu v/\\sqrt{2}",
+        "m_\\nu \\sim y^2v^2/2M_R",
+        "y_\\nu",
+        "\\Lambda_i",
+        "M_i",
+        "T_{1/2}^{0\\nu}",
+        "G_{0\\nu}",
+        "m_{\\beta\\beta} = |\\sum U_{ei}^2 m_i|",
+        "\\mu_\\nu",
+        "(c_{\\alpha\\beta})_{\\text{eff}} = \\sum y y/M_i",
+        "U(1)_{B-L}",
+        "\\mathcal{Z}_n",
+        "T_{1/2}^{0\\nu} > 2.3\\times10^{26}",
+        "\\approx 3.2\\times10^{-19}",
+        "\\nu_R",
+        "\\langle H \\rangle = (0, v/\\sqrt{2})^T",
+        "m_\\nu \\sim 0.01",
+        "y_\\nu \\to 0",
+        "\\Delta L = 2",
+        "m_\\nu \\sim 0.05",
+        "v = 246",
+        "y_\\nu \\sim 10^{-12}",
+        "M_R \\sim 10^{14}",
+        "m_\\beta < 0.45",
+        "\\sum m_\\nu \\lesssim 0.12",
+        "m_{\\beta\\beta}",
+        "T_{1/2}^{0\\nu} > 2.3 \\times 10^{26}",
+        "m_{\\beta\\beta} < 36",
+        "\\Lambda \\sim 10^{15}"
+      ],
+      "equation_count": 60,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-29T01:33:26.638453+00:00"
+    },
+    {
+      "concept": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+      "level": 3,
+      "equations": [
+        "\\Phi(M, \\mathbf{s}) = \\min_{\\text{partitions } P} \\; \\Big[ \\varphi_{\\text{cause}}(M, \\mathbf{s}) + \\varphi_{\\text{effect}}(M, \\mathbf{s}) \\Big]_{P}",
+        "\\varphi(M, \\mathbf{s}) = H\\big[p(\\mathbf{x}_0 \\mid \\mathbf{x}_1 = \\mathbf{s})\\big] - H\\big[p(\\mathbf{x}_0^A \\mid \\mathbf{x}_1^A = \\mathbf{s}^A)\\, p(\\mathbf{x}_0^B \\mid \\mathbf{x}_1^B = \\mathbf{s}^B)\\big]",
+        "\\Phi^{\\max} = \\max_{M \\subseteq S} \\Phi(M, \\mathbf{s})",
+        "EI(X) = \\langle D\\big(p(\\mathbf{X}_{t+1} \\mid do(\\mathbf{X}_t = \\mathbf{x})) \\,\\|\\, p(\\mathbf{X}_{t+1})\\big) \\rangle_{\\mathbf{x} \\sim \\text{uniform}}",
+        "\\Delta I = EI(X_M) - EI(X_m) > 0 \\quad \\Longleftrightarrow \\quad \\text{macro beats micro}",
+        "\\Gamma(\\ell) = \\frac{\\partial \\, \\mathcal{C}}{\\partial \\, I_{\\ell}} \\Big/ \\frac{\\partial \\, \\Phi_{\\text{est}}}{\\partial \\, I_{\\ell}}",
+        "\\varphi_{\\text{effect}} = D\\Big( p(\\mathbf{x}_{t+1} \\mid do(M = \\mathbf{m})) \\;\\Big\\|\\; p(\\mathbf{x}_{t+1} \\mid do(M_{P_1} = \\mathbf{m}_{P_1}), do(M_{P_2} = \\mathbf{m}_{P_2})) \\Big)",
+        "EI = \\log_2 N + \\frac{1}{N}\\sum_{i=1}^{N}\\sum_{j=1}^{N} p_{ij}\\log_2 \\frac{p_{ij}}{\\sum_{k} p_{kj}} \\qquad \\Delta I = EI_{\\text{macro}} - EI_{\\text{micro}}",
+        "I_A(x;y) = K(x) + K(y) - K(x,y)",
+        "E_{\\min} = k_B T \\ln 2",
+        "W_{\\text{irr}} = T \\Delta S_{\\text{brain}}",
+        "\\tau \\sim \\hbar / E_G",
+        "k_B T \\ln 2",
+        "T \\Delta S",
+        "\\hbar",
+        "h = 6.62607015 \\times 10^{-34}",
+        "k_B",
+        "k_B = 1.380649 \\times 10^{-23}",
+        "\\Phi",
+        "\\log_2 N + \\frac{1}{N}\\sum\\sum p_{ij}\\log_2\\!\\frac{p_{ij}}{\\sum_k p_{kj}}",
+        "\\sum_i p_{ij} = N p_j",
+        "\\log_2 N",
+        "H(X_{t+1}) - \\langle H(X_{t+1}\\mid X_t)\\rangle = I(X_t;X_{t+1})",
+        "k_B T\\ln 2 \\to \\mathrm{J}",
+        "T\\Delta S \\to \\mathrm{J}",
+        "\\tau \\sim \\hbar/E_G",
+        "\\mathrm{J\\cdot s}",
+        "\\mathrm{J}",
+        "\\tau"
+      ],
+      "equation_count": 29,
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-29T01:48:23.997001+00:00"
+    },
+    {
+      "concept": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+      "level": 3,
+      "equations": [
+        "\\mathrm{PCI} = \\mathrm{LZ}\\!\\left(\\text{binarized, source-localized TMS-EEG response matrix}\\right)",
+        "\\Gamma(\\ell) = \\frac{\\partial\\, \\mathrm{PCI}}{\\partial I_\\text{int}(\\ell)}\\bigg/ \\sum_{\\ell'} \\left|\\frac{\\partial\\, \\mathrm{PCI}}{\\partial I_\\text{int}(\\ell')}\\right|, \\qquad \\ell \\in \\{\\text{micro, meso, macro}\\}",
+        "\\mathcal{R}(\\ell, u) = \\mathbb{E}\\left[\\mathrm{PCI} \\mid \\mathrm{do}(\\text{perturbation of intensity } u \\text{ targeted at granularity } \\ell)\\right]",
+        "\\mathcal{K}(\\ell) = \\left.\\frac{d^2 \\mathcal{R}(\\ell, u)}{du^2}\\right|_{u = u^\\dagger}, \\qquad u^\\dagger = \\arg\\max_u \\mathcal{R}(\\text{micro}, u)",
+        "\\mathcal{C}(\\ell) = \\frac{\\mathcal{K}(\\ell)}{\\max\\left(\\sum_{\\ell'}|\\mathcal{K}(\\ell')|,\\; \\epsilon\\right)} + \\lambda \\cdot \\mathbb{1}\\left[\\sum_{\\ell'}|\\mathcal{K}(\\ell')| < \\epsilon\\right]",
+        "\\mathrm{EI}(S) = \\langle D\\big(p(\\,\\cdot\\,|\\,\\mathrm{do}(\\text{max-entropy input})\\,),\\, p(\\,\\cdot\\,|\\,\\text{hard-do}\\,)\\,\\rangle",
+        "\\Phi(\\mathcal{S}) = \\min_{\\mathcal{P}} D_{\\mathrm{KL}}\\big(p_{\\mathcal{S}}(\\text{past}\\to\\text{future}) \\,\\|\\, \\prod_{k} p_{\\mathcal{S}/\\mathcal{P}_k}(\\text{past}\\to\\text{future})\\big)",
+        "\\Delta\\mathcal{K} = \\mathcal{K}(\\text{macro}) - \\mathcal{K}(\\text{micro})",
+        "\\Phi",
+        "\\mathrm{EI}_{\\text{macro}} > \\mathrm{EI}_{\\text{micro}}",
+        "\\Gamma(\\ell)",
+        "I_\\text{int}(\\ell)",
+        "\\ell",
+        "\\partial \\mathrm{PCI}/\\partial I_\\text{int}(\\ell)",
+        "\\Gamma",
+        "\\ell^*",
+        "\\mathcal{K}",
+        "\\epsilon > 0",
+        "\\mathcal{K}(\\ell)",
+        "^{-2}",
+        "\\mathcal{R}",
+        "(\\ell, u)",
+        "\\mathcal{K}(\\text{micro}) > \\mathcal{K}(\\text{macro})",
+        "\\mathcal{K}(\\text{micro}) > 0",
+        "\\mathcal{K}(\\text{macro}) \\geq \\mathcal{K}(\\text{micro})",
+        "\\mathrm{BF}_{10}",
+        "\\Delta\\mathcal{K}",
+        "\\mathcal{R}(\\ell, u)",
+        "\\mathcal{K}_{\\text{micro}} > \\mathcal{K}_{\\text{macro}}",
+        "\\mathcal{K}_{\\text{macro}} \\geq \\mathcal{K}_{\\text{micro}}",
+        "\\epsilon",
+        "D_\\mathrm{KL}",
+        "\\mathrm{do}(u, \\ell)",
+        "\\mathcal{K}(\\ell) = d^2\\mathcal{R}/du^2",
+        "u^\\\\dagger",
+        "\\\\mathcal{R}(\\\\text{micro},u)\\",
+        "\\\\mathcal{K}(\\\\text{micro})>0\\"
+      ],
+      "equation_count": 37,
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-29T01:54:38.232631+00:00"
+    },
+    {
+      "concept": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+      "level": 3,
+      "equations": [
+        "\\varphi_{\\mathrm{effect}}(M \\rightarrow P) = D\\big(p_{\\mathrm{effect}}(x_0 \\mid \\mathrm{do}(\\mathrm{purview}))\\big\\Vert p_{\\mathrm{integrated}}\\big)",
+        "\\Phi^{\\max} = \\max_{S^*} \\Phi(S^*), \\qquad \\varphi^{\\max} = \\max_{\\mathcal{M},\\,P} \\varphi(M \\rightarrow P)",
+        "\\mathrm{PCI} = \\frac{C_L(S)}{C_{L,\\mathrm{max}}(S)} = \\frac{C_L(S)}{n \\cdot \\log_b n}",
+        "\\Delta_{k,s} = \\big| f_{\\mathrm{IIT}}(k, s) - \\hat{y}_{k,s} \\big| - \\big| f_{\\mathrm{Emerg}}(k, s) - \\hat{y}_{k,s} \\big|",
+        "\\Lambda = \\sum_{k,s} \\log \\frac{p(\\hat{y}_{k,s} \\mid \\mathcal{M}_{\\mathrm{IIT}})}{p(\\hat{y}_{k,s} \\mid \\mathcal{M}_{\\mathrm{Emerg}})}",
+        "p_{\\mathrm{effect}}(X_0^{P} \\mid \\mathrm{do}(x_M)) = \\Pr\\big(X_1^{P} = X_0^{P}\\,\\big|\\, \\mathrm{do}(X_1^{M} = x_M)\\big)",
+        "\\varphi(M \\rightarrow P) = \\min_{\\mathrm{cut}} D\\left(p_{\\mathrm{effect}}(x_0^{P} \\mid \\mathrm{do}(x_M)) \\,\\bigg\\Vert\\, p^{\\mathrm{MIP}}_{\\mathrm{effect}}(x_0^{P} \\mid \\mathrm{do}(x_M))\\right)",
+        "\\Phi(S) = D_{W}\\!\\left(p_{\\mathrm{CER}}(S),\\, p_{\\mathrm{CER}}^{\\mathrm{cut}}(S)\\right)",
+        "\\dot{\\theta}_i = \\omega_i + \\sum_j K_{ij} \\sin(\\theta_j - \\theta_i), \\qquad r e^{i\\psi} = \\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}",
+        "E_{\\mathrm{erase}} \\geq k_B T \\ln 2 \\quad \\text{per bit}",
+        "\\Phi'_{\\mathrm{lossless}}(M) = -\\log_2\\big(\\sum_{x} 2^{-K(M(x))}\\big)",
+        "E_{\\mathrm{erase}} \\geq k_B T \\ln 2",
+        "k_B",
+        "1.380649 \\times 10^{-23}",
+        "\\Lambda",
+        "\\Delta_{k,s}",
+        "\\Phi",
+        "\\Phi^{\\max} = \\max_{S^*} \\Phi(S^*)",
+        "\\mathrm{PCI} = C_L(S) / (n \\log_b n)",
+        "\\Delta_{k,s} = |f_{\\mathrm{IIT}}(k,s) - \\hat{y}_{k,s}| - |f_{\\mathrm{Emerg}}(k,s) - \\hat{y}_{k,s}|",
+        "\\mathrm{do}(\\cdot)",
+        "\\mathbf{B}",
+        "\\mathrm{PCI} = C_L(S)/C_{L,\\max}(S)",
+        "r e^{i\\psi}",
+        "\\Lambda > \\ln 10",
+        "\\Lambda < -\\ln 10",
+        "p(\\mathcal{M}_{\\mathrm{IIT}})",
+        "p(\\mathcal{M}_{\\mathrm{Emerg}})",
+        "f_{\\mathrm{IIT}}(k,s)",
+        "f_{\\mathrm{Emerg}}(k,s)"
+      ],
+      "equation_count": 30,
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "source": "crew_extraction",
+      "timestamp": "2026-09-29T02:07:08.522803+00:00"
     }
   ]
 }

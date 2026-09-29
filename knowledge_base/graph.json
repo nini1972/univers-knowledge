@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-28T03:17:03.035433+00:00",
+  "updated_at": "2026-09-29T02:09:10.055117+00:00",
   "stats": {
-    "total_nodes": 288,
-    "level_1_count": 125,
-    "level_2_count": 122,
-    "level_3_count": 41,
+    "total_nodes": 291,
+    "level_1_count": 126,
+    "level_2_count": 123,
+    "level_3_count": 42,
     "total_edges": 155,
     "frontier_count": 0
   },
@@ -226,6 +226,27 @@
         "G. Giesen, J. Lesgourgues, B. Audren, Y. Ali-Haïmoud (2012), 'CMB photons shedding light on dark matter', https://doi.org/10.1088/1475-7516/2012/12/008"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cosmic_recombination_and_photon_decoupling.md"
+    },
+    {
+      "id": "cosmicstructureformationandgrowthoflargescalestructure",
+      "title": "Cosmic Structure Formation and Growth of Large-Scale Structure",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Schaefer, B. E. (2007), 'Cosmological Structure Formation and Dark Energy', https://doi.org/10.1103/PhysRevD.75.023509",
+        "Peacock, J. A. (2003), 'Cosmological Physics', https://doi.org/10.1017/CBO9780511535056",
+        "Eisenstein, D. J., et al. (2005), 'Detection of the Baryon Acoustic Peak in the Large-Scale Correlation Function of SDSS Luminous Red Galaxies', https://doi.org/10.1086/466512",
+        "Jenkins, A., et al. (2001), 'Mass Function of Dark Matter Halos', https://doi.org/10.1046/j.1365-8711.2001.04983.x"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_structure_formation_and_growth_of_largescale_structure.md"
     },
     {
       "id": "cosmicthermalhistoryoftheuniverse",
@@ -3238,6 +3259,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md"
     },
     {
+      "id": "diracvsmajorananeutrinomassframeworks",
+      "title": "Dirac vs Majorana Neutrino Mass Frameworks",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Calle, J., Restrepo, D., Yaguna, C. E., & Zapata, O. (2019), 'Symmetry protection of radiative Dirac neutrino masses', https://doi.org/10.1140/epjc/s10052-019-7430-0",
+        "Ma, E. & Popov, A. (2018), 'Pathways to naturally small Dirac neutrino masses', https://doi.org/10.1016/j.physletb.2017.09.015",
+        "Dvali, G. & Funcke, L. (2016), 'Gravitational origin of Dirac and Majorana masses', https://doi.org/10.1016/j.physletb.2016.03.062"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/dirac_vs_majorana_neutrino_mass_frameworks.md"
+    },
+    {
       "id": "dynamicaldarkenergyvsmodifiedgravityinaddressingthehubbletension",
       "title": "Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension",
       "level": 2,
@@ -5161,6 +5201,25 @@
         "Student Summary"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md"
+    },
+    {
+      "id": "apreregisteredcrossscaleinterventionbenchmarkfordistinguishingintegratedinformationtheoryfromphysicalistemergenceinneuralsystems",
+      "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Casali et al. (2013), 'A critical test of the hypothesis that consciousness is associated with integrated information', https://doi.org/10.1126/scitranslmed.3000739",
+        "Aru et al. (2019), 'Localizing the neural correlates of consciousness: A comparative review of how to best identify its effects', https://doi.org/10.1016/j.pneurobio.2019.101590",
+        "Oizumi et al. (2016), 'A unified framework for information integration and the measurement of consciousness', https://doi.org/10.1016/j.tins.2015.12.005"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md"
     },
     {
       "id": "algorithmiccomplexitylimitsofhierarchicalstructureformationinselforganizingcosmologicalnetworks",
