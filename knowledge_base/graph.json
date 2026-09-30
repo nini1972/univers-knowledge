@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-29T02:09:10.055117+00:00",
+  "updated_at": "2026-09-30T02:37:36.543185+00:00",
   "stats": {
-    "total_nodes": 291,
-    "level_1_count": 126,
+    "total_nodes": 292,
+    "level_1_count": 127,
     "level_2_count": 123,
     "level_3_count": 42,
     "total_edges": 155,
@@ -203,6 +203,29 @@
         "Skeptic’s assessment and verification reports"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cosmic_neutrino_background.md"
+    },
+    {
+      "id": "cosmicrayphysics",
+      "title": "Cosmic Ray Physics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "L. O'C. Drury (1983), 'Rep. Prog. Phys.', https://doi.org/10.1088/0034-4885/46/8/002",
+        "A. R. Bell (2004), 'MNRAS', https://doi.org/10.1111/j.1365-2966.2004.08097.x",
+        "V. S. Berezinsky, A. Z. Gazizov, S. Grigorieva (2006), 'Phys. Rev. D', https://doi.org/10.1103/PhysRevD.74.043005",
+        "HESS Collaboration (2016), 'Acceleration of petaelectronvolt protons in the Galactic Centre', https://doi.org/10.1038/nature17147",
+        "N. Globus, R. Blandford (2023), 'Ultra High Energy Cosmic Ray Source Models: Successes, Challenges and General Predictions', arXiv:2302.06791",
+        "D. Mattingly (2005), 'Modern Tests of Lorentz Invariance', https://doi.org/10.12942/lrr-2005-5",
+        "M. Stein Muzio (2025), 'Ultrahigh energy cosmic rays and neutrino flux models', arXiv:2502.11834"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_ray_physics.md"
     },
     {
       "id": "cosmicrecombinationandphotondecoupling",

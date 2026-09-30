@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-29T02:08:46.404473+00:00  
-> **Total Analyzed Concepts:** 369 | **Total Discovered Equations:** 12749 | **Discovered Bridges:** 593
+> **Generated:** 2026-09-30T00:55:52.633120+00:00  
+> **Total Analyzed Concepts:** 370 | **Total Discovered Equations:** 12771 | **Discovered Bridges:** 594
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -476,9 +476,9 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 146 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 147 |
 | `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 130 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 128 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 129 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 90 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 71 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 48 |
@@ -486,5 +486,5 @@ These equations appear across multiple distinct concepts, serving as mathematica
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 16 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 144
+- **MATH_PROVEN Entries:** 145
 - **MATH_CONSISTENT Entries:** 102

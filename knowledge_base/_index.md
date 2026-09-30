@@ -20,6 +20,7 @@ graph TD
     cosmic_recombination_and_photon_decoupling["Cosmic Recombination and Photon Decoupling"]:::verified
     signatures_distinguishing_neutrino_decay_from_sterile_neutrinos["Signatures Distinguishing Neutrino Decay from Sterile Neutrino Scenarios"]:::theoretical
     cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
+    cosmic_ray_physics["Cosmic Ray Physics"]:::theoretical
     external_verification_of_neutrino_decay_bounds_via_open_datasets["External Verification of Neutrino Decay Bounds via Open Datasets"]:::theoretical
     superfluid_dark_matter_phonon_effects["Superfluid Dark Matter Phonon Effects"]:::theoretical
     mathematical_formulation_of_neutrino_decay_survival_probabilities["Mathematical Formulation of Neutrino Decay Survival Probabilities"]:::theoretical
@@ -521,6 +522,7 @@ graph TD
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
+- [Cosmic Ray Physics](level_1_fundamental_physics/cosmic_ray_physics.md) [THEORETICAL]
 - [Cosmic Recombination and Photon Decoupling](level_1_fundamental_physics/cosmic_recombination_and_photon_decoupling.md) [VERIFIED]
 - [Cosmic Structure Formation and Growth of Large-Scale Structure](level_1_fundamental_physics/cosmic_structure_formation_and_growth_of_largescale_structure.md) [VERIFIED]
 - [Cosmic Thermal History of the Universe](level_1_fundamental_physics/cosmic_thermal_history_of_the_universe.md) [VERIFIED]

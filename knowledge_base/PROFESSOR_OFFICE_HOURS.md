@@ -12,11 +12,13 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (3)
 
 | ID | Level | Concept | Initiator | Question |
 |---|---|---|---|---|
 | `adv-20260927-186600` | L2 | **Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves** | Student Orchestrator | Level 2 debate 'Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed? |
+| `adv-20260930-720e68` | L2 | **Pre- vs Post-Inflationary QCD Axion Cosmology** | Student Orchestrator | Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed? |
+| `adv-20260930-72e3f8` | L3 | **A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems** | Student Orchestrator | Level 3 topic 'A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
 
 ### Detailed Inquiries
 
@@ -33,6 +35,37 @@
   * Math Physicist: Show the VOS fixed-point algebra and numerical residuals for both evolution equations without redefining parameters or conventions after the check.
 
 > **To answer**: `python scripts/consult_professor.py answer adv-20260927-186600 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20260930-720e68` — Pre- vs Post-Inflationary QCD Axion Cosmology
+- **Timestamp**: `2026-09-30T02:19:58.671856+00:00`
+- **Level**: Level 2
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
+- **Scientific Rationale**: The skeptic review passes the required threshold with a verification score of 5/5, and the debate is transparent about uncertainty and the lack of direct evidence for either PQ-breaking history. However, the post-inflationary report's headline pair of 68 μeV and 2.6×10^11 GeV contradicts its stated mass–decay-constant relation, while the string-tension logarithm has a dimensionful argument; these are unresolved errors in the submitted material, so it does not meet the requirement of mathematical coherence. The comparative scenarios remain theoretical, not experimentally verified.
+- **Agent Blockers**:
+  * Researcher: Correct or withdraw the post-inflationary mass–decay-constant pair using a verified primary source.
+  * Researcher: Replace the string-tension logarithm with a dimensionless argument and ensure the notation is consistent.
+  * Researcher: Clarify the pre-inflationary distinction between f_I and f_a wherever deriving the isocurvature constraint.
+  * Math Physicist: Recheck the corrected mass–decay-constant values against the stated QCD mass relation.
+  * Math Physicist: Confirm the corrected string-tension expression and review the minihalo normalization against its primary source.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20260930-720e68 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20260930-72e3f8` — A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems
+- **Timestamp**: `2026-09-30T02:37:35.525957+00:00`
+- **Level**: Level 3
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Level 3 topic 'A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Scientific Rationale**: The Skeptic's Verification Score is 6/6, so the score threshold does not require rejection; however, the audit identifies substantive unresolved errors in the framework's mathematical and physical claims. In particular, the unordered-pair entropy-production expression is incorrectly doubled, the Langevin treatment omits the system-entropy contribution and gives an invalid general rate expression, and the stated entropy-production scale is inconsistent with the cited metabolic constraints; these issues undermine the proposed discriminator and require correction before acceptance.
+- **Agent Blockers**:
+  * Researcher: Re-derive and justify the proposed entropy-production magnitude from explicit physical energy and reservoir assumptions.
+  * Researcher: Remove placeholder or future-dated references and reconcile the divergent report versions and bibliographies.
+  * Researcher: Clarify how the experimental measurements estimate entropy production at the claimed circuit scale.
+  * Math Physicist: Correct the unordered-pair Markov entropy-production formula; grouping ordered pairs yields k_B(A-B)ln(A/B), with no factor of 2.
+  * Math Physicist: Include the system-entropy term in total Langevin entropy production and state the conditions under which any simplified mean-rate expression holds.
+  * Math Physicist: Reconcile the specified EMD metric and Φ definition with the claimed IIT version, and validate the proxy against exactly computable systems.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20260930-72e3f8 "Your guidance"`
 
 
 ---
