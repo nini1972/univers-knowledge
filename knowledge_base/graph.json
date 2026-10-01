@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-09-30T02:37:36.543185+00:00",
+  "updated_at": "2026-10-01T02:01:05.842656+00:00",
   "stats": {
-    "total_nodes": 292,
-    "level_1_count": 127,
-    "level_2_count": 123,
-    "level_3_count": 42,
+    "total_nodes": 295,
+    "level_1_count": 128,
+    "level_2_count": 124,
+    "level_3_count": 43,
     "total_edges": 155,
     "frontier_count": 0
   },
@@ -104,6 +104,25 @@
         "IceCube project publications"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/calibration_strategies_for_neutrino_decay_signals.md"
+    },
+    {
+      "id": "classicalelectromagnetism",
+      "title": "Classical Electromagnetism",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Maxwell, J. C. (1865), 'A Dynamical Theory of the Electromagnetic Field', https://doi.org/10.1038/001909a0",
+        "Glauber, R. J. (1963), 'Coherent and Incoherent States of the Radiation Field', https://doi.org/10.1103/PhysRev.130.2529",
+        "Colladay, D. & Kostelecký, V. A. (1998), 'Lorentz Violation and the Standard Model', https://doi.org/10.1103/PhysRevD.58.116002"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/classical_electromagnetism.md"
     },
     {
       "id": "classicalmechanics",
@@ -3050,6 +3069,25 @@
       "path": "knowledge_base/level_2_advanced_frameworks/causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research.md"
     },
     {
+      "id": "chiralmagneticeffectvschiralvorticaleffectinrelativisticplasmas",
+      "title": "The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_FLAWED",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "D. E. Kharzeev, J. Liao, S. A. Voloshin, G. Wang (2016), 'Progress in Particle and Nuclear Physics', https://doi.org/10.1016/j.ppnp.2016.01.001",
+        "K. Landsteiner, E. Megías, F. Peña-Benítez (2011), 'Physical Review Letters', https://doi.org/10.1103/PhysRevLett.107.021601",
+        "P. Hosur, X.-L. Qi (2013), 'C. R. Physique', https://doi.org/10.1016/j.crhy.2013.10.010"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/chiral_magnetic_effect_vs_chiral_vortical_effect_in_relativistic_plasmas.md"
+    },
+    {
       "id": "conformalcycliccosmologyvseternalinflationinexplainingprebigbanginitialconditions",
       "title": "Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions",
       "level": 2,
@@ -5243,6 +5281,29 @@
         "Oizumi et al. (2016), 'A unified framework for information integration and the measurement of consciousness', https://doi.org/10.1016/j.tins.2015.12.005"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md"
+    },
+    {
+      "id": "apreregisteredmodeldiscriminationframeworkforintegratedinformationtheoryandphysicalistemergenceusingmultiscaleneuralperturbations",
+      "title": "A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Oizumi, M., Albantakis, L., & Tononi, G. (2014), 'From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0', https://doi.org/10.1371/journal.pcbi.1003588",
+        "Casali, A. G., et al. (2013), 'A Theoretically Based Index of Consciousness Independent of Sensory Processing and Behavior', https://doi.org/10.1126/scitranslmed.3006294",
+        "Melloni, L., Mudrik, L., Pitts, M., et al. (2023), 'An adversarial collaboration protocol for testing contrasting predictions of global neuronal workspace and integrated information theory', https://doi.org/10.1371/journal.pone.0268577",
+        "Ferrante, O., Górska, U., Henin, S., et al. (2023), 'An adversarial collaboration to critically evaluate theories of consciousness', https://doi.org/10.1101/2023.06.23.546249",
+        "Storm, J. F., Klink, P. C., Aru, J., et al. (2024), 'An integrative, multiscale view on neural theories of consciousness', https://doi.org/10.1016/j.neuron.2024.02.004",
+        "Ponce de Leon, S., & Yoshimi, J. (2026), 'IIT and the testability of the silent neuron predictions', https://doi.org/10.1093/nc/niag037",
+        "Danilczuk, M., Pokropski, M., & Suffczynski, P. (2026), 'The integrated information Φ of an integrate-and-fire network', https://doi.org/10.1371/journal.pcbi.1014085"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md"
     },
     {
       "id": "algorithmiccomplexitylimitsofhierarchicalstructureformationinselforganizingcosmologicalnetworks",

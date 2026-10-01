@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-09-30T00:55:52.633120+00:00  
-> **Total Analyzed Concepts:** 370 | **Total Discovered Equations:** 12771 | **Discovered Bridges:** 594
+> **Generated:** 2026-10-01T02:00:38.962570+00:00  
+> **Total Analyzed Concepts:** 381 | **Total Discovered Equations:** 13441 | **Discovered Bridges:** 610
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 100 concepts:
+**Occurrences:** Appears in 102 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -108,9 +108,11 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
+- **Level 2**: Pre- vs Post-Inflationary QCD Axion Cosmology
+- **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 
 ### ` 1.380649 \times 10^{-23} `
-**Occurrences:** Appears in 38 concepts:
+**Occurrences:** Appears in 39 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
@@ -149,6 +151,44 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure
 - **Level 1**: Cosmic Thermal History of the Universe
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
+- **Level 3**: A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems
+
+### ` \Phi `
+**Occurrences:** Appears in 34 concepts:
+- **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
+- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
+- **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
+- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
+- **Level 3**: Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics
+- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
+- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
+- **Level 3**: Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures
+- **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
+- **Level 1**: What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?
+- **Level 3**: Exploring the Integrative Dimensions of Information Theory in Consciousness and Cosmic Self-Organization
+- **Level 3**: Exploring the Formalization of Integrated Information Theory within Cosmological Contexts
+- **Level 3**: Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures
+- **Level 3**: Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments
+- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
+- **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
+- **Level 3**: Landauer-Bekenstein Thermodynamic Constraints on Information Processing in Non-Equilibrium Phase Transitions of Cosmological Intelligence
+- **Level 3**: Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics
+- **Level 3**: Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage
+- **Level 3**: Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks
+- **Level 3**: Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions
+- **Level 3**: Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness
+- **Level 3**: Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure
+- **Level 3**: Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure
+- **Level 1**: What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?
+- **Level 3**: Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \(X_{t+1}\perp X_t\mid M_t\), \(H(M_t)<H(X_t)\), and \(M_t=\arg\max_{S\subseteq X_t}\Phi(S)\)
+- **Level 3**: Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory
+- **Level 3**: A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure
+- **Level 3**: Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems
+- **Level 3**: Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism
+- **Level 3**: Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models
+- **Level 3**: Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems
+- **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
+- **Level 3**: A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations
 
 ### ` \alpha `
 **Occurrences:** Appears in 33 concepts:
@@ -185,42 +225,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
-
-### ` \Phi `
-**Occurrences:** Appears in 33 concepts:
-- **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
-- **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
-- **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
-- **Level 3**: Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks
-- **Level 3**: Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation: A Comparative Analysis of Integrated Information Theory and Statistical Mechanics
-- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
-- **Level 2**: Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem
-- **Level 3**: Relating Integrated Information Measures to Quantum Decoherence Rates in Neural Micro-Circuitry and Galactic Filamentary Structures
-- **Level 3**: Evaluating Potential Isomorphisms between Integrated Information Theory (IIT) Phi-Complexity and Holographic Entanglement Entropy in Spacetime Geometry
-- **Level 1**: What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?
-- **Level 3**: Exploring the Integrative Dimensions of Information Theory in Consciousness and Cosmic Self-Organization
-- **Level 3**: Exploring the Formalization of Integrated Information Theory within Cosmological Contexts
-- **Level 3**: Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures
-- **Level 3**: Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments
-- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
-- **Level 3**: Phase-Transition Dynamics in Integrated Information Scaling across Gravitational Filaments and Neural Manifolds
-- **Level 3**: Landauer-Bekenstein Thermodynamic Constraints on Information Processing in Non-Equilibrium Phase Transitions of Cosmological Intelligence
-- **Level 3**: Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics
-- **Level 3**: Integrated Information Metrics in Causal Set Topologies: A Comparative Analysis of Phenomenological Consciousness and Gravitational Information Storage
-- **Level 3**: Quantifying the Causal Power of Markovian vs. Non-Markovian Transitions in Neural Manifolds and Cosmic Filamentary Networks
-- **Level 3**: Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions
-- **Level 3**: Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness
-- **Level 3**: Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure
-- **Level 3**: Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure
-- **Level 1**: What is the corrected bibliographic citation for the reference currently listed as arXiv:2602.02362?
-- **Level 3**: Minimal Sufficient Macrostates Versus IIT's Exclusion Postulate: Testing \(X_{t+1}\perp X_t\mid M_t\), \(H(M_t)<H(X_t)\), and \(M_t=\arg\max_{S\subseteq X_t}\Phi(S)\)
-- **Level 3**: Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory
-- **Level 3**: A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure
-- **Level 3**: Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems
-- **Level 3**: Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism
-- **Level 3**: Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models
-- **Level 3**: Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems
-- **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 
 ### ` 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 31 concepts:
@@ -286,7 +290,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 
 ### ` \hbar `
-**Occurrences:** Appears in 23 concepts:
+**Occurrences:** Appears in 25 concepts:
 - **Level 2**: Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?
@@ -310,6 +314,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Classical Mechanics
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
+- **Level 1**: Classical Electromagnetism
+- **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 
 ### ` \phi `
 **Occurrences:** Appears in 22 concepts:
@@ -439,7 +445,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 
 ### ` 10^{-15} `
-**Occurrences:** Appears in 15 concepts:
+**Occurrences:** Appears in 16 concepts:
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 2**: Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects
 - **Level 1**: How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?
@@ -455,9 +461,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing
 - **Level 2**: Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion
 - **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
+- **Level 1**: Classical Electromagnetism
 
 ### ` h = 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 14 concepts:
+**Occurrences:** Appears in 15 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?
@@ -472,19 +479,20 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
 - **Level 1**: Path Integral Formulation
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
+- **Level 1**: Classical Electromagnetism
 
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 147 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 130 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 129 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 90 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 151 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 132 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 132 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 92 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 71 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 48 |
-| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 33 |
+| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 34 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 16 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 145
-- **MATH_CONSISTENT Entries:** 102
+- **MATH_PROVEN Entries:** 147
+- **MATH_CONSISTENT Entries:** 105

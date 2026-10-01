@@ -97,6 +97,7 @@ graph TD
     cosmic_thermal_history_of_the_universe["Cosmic Thermal History of the Universe"]:::verified
     experimental_schematics_for_neutrino_decay_detection["Experimental Schematics and Layouts for Neutrino Decay Detection"]:::theoretical
     non_standard_interactions_and_neutrino_decay_lifetime_bounds_at_dune["Non-Standard Interactions and Neutrino Decay Lifetime Bounds at DUNE"]:::verified
+    classical_electromagnetism["Classical Electromagnetism"]:::verified
     standard_model_fermion_mass_hierarchies_and_mixing_matrices["Standard Model Fermion Mass Hierarchies and Mixing Matrices"]:::verified
     simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors["Simulation Studies and Sensitivity Limits for Neutrino Decay Detectors"]:::verified
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
@@ -255,6 +256,7 @@ graph TD
     metricaffine_gravity_vs_symmetric_teleparallel_gravity_in_resolving_cosmic_singularity_constraints["Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints"]:::theoretical
     dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem["DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem"]:::theoretical
     emergent_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies["Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies"]:::verified
+    chiral_magnetic_effect_vs_chiral_vortical_effect_in_relativistic_plasmas["The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework"]:::theoretical
     superstring_theory_vs_twistor_theory_in_unifying_quantum_gravity_and_particle_physics["Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics"]:::theoretical
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     black_hole_models_debate_observational_techniques_vs_theoretical_frameworks["Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks"]:::verified
@@ -294,6 +296,7 @@ graph TD
     quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence["Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence"]:::theoretical
     a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure["A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure"]:::theoretical
     dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks["Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks"]:::theoretical
+    a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations["A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations"]:::theoretical
     causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness["Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness"]:::theoretical
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
     empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure["Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure"]:::theoretical
@@ -381,6 +384,8 @@ graph TD
     cp_violation --- matterantimatter_asymmetry_mechanisms
     neutrino_oscillations --- experimental_schematics_for_neutrino_decay_detection
     standard_model_of_particle_physics --- experimental_schematics_for_neutrino_decay_detection
+    quantum_electrodynamics_qed --- classical_electromagnetism
+    special_relativity --- classical_electromagnetism
     neutrino_oscillations --- standard_model_fermion_mass_hierarchies_and_mixing_matrices
     standard_model_of_particle_physics --- standard_model_fermion_mass_hierarchies_and_mixing_matrices
     neutrinoless_double_beta_decay --- simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors
@@ -517,6 +522,7 @@ graph TD
 - [Baryon Acoustic Oscillations](level_1_fundamental_physics/baryon_acoustic_oscillations.md) [VERIFIED]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
 - [Calibration Strategies to Rule Out Confounding Neutrino Decay Signals](level_1_fundamental_physics/calibration_strategies_for_neutrino_decay_signals.md) [THEORETICAL]
+- [Classical Electromagnetism](level_1_fundamental_physics/classical_electromagnetism.md) [VERIFIED]
 - [Classical Mechanics](level_1_fundamental_physics/classical_mechanics.md) [VERIFIED]
 - [Collaborative Empirical Test Strategies for Theoretical Neutrino Models](level_1_fundamental_physics/collaborative_empirical_test_strategies_for_neutrino_models.md) [VERIFIED]
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
@@ -760,6 +766,7 @@ graph TD
 - [Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory.md) [THEORETICAL]
 - [Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity.md) [VERIFIED]
 - [TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing](level_2_advanced_frameworks/teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing.md) [THEORETICAL]
+- [The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework](level_2_advanced_frameworks/chiral_magnetic_effect_vs_chiral_vortical_effect_in_relativistic_plasmas.md) [THEORETICAL]
 - [Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md) [THEORETICAL]
 - [Type-I Seesaw vs Radiative Neutrino Mass Generation](level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md) [THEORETICAL]
 - [Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem](level_2_advanced_frameworks/unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem.md) [THEORETICAL]
@@ -773,6 +780,7 @@ graph TD
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
+- [A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations](level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md) [THEORETICAL]
 - [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md) [THEORETICAL]
 - [Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md) [THEORETICAL]
