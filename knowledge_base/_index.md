@@ -58,6 +58,7 @@ graph TD
     modified_neutrino_survival_probabilities_and_vacuum_decoherence["Modified Neutrino Survival Probabilities and Vacuum Decoherence"]:::theoretical
     neutrino_mass_and_its_role_in_particle_physics_and_cosmology["Neutrino Mass and its Role in Particle Physics and Cosmology"]:::verified
     inflationary_reheating_mechanisms["Inflationary Reheating Mechanisms"]:::theoretical
+    gravitational_wave_astronomy["Gravitational Wave Astronomy"]:::verified
     quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
     calibration_strategies_for_neutrino_decay_signals["Calibration Strategies to Rule Out Confounding Neutrino Decay Signals"]:::theoretical
     special_relativity["Special Relativity"]:::verified
@@ -222,6 +223,7 @@ graph TD
     loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate["Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions["Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions"]:::theoretical
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
+    collisionless_cold_dark_matter_vs_selfinteracting_dark_matter_in_galaxycluster_mergers["Collisionless Cold Dark Matter vs Self-Interacting Dark Matter in Galaxy-Cluster Mergers"]:::verified
     causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research["Causal Set Theory vs Spin Foam Models in Quantum Gravity Research"]:::theoretical
     dirac_vs_majorana_neutrino_mass_frameworks["Dirac vs Majorana Neutrino Mass Frameworks"]:::verified
     axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure["Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure"]:::theoretical
@@ -335,6 +337,7 @@ graph TD
     standard_model_gauge_symmetries_and_their_spontaneous_breaking --- electroweak_symmetry_breaking
     quantum_field_theory --- electroweak_symmetry_breaking
     cp_violation --- electroweak_symmetry_breaking
+    gravitational_wave_astronomy --- resolving_kerr_vs_alternative_black_hole_degeneracies
     quantum_gravity --- covariant_quantum_measure_construction_in_causal_set_theory
     dark_matter --- low_mass_axion_dark_matter_detection_strategies
     neutrino_oscillations --- neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics
@@ -453,6 +456,7 @@ graph TD
     quantum_gravity --> loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
     quantum_gravity --> informationtheoretic_vs_thermodynamic_interpretations_of_gravity
+    gravitational_wave_astronomy --> supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate
     standard_model_of_particle_physics --> randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem
     inflationary_cosmology --> slowroll_inflation_vs_matterbounce_cosmology_in_explaining_primordial_perturbations
     standard_model_of_particle_physics --> beyond_the_standard_model_solutions_to_the_hierarchy_problem
@@ -561,6 +565,7 @@ graph TD
 - [Friedmann–Lemaître–Robertson–Walker Cosmology](level_1_fundamental_physics/friedmannlematrerobertsonwalker_cosmology.md) [VERIFIED]
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Gravitational Lensing](level_1_fundamental_physics/gravitational_lensing.md) [VERIFIED]
+- [Gravitational Wave Astronomy](level_1_fundamental_physics/gravitational_wave_astronomy.md) [VERIFIED]
 - [Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM](level_1_fundamental_physics/hydrodynamic_simulations_baryonic_feedback_sfdm_sidm.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Inflationary Reheating Mechanisms](level_1_fundamental_physics/inflationary_reheating_mechanisms.md) [THEORETICAL]
@@ -674,6 +679,7 @@ graph TD
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
 - [Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime](level_2_advanced_frameworks/causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime.md) [THEORETICAL]
 - [Causal Set Theory vs Spin Foam Models in Quantum Gravity Research](level_2_advanced_frameworks/causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research.md) [THEORETICAL]
+- [Collisionless Cold Dark Matter vs Self-Interacting Dark Matter in Galaxy-Cluster Mergers](level_2_advanced_frameworks/collisionless_cold_dark_matter_vs_selfinteracting_dark_matter_in_galaxycluster_mergers.md) [VERIFIED]
 - [Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions](level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions.md) [THEORETICAL]
 - [Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions](level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_the_entropy_of_initial_conditions.md) [THEORETICAL]
 - [Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution](level_2_advanced_frameworks/conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution.md) [THEORETICAL]

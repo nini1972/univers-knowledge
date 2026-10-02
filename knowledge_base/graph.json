@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-01T02:01:05.842656+00:00",
+  "updated_at": "2026-10-02T01:29:43.449814+00:00",
   "stats": {
-    "total_nodes": 295,
-    "level_1_count": 128,
-    "level_2_count": 124,
+    "total_nodes": 297,
+    "level_1_count": 129,
+    "level_2_count": 125,
     "level_3_count": 43,
-    "total_edges": 155,
+    "total_edges": 156,
     "frontier_count": 0
   },
   "nodes": [
@@ -889,6 +889,25 @@
         "Aghanim, N., et al. (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/gravitational_lensing.md"
+    },
+    {
+      "id": "gravitationalwaveastronomy",
+      "title": "Gravitational Wave Astronomy",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Abbott et al. (2016), 'Observation of Gravitational Waves from a Binary Black Hole Merger', https://doi.org/10.1103/physrevlett.116.061102",
+        "Abbott et al. (2017), 'Multi-messenger Observations of a Binary Neutron Star Merger', https://doi.org/10.3847/2041-8213/aa91c9",
+        "Abbott, R. et al. (2023), 'GWTC-3: Compact Binary Coalescences Observed by LIGO and Virgo during the Second Part of the Third Observing Run', https://doi.org/10.1103/physrevx.13.041039"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/gravitational_wave_astronomy.md"
     },
     {
       "id": "higherordereffectsandnonstandardinteractionsinneutrinodynamics",
@@ -3086,6 +3105,30 @@
         "P. Hosur, X.-L. Qi (2013), 'C. R. Physique', https://doi.org/10.1016/j.crhy.2013.10.010"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/chiral_magnetic_effect_vs_chiral_vortical_effect_in_relativistic_plasmas.md"
+    },
+    {
+      "id": "collisionlesscolddarkmattervsselfinteractingdarkmatteringalaxyclustermergers",
+      "title": "Collisionless Cold Dark Matter vs Self-Interacting Dark Matter in Galaxy-Cluster Mergers",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Peebles, P.J.E. & Ratra, B. (2003), 'The cosmological constant and dark energy', https://doi.org/10.1103/revmodphys.75.559",
+        "Bennett, C.L. et al. (2013), 'Nine-Year WMAP Observations: Final Maps and Results', https://doi.org/10.1088/0067-0049/208/2/20",
+        "Bull, P. et al. (2016), 'Beyond ΛCDM: Problems, solutions, and the road ahead', https://doi.org/10.1016/j.dark.2016.02.001",
+        "Lelli, F., McGaugh, S.S., Schombert, J.M. et al. (2017), 'One Law to Rule Them All: The Radial Acceleration Relation of Galaxies', https://doi.org/10.3847/1538-4357/836/2/152",
+        "Hui, L. et al. (2017), 'Ultralight scalars as cosmological dark matter', https://doi.org/10.1103/physrevd.95.043541",
+        "Kaplinghat, M., Tulin, S., & Yu, H. (2016), 'Hiding in Plain Sight: The Challenge of Detecting Self-Interacting Dark Matter', https://doi.org/10.1103/PhysRevLett.116.041302"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/collisionless_cold_dark_matter_vs_selfinteracting_dark_matter_in_galaxycluster_mergers.md"
     },
     {
       "id": "conformalcycliccosmologyvseternalinflationinexplainingprebigbanginitialconditions",
@@ -6201,6 +6244,11 @@
     {
       "source": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
       "target": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "collisionlesscolddarkmattervsselfinteractingdarkmatteringalaxyclustermergers",
       "type": "component_theory"
     },
     {
