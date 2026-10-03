@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-02T01:29:43.449814+00:00",
+  "updated_at": "2026-10-03T01:28:34.069906+00:00",
   "stats": {
-    "total_nodes": 297,
-    "level_1_count": 129,
-    "level_2_count": 125,
-    "level_3_count": 43,
-    "total_edges": 156,
+    "total_nodes": 300,
+    "level_1_count": 130,
+    "level_2_count": 126,
+    "level_3_count": 44,
+    "total_edges": 157,
     "frontier_count": 0
   },
   "nodes": [
@@ -639,6 +639,29 @@
         "Koyama, K. (2016), 'Gravitational Waves from Modified Gravity', https://doi.org/10.1103/PhysRevD.93.014018"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/effective_field_theory.md"
+    },
+    {
+      "id": "electroweakbaryogenesis",
+      "title": "Electroweak Baryogenesis",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "D. E. Morrissey & M. J. Ramsey-Musolf (2012), 'Electroweak baryogenesis', https://doi.org/10.1088/1367-2630/14/12/125003",
+        "M. Dine & A. Kusenko (2003), 'Origin of the matter–antimatter asymmetry', https://doi.org/10.1103/RevModPhys.76.1",
+        "J. R. Espinosa, T. Konstandin, J. M. No, G. Servant (2010), 'Energy budget of cosmological first-order phase transitions', https://doi.org/10.1088/1475-7516/2010/06/028",
+        "F. R. Klinkhamer & N. S. Manton (1984), 'A saddle-point solution in the Weinberg–Salam theory', https://doi.org/10.1103/PhysRevD.30.2212",
+        "V. A. Kuzmin, V. A. Rubakov & M. E. Shaposhnikov (1985), 'On the anomalous electroweak baryon number nonconservation in the early universe', https://doi.org/10.1016/0370-2693(85)91028-7",
+        "D. Grasso & H. R. Rubinstein (2001), 'Magnetic fields in the early universe', https://doi.org/10.1016/S0370-1573(00)00110-1",
+        "C. Grojean et al. (and related) (2018), 'Is electroweak baryogenesis dead?', https://royalsocietypublishing.org/rsta/article/376/2114/20170116/40829/Is-electroweak-baryogenesis-dead-Running-H"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/electroweak_baryogenesis.md"
     },
     {
       "id": "electroweakphasetransitionanditscosmologicalimplications",
@@ -3502,7 +3525,7 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "electroweakphasetransitionanditscosmologicalimplications",
+        "electroweakbaryogenesis",
         "matterantimatterasymmetry"
       ],
       "tags": [
@@ -5130,6 +5153,31 @@
       "path": "knowledge_base/level_2_advanced_frameworks/teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing.md"
     },
     {
+      "id": "thermalwimpsvsprimordialblackholesasdarkmatter",
+      "title": "Thermal WIMPs vs Primordial Black Holes as Dark Matter",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "3/4",
+      "dependencies": [
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Arcadi, G., Dutra, M., Ghosh, P., et al. (2018), 'The waning of the WIMP? A review of models, searches, and constraints', https://doi.org/10.1140/epjc/s10052-018-5662-y",
+        "Steigman, G., Dasgupta, B., & Beacom, J. F. (2012), 'Precise Relic WIMP Abundance and its Impact on Searches for Dark Matter Annihilation', https://arxiv.org/abs/1204.3622",
+        "Schumann, M. (2019), 'Direct detection of WIMP dark matter: concepts and status', https://doi.org/10.1088/1361-6471/ab2ea5",
+        "Bullock, J. S., & Boylan-Kolchin, M. (2017), 'Small-Scale Challenges to the ΛCDM Paradigm', https://doi.org/10.1146/annurev-astro-091916-055313",
+        "von Harling, B., & Petraki, K. (2014), 'Bound-state formation for thermal relic dark matter and unitarity', https://arxiv.org/abs/1407.7874",
+        "COSINE-100 Collaboration (2025), 'Limits on WIMP Dark Matter with NaI(Tl) Crystals in Three Years of COSINE-100 Data', https://doi.org/10.1103/77p2-rnbw",
+        "Queiroz, F. S. (2017), 'WIMP Theory Review', https://arxiv.org/abs/1711.02463"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/thermal_wimps_vs_primordial_black_holes_as_dark_matter.md"
+    },
+    {
       "id": "torsionbasedeinsteincartangravityvsgeneralrelativityinresolvinginitialsingularityconstraints",
       "title": "Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints",
       "level": 2,
@@ -5406,6 +5454,26 @@
         "Causal closure, multiple realizability, explanatory-gap resolution, and IIT must remain classified as [THEORETICAL] pending reproducible operational measurements and decisive falsification tests."
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md"
+    },
+    {
+      "id": "causalinterventiontestsofintegratedinformationandmacrolevelexplanatoryautonomyinneuralsystems",
+      "title": "Causal-Intervention Tests of Integrated Information and Macro-Level Explanatory Autonomy in Neural Systems",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Oizumi, M., Albantakis, L., & Tononi, G. (2014), 'From the phenomenology to the mechanisms of consciousness: Integrated Information Theory 3.0', https://doi.org/10.1371/journal.pcbi.1003588",
+        "Hoel, E. P. (2017), 'When the map is better than the territory', https://doi.org/10.3390/e19050188",
+        "Casali, A. G., et al. (2013), 'A theoretically based index of consciousness independent of sensory processing and behavior', https://doi.org/10.1126/scitranslmed.3006294",
+        "Comolatti, R., & Hoel, E. (2022), 'Causal emergence is widespread across measures of causation', https://arxiv.org/abs/2202.01854"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/causalintervention_tests_of_integrated_information_and_macrolevel_explanatory_autonomy_in_neural_systems.md"
     },
     {
       "id": "computationalcomplexityandscalabilityofselforganizingsystemsincosmologicalandbiologicalneuralnetworks",
@@ -6332,7 +6400,7 @@
       "type": "component_theory"
     },
     {
-      "source": "electroweakphasetransitionanditscosmologicalimplications",
+      "source": "electroweakbaryogenesis",
       "target": "electroweakvsspontaneousbaryogenesisinexplainingmatterantimatterasymmetry",
       "type": "component_theory"
     },
@@ -6729,6 +6797,11 @@
     {
       "source": "darkmatter",
       "target": "tevesvssuperfluiddarkmatteringalacticrotationcurvesandclusterlensing",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "thermalwimpsvsprimordialblackholesasdarkmatter",
       "type": "component_theory"
     },
     {

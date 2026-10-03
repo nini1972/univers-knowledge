@@ -36,6 +36,7 @@ graph TD
     neutrino_decay_width_constraints_and_decay_inclusive_oscillations["Neutrino Decay Width Constraints and Decay-Inclusive Oscillations"]:::theoretical
     renormalization_and_the_renormalization_group["Renormalization and the Renormalization Group"]:::verified
     disentangling_neutrino_decay_from_nsi_and_decoherence["Disentangling Neutrino Decay from NSI and Environmental Decoherence"]:::theoretical
+    electroweak_baryogenesis["Electroweak Baryogenesis"]:::theoretical
     spectral_decomposition_of_non_hermitian_decay_hamiltonians["Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms"]:::theoretical
     quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
     cosmological_constant_and_dark_energy["Cosmological Constant and Dark Energy"]:::verified
@@ -241,6 +242,7 @@ graph TD
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
     ft_gravity_vs_kessence_in_addressing_cosmic_acceleration["f(T) Gravity vs. K-Essence in Addressing Cosmic Acceleration"]:::theoretical
+    thermal_wimps_vs_primordial_black_holes_as_dark_matter["Thermal WIMPs vs Primordial Black Holes as Dark Matter"]:::theoretical
     freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate["Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate"]:::theoretical
     conformal_gravity_vs_cold_dark_matter_in_explaining_galactic_rotation_curves["Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves"]:::verified
     supersymmetry_vs_extra_dimensions_in_beyond_standard_model_physics["Supersymmetric Quantum Field Theories versus Extra Dimensional Brane World Models in Beyond Standard Model Physics"]:::theoretical
@@ -263,6 +265,7 @@ graph TD
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
     black_hole_models_debate_observational_techniques_vs_theoretical_frameworks["Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks"]:::verified
     unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem["Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem"]:::theoretical
+    causalintervention_tests_of_integrated_information_and_macrolevel_explanatory_autonomy_in_neural_systems["Causal-Intervention Tests of Integrated Information and Macro-Level Explanatory Autonomy in Neural Systems"]:::theoretical
     identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism["Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism"]:::theoretical
     interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems["Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems"]:::theoretical
     a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue["A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue"]:::theoretical
@@ -553,6 +556,7 @@ graph TD
 - [Distinguishing Neutrino Decay from Damping and Decoherence Mechanisms](level_1_fundamental_physics/distinguishing_neutrino_decay_from_damping_and_decoherence.md) [THEORETICAL]
 - [DUNE Nuclear Cross-Section Uncertainties vs Visible Neutrino Decay](level_1_fundamental_physics/dune_nuclear_cross_section_uncertainties_vs_visible_neutrino_decay.md) [THEORETICAL]
 - [Effective Field Theory](level_1_fundamental_physics/effective_field_theory.md) [VERIFIED]
+- [Electroweak Baryogenesis](level_1_fundamental_physics/electroweak_baryogenesis.md) [THEORETICAL]
 - [Electroweak Phase Transition and Its Cosmological Implications](level_1_fundamental_physics/electroweak_phase_transition_and_its_cosmological_implications.md) [VERIFIED]
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md) [THEORETICAL]
 - [Empirical Falsification Priorities for Theoretical Physics Extensions](level_1_fundamental_physics/empirical_falsification_priorities_for_theoretical_physics.md) [THEORETICAL]
@@ -773,6 +777,7 @@ graph TD
 - [Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity.md) [VERIFIED]
 - [TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing](level_2_advanced_frameworks/teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing.md) [THEORETICAL]
 - [The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework](level_2_advanced_frameworks/chiral_magnetic_effect_vs_chiral_vortical_effect_in_relativistic_plasmas.md) [THEORETICAL]
+- [Thermal WIMPs vs Primordial Black Holes as Dark Matter](level_2_advanced_frameworks/thermal_wimps_vs_primordial_black_holes_as_dark_matter.md) [THEORETICAL]
 - [Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md) [THEORETICAL]
 - [Type-I Seesaw vs Radiative Neutrino Mass Generation](level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md) [THEORETICAL]
 - [Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem](level_2_advanced_frameworks/unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem.md) [THEORETICAL]
@@ -790,6 +795,7 @@ graph TD
 - [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md) [THEORETICAL]
 - [Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md) [THEORETICAL]
+- [Causal-Intervention Tests of Integrated Information and Macro-Level Explanatory Autonomy in Neural Systems](level_3_emergence_and_intelligence/causalintervention_tests_of_integrated_information_and_macrolevel_explanatory_autonomy_in_neural_systems.md) [THEORETICAL]
 - [Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md) [THEORETICAL]
 - [Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation](level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md) [THEORETICAL]
 - [Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory](level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md) [THEORETICAL]
