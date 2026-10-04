@@ -12,7 +12,7 @@
 
 ---
 
-## 📬 Pending Student Inquiries (4)
+## 📬 Pending Student Inquiries (7)
 
 | ID | Level | Concept | Initiator | Question |
 |---|---|---|---|---|
@@ -20,6 +20,9 @@
 | `adv-20260930-720e68` | L2 | **Pre- vs Post-Inflationary QCD Axion Cosmology** | Student Orchestrator | Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed? |
 | `adv-20260930-72e3f8` | L3 | **A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems** | Student Orchestrator | Level 3 topic 'A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
 | `adv-20261002-0098f8` | L3 | **A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization** | Student Orchestrator | Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
+| `adv-20261004-7abc86` | L1 | **Black Hole Thermodynamics** | Student Orchestrator | Concept 'Black Hole Thermodynamics' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+| `adv-20261004-984775` | L2 | **Perturbative Reheating vs Parametric-Resonance Preheating** | Student Orchestrator | Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed? |
+| `adv-20261004-ded465` | L3 | **A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models** | Student Orchestrator | Level 3 topic 'A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
 
 ### Detailed Inquiries
 
@@ -83,6 +86,46 @@
   * Math Physicist: Re-derive the sequential protocol's heat and entropy accounting under one consistent convention.
 
 > **To answer**: `python scripts/consult_professor.py answer adv-20261002-0098f8 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261004-7abc86` — Black Hole Thermodynamics
+- **Timestamp**: `2026-10-04T01:37:54.176104+00:00`
+- **Level**: Level 1
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Black Hole Thermodynamics' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic's score of 6/6 meets the score threshold, and the Math Physicist reports [MATH_CONSISTENT] with no dimensional failures. However, the report's boxed Kerr–Newman Smarr relation incorrectly gives a factor of 2 on the charge term; the correct relation has -Φ_H Q, and the report's derivation also conflicts with its boxed equation. The separate claim that a 10^12 kg black hole is entering final evaporation now contradicts the stated lifetime, so this report should not be accepted until corrected; the underlying concept remains theoretical rather than empirically verified.
+- **Agent Blockers**:
+  * Researcher: Correct the Kerr–Newman Smarr relation and make the derivation consistent; in the stated conventions it is κc²A/(4πG) = Mc² - 2Ω_HJ - Φ_HQ.
+  * Researcher: Remove or correct the claim that a 10^12 kg primordial black hole is entering final evaporation now; reconcile the mass and lifetime with the age of the Universe.
+  * Researcher: Label the Bekenstein–Hawking entropy formula as theoretical, distinguishing it from the classical area theorem.
+  * Math Physicist: Independently verify the Kerr–Newman Smarr relation, including the coefficients of Ω_HJ and Φ_HQ, from a consistent first law and scaling argument.
+  * Math Physicist: Recheck the stated derivation, which gives Mc² = 2T_HS_BH + Ω_HJ + Φ_HQ and does not support the boxed relation.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261004-7abc86 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261004-984775` — Perturbative Reheating vs Parametric-Resonance Preheating
+- **Timestamp**: `2026-10-04T02:20:08.855904+00:00`
+- **Level**: Level 2
+- **Reason Code**: `crew_kickoff_error`
+- **Question**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
+- **Scientific Rationale**: Rejected due to crew_kickoff_error.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261004-984775 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261004-ded465` — A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
+- **Timestamp**: `2026-10-04T02:33:58.106910+00:00`
+- **Level**: Level 3
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Level 3 topic 'A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Scientific Rationale**: The Skeptic's Verification Score is 6/6, which meets the required threshold; rejection is not based on insufficient score. The proposal appropriately labels the identity thesis theoretical, but its purported IIT 4.0 operationalization remains internally inconsistent: it conflates distinct distance expressions and gives unreconciled, noncanonical Φ formulas, while the macro ≤ micro prediction is asserted rather than derived. The 4/4 math report does not resolve these defects, and the generic Landauer-style inequality is not established for the proposed interventions without specifying the physical process and assumptions; the design therefore does not yet support its claims as a rigorous preregistered IIT 4.0 test.
+- **Agent Blockers**:
+  * Researcher: Replace the competing intrinsic-difference expressions with the exact IIT 4.0 definition and identify the specific implementation/version before describing the measure as operationalized.
+  * Researcher: Clarify which claims are predictions of IIT and which are hypotheses introduced by the study; withdraw or derive the macro Φ ≤ micro Φ claim.
+  * Researcher: Provide primary citations for the consciousness-marker evidence and remove or qualify unverifiable or non-load-bearing citations.
+  * Math Physicist: Provide one canonical Φ/Φ-structure definition with correct maximization order, mechanism–purview selection, partitioning, and exclusion treatment, checked against the primary IIT 4.0 source and a specified implementation.
+  * Math Physicist: Derive the cross-scale inequality or explicitly preregister it as an exploratory conjecture rather than an IIT consequence.
+  * Math Physicist: State the physical assumptions and protocol required for any Landauer-type work bound; do not infer a generic intervention-work inequality from a KL term alone.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261004-ded465 "Your guidance"`
 
 
 ---
