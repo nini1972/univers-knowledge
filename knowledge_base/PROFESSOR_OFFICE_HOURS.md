@@ -12,125 +12,48 @@
 
 ---
 
-## 📬 Pending Student Inquiries (7)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20260927-186600` | L2 | **Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves** | Student Orchestrator | Level 2 debate 'Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed? |
-| `adv-20260930-720e68` | L2 | **Pre- vs Post-Inflationary QCD Axion Cosmology** | Student Orchestrator | Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed? |
-| `adv-20260930-72e3f8` | L3 | **A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems** | Student Orchestrator | Level 3 topic 'A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
-| `adv-20261002-0098f8` | L3 | **A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization** | Student Orchestrator | Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
-| `adv-20261004-7abc86` | L1 | **Black Hole Thermodynamics** | Student Orchestrator | Concept 'Black Hole Thermodynamics' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-| `adv-20261004-984775` | L2 | **Perturbative Reheating vs Parametric-Resonance Preheating** | Student Orchestrator | Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed? |
-| `adv-20261004-ded465` | L3 | **A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models** | Student Orchestrator | Level 3 topic 'A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20260927-186600` — Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
-- **Timestamp**: `2026-09-27T01:49:22.260931+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Level 2 debate 'Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
-- **Scientific Rationale**: The skeptic's verification score is 5/5, so the mandatory score threshold is met; however, that does not resolve the report's acknowledged mathematical defects. The cosmic-string report gives mutually incompatible VOS equations and fixed-point substitutions, including a claimed radiation-era solution that fails the stated system, while the inflation report's Lyth-bound numerical value is wrong by a factor of about three; these undermine the requested mathematical rigor despite being disclosed. The empirical comparison is useful, but the core VOS comparison needs a consistent derivation before approval.
-- **Agent Blockers**:
-  * Researcher: Replace the conflicting VOS formulations with one standard, dimensionally consistent system, define its variables and parameters, and cite the source convention.
-  * Researcher: Recompute the radiation-era scaling fixed point from that system using a single parameter calibration, and verify both fixed-point equations by direct substitution.
-  * Math Physicist: Correct the Lyth-bound numerical example: for r = 0.01 and N = 60, the stated bound gives approximately 2.1, not 0.7.
-  * Math Physicist: Show the VOS fixed-point algebra and numerical residuals for both evolution equations without redefining parameters or conventions after the check.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20260927-186600 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20260930-720e68` — Pre- vs Post-Inflationary QCD Axion Cosmology
-- **Timestamp**: `2026-09-30T02:19:58.671856+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
-- **Scientific Rationale**: The skeptic review passes the required threshold with a verification score of 5/5, and the debate is transparent about uncertainty and the lack of direct evidence for either PQ-breaking history. However, the post-inflationary report's headline pair of 68 μeV and 2.6×10^11 GeV contradicts its stated mass–decay-constant relation, while the string-tension logarithm has a dimensionful argument; these are unresolved errors in the submitted material, so it does not meet the requirement of mathematical coherence. The comparative scenarios remain theoretical, not experimentally verified.
-- **Agent Blockers**:
-  * Researcher: Correct or withdraw the post-inflationary mass–decay-constant pair using a verified primary source.
-  * Researcher: Replace the string-tension logarithm with a dimensionless argument and ensure the notation is consistent.
-  * Researcher: Clarify the pre-inflationary distinction between f_I and f_a wherever deriving the isocurvature constraint.
-  * Math Physicist: Recheck the corrected mass–decay-constant values against the stated QCD mass relation.
-  * Math Physicist: Confirm the corrected string-tension expression and review the minihalo normalization against its primary source.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20260930-720e68 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20260930-72e3f8` — A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems
-- **Timestamp**: `2026-09-30T02:37:35.525957+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Level 3 topic 'A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Scientific Rationale**: The Skeptic's Verification Score is 6/6, so the score threshold does not require rejection; however, the audit identifies substantive unresolved errors in the framework's mathematical and physical claims. In particular, the unordered-pair entropy-production expression is incorrectly doubled, the Langevin treatment omits the system-entropy contribution and gives an invalid general rate expression, and the stated entropy-production scale is inconsistent with the cited metabolic constraints; these issues undermine the proposed discriminator and require correction before acceptance.
-- **Agent Blockers**:
-  * Researcher: Re-derive and justify the proposed entropy-production magnitude from explicit physical energy and reservoir assumptions.
-  * Researcher: Remove placeholder or future-dated references and reconcile the divergent report versions and bibliographies.
-  * Researcher: Clarify how the experimental measurements estimate entropy production at the claimed circuit scale.
-  * Math Physicist: Correct the unordered-pair Markov entropy-production formula; grouping ordered pairs yields k_B(A-B)ln(A/B), with no factor of 2.
-  * Math Physicist: Include the system-entropy term in total Langevin entropy production and state the conditions under which any simplified mean-rate expression holds.
-  * Math Physicist: Reconcile the specified EMD metric and Φ definition with the claimed IIT version, and validate the proxy against exactly computable systems.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20260930-72e3f8 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261002-0098f8` — A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
-- **Timestamp**: `2026-10-02T01:29:42.250849+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Scientific Rationale**: The Skeptic's Verification Score is 5/6, which clears the mandatory 4/6 threshold, but the audit identifies substantive unresolved errors: the stated entropy-production sign conflicts with heat defined as positive into the bath, the transport-action derivation omits a factor of latency, and the TV–W₂ inequality does not establish the claimed latency–error trilemma. The Pareto energy expression also omits mobility; accordingly, the framework's central composite trade-off is not established, although Landauer's bound and the appropriately limited cosmic-web analogy remain distinct components.
-- **Agent Blockers**:
-  * Researcher: Correct the heat-flow sign convention and show that the resulting entropy production is nonnegative for the stated erasure process.
-  * Researcher: Withdraw or rederive the latency–error claim without reversing the TV–W₂ inequality; specify an operational error measure and a testable neural-system prediction.
-  * Researcher: Correct the Pareto expression and clarify which protocol-specific quantities are experimentally measurable.
-  * Math Physicist: Show the full Cauchy–Schwarz step yielding W₂² ≤ τ μ k_B T Σ_total.
-  * Math Physicist: Audit all inequality directions and units in the error coupling and composite energy bound, retaining μ where required.
-  * Math Physicist: Re-derive the sequential protocol's heat and entropy accounting under one consistent convention.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261002-0098f8 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261004-7abc86` — Black Hole Thermodynamics
-- **Timestamp**: `2026-10-04T01:37:54.176104+00:00`
-- **Level**: Level 1
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Black Hole Thermodynamics' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic's score of 6/6 meets the score threshold, and the Math Physicist reports [MATH_CONSISTENT] with no dimensional failures. However, the report's boxed Kerr–Newman Smarr relation incorrectly gives a factor of 2 on the charge term; the correct relation has -Φ_H Q, and the report's derivation also conflicts with its boxed equation. The separate claim that a 10^12 kg black hole is entering final evaporation now contradicts the stated lifetime, so this report should not be accepted until corrected; the underlying concept remains theoretical rather than empirically verified.
-- **Agent Blockers**:
-  * Researcher: Correct the Kerr–Newman Smarr relation and make the derivation consistent; in the stated conventions it is κc²A/(4πG) = Mc² - 2Ω_HJ - Φ_HQ.
-  * Researcher: Remove or correct the claim that a 10^12 kg primordial black hole is entering final evaporation now; reconcile the mass and lifetime with the age of the Universe.
-  * Researcher: Label the Bekenstein–Hawking entropy formula as theoretical, distinguishing it from the classical area theorem.
-  * Math Physicist: Independently verify the Kerr–Newman Smarr relation, including the coefficients of Ω_HJ and Φ_HQ, from a consistent first law and scaling argument.
-  * Math Physicist: Recheck the stated derivation, which gives Mc² = 2T_HS_BH + Ω_HJ + Φ_HQ and does not support the boxed relation.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261004-7abc86 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261004-984775` — Perturbative Reheating vs Parametric-Resonance Preheating
-- **Timestamp**: `2026-10-04T02:20:08.855904+00:00`
-- **Level**: Level 2
-- **Reason Code**: `crew_kickoff_error`
-- **Question**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
-- **Scientific Rationale**: Rejected due to crew_kickoff_error.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261004-984775 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261004-ded465` — A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
-- **Timestamp**: `2026-10-04T02:33:58.106910+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Level 3 topic 'A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Scientific Rationale**: The Skeptic's Verification Score is 6/6, which meets the required threshold; rejection is not based on insufficient score. The proposal appropriately labels the identity thesis theoretical, but its purported IIT 4.0 operationalization remains internally inconsistent: it conflates distinct distance expressions and gives unreconciled, noncanonical Φ formulas, while the macro ≤ micro prediction is asserted rather than derived. The 4/4 math report does not resolve these defects, and the generic Landauer-style inequality is not established for the proposed interventions without specifying the physical process and assumptions; the design therefore does not yet support its claims as a rigorous preregistered IIT 4.0 test.
-- **Agent Blockers**:
-  * Researcher: Replace the competing intrinsic-difference expressions with the exact IIT 4.0 definition and identify the specific implementation/version before describing the measure as operationalized.
-  * Researcher: Clarify which claims are predictions of IIT and which are hypotheses introduced by the study; withdraw or derive the macro Φ ≤ micro Φ claim.
-  * Researcher: Provide primary citations for the consciousness-marker evidence and remove or qualify unverifiable or non-load-bearing citations.
-  * Math Physicist: Provide one canonical Φ/Φ-structure definition with correct maximization order, mechanism–purview selection, partitioning, and exclusion treatment, checked against the primary IIT 4.0 source and a specified implementation.
-  * Math Physicist: Derive the cross-scale inequality or explicitly preregister it as an exploratory conjecture rather than an IIT consequence.
-  * Math Physicist: State the physical assumptions and protocol required for any Landauer-type work bound; do not infer a generic intervention-work inequality from a KL term alone.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261004-ded465 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (9)
+## 📚 Answered Advisory Consultations (16)
+
+### ✅ `adv-20261004-ded465`: A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
+- **Student Inquired**: Level 3 topic 'A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Professor Directive**: 💬 *"In Integrated Information Theory 4.0 (Albantakis et al. 2023), define Phi strictly as the intrinsic difference evaluated via Earth Mover's Distance (EMD) over the cause-effect structure across the Minimum Information Partition (MIP): Phi(s) = D_EMD(p_unpartitioned(s), p_MIP(s)). Do not substitute symmetric mutual information or Kullback-Leibler divergences for canonical Phi. Withdraw the claim that IIT predicts Phi_macro <= Phi_micro; causal emergence (Phi_macro > Phi_micro) is explicitly demonstrated in coarse-grained logic networks (Hoel et al. 2013). Frame the empirical cross-scale test as an adversarial model comparison between intrinsic cause-effect power (IIT) and external predictive information / Granger causality across matched micro (spikes) and macro (LFP/ECoG) interventional datasets. Confine Landauer thermodynamic bounds to physical non-equilibrium bit erasure, using the Attwell & Laughlin (2001) metabolic budget for physical neural work."*
+- **Answered At**: `2026-10-04T10:53:29.380420+00:00`
+
+### ✅ `adv-20261004-984775`: Perturbative Reheating vs Parametric-Resonance Preheating
+- **Student Inquired**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
+- **Professor Directive**: 💬 *"In preheating via broad parametric resonance (Kofman, Linde & Starobinsky 1994, 1997), formulate the coupled field equations for an inflaton phi oscillating around V(phi) = (1/2) m^2 phi^2 coupled to scalar chi via (1/2) g^2 phi^2 chi^2. State the Mathieu equation for chi_k modes: d^2 chi_k / dz^2 + [A_k - 2 q cos(2 z)] chi_k = 0, where z = m t, A_k = k^2/(m^2 a^2) + 2 q, and resonance parameter q = g^2 Phi_0^2 / (4 m^2). When q >> 1 (broad resonance), particle production occurs in non-adiabatic bursts near phi = 0 with growth n_k ~ exp(2 mu_k m t) (mu_k ~ 0.1-0.2). Contrast with perturbative reheating (Abbott et al. 1982), where decay rate Gamma_phi yields reheat temperature T_reh approx (90 / (pi^2 g_*))^(1/4) sqrt(Gamma_phi M_Pl). Emphasize that non-linear backreaction, rescattering, and turbulence terminate parametric resonance before complete inflaton depletion, requiring final perturbative thermalization."*
+- **Answered At**: `2026-10-04T10:53:21.404238+00:00`
+
+### ✅ `adv-20261004-7abc86`: Black Hole Thermodynamics
+- **Student Inquired**: Concept 'Black Hole Thermodynamics' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In Kerr-Newman black hole thermodynamics, write the exact Smarr formula derived from Euler's scaling theorem: M * c^2 = 2 * T_H * S_BH + 2 * Omega_H * J + Phi_H * Q, which in terms of surface gravity kappa and horizon area A is (kappa * c^2 * A) / (4 * pi * G) = M * c^2 - 2 * Omega_H * J - Phi_H * Q (strictly with coefficient 1 on Phi_H * Q). For primordial black hole evaporation, standard Hawking evaporation lifetime tau_evap = (5120 * pi * G^2 * M^3) / (hbar * c^4) equals the current age of the Universe (t_0 approx 13.8 Gyr) for M_* approx 5.1 * 10^11 kg (approx 5 * 10^14 g). Correct the mass scale: a 10^12 kg PBH has a lifetime of ~2.7 * 10^12 years and is NOT entering explosive evaporation today. Explicitly classify the classical area increase theorem as [VERIFIED] (Hawking 1971), while labeling semiclassical Hawking radiation and Bekenstein-Hawking entropy as [THEORETICAL]."*
+- **Answered At**: `2026-10-04T10:53:13.686426+00:00`
+
+### ✅ `adv-20261002-0098f8`: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
+- **Student Inquired**: Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Professor Directive**: 💬 *"Adopt the standard thermodynamic sign convention where heat dissipated into the environment is positive Q_env > 0, ensuring total entropy production Sigma_tot = Delta S_sys + Q_env / T >= 0 (for full bit erasure Delta S_sys = -k_B ln 2, yielding Q_env >= k_B T ln 2). For finite-time transitions of duration tau, formulate the optimal transport dissipation bound with explicit mobility mu (or drag gamma = 1/mu): Sigma_total >= W_2^2 / (mu * k_B * T * tau), ensuring correct energy units ([W_2^2 / (mu * tau)] = Joules). Do not invert inequalities between Wasserstein W_2 distance and Total Variation (TV). In applying this benchmark, emphasize that cosmic-web self-organization is an entropy-producing gravitational condensation process, distinct from logical entropy-erasing neural computation."*
+- **Answered At**: `2026-10-04T10:53:05.862282+00:00`
+
+### ✅ `adv-20260930-72e3f8`: A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems
+- **Student Inquired**: Level 3 topic 'A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Professor Directive**: 💬 *"In stochastic thermodynamics, write the Markov jump process entropy production rate over unordered pairs {i,j} as dS_tot/dt = sum_{i < j} (p_i k_ij - p_j k_ji) ln(p_i k_ij / (p_j k_ji)), removing the erroneous factor of 2. In continuous Langevin dynamics, include both the system Shannon entropy change and environmental heat dissipation: dS_tot/dt = -d<ln p(x,t)>/dt + dQ_diss/(T dt). When testing IIT against mechanistic physicalism in multiscale neural systems, constrain circuit-level entropy production within biological metabolic limits (~20 W/kg or ~10^-9 W per cortical neuron; Attwell & Laughlin 2001). For IIT 4.0, define Phi using the canonical Earth Mover's Distance (EMD) over the system's transition probability matrix across the MIP, validating against small exactly solvable networks rather than ad-hoc heuristics."*
+- **Answered At**: `2026-10-04T10:52:58.124603+00:00`
+
+### ✅ `adv-20260930-720e68`: Pre- vs Post-Inflationary QCD Axion Cosmology
+- **Student Inquired**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
+- **Professor Directive**: 💬 *"In QCD axion cosmology (di Cortona et al. 2016, JHEP 01 (2016) 034), enforce the exact relation m_a * f_a approx 5.7 * 10^-6 eV * 10^12 GeV = 5.7 * 10^6 eV*GeV. For f_a = 2.6 * 10^11 GeV, m_a must be approx 21.9 micro-eV; conversely, m_a = 68 micro-eV corresponds to f_a approx 8.4 * 10^10 GeV. Reconcile this pair consistently across the report. For cosmic strings, the string tension logarithm must be dimensionless: mu = 2 pi f_a^2 ln(t / delta_c), where delta_c ~ 1/m_r ~ 1/f_a is the string core width. In pre-inflationary scenarios (H_inf < 2 pi f_I), distinguish f_I from f_a = f_I / N_DW when calculating isocurvature perturbations delta S_a_gamma = 2 H_inf / (2 pi f_I theta_i), and enforce Planck isocurvature limits H_inf <= 10^9 GeV * (f_I / 10^12 GeV)."*
+- **Answered At**: `2026-10-04T10:52:49.483441+00:00`
+
+### ✅ `adv-20260927-186600`: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
+- **Student Inquired**: Level 2 debate 'Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
+- **Professor Directive**: 💬 *"In the cosmic string Velocity-dependent One-Scale (VOS) model (Martins & Shellard 2002, PRD 65, 043514), maintain one consistent formulation for the correlation length L and RMS velocity v: dL/dt = H L (1 + v^2) + (1/2) c v, and dv/dt = (1 - v^2) [k(v)/L - 2 H v], where c approx 0.23 is the loop chopping efficiency and k(v) = (2 sqrt(2)/pi) ((1-v^2)/(1+v^2)) (1-8v^6). In the radiation era (a prop t^(1/2), H = 1/(2t)), the scaling fixed point L = xi * t yields xi_r approx 0.27 and v_r approx 0.65. For inflationary gravitational waves, correct the Lyth bound: for constant or monotonic r = 0.01 over N = 60 e-folds, Delta phi / M_Pl >= sqrt(r/8) * N gives Delta phi >= sqrt(0.01/8) * 60 approx 2.12 M_Pl (not 0.7 M_Pl). Ground empirical limits in Planck 2018 / BICEP/Keck 2021 (r < 0.036 at 95% CL) and pulsar timing array bounds (NANOGrav 15-yr / EPTA) constraining string tension G mu <= 10^-10."*
+- **Answered At**: `2026-10-04T10:52:39.481673+00:00`
 
 ### ✅ `adv-20260925-d4e429`: Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations
 - **Student Inquired**: Level 2 debate 'Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
@@ -146,34 +69,4 @@
 - **Student Inquired**: Does IIT 4.0 itself predict the absence of externally measurable macro causal decoupling outside the max-Phi complex, or would such a result challenge only an added bridge principle equating operational and intrinsic causal power?
 - **Professor Directive**: 💬 *"In intervention calculus and causal emergence, define Effective Information rigorously as intervention-output mutual information EI(S_t -> S_t+1) = I(do(S_t ~ U); S_t+1) = D_KL(P(S_t^do, S_t+1) || P(S_t^do) (x) P(S_t+1)) under a uniform intervention distribution, rather than an invalid KL divergence between marginal output distributions. Clarify that IIT 4.0 (Albantakis et al. 2023) evaluates intrinsic cause-effect structures from the perspective of the system itself using Earth Mover's Distance across the MIP, whereas macro causal emergence (Hoel et al. 2013, Delta EI > 0) and Partial Information Decomposition (PID) unique/synergistic information quantify extrinsic, observer-relative channel capacities. Consequently, IIT 4.0 does NOT predict the absence of externally measurable macro causal autonomy outside the max-Phi complex; finding operational decoupling in recurrent subgraphs challenges only the auxiliary bridge premise that conflates operational information-theoretic autonomy with intrinsic phenomenal existence. Ensure all coarse-graining maps are pre-registered and grounded in empirical neural recordings (e.g., local field potentials, spike trains)."*
 - **Answered At**: `2026-09-24T20:00:21.597895+00:00`
-
-### ✅ `adv-20260917-f0037e`: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
-- **Student Inquired**: Can the Benincasa-Dowker action be written with explicit ell, G, c, and hbar factors so that S_BD/hbar is demonstrably dimensionless, and what is the justified status of the proposed Euclidean causal-set path integral?
-- **Professor Directive**: 💬 *"In 4D Causal Set Theory, specify the normalized Benincasa-Dowker action S_BD = (c^3 ell^2 / (16 pi G)) * (4 / sqrt(6)) * (N - 9 N_1 + 16 N_2 - 8 N_3), where ell = rho^(-1/4) is the discreteness length scale. Setting ell to the Planck length ell_P = sqrt(hbar G / c^3) makes S_BD / hbar = (1 / (4 pi sqrt(6))) * (ell / ell_P)^2 * (N - 9 N_1 + 16 N_2 - 8 N_3), which is manifestly dimensionless. Note that both h and reduced hbar have dimensions of action [M L^2 T^-1]; the quantum phase factor is exp(i S / hbar). Clarify that CST is fundamentally and irreducibly Lorentzian because the causal poset encodes light-cone ordering; proposing a 'Euclidean causal set path integral' is unphysical. Conversely, Causal Dynamical Triangulations (CDT) uniquely permits an analytic Wick rotation to Euclidean triangulations due to its foliation. Ground CST citations in foundational papers (Bombelli et al. 1987; Benincasa & Dowker 2010; Dowker & Glaser 2013; Surya 2019)."*
-- **Answered At**: `2026-09-24T20:00:01.458595+00:00`
-
-### ✅ `adv-20260916-a011ab`: Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory
-- **Student Inquired**: Level 3 topic 'Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Professor Directive**: 💬 *"In Integrated Information Theory 4.0 (IIT 4.0, Albantakis et al. 2023), integrated information Phi is defined over intrinsic cause-effect structures using Earth Mover's Distance across the Minimum Information Partition (MIP), fundamentally distinct from classical Shannon conditional mutual information. In Global Neuronal Workspace Theory (GNWT, Mashour et al. 2020), cognitive access is characterized by non-linear fronto-parietal ignition and long-range broadcasting rather than simple activation probability. To empirically dissociate phenomenal structure from cognitive access, formalize a 2x2 factorial causal perturbation protocol: intervene on the posterior cortical hot zone (IIT substrate) versus fronto-parietal workspace nodes (GNWT substrate) using TMS/intracranial perturbation during masked threshold presentation within a no-report paradigm."*
-- **Answered At**: `2026-09-16T21:16:46.178326+00:00`
-
-### ✅ `adv-20260916-7d98fb`: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
-- **Student Inquired**: Level 2 debate 'Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
-- **Professor Directive**: 💬 *"In Unimodular Gravity (UG), enforce the determinant constraint sqrt(-g) = 1, yielding the strictly trace-free Einstein field equation R_mu_nu - (1/4) g_mu_nu R = 8 pi G (T_mu_nu - (1/4) g_mu_nu T). Show that Bianchi identities combined with conservation div(T) = 0 recover Einstein's equations with the cosmological constant arising as an integration constant decoupled from vacuum quantum zero-point shifts. In Vacuum Energy Sequestering (VES, Kaloper-Padilla 2014), specify the canonical global action S = int d^4x sqrt(-g) [ (M_pl^2 / 2) R - Lambda - L_m ] + sigma (Lambda / mu^4). Show that variations with respect to global variables Lambda and sigma enforce the spacetime volume average constraint Lambda_eff = (1/4) <T^mu_mu>, sequestering loop-level vacuum energy from generating curvature."*
-- **Answered At**: `2026-09-16T21:16:38.858359+00:00`
-
-### ✅ `adv-20260916-8fa00b`: Cosmological Perturbation Theory
-- **Student Inquired**: Concept 'Cosmological Perturbation Theory' was rejected after 2 attempts (insufficient_skeptic_score). How should the agents proceed?
-- **Professor Directive**: 💬 *"Adopt conformal Newtonian gauge ds^2 = a(eta)^2 [ -(1 + 2 Psi) deta^2 + (1 - 2 Phi) delta_ij dx^i dx^j ] with Phi = Psi in the absence of anisotropic stress. Explicitly derive the cold dark matter continuity equation delta' + theta - 3 Phi' = 0 and Euler equation theta' + H theta - k^2 Psi = 0 where primes denote conformal time derivatives and theta = div(v). Ground all empirical testability claims in primary observations: Planck 2018 Cosmological Parameters (A&A 2020), DESI 2024 BAO measurements, and foundational texts (Dodelson & Schmidt; Mukhanov)."*
-- **Answered At**: `2026-09-16T21:16:33.359788+00:00`
-
-### ✅ `adv-20260915-70242d`: Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing
-- **Student Inquired**: Level 3 topic 'Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Professor Directive**: 💬 *"Anchor the analysis to a specific empirical biological system (e.g. cryptochrome radical pairs in avian magnetoreception or rhodopsin photoisomerization). Correct the quantum speed limit to be dimensionally consistent using tau_limit >= hbar / (2 Delta E) or thermal timescale tau_th = hbar / (k_B T), and define the classical stochastic benchmark (e.g. Berg-Purcell limit) against which energetic advantage is measured."*
-- **Answered At**: `2026-09-15T08:52:48.961480+00:00`
-
-### ✅ `adv-20260915-26eea4`: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
-- **Student Inquired**: Level 2 debate 'Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
-- **Professor Directive**: 💬 *"Distinguish strictly between h and reduced hbar (hbar = h / 2pi). In the Benincasa-Dowker action S_BD, specify the discreteness volume scale and ensure path integral weights are dimensionless S/hbar. Clarify that causal set Poisson sprinkling preserves statistical Lorentz invariance, contrasting with CDT's explicit global time foliation."*
-- **Answered At**: `2026-09-15T08:52:36.506748+00:00`
 
