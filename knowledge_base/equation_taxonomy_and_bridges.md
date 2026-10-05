@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-10-03T01:28:02.873744+00:00  
-> **Total Analyzed Concepts:** 389 | **Total Discovered Equations:** 13780 | **Discovered Bridges:** 620
+> **Generated:** 2026-10-05T02:15:16.056435+00:00  
+> **Total Analyzed Concepts:** 404 | **Total Discovered Equations:** 14489 | **Discovered Bridges:** 635
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 104 concepts:
+**Occurrences:** Appears in 105 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -112,9 +112,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 - **Level 2**: Collisionless Cold Dark Matter vs Self-Interacting Dark Matter in Galaxy-Cluster Mergers
 - **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
+- **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
 
 ### ` 1.380649 \times 10^{-23} `
-**Occurrences:** Appears in 39 concepts:
+**Occurrences:** Appears in 41 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
@@ -154,9 +155,11 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Cosmic Thermal History of the Universe
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 - **Level 3**: A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems
+- **Level 1**: Black Hole Thermodynamics
+- **Level 3**: A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
 
 ### ` \Phi `
-**Occurrences:** Appears in 35 concepts:
+**Occurrences:** Appears in 36 concepts:
 - **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
@@ -192,6 +195,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 - **Level 3**: A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations
 - **Level 3**: Causal-Intervention Tests of Integrated Information and Macro-Level Explanatory Autonomy in Neural Systems
+- **Level 3**: A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
 
 ### ` \alpha `
 **Occurrences:** Appears in 33 concepts:
@@ -230,7 +234,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 
 ### ` 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 31 concepts:
+**Occurrences:** Appears in 32 concepts:
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
@@ -262,9 +266,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
 - **Level 1**: Classical Mechanics
 - **Level 3**: A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue
+- **Level 1**: Black Hole Thermodynamics
 
 ### ` \gamma `
-**Occurrences:** Appears in 26 concepts:
+**Occurrences:** Appears in 27 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
@@ -291,9 +296,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
 - **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
+- **Level 1**: Black Hole Thermodynamics
 
 ### ` \hbar `
-**Occurrences:** Appears in 25 concepts:
+**Occurrences:** Appears in 26 concepts:
 - **Level 2**: Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?
@@ -319,9 +325,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 - **Level 1**: Classical Electromagnetism
 - **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
+- **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
 
 ### ` \phi `
-**Occurrences:** Appears in 22 concepts:
+**Occurrences:** Appears in 23 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
@@ -344,6 +351,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry
 - **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
 - **Level 2**: Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations
+- **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
 
 ### ` ^{-2} `
 **Occurrences:** Appears in 20 concepts:
@@ -469,7 +477,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 
 ### ` h = 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 15 concepts:
+**Occurrences:** Appears in 16 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?
@@ -485,19 +493,20 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Path Integral Formulation
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 - **Level 1**: Classical Electromagnetism
+- **Level 1**: Black Hole Thermodynamics
 
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 154 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 136 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 136 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 94 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 73 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 49 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 155 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 138 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 138 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 95 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 74 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 50 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 36 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 16 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 150
-- **MATH_CONSISTENT Entries:** 107
+- **MATH_PROVEN Entries:** 157
+- **MATH_CONSISTENT Entries:** 113

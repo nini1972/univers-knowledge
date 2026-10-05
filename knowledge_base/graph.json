@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-04T02:33:59.270610+00:00",
+  "updated_at": "2026-10-05T02:15:42.328016+00:00",
   "stats": {
-    "total_nodes": 300,
-    "level_1_count": 130,
-    "level_2_count": 126,
-    "level_3_count": 44,
-    "total_edges": 157,
+    "total_nodes": 303,
+    "level_1_count": 131,
+    "level_2_count": 127,
+    "level_3_count": 45,
+    "total_edges": 158,
     "frontier_count": 0
   },
   "nodes": [
@@ -85,6 +85,29 @@
         "Standard Cosmology Texts and Reviews"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/big_bang_nucleosynthesis.md"
+    },
+    {
+      "id": "blackholethermodynamics",
+      "title": "Black Hole Thermodynamics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "J. D. Bekenstein (1973), 'Black holes and entropy', https://doi.org/10.1103/PhysRevD.7.2333",
+        "S. W. Hawking (1975), 'Particle creation by black holes', https://doi.org/10.1007/BF02345020",
+        "A. Cheek, L. Heurtier, Y. F. Perez-Gonzalez, J. Turner (2022), 'Primordial black hole evaporation and dark matter production. I. Solely Hawking radiation', https://doi.org/10.1103/PhysRevD.105.015022 (arXiv: https://arxiv.org/abs/2107.00013)",
+        "A. Capanema, A. Esmaeili, A. Esmaili (2021), 'Evaporating primordial black holes in gamma ray and neutrino telescopes', https://doi.org/10.1088/1475-7516/2021/12/051 (arXiv: https://arxiv.org/abs/2110.05637)",
+        "E. Witten (1998), 'Anti de Sitter space and holography', https://doi.org/10.4310/atmp.1998.v2.n2.a2",
+        "A. Ashtekar & J. Lewandowski (2004), 'Background independent quantum gravity: a status report', https://doi.org/10.1088/0264-9381/21/15/R01",
+        "T. Padmanabhan (2003), 'Cosmological constant — the weight of the vacuum', https://doi.org/10.1016/S0370-1573(03)00120-0"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/black_hole_thermodynamics.md"
     },
     {
       "id": "arethereproposedorongoingcalibrationorcontrolmeasurementsdesignedtoruleoutconfoundingeffectsmimickingneutrinodecaysignalsinplannedorcurrentdetectorsetups",
@@ -3935,6 +3958,31 @@
       "path": "knowledge_base/level_2_advanced_frameworks/inflationary_perturbations_vs_cosmicstring_loops_as_primordial_black_hole_origins.md"
     },
     {
+      "id": "inflationaryvacuumfluctuationsvscosmicstringnetworksassourcesofprimordialgravitationalwaves",
+      "title": "Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "primordialgravitationalwaves"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "C. J. A. P. Martins & E. P. S. Shellard (2002), 'Extending the Velocity-dependent One-scale String Evolution Model', https://doi.org/10.1103/PhysRevD.65.043514",
+        "J. Martin (2008), 'Inflationary Perturbations: the Cosmological Schwinger Effect', https://doi.org/10.1007/978-3-540-74353-8_6",
+        "A. Linde, V. Mukhanov & M. Sasaki (2005), 'Post-inflationary behaviour of adiabatic perturbations and the tensor-to-scalar ratio', https://doi.org/10.1088/1475-7516/2005/10/002",
+        "R. Easther, W. H. Kinney & B. A. Powell (2006), 'The Lyth Bound and the end of inflation', https://doi.org/10.1088/1475-7516/2006/08/004",
+        "M. Tristram et al. (2021), 'Planck constraints on the tensor-to-scalar ratio', https://doi.org/10.1051/0004-6361/202039585",
+        "J. R. Ellis, M. Lewicki, C. Lin et al. (2023), 'Cosmic superstrings revisited in light of NANOGrav 15-year data', https://doi.org/10.1103/PhysRevD.108.103511",
+        "L. Castelló Gomar et al. (2014), 'Cosmological perturbations in Hybrid Loop Quantum Cosmology: Mukhanov–Sasaki variables', https://doi.org/10.1103/PhysRevD.90.064015"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves.md"
+    },
+    {
       "id": "informationtheoreticvsthermodynamicinterpretationsofgravity",
       "title": "Information-Theoretic vs. Thermodynamic Interpretations of Gravity",
       "level": 2,
@@ -5397,6 +5445,29 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md"
     },
     {
+      "id": "apreregisteredmultiscaleinterventionframeworkfortestingintegratedinformationtheoryagainstmechanisticphysicalistemergenceinneuralsystems",
+      "title": "A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Albantakis, L., Barbosa, L., Findlay, G., et al. (2023), 'Integrated information theory (IIT) 4.0: Formulating the properties of phenomenal existence in physical terms', https://doi.org/10.1371/journal.pcbi.1011465",
+        "Oizumi, M., Albantakis, L., & Tononi, G. (2014), 'From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0', https://doi.org/10.1371/journal.pcbi.1003588",
+        "Casali, A. G., Gosseries, O., Rosanova, M., et al. (2013), 'A Theoretically Based Index of Consciousness Independent of Sensory Processing and Behavior', https://doi.org/10.1126/scitranslmed.3006294",
+        "Attwell, D., & Laughlin, S. B. (2001), 'An Energy Budget for Signaling in the Grey Matter of the Brain', https://doi.org/10.1097/00004647-200110000-00001",
+        "Cea, I., Negro, N., & Signorelli, C. M. (2023), 'The Fundamental Tension in Integrated Information Theory 4.0's Realist Idealism', https://doi.org/10.3390/e25101453",
+        "Maguire, P., Moser, P., Maguire, R., & Griffith, V. (2014), 'Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory', https://arxiv.org/abs/1405.0126",
+        "Venkatesh, P., Dutta, S., Mehta, N., & Grover, P. (2021), 'Can Information Flows Suggest Targets for Interventions in Neural Circuits?', https://arxiv.org/abs/2111.05299"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems.md"
+    },
+    {
       "id": "algorithmiccomplexitylimitsofhierarchicalstructureformationinselforganizingcosmologicalnetworks",
       "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
       "level": 3,
@@ -6497,6 +6568,11 @@
     {
       "source": "scalartensorgravityvsgalileongravityinaddressingcosmicacceleration",
       "target": "horndeskigravityvsgalileongravityinaddressingcosmicacceleration",
+      "type": "component_theory"
+    },
+    {
+      "source": "primordialgravitationalwaves",
+      "target": "inflationaryvacuumfluctuationsvscosmicstringnetworksassourcesofprimordialgravitationalwaves",
       "type": "component_theory"
     },
     {

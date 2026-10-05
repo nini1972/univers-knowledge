@@ -63,6 +63,7 @@ graph TD
     quantum_measurement_problem["Quantum Measurement Problem"]:::theoretical
     calibration_strategies_for_neutrino_decay_signals["Calibration Strategies to Rule Out Confounding Neutrino Decay Signals"]:::theoretical
     special_relativity["Special Relativity"]:::verified
+    black_hole_thermodynamics["Black Hole Thermodynamics"]:::verified
     refining_cosmological_observations_for_neutrino_decay_signatures["Refining Cosmological Observations for Neutrino Decay Signatures"]:::theoretical
     primordial_gravitational_waves["Primordial Gravitational Waves"]:::theoretical
     non_markovian_memory_kernels_in_neutrino_matter_propagation["Non-Markovian Memory Kernels in Non-Adiabatic Neutrino Matter Propagation"]:::theoretical
@@ -216,6 +217,7 @@ graph TD
     cuscuton_gravity_vs_ghost_condensate_cosmology_in_stable_accelerated_expansion["Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion"]:::theoretical
     axion_dark_matter_vs_wimps_in_explaining_dark_matter["Axion Dark Matter vs WIMPs in Explaining Dark Matter"]:::theoretical
     massive_gravity_versus_fr_gravity_in_modified_gravity_debates["Massive Gravity versus f(R) Gravity in Modified Gravity Debates"]:::theoretical
+    inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves["Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves"]:::theoretical
     superfluid_dark_matter_vs_sterile_neutrino_dark_matter_debate["Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate"]:::verified
     teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing["TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing"]:::theoretical
     axionlike_particles_vs_neutralino_wimps_in_explaining_cosmic_dark_matter_abundance["Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance"]:::theoretical
@@ -300,6 +302,7 @@ graph TD
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
     quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence["Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence"]:::theoretical
     a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure["A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure"]:::theoretical
+    a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems["A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems"]:::theoretical
     dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks["Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks"]:::theoretical
     a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations["A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations"]:::theoretical
     causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness["Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness"]:::theoretical
@@ -357,6 +360,7 @@ graph TD
     big_bang_nucleosynthesis --- inflationary_reheating_mechanisms
     general_relativity --- special_relativity
     quantum_mechanics --- special_relativity
+    general_relativity --- black_hole_thermodynamics
     cosmic_neutrino_background --- refining_cosmological_observations_for_neutrino_decay_signatures
     cosmological_perturbation_theory --- refining_cosmological_observations_for_neutrino_decay_signatures
     neutrino_oscillations --- neutrino_masses_and_leptogenesis
@@ -404,6 +408,7 @@ graph TD
     cosmic_microwave_background_radiation --- distinguishing_freeze_in_and_freeze_out_dark_matter_mechanisms
     gravitational_lensing --- discriminating_warm_vs_cold_dark_matter_via_cosmological_probes
     quantum_gravity --- observational_signatures_of_quantum_extremal_surfaces_and_black_hole_evaporation
+    black_hole_thermodynamics --- observational_signatures_of_quantum_extremal_surfaces_and_black_hole_evaporation
     quantum_gravity --- planck_epoch_and_the_initial_conditions_for_the_universe
     quantum_chromodynamics_qcd --- standard_model_gauge_symmetries_and_their_spontaneous_breaking
     neutrino_oscillations --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
@@ -459,6 +464,7 @@ graph TD
     quantum_gravity --> loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
     quantum_gravity --> informationtheoretic_vs_thermodynamic_interpretations_of_gravity
+    black_hole_thermodynamics --> informationtheoretic_vs_thermodynamic_interpretations_of_gravity
     gravitational_wave_astronomy --> supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate
     standard_model_of_particle_physics --> randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem
     inflationary_cosmology --> slowroll_inflation_vs_matterbounce_cosmology_in_explaining_primordial_perturbations
@@ -488,6 +494,8 @@ graph TD
     neutrinoless_double_beta_decay --> typei_seesaw_vs_radiative_neutrino_mass_generation
     quantum_field_theory --> typei_seesaw_vs_radiative_neutrino_mass_generation
     general_relativity --> massive_gravity_versus_fr_gravity_in_modified_gravity_debates
+    primordial_gravitational_waves --> inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves
+    inflationary_cosmology --> inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves
     general_relativity --> horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration
     electroweak_symmetry_breaking --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
     quantum_field_theory --> mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model
@@ -528,6 +536,7 @@ graph TD
 - [Astrophysical Neutrino Flavor and Spectral Resolution Enhancement](level_1_fundamental_physics/astrophysical_neutrino_flavor_and_spectral_resolution_enhancement.md) [THEORETICAL]
 - [Baryon Acoustic Oscillations](level_1_fundamental_physics/baryon_acoustic_oscillations.md) [VERIFIED]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
+- [Black Hole Thermodynamics](level_1_fundamental_physics/black_hole_thermodynamics.md) [VERIFIED]
 - [Calibration Strategies to Rule Out Confounding Neutrino Decay Signals](level_1_fundamental_physics/calibration_strategies_for_neutrino_decay_signals.md) [THEORETICAL]
 - [Classical Electromagnetism](level_1_fundamental_physics/classical_electromagnetism.md) [VERIFIED]
 - [Classical Mechanics](level_1_fundamental_physics/classical_mechanics.md) [VERIFIED]
@@ -720,6 +729,7 @@ graph TD
 - [Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration](level_2_advanced_frameworks/horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration.md) [THEORETICAL]
 - [Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](level_2_advanced_frameworks/horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research.md) [THEORETICAL]
 - [Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins](level_2_advanced_frameworks/inflationary_perturbations_vs_cosmicstring_loops_as_primordial_black_hole_origins.md) [THEORETICAL]
+- [Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves](level_2_advanced_frameworks/inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves.md) [THEORETICAL]
 - [Information-Theoretic vs. Thermodynamic Interpretations of Gravity](level_2_advanced_frameworks/informationtheoretic_vs_thermodynamic_interpretations_of_gravity.md) [THEORETICAL]
 - [Initial Condition Entropy and Arrow of Time](level_2_advanced_frameworks/initial_condition_entropy_and_arrow_of_time.md) [THEORETICAL]
 - [Initial State Entropy and Information Loss Paradoxes](level_2_advanced_frameworks/initial_state_entropy_and_information_loss_paradoxes.md) [THEORETICAL]
@@ -792,6 +802,7 @@ graph TD
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
 - [A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations](level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md) [THEORETICAL]
+- [A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
 - [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md) [THEORETICAL]
 - [Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md) [THEORETICAL]
