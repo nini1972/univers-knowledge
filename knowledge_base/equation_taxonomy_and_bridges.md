@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-10-05T02:15:16.056435+00:00  
-> **Total Analyzed Concepts:** 404 | **Total Discovered Equations:** 14489 | **Discovered Bridges:** 635
+> **Generated:** 2026-10-06T00:55:06.262652+00:00  
+> **Total Analyzed Concepts:** 405 | **Total Discovered Equations:** 14519 | **Discovered Bridges:** 639
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -498,15 +498,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 155 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 138 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 138 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 156 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 139 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 139 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 95 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 74 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 75 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 50 |
-| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 36 |
+| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 37 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 16 |
 
 ## 📊 3. Verification Status Summary
 - **MATH_PROVEN Entries:** 157
-- **MATH_CONSISTENT Entries:** 113
+- **MATH_CONSISTENT Entries:** 114

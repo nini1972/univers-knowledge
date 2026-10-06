@@ -128,6 +128,7 @@ graph TD
     cp_violation["CP Violation"]:::theoretical
     baryon_acoustic_oscillations["Baryon Acoustic Oscillations"]:::verified
     direct_detection_strategies_for_neutrino_decay["Direct Detection Strategies for Neutrino Decay"]:::theoretical
+    cdm_cosmological_model["ΛCDM Cosmological Model"]:::verified
     disentangling_neutrino_invisible_decay_from_flux_normalization_errors["Disentangling Neutrino Invisible Decay from Flux Normalization Errors"]:::theoretical
     neutrino_cp_violation["Neutrino CP Violation"]:::theoretical
     big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
@@ -432,6 +433,8 @@ graph TD
     the_higgs_boson --- cp_violation
     neutrinoless_double_beta_decay --- direct_detection_strategies_for_neutrino_decay
     neutrino_oscillations --- direct_detection_strategies_for_neutrino_decay
+    dark_matter --- cdm_cosmological_model
+    baryon_acoustic_oscillations --- cdm_cosmological_model
     cosmic_microwave_background_radiation --- big_bang_nucleosynthesis
     neutrino_oscillation_mechanisms --- dune_nuclear_cross_section_uncertainties_vs_visible_neutrino_decay
     standard_model_of_particle_physics --- neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology
@@ -663,6 +666,7 @@ graph TD
 - [Ultraviolet Completions and Experimental Testability of BSM Physics](level_1_fundamental_physics/uv_completions_and_experimental_testability_of_bsm_models.md) [THEORETICAL]
 - [Unique Observables for Neutrino Decay in Major Detectors](level_1_fundamental_physics/unique_observables_for_neutrino_decay_in_major_detectors.md) [THEORETICAL]
 - [WIMP Baryogenesis Models and Washout Constraints](level_1_fundamental_physics/wimp_baryogenesis_models_and_washout_constraints.md) [THEORETICAL]
+- [ΛCDM Cosmological Model](level_1_fundamental_physics/cdm_cosmological_model.md) [VERIFIED]
 
 ## Level 2: Advanced Frameworks
 

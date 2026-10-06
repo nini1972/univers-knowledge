@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-05T02:15:42.328016+00:00",
+  "updated_at": "2026-10-06T01:55:20.637792+00:00",
   "stats": {
-    "total_nodes": 303,
-    "level_1_count": 131,
+    "total_nodes": 304,
+    "level_1_count": 132,
     "level_2_count": 127,
     "level_3_count": 45,
     "total_edges": 158,
@@ -127,6 +127,28 @@
         "IceCube project publications"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/calibration_strategies_for_neutrino_decay_signals.md"
+    },
+    {
+      "id": "cdmcosmologicalmodel",
+      "title": "ΛCDM Cosmological Model",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Peebles, P. J. E., & Ratra, B. (2003), 'The cosmological constant and dark energy', https://doi.org/10.1103/revmodphys.75.559",
+        "Carroll, S. M. (2001), 'The Cosmological Constant', https://doi.org/10.12942/lrr-2001-1",
+        "Bullock, J. S., & Boylan-Kolchin, M. (2017), 'Small-Scale Challenges to the ΛCDM Paradigm', https://doi.org/10.1146/annurev-astro-091916-055313",
+        "Alam, S., et al. (eBOSS Collaboration) (2021), 'Completed SDSS-IV eBOSS: Cosmological implications', https://doi.org/10.1103/physrevd.103.083533",
+        "DESI Collaboration, Adame, A. G., et al. (2025), 'DESI 2024 VI: Cosmological constraints from BAO measurements', https://doi.org/10.1088/1475-7516/2025/02/021",
+        "Cai, R.-G., & Wang, S.-J. (2026), 'The Hubble tension: A decade review', https://doi.org/10.1088/1674-4527/ae842f"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cdm_cosmological_model.md"
     },
     {
       "id": "classicalelectromagnetism",

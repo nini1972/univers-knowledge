@@ -12,9 +12,40 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (2)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20261006-79c5cc` | L2 | **Pre- vs Post-Inflationary QCD Axion Cosmology** | Student Orchestrator | Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed? |
+| `adv-20261006-540db7` | L3 | **A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization** | Student Orchestrator | Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20261006-79c5cc` — Pre- vs Post-Inflationary QCD Axion Cosmology
+- **Timestamp**: `2026-10-06T01:34:19.210896+00:00`
+- **Level**: Level 2
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
+- **Scientific Rationale**: The skeptic verification score is 5/5, so the mandatory score threshold is met, and the comparison is broadly source-grounded with its assumptions and empirical limits stated. However, the accompanying math review identifies an internal numerical inconsistency in the tensor-to-scalar bound (reported as roughly 5×10⁻⁹ where the report's own inputs imply roughly 5×10⁻¹³), as well as a misnormalized H–r anchor; these unresolved errors fail the requirement of mathematical coherence, so the debate is rejected pending correction.
+- **Agent Blockers**:
+  * Math Physicist: Correct the H_inf–r relation and tensor-to-scalar limit consistently, then propagate the corrected result through the report and visual summary.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261006-79c5cc "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261006-540db7` — A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
+- **Timestamp**: `2026-10-06T01:55:19.291987+00:00`
+- **Level**: Level 3
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Scientific Rationale**: The skeptic verification score is 6/6, so the score threshold is met, but an independent check finds a fatal error in the claimed optimal latency: for the stated cost function, the erasure term is constant in τ and E_leak = E₀τ, so minimizing W₂²/(μτ) + E₀τ gives τ* = sqrt(W₂²/(μE₀)), not the reported expression. The report’s claimed τ* is also dimensionally inconsistent; the transport bound may be sound under a clearly specified probability-normalized convention, but the raw-mass gravitational W₂ and proposed mobility conventions remain insufficiently defined for the displayed extension.
+- **Agent Blockers**:
+  * Researcher: Correct the latency optimization and distinguish the heuristic cost model from a derived physical law.
+  * Researcher: Specify consistent normalization and units for W₂, transported mass, and μ in the gravitational analogy.
+  * Math Physicist: Re-derive the minimizer from the stated C(τ), explicitly differentiating with respect to τ and checking SI units.
+  * Math Physicist: Provide a unit-consistent derivation for the gravitational bound using either probability-normalized transport or a fully specified mass-transport metric and mobility.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261006-540db7 "Your guidance"`
+
 
 ---
 
