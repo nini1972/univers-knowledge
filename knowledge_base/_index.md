@@ -138,6 +138,7 @@ graph TD
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
     electroweak_phase_transition_and_its_cosmological_implications["Electroweak Phase Transition and Its Cosmological Implications"]:::verified
     general_relativity["General Relativity"]:::verified
+    the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements["The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements"]:::verified
     statistical_tests_of_point_source_vs_diffuse_astrophysical_neutrinos["Statistical Tests of Point-Source vs Diffuse Astrophysical Neutrinos"]:::theoretical
     neutrino_state_definitions_and_asymptotic_decay_states["Neutrino State Definitions and Asymptotic States During Decay"]:::verified
     neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
@@ -662,6 +663,7 @@ graph TD
 - [Superfluid Dark Matter Phonon Effects](level_1_fundamental_physics/superfluid_dark_matter_phonon_effects.md) [THEORETICAL]
 - [Tensor Networks in Dynamical Lorentzian Spacetimes](level_1_fundamental_physics/tensor_networks_in_dynamical_lorentzian_spacetimes.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
+- [The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements](level_1_fundamental_physics/the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements.md) [VERIFIED]
 - [To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?](level_1_fundamental_physics/lisa_gravitational_waves_and_adm_phase_transitions.md) [THEORETICAL]
 - [Ultraviolet Completions and Experimental Testability of BSM Physics](level_1_fundamental_physics/uv_completions_and_experimental_testability_of_bsm_models.md) [THEORETICAL]
 - [Unique Observables for Neutrino Decay in Major Detectors](level_1_fundamental_physics/unique_observables_for_neutrino_decay_in_major_detectors.md) [THEORETICAL]

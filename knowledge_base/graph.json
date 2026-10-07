@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-06T01:55:20.637792+00:00",
+  "updated_at": "2026-10-07T02:27:21.491422+00:00",
   "stats": {
-    "total_nodes": 304,
-    "level_1_count": 132,
+    "total_nodes": 305,
+    "level_1_count": 133,
     "level_2_count": 127,
     "level_3_count": 45,
     "total_edges": 158,
@@ -2534,6 +2534,30 @@
         "Standard scientific consensus"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/the_higgs_boson.md"
+    },
+    {
+      "id": "thestandardmodelofcosmologycosmicdistanceladderandhubbleconstantmeasurements",
+      "title": "The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Planck Collaboration (Aghanim et al.) (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Riess et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s⁻¹ Mpc⁻¹ Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "Freedman et al. (2019), 'The Carnegie-Chicago Hubble Program. VIII. An Independent Determination of the Hubble Constant Based on the Tip of the Red Giant Branch', https://doi.org/10.3847/1538-4357/ab2f73",
+        "Wong et al. (2019), 'H0LiCOW – XIII. A 2.4 per cent measurement of H0 from lensed quasars', https://doi.org/10.1093/mnras/stz3094",
+        "Di Valentino et al. (2021), 'In the realm of the Hubble tension — a review of solutions', https://doi.org/10.1088/1361-6382/ac086d",
+        "Riess et al. (2016), 'A 2.4% Determination of the Local Value of the Hubble Constant', https://doi.org/10.3847/0004-637x/826/1/56",
+        "Efstathiou, G. (2020), 'A Lockdown Perspective on the Hubble Tension', http://arxiv.org/abs/2007.10716",
+        "Riess et al. (2019), 'Large Magellanic Cloud Cepheid Standards Provide a 1% Foundation for the Determination of the Hubble Constant', https://doi.org/10.3847/1538-4357/ab1422"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements.md"
     },
     {
       "id": "whatspecificexperimentalobservablesorsignaturescanuniquelydiscriminateneutrinodecayfrombackgroundprocessesandalternativenewphysicsscenariosindunejunooricecubedatasets",

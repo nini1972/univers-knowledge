@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-10-06T00:55:06.262652+00:00  
-> **Total Analyzed Concepts:** 405 | **Total Discovered Equations:** 14519 | **Discovered Bridges:** 639
+> **Generated:** 2026-10-07T00:57:45.759317+00:00  
+> **Total Analyzed Concepts:** 412 | **Total Discovered Equations:** 14881 | **Discovered Bridges:** 649
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 105 concepts:
+**Occurrences:** Appears in 106 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -113,6 +113,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Collisionless Cold Dark Matter vs Self-Interacting Dark Matter in Galaxy-Cluster Mergers
 - **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
 - **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
+- **Level 1**: The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements
 
 ### ` 1.380649 \times 10^{-23} `
 **Occurrences:** Appears in 41 concepts:
@@ -269,7 +270,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Black Hole Thermodynamics
 
 ### ` \gamma `
-**Occurrences:** Appears in 27 concepts:
+**Occurrences:** Appears in 28 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
@@ -297,9 +298,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 - **Level 1**: Black Hole Thermodynamics
+- **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
 
 ### ` \hbar `
-**Occurrences:** Appears in 26 concepts:
+**Occurrences:** Appears in 27 concepts:
 - **Level 2**: Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?
@@ -326,6 +328,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Classical Electromagnetism
 - **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 - **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
+- **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
 
 ### ` \phi `
 **Occurrences:** Appears in 23 concepts:
@@ -377,7 +380,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 
 ### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
-**Occurrences:** Appears in 18 concepts:
+**Occurrences:** Appears in 19 concepts:
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 1**: How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?
@@ -396,6 +399,28 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?
 - **Level 1**: Gravitational Lensing
 - **Level 1**: Cosmic Structure Formation and Growth of Large-Scale Structure
+- **Level 1**: The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements
+
+### ` 10^{-15} `
+**Occurrences:** Appears in 18 concepts:
+- **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
+- **Level 2**: Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects
+- **Level 1**: How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?
+- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
+- **Level 1**: What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?
+- **Level 2**: DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration
+- **Level 2**: Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity
+- **Level 2**: MOND vs Emergent Gravity in Explaining Galactic Dynamics
+- **Level 2**: Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics
+- **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
+- **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
+- **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
+- **Level 2**: TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing
+- **Level 2**: Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion
+- **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
+- **Level 1**: Classical Electromagnetism
+- **Level 1**: Gravitational Wave Astronomy
+- **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
 
 ### ` \epsilon `
 **Occurrences:** Appears in 18 concepts:
@@ -417,26 +442,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
 - **Level 3**: A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 - **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
-
-### ` 10^{-15} `
-**Occurrences:** Appears in 17 concepts:
-- **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
-- **Level 2**: Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects
-- **Level 1**: How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?
-- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure
-- **Level 1**: What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?
-- **Level 2**: DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration
-- **Level 2**: Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity
-- **Level 2**: MOND vs Emergent Gravity in Explaining Galactic Dynamics
-- **Level 2**: Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics
-- **Level 2**: Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints
-- **Level 2**: Vacuum Energy Sequestering vs Unimodular Gravity in Solving the Cosmological Constant Problem
-- **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
-- **Level 2**: TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing
-- **Level 2**: Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion
-- **Level 3**: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
-- **Level 1**: Classical Electromagnetism
-- **Level 1**: Gravitational Wave Astronomy
 
 ### ` g_{\mu\nu} `
 **Occurrences:** Appears in 16 concepts:
@@ -498,15 +503,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 156 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 139 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 158 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 140 |
 | `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 139 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 95 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 97 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 75 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 50 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 37 |
-| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 16 |
+| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 17 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 157
-- **MATH_CONSISTENT Entries:** 114
+- **MATH_PROVEN Entries:** 162
+- **MATH_CONSISTENT Entries:** 115
