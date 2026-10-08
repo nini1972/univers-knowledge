@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-07T02:27:21.491422+00:00",
+  "updated_at": "2026-10-08T02:19:16.136872+00:00",
   "stats": {
-    "total_nodes": 305,
-    "level_1_count": 133,
-    "level_2_count": 127,
-    "level_3_count": 45,
-    "total_edges": 158,
+    "total_nodes": 308,
+    "level_1_count": 134,
+    "level_2_count": 128,
+    "level_3_count": 46,
+    "total_edges": 159,
     "frontier_count": 0
   },
   "nodes": [
@@ -85,6 +85,28 @@
         "Standard Cosmology Texts and Reviews"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/big_bang_nucleosynthesis.md"
+    },
+    {
+      "id": "bigbangnucleosynthesisbbntheoryandlightelementabundancepredictions",
+      "title": "Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Fields, B. D., Olive, K. A., Yeh, T.-H., Young, C. (2020), 'Big-Bang Nucleosynthesis after Planck', https://doi.org/10.1088/1475-7516/2020/03/010",
+        "Coc, A., Uzan, J.-P., Vangioni, E. (2014), 'Standard big bang nucleosynthesis and primordial CNO abundances after Planck', https://doi.org/10.1088/1475-7516/2014/10/050",
+        "Steigman, G. (2012), 'Neutrinos and Big Bang Nucleosynthesis', https://doi.org/10.1155/2012/268321",
+        "Burles, S., Nollett, K. M., Turner, M. S. (2001), 'Big Bang Nucleosynthesis Predictions for Precision Cosmology', https://doi.org/10.1086/320251",
+        "Sarkar, S. (1996), 'Big bang nucleosynthesis and physics beyond the standard model', https://doi.org/10.1088/0034-4885/59/12/001",
+        "Carr, B. J., Kohri, K., Sendouda, Y., Yokoyama, J. (2021), 'Constraints on primordial black holes', https://doi.org/10.1088/1361-6633/ac1e31"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions.md"
     },
     {
       "id": "blackholethermodynamics",
@@ -4459,6 +4481,31 @@
       "path": "knowledge_base/level_2_advanced_frameworks/parity_violation_vs_scalar_charge_in_strongfield_gravity.md"
     },
     {
+      "id": "prevspostinflationaryqcdaxioncosmology",
+      "title": "Pre- vs Post-Inflationary QCD Axion Cosmology",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "bigbangnucleosynthesisbbntheoryandlightelementabundancepredictions"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "di Cortona et al. (2016), 'The QCD axion, precisely', https://doi.org/10.1007/JHEP01(2016)034",
+        "Planck Collaboration (2020), 'Planck 2018 results. X. Constraints on inflation', https://doi.org/10.1051/0004-6361/201833887",
+        "Lizarraga et al. (2016), 'New CMB constraints for Abelian Higgs cosmic strings', https://doi.org/10.1088/1475-7516/2016/10/042",
+        "Feix, Frank, Pargner et al. (2019), 'Isocurvature bounds on ALP DM in the post-inflationary scenario', https://doi.org/10.1088/1475-7516/2019/05/021",
+        "Kawasaki & Sonomoto (2018), 'Domain wall and isocurvature perturbation problems in a supersymmetric axion model', https://doi.org/10.1103/PhysRevD.97.083507",
+        "Li, Bian, Cai & Shu (2023), 'Cosmic Simulations of Axion String-Wall Networks', https://arxiv.org/abs/2311.02011",
+        "Vachaspati (2017), 'Lunar Mass Black Holes from QCD Axion Cosmology', https://arxiv.org/abs/1706.03868"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/pre_vs_postinflationary_qcd_axion_cosmology.md"
+    },
+    {
       "id": "primordialnongaussianityinflationarymultifieldmodelsvscosmicdefects",
       "title": "Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects",
       "level": 2,
@@ -5369,6 +5416,29 @@
         "Theoretical analyses addressing limitations of Cold Dark Matter models"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md"
+    },
+    {
+      "id": "adimensionallyconsistentlandauerbasedframeworkforcomparingenergylatencyerrortradeoffsinneuralcomputationandcosmicwebselforganization",
+      "title": "A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Bérut, A., et al. (2012), 'Experimental verification of Landauer’s principle linking information and thermodynamics', https://doi.org/10.1038/nature10872",
+        "Hong, J., et al. (2016), 'Experimental verification of Landauer’s principle in a nanomagnetic system', https://doi.org/10.1126/sciadv.1501492",
+        "Ciliberto, S. (2017), 'Experiments in stochastic thermodynamics: Short history and perspectives', https://doi.org/10.1103/PhysRevX.7.021051",
+        "Sengupta, B., Stemmler, M., & Friston, K. J. (2013), 'Information and efficiency in the nervous system—a synthesis', https://doi.org/10.1371/journal.pcbi.1003157",
+        "Nakazato, K., & Ito, S. (2021), 'Geometrical aspects of entropy production in stochastic thermodynamics based on Wasserstein distance', https://doi.org/10.1103/PhysRevResearch.3.043093",
+        "Lineweaver, C. H., & Egan, C. A. (2008), 'Life, gravity and the second law of thermodynamics', https://doi.org/10.1016/j.plrev.2008.08.002",
+        "Naab, T., & Ostriker, J. P. (2017), 'Theoretical Challenges in Galaxy Formation', https://doi.org/10.1146/annurev-astro-082214-122444"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization.md"
     },
     {
       "id": "afalsifiablecausalinformationboundaryframeworkforthehardproblemtestingphenomenalcausationepiphenomenalismandstrongemergenceundermicrophysicalclosure",
@@ -6719,6 +6789,11 @@
     {
       "source": "asymptoticallysafegravityvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
       "target": "nonlocalquantumgravityvsasymptoticallysafegravityinultravioletcompletionofspacetime",
+      "type": "component_theory"
+    },
+    {
+      "source": "bigbangnucleosynthesisbbntheoryandlightelementabundancepredictions",
+      "target": "prevspostinflationaryqcdaxioncosmology",
       "type": "component_theory"
     },
     {

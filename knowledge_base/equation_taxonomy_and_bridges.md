@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-10-07T00:57:45.759317+00:00  
-> **Total Analyzed Concepts:** 412 | **Total Discovered Equations:** 14881 | **Discovered Bridges:** 649
+> **Generated:** 2026-10-08T02:18:44.915537+00:00  
+> **Total Analyzed Concepts:** 426 | **Total Discovered Equations:** 15751 | **Discovered Bridges:** 662
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -116,7 +116,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements
 
 ### ` 1.380649 \times 10^{-23} `
-**Occurrences:** Appears in 41 concepts:
+**Occurrences:** Appears in 42 concepts:
 - **Level 2**: Information-Theoretic vs. Thermodynamic Interpretations of Gravity
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
@@ -158,6 +158,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems
 - **Level 1**: Black Hole Thermodynamics
 - **Level 3**: A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
+- **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
 
 ### ` \Phi `
 **Occurrences:** Appears in 36 concepts:
@@ -199,7 +200,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
 
 ### ` \alpha `
-**Occurrences:** Appears in 33 concepts:
+**Occurrences:** Appears in 34 concepts:
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 1**: What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
@@ -233,9 +234,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
+- **Level 1**: Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions
 
 ### ` 6.62607015 \times 10^{-34} `
-**Occurrences:** Appears in 32 concepts:
+**Occurrences:** Appears in 33 concepts:
 - **Level 1**: What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?
@@ -268,6 +270,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Classical Mechanics
 - **Level 3**: A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue
 - **Level 1**: Black Hole Thermodynamics
+- **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
 
 ### ` \gamma `
 **Occurrences:** Appears in 28 concepts:
@@ -503,15 +506,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 158 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 159 |
 | `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 140 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 139 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 97 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 75 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 50 |
-| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 37 |
-| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 17 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 140 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 98 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 76 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 52 |
+| `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 38 |
+| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 18 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 162
+- **MATH_PROVEN Entries:** 172
 - **MATH_CONSISTENT Entries:** 115

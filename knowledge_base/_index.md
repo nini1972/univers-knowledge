@@ -33,6 +33,7 @@ graph TD
     tensor_networks_in_dynamical_lorentzian_spacetimes["Tensor Networks in Dynamical Lorentzian Spacetimes"]:::theoretical
     minimum_viable_modifications_to_general_relativity["Minimum Viable Modifications to General Relativity"]:::theoretical
     statistical_chi_squared_fit_analysis_bsm_neutrino_physics["Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics"]:::verified
+    big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions["Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions"]:::verified
     neutrino_decay_width_constraints_and_decay_inclusive_oscillations["Neutrino Decay Width Constraints and Decay-Inclusive Oscillations"]:::theoretical
     renormalization_and_the_renormalization_group["Renormalization and the Renormalization Group"]:::verified
     disentangling_neutrino_decay_from_nsi_and_decoherence["Disentangling Neutrino Decay from NSI and Environmental Decoherence"]:::theoretical
@@ -237,6 +238,7 @@ graph TD
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
     stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition["Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition"]:::theoretical
     dynamical_relaxation_vs_wavelike_condensation_in_galactic_corecusp_resolution["Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution"]:::theoretical
+    pre_vs_postinflationary_qcd_axion_cosmology["Pre- vs Post-Inflationary QCD Axion Cosmology"]:::theoretical
     interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges["Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges"]:::verified
     braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem["Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem"]:::theoretical
     emergent_entropic_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies["Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies"]:::theoretical
@@ -311,6 +313,7 @@ graph TD
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
     empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure["Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure"]:::theoretical
     computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation["Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation"]:::theoretical
+    a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization["A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization"]:::theoretical
     landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks["Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks"]:::verified
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
     a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems["A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems"]:::theoretical
@@ -336,6 +339,7 @@ graph TD
     dark_matter --- dark_acoustic_oscillations_and_dissipation_in_dark_sector_models
     quantum_gravity --- tensor_networks_in_dynamical_lorentzian_spacetimes
     general_relativity --- minimum_viable_modifications_to_general_relativity
+    big_bang_nucleosynthesis --- big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions
     neutrino_oscillations --- neutrino_decay_width_constraints_and_decay_inclusive_oscillations
     quantum_decoherence --- disentangling_neutrino_decay_from_nsi_and_decoherence
     general_relativity --- cosmological_constant_and_dark_energy
@@ -540,6 +544,7 @@ graph TD
 - [Astrophysical Neutrino Flavor and Spectral Resolution Enhancement](level_1_fundamental_physics/astrophysical_neutrino_flavor_and_spectral_resolution_enhancement.md) [THEORETICAL]
 - [Baryon Acoustic Oscillations](level_1_fundamental_physics/baryon_acoustic_oscillations.md) [VERIFIED]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
+- [Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions](level_1_fundamental_physics/big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions.md) [VERIFIED]
 - [Black Hole Thermodynamics](level_1_fundamental_physics/black_hole_thermodynamics.md) [VERIFIED]
 - [Calibration Strategies to Rule Out Confounding Neutrino Decay Signals](level_1_fundamental_physics/calibration_strategies_for_neutrino_decay_signals.md) [THEORETICAL]
 - [Classical Electromagnetism](level_1_fundamental_physics/classical_electromagnetism.md) [VERIFIED]
@@ -756,6 +761,7 @@ graph TD
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
 - [Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime](level_2_advanced_frameworks/nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime.md) [THEORETICAL]
 - [Parity Violation vs Scalar Charge in Strong-Field Gravity](level_2_advanced_frameworks/parity_violation_vs_scalar_charge_in_strongfield_gravity.md) [THEORETICAL]
+- [Pre- vs Post-Inflationary QCD Axion Cosmology](level_2_advanced_frameworks/pre_vs_postinflationary_qcd_axion_cosmology.md) [THEORETICAL]
 - [Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects](level_2_advanced_frameworks/primordial_nongaussianity_inflationary_multifield_models_vs_cosmic_defects.md) [THEORETICAL]
 - [Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem](level_2_advanced_frameworks/quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem.md) [THEORETICAL]
 - [Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory](level_2_advanced_frameworks/quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory.md) [THEORETICAL]
@@ -802,6 +808,7 @@ graph TD
 
 ## Level 3: Emergence and Intelligence
 
+- [A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization](level_3_emergence_and_intelligence/a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization.md) [THEORETICAL]
 - [A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure](level_3_emergence_and_intelligence/a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure.md) [THEORETICAL]
 - [A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md) [THEORETICAL]
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
