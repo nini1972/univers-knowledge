@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-08T02:19:16.136872+00:00",
+  "updated_at": "2026-10-09T01:57:24.469283+00:00",
   "stats": {
-    "total_nodes": 308,
-    "level_1_count": 134,
+    "total_nodes": 310,
+    "level_1_count": 135,
     "level_2_count": 128,
-    "level_3_count": 46,
+    "level_3_count": 47,
     "total_edges": 159,
     "frontier_count": 0
   },
@@ -2580,6 +2580,31 @@
         "Riess et al. (2019), 'Large Magellanic Cloud Cepheid Standards Provide a 1% Foundation for the Determination of the Hubble Constant', https://doi.org/10.3847/1538-4357/ab1422"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements.md"
+    },
+    {
+      "id": "thermodynamicarrowoftime",
+      "title": "Thermodynamic Arrow of Time",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "H. D. Zeh (2009), 'Open Questions regarding the Arrow of Time', https://arxiv.org/abs/0908.3780",
+        "R. M. Wald (2005), 'The Arrow of Time and the Initial Conditions of the Universe', https://arxiv.org/abs/gr-qc/0507094",
+        "U. Seifert (2012), 'Stochastic thermodynamics, fluctuation theorems and molecular machines', https://doi.org/10.1088/0034-4885/75/12/126001",
+        "M. Campisi & P. Hänggi (2011), 'Title not supplied in the research report', https://doi.org/10.3390/e13122024",
+        "S. M. Carroll (2014), 'Title not supplied in the research report', https://arxiv.org/abs/1406.3057",
+        "S. Gryb (2020), 'Title not supplied in the research report', https://doi.org/10.1086/712879",
+        "C. Kiefer (2009), 'Title not supplied in the research report', https://arxiv.org/abs/0910.5836",
+        "R. Bousso & C. Zukowski (2013), 'Title not supplied in the research report', https://doi.org/10.1103/PhysRevD.87.103504",
+        "J. M. R. Parrondo (2026), 'Title not supplied in the research report', https://doi.org/10.1093/pnasnexus/pgag288"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/thermodynamic_arrow_of_time.md"
     },
     {
       "id": "whatspecificexperimentalobservablesorsignaturescanuniquelydiscriminateneutrinodecayfrombackgroundprocessesandalternativenewphysicsscenariosindunejunooricecubedatasets",
@@ -5517,6 +5542,28 @@
         "Student Summary"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md"
+    },
+    {
+      "id": "apreregisteredcrossscalecausalinterventiontestofintegratedinformationtheoryandphysicalistemergenceundermatchedneuralmodels",
+      "title": "A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Albantakis, L., Barbosa, L., Findlay, G., et al. (2023), 'Integrated information theory (IIT) 4.0: Formulating the properties of phenomenal existence in physical terms', https://doi.org/10.1371/journal.pcbi.1011465",
+        "Oizumi, M., Albantakis, L., & Tononi, G. (2014), 'From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0', https://doi.org/10.1371/journal.pcbi.1003588",
+        "Hoel, E. P., Albantakis, L., & Tononi, G. (2013), 'Quantifying causal emergence shows that macro can beat micro', https://doi.org/10.1073/pnas.1314922110",
+        "Attwell, D., & Laughlin, S. B. (2001), 'An Energy Budget for Signaling in the Grey Matter of the Brain', https://doi.org/10.1097/00004647-200110000-00001",
+        "Tononi, G., & Koch, C. (2015), 'Consciousness: here, there and everywhere?', https://doi.org/10.1098/rstb.2014.0167",
+        "Maguire, P., Moser, P., Maguire, R., & Griffith, V. (2014), 'Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory', https://arxiv.org/abs/1405.0126"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models.md"
     },
     {
       "id": "apreregisteredcrossscaleinterventionbenchmarkfordistinguishingintegratedinformationtheoryfromphysicalistemergenceinneuralsystems",

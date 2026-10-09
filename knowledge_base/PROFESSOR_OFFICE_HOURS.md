@@ -12,12 +12,13 @@
 
 ---
 
-## 📬 Pending Student Inquiries (2)
+## 📬 Pending Student Inquiries (3)
 
 | ID | Level | Concept | Initiator | Question |
 |---|---|---|---|---|
 | `adv-20261006-79c5cc` | L2 | **Pre- vs Post-Inflationary QCD Axion Cosmology** | Student Orchestrator | Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed? |
 | `adv-20261006-540db7` | L3 | **A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization** | Student Orchestrator | Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
+| `adv-20261009-ec789d` | L2 | **Perturbative Reheating vs Parametric-Resonance Preheating** | Student Orchestrator | Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed? |
 
 ### Detailed Inquiries
 
@@ -45,6 +46,15 @@
   * Math Physicist: Provide a unit-consistent derivation for the gravitational bound using either probability-normalized transport or a fully specified mass-transport metric and mobility.
 
 > **To answer**: `python scripts/consult_professor.py answer adv-20261006-540db7 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261009-ec789d` — Perturbative Reheating vs Parametric-Resonance Preheating
+- **Timestamp**: `2026-10-09T01:51:05.069316+00:00`
+- **Level**: Level 2
+- **Reason Code**: `crew_kickoff_error`
+- **Question**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
+- **Scientific Rationale**: Rejected due to crew_kickoff_error.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261009-ec789d "Your guidance"`
 
 
 ---

@@ -109,6 +109,7 @@ graph TD
     bayesian_evidence_analysis_neutrino_decay_hypothesis["Joint Bayesian Evidence Analysis of the Neutrino Decay Hypothesis"]:::theoretical
     astrophysical_neutrino_flavor_and_spectral_resolution_enhancement["Astrophysical Neutrino Flavor and Spectral Resolution Enhancement"]:::theoretical
     distinguishing_freeze_in_and_freeze_out_dark_matter_mechanisms["Distinguishing Freeze-In and Freeze-Out Dark Matter Mechanisms"]:::theoretical
+    thermodynamic_arrow_of_time["Thermodynamic Arrow of Time"]:::verified
     discriminating_warm_vs_cold_dark_matter_via_cosmological_probes["Discriminating Warm vs Cold Dark Matter via Cosmological Probes"]:::theoretical
     observational_signatures_of_quantum_extremal_surfaces_and_black_hole_evaporation["Observational Signatures of Quantum Extremal Surfaces and Black Hole Evaporation"]:::theoretical
     planck_epoch_and_the_initial_conditions_for_the_universe["Planck Epoch and the Initial Conditions for the Universe"]:::theoretical
@@ -284,6 +285,7 @@ graph TD
     renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure["Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure"]:::theoretical
     noiserobust_generalizedcontextuality_witnesses_for_benchmarkrelative_quantum_advantage_in_warm_biological_information_processing["Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing"]:::theoretical
     landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments["Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments"]:::theoretical
+    a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models["A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models"]:::theoretical
     macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy["Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems"]:::theoretical
     dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory["Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory"]:::theoretical
     a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing["A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing"]:::theoretical
@@ -412,6 +414,7 @@ graph TD
     neutrino_oscillations --- astrophysical_neutrino_flavor_and_spectral_resolution_enhancement
     dark_matter --- distinguishing_freeze_in_and_freeze_out_dark_matter_mechanisms
     cosmic_microwave_background_radiation --- distinguishing_freeze_in_and_freeze_out_dark_matter_mechanisms
+    statistical_mechanics --- thermodynamic_arrow_of_time
     gravitational_lensing --- discriminating_warm_vs_cold_dark_matter_via_cosmological_probes
     quantum_gravity --- observational_signatures_of_quantum_extremal_surfaces_and_black_hole_evaporation
     black_hole_thermodynamics --- observational_signatures_of_quantum_extremal_surfaces_and_black_hole_evaporation
@@ -669,6 +672,7 @@ graph TD
 - [Tensor Networks in Dynamical Lorentzian Spacetimes](level_1_fundamental_physics/tensor_networks_in_dynamical_lorentzian_spacetimes.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements](level_1_fundamental_physics/the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements.md) [VERIFIED]
+- [Thermodynamic Arrow of Time](level_1_fundamental_physics/thermodynamic_arrow_of_time.md) [VERIFIED]
 - [To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?](level_1_fundamental_physics/lisa_gravitational_waves_and_adm_phase_transitions.md) [THEORETICAL]
 - [Ultraviolet Completions and Experimental Testability of BSM Physics](level_1_fundamental_physics/uv_completions_and_experimental_testability_of_bsm_models.md) [THEORETICAL]
 - [Unique Observables for Neutrino Decay in Major Detectors](level_1_fundamental_physics/unique_observables_for_neutrino_decay_in_major_detectors.md) [THEORETICAL]
@@ -813,6 +817,7 @@ graph TD
 - [A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md) [THEORETICAL]
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
+- [A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models](level_3_emergence_and_intelligence/a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models.md) [THEORETICAL]
 - [A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
 - [A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations](level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md) [THEORETICAL]
 - [A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems.md) [THEORETICAL]

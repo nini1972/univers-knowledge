@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-10-08T02:18:44.915537+00:00  
-> **Total Analyzed Concepts:** 426 | **Total Discovered Equations:** 15751 | **Discovered Bridges:** 662
+> **Generated:** 2026-10-09T01:56:54.972575+00:00  
+> **Total Analyzed Concepts:** 431 | **Total Discovered Equations:** 16040 | **Discovered Bridges:** 669
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -304,7 +304,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
 
 ### ` \hbar `
-**Occurrences:** Appears in 27 concepts:
+**Occurrences:** Appears in 28 concepts:
 - **Level 2**: Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 1**: What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?
@@ -332,6 +332,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 - **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
 - **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
+- **Level 1**: Thermodynamic Arrow of Time
 
 ### ` \phi `
 **Occurrences:** Appears in 23 concepts:
@@ -506,15 +507,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 159 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 160 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 141 |
 | `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 140 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 140 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 98 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 100 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 76 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 52 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 38 |
-| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 18 |
+| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 19 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 172
-- **MATH_CONSISTENT Entries:** 115
+- **MATH_PROVEN Entries:** 175
+- **MATH_CONSISTENT Entries:** 116
