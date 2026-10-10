@@ -141,6 +141,7 @@ graph TD
     electroweak_phase_transition_and_its_cosmological_implications["Electroweak Phase Transition and Its Cosmological Implications"]:::verified
     general_relativity["General Relativity"]:::verified
     the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements["The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements"]:::verified
+    the_standard_model_of_particle_physics_quantum_chromodynamics_qcd_and_the_strong_interaction["The Standard Model of Particle Physics: Quantum Chromodynamics (QCD) and the Strong Interaction"]:::verified
     statistical_tests_of_point_source_vs_diffuse_astrophysical_neutrinos["Statistical Tests of Point-Source vs Diffuse Astrophysical Neutrinos"]:::theoretical
     neutrino_state_definitions_and_asymptotic_decay_states["Neutrino State Definitions and Asymptotic States During Decay"]:::verified
     neutrino_decoupling_and_its_effects_on_early_universe_cosmology["Neutrino Decoupling and Its Effects on Early Universe Cosmology"]:::verified
@@ -291,6 +292,7 @@ graph TD
     a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing["A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing"]:::theoretical
     nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures["Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures"]:::theoretical
     operational_criteria_for_cosmic_computation_a_falsifiable_energylatencyerror_benchmark_comparing_cosmicweb_selforganization_with_biological_neural_information_processing["Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing"]:::theoretical
+    a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks["A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks"]:::theoretical
     quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation["Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation"]:::theoretical
     landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding["Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding"]:::theoretical
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
@@ -452,6 +454,7 @@ graph TD
     primordial_gravitational_waves --- inflationary_cosmology
     electroweak_symmetry_breaking --- electroweak_phase_transition_and_its_cosmological_implications
     quantum_mechanics --- general_relativity
+    quantum_field_theory --- the_standard_model_of_particle_physics_quantum_chromodynamics_qcd_and_the_strong_interaction
     quantum_decoherence --- neutrino_state_definitions_and_asymptotic_decay_states
     standard_model_of_particle_physics --- neutrino_decoupling_and_its_effects_on_early_universe_cosmology
     quantum_gravity --> conformal_cyclic_cosmology_vs_steadystate_model_in_explaining_cosmic_evolution
@@ -672,6 +675,7 @@ graph TD
 - [Tensor Networks in Dynamical Lorentzian Spacetimes](level_1_fundamental_physics/tensor_networks_in_dynamical_lorentzian_spacetimes.md) [THEORETICAL]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements](level_1_fundamental_physics/the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements.md) [VERIFIED]
+- [The Standard Model of Particle Physics: Quantum Chromodynamics (QCD) and the Strong Interaction](level_1_fundamental_physics/the_standard_model_of_particle_physics_quantum_chromodynamics_qcd_and_the_strong_interaction.md) [VERIFIED]
 - [Thermodynamic Arrow of Time](level_1_fundamental_physics/thermodynamic_arrow_of_time.md) [VERIFIED]
 - [To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?](level_1_fundamental_physics/lisa_gravitational_waves_and_adm_phase_transitions.md) [THEORETICAL]
 - [Ultraviolet Completions and Experimental Testability of BSM Physics](level_1_fundamental_physics/uv_completions_and_experimental_testability_of_bsm_models.md) [THEORETICAL]
@@ -821,6 +825,7 @@ graph TD
 - [A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
 - [A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations](level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md) [THEORETICAL]
 - [A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
+- [A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks](level_3_emergence_and_intelligence/a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks.md) [THEORETICAL]
 - [Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md) [THEORETICAL]
 - [Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md) [THEORETICAL]

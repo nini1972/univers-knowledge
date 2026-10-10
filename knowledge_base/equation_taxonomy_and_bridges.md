@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-10-09T01:56:54.972575+00:00  
-> **Total Analyzed Concepts:** 431 | **Total Discovered Equations:** 16040 | **Discovered Bridges:** 669
+> **Generated:** 2026-10-10T02:28:54.681522+00:00  
+> **Total Analyzed Concepts:** 436 | **Total Discovered Equations:** 16214 | **Discovered Bridges:** 672
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -161,7 +161,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
 
 ### ` \Phi `
-**Occurrences:** Appears in 36 concepts:
+**Occurrences:** Appears in 37 concepts:
 - **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
 - **Level 3**: Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization
@@ -198,9 +198,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations
 - **Level 3**: Causal-Intervention Tests of Integrated Information and Macro-Level Explanatory Autonomy in Neural Systems
 - **Level 3**: A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
+- **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
 
 ### ` \alpha `
-**Occurrences:** Appears in 34 concepts:
+**Occurrences:** Appears in 35 concepts:
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 1**: What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?
 - **Level 1**: Can the dimensional consistency be conclusively verified using advanced symbolic methods beyond current automated tools?
@@ -235,6 +236,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
 - **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
 - **Level 1**: Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions
+- **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
 
 ### ` 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 33 concepts:
@@ -507,9 +509,9 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 160 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 162 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 141 |
 | `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 141 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 140 |
 | `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 100 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 76 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 52 |
@@ -517,5 +519,5 @@ These equations appear across multiple distinct concepts, serving as mathematica
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 19 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 175
+- **MATH_PROVEN Entries:** 176
 - **MATH_CONSISTENT Entries:** 116

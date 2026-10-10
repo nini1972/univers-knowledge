@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-09T01:57:24.469283+00:00",
+  "updated_at": "2026-10-10T02:29:15.910221+00:00",
   "stats": {
-    "total_nodes": 310,
-    "level_1_count": 135,
+    "total_nodes": 312,
+    "level_1_count": 136,
     "level_2_count": 128,
-    "level_3_count": 47,
-    "total_edges": 159,
-    "frontier_count": 0
+    "level_3_count": 48,
+    "total_edges": 160,
+    "frontier_count": 4
   },
   "nodes": [
     {
@@ -2580,6 +2580,31 @@
         "Riess et al. (2019), 'Large Magellanic Cloud Cepheid Standards Provide a 1% Foundation for the Determination of the Hubble Constant', https://doi.org/10.3847/1538-4357/ab1422"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements.md"
+    },
+    {
+      "id": "thestandardmodelofparticlephysicsquantumchromodynamicsqcdandthestronginteraction",
+      "title": "The Standard Model of Particle Physics: Quantum Chromodynamics (QCD) and the Strong Interaction",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "thestandardmodel",
+        "gaugetheory",
+        "latticeqcd",
+        "quantumfieldtheory",
+        "stronginteraction"
+      ],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Gross, D. J. & Wilczek, F. A. (1973), 'Ultraviolet Behavior of Non-Abelian Gauge Theories', https://doi.org/10.1103/physrevlett.30.1343",
+        "Politzer, H. D. (1973), 'Reliable Perturbative Results for Strong Interactions', https://doi.org/10.1103/physrevlett.30.1346",
+        "Wilson, K. G. (1974), 'Confinement of Quarks', https://doi.org/10.1103/PhysRevD.10.2445"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/the_standard_model_of_particle_physics_quantum_chromodynamics_qcd_and_the_strong_interaction.md"
     },
     {
       "id": "thermodynamicarrowoftime",
@@ -5631,6 +5656,26 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems.md"
     },
     {
+      "id": "ascaleexplicitthermodynamiccostbenchmarkforcausalinformationprocessinginneuralsystemsandcosmicwebnetworks",
+      "title": "A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Bérut, A., et al. (2012), 'Experimental verification of Landauer’s principle linking information and thermodynamics', https://doi.org/10.1038/nature10872",
+        "Sartori, P., et al. (2014), 'Thermodynamics of information processing in sensory adaptation', https://doi.org/10.1103/PhysRevLett.112.010601",
+        "Vazza, F. and Feletti, A. (2020), 'The quantitative comparison between the neuronal network and the cosmic web', https://doi.org/10.3389/fphy.2020.525731",
+        "Oizumi, M., Albantakis, L., and Tononi, G. (2014), 'From the phenomenology to the mechanisms of consciousness: Integrated Information Theory 3.0', https://doi.org/10.1371/journal.pcbi.1003588"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks.md"
+    },
+    {
       "id": "algorithmiccomplexitylimitsofhierarchicalstructureformationinselforganizingcosmologicalnetworks",
       "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
       "level": 3,
@@ -6378,6 +6423,11 @@
     }
   ],
   "edges": [
+    {
+      "source": "quantumfieldtheory",
+      "target": "thestandardmodelofparticlephysicsquantumchromodynamicsqcdandthestronginteraction",
+      "type": "prerequisite"
+    },
     {
       "source": "darkmatter",
       "target": "howcancosmologicalobservationsberefinedtobetterdiscriminatebetweenwarmdarkmattereffectspredictedbysterileneutrinosandcolddarkmatterscenarios",
@@ -7174,5 +7224,30 @@
       "type": "foundational_prerequisite"
     }
   ],
-  "frontier": []
+  "frontier": [
+    {
+      "id": "gaugetheory",
+      "suggested_title": "Gaugetheory",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "latticeqcd",
+      "suggested_title": "Latticeqcd",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "stronginteraction",
+      "suggested_title": "Stronginteraction",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "thestandardmodel",
+      "suggested_title": "Thestandardmodel",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    }
+  ]
 }
