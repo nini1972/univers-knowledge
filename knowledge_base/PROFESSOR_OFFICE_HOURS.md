@@ -12,54 +12,28 @@
 
 ---
 
-## 📬 Pending Student Inquiries (3)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261006-79c5cc` | L2 | **Pre- vs Post-Inflationary QCD Axion Cosmology** | Student Orchestrator | Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed? |
-| `adv-20261006-540db7` | L3 | **A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization** | Student Orchestrator | Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
-| `adv-20261009-ec789d` | L2 | **Perturbative Reheating vs Parametric-Resonance Preheating** | Student Orchestrator | Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261006-79c5cc` — Pre- vs Post-Inflationary QCD Axion Cosmology
-- **Timestamp**: `2026-10-06T01:34:19.210896+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
-- **Scientific Rationale**: The skeptic verification score is 5/5, so the mandatory score threshold is met, and the comparison is broadly source-grounded with its assumptions and empirical limits stated. However, the accompanying math review identifies an internal numerical inconsistency in the tensor-to-scalar bound (reported as roughly 5×10⁻⁹ where the report's own inputs imply roughly 5×10⁻¹³), as well as a misnormalized H–r anchor; these unresolved errors fail the requirement of mathematical coherence, so the debate is rejected pending correction.
-- **Agent Blockers**:
-  * Math Physicist: Correct the H_inf–r relation and tensor-to-scalar limit consistently, then propagate the corrected result through the report and visual summary.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261006-79c5cc "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261006-540db7` — A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
-- **Timestamp**: `2026-10-06T01:55:19.291987+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Scientific Rationale**: The skeptic verification score is 6/6, so the score threshold is met, but an independent check finds a fatal error in the claimed optimal latency: for the stated cost function, the erasure term is constant in τ and E_leak = E₀τ, so minimizing W₂²/(μτ) + E₀τ gives τ* = sqrt(W₂²/(μE₀)), not the reported expression. The report’s claimed τ* is also dimensionally inconsistent; the transport bound may be sound under a clearly specified probability-normalized convention, but the raw-mass gravitational W₂ and proposed mobility conventions remain insufficiently defined for the displayed extension.
-- **Agent Blockers**:
-  * Researcher: Correct the latency optimization and distinguish the heuristic cost model from a derived physical law.
-  * Researcher: Specify consistent normalization and units for W₂, transported mass, and μ in the gravitational analogy.
-  * Math Physicist: Re-derive the minimizer from the stated C(τ), explicitly differentiating with respect to τ and checking SI units.
-  * Math Physicist: Provide a unit-consistent derivation for the gravitational bound using either probability-normalized transport or a fully specified mass-transport metric and mobility.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261006-540db7 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261009-ec789d` — Perturbative Reheating vs Parametric-Resonance Preheating
-- **Timestamp**: `2026-10-09T01:51:05.069316+00:00`
-- **Level**: Level 2
-- **Reason Code**: `crew_kickoff_error`
-- **Question**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
-- **Scientific Rationale**: Rejected due to crew_kickoff_error.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261009-ec789d "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (16)
+## 📚 Answered Advisory Consultations (19)
+
+### ✅ `adv-20261009-ec789d`: Perturbative Reheating vs Parametric-Resonance Preheating
+- **Student Inquired**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
+- **Professor Directive**: 💬 *"When simulating and analyzing inflation reheating, decompose the dynamics into three distinct chronological phases: (1) Non-perturbative preheating via parametric resonance governed by the Mathieu equation d^2 chi_k / dz^2 + [A_k - 2 q cos(2 z)] chi_k = 0 for broad resonance q = g^2 Phi_0^2 / (4 m^2) >> 1, yielding explosive occupation numbers n_k ~ exp(2 mu_k m t); (2) Non-linear rescattering, turbulence, and fragmentation halting exponential growth before complete inflaton depletion; (3) Final perturbative decay (Gamma_phi) and thermalization establishing the radiation-dominated era with T_reh approx (90 / (pi^2 g_*))^(1/4) sqrt(Gamma_phi M_Pl). Structure the debate report with clear modular headings, exact equation blocks, and empirical bounds from BBN (T_reh >= 4 MeV) and CMB constraints on the equation of state w_reheat to prevent token overflow or parse failures."*
+- **Answered At**: `2026-10-10T13:39:34.046922+00:00`
+
+### ✅ `adv-20261006-540db7`: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
+- **Student Inquired**: Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Professor Directive**: 💬 *"In the finite-time thermodynamic trade-off model C(tau) = W_2^2 / (mu * tau) + E_0 * tau + E_erasure, rigorously derive the optimal latency minimizer by differentiating with respect to tau: dC/dtau = -W_2^2 / (mu * tau^2) + E_0 = 0, yielding the unique minimum tau* = sqrt(W_2^2 / (mu * E_0)), with second derivative d^2C/dtau^2 = 2 W_2^2 / (mu * tau^3) > 0. Verify dimensional consistency: with [W_2^2 / mu] = J*s and [E_0] = J/s = W, tau* has SI units of seconds. Clearly categorize this trade-off as a phenomenological cost model rather than a fundamental thermodynamic conservation law. When drawing parallels to cosmic-web structure formation, specify probability-normalized Wasserstein mass distributions to preserve rigorous SI units."*
+- **Answered At**: `2026-10-10T13:39:25.561348+00:00`
+
+### ✅ `adv-20261006-79c5cc`: Pre- vs Post-Inflationary QCD Axion Cosmology
+- **Student Inquired**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
+- **Professor Directive**: 💬 *"In pre-inflationary QCD axion scenarios, calibrate the inflationary Hubble scale strictly using the standard single-field slow-roll relation H_inf = pi * M_Pl * sqrt(r * A_s / 2) approx 8.4 * 10^13 * sqrt(r / 0.01) GeV with Planck amplitude A_s approx 2.1 * 10^-9. For the tensor-to-scalar ratio corresponding to the axion isocurvature limit H_inf <= 10^9 GeV * (f_I / 10^12 GeV), calculate r consistently: (H_inf / (8.4 * 10^14 GeV))^2 yields r <= 1.4 * 10^-12 (approx 10^-13 to 10^-12 depending on f_I), resolving the erroneous 5 * 10^-9 estimate. Enforce internal consistency across all tables, derivations, and summary figures between f_a, m_a, H_inf, and the derived tensor bound r."*
+- **Answered At**: `2026-10-10T13:39:16.242818+00:00`
 
 ### ✅ `adv-20261004-ded465`: A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
 - **Student Inquired**: Level 3 topic 'A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
@@ -95,19 +69,4 @@
 - **Student Inquired**: Level 2 debate 'Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
 - **Professor Directive**: 💬 *"In the cosmic string Velocity-dependent One-Scale (VOS) model (Martins & Shellard 2002, PRD 65, 043514), maintain one consistent formulation for the correlation length L and RMS velocity v: dL/dt = H L (1 + v^2) + (1/2) c v, and dv/dt = (1 - v^2) [k(v)/L - 2 H v], where c approx 0.23 is the loop chopping efficiency and k(v) = (2 sqrt(2)/pi) ((1-v^2)/(1+v^2)) (1-8v^6). In the radiation era (a prop t^(1/2), H = 1/(2t)), the scaling fixed point L = xi * t yields xi_r approx 0.27 and v_r approx 0.65. For inflationary gravitational waves, correct the Lyth bound: for constant or monotonic r = 0.01 over N = 60 e-folds, Delta phi / M_Pl >= sqrt(r/8) * N gives Delta phi >= sqrt(0.01/8) * 60 approx 2.12 M_Pl (not 0.7 M_Pl). Ground empirical limits in Planck 2018 / BICEP/Keck 2021 (r < 0.036 at 95% CL) and pulsar timing array bounds (NANOGrav 15-yr / EPTA) constraining string tension G mu <= 10^-10."*
 - **Answered At**: `2026-10-04T10:52:39.481673+00:00`
-
-### ✅ `adv-20260925-d4e429`: Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations
-- **Student Inquired**: Level 2 debate 'Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
-- **Professor Directive**: 💬 *"In canonical single-field slow-roll inflation, the Maldacena consistency relation strictly fixes squeezed-limit local non-Gaussianity to f_NL^local = (5/12)(1 - n_s) approx 0.015 << 1, which is unobservably small. In the curvaton scenario (Lyth & Wands 2002; Sasaki, Valiviita & Wands 2006), define the sudden-decay transfer parameter as r_decay = 3*rho_sigma / (4*rho_rad + 3*rho_sigma) evaluated at decay (r_decay in (0, 1]). For a quadratic potential V(sigma) = (1/2) m^2 sigma^2, the local bispectrum amplitude is f_NL^local = (5 / (4*r_decay)) - (5/3) - (5*r_decay / 6). For small r_decay << 1, f_NL^local approx 5 / (4*r_decay) >> 1, so the Planck 2018 constraint (f_NL^local = -0.9 +- 5.1 at 68% CL) enforces r_decay >= 0.15 (with r_decay ~ 1 yielding f_NL^local approx -5/4 = -1.25). Clarify observational falsifiability: a robust detection of f_NL^local > 1 conclusively falsifies all canonical single-field slow-roll models. Conversely, a null tensor measurement (r -> 0) does NOT rule out single-field inflation (as Starobinsky R^2 predicts r ~ 0.003 and hilltop models allow r -> 0); curvaton models suppress r because curvature perturbations are generated after inflation, decoupling r from the inflationary energy scale. Ground the debate in Planck 2018 Results IX & X (A&A 2020) and BICEP/Keck (PRL 2021)."*
-- **Answered At**: `2026-09-25T18:14:52.852128+00:00`
-
-### ✅ `adv-20260923-29336f`: Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing
-- **Student Inquired**: Level 3 topic 'Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Professor Directive**: 💬 *"Correct the normal shock Rankine-Hugoniot compression ratio to r = rho_2 / rho_1 = ((gamma + 1) M_1^2) / ((gamma - 1) M_1^2 + 2), which rigorously yields r = 1 at M_1 = 1 and approaches the strong-shock limit r -> (gamma + 1) / (gamma - 1) = 4 for monoatomic gas (gamma = 5/3). To ground 'cosmic computation' scientifically without falling into pancomputationalism, specify a concrete computational task: define inputs (primordial Gaussian perturbation field delta(k, z_i)), a quantifiable objective function (e.g., optimal transport / Monge-Ampère-Kantorovich cosmological reconstruction of early velocity fields), and measurable output states (halo mass functions and filamentary graph degree distributions). Pre-register a falsifiable likelihood ratio test comparing the computational hypothesis against standard LambdaCDM gravitational instability. In the cortical energy ledger, strictly distinguish somatic action potentials (~10^8 ATP/spike at 1-5 Hz) from synaptic transmission (~10^4-10^5 ATP/vesicle across 10^4 synapses/neuron, consuming ~50-60% of total brain glucose; Attwell & Laughlin 2001) and fundamental Landauer erasure dissipation (E_min = k_B T ln 2 ~ 2.9 x 10^-21 J at 310 K)."*
-- **Answered At**: `2026-09-24T20:00:28.799814+00:00`
-
-### ✅ `adv-20260920-f23032`: Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems
-- **Student Inquired**: Does IIT 4.0 itself predict the absence of externally measurable macro causal decoupling outside the max-Phi complex, or would such a result challenge only an added bridge principle equating operational and intrinsic causal power?
-- **Professor Directive**: 💬 *"In intervention calculus and causal emergence, define Effective Information rigorously as intervention-output mutual information EI(S_t -> S_t+1) = I(do(S_t ~ U); S_t+1) = D_KL(P(S_t^do, S_t+1) || P(S_t^do) (x) P(S_t+1)) under a uniform intervention distribution, rather than an invalid KL divergence between marginal output distributions. Clarify that IIT 4.0 (Albantakis et al. 2023) evaluates intrinsic cause-effect structures from the perspective of the system itself using Earth Mover's Distance across the MIP, whereas macro causal emergence (Hoel et al. 2013, Delta EI > 0) and Partial Information Decomposition (PID) unique/synergistic information quantify extrinsic, observer-relative channel capacities. Consequently, IIT 4.0 does NOT predict the absence of externally measurable macro causal autonomy outside the max-Phi complex; finding operational decoupling in recurrent subgraphs challenges only the auxiliary bridge premise that conflates operational information-theoretic autonomy with intrinsic phenomenal existence. Ensure all coarse-graining maps are pre-registered and grounded in empirical neural recordings (e.g., local field potentials, spike trains)."*
-- **Answered At**: `2026-09-24T20:00:21.597895+00:00`
 
