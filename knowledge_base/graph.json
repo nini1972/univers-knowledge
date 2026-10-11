@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-10T02:29:15.910221+00:00",
+  "updated_at": "2026-10-11T01:56:41.705880+00:00",
   "stats": {
-    "total_nodes": 312,
-    "level_1_count": 136,
+    "total_nodes": 314,
+    "level_1_count": 137,
     "level_2_count": 128,
-    "level_3_count": 48,
-    "total_edges": 160,
-    "frontier_count": 4
+    "level_3_count": 49,
+    "total_edges": 161,
+    "frontier_count": 7
   },
   "nodes": [
     {
@@ -2541,6 +2541,37 @@
       "path": "knowledge_base/level_1_fundamental_physics/tensor_networks_in_dynamical_lorentzian_spacetimes.md"
     },
     {
+      "id": "theboltzmannequationincosmology",
+      "title": "The Boltzmann Equation in Cosmology",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [
+        "wimpfreezeout",
+        "darkmatterrelicabundance",
+        "freezeinproduction",
+        "cosmologicalperturbationtheory"
+      ],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "I. M. Oldengott, C. Rampf, Y. Y. Y. Wong (2015), 'Boltzmann hierarchy for interacting neutrinos I: formalism', https://doi.org/10.1088/1475-7516/2015/04/016",
+        "M. Kamionkowski (2021), 'Cosmological perturbations without the Boltzmann hierarchy', https://doi.org/10.1103/PhysRevD.104.063512",
+        "G. Steigman, B. Dasgupta, J. F. Beacom (2012), 'Precise Relic WIMP Abundance and its Impact on Searches for Dark Matter Annihilation', https://doi.org/10.1103/PhysRevD.86.023506",
+        "G. Steigman (2015), 'CMB Constraints On The Thermal WIMP Mass And Annihilation Cross Section', https://doi.org/10.1103/PhysRevD.91.083538",
+        "L. J. Hall, K. Jedamzik, J. March-Russell, S. West (2010), 'Freeze-In Production of FIMP Dark Matter', https://doi.org/10.1007/jhep03(2010)080",
+        "G. Bertone, D. Hooper (2018), 'History of dark matter', https://doi.org/10.1103/revmodphys.90.045002",
+        "J. S. Bullock, M. Boylan-Kolchin (2017), 'Small-Scale Challenges to the ΛCDM Paradigm', https://doi.org/10.1146/annurev-astro-091916-055313",
+        "E. Di Valentino, O. Mena, S. Pan et al. (2021), 'In the realm of the Hubble tension — a review of solutions', https://doi.org/10.1088/1361-6382/ac086d",
+        "D. J. E. Marsh (2016), 'Axion cosmology', https://doi.org/10.1016/j.physrep.2016.06.005",
+        "C. M. Will (2014), 'The Confrontation between General Relativity and Experiment', https://doi.org/10.12942/lrr-2014-4"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/the_boltzmann_equation_in_cosmology.md"
+    },
+    {
       "id": "thehiggsboson",
       "title": "The Higgs Boson",
       "level": 1,
@@ -2590,10 +2621,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "quantumfieldtheory",
+        "latticeqcd",
         "thestandardmodel",
         "gaugetheory",
-        "latticeqcd",
-        "quantumfieldtheory",
         "stronginteraction"
       ],
       "tags": [
@@ -5569,6 +5600,29 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md"
     },
     {
+      "id": "amultiscalepersistenthomologytestoftopologicaluniversalityincosmicwebselforganization",
+      "title": "A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Pranav et al. (2017), 'Title not supplied in the research report', https://doi.org/10.1093/mnras/stw2862",
+        "van de Weygaert et al. (2011), 'Title not supplied in the research report', https://doi.org/10.1007/978-3-642-25249-5_3",
+        "Feldbrugge et al. (2019), 'Title not supplied in the research report', https://doi.org/10.1088/1475-7516/2019/09/052",
+        "Carlsson (2014), 'Title not supplied in the research report', https://doi.org/10.1017/s0962492914000051",
+        "Telschow et al. (2023), 'Title not supplied in the research report', https://doi.org/10.1214/23-aos2337",
+        "Appleby et al. (2022), 'Title not supplied in the research report', https://doi.org/10.3847/1538-4357/ac562a",
+        "Berry et al. (2020), 'Title not supplied in the research report', https://doi.org/10.1007/s41468-020-00048-w"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md"
+    },
+    {
       "id": "apreregisteredcrossscalecausalinterventiontestofintegratedinformationtheoryandphysicalistemergenceundermatchedneuralmodels",
       "title": "A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models",
       "level": 3,
@@ -6424,6 +6478,11 @@
   ],
   "edges": [
     {
+      "source": "cosmologicalperturbationtheory",
+      "target": "theboltzmannequationincosmology",
+      "type": "prerequisite"
+    },
+    {
       "source": "quantumfieldtheory",
       "target": "thestandardmodelofparticlephysicsquantumchromodynamicsqcdandthestronginteraction",
       "type": "prerequisite"
@@ -7226,6 +7285,18 @@
   ],
   "frontier": [
     {
+      "id": "darkmatterrelicabundance",
+      "suggested_title": "Darkmatterrelicabundance",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "freezeinproduction",
+      "suggested_title": "Freezeinproduction",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "gaugetheory",
       "suggested_title": "Gaugetheory",
       "target_level": 1,
@@ -7246,6 +7317,12 @@
     {
       "id": "thestandardmodel",
       "suggested_title": "Thestandardmodel",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "wimpfreezeout",
+      "suggested_title": "Wimpfreezeout",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     }

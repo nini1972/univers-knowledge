@@ -34,6 +34,7 @@ graph TD
     minimum_viable_modifications_to_general_relativity["Minimum Viable Modifications to General Relativity"]:::theoretical
     statistical_chi_squared_fit_analysis_bsm_neutrino_physics["Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics"]:::verified
     big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions["Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions"]:::verified
+    the_boltzmann_equation_in_cosmology["The Boltzmann Equation in Cosmology"]:::verified
     neutrino_decay_width_constraints_and_decay_inclusive_oscillations["Neutrino Decay Width Constraints and Decay-Inclusive Oscillations"]:::theoretical
     renormalization_and_the_renormalization_group["Renormalization and the Renormalization Group"]:::verified
     disentangling_neutrino_decay_from_nsi_and_decoherence["Disentangling Neutrino Decay from NSI and Environmental Decoherence"]:::theoretical
@@ -319,6 +320,7 @@ graph TD
     computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation["Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation"]:::theoretical
     a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization["A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization"]:::theoretical
     landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks["Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks"]:::verified
+    a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization["A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization"]:::theoretical
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
     a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems["A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems"]:::theoretical
 
@@ -344,6 +346,7 @@ graph TD
     quantum_gravity --- tensor_networks_in_dynamical_lorentzian_spacetimes
     general_relativity --- minimum_viable_modifications_to_general_relativity
     big_bang_nucleosynthesis --- big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions
+    cosmological_perturbation_theory --- the_boltzmann_equation_in_cosmology
     neutrino_oscillations --- neutrino_decay_width_constraints_and_decay_inclusive_oscillations
     quantum_decoherence --- disentangling_neutrino_decay_from_nsi_and_decoherence
     general_relativity --- cosmological_constant_and_dark_energy
@@ -673,6 +676,7 @@ graph TD
 - [Sterile Neutrino Production Mechanisms and Cosmological Constraints](level_1_fundamental_physics/sterile_neutrino_production_mechanisms_and_cosmological_constraints.md) [THEORETICAL]
 - [Superfluid Dark Matter Phonon Effects](level_1_fundamental_physics/superfluid_dark_matter_phonon_effects.md) [THEORETICAL]
 - [Tensor Networks in Dynamical Lorentzian Spacetimes](level_1_fundamental_physics/tensor_networks_in_dynamical_lorentzian_spacetimes.md) [THEORETICAL]
+- [The Boltzmann Equation in Cosmology](level_1_fundamental_physics/the_boltzmann_equation_in_cosmology.md) [VERIFIED]
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements](level_1_fundamental_physics/the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements.md) [VERIFIED]
 - [The Standard Model of Particle Physics: Quantum Chromodynamics (QCD) and the Strong Interaction](level_1_fundamental_physics/the_standard_model_of_particle_physics_quantum_chromodynamics_qcd_and_the_strong_interaction.md) [VERIFIED]
@@ -821,6 +825,7 @@ graph TD
 - [A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md) [THEORETICAL]
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
+- [A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization](level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md) [THEORETICAL]
 - [A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models](level_3_emergence_and_intelligence/a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models.md) [THEORETICAL]
 - [A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
 - [A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations](level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md) [THEORETICAL]
