@@ -98,6 +98,52 @@ class UniverseTasks:
             async_execution=async_execution
         )
 
+    def targeted_micro_revision_task(self, agent, concept, original_draft, feedback_dict):
+        """Perform an in-place micro-revision on an existing research draft to fix specific defects without regenerating from scratch."""
+        reason_code = feedback_dict.get("reason_code", "")
+        rationale = feedback_dict.get("detailed_rationale", "")
+        agent_needs = feedback_dict.get("agent_needs", {})
+        follow_up = feedback_dict.get("follow_up_questions", [])
+
+        needs_str = ""
+        if isinstance(agent_needs, dict):
+            researcher_needs = agent_needs.get("researcher_needs", [])
+            math_needs = agent_needs.get("math_needs", [])
+            if researcher_needs:
+                needs_str += "\n- Researcher Specific Needs:\n  * " + "\n  * ".join(str(n) for n in researcher_needs)
+            if math_needs:
+                needs_str += "\n- Mathematical Specific Needs:\n  * " + "\n  * ".join(str(m) for m in math_needs)
+
+        questions_str = "\n".join(f"- {q}" for q in follow_up) if follow_up else "None specified."
+
+        return Task(
+            description=dedent(f"""
+                Perform an in-place TARGETED MICRO-REVISION for the concept: {concept}.
+
+                You are provided with the existing research draft below:
+                ---
+                {original_draft}
+                ---
+
+                The Student Orchestrator and Verification Team reviewed this draft and identified specific localized defects:
+                - Primary Defect Reason: {reason_code}
+                - Scientific Rationale: {rationale}
+                {needs_str}
+                - Direct Questions to Resolve:
+                {questions_str}
+
+                MICRO-REVISION DIRECTIVES:
+                1. DO NOT discard or regenerate the entire report from scratch. Preserve all verified sections, established citations, and overall structure.
+                2. Target and correct ONLY the identified flaws:
+                   - If mathematical or dimensional errors were identified, correct the specific formulas, constants, indices, or algebraic derivations using standard LaTeX ($...$ or $$...$$).
+                   - If citations or empirical bounds were insufficient, insert authentic academic citations (using ArXiv/OpenAlex/Europe PMC) or clarify experimental bounds.
+                   - If category errors or unjustified assumptions were flagged, refine the definitions and explicit proof boundaries.
+                3. Return the COMPLETE revised draft incorporating these targeted corrections.
+            """),
+            expected_output=f"The complete revised research report for {concept} with targeted corrections addressing all identified feedback.",
+            agent=agent
+        )
+
     def verify_research_task(self, agent, concept, context=None):
         return Task(
             description=dedent(f"""
