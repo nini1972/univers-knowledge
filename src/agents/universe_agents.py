@@ -48,9 +48,9 @@ def _resolve_openrouter_model(api_key: str, role: str) -> str:
     model_env = f"OPENROUTER_MODEL_{role.upper()}"
     configured_model = os.getenv(model_env)
     if not configured_model and role == "math":
-        configured_model = os.getenv("OPENROUTER_MODEL_RESEARCHER")
+        configured_model = "z-ai/glm-5.3-flash"
     if not configured_model:
-        configured_model = os.getenv("OPENROUTER_MODEL") or "meta-llama/llama-3.1-70b-instruct"
+        configured_model = os.getenv("OPENROUTER_MODEL") or "z-ai/glm-5.3-flash"
     model = _normalize_openrouter_model(configured_model)
 
     # Self-healing: if role uses tools or delegates, ensure the model supports tool use on OpenRouter.
