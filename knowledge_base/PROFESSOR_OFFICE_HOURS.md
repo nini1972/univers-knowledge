@@ -12,27 +12,18 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261011-ce787b` | L2 | **Perturbative Reheating vs Parametric-Resonance Preheating** | Student Orchestrator | Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261011-ce787b` — Perturbative Reheating vs Parametric-Resonance Preheating
-- **Timestamp**: `2026-10-11T01:45:22.120434+00:00`
-- **Level**: Level 2
-- **Reason Code**: `crew_kickoff_error`
-- **Question**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
-- **Scientific Rationale**: Rejected due to crew_kickoff_error.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261011-ce787b "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (19)
+## 📚 Answered Advisory Consultations (20)
+
+### ✅ `adv-20261011-ce787b`: Perturbative Reheating vs Parametric-Resonance Preheating
+- **Student Inquired**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
+- **Professor Directive**: 💬 *"In the comparative analysis of reheating mechanisms, address the three identified theoretical and mathematical issues: (1) Reconcile the scalar decay width with the displayed interaction Lagrangian: for trilinear interaction L_int = -(1/2) g phi chi^2 with real scalar chi (identical final-state particles), the 2-body decay width is Gamma(phi -> chi chi) = g^2 / (32 pi m_phi) [or Gamma = g^2 / (8 pi m_phi) if using L_int = -g phi chi_1 chi_2 without identical bosons], whereas for Yukawa coupling L_int = -y phi psi_bar psi to Dirac fermions the width is Gamma(phi -> psi_bar psi) = y^2 m_phi / (8 pi) (for m_psi << m_phi); state the identical-particle phase space convention explicitly. (2) Qualify the claim that preheating is universally necessary: preheating via broad parametric resonance requires resonance parameter q = g^2 Phi_0^2 / (4 m^2) >> 1; for narrow resonance (q << 1) or weak couplings, preheating is inefficient or absent, and reheating proceeds purely through perturbative decay. Present the hybrid preheating-to-perturbative sequence as a common, model-dependent possibility rather than an inevitable necessity. (3) For the maximum radiation temperature during perturbative reheating with a quadratic potential, state T_max approx 0.8 * (m_phi Gamma_phi M_Pl^2)^(1/4) with explicit dependence on initial energy density, and ensure radiation tracking scaling obeys T proportional to a^(-3/8)."*
+- **Answered At**: `2026-10-11T13:40:11.711648+00:00`
 
 ### ✅ `adv-20261009-ec789d`: Perturbative Reheating vs Parametric-Resonance Preheating
 - **Student Inquired**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
@@ -78,9 +69,4 @@
 - **Student Inquired**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
 - **Professor Directive**: 💬 *"In QCD axion cosmology (di Cortona et al. 2016, JHEP 01 (2016) 034), enforce the exact relation m_a * f_a approx 5.7 * 10^-6 eV * 10^12 GeV = 5.7 * 10^6 eV*GeV. For f_a = 2.6 * 10^11 GeV, m_a must be approx 21.9 micro-eV; conversely, m_a = 68 micro-eV corresponds to f_a approx 8.4 * 10^10 GeV. Reconcile this pair consistently across the report. For cosmic strings, the string tension logarithm must be dimensionless: mu = 2 pi f_a^2 ln(t / delta_c), where delta_c ~ 1/m_r ~ 1/f_a is the string core width. In pre-inflationary scenarios (H_inf < 2 pi f_I), distinguish f_I from f_a = f_I / N_DW when calculating isocurvature perturbations delta S_a_gamma = 2 H_inf / (2 pi f_I theta_i), and enforce Planck isocurvature limits H_inf <= 10^9 GeV * (f_I / 10^12 GeV)."*
 - **Answered At**: `2026-10-04T10:52:49.483441+00:00`
-
-### ✅ `adv-20260927-186600`: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
-- **Student Inquired**: Level 2 debate 'Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
-- **Professor Directive**: 💬 *"In the cosmic string Velocity-dependent One-Scale (VOS) model (Martins & Shellard 2002, PRD 65, 043514), maintain one consistent formulation for the correlation length L and RMS velocity v: dL/dt = H L (1 + v^2) + (1/2) c v, and dv/dt = (1 - v^2) [k(v)/L - 2 H v], where c approx 0.23 is the loop chopping efficiency and k(v) = (2 sqrt(2)/pi) ((1-v^2)/(1+v^2)) (1-8v^6). In the radiation era (a prop t^(1/2), H = 1/(2t)), the scaling fixed point L = xi * t yields xi_r approx 0.27 and v_r approx 0.65. For inflationary gravitational waves, correct the Lyth bound: for constant or monotonic r = 0.01 over N = 60 e-folds, Delta phi / M_Pl >= sqrt(r/8) * N gives Delta phi >= sqrt(0.01/8) * 60 approx 2.12 M_Pl (not 0.7 M_Pl). Ground empirical limits in Planck 2018 / BICEP/Keck 2021 (r < 0.036 at 95% CL) and pulsar timing array bounds (NANOGrav 15-yr / EPTA) constraining string tension G mu <= 10^-10."*
-- **Answered At**: `2026-10-04T10:52:39.481673+00:00`
 

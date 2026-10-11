@@ -46,7 +46,11 @@ def _fetch_openrouter_model_index(api_key: str) -> set[str] | None:
 
 def _resolve_openrouter_model(api_key: str, role: str) -> str:
     model_env = f"OPENROUTER_MODEL_{role.upper()}"
-    configured_model = os.getenv(model_env) or os.getenv("OPENROUTER_MODEL") or "meta-llama/llama-3.1-70b-instruct"
+    configured_model = os.getenv(model_env)
+    if not configured_model and role == "math":
+        configured_model = os.getenv("OPENROUTER_MODEL_RESEARCHER")
+    if not configured_model:
+        configured_model = os.getenv("OPENROUTER_MODEL") or "meta-llama/llama-3.1-70b-instruct"
     model = _normalize_openrouter_model(configured_model)
 
     # Self-healing: if role uses tools or delegates, ensure the model supports tool use on OpenRouter.

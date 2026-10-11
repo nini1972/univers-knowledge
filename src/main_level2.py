@@ -147,6 +147,8 @@ def update_index_file(index_path: str, concept_name: str, level_folder: str, fil
 
 def main():
     load_dotenv()
+    if "OPENROUTER_MODEL_MATH" not in os.environ and "OPENROUTER_MODEL_RESEARCHER" in os.environ:
+        os.environ["OPENROUTER_MODEL_MATH"] = os.environ["OPENROUTER_MODEL_RESEARCHER"]
     dry_run = os.getenv("DRY_RUN", "false").lower() == "true"
     index_path = "knowledge_base/_index.md"
     current_index = sanitize_index_file(index_path, Path(__file__).resolve().parent.parent)
