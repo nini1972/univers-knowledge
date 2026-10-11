@@ -41,6 +41,7 @@ graph TD
     electroweak_baryogenesis["Electroweak Baryogenesis"]:::theoretical
     spectral_decomposition_of_non_hermitian_decay_hamiltonians["Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms"]:::theoretical
     quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
+    baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests["Baryogenesis and Leptogenesis: Sakharov Conditions and Experimental Tests"]:::verified
     cosmological_constant_and_dark_energy["Cosmological Constant and Dark Energy"]:::verified
     primordial_nucleosynthesis_and_lightelement_abundances["Primordial Nucleosynthesis and Light-Element Abundances"]:::verified
     empirical_falsification_priorities_for_theoretical_physics["Empirical Falsification Priorities for Theoretical Physics Extensions"]:::theoretical
@@ -247,6 +248,7 @@ graph TD
     emergent_entropic_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies["Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies"]:::theoretical
     scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration["Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation["Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation"]:::theoretical
+    perturbative_reheating_vs_parametricresonance_preheating["Perturbative Reheating vs Parametric-Resonance Preheating"]:::theoretical
     causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime["Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime"]:::theoretical
     quantum_gravity_debate["Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity"]:::theoretical
     modified_gravity_theories_vs_dark_matter_particle_models_debate["Modified Gravity Theories vs Dark Matter Particle Models Debate"]:::theoretical
@@ -349,6 +351,7 @@ graph TD
     cosmological_perturbation_theory --- the_boltzmann_equation_in_cosmology
     neutrino_oscillations --- neutrino_decay_width_constraints_and_decay_inclusive_oscillations
     quantum_decoherence --- disentangling_neutrino_decay_from_nsi_and_decoherence
+    electroweak_baryogenesis --- baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests
     general_relativity --- cosmological_constant_and_dark_energy
     dark_matter --- primordial_nucleosynthesis_and_lightelement_abundances
     the_higgs_boson --- electroweak_symmetry_breaking
@@ -530,6 +533,7 @@ graph TD
     electroweak_symmetry_breaking --> braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem
     general_relativity --> scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration
     neutrino_oscillations --> leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation
+    big_bang_nucleosynthesis --> perturbative_reheating_vs_parametricresonance_preheating
     quantum_gravity --> causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime
     quantum_gravity --> quantum_gravity_debate
     general_relativity --> quantum_gravity_debate
@@ -551,6 +555,7 @@ graph TD
 
 - [5 GeV Asymmetric Dark Matter Mass Scale and Skipper-CCD Constraints](level_1_fundamental_physics/five_gev_asymmetric_dark_matter_skipper_ccd_constraints.md) [THEORETICAL]
 - [Astrophysical Neutrino Flavor and Spectral Resolution Enhancement](level_1_fundamental_physics/astrophysical_neutrino_flavor_and_spectral_resolution_enhancement.md) [THEORETICAL]
+- [Baryogenesis and Leptogenesis: Sakharov Conditions and Experimental Tests](level_1_fundamental_physics/baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests.md) [VERIFIED]
 - [Baryon Acoustic Oscillations](level_1_fundamental_physics/baryon_acoustic_oscillations.md) [VERIFIED]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
 - [Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions](level_1_fundamental_physics/big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions.md) [VERIFIED]
@@ -773,6 +778,7 @@ graph TD
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
 - [Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime](level_2_advanced_frameworks/nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime.md) [THEORETICAL]
 - [Parity Violation vs Scalar Charge in Strong-Field Gravity](level_2_advanced_frameworks/parity_violation_vs_scalar_charge_in_strongfield_gravity.md) [THEORETICAL]
+- [Perturbative Reheating vs Parametric-Resonance Preheating](level_2_advanced_frameworks/perturbative_reheating_vs_parametricresonance_preheating.md) [THEORETICAL]
 - [Pre- vs Post-Inflationary QCD Axion Cosmology](level_2_advanced_frameworks/pre_vs_postinflationary_qcd_axion_cosmology.md) [THEORETICAL]
 - [Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects](level_2_advanced_frameworks/primordial_nongaussianity_inflationary_multifield_models_vs_cosmic_defects.md) [THEORETICAL]
 - [Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem](level_2_advanced_frameworks/quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem.md) [THEORETICAL]
