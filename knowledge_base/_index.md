@@ -15,6 +15,7 @@ graph TD
     dark_matter["Dark Matter"]:::theoretical
     distinguishing_higgs_portal_from_sterile_neutrino_dark_matter["Distinguishing Higgs Portal from Sterile Neutrino Dark Matter"]:::theoretical
     experimental_signatures_distinguishing_causal_sets_from_tensor_networks["Experimental Signatures Distinguishing Causal Sets from Tensor Networks"]:::theoretical
+    electroweak_precision_tests_and_the_higgs_mechanism["Electroweak Precision Tests and the Higgs Mechanism"]:::verified
     friedmannlematrerobertsonwalker_cosmology["Friedmann–Lemaître–Robertson–Walker Cosmology"]:::verified
     quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem["Quantum Vacuum Energy Contributions to the Cosmological Constant Problem"]:::theoretical
     cosmic_recombination_and_photon_decoupling["Cosmic Recombination and Photon Decoupling"]:::verified
@@ -324,6 +325,7 @@ graph TD
     landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks["Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks"]:::verified
     a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization["A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization"]:::theoretical
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
+    thermodynamic_uncertainty_relations_as_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics["Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics"]:::verified
     a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems["A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems"]:::theoretical
 
     %% Connections & Prerequisites
@@ -336,6 +338,7 @@ graph TD
     neutrino_oscillations --- distinguishing_higgs_portal_from_sterile_neutrino_dark_matter
     standard_model_of_particle_physics --- distinguishing_higgs_portal_from_sterile_neutrino_dark_matter
     quantum_gravity --- experimental_signatures_distinguishing_causal_sets_from_tensor_networks
+    electroweak_symmetry_breaking --- electroweak_precision_tests_and_the_higgs_mechanism
     standard_model_of_particle_physics --- signatures_distinguishing_neutrino_decay_from_sterile_neutrinos
     quantum_field_theory --- signatures_distinguishing_neutrino_decay_from_sterile_neutrinos
     neutrino_oscillations --- mathematical_formulation_of_neutrino_decay_survival_probabilities
@@ -590,6 +593,7 @@ graph TD
 - [Effective Field Theory](level_1_fundamental_physics/effective_field_theory.md) [VERIFIED]
 - [Electroweak Baryogenesis](level_1_fundamental_physics/electroweak_baryogenesis.md) [THEORETICAL]
 - [Electroweak Phase Transition and Its Cosmological Implications](level_1_fundamental_physics/electroweak_phase_transition_and_its_cosmological_implications.md) [VERIFIED]
+- [Electroweak Precision Tests and the Higgs Mechanism](level_1_fundamental_physics/electroweak_precision_tests_and_the_higgs_mechanism.md) [VERIFIED]
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md) [THEORETICAL]
 - [Empirical Falsification Priorities for Theoretical Physics Extensions](level_1_fundamental_physics/empirical_falsification_priorities_for_theoretical_physics.md) [THEORETICAL]
 - [Empirical Tests of Spacetime Discreteness and Entanglement-Geometry Duality](level_1_fundamental_physics/empirical_tests_of_spacetime_discreteness_and_entanglement_geometry_duality.md) [THEORETICAL]
@@ -874,4 +878,5 @@ graph TD
 - [Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure](level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md) [THEORETICAL]
 - [Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](level_3_emergence_and_intelligence/spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]
+- [Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics](level_3_emergence_and_intelligence/thermodynamic_uncertainty_relations_as_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md) [VERIFIED]
 - [Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks](level_3_emergence_and_intelligence/topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks.md) [THEORETICAL]

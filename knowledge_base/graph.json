@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-11T14:24:59.878803+00:00",
+  "updated_at": "2026-10-11T18:36:45.314529+00:00",
   "stats": {
-    "total_nodes": 316,
-    "level_1_count": 138,
+    "total_nodes": 318,
+    "level_1_count": 139,
     "level_2_count": 129,
-    "level_3_count": 49,
-    "total_edges": 161,
-    "frontier_count": 7
+    "level_3_count": 50,
+    "total_edges": 162,
+    "frontier_count": 11
   },
   "nodes": [
     {
@@ -772,6 +772,34 @@
         "M. Laine, M. Meyer (2015), 'Electroweak Phase Transition and Its Cosmological Implications', https://doi.org/10.1088/1475-7516/2015/07/035"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/electroweak_phase_transition_and_its_cosmological_implications.md"
+    },
+    {
+      "id": "electroweakprecisiontestsandthehiggsmechanism",
+      "title": "Electroweak Precision Tests and the Higgs Mechanism",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "standardmodeleffectivefieldtheory",
+        "peskintakeuchiparameters",
+        "electroweaksymmetrybreaking",
+        "standardmodel",
+        "higgsmechanism"
+      ],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Peskin, M.E., & Takeuchi, T. (1992), 'Estimation of oblique electroweak corrections', https://doi.org/10.1103/PhysRevD.46.381",
+        "ALEPH, CDF, D0, DELPHI, L3, OPAL, SLD Collaborations (2006/2010), 'Precision Electroweak Measurements on the Z Resonance', https://doi.org/10.1016/j.physrep.2005.12.006; https://arxiv.org/abs/hep-ex/0509008; update: https://arxiv.org/abs/1012.2367",
+        "ATLAS Collaboration (2012), 'Observation of a new particle in the search for the SM Higgs boson', https://doi.org/10.1016/j.physletb.2012.08.020",
+        "CMS Collaboration (2012), 'Observation of a new boson at a mass of 125 GeV', https://doi.org/10.1016/j.physletb.2012.08.021",
+        "Brivio, I., & Trott, M. (2019), 'The Standard Model as an effective field theory', https://doi.org/10.1016/j.physrep.2018.11.002",
+        "Bellafronte, L., Dawson, S., & Giardino, P.P. (2023), 'The Importance of Flavor in SMEFT Electroweak Precision Fits', https://doi.org/10.1007/JHEP05(2023)208; https://arxiv.org/abs/2304.00029"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/electroweak_precision_tests_and_the_higgs_mechanism.md"
     },
     {
       "id": "electroweaksymmetrybreaking",
@@ -2571,10 +2599,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "freezeinproduction",
-        "cosmologicalperturbationtheory",
         "wimpfreezeout",
-        "darkmatterrelicabundance"
+        "darkmatterrelicabundance",
+        "freezeinproduction",
+        "cosmologicalperturbationtheory"
       ],
       "tags": [
         "1"
@@ -2645,9 +2673,9 @@
       "dependencies": [
         "latticeqcd",
         "thestandardmodel",
+        "quantumfieldtheory",
         "stronginteraction",
-        "gaugetheory",
-        "quantumfieldtheory"
+        "gaugetheory"
       ],
       "tags": [
         "1"
@@ -6498,6 +6526,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md"
     },
     {
+      "id": "thermodynamicuncertaintyrelationsasboundsonreliableinformationprocessinginneuralcircuitsandcosmicwebdynamics",
+      "title": "Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Horowitz, J. M. and Gingrich, T. R. (2017), 'Proof of the finite-time thermodynamic uncertainty relation for currents', https://doi.org/10.1103/PhysRevE.96.020103",
+        "Pietzonka, P., Barato, A. C., and Seifert, U. (2016), 'Universal bound on the efficiency of molecular motors', https://doi.org/10.1088/1742-5468/2016/12/124004",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/thermodynamic_uncertainty_relations_as_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md"
+    },
+    {
       "id": "topologicaldataanalysistdaofpersistenthomologyinthemorphologicalevolutionofneuralnetworksvscosmicfilamentarynetworks",
       "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
       "level": 3,
@@ -6518,6 +6565,11 @@
     }
   ],
   "edges": [
+    {
+      "source": "electroweaksymmetrybreaking",
+      "target": "electroweakprecisiontestsandthehiggsmechanism",
+      "type": "prerequisite"
+    },
     {
       "source": "cosmologicalperturbationtheory",
       "target": "theboltzmannequationincosmology",
@@ -7344,8 +7396,32 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "higgsmechanism",
+      "suggested_title": "Higgsmechanism",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "latticeqcd",
       "suggested_title": "Latticeqcd",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "peskintakeuchiparameters",
+      "suggested_title": "Peskintakeuchiparameters",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "standardmodel",
+      "suggested_title": "Standardmodel",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "standardmodeleffectivefieldtheory",
+      "suggested_title": "Standardmodeleffectivefieldtheory",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
