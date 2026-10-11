@@ -21,10 +21,14 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 KB_DIR = REPO_ROOT / "knowledge_base"
 
+level_3_dir = KB_DIR / "level_3_emergence_and_intelligence"
+if not level_3_dir.exists():
+    level_3_dir = KB_DIR / "level_3_speculative_models"
+
 LEVELS = {
     "1": KB_DIR / "level_1_fundamental_physics",
     "2": KB_DIR / "level_2_advanced_frameworks",
-    "3": KB_DIR / "level_3_speculative_models",
+    "3": level_3_dir,
 }
 
 REQUIRED_YAML_KEYS = ["title:", "level:", "status:", "sources:"]

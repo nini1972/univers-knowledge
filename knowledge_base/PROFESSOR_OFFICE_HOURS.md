@@ -12,32 +12,18 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261011-c03631` | L3 | **Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics** | Student Orchestrator | Level 3 topic 'Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261011-c03631` — Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics
-- **Timestamp**: `2026-10-11T14:24:58.637870+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Level 3 topic 'Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Scientific Rationale**: The Skeptic's Verification Score is 6/6, meeting the required score threshold, and the report appropriately distinguishes the established TUR from theoretical neural applications and the untested cosmic-web conjecture. However, substituting the stated mean and variance into the TUR gives \(v^2T/D \leq \Sigma_T\), not \(v^2T/D \leq 2\Sigma_T\); the report retains the erroneous factor of 2. It also does not justify inferring an information-rate or channel-capacity bound \(I_{\mathrm{channel}}\lesssim\Sigma_t/2\) from a bound on current precision alone, so the report needs correction before acceptance.
-- **Agent Blockers**:
-  * Researcher: Correct the steady-state conversion to \(v^2T/D \leq \Sigma_T\), with \(\Sigma_T\) dimensionless in nats, wherever the stated convention \(\mathrm{Var}(J_T)=2DT\) is used.
-  * Researcher: Remove or qualify the proposed \(I_{\mathrm{channel}}\lesssim\Sigma_t/2\) inequality unless an explicit operational model derives information rate from the bounded current precision.
-  * Math Physicist: Show the algebra from \(\mathrm{Var}(J_T)/\langle J_Tangle^2\geq 2/\Sigma_T\) using the report's definitions, and reconcile all displayed factor-of-two conventions.
-  * Math Physicist: Provide a formal derivation connecting a defined information measure or channel capacity to the TUR current observable, or state that no such general implication follows.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261011-c03631 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (20)
+## 📚 Answered Advisory Consultations (21)
+
+### ✅ `adv-20261011-c03631`: Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics
+- **Student Inquired**: Level 3 topic 'Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
+- **Professor Directive**: 💬 *"In the analysis of Thermodynamic Uncertainty Relations (TUR) for neural and cosmic-web dynamics: (1) Correct the steady-state precision conversion: starting from the canonical TUR Var(J_T) / <J_T>^2 >= 2 / Sigma_T with stationary current <J_T> = v T and diffusion Var(J_T) = 2 D T, the bound is strictly v^2 T / D <= Sigma_T (with dimensionless entropy production Sigma_T = sigma T / k_B in nats); remove the extraneous factor of 2. (2) Strictly enforce dimensional consistency: distinguish dimensionless entropy production Sigma_T from dissipated heat Q = T_env Delta S_tot (in Joules). (3) Withdraw the unjustified general channel capacity bound I_channel <= Sigma_t / 2; a bound on current precision does not imply an informational channel capacity without an explicit operational encoding/decoding model. (4) Clearly classify the core steady-state Markovian TUR as [MATHEMATICALLY_RIGOROUS], while designating neural precision trade-offs as [THEORETICAL] and cosmological mass-flow applications as [CONJECTURED]."*
+- **Answered At**: `2026-10-11T14:53:20.457524+00:00`
 
 ### ✅ `adv-20261011-ce787b`: Perturbative Reheating vs Parametric-Resonance Preheating
 - **Student Inquired**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
@@ -83,9 +69,4 @@
 - **Student Inquired**: Level 3 topic 'A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
 - **Professor Directive**: 💬 *"In stochastic thermodynamics, write the Markov jump process entropy production rate over unordered pairs {i,j} as dS_tot/dt = sum_{i < j} (p_i k_ij - p_j k_ji) ln(p_i k_ij / (p_j k_ji)), removing the erroneous factor of 2. In continuous Langevin dynamics, include both the system Shannon entropy change and environmental heat dissipation: dS_tot/dt = -d<ln p(x,t)>/dt + dQ_diss/(T dt). When testing IIT against mechanistic physicalism in multiscale neural systems, constrain circuit-level entropy production within biological metabolic limits (~20 W/kg or ~10^-9 W per cortical neuron; Attwell & Laughlin 2001). For IIT 4.0, define Phi using the canonical Earth Mover's Distance (EMD) over the system's transition probability matrix across the MIP, validating against small exactly solvable networks rather than ad-hoc heuristics."*
 - **Answered At**: `2026-10-04T10:52:58.124603+00:00`
-
-### ✅ `adv-20260930-720e68`: Pre- vs Post-Inflationary QCD Axion Cosmology
-- **Student Inquired**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
-- **Professor Directive**: 💬 *"In QCD axion cosmology (di Cortona et al. 2016, JHEP 01 (2016) 034), enforce the exact relation m_a * f_a approx 5.7 * 10^-6 eV * 10^12 GeV = 5.7 * 10^6 eV*GeV. For f_a = 2.6 * 10^11 GeV, m_a must be approx 21.9 micro-eV; conversely, m_a = 68 micro-eV corresponds to f_a approx 8.4 * 10^10 GeV. Reconcile this pair consistently across the report. For cosmic strings, the string tension logarithm must be dimensionless: mu = 2 pi f_a^2 ln(t / delta_c), where delta_c ~ 1/m_r ~ 1/f_a is the string core width. In pre-inflationary scenarios (H_inf < 2 pi f_I), distinguish f_I from f_a = f_I / N_DW when calculating isocurvature perturbations delta S_a_gamma = 2 H_inf / (2 pi f_I theta_i), and enforce Planck isocurvature limits H_inf <= 10^9 GeV * (f_I / 10^12 GeV)."*
-- **Answered At**: `2026-10-04T10:52:49.483441+00:00`
 
