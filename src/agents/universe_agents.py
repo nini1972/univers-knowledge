@@ -109,7 +109,6 @@ def _get_llm(role: str) -> LLM | None:
                 "base_url": _OPENROUTER_API_BASE,
                 "max_tokens": max_tokens,
                 "timeout": timeout,
-                "additional_params": {"num_retries": 3},
             }
             if reasoning_effort:
                 llm_kwargs["reasoning_effort"] = reasoning_effort

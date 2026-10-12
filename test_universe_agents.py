@@ -102,6 +102,7 @@ class TestUniverseAgentsOpenRouterModels(unittest.TestCase):
         self.assertEqual(llm.kwargs.get("timeout"), 180.0)
         self.assertEqual(llm.kwargs.get("reasoning_effort"), "low")
         self.assertEqual(llm.kwargs.get("model"), "openrouter/~z-ai/glm-flash-latest")
+        self.assertNotIn("additional_params", llm.kwargs)
 
     def test_get_llm_custom_reasoning_effort_override(self):
         module = _load_module()
