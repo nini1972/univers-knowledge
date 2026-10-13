@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-11T18:36:45.314529+00:00",
+  "updated_at": "2026-10-13T02:31:00.880732+00:00",
   "stats": {
-    "total_nodes": 318,
-    "level_1_count": 139,
+    "total_nodes": 320,
+    "level_1_count": 140,
     "level_2_count": 129,
-    "level_3_count": 50,
+    "level_3_count": 51,
     "total_edges": 162,
     "frontier_count": 11
   },
@@ -783,10 +783,10 @@
       "math_score": "4/4",
       "dependencies": [
         "standardmodeleffectivefieldtheory",
-        "peskintakeuchiparameters",
-        "electroweaksymmetrybreaking",
+        "higgsmechanism",
         "standardmodel",
-        "higgsmechanism"
+        "peskintakeuchiparameters",
+        "electroweaksymmetrybreaking"
       ],
       "tags": [
         "1"
@@ -1781,6 +1781,27 @@
       "path": "knowledge_base/level_1_fundamental_physics/non_standard_interactions_and_neutrino_decay_lifetime_bounds_at_dune.md"
     },
     {
+      "id": "nuclearphysicsandthestrongnuclearforce",
+      "title": "Nuclear Physics and the Strong Nuclear Force",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "E. Epelbaum, H.-W. Hammer, U.-G. Meißner (2009), 'Modern theory of nuclear forces', https://doi.org/10.1103/revmodphys.81.1773",
+        "E. Epelbaum, H. Krebs, P. Reinert (2020), 'High-Precision Nuclear Forces From Chiral EFT', https://doi.org/10.3389/fphy.2020.00098",
+        "U. van Kolck (2020), 'The Problem of Renormalization of Chiral Nuclear Forces', https://doi.org/10.3389/fphy.2020.00079",
+        "N. Brambilla et al. (2014), 'QCD and strongly coupled gauge theories: challenges and perspectives', https://doi.org/10.1140/epjc/s10052-014-2981-5",
+        "M. Piarulli et al. (2015), 'Minimally nonlocal NN potentials with chiral TPE including Δ resonances', https://doi.org/10.1103/physrevc.91.024003"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/nuclear_physics_and_the_strong_nuclear_force.md"
+    },
+    {
       "id": "whatspecificnumericalbenchmarksorsimulationscanbeperformedtoenhancethemathematicalintegrityverificationofneutrinodecayeffectsincosmologicalboltzmanncodes",
       "title": "Numerical Benchmarks for Neutrino Decay in Cosmological Boltzmann Codes",
       "level": 1,
@@ -2599,9 +2620,9 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "wimpfreezeout",
         "darkmatterrelicabundance",
         "freezeinproduction",
+        "wimpfreezeout",
         "cosmologicalperturbationtheory"
       ],
       "tags": [
@@ -2671,11 +2692,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "latticeqcd",
+        "gaugetheory",
         "thestandardmodel",
         "quantumfieldtheory",
         "stronginteraction",
-        "gaugetheory"
+        "latticeqcd"
       ],
       "tags": [
         "1"
@@ -5690,6 +5711,25 @@
         "Berry et al. (2020), 'Title not supplied in the research report', https://doi.org/10.1007/s41468-020-00048-w"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md"
+    },
+    {
+      "id": "apreregisteredcrossdomaintestofthermodynamicuncertaintyboundsonreliableinformationprocessinginneuralcircuitsandcosmicwebdynamics",
+      "title": "A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONJECTURED",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Barato, A. C. & Seifert, U. (2015), 'Thermodynamic uncertainty relation for biomolecular processes', https://doi.org/10.1103/PhysRevLett.114.158101",
+        "Gingrich, T. R., et al. (2016), 'Dissipation Bounds All Steady-State Current Fluctuations', https://doi.org/10.1103/PhysRevLett.116.120601",
+        "Attwell, D. & Laughlin, S. B. (2001), 'An energy budget for signaling in the grey matter of the brain', https://doi.org/10.1097/00004647-200110000-00001"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md"
     },
     {
       "id": "apreregisteredcrossscalecausalinterventiontestofintegratedinformationtheoryandphysicalistemergenceundermatchedneuralmodels",

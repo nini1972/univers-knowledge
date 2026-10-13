@@ -12,6 +12,7 @@ graph TD
     quantum_electrodynamics_qed["Quantum Electrodynamics (QED) — Verified Knowledge Summary"]:::theoretical
     next_generation_beta_decay_endpoint_spectrometry["Next-Generation Beta Decay Endpoint Spectrometry Beyond KATRIN"]:::theoretical
     quantum_entanglement["Quantum Entanglement"]:::verified
+    nuclear_physics_and_the_strong_nuclear_force["Nuclear Physics and the Strong Nuclear Force"]:::verified
     dark_matter["Dark Matter"]:::theoretical
     distinguishing_higgs_portal_from_sterile_neutrino_dark_matter["Distinguishing Higgs Portal from Sterile Neutrino Dark Matter"]:::theoretical
     experimental_signatures_distinguishing_causal_sets_from_tensor_networks["Experimental Signatures Distinguishing Causal Sets from Tensor Networks"]:::theoretical
@@ -298,6 +299,7 @@ graph TD
     operational_criteria_for_cosmic_computation_a_falsifiable_energylatencyerror_benchmark_comparing_cosmicweb_selforganization_with_biological_neural_information_processing["Operational Criteria for Cosmic Computation: A Falsifiable Energy-Latency-Error Benchmark Comparing Cosmic-Web Self-Organization with Biological Neural Information Processing"]:::theoretical
     a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks["A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks"]:::theoretical
     quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation["Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation"]:::theoretical
+    a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics["A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics"]:::theoretical
     landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding["Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding"]:::theoretical
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
     quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures["Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures"]:::verified
@@ -644,6 +646,7 @@ graph TD
 - [Non-Markovian Memory Kernels in Non-Adiabatic Neutrino Matter Propagation](level_1_fundamental_physics/non_markovian_memory_kernels_in_neutrino_matter_propagation.md) [THEORETICAL]
 - [Non-Standard Early Cosmologies and Dark Matter Relic Abundances](level_1_fundamental_physics/non_standard_early_cosmologies_and_dark_matter_relic_abundances.md) [THEORETICAL]
 - [Non-Standard Interactions and Neutrino Decay Lifetime Bounds at DUNE](level_1_fundamental_physics/non_standard_interactions_and_neutrino_decay_lifetime_bounds_at_dune.md) [VERIFIED]
+- [Nuclear Physics and the Strong Nuclear Force](level_1_fundamental_physics/nuclear_physics_and_the_strong_nuclear_force.md) [VERIFIED]
 - [Numerical Benchmarks for Neutrino Decay in Cosmological Boltzmann Codes](level_1_fundamental_physics/numerical_benchmarks_for_neutrino_decay_in_boltzmann_codes.md) [THEORETICAL]
 - [Observational Signatures of Quantum Extremal Surfaces and Black Hole Evaporation](level_1_fundamental_physics/observational_signatures_of_quantum_extremal_surfaces_and_black_hole_evaporation.md) [THEORETICAL]
 - [Observational Signatures Unique to Superfluid Dark Matter](level_1_fundamental_physics/observational_signatures_unique_to_superfluid_dark_matter.md) [THEORETICAL]
@@ -836,6 +839,7 @@ graph TD
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization](level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md) [THEORETICAL]
+- [A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics](level_3_emergence_and_intelligence/a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md) [THEORETICAL]
 - [A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models](level_3_emergence_and_intelligence/a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models.md) [THEORETICAL]
 - [A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
 - [A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations](level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md) [THEORETICAL]
