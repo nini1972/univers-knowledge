@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-13T02:31:00.880732+00:00",
+  "updated_at": "2026-10-14T02:10:52.053189+00:00",
   "stats": {
-    "total_nodes": 320,
-    "level_1_count": 140,
+    "total_nodes": 322,
+    "level_1_count": 141,
     "level_2_count": 129,
-    "level_3_count": 51,
+    "level_3_count": 52,
     "total_edges": 162,
     "frontier_count": 11
   },
@@ -783,10 +783,10 @@
       "math_score": "4/4",
       "dependencies": [
         "standardmodeleffectivefieldtheory",
-        "higgsmechanism",
+        "electroweaksymmetrybreaking",
         "standardmodel",
-        "peskintakeuchiparameters",
-        "electroweaksymmetrybreaking"
+        "higgsmechanism",
+        "peskintakeuchiparameters"
       ],
       "tags": [
         "1"
@@ -2620,10 +2620,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
+        "cosmologicalperturbationtheory",
         "darkmatterrelicabundance",
         "freezeinproduction",
-        "wimpfreezeout",
-        "cosmologicalperturbationtheory"
+        "wimpfreezeout"
       ],
       "tags": [
         "1"
@@ -2641,6 +2641,27 @@
         "C. M. Will (2014), 'The Confrontation between General Relativity and Experiment', https://doi.org/10.12942/lrr-2014-4"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/the_boltzmann_equation_in_cosmology.md"
+    },
+    {
+      "id": "thecosmicdistanceladderandhubbleconstanttension",
+      "title": "The Cosmic Distance Ladder and Hubble Constant Tension",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s⁻¹ Mpc⁻¹ Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Di Valentino, E., et al. (2021), 'In the realm of the Hubble tension—a review of solutions', https://doi.org/10.1088/1361-6382/ac086d",
+        "Abbott, B. P., et al. (2017), 'A gravitational-wave standard siren measurement of the Hubble constant', https://doi.org/10.1038/nature24471",
+        "Freedman, W. L., et al. (2021), 'The Carnegie-Chicago Hubble Program. VIII. An Independent Determination of the Hubble Constant Based on the Tip of the Red Giant Branch', https://doi.org/10.1038/s41550-021-01382-7"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/the_cosmic_distance_ladder_and_hubble_constant_tension.md"
     },
     {
       "id": "thehiggsboson",
@@ -2692,11 +2713,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "gaugetheory",
-        "thestandardmodel",
-        "quantumfieldtheory",
         "stronginteraction",
-        "latticeqcd"
+        "quantumfieldtheory",
+        "thestandardmodel",
+        "latticeqcd",
+        "gaugetheory"
       ],
       "tags": [
         "1"
@@ -5819,6 +5840,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems.md"
     },
     {
+      "id": "apreregisteredmultiscaleperturbationaltestofintegratedinformationtheoryandmechanisticphysicalismacrossneuralstates",
+      "title": "A Preregistered Multiscale Perturbational Test of Integrated Information Theory and Mechanistic Physicalism Across Neural States",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Kleiner, J. and Tull, S. (2021), 'The mathematical structure of integrated information theory', https://doi.org/10.3389/fams.2020.602973",
+        "Oizumi, M., Amari, S., Fujii, T., et al. (2016), 'Measuring Integrated Information From the Decoding Perspective', https://doi.org/10.1371/journal.pcbi.1004654",
+        "Mediano, P. A. M., Rosas, F. E., Shanahan, M., et al. (2022), 'Integrated information as a common signature of dynamical and information-processing complexity', https://doi.org/10.1063/5.0063384"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_multiscale_perturbational_test_of_integrated_information_theory_and_mechanistic_physicalism_across_neural_states.md"
+    },
+    {
       "id": "ascaleexplicitthermodynamiccostbenchmarkforcausalinformationprocessinginneuralsystemsandcosmicwebnetworks",
       "title": "A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks",
       "level": 3,
@@ -6085,7 +6125,7 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "macrolevelcausalautonomywithoutphenomenalcommitmentaninterventionalfalsificationtestofintegratedinformationtheoryversusmechanisticphysicalisminrecurrentneuralsy"
+        "apreregisteredmultiscaleperturbationaltestofintegratedinformationtheoryandmechanisticphysicalismacrossneuralstates"
       ],
       "tags": [
         "3"
@@ -6247,7 +6287,7 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "identifiabilitylimitsofpsychophysicalbridgelawsanadversarialtestofintegratedinformationtheoryversusmechanisticphysicalism"
+        "apreregisteredmultiscaleperturbationaltestofintegratedinformationtheoryandmechanisticphysicalismacrossneuralstates"
       ],
       "tags": [
         "3"
@@ -7306,12 +7346,12 @@
       "type": "component_theory"
     },
     {
-      "source": "macrolevelcausalautonomywithoutphenomenalcommitmentaninterventionalfalsificationtestofintegratedinformationtheoryversusmechanisticphysicalisminrecurrentneuralsy",
+      "source": "apreregisteredmultiscaleperturbationaltestofintegratedinformationtheoryandmechanisticphysicalismacrossneuralstates",
       "target": "identifiabilitylimitsofpsychophysicalbridgelawsanadversarialtestofintegratedinformationtheoryversusmechanisticphysicalism",
       "type": "component_theory"
     },
     {
-      "source": "identifiabilitylimitsofpsychophysicalbridgelawsanadversarialtestofintegratedinformationtheoryversusmechanisticphysicalism",
+      "source": "apreregisteredmultiscaleperturbationaltestofintegratedinformationtheoryandmechanisticphysicalismacrossneuralstates",
       "target": "macrolevelcausalautonomywithoutphenomenalcommitmentaninterventionalfalsificationtestofintegratedinformationtheoryversusmechanisticphysicalisminrecurrentneuralsy",
       "type": "component_theory"
     },
