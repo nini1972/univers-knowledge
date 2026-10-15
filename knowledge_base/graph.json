@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-14T02:10:52.053189+00:00",
+  "updated_at": "2026-10-15T01:56:01.728789+00:00",
   "stats": {
-    "total_nodes": 322,
-    "level_1_count": 141,
+    "total_nodes": 324,
+    "level_1_count": 142,
     "level_2_count": 129,
-    "level_3_count": 52,
+    "level_3_count": 53,
     "total_edges": 162,
     "frontier_count": 11
   },
@@ -782,11 +782,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "higgsmechanism",
+        "peskintakeuchiparameters",
         "standardmodeleffectivefieldtheory",
         "electroweaksymmetrybreaking",
-        "standardmodel",
-        "higgsmechanism",
-        "peskintakeuchiparameters"
+        "standardmodel"
       ],
       "tags": [
         "1"
@@ -1974,6 +1974,26 @@
       "path": "knowledge_base/level_1_fundamental_physics/quantum_chromodynamics_qcd.md"
     },
     {
+      "id": "quantumchromodynamicsqcdphasediagramandquarkgluonplasma",
+      "title": "Quantum Chromodynamics (QCD) Phase Diagram and Quark–Gluon Plasma",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Borsanyi, S., et al. (2014), 'Full result for the QCD equation of state with 2+1 flavors', https://doi.org/10.1016/j.physletb.2014.01.007",
+        "Bazavov, A., et al. (2017), 'Equation of state in (2+1)-flavor QCD', https://doi.org/10.1103/PhysRevD.95.054504",
+        "Stephanov, M. A. (2009), 'Non-Gaussian fluctuations near the QCD critical point', https://doi.org/10.1103/PhysRevLett.102.032301",
+        "Parotto, P., et al. (2020), 'QCD equation of state and the critical point', https://doi.org/10.1103/PhysRevC.101.034901"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/quantum_chromodynamics_qcd_phase_diagram_and_quarkgluon_plasma.md"
+    },
+    {
       "id": "quantumdecoherence",
       "title": "Quantum Decoherence",
       "level": 1,
@@ -2620,10 +2640,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "cosmologicalperturbationtheory",
-        "darkmatterrelicabundance",
         "freezeinproduction",
-        "wimpfreezeout"
+        "wimpfreezeout",
+        "cosmologicalperturbationtheory",
+        "darkmatterrelicabundance"
       ],
       "tags": [
         "1"
@@ -2713,11 +2733,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "stronginteraction",
-        "quantumfieldtheory",
+        "gaugetheory",
         "thestandardmodel",
+        "stronginteraction",
         "latticeqcd",
-        "gaugetheory"
+        "quantumfieldtheory"
       ],
       "tags": [
         "1"
@@ -6077,6 +6097,28 @@
         "O'Reilly-Shah, V., Selvitella, C., & Schurger, A. (2022), 'Plasticity and Networks', Neurosci. Conscious. 2022(1):niag027, https://doi.org/10.1093/nc/niag027"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md"
+    },
+    {
+      "id": "empiricaltestsofquantumcoherenceadvantagesoverclassicalsurrogatemodelsinbiologicalinformationprocessing",
+      "title": "Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_FLAWED",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Engel, G. S., et al. (2007), 'Evidence for wavelike energy transfer through quantum coherence in photosynthetic systems', https://doi.org/10.1038/nature05678",
+        "Nalbach, P., Braun, D., & Thorwart, M. (2011), 'Exciton transfer dynamics and quantumness of energy transfer in the Fenna–Matthews–Olson complex', https://doi.org/10.1103/PhysRevE.84.041926",
+        "Tiwari, V., Peters, W. K., & Jonas, D. M. (2013), 'Electronic resonance with anticorrelated pigment vibrations drives photosynthetic energy transfer outside the adiabatic framework', https://doi.org/10.1073/pnas.1211157110",
+        "Cao, J., et al. (2020), 'Quantum biology revisited', https://doi.org/10.1126/sciadv.aaz4888",
+        "Scholes, G. D., et al. (2017), 'Using coherence to enhance function in chemical and biophysical systems', https://doi.org/10.1038/nature21425",
+        "Streltsov, A., Adesso, G., & Plenio, M. B. (2017), 'Colloquium: Quantum coherence as a resource', https://doi.org/10.1103/RevModPhys.89.041003"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing.md"
     },
     {
       "id": "entropyproductionratesinneuralinformationprocessingvsgravitationalstructureformationacomparativethermodynamicanalysis",

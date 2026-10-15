@@ -31,6 +31,7 @@ graph TD
     quantum_gravity["Quantum Gravity"]:::theoretical
     dark_acoustic_oscillations_and_dissipation_in_dark_sector_models["Dark Acoustic Oscillations and Dissipation in Complex Dark-Sector Models"]:::theoretical
     hydrodynamic_simulations_baryonic_feedback_sfdm_sidm["Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM"]:::theoretical
+    quantum_chromodynamics_qcd_phase_diagram_and_quarkgluon_plasma["Quantum Chromodynamics (QCD) Phase Diagram and Quark–Gluon Plasma"]:::verified
     neutrino_anomalies_and_sterile_neutrino_hypothesis["Neutrino Anomalies and Sterile Neutrino Hypothesis"]:::theoretical
     tensor_networks_in_dynamical_lorentzian_spacetimes["Tensor Networks in Dynamical Lorentzian Spacetimes"]:::theoretical
     minimum_viable_modifications_to_general_relativity["Minimum Viable Modifications to General Relativity"]:::theoretical
@@ -319,6 +320,7 @@ graph TD
     a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure["A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure"]:::theoretical
     a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems["A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems"]:::theoretical
     dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks["Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks"]:::theoretical
+    empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing["Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing"]:::theoretical
     a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations["A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations"]:::theoretical
     causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness["Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness"]:::theoretical
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
@@ -657,6 +659,7 @@ graph TD
 - [Planck Epoch and the Initial Conditions for the Universe](level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md) [THEORETICAL]
 - [Primordial Gravitational Waves](level_1_fundamental_physics/primordial_gravitational_waves.md) [THEORETICAL]
 - [Primordial Nucleosynthesis and Light-Element Abundances](level_1_fundamental_physics/primordial_nucleosynthesis_and_lightelement_abundances.md) [VERIFIED]
+- [Quantum Chromodynamics (QCD) Phase Diagram and Quark–Gluon Plasma](level_1_fundamental_physics/quantum_chromodynamics_qcd_phase_diagram_and_quarkgluon_plasma.md) [VERIFIED]
 - [Quantum Chromodynamics (QCD) — Verified Knowledge with Theoretical Qualifications](level_1_fundamental_physics/quantum_chromodynamics_qcd.md) [THEORETICAL]
 - [Quantum Decoherence](level_1_fundamental_physics/quantum_decoherence.md) [VERIFIED]
 - [Quantum Electrodynamics (QED) — Verified Knowledge Summary](level_1_fundamental_physics/quantum_electrodynamics_qed.md) [THEORETICAL]
@@ -859,6 +862,7 @@ graph TD
 - [Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure.md) [THEORETICAL]
 - [Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md) [THEORETICAL]
+- [Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing](level_3_emergence_and_intelligence/empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]
 - [Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism](level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md) [THEORETICAL]
