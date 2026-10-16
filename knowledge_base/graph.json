@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-15T01:56:01.728789+00:00",
+  "updated_at": "2026-10-16T01:26:35.005721+00:00",
   "stats": {
-    "total_nodes": 324,
-    "level_1_count": 142,
+    "total_nodes": 326,
+    "level_1_count": 143,
     "level_2_count": 129,
-    "level_3_count": 53,
+    "level_3_count": 54,
     "total_edges": 162,
-    "frontier_count": 11
+    "frontier_count": 17
   },
   "nodes": [
     {
@@ -782,11 +782,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "higgsmechanism",
-        "peskintakeuchiparameters",
-        "standardmodeleffectivefieldtheory",
+        "standardmodel",
         "electroweaksymmetrybreaking",
-        "standardmodel"
+        "standardmodeleffectivefieldtheory",
+        "higgsmechanism",
+        "peskintakeuchiparameters"
       ],
       "tags": [
         "1"
@@ -817,6 +817,30 @@
         "Standard scientific consensus"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/electroweak_symmetry_breaking.md"
+    },
+    {
+      "id": "electroweaktheoryofthestandardmodel",
+      "title": "Electroweak Theory of the Standard Model",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "S. Dawson & H. Haber (1996), 'Electroweak Symmetry Breaking and Physics Beyond the Standard Model', https://arxiv.org/abs/hep-ph/9604354",
+        "P. Langacker (2003), 'Structure of the Standard Model', https://arxiv.org/abs/hep-ph/0304186",
+        "G. Aad et al. (ATLAS Collaboration) (2012), 'Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC', https://doi.org/10.1016/j.physletb.2012.08.020",
+        "S. Chatrchyan et al. (CMS Collaboration) (2012), 'Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC', https://doi.org/10.1016/j.physletb.2012.08.021",
+        "M. E. Peskin & T. Takeuchi (1992), 'Estimation of oblique electroweak corrections', https://doi.org/10.1103/physrevd.46.381",
+        "N. Arkani-Hamed, A. G. Cohen, E. Katz et al. (2002), 'The Littlest Higgs', https://doi.org/10.1088/1126-6708/2002/07/034",
+        "ALEPH, CDF, D0, DELPHI et al. (2010), 'Precision Electroweak Measurements and Constraints on the Standard Model', https://arxiv.org/abs/1012.2367",
+        "CMS Collaboration (2025), 'Combined effective field theory interpretation of Higgs boson, electroweak vector boson, top quark, and multijet measurements', https://doi.org/10.1140/epjc/s10052-025-14997-y"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/electroweak_theory_of_the_standard_model.md"
     },
     {
       "id": "whichopenquestionsandpotentialfalsificationtestsshouldbeprioritizedtomovetheframeworktowardsempiricalverification",
@@ -2641,9 +2665,9 @@
       "math_score": "2/4",
       "dependencies": [
         "freezeinproduction",
-        "wimpfreezeout",
         "cosmologicalperturbationtheory",
-        "darkmatterrelicabundance"
+        "darkmatterrelicabundance",
+        "wimpfreezeout"
       ],
       "tags": [
         "1"
@@ -2733,11 +2757,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "gaugetheory",
         "thestandardmodel",
+        "quantumfieldtheory",
         "stronginteraction",
         "latticeqcd",
-        "quantumfieldtheory"
+        "gaugetheory"
       ],
       "tags": [
         "1"
@@ -6610,6 +6634,32 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md"
     },
     {
+      "id": "robustnessofcosmicwebpersistenthomologytoobservationalselectioneffectsandbaryonicfeedback",
+      "title": "Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "persistenthomology",
+        "cosmicweb",
+        "observationalselectioneffects",
+        "baryonicfeedback",
+        "topologicaldataanalysis",
+        "bottleneckdistance"
+      ],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Pranav et al. (2016), 'The topology of the cosmic web in terms of persistent Betti numbers', https://doi.org/10.1093/mnras/stw2862",
+        "Sousbie, Pichon & Kawahara (2011), 'The persistent cosmic web and its filamentary structure - I. Theory and implementation', https://doi.org/10.1111/j.1365-2966.2011.18395.x",
+        "Carlsson (2014), 'Topology and data', https://doi.org/10.1017/S0962492913000051"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/robustness_of_cosmicweb_persistent_homology_to_observational_selection_effects_and_baryonic_feedback.md"
+    },
+    {
       "id": "spectralfractaldimensionconvergencequantifyingselfsimilarityincosmicwebvoidsandbiologicalneuralnetworktopology",
       "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
       "level": 3,
@@ -7500,6 +7550,24 @@
   ],
   "frontier": [
     {
+      "id": "baryonicfeedback",
+      "suggested_title": "Baryonicfeedback",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "bottleneckdistance",
+      "suggested_title": "Bottleneckdistance",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "cosmicweb",
+      "suggested_title": "Cosmicweb",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "darkmatterrelicabundance",
       "suggested_title": "Darkmatterrelicabundance",
       "target_level": 1,
@@ -7530,6 +7598,18 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "observationalselectioneffects",
+      "suggested_title": "Observationalselectioneffects",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "persistenthomology",
+      "suggested_title": "Persistenthomology",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "peskintakeuchiparameters",
       "suggested_title": "Peskintakeuchiparameters",
       "target_level": 1,
@@ -7556,6 +7636,12 @@
     {
       "id": "thestandardmodel",
       "suggested_title": "Thestandardmodel",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "topologicaldataanalysis",
+      "suggested_title": "Topologicaldataanalysis",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },

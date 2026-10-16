@@ -58,6 +58,7 @@ graph TD
     neutrino_decay_lifetime_limits_and_systematic_uncertainties["Neutrino Decay Lifetime Limits and Systematic Uncertainties"]:::theoretical
     neutrino_flavor_physics["Neutrino Flavor Physics"]:::verified
     quantum_vacuum_polarization["Quantum Vacuum Polarization"]:::verified
+    electroweak_theory_of_the_standard_model["Electroweak Theory of the Standard Model"]:::verified
     neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics["Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics"]:::verified
     matterantimatter_asymmetry["Matter-Antimatter Asymmetry"]:::theoretical
     quantum_decoherence["Quantum Decoherence"]:::verified
@@ -317,6 +318,7 @@ graph TD
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
     quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence["Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence"]:::theoretical
+    robustness_of_cosmicweb_persistent_homology_to_observational_selection_effects_and_baryonic_feedback["Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback"]:::theoretical
     a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure["A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure"]:::theoretical
     a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems["A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems"]:::theoretical
     dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks["Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks"]:::theoretical
@@ -371,6 +373,7 @@ graph TD
     gravitational_wave_astronomy --- resolving_kerr_vs_alternative_black_hole_degeneracies
     quantum_gravity --- covariant_quantum_measure_construction_in_causal_set_theory
     dark_matter --- low_mass_axion_dark_matter_detection_strategies
+    electroweak_symmetry_breaking --- electroweak_theory_of_the_standard_model
     neutrino_oscillations --- neutrino_sector_anomalies_and_their_implications_for_beyond_standard_model_physics
     cp_violation --- matterantimatter_asymmetry
     big_bang_nucleosynthesis --- matterantimatter_asymmetry
@@ -601,6 +604,7 @@ graph TD
 - [Electroweak Phase Transition and Its Cosmological Implications](level_1_fundamental_physics/electroweak_phase_transition_and_its_cosmological_implications.md) [VERIFIED]
 - [Electroweak Precision Tests and the Higgs Mechanism](level_1_fundamental_physics/electroweak_precision_tests_and_the_higgs_mechanism.md) [VERIFIED]
 - [Electroweak Symmetry Breaking (EWSB)](level_1_fundamental_physics/electroweak_symmetry_breaking.md) [THEORETICAL]
+- [Electroweak Theory of the Standard Model](level_1_fundamental_physics/electroweak_theory_of_the_standard_model.md) [VERIFIED]
 - [Empirical Falsification Priorities for Theoretical Physics Extensions](level_1_fundamental_physics/empirical_falsification_priorities_for_theoretical_physics.md) [THEORETICAL]
 - [Empirical Tests of Spacetime Discreteness and Entanglement-Geometry Duality](level_1_fundamental_physics/empirical_tests_of_spacetime_discreteness_and_entanglement_geometry_duality.md) [THEORETICAL]
 - [Experimental Advancements in Neutrino Decay Constraints](level_1_fundamental_physics/experimental_advancements_in_neutrino_decay_constraints.md) [VERIFIED]
@@ -888,6 +892,7 @@ graph TD
 - [Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence](level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md) [THEORETICAL]
 - [Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing](level_3_emergence_and_intelligence/quantum_thermodynamic_speed_limits_and_energetic_advantage_in_biological_sensing_a_falsifiable_benchmarkrelative_test_of_coherenceenhanced_information_processing.md) [THEORETICAL]
 - [Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure](level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md) [THEORETICAL]
+- [Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback](level_3_emergence_and_intelligence/robustness_of_cosmicweb_persistent_homology_to_observational_selection_effects_and_baryonic_feedback.md) [THEORETICAL]
 - [Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](level_3_emergence_and_intelligence/spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]
 - [Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics](level_3_emergence_and_intelligence/thermodynamic_uncertainty_relations_as_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md) [VERIFIED]
