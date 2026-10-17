@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-16T01:26:35.005721+00:00",
+  "updated_at": "2026-10-17T01:48:42.625385+00:00",
   "stats": {
-    "total_nodes": 326,
-    "level_1_count": 143,
+    "total_nodes": 328,
+    "level_1_count": 144,
     "level_2_count": 129,
-    "level_3_count": 54,
+    "level_3_count": 55,
     "total_edges": 162,
     "frontier_count": 17
   },
@@ -357,6 +357,25 @@
         "G. Giesen, J. Lesgourgues, B. Audren, Y. Ali-Haïmoud (2012), 'CMB photons shedding light on dark matter', https://doi.org/10.1088/1475-7516/2012/12/008"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cosmic_recombination_and_photon_decoupling.md"
+    },
+    {
+      "id": "cosmicreionizationandtheformationofthefirststars",
+      "title": "Cosmic Reionization and the Formation of the First Stars",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Madau, P., Haardt, F., & Rees, M. J. (1999), 'Radiative transfer in a clumpy universe. III. The nature of cosmological ionizing sources', https://doi.org/10.1086/307078",
+        "Madau, P. & Dickinson, M. (2014), 'Cosmic Star-Formation History', https://doi.org/10.1146/annurev-astro-081811-125615",
+        "Zaroubi, S. (2012), 'The Epoch of Reionization', https://arxiv.org/abs/1206.0267"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_reionization_and_the_formation_of_the_first_stars.md"
     },
     {
       "id": "cosmicstructureformationandgrowthoflargescalestructure",
@@ -782,11 +801,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "standardmodel",
-        "electroweaksymmetrybreaking",
         "standardmodeleffectivefieldtheory",
         "higgsmechanism",
-        "peskintakeuchiparameters"
+        "peskintakeuchiparameters",
+        "electroweaksymmetrybreaking",
+        "standardmodel"
       ],
       "tags": [
         "1"
@@ -2664,9 +2683,9 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
+        "darkmatterrelicabundance",
         "freezeinproduction",
         "cosmologicalperturbationtheory",
-        "darkmatterrelicabundance",
         "wimpfreezeout"
       ],
       "tags": [
@@ -2757,11 +2776,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "thestandardmodel",
-        "quantumfieldtheory",
         "stronginteraction",
+        "quantumfieldtheory",
         "latticeqcd",
-        "gaugetheory"
+        "gaugetheory",
+        "thestandardmodel"
       ],
       "tags": [
         "1"
@@ -6164,6 +6183,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md"
     },
     {
+      "id": "finitetimethermodynamiccostoferrorcorrectioninneuralcircuitsanempiricaltestofreliabilitydissipationbounds",
+      "title": "Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "2/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Hopfield, J. J. (1974), 'Kinetic Proofreading: A New Mechanism for Reducing Errors in Biosynthetic Processes Requiring High Specificity', https://doi.org/10.1073/pnas.71.10.4135",
+        "Sartori, P. & Pigolotti, S. (2015), 'Thermodynamics of Error Correction', https://doi.org/10.1103/physrevx.5.041039",
+        "Barato, A. C. & Seifert, U. (2015), 'Thermodynamic Uncertainty Relation for Biomolecular Processes', https://doi.org/10.1103/PhysRevLett.114.158101"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md"
+    },
+    {
       "id": "formalizingintegratedinformationtheorywithinspacetimegeometry",
       "title": "Formalizing Integrated Information Theory (IIT) within Spacetime Geometry",
       "level": 3,
@@ -6642,12 +6680,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "persistenthomology",
         "cosmicweb",
-        "observationalselectioneffects",
+        "bottleneckdistance",
         "baryonicfeedback",
         "topologicaldataanalysis",
-        "bottleneckdistance"
+        "observationalselectioneffects",
+        "persistenthomology"
       ],
       "tags": [
         "3"

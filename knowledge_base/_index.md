@@ -113,6 +113,7 @@ graph TD
     simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors["Simulation Studies and Sensitivity Limits for Neutrino Decay Detectors"]:::verified
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
     cosmic_neutrino_background["Cosmic Neutrino Background"]:::theoretical
+    cosmic_reionization_and_the_formation_of_the_first_stars["Cosmic Reionization and the Formation of the First Stars"]:::verified
     bayesian_evidence_analysis_neutrino_decay_hypothesis["Joint Bayesian Evidence Analysis of the Neutrino Decay Hypothesis"]:::theoretical
     astrophysical_neutrino_flavor_and_spectral_resolution_enhancement["Astrophysical Neutrino Flavor and Spectral Resolution Enhancement"]:::theoretical
     distinguishing_freeze_in_and_freeze_out_dark_matter_mechanisms["Distinguishing Freeze-In and Freeze-Out Dark Matter Mechanisms"]:::theoretical
@@ -313,6 +314,7 @@ graph TD
     landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments["Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
     a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems["A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems"]:::theoretical
+    finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds["Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds"]:::theoretical
     entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis["Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis"]:::verified
     spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology["Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology"]:::theoretical
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
@@ -581,6 +583,7 @@ graph TD
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
 - [Cosmic Ray Physics](level_1_fundamental_physics/cosmic_ray_physics.md) [THEORETICAL]
 - [Cosmic Recombination and Photon Decoupling](level_1_fundamental_physics/cosmic_recombination_and_photon_decoupling.md) [VERIFIED]
+- [Cosmic Reionization and the Formation of the First Stars](level_1_fundamental_physics/cosmic_reionization_and_the_formation_of_the_first_stars.md) [VERIFIED]
 - [Cosmic Structure Formation and Growth of Large-Scale Structure](level_1_fundamental_physics/cosmic_structure_formation_and_growth_of_largescale_structure.md) [VERIFIED]
 - [Cosmic Thermal History of the Universe](level_1_fundamental_physics/cosmic_thermal_history_of_the_universe.md) [VERIFIED]
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
@@ -868,6 +871,7 @@ graph TD
 - [Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md) [THEORETICAL]
 - [Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing](level_3_emergence_and_intelligence/empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
+- [Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds](level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md) [THEORETICAL]
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]
 - [Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism](level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md) [THEORETICAL]
 - [Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md) [THEORETICAL]
