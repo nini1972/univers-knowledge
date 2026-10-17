@@ -180,14 +180,13 @@ class UniverseTasks:
                 You MUST execute the following steps in order using your tools:
 
                 STEP 1 — Extract equations:
-                Use the "Equation Extractor" tool on the full research report text from context.
-                Pass the raw text directly to the tool.
+                Use the "Equation Extractor" tool by passing ONLY the mathematical equations and formula blocks ($$...$$ and $...$) from the research context (keep the input under 4,000 characters; do NOT copy-paste the entire narrative prose or bibliography).
 
                 STEP 2 — Check dimensional consistency:
                 Pass the JSON output from Step 1 directly to the "Dimensional Consistency Checker" tool.
 
                 STEP 3 — Classify topological structures:
-                Use the "Topology Classifier" tool with the concept name and the full research text.
+                Use the "Topology Classifier" tool with the concept name and a concise summary (under 1,500 characters) of the geometric, symmetry, and topological structures in the research context.
 
                 STEP 4 — Validate numerical benchmarks:
                 Use the "Numerical Benchmark Validator" tool with the concept name and the equation JSON from Step 1.

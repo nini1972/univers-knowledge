@@ -448,18 +448,26 @@ def resolve_meta_critique(
         repo_root = Path(__file__).resolve().parent.parent.parent
 
     # If critique_input is an existing file, read its text and extract title
-    critique_path = Path(critique_input)
-    if not critique_path.is_absolute() and (repo_root / critique_path).exists():
-        critique_path = repo_root / critique_path
+    is_valid_file = False
+    critique_path = None
+    raw_str = str(critique_input)
+    if isinstance(critique_input, Path) or (len(raw_str) <= 240 and "\n" not in raw_str and "\r" not in raw_str):
+        try:
+            critique_path = Path(critique_input)
+            if not critique_path.is_absolute() and (repo_root / critique_path).exists():
+                critique_path = repo_root / critique_path
+            is_valid_file = critique_path.exists() and critique_path.is_file()
+        except OSError:
+            is_valid_file = False
 
-    if critique_path.exists() and critique_path.is_file():
+    if is_valid_file and critique_path is not None:
         content = critique_path.read_text(encoding="utf-8", errors="replace")
         concept_title = critique_path.stem.replace("_", " ").title()
         title_match = re.search(r'^title:\s*(.+)$', content, re.MULTILINE)
         if title_match:
             concept_title = title_match.group(1).strip().strip('"\'')
     else:
-        content = str(critique_input)
+        content = raw_str
         concept_title = target_concept or "Peer Review Critique"
 
     determined_type = detect_review_type(content, title=concept_title) if review_type == "auto" else review_type

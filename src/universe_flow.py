@@ -199,6 +199,25 @@ def _extract_level2_selection(raw_output: str):
         )
 
 
+def _resolve_level2_theories(concept: str, topic_metadata: dict | None = None) -> tuple[str, str]:
+    """Ensure Level 2 concepts always resolve into distinct (theory_a, theory_b) strings."""
+    meta = topic_metadata or {}
+    th_a = str(meta.get("theory_a") or "").strip()
+    th_b = str(meta.get("theory_b") or "").strip()
+    if th_a and th_b and th_a != th_b:
+        return th_a, th_b
+
+    parts = re.split(r"\s+(?:vs\.?|versus)\s+", str(concept).strip(), maxsplit=1, flags=re.IGNORECASE)
+    if len(parts) == 2 and parts[0].strip() and parts[1].strip():
+        left, right = parts[0].strip(), parts[1].strip()
+        in_match = re.search(r"(\s+in\s+.+)$", right, flags=re.IGNORECASE)
+        if in_match and " in " not in left.lower():
+            left = f"{left}{in_match.group(1)}"
+        return left, right
+
+    return str(concept).strip(), str(concept).strip()
+
+
 def _extract_level3_selection(raw_output: str):
     text = str(raw_output).strip()
     if text.startswith("```"):
@@ -302,6 +321,9 @@ class UniverseFlow(Flow[UniverseState]):
 
         # If a concept was passed directly in inputs, respect it immediately
         if self.state.concept:
+            if level == 2:
+                th_a, th_b = _resolve_level2_theories(self.state.concept, self.state.topic_metadata)
+                self.state.topic_metadata = {**self.state.topic_metadata, "theory_a": th_a, "theory_b": th_b}
             self.state.filename = sanitize_filename(self.state.concept)
             self.state.output_location = f"knowledge_base/{self.state.level_folder}/{self.state.filename}"
             print(f"[FLOW TOPIC] Using pre-selected Level {level} concept: '{self.state.concept}'")
@@ -373,6 +395,8 @@ class UniverseFlow(Flow[UniverseState]):
                 candidate = retryable_advisory.get("concept")
                 print(f"[OFFICE HOURS CLOSED-LOOP] Prioritizing answered advisory retry for Level 2: '{candidate}'")
                 self.state.concept = candidate
+                th_a, th_b = _resolve_level2_theories(candidate, self.state.topic_metadata)
+                self.state.topic_metadata = {"theory_a": th_a, "theory_b": th_b}
             elif self.state.dry_run:
                 self.state.concept = "Asymptotic Safety vs Causal Dynamical Triangulations"
                 self.state.topic_metadata = {"theory_a": "Asymptotic Safety Gravity", "theory_b": "Causal Dynamical Triangulations"}
@@ -522,8 +546,8 @@ class UniverseFlow(Flow[UniverseState]):
             crew_tasks = [research_task, math_task, verify_task, evaluate_task]
 
         elif level == 2:
-            th_a = self.state.topic_metadata.get("theory_a", concept)
-            th_b = self.state.topic_metadata.get("theory_b", concept)
+            th_a, th_b = _resolve_level2_theories(concept, self.state.topic_metadata)
+            self.state.topic_metadata = {**self.state.topic_metadata, "theory_a": th_a, "theory_b": th_b}
             researcher_a = self.agents.researcher_agent()
             researcher_b = self.agents.researcher_agent()
 
@@ -533,8 +557,9 @@ class UniverseFlow(Flow[UniverseState]):
             research_task_a = self.tasks.research_concept_task(researcher_a, th_a_prompt)
             research_task_b = self.tasks.research_concept_task(researcher_b, th_b_prompt)
             debate_task = self.tasks.debate_theories_task(skeptic, th_a, th_b, context=[research_task_a, research_task_b])
-            math_task = self.tasks.math_verification_task(math_physicist, concept, context=[research_task_a, research_task_b, debate_task])
+            math_task = self.tasks.math_verification_task(math_physicist, concept, context=[research_task_a, research_task_b])
             evaluate_task = self.tasks.student_level2_debate_evaluation_task(evaluation_student, f"The debate between {th_a} and {th_b}", context=[research_task_a, research_task_b, debate_task, math_task])
+            skeptic_task = debate_task
 
             if pattern_guidance:
                 evaluate_task.description += pattern_guidance
@@ -557,6 +582,7 @@ class UniverseFlow(Flow[UniverseState]):
             math_task = self.tasks.math_verification_task(math_physicist, concept, context=[research_task_a, research_task_b])
             verify_task = self.tasks.verify_research_task(skeptic, concept, context=[research_task_a, research_task_b, math_task])
             evaluate_task = self.tasks.student_level3_evaluation_task(evaluation_student, concept, context=[research_task_a, research_task_b, math_task, verify_task])
+            skeptic_task = verify_task
 
             if pattern_guidance:
                 evaluate_task.description += pattern_guidance
@@ -569,6 +595,9 @@ class UniverseFlow(Flow[UniverseState]):
 
             crew_agents = [bio_digital_analyst, cosmological_architect, math_physicist, skeptic, evaluation_student]
             crew_tasks = [research_task_a, research_task_b, math_task, verify_task, evaluate_task]
+
+        if level == 1:
+            skeptic_task = verify_task
 
         eval_crew = Crew(
             agents=crew_agents,
@@ -612,7 +641,7 @@ class UniverseFlow(Flow[UniverseState]):
                     out_text = str(t.output.raw)
                     if t == math_task:
                         math_raw = out_text
-                    elif t in (crew_tasks[-2],):  # verify_task or debate_task
+                    elif t == skeptic_task:  # verify_task or debate_task
                         skeptic_raw = out_text
                     elif t != evaluate_task:
                         research_pieces.append(out_text)
@@ -766,8 +795,7 @@ class UniverseFlow(Flow[UniverseState]):
         if self.state.level == 1:
             eval_task = self.tasks.student_evaluation_task(student_agent, self.state.concept, context=[rev_task, math_task, verify_task])
         elif self.state.level == 2:
-            th_a = self.state.topic_metadata.get("theory_a", self.state.concept)
-            th_b = self.state.topic_metadata.get("theory_b", self.state.concept)
+            th_a, th_b = _resolve_level2_theories(self.state.concept, self.state.topic_metadata)
             eval_task = self.tasks.student_level2_debate_evaluation_task(student_agent, f"The debate between {th_a} and {th_b}", context=[rev_task, math_task, verify_task])
         else:
             eval_task = self.tasks.student_level3_evaluation_task(student_agent, self.state.concept, context=[rev_task, math_task, verify_task])

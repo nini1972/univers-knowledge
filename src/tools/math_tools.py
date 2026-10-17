@@ -54,6 +54,12 @@ class EquationExtractorTool(BaseTool):
                     seen.add(eq)
                     equations.append(eq)
 
+        if len(equations) > 25:
+            rel_re = re.compile(r'(=|\\equiv|\\approx|\\sim|\\simeq|\\propto|<|>|\\le|\\ge|\\ll|\\gg|\\to|\\rightarrow|\\neq)')
+            relational = [eq for eq in equations if rel_re.search(eq)]
+            non_relational = [eq for eq in equations if not rel_re.search(eq)]
+            equations = (relational + non_relational)[:25]
+
         result = {
             "count": len(equations),
             "equations": equations,

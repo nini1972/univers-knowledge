@@ -188,13 +188,13 @@ class ArxivSearchTool(BaseTool):
                 if doi.startswith("https://doi.org/"):
                     doi = doi[len("https://doi.org/"):]
                 pub_year = str(work.get("publication_year") or "")
-                authors = [a.get("author", {}).get("display_name", "") for a in work.get("authorships", [])]
+                authors = [(a.get("author") or {}).get("display_name", "") for a in (work.get("authorships") or [])]
                 abstract = reconstruct_abstract(work.get("abstract_inverted_index"))
 
                 # Determine arXiv ID from locations
                 arxiv_id = ""
                 arxiv_url = ""
-                for loc in work.get("locations", []):
+                for loc in (work.get("locations") or []):
                     landing = loc.get("landing_page_url") or ""
                     if "arxiv.org" in landing:
                         arxiv_url = landing
@@ -216,7 +216,7 @@ class ArxivSearchTool(BaseTool):
                     "authors": ", ".join(authors[:4]) + (" et al." if len(authors) > 4 else ""),
                     "category": "physics (arXiv)",
                     "doi": doi,
-                    "journal": (work.get("primary_location") or {}).get("source", {}).get("display_name", ""),
+                    "journal": ((work.get("primary_location") or {}).get("source") or {}).get("display_name", ""),
                     "summary": abstract
                 })
         except Exception:
@@ -329,11 +329,11 @@ class OpenAlexSearchTool(BaseTool):
                 landing_url = doi if doi else openalex_id
 
                 # Authors
-                authors = [a.get("author", {}).get("display_name", "") for a in w.get("authorships", [])]
+                authors = [(a.get("author") or {}).get("display_name", "") for a in (w.get("authorships") or [])]
                 author_str = ", ".join(authors[:3]) + (" et al." if len(authors) > 3 else "")
 
                 # Host venue
-                venue = (w.get("primary_location") or {}).get("source", {}).get("display_name", "")
+                venue = ((w.get("primary_location") or {}).get("source") or {}).get("display_name", "")
 
                 # Reconstruct abstract
                 abstract = reconstruct_abstract(w.get("abstract_inverted_index"))
@@ -583,7 +583,7 @@ class CitationAuditTool(BaseTool):
                 doi = work.get("doi") or ""
                 if doi.startswith("https://doi.org/"):
                     doi = doi[len("https://doi.org/"):]
-                authors = [a.get("author", {}).get("display_name", "") for a in work.get("authorships", [])]
+                authors = [(a.get("author") or {}).get("display_name", "") for a in (work.get("authorships") or [])]
                 replacements.append({
                     "title": work.get("title") or "Peer-Reviewed Paper",
                     "doi": doi,

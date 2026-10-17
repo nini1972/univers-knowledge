@@ -175,6 +175,26 @@ class TestPeerReviewTool(unittest.TestCase):
         self.assertIn("# Peer-Review Resolution Report", md)
         self.assertIn("## 2. Technical Resolution", md)
 
+    def test_long_critique_string_does_not_raise_filename_too_long(self):
+        """Regression test: raw critique strings >255 bytes must not trigger OSError [Errno 36]."""
+        long_critique = (
+            "Dimensional analysis critique: " + ("E^2 = p^2 c^2 + m^2 c^4 and H^2 = (8 pi G / 3) rho " * 12)
+        )
+        self.assertGreater(len(long_critique), 400)
+        res = resolve_meta_critique(long_critique, review_type="dimensional_analysis", repo_root=self.repo_root)
+        self.assertEqual(res.resolution_status, "RESOLVED")
+
+    def test_resolve_level2_theories(self):
+        """Regression test: Level 2 concept strings split cleanly into theory_a and theory_b when metadata is empty."""
+        from src.universe_flow import _resolve_level2_theories
+
+        th_a, th_b = _resolve_level2_theories(
+            "Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology",
+            {},
+        )
+        self.assertEqual(th_a, "Thermal Inflation in Early-Universe Cosmology")
+        self.assertEqual(th_b, "Thermal Trapping in Early-Universe Cosmology")
+
 
 if __name__ == "__main__":
     unittest.main()
