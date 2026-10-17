@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-17T01:48:42.625385+00:00",
+  "updated_at": "2026-10-17T07:33:55.569554+00:00",
   "stats": {
-    "total_nodes": 328,
-    "level_1_count": 144,
-    "level_2_count": 129,
-    "level_3_count": 55,
+    "total_nodes": 331,
+    "level_1_count": 145,
+    "level_2_count": 130,
+    "level_3_count": 56,
     "total_edges": 162,
-    "frontier_count": 17
+    "frontier_count": 20
   },
   "nodes": [
     {
@@ -801,11 +801,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "standardmodeleffectivefieldtheory",
         "higgsmechanism",
-        "peskintakeuchiparameters",
         "electroweaksymmetrybreaking",
-        "standardmodel"
+        "peskintakeuchiparameters",
+        "standardmodel",
+        "standardmodeleffectivefieldtheory"
       ],
       "tags": [
         "1"
@@ -1961,6 +1961,25 @@
       "path": "knowledge_base/level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md"
     },
     {
+      "id": "primordialblackholespbhsasdarkmattercandidates",
+      "title": "Primordial Black Holes (PBHs) as Dark Matter Candidates",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Carr, B. J. (1975), 'The primordial black hole mass spectrum', https://doi.org/10.1086/153853",
+        "Carr, B., Kühnel, F., & Sandstad, M. (2016), 'Primordial black holes as dark matter', https://doi.org/10.1103/PhysRevD.94.083504",
+        "Green, A. M., & Kavanagh, B. J. (2021), 'Primordial black holes as a dark matter candidate', https://doi.org/10.1088/1361-6471/abc534"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/primordial_black_holes_pbhs_as_dark_matter_candidates.md"
+    },
+    {
       "id": "primordialgravitationalwaves",
       "title": "Primordial Gravitational Waves",
       "level": 1,
@@ -2683,8 +2702,8 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "darkmatterrelicabundance",
         "freezeinproduction",
+        "darkmatterrelicabundance",
         "cosmologicalperturbationtheory",
         "wimpfreezeout"
       ],
@@ -2776,11 +2795,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "stronginteraction",
-        "quantumfieldtheory",
+        "thestandardmodel",
         "latticeqcd",
         "gaugetheory",
-        "thestandardmodel"
+        "stronginteraction",
+        "quantumfieldtheory"
       ],
       "tags": [
         "1"
@@ -3212,7 +3231,7 @@
       "math_score": "4/4",
       "dependencies": [
         "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
-        "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldnessandgalacticstructure",
+        "primordialblackholespbhsasdarkmattercandidates",
         "darkmatter"
       ],
       "tags": [
@@ -3235,7 +3254,7 @@
       "math_score": "4/4",
       "dependencies": [
         "axionlikeparticlesvsneutralinowimpsinexplainingcosmicdarkmatterabundance",
-        "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldness",
+        "primordialblackholespbhsasdarkmattercandidates",
         "darkmatter"
       ],
       "tags": [
@@ -5549,6 +5568,34 @@
       "path": "knowledge_base/level_2_advanced_frameworks/teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing.md"
     },
     {
+      "id": "thermalinflationvsthermaltrappinginearlyuniversecosmology",
+      "title": "Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Kofman, L., Linde, A., Liu, X., Maloney, A., Nelson, A., & Wang, Y. (2004), 'Beauty is Attractive: Moduli Trapping at Enhanced Symmetry Points', https://doi.org/10.1088/1126-6708/2004/05/030",
+        "Lyth, D. H., & Stewart, E. D. (1996), 'Thermal Inflation and the Moduli Problem', https://doi.org/10.1103/PhysRevD.53.1784",
+        "Greene, B., Judes, S., Levin, J., & Watson, S. (2007), 'Cosmological moduli dynamics', https://doi.org/10.1088/1126-6708/2007/07/060",
+        "Estes, J., Liu, Y., & Partouche, H. (2011), 'The effective potential of the heterotic string in a thermal bath', https://doi.org/10.1007/JHEP06(2011)060",
+        "Stewart, E. D., Kawasaki, M., & Yanagida, T. (1996), 'Affleck-Dine baryogenesis after thermal inflation', https://doi.org/10.1103/PhysRevD.54.6032",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "Riess, A. G., et al. (2024), 'JWST Validates HST Distance Measurements: Selection of Supernova Host Galaxies Does Not Explain the Hubble Tension', https://doi.org/10.3847/2041-8213/ad1ddd",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "BICEP/Keck Collaboration (2021), 'Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Run', https://doi.org/10.1103/PhysRevLett.127.151301",
+        "Agazie, G., et al. (2023), 'The NANOGrav 15-year Data Set: Evidence for a Gravitational-wave Background', https://doi.org/10.3847/2041-8213/acdac6",
+        "Cho, H., Hong, S., & Stewart, E. D. (2017), 'Probing thermal inflation with CMB spectral distortions', https://doi.org/10.1088/1475-7516/2017/08/002",
+        "Hong, S., et al. (2015), 'Thermal inflation and small-scale density perturbations', https://doi.org/10.1088/1475-7516/2015/06/002"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/thermal_inflation_vs_thermal_trapping_in_earlyuniverse_cosmology.md"
+    },
+    {
       "id": "thermalwimpsvsprimordialblackholesasdarkmatter",
       "title": "Thermal WIMPs vs Primordial Black Holes as Dark Matter",
       "level": 2,
@@ -6078,6 +6125,40 @@
         "Aksyuk, V. (2023), 'Consciousness is entailed by compositional learning of new causal structures in deep predictive processing systems', https://doi.org/10.48550/arxiv.2301.07016"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md"
+    },
+    {
+      "id": "distinguishingemergentcosmicwebselforganizationfromcdmgravitationalgrowthusingtopologicalnullmodels",
+      "title": "Distinguishing Emergent Cosmic-Web Self-Organization from ΛCDM Gravitational Growth Using Topological Null Models",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "cosmologicalstructureformation",
+        "lcdmcosmology",
+        "cosmicweb",
+        "topologicaldataanalysis",
+        "nullmodelsandhypothesistesting",
+        "persistenthomology"
+      ],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Pranav, P. et al. (2016), 'Title not stated in the supplied research report', https://doi.org/10.1093/mnras/stw2862",
+        "Wilding, G. et al. (2021), 'Title not stated in the supplied research report', https://doi.org/10.1093/mnras/stab2326",
+        "Adame, A.G. et al. [DESI] (2025), 'Title not stated in the supplied research report', https://doi.org/10.1088/1475-7516/2025/02/021",
+        "Asgari, M. et al. [KiDS] (2021), 'Title not stated in the supplied research report', https://doi.org/10.1051/0004-6361/202039070",
+        "Amon, A. et al. [DES] (2022), 'Title not stated in the supplied research report', https://doi.org/10.1103/PhysRevD.105.023520",
+        "Carniani, S. et al. (2024), 'Title not stated in the supplied research report', https://doi.org/10.1038/s41586-024-07860-9",
+        "Boylan-Kolchin, M. (2023), 'Title not stated in the supplied research report', https://doi.org/10.1038/s41550-023-01937-7",
+        "Peebles, P.J.E. & Ratra, B. (2003), 'Title not stated in the supplied research report', https://doi.org/10.1103/RevModPhys.75.559",
+        "van de Weygaert, R. et al. (2011), 'Title not stated in the supplied research report', https://arxiv.org/abs/1306.3640",
+        "Aschwanden, M.J. et al. (2014), 'Title not stated in the supplied research report', https://doi.org/10.1007/s11214-014-0054-6",
+        "Kauffman, S.A. & Marongwe, S. (2026), 'Title not stated in the supplied research report', https://doi.org/10.4236/jhepgc.2026.124113"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/distinguishing_emergent_cosmicweb_selforganization_from_cdm_gravitational_growth_using_topological_null_models.md"
     },
     {
       "id": "dynamicalstabilityandinformationbottleneckconstraintsinnonequilibriumselforganizingcosmologicalnetworks",
@@ -6680,11 +6761,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "cosmicweb",
-        "bottleneckdistance",
         "baryonicfeedback",
-        "topologicaldataanalysis",
         "observationalselectioneffects",
+        "bottleneckdistance",
+        "cosmicweb",
+        "topologicaldataanalysis",
         "persistenthomology"
       ],
       "tags": [
@@ -6911,7 +6992,7 @@
       "type": "component_theory"
     },
     {
-      "source": "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldnessandgalacticstructure",
+      "source": "primordialblackholespbhsasdarkmattercandidates",
       "target": "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldness",
       "type": "component_theory"
     },
@@ -6921,7 +7002,7 @@
       "type": "component_theory"
     },
     {
-      "source": "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldness",
+      "source": "primordialblackholespbhsasdarkmattercandidates",
       "target": "axionlikeparticlesvsprimordialblackholesinexplainingdarkmattercoldnessandgalacticstructure",
       "type": "component_theory"
     },
@@ -7606,6 +7687,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "cosmologicalstructureformation",
+      "suggested_title": "Cosmologicalstructureformation",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "darkmatterrelicabundance",
       "suggested_title": "Darkmatterrelicabundance",
       "target_level": 1,
@@ -7632,6 +7719,18 @@
     {
       "id": "latticeqcd",
       "suggested_title": "Latticeqcd",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "lcdmcosmology",
+      "suggested_title": "Lcdmcosmology",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "nullmodelsandhypothesistesting",
+      "suggested_title": "Nullmodelsandhypothesistesting",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },

@@ -95,6 +95,7 @@ graph TD
     collaborative_empirical_test_strategies_for_neutrino_models["Collaborative Empirical Test Strategies for Theoretical Neutrino Models"]:::verified
     numerical_benchmarks_for_neutrino_decay_in_boltzmann_codes["Numerical Benchmarks for Neutrino Decay in Cosmological Boltzmann Codes"]:::theoretical
     experimental_collaboration_bounds_on_neutrino_decay["Experimental Collaboration Bounds on Neutrino Decay"]:::verified
+    primordial_black_holes_pbhs_as_dark_matter_candidates["Primordial Black Holes (PBHs) as Dark Matter Candidates"]:::theoretical
     dimensional_analysis_and_unit_tracing_of_modified_survival_equations["Dimensional Analysis and Unit Tracing of Modified Survival Equations"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
     the_higgs_boson["The Higgs Boson"]:::theoretical
@@ -163,6 +164,7 @@ graph TD
     dynamical_dark_energy_vs_modified_gravity_in_addressing_the_hubble_tension["Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension"]:::theoretical
     fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges["Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges"]:::theoretical
     asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry["Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry"]:::theoretical
+    thermal_inflation_vs_thermal_trapping_in_earlyuniverse_cosmology["Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology"]:::theoretical
     quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
     bransdicke_vs_fq_symmetric_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration["Brans-Dicke vs f(Q) Symmetric Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     emergent_gravity_vs_quantum_loop_gravity_debate["Emergent Gravity vs Loop Quantum Gravity Debate"]:::theoretical
@@ -316,6 +318,7 @@ graph TD
     a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems["A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems"]:::theoretical
     finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds["Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds"]:::theoretical
     entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis["Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis"]:::verified
+    distinguishing_emergent_cosmicweb_selforganization_from_cdm_gravitational_growth_using_topological_null_models["Distinguishing Emergent Cosmic-Web Self-Organization from ΛCDM Gravitational Growth Using Topological Null Models"]:::theoretical
     spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology["Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology"]:::theoretical
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
@@ -413,6 +416,8 @@ graph TD
     neutrino_oscillations --- collaborative_empirical_test_strategies_for_neutrino_models
     neutrino_oscillations --- experimental_collaboration_bounds_on_neutrino_decay
     neutrinoless_double_beta_decay --- experimental_collaboration_bounds_on_neutrino_decay
+    dark_matter --- primordial_black_holes_pbhs_as_dark_matter_candidates
+    gravitational_lensing --- primordial_black_holes_pbhs_as_dark_matter_candidates
     quantum_field_theory --- standard_model_of_particle_physics
     quantum_chromodynamics_qcd --- standard_model_of_particle_physics
     the_higgs_boson --- standard_model_of_particle_physics
@@ -664,6 +669,7 @@ graph TD
 - [Operator-Theoretic Foundations of Neutrino Decay Survival Probabilities](level_1_fundamental_physics/operator_theoretic_foundations_of_neutrino_decay.md) [VERIFIED]
 - [Path Integral Formulation](level_1_fundamental_physics/path_integral_formulation.md) [VERIFIED]
 - [Planck Epoch and the Initial Conditions for the Universe](level_1_fundamental_physics/planck_epoch_and_the_initial_conditions_for_the_universe.md) [THEORETICAL]
+- [Primordial Black Holes (PBHs) as Dark Matter Candidates](level_1_fundamental_physics/primordial_black_holes_pbhs_as_dark_matter_candidates.md) [THEORETICAL]
 - [Primordial Gravitational Waves](level_1_fundamental_physics/primordial_gravitational_waves.md) [THEORETICAL]
 - [Primordial Nucleosynthesis and Light-Element Abundances](level_1_fundamental_physics/primordial_nucleosynthesis_and_lightelement_abundances.md) [VERIFIED]
 - [Quantum Chromodynamics (QCD) Phase Diagram and Quark–Gluon Plasma](level_1_fundamental_physics/quantum_chromodynamics_qcd_phase_diagram_and_quarkgluon_plasma.md) [VERIFIED]
@@ -837,6 +843,7 @@ graph TD
 - [Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity](level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity.md) [VERIFIED]
 - [TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing](level_2_advanced_frameworks/teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing.md) [THEORETICAL]
 - [The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework](level_2_advanced_frameworks/chiral_magnetic_effect_vs_chiral_vortical_effect_in_relativistic_plasmas.md) [THEORETICAL]
+- [Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology](level_2_advanced_frameworks/thermal_inflation_vs_thermal_trapping_in_earlyuniverse_cosmology.md) [THEORETICAL]
 - [Thermal WIMPs vs Primordial Black Holes as Dark Matter](level_2_advanced_frameworks/thermal_wimps_vs_primordial_black_holes_as_dark_matter.md) [THEORETICAL]
 - [Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md) [THEORETICAL]
 - [Type-I Seesaw vs Radiative Neutrino Mass Generation](level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md) [THEORETICAL]
@@ -866,6 +873,7 @@ graph TD
 - [Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md) [THEORETICAL]
 - [Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation](level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md) [THEORETICAL]
 - [Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory](level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md) [THEORETICAL]
+- [Distinguishing Emergent Cosmic-Web Self-Organization from ΛCDM Gravitational Growth Using Topological Null Models](level_3_emergence_and_intelligence/distinguishing_emergent_cosmicweb_selforganization_from_cdm_gravitational_growth_using_topological_null_models.md) [THEORETICAL]
 - [Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md) [THEORETICAL]
 - [Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure.md) [THEORETICAL]
 - [Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md) [THEORETICAL]
