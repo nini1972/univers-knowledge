@@ -461,22 +461,28 @@ class CitationAuditTool(BaseTool):
         # 1. Extract sources lines
         source_lines = re.findall(r'^[ \t]*-[ \t]+["\']?(.+?)["\']?\s*$', report_text, re.MULTILINE)
 
-        # Detect future-dated years (anything > current_year)
-        future_year_pattern = re.compile(rf'\b(202[5-9]|20[3-9]\d)\b')
+        # Detect future-dated years (> current_year) or unverified post-2024 claims lacking a DOI/arXiv identifier
+        year_candidates = re.compile(r'\b(20[2-9]\d)\b')
+        has_identifier = re.compile(r'(10\.\d{4,9}/|arxiv\.org|arxiv:\s*\d{4}\.\d{4,5})', re.IGNORECASE)
+        doi_or_arxiv_span = re.compile(r'(https?://\S+|10\.\d{4,9}/[-._;()/:A-Za-z0-9]+|arxiv:\s*\d{4}\.\d{4,5})', re.IGNORECASE)
         placeholder_pattern = re.compile(r'^(Source\s*\d+|Research Report|Academic Journals|Peer-reviewed Articles|Student Summary)', re.IGNORECASE)
 
         for line in source_lines:
+            line_without_ids = doi_or_arxiv_span.sub("", line)
+            years_in_line = [int(yr) for yr in year_candidates.findall(line_without_ids)]
             if placeholder_pattern.search(line):
                 flagged_issues.append({
                     "citation": line,
                     "issue_type": "PLACEHOLDER_CITATION",
                     "explanation": "Non-specific generic placeholder; must be replaced with an authentic peer-reviewed publication."
                 })
-            elif future_year_pattern.search(line):
+            elif any(yr > current_year for yr in years_in_line) or (
+                any(yr >= 2025 for yr in years_in_line) and not has_identifier.search(line)
+            ):
                 flagged_issues.append({
                     "citation": line,
                     "issue_type": "FUTURE_DATED_HALLUCINATION",
-                    "explanation": f"Publication year is beyond {current_year}, indicating a hallucinated future citation."
+                    "explanation": f"Publication year is beyond {current_year} or lacks a verifiable DOI/arXiv identifier, indicating a hallucinated citation."
                 })
 
         # 2. Extract and verify DOIs
@@ -593,3 +599,197 @@ class CitationAuditTool(BaseTool):
         except Exception:
             pass
         return replacements
+
+
+# ===========================================================================
+# Tool 5: ObservationalCosmologyTool
+# ===========================================================================
+
+_OBSERVATIONAL_TENSIONS_DB = [
+    {
+        "id": "jwst_early_galaxies_smbh",
+        "keywords": ["jwst", "webb", "early galaxy", "high redshift", "reionization", "first stars", "halo", "smbh", "black hole", "origin", "lcdm", "structure formation"],
+        "title": "JWST Ultra-High-Redshift (z > 10–14) Galaxies & Over-Massive Black Holes vs. Standard ΛCDM Halo Assembly",
+        "observatories": "James Webb Space Telescope (JWST NIRCam/NIRSpec — JADES, CEERS, UNCOVER)",
+        "observation": (
+            "Spectroscopic confirmation of luminous galaxies up to z = 14.32 (~290 Myr after Big Bang, e.g., JADES-GS-z14-0) "
+            "and UV-bright massive galaxy candidates at z ~ 10–13, alongside over-massive supermassive black holes "
+            "(M_BH / M_* ~ 0.01–0.1, e.g., GN-z11 and UHZ1) appearing far earlier than expected."
+        ),
+        "theoretical_tension": (
+            "Standard ΛCDM Press-Schechter / Sheth-Tormen halo mass functions with canonical baryon conversion efficiency "
+            "(epsilon_* <= 0.15–0.20) underpredict the observed UV luminosity density at z > 10 by factors of 3–10x. "
+            "Reconciling data requires bursty feedback-free star formation, a top-heavy Population III Initial Mass Function (IMF), "
+            "direct-collapse heavy black hole seeds (M_seed ~ 10^4–10^5 M_sun), blue-tilted/enhanced small-scale primordial power, "
+            "Early Dark Energy, or modified gravity (MOND) accelerated early collapse."
+        ),
+        "verified_citations": [
+            "Carniani, S. et al. (2024), 'Spectroscopic confirmation of two luminous galaxies at a redshift of 14', Nature 633, 318–322, https://doi.org/10.1038/s41586-024-07860-9",
+            "Labbé, I. et al. (2023), 'A population of red candidate massive galaxies ~600 Myr after the Big Bang', Nature 616, 266–269, https://doi.org/10.1038/s41586-023-05786-2",
+            "Boylan-Kolchin, M. (2023), 'Stress testing ΛCDM with high-redshift galaxy candidates', Nature Astronomy 7, 731–735, https://doi.org/10.1038/s41550-023-01937-7",
+            "Maiolino, R. et al. (2024), 'A small and vigorous black hole in the early Universe', Nature 627, 59–63, https://doi.org/10.1038/s41586-024-07052-5",
+        ],
+    },
+    {
+        "id": "hubble_constant_tension",
+        "keywords": ["hubble", "h0", "expansion", "distance ladder", "cepheid", "supernova", "sh0es", "cmb", "planck", "early dark energy", "lcdm", "origin"],
+        "title": "The >5σ Hubble Constant (H_0) Tension: Hubble/JWST Late-Universe Ladder vs. Planck Early-Universe CMB",
+        "observatories": "Hubble Space Telescope (HST), JWST, and Planck CMB Observatory",
+        "observation": (
+            "Direct local distance-ladder measurements using Cepheids and Type Ia supernovae (SH0ES) yield "
+            "H_0 = 73.04 ± 1.04 km s^-1 Mpc^-1 (confirmed by JWST near-IR Cepheid observations ruling out crowding bias at >8σ), "
+            "whereas Planck CMB anisotropies extrapolated under flat ΛCDM yield H_0 = 67.36 ± 0.54 km s^-1 Mpc^-1."
+        ),
+        "theoretical_tension": (
+            "A >5σ discrepancy between the early-universe comoving sound horizon r_s(z_*) ~ 147.09 Mpc calibrated at recombination "
+            "(z ~ 1090) and the late-time expansion rate H(z). If not an unknown systematic across multiple independent calibrators, "
+            "it requires pre-recombination new physics (e.g., Early Dark Energy reducing r_s by ~7%, extra relativistic species Delta N_eff, "
+            "or primordial magnetic fields) or late-time modifications to General Relativity / dark sector interactions."
+        ),
+        "verified_citations": [
+            "Riess, A. G. et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s^-1 Mpc^-1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', Astrophys. J. Lett. 934, L7, https://doi.org/10.3847/2041-8213/ac5c5b",
+            "Riess, A. G. et al. (2024), 'JWST Observations Reject Unrecognized Crowding of Cepheid Photometry as an Explanation for the Hubble Tension at 8σ Confidence', Astrophys. J. 962, L17, https://doi.org/10.3847/2041-8213/ad1ddd",
+            "Planck Collaboration, Aghanim, N. et al. (2020), 'Planck 2018 results. VI. Cosmological parameters', Astron. Astrophys. 641, A6, https://doi.org/10.1051/0004-6361/201833910",
+            "Kamionkowski, M. & Riess, A. G. (2023), 'The Hubble Tension and Early Dark Energy', Annu. Rev. Nucl. Part. Sci. 73, 153–180, https://doi.org/10.1146/annurev-nucl-111422-024107",
+        ],
+    },
+    {
+        "id": "desi_dynamical_dark_energy",
+        "keywords": ["desi", "dark energy", "cosmological constant", "vacuum energy", "bao", "baryon acoustic", "quintessence", "w0", "wa", "swampland", "acceleration"],
+        "title": "DESI BAO + Supernova Evidence for Dynamical Dark Energy (w_0 w_a CDM) Over a Static Cosmological Constant Λ",
+        "observatories": "Dark Energy Spectroscopic Instrument (DESI), Planck, Pantheon+, Union3, DES-SN5YR",
+        "observation": (
+            "DESI 2024–2025 Baryon Acoustic Oscillation measurements across 0.1 < z < 4.2, combined with CMB and Type Ia supernova "
+            "datasets, find a 2.5σ–3.9σ preference for a time-evolving dark energy equation of state w(a) = w_0 + w_a (1 - a) "
+            "with w_0 > -1 and w_a < 0 over a constant cosmological term w = -1."
+        ),
+        "theoretical_tension": (
+            "Challenges the baseline ΛCDM assumption that cosmic acceleration is driven by a time-independent vacuum energy density "
+            "rho_Lambda = const. Supports thawing quintessence scalar fields, phantom-divide crossing models, or string swampland "
+            "de Sitter conjectures that forbid stable positive cosmological constants."
+        ),
+        "verified_citations": [
+            "DESI Collaboration, Adame, A. G. et al. (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', JCAP 02, 021 (arXiv:2404.03002), https://doi.org/10.1088/1475-7516/2025/02/021",
+            "Peebles, P. J. E. & Ratra, B. (2003), 'The cosmological constant and dark energy', Rev. Mod. Phys. 75, 559, https://doi.org/10.1103/RevModPhys.75.559",
+        ],
+    },
+    {
+        "id": "s8_structure_growth_tension",
+        "keywords": ["s8", "sigma8", "weak lensing", "cosmic shear", "euclid", "kids", "des", "cosmic web", "matter clustering", "growth", "dark matter"],
+        "title": "The S_8 = σ_8 (Ω_m / 0.3)^0.5 Cosmic Shear & Structure-Growth Tension",
+        "observatories": "KiDS-1000, Dark Energy Survey (DES Y3), Hyper Suprime-Cam (HSC), Euclid, ACT/Planck",
+        "observation": (
+            "Late-time galaxy weak lensing and cosmic shear surveys measure S_8 = 0.759–0.776, which is 2σ–3σ lower "
+            "than the Planck CMB ΛCDM prediction S_8 = 0.832 ± 0.013."
+        ),
+        "theoretical_tension": (
+            "Indicates that matter clustering on ~1–10 Mpc scales grew more slowly between z ~ 1100 and z ~ 0 than predicted by "
+            "standard cold collisionless dark matter under General Relativity, pointing toward warm/self-interacting/decaying dark matter, "
+            "massive neutrino suppression, scale-dependent modified gravity, or stronger-than-modeled AGN baryonic feedback."
+        ),
+        "verified_citations": [
+            "Asgari, M. et al. [KiDS Collaboration] (2021), 'KiDS-1000 Cosmology: Cosmic shear constraints and comparison between two point statistics', Astron. Astrophys. 645, A104, https://doi.org/10.1051/0004-6361/202039070",
+            "Amon, A. et al. [DES Collaboration] (2022), 'Dark Energy Survey Year 3 results: Cosmology from cosmic shear and robustness to modeling uncertainty', Phys. Rev. D 105, 023520, https://doi.org/10.1103/PhysRevD.105.023520",
+        ],
+    },
+    {
+        "id": "inflation_cmb_gw_constraints",
+        "keywords": ["inflation", "primordial gravitational", "tensor", "bicep", "nanograv", "pta", "cmb anomalies", "planck", "early universe", "reheating", "baryogenesis"],
+        "title": "Primordial Tensor Bounds (r < 0.036), Large-Angle CMB Anomalies, and Nanohertz Gravitational-Wave Backgrounds",
+        "observatories": "BICEP/Keck, Planck, NANOGrav 15-yr / EPTA / PPTA",
+        "observation": (
+            "BICEP/Keck + Planck bound the primordial tensor-to-scalar ratio to r_0.05 < 0.036 (95% CL), falsifying minimal "
+            "monomial chaotic inflation V(phi) ~ phi^2, phi^4; Planck confirms persistent low-multipole (l < 30) power suppression "
+            "and hemispherical asymmetry; Pulsar Timing Arrays (NANOGrav 15-yr) detect a nHz stochastic gravitational-wave background."
+        ),
+        "theoretical_tension": (
+            "Restricts viable inflation to plateau/R^2/alpha-attractor potentials or non-inflationary bounce/ekpyrotic alternatives, "
+            "while PTA nHz signals test standard supermassive black hole binary populations against early-universe cosmic strings, "
+            "first-order phase transitions, and scalar-induced gravitational waves."
+        ),
+        "verified_citations": [
+            "Ade, P. A. R. et al. [BICEP/Keck Collaboration] (2021), 'Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Season', Phys. Rev. Lett. 127, 151301, https://doi.org/10.1103/PhysRevLett.127.151301",
+            "Agazie, G. et al. [NANOGrav Collaboration] (2023), 'The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background', Astrophys. J. Lett. 951, L8, https://doi.org/10.3847/2041-8213/acdac6",
+        ],
+    },
+]
+
+
+class ObservationalCosmologyInput(BaseModel):
+    topic_or_tension: str = Field(
+        ...,
+        description="Physics/cosmology concept or observational tension to check (e.g., 'JWST early galaxies', 'Hubble tension', 'dark energy DESI', 'early universe inflation')."
+    )
+    observatory_filter: str = Field(
+        default="all",
+        description="Optional observatory focus: 'all', 'JWST', 'Hubble', 'DESI', 'Euclid', 'Planck', or 'LIGO/PTA'."
+    )
+
+
+class ObservationalCosmologyTool(BaseTool):
+    name: str = "Observational Cosmology & Deep-Space Survey Tracker"
+    description: str = (
+        "Retrieves current observational data, empirical bounds, and theoretical tensions from flagship "
+        "telescopes and surveys (Hubble Space Telescope / HST, James Webb Space Telescope / JWST, DESI, "
+        "Euclid, Planck, BICEP/Keck, NANOGrav/LIGO) where real observations challenge or revise standard "
+        "textbook theories of the origin and evolution of the Universe. Also queries live recent literature "
+        "(2023-present) for observational tests."
+    )
+    args_schema: Type[BaseModel] = ObservationalCosmologyInput
+
+    def _run(self, topic_or_tension: str, observatory_filter: str = "all") -> str:
+        q_lower = f"{topic_or_tension} {observatory_filter}".lower()
+
+        matched = []
+        for entry in _OBSERVATIONAL_TENSIONS_DB:
+            if any(k in q_lower for k in entry["keywords"]):
+                matched.append(entry)
+
+        if not matched:
+            matched = _OBSERVATIONAL_TENSIONS_DB[:3]
+
+        md = [
+            f"### 🔭 Observational Data & Theoretical Tensions Report for '{topic_or_tension}'\n",
+            "> **Epistemic Mandate**: Where empirical observations (JWST, Hubble, DESI, Planck, Euclid, PTAs) "
+            "diverge from standard textbook models (e.g. baseline ΛCDM or minimal inflation), reports MUST explicitly "
+            "document the observational discrepancy, error bars, and competing theoretical revisions.\n",
+        ]
+
+        for i, item in enumerate(matched, 1):
+            md.append(f"#### {i}. {item['title']}")
+            md.append(f"- **Observatories / Surveys:** {item['observatories']}")
+            md.append(f"- **Empirical Observation:** {item['observation']}")
+            md.append(f"- **Conflict with Standard Theory:** {item['theoretical_tension']}")
+            md.append("- **Verified Primary Sources (Ready to Cite):**")
+            for cit in item["verified_citations"]:
+                md.append(f"  * {cit}")
+            md.append("")
+
+        # Live OpenAlex query for recent (2023+) observational papers matching the topic
+        try:
+            obs_kw = observatory_filter if observatory_filter.lower() != "all" else "JWST Hubble DESI Planck observation"
+            search_q = urllib.parse.quote(f"{topic_or_tension} {obs_kw}")
+            url = (
+                f"https://api.openalex.org/works?"
+                f"filter=from_publication_date:2023-01-01,has_doi:true&search={search_q}&per-page=4&sort=cited_by_count:desc"
+            )
+            req = urllib.request.Request(url, headers={"User-Agent": _USER_AGENT})
+            with urllib.request.urlopen(req, timeout=6) as conn:
+                data = json.loads(conn.read().decode("utf-8"))
+
+            live_works = data.get("results") or []
+            if live_works:
+                md.append("#### 📡 Live Recent Observational Papers (2023–Present via OpenAlex)")
+                for w in live_works:
+                    title = w.get("title") or "Untitled Observational Study"
+                    doi = w.get("doi") or ""
+                    yr = w.get("publication_year") or ""
+                    cited = w.get("cited_by_count", 0)
+                    authors = [(a.get("author") or {}).get("display_name", "") for a in (w.get("authorships") or [])]
+                    auth_str = ", ".join(authors[:3]) + (" et al." if len(authors) > 3 else "")
+                    md.append(f"- **{title}** ({yr}) — {auth_str} | Citations: `{cited}` | DOI: {doi}")
+        except Exception:
+            pass
+
+        return "\n".join(md)
+

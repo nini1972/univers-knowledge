@@ -457,3 +457,220 @@ def sync_office_hours_markdown():
 
     OFFICE_HOURS_MD.parent.mkdir(parents=True, exist_ok=True)
     OFFICE_HOURS_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+AGENT_WISHLIST_MD = REPO_ROOT / "knowledge_base" / "AGENT_WISHLIST.md"
+
+
+def collect_historical_agent_shortcomings(limit: int = 10) -> dict:
+    """
+    Mines evaluation_runs.jsonl and advisory_queue.jsonl to extract real operational
+    shortcomings, rejection frequencies, researcher_needs, and math_needs encountered
+    by the agents during autonomous runs.
+    """
+    from collections import Counter
+
+    eval_file = LOGS_DIR / "evaluation_runs.jsonl"
+    rejection_counts = Counter()
+    researcher_needs = []
+    math_needs = []
+    recent_rejections = []
+    total_runs = 0
+    approved_runs = 0
+
+    if eval_file.exists():
+        with open(eval_file, "r", encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                try:
+                    rec = json.loads(line)
+                    total_runs += 1
+                    status = rec.get("status")
+                    if status == "approved":
+                        approved_runs += 1
+                    elif status == "rejected":
+                        rc = rec.get("reason_code", "unspecified")
+                        rejection_counts[rc] += 1
+                        recent_rejections.append({
+                            "concept": rec.get("concept"),
+                            "reason_code": rc,
+                            "rationale": rec.get("detailed_rationale", ""),
+                            "timestamp": rec.get("timestamp", ""),
+                        })
+                    needs = rec.get("agent_needs") or {}
+                    for rn in needs.get("researcher_needs") or []:
+                        if rn and rn not in researcher_needs:
+                            researcher_needs.append(rn)
+                    for mn in needs.get("math_needs") or []:
+                        if mn and mn not in math_needs:
+                            math_needs.append(mn)
+                except Exception:
+                    pass
+
+    return {
+        "total_evaluations": total_runs,
+        "approved_evaluations": approved_runs,
+        "rejection_counts": dict(rejection_counts.most_common()),
+        "recent_researcher_needs": researcher_needs[-limit:],
+        "recent_math_needs": math_needs[-limit:],
+        "recent_rejections": recent_rejections[-limit:],
+    }
+
+
+def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
+    """
+    Generates a comprehensive Agent Shortcomings & Wishlist report combining empirical
+    run telemetry/logs with structured per-agent wishlists (and optional live LLM interviews),
+    saving it to knowledge_base/AGENT_WISHLIST.md.
+    """
+    stats = collect_historical_agent_shortcomings(limit=8)
+    now_str = _get_utc_now()
+
+    lines = [
+        "# 🛠️ Autonomous Agent Shortcomings & Capability Wishlist",
+        "",
+        f"> **Last Updated**: `{now_str}`",
+        "> **How to Query Agents Directly**:",
+        "> - Generate/refresh this wishlist: `python scripts/consult_professor.py wishlist` (add `--live` to interview live LLMs)",
+        "> - Ask any agent a direct question: `python scripts/consult_professor.py ask <agent_role> \"Your question\"`",
+        ">   *(Available roles: `student`, `researcher`, `math`, `skeptic`, `cosmological_architect`, `bio_digital_analyst`, `visualizer`, `archivist`)*",
+        "",
+        "---",
+        "",
+        "## 📊 1. Empirical Telemetry: Where Agents Struggle in Production",
+        "",
+        f"- **Total Logged Evaluations**: `{stats['total_evaluations']}` (`{stats['approved_evaluations']}` approved)",
+        "- **Rejection Breakdown by Root Cause**:",
+    ]
+
+    for rc, cnt in stats["rejection_counts"].items():
+        lines.append(f"  * `{rc}`: **{cnt}** occurrence(s)")
+
+    lines.extend([
+        "",
+        "### Recent Concrete Shortcomings Logged for the **Researcher**:",
+    ])
+    for rn in stats["recent_researcher_needs"]:
+        lines.append(f"- {rn}")
+
+    lines.extend([
+        "",
+        "### Recent Concrete Shortcomings Logged for the **Math Physicist**:",
+    ])
+    for mn in stats["recent_math_needs"]:
+        lines.append(f"- {mn}")
+
+    lines.extend([
+        "",
+        "---",
+        "",
+        "## 🧞 2. Per-Agent Diagnostic Shortcomings & Wishlist",
+        "",
+        "### 🔭 A. Fundamental Physics Researcher & Cosmological Architect",
+        "- **Equipped Tools**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`.",
+        "- **Shortcomings Encountered During Tasks**:",
+        "  1. **Abstract-Only Visibility on Long Derivations**: arXiv and OpenAlex return abstracts (~300–400 words) rather than full-text equation appendices, forcing the Researcher to reconstruct intermediate normalization factors (e.g., identical-particle $1/32\\pi$ vs $1/16\\pi$ phase space or conventions in Thomson scattering opacity $\\dot{\\kappa}$) from memory.",
+        "  2. **Observational vs. Textbook Tension**: Standard training priors favor textbook $\\Lambda\\text{CDM}$ and minimal slow-roll inflation, whereas modern deep-space observations (JWST $z > 10\\text{–}14$ luminous galaxies & over-massive black holes, HST/JWST $H_0 \\approx 73\\text{ km s}^{-1}\\text{ Mpc}^{-1}$ vs Planck $67.4$, DESI dynamical dark energy $w_0 w_a\\text{CDM}$, and $S_8$ cosmic shear) often contradict baseline theory.",
+        "  3. **Worked-Example Arithmetic Drift**: When adapting a formula to new benchmark parameters on retry, LLM mental arithmetic can slip by factors of $10^2\\text{–}10^3$ without a calculator tool.",
+        "- **Agent Wishlist**:",
+        "  * ✅ **[IMPLEMENTED]** `Observational Cosmology & Deep-Space Survey Tracker` tool providing direct access to JWST, Hubble (HST), DESI, Euclid, Planck, and NANOGrav observational tensions and verified DOIs.",
+        "  * 🎯 **[WISHLIST #1]** **Python Numerical Scratchpad / Calculator Tool for the Researcher** so worked numerical examples (e.g., Affleck-Dine baryon yield $n_B/s$, Hubble horizon expansion $\\lambda_{\\rm phys}(t_0)$ in meters, or SH0ES distance-ladder calibration) are computed in Python *before* the draft is submitted to the Math Physicist.",
+        "  * 🎯 **[WISHLIST #2]** **arXiv Full-Text Section Extractor (HTML/LaTeX source snippet reader)** to pull exact Lagrangian conventions and coefficient definitions from primary papers when abstracts omit prefactors.",
+        "",
+        "### 🧮 B. Mathematical Physics Verifier (`z-ai/glm-5.3-flash`)",
+        "- **Equipped Tools**: `Equation Extractor`, `Dimensional Consistency Checker`, `Topology Classifier`, `Numerical Benchmark Validator`.",
+        "- **Shortcomings Encountered During Tasks**:",
+        "  1. **Context & Tool-Argument Token Bloat in Multi-Agent Debates**: Passing 50,000–75,000 characters of raw prose into `Equation Extractor` and `Topology Classifier` previously caused 180s OpenRouter timeouts.",
+        "  2. **Natural-Units ($\\hbar = c = k_B = 1$) vs. SI Ambiguity**: In high-energy and cosmological formulas (e.g., one-pion-exchange potential, curvature-current baryogenesis $\\mathcal{L}_{\\rm int} = (\\partial_\\mu R) J_B^\\mu / M_*^2$, or comoving vs. physical number densities), dimensional consistency depends on declared mass dimensions $[\\phi] = E^1, [R] = E^2, [J^\\mu] = E^3$.",
+        "- **Agent Wishlist**:",
+        "  * ✅ **[IMPLEMENTED]** Concise equation-only extraction (<4,000 chars) and 25-equation relational prioritization to eliminate 180s tool-call timeouts.",
+        "  * 🎯 **[WISHLIST #1]** **Natural-Unit Mass-Dimension Evaluator (`[E]^n` checker)** alongside SI unit checking, where the tool explicitly checks Lagrangian terms against $[\\mathcal{L}] = [E]^4$ in 4D spacetime.",
+        "  * 🎯 **[WISHLIST #2]** **Automated Benchmark Substitution Check**: A tool that takes a formula like `n_B/s = (3*eps/4)*(m_soft*phi^2*T_RH/V_0)` plus a JSON dictionary of benchmark numbers cited in the text and verifies that the left-hand side numerically equals the right-hand side within 10%.",
+        "",
+        "### ⚖️ C. Scientific Skeptic & Student Orchestrator",
+        "- **Equipped Tools**: `Peer Review Critique Resolver`.",
+        "- **Shortcomings Encountered During Tasks**:",
+        "  1. **Convention Conflicts Across Multi-Attempt Retries**: When Researcher A and Researcher B in Level 2 use slightly different Fourier, metric signature $(-,+,+,+)$ vs $(+,-,-,-)$, or reduced vs. Planck mass ($M_{\\rm Pl} = 2.435\\times 10^{18}\\text{ GeV}$ vs $m_{\\rm Pl} = 1.22\\times 10^{19}\\text{ GeV}$) conventions, the synthesis can mix both.",
+        "- **Agent Wishlist**:",
+        "  * 🎯 **[WISHLIST #1]** **Shared Canonical Convention Header** injected at the start of every Level 1/2/3 crew run (fixing reduced Planck mass $M_{\\rm Pl} = (8\\pi G)^{-1/2} = 2.435\\times 10^{18}\\text{ GeV}$, metric signature, and entropy degrees of freedom $g_{*s}$) so all agents in the crew share identical unit definitions.",
+    ])
+
+    if live_responses:
+        lines.extend([
+            "",
+            "---",
+            "",
+            "## 🎙️ 3. Live Agent Interview Transcripts",
+            "",
+        ])
+        for role_key, resp_text in live_responses.items():
+            lines.append(f"### 💬 `{role_key}` Live Response")
+            lines.append(resp_text.strip())
+            lines.append("")
+
+    content = "\n".join(lines) + "\n"
+    AGENT_WISHLIST_MD.parent.mkdir(parents=True, exist_ok=True)
+    AGENT_WISHLIST_MD.write_text(content, encoding="utf-8")
+    return content
+
+
+def ask_agent_directly(agent_role: str, question: str) -> str:
+    """
+    Instantiates a live agent from UniverseAgents, injects its recent operational
+    shortcomings and equipped tools as context, and runs a direct 1-on-1 question/answer task.
+    """
+    from crewai import Crew, Task, Process
+    try:
+        from agents.universe_agents import UniverseAgents
+    except ImportError:
+        from src.agents.universe_agents import UniverseAgents
+
+    ua = UniverseAgents()
+    role_map = {
+        "student": ua.student_agent,
+        "researcher": ua.researcher_agent,
+        "math": ua.math_physicist_agent,
+        "skeptic": ua.skeptic_agent,
+        "cosmological_architect": ua.cosmological_architect_agent,
+        "bio_digital_analyst": ua.bio_digital_analyst_agent,
+        "visualizer": ua.visualizer_agent,
+        "archivist": ua.archivist_agent,
+        "peer_reviewer": ua.peer_reviewer_agent,
+    }
+
+    key = agent_role.strip().lower()
+    if key not in role_map:
+        raise ValueError(f"Unknown agent role '{agent_role}'. Valid roles: {', '.join(role_map.keys())}")
+
+    agent = role_map[key]()
+    # Disable delegation during direct 1-on-1 interview for fast, focused response
+    agent.allow_delegation = False
+    tool_names = [getattr(t, "name", str(t)) for t in (agent.tools or [])]
+    stats = collect_historical_agent_shortcomings(limit=5)
+
+    prompt = (
+        f"The Human Operator (Professor) is speaking to you directly in a 1-on-1 diagnostic session.\n"
+        f"Your Role: {agent.role}\n"
+        f"Your Currently Equipped Tools: {', '.join(tool_names) if tool_names else 'None (pure reasoning)'}\n"
+        f"Recent Historical Shortcomings Logged Across Runs:\n"
+        f"- Top Rejection Reasons: {json.dumps(stats['rejection_counts'])}\n"
+        f"- Recent Researcher Needs: {json.dumps(stats['recent_researcher_needs'])}\n"
+        f"- Recent Math Physicist Needs: {json.dumps(stats['recent_math_needs'])}\n\n"
+        f"PROFESSOR'S QUESTION TO YOU:\n\"{question}\"\n\n"
+        f"Respond candidly in first person as {agent.role}. Do NOT invoke external tools unless specifically asked to search for a topic; "
+        f"focus on giving a clear, concrete, technically specific answer about your workflow, shortcomings, and tool/data wishlist."
+    )
+
+    # Temporarily detach tools for meta-wishlist introspection unless the user asked to run a search
+    if any(w in question.lower() for w in ["wishlist", "shortcoming", "bottleneck", "struggle", "need", "improve", "missing"]):
+        agent.tools = []
+
+    task = Task(
+        description=prompt,
+        expected_output="A candid, technically specific first-person response addressing the Professor's question.",
+        agent=agent,
+    )
+    crew = Crew(agents=[agent], tasks=[task], process=Process.sequential, verbose=False)
+    return str(crew.kickoff()).strip()
+

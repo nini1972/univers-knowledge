@@ -82,18 +82,19 @@ class UniverseTasks:
                 - Use your dedicated academic tools:
                   * ArXiv Preprint Search: to find preprints and read complete abstracts with formal mathematical formulas.
                   * OpenAlex Scholarly Graph Search: to find highly-cited peer-reviewed papers, authentic DOIs, and verified publication years.
+                  * Observational Cosmology & Deep-Space Survey Tracker: to retrieve flagship telescope data (Hubble/HST, JWST, DESI, Euclid, Planck, NANOGrav/LIGO) and identify where modern observations conflict with or stress standard theoretical models of the origin and evolution of the Universe.
                   * Europe PMC Literature Search: to cross-reference open-access peer-reviewed literature and biophysics.
                 - When searching, generate highly specific queries. Append terms like "review article", "recent advances", "experimental constraints", or "mathematical framework" (e.g., "{concept} experimental constraints" or "{concept} review article").
                 - Run the Pre-Flight Citation Verifier tool on your draft to audit all citations, ensuring 0 future-dated years, 0 unresolvable DOIs, and 0 placeholder sources before submitting.
 
                 CRITICAL REQUIREMENTS - Your research report MUST satisfy these 5 criteria:
                 1. Cite at least 3 independent scientific/academic sources with clear references.
-                2. Highlight skepticism, empirical gaps, limitations, and contradictions of this concept, explicitly comparing the mainstream model with at least one unorthodox or alternative counter-hypothesis (e.g. MOND vs. Dark Matter; loop quantum gravity or non-commutative geometry vs. String Theory) and describing the current experimental bounds.
+                2. Highlight skepticism, empirical gaps, limitations, and observational tensions (such as JWST high-redshift galaxy anomalies, the Hubble H_0 tension, or DESI dynamical dark energy where relevant), explicitly comparing the mainstream model with at least one alternative counter-hypothesis and describing current experimental bounds.
                 3. Include mathematical grounding, equations, or LaTeX formulas (e.g. $E=mc^2$) explaining the underlying physics.
                 4. Classify the status clearly as either [VERIFIED] or [THEORETICAL] with rigorous justification.
                 5. Include a "Visual Grounding" section with a highly detailed, 1-paragraph visual description or image generation prompt for a schematic diagram representing the concept.
             """),
-            expected_output="A comprehensive research report detailing the concept, citing at least 3 scientific sources, including alternative hypotheses, math formulas, status, limitations, and a visual description.",
+            expected_output="A comprehensive research report detailing the concept, citing at least 3 scientific sources, including observational tensions, alternative hypotheses, math formulas, status, limitations, and a visual description.",
             agent=agent,
             async_execution=async_execution
         )

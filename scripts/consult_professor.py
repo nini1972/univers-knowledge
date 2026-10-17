@@ -133,6 +133,35 @@ def cmd_sync(args):
     print("✅ Successfully synchronized knowledge_base/PROFESSOR_OFFICE_HOURS.md")
 
 
+def cmd_wishlist(args):
+    live_responses = {}
+    if getattr(args, "live", False):
+        roles = ["researcher", "math", "skeptic", "student"]
+        question = (
+            "What are the top 2 shortcomings or bottlenecks you encounter during your tasks, "
+            "and what are the top 2 tools, datasets, or workflow improvements on your wishlist?"
+        )
+        for r in roles:
+            print(f"🎙️ Interviewing live agent '{r}'...")
+            try:
+                live_responses[r] = advisory_manager.ask_agent_directly(r, question)
+            except Exception as exc:
+                live_responses[r] = f"*(Live interview skipped: {exc})*"
+
+    content = advisory_manager.generate_agent_wishlist_markdown(live_responses=live_responses or None)
+    print(content)
+    print("✅ Saved Agent Shortcomings & Wishlist report to knowledge_base/AGENT_WISHLIST.md")
+
+
+def cmd_ask(args):
+    print(f"🎙️ Asking '{args.agent}' directly: \"{args.question}\"\n" + "-" * 70)
+    try:
+        reply = advisory_manager.ask_agent_directly(args.agent, args.question)
+        print(reply)
+    except Exception as exc:
+        print(f"❌ Error querying agent '{args.agent}': {exc}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Professor Office Hours CLI — Univers Knowledge Builder")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
@@ -161,6 +190,18 @@ def main():
     # sync
     subparsers.add_parser("sync", help="Synchronize PROFESSOR_OFFICE_HOURS.md")
 
+    # wishlist
+    wish_parser = subparsers.add_parser("wishlist", help="Generate Agent Shortcomings & Capability Wishlist report")
+    wish_parser.add_argument("--live", action="store_true", help="Also run live LLM interviews with each specialist agent")
+
+    # ask
+    ask_parser = subparsers.add_parser("ask", help="Ask any specialist agent a direct 1-on-1 question")
+    ask_parser.add_argument(
+        "agent",
+        help="Agent role: student, researcher, math, skeptic, cosmological_architect, bio_digital_analyst, visualizer, archivist",
+    )
+    ask_parser.add_argument("question", help="Question to ask the agent directly")
+
     args = parser.parse_args()
 
     if not args.command or args.command == "list":
@@ -175,6 +216,10 @@ def main():
         cmd_history(args)
     elif args.command == "sync":
         cmd_sync(args)
+    elif args.command == "wishlist":
+        cmd_wishlist(args)
+    elif args.command == "ask":
+        cmd_ask(args)
 
 
 if __name__ == "__main__":

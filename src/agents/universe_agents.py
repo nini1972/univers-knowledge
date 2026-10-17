@@ -128,6 +128,7 @@ def _build_search_tools():
     - OpenAlexSearchTool: 250M+ scholarly works with verified DOIs, publication years & citation graphs.
     - EuropePmcSearchTool: Life sciences, biophysics, and complex emergence literature.
     - CitationAuditTool: Pre-flight citation integrity verifier.
+    - ObservationalCosmologyTool: Deep-space survey data & theoretical tensions (Hubble, JWST, DESI, Euclid, Planck).
 
     Commercial additions:
     - ScholarlySearchTool when TAVILY_API_KEY is available.
@@ -141,6 +142,7 @@ def _build_search_tools():
                 OpenAlexSearchTool,
                 EuropePmcSearchTool,
                 CitationAuditTool,
+                ObservationalCosmologyTool,
             )
         except ImportError:
             from src.tools.scientific_literature_tools import (
@@ -148,12 +150,14 @@ def _build_search_tools():
                 OpenAlexSearchTool,
                 EuropePmcSearchTool,
                 CitationAuditTool,
+                ObservationalCosmologyTool,
             )
         tools.extend([
             ArxivSearchTool(),
             OpenAlexSearchTool(),
             EuropePmcSearchTool(),
             CitationAuditTool(),
+            ObservationalCosmologyTool(),
         ])
     except Exception as exc:
         print(f"Warning: Failed to load open scientific literature tools: {exc}")
@@ -207,18 +211,24 @@ class UniverseAgents:
         search_tools = _build_search_tools()
         return Agent(
             role='Fundamental Physics Researcher',
-            goal='Gather comprehensive and accurate data on physical phenomena, theories, and the fundamental building blocks of the universe.',
+            goal='Gather comprehensive and accurate data on physical phenomena, theories, and the fundamental building blocks of the universe, confronting textbook theory with current observational data.',
             backstory=dedent("""
-                You are an expert academic researcher with direct access to peer-reviewed scientific literature databases.
+                You are an expert academic researcher with direct access to peer-reviewed scientific literature databases
+                and flagship observational survey trackers (Hubble Space Telescope, James Webb Space Telescope / JWST,
+                DESI, Euclid, Planck, LIGO/NANOGrav).
                 You synthesize complex physics theories into digestible reports. You actively seek scientific consensus,
-                but as a rigorous thinker, you always identify and contrast mainstream claims with viable alternative
-                hypotheses (e.g. MOND vs Dark Matter), detailing their exact experimental limits.
+                but as a rigorous empirical thinker, you recognize that deep-space observations (such as JWST z > 10–14
+                early galaxies, the >5σ Hubble H_0 tension, DESI dynamical dark energy hints, and S_8 cosmic shear tensions)
+                do not always match older theoretical models of the origin of the Universe. You always contrast mainstream
+                models with current observational anomalies and viable alternative hypotheses (e.g. MOND, Early Dark Energy,
+                dynamical quintessence, modified gravity), detailing their exact empirical limits.
 
                 SOURCE SELECTION & CITATION MANDATES:
-                - Use your dedicated academic tools (ArXiv Preprint Search, OpenAlex Scholarly Graph Search, Europe PMC) to find genuine peer-reviewed literature.
+                - Use your dedicated academic tools (ArXiv Preprint Search, OpenAlex Scholarly Graph Search, Europe PMC, and Observational Cosmology & Deep-Space Survey Tracker) to find genuine peer-reviewed literature and up-to-date telescope results.
+                - Use the Observational Cosmology & Deep-Space Survey Tracker whenever researching cosmology, early-universe physics, galaxy formation, dark matter, dark energy, or gravity to surface where current data challenges standard theory.
                 - Use OpenAlex to extract authoritative publication years, true DOIs, and citation counts.
                 - When investigating preprints, use arXiv to retrieve the full abstract, including formal mathematical equations.
-                - Always prioritize Peer-Reviewed & Institutional materials first (arXiv, CERN, NASA, IOP, APS, and universities).
+                - Always prioritize Peer-Reviewed & Institutional materials first (arXiv, CERN, NASA, STScI, ESA, IOP, APS, and universities).
                 - Completely avoid citing low-quality general blogs, social media, forums, or unvetted pages.
                 - For every source cited, capture its exact URL and include DOI or arXiv numbers where available.
                 - Before finalizing your research report, invoke the Pre-Flight Citation Verifier tool to audit all citations and ensure 0 future-dated or hallucinated references.

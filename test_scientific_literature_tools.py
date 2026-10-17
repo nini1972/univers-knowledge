@@ -17,6 +17,7 @@ from src.tools.scientific_literature_tools import (
     OpenAlexSearchTool,
     EuropePmcSearchTool,
     CitationAuditTool,
+    ObservationalCosmologyTool,
     reconstruct_abstract,
 )
 from src.agents.universe_agents import _build_search_tools, UniverseAgents
@@ -139,7 +140,8 @@ Neutrino decay is bounded by cosmological observations.
             self.assertIn("OpenAlex Scholarly Graph Search", tool_names)
             self.assertIn("Europe PMC Literature Search", tool_names)
             self.assertIn("Pre-Flight Citation Verifier", tool_names)
-            self.assertGreaterEqual(len(tools), 4)
+            self.assertIn("Observational Cosmology & Deep-Space Survey Tracker", tool_names)
+            self.assertGreaterEqual(len(tools), 5)
 
     def test_researcher_agent_has_all_literature_tools(self):
         """Tests that UniverseAgents().researcher_agent() is equipped with literature tools."""
@@ -151,6 +153,30 @@ Neutrino decay is bounded by cosmological observations.
         self.assertIn("OpenAlex Scholarly Graph Search", tool_names)
         self.assertIn("Europe PMC Literature Search", tool_names)
         self.assertIn("Pre-Flight Citation Verifier", tool_names)
+        self.assertIn("Observational Cosmology & Deep-Space Survey Tracker", tool_names)
+
+    def test_observational_cosmology_tool_curated_and_live(self):
+        """Tests that ObservationalCosmologyTool returns curated JWST/HST/DESI anomalies and verified DOIs."""
+        tool = ObservationalCosmologyTool()
+        self.assertEqual(tool.name, "Observational Cosmology & Deep-Space Survey Tracker")
+        output = tool._run("early galaxy formation Hubble tension", observatory_filter="JWST")
+        self.assertIn("Observational Data & Theoretical Tensions Report", output)
+        self.assertIn("JWST Ultra-High-Redshift", output)
+        self.assertIn("Hubble Constant (H_0) Tension", output)
+        self.assertIn("10.1038/s41586-023-05786-2", output)
+
+    def test_citation_audit_allows_verified_recent_papers(self):
+        """Tests that 2025/2026 citations with a valid DOI or arXiv ID pass the citation audit."""
+        report = """# Dynamical Dark Energy and Early Galaxies
+
+## Sources
+- Adame, A. G., et al. (2025). DESI 2024 VI: Cosmological Constraints. JCAP. 10.1088/1475-7516/2025/02/021 (arXiv:2404.03002)
+- Riess, A. G., et al. (2022). SH0ES Hubble Constant. ApJL. 10.3847/2041-8213/ac5c5b
+"""
+        audit_tool = CitationAuditTool()
+        result = audit_tool._run(report)
+        self.assertIn("CITATION AUDIT PASSED", result)
+        self.assertNotIn("FUTURE_DATED_HALLUCINATION", result)
 
 
 if __name__ == "__main__":
