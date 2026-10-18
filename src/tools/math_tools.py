@@ -234,6 +234,11 @@ class NaturalUnitDimensionAnalyzer:
         self.inner_mismatches: list[str] = []
         self._pending_power = 1.0
         self.field_context = False
+        self._canonical_hits = 0
+        self.last_basis: str | None = None
+
+    # Dimensionless-in-natural-units constants that never weaken a verdict's basis.
+    UNIVERSAL_CONSTANTS = {"c", "hbar", "k_B", "pi", "e", "i"}
 
     # ---- key normalization -------------------------------------------------
     @staticmethod
@@ -298,6 +303,8 @@ class NaturalUnitDimensionAnalyzer:
         for key in keys:
             v = self._lookup(self.canonical, key)
             if v is not None:
+                if key not in self.UNIVERSAL_CONSTANTS and b not in self.UNIVERSAL_CONSTANTS:
+                    self._canonical_hits += 1  # dimension came from built-in defaults, not the report
                 if key == b:
                     labelled = bool(lab) and not label_is_index
                     if labelled:
@@ -455,9 +462,9 @@ class NaturalUnitDimensionAnalyzer:
             exact_pairs = [r for r in results if r[1][1]]
             desc = ", ".join(f"'{t}' [E]^{d:g}" for t, (d, _) in results)
             if len({round(r[1][0], 9) for r in exact_pairs}) > 1:
-                self.inner_mismatches.append(f"exact:{desc}")
+                self.inner_mismatches.append(("exact", desc, self._canonical_hits > 0))
             else:
-                self.inner_mismatches.append(f"inferred:{desc}")
+                self.inner_mismatches.append(("inferred", desc, self._canonical_hits > 0))
             raise _UnknownDimension("inhomogeneous sum")
         exact = all(r[1][1] for r in results) and unknown == 0
         return results[0][1][0], exact
@@ -671,33 +678,36 @@ class NaturalUnitDimensionAnalyzer:
         if len(sides) < 2:
             return None, None
 
+        self.last_basis = None
         resolved, unknown = [], 0
         for side in sides:
             for term in self._split_top(side, self._sum_splitter):
                 if not term.strip():
                     continue
+                self._canonical_hits = 0
                 try:
                     r = self.parse_term(term)
                 except _UnknownDimension:
                     unknown += 1
                     continue
                 if r != "ZERO":
-                    resolved.append((term.strip(), r[0], r[1]))
+                    resolved.append((term.strip(), r[0], r[1], self._canonical_hits > 0))
 
-        for mm in self.inner_mismatches:
-            kind, desc = mm.split(":", 1)
+        for kind, desc, used_defaults in self.inner_mismatches:
             if kind == "exact":
+                self.last_basis = "canonical_defaults" if used_defaults else "declared_symbol_table"
                 return "INCONSISTENT", f"Inhomogeneous sum inside a bracket: {desc} — terms that are added must share one mass dimension ✗"
 
         exact_terms = [r for r in resolved if r[2]]
         exact_dims = {round(r[1], 9) for r in exact_terms}
         if len(exact_dims) > 1:
-            desc = "; ".join(f"'{t}' → [E]^{d:g}" for t, d, _ in exact_terms)
+            self.last_basis = "canonical_defaults" if any(r[3] for r in exact_terms) else "declared_symbol_table"
+            desc = "; ".join(f"'{t}' → [E]^{d:g}" for t, d, _, _ in exact_terms)
             return "INCONSISTENT", f"Natural-unit mass-dimension mismatch between terms: {desc} ✗"
 
         all_dims = {round(r[1], 9) for r in resolved}
         if len(all_dims) > 1 or self.inner_mismatches:
-            desc = "; ".join(f"'{t}' → [E]^{d:g}{'' if e else ' (inferred)'}" for t, d, e in resolved)
+            desc = "; ".join(f"'{t}' → [E]^{d:g}{'' if e else ' (inferred)'}" for t, d, e, _ in resolved)
             return (
                 "POSSIBLE_MISMATCH",
                 f"Possible mass-dimension mismatch involving ambiguous symbols: {desc}. "
@@ -902,18 +912,19 @@ class DimensionalConsistencyTool(BaseTool):
                 "Report this equation honestly as UNDECIDABLE or verify its terms against the Symbol Table."
             )
             matched = False
+            basis = "none"
 
             # Step 1: Known flawed patterns (run on the normalized form, so \left( ... \right) is covered)
             for bad_pat, bad_expl in self.KNOWN_INCONSISTENT_PATTERNS:
                 if re.search(bad_pat, eq, re.IGNORECASE):
-                    verdict, explanation, matched = "INCONSISTENT", bad_expl, True
+                    verdict, explanation, matched, basis = "INCONSISTENT", bad_expl, True, "known_error_pattern"
                     break
 
             # Step 2: Unsuppressed higher-dimension operators, checked term by term
             if not matched:
                 op_verdict, op_expl = self._unsuppressed_operator_check(eq, analyzer)
                 if op_verdict:
-                    verdict, explanation, matched = op_verdict, op_expl, True
+                    verdict, explanation, matched, basis = op_verdict, op_expl, True, "lagrangian_operator"
 
             # Step 3: Term-level natural-unit [E]^n analysis — a definitive mismatch wins immediately
             try:
@@ -922,19 +933,20 @@ class DimensionalConsistencyTool(BaseTool):
                 nu_verdict, nu_expl = None, None
             if not matched and nu_verdict == "INCONSISTENT":
                 verdict, explanation, matched = "INCONSISTENT", nu_expl, True
+                basis = analyzer.last_basis or "canonical_defaults"
 
             # Step 4: Known valid physics/cosmology/statistics patterns
             if not matched:
                 for pattern, v, expl in self.KNOWN_PATTERNS:
                     if re.search(pattern, eq, re.IGNORECASE):
-                        verdict, explanation, matched = v, expl, True
+                        verdict, explanation, matched, basis = v, expl, True, "known_valid_pattern"
                         break
 
             # Step 5: Term-level analysis result (consistent, or possible mismatch on ambiguous symbols)
             if not matched and nu_verdict == "CONSISTENT":
-                verdict, explanation, matched = "CONSISTENT", nu_expl, True
+                verdict, explanation, matched, basis = "CONSISTENT", nu_expl, True, "term_dimensions"
             elif not matched and nu_verdict == "POSSIBLE_MISMATCH":
-                verdict, explanation, matched = "UNDECIDABLE", nu_expl, True
+                verdict, explanation, matched, basis = "UNDECIDABLE", nu_expl, True, "possible_mismatch"
 
             # Step 6: Fallback for unmatched expressions (never blindly mark standalone tokens as DIMENSIONLESS)
             if not matched:
@@ -962,6 +974,7 @@ class DimensionalConsistencyTool(BaseTool):
             results.append({
                 "equation": eq_raw[:140],
                 "verdict": verdict,
+                "basis": basis,
                 "explanation": explanation
             })
 

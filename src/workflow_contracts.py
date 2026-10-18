@@ -577,47 +577,57 @@ def parse_math_tool_verdicts(math_output: str) -> dict:
     return counts
 
 
-def evaluate_math_gate(math_output: str) -> dict:
+def evaluate_math_gate(math_output: str, precheck: dict | None = None) -> dict:
     """
     Decides whether the math report must block approval.
-    Blocks when math_status is MATH_FLAWED or any blocking tool verdict count is > 0.
-    Also flags a coherence violation when the report claims a global pass while listing
-    blocking or UNDECIDABLE findings (reported, not blocking on its own for UNDECIDABLE).
+    Blocks when math_status is MATH_FLAWED, any blocking tool verdict count is > 0, or the
+    code-run pre-check (math_precheck.run_math_precheck) found high-confidence INCONSISTENT
+    equations. Also flags a coherence violation when the report claims a global pass while
+    blocking or UNDECIDABLE findings exist (reported, not blocking on its own for UNDECIDABLE).
     """
     text = str(math_output or "")
     status = parse_math_status(text)
     counts = parse_math_tool_verdicts(text)
     blocking = {k: counts[k] for k in MATH_GATE_BLOCKING_VERDICTS if counts.get(k, 0) > 0}
+    precheck = precheck or {}
+    precheck_blocking = list(precheck.get("blocking") or [])
     global_pass_claim = bool(_GLOBAL_PASS_CLAIM_RE.search(text))
-    coherence_violation = global_pass_claim and (bool(blocking) or counts.get("UNDECIDABLE", 0) > 0)
+    coherence_violation = global_pass_claim and (
+        bool(blocking) or bool(precheck_blocking) or counts.get("UNDECIDABLE", 0) > 0
+    )
 
     reasons = []
     if status == "MATH_FLAWED":
         reasons.append("math_status is MATH_FLAWED")
     for key, val in blocking.items():
         reasons.append(f"{val} {key} verdict(s)")
+    if precheck_blocking:
+        listed = "; ".join(f"`{e.get('equation', '')[:90]}` ({e.get('basis')})" for e in precheck_blocking[:3])
+        more = f" and {len(precheck_blocking) - 3} more" if len(precheck_blocking) > 3 else ""
+        reasons.append(f"{len(precheck_blocking)} code-confirmed INCONSISTENT equation(s) in the automated pre-check: {listed}{more}")
     if coherence_violation:
         reasons.append("report claims all equations consistent while listing unresolved findings")
 
     return {
-        "block": status == "MATH_FLAWED" or bool(blocking),
+        "block": status == "MATH_FLAWED" or bool(blocking) or bool(precheck_blocking),
         "math_status": status,
         "tool_verdicts": counts,
         "structured_line_found": bool(counts),
+        "precheck_blocking": len(precheck_blocking),
         "coherence_violation": coherence_violation,
         "reasons": reasons,
         "overrode_approval": False,
     }
 
 
-def apply_math_gate(decision: dict, math_output: str) -> tuple[dict, dict]:
+def apply_math_gate(decision: dict, math_output: str, precheck: dict | None = None) -> tuple[dict, dict]:
     """
     Enforces the math blocking rule on a parsed Student decision. If the Student approved but the
-    math report has blocking findings, the decision is converted into a rejection with reason
-    'mathematical_flaw_or_inconsistency' (which routes to a targeted micro-revision).
-    Returns (decision, gate_info). The input dict is not mutated.
+    math report (or the code-run pre-check) has blocking findings, the decision is converted into a
+    rejection with reason 'mathematical_flaw_or_inconsistency' (which routes to a targeted
+    micro-revision). Returns (decision, gate_info). The input dict is not mutated.
     """
-    gate = evaluate_math_gate(math_output)
+    gate = evaluate_math_gate(math_output, precheck)
     decision = dict(decision or {})
     if decision.get("status") != "approved" or not gate["block"]:
         return decision, gate

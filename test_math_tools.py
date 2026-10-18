@@ -249,5 +249,116 @@ class TestGeneratedWishlistSection(unittest.TestCase):
         self.assertIn("✅ present — Math gate in the flow", text)
 
 
+DRAFT_WITH_TABLE = r"""
+## 3. Mathematical Framework
+### Conventions & Symbol Table
+| Symbol | Meaning | Dimension |
+|---|---|---|
+| $\phi$ | inflaton | $[E]^1$ |
+| $V(\phi)$ | potential | $[E]^4$ |
+| $n_B$ | baryon number density | [E]^3 |
+| $T$ | temperature | $[E]^{1}$ |
+| $\lambda$ | quartic coupling | dimensionless |
+| $H_0$ | Hubble constant | km s^-1 Mpc^-1 |
+
+The naive form $\rho \propto a^{-3(1+w(a))}$ is incorrect when w varies.
+Our dark-energy density is
+$$\rho_{\rm DE}(a) = \rho_0 a^{-3(1+w(a))}$$
+and the baryon density obeys
+$$n_B = T^4$$
+with the familiar $E = mc^2$.
+"""
+
+
+class TestMathPrecheck(unittest.TestCase):
+    def test_symbol_table_parsing(self):
+        from src.math_precheck import parse_symbol_table
+
+        table = parse_symbol_table(DRAFT_WITH_TABLE)
+        self.assertEqual(table["\\phi"], 1.0)
+        self.assertEqual(table["V"], 4.0)
+        self.assertEqual(table["n_B"], 3.0)
+        self.assertEqual(table["\\lambda"], 0.0)
+        self.assertNotIn("H_0", table)  # SI units are not mass dimensions
+
+    def test_blocking_advisory_and_quoted(self):
+        from src.math_precheck import run_math_precheck
+
+        pre = run_math_precheck(DRAFT_WITH_TABLE)
+        blocking = {e["equation"]: e["basis"] for e in pre["blocking"]}
+        self.assertEqual(blocking.get(r"\rho_{\rm DE}(a) = \rho_0 a^{-3(1+w(a))}"), "known_error_pattern")
+        self.assertEqual(blocking.get("n_B = T^4"), "declared_symbol_table")
+        self.assertEqual(len(pre["quoted_as_incorrect"]), 1)  # the "naive form ... is incorrect" sentence
+        self.assertGreaterEqual(pre["verified_count"], 1)    # E = mc^2
+
+    def test_default_based_mismatch_is_advisory_only(self):
+        from src.math_precheck import run_math_precheck
+
+        pre = run_math_precheck(r"The potential is $$V(\phi) = \lambda \phi^4 + m^2 \phi^3$$ in our model.")
+        self.assertEqual(pre["blocking_count"], 0)
+        self.assertEqual(len(pre["advisory"]), 1)
+
+    def test_prompt_block_and_crewai_callback(self):
+        from types import SimpleNamespace
+        from crewai import Task
+        from src.math_precheck import attach_precheck
+
+        research = Task(description="research", expected_output="draft")
+        math = Task(description="math", expected_output="report")
+        captured = {}
+        attach_precheck([research], math, on_result=lambda pre: captured.update(pre))
+        research.callback(SimpleNamespace(raw=DRAFT_WITH_TABLE))
+        self.assertIn("AUTOMATED PRE-CHECK", math.description)
+        self.assertIn("Code-confirmed INCONSISTENT (blocks approval until corrected): 2", math.description)
+        self.assertEqual(captured["blocking_count"], 2)
+
+    def test_precheck_never_raises(self):
+        from src.math_precheck import run_math_precheck
+
+        pre = run_math_precheck(None)
+        self.assertEqual(pre["blocking_count"], 0)
+
+
+class TestGateWithPrecheck(unittest.TestCase):
+    def test_precheck_blocks_even_if_report_is_clean(self):
+        from src.math_precheck import run_math_precheck
+
+        pre = run_math_precheck(DRAFT_WITH_TABLE)
+        decision, gate = apply_math_gate({"status": "approved"}, MATH_REPORT_OK, pre)
+        self.assertEqual(decision["status"], "rejected")
+        self.assertEqual(gate["precheck_blocking"], 2)
+        self.assertIn("automated pre-check", decision["follow_up_questions"][0])
+
+    def test_advisory_precheck_does_not_block(self):
+        from src.math_precheck import run_math_precheck
+
+        pre = run_math_precheck(r"$$V(\phi) = \lambda \phi^4 + m^2 \phi^3$$")
+        decision, _ = apply_math_gate({"status": "approved"}, MATH_REPORT_OK, pre)
+        self.assertEqual(decision["status"], "approved")
+
+
+class TestInterviewHelpers(unittest.TestCase):
+    def test_evaluations_since(self):
+        from src.advisory_manager import _evaluations_since
+
+        self.assertEqual(_evaluations_since("2999-01-01T00:00:00+00:00")["total"], 0)
+        self.assertGreater(_evaluations_since("1970-01-01T00:00:00+00:00")["total"], 0)
+
+    def test_last_tooling_change_is_parseable(self):
+        from datetime import datetime
+        from src.advisory_manager import _last_tooling_change_utc
+
+        ts, source = _last_tooling_change_utc()
+        datetime.fromisoformat(ts.replace("Z", "+00:00"))
+        self.assertTrue(source)
+
+    def test_tool_descriptions(self):
+        from src.advisory_manager import _describe_tools
+
+        line = _describe_tools([PhysicsCalculatorTool()])[0]
+        self.assertTrue(line.startswith("Physics Calculator & Tension Evaluator — "), line)
+        self.assertNotIn("Tool Name:", line)
+
+
 if __name__ == "__main__":
     unittest.main()

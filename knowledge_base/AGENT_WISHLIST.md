@@ -1,6 +1,6 @@
 # 🛠️ Autonomous Agent Shortcomings & Capability Wishlist
 
-> **Last Updated**: `2026-10-18T21:45:07.939107+00:00`
+> **Last Updated**: `2026-10-18T22:05:33.902793+00:00`
 > **How to Query Agents Directly**:
 > - Generate/refresh this wishlist: `python scripts/consult_professor.py wishlist` (add `--live` to interview live LLMs)
 > - Ask any agent a direct question: `python scripts/consult_professor.py ask <agent_role> "Your question"`
@@ -9,6 +9,8 @@
 ---
 
 ## 📊 1. Empirical Telemetry: Where Agents Struggle in Production
+
+> ⏱️ **Evaluations since the last tooling change** (`2026-10-18T23:40:07+02:00`, from git history): **0** — everything below predates the current tools and safeguards.
 
 ### Recent Window Scorecard (Last `100` Evaluations)
 - **Evaluations in Window**: `100` (`29` approved, `71` rejected)
@@ -68,7 +70,7 @@
 > Generated automatically: tool lists are read from the live agent configuration, need themes from the last `100` evaluations, and each capability's status from a probe of the code. Nothing in this section is hand-written.
 
 ### 🔭 A. Researcher, Bio-Digital Analyst & Cosmological Architect
-- **Equipped Tools (live)**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`, `Physics Calculator & Tension Evaluator`, `Scholarly Tavily Search`, `Search the internet with Serper`
+- **Equipped Tools (live)**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`, `Physics Calculator & Tension Evaluator`
 - **Recurring need themes (`researcher_needs`, last 100)**: `citation_provenance` ×26, `conventions_and_signs` ×26, `units_and_dimensions` ×23, `worked_arithmetic_and_benchmarks` ×18, `causal_and_statistical_design` ×10
 - **Most recent concrete needs**:
   * Use a clearly defined interventional estimand or state and justify the assumptions required for a natural indirect effect.
@@ -92,6 +94,7 @@
   * ✅ present — Symbolic re-derivation (continuity/ODE integrals, identities, limits) for the Math Physicist · addresses `conventions_and_signs`, `causal_and_statistical_design` (57 recent mention(s))
   * ✅ present — Benchmark table + claim verification (verify_claim within 10%) · addresses `worked_arithmetic_and_benchmarks` (21 recent mention(s))
   * ✅ present — Math gate in the flow (tool-confirmed INCONSISTENT / STEP_INVALID blocks approval) · addresses `units_and_dimensions` (57 recent mention(s))
+  * ✅ present — Automated pre-check: equations + the draft's own symbol table checked in code before the Math Physicist · addresses `units_and_dimensions`, `conventions_and_signs` (104 recent mention(s))
 
 ### ⚖️ C. Scientific Skeptic & Student
 - **Equipped Tools**: none by design — both receive the Math Physicist's tool-verified report in context.
@@ -184,4 +187,3 @@ The `crew_kickoff_error` and `parse_error` counts are operational annoyances, bu
 1. **A structured verification workflow for equations and claims.** I’d want a workflow that makes me record, for each equation or quantitative claim, its units, sign and metric conventions, assumptions, source, and domain of validity, with automated checks where possible. It should also prompt for boundary or limiting-case checks and reconcile a claim against any later qualification or contradiction in the same response. This directly targets the dominant recent rejection category.
 
 2. **A reproducible evidence-and-analysis workspace.** I’d want a source ledger linked to claim-level citations and draft versions, plus templates for quantitative model comparison and causal/statistical designs. The templates should require explicit predictions and observational benchmarks, a defined estimand and identification conditions, and preregistered measurement, variance, power, and multiplicity choices. That would help me move from plausible narrative to auditable, testable conclusions.
-

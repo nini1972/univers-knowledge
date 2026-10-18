@@ -634,6 +634,9 @@ def _capability_registry(tools: dict) -> list[dict]:
         {"agent": "math", "name": "Math gate in the flow (tool-confirmed INCONSISTENT / STEP_INVALID blocks approval)",
          "themes": ["units_and_dimensions"],
          "present": _source_contains("src/universe_flow.py", "apply_math_gate(")},
+        {"agent": "math", "name": "Automated pre-check: equations + the draft's own symbol table checked in code before the Math Physicist",
+         "themes": ["units_and_dimensions", "conventions_and_signs"],
+         "present": _source_contains("src/universe_flow.py", "attach_precheck(")},
         {"agent": "skeptic", "name": "Shared canonical conventions header in every crew task",
          "themes": ["conventions_and_signs"],
          "present": _source_contains("src/conventions.py", "CANONICAL_CONVENTIONS_HEADER")},
@@ -667,6 +670,17 @@ def _format_theme_counts(theme_counts: dict) -> str:
     if not theme_counts:
         return "*none logged in this window*"
     return ", ".join(f"`{t}` ×{c}" for t, c in theme_counts.items())
+
+
+def _freshness_line() -> str:
+    ts, source = _last_tooling_change_utc()
+    since = _evaluations_since(ts)
+    if since["total"] == 0:
+        return (f"> ⏱️ **Evaluations since the last tooling change** (`{ts}`, {source}): **0** — "
+                "everything below predates the current tools and safeguards.")
+    return (f"> ⏱️ **Evaluations since the last tooling change** (`{ts}`, {source}): **{since['total']}** "
+            f"(`{since['approved']}` approved, `{since['rejected']}` rejected; reasons: "
+            + (", ".join(f"`{k}` ×{v}" for k, v in since["reasons"].items()) or "none") + ")")
 
 
 def _recent_need_lines(needs: list | None, n: int = 3) -> list[str]:
@@ -762,6 +776,8 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
         "",
         "## 📊 1. Empirical Telemetry: Where Agents Struggle in Production",
         "",
+        _freshness_line(),
+        "",
         f"### Recent Window Scorecard (Last `{stats['recent_window_size']}` Evaluations)",
         f"- **Evaluations in Window**: `{stats['recent_window_size']}` (`{stats['recent_window_approved']}` approved, `{stats['recent_window_rejected']}` rejected)",
         "- **Recent Rejection Breakdown by Root Cause**:",
@@ -828,6 +844,84 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
     return content
 
 
+# Fallback used when git history is unavailable (e.g. the shallow checkout in GitHub Actions).
+# Bump this whenever agent tools, tasks, the math gate or the pre-check change.
+LAST_TOOLING_CHANGE_FALLBACK_UTC = "2026-10-18T22:05:00+00:00"
+_TOOLING_PATHS = [
+    "src/tools", "src/agents", "src/tasks", "src/universe_flow.py", "src/workflow_contracts.py",
+    "src/math_precheck.py", "src/conventions.py",
+]
+
+
+def _last_tooling_change_utc() -> tuple[str, str]:
+    """Return (ISO timestamp, source) of the most recent change to agent tooling."""
+    import subprocess
+
+    def _git(*args: str) -> subprocess.CompletedProcess:
+        return subprocess.run(["git", *args], cwd=REPO_ROOT, capture_output=True, text=True, timeout=10)
+
+    try:
+        found = _git("log", "-1", "--format=%H %cI", "--", *_TOOLING_PATHS).stdout.strip()
+        if found:
+            sha, ts = found.split(" ", 1)
+            # In a shallow clone the boundary commit has no parent, so git cannot tell what it changed.
+            if _git("rev-parse", "--verify", "--quiet", f"{sha}^").returncode == 0:
+                return ts, "from git history"
+    except Exception:
+        pass
+    return LAST_TOOLING_CHANGE_FALLBACK_UTC, "from LAST_TOOLING_CHANGE_FALLBACK_UTC"
+
+
+def _evaluations_since(iso_ts: str) -> dict:
+    """Count evaluations logged after iso_ts (approved / rejected / reason codes)."""
+    from collections import Counter
+    from datetime import datetime, timezone
+
+    def _parse(ts: str):
+        try:
+            dt = datetime.fromisoformat(str(ts).replace("Z", "+00:00"))
+            return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+        except Exception:
+            return None
+
+    cutoff = _parse(iso_ts)
+    out = {"total": 0, "approved": 0, "rejected": 0, "reasons": {}}
+    eval_file = LOGS_DIR / "evaluation_runs.jsonl"
+    if cutoff is None or not eval_file.exists():
+        return out
+    reasons: Counter = Counter()
+    with open(eval_file, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except Exception:
+                continue
+            ts = _parse(rec.get("timestamp", ""))
+            if ts is None or ts <= cutoff:
+                continue
+            out["total"] += 1
+            if rec.get("status") == "approved":
+                out["approved"] += 1
+            elif rec.get("status") == "rejected":
+                out["rejected"] += 1
+                reasons[rec.get("reason_code", "unspecified")] += 1
+    out["reasons"] = dict(reasons.most_common())
+    return out
+
+
+def _describe_tools(tools: list) -> list[str]:
+    """'Tool name — first sentence of its description' for each tool."""
+    lines = []
+    for t in tools:
+        name = getattr(t, "name", str(t))
+        desc = " ".join(str(getattr(t, "description", "") or "").split())
+        # CrewAI prefixes descriptions with the tool signature; keep the human part only.
+        desc = re.sub(r"^Tool Name:.*?Tool Description:\s*", "", desc)
+        first = re.split(r"(?<=[.!?])\s+(?=[A-Z(])", desc, maxsplit=1)[0] if desc else ""
+        lines.append(f"{name} — {first[:200]}" if first else name)
+    return lines
+
+
 def ask_agent_directly(agent_role: str, question: str) -> str:
     """
     Instantiates a live agent from UniverseAgents, injects its recent operational
@@ -859,25 +953,7 @@ def ask_agent_directly(agent_role: str, question: str) -> str:
     agent = role_map[key]()
     # Disable delegation during direct 1-on-1 interview for fast, focused response
     agent.allow_delegation = False
-    tool_names = [getattr(t, "name", str(t)) for t in (agent.tools or [])]
-    stats = collect_historical_agent_shortcomings(limit=5, recent_window=100)
-
-    prompt = (
-        f"The Human Operator (Professor) is speaking to you directly in a 1-on-1 diagnostic session.\n"
-        f"Your Role: {agent.role}\n"
-        f"Your Currently Equipped Tools: {', '.join(tool_names) if tool_names else 'None (pure reasoning)'}\n"
-        f"Recent Operational Telemetry (Last {stats['recent_window_size']} Evaluations — Current Production State):\n"
-        f"- Recent Window Approvals / Rejections: {stats['recent_window_approved']} approved, {stats['recent_window_rejected']} rejected\n"
-        f"- Recent Window Rejection Reasons (Last {stats['recent_window_size']} runs): {json.dumps(stats['recent_window_rejection_counts'])}\n"
-        f"- Recurring Need Themes in Recent Window: {json.dumps(stats['recent_need_themes'])}\n"
-        f"- All-Time Historical Rejection Totals (older runs included): {json.dumps(stats['rejection_counts'])}\n"
-        f"- Recent Researcher Needs: {json.dumps(stats['recent_researcher_needs'])}\n"
-        f"- Recent Math Physicist Needs: {json.dumps(stats['recent_math_needs'])}\n\n"
-        f"PROFESSOR'S QUESTION TO YOU:\n\"{question}\"\n\n"
-        f"Respond candidly in first person as {agent.role}. Base your diagnosis primarily on the Recent Window (last {stats['recent_window_size']} evaluations) telemetry rather than legacy all-time totals. "
-        f"Do NOT invoke external tools unless specifically asked to search for a topic; "
-        f"focus on giving a clear, concrete, technically specific answer about your workflow, shortcomings, and tool/data wishlist."
-    )
+    prompt = build_interview_prompt(agent.role, agent.tools or [], question)
 
     # Temporarily detach tools for meta-wishlist introspection unless the user asked to run a search
     if any(w in question.lower() for w in ["wishlist", "shortcoming", "bottleneck", "struggle", "need", "improve", "missing"]):
@@ -890,4 +966,55 @@ def ask_agent_directly(agent_role: str, question: str) -> str:
     )
     crew = Crew(agents=[agent], tasks=[task], process=Process.sequential, verbose=False)
     return str(crew.kickoff()).strip()
+
+
+def build_interview_prompt(role: str, tools: list, question: str) -> str:
+    """Interview prompt: tool descriptions, safeguards present/open, telemetry freshness, telemetry, question."""
+    tool_lines = _describe_tools(tools)
+    stats = collect_historical_agent_shortcomings(limit=5, recent_window=100)
+    change_ts, change_source = _last_tooling_change_utc()
+    since = _evaluations_since(change_ts)
+    registry = _capability_registry(_live_tool_names())
+    present = [c["name"] for c in registry if c["present"] is True]
+    still_open = [c["name"] for c in registry if c["present"] is False]
+
+    if since["total"] == 0:
+        freshness = (
+            f"IMPORTANT: 0 production evaluations have run since the last tooling change ({change_ts}, {change_source}). "
+            "ALL telemetry below predates your current tools and safeguards. For each recurring failure, say whether "
+            "your current tools/safeguards already address it, and focus your wishlist on what is still NOT covered."
+        )
+    else:
+        freshness = (
+            f"Since the last tooling change ({change_ts}, {change_source}): {since['total']} evaluations — "
+            f"{since['approved']} approved, {since['rejected']} rejected; rejection reasons {json.dumps(since['reasons'])}. "
+            "Weight these post-change results most heavily."
+        )
+
+    return (
+        f"The Human Operator (Professor) is speaking to you directly in a 1-on-1 diagnostic session.\n"
+        f"Your Role: {role}\n"
+        f"Your Currently Equipped Tools (what each does):\n"
+        + ("\n".join(f"  - {line}" for line in tool_lines) if tool_lines else "  - None (pure reasoning)")
+        + "\n"
+        f"Pipeline safeguards ALREADY IN PLACE (do not request these again unless you explain what is still missing):\n"
+        + "\n".join(f"  - {name}" for name in present)
+        + "\n"
+        f"Known OPEN items: {', '.join(still_open) if still_open else 'none'}\n"
+        f"Note: approval/rejection decisions are made by the Student Orchestrator, and the flow's math gate blocks "
+        f"approval on code-confirmed math flaws.\n\n"
+        f"{freshness}\n\n"
+        f"Recent Operational Telemetry (Last {stats['recent_window_size']} Evaluations):\n"
+        f"- Recent Window Approvals / Rejections: {stats['recent_window_approved']} approved, {stats['recent_window_rejected']} rejected\n"
+        f"- Recent Window Rejection Reasons (Last {stats['recent_window_size']} runs): {json.dumps(stats['recent_window_rejection_counts'])}\n"
+        f"- Recurring Need Themes in Recent Window: {json.dumps(stats['recent_need_themes'])}\n"
+        f"- All-Time Historical Rejection Totals (older runs included): {json.dumps(stats['rejection_counts'])}\n"
+        f"- Recent Researcher Needs: {json.dumps(stats['recent_researcher_needs'])}\n"
+        f"- Recent Math Physicist Needs: {json.dumps(stats['recent_math_needs'])}\n\n"
+        f"PROFESSOR'S QUESTION TO YOU:\n\"{question}\"\n\n"
+        f"Respond candidly in first person as {role}. Base your diagnosis primarily on post-change results when "
+        f"they exist, otherwise on the Recent Window, rather than legacy all-time totals. "
+        f"Do NOT invoke external tools unless specifically asked to search for a topic; "
+        f"focus on giving a clear, concrete, technically specific answer about your workflow, shortcomings, and tool/data wishlist."
+    )
 

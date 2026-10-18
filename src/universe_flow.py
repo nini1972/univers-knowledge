@@ -90,6 +90,11 @@ except ImportError:
     from src.equation_logger import log_equations
 
 try:
+    from math_precheck import attach_precheck, run_math_precheck, summarize_precheck
+except ImportError:
+    from src.math_precheck import attach_precheck, run_math_precheck, summarize_precheck
+
+try:
     from evaluation_logger import (
         log_evaluation_outcome,
         get_top_failure_patterns,
@@ -159,6 +164,7 @@ class UniverseState(BaseModel):
     math_total: Optional[int] = None
     skeptic_score: Optional[int] = None
     skeptic_total: Optional[int] = None
+    math_precheck: Dict[str, Any] = Field(default_factory=dict)
 
     # Decision & Routing
     decision: Dict[str, Any] = Field(default_factory=dict)
@@ -601,6 +607,12 @@ class UniverseFlow(Flow[UniverseState]):
         if level == 1:
             skeptic_task = verify_task
 
+        # Deterministic math pre-check: runs in code as soon as the draft(s) exist and is appended
+        # to the Math Physicist's task; the result is also kept for the math gate.
+        self.state.math_precheck = {}
+        research_tasks = crew_tasks[:crew_tasks.index(math_task)]
+        attach_precheck(research_tasks, math_task, on_result=lambda pre: setattr(self.state, "math_precheck", pre))
+
         eval_crew = Crew(
             agents=crew_agents,
             tasks=crew_tasks,
@@ -674,8 +686,14 @@ class UniverseFlow(Flow[UniverseState]):
         self.state.math_score, self.state.math_total = parse_math_score(self.state.math_output)
         self.state.math_status = parse_math_status(self.state.math_output)
 
-        # Math gate: a tool-confirmed flaw in the math report blocks Student approval
-        self.state.decision, math_gate = apply_math_gate(self.state.decision, self.state.math_output)
+        # Code-run pre-check (normally produced by the research-task callback; recomputed if it didn't fire)
+        if not self.state.math_precheck and self.state.research_output:
+            self.state.math_precheck = run_math_precheck(self.state.research_output)
+
+        # Math gate: a tool-confirmed flaw in the math report or the pre-check blocks Student approval
+        self.state.decision, math_gate = apply_math_gate(
+            self.state.decision, self.state.math_output, self.state.math_precheck
+        )
         if math_gate.get("overrode_approval"):
             print(f"[MATH GATE] Student approval overridden: {'; '.join(math_gate['reasons'])}")
             self.state.decision_status = self.state.decision.get("status", "rejected")
@@ -712,6 +730,7 @@ class UniverseFlow(Flow[UniverseState]):
                 "math_score": self.state.math_score,
                 "math_status": self.state.math_status,
                 "math_tool_verdicts": math_gate.get("tool_verdicts", {}),
+                "math_precheck": summarize_precheck(self.state.math_precheck),
                 "math_gate_blocked": bool(math_gate.get("overrode_approval")),
                 "math_coherence_violation": bool(math_gate.get("coherence_violation")),
                 "attempt": self.state.attempt,
@@ -829,6 +848,9 @@ class UniverseFlow(Flow[UniverseState]):
             verify_task.description += prof_guidance
             eval_task.description += prof_guidance
 
+        self.state.math_precheck = {}
+        attach_precheck([rev_task], math_task, on_result=lambda pre: setattr(self.state, "math_precheck", pre))
+
         micro_crew = Crew(
             agents=[lead_agent, math_agent, skeptic_agent, student_agent],
             tasks=[rev_task, math_task, verify_task, eval_task],
@@ -854,7 +876,11 @@ class UniverseFlow(Flow[UniverseState]):
             self.state.math_status = parse_math_status(self.state.math_output)
             self.state.skeptic_score, self.state.skeptic_total = parse_skeptic_checklist_score(self.state.skeptic_output)
 
-            self.state.decision, math_gate = apply_math_gate(self.state.decision, self.state.math_output)
+            if not self.state.math_precheck and self.state.research_output:
+                self.state.math_precheck = run_math_precheck(self.state.research_output)
+            self.state.decision, math_gate = apply_math_gate(
+                self.state.decision, self.state.math_output, self.state.math_precheck
+            )
             if math_gate.get("overrode_approval"):
                 print(f"[MATH GATE] Micro-revision approval overridden: {'; '.join(math_gate['reasons'])}")
                 self.state.decision_status = self.state.decision.get("status", "rejected")
@@ -864,7 +890,11 @@ class UniverseFlow(Flow[UniverseState]):
         except Exception as exc:
             print(f"[MICRO-REVISION ERROR] Failed: {exc}")
 
-        log_telemetry_event("micro_revision", "end", metadata={"status": self.state.decision_status, "revision": rev_num})
+        log_telemetry_event("micro_revision", "end", metadata={
+            "status": self.state.decision_status,
+            "revision": rev_num,
+            "math_precheck": summarize_precheck(self.state.math_precheck),
+        })
         self._save_checkpoint(f"micro_revision_{rev_num}")
 
     @router(execute_micro_revision)
