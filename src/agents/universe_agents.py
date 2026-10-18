@@ -59,7 +59,7 @@ def _resolve_openrouter_model(api_key: str, role: str) -> str:
     if role in roles_using_tools:
         model_lower = model.lower()
         stable_keywords = [
-            "gpt-4o", "claude-3-5", "claude-3.5", "claude-opus", "claude-3-haiku",
+            "gpt-4o", "claude-3-5", "claude-3.5", "claude-opus", "claude-sonnet", "claude-3-haiku",
             "gemini-3.1", "gemini-3.7", "gemini-2.5", "nex-n2", "kimi-k2",
             "glm-5.2", "glm-5.3", "glm-flash", "glm-flash-latest", "glm-4", "glm-5",
             "qwen-2.5", "deepseek-chat", "deepseek-v4", "minimax-m3",
