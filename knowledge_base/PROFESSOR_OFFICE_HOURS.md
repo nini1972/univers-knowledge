@@ -12,9 +12,41 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (2)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20261018-e3d5d6` | L2 | **Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration** | UniverseFlow Orchestrator | Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+| `adv-20261018-d224d8` | L3 | **A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems** | UniverseFlow Orchestrator | Concept 'A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20261018-e3d5d6` — Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
+- **Timestamp**: `2026-10-18T01:10:39.445775+00:00`
+- **Level**: Level 2
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic's Verification Score is 5/5, meeting the mandatory threshold, and the reports provide substantial comparative material. However, the comparative debate states that superluminality arises for p_{XX}>0, which contradicts its own sound-speed formula: for X>0, p_X>0, and p_X+2Xp_{XX}>0, c_s^2>1 requires p_{XX}<0; this unresolved sign error is a mathematical flaw in the submitted debate. The mechanism remains theoretical because neither model is observationally distinguished, but lack of experimental confirmation is not the reason for rejection.
+- **Agent Blockers**:
+  * Math Physicist: Correct the superluminality sign claim and reconcile it with the stated sound-speed formula and stability assumptions.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261018-e3d5d6 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261018-d224d8` — A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
+- **Timestamp**: `2026-10-18T01:22:28.819621+00:00`
+- **Level**: Level 3
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic's Verification Score is 5/6, above the mandatory rejection threshold, so the score alone does not require rejection. However, the audit identifies unresolved structural flaws: the proposed effects vary different exposures and do not form the stated decomposition, and under the stated DAG the headline mediation effects are zero; the ratio and outcome design also introduce directional bias and fail to distinguish phenomenal experience from report. These issues prevent the benchmark, as written, from serving as a scientifically valid discriminator, though its status remains theoretical rather than empirically disproven.
+- **Agent Blockers**:
+  * Researcher: Re-specify the benchmark's target claim and use a report-by-no-report design that does not treat report as a theory-neutral measure of phenomenal experience.
+  * Researcher: Provide operational definitions, manipulation checks, and pilot evidence that interventions selectively affect the intended neural processes.
+  * Math Physicist: Specify a complete causal graph and derive mediation estimands as effects of a common exposure, with assumptions and identification conditions stated.
+  * Math Physicist: Remove or formally justify the interference residual and replace the proposed ratio with a statistically valid decision procedure, including ratio-aware uncertainty and preregistered operating characteristics.
+  * Math Physicist: Define an implementable measurement model for Φ and correct the divergence formulation, or remove claims that depend on measuring Φ.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261018-d224d8 "Your guidance"`
+
 
 ---
 

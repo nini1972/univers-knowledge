@@ -95,6 +95,7 @@ graph TD
     collaborative_empirical_test_strategies_for_neutrino_models["Collaborative Empirical Test Strategies for Theoretical Neutrino Models"]:::verified
     numerical_benchmarks_for_neutrino_decay_in_boltzmann_codes["Numerical Benchmarks for Neutrino Decay in Cosmological Boltzmann Codes"]:::theoretical
     experimental_collaboration_bounds_on_neutrino_decay["Experimental Collaboration Bounds on Neutrino Decay"]:::verified
+    the_strong_cp_problem["The Strong CP Problem"]:::verified
     primordial_black_holes_pbhs_as_dark_matter_candidates["Primordial Black Holes (PBHs) as Dark Matter Candidates"]:::theoretical
     dimensional_analysis_and_unit_tracing_of_modified_survival_equations["Dimensional Analysis and Unit Tracing of Modified Survival Equations"]:::theoretical
     standard_model_of_particle_physics["Standard Model of Particle Physics"]:::theoretical
@@ -416,6 +417,7 @@ graph TD
     neutrino_oscillations --- collaborative_empirical_test_strategies_for_neutrino_models
     neutrino_oscillations --- experimental_collaboration_bounds_on_neutrino_decay
     neutrinoless_double_beta_decay --- experimental_collaboration_bounds_on_neutrino_decay
+    cp_violation --- the_strong_cp_problem
     dark_matter --- primordial_black_holes_pbhs_as_dark_matter_candidates
     gravitational_lensing --- primordial_black_holes_pbhs_as_dark_matter_candidates
     quantum_field_theory --- standard_model_of_particle_physics
@@ -711,6 +713,7 @@ graph TD
 - [The Higgs Boson](level_1_fundamental_physics/the_higgs_boson.md) [THEORETICAL]
 - [The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements](level_1_fundamental_physics/the_standard_model_of_cosmology_cosmic_distance_ladder_and_hubble_constant_measurements.md) [VERIFIED]
 - [The Standard Model of Particle Physics: Quantum Chromodynamics (QCD) and the Strong Interaction](level_1_fundamental_physics/the_standard_model_of_particle_physics_quantum_chromodynamics_qcd_and_the_strong_interaction.md) [VERIFIED]
+- [The Strong CP Problem](level_1_fundamental_physics/the_strong_cp_problem.md) [VERIFIED]
 - [Thermodynamic Arrow of Time](level_1_fundamental_physics/thermodynamic_arrow_of_time.md) [VERIFIED]
 - [To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?](level_1_fundamental_physics/lisa_gravitational_waves_and_adm_phase_transitions.md) [THEORETICAL]
 - [Ultraviolet Completions and Experimental Testability of BSM Physics](level_1_fundamental_physics/uv_completions_and_experimental_testability_of_bsm_models.md) [THEORETICAL]
