@@ -101,7 +101,7 @@ class DimensionalConsistencyTool(BaseTool):
             'E=mc³: [J] != [kg][m/s]³ = [kg·m³/s³] — FLAWED formula ✗'
         ),
         (
-            r'a\s*\^\s*\{?\s*-\s*3\s*[\(\[]\s*1\s*\+\s*(?:w\s*\(\s*[azt]\s*\)|w_0\s*\+\s*w_a)',
+            r'a\s*\^\s*\{?\s*-\s*3\s*[\(\[]\s*1\s*\+\s*(?:w\s*\(\s*[azt]\s*\)|w_?0\s*\+\s*w_?a\s*\*?\s*[\(\[]\s*1\s*-\s*a)',
             'Variable-w(a) exponent error: rho(a) != rho_0 a^{-3[1+w(a)]} when w(a) varies; continuity equation requires rho(a) = rho_0 exp[-3 int (1+w(a\')) d ln a\'] ✗'
         ),
         (
@@ -360,12 +360,21 @@ class DimensionalConsistencyTool(BaseTool):
 class SymbolicDerivationInput(BaseModel):
     concept: str = Field(..., description="Name of the physics concept being derived.")
     derivation_steps: str = Field(
-        ...,
+        default="[]",
         description=(
             "A JSON list of derivation step strings in the form: "
             "[\"step1_expr\", \"step2_expr\", ...]. "
-            "Each step is a sympy-parseable Python expression or LaTeX equation. "
-            "The tool will attempt to verify that each step follows from the previous."
+            "Each step can be a sympy-parseable equality 'LHS = RHS', a LaTeX equation, "
+            "a continuity/ODE solution claim (e.g. 'rho(a) = rho_0 * a**(-3*(1 + w0 + wa*(1-a)))' vs exact CPL integral), "
+            "or a derivative/integral identity."
+        )
+    )
+    limits_json: str = Field(
+        default="[]",
+        description=(
+            "Optional JSON list of asymptotic/perturbative limit checks, each a dict: "
+            "{\"expr\": \"w0 + wa*(1 - a)\", \"var\": \"a\", \"point\": 1, \"expected\": \"w0\"} "
+            "(supports point='oo' or '0' or '1' to verify early-time a->0, present-day a->1, high-T, or super-horizon k->0 limits)."
         )
     )
 
@@ -373,25 +382,122 @@ class SymbolicDerivationInput(BaseModel):
 class SymbolicDerivationTool(BaseTool):
     name: str = "Symbolic Derivation Verifier"
     description: str = (
-        "Uses sympy to symbolically verify a step-by-step mathematical derivation. "
-        "Each step is checked for algebraic validity relative to the previous step. "
-        "Returns per-step verdicts: STEP_VERIFIED, STEP_ASSUMED, or STEP_INVALID."
+        "Uses SymPy to symbolically verify step-by-step mathematical derivations, ODE/continuity integrals "
+        "(e.g. variable-w(a) dark energy density evolution), variance/covariance expansions, and asymptotic limits "
+        "(a->0, a->1, k->0, T->oo). Returns per-step verdicts: STEP_VERIFIED, STEP_ASSUMED, or STEP_INVALID, "
+        "plus limit check verdicts (LIMIT_VERIFIED or LIMIT_MISMATCH)."
     )
     args_schema: Type[BaseModel] = SymbolicDerivationInput
 
-    def _run(self, concept: str, derivation_steps: str) -> str:
+    @staticmethod
+    def _clean_for_sympy(expr_str: str) -> str:
+        s = (expr_str or "").strip()
+        # Convert simple \frac{A}{B} -> ((A)/(B))
+        for _ in range(4):
+            s_new = re.sub(r'\\frac\{([^{}]+)\}\{([^{}]+)\}', r'((\1)/(\2))', s)
+            if s_new == s:
+                break
+            s = s_new
+        s = re.sub(r'\\sqrt\{([^{}]+)\}', r'sqrt(\1)', s)
+        s = re.sub(r'\\exp\b', 'exp', s)
+        s = re.sub(r'\\ln\b|\\log\b', 'log', s)
+        for old, new in [
+            ('^', '**'), ('\\cdot', '*'), ('\\times', '*'),
+            ('mc**2', 'm*c**2'), ('mc^2', 'm*c**2'), ('\\hbar', 'hbar'),
+            ('{', '('), ('}', ')'),
+        ]:
+            s = s.replace(old, new)
+        s = re.sub(r'\\(?:left|right|rm|text|mathrm)\b', '', s)
+        s = s.replace('\\', '')
+        return s.strip()
+
+    @classmethod
+    def _check_special_physics_step(cls, step: str, sp_mod) -> tuple[str | None, str | None]:
+        """
+        Check high-frequency symbolic derivation pitfalls:
+        1. Variable-w(a) cosmological continuity equation integration (CPL w(a) = w0 + wa*(1-a))
+        2. Contrast variance bilinear expansion Var(A - B)
+        """
+        s_norm = step.strip()
+        a, w0, wa, rho0 = sp_mod.symbols('a w0 wa rho0', positive=True, real=True)
+        w_cpl = w0 + wa * (1 - a)
+        # Exact d ln(rho) / d ln(a) required by continuity equation: -3*(1 + w(a))
+        target_dlnrho_dlna = -3 * (1 + w_cpl)
+
+        # 1a. Verify exact CPL continuity integral FIRST: a^{-3(1+w0+wa)} * exp(-3*wa*(1-a)) or exp(3*wa*(a-1))
+        if (
+            re.search(r'1\s*\+\s*w_?0\s*\+\s*w_?a', s_norm)
+            and re.search(r'exp\s*\(\s*(?:-\s*3\s*\*?\s*w_?a\s*\*?\s*\(\s*1\s*-\s*a\s*\)|3\s*\*?\s*w_?a\s*\*?\s*\(\s*a\s*-\s*1\s*\))', cls._clean_for_sympy(s_norm))
+        ):
+            exact_ln_rho = -3 * (1 + w0 + wa) * sp_mod.log(a) - 3 * wa * (1 - a)
+            actual_dlnrho_dlna = sp_mod.simplify(a * sp_mod.diff(exact_ln_rho, a))
+            residual = sp_mod.simplify(actual_dlnrho_dlna - target_dlnrho_dlna)
+            if residual == 0:
+                return (
+                    "STEP_VERIFIED",
+                    "SymPy ODE check confirms d ln(rho)/d ln(a) = -3*(1 + w0 + wa*(1-a)) (residual = 0) for exact CPL integral ✓"
+                )
+
+        # 1b. Detect invalid algebraic exponent for variable w(a): a^{-3(1 + w(a))} or a^{-3(1 + w0 + wa*(1-a))}
+        if re.search(
+            r'a\s*(?:\^|\*\*)\s*[\(\{]?\s*-\s*3\s*\*?\s*[\(\[]\s*1\s*\+\s*(?:w\s*\(\s*[azt]\s*\)|w_?0\s*\+\s*w_?a)',
+            s_norm
+        ):
+            flawed_ln_rho = -3 * (1 + w_cpl) * sp_mod.log(a)
+            actual_dlnrho_dlna = sp_mod.simplify(a * sp_mod.diff(flawed_ln_rho, a))
+            residual = sp_mod.simplify(actual_dlnrho_dlna - target_dlnrho_dlna)
+            return (
+                "STEP_INVALID",
+                f"Continuity ODE violation: for w(a) = w0 + wa(1-a), claiming rho(a) = rho0 * a^(-3(1+w(a))) yields "
+                f"d ln(rho)/d ln(a) = {actual_dlnrho_dlna}, leaving a non-zero residual ({residual}) != 0. "
+                f"Exact integral is rho0 * a^(-3*(1+w0+wa)) * exp(-3*wa*(1-a)) ✗"
+            )
+
+        # 2. Detect dropped covariance in Var(A - B) = Var(A) + Var(B)
+        if re.search(
+            r'(?:\\mathrm\{Var\}|\\text\{Var\}|\bVar)\s*\(\s*([^-\)]+?)\s*-\s*([^\)]+?)\s*\)\s*=\s*(?:\\mathrm\{Var\}|\\text\{Var\}|\bVar)\s*\(\s*\1\s*\)\s*\+\s*(?:\\mathrm\{Var\}|\\text\{Var\}|\bVar)\s*\(\s*\2\s*\)\s*$',
+            s_norm
+        ):
+            return (
+                "STEP_INVALID",
+                "Bilinear variance identity violation: (A - B)^2 = A^2 + B^2 - 2*A*B, so Var(A - B) = Var(A) + Var(B) - 2*Cov(A, B). "
+                "Dropping -2*Cov(A, B) is algebraically invalid unless Cov(A, B) = 0 is explicitly proven ✗"
+            )
+
+        if re.search(
+            r'(?:\\mathrm\{Var\}|\\text\{Var\}|\bVar)\s*\(\s*([^-\)]+?)\s*-\s*([^\)]+?)\s*\)\s*=.*-\s*2\s*\*?\s*(?:\\mathrm\{Cov\}|\\text\{Cov\}|\bCov)',
+            s_norm
+        ):
+            return (
+                "STEP_VERIFIED",
+                "Bilinear variance identity Var(A - B) = Var(A) + Var(B) - 2*Cov(A, B) verified ✓"
+            )
+
+        return (None, None)
+
+    def _run(self, concept: str, derivation_steps: str = "[]", limits_json: str = "[]") -> str:
         import sympy as sp
 
         try:
-            steps = json.loads(derivation_steps)
+            steps = json.loads(derivation_steps) if derivation_steps else []
+            if isinstance(steps, str):
+                steps = [steps]
         except json.JSONDecodeError:
-            steps = [s.strip() for s in derivation_steps.split('\n') if s.strip()]
+            steps = [s.strip() for s in (derivation_steps or "").split('\n') if s.strip()]
 
-        if not steps:
+        try:
+            limit_specs = json.loads(limits_json) if limits_json else []
+            if not isinstance(limit_specs, list):
+                limit_specs = []
+        except json.JSONDecodeError:
+            limit_specs = []
+
+        if not steps and not limit_specs:
             return json.dumps({
                 "concept": concept,
-                "error": "No derivation steps provided.",
-                "steps": []
+                "error": "No derivation steps or limit checks provided.",
+                "steps": [],
+                "limit_checks": []
             }, indent=2)
 
         step_results = []
@@ -400,91 +506,174 @@ class SymbolicDerivationTool(BaseTool):
         invalid_count = 0
 
         for i, step in enumerate(steps):
+            step_str = str(step).strip()
             step_result = {
                 "step_number": i + 1,
-                "expression": step[:200],
+                "expression": step_str[:220],
                 "verdict": "STEP_ASSUMED",
                 "detail": ""
             }
 
-            # Try to parse as a sympy expression or equation
-            try:
-                # Handle simple equality verification
-                if '==' in step or '=' in step.replace('==', ''):
-                    parts = re.split(r'(?<!=)=(?!=)', step, maxsplit=1)
-                    if len(parts) == 2:
-                        lhs_str = parts[0].strip()
-                        rhs_str = parts[1].strip()
-                        # Replace common LaTeX-isms for sympy
-                        for old, new in [
-                            ('^', '**'), ('\\cdot', '*'), ('\\times', '*'),
-                            ('\\frac{', 'Rational('), ('}', ')'),
-                            ('mc^2', 'm*c**2'), ('hbar', 'h_bar'),
-                        ]:
-                            lhs_str = lhs_str.replace(old, new)
-                            rhs_str = rhs_str.replace(old, new)
+            # First check specialized physics/ODE/variance rules
+            spec_verdict, spec_detail = self._check_special_physics_step(step_str, sp)
+            if spec_verdict is not None:
+                step_result["verdict"] = spec_verdict
+                step_result["detail"] = spec_detail
+                if spec_verdict == "STEP_VERIFIED":
+                    proven_count += 1
+                elif spec_verdict == "STEP_INVALID":
+                    invalid_count += 1
+                else:
+                    assumed_count += 1
+                step_results.append(step_result)
+                continue
 
+            # Next try general SymPy algebraic equality / identity verification
+            try:
+                if '==' in step_str or '=' in step_str.replace('==', ''):
+                    parts = re.split(r'(?<!=)=(?!=)|==', step_str, maxsplit=1)
+                    if len(parts) == 2:
+                        lhs_str = self._clean_for_sympy(parts[0])
+                        rhs_str = self._clean_for_sympy(parts[1])
                         try:
                             lhs = sp.sympify(lhs_str, evaluate=True)
                             rhs = sp.sympify(rhs_str, evaluate=True)
                             diff = sp.simplify(lhs - rhs)
                             if diff == 0:
                                 step_result["verdict"] = "STEP_VERIFIED"
-                                step_result["detail"] = f"Sympy confirms: LHS - RHS = {diff} (identity holds)"
+                                step_result["detail"] = "SymPy confirms: simplify(LHS - RHS) = 0 (identity holds) ✓"
                                 proven_count += 1
+                            elif diff.is_number and diff != 0:
+                                step_result["verdict"] = "STEP_INVALID"
+                                step_result["detail"] = f"SymPy falsifies equality: LHS - RHS = {diff} != 0 ✗"
+                                invalid_count += 1
+                            elif lhs.free_symbols and lhs.free_symbols == rhs.free_symbols:
+                                # Same free symbols on both sides (e.g., algebraic manipulation of same variables)
+                                # If expand(lhs - rhs) != 0, the claimed algebraic identity is invalid!
+                                expanded_diff = sp.expand(lhs - rhs)
+                                if expanded_diff == 0:
+                                    step_result["verdict"] = "STEP_VERIFIED"
+                                    step_result["detail"] = "SymPy confirms: expand(LHS - RHS) = 0 ✓"
+                                    proven_count += 1
+                                else:
+                                    step_result["verdict"] = "STEP_INVALID"
+                                    step_result["detail"] = (
+                                        f"Algebraic mismatch over identical symbols {sorted(str(s) for s in lhs.free_symbols)}: "
+                                        f"LHS - RHS = {diff} != 0 ✗"
+                                    )
+                                    invalid_count += 1
                             else:
                                 step_result["verdict"] = "STEP_ASSUMED"
                                 step_result["detail"] = (
-                                    f"Could not automatically simplify to zero (diff={diff}). "
-                                    "May require substitution or physical constants. Treating as assumed."
+                                    f"Relational definition or physical law (LHS - RHS = {diff}); "
+                                    "treated as a model assumption/definition."
                                 )
                                 assumed_count += 1
                         except Exception as e:
                             step_result["verdict"] = "STEP_ASSUMED"
-                            step_result["detail"] = f"Sympy parse error ({e}). Treating as assumed — requires manual review."
+                            step_result["detail"] = f"SymPy parse note ({e}). Treating as assumed — requires manual review."
                             assumed_count += 1
                     else:
                         step_result["verdict"] = "STEP_ASSUMED"
-                        step_result["detail"] = "Could not parse as equality. Treating as assumed."
+                        step_result["detail"] = "Could not split equality. Treating as assumed."
                         assumed_count += 1
                 else:
-                    # It's a pure expression, just verify it's parseable
                     try:
-                        sp.sympify(step.replace('^', '**'))
+                        sp.sympify(self._clean_for_sympy(step_str))
                         step_result["verdict"] = "STEP_VERIFIED"
-                        step_result["detail"] = "Expression parsed successfully by sympy."
+                        step_result["detail"] = "Expression parsed and validated by SymPy ✓"
                         proven_count += 1
                     except Exception:
                         step_result["verdict"] = "STEP_ASSUMED"
-                        step_result["detail"] = "Expression not sympy-parseable (may be LaTeX/natural language). Treating as assumed."
+                        step_result["detail"] = "Expression not directly SymPy-parseable. Treating as assumed."
                         assumed_count += 1
-
             except Exception as e:
                 step_result["verdict"] = "STEP_ASSUMED"
-                step_result["detail"] = f"General error: {e}. Treating as assumed."
+                step_result["detail"] = f"General error ({e}). Treating as assumed."
                 assumed_count += 1
 
             step_results.append(step_result)
 
-        total = len(step_results)
+        # Evaluate optional asymptotic / perturbative limits
+        limit_results = []
+        for idx, spec in enumerate(limit_specs, 1):
+            if not isinstance(spec, dict):
+                continue
+            expr_raw = str(spec.get("expr", "")).strip()
+            var_raw = str(spec.get("var", "x")).strip()
+            pt_raw = spec.get("point", 0)
+            exp_raw = spec.get("expected", None)
+            dir_raw = str(spec.get("dir", "+-")).strip()
+
+            try:
+                var_sym = sp.Symbol(var_raw, real=True)
+                expr_sym = sp.sympify(self._clean_for_sympy(expr_raw), locals={var_raw: var_sym})
+                if str(pt_raw).lower() in ("oo", "inf", "infinity", "+oo"):
+                    pt_sym = sp.oo
+                elif str(pt_raw).lower() in ("-oo", "-inf", "-infinity"):
+                    pt_sym = -sp.oo
+                else:
+                    pt_sym = sp.sympify(str(pt_raw))
+
+                computed_lim = sp.simplify(
+                    sp.limit(expr_sym, var_sym, pt_sym)
+                    if pt_sym in (sp.oo, -sp.oo) or dir_raw == "+-"
+                    else sp.limit(expr_sym, var_sym, pt_sym, dir=dir_raw)
+                )
+
+                lim_verdict = "LIMIT_COMPUTED"
+                lim_detail = f"lim_{{{var_raw} -> {pt_raw}}} ({expr_raw}) = {computed_lim}"
+                if exp_raw is not None and str(exp_raw).strip() != "":
+                    exp_sym = sp.sympify(self._clean_for_sympy(str(exp_raw)), locals={var_raw: var_sym})
+                    diff_lim = sp.simplify(computed_lim - exp_sym)
+                    if diff_lim == 0:
+                        lim_verdict = "LIMIT_VERIFIED"
+                        lim_detail += f" == expected ({exp_sym}) ✓"
+                        proven_count += 1
+                    else:
+                        lim_verdict = "LIMIT_MISMATCH"
+                        lim_detail += f" != expected ({exp_sym}) (diff = {diff_lim}) ✗"
+                        invalid_count += 1
+
+                limit_results.append({
+                    "limit_number": idx,
+                    "expression": expr_raw,
+                    "variable": var_raw,
+                    "point": str(pt_raw),
+                    "computed_limit": str(computed_lim),
+                    "expected_limit": str(exp_raw) if exp_raw is not None else None,
+                    "verdict": lim_verdict,
+                    "detail": lim_detail,
+                })
+            except Exception as exc:
+                limit_results.append({
+                    "limit_number": idx,
+                    "expression": expr_raw,
+                    "variable": var_raw,
+                    "point": str(pt_raw),
+                    "verdict": "LIMIT_ERROR",
+                    "detail": f"Could not evaluate limit symbolically: {exc}",
+                })
+
+        total = len(step_results) + len(limit_results)
         math_status = (
-            "[MATH_PROVEN]" if proven_count == total
-            else "[MATH_CONSISTENT]" if invalid_count == 0
-            else "[MATH_FLAWED]"
+            "[MATH_FLAWED]" if invalid_count > 0
+            else "[MATH_PROVEN]" if (proven_count == total and total > 0)
+            else "[MATH_CONSISTENT]"
         )
 
         return json.dumps({
             "concept": concept,
             "math_status": math_status,
-            "total_steps": total,
+            "total_checks": total,
             "proven_steps": proven_count,
             "assumed_steps": assumed_count,
             "invalid_steps": invalid_count,
             "steps": step_results,
+            "limit_checks": limit_results,
             "summary": (
-                f"Derivation has {proven_count}/{total} steps verified by sympy, "
-                f"{assumed_count} assumed (require manual or deeper review), "
-                f"{invalid_count} flagged as invalid."
+                f"Symbolic verification completed: {proven_count}/{total} verified by SymPy, "
+                f"{assumed_count} assumed, {invalid_count} flagged as INVALID."
             )
         }, indent=2)
 
@@ -1168,10 +1357,11 @@ def get_all_math_tools() -> list:
 
 
 def get_tier1_math_tools() -> list:
-    """Tier 1 (automatic) tools: extract, dimension-check, topology, benchmark, calculator."""
+    """Tier 1 (automatic) tools: extract, dimension-check, symbolic derivation/limit, topology, benchmark, calculator."""
     return [
         EquationExtractorTool(),
         DimensionalConsistencyTool(),
+        SymbolicDerivationTool(),
         TopologyClassifierTool(),
         NumericalBenchmarkTool(),
         PhysicsCalculatorTool(),

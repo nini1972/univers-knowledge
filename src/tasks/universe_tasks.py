@@ -199,8 +199,8 @@ class UniverseTasks:
                 STEP 1 — Extract equations & audit Conventions/Symbol Table:
                 Use the "Equation Extractor" tool by passing ONLY the mathematical equations and formula blocks ($$...$$ and $...$) from the research context (keep the input under 4,000 characters; do NOT copy-paste the entire narrative prose or bibliography). Also inspect whether the report includes `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (flagging any missing or conflicting metric signature, Planck mass M_Pl vs m_Pl, or unit conventions).
 
-                STEP 2 — Check dimensional consistency:
-                Pass the JSON output from Step 1 (and optional symbol_dimensions_json from the Symbol Table) directly to the "Dimensional Consistency Checker" tool, cross-checking against the declared symbol dimensions ([E]^n or SI).
+                STEP 2 — Check dimensional consistency & symbolic derivations/limits:
+                Pass the JSON output from Step 1 (and optional symbol_dimensions_json from the Symbol Table) directly to the "Dimensional Consistency Checker" tool, cross-checking against the declared symbol dimensions ([E]^n or SI). If the report includes a continuity/ODE integral (e.g. variable-w(a) dark energy density), a contrast variance expansion, or an asymptotic limit claim (e.g. a->0, a->1, k->0), verify it with the "Symbolic Derivation Verifier" tool (`derivation_steps` and/or `limits_json`).
 
                 STEP 3 — Classify topological structures:
                 Use the "Topology Classifier" tool with the concept name and a concise summary (under 1,500 characters) of the geometric, symmetry, and topological structures in the research context.

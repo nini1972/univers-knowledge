@@ -1,6 +1,6 @@
 # 🛠️ Autonomous Agent Shortcomings & Capability Wishlist
 
-> **Last Updated**: `2026-10-18T20:45:58.496438+00:00`
+> **Last Updated**: `2026-10-18T21:14:13.416034+00:00`
 > **How to Query Agents Directly**:
 > - Generate/refresh this wishlist: `python scripts/consult_professor.py wishlist` (add `--live` to interview live LLMs)
 > - Ask any agent a direct question: `python scripts/consult_professor.py ask <agent_role> "Your question"`
@@ -78,7 +78,7 @@
   * 🎯 **[WISHLIST #1]** **arXiv Full-Text Section Extractor (HTML/LaTeX source snippet reader)** to pull exact Lagrangian conventions and coefficient definitions from primary papers when abstracts omit prefactors.
 
 ### 🧮 B. Mathematical Physics Verifier (`z-ai/glm-5.3-flash`)
-- **Equipped Tools**: `Equation Extractor`, `Dimensional Consistency Checker`, `Topology Classifier`, `Numerical Benchmark Validator`, `Physics Calculator & Tension Evaluator`.
+- **Equipped Tools**: `Equation Extractor`, `Dimensional Consistency Checker`, `Symbolic Derivation Verifier`, `Topology Classifier`, `Numerical Benchmark Validator`, `Physics Calculator & Tension Evaluator`.
 - **Shortcomings Encountered During Tasks**:
   1. **Context & Tool-Argument Token Bloat in Multi-Agent Debates**: Passing 50,000–75,000 characters of raw prose into `Equation Extractor` and `Topology Classifier` previously caused 180s OpenRouter timeouts.
   2. **Natural-Units ($\hbar = c = k_B = 1$) vs. SI Ambiguity**: In high-energy and cosmological formulas (e.g., one-pion-exchange potential, curvature-current baryogenesis $\mathcal{L}_{\rm int} = (\partial_\mu R) J_B^\mu / M_*^2$, or comoving vs. physical number densities), dimensional consistency depends on declared mass dimensions $[\phi] = E^1, [R] = E^2, [J^\mu] = E^3$.
@@ -87,7 +87,7 @@
   * ✅ **[IMPLEMENTED]** Global Coherence Rule in Math Verification Report and `DimensionalConsistencyTool` (`CONSISTENT_WITH_UNDECIDABLE` vs `ALL_CONSISTENT`).
   * ✅ **[IMPLEMENTED]** **Natural-Unit Mass-Dimension Evaluator (`[E]^n` checker)** alongside SI unit checking in `DimensionalConsistencyTool`, explicitly checking Lagrangian terms against $[\mathcal{L}] = [E]^4$ in 4D spacetime and catching known algebraic/dimensional errors (e.g., $a^{-3(1+w(a))}$, $m_T^2 \sim g^2 T^2 \phi^2$, dropped $-2\,\mathrm{Cov}(A,B)$).
   * ✅ **[IMPLEMENTED]** **20-Benchmark CODATA/PDG/Cosmology Table & `Physics Calculator & Tension Evaluator`** verifying numerical claims within 10% tolerance (`verify_claim`) and evaluating $\Delta\chi^2$ / $\sigma$ tensions.
-  * 🎯 **[WISHLIST #1]** **Symbolic Re-Derivation & Perturbative Limit Evaluator (`SymPy` checker)**: A tool that symbolically checks continuity/ODE integrals (such as variable-$w(a)$ integration) and evaluates asymptotic limits ($a \to 0$, $T \gg m$, $k \ll aH$).
+  * ✅ **[IMPLEMENTED]** **Symbolic Re-Derivation & Perturbative Limit Evaluator (`SymbolicDerivationTool`)**: Symbolically verifies continuity/ODE integrals (such as CPL variable-$w(a)$ integration vs invalid $a^{-3(1+w(a))}$), variance bilinear expansions, algebraic identities (`STEP_INVALID` when `LHS - RHS != 0`), and asymptotic limits (`limits_json` via `sp.limit` for $a \to 0$, $a \to 1$, $T \to \infty$, $k \to 0$).
 
 ### ⚖️ C. Scientific Skeptic & Student Orchestrator
 - **Equipped Tools**: `Peer Review Critique Resolver`.
