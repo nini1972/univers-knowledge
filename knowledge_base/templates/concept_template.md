@@ -19,7 +19,14 @@ sources:
 (The synthesized research from the Researcher Agent, detailing mechanisms and core principles.)
 
 ## 3. Mathematical Framework
-(LaTeX/KaTeX formulas governing this concept, if any. e.g., $E=mc^2$)
+### Conventions & Symbol Table
+(State metric signature, unit basis such as $\hbar=c=k_B=1$ or SI, Planck mass normalization $M_{\rm Pl}$ vs $m_{\rm Pl}$, or Level 3 target estimand, followed by a Markdown symbol table `| Symbol | Meaning | Dimension |`.)
+
+### Validity Domain & Claim Scope
+(Specify the regime of validity, stability/identification conditions, and tag major claims as `[GENERAL]` or `[MODEL-DEPENDENT: <explicit assumptions>]`.)
+
+### Governing Equations & Observables
+(LaTeX/KaTeX formulas governing this concept and connecting assumptions to measurable observables, e.g., $E=mc^2$.)
 
 ## 4. Skeptical Perspectives & Alternative Hypotheses
 (Rigorous comparison with at least one viable alternative explanation or counter-hypothesis. What are the experimental bounds that restrict these alternative viewpoints?)

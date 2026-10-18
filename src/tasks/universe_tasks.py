@@ -1,6 +1,11 @@
 from crewai import Task
 from textwrap import dedent
 
+try:
+    from conventions import CANONICAL_CONVENTIONS_HEADER, get_conventions_prompt_block
+except ImportError:
+    from src.conventions import CANONICAL_CONVENTIONS_HEADER, get_conventions_prompt_block
+
 class UniverseTasks:
     def determine_next_topic_task(self, agent, current_index):
         return Task(
@@ -70,7 +75,8 @@ class UniverseTasks:
             agent=agent
         )
 
-    def research_concept_task(self, agent, concept, async_execution=False):
+    def research_concept_task(self, agent, concept, async_execution=False, level: int = 1):
+        conventions_block = get_conventions_prompt_block(level=level)
         return Task(
             description=dedent(f"""
                 Research the following concept thoroughly: {concept}.
@@ -90,21 +96,22 @@ class UniverseTasks:
                 CRITICAL REQUIREMENTS - Your research report MUST satisfy these 5 criteria:
                 1. Cite at least 3 independent scientific/academic sources with clear references.
                 2. Highlight skepticism, empirical gaps, limitations, and observational tensions (such as JWST high-redshift galaxy anomalies, the Hubble H_0 tension, or DESI dynamical dark energy where relevant), explicitly comparing the mainstream model with at least one alternative counter-hypothesis and describing current experimental bounds.
-                3. Include mathematical grounding, equations, or LaTeX formulas (e.g. $E=mc^2$) explaining the underlying physics.
+                3. Include mathematical grounding, equations, or LaTeX formulas (e.g. $E=mc^2$) explaining the underlying physics, structured with the required `### Conventions & Symbol Table`, `### Validity Domain & Claim Scope` (tagging claims as `[GENERAL]` or `[MODEL-DEPENDENT: ...]`), and `### Governing Equations & Observables` inside `## 3. Mathematical Framework`.
                 4. Classify the status clearly as either [VERIFIED] or [THEORETICAL] with rigorous justification.
                 5. Include a "Visual Grounding" section with a highly detailed, 1-paragraph visual description or image generation prompt for a schematic diagram representing the concept.
-            """),
-            expected_output="A comprehensive research report detailing the concept, citing at least 3 scientific sources, including observational tensions, alternative hypotheses, math formulas, status, limitations, and a visual description.",
+            """) + conventions_block,
+            expected_output="A comprehensive research report detailing the concept, citing at least 3 scientific sources, including a Conventions & Symbol Table, [GENERAL] vs [MODEL-DEPENDENT] claim tags, observational tensions, alternative hypotheses, math formulas, status, limitations, and a visual description.",
             agent=agent,
             async_execution=async_execution
         )
 
-    def targeted_micro_revision_task(self, agent, concept, original_draft, feedback_dict):
+    def targeted_micro_revision_task(self, agent, concept, original_draft, feedback_dict, level: int = 1):
         """Perform an in-place micro-revision on an existing research draft to fix specific defects without regenerating from scratch."""
         reason_code = feedback_dict.get("reason_code", "")
         rationale = feedback_dict.get("detailed_rationale", "")
         agent_needs = feedback_dict.get("agent_needs", {})
         follow_up = feedback_dict.get("follow_up_questions", [])
+        conventions_block = get_conventions_prompt_block(level=level)
 
         needs_str = ""
         if isinstance(agent_needs, dict):
@@ -136,11 +143,11 @@ class UniverseTasks:
                 MICRO-REVISION DIRECTIVES:
                 1. DO NOT discard or regenerate the entire report from scratch. Preserve all verified sections, established citations, and overall structure.
                 2. Target and correct ONLY the identified flaws:
-                   - If mathematical or dimensional errors were identified, correct the specific formulas, constants, indices, or algebraic derivations using standard LaTeX ($...$ or $$...$$).
+                   - If mathematical or dimensional errors were identified, correct the specific formulas, constants, indices, or algebraic derivations using standard LaTeX ($...$ or $$...$$) and reconcile them with the `### Conventions & Symbol Table`.
                    - If citations or empirical bounds were insufficient, insert authentic academic citations (using ArXiv/OpenAlex/Europe PMC) or clarify experimental bounds.
-                   - If category errors or unjustified assumptions were flagged, refine the definitions and explicit proof boundaries.
+                   - If category errors or unjustified assumptions were flagged, refine the definitions, `[GENERAL]` vs `[MODEL-DEPENDENT: ...]` claim tags, and explicit proof boundaries.
                 3. Return the COMPLETE revised draft incorporating these targeted corrections.
-            """),
+            """) + conventions_block,
             expected_output=f"The complete revised research report for {concept} with targeted corrections addressing all identified feedback.",
             agent=agent
         )
@@ -151,12 +158,18 @@ class UniverseTasks:
                 Review the research report on: {concept}.
                 Apply the strict Verification Protocol to evaluate the findings.
 
+                {CANONICAL_CONVENTIONS_HEADER}
+
+                EPISTEMIC & CONVENTION AUDIT DIRECTIVES:
+                - Verify that model-dependent predictions are explicitly tagged `[MODEL-DEPENDENT: ...]` with their required stability/kinetic/identification assumptions rather than asserted as `[GENERAL]` truths.
+                - Check that the report's equations and units match the declared `### Conventions & Symbol Table` and the Math Physicist's verification report.
+
                 You MUST fill out and include this exact markdown checklist and score at the end of your report:
 
                 Verification Checklist:
                 - [ ] Criterion 1: Source Consensus (at least 3 independent sources cited)
-                - [ ] Criterion 2: Skepticism & Gaps (limitations/contradictions highlighted)
-                - [ ] Criterion 3: Mathematical Grounding (concept is grounded in mathematical formulas or LaTeX equations)
+                - [ ] Criterion 2: Skepticism & Gaps (limitations/contradictions and `[GENERAL]` vs `[MODEL-DEPENDENT]` boundaries highlighted)
+                - [ ] Criterion 3: Mathematical Grounding (concept is grounded in mathematical formulas or LaTeX equations with a consistent Symbol Table)
                 - [ ] Criterion 4: Status Classification (clearly classified as [VERIFIED] or [THEORETICAL])
                 - [ ] Criterion 5: Visual Grounding (detailed visual/image prompt description included)
                 - [ ] Criterion 6: Mathematical Integrity (Math Physicist's Math Score is at least 3/4 OR math_status is [MATH_TOPOLOGICAL] or [MATH_CONJECTURED] with clear justification)
@@ -178,13 +191,15 @@ class UniverseTasks:
             description=dedent(f"""
                 Perform a rigorous mathematical integrity check on the research report for: {concept}.
 
+                {CANONICAL_CONVENTIONS_HEADER}
+
                 You MUST execute the following steps in order using your tools:
 
-                STEP 1 — Extract equations:
-                Use the "Equation Extractor" tool by passing ONLY the mathematical equations and formula blocks ($$...$$ and $...$) from the research context (keep the input under 4,000 characters; do NOT copy-paste the entire narrative prose or bibliography).
+                STEP 1 — Extract equations & audit Conventions/Symbol Table:
+                Use the "Equation Extractor" tool by passing ONLY the mathematical equations and formula blocks ($$...$$ and $...$) from the research context (keep the input under 4,000 characters; do NOT copy-paste the entire narrative prose or bibliography). Also inspect whether the report includes `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (flagging any missing or conflicting metric signature, Planck mass M_Pl vs m_Pl, or unit conventions).
 
                 STEP 2 — Check dimensional consistency:
-                Pass the JSON output from Step 1 directly to the "Dimensional Consistency Checker" tool.
+                Pass the JSON output from Step 1 directly to the "Dimensional Consistency Checker" tool, cross-checking against the declared symbol dimensions ([E]^n or SI).
 
                 STEP 3 — Classify topological structures:
                 Use the "Topology Classifier" tool with the concept name and a concise summary (under 1,500 characters) of the geometric, symmetry, and topological structures in the research context.
@@ -192,10 +207,11 @@ class UniverseTasks:
                 STEP 4 — Validate numerical benchmarks:
                 Use the "Numerical Benchmark Validator" tool with the concept name and the equation JSON from Step 1.
 
-                STEP 5 — Compute the Math Score and assign math_status:
+                STEP 5 — Compute the Math Score and assign math_status (GLOBAL COHERENCE RULE):
+                - Global Coherence Rule: Your overall verdict MUST be the logical conjunction of your itemized equation checks. NEVER state in your summary that "all equations are dimensionally consistent" if you or a tool identified an itemized dimensional mismatch, missing covariance term, or erroneous integral (e.g., writing rho ~ a^(-3(1+w(a))) for variable w(a)). Report any `UNDECIDABLE` equations honestly as `UNDECIDABLE`.
                 Award 1 point for each criterion met:
                   - Point 1: At least 1 equation was successfully extracted (Step 1)
-                  - Point 2: All extracted equations are CONSISTENT or DIMENSIONLESS (Step 2), OR math is purely topological
+                  - Point 2: All extracted equations are CONSISTENT or DIMENSIONLESS (Step 2) with coherent conventions, OR math is purely topological
                   - Point 3: Topological structures are VALID (Step 3), OR dimensional verification passed fully
                   - Point 4: At least 1 numerical benchmark MATCHES (Step 4), OR concept is theoretical with no experimental values
 
@@ -204,7 +220,7 @@ class UniverseTasks:
                   [MATH_CONSISTENT]  — Score 2-3/4, no INCONSISTENT flags
                   [MATH_CONJECTURED] — Has unproven assumptions clearly flagged
                   [MATH_TOPOLOGICAL] — Primarily topological, structurally valid
-                  [MATH_FLAWED]      — Any INCONSISTENT verdict detected
+                  [MATH_FLAWED]      — Any INCONSISTENT verdict or broken mathematical derivation detected
                   [MATH_PENDING]     — No equations found at all
 
                 STEP 6 — Write the Math Verification Report:
@@ -216,11 +232,14 @@ class UniverseTasks:
                 **Math Score:** X/4
                 **Math Status:** [MATH_???]
 
+                ### Conventions & Validity Audit
+                (audit of metric signature, unit basis, Planck mass convention, symbol table, and `[GENERAL]` vs `[MODEL-DEPENDENT]` validity conditions)
+
                 ### Equations Extracted
                 (list equations found, or "None found")
 
                 ### Dimensional Consistency
-                (per-equation verdict from tool)
+                (per-equation verdict from tool + natural-unit/SI check)
 
                 ### Topological Analysis
                 (topology type and structural assessment, or "Not topological")
@@ -229,12 +248,13 @@ class UniverseTasks:
                 (benchmark matches and values, or "Not applicable")
 
                 ### Assessment
-                (2-3 sentence narrative summary of mathematical integrity)
+                (2-3 sentence narrative summary of mathematical integrity obeying the Global Coherence Rule)
             """),
             expected_output=dedent(f"""
                 A Math Verification Report for {concept} with:
                 - Math Score (X/4)
                 - math_status ([MATH_PROVEN/CONSISTENT/CONJECTURED/TOPOLOGICAL/FLAWED/PENDING])
+                - Conventions & Validity Audit
                 - Dimensional consistency results per equation
                 - Topological structure classification
                 - Numerical benchmark comparison
@@ -457,10 +477,13 @@ class UniverseTasks:
         return Task(
             description=dedent(f"""
                 Conduct a rigorous comparative debate between "{theory_a}" and "{theory_b}".
+
+                {CANONICAL_CONVENTIONS_HEADER}
+
                 Evaluate both theories based on:
-                1. Mathematical consistency.
-                2. Alignment with existing empirical data (e.g., General Relativity and Quantum Mechanics).
-                3. Major flaws or unprovable assumptions in each.
+                1. Mathematical consistency (unifying both theories under a single shared metric signature, unit basis, and Symbol Table, and referencing the Math Physicist's verification report).
+                2. Alignment with existing empirical data (e.g., General Relativity, Quantum Mechanics, Planck, DESI, JWST, HST, LIGO/GW170817) with explicit quantitative observables (such as $c_s^2$, $w(a)$, $f\\sigma_8(z)$, or $S_8$).
+                3. Major flaws, stability conditions, or unprovable assumptions in each — explicitly distinguishing `[GENERAL]` results from `[MODEL-DEPENDENT: ...]` parameterizations.
                 Highlight which theory (if either) has stronger current consensus.
                 Assign status based on evidence: use [VERIFIED] if the analysis is grounded in experimentally confirmed physics, or [THEORETICAL] only if both theories genuinely lack any direct experimental support.
 
@@ -468,9 +491,9 @@ class UniverseTasks:
 
                 Verification Checklist:
                 - [ ] Criterion 1: Multi-source Integration (at least 3 independent sources compared)
-                - [ ] Criterion 2: Mathematical Consistency (rigorous comparative math review in LaTeX)
-                - [ ] Criterion 3: Empirical Core (empirical data alignment and gaps scrutinized)
-                - [ ] Criterion 4: Transparency & Gaps (unprovable assumptions flagged)
+                - [ ] Criterion 2: Mathematical Consistency (rigorous comparative math review in LaTeX under shared conventions)
+                - [ ] Criterion 3: Empirical Core (quantitative empirical data alignment and gaps scrutinized)
+                - [ ] Criterion 4: Transparency & Gaps (`[GENERAL]` vs `[MODEL-DEPENDENT]` assumptions flagged)
                 - [ ] Criterion 5: Comparative Consensus (clear statement of current consensus status)
 
                 Verification Score: X/5

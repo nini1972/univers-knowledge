@@ -1,6 +1,6 @@
 # 🛠️ Autonomous Agent Shortcomings & Capability Wishlist
 
-> **Last Updated**: `2026-10-18T20:05:23.676641+00:00`
+> **Last Updated**: `2026-10-18T20:25:47.088444+00:00`
 > **How to Query Agents Directly**:
 > - Generate/refresh this wishlist: `python scripts/consult_professor.py wishlist` (add `--live` to interview live LLMs)
 > - Ask any agent a direct question: `python scripts/consult_professor.py ask <agent_role> "Your question"`
@@ -10,8 +10,23 @@
 
 ## 📊 1. Empirical Telemetry: Where Agents Struggle in Production
 
+### Recent Window Scorecard (Last `100` Evaluations)
+- **Evaluations in Window**: `100` (`29` approved, `71` rejected)
+- **Recent Rejection Breakdown by Root Cause**:
+  * `mathematical_flaw_or_inconsistency`: **58** occurrence(s)
+  * `crew_kickoff_error`: **10** occurrence(s)
+  * `parse_error`: **2** occurrence(s)
+  * `insufficient_skeptic_score`: **1** occurrence(s)
+- **Recurring Need Themes in Recent Window (`agent_needs`)**:
+  * `units_and_dimensions`: **80** mention(s)
+  * `conventions_and_signs`: **73** mention(s)
+  * `worked_arithmetic_and_benchmarks`: **39** mention(s)
+  * `citation_provenance`: **32** mention(s)
+  * `causal_and_statistical_design`: **20** mention(s)
+
+### All-Time Cumulative Totals (Historical Baseline)
 - **Total Logged Evaluations**: `659` (`324` approved)
-- **Rejection Breakdown by Root Cause**:
+- **All-Time Rejection Breakdown by Root Cause**:
   * `insufficient_skeptic_score`: **210** occurrence(s)
   * `mathematical_flaw_or_inconsistency`: **94** occurrence(s)
   * `crew_kickoff_error`: **12** occurrence(s)
@@ -58,6 +73,7 @@
   3. **Worked-Example Arithmetic Drift**: When adapting a formula to new benchmark parameters on retry, LLM mental arithmetic can slip by factors of $10^2\text{–}10^3$ without a calculator tool.
 - **Agent Wishlist**:
   * ✅ **[IMPLEMENTED]** `Observational Cosmology & Deep-Space Survey Tracker` tool providing direct access to JWST, Hubble (HST), DESI, Euclid, Planck, and NANOGrav observational tensions and verified DOIs.
+  * ✅ **[IMPLEMENTED]** Structured `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (`[GENERAL]` vs `[MODEL-DEPENDENT: ...]`) preamble inside `## 3. Mathematical Framework`.
   * 🎯 **[WISHLIST #1]** **Python Numerical Scratchpad / Calculator Tool for the Researcher** so worked numerical examples (e.g., Affleck-Dine baryon yield $n_B/s$, Hubble horizon expansion $\lambda_{\rm phys}(t_0)$ in meters, or SH0ES distance-ladder calibration) are computed in Python *before* the draft is submitted to the Math Physicist.
   * 🎯 **[WISHLIST #2]** **arXiv Full-Text Section Extractor (HTML/LaTeX source snippet reader)** to pull exact Lagrangian conventions and coefficient definitions from primary papers when abstracts omit prefactors.
 
@@ -68,15 +84,16 @@
   2. **Natural-Units ($\hbar = c = k_B = 1$) vs. SI Ambiguity**: In high-energy and cosmological formulas (e.g., one-pion-exchange potential, curvature-current baryogenesis $\mathcal{L}_{\rm int} = (\partial_\mu R) J_B^\mu / M_*^2$, or comoving vs. physical number densities), dimensional consistency depends on declared mass dimensions $[\phi] = E^1, [R] = E^2, [J^\mu] = E^3$.
 - **Agent Wishlist**:
   * ✅ **[IMPLEMENTED]** Concise equation-only extraction (<4,000 chars) and 25-equation relational prioritization to eliminate 180s tool-call timeouts.
+  * ✅ **[IMPLEMENTED]** Global Coherence Rule in Math Verification Report (preventing global pass claims when an itemized mismatch is identified).
   * 🎯 **[WISHLIST #1]** **Natural-Unit Mass-Dimension Evaluator (`[E]^n` checker)** alongside SI unit checking, where the tool explicitly checks Lagrangian terms against $[\mathcal{L}] = [E]^4$ in 4D spacetime.
-  * 🎯 **[WISHLIST #2]** **Automated Benchmark Substitution Check**: A tool that takes a formula like `n_B/s = (3*eps/4)*(m_soft*phi^2*T_RH/V_0)` plus a JSON dictionary of benchmark numbers cited in the text and verifies that the left-hand side numerically equals the right-hand side within 10%.
+  * 🎯 **[WISHLIST #2]** **Automated Benchmark Substitution & Symbolic Re-Derivation Check**: A tool that verifies numerical claims/benchmarks within 10% and re-evaluates integrals/ODEs (such as the variable-$w(a)$ continuity integral).
 
 ### ⚖️ C. Scientific Skeptic & Student Orchestrator
 - **Equipped Tools**: `Peer Review Critique Resolver`.
 - **Shortcomings Encountered During Tasks**:
   1. **Convention Conflicts Across Multi-Attempt Retries**: When Researcher A and Researcher B in Level 2 use slightly different Fourier, metric signature $(-,+,+,+)$ vs $(+,-,-,-)$, or reduced vs. Planck mass ($M_{\rm Pl} = 2.435\times 10^{18}\text{ GeV}$ vs $m_{\rm Pl} = 1.22\times 10^{19}\text{ GeV}$) conventions, the synthesis can mix both.
 - **Agent Wishlist**:
-  * 🎯 **[WISHLIST #1]** **Shared Canonical Convention Header** injected at the start of every Level 1/2/3 crew run (fixing reduced Planck mass $M_{\rm Pl} = (8\pi G)^{-1/2} = 2.435\times 10^{18}\text{ GeV}$, metric signature, and entropy degrees of freedom $g_{*s}$) so all agents in the crew share identical unit definitions.
+  * ✅ **[IMPLEMENTED]** **Shared Canonical Convention Header (`src/conventions.py`)** injected at the start of every Level 1/2/3 crew run and micro-revision (fixing reduced Planck mass $M_{\rm Pl} = (8\pi G)^{-1/2} = 2.435\times 10^{18}\text{ GeV}$, metric signature $(-,+,+,+)$, $g_{*s}(T)$ anchors, and Level 3 causal estimand/covariance requirements).
 
 ---
 
@@ -167,4 +184,3 @@ My top two wishlist items are:
 1. **A formal, versioned verification workflow.** I would want a system that tracks claims through their supporting sources and derivations; checks equations for dimensions, definitions, and stated conventions; flags conflicting drafts or citations; and records which assumptions are required for each conclusion. It should distinguish “supported under these assumptions” from “verified generally,” rather than treating a plausible statement as settled.
 
 2. **A reproducible quantitative evidence-and-design workspace.** I would want curated, provenance-rich datasets and analysis tools that let me compare predictions with observations using explicit models, uncertainty, and preregistered tests. For studies, that means specifying the estimand, identification assumptions, measurement strategy, sampling distribution, power, and multiplicity control up front. For theory comparisons, it means computing divergent predictions—such as perturbations or sound speeds—from formalized models rather than relying on qualitative claims or arbitrary decision thresholds.
-

@@ -462,11 +462,31 @@ def sync_office_hours_markdown():
 AGENT_WISHLIST_MD = REPO_ROOT / "knowledge_base" / "AGENT_WISHLIST.md"
 
 
-def collect_historical_agent_shortcomings(limit: int = 10) -> dict:
+def _classify_need_themes(needs_list: list[str]) -> dict[str, int]:
+    """Classify concrete researcher/math needs into recurring operational themes."""
+    from collections import Counter
+
+    theme_rules = [
+        ("units_and_dimensions", ["unit", "dimension", "gev", "meter", "si ", "m_pl", "planck mass", "rescal"]),
+        ("conventions_and_signs", ["convention", "signature", "sign", "action", "metric", "kinetic", "canonical", "model-dependent"]),
+        ("worked_arithmetic_and_benchmarks", ["recompute", "numerical", "calculate", "patch scale", "benchmark", "sound speed", "perturbation", "h_0", "s_8", "desi"]),
+        ("citation_provenance", ["citation", "doi", "arxiv", "source", "future-dated", "2026", "duplicate"]),
+        ("causal_and_statistical_design", ["estimand", "mediator", "covariance", "variance", "power", "multiplicity", "preregister", "nie", "dag", "null model"]),
+    ]
+    counts: Counter = Counter()
+    for item in needs_list:
+        low = item.lower()
+        for theme_name, keywords in theme_rules:
+            if any(kw in low for kw in keywords):
+                counts[theme_name] += 1
+    return dict(counts.most_common())
+
+
+def collect_historical_agent_shortcomings(limit: int = 10, recent_window: int = 100) -> dict:
     """
     Mines evaluation_runs.jsonl and advisory_queue.jsonl to extract real operational
-    shortcomings, rejection frequencies, researcher_needs, and math_needs encountered
-    by the agents during autonomous runs.
+    shortcomings, rejection frequencies (both recent-window and all-time), researcher_needs,
+    and math_needs encountered by the agents during autonomous runs.
     """
     from collections import Counter
 
@@ -475,6 +495,7 @@ def collect_historical_agent_shortcomings(limit: int = 10) -> dict:
     researcher_needs = []
     math_needs = []
     recent_rejections = []
+    all_records = []
     total_runs = 0
     approved_runs = 0
 
@@ -485,6 +506,7 @@ def collect_historical_agent_shortcomings(limit: int = 10) -> dict:
                     continue
                 try:
                     rec = json.loads(line)
+                    all_records.append(rec)
                     total_runs += 1
                     status = rec.get("status")
                     if status == "approved":
@@ -508,10 +530,33 @@ def collect_historical_agent_shortcomings(limit: int = 10) -> dict:
                 except Exception:
                     pass
 
+    window_records = all_records[-recent_window:] if recent_window > 0 else all_records
+    window_approved = 0
+    window_rejections: Counter = Counter()
+    window_needs_all: list[str] = []
+    for rec in window_records:
+        st = rec.get("status")
+        if st == "approved":
+            window_approved += 1
+        elif st == "rejected":
+            window_rejections[rec.get("reason_code", "unspecified")] += 1
+        needs = rec.get("agent_needs") or {}
+        for rn in needs.get("researcher_needs") or []:
+            if rn:
+                window_needs_all.append(str(rn))
+        for mn in needs.get("math_needs") or []:
+            if mn:
+                window_needs_all.append(str(mn))
+
     return {
         "total_evaluations": total_runs,
         "approved_evaluations": approved_runs,
         "rejection_counts": dict(rejection_counts.most_common()),
+        "recent_window_size": len(window_records),
+        "recent_window_approved": window_approved,
+        "recent_window_rejected": sum(window_rejections.values()),
+        "recent_window_rejection_counts": dict(window_rejections.most_common()),
+        "recent_need_themes": _classify_need_themes(window_needs_all),
         "recent_researcher_needs": researcher_needs[-limit:],
         "recent_math_needs": math_needs[-limit:],
         "recent_rejections": recent_rejections[-limit:],
@@ -524,8 +569,20 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
     run telemetry/logs with structured per-agent wishlists (and optional live LLM interviews),
     saving it to knowledge_base/AGENT_WISHLIST.md.
     """
-    stats = collect_historical_agent_shortcomings(limit=8)
+    stats = collect_historical_agent_shortcomings(limit=8, recent_window=100)
     now_str = _get_utc_now()
+
+    # Preserve existing live interview section when refreshing telemetry without --live
+    preserved_live_section = ""
+    if not live_responses and AGENT_WISHLIST_MD.exists():
+        try:
+            existing_md = AGENT_WISHLIST_MD.read_text(encoding="utf-8")
+            marker = "## 🎙️ 3. Live Agent Interview Transcripts"
+            idx = existing_md.find(marker)
+            if idx != -1:
+                preserved_live_section = existing_md[idx:].strip()
+        except Exception:
+            pass
 
     lines = [
         "# 🛠️ Autonomous Agent Shortcomings & Capability Wishlist",
@@ -540,9 +597,25 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
         "",
         "## 📊 1. Empirical Telemetry: Where Agents Struggle in Production",
         "",
-        f"- **Total Logged Evaluations**: `{stats['total_evaluations']}` (`{stats['approved_evaluations']}` approved)",
-        "- **Rejection Breakdown by Root Cause**:",
+        f"### Recent Window Scorecard (Last `{stats['recent_window_size']}` Evaluations)",
+        f"- **Evaluations in Window**: `{stats['recent_window_size']}` (`{stats['recent_window_approved']}` approved, `{stats['recent_window_rejected']}` rejected)",
+        "- **Recent Rejection Breakdown by Root Cause**:",
     ]
+
+    for rc, cnt in stats["recent_window_rejection_counts"].items():
+        lines.append(f"  * `{rc}`: **{cnt}** occurrence(s)")
+
+    if stats.get("recent_need_themes"):
+        lines.append("- **Recurring Need Themes in Recent Window (`agent_needs`)**:")
+        for theme, cnt in stats["recent_need_themes"].items():
+            lines.append(f"  * `{theme}`: **{cnt}** mention(s)")
+
+    lines.extend([
+        "",
+        "### All-Time Cumulative Totals (Historical Baseline)",
+        f"- **Total Logged Evaluations**: `{stats['total_evaluations']}` (`{stats['approved_evaluations']}` approved)",
+        "- **All-Time Rejection Breakdown by Root Cause**:",
+    ])
 
     for rc, cnt in stats["rejection_counts"].items():
         lines.append(f"  * `{rc}`: **{cnt}** occurrence(s)")
@@ -575,6 +648,7 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
         "  3. **Worked-Example Arithmetic Drift**: When adapting a formula to new benchmark parameters on retry, LLM mental arithmetic can slip by factors of $10^2\\text{–}10^3$ without a calculator tool.",
         "- **Agent Wishlist**:",
         "  * ✅ **[IMPLEMENTED]** `Observational Cosmology & Deep-Space Survey Tracker` tool providing direct access to JWST, Hubble (HST), DESI, Euclid, Planck, and NANOGrav observational tensions and verified DOIs.",
+        "  * ✅ **[IMPLEMENTED]** Structured `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (`[GENERAL]` vs `[MODEL-DEPENDENT: ...]`) preamble inside `## 3. Mathematical Framework`.",
         "  * 🎯 **[WISHLIST #1]** **Python Numerical Scratchpad / Calculator Tool for the Researcher** so worked numerical examples (e.g., Affleck-Dine baryon yield $n_B/s$, Hubble horizon expansion $\\lambda_{\\rm phys}(t_0)$ in meters, or SH0ES distance-ladder calibration) are computed in Python *before* the draft is submitted to the Math Physicist.",
         "  * 🎯 **[WISHLIST #2]** **arXiv Full-Text Section Extractor (HTML/LaTeX source snippet reader)** to pull exact Lagrangian conventions and coefficient definitions from primary papers when abstracts omit prefactors.",
         "",
@@ -585,15 +659,16 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
         "  2. **Natural-Units ($\\hbar = c = k_B = 1$) vs. SI Ambiguity**: In high-energy and cosmological formulas (e.g., one-pion-exchange potential, curvature-current baryogenesis $\\mathcal{L}_{\\rm int} = (\\partial_\\mu R) J_B^\\mu / M_*^2$, or comoving vs. physical number densities), dimensional consistency depends on declared mass dimensions $[\\phi] = E^1, [R] = E^2, [J^\\mu] = E^3$.",
         "- **Agent Wishlist**:",
         "  * ✅ **[IMPLEMENTED]** Concise equation-only extraction (<4,000 chars) and 25-equation relational prioritization to eliminate 180s tool-call timeouts.",
+        "  * ✅ **[IMPLEMENTED]** Global Coherence Rule in Math Verification Report (preventing global pass claims when an itemized mismatch is identified).",
         "  * 🎯 **[WISHLIST #1]** **Natural-Unit Mass-Dimension Evaluator (`[E]^n` checker)** alongside SI unit checking, where the tool explicitly checks Lagrangian terms against $[\\mathcal{L}] = [E]^4$ in 4D spacetime.",
-        "  * 🎯 **[WISHLIST #2]** **Automated Benchmark Substitution Check**: A tool that takes a formula like `n_B/s = (3*eps/4)*(m_soft*phi^2*T_RH/V_0)` plus a JSON dictionary of benchmark numbers cited in the text and verifies that the left-hand side numerically equals the right-hand side within 10%.",
+        "  * 🎯 **[WISHLIST #2]** **Automated Benchmark Substitution & Symbolic Re-Derivation Check**: A tool that verifies numerical claims/benchmarks within 10% and re-evaluates integrals/ODEs (such as the variable-$w(a)$ continuity integral).",
         "",
         "### ⚖️ C. Scientific Skeptic & Student Orchestrator",
         "- **Equipped Tools**: `Peer Review Critique Resolver`.",
         "- **Shortcomings Encountered During Tasks**:",
         "  1. **Convention Conflicts Across Multi-Attempt Retries**: When Researcher A and Researcher B in Level 2 use slightly different Fourier, metric signature $(-,+,+,+)$ vs $(+,-,-,-)$, or reduced vs. Planck mass ($M_{\\rm Pl} = 2.435\\times 10^{18}\\text{ GeV}$ vs $m_{\\rm Pl} = 1.22\\times 10^{19}\\text{ GeV}$) conventions, the synthesis can mix both.",
         "- **Agent Wishlist**:",
-        "  * 🎯 **[WISHLIST #1]** **Shared Canonical Convention Header** injected at the start of every Level 1/2/3 crew run (fixing reduced Planck mass $M_{\\rm Pl} = (8\\pi G)^{-1/2} = 2.435\\times 10^{18}\\text{ GeV}$, metric signature, and entropy degrees of freedom $g_{*s}$) so all agents in the crew share identical unit definitions.",
+        "  * ✅ **[IMPLEMENTED]** **Shared Canonical Convention Header (`src/conventions.py`)** injected at the start of every Level 1/2/3 crew run and micro-revision (fixing reduced Planck mass $M_{\\rm Pl} = (8\\pi G)^{-1/2} = 2.435\\times 10^{18}\\text{ GeV}$, metric signature $(-,+,+,+)$, $g_{*s}(T)$ anchors, and Level 3 causal estimand/covariance requirements).",
     ])
 
     if live_responses:
@@ -608,6 +683,13 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
             lines.append(f"### 💬 `{role_key}` Live Response")
             lines.append(resp_text.strip())
             lines.append("")
+    elif preserved_live_section:
+        lines.extend([
+            "",
+            "---",
+            "",
+            preserved_live_section,
+        ])
 
     content = "\n".join(lines) + "\n"
     AGENT_WISHLIST_MD.parent.mkdir(parents=True, exist_ok=True)
@@ -647,18 +729,22 @@ def ask_agent_directly(agent_role: str, question: str) -> str:
     # Disable delegation during direct 1-on-1 interview for fast, focused response
     agent.allow_delegation = False
     tool_names = [getattr(t, "name", str(t)) for t in (agent.tools or [])]
-    stats = collect_historical_agent_shortcomings(limit=5)
+    stats = collect_historical_agent_shortcomings(limit=5, recent_window=100)
 
     prompt = (
         f"The Human Operator (Professor) is speaking to you directly in a 1-on-1 diagnostic session.\n"
         f"Your Role: {agent.role}\n"
         f"Your Currently Equipped Tools: {', '.join(tool_names) if tool_names else 'None (pure reasoning)'}\n"
-        f"Recent Historical Shortcomings Logged Across Runs:\n"
-        f"- Top Rejection Reasons: {json.dumps(stats['rejection_counts'])}\n"
+        f"Recent Operational Telemetry (Last {stats['recent_window_size']} Evaluations — Current Production State):\n"
+        f"- Recent Window Approvals / Rejections: {stats['recent_window_approved']} approved, {stats['recent_window_rejected']} rejected\n"
+        f"- Recent Window Rejection Reasons (Last {stats['recent_window_size']} runs): {json.dumps(stats['recent_window_rejection_counts'])}\n"
+        f"- Recurring Need Themes in Recent Window: {json.dumps(stats['recent_need_themes'])}\n"
+        f"- All-Time Historical Rejection Totals (older runs included): {json.dumps(stats['rejection_counts'])}\n"
         f"- Recent Researcher Needs: {json.dumps(stats['recent_researcher_needs'])}\n"
         f"- Recent Math Physicist Needs: {json.dumps(stats['recent_math_needs'])}\n\n"
         f"PROFESSOR'S QUESTION TO YOU:\n\"{question}\"\n\n"
-        f"Respond candidly in first person as {agent.role}. Do NOT invoke external tools unless specifically asked to search for a topic; "
+        f"Respond candidly in first person as {agent.role}. Base your diagnosis primarily on the Recent Window (last {stats['recent_window_size']} evaluations) telemetry rather than legacy all-time totals. "
+        f"Do NOT invoke external tools unless specifically asked to search for a topic; "
         f"focus on giving a clear, concrete, technically specific answer about your workflow, shortcomings, and tool/data wishlist."
     )
 

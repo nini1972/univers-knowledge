@@ -530,7 +530,7 @@ class UniverseFlow(Flow[UniverseState]):
 
         if level == 1:
             researcher = self.agents.researcher_agent()
-            research_task = self.tasks.research_concept_task(researcher, research_prompt)
+            research_task = self.tasks.research_concept_task(researcher, research_prompt, level=1)
             math_task = self.tasks.math_verification_task(math_physicist, concept, context=[research_task])
             verify_task = self.tasks.verify_research_task(skeptic, concept, context=[research_task, math_task])
             evaluate_task = self.tasks.student_evaluation_task(evaluation_student, concept, context=[research_task, math_task, verify_task])
@@ -554,8 +554,8 @@ class UniverseFlow(Flow[UniverseState]):
             th_a_prompt = f"{th_a}\nFollow-up context:\n{self.state.follow_up_context}" if self.state.follow_up_context else th_a
             th_b_prompt = f"{th_b}\nFollow-up context:\n{self.state.follow_up_context}" if self.state.follow_up_context else th_b
 
-            research_task_a = self.tasks.research_concept_task(researcher_a, th_a_prompt)
-            research_task_b = self.tasks.research_concept_task(researcher_b, th_b_prompt)
+            research_task_a = self.tasks.research_concept_task(researcher_a, th_a_prompt, level=2)
+            research_task_b = self.tasks.research_concept_task(researcher_b, th_b_prompt, level=2)
             math_task = self.tasks.math_verification_task(math_physicist, concept, context=[research_task_a, research_task_b])
             debate_task = self.tasks.debate_theories_task(skeptic, th_a, th_b, context=[research_task_a, research_task_b, math_task])
             evaluate_task = self.tasks.student_level2_debate_evaluation_task(evaluation_student, f"The debate between {th_a} and {th_b}", context=[research_task_a, research_task_b, math_task, debate_task])
@@ -577,8 +577,8 @@ class UniverseFlow(Flow[UniverseState]):
             bio_digital_analyst = self.agents.bio_digital_analyst_agent()
             cosmological_architect = self.agents.cosmological_architect_agent()
 
-            research_task_a = self.tasks.research_concept_task(bio_digital_analyst, research_prompt)
-            research_task_b = self.tasks.research_concept_task(cosmological_architect, research_prompt)
+            research_task_a = self.tasks.research_concept_task(bio_digital_analyst, research_prompt, level=3)
+            research_task_b = self.tasks.research_concept_task(cosmological_architect, research_prompt, level=3)
             math_task = self.tasks.math_verification_task(math_physicist, concept, context=[research_task_a, research_task_b])
             verify_task = self.tasks.verify_research_task(skeptic, concept, context=[research_task_a, research_task_b, math_task])
             evaluate_task = self.tasks.student_level3_evaluation_task(evaluation_student, concept, context=[research_task_a, research_task_b, math_task, verify_task])
@@ -787,7 +787,8 @@ class UniverseFlow(Flow[UniverseState]):
             agent=lead_agent,
             concept=self.state.concept,
             original_draft=self.state.research_output,
-            feedback_dict=self.state.decision
+            feedback_dict=self.state.decision,
+            level=self.state.level,
         )
         math_task = self.tasks.math_verification_task(math_agent, self.state.concept, context=[rev_task])
         verify_task = self.tasks.verify_research_task(skeptic_agent, self.state.concept, context=[rev_task, math_task])
