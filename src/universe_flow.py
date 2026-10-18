@@ -556,9 +556,9 @@ class UniverseFlow(Flow[UniverseState]):
 
             research_task_a = self.tasks.research_concept_task(researcher_a, th_a_prompt)
             research_task_b = self.tasks.research_concept_task(researcher_b, th_b_prompt)
-            debate_task = self.tasks.debate_theories_task(skeptic, th_a, th_b, context=[research_task_a, research_task_b])
             math_task = self.tasks.math_verification_task(math_physicist, concept, context=[research_task_a, research_task_b])
-            evaluate_task = self.tasks.student_level2_debate_evaluation_task(evaluation_student, f"The debate between {th_a} and {th_b}", context=[research_task_a, research_task_b, debate_task, math_task])
+            debate_task = self.tasks.debate_theories_task(skeptic, th_a, th_b, context=[research_task_a, research_task_b, math_task])
+            evaluate_task = self.tasks.student_level2_debate_evaluation_task(evaluation_student, f"The debate between {th_a} and {th_b}", context=[research_task_a, research_task_b, math_task, debate_task])
             skeptic_task = debate_task
 
             if pattern_guidance:
@@ -566,12 +566,12 @@ class UniverseFlow(Flow[UniverseState]):
             if professor_guidance:
                 research_task_a.description += professor_guidance
                 research_task_b.description += professor_guidance
-                debate_task.description += professor_guidance
                 math_task.description += professor_guidance
+                debate_task.description += professor_guidance
                 evaluate_task.description += professor_guidance
 
-            crew_agents = [researcher_a, researcher_b, skeptic, math_physicist, evaluation_student]
-            crew_tasks = [research_task_a, research_task_b, debate_task, math_task, evaluate_task]
+            crew_agents = [researcher_a, researcher_b, math_physicist, skeptic, evaluation_student]
+            crew_tasks = [research_task_a, research_task_b, math_task, debate_task, evaluate_task]
 
         else: # Level 3
             bio_digital_analyst = self.agents.bio_digital_analyst_agent()
@@ -799,6 +799,20 @@ class UniverseFlow(Flow[UniverseState]):
             eval_task = self.tasks.student_level2_debate_evaluation_task(student_agent, f"The debate between {th_a} and {th_b}", context=[rev_task, math_task, verify_task])
         else:
             eval_task = self.tasks.student_level3_evaluation_task(student_agent, self.state.concept, context=[rev_task, math_task, verify_task])
+
+        concept_directive = get_active_directive_for_concept(self.state.concept, level=self.state.level)
+        general_directives = get_active_general_directives(f"level_{self.state.level}")
+        directive_lines = []
+        if concept_directive:
+            directive_lines.append(f"- DIRECTIVE FOR '{self.state.concept}': {concept_directive}")
+        if general_directives:
+            directive_lines.extend(f"- STANDING DIRECTIVE: {d}" for d in general_directives)
+        if directive_lines:
+            prof_guidance = "\n\nPROFESSOR DIRECTIVES & GUIDANCE:\n" + "\n".join(directive_lines)
+            rev_task.description += prof_guidance
+            math_task.description += prof_guidance
+            verify_task.description += prof_guidance
+            eval_task.description += prof_guidance
 
         micro_crew = Crew(
             agents=[lead_agent, math_agent, skeptic_agent, student_agent],

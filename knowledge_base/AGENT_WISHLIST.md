@@ -1,6 +1,6 @@
 # 🛠️ Autonomous Agent Shortcomings & Capability Wishlist
 
-> **Last Updated**: `2026-10-17T06:33:47.162365+00:00`
+> **Last Updated**: `2026-10-18T19:27:43.643929+00:00`
 > **How to Query Agents Directly**:
 > - Generate/refresh this wishlist: `python scripts/consult_professor.py wishlist` (add `--live` to interview live LLMs)
 > - Ask any agent a direct question: `python scripts/consult_professor.py ask <agent_role> "Your question"`
@@ -10,10 +10,10 @@
 
 ## 📊 1. Empirical Telemetry: Where Agents Struggle in Production
 
-- **Total Logged Evaluations**: `656` (`324` approved)
+- **Total Logged Evaluations**: `659` (`324` approved)
 - **Rejection Breakdown by Root Cause**:
-  * `insufficient_skeptic_score`: **209** occurrence(s)
-  * `mathematical_flaw_or_inconsistency`: **92** occurrence(s)
+  * `insufficient_skeptic_score`: **210** occurrence(s)
+  * `mathematical_flaw_or_inconsistency`: **94** occurrence(s)
   * `crew_kickoff_error`: **12** occurrence(s)
   * `parse_error`: **7** occurrence(s)
   * `missing_math_equations`: **4** occurrence(s)
@@ -27,24 +27,24 @@
   * `missing_critical_comparisons`: **1** occurrence(s)
 
 ### Recent Concrete Shortcomings Logged for the **Researcher**:
-- Correct the Stefan–Boltzmann relation to P = +(T/V) ln Z under the stated partition-function convention.
-- Replace the trace-anomaly equation with epsilon - 3P = T^5 d(P/T^4)/dT at mu_B = 0, or equivalently (epsilon - 3P)/T^4 = T d(P/T^4)/dT.
-- Replace the critical susceptibility scaling law with an appropriately derived 3D Ising scaling relation, stating assumptions about the mapping from QCD variables to Ising scaling fields and which cumulants are being described.
-- Correct the worked benchmark parameters or arithmetic and reconcile the resulting baryon yield with the observed value.
-- Recalculate the present-day physical patch size, stating the expansion and entropy-degree-of-freedom assumptions.
 - Correct the ionization-balance equation in the report and ensure its source and recombination terms use consistent units.
 - Review related explanatory claims and visual material so they reflect the corrected equation.
 - Recompute the present-day patch scale using a clearly specified thermal history, including thermal-inflation expansion and the post-inflation flaton-dominated reheating era; document assumptions and correct the numerical result.
+- Revise the comparative analysis to distinguish model-dependent claims from general results and add quantitative observational comparisons of predicted perturbations and sound speeds.
+- Replace the unsupported NIE-magnitude decision rule with divergent predictions derived from formalized theories.
+- Use a clearly defined interventional estimand or state and justify the assumptions required for a natural indirect effect.
+- Distinguish PCI from IIT’s Φ and specify a valid, preregistered mediator measurement strategy.
+- Correct the future-dated 2026 citation and reconcile the duplicated drafts and inconsistent citation-audit claims.
 
 ### Recent Concrete Shortcomings Logged for the **Math Physicist**:
-- Disambiguate flaton and modulus masses, include the relativistic-degree-of-freedom factor in T_osc where appropriate, and derive the e-fold count and exit conditions.
-- Recheck the corrected pressure and trace-anomaly identities from the thermodynamic definitions and show their dimensions.
-- Provide a derivation or authoritative reference for the corrected susceptibility exponents, including the order of the cumulant and the assumptions behind the scaling form.
-- Recompute the late-generation yield using the printed benchmark values and verify any revised parameter set.
-- Audit the thermal-inflation duration and endpoint assumptions, distinguishing the trapping-release temperature from the post-inflation reheating temperature.
-- Verify the corrected equation term by term, including the convention for comoving versus physical hydrogen density and the sign and placement of dt/dz.
 - Provide a dimensional check showing that both sides and all additive terms have matching units.
 - Show the scale-factor evolution from the horizon-crossing or onset epoch through the end of thermal inflation, flaton oscillation, reheating, and today, then verify the GeV^-1 to meter conversion.
+- Correct the thermal-trapping effective-mass equation to distinguish the thermal potential V_T ∼ (1/2)g^2T^2φ^2 from the mass-squared contribution m_T^2 ∼ g^2T^2, and audit dependent statements.
+- Reconcile the math report’s claim that all equations are dimensionally consistent with its own identification of the dimensional mismatch.
+- State the metric signature and action conventions explicitly, qualify the canonical w bound, and replace the variable-w density scaling expression with the integral solution.
+- Derive the proposed theory-discriminating statistic from explicit model assumptions.
+- Specify an estimand and identification conditions appropriate to the intervention design.
+- Correct the variance of the mediator contrast to include covariance and preregister its sampling distribution, power analysis, and multiplicity control.
 
 ---
 

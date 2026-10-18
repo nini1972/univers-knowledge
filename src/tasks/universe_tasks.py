@@ -319,7 +319,7 @@ class UniverseTasks:
                 VERIFICATION THRESHOLD RULES:
                 1. Check the Skeptic's Verification Score (out of 6). If the score is less than 4 out of 6 (4/6), you MUST reject the concept.
                 2. Check the Math Physicist's report. If math_status is [MATH_FLAWED] or dimensional consistency fails, you MUST reject the concept.
-                3. Epistemic Status Rule: Per protocol, unproven hypotheses with sound mathematical models and clear caveats MUST be approved as [THEORETICAL] or [CONJECTURED]. Do NOT reject solely because direct experimental confirmation is absent.
+                3. Epistemic Status & Caveat Synthesis Rule: Per protocol, unproven hypotheses with sound mathematical models and clear caveats MUST be approved as [THEORETICAL] or [CONJECTURED]. When the Skeptic's Verification Score is >= 4/6 AND the Math Physicist's math_status is [MATH_PROVEN] or [MATH_CONSISTENT] (Math Score >= 3/4), you SHOULD approve the concept and incorporate any localized prose corrections, sign-convention clarifications, or methodological caveats noted by the Skeptic or Math Physicist directly into summary_for_archivist. Do NOT reject solely because direct experimental confirmation is absent or because the Skeptic documented constructive caveats.
 
                 STANDARD REASON CODES:
                 - Approved:
@@ -366,15 +366,16 @@ class UniverseTasks:
             description=dedent(f"""
                 Assess the comparative Level 2 debate report, math verification, and skeptic review on: {concept}.
 
-                CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5), you MUST reject the debate concept.
+                CRITICAL RULE: Check the Skeptic's Verification Score. If the score is less than 4 out of 5 (4/5) (or 4/6), you MUST reject the debate concept.
 
                 Decision policy for Level 2 debates:
                 - Approve when the report is rigorous, source-grounded, mathematically coherent, and transparent about uncertainty.
+                - When the Skeptic's Verification Score meets the threshold (>= 4/5 or >= 4/6) AND the Math Physicist's math_status is [MATH_PROVEN] or [MATH_CONSISTENT] (Math Score >= 3/4), you SHOULD approve the debate and explicitly incorporate any localized sign-convention corrections, stability conditions, or parameter-range caveats into summary_for_archivist rather than rejecting the manuscript.
                 - Assign epistemic_status based on evidence strength:
                   * Use [VERIFIED] when the comparative analysis is grounded in experimentally confirmed physics (e.g. observed parameters, confirmed predictions).
                   * Use [THEORETICAL] when both theories genuinely lack direct experimental confirmation or observational support.
                   * Most L2 debates compare well-established frameworks with empirical grounding — these should be [VERIFIED].
-                - Reject ONLY for quality failures (insufficient sources, logical inconsistencies, missing critical comparisons, or non-rigorous claims).
+                - Reject ONLY for fundamental quality failures (Skeptic score < 4, Math Status [MATH_FLAWED], fewer than 3 independent sources, or missing core theoretical comparison).
                 - "lack_of_experimental_confirmation" alone is NOT a valid rejection reason for Level 2 debates.
 
                 STANDARD REASON CODES:
@@ -417,9 +418,10 @@ class UniverseTasks:
                 Decision policy for Level 3 Emergence & Consciousness:
                 - Apply the 'Logical Skeptic' audit: filter out pure metaphysical speculation, requiring grounding in physicalist principles, information theory, or biophysics.
                 - Recognize that the 'Hard Problem' of consciousness and IIT remain active frontiers; require clear demarcation between [VERIFIED] physical mechanisms vs [THEORETICAL] hypotheses.
+                - When the Skeptic's Verification Score is >= 4/6 AND the Math Physicist's math_status is [MATH_PROVEN] or [MATH_CONSISTENT] (Math Score >= 3/4), you SHOULD approve the concept as [THEORETICAL] and synthesize any methodological limitations, causal-DAG assumptions, or proxy-measurement caveats noted by the Skeptic directly into summary_for_archivist rather than rejecting the manuscript.
                 - Check for ontological category errors (e.g. conflating statistical information manifolds with physical spacetime metrics without signature matching).
                 - Check for unfalsifiable effect scales (e.g. predictions of 10^-25 effects that lack any conceivable measurement protocol).
-                - Reject ONLY for lack of scientific rigor, logical fallacies, category errors, or ungrounded claims.
+                - Reject ONLY for fundamental failures (Skeptic score < 4/6, Math Status [MATH_FLAWED], ontological category errors, or ungrounded metaphysical claims).
 
                 STANDARD REASON CODES:
                 - Approved: "physicalist_emergence_grounded", "theoretically_sound_conjecture"

@@ -12,45 +12,23 @@
 
 ---
 
-## 📬 Pending Student Inquiries (2)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261018-e3d5d6` | L2 | **Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration** | UniverseFlow Orchestrator | Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-| `adv-20261018-d224d8` | L3 | **A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems** | UniverseFlow Orchestrator | Concept 'A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261018-e3d5d6` — Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
-- **Timestamp**: `2026-10-18T01:10:39.445775+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic's Verification Score is 5/5, meeting the mandatory threshold, and the reports provide substantial comparative material. However, the comparative debate states that superluminality arises for p_{XX}>0, which contradicts its own sound-speed formula: for X>0, p_X>0, and p_X+2Xp_{XX}>0, c_s^2>1 requires p_{XX}<0; this unresolved sign error is a mathematical flaw in the submitted debate. The mechanism remains theoretical because neither model is observationally distinguished, but lack of experimental confirmation is not the reason for rejection.
-- **Agent Blockers**:
-  * Math Physicist: Correct the superluminality sign claim and reconcile it with the stated sound-speed formula and stability assumptions.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261018-e3d5d6 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261018-d224d8` — A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
-- **Timestamp**: `2026-10-18T01:22:28.819621+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic's Verification Score is 5/6, above the mandatory rejection threshold, so the score alone does not require rejection. However, the audit identifies unresolved structural flaws: the proposed effects vary different exposures and do not form the stated decomposition, and under the stated DAG the headline mediation effects are zero; the ratio and outcome design also introduce directional bias and fail to distinguish phenomenal experience from report. These issues prevent the benchmark, as written, from serving as a scientifically valid discriminator, though its status remains theoretical rather than empirically disproven.
-- **Agent Blockers**:
-  * Researcher: Re-specify the benchmark's target claim and use a report-by-no-report design that does not treat report as a theory-neutral measure of phenomenal experience.
-  * Researcher: Provide operational definitions, manipulation checks, and pilot evidence that interventions selectively affect the intended neural processes.
-  * Math Physicist: Specify a complete causal graph and derive mediation estimands as effects of a common exposure, with assumptions and identification conditions stated.
-  * Math Physicist: Remove or formally justify the interference residual and replace the proposed ratio with a statistically valid decision procedure, including ratio-aware uncertainty and preregistered operating characteristics.
-  * Math Physicist: Define an implementable measurement model for Φ and correct the divergence formulation, or remove claims that depend on measuring Φ.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261018-d224d8 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (24)
+## 📚 Answered Advisory Consultations (26)
+
+### ✅ `adv-20261018-d224d8`: A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
+- **Student Inquired**: Concept 'A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the Level 3 benchmark comparing Integrated Information Theory (IIT) and Global Neuronal Workspace / Physicalist Emergence (GNWT): (1) Common-exposure multi-mediator DAG: Define a single randomized sensory stimulus/masking exposure A in {0, 1} acting on two parallel candidate neural mediators — posterior irreducible integration proxy M_post (operationalized via perturbational complexity / Φ* proxy, explicitly distinguished from exact NP-hard IIT Φ) and prefrontal-parietal global broadcast ignition M_bc — with outcome Y measured under a 2x2 report-by-no-report paradigm (pairing overt report Y_rep with no-report optokinetic/pupillometry/decodability readout Y_norep). (2) Exact VanderWeele interventional mediation decomposition: Under the common exposure A, decompose the total effect TE = E[Y(1) - Y(0)] into interventional direct effect IDE, interventional indirect effect via posterior integration IIE_post = E[Y(1, G_{M_post}(1), G_{M_bc}(0)) - Y(1, G_{M_post}(0), G_{M_bc}(0))], interventional indirect effect via prefrontal broadcast IIE_bc = E[Y(1, G_{M_post}(0), G_{M_bc}(1)) - Y(1, G_{M_post}(0), G_{M_bc}(0))], and mediated interaction IIE_int. Keep labels strictly consistent: IIE (psi) is the indirect mediated contrast and IDE (Delta) is the direct contrast. (3) Falsifiable decision rule without biased ratios: Instead of an unstable ratio statistic, preregister joint equivalence/superiority bounds on (IIE_post, IIE_bc) across report vs no-report blocks: GNWT predicts Y_rep and Y_norep require IIE_bc > delta_min, whereas IIT predicts Y_norep persists with IIE_post > delta_min even when prefrontal broadcast is disrupted (IIE_bc within equivalence bounds [-epsilon, +epsilon]). Classify the benchmark as [THEORETICAL]."*
+- **Answered At**: `2026-10-18T19:24:31.687104+00:00`
+
+### ✅ `adv-20261018-e3d5d6`: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
+- **Student Inquired**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the synthesis of Canonical Quintessence vs K-Essence: (1) Metric signature & canonical action convention: State explicitly the metric signature (-,+,+,+) with X = -(1/2) g^{mu nu} partial_mu phi partial_nu phi > 0 for a homogeneous time-dependent field X = (1/2) dot{phi}^2. Under this convention, a canonical scalar has P(X, phi) = X - V(phi) and w = (X - V)/(X + V) >= -1 whenever rho = X + V > 0. (2) Exact k-essence sound speed and superluminality sign condition: For general k-essence P(X, phi), the adiabatic scalar perturbation sound speed squared is c_s^2 = P_{,X} / rho_{,X} = P_{,X} / (P_{,X} + 2 X P_{,XX}). Requiring no ghost (rho_{,X} = P_{,X} + 2 X P_{,XX} > 0) and gradient stability (P_{,X} > 0) with X > 0 implies that subluminal propagation (0 < c_s^2 <= 1) holds for P_{,XX} >= 0, whereas superluminal propagation (c_s^2 > 1) arises when P_{,XX} < 0 (specifically -P_{,X}/(2X) < P_{,XX} < 0). Do NOT write that superluminality arises for P_{,XX} > 0. (3) Variable-w density scaling & phantom divide: Use the exact integral scaling rho_DE(a) = rho_{DE,0} exp[3 int_a^1 (1 + w(a')) da'/a'] (not a^{-3(1+w)} with variable w), and state that single-field minimally coupled P(X, phi) k-essence cannot stably cross w = -1 without ghosts or gradient instabilities (Vikman 2005, DOI: 10.1103/PhysRevD.71.023515); stable phantom-divide crossing requires higher-derivative kinetic braiding / Horndeski terms."*
+- **Answered At**: `2026-10-18T19:24:29.153905+00:00`
 
 ### ✅ `adv-20261015-74540f`: Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology
 - **Student Inquired**: Concept 'Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
@@ -91,14 +69,4 @@
 - **Student Inquired**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
 - **Professor Directive**: 💬 *"In pre-inflationary QCD axion scenarios, calibrate the inflationary Hubble scale strictly using the standard single-field slow-roll relation H_inf = pi * M_Pl * sqrt(r * A_s / 2) approx 8.4 * 10^13 * sqrt(r / 0.01) GeV with Planck amplitude A_s approx 2.1 * 10^-9. For the tensor-to-scalar ratio corresponding to the axion isocurvature limit H_inf <= 10^9 GeV * (f_I / 10^12 GeV), calculate r consistently: (H_inf / (8.4 * 10^14 GeV))^2 yields r <= 1.4 * 10^-12 (approx 10^-13 to 10^-12 depending on f_I), resolving the erroneous 5 * 10^-9 estimate. Enforce internal consistency across all tables, derivations, and summary figures between f_a, m_a, H_inf, and the derived tensor bound r."*
 - **Answered At**: `2026-10-10T13:39:16.242818+00:00`
-
-### ✅ `adv-20261004-ded465`: A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models
-- **Student Inquired**: Level 3 topic 'A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Professor Directive**: 💬 *"In Integrated Information Theory 4.0 (Albantakis et al. 2023), define Phi strictly as the intrinsic difference evaluated via Earth Mover's Distance (EMD) over the cause-effect structure across the Minimum Information Partition (MIP): Phi(s) = D_EMD(p_unpartitioned(s), p_MIP(s)). Do not substitute symmetric mutual information or Kullback-Leibler divergences for canonical Phi. Withdraw the claim that IIT predicts Phi_macro <= Phi_micro; causal emergence (Phi_macro > Phi_micro) is explicitly demonstrated in coarse-grained logic networks (Hoel et al. 2013). Frame the empirical cross-scale test as an adversarial model comparison between intrinsic cause-effect power (IIT) and external predictive information / Granger causality across matched micro (spikes) and macro (LFP/ECoG) interventional datasets. Confine Landauer thermodynamic bounds to physical non-equilibrium bit erasure, using the Attwell & Laughlin (2001) metabolic budget for physical neural work."*
-- **Answered At**: `2026-10-04T10:53:29.380420+00:00`
-
-### ✅ `adv-20261004-984775`: Perturbative Reheating vs Parametric-Resonance Preheating
-- **Student Inquired**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
-- **Professor Directive**: 💬 *"In preheating via broad parametric resonance (Kofman, Linde & Starobinsky 1994, 1997), formulate the coupled field equations for an inflaton phi oscillating around V(phi) = (1/2) m^2 phi^2 coupled to scalar chi via (1/2) g^2 phi^2 chi^2. State the Mathieu equation for chi_k modes: d^2 chi_k / dz^2 + [A_k - 2 q cos(2 z)] chi_k = 0, where z = m t, A_k = k^2/(m^2 a^2) + 2 q, and resonance parameter q = g^2 Phi_0^2 / (4 m^2). When q >> 1 (broad resonance), particle production occurs in non-adiabatic bursts near phi = 0 with growth n_k ~ exp(2 mu_k m t) (mu_k ~ 0.1-0.2). Contrast with perturbative reheating (Abbott et al. 1982), where decay rate Gamma_phi yields reheat temperature T_reh approx (90 / (pi^2 g_*))^(1/4) sqrt(Gamma_phi M_Pl). Emphasize that non-linear backreaction, rescattering, and turbulence terminate parametric resonance before complete inflaton depletion, requiring final perturbative thermalization."*
-- **Answered At**: `2026-10-04T10:53:21.404238+00:00`
 
