@@ -1,6 +1,6 @@
 # 🛠️ Autonomous Agent Shortcomings & Capability Wishlist
 
-> **Last Updated**: `2026-10-18T20:25:47.088444+00:00`
+> **Last Updated**: `2026-10-18T20:45:58.496438+00:00`
 > **How to Query Agents Directly**:
 > - Generate/refresh this wishlist: `python scripts/consult_professor.py wishlist` (add `--live` to interview live LLMs)
 > - Ask any agent a direct question: `python scripts/consult_professor.py ask <agent_role> "Your question"`
@@ -66,27 +66,28 @@
 ## 🧞 2. Per-Agent Diagnostic Shortcomings & Wishlist
 
 ### 🔭 A. Fundamental Physics Researcher & Cosmological Architect
-- **Equipped Tools**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`.
+- **Equipped Tools**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`, `Physics Calculator & Tension Evaluator`.
 - **Shortcomings Encountered During Tasks**:
   1. **Abstract-Only Visibility on Long Derivations**: arXiv and OpenAlex return abstracts (~300–400 words) rather than full-text equation appendices, forcing the Researcher to reconstruct intermediate normalization factors (e.g., identical-particle $1/32\pi$ vs $1/16\pi$ phase space or conventions in Thomson scattering opacity $\dot{\kappa}$) from memory.
   2. **Observational vs. Textbook Tension**: Standard training priors favor textbook $\Lambda\text{CDM}$ and minimal slow-roll inflation, whereas modern deep-space observations (JWST $z > 10\text{–}14$ luminous galaxies & over-massive black holes, HST/JWST $H_0 \approx 73\text{ km s}^{-1}\text{ Mpc}^{-1}$ vs Planck $67.4$, DESI dynamical dark energy $w_0 w_a\text{CDM}$, and $S_8$ cosmic shear) often contradict baseline theory.
   3. **Worked-Example Arithmetic Drift**: When adapting a formula to new benchmark parameters on retry, LLM mental arithmetic can slip by factors of $10^2\text{–}10^3$ without a calculator tool.
 - **Agent Wishlist**:
-  * ✅ **[IMPLEMENTED]** `Observational Cosmology & Deep-Space Survey Tracker` tool providing direct access to JWST, Hubble (HST), DESI, Euclid, Planck, and NANOGrav observational tensions and verified DOIs.
+  * ✅ **[IMPLEMENTED]** `Observational Cosmology & Deep-Space Survey Tracker` tool providing direct access to JWST, Hubble (HST), DESI, Euclid, Planck, and NANOGrav observational tensions, verified DOIs, central values $\pm 1\sigma$, covariances, and $\Delta\chi^2$ benchmarks.
   * ✅ **[IMPLEMENTED]** Structured `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (`[GENERAL]` vs `[MODEL-DEPENDENT: ...]`) preamble inside `## 3. Mathematical Framework`.
-  * 🎯 **[WISHLIST #1]** **Python Numerical Scratchpad / Calculator Tool for the Researcher** so worked numerical examples (e.g., Affleck-Dine baryon yield $n_B/s$, Hubble horizon expansion $\lambda_{\rm phys}(t_0)$ in meters, or SH0ES distance-ladder calibration) are computed in Python *before* the draft is submitted to the Math Physicist.
-  * 🎯 **[WISHLIST #2]** **arXiv Full-Text Section Extractor (HTML/LaTeX source snippet reader)** to pull exact Lagrangian conventions and coefficient definitions from primary papers when abstracts omit prefactors.
+  * ✅ **[IMPLEMENTED]** **`Physics Calculator & Tension Evaluator` Tool (`PhysicsCalculatorTool`)** so worked numerical examples (e.g., Affleck-Dine baryon yield $n_B/s$, Hubble horizon expansion $\lambda_{\rm phys}(t_0)$ in meters, 1D Gaussian tension $\sigma$, and 2D covariant $\Delta\chi^2$ for $(w_0, w_a)$) are computed in Python *before* the draft is submitted to the Math Physicist.
+  * 🎯 **[WISHLIST #1]** **arXiv Full-Text Section Extractor (HTML/LaTeX source snippet reader)** to pull exact Lagrangian conventions and coefficient definitions from primary papers when abstracts omit prefactors.
 
 ### 🧮 B. Mathematical Physics Verifier (`z-ai/glm-5.3-flash`)
-- **Equipped Tools**: `Equation Extractor`, `Dimensional Consistency Checker`, `Topology Classifier`, `Numerical Benchmark Validator`.
+- **Equipped Tools**: `Equation Extractor`, `Dimensional Consistency Checker`, `Topology Classifier`, `Numerical Benchmark Validator`, `Physics Calculator & Tension Evaluator`.
 - **Shortcomings Encountered During Tasks**:
   1. **Context & Tool-Argument Token Bloat in Multi-Agent Debates**: Passing 50,000–75,000 characters of raw prose into `Equation Extractor` and `Topology Classifier` previously caused 180s OpenRouter timeouts.
   2. **Natural-Units ($\hbar = c = k_B = 1$) vs. SI Ambiguity**: In high-energy and cosmological formulas (e.g., one-pion-exchange potential, curvature-current baryogenesis $\mathcal{L}_{\rm int} = (\partial_\mu R) J_B^\mu / M_*^2$, or comoving vs. physical number densities), dimensional consistency depends on declared mass dimensions $[\phi] = E^1, [R] = E^2, [J^\mu] = E^3$.
 - **Agent Wishlist**:
   * ✅ **[IMPLEMENTED]** Concise equation-only extraction (<4,000 chars) and 25-equation relational prioritization to eliminate 180s tool-call timeouts.
-  * ✅ **[IMPLEMENTED]** Global Coherence Rule in Math Verification Report (preventing global pass claims when an itemized mismatch is identified).
-  * 🎯 **[WISHLIST #1]** **Natural-Unit Mass-Dimension Evaluator (`[E]^n` checker)** alongside SI unit checking, where the tool explicitly checks Lagrangian terms against $[\mathcal{L}] = [E]^4$ in 4D spacetime.
-  * 🎯 **[WISHLIST #2]** **Automated Benchmark Substitution & Symbolic Re-Derivation Check**: A tool that verifies numerical claims/benchmarks within 10% and re-evaluates integrals/ODEs (such as the variable-$w(a)$ continuity integral).
+  * ✅ **[IMPLEMENTED]** Global Coherence Rule in Math Verification Report and `DimensionalConsistencyTool` (`CONSISTENT_WITH_UNDECIDABLE` vs `ALL_CONSISTENT`).
+  * ✅ **[IMPLEMENTED]** **Natural-Unit Mass-Dimension Evaluator (`[E]^n` checker)** alongside SI unit checking in `DimensionalConsistencyTool`, explicitly checking Lagrangian terms against $[\mathcal{L}] = [E]^4$ in 4D spacetime and catching known algebraic/dimensional errors (e.g., $a^{-3(1+w(a))}$, $m_T^2 \sim g^2 T^2 \phi^2$, dropped $-2\,\mathrm{Cov}(A,B)$).
+  * ✅ **[IMPLEMENTED]** **20-Benchmark CODATA/PDG/Cosmology Table & `Physics Calculator & Tension Evaluator`** verifying numerical claims within 10% tolerance (`verify_claim`) and evaluating $\Delta\chi^2$ / $\sigma$ tensions.
+  * 🎯 **[WISHLIST #1]** **Symbolic Re-Derivation & Perturbative Limit Evaluator (`SymPy` checker)**: A tool that symbolically checks continuity/ODE integrals (such as variable-$w(a)$ integration) and evaluates asymptotic limits ($a \to 0$, $T \gg m$, $k \ll aH$).
 
 ### ⚖️ C. Scientific Skeptic & Student Orchestrator
 - **Equipped Tools**: `Peer Review Critique Resolver`.

@@ -129,6 +129,7 @@ def _build_search_tools():
     - EuropePmcSearchTool: Life sciences, biophysics, and complex emergence literature.
     - CitationAuditTool: Pre-flight citation integrity verifier.
     - ObservationalCosmologyTool: Deep-space survey data & theoretical tensions (Hubble, JWST, DESI, Euclid, Planck).
+    - PhysicsCalculatorTool: Deterministic calculator for worked examples, unit conversions, and Gaussian/DESI tensions.
 
     Commercial additions:
     - ScholarlySearchTool when TAVILY_API_KEY is available.
@@ -144,6 +145,7 @@ def _build_search_tools():
                 CitationAuditTool,
                 ObservationalCosmologyTool,
             )
+            from tools.math_tools import PhysicsCalculatorTool
         except ImportError:
             from src.tools.scientific_literature_tools import (
                 ArxivSearchTool,
@@ -152,12 +154,14 @@ def _build_search_tools():
                 CitationAuditTool,
                 ObservationalCosmologyTool,
             )
+            from src.tools.math_tools import PhysicsCalculatorTool
         tools.extend([
             ArxivSearchTool(),
             OpenAlexSearchTool(),
             EuropePmcSearchTool(),
             CitationAuditTool(),
             ObservationalCosmologyTool(),
+            PhysicsCalculatorTool(),
         ])
     except Exception as exc:
         print(f"Warning: Failed to load open scientific literature tools: {exc}")

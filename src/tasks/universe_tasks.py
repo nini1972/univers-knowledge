@@ -88,7 +88,8 @@ class UniverseTasks:
                 - Use your dedicated academic tools:
                   * ArXiv Preprint Search: to find preprints and read complete abstracts with formal mathematical formulas.
                   * OpenAlex Scholarly Graph Search: to find highly-cited peer-reviewed papers, authentic DOIs, and verified publication years.
-                  * Observational Cosmology & Deep-Space Survey Tracker: to retrieve flagship telescope data (Hubble/HST, JWST, DESI, Euclid, Planck, NANOGrav/LIGO) and identify where modern observations conflict with or stress standard theoretical models of the origin and evolution of the Universe.
+                  * Observational Cosmology & Deep-Space Survey Tracker: to retrieve flagship telescope data (Hubble/HST, JWST, DESI, Euclid, Planck, NANOGrav/LIGO) with quantitative central values, error bars, and covariance matrices.
+                  * Physics Calculator & Tension Evaluator: to deterministically compute any worked numerical example, GeV^-1 to meter/second conversion, or Gaussian/DESI tension (sigma / delta_chi2) before writing the number into your draft.
                   * Europe PMC Literature Search: to cross-reference open-access peer-reviewed literature and biophysics.
                 - When searching, generate highly specific queries. Append terms like "review article", "recent advances", "experimental constraints", or "mathematical framework" (e.g., "{concept} experimental constraints" or "{concept} review article").
                 - Run the Pre-Flight Citation Verifier tool on your draft to audit all citations, ensuring 0 future-dated years, 0 unresolvable DOIs, and 0 placeholder sources before submitting.
@@ -143,7 +144,7 @@ class UniverseTasks:
                 MICRO-REVISION DIRECTIVES:
                 1. DO NOT discard or regenerate the entire report from scratch. Preserve all verified sections, established citations, and overall structure.
                 2. Target and correct ONLY the identified flaws:
-                   - If mathematical or dimensional errors were identified, correct the specific formulas, constants, indices, or algebraic derivations using standard LaTeX ($...$ or $$...$$) and reconcile them with the `### Conventions & Symbol Table`.
+                   - If mathematical, dimensional, or worked-arithmetic errors were identified, use the "Physics Calculator & Tension Evaluator" tool to recompute exact numerical values and conversions, correct the specific formulas in standard LaTeX ($...$ or $$...$$), and reconcile them with `### Conventions & Symbol Table`.
                    - If citations or empirical bounds were insufficient, insert authentic academic citations (using ArXiv/OpenAlex/Europe PMC) or clarify experimental bounds.
                    - If category errors or unjustified assumptions were flagged, refine the definitions, `[GENERAL]` vs `[MODEL-DEPENDENT: ...]` claim tags, and explicit proof boundaries.
                 3. Return the COMPLETE revised draft incorporating these targeted corrections.
@@ -199,13 +200,13 @@ class UniverseTasks:
                 Use the "Equation Extractor" tool by passing ONLY the mathematical equations and formula blocks ($$...$$ and $...$) from the research context (keep the input under 4,000 characters; do NOT copy-paste the entire narrative prose or bibliography). Also inspect whether the report includes `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (flagging any missing or conflicting metric signature, Planck mass M_Pl vs m_Pl, or unit conventions).
 
                 STEP 2 — Check dimensional consistency:
-                Pass the JSON output from Step 1 directly to the "Dimensional Consistency Checker" tool, cross-checking against the declared symbol dimensions ([E]^n or SI).
+                Pass the JSON output from Step 1 (and optional symbol_dimensions_json from the Symbol Table) directly to the "Dimensional Consistency Checker" tool, cross-checking against the declared symbol dimensions ([E]^n or SI).
 
                 STEP 3 — Classify topological structures:
                 Use the "Topology Classifier" tool with the concept name and a concise summary (under 1,500 characters) of the geometric, symmetry, and topological structures in the research context.
 
-                STEP 4 — Validate numerical benchmarks:
-                Use the "Numerical Benchmark Validator" tool with the concept name and the equation JSON from Step 1.
+                STEP 4 — Validate numerical benchmarks & worked claims:
+                Use the "Numerical Benchmark Validator" tool with the concept name and the equation JSON from Step 1. If the report includes a specific worked numerical calculation (e.g. a horizon/patch length in meters, a baryon yield n_B/s, or a sigma/delta_chi2 tension), verify it with the "Physics Calculator & Tension Evaluator" tool (`verify_claim`, `tension_sigma`, or `delta_chi2_w0wa`).
 
                 STEP 5 — Compute the Math Score and assign math_status (GLOBAL COHERENCE RULE):
                 - Global Coherence Rule: Your overall verdict MUST be the logical conjunction of your itemized equation checks. NEVER state in your summary that "all equations are dimensionally consistent" if you or a tool identified an itemized dimensional mismatch, missing covariance term, or erroneous integral (e.g., writing rho ~ a^(-3(1+w(a))) for variable w(a)). Report any `UNDECIDABLE` equations honestly as `UNDECIDABLE`.

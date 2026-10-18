@@ -623,6 +623,11 @@ _OBSERVATIONAL_TENSIONS_DB = [
             "direct-collapse heavy black hole seeds (M_seed ~ 10^4–10^5 M_sun), blue-tilted/enhanced small-scale primordial power, "
             "Early Dark Energy, or modified gravity (MOND) accelerated early collapse."
         ),
+        "quantitative_benchmarks": [
+            "JADES-GS-z14-0 spectroscopic redshift: z = 14.32 (+0.08 / -0.20), M_UV = -20.81 ± 0.16 mag",
+            "Observed UV luminosity density at z ≈ 12: log10(rho_UV / [erg s^-1 Hz^-1 Mpc^-3]) = 25.1 ± 0.2 (3–10x above fiducial ΛCDM epsilon_* = 0.15)",
+            "High-z over-massive black hole ratio (UHZ1 / GN-z11): M_BH / M_* ≈ 0.05–0.30 vs. local Soltan/Magorrian M_BH / M_* ≈ 0.001–0.002",
+        ],
         "verified_citations": [
             "Carniani, S. et al. (2024), 'Spectroscopic confirmation of two luminous galaxies at a redshift of 14', Nature 633, 318–322, https://doi.org/10.1038/s41586-024-07860-9",
             "Labbé, I. et al. (2023), 'A population of red candidate massive galaxies ~600 Myr after the Big Bang', Nature 616, 266–269, https://doi.org/10.1038/s41586-023-05786-2",
@@ -646,6 +651,11 @@ _OBSERVATIONAL_TENSIONS_DB = [
             "it requires pre-recombination new physics (e.g., Early Dark Energy reducing r_s by ~7%, extra relativistic species Delta N_eff, "
             "or primordial magnetic fields) or late-time modifications to General Relativity / dark sector interactions."
         ),
+        "quantitative_benchmarks": [
+            "Planck 2018 flat ΛCDM: H_0 = 67.36 ± 0.54 km s^-1 Mpc^-1, Omega_m = 0.3153 ± 0.0073, r_s(z_*) = 147.09 ± 0.26 Mpc",
+            "SH0ES 2022 + JWST 2024 Cepheid-SN Ia ladder: H_0 = 73.04 ± 1.04 km s^-1 Mpc^-1",
+            "Gaussian tension: Delta H_0 = 5.68 ± 1.17 km s^-1 Mpc^-1 (4.85σ, Delta chi^2 = 23.5 for 1 dof)",
+        ],
         "verified_citations": [
             "Riess, A. G. et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s^-1 Mpc^-1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', Astrophys. J. Lett. 934, L7, https://doi.org/10.3847/2041-8213/ac5c5b",
             "Riess, A. G. et al. (2024), 'JWST Observations Reject Unrecognized Crowding of Cepheid Photometry as an Explanation for the Hubble Tension at 8σ Confidence', Astrophys. J. 962, L17, https://doi.org/10.3847/2041-8213/ad1ddd",
@@ -655,7 +665,7 @@ _OBSERVATIONAL_TENSIONS_DB = [
     },
     {
         "id": "desi_dynamical_dark_energy",
-        "keywords": ["desi", "dark energy", "cosmological constant", "vacuum energy", "bao", "baryon acoustic", "quintessence", "w0", "wa", "swampland", "acceleration"],
+        "keywords": ["desi", "dark energy", "cosmological constant", "vacuum energy", "bao", "baryon acoustic", "quintessence", "k-essence", "w0", "wa", "swampland", "acceleration", "sound speed"],
         "title": "DESI BAO + Supernova Evidence for Dynamical Dark Energy (w_0 w_a CDM) Over a Static Cosmological Constant Λ",
         "observatories": "Dark Energy Spectroscopic Instrument (DESI), Planck, Pantheon+, Union3, DES-SN5YR",
         "observation": (
@@ -665,9 +675,14 @@ _OBSERVATIONAL_TENSIONS_DB = [
         ),
         "theoretical_tension": (
             "Challenges the baseline ΛCDM assumption that cosmic acceleration is driven by a time-independent vacuum energy density "
-            "rho_Lambda = const. Supports thawing quintessence scalar fields, phantom-divide crossing models, or string swampland "
+            "rho_Lambda = const. Supports thawing quintessence scalar fields, k-essence, phantom-divide crossing models, or string swampland "
             "de Sitter conjectures that forbid stable positive cosmological constants."
         ),
+        "quantitative_benchmarks": [
+            "DESI 2024 + CMB + Pantheon+: w_0 = -0.827 ± 0.063, w_a = -0.75 (+0.29 / -0.25), corr(w_0, w_a) = -0.85 (Delta chi^2 ≈ -6.8 vs ΛCDM, 2.5σ)",
+            "DESI 2024 + CMB + DES-SN5YR: w_0 = -0.727 ± 0.067, w_a = -1.05 (+0.31 / -0.27), corr(w_0, w_a) = -0.85 (Delta chi^2 ≈ -15.2 vs ΛCDM, 3.9σ)",
+            "Perturbation discriminants: Canonical quintessence has c_s^2 = 1 (Jeans length ~ H^-1, smooth on sub-horizon scales k >> aH), whereas k-essence has c_s^2 = P_{,X} / (P_{,X} + 2 X P_{,XX}) != 1 (enhancing dark-energy clustering when 0 < c_s^2 << 1)",
+        ],
         "verified_citations": [
             "DESI Collaboration, Adame, A. G. et al. (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', JCAP 02, 021 (arXiv:2404.03002), https://doi.org/10.1088/1475-7516/2025/02/021",
             "Peebles, P. J. E. & Ratra, B. (2003), 'The cosmological constant and dark energy', Rev. Mod. Phys. 75, 559, https://doi.org/10.1103/RevModPhys.75.559",
@@ -675,7 +690,7 @@ _OBSERVATIONAL_TENSIONS_DB = [
     },
     {
         "id": "s8_structure_growth_tension",
-        "keywords": ["s8", "sigma8", "weak lensing", "cosmic shear", "euclid", "kids", "des", "cosmic web", "matter clustering", "growth", "dark matter"],
+        "keywords": ["s8", "sigma8", "weak lensing", "cosmic shear", "euclid", "kids", "des", "cosmic web", "matter clustering", "growth", "dark matter", "fsigma8"],
         "title": "The S_8 = σ_8 (Ω_m / 0.3)^0.5 Cosmic Shear & Structure-Growth Tension",
         "observatories": "KiDS-1000, Dark Energy Survey (DES Y3), Hyper Suprime-Cam (HSC), Euclid, ACT/Planck",
         "observation": (
@@ -687,6 +702,11 @@ _OBSERVATIONAL_TENSIONS_DB = [
             "standard cold collisionless dark matter under General Relativity, pointing toward warm/self-interacting/decaying dark matter, "
             "massive neutrino suppression, scale-dependent modified gravity, or stronger-than-modeled AGN baryonic feedback."
         ),
+        "quantitative_benchmarks": [
+            "Planck 2018 ΛCDM: S_8 = 0.832 ± 0.013, sigma_8 = 0.8111 ± 0.0060",
+            "KiDS-1000 cosmic shear: S_8 = 0.759 (+0.024 / -0.021) (2.85σ tension with Planck, Delta S_8 = -0.073 ± 0.026)",
+            "DES-Y3 cosmic shear: S_8 = 0.776 ± 0.017 (2.62σ tension with Planck, Delta S_8 = -0.056 ± 0.021)",
+        ],
         "verified_citations": [
             "Asgari, M. et al. [KiDS Collaboration] (2021), 'KiDS-1000 Cosmology: Cosmic shear constraints and comparison between two point statistics', Astron. Astrophys. 645, A104, https://doi.org/10.1051/0004-6361/202039070",
             "Amon, A. et al. [DES Collaboration] (2022), 'Dark Energy Survey Year 3 results: Cosmology from cosmic shear and robustness to modeling uncertainty', Phys. Rev. D 105, 023520, https://doi.org/10.1103/PhysRevD.105.023520",
@@ -694,19 +714,24 @@ _OBSERVATIONAL_TENSIONS_DB = [
     },
     {
         "id": "inflation_cmb_gw_constraints",
-        "keywords": ["inflation", "primordial gravitational", "tensor", "bicep", "nanograv", "pta", "cmb anomalies", "planck", "early universe", "reheating", "baryogenesis"],
-        "title": "Primordial Tensor Bounds (r < 0.036), Large-Angle CMB Anomalies, and Nanohertz Gravitational-Wave Backgrounds",
-        "observatories": "BICEP/Keck, Planck, NANOGrav 15-yr / EPTA / PPTA",
+        "keywords": ["inflation", "primordial gravitational", "tensor", "bicep", "nanograv", "pta", "cmb anomalies", "planck", "early universe", "reheating", "baryogenesis", "gw170817"],
+        "title": "Primordial Tensor Bounds (r < 0.036), GW170817 Tensor Speed, and Nanohertz Gravitational-Wave Backgrounds",
+        "observatories": "BICEP/Keck, Planck, LIGO/Virgo (GW170817), NANOGrav 15-yr / EPTA / PPTA",
         "observation": (
             "BICEP/Keck + Planck bound the primordial tensor-to-scalar ratio to r_0.05 < 0.036 (95% CL), falsifying minimal "
-            "monomial chaotic inflation V(phi) ~ phi^2, phi^4; Planck confirms persistent low-multipole (l < 30) power suppression "
-            "and hemispherical asymmetry; Pulsar Timing Arrays (NANOGrav 15-yr) detect a nHz stochastic gravitational-wave background."
+            "monomial chaotic inflation V(phi) ~ phi^2, phi^4; GW170817 bounds |c_gw - c|/c <= 3e-15; Pulsar Timing Arrays "
+            "(NANOGrav 15-yr) detect a nHz stochastic gravitational-wave background."
         ),
         "theoretical_tension": (
             "Restricts viable inflation to plateau/R^2/alpha-attractor potentials or non-inflationary bounce/ekpyrotic alternatives, "
             "while PTA nHz signals test standard supermassive black hole binary populations against early-universe cosmic strings, "
             "first-order phase transitions, and scalar-induced gravitational waves."
         ),
+        "quantitative_benchmarks": [
+            "BICEP/Keck 2021 + Planck: r_0.05 < 0.036 (95% CL; r_0.05 = 0.014 ± 0.010), n_s = 0.9649 ± 0.0042",
+            "GW170817 / GRB170817A tensor speed bound: -3e-15 <= (c_gw - c)/c <= +7e-16 at z = 0.0098",
+            "NANOGrav 15-yr nHz GW background amplitude at f = 1 yr^-1: A_GWB = 2.4 (+0.7 / -0.6) × 10^-15 (for spectral index gamma = 13/3)",
+        ],
         "verified_citations": [
             "Ade, P. A. R. et al. [BICEP/Keck Collaboration] (2021), 'Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Season', Phys. Rev. Lett. 127, 151301, https://doi.org/10.1103/PhysRevLett.127.151301",
             "Agazie, G. et al. [NANOGrav Collaboration] (2023), 'The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background', Astrophys. J. Lett. 951, L8, https://doi.org/10.3847/2041-8213/acdac6",
@@ -752,7 +777,7 @@ class ObservationalCosmologyTool(BaseTool):
             f"### 🔭 Observational Data & Theoretical Tensions Report for '{topic_or_tension}'\n",
             "> **Epistemic Mandate**: Where empirical observations (JWST, Hubble, DESI, Planck, Euclid, PTAs) "
             "diverge from standard textbook models (e.g. baseline ΛCDM or minimal inflation), reports MUST explicitly "
-            "document the observational discrepancy, error bars, and competing theoretical revisions.\n",
+            "document the observational discrepancy, error bars, covariance, and competing theoretical revisions.\n",
         ]
 
         for i, item in enumerate(matched, 1):
@@ -760,6 +785,10 @@ class ObservationalCosmologyTool(BaseTool):
             md.append(f"- **Observatories / Surveys:** {item['observatories']}")
             md.append(f"- **Empirical Observation:** {item['observation']}")
             md.append(f"- **Conflict with Standard Theory:** {item['theoretical_tension']}")
+            if item.get("quantitative_benchmarks"):
+                md.append("- **Quantitative Benchmarks, Uncertainties & Covariance (Use in Model Comparisons):**")
+                for qb in item["quantitative_benchmarks"]:
+                    md.append(f"  * `{qb}`")
             md.append("- **Verified Primary Sources (Ready to Cite):**")
             for cit in item["verified_citations"]:
                 md.append(f"  * {cit}")
