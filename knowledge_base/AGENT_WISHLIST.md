@@ -1,6 +1,6 @@
 # 🛠️ Autonomous Agent Shortcomings & Capability Wishlist
 
-> **Last Updated**: `2026-10-18T21:14:13.416034+00:00`
+> **Last Updated**: `2026-10-18T21:39:46.821810+00:00`
 > **How to Query Agents Directly**:
 > - Generate/refresh this wishlist: `python scripts/consult_professor.py wishlist` (add `--live` to interview live LLMs)
 > - Ask any agent a direct question: `python scripts/consult_professor.py ask <agent_role> "Your question"`
@@ -63,38 +63,43 @@
 
 ---
 
-## 🧞 2. Per-Agent Diagnostic Shortcomings & Wishlist
+## 🧞 2. Per-Agent Diagnostics & Capability Status
 
-### 🔭 A. Fundamental Physics Researcher & Cosmological Architect
-- **Equipped Tools**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`, `Physics Calculator & Tension Evaluator`.
-- **Shortcomings Encountered During Tasks**:
-  1. **Abstract-Only Visibility on Long Derivations**: arXiv and OpenAlex return abstracts (~300–400 words) rather than full-text equation appendices, forcing the Researcher to reconstruct intermediate normalization factors (e.g., identical-particle $1/32\pi$ vs $1/16\pi$ phase space or conventions in Thomson scattering opacity $\dot{\kappa}$) from memory.
-  2. **Observational vs. Textbook Tension**: Standard training priors favor textbook $\Lambda\text{CDM}$ and minimal slow-roll inflation, whereas modern deep-space observations (JWST $z > 10\text{–}14$ luminous galaxies & over-massive black holes, HST/JWST $H_0 \approx 73\text{ km s}^{-1}\text{ Mpc}^{-1}$ vs Planck $67.4$, DESI dynamical dark energy $w_0 w_a\text{CDM}$, and $S_8$ cosmic shear) often contradict baseline theory.
-  3. **Worked-Example Arithmetic Drift**: When adapting a formula to new benchmark parameters on retry, LLM mental arithmetic can slip by factors of $10^2\text{–}10^3$ without a calculator tool.
-- **Agent Wishlist**:
-  * ✅ **[IMPLEMENTED]** `Observational Cosmology & Deep-Space Survey Tracker` tool providing direct access to JWST, Hubble (HST), DESI, Euclid, Planck, and NANOGrav observational tensions, verified DOIs, central values $\pm 1\sigma$, covariances, and $\Delta\chi^2$ benchmarks.
-  * ✅ **[IMPLEMENTED]** Structured `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (`[GENERAL]` vs `[MODEL-DEPENDENT: ...]`) preamble inside `## 3. Mathematical Framework`.
-  * ✅ **[IMPLEMENTED]** **`Physics Calculator & Tension Evaluator` Tool (`PhysicsCalculatorTool`)** so worked numerical examples (e.g., Affleck-Dine baryon yield $n_B/s$, Hubble horizon expansion $\lambda_{\rm phys}(t_0)$ in meters, 1D Gaussian tension $\sigma$, and 2D covariant $\Delta\chi^2$ for $(w_0, w_a)$) are computed in Python *before* the draft is submitted to the Math Physicist.
-  * 🎯 **[WISHLIST #1]** **arXiv Full-Text Section Extractor (HTML/LaTeX source snippet reader)** to pull exact Lagrangian conventions and coefficient definitions from primary papers when abstracts omit prefactors.
+> Generated automatically: tool lists are read from the live agent configuration, need themes from the last `100` evaluations, and each capability's status from a probe of the code. Nothing in this section is hand-written.
 
-### 🧮 B. Mathematical Physics Verifier (`z-ai/glm-5.3-flash`)
-- **Equipped Tools**: `Equation Extractor`, `Dimensional Consistency Checker`, `Symbolic Derivation Verifier`, `Topology Classifier`, `Numerical Benchmark Validator`, `Physics Calculator & Tension Evaluator`.
-- **Shortcomings Encountered During Tasks**:
-  1. **Context & Tool-Argument Token Bloat in Multi-Agent Debates**: Passing 50,000–75,000 characters of raw prose into `Equation Extractor` and `Topology Classifier` previously caused 180s OpenRouter timeouts.
-  2. **Natural-Units ($\hbar = c = k_B = 1$) vs. SI Ambiguity**: In high-energy and cosmological formulas (e.g., one-pion-exchange potential, curvature-current baryogenesis $\mathcal{L}_{\rm int} = (\partial_\mu R) J_B^\mu / M_*^2$, or comoving vs. physical number densities), dimensional consistency depends on declared mass dimensions $[\phi] = E^1, [R] = E^2, [J^\mu] = E^3$.
-- **Agent Wishlist**:
-  * ✅ **[IMPLEMENTED]** Concise equation-only extraction (<4,000 chars) and 25-equation relational prioritization to eliminate 180s tool-call timeouts.
-  * ✅ **[IMPLEMENTED]** Global Coherence Rule in Math Verification Report and `DimensionalConsistencyTool` (`CONSISTENT_WITH_UNDECIDABLE` vs `ALL_CONSISTENT`).
-  * ✅ **[IMPLEMENTED]** **Natural-Unit Mass-Dimension Evaluator (`[E]^n` checker)** alongside SI unit checking in `DimensionalConsistencyTool`, explicitly checking Lagrangian terms against $[\mathcal{L}] = [E]^4$ in 4D spacetime and catching known algebraic/dimensional errors (e.g., $a^{-3(1+w(a))}$, $m_T^2 \sim g^2 T^2 \phi^2$, dropped $-2\,\mathrm{Cov}(A,B)$).
-  * ✅ **[IMPLEMENTED]** **20-Benchmark CODATA/PDG/Cosmology Table & `Physics Calculator & Tension Evaluator`** verifying numerical claims within 10% tolerance (`verify_claim`) and evaluating $\Delta\chi^2$ / $\sigma$ tensions.
-  * ✅ **[IMPLEMENTED]** **Symbolic Re-Derivation & Perturbative Limit Evaluator (`SymbolicDerivationTool`)**: Symbolically verifies continuity/ODE integrals (such as CPL variable-$w(a)$ integration vs invalid $a^{-3(1+w(a))}$), variance bilinear expansions, algebraic identities (`STEP_INVALID` when `LHS - RHS != 0`), and asymptotic limits (`limits_json` via `sp.limit` for $a \to 0$, $a \to 1$, $T \to \infty$, $k \to 0$).
+### 🔭 A. Researcher, Bio-Digital Analyst & Cosmological Architect
+- **Equipped Tools (live)**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`, `Physics Calculator & Tension Evaluator`
+- **Recurring need themes (`researcher_needs`, last 100)**: `citation_provenance` ×26, `conventions_and_signs` ×26, `units_and_dimensions` ×23, `worked_arithmetic_and_benchmarks` ×18, `causal_and_statistical_design` ×10
+- **Most recent concrete needs**:
+  * Use a clearly defined interventional estimand or state and justify the assumptions required for a natural indirect effect.
+  * Distinguish PCI from IIT’s Φ and specify a valid, preregistered mediator measurement strategy.
+  * Correct the future-dated 2026 citation and reconcile the duplicated drafts and inconsistent citation-audit claims.
+- **Capabilities**:
+  * ✅ present — Physics Calculator & Tension Evaluator (worked examples, sigma / delta-chi2) · addresses `worked_arithmetic_and_benchmarks` (18 recent mention(s))
+  * ✅ present — Observational Cosmology tracker with values, uncertainties and covariances · addresses `worked_arithmetic_and_benchmarks`, `citation_provenance` (44 recent mention(s))
+  * ✅ present — Conventions & Symbol Table / Validity Domain preamble in the concept template · addresses `conventions_and_signs`, `units_and_dimensions` (49 recent mention(s))
+  * 🎯 OPEN — arXiv full-text section reader (exact conventions and prefactors) · addresses `conventions_and_signs`, `citation_provenance` (52 recent mention(s))
 
-### ⚖️ C. Scientific Skeptic & Student Orchestrator
-- **Equipped Tools**: `Peer Review Critique Resolver`.
-- **Shortcomings Encountered During Tasks**:
-  1. **Convention Conflicts Across Multi-Attempt Retries**: When Researcher A and Researcher B in Level 2 use slightly different Fourier, metric signature $(-,+,+,+)$ vs $(+,-,-,-)$, or reduced vs. Planck mass ($M_{\rm Pl} = 2.435\times 10^{18}\text{ GeV}$ vs $m_{\rm Pl} = 1.22\times 10^{19}\text{ GeV}$) conventions, the synthesis can mix both.
-- **Agent Wishlist**:
-  * ✅ **[IMPLEMENTED]** **Shared Canonical Convention Header (`src/conventions.py`)** injected at the start of every Level 1/2/3 crew run and micro-revision (fixing reduced Planck mass $M_{\rm Pl} = (8\pi G)^{-1/2} = 2.435\times 10^{18}\text{ GeV}$, metric signature $(-,+,+,+)$, $g_{*s}(T)$ anchors, and Level 3 causal estimand/covariance requirements).
+### 🧮 B. Mathematical Physics Verifier
+- **Equipped Tools (live)**: `Equation Extractor`, `Dimensional Consistency Checker`, `Symbolic Derivation Verifier`, `Topology Classifier`, `Numerical Benchmark Validator`, `Physics Calculator & Tension Evaluator`
+- **Recurring need themes (`math_needs`, last 100)**: `units_and_dimensions` ×57, `conventions_and_signs` ×47, `worked_arithmetic_and_benchmarks` ×21, `causal_and_statistical_design` ×10, `citation_provenance` ×6
+- **Most recent concrete needs**:
+  * Derive the proposed theory-discriminating statistic from explicit model assumptions.
+  * Specify an estimand and identification conditions appropriate to the intervention design.
+  * Correct the variance of the mediator contrast to include covariance and preregister its sampling distribution, power analysis, and multiplicity control.
+- **Capabilities**:
+  * ✅ present — Term-level natural-unit [E]^n dimension checker using the report's symbol table · addresses `units_and_dimensions` (57 recent mention(s))
+  * ✅ present — Symbolic re-derivation (continuity/ODE integrals, identities, limits) for the Math Physicist · addresses `conventions_and_signs`, `causal_and_statistical_design` (57 recent mention(s))
+  * ✅ present — Benchmark table + claim verification (verify_claim within 10%) · addresses `worked_arithmetic_and_benchmarks` (21 recent mention(s))
+  * ✅ present — Math gate in the flow (tool-confirmed INCONSISTENT / STEP_INVALID blocks approval) · addresses `units_and_dimensions` (57 recent mention(s))
+
+### ⚖️ C. Scientific Skeptic & Student
+- **Equipped Tools**: none by design — both receive the Math Physicist's tool-verified report in context.
+- **Rejection root causes (last 100)**: `mathematical_flaw_or_inconsistency` ×58, `crew_kickoff_error` ×10, `parse_error` ×2, `insufficient_skeptic_score` ×1
+- **Capabilities**:
+  * ✅ present — Shared canonical conventions header in every crew task · addresses `conventions_and_signs` (73 recent mention(s))
+  * ✅ present — Level 3 causal-design checklist (estimand, DAG, identification, power, multiplicity) · addresses `causal_and_statistical_design` (20 recent mention(s))
+  * 🎯 OPEN — Per-run scorecard (UNDECIDABLE ratio, attempts to approval, timeouts) · addresses — (0 recent mention(s))
 
 ---
 

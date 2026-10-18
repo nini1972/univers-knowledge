@@ -11,7 +11,7 @@ CANONICAL_CONVENTIONS_HEADER = dedent("""
     CANONICAL PHYSICS & COSMOLOGY CONVENTIONS (SHARED CREW BASELINE):
     1. Natural Units & Conversions:
        - Default basis: hbar = c = k_B = 1 (all quantities expressed in mass/energy dimension [E]^n in GeV^n), unless SI/CGS units are explicitly declared for laboratory or astronomical observables.
-       - Reduced Planck mass: M_Pl = (8*pi*G)^(-1/2) = 2.435e18 GeV (distinct from Planck mass m_Pl = G^(-1/2) = 1.221e19 GeV; 8*pi*G = 1/M_Pl^2). Never mix M_Pl and m_Pl without an explicitsqrt(8*pi) factor.
+       - Reduced Planck mass: M_Pl = (8*pi*G)^(-1/2) = 2.435e18 GeV (distinct from Planck mass m_Pl = G^(-1/2) = 1.221e19 GeV; 8*pi*G = 1/M_Pl^2). Never mix M_Pl and m_Pl without an explicit sqrt(8*pi) factor.
        - Exact conversions: 1 GeV^-1 = 1.97327e-16 m = 6.58212e-25 s; 1 Mpc = 3.08568e22 m = 1.5637e38 GeV^-1; H_0 = 100*h km s^-1 Mpc^-1 = 2.1331e-42*h GeV.
     2. Spacetime, Metric & Field Normalization:
        - Default metric signature: (-,+,+,+) ("mostly plus"). With this signature, the canonical scalar kinetic invariant is X = -(1/2) g^{mu nu} d_mu phi d_nu phi = +(1/2) dot(phi)^2 - (1/2) a^-2 (grad phi)^2 > 0 on a homogeneous background. (If citing a (+,-,-,-) source, state the sign flip explicitly.)

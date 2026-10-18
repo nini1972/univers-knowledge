@@ -44,6 +44,7 @@ try:
         parse_skeptic_checklist_score,
         parse_math_score,
         parse_math_status,
+        apply_math_gate,
         is_concept_existing,
         sanitize_filename,
     )
@@ -56,6 +57,7 @@ except ImportError:
         parse_skeptic_checklist_score,
         parse_math_score,
         parse_math_status,
+        apply_math_gate,
         is_concept_existing,
         sanitize_filename,
     )
@@ -672,6 +674,15 @@ class UniverseFlow(Flow[UniverseState]):
         self.state.math_score, self.state.math_total = parse_math_score(self.state.math_output)
         self.state.math_status = parse_math_status(self.state.math_output)
 
+        # Math gate: a tool-confirmed flaw in the math report blocks Student approval
+        self.state.decision, math_gate = apply_math_gate(self.state.decision, self.state.math_output)
+        if math_gate.get("overrode_approval"):
+            print(f"[MATH GATE] Student approval overridden: {'; '.join(math_gate['reasons'])}")
+            self.state.decision_status = self.state.decision.get("status", "rejected")
+            self.state.reason_code = self.state.decision.get("reason_code", "mathematical_flaw_or_inconsistency")
+        elif math_gate.get("coherence_violation"):
+            print(f"[MATH GATE] Coherence warning: {'; '.join(math_gate['reasons'])}")
+
         # Log equations
         try:
             all_text_eqs = "\n".join(filter(None, [self.state.math_output, self.state.skeptic_output, self.state.evaluation_output]))
@@ -700,6 +711,9 @@ class UniverseFlow(Flow[UniverseState]):
                 "total_score": self.state.skeptic_total,
                 "math_score": self.state.math_score,
                 "math_status": self.state.math_status,
+                "math_tool_verdicts": math_gate.get("tool_verdicts", {}),
+                "math_gate_blocked": bool(math_gate.get("overrode_approval")),
+                "math_coherence_violation": bool(math_gate.get("coherence_violation")),
                 "attempt": self.state.attempt,
             }
         )
@@ -839,6 +853,12 @@ class UniverseFlow(Flow[UniverseState]):
             self.state.math_score, self.state.math_total = parse_math_score(self.state.math_output)
             self.state.math_status = parse_math_status(self.state.math_output)
             self.state.skeptic_score, self.state.skeptic_total = parse_skeptic_checklist_score(self.state.skeptic_output)
+
+            self.state.decision, math_gate = apply_math_gate(self.state.decision, self.state.math_output)
+            if math_gate.get("overrode_approval"):
+                print(f"[MATH GATE] Micro-revision approval overridden: {'; '.join(math_gate['reasons'])}")
+                self.state.decision_status = self.state.decision.get("status", "rejected")
+                self.state.reason_code = self.state.decision.get("reason_code", "mathematical_flaw_or_inconsistency")
 
             print(f"[MICRO-REVISION RESULT] Status: {self.state.decision_status} (Math: {self.state.math_status}, Skeptic: {self.state.skeptic_score}/{self.state.skeptic_total})")
         except Exception as exc:

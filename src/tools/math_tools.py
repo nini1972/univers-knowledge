@@ -16,8 +16,98 @@ import re
 import json
 from typing import ClassVar, Type
 
+import os
+import threading
+
 from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
+
+
+# ---------------------------------------------------------------------------
+# Shared safety helpers: restricted SymPy parsing + wall-clock time limit
+# ---------------------------------------------------------------------------
+
+MATH_TOOL_TIMEOUT_S = float(os.getenv("MATH_TOOL_TIMEOUT_S", "8"))
+_MAX_EXPR_CHARS = 2000
+
+# Patterns that have no place in a math expression written by an agent.
+_UNSAFE_EXPR_RE = re.compile(
+    r"__|['\"`;]|\blambda\b|\bimport\b|\bexec\b|\beval\b|\bopen\b|[A-Za-z_]\s*\.\s*[A-Za-z_]"
+)
+# Huge literal exponents (e.g. 10**10**10) can exhaust memory before any timeout fires.
+_HUGE_POWER_RE = re.compile(r"\*\*\s*\(?\s*-?\d{4,}|\*\*\s*\(?\s*-?\d+\s*\)?\s*\*\*")
+
+
+def _safe_sympy_globals() -> dict:
+    """Whitelisted names available to parse_expr (no Python builtins)."""
+    import sympy as sp
+
+    allowed = {
+        "__builtins__": {},
+        # Required by SymPy's parser transformations
+        "Symbol": sp.Symbol, "Integer": sp.Integer, "Float": sp.Float,
+        "Rational": sp.Rational, "Function": sp.Function,
+        "factorial": sp.factorial, "factorial2": sp.factorial2,
+        # Elementary functions & constants. E, I, S, N, gamma, beta are deliberately
+        # NOT mapped, so they stay plain symbols (energy, Lorentz factor, entropy, ...).
+        "sqrt": sp.sqrt, "exp": sp.exp, "log": sp.log, "ln": sp.log,
+        "sin": sp.sin, "cos": sp.cos, "tan": sp.tan,
+        "sinh": sp.sinh, "cosh": sp.cosh, "tanh": sp.tanh,
+        "asin": sp.asin, "acos": sp.acos, "atan": sp.atan,
+        "Abs": sp.Abs, "pi": sp.pi, "oo": sp.oo,
+        "diff": sp.diff, "integrate": sp.integrate,
+        "Derivative": sp.Derivative, "Integral": sp.Integral,
+    }
+    return allowed
+
+
+def safe_sympy_parse(expr: str, local_dict: dict | None = None):
+    """
+    Parse an expression with SymPy using a whitelisted namespace instead of sympify().
+    Raises ValueError for oversized or suspicious input.
+    """
+    from sympy.parsing.sympy_parser import parse_expr, standard_transformations
+
+    s = (expr or "").strip()
+    if not s:
+        raise ValueError("empty expression")
+    if len(s) > _MAX_EXPR_CHARS:
+        raise ValueError(f"expression longer than {_MAX_EXPR_CHARS} characters")
+    if _UNSAFE_EXPR_RE.search(s):
+        raise ValueError("expression contains disallowed tokens")
+    if _HUGE_POWER_RE.search(s):
+        raise ValueError("expression contains an oversized or stacked literal exponent")
+    return parse_expr(
+        s,
+        local_dict=dict(local_dict or {}),
+        global_dict=_safe_sympy_globals(),
+        transformations=standard_transformations,
+        evaluate=True,
+    )
+
+
+def run_with_timeout(fn, timeout_s: float = MATH_TOOL_TIMEOUT_S, *args, **kwargs):
+    """
+    Run fn(*args, **kwargs) in a daemon thread and raise TimeoutError if it does not
+    finish within timeout_s. The worker thread cannot be killed, but the agent is
+    unblocked and the daemon thread never prevents interpreter exit.
+    """
+    result: dict = {}
+
+    def _target():
+        try:
+            result["value"] = fn(*args, **kwargs)
+        except BaseException as exc:  # propagate any error to the caller
+            result["error"] = exc
+
+    worker = threading.Thread(target=_target, daemon=True)
+    worker.start()
+    worker.join(timeout_s)
+    if worker.is_alive():
+        raise TimeoutError(f"symbolic computation exceeded {timeout_s:g}s")
+    if "error" in result:
+        raise result["error"]
+    return result.get("value")
 
 
 # ---------------------------------------------------------------------------
@@ -69,6 +159,558 @@ class EquationExtractorTool(BaseTool):
 
 
 # ---------------------------------------------------------------------------
+# Natural-unit [E]^n term analyzer (used by DimensionalConsistencyTool)
+# ---------------------------------------------------------------------------
+
+def normalize_latex_equation(eq: str) -> str:
+    """Strip presentational LaTeX (\\left, \\big, spacing) so pattern checks see one canonical form."""
+    s = str(eq or "")
+    s = re.sub(r"\\(?:left|right|bigl|bigr|Bigl|Bigr|biggl|biggr|Biggl|Biggr|big|Big|bigg|Bigg)(?![A-Za-z])", "", s)
+    s = re.sub(r"\\(?:displaystyle|textstyle)(?![A-Za-z])", "", s)
+    s = re.sub(r"\\(?:qquad|quad)(?![A-Za-z])|\\[,;:!]|~", " ", s)
+    s = re.sub(r"\\[dt]frac(?![A-Za-z])", r"\\frac", s)
+    s = re.sub(r"\\leq(?![A-Za-z])", r"\\le", s)
+    s = re.sub(r"\\geq(?![A-Za-z])", r"\\ge", s)
+    s = s.replace("\\{", "(").replace("\\}", ")")
+    s = re.sub(r"(?<![_^])\{\\rm\s+([^{}]*)\}", r"\\mathrm{\1}", s)
+    s = re.sub(r"\^\s*(-\s*\d+(?:\.\d+)?)", lambda m: "^{" + m.group(1).replace(" ", "") + "}", s)
+    return s.strip().rstrip(".,;").strip()
+
+
+class _UnknownDimension(Exception):
+    """Raised when a factor's mass dimension cannot be determined."""
+
+
+class NaturalUnitDimensionAnalyzer:
+    """
+    Computes the 4D natural-unit mass dimension [E]^n of every additive term in a LaTeX
+    equation and compares them. Each resolved symbol is tagged "exact" (declared in the
+    report's symbol table, or an unambiguous canonical symbol) or "inferred" (ambiguous
+    letter such as p, P, k, s, n, R, G, or a base-symbol fallback). Only mismatches between
+    exact terms produce a definitive INCONSISTENT verdict.
+    """
+
+    GREEK = {
+        "alpha", "beta", "gamma", "delta", "epsilon", "varepsilon", "zeta", "eta", "theta",
+        "vartheta", "iota", "kappa", "lambda", "mu", "nu", "xi", "pi", "rho", "varrho", "sigma",
+        "tau", "upsilon", "phi", "varphi", "chi", "psi", "omega", "Gamma", "Delta", "Theta",
+        "Lambda", "Xi", "Pi", "Sigma", "Upsilon", "Phi", "Psi", "Omega", "ell", "hbar",
+    }
+    INDEX_NAMES = {"mu", "nu", "alpha", "beta", "rho", "sigma", "lambda", "kappa", "i", "j"}
+    FUNCTIONS = {
+        "exp", "ln", "log", "sin", "cos", "tan", "sinh", "cosh", "tanh", "arcsin", "arccos",
+        "arctan", "erf", "det", "tr", "Tr", "sgn", "max", "min",
+    }
+    BIG_OPERATORS = {"int", "iint", "iiint", "oint", "sum", "prod", "lim"}
+    SKIP_COMMANDS = {"cdot", "times", "langle", "rangle", "vert", "lvert", "rvert", "nonumber"}
+    ACCENTS = {"bar", "tilde", "hat", "vec", "mathbf", "boldsymbol", "overline", "widetilde", "widehat"}
+    STYLED = {"mathcal", "mathscr"}
+    TEXT_COMMANDS = {"mathrm", "text", "rm", "mathit", "textrm", "operatorname"}
+    RELATION_COMMANDS = {
+        "equiv", "approx", "simeq", "sim", "cong", "le", "ge", "ll", "gg", "lesssim", "gtrsim",
+        "neq", "ne",
+    }
+    ABORT_COMMANDS = {"propto", "to", "rightarrow", "Rightarrow", "mapsto", "longrightarrow", "in", "subset"}
+
+    UNITS = {
+        "GeV": 1, "MeV": 1, "keV": 1, "eV": 1, "TeV": 1, "meV": 1, "PeV": 1, "K": 1, "Hz": 1,
+        "kg": 1, "g": 1, "J": 1, "erg": 1,
+        "m": -1, "cm": -1, "mm": -1, "km": -1, "fm": -1, "pc": -1, "kpc": -1, "Mpc": -1, "Gpc": -1,
+        "s": -1, "yr": -1, "Gyr": -1, "Myr": -1,
+    }
+
+    # Bases whose labelled variants (rho_DE, T_reh, H_0, m_phi, ...) keep the base dimension.
+    LABEL_SAFE_BASES = {"rho", "Omega", "T", "H", "m", "M", "phi", "chi", "w", "mathcalL", "Gamma", "E", "a", "t"}
+    # Bare symbols whose meaning is near-universal here (counted as exact without a symbol table).
+    UNAMBIGUOUS_BARE = {"m", "M", "t", "c", "hbar", "k_B", "pi", "e", "i", "mathcalL", "mathscrL",
+                        "phi", "chi", "psi", "barpsi", "g", "y", "w"}
+    # Bare symbols that are exact only in a scalar-field context (phi/chi/psi in the equation):
+    # V = potential density, lambda = coupling, rho/p = energy density/pressure, H = Hubble, T = temperature.
+    FIELD_CONTEXT_BARE = {"V", "lambda", "rho", "p", "H", "T"}
+
+    def __init__(self, canonical_dims: dict, custom_dims: dict | None = None):
+        self.canonical = self._build_lookup(canonical_dims, extra=True)
+        self.custom = self._build_lookup(custom_dims or {}, extra=False)
+        self.inner_mismatches: list[str] = []
+        self._pending_power = 1.0
+        self.field_context = False
+
+    # ---- key normalization -------------------------------------------------
+    @staticmethod
+    def _nk(s: str) -> str:
+        s = str(s or "")
+        s = re.sub(r"\\(?:mathrm|text|rm|mathit|textrm)\b", "", s)
+        s = s.replace("\\", "").replace("{", "").replace("}", "").replace(" ", "")
+        return s
+
+    def _build_lookup(self, dims: dict, extra: bool) -> dict:
+        table: dict[str, float] = {}
+        for k, v in (dims or {}).items():
+            if "^" in str(k):
+                continue
+            try:
+                table[self._nk(k)] = float(v)
+            except (TypeError, ValueError):
+                continue
+        if extra:
+            table.update({
+                "c": 0.0, "hbar": 0.0, "k_B": 0.0, "pi": 0.0, "e": 0.0, "i": 0.0,
+                "n_s": 0.0, "n_t": 0.0, "N_eff": 0.0, "Omega": 0.0, "eta_B": 0.0, "Y_B": 0.0,
+                "A_s": 0.0, "f_NL": 0.0, "J": 3.0, "x": -1.0,
+                # Tensors carrying Greek indices
+                "T_IDX": 4.0, "G_IDX": 2.0, "R_IDX": 2.0, "g_IDX": 0.0, "F_IDX": 2.0,
+                "J_IDX": 3.0, "A_IDX": 1.0, "x_IDX": -1.0, "h_IDX": 0.0, "gamma_IDX": 0.0,
+                "u_IDX": 0.0,
+            })
+        return table
+
+    def _lookup(self, table: dict, key: str):
+        if key in table:
+            return table[key]
+        if "_" in key:
+            base, label = key.split("_", 1)
+            low = f"{base}_{label.lower()}"
+            for k, v in table.items():
+                if "_" in k:
+                    kb, kl = k.split("_", 1)
+                    if f"{kb}_{kl.lower()}" == low:
+                        return v
+        return None
+
+    def _resolve(self, base: str, label: str, has_index: bool, inner_base: str | None):
+        """Return (dim, exact) for a symbol or raise _UnknownDimension."""
+        b = self._nk(base)
+        lab = self._nk(label)
+        if lab.startswith((",", ";")):
+            raise _UnknownDimension(f"derivative subscript on {base}")
+        label_is_index = bool(lab) and self._is_index(label)
+        keys = []
+        if lab and not label_is_index:
+            keys.append(f"{b}_{lab}")
+        if has_index or label_is_index:
+            keys.append(f"{b}_IDX")
+        keys.append(b)
+
+        for key in keys:
+            v = self._lookup(self.custom, key)
+            if v is not None:
+                return v, True
+        for key in keys:
+            v = self._lookup(self.canonical, key)
+            if v is not None:
+                if key == b:
+                    labelled = bool(lab) and not label_is_index
+                    if labelled:
+                        return v, b in self.LABEL_SAFE_BASES
+                    if has_index or label_is_index:
+                        return v, False
+                    return v, (b in self.UNAMBIGUOUS_BARE) or (self.field_context and b in self.FIELD_CONTEXT_BARE)
+                return v, True
+        if inner_base:
+            return self._resolve(inner_base, label, has_index, None)
+        raise _UnknownDimension(f"symbol {base}{'_' + label if label else ''} not in symbol table")
+
+    def _is_index(self, content: str) -> bool:
+        toks = re.findall(r"\\([A-Za-z]+)|([A-Za-z])", content)
+        if not toks:
+            return False
+        for cmd, letter in toks:
+            name = cmd or letter
+            if name not in self.INDEX_NAMES:
+                return False
+        stripped = re.sub(r"\\[A-Za-z]+|[A-Za-z]|[\s{}]", "", content)
+        return stripped == ""
+
+    # ---- low-level scanning helpers ---------------------------------------
+    @staticmethod
+    def _match_close(s: str, i: int) -> int:
+        pairs = {"(": ")", "[": "]", "{": "}"}
+        open_c = s[i]
+        close_c = pairs[open_c]
+        depth = 0
+        for j in range(i, len(s)):
+            if s[j] == open_c:
+                depth += 1
+            elif s[j] == close_c:
+                depth -= 1
+                if depth == 0:
+                    return j
+        raise _UnknownDimension("unbalanced brackets")
+
+    def _read_group(self, s: str, i: int) -> tuple[str, int]:
+        while i < len(s) and s[i].isspace():
+            i += 1
+        if i < len(s) and s[i] == "{":
+            j = self._match_close(s, i)
+            return s[i + 1:j], j + 1
+        if i < len(s) and s[i] == "\\":
+            m = re.match(r"\\[A-Za-z]+", s[i:])
+            if m:
+                return m.group(0), i + len(m.group(0))
+        if i < len(s):
+            return s[i], i + 1
+        raise _UnknownDimension("missing group")
+
+    def _read_scripts(self, s: str, i: int) -> tuple[str, str | None, int]:
+        """Read any sequence of _x / ^x scripts. Returns (label, exponent, new_index)."""
+        label, exponent = "", None
+        while i < len(s) and s[i] in "_^":
+            kind = s[i]
+            content, i = self._read_group(s, i + 1)
+            if kind == "_":
+                label = content
+            else:
+                exponent = content
+        return label, exponent, i
+
+    @staticmethod
+    def _exponent_value(content: str | None):
+        if content is None:
+            return 1.0
+        c = content.replace(" ", "")
+        m = re.fullmatch(r"(-?)\\frac\{?(\d+)\}?\{?(\d+)\}?", c)
+        if m:
+            val = float(m.group(2)) / float(m.group(3))
+            return -val if m.group(1) else val
+        m = re.fullmatch(r"\(?(-?\d+(?:\.\d+)?)(?:/(\d+(?:\.\d+)?))?\)?", c)
+        if m:
+            val = float(m.group(1))
+            if m.group(2):
+                val /= float(m.group(2))
+            return val
+        return None
+
+    def _apply_exponent(self, dim: float, exact: bool, exponent: str | None, allow_index: bool):
+        if exponent is None:
+            return dim, exact
+        if allow_index and self._is_index(exponent):
+            return dim, exact
+        val = self._exponent_value(exponent)
+        if val is not None:
+            return dim * val, exact
+        if abs(dim) < 1e-12:
+            return 0.0, exact  # dimensionless base raised to a symbolic power
+        raise _UnknownDimension(f"symbolic exponent on a dimensionful factor ({exponent})")
+
+    # ---- splitting -----------------------------------------------------------
+    def _split_top(self, s: str, splitter) -> list[str]:
+        parts, depth, start, i = [], 0, 0, 0
+        while i < len(s):
+            ch = s[i]
+            if ch in "([{":
+                depth += 1
+            elif ch in ")]}":
+                depth -= 1
+            elif depth == 0:
+                width = splitter(s, i)
+                if width:
+                    parts.append(s[start:i])
+                    i += width
+                    start = i
+                    continue
+            i += 1
+        parts.append(s[start:])
+        return parts
+
+    def _sum_splitter(self, s: str, i: int) -> int:
+        if s[i] in "+-":
+            return 1
+        m = re.match(r"\\(pm|mp)(?![A-Za-z])", s[i:])
+        return len(m.group(0)) if m else 0
+
+    def _relation_splitter(self, s: str, i: int) -> int:
+        if s[i] in "=<>":
+            return 2 if s[i + 1:i + 2] == "=" else 1
+        if s[i] == "\\":
+            m = re.match(r"\\([A-Za-z]+)", s[i:])
+            if m:
+                name = m.group(1)
+                if name in self.ABORT_COMMANDS:
+                    raise _UnknownDimension(f"relation \\{name} does not imply equal dimensions")
+                if name in self.RELATION_COMMANDS:
+                    return len(m.group(0))
+        return 0
+
+    # ---- parsing -------------------------------------------------------------
+    def parse_sum(self, s: str):
+        """Return (dim, exact) for a sum of terms, 'ZERO', or raise _UnknownDimension."""
+        terms = [t for t in self._split_top(s, self._sum_splitter) if t.strip()]
+        if not terms:
+            raise _UnknownDimension("empty expression")
+        results, unknown = [], 0
+        for t in terms:
+            try:
+                r = self.parse_term(t)
+            except _UnknownDimension:
+                unknown += 1
+                continue
+            if r != "ZERO":
+                results.append((t.strip(), r))
+        if not results:
+            if unknown:
+                raise _UnknownDimension("no resolvable term")
+            return "ZERO"
+        dims = {round(r[1][0], 9) for r in results}
+        if len(dims) > 1:
+            exact_pairs = [r for r in results if r[1][1]]
+            desc = ", ".join(f"'{t}' [E]^{d:g}" for t, (d, _) in results)
+            if len({round(r[1][0], 9) for r in exact_pairs}) > 1:
+                self.inner_mismatches.append(f"exact:{desc}")
+            else:
+                self.inner_mismatches.append(f"inferred:{desc}")
+            raise _UnknownDimension("inhomogeneous sum")
+        exact = all(r[1][1] for r in results) and unknown == 0
+        return results[0][1][0], exact
+
+    def parse_term(self, t: str):
+        s = t.strip()
+        if re.fullmatch(r"0+(?:\.0+)?", s):
+            return "ZERO"
+        total, exact, i, divide = 0.0, True, 0, False
+        self._pending_power = 1.0
+        while i < len(s):
+            ch = s[i]
+            if ch.isspace() or ch in "*|":
+                i += 1
+                continue
+            if ch == "/":
+                divide = True
+                i += 1
+                continue
+            factor, i = self._parse_factor(s, i)
+            if factor is None:
+                continue
+            d, e = factor
+            total += -d if divide else d
+            exact = exact and e
+            divide = False
+        return total, exact
+
+    def _parse_factor(self, s: str, i: int):
+        """Parse one multiplicative factor starting at s[i]. Returns ((dim, exact) | None, new_i)."""
+        ch = s[i]
+        if ch.isdigit() or (ch == "." and s[i + 1:i + 2].isdigit()):
+            m = re.match(r"\d*\.?\d+", s[i:])
+            i += len(m.group(0))
+            _, exponent, i = self._read_scripts(s, i)
+            return (0.0, True), i  # pure numbers (incl. 10^{18}) are dimensionless
+        if ch in "([{":
+            j = self._match_close(s, i)
+            inner = s[i + 1:j]
+            i = j + 1
+            if not inner.strip():
+                return None, i
+            r = self.parse_sum(inner)
+            if r == "ZERO":
+                return None, i
+            _, exponent, i = self._read_scripts(s, i)
+            return self._apply_exponent(r[0], r[1], exponent, allow_index=False), i
+        if ch == "'":
+            raise _UnknownDimension("prime derivative is ambiguous")
+        if ch == "\\":
+            return self._parse_command(s, i)
+        if ch.isalpha():
+            return self._parse_letter(s, i)
+        raise _UnknownDimension(f"unsupported token '{ch}'")
+
+    def _maybe_skip_function_args(self, s: str, i: int) -> int:
+        if i < len(s) and s[i] == "(":
+            j = self._match_close(s, i)
+            content = s[i + 1:j]
+            simple = r"\s*\\?[A-Za-z]+(?:_\{?[^{}()]*\}?)?\s*"
+            if re.fullmatch(rf"{simple}(?:,{simple})*", content):
+                return j + 1
+        return i
+
+    def _finish_symbol(self, s: str, i: int, base: str, inner_base: str | None):
+        label, exponent, i = self._read_scripts(s, i)
+        if i < len(s) and s[i] == "'":
+            raise _UnknownDimension("prime derivative is ambiguous")
+        i = self._maybe_skip_function_args(s, i)
+        label2, exponent2, i = self._read_scripts(s, i)  # e.g. \phi(x)^2
+        label = label or label2
+        exponent = exponent if exponent is not None else exponent2
+        has_index = exponent is not None and self._is_index(exponent)
+        dim, exact = self._resolve(base, label, has_index, inner_base)
+        dim, exact = self._apply_exponent(dim, exact, exponent, allow_index=True)
+        power = self._pending_power
+        self._pending_power = 1.0
+        return (dim * power, exact), i
+
+    def _parse_letter(self, s: str, i: int):
+        run = re.match(r"[A-Za-z]+", s[i:]).group(0)
+        if len(run) >= 3:
+            raise _UnknownDimension(f"multi-letter word '{run}' outside \\mathrm")
+        ch = s[i]
+        # Differentials: d^4x, dt, d\phi  (the differential carries the variable's dimension)
+        if ch == "d" and i + 1 < len(s):
+            nxt = s[i + 1]
+            if nxt == "^":
+                content, j = self._read_group(s, i + 2)
+                val = self._exponent_value(content)
+                if val is not None and j < len(s) and (s[j].isalpha() or s[j] == "\\" or s[j].isspace()):
+                    self._pending_power = val
+                    return None, j
+            if nxt.isalpha() or nxt == "\\":
+                return None, i + 1
+        return self._finish_symbol(s, i + 1, ch, None)
+
+    def _parse_command(self, s: str, i: int):
+        m = re.match(r"\\([A-Za-z]+)", s[i:])
+        if not m:
+            raise _UnknownDimension("bad command")
+        name = m.group(1)
+        i += len(m.group(0))
+
+        if name in self.SKIP_COMMANDS:
+            return None, i
+        if name == "frac":
+            num, i = self._read_group(s, i)
+            den, i = self._read_group(s, i)
+            rn, rd = self.parse_sum(num), self.parse_sum(den)
+            if rn == "ZERO":
+                return None, i
+            if rd == "ZERO":
+                raise _UnknownDimension("division by zero")
+            _, exponent, i = self._read_scripts(s, i)
+            return self._apply_exponent(rn[0] - rd[0], rn[1] and rd[1], exponent, allow_index=False), i
+        if name == "sqrt":
+            root = 2.0
+            if i < len(s) and s[i] == "[":
+                j = self._match_close(s, i)
+                val = self._exponent_value(s[i + 1:j])
+                if val is None:
+                    raise _UnknownDimension("symbolic root order")
+                root, i = val, j + 1
+            inner, i = self._read_group(s, i)
+            if re.fullmatch(r"\s*-\s*g\s*", inner):
+                r = (0.0, True)
+            else:
+                r = self.parse_sum(inner)
+                if r == "ZERO":
+                    return None, i
+            _, exponent, i = self._read_scripts(s, i)
+            return self._apply_exponent(r[0] / root, r[1], exponent, allow_index=False), i
+        if name in ("dot", "ddot"):
+            inner, i = self._read_group(s, i)
+            r = self.parse_term(inner)
+            if r == "ZERO":
+                return None, i
+            bump = 1.0 if name == "dot" else 2.0
+            label, exponent, i = self._read_scripts(s, i)
+            return self._apply_exponent(r[0] + bump, r[1], exponent, allow_index=True), i
+        if name in ("partial", "nabla"):
+            _, exponent, i = self._read_scripts(s, i)
+            if exponent is not None and not self._is_index(exponent):
+                val = self._exponent_value(exponent)
+                if val is None:
+                    raise _UnknownDimension("symbolic derivative order")
+                return (val, True), i
+            return (1.0, True), i
+        if name in ("Box", "square"):
+            return (2.0, True), i
+        if name in ("delta", "Delta") and (i >= len(s) or s[i] not in "_^ "):
+            return None, i  # perturbation / difference prefix: carries the next factor's dimension
+        if name in self.BIG_OPERATORS:
+            _, _, i = self._read_scripts(s, i)
+            return None, i
+        if name in self.FUNCTIONS:
+            _, _, i = self._read_scripts(s, i)
+            while i < len(s) and s[i].isspace():
+                i += 1
+            if i < len(s) and s[i] in "([{":
+                i = self._match_close(s, i) + 1
+            elif i < len(s) and (s[i].isalpha() or s[i] == "\\"):
+                _, i = self._parse_factor(s, i)
+            return (0.0, True), i
+        if name in self.TEXT_COMMANDS:
+            content, i = self._read_group(s, i)
+            if content.strip() == "d":
+                return None, i
+            unit_dim = self._unit_dimension(content)
+            _, exponent, i = self._read_scripts(s, i)
+            return self._apply_exponent(unit_dim, True, exponent, allow_index=False), i
+        if name in self.ACCENTS:
+            inner, i = self._read_group(s, i)
+            inner_name = self._nk(inner)
+            return self._finish_symbol(s, i, name + inner_name, inner_name)
+        if name in self.STYLED:
+            inner, i = self._read_group(s, i)
+            return self._finish_symbol(s, i, name + self._nk(inner), None)
+        if name in self.GREEK:
+            return self._finish_symbol(s, i, name, None)
+        raise _UnknownDimension(f"unsupported command \\{name}")
+
+    def _unit_dimension(self, content: str) -> float:
+        tokens = [t for t in re.split(r"\s+|\\cdot", content.strip()) if t]
+        if not tokens:
+            raise _UnknownDimension("empty \\mathrm")
+        total = 0.0
+        for tok in tokens:
+            m = re.fullmatch(r"([A-Za-z]+)(?:\^\{?(-?\d+(?:\.\d+)?)\}?)?", tok)
+            if not m or m.group(1) not in self.UNITS:
+                raise _UnknownDimension(f"non-unit text '{tok}'")
+            total += self.UNITS[m.group(1)] * (float(m.group(2)) if m.group(2) else 1.0)
+        return total
+
+    # ---- equation-level analysis ----------------------------------------------
+    def analyze(self, eq: str) -> tuple[str | None, str | None]:
+        """
+        Returns (verdict, explanation) where verdict is CONSISTENT, INCONSISTENT,
+        POSSIBLE_MISMATCH, or None when the equation cannot be fully resolved.
+        """
+        s = normalize_latex_equation(eq)
+        self.inner_mismatches = []
+        self.field_context = bool(re.search(r"\\(?:phi|varphi|chi|psi)(?![A-Za-z])", s))
+        try:
+            if any(p.strip() for p in self._split_top(s, lambda x, k: 1 if x[k] == "," else 0)[1:]):
+                return None, None  # several statements in one string
+            sides = [p for p in self._split_top(s, self._relation_splitter)]
+        except _UnknownDimension:
+            return None, None
+        if len(sides) < 2:
+            return None, None
+
+        resolved, unknown = [], 0
+        for side in sides:
+            for term in self._split_top(side, self._sum_splitter):
+                if not term.strip():
+                    continue
+                try:
+                    r = self.parse_term(term)
+                except _UnknownDimension:
+                    unknown += 1
+                    continue
+                if r != "ZERO":
+                    resolved.append((term.strip(), r[0], r[1]))
+
+        for mm in self.inner_mismatches:
+            kind, desc = mm.split(":", 1)
+            if kind == "exact":
+                return "INCONSISTENT", f"Inhomogeneous sum inside a bracket: {desc} — terms that are added must share one mass dimension ✗"
+
+        exact_terms = [r for r in resolved if r[2]]
+        exact_dims = {round(r[1], 9) for r in exact_terms}
+        if len(exact_dims) > 1:
+            desc = "; ".join(f"'{t}' → [E]^{d:g}" for t, d, _ in exact_terms)
+            return "INCONSISTENT", f"Natural-unit mass-dimension mismatch between terms: {desc} ✗"
+
+        all_dims = {round(r[1], 9) for r in resolved}
+        if len(all_dims) > 1 or self.inner_mismatches:
+            desc = "; ".join(f"'{t}' → [E]^{d:g}{'' if e else ' (inferred)'}" for t, d, e in resolved)
+            return (
+                "POSSIBLE_MISMATCH",
+                f"Possible mass-dimension mismatch involving ambiguous symbols: {desc}. "
+                "Declare these symbols in symbol_dimensions_json to get a definitive verdict."
+            )
+        if unknown == 0 and len(resolved) >= 2:
+            d = resolved[0][1]
+            note = "" if all(r[2] for r in resolved) else " (some symbols inferred from canonical defaults)"
+            return "CONSISTENT", f"All {len(resolved)} terms carry natural-unit mass dimension [E]^{d:g}{note} ✓"
+        return None, None
+
+
+# ---------------------------------------------------------------------------
 # Tool 2: DimensionalConsistencyTool
 # ---------------------------------------------------------------------------
 
@@ -79,7 +721,11 @@ class DimensionalConsistencyInput(BaseModel):
     )
     symbol_dimensions_json: str = Field(
         default="",
-        description="Optional JSON dictionary mapping symbol names to their natural-unit mass dimension [E]^n (e.g. '{\"phi\": 1, \"R\": 2, \"L\": 4}')."
+        description=(
+            "JSON dictionary copied from the report's Symbol Table, mapping each symbol to its natural-unit "
+            "mass dimension [E]^n (e.g. '{\"\\\\phi\": 1, \"V\": 4, \"\\\\lambda\": 0, \"n_B\": 3, \"T\": 1}'). "
+            "Ambiguous letters (p, P, k, s, n, R, G, V, T, H, lambda...) only give a definitive verdict when declared here."
+        )
     )
 
 
@@ -87,10 +733,11 @@ class DimensionalConsistencyTool(BaseTool):
     name: str = "Dimensional Consistency Checker"
     description: str = (
         "Checks whether LaTeX physics, cosmology, and statistical equations are dimensionally consistent "
-        "in both SI units and 4D natural units (hbar = c = k_B = 1, [E]^n). "
-        "Checks Lagrangian density terms against [E]^4, detects invalid algebraic variable-w(a) exponents "
-        "and dropped covariance terms, and reports per-equation verdicts: "
-        "CONSISTENT, INCONSISTENT, DIMENSIONLESS, or UNDECIDABLE."
+        "in 4D natural units (hbar = c = k_B = 1). Computes the mass dimension [E]^n of every additive term "
+        "(products, fractions, powers, roots, derivatives, tensor indices, units) and compares them; "
+        "checks every Lagrangian term against [E]^4; detects invalid variable-w(a) exponents and dropped "
+        "covariance terms. Pass the report's Symbol Table as symbol_dimensions_json for definitive verdicts. "
+        "Per-equation verdicts: CONSISTENT, INCONSISTENT, DIMENSIONLESS, or UNDECIDABLE."
     )
     args_schema: Type[BaseModel] = DimensionalConsistencyInput
 
@@ -101,7 +748,7 @@ class DimensionalConsistencyTool(BaseTool):
             'E=mc³: [J] != [kg][m/s]³ = [kg·m³/s³] — FLAWED formula ✗'
         ),
         (
-            r'a\s*\^\s*\{?\s*-\s*3\s*[\(\[]\s*1\s*\+\s*(?:w\s*\(\s*[azt]\s*\)|w_?0\s*\+\s*w_?a\s*\*?\s*[\(\[]\s*1\s*-\s*a)',
+            r'a\s*\^\s*\{?\s*-\s*3\s*(?:\\cdot\s*|\*\s*)?[\(\[]\s*1\s*\+\s*(?:w(?:_\{[^{}]*\}|_[A-Za-z0-9])?\s*\(\s*[azt]\s*\)|w_?0\s*\+\s*w_?a\s*\*?\s*[\(\[]\s*1\s*-\s*a)',
             'Variable-w(a) exponent error: rho(a) != rho_0 a^{-3[1+w(a)]} when w(a) varies; continuity equation requires rho(a) = rho_0 exp[-3 int (1+w(a\')) d ln a\'] ✗'
         ),
         (
@@ -183,47 +830,32 @@ class DimensionalConsistencyTool(BaseTool):
         'G': -2.0, 'G_N': -2.0,
     }
 
-    def _check_lagrangian_or_natural_units(self, eq: str, custom_dims: dict[str, float]) -> tuple[str | None, str | None]:
-        """
-        Check common Lagrangian density definitions L = ... or simple natural-unit monomials
-        against 4D mass dimensions [E]^n. Returns (verdict, explanation) or (None, None).
-        """
-        dims = {**self.CANONICAL_MASS_DIMS, **(custom_dims or {})}
+    _LAGRANGIAN_LHS_RE: ClassVar[re.Pattern] = re.compile(
+        r'^\s*(?:\\mathcal\{L\}|\\mathscr\{L\}|\\mathcal L)(?:_(?:\{[^{}]*\}|\\?[A-Za-z0-9]+))?\s*(?:=|\\equiv)'
+    )
+    _UNSUPPRESSED_POWER_RE: ClassVar[re.Pattern] = re.compile(r'\\(?:phi|chi|varphi)\s*\^\s*\{?\s*([5-9]|\d{2,})\s*\}?')
+    _SUPPRESSION_RE: ClassVar[re.Pattern] = re.compile(r'/|\\frac|M_|\\Lambda|f_|\\mu\^\{?-')
 
-        # Check explicit Lagrangian definitions: \mathcal{L} = ...
-        if re.search(r'^(?:\\mathcal\{L\}|\\mathscr\{L\}|\bL)_[a-zA-Z0-9\{\}\\rm\s,]*=\s*', eq) or re.search(
-            r'^(?:\\mathcal\{L\}|\\mathscr\{L\})\s*=', eq
-        ):
-            # Known valid canonical & k-essence & QFT & EFT Lagrangians ([E]^4)
-            if re.search(
-                r'(\\frac\{1\}\{2\}\s*\(\\partial\s*\\phi\)\^2|\\partial_\\mu\s*\\phi\s*\\partial\^\\mu\s*\\phi|P\s*\(\s*X\s*,\s*\\phi\s*\)|\\bar\{\\psi\}\s*\(?\s*i\s*\\gamma\^\\mu|F_\{\\mu\\nu\}\s*F\^\{\\mu\\nu\}|\\frac\{\\alpha_s\}\{8\s*\\pi\}\s*\\bar\{\\theta\}\s*G|\\frac\{[^\{\}]+\}\{M_\*?\^2\}\s*\(?\\partial_\\mu\s*R\)?\s*J)',
-                eq
-            ):
-                return (
-                    "CONSISTENT",
-                    "4D Lagrangian density terms verified against mass dimension [L] = [E]^4 in natural units ✓"
-                )
-            # Detect un-suppressed dimension-5+ operator in L without inverse mass scale
-            if re.search(r'\\phi\^([5-9])\b', eq) and not re.search(r'(/|\\frac|M_|\\Lambda)', eq):
-                power = re.search(r'\\phi\^([5-9])\b', eq).group(1)
+    def _unsuppressed_operator_check(self, eq: str, analyzer: "NaturalUnitDimensionAnalyzer") -> tuple[str | None, str | None]:
+        """
+        In a 4D Lagrangian density, flag each additive term carrying phi^n (n >= 5) without an
+        inverse mass scale in that same term. Checked per term, so a valid kinetic term elsewhere
+        in the Lagrangian cannot mask the bad operator.
+        """
+        m = self._LAGRANGIAN_LHS_RE.match(eq)
+        if not m:
+            return None, None
+        rhs = eq[m.end():]
+        for term in analyzer._split_top(rhs, analyzer._sum_splitter):
+            pw = self._UNSUPPRESSED_POWER_RE.search(term)
+            if pw and not self._SUPPRESSION_RE.search(term):
+                n = int(pw.group(1))
                 return (
                     "INCONSISTENT",
-                    f"Non-renormalizable operator phi^{power} has mass dimension [E]^{power} != [E]^4 without an inverse cutoff scale 1/M^{int(power)-4} ✗"
+                    f"Lagrangian term '{term.strip()}' carries phi^{n} with mass dimension [E]^{n} (≥5) and no "
+                    f"inverse cutoff scale 1/M^{n - 4}; every term of a 4D Lagrangian density must be [E]^4 ✗"
                 )
-
-        # Check simple two-side monomial/polynomial equations in natural units if custom_dims are provided
-        if custom_dims and "=" in eq and not re.search(r'(\\int|\\sum|\\text\{|\\mathrm\{km|Mpc|kg|mol\})', eq):
-            parts = eq.split("=", 1)
-            lhs, rhs = parts[0].strip(), parts[1].strip()
-            if lhs in dims and rhs in dims:
-                d_l, d_r = dims[lhs], dims[rhs]
-                if abs(d_l - d_r) < 1e-6:
-                    if abs(d_l) < 1e-6:
-                        return ("DIMENSIONLESS", f"Both sides have natural-unit dimension [E]^0 ✓")
-                    return ("CONSISTENT", f"Both sides match in natural-unit mass dimension [E]^{d_l:g} ✓")
-                return ("INCONSISTENT", f"Natural-unit mass dimension mismatch: LHS {lhs} has [E]^{d_l:g} != RHS {rhs} [E]^{d_r:g} ✗")
-
-        return (None, None)
+        return None, None
 
     def _run(self, equations_json: str, symbol_dimensions_json: str = "") -> str:
         try:
@@ -255,13 +887,15 @@ class DimensionalConsistencyTool(BaseTool):
                 "undecidable_count": 0,
             }, indent=2)
 
+        analyzer = NaturalUnitDimensionAnalyzer(self.CANONICAL_MASS_DIMS, custom_dims)
         results = []
         consistent_count = 0
         dimensionless_count = 0
         inconsistent_count = 0
 
         for raw_eq in equations:
-            eq = str(raw_eq).strip()
+            eq_raw = str(raw_eq).strip()
+            eq = normalize_latex_equation(eq_raw)
             verdict = "UNDECIDABLE"
             explanation = (
                 "Could not automatically verify dimensional consistency. "
@@ -269,32 +903,40 @@ class DimensionalConsistencyTool(BaseTool):
             )
             matched = False
 
-            # Step 1: Check known inconsistent/flawed patterns first
+            # Step 1: Known flawed patterns (run on the normalized form, so \left( ... \right) is covered)
             for bad_pat, bad_expl in self.KNOWN_INCONSISTENT_PATTERNS:
                 if re.search(bad_pat, eq, re.IGNORECASE):
-                    verdict = "INCONSISTENT"
-                    explanation = bad_expl
-                    matched = True
+                    verdict, explanation, matched = "INCONSISTENT", bad_expl, True
                     break
 
-            # Step 2: Check Lagrangian / natural-unit [E]^n evaluator
+            # Step 2: Unsuppressed higher-dimension operators, checked term by term
             if not matched:
-                nu_verdict, nu_expl = self._check_lagrangian_or_natural_units(eq, custom_dims)
-                if nu_verdict is not None:
-                    verdict = nu_verdict
-                    explanation = nu_expl
-                    matched = True
+                op_verdict, op_expl = self._unsuppressed_operator_check(eq, analyzer)
+                if op_verdict:
+                    verdict, explanation, matched = op_verdict, op_expl, True
 
-            # Step 3: Check known valid physics/cosmology patterns
+            # Step 3: Term-level natural-unit [E]^n analysis — a definitive mismatch wins immediately
+            try:
+                nu_verdict, nu_expl = analyzer.analyze(eq) if not matched else (None, None)
+            except Exception:
+                nu_verdict, nu_expl = None, None
+            if not matched and nu_verdict == "INCONSISTENT":
+                verdict, explanation, matched = "INCONSISTENT", nu_expl, True
+
+            # Step 4: Known valid physics/cosmology/statistics patterns
             if not matched:
                 for pattern, v, expl in self.KNOWN_PATTERNS:
                     if re.search(pattern, eq, re.IGNORECASE):
-                        verdict = v
-                        explanation = expl
-                        matched = True
+                        verdict, explanation, matched = v, expl, True
                         break
 
-            # Step 4: Fallback for unmatched expressions (never blindly mark standalone tokens as DIMENSIONLESS)
+            # Step 5: Term-level analysis result (consistent, or possible mismatch on ambiguous symbols)
+            if not matched and nu_verdict == "CONSISTENT":
+                verdict, explanation, matched = "CONSISTENT", nu_expl, True
+            elif not matched and nu_verdict == "POSSIBLE_MISMATCH":
+                verdict, explanation, matched = "UNDECIDABLE", nu_expl, True
+
+            # Step 6: Fallback for unmatched expressions (never blindly mark standalone tokens as DIMENSIONLESS)
             if not matched:
                 if re.search(r'(=|\\equiv|\\approx|\\sim|\\simeq|\\propto|<|>|\\le|\\ge)', eq):
                     verdict = "UNDECIDABLE"
@@ -318,7 +960,7 @@ class DimensionalConsistencyTool(BaseTool):
                 inconsistent_count += 1
 
             results.append({
-                "equation": eq[:140],
+                "equation": eq_raw[:140],
                 "verdict": verdict,
                 "explanation": explanation
             })
@@ -391,7 +1033,10 @@ class SymbolicDerivationTool(BaseTool):
 
     @staticmethod
     def _clean_for_sympy(expr_str: str) -> str:
-        s = (expr_str or "").strip()
+        s = normalize_latex_equation(expr_str)
+        # \rho_{\rm DE,0} -> rho_DE0 ; \mathrm{Var} -> Var
+        s = re.sub(r'\\(?:mathrm|text|operatorname)\{([^{}]*)\}', r'\1', s)
+        s = re.sub(r'_\{([^{}]*)\}', lambda m: '_' + re.sub(r'[^A-Za-z0-9]', '', m.group(1).replace('\\rm', '')), s)
         # Convert simple \frac{A}{B} -> ((A)/(B))
         for _ in range(4):
             s_new = re.sub(r'\\frac\{([^{}]+)\}\{([^{}]+)\}', r'((\1)/(\2))', s)
@@ -403,13 +1048,27 @@ class SymbolicDerivationTool(BaseTool):
         s = re.sub(r'\\ln\b|\\log\b', 'log', s)
         for old, new in [
             ('^', '**'), ('\\cdot', '*'), ('\\times', '*'),
-            ('mc**2', 'm*c**2'), ('mc^2', 'm*c**2'), ('\\hbar', 'hbar'),
-            ('{', '('), ('}', ')'),
+            ('mc**2', 'm*c**2'), ('\\hbar', 'hbar'),
+            ('{', '('), ('}', ')'), ('[', '('), (']', ')'),
         ]:
             s = s.replace(old, new)
-        s = re.sub(r'\\(?:left|right|rm|text|mathrm)\b', '', s)
+        s = re.sub(r'\\(?:rm|text|mathrm)\b', '', s)
         s = s.replace('\\', '')
+        s = re.sub(r'\blambda\b', 'lamda', s)  # 'lambda' is a Python keyword
+        # LaTeX writes products with whitespace ("lamda phi**2"); make them explicit, but keep
+        # function application intact ("exp (x)" -> "exp(x)").
+        funcs = {"sqrt", "exp", "log", "ln", "sin", "cos", "tan", "sinh", "cosh", "tanh", "asin", "acos", "atan", "Abs"}
+        s = re.sub(
+            r'([A-Za-z_][A-Za-z0-9_]*|\d+(?:\.\d+)?|\))\s+(?=[A-Za-z_(])',
+            lambda m: m.group(1) if m.group(1) in funcs else m.group(1) + '*',
+            s.strip(),
+        )
         return s.strip()
+
+    # Names that denote strictly positive physical quantities (scale factor, temperature, masses, ...)
+    _POSITIVE_NAME_RE: ClassVar[re.Pattern] = re.compile(
+        r'^(?:a|t|T|m|M|H|E|k|c|hbar|G|rho|s|n|r|sigma|tau|Gamma|Omega|M_?Pl|m_?Pl|g_?s|g_?star)(?:_\w*|\d*)$'
+    )
 
     @classmethod
     def _check_special_physics_step(cls, step: str, sp_mod) -> tuple[str | None, str | None]:
@@ -418,7 +1077,7 @@ class SymbolicDerivationTool(BaseTool):
         1. Variable-w(a) cosmological continuity equation integration (CPL w(a) = w0 + wa*(1-a))
         2. Contrast variance bilinear expansion Var(A - B)
         """
-        s_norm = step.strip()
+        s_norm = normalize_latex_equation(step)
         a, w0, wa, rho0 = sp_mod.symbols('a w0 wa rho0', positive=True, real=True)
         w_cpl = w0 + wa * (1 - a)
         # Exact d ln(rho) / d ln(a) required by continuity equation: -3*(1 + w(a))
@@ -475,6 +1134,73 @@ class SymbolicDerivationTool(BaseTool):
 
         return (None, None)
 
+    def _verify_equality_step(self, lhs_str: str, rhs_str: str) -> tuple[str, str]:
+        """
+        Check LHS = RHS symbolically. If the identity fails over generic (complex) symbols, retry with
+        physically positive quantities (a, T, m, rho, ...) marked positive; then with every symbol
+        positive. Only a residual that survives all of these is reported as INVALID.
+        """
+        import sympy as sp
+
+        lhs = safe_sympy_parse(lhs_str)
+        rhs = safe_sympy_parse(rhs_str)
+        expr = lhs - rhs
+        diff = sp.simplify(expr)
+        if diff == 0:
+            return "STEP_VERIFIED", "SymPy confirms: simplify(LHS - RHS) = 0 (identity holds) ✓"
+
+        syms = sorted(expr.free_symbols, key=lambda s: s.name)
+        physical = {s: sp.Symbol(s.name, positive=True) for s in syms if self._POSITIVE_NAME_RE.match(s.name)}
+        if physical and sp.simplify(expr.subs(physical)) == 0:
+            names = ", ".join(sorted(s.name for s in physical))
+            return "STEP_VERIFIED", f"Identity holds for positive physical quantities ({names} > 0) ✓"
+
+        all_positive = {s: sp.Symbol(s.name, positive=True) for s in syms}
+        if all_positive and sp.simplify(expr.subs(all_positive)) == 0:
+            names = ", ".join(s.name for s in syms)
+            return (
+                "STEP_ASSUMED",
+                f"Identity holds only if {names} > 0 — state this positivity assumption explicitly in the derivation."
+            )
+
+        if diff.is_number:
+            return "STEP_INVALID", f"SymPy falsifies equality: LHS - RHS = {diff} != 0 ✗"
+        if lhs.free_symbols and lhs.free_symbols == rhs.free_symbols and sp.expand(expr) != 0:
+            return (
+                "STEP_INVALID",
+                f"Algebraic mismatch over identical symbols {[s.name for s in syms]}: LHS - RHS = {diff} != 0 "
+                "(use \\approx, not '=', for approximations) ✗"
+            )
+        return (
+            "STEP_ASSUMED",
+            f"Relational definition or physical law (LHS - RHS = {diff}); treated as a model assumption/definition."
+        )
+
+    def _evaluate_limit(self, expr_raw: str, var_raw: str, pt_raw, exp_raw, dir_raw: str):
+        import sympy as sp
+
+        var_clean = self._clean_for_sympy(var_raw)
+        var_sym = sp.Symbol(var_clean, real=True)
+        local = {var_clean: var_sym}
+        expr_sym = safe_sympy_parse(self._clean_for_sympy(expr_raw), local)
+        pt_text = str(pt_raw).strip().lower()
+        if pt_text in ("oo", "inf", "infinity", "+oo"):
+            pt_sym = sp.oo
+        elif pt_text in ("-oo", "-inf", "-infinity"):
+            pt_sym = -sp.oo
+        else:
+            pt_sym = safe_sympy_parse(self._clean_for_sympy(str(pt_raw)))
+
+        if pt_sym in (sp.oo, -sp.oo) or dir_raw == "+-":
+            computed = sp.simplify(sp.limit(expr_sym, var_sym, pt_sym))
+        else:
+            computed = sp.simplify(sp.limit(expr_sym, var_sym, pt_sym, dir=dir_raw))
+
+        if exp_raw is None or str(exp_raw).strip() == "":
+            return computed, None, None
+        exp_sym = safe_sympy_parse(self._clean_for_sympy(str(exp_raw)), local)
+        return computed, exp_sym, sp.simplify(computed - exp_sym)
+
     def _run(self, concept: str, derivation_steps: str = "[]", limits_json: str = "[]") -> str:
         import sympy as sp
 
@@ -529,67 +1255,30 @@ class SymbolicDerivationTool(BaseTool):
                 continue
 
             # Next try general SymPy algebraic equality / identity verification
-            try:
-                if '==' in step_str or '=' in step_str.replace('==', ''):
-                    parts = re.split(r'(?<!=)=(?!=)|==', step_str, maxsplit=1)
-                    if len(parts) == 2:
-                        lhs_str = self._clean_for_sympy(parts[0])
-                        rhs_str = self._clean_for_sympy(parts[1])
-                        try:
-                            lhs = sp.sympify(lhs_str, evaluate=True)
-                            rhs = sp.sympify(rhs_str, evaluate=True)
-                            diff = sp.simplify(lhs - rhs)
-                            if diff == 0:
-                                step_result["verdict"] = "STEP_VERIFIED"
-                                step_result["detail"] = "SymPy confirms: simplify(LHS - RHS) = 0 (identity holds) ✓"
-                                proven_count += 1
-                            elif diff.is_number and diff != 0:
-                                step_result["verdict"] = "STEP_INVALID"
-                                step_result["detail"] = f"SymPy falsifies equality: LHS - RHS = {diff} != 0 ✗"
-                                invalid_count += 1
-                            elif lhs.free_symbols and lhs.free_symbols == rhs.free_symbols:
-                                # Same free symbols on both sides (e.g., algebraic manipulation of same variables)
-                                # If expand(lhs - rhs) != 0, the claimed algebraic identity is invalid!
-                                expanded_diff = sp.expand(lhs - rhs)
-                                if expanded_diff == 0:
-                                    step_result["verdict"] = "STEP_VERIFIED"
-                                    step_result["detail"] = "SymPy confirms: expand(LHS - RHS) = 0 ✓"
-                                    proven_count += 1
-                                else:
-                                    step_result["verdict"] = "STEP_INVALID"
-                                    step_result["detail"] = (
-                                        f"Algebraic mismatch over identical symbols {sorted(str(s) for s in lhs.free_symbols)}: "
-                                        f"LHS - RHS = {diff} != 0 ✗"
-                                    )
-                                    invalid_count += 1
-                            else:
-                                step_result["verdict"] = "STEP_ASSUMED"
-                                step_result["detail"] = (
-                                    f"Relational definition or physical law (LHS - RHS = {diff}); "
-                                    "treated as a model assumption/definition."
-                                )
-                                assumed_count += 1
-                        except Exception as e:
-                            step_result["verdict"] = "STEP_ASSUMED"
-                            step_result["detail"] = f"SymPy parse note ({e}). Treating as assumed — requires manual review."
-                            assumed_count += 1
-                    else:
-                        step_result["verdict"] = "STEP_ASSUMED"
-                        step_result["detail"] = "Could not split equality. Treating as assumed."
-                        assumed_count += 1
-                else:
-                    try:
-                        sp.sympify(self._clean_for_sympy(step_str))
-                        step_result["verdict"] = "STEP_VERIFIED"
-                        step_result["detail"] = "Expression parsed and validated by SymPy ✓"
-                        proven_count += 1
-                    except Exception:
-                        step_result["verdict"] = "STEP_ASSUMED"
-                        step_result["detail"] = "Expression not directly SymPy-parseable. Treating as assumed."
-                        assumed_count += 1
-            except Exception as e:
-                step_result["verdict"] = "STEP_ASSUMED"
-                step_result["detail"] = f"General error ({e}). Treating as assumed."
+            if '==' in step_str or '=' in step_str.replace('==', ''):
+                parts = re.split(r'(?<!=)=(?!=)|==', step_str, maxsplit=1)
+                try:
+                    verdict, detail = run_with_timeout(
+                        self._verify_equality_step, MATH_TOOL_TIMEOUT_S,
+                        self._clean_for_sympy(parts[0]), self._clean_for_sympy(parts[1]),
+                    )
+                except TimeoutError as exc:
+                    verdict, detail = "STEP_ASSUMED", f"SymPy check timed out ({exc}); requires manual review."
+                except Exception as exc:
+                    verdict, detail = "STEP_ASSUMED", f"SymPy parse note ({exc}). Treating as assumed — requires manual review."
+            else:
+                verdict, detail = (
+                    "STEP_ASSUMED",
+                    "Expression without '=' — nothing to verify symbolically. Write the step as 'LHS = RHS'."
+                )
+
+            step_result["verdict"] = verdict
+            step_result["detail"] = detail
+            if verdict == "STEP_VERIFIED":
+                proven_count += 1
+            elif verdict == "STEP_INVALID":
+                invalid_count += 1
+            else:
                 assumed_count += 1
 
             step_results.append(step_result)
@@ -606,26 +1295,13 @@ class SymbolicDerivationTool(BaseTool):
             dir_raw = str(spec.get("dir", "+-")).strip()
 
             try:
-                var_sym = sp.Symbol(var_raw, real=True)
-                expr_sym = sp.sympify(self._clean_for_sympy(expr_raw), locals={var_raw: var_sym})
-                if str(pt_raw).lower() in ("oo", "inf", "infinity", "+oo"):
-                    pt_sym = sp.oo
-                elif str(pt_raw).lower() in ("-oo", "-inf", "-infinity"):
-                    pt_sym = -sp.oo
-                else:
-                    pt_sym = sp.sympify(str(pt_raw))
-
-                computed_lim = sp.simplify(
-                    sp.limit(expr_sym, var_sym, pt_sym)
-                    if pt_sym in (sp.oo, -sp.oo) or dir_raw == "+-"
-                    else sp.limit(expr_sym, var_sym, pt_sym, dir=dir_raw)
+                computed_lim, exp_sym, diff_lim = run_with_timeout(
+                    self._evaluate_limit, MATH_TOOL_TIMEOUT_S, expr_raw, var_raw, pt_raw, exp_raw, dir_raw
                 )
 
                 lim_verdict = "LIMIT_COMPUTED"
                 lim_detail = f"lim_{{{var_raw} -> {pt_raw}}} ({expr_raw}) = {computed_lim}"
-                if exp_raw is not None and str(exp_raw).strip() != "":
-                    exp_sym = sp.sympify(self._clean_for_sympy(str(exp_raw)), locals={var_raw: var_sym})
-                    diff_lim = sp.simplify(computed_lim - exp_sym)
+                if exp_sym is not None:
                     if diff_lim == 0:
                         lim_verdict = "LIMIT_VERIFIED"
                         lim_detail += f" == expected ({exp_sym}) ✓"
@@ -960,8 +1636,8 @@ class NumericalBenchmarkTool(BaseTool):
             "tolerance": 0.063,
             "unit": "dimensionless",
             "formula": (
-                "DESI+CMB+Pantheon+: w_0 = -0.827 ± 0.063, w_a = -0.75 (+0.29/-0.25), corr(w_0, w_a) = -0.85 (Δχ² ≈ -6.8 vs ΛCDM, 2.5σ); "
-                "DESI+CMB+DES-SN5YR: w_0 = -0.727 ± 0.067, w_a = -1.05 (+0.31/-0.27), corr(w_0, w_a) = -0.85 (Δχ² ≈ -15.2 vs ΛCDM, 3.9σ)"
+                "DESI+CMB+Pantheon+: w_0 = -0.827 ± 0.063, w_a = -0.75 (+0.29/-0.25), corr(w_0, w_a) ≈ -0.85 [approx., read off contours] (Δχ² ≈ -6.8 vs ΛCDM, 2.5σ); "
+                "DESI+CMB+DES-SN5YR: w_0 = -0.727 ± 0.067, w_a = -1.05 (+0.31/-0.27), corr(w_0, w_a) ≈ -0.85 [approx.] (Δχ² ≈ -15.2 vs ΛCDM, 3.9σ)"
             ),
             "source": "DESI Collaboration (2025) VI",
             "doi": "10.1088/1475-7516/2025/02/021",
@@ -1275,6 +1951,7 @@ class PhysicsCalculatorTool(BaseTool):
                     "best_fit_mean": [p["mu_w0"], p["mu_wa"]],
                     "uncertainties_1sigma": [p["sig_w0"], p["sig_wa"]],
                     "correlation_rho": r,
+                    "correlation_is_approximate": True,
                     "delta_chi2_2dof": round(dchi2, 3),
                     "sqrt_delta_chi2": round(math.sqrt(max(0.0, dchi2)), 3),
                     "gaussian_2d_tail_prob": float(f"{p_val_2dof:.3e}"),
@@ -1284,7 +1961,11 @@ class PhysicsCalculatorTool(BaseTool):
                 "tested_point": {"w0": w0, "wa": wa},
                 "comparisons": comparisons,
                 "doi": "10.1088/1475-7516/2025/02/021",
-                "note": "2D Gaussian covariance approximation against DESI 2024 VI + Planck CMB + Type Ia SNe."
+                "note": (
+                    "2D Gaussian approximation against DESI 2024 VI + Planck CMB + Type Ia SNe. Means and 1-sigma errors are "
+                    "the published values (asymmetric w_a errors symmetrized). The correlation rho = -0.85 is an APPROXIMATE "
+                    "value read off the published contours, not a published covariance — quote results as approximate."
+                )
             }, indent=2)
 
         # Modes 1 & 2: 'evaluate' and 'verify_claim'
@@ -1297,9 +1978,12 @@ class PhysicsCalculatorTool(BaseTool):
 
         try:
             local_symbols = {k: sp.Float(v) for k, v in env_vars.items()}
-            sym_expr = sp.sympify(clean_expr, locals=local_symbols)
-            evaluated = sym_expr.evalf(subs=local_symbols)
-            computed_val = float(evaluated)
+
+            def _evaluate() -> float:
+                sym_expr = safe_sympy_parse(clean_expr, local_symbols)
+                return float(sym_expr.evalf(subs=local_symbols))
+
+            computed_val = run_with_timeout(_evaluate, MATH_TOOL_TIMEOUT_S)
         except Exception as exc:
             return json.dumps({
                 "mode": mode_clean,

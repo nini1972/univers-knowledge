@@ -534,6 +534,8 @@ def collect_historical_agent_shortcomings(limit: int = 10, recent_window: int = 
     window_approved = 0
     window_rejections: Counter = Counter()
     window_needs_all: list[str] = []
+    window_researcher_needs: list[str] = []
+    window_math_needs: list[str] = []
     for rec in window_records:
         st = rec.get("status")
         if st == "approved":
@@ -544,9 +546,11 @@ def collect_historical_agent_shortcomings(limit: int = 10, recent_window: int = 
         for rn in needs.get("researcher_needs") or []:
             if rn:
                 window_needs_all.append(str(rn))
+                window_researcher_needs.append(str(rn))
         for mn in needs.get("math_needs") or []:
             if mn:
                 window_needs_all.append(str(mn))
+                window_math_needs.append(str(mn))
 
     return {
         "total_evaluations": total_runs,
@@ -557,10 +561,171 @@ def collect_historical_agent_shortcomings(limit: int = 10, recent_window: int = 
         "recent_window_rejected": sum(window_rejections.values()),
         "recent_window_rejection_counts": dict(window_rejections.most_common()),
         "recent_need_themes": _classify_need_themes(window_needs_all),
+        "recent_researcher_need_themes": _classify_need_themes(window_researcher_needs),
+        "recent_math_need_themes": _classify_need_themes(window_math_needs),
         "recent_researcher_needs": researcher_needs[-limit:],
         "recent_math_needs": math_needs[-limit:],
         "recent_rejections": recent_rejections[-limit:],
     }
+
+
+def _live_tool_names() -> dict[str, list[str] | None]:
+    """Read the tool lists actually wired to the agents (None if they cannot be imported)."""
+    names: dict[str, list[str] | None] = {"researcher": None, "math": None}
+    try:
+        try:
+            from agents.universe_agents import _build_search_tools
+        except ImportError:
+            from src.agents.universe_agents import _build_search_tools
+        names["researcher"] = [t.name for t in _build_search_tools()]
+    except Exception:
+        pass
+    try:
+        try:
+            from tools.math_tools import get_tier1_math_tools
+        except ImportError:
+            from src.tools.math_tools import get_tier1_math_tools
+        names["math"] = [t.name for t in get_tier1_math_tools()]
+    except Exception:
+        pass
+    return names
+
+
+def _source_contains(rel_path: str, needle: str) -> bool:
+    try:
+        return needle in (REPO_ROOT / rel_path).read_text(encoding="utf-8")
+    except Exception:
+        return False
+
+
+def _capability_registry(tools: dict) -> list[dict]:
+    """
+    Capabilities requested in the agent interviews, each with a code probe that decides
+    whether it is actually present. Status is computed, never hand-written.
+    """
+    researcher = tools.get("researcher") or []
+    math = tools.get("math") or []
+
+    def has_tool(pool: list[str], name: str):
+        return None if not pool else name in pool
+
+    return [
+        {"agent": "researcher", "name": "Physics Calculator & Tension Evaluator (worked examples, sigma / delta-chi2)",
+         "themes": ["worked_arithmetic_and_benchmarks"],
+         "present": has_tool(researcher, "Physics Calculator & Tension Evaluator")},
+        {"agent": "researcher", "name": "Observational Cosmology tracker with values, uncertainties and covariances",
+         "themes": ["worked_arithmetic_and_benchmarks", "citation_provenance"],
+         "present": has_tool(researcher, "Observational Cosmology & Deep-Space Survey Tracker")},
+        {"agent": "researcher", "name": "Conventions & Symbol Table / Validity Domain preamble in the concept template",
+         "themes": ["conventions_and_signs", "units_and_dimensions"],
+         "present": _source_contains("knowledge_base/templates/concept_template.md", "### Conventions & Symbol Table")},
+        {"agent": "researcher", "name": "arXiv full-text section reader (exact conventions and prefactors)",
+         "themes": ["conventions_and_signs", "citation_provenance"],
+         "present": (None if not researcher else any("full-text" in n.lower() or "full text" in n.lower() for n in researcher))},
+        {"agent": "math", "name": "Term-level natural-unit [E]^n dimension checker using the report's symbol table",
+         "themes": ["units_and_dimensions"],
+         "present": has_tool(math, "Dimensional Consistency Checker") and _source_contains("src/tools/math_tools.py", "class NaturalUnitDimensionAnalyzer")},
+        {"agent": "math", "name": "Symbolic re-derivation (continuity/ODE integrals, identities, limits) for the Math Physicist",
+         "themes": ["conventions_and_signs", "causal_and_statistical_design"],
+         "present": has_tool(math, "Symbolic Derivation Verifier")},
+        {"agent": "math", "name": "Benchmark table + claim verification (verify_claim within 10%)",
+         "themes": ["worked_arithmetic_and_benchmarks"],
+         "present": has_tool(math, "Numerical Benchmark Validator") and has_tool(math, "Physics Calculator & Tension Evaluator")},
+        {"agent": "math", "name": "Math gate in the flow (tool-confirmed INCONSISTENT / STEP_INVALID blocks approval)",
+         "themes": ["units_and_dimensions"],
+         "present": _source_contains("src/universe_flow.py", "apply_math_gate(")},
+        {"agent": "skeptic", "name": "Shared canonical conventions header in every crew task",
+         "themes": ["conventions_and_signs"],
+         "present": _source_contains("src/conventions.py", "CANONICAL_CONVENTIONS_HEADER")},
+        {"agent": "skeptic", "name": "Level 3 causal-design checklist (estimand, DAG, identification, power, multiplicity)",
+         "themes": ["causal_and_statistical_design"],
+         "present": _source_contains("src/conventions.py", "Target Estimand") and _source_contains("src/conventions.py", "multiplicity")},
+        {"agent": "skeptic", "name": "Per-run scorecard (UNDECIDABLE ratio, attempts to approval, timeouts)",
+         "themes": [],
+         "present": _source_contains("src/advisory_manager.py", "def build_run_" + "scorecard(")},
+    ]
+
+
+def _render_capabilities(registry: list[dict], agent: str, theme_counts: dict) -> list[str]:
+    out = []
+    for cap in registry:
+        if cap["agent"] != agent:
+            continue
+        mentions = sum(theme_counts.get(t, 0) for t in cap["themes"])
+        theme_txt = ", ".join(f"`{t}`" for t in cap["themes"]) or "—"
+        if cap["present"] is True:
+            mark = "✅ present"
+        elif cap["present"] is False:
+            mark = "🎯 OPEN"
+        else:
+            mark = "❔ unknown (agent config not importable)"
+        out.append(f"  * {mark} — {cap['name']} · addresses {theme_txt} ({mentions} recent mention(s))")
+    return out
+
+
+def _format_theme_counts(theme_counts: dict) -> str:
+    if not theme_counts:
+        return "*none logged in this window*"
+    return ", ".join(f"`{t}` ×{c}" for t, c in theme_counts.items())
+
+
+def _recent_need_lines(needs: list | None, n: int = 3) -> list[str]:
+    needs = list(needs or [])[-n:]
+    return [f"  * {x}" for x in needs] if needs else ["  * *none logged*"]
+
+
+def _build_wishlist_section2(stats: dict) -> list[str]:
+    """Section 2 of AGENT_WISHLIST.md, generated from live tool wiring, telemetry and code probes."""
+    tools = _live_tool_names()
+    registry = _capability_registry(tools)
+    window = stats["recent_window_size"]
+
+    def tool_line(key: str) -> str:
+        lst = tools.get(key)
+        if lst is None:
+            return "- **Equipped Tools (live)**: *could not import agent configuration*"
+        return "- **Equipped Tools (live)**: " + (", ".join(f"`{n}`" for n in lst) or "*none*")
+
+    lines = [
+        "",
+        "---",
+        "",
+        "## 🧞 2. Per-Agent Diagnostics & Capability Status",
+        "",
+        f"> Generated automatically: tool lists are read from the live agent configuration, need themes from the last "
+        f"`{window}` evaluations, and each capability's status from a probe of the code. Nothing in this section is hand-written.",
+        "",
+        "### 🔭 A. Researcher, Bio-Digital Analyst & Cosmological Architect",
+        tool_line("researcher"),
+        f"- **Recurring need themes (`researcher_needs`, last {window})**: {_format_theme_counts(stats.get('recent_researcher_need_themes', {}))}",
+        "- **Most recent concrete needs**:",
+    ]
+    lines.extend(_recent_need_lines(stats.get("recent_researcher_needs")))
+    lines.append("- **Capabilities**:")
+    lines.extend(_render_capabilities(registry, "researcher", stats.get("recent_researcher_need_themes", {})))
+
+    lines.extend([
+        "",
+        "### 🧮 B. Mathematical Physics Verifier",
+        tool_line("math"),
+        f"- **Recurring need themes (`math_needs`, last {window})**: {_format_theme_counts(stats.get('recent_math_need_themes', {}))}",
+        "- **Most recent concrete needs**:",
+    ])
+    lines.extend(_recent_need_lines(stats.get("recent_math_needs")))
+    lines.append("- **Capabilities**:")
+    lines.extend(_render_capabilities(registry, "math", stats.get("recent_math_need_themes", {})))
+
+    rejections = stats.get("recent_window_rejection_counts", {})
+    lines.extend([
+        "",
+        "### ⚖️ C. Scientific Skeptic & Student",
+        "- **Equipped Tools**: none by design — both receive the Math Physicist's tool-verified report in context.",
+        f"- **Rejection root causes (last {window})**: "
+        + (", ".join(f"`{rc}` ×{c}" for rc, c in rejections.items()) if rejections else "*none*"),
+        "- **Capabilities**:",
+    ])
+    lines.extend(_render_capabilities(registry, "skeptic", stats.get("recent_need_themes", {})))
+    return lines
 
 
 def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
@@ -634,43 +799,8 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
     for mn in stats["recent_math_needs"]:
         lines.append(f"- {mn}")
 
-    lines.extend([
-        "",
-        "---",
-        "",
-        "## 🧞 2. Per-Agent Diagnostic Shortcomings & Wishlist",
-        "",
-        "### 🔭 A. Fundamental Physics Researcher & Cosmological Architect",
-        "- **Equipped Tools**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`, `Physics Calculator & Tension Evaluator`.",
-        "- **Shortcomings Encountered During Tasks**:",
-        "  1. **Abstract-Only Visibility on Long Derivations**: arXiv and OpenAlex return abstracts (~300–400 words) rather than full-text equation appendices, forcing the Researcher to reconstruct intermediate normalization factors (e.g., identical-particle $1/32\\pi$ vs $1/16\\pi$ phase space or conventions in Thomson scattering opacity $\\dot{\\kappa}$) from memory.",
-        "  2. **Observational vs. Textbook Tension**: Standard training priors favor textbook $\\Lambda\\text{CDM}$ and minimal slow-roll inflation, whereas modern deep-space observations (JWST $z > 10\\text{–}14$ luminous galaxies & over-massive black holes, HST/JWST $H_0 \\approx 73\\text{ km s}^{-1}\\text{ Mpc}^{-1}$ vs Planck $67.4$, DESI dynamical dark energy $w_0 w_a\\text{CDM}$, and $S_8$ cosmic shear) often contradict baseline theory.",
-        "  3. **Worked-Example Arithmetic Drift**: When adapting a formula to new benchmark parameters on retry, LLM mental arithmetic can slip by factors of $10^2\\text{–}10^3$ without a calculator tool.",
-        "- **Agent Wishlist**:",
-        "  * ✅ **[IMPLEMENTED]** `Observational Cosmology & Deep-Space Survey Tracker` tool providing direct access to JWST, Hubble (HST), DESI, Euclid, Planck, and NANOGrav observational tensions, verified DOIs, central values $\\pm 1\\sigma$, covariances, and $\\Delta\\chi^2$ benchmarks.",
-        "  * ✅ **[IMPLEMENTED]** Structured `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (`[GENERAL]` vs `[MODEL-DEPENDENT: ...]`) preamble inside `## 3. Mathematical Framework`.",
-        "  * ✅ **[IMPLEMENTED]** **`Physics Calculator & Tension Evaluator` Tool (`PhysicsCalculatorTool`)** so worked numerical examples (e.g., Affleck-Dine baryon yield $n_B/s$, Hubble horizon expansion $\\lambda_{\\rm phys}(t_0)$ in meters, 1D Gaussian tension $\\sigma$, and 2D covariant $\\Delta\\chi^2$ for $(w_0, w_a)$) are computed in Python *before* the draft is submitted to the Math Physicist.",
-        "  * 🎯 **[WISHLIST #1]** **arXiv Full-Text Section Extractor (HTML/LaTeX source snippet reader)** to pull exact Lagrangian conventions and coefficient definitions from primary papers when abstracts omit prefactors.",
-        "",
-        "### 🧮 B. Mathematical Physics Verifier (`z-ai/glm-5.3-flash`)",
-        "- **Equipped Tools**: `Equation Extractor`, `Dimensional Consistency Checker`, `Symbolic Derivation Verifier`, `Topology Classifier`, `Numerical Benchmark Validator`, `Physics Calculator & Tension Evaluator`.",
-        "- **Shortcomings Encountered During Tasks**:",
-        "  1. **Context & Tool-Argument Token Bloat in Multi-Agent Debates**: Passing 50,000–75,000 characters of raw prose into `Equation Extractor` and `Topology Classifier` previously caused 180s OpenRouter timeouts.",
-        "  2. **Natural-Units ($\\hbar = c = k_B = 1$) vs. SI Ambiguity**: In high-energy and cosmological formulas (e.g., one-pion-exchange potential, curvature-current baryogenesis $\\mathcal{L}_{\\rm int} = (\\partial_\\mu R) J_B^\\mu / M_*^2$, or comoving vs. physical number densities), dimensional consistency depends on declared mass dimensions $[\\phi] = E^1, [R] = E^2, [J^\\mu] = E^3$.",
-        "- **Agent Wishlist**:",
-        "  * ✅ **[IMPLEMENTED]** Concise equation-only extraction (<4,000 chars) and 25-equation relational prioritization to eliminate 180s tool-call timeouts.",
-        "  * ✅ **[IMPLEMENTED]** Global Coherence Rule in Math Verification Report and `DimensionalConsistencyTool` (`CONSISTENT_WITH_UNDECIDABLE` vs `ALL_CONSISTENT`).",
-        "  * ✅ **[IMPLEMENTED]** **Natural-Unit Mass-Dimension Evaluator (`[E]^n` checker)** alongside SI unit checking in `DimensionalConsistencyTool`, explicitly checking Lagrangian terms against $[\\mathcal{L}] = [E]^4$ in 4D spacetime and catching known algebraic/dimensional errors (e.g., $a^{-3(1+w(a))}$, $m_T^2 \\sim g^2 T^2 \\phi^2$, dropped $-2\\,\\mathrm{Cov}(A,B)$).",
-        "  * ✅ **[IMPLEMENTED]** **20-Benchmark CODATA/PDG/Cosmology Table & `Physics Calculator & Tension Evaluator`** verifying numerical claims within 10% tolerance (`verify_claim`) and evaluating $\\Delta\\chi^2$ / $\\sigma$ tensions.",
-        "  * ✅ **[IMPLEMENTED]** **Symbolic Re-Derivation & Perturbative Limit Evaluator (`SymbolicDerivationTool`)**: Symbolically verifies continuity/ODE integrals (such as CPL variable-$w(a)$ integration vs invalid $a^{-3(1+w(a))}$), variance bilinear expansions, algebraic identities (`STEP_INVALID` when `LHS - RHS != 0`), and asymptotic limits (`limits_json` via `sp.limit` for $a \\to 0$, $a \\to 1$, $T \\to \\infty$, $k \\to 0$).",
-        "",
-        "### ⚖️ C. Scientific Skeptic & Student Orchestrator",
-        "- **Equipped Tools**: `Peer Review Critique Resolver`.",
-        "- **Shortcomings Encountered During Tasks**:",
-        "  1. **Convention Conflicts Across Multi-Attempt Retries**: When Researcher A and Researcher B in Level 2 use slightly different Fourier, metric signature $(-,+,+,+)$ vs $(+,-,-,-)$, or reduced vs. Planck mass ($M_{\\rm Pl} = 2.435\\times 10^{18}\\text{ GeV}$ vs $m_{\\rm Pl} = 1.22\\times 10^{19}\\text{ GeV}$) conventions, the synthesis can mix both.",
-        "- **Agent Wishlist**:",
-        "  * ✅ **[IMPLEMENTED]** **Shared Canonical Convention Header (`src/conventions.py`)** injected at the start of every Level 1/2/3 crew run and micro-revision (fixing reduced Planck mass $M_{\\rm Pl} = (8\\pi G)^{-1/2} = 2.435\\times 10^{18}\\text{ GeV}$, metric signature $(-,+,+,+)$, $g_{*s}(T)$ anchors, and Level 3 causal estimand/covariance requirements).",
-    ])
+    # Section 2 is generated from live tool wiring, recent telemetry and code probes.
+    lines.extend(_build_wishlist_section2(stats))
 
     if live_responses:
         lines.extend([

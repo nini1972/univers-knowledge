@@ -540,11 +540,99 @@ def parse_math_status(math_output: str) -> str:
         "MATH_PROVEN", "MATH_CONSISTENT", "MATH_CONJECTURED",
         "MATH_TOPOLOGICAL", "MATH_FLAWED", "MATH_PENDING",
     ]
+    # Preferred: the explicitly assigned "Math Status: [MATH_X]" line (ignores any echoed legend).
+    assigned = re.search(r"Math\s*Status\s*:?\s*\**\s*`?\[?\s*(MATH_[A-Z]+)", text.replace("**", ""), re.IGNORECASE)
+    if assigned and assigned.group(1).upper() in valid_statuses:
+        return assigned.group(1).upper()
     for status in valid_statuses:
         # Match [MATH_PROVEN] or MATH_PROVEN
         if re.search(rf"\[?{re.escape(status)}\]?", text, re.IGNORECASE):
             return status
     return "MATH_UNKNOWN"
+
+
+# Tool verdicts that block approval when the Math Physicist reports them for the paper's equations.
+MATH_GATE_BLOCKING_VERDICTS = ("INCONSISTENT", "STEP_INVALID", "LIMIT_MISMATCH")
+
+_GLOBAL_PASS_CLAIM_RE = re.compile(
+    r"all\s+(?:the\s+)?(?:extracted\s+|key\s+)?equations\s+(?:are|were)\s+(?:tool[- ]verified\s+(?:as\s+)?)?"
+    r"(?:dimensionally\s+)?consistent",
+    re.IGNORECASE,
+)
+
+
+def parse_math_tool_verdicts(math_output: str) -> dict:
+    """
+    Parses the machine-readable line the Math Physicist is asked to emit, e.g.
+      **Tool Verdicts:** INCONSISTENT=1; UNDECIDABLE=3; STEP_INVALID=0; LIMIT_MISMATCH=0; CLAIM_MISMATCH=0
+    Returns a dict of upper-case verdict -> count, or {} if the line is absent.
+    """
+    text = str(math_output or "").replace("**", "")
+    match = re.search(r"Tool\s*Verdicts\s*:\s*([^\n]+)", text, re.IGNORECASE)
+    if not match:
+        return {}
+    counts: dict[str, int] = {}
+    for key, val in re.findall(r"([A-Za-z_]+)\s*[=:]\s*(\d+)", match.group(1)):
+        counts[key.upper()] = int(val)
+    return counts
+
+
+def evaluate_math_gate(math_output: str) -> dict:
+    """
+    Decides whether the math report must block approval.
+    Blocks when math_status is MATH_FLAWED or any blocking tool verdict count is > 0.
+    Also flags a coherence violation when the report claims a global pass while listing
+    blocking or UNDECIDABLE findings (reported, not blocking on its own for UNDECIDABLE).
+    """
+    text = str(math_output or "")
+    status = parse_math_status(text)
+    counts = parse_math_tool_verdicts(text)
+    blocking = {k: counts[k] for k in MATH_GATE_BLOCKING_VERDICTS if counts.get(k, 0) > 0}
+    global_pass_claim = bool(_GLOBAL_PASS_CLAIM_RE.search(text))
+    coherence_violation = global_pass_claim and (bool(blocking) or counts.get("UNDECIDABLE", 0) > 0)
+
+    reasons = []
+    if status == "MATH_FLAWED":
+        reasons.append("math_status is MATH_FLAWED")
+    for key, val in blocking.items():
+        reasons.append(f"{val} {key} verdict(s)")
+    if coherence_violation:
+        reasons.append("report claims all equations consistent while listing unresolved findings")
+
+    return {
+        "block": status == "MATH_FLAWED" or bool(blocking),
+        "math_status": status,
+        "tool_verdicts": counts,
+        "structured_line_found": bool(counts),
+        "coherence_violation": coherence_violation,
+        "reasons": reasons,
+        "overrode_approval": False,
+    }
+
+
+def apply_math_gate(decision: dict, math_output: str) -> tuple[dict, dict]:
+    """
+    Enforces the math blocking rule on a parsed Student decision. If the Student approved but the
+    math report has blocking findings, the decision is converted into a rejection with reason
+    'mathematical_flaw_or_inconsistency' (which routes to a targeted micro-revision).
+    Returns (decision, gate_info). The input dict is not mutated.
+    """
+    gate = evaluate_math_gate(math_output)
+    decision = dict(decision or {})
+    if decision.get("status") != "approved" or not gate["block"]:
+        return decision, gate
+
+    message = (
+        "Math gate: approval blocked because the Math Physicist's tool-verified report contains "
+        f"{'; '.join(gate['reasons'])}. Correct the flagged equations/derivation steps and re-verify."
+    )
+    decision["status"] = "rejected"
+    decision["reason_code"] = "mathematical_flaw_or_inconsistency"
+    decision["follow_up_questions"] = [message] + list(decision.get("follow_up_questions") or [])
+    decision["detailed_rationale"] = (str(decision.get("detailed_rationale") or "") + "\n\n" + message).strip()
+    decision["math_gate_override"] = True
+    gate["overrode_approval"] = True
+    return decision, gate
 
 
 def sanitize_filename(name: str, max_len: int = 180) -> str:

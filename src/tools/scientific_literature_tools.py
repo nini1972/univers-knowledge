@@ -679,8 +679,8 @@ _OBSERVATIONAL_TENSIONS_DB = [
             "de Sitter conjectures that forbid stable positive cosmological constants."
         ),
         "quantitative_benchmarks": [
-            "DESI 2024 + CMB + Pantheon+: w_0 = -0.827 ± 0.063, w_a = -0.75 (+0.29 / -0.25), corr(w_0, w_a) = -0.85 (Delta chi^2 ≈ -6.8 vs ΛCDM, 2.5σ)",
-            "DESI 2024 + CMB + DES-SN5YR: w_0 = -0.727 ± 0.067, w_a = -1.05 (+0.31 / -0.27), corr(w_0, w_a) = -0.85 (Delta chi^2 ≈ -15.2 vs ΛCDM, 3.9σ)",
+            "DESI 2024 + CMB + Pantheon+: w_0 = -0.827 ± 0.063, w_a = -0.75 (+0.29 / -0.25), corr(w_0, w_a) ≈ -0.85 [approximate, read off published contours] (Delta chi^2 ≈ -6.8 vs ΛCDM, 2.5σ)",
+            "DESI 2024 + CMB + DES-SN5YR: w_0 = -0.727 ± 0.067, w_a = -1.05 (+0.31 / -0.27), corr(w_0, w_a) ≈ -0.85 [approximate] (Delta chi^2 ≈ -15.2 vs ΛCDM, 3.9σ)",
             "Perturbation discriminants: Canonical quintessence has c_s^2 = 1 (Jeans length ~ H^-1, smooth on sub-horizon scales k >> aH), whereas k-essence has c_s^2 = P_{,X} / (P_{,X} + 2 X P_{,XX}) != 1 (enhancing dark-energy clustering when 0 < c_s^2 << 1)",
         ],
         "verified_citations": [

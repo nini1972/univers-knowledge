@@ -200,7 +200,7 @@ class UniverseTasks:
                 Use the "Equation Extractor" tool by passing ONLY the mathematical equations and formula blocks ($$...$$ and $...$) from the research context (keep the input under 4,000 characters; do NOT copy-paste the entire narrative prose or bibliography). Also inspect whether the report includes `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (flagging any missing or conflicting metric signature, Planck mass M_Pl vs m_Pl, or unit conventions).
 
                 STEP 2 — Check dimensional consistency & symbolic derivations/limits:
-                Pass the JSON output from Step 1 (and optional symbol_dimensions_json from the Symbol Table) directly to the "Dimensional Consistency Checker" tool, cross-checking against the declared symbol dimensions ([E]^n or SI). If the report includes a continuity/ODE integral (e.g. variable-w(a) dark energy density), a contrast variance expansion, or an asymptotic limit claim (e.g. a->0, a->1, k->0), verify it with the "Symbolic Derivation Verifier" tool (`derivation_steps` and/or `limits_json`).
+                Pass the JSON output from Step 1 directly to the "Dimensional Consistency Checker" tool, and ALWAYS pass the report's Symbol Table as `symbol_dimensions_json` (e.g. {{"\\phi": 1, "V": 4, "\\lambda": 0, "n_B": 3, "T": 1}}) — ambiguous letters (p, P, k, s, n, R, G, V, T, H, \\lambda) only get a definitive verdict when declared. If the report includes a continuity/ODE integral (e.g. variable-w(a) dark energy density), a contrast variance expansion, or an asymptotic limit claim (e.g. a->0, a->1, k->0), verify it with the "Symbolic Derivation Verifier" tool (`derivation_steps` written as 'LHS = RHS', and/or `limits_json`).
 
                 STEP 3 — Classify topological structures:
                 Use the "Topology Classifier" tool with the concept name and a concise summary (under 1,500 characters) of the geometric, symmetry, and topological structures in the research context.
@@ -232,6 +232,9 @@ class UniverseTasks:
                 **Concept:** {concept}
                 **Math Score:** X/4
                 **Math Status:** [MATH_???]
+                **Tool Verdicts:** INCONSISTENT=<n>; UNDECIDABLE=<n>; STEP_INVALID=<n>; LIMIT_MISMATCH=<n>; CLAIM_MISMATCH=<n>
+                (copy these counts exactly from the tool outputs; use 0 when a tool was not run. This line is machine-read:
+                any INCONSISTENT, STEP_INVALID or LIMIT_MISMATCH on the paper's equations blocks approval.)
 
                 ### Conventions & Validity Audit
                 (audit of metric signature, unit basis, Planck mass convention, symbol table, and `[GENERAL]` vs `[MODEL-DEPENDENT]` validity conditions)
