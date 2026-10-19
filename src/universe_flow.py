@@ -310,6 +310,45 @@ class UniverseFlow(Flow[UniverseState]):
         except Exception as exc:
             print(f"[CHECKPOINT WARNING] Failed to persist checkpoint for stage '{stage}': {exc}")
 
+    def _kickoff_with_salvage(self, crew: Crew, crew_tasks: list, label: str) -> str:
+        """
+        Run a crew. If it dies on an empty LLM response ("None or empty") after some tasks finished
+        (typically the research drafts), re-run ONLY the unfinished tasks once in a fresh crew. The
+        finished tasks keep their outputs, and CrewAI reads context from Task.output, so the retried
+        tasks still see the drafts. Any other error, or a second failure, is raised to the caller.
+        """
+        try:
+            return str(crew.kickoff()).strip()
+        except Exception as err:
+            if "none or empty" not in str(err).lower():
+                raise
+            finished = [t for t in crew_tasks if getattr(t, "output", None)]
+            remaining = [t for t in crew_tasks if not getattr(t, "output", None)]
+            if not finished or not remaining:
+                raise
+            print(
+                f"[FLOW CREW RETRY] {label}: empty LLM response after {len(finished)} finished task(s); "
+                f"re-running the remaining {len(remaining)} task(s) once with the existing drafts."
+            )
+            log_telemetry_event("crew_empty_response_retry", "start", metadata={
+                "label": label, "finished_tasks": len(finished), "remaining_tasks": len(remaining),
+            })
+            agents, seen = [], set()
+            for t in remaining:
+                if t.agent is not None and id(t.agent) not in seen:
+                    seen.add(id(t.agent))
+                    agents.append(t.agent)
+            retry_crew = Crew(
+                agents=agents,
+                tasks=remaining,
+                process=Process.sequential,
+                verbose=True,
+                step_callback=make_step_callback(f"{label}_retry"),
+            )
+            result = str(retry_crew.kickoff()).strip()
+            log_telemetry_event("crew_empty_response_retry", "end", metadata={"label": label, "recovered": True})
+            return result
+
     # ── STEP 1: Topic Selection ──────────────────────────────────────────────
 
     @start()
@@ -636,7 +675,9 @@ class UniverseFlow(Flow[UniverseState]):
             self.state.math_output = "**Math Score:** 4/4\n[MATH_PROVEN]"
         else:
             try:
-                self.state.evaluation_output = str(eval_crew.kickoff()).strip()
+                self.state.evaluation_output = self._kickoff_with_salvage(
+                    eval_crew, crew_tasks, f"eval_crew_l{level}_att{self.state.attempt}"
+                )
             except Exception as kickoff_err:
                 print(f"[FLOW CREW ERROR] Evaluation crew kickoff failed: {kickoff_err}")
                 self.state.evaluation_output = json.dumps({
@@ -860,7 +901,9 @@ class UniverseFlow(Flow[UniverseState]):
         )
 
         try:
-            eval_out = str(micro_crew.kickoff()).strip()
+            eval_out = self._kickoff_with_salvage(
+                micro_crew, [rev_task, math_task, verify_task, eval_task], f"micro_crew_rev{rev_num}"
+            )
             if hasattr(rev_task, "output") and rev_task.output:
                 self.state.research_output = str(rev_task.output.raw)
             if hasattr(math_task, "output") and math_task.output:

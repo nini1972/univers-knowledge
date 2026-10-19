@@ -220,13 +220,16 @@ class NaturalUnitDimensionAnalyzer:
     }
 
     # Bases whose labelled variants (rho_DE, T_reh, H_0, m_phi, ...) keep the base dimension.
-    LABEL_SAFE_BASES = {"rho", "Omega", "T", "H", "m", "M", "phi", "chi", "w", "mathcalL", "Gamma", "E", "a", "t"}
+    LABEL_SAFE_BASES = {"rho", "Omega", "T", "H", "m", "M", "phi", "w", "mathcalL", "Gamma", "E", "a", "t"}
     # Bare symbols whose meaning is near-universal here (counted as exact without a symbol table).
     UNAMBIGUOUS_BARE = {"m", "M", "t", "c", "hbar", "k_B", "pi", "e", "i", "mathcalL", "mathscrL",
-                        "phi", "chi", "psi", "barpsi", "g", "y", "w"}
-    # Bare symbols that are exact only in a scalar-field context (phi/chi/psi in the equation):
-    # V = potential density, lambda = coupling, rho/p = energy density/pressure, H = Hubble, T = temperature.
-    FIELD_CONTEXT_BARE = {"V", "lambda", "rho", "p", "H", "T"}
+                        "phi", "psi", "barpsi", "g", "y", "w"}
+    # Bare symbols that are exact only in a scalar-field context (phi/psi in the equation):
+    # V = potential density, lambda = coupling, rho/p = energy density/pressure, H = Hubble, T = temperature,
+    # chi = second scalar field (otherwise usually the chi^2 statistic).
+    FIELD_CONTEXT_BARE = {"V", "lambda", "rho", "p", "H", "T", "chi"}
+    # Indexed built-ins with competing meanings (Einstein tensor vs Horndeski braiding tensor G^{mu nu}).
+    AMBIGUOUS_INDEXED = {"G_IDX"}
 
     def __init__(self, canonical_dims: dict, custom_dims: dict | None = None):
         self.canonical = self._build_lookup(canonical_dims, extra=True)
@@ -296,7 +299,10 @@ class NaturalUnitDimensionAnalyzer:
             keys.append(f"{b}_IDX")
         keys.append(b)
 
+        indexed = has_index or label_is_index
         for key in keys:
+            if indexed and key == b:
+                continue  # G^{mu nu} is not the same object as a declared plain G
             v = self._lookup(self.custom, key)
             if v is not None:
                 return v, True
@@ -312,6 +318,8 @@ class NaturalUnitDimensionAnalyzer:
                     if has_index or label_is_index:
                         return v, False
                     return v, (b in self.UNAMBIGUOUS_BARE) or (self.field_context and b in self.FIELD_CONTEXT_BARE)
+                if key in self.AMBIGUOUS_INDEXED:
+                    return v, False
                 return v, True
         if inner_base:
             return self._resolve(inner_base, label, has_index, None)
@@ -668,7 +676,7 @@ class NaturalUnitDimensionAnalyzer:
         """
         s = normalize_latex_equation(eq)
         self.inner_mismatches = []
-        self.field_context = bool(re.search(r"\\(?:phi|varphi|chi|psi)(?![A-Za-z])", s))
+        self.field_context = bool(re.search(r"\\(?:phi|varphi|psi)(?![A-Za-z])", s))
         try:
             if any(p.strip() for p in self._split_top(s, lambda x, k: 1 if x[k] == "," else 0)[1:]):
                 return None, None  # several statements in one string
@@ -814,6 +822,8 @@ class DimensionalConsistencyTool(BaseTool):
         (r'(?:\\mathrm\{Var\}|\\text\{Var\}|\bVar)\s*\(\s*([^-\)]+?)\s*-\s*([^\)]+?)\s*\)\s*=.*-\s*2\s*(?:\\mathrm\{Cov\}|\\text\{Cov\}|\bCov)', 'CONSISTENT',
          'Variance of contrast includes full -2 Cov(A, B) term ✓'),
         # Dimensionless quantities
+        (r'^\s*(?:\\Delta\s*)?\\chi\s*\^\s*\{?\s*2\s*\}?', 'DIMENSIONLESS',
+         'chi^2 / Delta chi^2 goodness-of-fit statistic — dimensionless ([E]^0) ✓'),
         (r'^(?:\\alpha|c_s\^2|w\s*\(\s*a\s*\)|S_8|\\Omega_\w+|N_\{\\rm\s*eff\}|g_\{\*?s?\})\s*(?:=|\\equiv|\\approx)', 'DIMENSIONLESS',
          'Dimensionless physical ratio or cosmological parameter ([E]^0) ✓'),
         (r'e\^2\s*/.*4.*\\pi.*\\epsilon|e\^2.*4.*pi.*eps', 'DIMENSIONLESS',
@@ -902,6 +912,7 @@ class DimensionalConsistencyTool(BaseTool):
         consistent_count = 0
         dimensionless_count = 0
         inconsistent_count = 0
+        flag_count = 0
 
         for raw_eq in equations:
             eq_raw = str(raw_eq).strip()
@@ -926,24 +937,35 @@ class DimensionalConsistencyTool(BaseTool):
                 if op_verdict:
                     verdict, explanation, matched, basis = op_verdict, op_expl, True, "lagrangian_operator"
 
-            # Step 3: Term-level natural-unit [E]^n analysis — a definitive mismatch wins immediately
+            # Step 3: Term-level natural-unit [E]^n analysis. A mismatch computed from symbol dimensions is
+            # only a FLAG: one letter often has several meanings in a paper (rho = density vs correlation,
+            # G = Newton's constant vs a Horndeski function, chi = field vs chi^2 statistic).
             try:
                 nu_verdict, nu_expl = analyzer.analyze(eq) if not matched else (None, None)
             except Exception:
                 nu_verdict, nu_expl = None, None
-            if not matched and nu_verdict == "INCONSISTENT":
-                verdict, explanation, matched = "INCONSISTENT", nu_expl, True
-                basis = analyzer.last_basis or "canonical_defaults"
+            nu_basis = analyzer.last_basis if nu_verdict == "INCONSISTENT" else None
 
-            # Step 4: Known valid physics/cosmology/statistics patterns
+            # Step 4: Known valid physics/cosmology/statistics patterns (outrank a dimension flag)
             if not matched:
                 for pattern, v, expl in self.KNOWN_PATTERNS:
                     if re.search(pattern, eq, re.IGNORECASE):
                         verdict, explanation, matched, basis = v, expl, True, "known_valid_pattern"
                         break
 
-            # Step 5: Term-level analysis result (consistent, or possible mismatch on ambiguous symbols)
-            if not matched and nu_verdict == "CONSISTENT":
+            # Step 5: Term-level analysis result
+            if not matched and nu_verdict == "INCONSISTENT":
+                source = (
+                    "the report's own symbol table" if nu_basis == "declared_symbol_table"
+                    else "default symbol meanings"
+                )
+                verdict, matched = "DIMENSION_FLAG", True
+                basis = nu_basis or "canonical_defaults"
+                explanation = (
+                    f"{nu_expl} — computed from {source}. REVIEW: confirm as a real error (count it as INCONSISTENT) "
+                    "or dismiss it if a symbol has a different meaning here."
+                )
+            elif not matched and nu_verdict == "CONSISTENT":
                 verdict, explanation, matched, basis = "CONSISTENT", nu_expl, True, "term_dimensions"
             elif not matched and nu_verdict == "POSSIBLE_MISMATCH":
                 verdict, explanation, matched, basis = "UNDECIDABLE", nu_expl, True, "possible_mismatch"
@@ -970,6 +992,8 @@ class DimensionalConsistencyTool(BaseTool):
                 dimensionless_count += 1
             elif verdict == "INCONSISTENT":
                 inconsistent_count += 1
+            elif verdict == "DIMENSION_FLAG":
+                flag_count += 1
 
             results.append({
                 "equation": eq_raw[:140],
@@ -979,12 +1003,14 @@ class DimensionalConsistencyTool(BaseTool):
             })
 
         total = len(results)
-        undecidable = total - consistent_count - dimensionless_count - inconsistent_count
+        undecidable = total - consistent_count - dimensionless_count - inconsistent_count - flag_count
         verified_total = consistent_count + dimensionless_count
 
-        # Global Coherence Rule: UNDECIDABLE is never collapsed into ALL_CONSISTENT
+        # Global Coherence Rule: UNDECIDABLE / flags are never collapsed into ALL_CONSISTENT
         if inconsistent_count > 0:
             overall = "INCONSISTENCY_DETECTED"
+        elif flag_count > 0:
+            overall = "NEEDS_REVIEW"
         elif verified_total > 0 and undecidable == 0:
             overall = "ALL_CONSISTENT"
         elif verified_total > 0 and undecidable > 0:
@@ -997,13 +1023,16 @@ class DimensionalConsistencyTool(BaseTool):
             "consistent_count": consistent_count,
             "dimensionless_count": dimensionless_count,
             "inconsistent_count": inconsistent_count,
+            "dimension_flag_count": flag_count,
             "undecidable_count": undecidable,
             "total_equations": total,
             "results": results,
             "note": (
-                "GLOBAL COHERENCE RULE: If inconsistent_count > 0, math_status MUST be [MATH_FLAWED]. "
-                "If undecidable_count > 0, do NOT claim 'all equations were tool-verified as consistent'; "
-                "explicitly state which equations were tool-verified and check UNDECIDABLE equations against the Symbol Table."
+                "INCONSISTENT verdicts come from known error patterns and are definitive: if inconsistent_count > 0, "
+                "math_status MUST be [MATH_FLAWED]. DIMENSION_FLAG verdicts are mismatches computed from symbol "
+                "dimensions: confirm each one (then it counts as INCONSISTENT) or dismiss it with a one-line reason "
+                "(e.g. the symbol has a different meaning in that equation); dismissed flags do not make the math flawed. "
+                "If undecidable_count > 0, do NOT claim 'all equations were tool-verified as consistent'."
             )
         }, indent=2)
 
@@ -1091,15 +1120,21 @@ class SymbolicDerivationTool(BaseTool):
         2. Contrast variance bilinear expansion Var(A - B)
         """
         s_norm = normalize_latex_equation(step)
+        # "X ≠ Y" asserts that a form is WRONG — there is no identity to verify.
+        if re.search(r"\\neq?(?![A-Za-z])|≠|!=", s_norm):
+            return (
+                "STEP_ASSUMED",
+                "Inequality statement ('≠') — it asserts that two forms differ, so there is no identity to verify. Skipped."
+            )
         a, w0, wa, rho0 = sp_mod.symbols('a w0 wa rho0', positive=True, real=True)
         w_cpl = w0 + wa * (1 - a)
         # Exact d ln(rho) / d ln(a) required by continuity equation: -3*(1 + w(a))
         target_dlnrho_dlna = -3 * (1 + w_cpl)
 
-        # 1a. Verify exact CPL continuity integral FIRST: a^{-3(1+w0+wa)} * exp(-3*wa*(1-a)) or exp(3*wa*(a-1))
+        # 1a. Verify exact CPL continuity integral FIRST: a^{-3(1+w0+wa)} * exp(-3*wa*(1-a)) or e^{3*wa*(a-1)}
         if (
             re.search(r'1\s*\+\s*w_?0\s*\+\s*w_?a', s_norm)
-            and re.search(r'exp\s*\(\s*(?:-\s*3\s*\*?\s*w_?a\s*\*?\s*\(\s*1\s*-\s*a\s*\)|3\s*\*?\s*w_?a\s*\*?\s*\(\s*a\s*-\s*1\s*\))', cls._clean_for_sympy(s_norm))
+            and re.search(r'(?:exp|\be\s*\*\*)\s*\(\s*(?:-\s*3\s*\*?\s*w_?a\s*\*?\s*\(\s*1\s*-\s*a\s*\)|3\s*\*?\s*w_?a\s*\*?\s*\(\s*a\s*-\s*1\s*\))', cls._clean_for_sympy(s_norm))
         ):
             exact_ln_rho = -3 * (1 + w0 + wa) * sp_mod.log(a) - 3 * wa * (1 - a)
             actual_dlnrho_dlna = sp_mod.simplify(a * sp_mod.diff(exact_ln_rho, a))
@@ -1110,9 +1145,11 @@ class SymbolicDerivationTool(BaseTool):
                     "SymPy ODE check confirms d ln(rho)/d ln(a) = -3*(1 + w0 + wa*(1-a)) (residual = 0) for exact CPL integral ✓"
                 )
 
-        # 1b. Detect invalid algebraic exponent for variable w(a): a^{-3(1 + w(a))} or a^{-3(1 + w0 + wa*(1-a))}
+        # 1b. Detect invalid algebraic exponent for variable w(a): a^{-3(1 + w(a))} or a^{-3(1 + w0 + wa*(1-a))}.
+        #     The constant exponent -3(1+w0+wa) of the correct CPL solution is NOT flagged.
         if re.search(
-            r'a\s*(?:\^|\*\*)\s*[\(\{]?\s*-\s*3\s*\*?\s*[\(\[]\s*1\s*\+\s*(?:w\s*\(\s*[azt]\s*\)|w_?0\s*\+\s*w_?a)',
+            r'a\s*(?:\^|\*\*)\s*[\(\{]?\s*-\s*3\s*(?:\\cdot\s*|\*\s*)?[\(\[]\s*1\s*\+\s*'
+            r'(?:w(?:_\{[^{}]*\}|_[A-Za-z0-9])?\s*\(\s*[azt]\s*\)|w_?0\s*\+\s*w_?a\s*\*?\s*[\(\[]\s*1\s*-\s*a)',
             s_norm
         ):
             flawed_ln_rho = -3 * (1 + w_cpl) * sp_mod.log(a)

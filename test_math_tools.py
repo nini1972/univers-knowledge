@@ -47,12 +47,13 @@ class TestDimensionalConsistency(unittest.TestCase):
         eq = r"\mathcal{L} = -\frac{1}{2}\partial_\mu\phi\partial^\mu\phi - \frac{\lambda}{4}\phi^4 - \frac{c_6}{\Lambda^2}\phi^6"
         self.assertNotEqual(_verdicts([eq]), ["INCONSISTENT"])
 
-    def test_potential_with_wrong_term_caught(self):
-        self.assertEqual(_verdicts([r"V(\phi) = \lambda \phi^4 + m^2 \phi^3"]), ["INCONSISTENT"])
+    def test_potential_with_wrong_term_is_flagged_not_failed(self):
+        # A mismatch computed from symbol dimensions is a review flag, never a definitive verdict.
+        self.assertEqual(_verdicts([r"V(\phi) = \lambda \phi^4 + m^2 \phi^3"]), ["DIMENSION_FLAG"])
 
-    def test_symbol_table_makes_ambiguous_symbols_definitive(self):
+    def test_symbol_table_turns_possible_mismatch_into_flag(self):
         self.assertEqual(_verdicts([r"n_B = T^4"]), ["UNDECIDABLE"])
-        self.assertEqual(_verdicts([r"n_B = T^4"], {"n_B": 3, "T": 1}), ["INCONSISTENT"])
+        self.assertEqual(_verdicts([r"n_B = T^4"], {"n_B": 3, "T": 1}), ["DIMENSION_FLAG"])
 
     def test_thermal_mass_and_variance_patterns(self):
         verdicts = _verdicts([
@@ -61,7 +62,7 @@ class TestDimensionalConsistency(unittest.TestCase):
         ])
         self.assertEqual(verdicts, ["INCONSISTENT", "INCONSISTENT"])
 
-    def test_standard_equations_never_flagged_inconsistent(self):
+    def test_standard_equations_never_flagged(self):
         standard = [
             r"E = mc^2",
             r"E^2 = p^2c^2 + m^2c^4",
@@ -85,13 +86,69 @@ class TestDimensionalConsistency(unittest.TestCase):
             r"\mathrm{Var}(A - B) = \mathrm{Var}(A) + \mathrm{Var}(B) - 2\mathrm{Cov}(A,B)",
         ]
         for eq, verdict in zip(standard, _verdicts(standard)):
-            self.assertNotEqual(verdict, "INCONSISTENT", eq)
+            self.assertNotIn(verdict, ("INCONSISTENT", "DIMENSION_FLAG"), eq)
 
     def test_global_coherence_rule(self):
         out = _dims([r"E = m c^2", r"\nabla_\mu T^{\mu\nu} = 0"])
         self.assertEqual(out["overall_verdict"], "CONSISTENT_WITH_UNDECIDABLE")
         out = _dims([r"E = m c^2", r"n_B = T^4"], {"n_B": 3, "T": 1})
+        self.assertEqual(out["overall_verdict"], "NEEDS_REVIEW")
+        out = _dims([r"E = m c^2", r"\rho = \rho_0 a^{-3(1+w(a))}"])
         self.assertEqual(out["overall_verdict"], "INCONSISTENCY_DETECTED")
+
+
+class TestRun106175419435Regressions(unittest.TestCase):
+    """Exact equations that produced false INCONSISTENT / STEP_INVALID verdicts in the 2026-10-19 nightly run."""
+
+    TABLE = {"\\phi": 1, "X": 4, "V": 4, "\\rho": 4, "G": 1, "K": 4, "\\sigma_1": 0, "\\sigma_2": 0, "v_1": 0, "v_2": 0}
+
+    def test_chi_squared_statistics_are_dimensionless(self):
+        for eq in (
+            r"\Delta\chi^2_{1\,dof} = 23.49",
+            r"\Delta\chi^2_{1\,dof} = 16.60",
+            r"\Delta\chi^2 \equiv \sigma_{tension}^{\,2}",
+            r"\Delta\chi^2 \approx 23.5",
+        ):
+            self.assertEqual(_verdicts([eq], self.TABLE), ["DIMENSIONLESS"], eq)
+
+    def test_horndeski_g_is_not_newtons_constant(self):
+        for eq in (
+            r"\mathcal{L}_{KGB} = G(\phi,X)\,\Box\phi - K(\phi,X)",
+            r"L = G^{\mu\nu}\partial_\mu\phi\,\partial_\nu\phi - K(\phi,X)",
+            r"G^{\mu\nu} \equiv G(\phi,X)\,\partial^\mu\phi\,\partial^\nu\phi / \sqrt{X}",
+        ):
+            self.assertNotIn(_verdicts([eq], self.TABLE)[0], ("INCONSISTENT", "DIMENSION_FLAG"), eq)
+            self.assertNotEqual(_verdicts([eq])[0], "INCONSISTENT", eq)
+
+    def test_symbol_reuse_is_a_flag_not_a_failure(self):
+        # rho is declared as energy density but used here as a correlation coefficient.
+        eq = r"\sigma_{tension} = \frac{|v_1-v_2|}{\sqrt{\sigma_1^2+\sigma_2^2-2\rho\,\sigma_1\sigma_2}}"
+        self.assertEqual(_verdicts([eq], self.TABLE), ["DIMENSION_FLAG"])
+
+    def test_correct_cpl_integral_with_e_power_and_inequality_statement(self):
+        tool = SymbolicDerivationTool()
+        steps = json.loads(tool._run("CPL", json.dumps([
+            r"\rho(a) = \rho_{\phi,0}\,a^{-3(1+w_0+w_a)}\,e^{3w_a(a-1)}",
+            r"a^{-3(1+w(a))} \neq \rho(a)/\rho_{\phi,0}\quad \text{for } w_a \neq 0",
+        ])))["steps"]
+        self.assertEqual(steps[0]["verdict"], "STEP_VERIFIED", steps[0])
+        self.assertEqual(steps[1]["verdict"], "STEP_ASSUMED", steps[1])
+
+    def test_symbol_table_cells_with_definitions(self):
+        from src.math_precheck import parse_symbol_table
+
+        table = parse_symbol_table(
+            "| Symbol | Meaning | Dimension |\n|---|---|---|\n"
+            "| $w \\equiv p/\\rho$ | equation of state | dimensionless |\n"
+            "| $H \\equiv \\dot a/a$ | Hubble rate | $[E]^1$ |\n"
+            "| $m_\\phi = \\sqrt{V''}$ | field mass | $[E]^1$ |\n"
+            "| **$G^{\\mu\\nu} \\equiv G(\\phi, X)\\, \\partial^\\mu\\phi\\, \\partial^\\nu\\phi$** | braiding tensor | $[E]^0$ |\n"
+        )
+        self.assertEqual(table.get("w"), 0.0)
+        self.assertEqual(table.get("H"), 1.0)
+        self.assertEqual(table.get("m_\\phi"), 1.0)
+        self.assertIn("G^{\\mu\\nu}", table)
+        self.assertFalse(any("equiv" in k or "=" in k for k in table), table)
 
 
 class TestSymbolicDerivation(unittest.TestCase):
@@ -281,22 +338,23 @@ class TestMathPrecheck(unittest.TestCase):
         self.assertEqual(table["\\lambda"], 0.0)
         self.assertNotIn("H_0", table)  # SI units are not mass dimensions
 
-    def test_blocking_advisory_and_quoted(self):
+    def test_blocking_flags_and_quoted(self):
         from src.math_precheck import run_math_precheck
 
         pre = run_math_precheck(DRAFT_WITH_TABLE)
         blocking = {e["equation"]: e["basis"] for e in pre["blocking"]}
-        self.assertEqual(blocking.get(r"\rho_{\rm DE}(a) = \rho_0 a^{-3(1+w(a))}"), "known_error_pattern")
-        self.assertEqual(blocking.get("n_B = T^4"), "declared_symbol_table")
+        self.assertEqual(blocking, {r"\rho_{\rm DE}(a) = \rho_0 a^{-3(1+w(a))}": "known_error_pattern"})
+        flagged = {e["equation"]: e["basis"] for e in pre["flags"]}
+        self.assertEqual(flagged.get("n_B = T^4"), "declared_symbol_table")  # a flag, not a block
         self.assertEqual(len(pre["quoted_as_incorrect"]), 1)  # the "naive form ... is incorrect" sentence
         self.assertGreaterEqual(pre["verified_count"], 1)    # E = mc^2
 
-    def test_default_based_mismatch_is_advisory_only(self):
+    def test_default_based_mismatch_is_only_a_flag(self):
         from src.math_precheck import run_math_precheck
 
         pre = run_math_precheck(r"The potential is $$V(\phi) = \lambda \phi^4 + m^2 \phi^3$$ in our model.")
         self.assertEqual(pre["blocking_count"], 0)
-        self.assertEqual(len(pre["advisory"]), 1)
+        self.assertEqual(len(pre["flags"]), 1)
 
     def test_prompt_block_and_crewai_callback(self):
         from types import SimpleNamespace
@@ -309,8 +367,10 @@ class TestMathPrecheck(unittest.TestCase):
         attach_precheck([research], math, on_result=lambda pre: captured.update(pre))
         research.callback(SimpleNamespace(raw=DRAFT_WITH_TABLE))
         self.assertIn("AUTOMATED PRE-CHECK", math.description)
-        self.assertIn("Code-confirmed INCONSISTENT (blocks approval until corrected): 2", math.description)
-        self.assertEqual(captured["blocking_count"], 2)
+        self.assertIn("Definitive INCONSISTENT (known error patterns; blocks approval until corrected): 1", math.description)
+        self.assertIn("DIMENSION FLAGS to review", math.description)
+        self.assertIn("Dismissed Dimension Flags", math.description)
+        self.assertEqual(captured["blocking_count"], 1)
 
     def test_precheck_never_raises(self):
         from src.math_precheck import run_math_precheck
@@ -326,15 +386,65 @@ class TestGateWithPrecheck(unittest.TestCase):
         pre = run_math_precheck(DRAFT_WITH_TABLE)
         decision, gate = apply_math_gate({"status": "approved"}, MATH_REPORT_OK, pre)
         self.assertEqual(decision["status"], "rejected")
-        self.assertEqual(gate["precheck_blocking"], 2)
+        self.assertEqual(gate["precheck_blocking"], 1)
         self.assertIn("automated pre-check", decision["follow_up_questions"][0])
 
-    def test_advisory_precheck_does_not_block(self):
+    def test_flags_do_not_block(self):
         from src.math_precheck import run_math_precheck
 
-        pre = run_math_precheck(r"$$V(\phi) = \lambda \phi^4 + m^2 \phi^3$$")
+        pre = run_math_precheck(r"$$V(\phi) = \lambda \phi^4 + m^2 \phi^3$$ and $$n_B = T^4$$")
         decision, _ = apply_math_gate({"status": "approved"}, MATH_REPORT_OK, pre)
         self.assertEqual(decision["status"], "approved")
+
+    def test_dismissed_flags_line_is_parsed_and_not_blocking(self):
+        report = MATH_REPORT_OK.replace("INCONSISTENT=0;", "INCONSISTENT=0; DISMISSED_FLAGS=3;")
+        decision, gate = apply_math_gate({"status": "approved"}, report)
+        self.assertEqual(decision["status"], "approved")
+        self.assertEqual(gate["tool_verdicts"]["DISMISSED_FLAGS"], 3)
+
+
+class TestEmptyResponseSalvage(unittest.TestCase):
+    """The flow re-runs only the unfinished tasks once when a crew dies on an empty LLM response."""
+
+    def _run(self, first_error, retry_result="final decision"):
+        from types import SimpleNamespace
+        import universe_flow
+
+        calls = []
+
+        class FakeCrew:
+            def __init__(self, agents=None, tasks=None, **kwargs):
+                self.tasks = tasks
+                calls.append(self)
+
+            def kickoff(self):
+                if len(calls) == 1 and first_error is not None:
+                    raise first_error
+                return retry_result
+
+        research = SimpleNamespace(output=SimpleNamespace(raw="draft"), agent=object())
+        math_agent = object()
+        math = SimpleNamespace(output=None, agent=math_agent)
+        student = SimpleNamespace(output=None, agent=object())
+        originals = (universe_flow.Crew, universe_flow.log_telemetry_event)
+        universe_flow.Crew = FakeCrew
+        universe_flow.log_telemetry_event = lambda *a, **k: None
+        try:
+            first = FakeCrew(tasks=[research, math, student])
+            out = universe_flow.UniverseFlow._kickoff_with_salvage(None, first, [research, math, student], "test")
+        finally:
+            universe_flow.Crew, universe_flow.log_telemetry_event = originals
+        return out, calls
+
+    def test_retries_only_unfinished_tasks(self):
+        out, calls = self._run(Exception("Invalid response from LLM call - None or empty."))
+        self.assertEqual(out, "final decision")
+        self.assertEqual(len(calls), 2)
+        self.assertEqual(len(calls[1].tasks), 2)  # math + student; the finished research is not re-run
+
+    def test_other_errors_are_not_retried(self):
+        with self.assertRaises(RuntimeError):
+            self._run(RuntimeError("rate limited"))
 
 
 class TestInterviewHelpers(unittest.TestCase):

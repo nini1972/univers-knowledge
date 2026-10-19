@@ -210,18 +210,19 @@ class UniverseTasks:
 
                 STEP 5 — Compute the Math Score and assign math_status (GLOBAL COHERENCE RULE):
                 - Global Coherence Rule: Your overall verdict MUST be the logical conjunction of your itemized equation checks. NEVER state in your summary that "all equations are dimensionally consistent" if you or a tool identified an itemized dimensional mismatch, missing covariance term, or erroneous integral (e.g., writing rho ~ a^(-3(1+w(a))) for variable w(a)). Report any `UNDECIDABLE` equations honestly as `UNDECIDABLE`.
+                - Two levels of tool verdict: `INCONSISTENT` comes from known error patterns and is definitive. `DIMENSION_FLAG` is a mismatch computed from symbol dimensions and needs your judgment, because one letter often has several meanings in a paper (rho as energy density vs a correlation coefficient, G as Newton's constant vs a Horndeski function, chi as a field vs the chi^2 statistic). For each flag: if it is a real error, count it as INCONSISTENT; if it is an artefact of symbol reuse, dismiss it under `### Dismissed Dimension Flags` with a one-line reason. Dismissed flags do NOT make the math flawed — but you must not dismiss a flag whose symbols really carry the declared meaning.
                 Award 1 point for each criterion met:
                   - Point 1: At least 1 equation was successfully extracted (Step 1)
-                  - Point 2: All extracted equations are CONSISTENT or DIMENSIONLESS (Step 2) with coherent conventions, OR math is purely topological
+                  - Point 2: All extracted equations are CONSISTENT or DIMENSIONLESS (Step 2) with coherent conventions (dismissed flags allowed), OR math is purely topological
                   - Point 3: Topological structures are VALID (Step 3), OR dimensional verification passed fully
                   - Point 4: At least 1 numerical benchmark MATCHES (Step 4), OR concept is theoretical with no experimental values
 
                 Assign math_status based on results:
                   [MATH_PROVEN]      — Score 4/4, all steps verified
-                  [MATH_CONSISTENT]  — Score 2-3/4, no INCONSISTENT flags
+                  [MATH_CONSISTENT]  — Score 2-3/4, no INCONSISTENT verdicts (dismissed flags allowed)
                   [MATH_CONJECTURED] — Has unproven assumptions clearly flagged
                   [MATH_TOPOLOGICAL] — Primarily topological, structurally valid
-                  [MATH_FLAWED]      — Any INCONSISTENT verdict or broken mathematical derivation detected
+                  [MATH_FLAWED]      — Any INCONSISTENT verdict (including confirmed flags) or broken mathematical derivation detected
                   [MATH_PENDING]     — No equations found at all
 
                 STEP 6 — Write the Math Verification Report:
@@ -232,8 +233,8 @@ class UniverseTasks:
                 **Concept:** {concept}
                 **Math Score:** X/4
                 **Math Status:** [MATH_???]
-                **Tool Verdicts:** INCONSISTENT=<n>; UNDECIDABLE=<n>; STEP_INVALID=<n>; LIMIT_MISMATCH=<n>; CLAIM_MISMATCH=<n>
-                (copy these counts exactly from the tool outputs; use 0 when a tool was not run. This line is machine-read:
+                **Tool Verdicts:** INCONSISTENT=<n>; DISMISSED_FLAGS=<n>; UNDECIDABLE=<n>; STEP_INVALID=<n>; LIMIT_MISMATCH=<n>; CLAIM_MISMATCH=<n>
+                (INCONSISTENT = definitive verdicts + flags you confirmed as real errors; use 0 when a tool was not run. This line is machine-read:
                 any INCONSISTENT, STEP_INVALID or LIMIT_MISMATCH on the paper's equations blocks approval.)
 
                 ### Conventions & Validity Audit
@@ -244,6 +245,9 @@ class UniverseTasks:
 
                 ### Dimensional Consistency
                 (per-equation verdict from tool + natural-unit/SI check)
+
+                ### Dismissed Dimension Flags
+                (each dismissed DIMENSION_FLAG with a one-line reason, or "None")
 
                 ### Topological Analysis
                 (topology type and structural assessment, or "Not topological")

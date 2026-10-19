@@ -100,7 +100,7 @@ def _get_llm(role: str) -> LLM | None:
             # Default to 'low' for fast-acting tool-using roles to avoid gateway timeouts.
             role_effort_env = f"OPENROUTER_REASONING_EFFORT_{role.upper()}"
             reasoning_effort = os.getenv(role_effort_env) or os.getenv("OPENROUTER_REASONING_EFFORT")
-            if not reasoning_effort and role in ("researcher", "student", "visualizer", "peer_reviewer"):
+            if not reasoning_effort and role in ("researcher", "student", "visualizer", "peer_reviewer", "math"):
                 reasoning_effort = "low"
 
             llm_kwargs = {

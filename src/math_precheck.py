@@ -12,11 +12,12 @@ no LLM in the loop. The result is:
   * passed to the flow's math gate, which blocks approval on high-confidence findings even if
     the Math Physicist's report omits or miscopies them.
 
-Only findings the draft cannot dispute block approval:
+Only definitive findings block approval:
   - known error patterns (e.g. rho ∝ a^{-3(1+w(a))}, dropped -2Cov(A,B), m_T^2 ~ g^2 T^2 phi^2),
-  - unsuppressed phi^n (n >= 5) Lagrangian terms,
-  - term mismatches computed purely from the draft's OWN declared symbol table.
-Mismatches that rely on built-in default dimensions are reported as advisory only.
+  - unsuppressed phi^n (n >= 5) Lagrangian terms.
+Mismatches computed from symbol dimensions — even from the draft's own symbol table — are DIMENSION
+FLAGS for the Math Physicist to confirm or dismiss, because one letter often has several meanings in a
+paper (rho = density vs correlation coefficient, G = Newton's constant vs a Horndeski function).
 Equations the text itself presents as wrong ("the naive form ... is incorrect") are excluded.
 """
 from __future__ import annotations
@@ -29,7 +30,7 @@ try:
 except ImportError:  # pragma: no cover - package-style import
     from src.tools.math_tools import DimensionalConsistencyTool
 
-BLOCKING_BASES = ("known_error_pattern", "lagrangian_operator", "declared_symbol_table")
+BLOCKING_BASES = ("known_error_pattern", "lagrangian_operator")
 MAX_EQUATIONS = 40
 
 _RELATION_RE = re.compile(r"(=|\\equiv|\\approx|\\simeq|\\sim|\\propto|<|>|\\le|\\ge|\\ll|\\gg)")
@@ -122,13 +123,22 @@ def _parse_dimension_cell(cell: str, header: str) -> float | None:
 
 
 def _split_symbols(cell: str) -> list[str]:
-    c = cell.replace("$", "").replace("`", "").strip()
+    c = cell.replace("$", "").replace("`", "").replace("**", "").strip()
     out = []
     for part in re.split(r"\s*(?:,|;|/|\bor\b|\band\b)\s*", c):
+        # Drop an inline definition: "w \equiv p/\rho" -> "w", "m_\phi = \sqrt{V''}" -> "m_\phi"
+        part = re.split(r"\s*(?::=|=|\\equiv|\\approx|\\simeq|\\sim)\s*", part.strip(), maxsplit=1)[0]
         part = re.sub(r"\(.*\)$", "", part.strip())  # V(\phi) -> V
+        part = part.rstrip("\\ ").strip()
         if part and len(part) <= 40:
             out.append(part)
     return out
+
+
+def _strip_definitions(cell: str) -> str:
+    """Cut a symbol cell at its first definition sign so separators inside the definition don't split it."""
+    c = cell.replace("$", "").replace("`", "").replace("**", "")
+    return re.split(r"\s*(?::=|=|\\equiv|\\approx|\\simeq|\\sim)\s*", c, maxsplit=1)[0]
 
 
 def parse_symbol_table(text: str) -> dict[str, float]:
@@ -150,7 +160,7 @@ def parse_symbol_table(text: str) -> dict[str, float]:
                 if sym_col is not None and dim_col is not None and max(sym_col, dim_col) < len(cells):
                     val = _parse_dimension_cell(cells[dim_col], headers[dim_col])
                     if val is not None:
-                        for sym in _split_symbols(cells[sym_col]):
+                        for sym in _split_symbols(_strip_definitions(cells[sym_col])):
                             dims[sym] = val
                 i += 1
             continue
@@ -172,6 +182,7 @@ def run_math_precheck(research_text: str) -> dict:
             "equation_count": len(equations),
             "symbol_table": symbol_table,
             "blocking": [],
+            "flags": [],
             "advisory": [],
             "quoted_as_incorrect": [],
             "undecidable_count": 0,
@@ -194,13 +205,12 @@ def run_math_precheck(research_text: str) -> dict:
                 "explanation": res.get("explanation", ""),
             }
             verdict = res.get("verdict")
-            if verdict == "INCONSISTENT":
-                if eq_info["quoted_as_incorrect"]:
-                    result["quoted_as_incorrect"].append(entry)
-                elif res.get("basis") in BLOCKING_BASES:
-                    result["blocking"].append(entry)
-                else:
-                    result["advisory"].append(entry)
+            if verdict in ("INCONSISTENT", "DIMENSION_FLAG") and eq_info["quoted_as_incorrect"]:
+                result["quoted_as_incorrect"].append(entry)
+            elif verdict == "INCONSISTENT" and res.get("basis") in BLOCKING_BASES:
+                result["blocking"].append(entry)
+            elif verdict in ("INCONSISTENT", "DIMENSION_FLAG"):
+                result["flags"].append(entry)
             elif verdict == "UNDECIDABLE":
                 result["undecidable_count"] += 1
                 if res.get("basis") == "possible_mismatch":
@@ -210,7 +220,7 @@ def run_math_precheck(research_text: str) -> dict:
         result["blocking_count"] = len(result["blocking"])
         return result
     except Exception as exc:  # the pre-check must never break a crew run
-        return {"ran": False, "error": str(exc), "blocking": [], "blocking_count": 0,
+        return {"ran": False, "error": str(exc), "blocking": [], "blocking_count": 0, "flags": [],
                 "advisory": [], "quoted_as_incorrect": [], "equation_count": 0,
                 "undecidable_count": 0, "verified_count": 0, "symbol_table": {}}
 
@@ -223,6 +233,7 @@ def summarize_precheck(precheck: dict) -> dict:
         "equations": precheck.get("equation_count", 0),
         "symbols_declared": len(precheck.get("symbol_table") or {}),
         "blocking": precheck.get("blocking_count", 0),
+        "dimension_flags": len(precheck.get("flags") or []),
         "advisory": len(precheck.get("advisory") or []),
         "undecidable": precheck.get("undecidable_count", 0),
         "verified": precheck.get("verified_count", 0),
@@ -241,28 +252,35 @@ def format_precheck_for_prompt(precheck: dict) -> str:
     lines = [
         "",
         "",
-        "AUTOMATED PRE-CHECK (computed in code on the draft before your review — these verdicts are not opinions):",
+        "AUTOMATED PRE-CHECK (computed in code on the draft before your review):",
         f"- Relational equations extracted: {p.get('equation_count', 0)}; "
         f"symbols read from the draft's Symbol Table: {len(syms)}"
         + (f" ({', '.join(list(syms)[:12])}{'…' if len(syms) > 12 else ''})" if syms else
            " — NO machine-readable Symbol | Meaning | Dimension table found; flag this in your Conventions audit."),
         f"- Tool-verified CONSISTENT/DIMENSIONLESS: {p.get('verified_count', 0)}; UNDECIDABLE: {p.get('undecidable_count', 0)}",
-        f"- Code-confirmed INCONSISTENT (blocks approval until corrected): {p.get('blocking_count', 0)}",
+        f"- Definitive INCONSISTENT (known error patterns; blocks approval until corrected): {p.get('blocking_count', 0)}",
     ]
     for k, e in enumerate(p.get("blocking") or [], 1):
         lines.append(f"    {k}. `{e['equation']}` [{e['basis']}] — {e['explanation'][:220]}")
+    flags = p.get("flags") or []
+    lines.append(f"- DIMENSION FLAGS to review (mismatches computed from symbol dimensions): {len(flags)}")
+    for k, e in enumerate(flags[:8], 1):
+        lines.append(f"    {k}. `{e['equation']}` — {e['explanation'][:200]}")
     advisory = p.get("advisory") or []
     if advisory:
-        lines.append(f"- Possible mismatches that rely on default symbol meanings (verify against the Symbol Table): {len(advisory)}")
-        for k, e in enumerate(advisory[:6], 1):
-            lines.append(f"    {k}. `{e['equation']}` — {e['explanation'][:180]}")
+        lines.append(f"- Possible mismatches on ambiguous symbols (low confidence): {len(advisory)}")
+        for k, e in enumerate(advisory[:4], 1):
+            lines.append(f"    {k}. `{e['equation']}` — {e['explanation'][:160]}")
     quoted = p.get("quoted_as_incorrect") or []
     if quoted:
         lines.append(f"- Equations the draft itself presents as incorrect (not counted): {len(quoted)}")
     lines.extend([
         "PRE-CHECK INSTRUCTIONS:",
-        "- Include every code-confirmed INCONSISTENT equation in your Tool Verdicts INCONSISTENT count and in your "
-        "Dimensional Consistency section; never describe these equations as consistent.",
+        "- Count every definitive INCONSISTENT equation in your Tool Verdicts INCONSISTENT count; never describe it as consistent.",
+        "- For each DIMENSION FLAG decide: (a) a real error → add it to INCONSISTENT; or (b) an artefact — e.g. the same "
+        "letter means something else in that equation (rho as a correlation coefficient, G as a Horndeski function, "
+        "chi^2 as a statistic) — list it under '### Dismissed Dimension Flags' with a one-line reason. Dismissed flags "
+        "do NOT make the math flawed.",
         "- Do not re-run the Equation Extractor / Dimensional Consistency Checker on the same equations just to repeat "
         "these verdicts. Spend your tool calls on what the pre-check could not decide: UNDECIDABLE equations (pass the "
         "Symbol Table), derivations and limits (Symbolic Derivation Verifier), and worked numbers (Physics Calculator).",
