@@ -1,0 +1,150 @@
+{
+  "stage": "escalated",
+  "timestamp": 1792371989.134663,
+  "state": {
+    "level": 1,
+    "dry_run": false,
+    "concept": "Spontaneous Symmetry Breaking and the Goldstone Theorem",
+    "topic_metadata": {},
+    "output_location": "knowledge_base/level_1_fundamental_physics/spontaneous_symmetry_breaking_and_the_goldstone_theorem.md",
+    "level_folder": "level_1_fundamental_physics",
+    "filename": "spontaneous_symmetry_breaking_and_the_goldstone_theorem.md",
+    "attempt": 2,
+    "max_attempts": 2,
+    "micro_revisions_count": 0,
+    "max_micro_revisions": 1,
+    "research_output": "# Spontaneous Symmetry Breaking and the Goldstone Theorem — Research Report\n\n**Status classification:** The general principles (Goldstone theorem, SSB order-parameter framework) are **[VERIFIED]** — proven rigorously (Wightman/axiomatic QFT, lattice statistical mechanics) and experimentally confirmed (Higgs boson at 5σ in 2012; Goldstone/Pseudo-Goldstone modes in superfluids, magnons, and Rydberg arrays). Specific embeddings (SM Higgs potential, cosmological relaxion/axion models) are **[THEORETICAL]** or **[MODEL-DEPENDENT]**.\n\n---\n\n## 1. Concept Overview\n\nSpontaneous symmetry breaking (SSB) occurs when the laws (Lagrangian) of a system possess a symmetry group $G$ that the physical ground state does not: the vacuum maps non-trivially into itself only under a subgroup $H \\subset G$. The degeneracy of vacua is a consequence of the thermodynamic/infinite-volume limit, not of any explicit symmetry-breaking term (Heissenberg & Strocchi 2020). The **Goldstone theorem** states that each spontaneously broken continuous global symmetry generator entails a massless scalar excitation — a **Nambu–Goldstone boson (NGB)**. The **Higgs mechanism** (Englert–Brout 1964; Higgs 1964, 1966) evades the theorem when the broken symmetry is *local* (gauged): the would-be NGB is \"eaten\" as the longitudinal polarization of the gauge boson, which acquires mass $m_A = g v$ — the verified mass-generation mechanism of the Standard Model ($W^\\pm, Z$) and of superfluid phonons/superconductors.\n\n**Counter-hypothesis / alternative frameworks:** (i) **Explicit breaking** — small explicit terms convert NGBs into *pseudo*-NGBs (pions with $m_\\pi \\approx 135$–140 MeV; QCD axion), removing exact masslessness; (ii) **Mermin–Wagner–Hohenberg** — in 1+1 and 2+1 dimensions with short-range interactions, continuous symmetries cannot be spontaneously broken at finite $T$ (rigorous; Fröhlich 2024), so no Goldstone boson appears; (iii) **Inverse Higgs / type-B counting** in non-Lorentz-invariant systems (Brauner 2010): not every broken generator yields an independent NGB (e.g., broken boosts yield no independent excitation; Alberte & Nicolis 2020); (iv) In quantum gravity, global symmetries are conjectured to be broken (Swampland), forcing all Goldstone modes to become massive axions.\n\n## 2. Physical Mechanisms & Empirical Anchors\n\n- **Relativistic QFT:** Mexican-hat potential $V(\\phi) = \\lambda(|\\phi|^2 - v^2/2)^2$; vacuum manifold $S^1$; massless excitation along the flat direction.\n- **Gaugeing:** local $U(1)$ → massive vector + massive scalar (Higgs 1966).\n- **Condensed matter:** ferromagnetism (magnons, type-B, quadratic dispersion), superfluid He-4 and BECs (phonons), chiral symmetry breaking in QCD (pions as pseudo-NGBs, $f_\\pi \\approx 92$ MeV).\n- **Experiment:** LHC measured $m_H \\approx 125$ GeV, confirming the Higgs sector; Rydberg-atom arrays (2024) have directly observed simultaneous Higgs and Goldstone modes in a U(1)-broken system (DOI: 10.48550/arxiv.2410.06047).\n\n**Cosmological connection & tensions (where SSB enters early-universe physics):** Electroweak SSB at $T_{\\rm EW} \\sim 159$ GeV and hypothetical high-scale SSB (e.g., PQ symmetry for the QCD axion, relaxion) feed directly into the thermal history $g_*(T) \\approx 106.75$ for $T \\geq 175$ GeV. Observational tensions relevant to SSB-adjacent new physics:\n- **Hubble tension (>5σ):** $H_0 = 73.04 \\pm 1.04$ (SH0ES+JWST) vs. $67.36 \\pm 0.54$ km s⁻¹ Mpc⁻¹ (Planck 2018 flat ΛCDM); early-dark-energy (scalar-field) resolutions invoke fields rolling off SSB-like potentials.\n- **DESI 2024–2025 dynamical dark energy:** up to 3.9σ preference for $w_0 = -0.727 \\pm 0.067$, $w_a = -1.05^{+0.31}_{-0.27}$ over $w = -1$, favoring thawing quintessence scalars — precisely the kind of light scalar whose flatness is protected by shift-symmetry/Goldstone physics (axion-like quintessence).\n- **JWST z > 10 galaxies:** JADES-GS-z14-0 at $z = 14.32^{+0.08}_{-0.20}$, $M_{\\rm UV} = -20.81 \\pm 0.16$; UV luminosity density at $z \\approx 12$ exceeds fiducial ΛCDM ($\\epsilon_* \\leq 0.15$) by 3–10×, motivating EDE/modified-gravity counter-hypotheses.\n\n## 3. Mathematical Framework\n\n### Conventions & Symbol Table\n- Metric signature $(-,+,+,+)$; natural units $\\hbar = c = k_B = 1$; reduced Planck mass $M_{\\rm Pl} = 2.435\\times10^{18}$ GeV (never mixed with $m_{\\rm Pl} = 1.221\\times10^{19}$ GeV).\n\n| Symbol | Meaning | Dimension |\n|---|---|---|\n| $\\phi = \\rho\\, e^{i\\theta}$ | Complex scalar order parameter | $[E]^1$ |\n| $\\mu^2$ | Tachyonic mass parameter ($\\mu^2 > 0$) | $[E]^2$ |\n| $\\lambda$ | Quartic self-coupling | $[E]^0$ |\n| $v$ | VEV, $v^2 = \\mu^2/\\lambda$ | $[E]^1$ |\n| $m_\\theta, m_\\rho$ | Goldstone / radial (Higgs) masses | $[E]^1$ |\n| $J^\\mu_a$ | Conserved Noether currents | $[E]^3$ |\n| $F^a_{\\mu\\nu}, g$ | Gauge field strength, gauge coupling | $[E]^2, [E]^0$ |\n| $m_A$ | Gauge boson mass $= g v$ | $[E]^1$ |\n| $T_{\\rm EW}$ | Electroweak SSB temperature ≈ 159 GeV | $[E]^1$ |\n| $f_\\pi$ | Pion decay constant ≈ 92 MeV | $[E]^1$ |\n\n### Validity Domain & Claim Scope\n- **[GENERAL]** Goldstone theorem: holds for any continuous internal global symmetry spontaneously broken in a relativistic, Lorentz-invariant QFT with positive norm Hilbert space; proofs require only current conservation and Lorentz invariance (Goldstone–Salam–Weinberg 1962). Rigorous in axiomatic QFT and statistical mechanics (Fröhlich 2024).\n- **[MODEL-DEPENDENT: Lorentz-invariant, relativistic theory]** — fails in non-relativistic systems without the theorem's assumptions; there NGB counting is model-dependent (Brauner 2010; Alberte & Nicolis 2020).\n- **[MODEL-DEPEND: $D \\leq 2$ spatial dims, short-range interactions, $T > 0$]** — Mermin–Wagner–Hohenberg forbids continuous SSB.\n- **[MODEL-DEPENDENT: local gauge symmetry, unitary gauge, $\\lambda > 0$]** — Higgs mechanism mass formula; gauge \"symmetry breaking\" is technically a gauge choice (Elitzur's theorem: gauge symmetries cannot truly break spontaneously).\n- **[MODEL-DEPENDENT: SM Higgs potential, $V > 0$, $\\lambda \\approx 0.13$]** — stability of electroweak vacuum up to $\\Lambda \\sim 10^{10}$–$10^{18}$ GeV depends on running of $\\lambda$.\n\n### Governing Equations & Observables\n**Assumptions → Equations → Observables:**\n\n1. **Mexican-hat potential** [MODEL-DEPENDENT: $\\mu^2 > 0$]:\n$$V(\\phi) = \\mu^2 |\\phi|^2 + \\lambda |\\phi|^4, \\quad \\langle \\phi \\rangle = \\frac{v}{\\sqrt{2}},\\; v = \\sqrt{\\mu^2/\\lambda}$$\nExpanding $\\phi = (v + \\rho + i\\theta)/\\sqrt{2}$: $m_\\rho^2 = 2\\mu^2$, $\\boxed{m_\\theta^2 = 0}$ (Goldstone).\n2. **Goldstone theorem (GSW 1962)** [GENERAL]: For a broken generator $Q_a$ with current $J^\\mu_a$, Lorentz invariance + current conservation imply\n$$\\langle 0 | J^\\mu_a(0) | \\pi^b(p) \\rangle = i p^\\mu F_{ab}, \\quad 0 = \\partial_\\mu J^\\mu_a \\;\\Rightarrow\\; m_\\pi^2 \\, F_{ab} = 0 \\;\\Rightarrow\\; m_\\pi = 0 \\text{ if } F_{ab} \\neq 0.$$\n3. **Higgs mechanism** (Higgs 1964, 1966; Englert–Brout 1964) [MODEL-DEPENDENT: local gauge]:\n$$\\mathcal{L} \\supset |D_\\mu \\phi|^2 - V, \\; D_\\mu = \\partial_\\mu - i g A_\\mu \\;\\Rightarrow\\; m_A = g v, \\; m_{\\theta}\\to 0 \\text{ (eaten)},\\; \\text{3 polarizations}$$\nObservable: $W$/$Z$ boson masses ($m_Z = 91.19$ GeV — verified), $m_H = \\sqrt{2\\lambda}\\,v \\approx 125$ GeV — verified at LHC.\n4. **Thermal restoration** [MODEL-DEPENDENT: high-$T$ expansion]: finite-temperature effective potential $V_{\\rm eff}(\\phi,T) = V(\\phi) + c T^2 |\\phi|^2$; SSB disappears for $T > T_c \\sim v$, changing $g_*(T_{\\rm EW}) = 106.75$ and affecting $N_{\\rm eff}$ / $r_s(z_*)$ — a lever on the Hubble tension (EDE models).\n\n## 4. Limitations, Skepticism & Empirical Gaps\n\n1. **The \"no global symmetries in quantum gravity\" conjecture** (Swampland) means exact Goldstone bosons may not exist fundamentally; all NGBs should be pseudo-NGBs with tiny masses (axion-quality problem, string theory).\n2. **Mermin–Wagner restrictions**: SSB and Goldstone physics are dimension- and temperature-dependent; claims of Goldstone physics in 2D systems at finite $T$ are spurious.\n3. **Gauge-SSB subtlety**: gauge \"symmetry breaking\" is gauge-dependent (Elitzur's theorem); only the physical spectrum ($m_A$, Higgs) is invariant — common textbook wording is loose.\n4. **Cosmological falsification risk:** if DESI's evolving-$w$ signal (up to 3.9σ with DES-SN5YR) persists, a single static vacuum-energy paradigm fails, boosting thawing/quintessence scalar (SSB-adjacent) models; conversely if the Hubble tension dissolves into systematics, EDE models lose motivation.\n5. **Empirical gap:** the exact mechanism and timescale of electroweak SSB in the early universe (first- vs. cross-over transition; gravitational-wave signature) remains untested — LISA will constrain first-order EWSB models.\n\n## 5. Visual Grounding\n\nA schematic diagram: a 3D \"Mexican hat\" potential surface $V(\\phi) = \\mu^2|\\phi|^2 + \\lambda|\\phi|^4$ rendered as a glowing wireframe bowl with a raised dimple at the center; a red sphere (the vacuum) rolls off the unstable central peak down to a point on the circular trough, with faint radial arrows labeled \"$\\mu^2 > 0$\"; a ring of degenerate vacua around the trough labeled \"vacuum manifold $S^1$\"; a small oscillating ball at the bottom of the trough along the azimuthal direction labeled \"massless Goldstone mode $m_\\theta = 0$\", and a steep radial oscillation labeled \"Higgs mode $m_\\rho = \\sqrt{2}\\mu$\"; inset panels: (a) the same circle with a periodic gauge field threading it, showing the Goldstone being absorbed into a rising gauge-boson dispersion $\\omega^2 = k^2 + g^2v^2$ (Higgs mechanism); (b) a 2D lattice at finite temperature where thermal fluctuations destroy the ordered state (Mermin–Wagner); color palette: cool blues for the potential surface, warm orange/gold for the broken-symmetry sector, on a dark background with LaTeX-labeled axes $V(\\phi)$ vs. $\\mathrm{Re}\\,\\phi, \\mathrm{Im}\\,\\phi$.\n\n## References\n1. Goldstone, Salam & Weinberg, Phys. Rev. **127**, 965 (1962). https://doi.org/10.1103/PhysRev.127.965\n2. Higgs, Phys. Rev. Lett. **13**, 508 (1964). https://doi.org/10.1103/physrevlett.13.508\n3. Englert & Brout, Phys. Rev. Lett. **13**, 321 (1964). https://doi.org/10.1103/physrevlett.13.321\n4. Higgs, Phys. Rev. **145**, 1156 (1966). https://doi.org/10.1103/physrev.145.1156\n5. Brauner, Symmetry **2**, 609 (2010), arXiv:1001.5212. https://doi.org/10.3390/sym2020609\n6. Fröhlich, Enc. Cond. Matter Phys. 2nd ed., Elsevier (2024), arXiv:2312.00615. https://doi.org/10.1016/B978-0-323-90800-9.00275-4\n7. Heissenberg & Strocchi, Symmetry **12**, 1120 (2020), arXiv:2007.03539. https://doi.org/10.3390/sym12071120\n8. Sardanashvily, Int. J. Geom. Methods Mod. Phys. **5** (2008), arXiv:0802.2382\n9. Planck Collab., A&A **641**, A6 (2020). https://doi.org/10.1051/0004-6361/201833910\n10. Riess et al., ApJL **934**, L7 (2022). https://doi.org/10.3847/2041-8213/ac5c5b\n11. DESI Collab., JCAP **02**, 021 (2025). https://doi.org/10.1088/1475-7516/2025/02/021\n12. Kamionkowski & Riess, Annu. Rev. Nucl. Part. Sci. **73**, 153 (2023). https://doi.org/10.1146/annurev-nucl-111422-024107\n13. Carniani et al., Nature **633**, 318 (2024). https://doi.org/10.1038/s41586-024-07860-9\n\n*All citations passed pre-flight verification: 0 future-dated years, 0 unresolvable DOIs, 0 placeholders.*",
+    "math_output": "",
+    "skeptic_output": "",
+    "evaluation_output": "{\"status\": \"rejected\", \"reason_code\": \"crew_kickoff_error\", \"summary_for_archivist\": \"\", \"follow_up_questions\": [\"Execution failed with error: Invalid response from LLM call - None or empty.\"]}",
+    "math_status": "MATH_UNKNOWN",
+    "math_score": null,
+    "math_total": null,
+    "skeptic_score": null,
+    "skeptic_total": null,
+    "math_precheck": {
+      "ran": true,
+      "equation_count": 40,
+      "symbol_table": {
+        "\\phi = \\rho\\": 1.0,
+        "e^{i\\theta}": 1.0,
+        "\\mu^2": 2.0,
+        "\\lambda": 0.0,
+        "v": 1.0,
+        "m_\\theta": 1.0,
+        "m_\\rho": 1.0,
+        "J^\\mu_a": 3.0,
+        "F^a_{\\mu\\nu}": 0.0,
+        "g": 0.0,
+        "m_A": 1.0,
+        "T_{\\rm EW}": 1.0,
+        "f_\\pi": 1.0
+      },
+      "blocking": [
+        {
+          "equation": "f_\\pi \\approx 92",
+          "verdict": "INCONSISTENT",
+          "basis": "declared_symbol_table",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: 'f_\\pi' → [E]^1; '92' → [E]^0 ✗"
+        },
+        {
+          "equation": "T_{\\rm EW} \\sim 159",
+          "verdict": "INCONSISTENT",
+          "basis": "declared_symbol_table",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: 'T_{\\rm EW}' → [E]^1; '159' → [E]^0 ✗"
+        }
+      ],
+      "advisory": [
+        {
+          "equation": "m_\\pi \\approx 135",
+          "verdict": "INCONSISTENT",
+          "basis": "canonical_defaults",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: 'm_\\pi' → [E]^1; '135' → [E]^0 ✗"
+        },
+        {
+          "equation": "m_H \\approx 125",
+          "verdict": "INCONSISTENT",
+          "basis": "canonical_defaults",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: 'm_H' → [E]^1; '125' → [E]^0 ✗"
+        },
+        {
+          "equation": "T \\geq 175",
+          "verdict": "UNDECIDABLE",
+          "basis": "possible_mismatch",
+          "explanation": "Possible mass-dimension mismatch involving ambiguous symbols: 'T' → [E]^1 (inferred); '175' → [E]^0. Declare these symbols in symbol_dimensions_json to get a definitive verdict."
+        },
+        {
+          "equation": "H_0 = 73.04 \\pm 1.04",
+          "verdict": "INCONSISTENT",
+          "basis": "canonical_defaults",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: 'H_0' → [E]^1; '73.04' → [E]^0; '1.04' → [E]^0 ✗"
+        },
+        {
+          "equation": "\\phi = \\rho\\, e^{i\\theta}",
+          "verdict": "INCONSISTENT",
+          "basis": "canonical_defaults",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: '\\phi' → [E]^1; '\\rho  e^{i\\theta}' → [E]^4 ✗"
+        },
+        {
+          "equation": "\\phi = (v + \\rho + i\\theta)/\\sqrt{2}",
+          "verdict": "INCONSISTENT",
+          "basis": "canonical_defaults",
+          "explanation": "Inhomogeneous sum inside a bracket: 'v' [E]^1, '\\rho' [E]^4 — terms that are added must share one mass dimension ✗"
+        },
+        {
+          "equation": "m_Z = 91.19",
+          "verdict": "INCONSISTENT",
+          "basis": "canonical_defaults",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: 'm_Z' → [E]^1; '91.19' → [E]^0 ✗"
+        },
+        {
+          "equation": "m_H = \\sqrt{2\\lambda}\\,v \\approx 125",
+          "verdict": "INCONSISTENT",
+          "basis": "canonical_defaults",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: 'm_H' → [E]^1; '\\sqrt{2\\lambda} v' → [E]^1; '125' → [E]^0 ✗"
+        }
+      ],
+      "quoted_as_incorrect": [
+        {
+          "equation": "M_{\\rm Pl} = 2.435\\times10^{18}",
+          "verdict": "INCONSISTENT",
+          "basis": "canonical_defaults",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: 'M_{\\rm Pl}' → [E]^1; '2.435\\times10^{18}' → [E]^0 ✗"
+        },
+        {
+          "equation": "m_{\\rm Pl} = 1.221\\times10^{19}",
+          "verdict": "INCONSISTENT",
+          "basis": "canonical_defaults",
+          "explanation": "Natural-unit mass-dimension mismatch between terms: 'm_{\\rm Pl}' → [E]^1; '1.221\\times10^{19}' → [E]^0 ✗"
+        }
+      ],
+      "undecidable_count": 17,
+      "verified_count": 12,
+      "error": null,
+      "blocking_count": 2
+    },
+    "decision": {
+      "status": "rejected",
+      "reason_code": "crew_kickoff_error",
+      "epistemic_status": "[THEORETICAL]",
+      "confidence_score": 0.4,
+      "summary_for_archivist": "",
+      "detailed_rationale": "Rejected due to crew_kickoff_error.",
+      "agent_needs": {
+        "researcher_needs": [],
+        "math_needs": [],
+        "human_advisor_needed": false
+      },
+      "follow_up_questions": [
+        "Execution failed with error: Invalid response from LLM call - None or empty."
+      ]
+    },
+    "decision_status": "rejected",
+    "reason_code": "crew_kickoff_error",
+    "follow_up_context": "{\n  \"reason_code\": \"crew_kickoff_error\",\n  \"detailed_rationale\": \"Rejected due to crew_kickoff_error.\",\n  \"agent_needs\": {\n    \"researcher_needs\": [],\n    \"math_needs\": [],\n    \"human_advisor_needed\": false\n  },\n  \"follow_up_questions\": [\n    \"Execution failed with error: Invalid response from LLM call - None or empty.\"\n  ]\n}",
+    "document_output": "",
+    "validation_passed": false,
+    "completed": false,
+    "id": "b672e0bc-69b6-4361-8c6d-b02066ddbe09"
+  }
+}

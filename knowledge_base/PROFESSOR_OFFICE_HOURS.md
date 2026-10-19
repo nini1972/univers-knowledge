@@ -12,9 +12,40 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (2)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20261019-1ee234` | L1 | **Spontaneous Symmetry Breaking and the Goldstone Theorem** | UniverseFlow Orchestrator | Concept 'Spontaneous Symmetry Breaking and the Goldstone Theorem' was rejected after 2 attempts (crew_kickoff_error). How should the agents proceed? |
+| `adv-20261019-e12f3d` | L2 | **Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration** | UniverseFlow Orchestrator | Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20261019-1ee234` — Spontaneous Symmetry Breaking and the Goldstone Theorem
+- **Timestamp**: `2026-10-19T01:06:29.133432+00:00`
+- **Level**: Level 1
+- **Reason Code**: `crew_kickoff_error`
+- **Question**: Concept 'Spontaneous Symmetry Breaking and the Goldstone Theorem' was rejected after 2 attempts (crew_kickoff_error). How should the agents proceed?
+- **Scientific Rationale**: Rejected due to crew_kickoff_error.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261019-1ee234 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261019-e12f3d` — Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
+- **Timestamp**: `2026-10-19T02:22:15.037187+00:00`
+- **Level**: Level 2
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic's score is 5/5, which meets the threshold. The Math Physicist's status is [MATH_FLAWED] with a score of 2/4, and the decision policy says to reject for [MATH_FLAWED]. The source reports mis-declare [X]=[E]², when it should be [E]⁴ for [φ]=[E]¹. They also give the KGB chain as [G]=[E]⁰ and [□φ]=[E]², which does not close. The correct assignment is [G]=[E]¹ and [□φ]=[E]³. The compact G^{μν} notation does not close under any assignment. The physics itself is standard and correct. That includes the exact variable-w integral, the sign condition for c_s²>1 (P_,XX<0), the Vikman no-go, and the benchmarks. The dimensional bookkeeping must be corrected before approval. The debate report already supplies corrected conventions, so a resubmission should be quick.
+- **Agent Blockers**:
+  * Researcher: Rewrite both source reports with the unified symbol table: [X]=[E]^4, [P_,X]=[E]^0, [P_,XX]=[E]^-4, [G]=[E]^1, [□φ]=[E]^3, [K]=[E]^4.
+  * Researcher: Remove the compact G^{μν} notation, or define it so that it closes dimensionally.
+  * Researcher: Rename the correlation coefficient so it no longer collides with the density symbol ρ.
+  * Researcher: State that Δχ²≡σ² holds only for 1 d.o.f. For the 2-parameter (w0,wa) fit the Gaussian estimate is about 16.7 (4.09σ), not 15.2. Also fix the sign convention, since DESI's Δχ² is negative while σ² is positive.
+  * Math Physicist: Re-derive the dimensional chains for w, c_s², the KGB Lagrangian and the tracker equation under [X]=[E]^4.
+  * Math Physicist: Re-run the dimensional consistency checker on the corrected table and reach a [MATH_PROVEN] or [MATH_CONSISTENT] status with a score of at least 3/4.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261019-e12f3d "Your guidance"`
+
 
 ---
 

@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-18T01:22:30.160626+00:00",
+  "updated_at": "2026-10-19T02:47:14.545481+00:00",
   "stats": {
-    "total_nodes": 332,
+    "total_nodes": 333,
     "level_1_count": 146,
     "level_2_count": 130,
-    "level_3_count": 56,
+    "level_3_count": 57,
     "total_edges": 162,
     "frontier_count": 20
   },
@@ -801,10 +801,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "peskintakeuchiparameters",
-        "higgsmechanism",
         "electroweaksymmetrybreaking",
+        "peskintakeuchiparameters",
         "standardmodeleffectivefieldtheory",
+        "higgsmechanism",
         "standardmodel"
       ],
       "tags": [
@@ -2702,10 +2702,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "darkmatterrelicabundance",
-        "cosmologicalperturbationtheory",
         "freezeinproduction",
-        "wimpfreezeout"
+        "cosmologicalperturbationtheory",
+        "wimpfreezeout",
+        "darkmatterrelicabundance"
       ],
       "tags": [
         "1"
@@ -2795,11 +2795,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "quantumfieldtheory",
         "stronginteraction",
-        "gaugetheory",
-        "thestandardmodel",
         "latticeqcd",
-        "quantumfieldtheory"
+        "thestandardmodel",
+        "gaugetheory"
       ],
       "tags": [
         "1"
@@ -5869,6 +5869,30 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md"
     },
     {
+      "id": "apreregisteredcausalmediationbenchmarkfordistinguishingintegratedinformationtheoryfromphysicalistemergenceinneuralsystems",
+      "title": "A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Tononi, G. (2004), 'An information integration theory of consciousness', https://doi.org/10.1186/1471-2202-5-42",
+        "Ferrante et al. (2025), 'Adversarial testing of global neuronal workspace and integrated information theories of consciousness', https://doi.org/10.1038/s41586-025-08888-1",
+        "Melloni et al. (2023), 'An adversarial collaboration protocol for testing contrasting predictions of global neuronal workspace and integrated information theory', https://doi.org/10.1371/journal.pone.0268577",
+        "VanderWeele, T. J. (2014), 'A unification of mediation and interaction: a 4-way decomposition', https://doi.org/10.1097/EDE.0000000000000034",
+        "Frohlich et al. (2020), 'Perturbational complexity and consciousness: a review of the evidence', https://doi.org/10.1093/nc/niaa005",
+        "Zhao et al. (2025), 'Perturbational complexity and consciousness', https://doi.org/10.3390/brainsci15040377",
+        "Naccache et al. (2025), 'The COGITATE adversarial collaboration and theories of consciousness', https://doi.org/10.1093/nc/niaf037",
+        "Whyte et al. (2025), 'Active inference and minimal theories of consciousness', https://doi.org/10.1016/j.plrev.2025.11.002"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_preregistered_causalmediation_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md"
+    },
+    {
       "id": "apreregisteredcrossdomaintestofthermodynamicuncertaintyboundsonreliableinformationprocessinginneuralcircuitsandcosmicwebdynamics",
       "title": "A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics",
       "level": 3,
@@ -6160,10 +6184,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "cosmologicalstructureformation",
         "lcdmcosmology",
-        "topologicaldataanalysis",
         "persistenthomology",
+        "cosmologicalstructureformation",
+        "topologicaldataanalysis",
         "cosmicweb",
         "nullmodelsandhypothesistesting"
       ],
@@ -6786,12 +6810,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "topologicaldataanalysis",
         "bottleneckdistance",
         "persistenthomology",
+        "topologicaldataanalysis",
         "cosmicweb",
-        "observationalselectioneffects",
-        "baryonicfeedback"
+        "baryonicfeedback",
+        "observationalselectioneffects"
       ],
       "tags": [
         "3"
