@@ -42,6 +42,7 @@ graph TD
     renormalization_and_the_renormalization_group["Renormalization and the Renormalization Group"]:::verified
     disentangling_neutrino_decay_from_nsi_and_decoherence["Disentangling Neutrino Decay from NSI and Environmental Decoherence"]:::theoretical
     electroweak_baryogenesis["Electroweak Baryogenesis"]:::theoretical
+    gauge_coupling_unification_and_renormalization_group_running["Gauge Coupling Unification and Renormalization Group Running"]:::theoretical
     spectral_decomposition_of_non_hermitian_decay_hamiltonians["Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms"]:::theoretical
     quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation["Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation"]:::theoretical
     baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests["Baryogenesis and Leptogenesis: Sakharov Conditions and Experimental Tests"]:::verified
@@ -221,6 +222,7 @@ graph TD
     causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity["Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity"]:::theoretical
     quantum_gravity_beyond_string_theory_loop_quantum_gravity_vs_causal_dynamical_triangulation["Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation"]:::theoretical
     modified_gravity_vs_quantum_gravity_induced_gravity_in_explaining_cosmic_acceleration["Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration"]:::theoretical
+    canonical_quintessence_vs_kessence_in_explaining_cosmic_acceleration["Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration"]:::theoretical
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
     interacting_dark_energy_vs_nonminimal_coupling_in_solving_the_hubble_tension["Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension"]:::theoretical
     symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory["Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory"]:::theoretical
@@ -293,6 +295,7 @@ graph TD
     nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution["Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution"]:::theoretical
     formalizing_integrated_information_theory_within_spacetime_geometry["Formalizing Integrated Information Theory (IIT) within Spacetime Geometry"]:::theoretical
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution["Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"]:::theoretical
+    margoluslevitin_and_landauer_operational_bounds_on_sustained_informationprocessing_rates_in_cortical_microcircuits_a_dimensionally_consistent_falsifiable_calorimetric_test_using_me["Margolus–Levitin and Landauer Operational Bounds on Sustained Information-Processing Rates in Cortical Microcircuits: A Dimensionally Consistent, Falsifiable Calorimetric Test Using Measured ATP Turnover and Spike-Train Entropy Rates"]:::theoretical
     nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures["Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures"]:::theoretical
     a_preregistered_causalmediation_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems["A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems"]:::theoretical
     quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations["Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations"]:::theoretical
@@ -624,6 +627,7 @@ graph TD
 - [Experimental Signatures Distinguishing Causal Sets from Tensor Networks](level_1_fundamental_physics/experimental_signatures_distinguishing_causal_sets_from_tensor_networks.md) [THEORETICAL]
 - [External Verification of Neutrino Decay Bounds via Open Datasets](level_1_fundamental_physics/external_verification_of_neutrino_decay_bounds_via_open_datasets.md) [THEORETICAL]
 - [Friedmann–Lemaître–Robertson–Walker Cosmology](level_1_fundamental_physics/friedmannlematrerobertsonwalker_cosmology.md) [VERIFIED]
+- [Gauge Coupling Unification and Renormalization Group Running](level_1_fundamental_physics/gauge_coupling_unification_and_renormalization_group_running.md) [THEORETICAL]
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Gravitational Lensing](level_1_fundamental_physics/gravitational_lensing.md) [VERIFIED]
 - [Gravitational Wave Astronomy](level_1_fundamental_physics/gravitational_wave_astronomy.md) [VERIFIED]
@@ -747,6 +751,7 @@ graph TD
 - [Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks](level_2_advanced_frameworks/black_hole_models_debate_observational_techniques_vs_theoretical_frameworks.md) [VERIFIED]
 - [Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem](level_2_advanced_frameworks/braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem.md) [THEORETICAL]
 - [Brans-Dicke vs f(Q) Symmetric Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](level_2_advanced_frameworks/bransdicke_vs_fq_symmetric_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md) [THEORETICAL]
+- [Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration](level_2_advanced_frameworks/canonical_quintessence_vs_kessence_in_explaining_cosmic_acceleration.md) [THEORETICAL]
 - [Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](level_2_advanced_frameworks/causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity.md) [THEORETICAL]
 - [Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime](level_2_advanced_frameworks/causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime.md) [THEORETICAL]
 - [Causal Set Theory vs Spin Foam Models in Quantum Gravity Research](level_2_advanced_frameworks/causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research.md) [THEORETICAL]
@@ -895,6 +900,7 @@ graph TD
 - [Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks](level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks.md) [VERIFIED]
 - [Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments](level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments.md) [THEORETICAL]
 - [Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems](level_3_emergence_and_intelligence/macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy.md) [THEORETICAL]
+- [Margolus–Levitin and Landauer Operational Bounds on Sustained Information-Processing Rates in Cortical Microcircuits: A Dimensionally Consistent, Falsifiable Calorimetric Test Using Measured ATP Turnover and Spike-Train Entropy Rates](level_3_emergence_and_intelligence/margoluslevitin_and_landauer_operational_bounds_on_sustained_informationprocessing_rates_in_cortical_microcircuits_a_dimensionally_consistent_falsifiable_calorimetric_test_using_me.md) [THEORETICAL]
 - [Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing](level_3_emergence_and_intelligence/noiserobust_generalizedcontextuality_witnesses_for_benchmarkrelative_quantum_advantage_in_warm_biological_information_processing.md) [THEORETICAL]
 - [Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures](level_3_emergence_and_intelligence/nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures.md) [THEORETICAL]
 - [Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution](level_3_emergence_and_intelligence/nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution.md) [THEORETICAL]

@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-19T02:47:14.545481+00:00",
+  "updated_at": "2026-10-20T01:05:58.665795+00:00",
   "stats": {
-    "total_nodes": 333,
-    "level_1_count": 146,
-    "level_2_count": 130,
-    "level_3_count": 57,
-    "total_edges": 162,
-    "frontier_count": 20
+    "total_nodes": 336,
+    "level_1_count": 147,
+    "level_2_count": 131,
+    "level_3_count": 58,
+    "total_edges": 164,
+    "frontier_count": 24
   },
   "nodes": [
     {
@@ -801,11 +801,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "electroweaksymmetrybreaking",
-        "peskintakeuchiparameters",
         "standardmodeleffectivefieldtheory",
+        "standardmodel",
         "higgsmechanism",
-        "standardmodel"
+        "electroweaksymmetrybreaking",
+        "peskintakeuchiparameters"
       ],
       "tags": [
         "1"
@@ -1034,6 +1034,36 @@
         "Ade, P. A. R., et al. (2014), 'Planck 2013 results. XXII. Constraints on inflation', https://doi.org/10.1051/0004-6361/201321569"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/friedmannlematrerobertsonwalker_cosmology.md"
+    },
+    {
+      "id": "gaugecouplingunificationandrenormalizationgrouprunning",
+      "title": "Gauge Coupling Unification and Renormalization Group Running",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "standardmodel",
+        "minimalsupersymmetricstandardmodel",
+        "renormalizationgroup",
+        "grandunifiedtheories",
+        "protondecay"
+      ],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Georgi, H., Quinn, H. R., & Weinberg, S. (1974), 'Hierarchy of Interactions in Unified Gauge Theories', https://doi.org/10.1103/PhysRevLett.33.451",
+        "Dimopoulos, S., & Georgi, H. (1981), 'Softly Broken Supersymmetry and SU(5)', https://doi.org/10.1016/0550-3213(81)90522-8",
+        "Georgi, H., & Glashow, S. L. (1974), 'Unity of All Elementary-Particle Forces', https://doi.org/10.1103/PhysRevLett.32.438",
+        "Costantini (2017), '[Title not supplied in the research report]', http://arxiv.org/abs/1709.07765v1",
+        "Babu, K. S., & Khan (2015), '[Title not supplied in the research report]; Phys. Rev. D 92, 075018', http://arxiv.org/abs/1507.06712v2",
+        "Bailin, D., Love, A., Sabra, W. A., & Thomas, J. (1996), '[Title not supplied in the research report]; Phys. Lett. B 378, 113', http://arxiv.org/abs/hep-th/9602132v2",
+        "Domingo et al. (2024), '[Title not supplied in the research report]', https://arxiv.org/abs/2403.18502v1",
+        "DUNE Far Detector (2022), '[Title not supplied in the research report]', https://arxiv.org/abs/2211.15503v2"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/gauge_coupling_unification_and_renormalization_group_running.md"
     },
     {
       "id": "generalrelativity",
@@ -2702,10 +2732,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "freezeinproduction",
         "cosmologicalperturbationtheory",
         "wimpfreezeout",
-        "darkmatterrelicabundance"
+        "darkmatterrelicabundance",
+        "freezeinproduction"
       ],
       "tags": [
         "1"
@@ -2795,11 +2825,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "quantumfieldtheory",
         "stronginteraction",
-        "latticeqcd",
         "thestandardmodel",
-        "gaugetheory"
+        "quantumfieldtheory",
+        "gaugetheory",
+        "latticeqcd"
       ],
       "tags": [
         "1"
@@ -3410,6 +3440,29 @@
       "path": "knowledge_base/level_2_advanced_frameworks/bransdicke_vs_fq_symmetric_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration.md"
     },
     {
+      "id": "canonicalquintessencevskessenceinexplainingcosmicacceleration",
+      "title": "Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "ftgravityvskessenceinaddressingcosmicacceleration"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "DESI Collaboration (2024), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://doi.org/10.1103/PhysRevD.110.083510",
+        "Vikman, A. (2005), 'Can dark energy evolve to the phantom?', https://doi.org/10.1103/PhysRevD.71.023515",
+        "De Felice, A., and Tsujikawa, S. (2010), 'f(R) theories', https://doi.org/10.12942/lrr-2010-3",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Tsujikawa, S. (2013), 'Quintessence: A Review', https://doi.org/10.1088/0264-9381/30/21/214003"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/canonical_quintessence_vs_kessence_in_explaining_cosmic_acceleration.md"
+    },
+    {
       "id": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
       "title": "Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity",
       "level": 2,
@@ -3662,7 +3715,7 @@
       "math_score": "0/4",
       "dependencies": [
         "cosmologicalconstantanddarkenergy",
-        "earlydarkenergyvsquintessenceinresolvingthehubbletension"
+        "canonicalquintessencevskessenceinexplainingcosmicacceleration"
       ],
       "tags": [
         "2"
@@ -3849,7 +3902,7 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "cosmologicalconstantversusquintessenceinexplainingdarkenergy"
+        "canonicalquintessencevskessenceinexplainingcosmicacceleration"
       ],
       "tags": [
         "2"
@@ -4091,7 +4144,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
-      "dependencies": [],
+      "dependencies": [
+        "canonicalquintessencevskessenceinexplainingcosmicacceleration"
+      ],
       "tags": [
         "2"
       ],
@@ -6184,12 +6239,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "lcdmcosmology",
         "persistenthomology",
+        "nullmodelsandhypothesistesting",
         "cosmologicalstructureformation",
-        "topologicaldataanalysis",
+        "lcdmcosmology",
         "cosmicweb",
-        "nullmodelsandhypothesistesting"
+        "topologicaldataanalysis"
       ],
       "tags": [
         "3"
@@ -6536,6 +6591,29 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy.md"
     },
     {
+      "id": "margoluslevitinandlandaueroperationalboundsonsustainedinformationprocessingratesincorticalmicrocircuitsadimensionallyconsistentfalsifiablecalorimetrictestusingme",
+      "title": "Margolus–Levitin and Landauer Operational Bounds on Sustained Information-Processing Rates in Cortical Microcircuits: A Dimensionally Consistent, Falsifiable Calorimetric Test Using Measured ATP Turnover and Spike-Train Entropy Rates",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Chattopadhyay, Misra, Pandit & Paul (2025), '[Title not supplied in research report; cited as Rep. Prog. Phys. 88, 086001]', https://doi.org/10.1088/1361-6633/add6b3",
+        "Hörnedal & Sönnerborn (2023), '[Title not supplied in research report; cited as Phys. Rev. Res. 5, 043234]', https://doi.org/10.1103/PhysRevResearch.5.043234",
+        "Mohan, Das & Pati (2022), '[Title not supplied in research report; cited as New J. Phys. 24, 065003]', https://doi.org/10.1088/1367-2630/ac753c",
+        "Sengupta, Stemmler & Friston (2013), '[Title not supplied in research report; cited as PLoS Comput. Biol. e1003157]', https://doi.org/10.1371/journal.pcbi.1003157",
+        "Levy & Baxter (2002), '[Title not supplied in research report; cited as J. Neurosci. 22, 4746]', https://doi.org/10.1523/jneurosci.22-11-04746.2002",
+        "Sengupta & Stemmler (2014), '[Title not supplied in research report; cited as Proc. IEEE 102, 738]', https://doi.org/10.1109/jproc.2014.2307755",
+        "Karbowski (2024), '[Title not supplied in research report; cited as Entropy 26, 779]', https://doi.org/10.3390/e26090779"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/margoluslevitin_and_landauer_operational_bounds_on_sustained_informationprocessing_rates_in_cortical_microcircuits_a_dimensionally_consistent_falsifiable_calorimetric_test_using_me.md"
+    },
+    {
       "id": "noiserobustgeneralizedcontextualitywitnessesforbenchmarkrelativequantumadvantageinwarmbiologicalinformationprocessing",
       "title": "Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing",
       "level": 3,
@@ -6810,12 +6888,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "bottleneckdistance",
         "persistenthomology",
-        "topologicaldataanalysis",
-        "cosmicweb",
         "baryonicfeedback",
-        "observationalselectioneffects"
+        "bottleneckdistance",
+        "cosmicweb",
+        "observationalselectioneffects",
+        "topologicaldataanalysis"
       ],
       "tags": [
         "3"
@@ -7061,6 +7139,11 @@
       "type": "component_theory"
     },
     {
+      "source": "ftgravityvskessenceinaddressingcosmicacceleration",
+      "target": "canonicalquintessencevskessenceinexplainingcosmicacceleration",
+      "type": "component_theory"
+    },
+    {
       "source": "asymptoticsafetyvscausaldynamicaltriangulationsinresolvingultravioletspacetimesingularities",
       "target": "causaldynamicaltriangulationvsspinfoammodelsinquantumgravity",
       "type": "component_theory"
@@ -7136,7 +7219,7 @@
       "type": "component_theory"
     },
     {
-      "source": "earlydarkenergyvsquintessenceinresolvingthehubbletension",
+      "source": "canonicalquintessencevskessenceinexplainingcosmicacceleration",
       "target": "cosmologicalconstantversusquintessenceinexplainingdarkenergy",
       "type": "component_theory"
     },
@@ -7166,7 +7249,7 @@
       "type": "component_theory"
     },
     {
-      "source": "cosmologicalconstantversusquintessenceinexplainingdarkenergy",
+      "source": "canonicalquintessencevskessenceinexplainingcosmicacceleration",
       "target": "earlydarkenergyvsquintessenceinresolvingthehubbletension",
       "type": "component_theory"
     },
@@ -7228,6 +7311,11 @@
     {
       "source": "howmightfutureexperimentsorobservationsbedesignedtoeffectivelydistinguishbetweenfreezeinandfreezeoutdarkmatterproductionmechanisms",
       "target": "freezeinversusfreezeoutmechanismsindarkmatterproductiondebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "canonicalquintessencevskessenceinexplainingcosmicacceleration",
+      "target": "ftgravityvskessenceinaddressingcosmicacceleration",
       "type": "component_theory"
     },
     {
@@ -7760,6 +7848,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "grandunifiedtheories",
+      "suggested_title": "Grandunifiedtheories",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "higgsmechanism",
       "suggested_title": "Higgsmechanism",
       "target_level": 1,
@@ -7774,6 +7868,12 @@
     {
       "id": "lcdmcosmology",
       "suggested_title": "Lcdmcosmology",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "minimalsupersymmetricstandardmodel",
+      "suggested_title": "Minimalsupersymmetricstandardmodel",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -7798,6 +7898,18 @@
     {
       "id": "peskintakeuchiparameters",
       "suggested_title": "Peskintakeuchiparameters",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "protondecay",
+      "suggested_title": "Protondecay",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "renormalizationgroup",
+      "suggested_title": "Renormalizationgroup",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
