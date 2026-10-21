@@ -220,14 +220,15 @@ class NaturalUnitDimensionAnalyzer:
     }
 
     # Bases whose labelled variants (rho_DE, T_reh, H_0, m_phi, ...) keep the base dimension.
-    LABEL_SAFE_BASES = {"rho", "Omega", "T", "H", "m", "M", "phi", "w", "mathcalL", "Gamma", "E", "a", "t"}
+    LABEL_SAFE_BASES = {"rho", "Omega", "T", "H", "m", "M", "phi", "w", "Gamma", "E", "a", "t"}
     # Bare symbols whose meaning is near-universal here (counted as exact without a symbol table).
-    UNAMBIGUOUS_BARE = {"m", "M", "t", "c", "hbar", "k_B", "pi", "e", "i", "mathcalL", "mathscrL",
+    UNAMBIGUOUS_BARE = {"m", "M", "t", "c", "hbar", "k_B", "pi", "e", "i",
                         "phi", "psi", "barpsi", "g", "y", "w"}
     # Bare symbols that are exact only in a scalar-field context (phi/psi in the equation):
     # V = potential density, lambda = coupling, rho/p = energy density/pressure, H = Hubble, T = temperature,
-    # chi = second scalar field (otherwise usually the chi^2 statistic).
-    FIELD_CONTEXT_BARE = {"V", "lambda", "rho", "p", "H", "T", "chi"}
+    # chi = second scalar field (otherwise usually the chi^2 statistic),
+    # calligraphic L = Lagrangian density (otherwise often a Lindbladian superoperator).
+    FIELD_CONTEXT_BARE = {"V", "lambda", "rho", "p", "H", "T", "chi", "mathcalL", "mathscrL"}
     # Indexed built-ins with competing meanings (Einstein tensor vs Horndeski braiding tensor G^{mu nu}).
     AMBIGUOUS_INDEXED = {"G_IDX"}
 
@@ -238,6 +239,7 @@ class NaturalUnitDimensionAnalyzer:
         self._pending_power = 1.0
         self.field_context = False
         self._canonical_hits = 0
+        self._dim_hits = 0  # symbols/units that carry a dimension (not pure numbers or universal constants)
         self.last_basis: str | None = None
 
     # Dimensionless-in-natural-units constants that never weaken a verdict's basis.
@@ -305,12 +307,14 @@ class NaturalUnitDimensionAnalyzer:
                 continue  # G^{mu nu} is not the same object as a declared plain G
             v = self._lookup(self.custom, key)
             if v is not None:
+                self._dim_hits += 1
                 return v, True
         for key in keys:
             v = self._lookup(self.canonical, key)
             if v is not None:
                 if key not in self.UNIVERSAL_CONSTANTS and b not in self.UNIVERSAL_CONSTANTS:
                     self._canonical_hits += 1  # dimension came from built-in defaults, not the report
+                    self._dim_hits += 1
                 if key == b:
                     labelled = bool(lab) and not label_is_index
                     if labelled:
@@ -643,6 +647,7 @@ class NaturalUnitDimensionAnalyzer:
             if content.strip() == "d":
                 return None, i
             unit_dim = self._unit_dimension(content)
+            self._dim_hits += 1  # an explicit unit (GeV, K, Mpc^-1, ...) makes a number dimensionful
             _, exponent, i = self._read_scripts(s, i)
             return self._apply_exponent(unit_dim, True, exponent, allow_index=False), i
         if name in self.ACCENTS:
@@ -687,19 +692,26 @@ class NaturalUnitDimensionAnalyzer:
             return None, None
 
         self.last_basis = None
-        resolved, unknown = [], 0
+        resolved, unknown, bare_numbers = [], 0, 0
         for side in sides:
             for term in self._split_top(side, self._sum_splitter):
                 if not term.strip():
                     continue
                 self._canonical_hits = 0
+                hits_before = self._dim_hits
                 try:
                     r = self.parse_term(term)
                 except _UnknownDimension:
                     unknown += 1
                     continue
-                if r != "ZERO":
-                    resolved.append((term.strip(), r[0], r[1], self._canonical_hits > 0))
+                if r == "ZERO":
+                    continue
+                if self._dim_hits == hits_before:
+                    # A bare number such as "2e16" or "100": its unit is usually written in the prose
+                    # ("GeV", "yr", "kg"), so it says nothing about the dimension of the other side.
+                    bare_numbers += 1
+                    continue
+                resolved.append((term.strip(), r[0], r[1], self._canonical_hits > 0))
 
         for kind, desc, used_defaults in self.inner_mismatches:
             if kind == "exact":
@@ -1069,7 +1081,8 @@ class SymbolicDerivationTool(BaseTool):
         "Uses SymPy to symbolically verify step-by-step mathematical derivations, ODE/continuity integrals "
         "(e.g. variable-w(a) dark energy density evolution), variance/covariance expansions, and asymptotic limits "
         "(a->0, a->1, k->0, T->oo). Returns per-step verdicts: STEP_VERIFIED, STEP_ASSUMED, or STEP_INVALID, "
-        "plus limit check verdicts (LIMIT_VERIFIED or LIMIT_MISMATCH)."
+        "plus limit check verdicts (LIMIT_VERIFIED, LIMIT_MISMATCH, or LIMIT_UNDECIDABLE when SymPy cannot "
+        "evaluate the limit — check those by hand; they are not mismatches)."
     )
     args_schema: Type[BaseModel] = SymbolicDerivationInput
 
@@ -1226,13 +1239,46 @@ class SymbolicDerivationTool(BaseTool):
             f"Relational definition or physical law (LHS - RHS = {diff}); treated as a model assumption/definition."
         )
 
+    @staticmethod
+    def _undecided_reason(expr) -> str | None:
+        """Why SymPy did not actually decide this result (None if it is a definite value)."""
+        import sympy as sp
+        from sympy.core.function import AppliedUndef
+
+        if expr is None:
+            return None
+        if expr.has(sp.Limit):
+            return "SymPy returned the limit unevaluated"
+        if expr.has(sp.Integral):
+            return "the expression contains an unevaluated integral"
+        if expr.has(sp.Piecewise):
+            return "the result depends on the sign of symbols SymPy could not determine"
+        if expr.has(sp.nan) or expr.has(sp.zoo) or expr.has(sp.AccumBounds):
+            return "the limit is indeterminate or bounded-oscillating"
+        if expr.atoms(AppliedUndef):
+            return "the expression contains an undefined function (e.g. rho_CPL(a))"
+        return None
+
     def _evaluate_limit(self, expr_raw: str, var_raw: str, pt_raw, exp_raw, dir_raw: str):
+        """Returns (computed, expected, difference, undecided_reason)."""
         import sympy as sp
 
         var_clean = self._clean_for_sympy(var_raw)
-        var_sym = sp.Symbol(var_clean, real=True)
+        # Physical quantities (masses, temperatures, hbar, c, G, k_B, ...) are positive; without that
+        # SymPy returns sign-dependent Piecewise results, e.g. for hbar*c**3/(8*pi*G*k_B*M) as M -> 0.
+        var_positive = bool(self._POSITIVE_NAME_RE.match(var_clean))
+        var_sym = sp.Symbol(var_clean, positive=True) if var_positive else sp.Symbol(var_clean, real=True)
         local = {var_clean: var_sym}
-        expr_sym = safe_sympy_parse(self._clean_for_sympy(expr_raw), local)
+
+        def _positive(expr):
+            mapping = {
+                s: sp.Symbol(s.name, positive=True)
+                for s in expr.free_symbols
+                if s != var_sym and self._POSITIVE_NAME_RE.match(s.name)
+            }
+            return expr.subs(mapping) if mapping else expr
+
+        expr_sym = _positive(safe_sympy_parse(self._clean_for_sympy(expr_raw), local))
         pt_text = str(pt_raw).strip().lower()
         if pt_text in ("oo", "inf", "infinity", "+oo"):
             pt_sym = sp.oo
@@ -1247,9 +1293,19 @@ class SymbolicDerivationTool(BaseTool):
             computed = sp.simplify(sp.limit(expr_sym, var_sym, pt_sym, dir=dir_raw))
 
         if exp_raw is None or str(exp_raw).strip() == "":
-            return computed, None, None
-        exp_sym = safe_sympy_parse(self._clean_for_sympy(str(exp_raw)), local)
-        return computed, exp_sym, sp.simplify(computed - exp_sym)
+            return computed, None, None, self._undecided_reason(computed)
+        exp_sym = _positive(safe_sympy_parse(self._clean_for_sympy(str(exp_raw)), local))
+        undecided = self._undecided_reason(computed) or self._undecided_reason(exp_sym)
+        if undecided:
+            diff = None
+        elif computed == exp_sym:
+            diff = 0  # also covers oo == oo, where computed - exp_sym would be nan
+        else:
+            diff = sp.simplify(computed - exp_sym)
+            if diff is sp.nan:
+                diff = None
+                undecided = "difference of infinite quantities is undefined"
+        return computed, exp_sym, diff, undecided
 
     def _run(self, concept: str, derivation_steps: str = "[]", limits_json: str = "[]") -> str:
         import sympy as sp
@@ -1345,13 +1401,18 @@ class SymbolicDerivationTool(BaseTool):
             dir_raw = str(spec.get("dir", "+-")).strip()
 
             try:
-                computed_lim, exp_sym, diff_lim = run_with_timeout(
+                computed_lim, exp_sym, diff_lim, undecided = run_with_timeout(
                     self._evaluate_limit, MATH_TOOL_TIMEOUT_S, expr_raw, var_raw, pt_raw, exp_raw, dir_raw
                 )
 
                 lim_verdict = "LIMIT_COMPUTED"
                 lim_detail = f"lim_{{{var_raw} -> {pt_raw}}} ({expr_raw}) = {computed_lim}"
-                if exp_sym is not None:
+                if undecided:
+                    # SymPy could not decide: that is a tool limitation, never a mismatch in the paper.
+                    lim_verdict = "LIMIT_UNDECIDABLE"
+                    lim_detail += f" — not decided by SymPy ({undecided}); check this limit by hand, do not count it as a mismatch."
+                    assumed_count += 1
+                elif exp_sym is not None:
                     if diff_lim == 0:
                         lim_verdict = "LIMIT_VERIFIED"
                         lim_detail += f" == expected ({exp_sym}) ✓"

@@ -151,6 +151,69 @@ class TestRun106175419435Regressions(unittest.TestCase):
         self.assertFalse(any("equiv" in k or "=" in k for k in table), table)
 
 
+class TestRuns1066_1071Regressions(unittest.TestCase):
+    """Exact cases from the 2026-10-20 / 2026-10-21 nightly runs (106630894103, 107105672520)."""
+
+    def _limits(self, limits):
+        out = json.loads(SymbolicDerivationTool()._run("test", json.dumps([]), json.dumps(limits)))
+        return [r["verdict"] for r in out["limit_checks"]], out
+
+    def test_student_json_with_raw_newlines_and_tabs_is_parsed(self):
+        from src.workflow_contracts import parse_student_decision
+
+        for raw in (
+            '{"status": "approved", "reason_code": "theoretically_sound_conjecture", '
+            '"summary_for_archivist": "Corrections:\n(1) Tag the Page curve.\n(2) Retag lifetime.", '
+            '"detailed_rationale": "ok", "follow_up_questions": ["q"]}',
+            '{"status": "approved", "reason_code": "theoretically_sound_conjecture", '
+            '"summary_for_archivist": "a\tb", "detailed_rationale": "ok", "follow_up_questions": ["q"]}',
+            '```json\n{"status": "approved", "reason_code": "theoretically_sound_conjecture",\n'
+            '"summary_for_archivist": "(1) \\to fix\n(2) \\mathcal{L}", "detailed_rationale": "ok", '
+            '"follow_up_questions": ["q"]}\n```',
+        ):
+            decision = parse_student_decision(raw)
+            self.assertEqual(decision["status"], "approved", (raw, decision))
+
+    def test_hawking_temperature_limit_to_infinity_verified(self):
+        verdicts, out = self._limits([
+            {"expr": "hbar*c**3/(8*pi*G*k_B*M)", "var": "M", "point": 0, "expected": "oo", "dir": "+"},
+        ])
+        self.assertEqual(verdicts, ["LIMIT_VERIFIED"], out)
+
+    def test_unevaluable_limits_are_undecidable_not_mismatch(self):
+        verdicts, out = self._limits([
+            {"expr": "rho_CPL(a)/rho0", "var": "a", "point": 1, "expected": "1"},
+            {"expr": "t*Integral(sin(x**x), (x, 0, 1))", "var": "t", "point": 1, "expected": "1"},
+        ])
+        self.assertEqual(verdicts, ["LIMIT_UNDECIDABLE", "LIMIT_UNDECIDABLE"], out)
+        self.assertEqual(out["invalid_steps"], 0, out)
+
+    def test_genuinely_wrong_limit_still_mismatch(self):
+        verdicts, out = self._limits([
+            {"expr": "1/(1 - b*x0*L/(2*pi))", "var": "L", "point": "oo", "expected": "-2*pi/(b*x0)"},
+        ])
+        self.assertEqual(verdicts, ["LIMIT_MISMATCH"], out)
+
+    def test_bare_numbers_with_units_in_prose_not_flagged(self):
+        eqs = [
+            r"M_{\rm GUT} \sim 2\times10^{16}",
+            r"T > 100",
+            r"\tau_p \sim 10^{31}",
+            r"M \approx 1.989\times10^{30}",
+            r"T_0 = 2.7255\,\mathrm{K}",
+        ]
+        for eq, verdict in zip(eqs, _verdicts(eqs)):
+            self.assertNotIn(verdict, ("INCONSISTENT", "DIMENSION_FLAG"), eq)
+
+    def test_lindbladian_is_not_a_lagrangian(self):
+        for eq in (r"\frac{d\rho}{dt} = \mathcal{L}(\rho)", r"\dot\rho = \mathcal{L}\rho"):
+            self.assertNotIn(_verdicts([eq])[0], ("INCONSISTENT", "DIMENSION_FLAG"), eq)
+
+    def test_real_errors_still_caught(self):
+        self.assertEqual(_verdicts([r"\mathcal{L} = \frac{1}{2}(\partial\phi)^2 - g\phi^5"]), ["INCONSISTENT"])
+        self.assertEqual(_verdicts([r"V(\phi) = \lambda \phi^4 + m^2 \phi^3"]), ["DIMENSION_FLAG"])
+
+
 class TestSymbolicDerivation(unittest.TestCase):
     def setUp(self):
         self.tool = SymbolicDerivationTool()

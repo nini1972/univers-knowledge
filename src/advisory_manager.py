@@ -846,7 +846,7 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
 
 # Fallback used when git history is unavailable (e.g. the shallow checkout in GitHub Actions).
 # Bump this whenever agent tools, tasks, the math gate or the pre-check change.
-LAST_TOOLING_CHANGE_FALLBACK_UTC = "2026-10-19T06:20:00+00:00"
+LAST_TOOLING_CHANGE_FALLBACK_UTC = "2026-10-21T18:55:00+00:00"
 _TOOLING_PATHS = [
     "src/tools", "src/agents", "src/tasks", "src/universe_flow.py", "src/workflow_contracts.py",
     "src/math_precheck.py", "src/conventions.py",

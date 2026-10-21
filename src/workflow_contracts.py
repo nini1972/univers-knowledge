@@ -111,13 +111,13 @@ def parse_student_decision(raw_output: str):
         return {**DEFAULT_REJECTION}
 
     try:
-        data = json.loads(blob)
+        data = json.loads(blob, strict=False)  # strict=False: accept raw line breaks/tabs inside strings (multi-line LLM summaries)
     except json.JSONDecodeError:
         try:
             # LLMs frequently output raw LaTeX like \mid, \(, \arg, \phi in JSON strings without escaping.
             # Replace single backslashes that are not valid JSON escape sequences with double backslashes.
             repaired_blob = re.sub(r'\\(?!["\\/bfnrt]|u[0-9a-fA-F]{4})', r'\\\\', blob)
-            data = json.loads(repaired_blob)
+            data = json.loads(repaired_blob, strict=False)
         except Exception:
             return {**DEFAULT_REJECTION}
 
