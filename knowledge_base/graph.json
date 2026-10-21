@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-20T01:05:58.665795+00:00",
+  "updated_at": "2026-10-21T02:13:51.572325+00:00",
   "stats": {
-    "total_nodes": 336,
-    "level_1_count": 147,
-    "level_2_count": 131,
-    "level_3_count": 58,
-    "total_edges": 164,
+    "total_nodes": 339,
+    "level_1_count": 148,
+    "level_2_count": 132,
+    "level_3_count": 59,
+    "total_edges": 166,
     "frontier_count": 24
   },
   "nodes": [
@@ -801,11 +801,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "standardmodeleffectivefieldtheory",
         "standardmodel",
+        "peskintakeuchiparameters",
         "higgsmechanism",
-        "electroweaksymmetrybreaking",
-        "peskintakeuchiparameters"
+        "standardmodeleffectivefieldtheory",
+        "electroweaksymmetrybreaking"
       ],
       "tags": [
         "1"
@@ -1045,8 +1045,8 @@
       "math_score": "3/4",
       "dependencies": [
         "standardmodel",
-        "minimalsupersymmetricstandardmodel",
         "renormalizationgroup",
+        "minimalsupersymmetricstandardmodel",
         "grandunifiedtheories",
         "protondecay"
       ],
@@ -1121,6 +1121,25 @@
         "Abbott, R. et al. (2023), 'GWTC-3: Compact Binary Coalescences Observed by LIGO and Virgo during the Second Part of the Third Observing Run', https://doi.org/10.1103/physrevx.13.041039"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/gravitational_wave_astronomy.md"
+    },
+    {
+      "id": "hawkingradiationandtheblackholeinformationparadox",
+      "title": "Hawking Radiation and the Black Hole Information Paradox",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Polchinski, J. (2016), 'The Black Hole Information Problem', https://arxiv.org/abs/1609.04036",
+        "Almheiri, A., et al. (2021), 'The entropy of Hawking radiation', https://arxiv.org/abs/2006.06872",
+        "Berti, E., Cardoso, V., and Starinets, A. O. (2009), 'Quasinormal modes of black holes and black branes', https://doi.org/10.12942/lrr-2009-6"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/hawking_radiation_and_the_black_hole_information_paradox.md"
     },
     {
       "id": "higherordereffectsandnonstandardinteractionsinneutrinodynamics",
@@ -2732,10 +2751,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
+        "freezeinproduction",
         "cosmologicalperturbationtheory",
-        "wimpfreezeout",
         "darkmatterrelicabundance",
-        "freezeinproduction"
+        "wimpfreezeout"
       ],
       "tags": [
         "1"
@@ -2825,11 +2844,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "stronginteraction",
         "thestandardmodel",
-        "quantumfieldtheory",
+        "stronginteraction",
         "gaugetheory",
-        "latticeqcd"
+        "latticeqcd",
+        "quantumfieldtheory"
       ],
       "tags": [
         "1"
@@ -5676,6 +5695,30 @@
       "path": "knowledge_base/level_2_advanced_frameworks/thermal_inflation_vs_thermal_trapping_in_earlyuniverse_cosmology.md"
     },
     {
+      "id": "thermalleptogenesisvsresonantleptogenesisingeneratingthebaryonasymmetryandtestabilityvianeutrinolessdoublebetadecayandcollidersearches",
+      "title": "Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "baryogenesismechanismsthermalleptogenesisvsaffleckdinescalarfielddynamics",
+        "neutrinolessdoublebetadecay"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Davidson, S. and Ibarra, A. (2002), 'A lower bound on the right-handed neutrino mass from leptogenesis', https://doi.org/10.1016/S0370-2693(02)02502-8",
+        "Buchmüller, W., Di Bari, P. and Plümacher, M. (2004), 'Leptogenesis for pedestrians', https://arxiv.org/abs/hep-ph/0401240",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Hambye, T., March-Russell, J. and West, S. M. (2004), 'A model with naturally degenerate neutrinos', https://arxiv.org/abs/hep-ph/0403183",
+        "De Simone, A. and Riotto, A. (2007), 'Quantum Boltzmann equations and leptogenesis', https://arxiv.org/abs/0705.2183"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/thermal_leptogenesis_vs_resonant_leptogenesis_in_generating_the_baryon_asymmetry_and_testability_via_neutrinoless_double_beta_decay_and_collider_searches.md"
+    },
+    {
       "id": "thermalwimpsvsprimordialblackholesasdarkmatter",
       "title": "Thermal WIMPs vs Primordial Black Holes as Dark Matter",
       "level": 2,
@@ -5861,6 +5904,25 @@
         "Albantakis, L., et al. (2023), 'Integrated Information Theory: From Principles to Practice', https://doi.org/10.1371/journal.pcbi.1011465"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md"
+    },
+    {
+      "id": "afalsifiablelindbladianentropyproductionandcoherencelifetimeboundforolfactoryvibrationassistedelectrontunnelingunderwarmbiologicaldecoherence",
+      "title": "A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Arndt, M., Juffmann, T., and Vedral, V. (2009), 'Quantum physics meets biology', https://doi.org/10.2976/1.3244985",
+        "Block, E., et al. (2015), 'Implausibility of the vibrational theory of olfaction', https://doi.org/10.1073/pnas.1503054112",
+        "Mohr, P. J., Newell, D. B., and Taylor, B. N. (2021), 'CODATA Recommended Values of the Fundamental Physical Constants: 2018', https://doi.org/10.1103/RevModPhys.93.025010"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence.md"
     },
     {
       "id": "afalsifiablescaleresolveddecoherenceanddissipationboundforquantumenhancedneuralinformationprocessinginwarmbiologicaltissue",
@@ -6241,9 +6303,9 @@
       "dependencies": [
         "persistenthomology",
         "nullmodelsandhypothesistesting",
-        "cosmologicalstructureformation",
-        "lcdmcosmology",
         "cosmicweb",
+        "lcdmcosmology",
+        "cosmologicalstructureformation",
         "topologicaldataanalysis"
       ],
       "tags": [
@@ -6889,11 +6951,11 @@
       "math_score": "4/4",
       "dependencies": [
         "persistenthomology",
-        "baryonicfeedback",
         "bottleneckdistance",
-        "cosmicweb",
         "observationalselectioneffects",
-        "topologicaldataanalysis"
+        "cosmicweb",
+        "topologicaldataanalysis",
+        "baryonicfeedback"
       ],
       "tags": [
         "3"
@@ -7674,6 +7736,11 @@
       "type": "component_theory"
     },
     {
+      "source": "baryogenesismechanismsthermalleptogenesisvsaffleckdinescalarfielddynamics",
+      "target": "thermalleptogenesisvsresonantleptogenesisingeneratingthebaryonasymmetryandtestabilityvianeutrinolessdoublebetadecayandcollidersearches",
+      "type": "component_theory"
+    },
+    {
       "source": "darkmatter",
       "target": "thermalwimpsvsprimordialblackholesasdarkmatter",
       "type": "component_theory"
@@ -7801,6 +7868,11 @@
     {
       "source": "quantumgravity",
       "target": "symmetryprotectedtopologicalphasesvstopologicalinsulatorsinquantumgravity",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "neutrinolessdoublebetadecay",
+      "target": "thermalleptogenesisvsresonantleptogenesisingeneratingthebaryonasymmetryandtestabilityvianeutrinolessdoublebetadecayandcollidersearches",
       "type": "foundational_prerequisite"
     }
   ],

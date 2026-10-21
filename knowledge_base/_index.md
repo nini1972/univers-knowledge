@@ -144,6 +144,7 @@ graph TD
     cdm_cosmological_model["ΛCDM Cosmological Model"]:::verified
     disentangling_neutrino_invisible_decay_from_flux_normalization_errors["Disentangling Neutrino Invisible Decay from Flux Normalization Errors"]:::theoretical
     neutrino_cp_violation["Neutrino CP Violation"]:::theoretical
+    hawking_radiation_and_the_black_hole_information_paradox["Hawking Radiation and the Black Hole Information Paradox"]:::theoretical
     big_bang_nucleosynthesis["Big Bang Nucleosynthesis"]:::verified
     dune_nuclear_cross_section_uncertainties_vs_visible_neutrino_decay["DUNE Nuclear Cross-Section Uncertainties vs Visible Neutrino Decay"]:::theoretical
     neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
@@ -256,6 +257,7 @@ graph TD
     pre_vs_postinflationary_qcd_axion_cosmology["Pre- vs Post-Inflationary QCD Axion Cosmology"]:::theoretical
     interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges["Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges"]:::verified
     braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem["Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem"]:::theoretical
+    thermal_leptogenesis_vs_resonant_leptogenesis_in_generating_the_baryon_asymmetry_and_testability_via_neutrinoless_double_beta_decay_and_collider_searches["Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches"]:::theoretical
     emergent_entropic_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies["Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies"]:::theoretical
     scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration["Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation["Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation"]:::theoretical
@@ -317,6 +319,7 @@ graph TD
     empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models["Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models"]:::theoretical
     quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies["Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies"]:::theoretical
     landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures["Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures"]:::theoretical
+    a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence["A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence"]:::theoretical
     quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions["Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions"]:::theoretical
     landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments["Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments"]:::theoretical
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
@@ -476,6 +479,7 @@ graph TD
     neutrino_oscillations --- direct_detection_strategies_for_neutrino_decay
     dark_matter --- cdm_cosmological_model
     baryon_acoustic_oscillations --- cdm_cosmological_model
+    black_hole_thermodynamics --- hawking_radiation_and_the_black_hole_information_paradox
     cosmic_microwave_background_radiation --- big_bang_nucleosynthesis
     neutrino_oscillation_mechanisms --- dune_nuclear_cross_section_uncertainties_vs_visible_neutrino_decay
     standard_model_of_particle_physics --- neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology
@@ -556,6 +560,7 @@ graph TD
     dark_matter --> interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
     gravitational_lensing --> interacting_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges
     electroweak_symmetry_breaking --> braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem
+    neutrinoless_double_beta_decay --> thermal_leptogenesis_vs_resonant_leptogenesis_in_generating_the_baryon_asymmetry_and_testability_via_neutrinoless_double_beta_decay_and_collider_searches
     general_relativity --> scalartensor_vs_nonlocal_gravity_models_in_explaining_latetime_cosmic_acceleration
     neutrino_oscillations --> leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation
     big_bang_nucleosynthesis --> perturbative_reheating_vs_parametricresonance_preheating
@@ -631,6 +636,7 @@ graph TD
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Gravitational Lensing](level_1_fundamental_physics/gravitational_lensing.md) [VERIFIED]
 - [Gravitational Wave Astronomy](level_1_fundamental_physics/gravitational_wave_astronomy.md) [VERIFIED]
+- [Hawking Radiation and the Black Hole Information Paradox](level_1_fundamental_physics/hawking_radiation_and_the_black_hole_information_paradox.md) [THEORETICAL]
 - [Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM](level_1_fundamental_physics/hydrodynamic_simulations_baryonic_feedback_sfdm_sidm.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Inflationary Reheating Mechanisms](level_1_fundamental_physics/inflationary_reheating_mechanisms.md) [THEORETICAL]
@@ -853,6 +859,7 @@ graph TD
 - [TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing](level_2_advanced_frameworks/teves_vs_superfluid_dark_matter_in_galactic_rotation_curves_and_cluster_lensing.md) [THEORETICAL]
 - [The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework](level_2_advanced_frameworks/chiral_magnetic_effect_vs_chiral_vortical_effect_in_relativistic_plasmas.md) [THEORETICAL]
 - [Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology](level_2_advanced_frameworks/thermal_inflation_vs_thermal_trapping_in_earlyuniverse_cosmology.md) [THEORETICAL]
+- [Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches](level_2_advanced_frameworks/thermal_leptogenesis_vs_resonant_leptogenesis_in_generating_the_baryon_asymmetry_and_testability_via_neutrinoless_double_beta_decay_and_collider_searches.md) [THEORETICAL]
 - [Thermal WIMPs vs Primordial Black Holes as Dark Matter](level_2_advanced_frameworks/thermal_wimps_vs_primordial_black_holes_as_dark_matter.md) [THEORETICAL]
 - [Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md) [THEORETICAL]
 - [Type-I Seesaw vs Radiative Neutrino Mass Generation](level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md) [THEORETICAL]
@@ -865,6 +872,7 @@ graph TD
 - [A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization](level_3_emergence_and_intelligence/a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization.md) [THEORETICAL]
 - [A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure](level_3_emergence_and_intelligence/a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure.md) [THEORETICAL]
 - [A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md) [THEORETICAL]
+- [A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence](level_3_emergence_and_intelligence/a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence.md) [THEORETICAL]
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization](level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md) [THEORETICAL]
