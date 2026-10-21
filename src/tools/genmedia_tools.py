@@ -200,4 +200,18 @@ class GenerateUniverseImageTool(BaseTool):
     )
 
     def _run(self, prompt: str) -> str:
-        return asyncio.run(_generate_image_async(prompt))
+        result = asyncio.run(_generate_image_async(prompt))
+        # Keep every prompt: when saving fails the prompt can be reused later (see src/visual_backfill.py).
+        try:
+            from datetime import datetime, timezone
+            log_path = os.path.join(os.path.dirname(__file__), "..", "..", "knowledge_base", "logs", "visual_prompts.jsonl")
+            with open(log_path, "a", encoding="utf-8") as fh:
+                fh.write(json.dumps({
+                    "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                    "source": "visualizer_agent",
+                    "prompt": prompt,
+                    "result": str(result)[:300],
+                }, ensure_ascii=False) + "\n")
+        except Exception:
+            pass
+        return result

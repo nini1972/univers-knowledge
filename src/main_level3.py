@@ -63,6 +63,20 @@ def main():
 
     run_level3_flow(concept=concept, dry_run=dry_run)
 
+    # Level 3 is the last nightly step: repair a few older papers whose image was never saved.
+    if not dry_run and os.getenv("VISUAL_BACKFILL", "true").lower() != "false":
+        try:
+            try:
+                from visual_backfill import run_backfill
+            except ImportError:
+                from src.visual_backfill import run_backfill
+            stats = run_backfill()
+            if stats.get("relinked", 0) or stats.get("generated", 0):
+                repo_root = Path(__file__).resolve().parent.parent
+                _flow_update_index("knowledge_base/_index.md", repo_root)
+        except Exception as exc:
+            print(f"[VISUAL BACKFILL WARNING] Backfill skipped: {exc}")
+
 
 if __name__ == "__main__":
     main()
