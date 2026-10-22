@@ -2015,7 +2015,15 @@ class PhysicsCalculatorTool(BaseTool):
         env_vars = {**self.BUILTIN_CONSTANTS, **user_vars}
 
         # Mode 3: 1D Gaussian tension_sigma
-        if mode_clean == "tension_sigma" or (val1 is not None and val2 is not None and err1 is not None and err2 is not None):
+        # Infer tension mode only when nothing else was asked for: LLMs often fill unused val/err fields with 0
+        # while explicitly requesting verify_claim/evaluate, which must not be hijacked (run 107595863357).
+        implicit_tension = (
+            mode_clean == "evaluate"
+            and not (expression or "").strip()
+            and claimed_value is None
+            and None not in (val1, val2, err1, err2)
+        )
+        if mode_clean == "tension_sigma" or implicit_tension:
             v1 = float(val1 if val1 is not None else user_vars.get("val1", 0.0))
             v2 = float(val2 if val2 is not None else user_vars.get("val2", 0.0))
             e1 = float(err1 if err1 is not None else user_vars.get("err1", 0.0))
@@ -2023,7 +2031,11 @@ class PhysicsCalculatorTool(BaseTool):
             rho = max(-0.999, min(0.999, float(correlation)))
             var_diff = e1**2 + e2**2 - 2.0 * rho * e1 * e2
             if var_diff <= 0:
-                return json.dumps({"error": "Combined variance must be positive."}, indent=2)
+                return json.dumps({
+                    "error": "Combined variance must be positive (err1/err2 are zero or missing). "
+                             "For an arithmetic check of a single number use mode='verify_claim' with "
+                             "expression and claimed_value."
+                }, indent=2)
             sigma_diff = math.sqrt(var_diff)
             diff = abs(v1 - v2)
             tension_sig = diff / sigma_diff

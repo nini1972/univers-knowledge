@@ -214,6 +214,33 @@ class TestRuns1066_1071Regressions(unittest.TestCase):
         self.assertEqual(_verdicts([r"V(\phi) = \lambda \phi^4 + m^2 \phi^3"]), ["DIMENSION_FLAG"])
 
 
+class TestRun107595863357Regressions(unittest.TestCase):
+    """2026-10-22: verify_claim with placeholder err1=err2=0 was hijacked into tension mode."""
+
+    def test_verify_claim_with_zero_placeholder_errors_is_not_tension_mode(self):
+        out = json.loads(PhysicsCalculatorTool()._run(
+            mode="verify_claim",
+            expression="1.66*sqrt(106.75)*1e-7*2.3486e-13/1.22091e19*(3.909/106.75)**(1./3)/(6.58212e-25)",
+            claimed_value=3.59e-14, tolerance_rel=0.1, val1=0, err1=0, val2=0, err2=0, correlation=0,
+        ))
+        self.assertNotIn("error", out, out)
+        self.assertEqual(out["mode"], "verify_claim", out)
+        self.assertEqual(out["verdict"], "CLAIM_MISMATCH", out)  # 1.66e-14 vs claimed 3.59e-14: a real finding
+        self.assertAlmostEqual(out["computed_value"] / 1.6645e-14, 1.0, places=3)
+
+    def test_explicit_and_implicit_tension_still_work(self):
+        explicit = json.loads(PhysicsCalculatorTool()._run(
+            mode="tension_sigma", val1=67.36, err1=0.54, val2=73.04, err2=1.04))
+        implicit = json.loads(PhysicsCalculatorTool()._run(val1=67.36, err1=0.54, val2=73.04, err2=1.04))
+        for out in (explicit, implicit):
+            self.assertEqual(out["mode"], "tension_sigma", out)
+            self.assertAlmostEqual(out["tension_sigma"], 4.85, delta=0.02)
+
+    def test_zero_errors_in_tension_mode_explain_verify_claim(self):
+        out = json.loads(PhysicsCalculatorTool()._run(mode="tension_sigma", val1=1, err1=0, val2=2, err2=0))
+        self.assertIn("verify_claim", out["error"])
+
+
 class TestSymbolicDerivation(unittest.TestCase):
     def setUp(self):
         self.tool = SymbolicDerivationTool()
