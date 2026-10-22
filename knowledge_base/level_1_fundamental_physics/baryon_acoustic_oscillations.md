@@ -40,7 +40,7 @@ While BAO are widely accepted and have been confirmed through multiple observati
 The empirical verification of BAO has led to a strong consensus in the cosmological community about their significance in understanding the large-scale structure of the universe. Observations have consistently supported the theoretical framework, although ongoing discussions about their implications continue.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Baryon Acoustic Oscillations](../images/gemini_20261022013333_0.png)
 
 ## 7. Related Concepts
 - Cosmic Microwave Background (CMB)

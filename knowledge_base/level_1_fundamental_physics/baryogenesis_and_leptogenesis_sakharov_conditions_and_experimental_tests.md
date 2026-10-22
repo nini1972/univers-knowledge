@@ -61,7 +61,7 @@ The empirical anchor is the observed baryon asymmetry. Sakharov’s conditions a
 The distinction between observation and explanation is essential: the measured asymmetry is established, whereas thermal leptogenesis, electroweak baryogenesis, and gravitational baryogenesis remain theoretical mechanisms. Experimental constraints and possible tests can assess these proposals, but they do not yet confirm any of them.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Baryogenesis and Leptogenesis: Sakharov Conditions and Experimental Tests](../images/gemini_20261022013322_0.png)
 
 ## 7. Related Concepts
 - [[Sakharov Conditions]]

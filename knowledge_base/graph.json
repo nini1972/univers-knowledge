@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-21T02:13:51.572325+00:00",
+  "updated_at": "2026-10-22T01:34:30.476370+00:00",
   "stats": {
-    "total_nodes": 339,
-    "level_1_count": 148,
+    "total_nodes": 341,
+    "level_1_count": 149,
     "level_2_count": 132,
-    "level_3_count": 59,
-    "total_edges": 166,
-    "frontier_count": 24
+    "level_3_count": 60,
+    "total_edges": 167,
+    "frontier_count": 28
   },
   "nodes": [
     {
@@ -273,6 +273,31 @@
         "Linde, A. (1982). A new inflationary universe scenario: A possible solution of the horizon, flatness, homogeneity, isotropy and primordial monopole problems. Physics Letters B, 108(6), 389-393."
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cosmic_inflation_mechanisms.md"
+    },
+    {
+      "id": "cosmicmicrowavebackgroundanisotropiesandacousticpeakphenomenology",
+      "title": "Cosmic Microwave Background Anisotropies and Acoustic Peak Phenomenology",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "friedmannequations",
+        "cosmicmicrowavebackground",
+        "hubbletension",
+        "darkenergy",
+        "baryonacousticoscillations"
+      ],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://arxiv.org/abs/1807.06209",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "Amon, A., et al. (2022), 'Dark Energy Survey Year 3 results: Cosmological constraints from cosmic shear', https://doi.org/10.1103/PhysRevD.105.023514"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_microwave_background_anisotropies_and_acoustic_peak_phenomenology.md"
     },
     {
       "id": "cosmicmicrowavebackgroundradiation",
@@ -801,11 +826,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "standardmodel",
         "peskintakeuchiparameters",
-        "higgsmechanism",
         "standardmodeleffectivefieldtheory",
-        "electroweaksymmetrybreaking"
+        "electroweaksymmetrybreaking",
+        "standardmodel",
+        "higgsmechanism"
       ],
       "tags": [
         "1"
@@ -1044,11 +1069,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "standardmodel",
         "renormalizationgroup",
         "minimalsupersymmetricstandardmodel",
         "grandunifiedtheories",
-        "protondecay"
+        "protondecay",
+        "standardmodel"
       ],
       "tags": [
         "1"
@@ -2751,10 +2776,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "freezeinproduction",
+        "wimpfreezeout",
         "cosmologicalperturbationtheory",
         "darkmatterrelicabundance",
-        "wimpfreezeout"
+        "freezeinproduction"
       ],
       "tags": [
         "1"
@@ -2844,11 +2869,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "thestandardmodel",
         "stronginteraction",
-        "gaugetheory",
+        "quantumfieldtheory",
         "latticeqcd",
-        "quantumfieldtheory"
+        "thestandardmodel",
+        "gaugetheory"
       ],
       "tags": [
         "1"
@@ -6301,12 +6326,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "persistenthomology",
         "nullmodelsandhypothesistesting",
-        "cosmicweb",
-        "lcdmcosmology",
         "cosmologicalstructureformation",
-        "topologicaldataanalysis"
+        "lcdmcosmology",
+        "cosmicweb",
+        "topologicaldataanalysis",
+        "persistenthomology"
       ],
       "tags": [
         "3"
@@ -6447,6 +6472,28 @@
         "Barato, A. C. & Seifert, U. (2015), 'Thermodynamic Uncertainty Relation for Biomolecular Processes', https://doi.org/10.1103/PhysRevLett.114.158101"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md"
+    },
+    {
+      "id": "fluctuationtheoremboundsonirreversibilityandentropyproductionincorticalspiketraindynamicsversuscosmicwebfilamentevolutionafalsifiabledimensionallyconsistenttest",
+      "title": "Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Cofré, R. and Maldonado, C. (2018), 'Entropy production in maximum-entropy Markov models of spike trains (descriptive title; formal title not supplied in the research report)', https://doi.org/10.3390/e20010034",
+        "Sekizawa, K., Ito, S. and Oizumi, M. (2024), 'Thermodynamic dissipation in neural dynamics (descriptive title; formal title not supplied in the research report)', https://doi.org/10.1103/PhysRevX.14.041003",
+        "Pandey, B. (2019), 'Configuration-entropy proxies for cosmic-web structure growth (descriptive title; formal title not supplied in the research report)', https://doi.org/10.1093/mnrasl/slz037",
+        "Vazza, F., et al. (2015), 'Filament shock heating and synchrotron emissivity (descriptive title; formal title not supplied in the research report)', https://arxiv.org/abs/1501.00315",
+        "Lucente, M., Gradenigo, G. and Salasnich, L. (2025), 'Entropy production in linearized stochastic Amari neural models (descriptive title; formal title not supplied in the research report)', https://doi.org/10.3390/e27111104",
+        "Zimmern, V. (2020), 'Neural criticality and entropy production (descriptive title; formal title not supplied in the research report)', https://doi.org/10.3389/fncir.2020.00054"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test.md"
     },
     {
       "id": "formalizingintegratedinformationtheorywithinspacetimegeometry",
@@ -6950,12 +6997,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "persistenthomology",
         "bottleneckdistance",
         "observationalselectioneffects",
+        "baryonicfeedback",
         "cosmicweb",
         "topologicaldataanalysis",
-        "baryonicfeedback"
+        "persistenthomology"
       ],
       "tags": [
         "3"
@@ -7045,6 +7092,11 @@
     }
   ],
   "edges": [
+    {
+      "source": "baryonacousticoscillations",
+      "target": "cosmicmicrowavebackgroundanisotropiesandacousticpeakphenomenology",
+      "type": "prerequisite"
+    },
     {
       "source": "electroweaksymmetrybreaking",
       "target": "electroweakprecisiontestsandthehiggsmechanism",
@@ -7890,6 +7942,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "cosmicmicrowavebackground",
+      "suggested_title": "Cosmicmicrowavebackground",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "cosmicweb",
       "suggested_title": "Cosmicweb",
       "target_level": 1,
@@ -7902,6 +7960,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "darkenergy",
+      "suggested_title": "Darkenergy",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "darkmatterrelicabundance",
       "suggested_title": "Darkmatterrelicabundance",
       "target_level": 1,
@@ -7910,6 +7974,12 @@
     {
       "id": "freezeinproduction",
       "suggested_title": "Freezeinproduction",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "friedmannequations",
+      "suggested_title": "Friedmannequations",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -7928,6 +7998,12 @@
     {
       "id": "higgsmechanism",
       "suggested_title": "Higgsmechanism",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "hubbletension",
+      "suggested_title": "Hubbletension",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },

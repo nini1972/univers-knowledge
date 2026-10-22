@@ -37,7 +37,7 @@ Relevant discussions include Peebles and Ratra (2003), “The cosmological const
 The evidence supports ΛCDM as an empirically successful effective cosmological framework. This verification does not establish the underlying physical nature of dark matter or dark energy. Its observational fit and unresolved tensions—including the Hubble tension and questions about the constancy of dark energy—should remain explicit.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![ΛCDM Cosmological Model](../images/gemini_20261022013401_0.png)
 
 ## 7. Related Concepts
 - [[Dark Matter]]

@@ -32,7 +32,7 @@ Despite their theoretical grounding, both models face significant skepticism due
 The comparative review met all rigor standards, achieving a 5/5 skeptic score, underscoring the strength of its conclusions despite current empirical limitations.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ../images/gemini_20260718012201_0.png]
+![Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution](../images/gemini_20260718012201_0.png)
 
 ## 7. Related Concepts
 - Hierarchy Problem

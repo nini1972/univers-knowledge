@@ -28,7 +28,7 @@ Critics of the WIMP paradigm argue that, despite extensive searches, no direct d
 The mathematical and empirical foundations of both MOND and WIMP models have been found consistent, but the canonical WIMP paradigm is currently considered to be weakening due to lack of observational corroboration.
 
 ## 6. Visual Representation
-![VISUAL_PENDING: ...](../images/gemini_20260808005459_0.png)
+![Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics](../images/gemini_20260808005459_0.png)
 
 ## 7. Related Concepts
 - Dark Matter

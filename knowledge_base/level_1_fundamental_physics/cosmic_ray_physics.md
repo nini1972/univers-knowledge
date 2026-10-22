@@ -77,7 +77,7 @@ This **photopion production** limits the proton horizon to ~100–200 Mpc.
 The status classification reveals that DSA + shock amplification is verified, while UHECR sources and exact knee mechanisms remain theoretical.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Cosmic Ray Physics](../images/gemini_20261022013419_0.png)
 
 ## 7. Related Concepts
 ## 7. Related Concepts

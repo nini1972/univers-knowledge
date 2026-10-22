@@ -33,7 +33,7 @@ Despite their mathematical elegance, skeptics highlight the reliance of both mod
 The frameworks are classified as [THEORETICAL] due to the lack of empirical support and reliance on hypothetical constructs.
 
 ## 6. Visual Representation
-![VISUAL_PENDING: ...](../images/gemini_20260723010904_1.png)
+![Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure](../images/gemini_20260723010904_1.png)
 
 ## 7. Related Concepts
 - Weakly Interacting Massive Particles (WIMPs)

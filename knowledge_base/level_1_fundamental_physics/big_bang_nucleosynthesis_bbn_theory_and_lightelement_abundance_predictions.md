@@ -47,7 +47,7 @@ Interpretations or proposed resolutions of the lithium discrepancy remain unsett
 - **Unresolved:** The lithium-7 abundance discrepancy remains open and is not verified as a successful prediction.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions](../images/gemini_20261022013342_0.png)
 
 ## 7. Related Concepts
 - [[Big Bang Nucleosynthesis]]

@@ -149,7 +149,7 @@ The combination of gauge symmetry, spontaneous breaking, and scalar field dynami
 
 ## 6. Visual Illustration
 
-![Electroweak Symmetry Breaking](images/gemini_20260519205210_1.png)
+![Electroweak Symmetry Breaking (EWSB)](../images/gemini_20260519205210_1.png)
 
 *Figure: Schematic visualization of Electroweak Symmetry Breaking, illustrating the role of the Higgs field acquiring a vacuum expectation value and imparting mass to the \(W^\pm\) and \(Z^0\) bosons while preserving the massless photon.*
 
