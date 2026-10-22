@@ -12,61 +12,28 @@
 
 ---
 
-## 📬 Pending Student Inquiries (3)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261019-1ee234` | L1 | **Spontaneous Symmetry Breaking and the Goldstone Theorem** | UniverseFlow Orchestrator | Concept 'Spontaneous Symmetry Breaking and the Goldstone Theorem' was rejected after 2 attempts (crew_kickoff_error). How should the agents proceed? |
-| `adv-20261019-e12f3d` | L2 | **Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration** | UniverseFlow Orchestrator | Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-| `adv-20261022-609db1` | L2 | **Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background** | UniverseFlow Orchestrator | Concept 'Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261019-1ee234` — Spontaneous Symmetry Breaking and the Goldstone Theorem
-- **Timestamp**: `2026-10-19T01:06:29.133432+00:00`
-- **Level**: Level 1
-- **Reason Code**: `crew_kickoff_error`
-- **Question**: Concept 'Spontaneous Symmetry Breaking and the Goldstone Theorem' was rejected after 2 attempts (crew_kickoff_error). How should the agents proceed?
-- **Scientific Rationale**: Rejected due to crew_kickoff_error.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261019-1ee234 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261019-e12f3d` — Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
-- **Timestamp**: `2026-10-19T02:22:15.037187+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic's score is 5/5, which meets the threshold. The Math Physicist's status is [MATH_FLAWED] with a score of 2/4, and the decision policy says to reject for [MATH_FLAWED]. The source reports mis-declare [X]=[E]², when it should be [E]⁴ for [φ]=[E]¹. They also give the KGB chain as [G]=[E]⁰ and [□φ]=[E]², which does not close. The correct assignment is [G]=[E]¹ and [□φ]=[E]³. The compact G^{μν} notation does not close under any assignment. The physics itself is standard and correct. That includes the exact variable-w integral, the sign condition for c_s²>1 (P_,XX<0), the Vikman no-go, and the benchmarks. The dimensional bookkeeping must be corrected before approval. The debate report already supplies corrected conventions, so a resubmission should be quick.
-- **Agent Blockers**:
-  * Researcher: Rewrite both source reports with the unified symbol table: [X]=[E]^4, [P_,X]=[E]^0, [P_,XX]=[E]^-4, [G]=[E]^1, [□φ]=[E]^3, [K]=[E]^4.
-  * Researcher: Remove the compact G^{μν} notation, or define it so that it closes dimensionally.
-  * Researcher: Rename the correlation coefficient so it no longer collides with the density symbol ρ.
-  * Researcher: State that Δχ²≡σ² holds only for 1 d.o.f. For the 2-parameter (w0,wa) fit the Gaussian estimate is about 16.7 (4.09σ), not 15.2. Also fix the sign convention, since DESI's Δχ² is negative while σ² is positive.
-  * Math Physicist: Re-derive the dimensional chains for w, c_s², the KGB Lagrangian and the tracker equation under [X]=[E]^4.
-  * Math Physicist: Re-run the dimensional consistency checker on the corrected table and reach a [MATH_PROVEN] or [MATH_CONSISTENT] status with a score of at least 3/4.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261019-e12f3d "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261022-609db1` — Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
-- **Timestamp**: `2026-10-22T01:25:12.897147+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic score of 5/5 meets the threshold, and the report compares more than three independent sources across both mechanisms with transparent [GENERAL] and [MODEL-DEPENDENT] scoping. The Math report is labeled [MATH_FLAWED] by the header, but its 3/4 score and the localized nature of the errors (a missing H* factor, a missing f^2 factor, an arithmetic slip in f_min,0) make them correctable caveats rather than fundamental flaws. Neither source has direct confirmation as the origin of the background, so the epistemic status is [THEORETICAL].
-
-Math gate: approval blocked because the Math Physicist's tool-verified report contains math_status is MATH_FLAWED; 2 INCONSISTENT verdict(s). Correct the flagged equations/derivation steps and re-verify.
-- **Agent Blockers**:
-  * Researcher: Bayesian model comparison of FOPT and string fits against the SMBHB baseline for the PTA data
-  * Math Physicist: Restore the H* factor in the acoustic damping formula
-  * Math Physicist: Restore the f^2 factor in the Omega_GW to h_c conversion
-  * Math Physicist: Correct the string-half f_min,0 to 1.665e-14 Hz (lambda_0=0.584 Mpc)
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261022-609db1 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (26)
+## 📚 Answered Advisory Consultations (29)
+
+### ✅ `adv-20261022-609db1`: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
+- **Student Inquired**: Concept 'Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"Retry this concept. The rejection was justified, but the physical framework is sound; fix exactly these items and re-verify each one with the tools before resubmitting. (1) Sound-wave duration: tau_sw H_* = H_* R_* / U_f (O(1) prefactor as in Caprini et al. 2020); both sides must be dimensionless. State whether you use the suppression factor Upsilon = 1 - 1/sqrt(1 + 2 tau_sw H_*) or the min(tau_sw H_*, 1) approximation. (2) PTA conversion: Omega_GW(f) = (2 pi^2 / 3 H_0^2) f^2 h_c(f)^2; with h_c = A (f/f_yr)^{(3-gamma)/2} this gives Omega_GW(f) = (2 pi^2 f_yr^2 / 3 H_0^2) A^2 (f/f_yr)^{5-gamma} (exponent 2/3 for gamma = 13/3). (3) Horizon-crossing frequency: state one convention, f = a_i H_i / a_0 (no 2 pi; this is the convention behind 1.65e-5 Hz (T/100 GeV)(g_*/100)^{1/6}), and evaluate g_* and g_*s at T_i itself: 106.75 applies only above ~100 GeV, below ~0.5 MeV use g_* = 3.36 and g_*s = 3.91. Then recompute f_min,0 and lambda_0 = c / f_min,0 with the physics calculator (mode verify_claim) and quote the tool's value rather than a hand estimate. (4) For the PTA comparison against the SMBHB baseline, cite the NANOGrav 15-yr new-physics analysis (Afzal et al. 2023, ApJL 951, L11) for Bayes factors instead of deriving new ones."*
+- **Answered At**: `2026-10-22T17:01:05.358537+00:00`
+
+### ✅ `adv-20261019-e12f3d`: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
+- **Student Inquired**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"Retry this concept. Part of the 19 Oct rejection came from verifier false positives that have since been fixed (Delta chi^2 treated as dimensional, the Horndeski function G(phi,X) read as Newton's G, the exact CPL integral with e^{...}). The remaining genuine items to fix: (1) One unified symbol table for both theories: [phi]=[E]^1; X = -(1/2) g^{mu nu} d_mu phi d_nu phi with [X]=[E]^4; [P(phi,X)]=[E]^4, [P_,X]=[E]^0, [P_,XX]=[E]^-4; KGB Lagrangian L = K(phi,X) - G(phi,X) Box phi with [K]=[E]^4, [Box phi]=[E]^3, [G]=[E]^1. (2) Drop the compact G^{mu nu} notation, or define it explicitly together with its dimension. (3) Rename the correlation coefficient (e.g. r_12) so it no longer collides with the energy density rho. (4) Statistics: Delta chi^2 = n_sigma^2 holds only for 1 degree of freedom; for the 2-parameter (w0, wa) extension use the chi^2 distribution with 2 d.o.f. (Delta chi^2 = -2 ln p) and quote DESI's own Delta chi^2 and significance with its sign convention (Delta chi^2 = chi^2_w0wa - chi^2_LCDM < 0). (5) Keep c_s^2 = P_,X / (P_,X + 2X P_,XX): superluminal when P_,XX < 0 (for P_,X > 0), and keep the Vikman no-go for crossing w = -1 with a single minimally coupled k-essence field."*
+- **Answered At**: `2026-10-22T17:01:05.355882+00:00`
+
+### ✅ `adv-20261019-1ee234`: Spontaneous Symmetry Breaking and the Goldstone Theorem
+- **Student Inquired**: Concept 'Spontaneous Symmetry Breaking and the Goldstone Theorem' was rejected after 2 attempts (crew_kickoff_error). How should the agents proceed?
+- **Professor Directive**: 💬 *"Retry this concept. The rejection was an infrastructure failure (an empty LLM response aborted the crew), not a scientific problem; the flow now retries empty responses automatically. Guidance: keep the scope to textbook-verified physics. Conventions: natural units, [phi]=[E]^1; V(phi) = -mu^2|phi|^2 + lambda|phi|^4 with [mu]=[E]^1 and dimensionless lambda; write phi = (v + h + i chi)/sqrt(2), so v = mu/sqrt(lambda) and m_h^2 = 2 mu^2 = 2 lambda v^2 (state this normalization explicitly). Goldstone counting for a continuous global symmetry G -> H: dim G - dim H massless modes (O(N) -> O(N-1) gives N-1). Separate global SSB (physical Goldstones: pions as pseudo-Goldstones, magnons) from the gauge case (Higgs mechanism: Goldstones become longitudinal W/Z modes; by Elitzur's theorem a local gauge symmetry cannot break spontaneously, so tag 'gauge symmetry breaking' language as a gauge-fixed description). Mention the known caveats: non-relativistic counting (type-A/type-B, Watanabe-Murayama) and Coleman-Mermin-Wagner (no continuous SSB in d <= 2 at finite temperature). Benchmarks: v = 246.22 GeV, m_h = 125.25 GeV (PDG); f_pi ~ 92 MeV (or ~130 MeV in the other convention; state which)."*
+- **Answered At**: `2026-10-22T17:01:05.352878+00:00`
 
 ### ✅ `adv-20261018-d224d8`: A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
 - **Student Inquired**: Concept 'A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
@@ -102,19 +69,4 @@ Math gate: approval blocked because the Math Physicist's tool-verified report co
 - **Student Inquired**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
 - **Professor Directive**: 💬 *"In the comparative analysis of reheating mechanisms, address the three identified theoretical and mathematical issues: (1) Reconcile the scalar decay width with the displayed interaction Lagrangian: for trilinear interaction L_int = -(1/2) g phi chi^2 with real scalar chi (identical final-state particles), the 2-body decay width is Gamma(phi -> chi chi) = g^2 / (32 pi m_phi) [or Gamma = g^2 / (8 pi m_phi) if using L_int = -g phi chi_1 chi_2 without identical bosons], whereas for Yukawa coupling L_int = -y phi psi_bar psi to Dirac fermions the width is Gamma(phi -> psi_bar psi) = y^2 m_phi / (8 pi) (for m_psi << m_phi); state the identical-particle phase space convention explicitly. (2) Qualify the claim that preheating is universally necessary: preheating via broad parametric resonance requires resonance parameter q = g^2 Phi_0^2 / (4 m^2) >> 1; for narrow resonance (q << 1) or weak couplings, preheating is inefficient or absent, and reheating proceeds purely through perturbative decay. Present the hybrid preheating-to-perturbative sequence as a common, model-dependent possibility rather than an inevitable necessity. (3) For the maximum radiation temperature during perturbative reheating with a quadratic potential, state T_max approx 0.8 * (m_phi Gamma_phi M_Pl^2)^(1/4) with explicit dependence on initial energy density, and ensure radiation tracking scaling obeys T proportional to a^(-3/8)."*
 - **Answered At**: `2026-10-11T13:40:11.711648+00:00`
-
-### ✅ `adv-20261009-ec789d`: Perturbative Reheating vs Parametric-Resonance Preheating
-- **Student Inquired**: Level 2 debate 'Perturbative Reheating vs Parametric-Resonance Preheating' was rejected after 2 attempts (crew_kickoff_error). How should the debate research proceed?
-- **Professor Directive**: 💬 *"When simulating and analyzing inflation reheating, decompose the dynamics into three distinct chronological phases: (1) Non-perturbative preheating via parametric resonance governed by the Mathieu equation d^2 chi_k / dz^2 + [A_k - 2 q cos(2 z)] chi_k = 0 for broad resonance q = g^2 Phi_0^2 / (4 m^2) >> 1, yielding explosive occupation numbers n_k ~ exp(2 mu_k m t); (2) Non-linear rescattering, turbulence, and fragmentation halting exponential growth before complete inflaton depletion; (3) Final perturbative decay (Gamma_phi) and thermalization establishing the radiation-dominated era with T_reh approx (90 / (pi^2 g_*))^(1/4) sqrt(Gamma_phi M_Pl). Structure the debate report with clear modular headings, exact equation blocks, and empirical bounds from BBN (T_reh >= 4 MeV) and CMB constraints on the equation of state w_reheat to prevent token overflow or parse failures."*
-- **Answered At**: `2026-10-10T13:39:34.046922+00:00`
-
-### ✅ `adv-20261006-540db7`: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
-- **Student Inquired**: Level 3 topic 'A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Professor Directive**: 💬 *"In the finite-time thermodynamic trade-off model C(tau) = W_2^2 / (mu * tau) + E_0 * tau + E_erasure, rigorously derive the optimal latency minimizer by differentiating with respect to tau: dC/dtau = -W_2^2 / (mu * tau^2) + E_0 = 0, yielding the unique minimum tau* = sqrt(W_2^2 / (mu * E_0)), with second derivative d^2C/dtau^2 = 2 W_2^2 / (mu * tau^3) > 0. Verify dimensional consistency: with [W_2^2 / mu] = J*s and [E_0] = J/s = W, tau* has SI units of seconds. Clearly categorize this trade-off as a phenomenological cost model rather than a fundamental thermodynamic conservation law. When drawing parallels to cosmic-web structure formation, specify probability-normalized Wasserstein mass distributions to preserve rigorous SI units."*
-- **Answered At**: `2026-10-10T13:39:25.561348+00:00`
-
-### ✅ `adv-20261006-79c5cc`: Pre- vs Post-Inflationary QCD Axion Cosmology
-- **Student Inquired**: Level 2 debate 'Pre- vs Post-Inflationary QCD Axion Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the debate research proceed?
-- **Professor Directive**: 💬 *"In pre-inflationary QCD axion scenarios, calibrate the inflationary Hubble scale strictly using the standard single-field slow-roll relation H_inf = pi * M_Pl * sqrt(r * A_s / 2) approx 8.4 * 10^13 * sqrt(r / 0.01) GeV with Planck amplitude A_s approx 2.1 * 10^-9. For the tensor-to-scalar ratio corresponding to the axion isocurvature limit H_inf <= 10^9 GeV * (f_I / 10^12 GeV), calculate r consistently: (H_inf / (8.4 * 10^14 GeV))^2 yields r <= 1.4 * 10^-12 (approx 10^-13 to 10^-12 depending on f_I), resolving the erroneous 5 * 10^-9 estimate. Enforce internal consistency across all tables, derivations, and summary figures between f_a, m_a, H_inf, and the derived tensor bound r."*
-- **Answered At**: `2026-10-10T13:39:16.242818+00:00`
 
