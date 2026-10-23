@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-22T01:34:30.476370+00:00",
+  "updated_at": "2026-10-23T01:19:00.252592+00:00",
   "stats": {
-    "total_nodes": 341,
-    "level_1_count": 149,
+    "total_nodes": 343,
+    "level_1_count": 150,
     "level_2_count": 132,
-    "level_3_count": 60,
+    "level_3_count": 61,
     "total_edges": 167,
     "frontier_count": 28
   },
@@ -283,10 +283,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "darkenergy",
         "friedmannequations",
         "cosmicmicrowavebackground",
         "hubbletension",
-        "darkenergy",
         "baryonacousticoscillations"
       ],
       "tags": [
@@ -826,11 +826,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "higgsmechanism",
         "peskintakeuchiparameters",
-        "standardmodeleffectivefieldtheory",
-        "electroweaksymmetrybreaking",
         "standardmodel",
-        "higgsmechanism"
+        "electroweaksymmetrybreaking",
+        "standardmodeleffectivefieldtheory"
       ],
       "tags": [
         "1"
@@ -1069,11 +1069,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "renormalizationgroup",
-        "minimalsupersymmetricstandardmodel",
         "grandunifiedtheories",
+        "standardmodel",
+        "minimalsupersymmetricstandardmodel",
         "protondecay",
-        "standardmodel"
+        "renormalizationgroup"
       ],
       "tags": [
         "1"
@@ -2591,6 +2591,32 @@
       "path": "knowledge_base/level_1_fundamental_physics/spectral_decomposition_of_non_hermitian_decay_hamiltonians.md"
     },
     {
+      "id": "spontaneoussymmetrybreakingandthegoldstonetheorem",
+      "title": "Spontaneous Symmetry Breaking and the Goldstone Theorem",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Goldstone, J. (1961), 'Field Theories with Superconductor Solutions', https://doi.org/10.1007/BF02812722",
+        "Goldstone, J., Salam, A., and Weinberg, S. (1962), 'Broken Symmetries', https://doi.org/10.1103/PhysRev.127.965",
+        "Higgs, P. W. (1964), 'Broken Symmetries and the Masses of Gauge Bosons', https://doi.org/10.1103/PhysRevLett.13.508",
+        "Englert, F., and Brout, R. (1964), 'Broken Symmetry and the Mass of Gauge Vector Mesons', https://doi.org/10.1103/PhysRevLett.13.321",
+        "Guralnik, G. S., Hagen, C. R., and Kibble, T. W. B. (1964), 'Global Conservation Laws and Massless Particles', https://doi.org/10.1103/PhysRevLett.13.585",
+        "Weinberg, S. (1996), 'The Quantum Theory of Fields, Volume II: Modern Applications', https://doi.org/10.1017/CBO9781139644174",
+        "Peskin, M. E., and Schroeder, D. V. (1995), 'An Introduction to Quantum Field Theory', https://doi.org/10.1201/9780429503559",
+        "ATLAS Collaboration (2012), 'Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC', https://doi.org/10.1016/j.physletb.2012.08.020",
+        "CMS Collaboration (2012), 'Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC', https://doi.org/10.1016/j.physletb.2012.08.021",
+        "Particle Data Group (2022), 'Review of Particle Physics', https://doi.org/10.1093/ptep/ptac097"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/spontaneous_symmetry_breaking_and_the_goldstone_theorem.md"
+    },
+    {
       "id": "standardmodelfermionmasshierarchiesandmixingmatrices",
       "title": "Standard Model Fermion Mass Hierarchies and Mixing Matrices",
       "level": 1,
@@ -2776,10 +2802,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "wimpfreezeout",
-        "cosmologicalperturbationtheory",
         "darkmatterrelicabundance",
-        "freezeinproduction"
+        "freezeinproduction",
+        "cosmologicalperturbationtheory",
+        "wimpfreezeout"
       ],
       "tags": [
         "1"
@@ -2869,11 +2895,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "stronginteraction",
         "quantumfieldtheory",
+        "gaugetheory",
+        "stronginteraction",
         "latticeqcd",
-        "thestandardmodel",
-        "gaugetheory"
+        "thestandardmodel"
       ],
       "tags": [
         "1"
@@ -6326,12 +6352,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "nullmodelsandhypothesistesting",
-        "cosmologicalstructureformation",
-        "lcdmcosmology",
-        "cosmicweb",
         "topologicaldataanalysis",
-        "persistenthomology"
+        "cosmologicalstructureformation",
+        "cosmicweb",
+        "persistenthomology",
+        "nullmodelsandhypothesistesting",
+        "lcdmcosmology"
       ],
       "tags": [
         "3"
@@ -6951,6 +6977,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md"
     },
     {
+      "id": "quantumspeedlimitandlandauerdissipationboundsonenzymecatalyzedprotontunnelinginformationtransferadimensionallyconsistentfalsifiablekineticisotopeeffecttestofcohere",
+      "title": "Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Chattopadhyay (2025), '[Title not supplied in the provided report]', bibliographic identifier not supplied",
+        "Vu & Saito (2023), '[Title not supplied in the provided report]', bibliographic identifier not supplied",
+        "Oprea et al. (2025), '[Title not supplied in the provided report]', bibliographic identifier not supplied"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere.md"
+    },
+    {
       "id": "quantumthermodynamicspeedlimitsandenergeticadvantageinbiologicalsensingafalsifiablebenchmarkrelativetestofcoherenceenhancedinformationprocessing",
       "title": "Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing",
       "level": 3,
@@ -6997,12 +7042,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "bottleneckdistance",
-        "observationalselectioneffects",
-        "baryonicfeedback",
-        "cosmicweb",
         "topologicaldataanalysis",
-        "persistenthomology"
+        "baryonicfeedback",
+        "bottleneckdistance",
+        "cosmicweb",
+        "persistenthomology",
+        "observationalselectioneffects"
       ],
       "tags": [
         "3"

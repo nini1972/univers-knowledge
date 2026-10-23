@@ -45,7 +45,7 @@ Despite its robust theoretical foundation, Noether's theorem may encounter limit
 Noether's theorem has been rigorously verified, achieving high standards across skeptical thresholds and mathematical scrutiny. Archival wording addresses the distinction between mechanical charges and field-theoretic currents, preserving academic integrity while detailing the theorem's implications.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Noether's Theorem](../images/gemini_20261023011848_0.png)
 
 ## 7. Related Concepts
 The examination of Noether's theorem intersects with various fields, including:

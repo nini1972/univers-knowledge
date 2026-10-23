@@ -52,7 +52,7 @@ Likewise, cosmological observations constrain predictions made using the framewo
 **Status: [VERIFIED] as an established theoretical and computational framework.** Cosmological applications of the Boltzmann equation are empirically constrained by observations. This status does not mean the equation is independently proved by those observations, nor does it confirm speculative microphysical scenarios such as WIMP freeze-out.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: The image generation tool did not return a local file path; only a textual description of the visualization was provided. No image asset is available.]
+![The Boltzmann Equation in Cosmology](../images/gemini_20261023011858_0.jpg)
 
 ## 7. Related Concepts
 - [Cosmological perturbation theory](cosmological_perturbation_theory.md)

@@ -34,7 +34,7 @@ Other proposed mechanisms for generating the baryon asymmetry include leptogenes
 The electroweak sphaleron and anomaly framework is well established. The proposed generation of the observed cosmic baryon asymmetry through electroweak baryogenesis, however, is not confirmed. The Standard Model does not provide a viable realization, and extensions that could potentially support the mechanism have not been experimentally confirmed.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Electroweak Baryogenesis](../images/gemini_20261023011814_0.png)
 
 ## 7. Related Concepts
 - [[Cosmic baryon asymmetry]]

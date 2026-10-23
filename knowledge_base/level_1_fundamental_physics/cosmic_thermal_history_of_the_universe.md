@@ -50,7 +50,7 @@ $$y = \frac{\sigma_T}{m_e c^2}\int n_e k_B T_e\, dl,$$
 The core thermal history (BBN photon temperature scaling, Compton-coupled recombination, adiabatic cooling, measured \(\langle y \rangle(z)\)) is verified by CMB anisotropy spectra, recombination calculations matching Planck parameters, and direct SZ tomography of the thermal energy density. The theoretical elements flagged remain model-dependent.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Cosmic Thermal History of the Universe](../images/gemini_20261023011806_0.png)
 
 ## 7. Related Concepts
 - Cosmic Microwave Background (CMB)

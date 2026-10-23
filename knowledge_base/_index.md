@@ -149,6 +149,7 @@ graph TD
     quantum_gravity["Quantum Gravity"]:::theoretical
     discriminating_warm_vs_cold_dark_matter_via_cosmological_probes["Discriminating Warm vs Cold Dark Matter via Cosmological Probes"]:::theoretical
     screening_protected_scalar_fields_vs_non_local_gravity["Screening-Protected Scalar Fields vs Non-Local Gravity in Black Hole Mergers"]:::theoretical
+    spontaneous_symmetry_breaking_and_the_goldstone_theorem["Spontaneous Symmetry Breaking and the Goldstone Theorem"]:::verified
     cosmic_recombination_and_photon_decoupling["Cosmic Recombination and Photon Decoupling"]:::verified
     cosmological_perturbation_theory["Cosmological Perturbation Theory"]:::verified
     friedmannlematrerobertsonwalker_cosmology["Friedmann–Lemaître–Robertson–Walker Cosmology"]:::verified
@@ -316,6 +317,7 @@ graph TD
     structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization["Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization"]:::theoretical
     a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure["A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure"]:::theoretical
     a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing["A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing"]:::theoretical
+    quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere["Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation"]:::theoretical
     dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks["Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks"]:::theoretical
     distinguishing_emergent_cosmicweb_selforganization_from_cdm_gravitational_growth_using_topological_null_models["Distinguishing Emergent Cosmic-Web Self-Organization from ΛCDM Gravitational Growth Using Topological Null Models"]:::theoretical
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution["Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"]:::theoretical
@@ -491,6 +493,7 @@ graph TD
     standard_model_of_particle_physics --- quantum_mechanics
     quantum_field_theory --- quantum_gravity
     gravitational_lensing --- discriminating_warm_vs_cold_dark_matter_via_cosmological_probes
+    quantum_field_theory --- spontaneous_symmetry_breaking_and_the_goldstone_theorem
     gravitational_wave_astronomy --- resolving_kerr_vs_alternative_black_hole_degeneracies
     general_relativity --- minimum_viable_modifications_to_general_relativity
     neutrino_oscillations --- neutrino_masses_and_leptogenesis
@@ -714,6 +717,7 @@ graph TD
 - [Simulation Studies and Sensitivity Limits for Neutrino Decay Detectors](level_1_fundamental_physics/simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors.md) [VERIFIED]
 - [Special Relativity](level_1_fundamental_physics/special_relativity.md) [VERIFIED]
 - [Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms](level_1_fundamental_physics/spectral_decomposition_of_non_hermitian_decay_hamiltonians.md) [THEORETICAL]
+- [Spontaneous Symmetry Breaking and the Goldstone Theorem](level_1_fundamental_physics/spontaneous_symmetry_breaking_and_the_goldstone_theorem.md) [VERIFIED]
 - [Standard Model Fermion Mass Hierarchies and Mixing Matrices](level_1_fundamental_physics/standard_model_fermion_mass_hierarchies_and_mixing_matrices.md) [VERIFIED]
 - [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
 - [Standard Model of Particle Physics](level_1_fundamental_physics/standard_model_of_particle_physics.md) [THEORETICAL]
@@ -926,6 +930,7 @@ graph TD
 - [Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations](level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md) [THEORETICAL]
 - [Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation](level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md) [THEORETICAL]
 - [Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence](level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md) [THEORETICAL]
+- [Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation](level_3_emergence_and_intelligence/quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere.md) [THEORETICAL]
 - [Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing](level_3_emergence_and_intelligence/quantum_thermodynamic_speed_limits_and_energetic_advantage_in_biological_sensing_a_falsifiable_benchmarkrelative_test_of_coherenceenhanced_information_processing.md) [THEORETICAL]
 - [Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure](level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md) [THEORETICAL]
 - [Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback](level_3_emergence_and_intelligence/robustness_of_cosmicweb_persistent_homology_to_observational_selection_effects_and_baryonic_feedback.md) [THEORETICAL]

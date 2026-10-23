@@ -28,7 +28,7 @@ While BBN predictions for deuterium and helium abundances are widely verified, t
 The verification status of BBN is bolstered by a variety of independent measurements supporting its predictions, with deuterium and helium abundances particularly well-established. Transition from theoretical predictions to empirical observations has shown strong alignment, though the lithium-7 issue remains a prominent area of research and debate.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Primordial Nucleosynthesis and Light-Element Abundances](../images/gemini_20261023011855_0.png)
 
 ## 7. Related Concepts
 - Cosmic Microwave Background (CMB)
