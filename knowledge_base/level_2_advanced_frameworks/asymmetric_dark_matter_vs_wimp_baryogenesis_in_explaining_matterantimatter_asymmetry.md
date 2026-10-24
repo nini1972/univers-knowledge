@@ -39,7 +39,7 @@ Critics of both ADM and WIMP Baryogenesis argue that while the mathematical fram
 Both theories are acknowledged as theoretically coherent but face severe scrutiny due to the lack of empirical data. The conjectured nature of these models emphasizes the need for direct detection or indirect evidence to establish credibility in the scientific community.
 
 ## 6. Visual Representation
-![Visual Representation of Matter-Antimatter Asymmetry](https://example.com/path_to_generated_image)
+![Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry](../images/gemini_20261024011247_0.png)
 
 ## 7. Related Concepts
 - Dark Matter and its Theories

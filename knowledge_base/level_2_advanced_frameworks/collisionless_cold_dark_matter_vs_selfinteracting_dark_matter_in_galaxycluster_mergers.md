@@ -38,7 +38,7 @@ Skepticism regarding the nature of dark matter arises from the challenges of dir
 The ΛCDM framework has been rigorously tested with observational evidence from CMB measurements, galaxy clustering, and supernova observations. While SIDM remains a compelling theoretical construct, the lack of direct particle detection signifies a crucial gap. It presents a framework to account for specific astrophysical phenomena but must be reconciled with existing empirical evidence of dark matter's nature and composition.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Collisionless Cold Dark Matter vs Self-Interacting Dark Matter in Galaxy-Cluster Mergers](../images/gemini_20261024011316_0.png)
 
 ## 7. Related Concepts
 - Lambda–Cold Dark Matter (ΛCDM)

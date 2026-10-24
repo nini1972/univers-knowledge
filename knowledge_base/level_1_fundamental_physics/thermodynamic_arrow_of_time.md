@@ -75,7 +75,7 @@ These debates do not erase the empirical support for laboratory-scale irreversib
 - **Scope:** Evidence for entropy-increasing behavior in laboratory systems does not by itself verify a cosmological explanation for the arrow.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Thermodynamic Arrow of Time](../images/gemini_20261024011239_0.png)
 
 ## 7. Related Concepts
 - [[Second Law of Thermodynamics]]

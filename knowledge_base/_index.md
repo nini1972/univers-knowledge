@@ -118,6 +118,7 @@ graph TD
     unique_observables_for_neutrino_decay_in_major_detectors["Unique Observables for Neutrino Decay in Major Detectors"]:::theoretical
     classical_electromagnetism["Classical Electromagnetism"]:::verified
     neutrino_crosssection_measurements_and_their_implications_in_particle_physics_and_cosmology["Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology"]:::verified
+    gravitational_wave_standard_sirens_and_the_hubble_constant["Gravitational Wave Standard Sirens and the Hubble Constant"]:::theoretical
     numerical_benchmarks_for_neutrino_decay_in_boltzmann_codes["Numerical Benchmarks for Neutrino Decay in Cosmological Boltzmann Codes"]:::theoretical
     cosmic_microwave_background_anisotropies_and_acoustic_peak_phenomenology["Cosmic Microwave Background Anisotropies and Acoustic Peak Phenomenology"]:::verified
     quantum_sequential_growth_process_in_causal_set_cosmology["Quantum Sequential Growth (QSG) Process in Causal Set Cosmology"]:::theoretical
@@ -215,6 +216,7 @@ graph TD
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
     inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves["Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves"]:::theoretical
     asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics["Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics"]:::theoretical
+    phasetransition_sound_waves_vs_cosmic_defect_networks_in_sourcing_the_nanohertztomillihertz_stochastic_gravitational_wave_background["Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational-Wave Background"]:::theoretical
     ft_gravity_vs_kessence_in_addressing_cosmic_acceleration["f(T) Gravity vs. K-Essence in Addressing Cosmic Acceleration"]:::theoretical
     horndeski_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration["Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration"]:::theoretical
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
@@ -345,6 +347,7 @@ graph TD
     nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution["Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution"]:::theoretical
     landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks["Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks"]:::verified
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
+    falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational["Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse"]:::theoretical
     a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations["A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations"]:::theoretical
     a_preregistered_multiscale_perturbational_test_of_integrated_information_theory_and_mechanistic_physicalism_across_neural_states["A Preregistered Multiscale Perturbational Test of Integrated Information Theory and Mechanistic Physicalism Across Neural States"]:::theoretical
     a_preregistered_causalmediation_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems["A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems"]:::theoretical
@@ -643,6 +646,7 @@ graph TD
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Gravitational Lensing](level_1_fundamental_physics/gravitational_lensing.md) [VERIFIED]
 - [Gravitational Wave Astronomy](level_1_fundamental_physics/gravitational_wave_astronomy.md) [VERIFIED]
+- [Gravitational Wave Standard Sirens and the Hubble Constant](level_1_fundamental_physics/gravitational_wave_standard_sirens_and_the_hubble_constant.md) [THEORETICAL]
 - [Hawking Radiation and the Black Hole Information Paradox](level_1_fundamental_physics/hawking_radiation_and_the_black_hole_information_paradox.md) [THEORETICAL]
 - [Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM](level_1_fundamental_physics/hydrodynamic_simulations_baryonic_feedback_sfdm_sidm.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
@@ -828,6 +832,7 @@ graph TD
 - [Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime](level_2_advanced_frameworks/nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime.md) [THEORETICAL]
 - [Parity Violation vs Scalar Charge in Strong-Field Gravity](level_2_advanced_frameworks/parity_violation_vs_scalar_charge_in_strongfield_gravity.md) [THEORETICAL]
 - [Perturbative Reheating vs Parametric-Resonance Preheating](level_2_advanced_frameworks/perturbative_reheating_vs_parametricresonance_preheating.md) [THEORETICAL]
+- [Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational-Wave Background](level_2_advanced_frameworks/phasetransition_sound_waves_vs_cosmic_defect_networks_in_sourcing_the_nanohertztomillihertz_stochastic_gravitational_wave_background.md) [THEORETICAL]
 - [Pre- vs Post-Inflationary QCD Axion Cosmology](level_2_advanced_frameworks/pre_vs_postinflationary_qcd_axion_cosmology.md) [THEORETICAL]
 - [Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects](level_2_advanced_frameworks/primordial_nongaussianity_inflationary_multifield_models_vs_cosmic_defects.md) [THEORETICAL]
 - [Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem](level_2_advanced_frameworks/quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem.md) [THEORETICAL]
@@ -905,6 +910,7 @@ graph TD
 - [Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md) [THEORETICAL]
 - [Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing](level_3_emergence_and_intelligence/empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
+- [Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse](level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md) [THEORETICAL]
 - [Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds](level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md) [THEORETICAL]
 - [Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test](level_3_emergence_and_intelligence/fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test.md) [THEORETICAL]
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]

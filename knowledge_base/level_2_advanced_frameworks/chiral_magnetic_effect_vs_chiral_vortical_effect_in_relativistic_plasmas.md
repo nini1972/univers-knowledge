@@ -41,7 +41,7 @@ The **chiral vortical effect (CVE)** generates a current along the fluid vortici
 - Current bounds suggest the CME fraction of the measured signal is at most ~50% and possibly much smaller.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: A two-panel scientific schematic on a white background. **Left panel — condensed matter:** a dispersion plot showing two Weyl cones (linear band crossings) separated along the vertical axis by 2b (chiral node separation); magnetic field lines $\mathbf{B}$ (arrows) run horizontally, quantizing the bands into horizontal Landau levels; the lowest Landau level is highlighted in red, split into two chiral branches with different Fermi momenta $k_{F,R} \neq k_{F,L}$ (dashed vertical lines), with a red arrow labeled $\mathbf{J}_{\rm CME}$ pointing along $\mathbf{B}$. **Right panel — QCD:** a schematic non-central heavy-ion collision — two deformed gold nuclei colliding, with a hot quark–gluon plasma blob in between, spectator charges generating curved magnetic field lines $\mathbf{B}$ perpendicular to the reaction plane, and a dipole of positive (blue, up) and negative (red, down) electric charge aligned along $\mathbf{B}$; annotations for sphaleron-generated axial charge $\Delta Q_5$, the correlator $\gamma_{\alpha\beta}$, and the constitutive relation $\mathbf{J} = \frac{N_c e^2}{2\pi^2}\mu_5\,\mathbf{B}$.]
+![The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework](../images/gemini_20261024011309_0.png)
 
 ## 7. Related Concepts
 The report details various complex interactions and theoretical mechanisms, including **anomalous hydrodynamics**, **topological mechanisms in heavy-ion collisions**, and distinct differing views on the CME's experimental evidence.

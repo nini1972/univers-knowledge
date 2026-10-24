@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-23T01:19:00.252592+00:00",
+  "updated_at": "2026-10-24T01:13:18.147031+00:00",
   "stats": {
-    "total_nodes": 343,
-    "level_1_count": 150,
-    "level_2_count": 132,
-    "level_3_count": 61,
+    "total_nodes": 346,
+    "level_1_count": 151,
+    "level_2_count": 133,
+    "level_3_count": 62,
     "total_edges": 167,
-    "frontier_count": 28
+    "frontier_count": 39
   },
   "nodes": [
     {
@@ -283,11 +283,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "darkenergy",
-        "friedmannequations",
-        "cosmicmicrowavebackground",
         "hubbletension",
-        "baryonacousticoscillations"
+        "cosmicmicrowavebackground",
+        "friedmannequations",
+        "baryonacousticoscillations",
+        "darkenergy"
       ],
       "tags": [
         "1"
@@ -826,11 +826,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "higgsmechanism",
-        "peskintakeuchiparameters",
-        "standardmodel",
         "electroweaksymmetrybreaking",
-        "standardmodeleffectivefieldtheory"
+        "higgsmechanism",
+        "standardmodeleffectivefieldtheory",
+        "standardmodel",
+        "peskintakeuchiparameters"
       ],
       "tags": [
         "1"
@@ -1069,11 +1069,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "grandunifiedtheories",
-        "standardmodel",
-        "minimalsupersymmetricstandardmodel",
         "protondecay",
-        "renormalizationgroup"
+        "renormalizationgroup",
+        "grandunifiedtheories",
+        "minimalsupersymmetricstandardmodel",
+        "standardmodel"
       ],
       "tags": [
         "1"
@@ -1146,6 +1146,28 @@
         "Abbott, R. et al. (2023), 'GWTC-3: Compact Binary Coalescences Observed by LIGO and Virgo during the Second Part of the Third Observing Run', https://doi.org/10.1103/physrevx.13.041039"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/gravitational_wave_astronomy.md"
+    },
+    {
+      "id": "gravitationalwavestandardsirensandthehubbleconstant",
+      "title": "Gravitational Wave Standard Sirens and the Hubble Constant",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Abbott, B. P., et al. (2017), 'GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral', https://doi.org/10.1038/nature24471",
+        "Di Valentino, E., Mena, A., et al. (2021), 'Title not provided in the research report; Phys. Rev. D, 104, 083534', https://doi.org/10.1103/PhysRevD.104.083534",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "Riess, A. G., et al. (2024), 'Title not provided in the research report; Astrophys. J. 962, L17', https://doi.org/10.3847/2041-8213/ad1ddd",
+        "DESI Collaboration, Adame, A. G., et al. (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://arxiv.org/abs/2404.03002",
+        "Kamionkowski, M. & Riess, A. G. (2023), 'The Hubble Tension and Early Universe', https://doi.org/10.1146/annurev-nucl-111422-024107"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/gravitational_wave_standard_sirens_and_the_hubble_constant.md"
     },
     {
       "id": "hawkingradiationandtheblackholeinformationparadox",
@@ -2802,10 +2824,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "darkmatterrelicabundance",
-        "freezeinproduction",
         "cosmologicalperturbationtheory",
-        "wimpfreezeout"
+        "freezeinproduction",
+        "wimpfreezeout",
+        "darkmatterrelicabundance"
       ],
       "tags": [
         "1"
@@ -2895,11 +2917,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "quantumfieldtheory",
-        "gaugetheory",
+        "thestandardmodel",
         "stronginteraction",
         "latticeqcd",
-        "thestandardmodel"
+        "gaugetheory",
+        "quantumfieldtheory"
       ],
       "tags": [
         "1"
@@ -4905,6 +4927,32 @@
       "path": "knowledge_base/level_2_advanced_frameworks/perturbative_reheating_vs_parametricresonance_preheating.md"
     },
     {
+      "id": "phasetransitionsoundwavesvscosmicdefectnetworksinsourcingthenanohertztomillihertzstochasticgravitationalwavebackground",
+      "title": "Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational-Wave Background",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "pulsartimingarrays",
+        "stochasticgravitationalwavebackgrounds",
+        "supermassiveblackholebinaries",
+        "cosmicstringsandtopologicaldefects",
+        "firstordercosmologicalphasetransitions"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Agazie, G., et al. (2023), 'The NANOGrav 15-year Data Set: Evidence for a Gravitational-wave Background', https://doi.org/10.3847/2041-8213/acdac6",
+        "Afzal, A., et al. (2023), 'The NANOGrav 15 yr Data Set: Search for Signals from New Physics', https://doi.org/10.3847/2041-8213/acdc91",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Siemens, X., Ellis, J., Jenet, F., & Romano, J. D. (2013), 'The stochastic background: scaling laws and time to detection for pulsar timing arrays', https://doi.org/10.1088/0264-9381/30/22/224015"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/phasetransition_sound_waves_vs_cosmic_defect_networks_in_sourcing_the_nanohertztomillihertz_stochastic_gravitational_wave_background.md"
+    },
+    {
       "id": "prevspostinflationaryqcdaxioncosmology",
       "title": "Pre- vs Post-Inflationary QCD Axion Cosmology",
       "level": 2,
@@ -6352,12 +6400,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "topologicaldataanalysis",
         "cosmologicalstructureformation",
-        "cosmicweb",
-        "persistenthomology",
         "nullmodelsandhypothesistesting",
-        "lcdmcosmology"
+        "cosmicweb",
+        "topologicaldataanalysis",
+        "lcdmcosmology",
+        "persistenthomology"
       ],
       "tags": [
         "3"
@@ -6479,6 +6527,32 @@
         "Source 3"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md"
+    },
+    {
+      "id": "falsifiablebremermannlandauerboundsonsustainedcomputationratesincorticaltissueadimensionallyconsistentcomparisonagainstdissipationlimitsincosmicwebgravitational",
+      "title": "Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "3/4",
+      "dependencies": [
+        "cosmicwebhalovirialization",
+        "bremermannlimit",
+        "corticalenergybudgets",
+        "falsifiabilityandmodeldependentinference",
+        "landauerprinciple",
+        "s8tension"
+      ],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Landauer, R. (1961), 'Irreversibility and Heat Generation in the Computing Process', https://doi.org/10.1147/rd.53.0183",
+        "Levy, W. B. & Calvert, V. G. (2021), 'Communication consumes 35 times more energy than computation in the human cortex, but both costs are lower than expected', https://doi.org/10.1073/pnas.2008173118",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md"
     },
     {
       "id": "finitetimethermodynamiccostoferrorcorrectioninneuralcircuitsanempiricaltestofreliabilitydissipationbounds",
@@ -7042,10 +7116,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "topologicaldataanalysis",
-        "baryonicfeedback",
         "bottleneckdistance",
+        "baryonicfeedback",
         "cosmicweb",
+        "topologicaldataanalysis",
         "persistenthomology",
         "observationalselectioneffects"
       ],
@@ -7987,14 +8061,38 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "bremermannlimit",
+      "suggested_title": "Bremermannlimit",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "corticalenergybudgets",
+      "suggested_title": "Corticalenergybudgets",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "cosmicmicrowavebackground",
       "suggested_title": "Cosmicmicrowavebackground",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "cosmicstringsandtopologicaldefects",
+      "suggested_title": "Cosmicstringsandtopologicaldefects",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "cosmicweb",
       "suggested_title": "Cosmicweb",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "cosmicwebhalovirialization",
+      "suggested_title": "Cosmicwebhalovirialization",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8013,6 +8111,18 @@
     {
       "id": "darkmatterrelicabundance",
       "suggested_title": "Darkmatterrelicabundance",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "falsifiabilityandmodeldependentinference",
+      "suggested_title": "Falsifiabilityandmodeldependentinference",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "firstordercosmologicalphasetransitions",
+      "suggested_title": "Firstordercosmologicalphasetransitions",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8049,6 +8159,12 @@
     {
       "id": "hubbletension",
       "suggested_title": "Hubbletension",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "landauerprinciple",
+      "suggested_title": "Landauerprinciple",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8101,8 +8217,20 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "pulsartimingarrays",
+      "suggested_title": "Pulsartimingarrays",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "renormalizationgroup",
       "suggested_title": "Renormalizationgroup",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "s8tension",
+      "suggested_title": "S8Tension",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8119,8 +8247,20 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "stochasticgravitationalwavebackgrounds",
+      "suggested_title": "Stochasticgravitationalwavebackgrounds",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "stronginteraction",
       "suggested_title": "Stronginteraction",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "supermassiveblackholebinaries",
+      "suggested_title": "Supermassiveblackholebinaries",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
