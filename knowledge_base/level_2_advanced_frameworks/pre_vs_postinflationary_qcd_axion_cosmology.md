@@ -179,7 +179,7 @@ The report’s central comparison distinguishes the pre-inflationary CMB-isocurv
 The cited sources are retained in the YAML frontmatter with their paper titles and DOI or arXiv links. The mathematical verification report below records the detailed equation, dimensional, topological, and numerical checks, including disclosed caveats. Overall conclusions remain conditional on unconfirmed axion cosmology and model assumptions.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: Here is a visualization of the QCD Axion Cosmology diptych, representing the Universe's evolution from an initial homogeneous state to a complex, fragmented structure. On the left, you can see the Pre-Inflationary scenario, characterized by a smooth, uniform quantum cyan axion field (the misalignment angle θ_i) and the potential represented by a sleek Mexican-hat wireframe. On the right, the Post-Inflationary era is visualized as a chaotic and fragmented mosaic of domain walls in vibrant supernova orange and magenta. This side is crisscrossed by a network of ultraviolet cosmic strings, all resulting from the spontaneous symmetry breaking. A central glassmorphism lens, labeled as the Inflation Horizon, divides the two eras. — No file path was returned by the tool.]
+![Pre- vs Post-Inflationary QCD Axion Cosmology](../images/gemini_20261025012733_0.jpg)
 
 ## 7. Related Concepts
 - Peccei–Quinn symmetry and the strong-CP problem

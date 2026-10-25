@@ -75,7 +75,7 @@ The skeptic verification score is **5/5**, exceeding the required threshold. The
 The radiation-era VOS fixed point quoted in the report is consistent with the corrected relation \(\xi(1-v^2)=cv\). The report’s intermediate fixed-point equation needs correction; the fixed-point values should not be treated as an empirical measurement.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves](../images/gemini_20261025012716_0.png)
 
 ## 7. Related Concepts
 - [[Primordial Gravitational Waves]]

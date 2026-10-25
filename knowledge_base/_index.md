@@ -51,6 +51,7 @@ graph TD
     statistical_mechanics["Statistical Mechanics"]:::verified
     collaborative_empirical_test_strategies_for_neutrino_models["Collaborative Empirical Test Strategies for Theoretical Neutrino Models"]:::verified
     general_relativity["General Relativity"]:::verified
+    gauge_fixing_and_faddeevpopov_ghosts_in_nonabelian_gauge_theories["Gauge Fixing and Faddeev–Popov Ghosts in Non-Abelian Gauge Theories"]:::theoretical
     the_standard_model_of_particle_physics_quantum_chromodynamics_qcd_and_the_strong_interaction["The Standard Model of Particle Physics: Quantum Chromodynamics (QCD) and the Strong Interaction"]:::verified
     neutrino_state_definitions_and_asymptotic_decay_states["Neutrino State Definitions and Asymptotic States During Decay"]:::verified
     the_cosmic_distance_ladder_and_hubble_constant_tension["The Cosmic Distance Ladder and Hubble Constant Tension"]:::verified
@@ -226,6 +227,7 @@ graph TD
     modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
     cuscuton_gravity_vs_ghost_condensate_cosmology_in_stable_accelerated_expansion["Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion"]:::theoretical
     axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness["Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness"]:::theoretical
+    nonperturbative_quantum_gravity_debate["Nonperturbative Quantum Gravity Debate: Asymptotic Safety and Causal Dynamical Triangulations"]:::theoretical
     emergent_entropic_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies["Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies"]:::theoretical
     causal_dynamical_triangulation_vs_spin_foam_models_in_quantum_gravity["Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity"]:::theoretical
     conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem["Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem"]:::verified
@@ -324,6 +326,7 @@ graph TD
     distinguishing_emergent_cosmicweb_selforganization_from_cdm_gravitational_growth_using_topological_null_models["Distinguishing Emergent Cosmic-Web Self-Organization from ΛCDM Gravitational Growth Using Topological Null Models"]:::theoretical
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution["Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"]:::theoretical
     computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation["Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation"]:::theoretical
+    a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and["A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses"]:::theoretical
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
     interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems["Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems"]:::theoretical
     a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization["A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization"]:::theoretical
@@ -556,6 +559,7 @@ graph TD
     dark_matter --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
     effective_field_theory --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
     cosmological_perturbation_theory --> axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness
+    quantum_gravity --> nonperturbative_quantum_gravity_debate
     quantum_chromodynamics_qcd --> conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem
     quantum_gravity --> quantum_loop_gravity_vs_string_field_theory_debate
     quantum_measurement_problem --> quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem
@@ -643,6 +647,7 @@ graph TD
 - [External Verification of Neutrino Decay Bounds via Open Datasets](level_1_fundamental_physics/external_verification_of_neutrino_decay_bounds_via_open_datasets.md) [THEORETICAL]
 - [Friedmann–Lemaître–Robertson–Walker Cosmology](level_1_fundamental_physics/friedmannlematrerobertsonwalker_cosmology.md) [VERIFIED]
 - [Gauge Coupling Unification and Renormalization Group Running](level_1_fundamental_physics/gauge_coupling_unification_and_renormalization_group_running.md) [THEORETICAL]
+- [Gauge Fixing and Faddeev–Popov Ghosts in Non-Abelian Gauge Theories](level_1_fundamental_physics/gauge_fixing_and_faddeevpopov_ghosts_in_nonabelian_gauge_theories.md) [THEORETICAL]
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Gravitational Lensing](level_1_fundamental_physics/gravitational_lensing.md) [VERIFIED]
 - [Gravitational Wave Astronomy](level_1_fundamental_physics/gravitational_wave_astronomy.md) [VERIFIED]
@@ -830,6 +835,7 @@ graph TD
 - [Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves](level_2_advanced_frameworks/modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves.md) [THEORETICAL]
 - [Multiverse Hypothesis versus Anthropic Principle Debate](level_2_advanced_frameworks/multiverse_hypothesis_versus_anthropic_principle_debate.md) [THEORETICAL]
 - [Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime](level_2_advanced_frameworks/nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime.md) [THEORETICAL]
+- [Nonperturbative Quantum Gravity Debate: Asymptotic Safety and Causal Dynamical Triangulations](level_2_advanced_frameworks/nonperturbative_quantum_gravity_debate.md) [THEORETICAL]
 - [Parity Violation vs Scalar Charge in Strong-Field Gravity](level_2_advanced_frameworks/parity_violation_vs_scalar_charge_in_strongfield_gravity.md) [THEORETICAL]
 - [Perturbative Reheating vs Parametric-Resonance Preheating](level_2_advanced_frameworks/perturbative_reheating_vs_parametricresonance_preheating.md) [THEORETICAL]
 - [Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational-Wave Background](level_2_advanced_frameworks/phasetransition_sound_waves_vs_cosmic_defect_networks_in_sourcing_the_nanohertztomillihertz_stochastic_gravitational_wave_background.md) [THEORETICAL]
@@ -885,6 +891,7 @@ graph TD
 - [A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization](level_3_emergence_and_intelligence/a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization.md) [THEORETICAL]
 - [A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure](level_3_emergence_and_intelligence/a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure.md) [THEORETICAL]
 - [A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md) [THEORETICAL]
+- [A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses](level_3_emergence_and_intelligence/a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and.md) [THEORETICAL]
 - [A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence](level_3_emergence_and_intelligence/a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence.md) [THEORETICAL]
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]

@@ -44,7 +44,7 @@ Now I have all the results from my tool calls. Let me compile the final Math Ver
 ---
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime](../images/gemini_20261025012725_0.png)
 
 ## 7. Related Concepts
 - Quantum Gravity

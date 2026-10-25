@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-24T01:13:18.147031+00:00",
+  "updated_at": "2026-10-25T01:27:46.918222+00:00",
   "stats": {
-    "total_nodes": 346,
-    "level_1_count": 151,
-    "level_2_count": 133,
-    "level_3_count": 62,
-    "total_edges": 167,
-    "frontier_count": 39
+    "total_nodes": 349,
+    "level_1_count": 152,
+    "level_2_count": 134,
+    "level_3_count": 63,
+    "total_edges": 168,
+    "frontier_count": 43
   },
   "nodes": [
     {
@@ -285,9 +285,9 @@
       "dependencies": [
         "hubbletension",
         "cosmicmicrowavebackground",
+        "darkenergy",
         "friedmannequations",
-        "baryonacousticoscillations",
-        "darkenergy"
+        "baryonacousticoscillations"
       ],
       "tags": [
         "1"
@@ -826,11 +826,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "standardmodel",
         "electroweaksymmetrybreaking",
         "higgsmechanism",
-        "standardmodeleffectivefieldtheory",
-        "standardmodel",
-        "peskintakeuchiparameters"
+        "peskintakeuchiparameters",
+        "standardmodeleffectivefieldtheory"
       ],
       "tags": [
         "1"
@@ -1070,10 +1070,10 @@
       "math_score": "3/4",
       "dependencies": [
         "protondecay",
+        "standardmodel",
         "renormalizationgroup",
-        "grandunifiedtheories",
         "minimalsupersymmetricstandardmodel",
-        "standardmodel"
+        "grandunifiedtheories"
       ],
       "tags": [
         "1"
@@ -1089,6 +1089,31 @@
         "DUNE Far Detector (2022), '[Title not supplied in the research report]', https://arxiv.org/abs/2211.15503v2"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/gauge_coupling_unification_and_renormalization_group_running.md"
+    },
+    {
+      "id": "gaugefixingandfaddeevpopovghostsinnonabeliangaugetheories",
+      "title": "Gauge Fixing and Faddeev–Popov Ghosts in Non-Abelian Gauge Theories",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_PROVEN]",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Faddeev, L. D., and Popov, V. N. (1967), 'Feynman diagrams for the Yang-Mills field', https://doi.org/10.1016/0370-2693(67)90067-6",
+        "Collins, J. C. (2011), 'Renormalization', https://doi.org/10.1017/CBO9780511975592",
+        "Kugo, T., and Ojima, I. (1979), 'Local covariant operator formalism of non-Abelian gauge theories and quark confinement problem', https://doi.org/10.1143/PTPS.66.1",
+        "Vandersickel, N., and Zwanziger, D. (2012), 'The Gribov problem and QCD dynamics', https://doi.org/10.1016/j.physrep.2012.07.003",
+        "Aguilar, A. C., Binosi, D., and Papavassiliou, J. (2009), 'Gluon and ghost propagators in the Landau gauge: Deriving the infrared behavior from first principles', https://doi.org/10.1088/1126-6708/2009/11/066",
+        "Dudal, D., et al. (2008), 'A refinement of the Gribov-Zwanziger approach in the Landau gauge: the role of the gluon condensate', https://doi.org/10.1103/PhysRevD.77.071501",
+        "Fischer, C. S. (2006), 'Infrared properties of QCD from Dyson-Schwinger equations', https://doi.org/10.1088/0954-3899/32/8/R02",
+        "Cucchieri, A., and Mendes, T. (2008), 'Numerical study of the ghost-gluon vertex in Landau gauge', https://doi.org/10.1103/PhysRevD.78.094503",
+        "Particle Data Group (2024), 'Review of Particle Physics', https://doi.org/10.1103/PhysRevD.110.030001"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/gauge_fixing_and_faddeevpopov_ghosts_in_nonabelian_gauge_theories.md"
     },
     {
       "id": "generalrelativity",
@@ -2824,9 +2849,9 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "cosmologicalperturbationtheory",
         "freezeinproduction",
         "wimpfreezeout",
+        "cosmologicalperturbationtheory",
         "darkmatterrelicabundance"
       ],
       "tags": [
@@ -2919,9 +2944,9 @@
       "dependencies": [
         "thestandardmodel",
         "stronginteraction",
+        "quantumfieldtheory",
         "latticeqcd",
-        "gaugetheory",
-        "quantumfieldtheory"
+        "gaugetheory"
       ],
       "tags": [
         "1"
@@ -4887,6 +4912,34 @@
       "path": "knowledge_base/level_2_advanced_frameworks/nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime.md"
     },
     {
+      "id": "nonperturbativequantumgravitydebate",
+      "title": "Nonperturbative Quantum Gravity Debate: Asymptotic Safety and Causal Dynamical Triangulations",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "hubbletension",
+        "functionalrenormalizationgroup",
+        "quantumgravity",
+        "gravitationalwaveobservations",
+        "causaldynamicaltriangulations",
+        "earlydarkenergy"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Reuter, M., & Saueressig, F. (2012), 'Quantum Einstein Gravity', https://doi.org/10.1088/1367-2630/14/5/055022",
+        "Lauscher, O., & Reuter, M. (2005), 'Fractal spacetime structure in asymptotically safe gravity', https://arxiv.org/abs/hep-th/0511260",
+        "Bonanno, A., & Reuter, M. (2000), 'Cosmology of the Planck era from a renormalization group for gravity', https://doi.org/10.1103/PhysRevD.62.043008",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/nonperturbative_quantum_gravity_debate.md"
+    },
+    {
       "id": "parityviolationvsscalarchargeinstrongfieldgravity",
       "title": "Parity Violation vs Scalar Charge in Strong-Field Gravity",
       "level": 2,
@@ -4935,10 +4988,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "pulsartimingarrays",
-        "stochasticgravitationalwavebackgrounds",
         "supermassiveblackholebinaries",
+        "stochasticgravitationalwavebackgrounds",
         "cosmicstringsandtopologicaldefects",
+        "pulsartimingarrays",
         "firstordercosmologicalphasetransitions"
       ],
       "tags": [
@@ -6005,6 +6058,27 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md"
     },
     {
+      "id": "afalsifiablelandauercalibratedtestofinformationerasurecostsincorticalsynapticvesiclereleaseversuscosmicwebfilamentmergerdissipationwithexplicitsiunittracingand",
+      "title": "A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Landauer, R. (1961), 'Irreversibility and Heat Generation in the Computing Process', https://doi.org/10.1147/rd.53.0183",
+        "Bérut, A., et al. (2012), 'Experimental verification of Landauer’s principle linking information and thermodynamics', https://doi.org/10.1038/nature10872",
+        "Hong, J., Lambson, B., Dhuey, S., and Bokor, J. (2016), 'Experimental test of Landauer’s principle in a nanomagnetic memory', https://doi.org/10.1103/PhysRevB.93.224111",
+        "Sagawa, T., and Ueda, M. (2009), 'Minimal Energy Cost for Thermodynamic Information Processing: Measurement and Information Erasure', https://doi.org/10.1103/PhysRevLett.102.250602",
+        "Seifert, U. (2012), 'Stochastic thermodynamics, fluctuation theorems and molecular machines', https://doi.org/10.1088/0034-4885/75/12/126001"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and.md"
+    },
+    {
       "id": "afalsifiablelindbladianentropyproductionandcoherencelifetimeboundforolfactoryvibrationassistedelectrontunnelingunderwarmbiologicaldecoherence",
       "title": "A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence",
       "level": 3,
@@ -6400,12 +6474,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "cosmologicalstructureformation",
-        "nullmodelsandhypothesistesting",
-        "cosmicweb",
         "topologicaldataanalysis",
         "lcdmcosmology",
-        "persistenthomology"
+        "cosmologicalstructureformation",
+        "nullmodelsandhypothesistesting",
+        "persistenthomology",
+        "cosmicweb"
       ],
       "tags": [
         "3"
@@ -6537,12 +6611,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "cosmicwebhalovirialization",
-        "bremermannlimit",
         "corticalenergybudgets",
-        "falsifiabilityandmodeldependentinference",
+        "cosmicwebhalovirialization",
+        "s8tension",
         "landauerprinciple",
-        "s8tension"
+        "bremermannlimit",
+        "falsifiabilityandmodeldependentinference"
       ],
       "tags": [
         "3"
@@ -7116,12 +7190,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "bottleneckdistance",
-        "baryonicfeedback",
-        "cosmicweb",
         "topologicaldataanalysis",
+        "baryonicfeedback",
+        "bottleneckdistance",
+        "observationalselectioneffects",
         "persistenthomology",
-        "observationalselectioneffects"
+        "cosmicweb"
       ],
       "tags": [
         "3"
@@ -7229,6 +7303,11 @@
     {
       "source": "quantumfieldtheory",
       "target": "thestandardmodelofparticlephysicsquantumchromodynamicsqcdandthestronginteraction",
+      "type": "prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "nonperturbativequantumgravitydebate",
       "type": "prerequisite"
     },
     {
@@ -8067,6 +8146,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "causaldynamicaltriangulations",
+      "suggested_title": "Causaldynamicaltriangulations",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "corticalenergybudgets",
       "suggested_title": "Corticalenergybudgets",
       "target_level": 1,
@@ -8115,6 +8200,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "earlydarkenergy",
+      "suggested_title": "Earlydarkenergy",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "falsifiabilityandmodeldependentinference",
       "suggested_title": "Falsifiabilityandmodeldependentinference",
       "target_level": 1,
@@ -8139,6 +8230,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "functionalrenormalizationgroup",
+      "suggested_title": "Functionalrenormalizationgroup",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "gaugetheory",
       "suggested_title": "Gaugetheory",
       "target_level": 1,
@@ -8147,6 +8244,12 @@
     {
       "id": "grandunifiedtheories",
       "suggested_title": "Grandunifiedtheories",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "gravitationalwaveobservations",
+      "suggested_title": "Gravitationalwaveobservations",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },

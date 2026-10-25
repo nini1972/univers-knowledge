@@ -70,7 +70,7 @@ The debate earns the skeptic’s **5/5 verification score**. It transparently id
 The verified conclusion is that perturbative reheating is a robust baseline completion mechanism, whereas parametric-resonance preheating is a viable but model-dependent possibility that typically requires efficient broad resonance with \(q \gg 1\). Neither mechanism has direct experimental confirmation; the epistemic status is **[THEORETICAL]**.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Perturbative Reheating vs Parametric-Resonance Preheating](../images/gemini_20261025012729_0.jpg)
 
 ## 7. Related Concepts
 - [[Inflation]]

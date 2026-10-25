@@ -37,7 +37,7 @@ In considering alternative perspectives, it is requisite to understand that whil
 The theoretical assessments and mathematical validity are supported by established frameworks, and while indication exists for potential phenomena such as induced gravitational waves stemming from these processes, definitive detection and empirical endorsement remain absent.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins](../images/gemini_20261025012707_0.png)
 
 ## 7. Related Concepts
 - **Primordial Black Holes**: Gravitationally bound objects formed in the early universe.

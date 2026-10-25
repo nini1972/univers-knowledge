@@ -62,7 +62,7 @@ Alternative explanations also remain under consideration. Modified gravity, incl
 The mathematical audit’s corrected PBH values are authoritative. Its reported score is 3/4, with dimensional consistency and numerical checks qualified by manual review and the documented transcription errors. The YAML math fields above retain the exact required values; the detailed audit and its stated conclusion are reproduced in Section 9.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: GENMEDIA_UNAVAILABLE]
+![Thermal WIMPs vs Primordial Black Holes as Dark Matter](../images/gemini_20261025012745_0.jpg)
 
 ## 7. Related Concepts
 - **Thermal freeze-out and relic abundance:** Steigman, G., Dasgupta, B., & Beacom, J. F. (2012), “Precise Relic WIMP Abundance and its Impact on Searches for Dark Matter Annihilation,” arXiv:1204.3622.
