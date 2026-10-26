@@ -34,7 +34,7 @@ While the benchmark proposes a novel comparative approach, the predictions it ge
 The current status of the benchmark is theoretical, relying heavily on its mathematical consistency, demonstrated through rigorous citations from literature that supports the proposed mechanisms of intervention in the context of consciousness studies.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](../images/gemini_20261026011224_0.png)
 
 ## 7. Related Concepts
 - Integrated Information Theory (IIT)

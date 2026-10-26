@@ -81,7 +81,7 @@ The research program is mathematically framed and physically grounded in neural 
 The concept is therefore classified as **[THEORETICAL]**, with an empirically supported proxy layer. The verification score does not convert the central theoretical claims into verified empirical findings.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Causal-Intervention Tests of Integrated Information and Macro-Level Explanatory Autonomy in Neural Systems](../images/gemini_20261026011255_0.png)
 
 ## 7. Related Concepts
 - [[Integrated Information Theory]]

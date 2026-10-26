@@ -78,7 +78,7 @@ whereas purely feed-forward networks have $\Phi \equiv 0$ regardless of informat
 A schematic diagram showing a layered, three-tier pyramid of the nervous system on the left — at the bottom a single integrate-and-fire neuron with synaptic connections drawn as thin blue lines, in the middle a cortical microcircuit/column rendered as a cylinder of alternating excitatory (red) and inhibitory (blue) cells, and at the top a whole-cortex surface map in glass-like transparency with the posterior "hot zone" (occipito-parietal) glowing amber and the fronto-parietal "ignition" region glowing cyan. From the right, three perturbation "lances" strike each tier: a laser-like TMS pulse (magenta bolt) hitting the cortex, an electrode spark hitting the microcircuit, and a synaptic iontophoresis arrow hitting the neuron. Each perturbation generates an expanding radial ripple; the ripples are color-coded by theoretical prediction — amber-gold ripples carrying the label "Φ = min-MIP cause-effect power" propagating from the posterior hot zone (IIT), and cyan broadcast waves fanning from a central ignition node to the whole cortex (GNW). Above the diagram, a horizontal preregistration banner reads "Hypotheses locked before data: {IIT, GNW, HO-theory}" with a padlock icon, and below, a Bayesian model-comparison meter (BF₁₀ scale from −10 to +10) with a needle poised between amber and cyan, visually conveying that no theory has yet decisively won.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations](../images/gemini_20261026011231_0.png)
 
 ## 7. Related Concepts
 ...

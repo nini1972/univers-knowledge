@@ -38,7 +38,7 @@ The test also faces practical limitations, including finite-volume and boundary 
 The proposal is mathematically grounded and falsifiable. Its analysis machinery is established, but the central universality claim remains unverified. Because topology is used as a carrier of cosmological information, observed dependence on cosmological inputs is a substantive challenge to the claim rather than a minor complication.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization](../images/gemini_20261026011208_0.png)
 
 ## 7. Related Concepts
 - Persistent homology and persistence diagrams

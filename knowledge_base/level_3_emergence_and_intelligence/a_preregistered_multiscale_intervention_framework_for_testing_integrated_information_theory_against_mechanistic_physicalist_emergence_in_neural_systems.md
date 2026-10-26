@@ -86,7 +86,7 @@ Several limitations and alternative interpretations remain central to evaluating
 The energy comparison must likewise be interpreted dimensionally. Power per neuron and energy per bit are different kinds of quantities; comparing them requires a specified rate of operations and a corresponding energy-per-operation estimate. The comparison does not, on its own, show that integration is or is not energy-limited.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems](../images/gemini_20261026011239_0.png)
 
 ## 7. Related Concepts
 - [[Integrated Information Theory]]

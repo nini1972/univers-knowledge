@@ -105,6 +105,7 @@ graph TD
     wimp_baryogenesis_models_and_washout_constraints["WIMP Baryogenesis Models and Washout Constraints"]:::theoretical
     statistical_chi_squared_fit_analysis_bsm_neutrino_physics["Statistical Chi-Squared Fit Analysis for BSM Neutrino Physics"]:::verified
     matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
+    gravitational_wave_memory_effect["Gravitational-Wave Memory Effect"]:::theoretical
     renormalization_and_the_renormalization_group["Renormalization and the Renormalization Group"]:::verified
     non_hermitian_effective_hamiltonian_neutral_meson_systems["Non-Hermitian Effective Hamiltonian for Neutral-Meson Systems"]:::verified
     quantum_chromodynamics_qcd_phase_diagram_and_quarkgluon_plasma["Quantum Chromodynamics (QCD) Phase Diagram and Quark–Gluon Plasma"]:::verified
@@ -211,6 +212,7 @@ graph TD
     asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance["Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance"]:::verified
     higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate["Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate"]:::theoretical
     holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate["Holographic Principle vs Causal Set Theory in Quantum Gravity Debate"]:::theoretical
+    typeii_seesaw_vs_inverse_seesaw_in_neutrino_mass_generation_and_colliderleptonflavorviolation_testability["Type-II Seesaw vs Inverse Seesaw in Neutrino Mass Generation and Collider/Lepton-Flavor-Violation Testability"]:::theoretical
     early_dark_energy_vs_quintessence_in_resolving_the_hubble_tension["Early Dark Energy vs Quintessence in Resolving the Hubble Tension"]:::theoretical
     loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate["Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate"]:::theoretical
     primordial_nongaussianity_inflationary_multifield_models_vs_cosmic_defects["Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects"]:::theoretical
@@ -328,6 +330,7 @@ graph TD
     computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation["Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation"]:::theoretical
     a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and["A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses"]:::theoretical
     quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics["Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics"]:::verified
+    a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit["A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models"]:::theoretical
     interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems["Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems"]:::theoretical
     a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization["A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization"]:::theoretical
     quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions["Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions"]:::theoretical
@@ -547,6 +550,7 @@ graph TD
     quantum_field_theory --> baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics
     dark_matter --> asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance
     quantum_gravity --> holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate
+    neutrinoless_double_beta_decay --> typeii_seesaw_vs_inverse_seesaw_in_neutrino_mass_generation_and_colliderleptonflavorviolation_testability
     inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     primordial_gravitational_waves --> inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves
     inflationary_cosmology --> inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves
@@ -652,6 +656,7 @@ graph TD
 - [Gravitational Lensing](level_1_fundamental_physics/gravitational_lensing.md) [VERIFIED]
 - [Gravitational Wave Astronomy](level_1_fundamental_physics/gravitational_wave_astronomy.md) [VERIFIED]
 - [Gravitational Wave Standard Sirens and the Hubble Constant](level_1_fundamental_physics/gravitational_wave_standard_sirens_and_the_hubble_constant.md) [THEORETICAL]
+- [Gravitational-Wave Memory Effect](level_1_fundamental_physics/gravitational_wave_memory_effect.md) [THEORETICAL]
 - [Hawking Radiation and the Black Hole Information Paradox](level_1_fundamental_physics/hawking_radiation_and_the_black_hole_information_paradox.md) [THEORETICAL]
 - [Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM](level_1_fundamental_physics/hydrodynamic_simulations_baryonic_feedback_sfdm_sidm.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
@@ -882,6 +887,7 @@ graph TD
 - [Thermal WIMPs vs Primordial Black Holes as Dark Matter](level_2_advanced_frameworks/thermal_wimps_vs_primordial_black_holes_as_dark_matter.md) [THEORETICAL]
 - [Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md) [THEORETICAL]
 - [Type-I Seesaw vs Radiative Neutrino Mass Generation](level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md) [THEORETICAL]
+- [Type-II Seesaw vs Inverse Seesaw in Neutrino Mass Generation and Collider/Lepton-Flavor-Violation Testability](level_2_advanced_frameworks/typeii_seesaw_vs_inverse_seesaw_in_neutrino_mass_generation_and_colliderleptonflavorviolation_testability.md) [THEORETICAL]
 - [Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem](level_2_advanced_frameworks/unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem.md) [THEORETICAL]
 - [Vacuum Decay and Cosmological Inflationary Termination Debate](level_2_advanced_frameworks/vacuum_decay_and_cosmological_inflationary_termination_debate.md) [THEORETICAL]
 - [Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md) [THEORETICAL]
@@ -893,6 +899,7 @@ graph TD
 - [A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md) [THEORETICAL]
 - [A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses](level_3_emergence_and_intelligence/a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and.md) [THEORETICAL]
 - [A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence](level_3_emergence_and_intelligence/a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence.md) [THEORETICAL]
+- [A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](level_3_emergence_and_intelligence/a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit.md) [THEORETICAL]
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization](level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md) [THEORETICAL]

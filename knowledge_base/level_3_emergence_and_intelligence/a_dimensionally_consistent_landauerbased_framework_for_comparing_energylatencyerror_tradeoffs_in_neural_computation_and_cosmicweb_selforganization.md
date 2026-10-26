@@ -91,7 +91,7 @@ The approved skeptic verification score is **6/6**. This supports retaining the 
 The verified Landauer and optimal-transport results are retained only under their stated assumptions. The maximum-bound formulation is applicable when both relevant processes occur. The additive bound remains unestablished unless its subsystem or channel decomposition is independently justified. The mathematical verification score reported below is a separate assessment from the skeptic verification score.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization](../images/gemini_20261026011200_0.png)
 
 ## 7. Related Concepts
 - [[Landauer's Principle]]

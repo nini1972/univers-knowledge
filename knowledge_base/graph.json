@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-25T01:27:46.918222+00:00",
+  "updated_at": "2026-10-26T01:12:57.300114+00:00",
   "stats": {
-    "total_nodes": 349,
-    "level_1_count": 152,
-    "level_2_count": 134,
-    "level_3_count": 63,
+    "total_nodes": 352,
+    "level_1_count": 153,
+    "level_2_count": 135,
+    "level_3_count": 64,
     "total_edges": 168,
     "frontier_count": 43
   },
@@ -284,10 +284,10 @@
       "math_score": "4/4",
       "dependencies": [
         "hubbletension",
-        "cosmicmicrowavebackground",
+        "baryonacousticoscillations",
         "darkenergy",
-        "friedmannequations",
-        "baryonacousticoscillations"
+        "cosmicmicrowavebackground",
+        "friedmannequations"
       ],
       "tags": [
         "1"
@@ -826,11 +826,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "standardmodel",
-        "electroweaksymmetrybreaking",
         "higgsmechanism",
-        "peskintakeuchiparameters",
-        "standardmodeleffectivefieldtheory"
+        "electroweaksymmetrybreaking",
+        "standardmodel",
+        "standardmodeleffectivefieldtheory",
+        "peskintakeuchiparameters"
       ],
       "tags": [
         "1"
@@ -1069,11 +1069,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "grandunifiedtheories",
         "protondecay",
-        "standardmodel",
-        "renormalizationgroup",
         "minimalsupersymmetricstandardmodel",
-        "grandunifiedtheories"
+        "standardmodel",
+        "renormalizationgroup"
       ],
       "tags": [
         "1"
@@ -1171,6 +1171,26 @@
         "Abbott, R. et al. (2023), 'GWTC-3: Compact Binary Coalescences Observed by LIGO and Virgo during the Second Part of the Third Observing Run', https://doi.org/10.1103/physrevx.13.041039"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/gravitational_wave_astronomy.md"
+    },
+    {
+      "id": "gravitationalwavememoryeffect",
+      "title": "Gravitational-Wave Memory Effect",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Favata, M. (2009), 'Post-Newtonian corrections to the gravitational-wave memory for quasi-circular, inspiralling compact binaries', https://doi.org/10.1088/0004-637x/696/2/l159",
+        "Favata, M. (2010), 'The gravitational-wave memory effect', https://doi.org/10.1088/0264-9381/27/8/084036",
+        "Agazie, G., et al. (2023), 'The NANOGrav 15-year Data Set: Evidence for a Gravitational-wave Background', https://doi.org/10.3847/2041-8213/acdac6",
+        "Thorne, K. S. (1992), 'Gravitational-wave bursts with memory: The Christodoulou effect', https://doi.org/10.1103/PhysRevD.45.520"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/gravitational_wave_memory_effect.md"
     },
     {
       "id": "gravitationalwavestandardsirensandthehubbleconstant",
@@ -2849,10 +2869,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "freezeinproduction",
         "wimpfreezeout",
-        "cosmologicalperturbationtheory",
-        "darkmatterrelicabundance"
+        "darkmatterrelicabundance",
+        "freezeinproduction",
+        "cosmologicalperturbationtheory"
       ],
       "tags": [
         "1"
@@ -2942,11 +2962,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "thestandardmodel",
         "stronginteraction",
-        "quantumfieldtheory",
+        "thestandardmodel",
+        "gaugetheory",
         "latticeqcd",
-        "gaugetheory"
+        "quantumfieldtheory"
       ],
       "tags": [
         "1"
@@ -4920,11 +4940,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "hubbletension",
-        "functionalrenormalizationgroup",
-        "quantumgravity",
         "gravitationalwaveobservations",
+        "hubbletension",
         "causaldynamicaltriangulations",
+        "quantumgravity",
+        "functionalrenormalizationgroup",
         "earlydarkenergy"
       ],
       "tags": [
@@ -4988,11 +5008,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "supermassiveblackholebinaries",
-        "stochasticgravitationalwavebackgrounds",
         "cosmicstringsandtopologicaldefects",
+        "firstordercosmologicalphasetransitions",
+        "supermassiveblackholebinaries",
         "pulsartimingarrays",
-        "firstordercosmologicalphasetransitions"
+        "stochasticgravitationalwavebackgrounds"
       ],
       "tags": [
         "2"
@@ -5936,6 +5956,35 @@
       "path": "knowledge_base/level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md"
     },
     {
+      "id": "typeiiseesawvsinverseseesawinneutrinomassgenerationandcolliderleptonflavorviolationtestability",
+      "title": "Type-II Seesaw vs Inverse Seesaw in Neutrino Mass Generation and Collider/Lepton-Flavor-Violation Testability",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Mohapatra et al. (2007), 'Theory of neutrinos: a white paper', https://doi.org/10.1088/0034-4885/70/11/r02",
+        "King & Luhn (2013), 'Neutrino mass and mixing with discrete symmetry', https://doi.org/10.1088/0034-4885/76/5/056201",
+        "Deppisch, Dev & Pilaftsis (2015), 'Neutrinos and Collider Physics', https://doi.org/10.1088/1367-2630/17/7/075019",
+        "Hambye (2012), 'Leptogenesis: beyond the minimal Type-I seesaw', https://doi.org/10.1088/1367-2630/14/12/125014",
+        "Han, Lei & Liao (2023), 'Testing Type-II seesaw leptogenesis at the LHC', https://doi.org/10.1088/1674-1137/ace708",
+        "Du (2023), 'Type-II seesaw complex triplet model: phase transition and global fit', https://arxiv.org/abs/2303.16400",
+        "Chan, Fritzsch, Luo & Xing (2007), 'Phys. Rev. D 76, 073009', https://doi.org/10.1103/PhysRevD.76.073009",
+        "Chun & Sharma (2013), 'Phys. Lett. B 722, 86', https://doi.org/10.1016/j.physletb.2013.03.038",
+        "Cai et al. (2017), 'From Trees to the Forest: Radiative Neutrino Mass Models', https://doi.org/10.3389/fphy.2017.00063",
+        "Riess et al. (2022), 'SH0ES Hubble-constant measurement, ApJL 934, L7', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "Riess et al. (2024), 'SH0ES Hubble-constant measurement, ApJ 962, L17', https://doi.org/10.3847/2041-8213/ad1ddd",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "NANOGrav Collaboration (2023), 'The NANOGrav 15-year Data Set: Evidence for a Gravitational-wave Background', https://doi.org/10.3847/2041-8213/acdac6"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/typeii_seesaw_vs_inverse_seesaw_in_neutrino_mass_generation_and_colliderleptonflavorviolation_testability.md"
+    },
+    {
       "id": "unimodulargravityvsvacuumenergysequesteringinaddressingthecosmologicalconstantproblem",
       "title": "Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem",
       "level": 2,
@@ -6096,6 +6145,26 @@
         "Mohr, P. J., Newell, D. B., and Taylor, B. N. (2021), 'CODATA Recommended Values of the Fundamental Physical Constants: 2018', https://doi.org/10.1103/RevModPhys.93.025010"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence.md"
+    },
+    {
+      "id": "afalsifiablequantumresourcetheoreticboundoncoherenceassistedinformationtransferinmicrotubulefreeneuronalionchannelgatingunderphysiologicaldecoherencewithexplicit",
+      "title": "A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Tegmark, M. (2000), 'Importance of quantum decoherence in brain processes', https://doi.org/10.1103/PhysRevE.61.4194",
+        "Marais et al. (2018), 'The future of quantum biology', https://doi.org/10.1098/rsif.2018.0640",
+        "Emary, C., Lambert, N., & Nori, F. (2013), 'Leggett-Garg inequalities', https://doi.org/10.1088/0034-4885/77/1/016001",
+        "Milz et al. (2020), 'Quantum stochastic processes and quantum non-Markovian phenomena', https://doi.org/10.1103/PhysRevX.10.041049"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit.md"
     },
     {
       "id": "afalsifiablescaleresolveddecoherenceanddissipationboundforquantumenhancedneuralinformationprocessinginwarmbiologicaltissue",
@@ -6475,11 +6544,11 @@
       "math_score": "4/4",
       "dependencies": [
         "topologicaldataanalysis",
-        "lcdmcosmology",
-        "cosmologicalstructureformation",
-        "nullmodelsandhypothesistesting",
         "persistenthomology",
-        "cosmicweb"
+        "nullmodelsandhypothesistesting",
+        "cosmicweb",
+        "cosmologicalstructureformation",
+        "lcdmcosmology"
       ],
       "tags": [
         "3"
@@ -6611,12 +6680,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "corticalenergybudgets",
+        "falsifiabilityandmodeldependentinference",
+        "bremermannlimit",
+        "landauerprinciple",
         "cosmicwebhalovirialization",
         "s8tension",
-        "landauerprinciple",
-        "bremermannlimit",
-        "falsifiabilityandmodeldependentinference"
+        "corticalenergybudgets"
       ],
       "tags": [
         "3"
@@ -7190,10 +7259,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "topologicaldataanalysis",
-        "baryonicfeedback",
-        "bottleneckdistance",
         "observationalselectioneffects",
+        "bottleneckdistance",
+        "baryonicfeedback",
+        "topologicaldataanalysis",
         "persistenthomology",
         "cosmicweb"
       ],

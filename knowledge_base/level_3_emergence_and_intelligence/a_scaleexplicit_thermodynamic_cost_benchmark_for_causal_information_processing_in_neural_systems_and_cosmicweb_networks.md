@@ -63,7 +63,7 @@ The Landauer principle is the benchmark’s supported physical component. Labora
 The proposed extension across neural and cosmic-web systems remains unverified. Structural comparisons between those networks are not measurements of a shared thermodynamic cost, and the necessary cosmic-side causal-information normalization is not established. Therefore, neither a universal cross-scale benchmark nor a common scale-dependent curve should be presented as an empirical result.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks](../images/gemini_20261026011247_0.png)
 
 ## 7. Related Concepts
 - [[Landauer Principle]]
