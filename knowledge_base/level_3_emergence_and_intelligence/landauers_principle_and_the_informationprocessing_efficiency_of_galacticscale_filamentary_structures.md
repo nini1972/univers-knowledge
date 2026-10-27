@@ -28,7 +28,7 @@ The research carefully notes the theoretical underpinning of applying Landauer's
 The integration of complex mathematical elements, alongside a clear understanding of the limitations of current empirical observations, provides a foundation for future inquiries while maintaining a healthy skepticism regarding claims of information processing at galactic scales.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures](../images/gemini_20261027010909_0.jpg)
 
 ## 7. Related Concepts
 - **Shannon Entropy**: A measure of uncertainty in a set of outcomes.

@@ -33,7 +33,7 @@ Integrated Information Theory (IIT) proposes that consciousness is identified wi
 The theoretical framework articulates a synthesis of critical experimental results, highlighting both potential successes and failures within current empirical research. A rigorous analysis of interventional metrics reinforces the theoretical limits under which IIT can be assessed.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models](../images/gemini_20261027010856_0.png)
 
 ## 7. Related Concepts
 This discussion engages with various philosophical and theoretical standpoints within the realms of neuroscience, consciousness studies, and the applicability of physicalism in emergent phenomena.

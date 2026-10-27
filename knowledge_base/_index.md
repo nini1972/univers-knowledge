@@ -63,6 +63,7 @@ graph TD
     superfluid_dark_matter_phonon_effects["Superfluid Dark Matter Phonon Effects"]:::theoretical
     tensor_networks_in_dynamical_lorentzian_spacetimes["Tensor Networks in Dynamical Lorentzian Spacetimes"]:::theoretical
     effective_field_theory["Effective Field Theory"]:::verified
+    anomalous_magnetic_moment_of_the_muon_g2["Anomalous Magnetic Moment of the Muon (g−2)"]:::verified
     electroweak_baryogenesis["Electroweak Baryogenesis"]:::theoretical
     dark_matter["Dark Matter"]:::theoretical
     external_verification_of_neutrino_decay_bounds_via_open_datasets["External Verification of Neutrino Decay Bounds via Open Datasets"]:::theoretical
@@ -192,6 +193,7 @@ graph TD
     fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges["Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges"]:::theoretical
     superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
     emergent_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies["Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies"]:::verified
+    cdm_baryonic_feedback_vs_mond_external_field_effect_in_explaining_the_radial_acceleration_relation_of_galaxies["ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies"]:::verified
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
     string_theory_vs_asymptotic_safety_in_quantum_gravity_debate["String Theory vs Asymptotic Safety in Quantum Gravity Debate"]:::theoretical
@@ -360,6 +362,7 @@ graph TD
     finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds["Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds"]:::theoretical
     fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test["Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test"]:::theoretical
     renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure["Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure"]:::theoretical
+    quantum_cramrrao_and_lindbladian_dephasing_bounds_on_coherenceassisted_excitation_transfer_in_warm_biological_lightharvesting_antennae_a_falsifiable_dimensionally_consistent_test_a["Quantum Cramér–Rao and Lindbladian Dephasing Bounds on Coherence-Assisted Excitation Transfer in Warm Biological Light-Harvesting Antennae: A Falsifiable, Dimensionally Consistent Test Against Classical Förster Transport Null Models"]:::theoretical
     quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence["Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence"]:::theoretical
 
     %% Connections & Prerequisites
@@ -601,6 +604,7 @@ graph TD
 ## Level 1: Fundamental Physics
 
 - [5 GeV Asymmetric Dark Matter Mass Scale and Skipper-CCD Constraints](level_1_fundamental_physics/five_gev_asymmetric_dark_matter_skipper_ccd_constraints.md) [THEORETICAL]
+- [Anomalous Magnetic Moment of the Muon (g−2)](level_1_fundamental_physics/anomalous_magnetic_moment_of_the_muon_g2.md) [VERIFIED]
 - [Astrophysical Neutrino Flavor and Spectral Resolution Enhancement](level_1_fundamental_physics/astrophysical_neutrino_flavor_and_spectral_resolution_enhancement.md) [THEORETICAL]
 - [Baryogenesis and Leptogenesis: Sakharov Conditions and Experimental Tests](level_1_fundamental_physics/baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests.md) [VERIFIED]
 - [Baryon Acoustic Oscillations](level_1_fundamental_physics/baryon_acoustic_oscillations.md) [VERIFIED]
@@ -891,6 +895,7 @@ graph TD
 - [Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem](level_2_advanced_frameworks/unimodular_gravity_vs_vacuum_energy_sequestering_in_addressing_the_cosmological_constant_problem.md) [THEORETICAL]
 - [Vacuum Decay and Cosmological Inflationary Termination Debate](level_2_advanced_frameworks/vacuum_decay_and_cosmological_inflationary_termination_debate.md) [THEORETICAL]
 - [Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md) [THEORETICAL]
+- [ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies](level_2_advanced_frameworks/cdm_baryonic_feedback_vs_mond_external_field_effect_in_explaining_the_radial_acceleration_relation_of_galaxies.md) [VERIFIED]
 
 ## Level 3: Emergence and Intelligence
 
@@ -949,6 +954,7 @@ graph TD
 - [Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions](level_3_emergence_and_intelligence/quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions.md) [THEORETICAL]
 - [Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations](level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md) [THEORETICAL]
 - [Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation](level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md) [THEORETICAL]
+- [Quantum Cramér–Rao and Lindbladian Dephasing Bounds on Coherence-Assisted Excitation Transfer in Warm Biological Light-Harvesting Antennae: A Falsifiable, Dimensionally Consistent Test Against Classical Förster Transport Null Models](level_3_emergence_and_intelligence/quantum_cramrrao_and_lindbladian_dephasing_bounds_on_coherenceassisted_excitation_transfer_in_warm_biological_lightharvesting_antennae_a_falsifiable_dimensionally_consistent_test_a.md) [THEORETICAL]
 - [Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence](level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md) [THEORETICAL]
 - [Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation](level_3_emergence_and_intelligence/quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere.md) [THEORETICAL]
 - [Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing](level_3_emergence_and_intelligence/quantum_thermodynamic_speed_limits_and_energetic_advantage_in_biological_sensing_a_falsifiable_benchmarkrelative_test_of_coherenceenhanced_information_processing.md) [THEORETICAL]

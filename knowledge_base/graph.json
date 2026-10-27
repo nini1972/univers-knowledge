@@ -1,16 +1,41 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-26T01:12:57.300114+00:00",
+  "updated_at": "2026-10-27T01:09:56.676128+00:00",
   "stats": {
-    "total_nodes": 352,
-    "level_1_count": 153,
-    "level_2_count": 135,
-    "level_3_count": 64,
+    "total_nodes": 355,
+    "level_1_count": 154,
+    "level_2_count": 136,
+    "level_3_count": 65,
     "total_edges": 168,
-    "frontier_count": 43
+    "frontier_count": 54
   },
   "nodes": [
+    {
+      "id": "anomalousmagneticmomentofthemuong2",
+      "title": "Anomalous Magnetic Moment of the Muon (g−2)",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Aguillard, D. P., et al. (Muon g−2 Collaboration) (2023), 'Measurement of the Positive Muon Anomalous Magnetic Moment to 0.20 ppm', https://doi.org/10.1103/PhysRevLett.131.161802",
+        "Bennett, G. W., et al. (Muon g−2 Collaboration) (2006), 'Final Report of the Muon E821 Anomalous Magnetic Moment Measurement at BNL', https://doi.org/10.1103/PhysRevD.73.072003",
+        "Aoyama, T., et al. (2020), 'The anomalous magnetic moment of the muon in the Standard Model', https://doi.org/10.1016/j.physrep.2020.07.006",
+        "Davier, M., et al. (2020), 'The anomalous magnetic moment of the muon in the Standard Model', https://doi.org/10.1140/epjc/s10052-020-7793-9",
+        "Keshavarzi, A., Nomura, D., and Teubner, T. (2020), 'The muon g−2 and α(MZ²): a new data-based analysis', https://doi.org/10.1103/PhysRevD.102.033002",
+        "Alexandrou, C., et al. (2023), 'The anomalous magnetic moment of the muon from lattice QCD', https://doi.org/10.1103/PhysRevD.107.074506",
+        "Abe, M., et al. (2019), 'A new approach for measuring the muon anomalous magnetic moment and electric dipole moment', https://doi.org/10.1093/ptep/ptz030",
+        "Aoki, S., et al. (2022), 'FLAG Review 2021', https://doi.org/10.1140/epjc/s10052-022-10536-1",
+        "Borsanyi, S., et al. (2021), 'Calculation of the hadronic vacuum polarization contribution to the muon anomalous magnetic moment', https://doi.org/10.1038/s41586-021-03418-1"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/anomalous_magnetic_moment_of_the_muon_g2.md"
+    },
     {
       "id": "howcanupcomingastrophysicalneutrinoobservatoriesenhanceflavorandspectralresolutiontobetterdistinguishneutrinodecayeffectsfromstandardoscillationsorsourcevariability",
       "title": "Astrophysical Neutrino Flavor and Spectral Resolution Enhancement",
@@ -283,11 +308,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "friedmannequations",
         "hubbletension",
-        "baryonacousticoscillations",
         "darkenergy",
         "cosmicmicrowavebackground",
-        "friedmannequations"
+        "baryonacousticoscillations"
       ],
       "tags": [
         "1"
@@ -826,11 +851,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "higgsmechanism",
-        "electroweaksymmetrybreaking",
-        "standardmodel",
         "standardmodeleffectivefieldtheory",
-        "peskintakeuchiparameters"
+        "higgsmechanism",
+        "peskintakeuchiparameters",
+        "standardmodel",
+        "electroweaksymmetrybreaking"
       ],
       "tags": [
         "1"
@@ -1070,10 +1095,10 @@
       "math_score": "3/4",
       "dependencies": [
         "grandunifiedtheories",
-        "protondecay",
-        "minimalsupersymmetricstandardmodel",
+        "renormalizationgroup",
         "standardmodel",
-        "renormalizationgroup"
+        "protondecay",
+        "minimalsupersymmetricstandardmodel"
       ],
       "tags": [
         "1"
@@ -2869,10 +2894,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "wimpfreezeout",
-        "darkmatterrelicabundance",
         "freezeinproduction",
-        "cosmologicalperturbationtheory"
+        "cosmologicalperturbationtheory",
+        "wimpfreezeout",
+        "darkmatterrelicabundance"
       ],
       "tags": [
         "1"
@@ -2962,11 +2987,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "stronginteraction",
-        "thestandardmodel",
-        "gaugetheory",
+        "quantumfieldtheory",
         "latticeqcd",
-        "quantumfieldtheory"
+        "stronginteraction",
+        "gaugetheory",
+        "thestandardmodel"
       ],
       "tags": [
         "1"
@@ -3670,6 +3695,33 @@
         "Expert assessments on empirical gaps and unresolved theoretical issues"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/causal_set_theory_vs_spin_foam_models_in_quantum_gravity_research.md"
+    },
+    {
+      "id": "cdmbaryonicfeedbackvsmondexternalfieldeffectinexplainingtheradialaccelerationrelationofgalaxies",
+      "title": "ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "radialaccelerationrelation",
+        "baryonictullyfisherrelation",
+        "mondexternalfieldeffect",
+        "lcdmbaryonicfeedback",
+        "modifiednewtoniandynamics",
+        "sparcgalaxydatabase"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "McGaugh, S. S., Lelli, F., & Schombert, J. M. (2016), 'The Radial Acceleration Relation in Rotationally Supported Galaxies', https://doi.org/10.1103/PhysRevLett.117.201101",
+        "Dutton, A. A., et al. (2019), 'The origin of MOND phenomenology in ΛCDM', https://doi.org/10.1093/mnras/stz531",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/cdm_baryonic_feedback_vs_mond_external_field_effect_in_explaining_the_radial_acceleration_relation_of_galaxies.md"
     },
     {
       "id": "chiralmagneticeffectvschiralvorticaleffectinrelativisticplasmas",
@@ -4941,11 +4993,11 @@
       "math_score": "3/4",
       "dependencies": [
         "gravitationalwaveobservations",
-        "hubbletension",
         "causaldynamicaltriangulations",
+        "earlydarkenergy",
         "quantumgravity",
-        "functionalrenormalizationgroup",
-        "earlydarkenergy"
+        "hubbletension",
+        "functionalrenormalizationgroup"
       ],
       "tags": [
         "2"
@@ -5008,11 +5060,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "stochasticgravitationalwavebackgrounds",
         "cosmicstringsandtopologicaldefects",
-        "firstordercosmologicalphasetransitions",
-        "supermassiveblackholebinaries",
         "pulsartimingarrays",
-        "stochasticgravitationalwavebackgrounds"
+        "firstordercosmologicalphasetransitions",
+        "supermassiveblackholebinaries"
       ],
       "tags": [
         "2"
@@ -6543,12 +6595,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "cosmologicalstructureformation",
+        "cosmicweb",
+        "lcdmcosmology",
         "topologicaldataanalysis",
         "persistenthomology",
-        "nullmodelsandhypothesistesting",
-        "cosmicweb",
-        "cosmologicalstructureformation",
-        "lcdmcosmology"
+        "nullmodelsandhypothesistesting"
       ],
       "tags": [
         "3"
@@ -6680,11 +6732,11 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "falsifiabilityandmodeldependentinference",
         "bremermannlimit",
-        "landauerprinciple",
+        "falsifiabilityandmodeldependentinference",
         "cosmicwebhalovirialization",
         "s8tension",
+        "landauerprinciple",
         "corticalenergybudgets"
       ],
       "tags": [
@@ -7175,6 +7227,40 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md"
     },
     {
+      "id": "quantumcramrraoandlindbladiandephasingboundsoncoherenceassistedexcitationtransferinwarmbiologicallightharvestingantennaeafalsifiabledimensionallyconsistenttesta",
+      "title": "Quantum Cramér–Rao and Lindbladian Dephasing Bounds on Coherence-Assisted Excitation Transfer in Warm Biological Light-Harvesting Antennae: A Falsifiable, Dimensionally Consistent Test Against Classical Förster Transport Null Models",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "classicalforstertransportandincoherenthopping",
+        "openquantumsystemsandlindbladdynamics",
+        "environmentassistedquantumtransport",
+        "leggettgarginequalities",
+        "quantumfisherinformationandquantumcramerraobound"
+      ],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Rebentrost, P., Mohseni, M., Kassal, I., Lloyd, S., & Aspuru-Guzik, A. (2009), 'Environment-assisted quantum transport', https://doi.org/10.1088/1367-2630/11/3/033003",
+        "Potočnik, A., et al. (2018), 'Studying light-harvesting models with a superconducting quantum simulator', https://doi.org/10.1038/s41467-018-03312-x",
+        "Hoyer, S., Sarovar, M., & Whaley, K. B. (2010), 'Limits of quantum speedup in photosynthetic light harvesting', https://doi.org/10.1088/1367-2630/12/6/065041",
+        "Blau, S. M., Bennett, D. I. G., Kreisbeck, C., Scholes, G. D., & Aspuru-Guzik, A. (2018), 'Local protein solvation drives direct down-conversion in phycobiliprotein PC645 via incoherent vibronic transport', https://doi.org/10.1073/pnas.1800370115",
+        "Jia, X., Mei, Y., Zhang, J., et al. (2015), 'Hybrid QM/MM study of FMO complex with polarized protein-specific charge', https://doi.org/10.1038/srep17096",
+        "Kim, Y., et al. (2021), 'Quantum Biology: An Update and Perspective', https://doi.org/10.3390/quantum3010006",
+        "Nalbach, P., Eckel, J., & Thorwart, M. (2010), 'Quantum coherent biomolecular energy transfer with spatially correlated fluctuations', https://doi.org/10.1088/1367-2630/12/6/065043",
+        "Cui, Y., Yan, Y., & Wei, J. (2024), 'PE555 phycobilisome Hamiltonian study', https://doi.org/10.1021/acsomega.4c07445",
+        "Lambert, N., et al. (2023), 'QuTiP-BoFiN: A framework for simulating open quantum systems with non-Markovian environments', https://doi.org/10.1103/physrevresearch.5.013181",
+        "Emary, C., Lambert, N., & Nori, F. (2014), 'Leggett–Garg inequalities', https://doi.org/10.1088/0034-4885/77/1/016001",
+        "Deffner, S., & Campbell, S. (2017), 'Quantum speed limits', https://doi.org/10.1088/1751-8121/aa86c6",
+        "Streltsov, A., Adesso, G., & Plenio, M. B. (2017), 'Colloquium: Quantum coherence as a resource', https://doi.org/10.1103/revmodphys.89.041003"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/quantum_cramrrao_and_lindbladian_dephasing_bounds_on_coherenceassisted_excitation_transfer_in_warm_biological_lightharvesting_antennae_a_falsifiable_dimensionally_consistent_test_a.md"
+    },
+    {
       "id": "quantumfisherinformationboundsonavianradicalpairmagnetoreceptiontestingquantumenhancementovertheclassicalfisherboundunderdecoherence",
       "title": "Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence",
       "level": 3,
@@ -7259,12 +7345,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "observationalselectioneffects",
-        "bottleneckdistance",
         "baryonicfeedback",
+        "cosmicweb",
+        "observationalselectioneffects",
         "topologicaldataanalysis",
         "persistenthomology",
-        "cosmicweb"
+        "bottleneckdistance"
       ],
       "tags": [
         "3"
@@ -8203,6 +8289,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "baryonictullyfisherrelation",
+      "suggested_title": "Baryonictullyfisherrelation",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "bottleneckdistance",
       "suggested_title": "Bottleneckdistance",
       "target_level": 1,
@@ -8217,6 +8309,12 @@
     {
       "id": "causaldynamicaltriangulations",
       "suggested_title": "Causaldynamicaltriangulations",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "classicalforstertransportandincoherenthopping",
+      "suggested_title": "Classicalforstertransportandincoherenthopping",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8271,6 +8369,12 @@
     {
       "id": "earlydarkenergy",
       "suggested_title": "Earlydarkenergy",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "environmentassistedquantumtransport",
+      "suggested_title": "Environmentassistedquantumtransport",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8347,14 +8451,38 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "lcdmbaryonicfeedback",
+      "suggested_title": "Lcdmbaryonicfeedback",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "lcdmcosmology",
       "suggested_title": "Lcdmcosmology",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "leggettgarginequalities",
+      "suggested_title": "Leggettgarginequalities",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "minimalsupersymmetricstandardmodel",
       "suggested_title": "Minimalsupersymmetricstandardmodel",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "modifiednewtoniandynamics",
+      "suggested_title": "Modifiednewtoniandynamics",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "mondexternalfieldeffect",
+      "suggested_title": "Mondexternalfieldeffect",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8367,6 +8495,12 @@
     {
       "id": "observationalselectioneffects",
       "suggested_title": "Observationalselectioneffects",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "openquantumsystemsandlindbladdynamics",
+      "suggested_title": "Openquantumsystemsandlindbladdynamics",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8395,6 +8529,18 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "quantumfisherinformationandquantumcramerraobound",
+      "suggested_title": "Quantumfisherinformationandquantumcramerraobound",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "radialaccelerationrelation",
+      "suggested_title": "Radialaccelerationrelation",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "renormalizationgroup",
       "suggested_title": "Renormalizationgroup",
       "target_level": 1,
@@ -8403,6 +8549,12 @@
     {
       "id": "s8tension",
       "suggested_title": "S8Tension",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "sparcgalaxydatabase",
+      "suggested_title": "Sparcgalaxydatabase",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },

@@ -40,7 +40,7 @@ For IIT's *intrinsic* Φ, by contrast, interventions are **self-caused**.
 **[THEORETICAL]** assertions include that intrinsic Φ identifies consciousness and that Φ is empirically identifiable.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: GENMEDIA_UNAVAILABLE: invalid output directory: output directory "/home/runner/work/univers-knowledge/univers-knowledge/knowledge_base/images" must be relative to the output root "/home/runner/work/univers-knowledge/univers-knowledge"]
+![Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure](../images/gemini_20261027010846_0.png)
 
 ## 7. Related Concepts
 **Physicalist causal closure** and empirical identifiability question the role of different systems within neural architectures and their resulting identifiability.

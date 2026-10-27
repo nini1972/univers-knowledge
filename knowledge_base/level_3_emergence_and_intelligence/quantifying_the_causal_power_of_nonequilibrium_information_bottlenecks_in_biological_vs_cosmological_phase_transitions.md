@@ -28,7 +28,7 @@ Despite the rigor, the need for empirical validation remains a critical gap in t
 The synthesis and its implications have yet to be empirically tested, particularly in terms of biological interventions and cosmological observations.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions](../images/gemini_20261027010920_0.png)
 
 ## 7. Related Concepts
 - Information bottleneck theory

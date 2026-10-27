@@ -28,7 +28,7 @@ Despite the theoretical underpinnings being respected within quantum studies, th
 The approved hypothesis serves as a theoretical entry point rather than established biological knowledge, necessitating enhanced scrutiny and deeper investigation to corroborate the claims made.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: Quantum Fisher Information Bounds Diagram/Visualization]
+![Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence](../images/gemini_20261027010955_3.png)
 
 ## 7. Related Concepts
 - Quantum Mechanics

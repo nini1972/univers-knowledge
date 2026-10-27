@@ -36,7 +36,7 @@ The work is internally consistent and acknowledges category errors, such as conf
 The research acknowledges its speculative nature while maintaining mathematical integrity within the proposed framework.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations](../images/gemini_20261027010928_0.png)
 
 ## 7. Related Concepts
 - Landauer's Principle

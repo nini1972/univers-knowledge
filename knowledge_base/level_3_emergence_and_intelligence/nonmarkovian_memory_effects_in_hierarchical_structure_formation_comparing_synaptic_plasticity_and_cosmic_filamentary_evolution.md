@@ -28,7 +28,7 @@ While this analogy presents an intriguing theoretical framework, it raises quest
 - The analogy is primarily theoretical and prompts further investigation into the relevance of these mathematical models in empirical terms.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution](../images/gemini_20261027010913_0.jpg)
 
 ## 7. Related Concepts
 - Synaptic Plasticity

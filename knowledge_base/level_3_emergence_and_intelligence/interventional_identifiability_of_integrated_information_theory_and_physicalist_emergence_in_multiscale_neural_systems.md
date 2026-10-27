@@ -36,7 +36,7 @@ While the framework posited in the report provides a compelling narrative, it is
 Given that the identity of Φ as consciousness remains unverified, further empirical studies and mathematical validations are warranted. The reports advocate for rigor in delineating proven aspects of the theoretical narrative, emphasizing the necessity for concrete empirical evidence supporting proposed mappings.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems](../images/gemini_20261027010903_0.png)
 
 ## 7. Related Concepts
 Consideration of related frameworks, such as global workspace theories and causal modeling approaches, provides additional context to the discourse around consciousness and its quantification through causal and information-theoretic constructs.
