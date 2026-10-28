@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-27T01:09:56.676128+00:00",
+  "updated_at": "2026-10-28T01:08:00.269723+00:00",
   "stats": {
-    "total_nodes": 355,
+    "total_nodes": 357,
     "level_1_count": 154,
-    "level_2_count": 136,
-    "level_3_count": 65,
-    "total_edges": 168,
-    "frontier_count": 54
+    "level_2_count": 137,
+    "level_3_count": 66,
+    "total_edges": 169,
+    "frontier_count": 66
   },
   "nodes": [
     {
@@ -309,10 +309,10 @@
       "math_score": "4/4",
       "dependencies": [
         "friedmannequations",
-        "hubbletension",
-        "darkenergy",
         "cosmicmicrowavebackground",
-        "baryonacousticoscillations"
+        "baryonacousticoscillations",
+        "hubbletension",
+        "darkenergy"
       ],
       "tags": [
         "1"
@@ -851,11 +851,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "standardmodeleffectivefieldtheory",
-        "higgsmechanism",
         "peskintakeuchiparameters",
-        "standardmodel",
-        "electroweaksymmetrybreaking"
+        "standardmodeleffectivefieldtheory",
+        "electroweaksymmetrybreaking",
+        "higgsmechanism",
+        "standardmodel"
       ],
       "tags": [
         "1"
@@ -1094,11 +1094,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "grandunifiedtheories",
-        "renormalizationgroup",
-        "standardmodel",
         "protondecay",
-        "minimalsupersymmetricstandardmodel"
+        "renormalizationgroup",
+        "grandunifiedtheories",
+        "minimalsupersymmetricstandardmodel",
+        "standardmodel"
       ],
       "tags": [
         "1"
@@ -2894,10 +2894,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "freezeinproduction",
-        "cosmologicalperturbationtheory",
         "wimpfreezeout",
-        "darkmatterrelicabundance"
+        "freezeinproduction",
+        "darkmatterrelicabundance",
+        "cosmologicalperturbationtheory"
       ],
       "tags": [
         "1"
@@ -2990,8 +2990,8 @@
         "quantumfieldtheory",
         "latticeqcd",
         "stronginteraction",
-        "gaugetheory",
-        "thestandardmodel"
+        "thestandardmodel",
+        "gaugetheory"
       ],
       "tags": [
         "1"
@@ -3705,12 +3705,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "sparcgalaxydatabase",
         "radialaccelerationrelation",
         "baryonictullyfisherrelation",
         "mondexternalfieldeffect",
-        "lcdmbaryonicfeedback",
         "modifiednewtoniandynamics",
-        "sparcgalaxydatabase"
+        "lcdmbaryonicfeedback"
       ],
       "tags": [
         "2"
@@ -4992,12 +4992,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "functionalrenormalizationgroup",
         "gravitationalwaveobservations",
         "causaldynamicaltriangulations",
         "earlydarkenergy",
         "quantumgravity",
-        "hubbletension",
-        "functionalrenormalizationgroup"
+        "hubbletension"
       ],
       "tags": [
         "2"
@@ -5033,6 +5033,51 @@
       "path": "knowledge_base/level_2_advanced_frameworks/parity_violation_vs_scalar_charge_in_strongfield_gravity.md"
     },
     {
+      "id": "pecceiquinnaxionvsmasslessupquarksolutionstothestrongcpproblem",
+      "title": "Peccei–Quinn Axion vs Massless Up-Quark Solutions to the Strong CP Problem",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "neutronelectricdipolemoment",
+        "axionmisalignmentrelicabundance",
+        "nelsonbarrmechanism",
+        "latticeqcdquarkmasses",
+        "strongcpproblem",
+        "qcdaxionandaxionlikeparticles",
+        "softpqparitysolution",
+        "thestrongcpproblem"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Peccei, R. D., and Quinn, H. R. (1977), 'CP Conservation in the Presence of Pseudoparticles', https://doi.org/10.1103/PhysRevLett.38.1440",
+        "Weinberg, S. (1978), 'A New Light Boson?', https://doi.org/10.1103/PhysRevLett.40.223",
+        "Wilczek, F. (1978), 'Problem of Strong P and T Invariance in the Presence of Instantons', https://doi.org/10.1103/PhysRevLett.40.279",
+        "Dine, M., Fischler, W., and Srednicki, M. (1981), 'A simple solution to the strong CP problem with a harmless axion', https://doi.org/10.1016/0370-2693(81)90590-6",
+        "Marsh, D. J. E. (2016), 'Axion Cosmology', https://doi.org/10.1016/j.physrep.2016.06.005",
+        "Svrcek, P., and Witten, E. (2006), 'Axions In String Theory', https://doi.org/10.1088/1126-6708/2006/06/051",
+        "Bertone, G., and Hooper, D. (2018), 'History of dark matter', https://doi.org/10.1103/RevModPhys.90.045002",
+        "Armengaud, E., et al. (2019), 'Conceptual design of the International Axion Observatory (IAXO)', https://doi.org/10.1088/1475-7516/2019/06/047",
+        "Dobrescu, B. A. (1997), 'The strong CP problem versus Planck scale physics', https://doi.org/10.1103/PhysRevD.55.5826",
+        "Hook, A. (2018), 'TASI Lectures on the Strong CP Problem and Axions', https://arxiv.org/abs/1812.02669",
+        "Kim, J. E. (2009), 'Axion and almost everything', https://arxiv.org/abs/0909.3908",
+        "Kuchimanchi, R. (2018), 'Solution to the strong CP problem: Supersymmetry with parity', https://arxiv.org/abs/1805.00926",
+        "ADMX Collaboration (2025), '1.1–1.3 GHz haloscope search', https://doi.org/10.1103/d7mg-6sqq",
+        "Asgari, M., et al. (2021), 'KiDS-1000: Cosmic shear constraints and comparison between two point statistics', https://doi.org/10.1051/0004-6361/202039070",
+        "Amon, A., et al. (2022), 'Dark Energy Survey Year 3 results: Cosmology from cosmic shear and clustering', https://doi.org/10.1103/PhysRevD.105.023520",
+        "Di Valentino, E., et al. (2021), 'In the realm of the Hubble tension—a review of solutions', https://doi.org/10.1088/1361-6382/ac086d",
+        "Abel, C., et al. (2020), 'Measurement of the Permanent Electric Dipole Moment of the Neutron', https://doi.org/10.1103/PhysRevLett.124.081803",
+        "Fixsen, D. J. (2009), 'The Temperature of the Cosmic Microwave Background', https://doi.org/10.1088/0004-637X/707/2/916",
+        "Lee, H., et al. (2024), 'Kinetic Misalignment Mechanism in Axion Dark Matter', https://arxiv.org/abs/2408.17013",
+        "CAPP Collaboration (2024), 'Haloscope search covering 4.24–4.91 μeV', https://arxiv.org/abs/2402.12892"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/pecceiquinn_axion_vs_massless_upquark_solutions_to_the_strong_cp_problem.md"
+    },
+    {
       "id": "perturbativereheatingvsparametricresonancepreheating",
       "title": "Perturbative Reheating vs Parametric-Resonance Preheating",
       "level": 2,
@@ -5060,11 +5105,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "stochasticgravitationalwavebackgrounds",
         "cosmicstringsandtopologicaldefects",
-        "pulsartimingarrays",
+        "supermassiveblackholebinaries",
         "firstordercosmologicalphasetransitions",
-        "supermassiveblackholebinaries"
+        "pulsartimingarrays",
+        "stochasticgravitationalwavebackgrounds"
       ],
       "tags": [
         "2"
@@ -6596,10 +6641,10 @@
       "math_score": "4/4",
       "dependencies": [
         "cosmologicalstructureformation",
-        "cosmicweb",
         "lcdmcosmology",
-        "topologicaldataanalysis",
         "persistenthomology",
+        "cosmicweb",
+        "topologicaldataanalysis",
         "nullmodelsandhypothesistesting"
       ],
       "tags": [
@@ -6732,12 +6777,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "bremermannlimit",
-        "falsifiabilityandmodeldependentinference",
-        "cosmicwebhalovirialization",
         "s8tension",
-        "landauerprinciple",
-        "corticalenergybudgets"
+        "cosmicwebhalovirialization",
+        "falsifiabilityandmodeldependentinference",
+        "bremermannlimit",
+        "corticalenergybudgets",
+        "landauerprinciple"
       ],
       "tags": [
         "3"
@@ -6767,6 +6812,34 @@
         "Barato, A. C. & Seifert, U. (2015), 'Thermodynamic Uncertainty Relation for Biomolecular Processes', https://doi.org/10.1103/PhysRevLett.114.158101"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md"
+    },
+    {
+      "id": "fluctuationdissipationandentropyrateboundsoninformationtransferacrosshierarchicalscalesafalsifiabledimensionallyconsistentcomparisonofcorticalaxonaltransportnetw",
+      "title": "Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "transferentropyandeffectiveconnectivity",
+        "stochasticthermodynamicsandentropyproduction",
+        "scalefreenetworksanduniversality",
+        "fluctuationdissipationtheorem",
+        "cosmicwebfilamentsandvelocityshear"
+      ],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Kubo, R. (1966), 'The fluctuation-dissipation theorem', https://doi.org/10.1088/0034-4885/29/1/306",
+        "Seifert, U. (2012), 'Stochastic thermodynamics, fluctuation theorems and molecular machines', https://doi.org/10.1088/0034-4885/75/12/126001",
+        "Maggi, C., et al. (2017), 'Memory-less response and violation of the fluctuation-dissipation theorem in colloids in an active bath', https://doi.org/10.1038/s41598-017-17900-2",
+        "Vicente, R., et al. (2010), 'Transfer entropy—a model-free measure of effective connectivity for the neurosciences', https://doi.org/10.1007/s10827-010-0262-3",
+        "Broido, A. D., & Clauset, A. (2019), 'Scale-free networks are rare', https://doi.org/10.1038/s41467-019-08746-5",
+        "Adame, A., et al. (2025), 'DESI 2024 VI: Cosmological constraints from the measurements of baryon acoustic oscillations', https://doi.org/10.1088/1475-7516/2025/02/021"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw.md"
     },
     {
       "id": "fluctuationtheoremboundsonirreversibilityandentropyproductionincorticalspiketraindynamicsversuscosmicwebfilamentevolutionafalsifiabledimensionallyconsistenttest",
@@ -7235,11 +7308,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "classicalforstertransportandincoherenthopping",
         "openquantumsystemsandlindbladdynamics",
-        "environmentassistedquantumtransport",
         "leggettgarginequalities",
-        "quantumfisherinformationandquantumcramerraobound"
+        "environmentassistedquantumtransport",
+        "quantumfisherinformationandquantumcramerraobound",
+        "classicalforstertransportandincoherenthopping"
       ],
       "tags": [
         "3"
@@ -7345,11 +7418,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "baryonicfeedback",
-        "cosmicweb",
-        "observationalselectioneffects",
-        "topologicaldataanalysis",
         "persistenthomology",
+        "cosmicweb",
+        "topologicaldataanalysis",
+        "baryonicfeedback",
+        "observationalselectioneffects",
         "bottleneckdistance"
       ],
       "tags": [
@@ -7936,6 +8009,11 @@
       "type": "component_theory"
     },
     {
+      "source": "thestrongcpproblem",
+      "target": "pecceiquinnaxionvsmasslessupquarksolutionstothestrongcpproblem",
+      "type": "component_theory"
+    },
+    {
       "source": "bigbangnucleosynthesisbbntheoryandlightelementabundancepredictions",
       "target": "prevspostinflationaryqcdaxioncosmology",
       "type": "component_theory"
@@ -8283,6 +8361,12 @@
   ],
   "frontier": [
     {
+      "id": "axionmisalignmentrelicabundance",
+      "suggested_title": "Axionmisalignmentrelicabundance",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "baryonicfeedback",
       "suggested_title": "Baryonicfeedback",
       "target_level": 1,
@@ -8343,6 +8427,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "cosmicwebfilamentsandvelocityshear",
+      "suggested_title": "Cosmicwebfilamentsandvelocityshear",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "cosmicwebhalovirialization",
       "suggested_title": "Cosmicwebhalovirialization",
       "target_level": 1,
@@ -8387,6 +8477,12 @@
     {
       "id": "firstordercosmologicalphasetransitions",
       "suggested_title": "Firstordercosmologicalphasetransitions",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "fluctuationdissipationtheorem",
+      "suggested_title": "Fluctuationdissipationtheorem",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8451,6 +8547,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "latticeqcdquarkmasses",
+      "suggested_title": "Latticeqcdquarkmasses",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "lcdmbaryonicfeedback",
       "suggested_title": "Lcdmbaryonicfeedback",
       "target_level": 1,
@@ -8483,6 +8585,18 @@
     {
       "id": "mondexternalfieldeffect",
       "suggested_title": "Mondexternalfieldeffect",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "nelsonbarrmechanism",
+      "suggested_title": "Nelsonbarrmechanism",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "neutronelectricdipolemoment",
+      "suggested_title": "Neutronelectricdipolemoment",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8529,6 +8643,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "qcdaxionandaxionlikeparticles",
+      "suggested_title": "Qcdaxionandaxionlikeparticles",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "quantumfisherinformationandquantumcramerraobound",
       "suggested_title": "Quantumfisherinformationandquantumcramerraobound",
       "target_level": 1,
@@ -8549,6 +8669,18 @@
     {
       "id": "s8tension",
       "suggested_title": "S8Tension",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "scalefreenetworksanduniversality",
+      "suggested_title": "Scalefreenetworksanduniversality",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "softpqparitysolution",
+      "suggested_title": "Softpqparitysolution",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -8577,6 +8709,18 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "stochasticthermodynamicsandentropyproduction",
+      "suggested_title": "Stochasticthermodynamicsandentropyproduction",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "strongcpproblem",
+      "suggested_title": "Strongcpproblem",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "stronginteraction",
       "suggested_title": "Stronginteraction",
       "target_level": 1,
@@ -8597,6 +8741,12 @@
     {
       "id": "topologicaldataanalysis",
       "suggested_title": "Topologicaldataanalysis",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "transferentropyandeffectiveconnectivity",
+      "suggested_title": "Transferentropyandeffectiveconnectivity",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },

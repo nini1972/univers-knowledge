@@ -179,6 +179,9 @@ Key limitations include:
 *This document captures the current theoretical understanding and status of the matter-antimatter asymmetry problem as an open, actively researched question in fundamental physics and cosmology.*
 
 
+## 6. Visual Representation
+![Matter-Antimatter Asymmetry](../images/gemini_20261028010704_1.png)
+
 ## 7. Related Concepts
 - CP Violation
 - Big Bang Nucleosynthesis

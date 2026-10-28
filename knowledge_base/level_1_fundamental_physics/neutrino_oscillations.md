@@ -68,7 +68,7 @@ P_{\alpha \to \beta}(L) = \sin^2(2\theta) \sin^2 \left( 1.27 \frac{\Delta m^2 (\
 
 where \(\theta\) is the mixing angle between the two flavors.
 
-[VISUAL_PENDING: GENMEDIA_UNAVAILABLE: disabled by ENABLE_GENMEDIA=false]
+![Neutrino Oscillations](../images/gemini_20261028010731_0.png)
 
 ## Importance
 Neutrino oscillations have fundamentally reshaped particle physics and cosmology by:

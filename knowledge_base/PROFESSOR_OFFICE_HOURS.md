@@ -12,9 +12,32 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (1)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20261028-1976f7` | L1 | **Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit** | UniverseFlow Orchestrator | Concept 'Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20261028-1976f7` — Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit
+- **Timestamp**: `2026-10-28T00:46:16.197329+00:00`
+- **Level**: Level 1
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: Rule 2 requires rejection when the Math Physicist's status is [MATH_FLAWED], and the report carries that status through a recorded LIMIT_MISMATCH. The Skeptic also found a real error: the report gives the tidal deformability as Λ ∝ R^5/M^3, but the standard dimensionless Λ scales as (R/M)^5. The Skeptic's score of 5/6 passes, but it does not override the math rejection. The citation audit also lists 2025 sources in a report dated 2023, so its claim of no future-dated sources is false. These problems can be fixed in a short revision, and the underlying TOV physics is sound.
+- **Agent Blockers**:
+  * Researcher: Correct the tidal deformability scaling to Λ = (2/3) k2 (R/M)^5, or define the dimensionful λ ∝ R^5 explicitly in the symbol table.
+  * Researcher: Regenerate the citation audit. Resolve the 2025 vs 2023 date inconsistency, include all in-text citations (Rhoades & Ruffini, Miller et al., Abbott et al.), and remove or justify uncited entries.
+  * Researcher: Tag the benchmark TOV masses (2.10 and 2.45 Msun) as [MODEL-DEPENDENT] and give EoS parameters, matching densities and the numerical method.
+  * Researcher: Replace 'only known mechanism' with 'one possible mechanism'. Distinguish spontaneous scalarization from first-order phase transitions. Clarify the 'mass gap' and 'lattice instability' terminology.
+  * Researcher: Use a two-level status: standard TOV and observational constraints [VERIFIED], spontaneous mechanisms [THEORETICAL], EoS benchmarks [MODEL-DEPENDENT]. Clarify that the c_s^2=1 causal bound is the M-R sequence of the maximally stiff causal EoS.
+  * Math Physicist: State the Newtonian limit explicitly as the joint limit P<<rho and 2M/r<<1, so the LIMIT_MISMATCH clears on re-review.
+  * Math Physicist: Declare natural-unit dimensions for all symbols so the 24 undecidable equations can be checked.
+  * Math Physicist: Confirm the corrected Λ scaling is dimensionless and consistent.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261028-1976f7 "Your guidance"`
+
 
 ---
 

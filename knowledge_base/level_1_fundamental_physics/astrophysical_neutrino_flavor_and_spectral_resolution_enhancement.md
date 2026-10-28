@@ -31,7 +31,7 @@ Critics of this framework may argue that without experimental validation, the th
 The mathematical integrity of this theoretical framework, with a defined math score of 4/4 and status MATH_PROVEN, highlights a sound structural basis for the analysis of neutrinos.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Astrophysical Neutrino Flavor and Spectral Resolution Enhancement](../images/gemini_20261028010447_1.png)
 
 ## 7. Related Concepts
 - Neutrino Decay

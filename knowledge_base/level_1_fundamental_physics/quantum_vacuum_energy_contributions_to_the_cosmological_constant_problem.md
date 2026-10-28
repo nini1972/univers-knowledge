@@ -58,6 +58,8 @@ Despite the theoretical soundness of the conjectures about vacuum energy contrib
 Quantum vacuum fluctuations themselves enjoy experimental support—seen, for example, in the Casimir effect and Lamb shift measurements. However, linking these fluctuations quantitatively to the observed cosmological constant remains a theoretical endeavor. No experiment to date can directly measure or verify the full framework connecting vacuum energy to cosmic acceleration. The problem’s outstanding fine-tuning suggests gaps in either theory or interpretation.
 
 ## 6. Visual Representation
+![Quantum Vacuum Energy Contributions to the Cosmological Constant Problem](../images/gemini_20261028010758_0.jpg)
+
 A standard visualization is a schematic comparing:
 
 - The theoretical vacuum energy density spectrum predicted by QFT (extremely high, near Planck scale)

@@ -34,7 +34,7 @@ Critics argue that the degeneracies in observations might obscure underlying mec
 This framework is grounded in theoretical constructs and aims for statistical validation against systematic errors. The verification considers the potential challenges posed by the complexities of flux normalization.
 
 ## 6. Visual Representation
-[VISUAL_PENDING: ...]
+![Disentangling Neutrino Invisible Decay from Flux Normalization Errors](../images/gemini_20261028010649_1.png)
 
 ## 7. Related Concepts
 - Neutrino physics

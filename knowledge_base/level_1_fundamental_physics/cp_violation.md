@@ -121,6 +121,9 @@ The mathematical formalism accurately models observed CP-violating asymmetries. 
 # End of Document
 
 
+## 6. Visual Representation
+![CP Violation](../images/gemini_20261028010632_0.png)
+
 ## 7. Related Concepts
 - Standard Model of Particle Physics
 - Matter-Antimatter Asymmetry Mechanisms

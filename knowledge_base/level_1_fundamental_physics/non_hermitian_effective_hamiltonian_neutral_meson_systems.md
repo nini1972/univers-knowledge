@@ -61,6 +61,8 @@ While the Standard Model provides a robust framework for neutral-meson dynamics,
 The non-Hermitian effective Hamiltonian described profoundly impacts our understanding of particle behavior under non-Hermitian influences. Ongoing research continues to validate these concepts while exploring their implications in both theoretical and experimental settings.
 
 ## 6. Visual Representation
+![Non-Hermitian Effective Hamiltonian for Neutral-Meson Systems](../images/gemini_20261028010749_0.png)
+
 ![Can you clarify the commutation relations [M, Γ] and provide the explicit calculation showing the convergence of the BCH series for your non-Hermitian effective Hamiltonian?](../images/gemini_20260821003753_0.png)
 
 ## 7. Related Concepts

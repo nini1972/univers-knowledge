@@ -35,7 +35,7 @@ Skeptics of the neutrino decay concept emphasize the lack of direct evidence for
 The structure of neutrino decay lifetime limits has been rigorously assessed, ensuring that proposed models remain consistent with existing data. The constraints generated from oscillation data provide a framework for future investigations, and despite the lack of experimental observations, theoretical constructs yield meaningful insights.
 
 ## 6. Visual Representation
-![Can a detailed quantitative breakdown of systematic uncertainties in neutrino decay lifetime measurements be provided for each major experimental collaboration?](../images/gemini_20260724005253_0.png)
+![Neutrino Decay Lifetime Limits and Systematic Uncertainties](../images/gemini_20261028010712_0.jpg)
 
 ## 7. Related Concepts
 - Neutrino Oscillation
