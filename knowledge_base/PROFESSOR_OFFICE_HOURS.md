@@ -12,11 +12,12 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (2)
 
 | ID | Level | Concept | Initiator | Question |
 |---|---|---|---|---|
 | `adv-20261028-1976f7` | L1 | **Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit** | UniverseFlow Orchestrator | Concept 'Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+| `adv-20261029-726348` | L2 | **Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures** | UniverseFlow Orchestrator | Concept 'Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
 
 ### Detailed Inquiries
 
@@ -37,6 +38,19 @@
   * Math Physicist: Confirm the corrected Λ scaling is dimensionless and consistent.
 
 > **To answer**: `python scripts/consult_professor.py answer adv-20261028-1976f7 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261029-726348` — Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures
+- **Timestamp**: `2026-10-29T01:14:33.133400+00:00`
+- **Level**: Level 2
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic score of 5/5 meets the threshold. The Math status is [MATH_CONSISTENT], with the slow-roll algebra and dimensional checks passing. The Math score of 2/4 is below the guideline, and the Math Physicist's headline PBB figures (f_peak, Ω_GW, ε_best-fit) were contested. The comparative report resolved most of these: f_peak is about 24 GHz, and the ε, exponent and Ω_GW errors are corrected. I did not independently re-verify the arithmetic. The comparison draws on at least 3 independent sources and is transparent about uncertainty. Epistemic status is [VERIFIED] because the comparison rests on measured n_s, r, NANOGrav and LIGO constraints, even though the primordial tensor tilt itself is untested.
+
+Math gate: approval blocked because the Math Physicist's tool-verified report contains 1 LIMIT_MISMATCH verdict(s). Correct the flagged equations/derivation steps and re-verify.
+- **Agent Blockers**:
+  * Math Physicist: Independently re-verify f_peak at T_reh = 1e15 GeV (about 2.4e10 Hz) and the corrected NANOGrav Ω_GW(f) ∝ f^(2/3) extrapolation to the LIGO band
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261029-726348 "Your guidance"`
 
 
 ---

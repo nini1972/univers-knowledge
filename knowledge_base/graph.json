@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-28T01:08:00.269723+00:00",
+  "updated_at": "2026-10-29T01:28:18.821423+00:00",
   "stats": {
-    "total_nodes": 357,
-    "level_1_count": 154,
+    "total_nodes": 359,
+    "level_1_count": 155,
     "level_2_count": 137,
-    "level_3_count": 66,
+    "level_3_count": 67,
     "total_edges": 169,
     "frontier_count": 66
   },
@@ -308,9 +308,9 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "friedmannequations",
         "cosmicmicrowavebackground",
         "baryonacousticoscillations",
+        "friedmannequations",
         "hubbletension",
         "darkenergy"
       ],
@@ -853,9 +853,9 @@
       "dependencies": [
         "peskintakeuchiparameters",
         "standardmodeleffectivefieldtheory",
-        "electroweaksymmetrybreaking",
+        "standardmodel",
         "higgsmechanism",
-        "standardmodel"
+        "electroweaksymmetrybreaking"
       ],
       "tags": [
         "1"
@@ -1094,11 +1094,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "protondecay",
+        "minimalsupersymmetricstandardmodel",
         "renormalizationgroup",
         "grandunifiedtheories",
-        "minimalsupersymmetricstandardmodel",
-        "standardmodel"
+        "standardmodel",
+        "protondecay"
       ],
       "tags": [
         "1"
@@ -1177,6 +1177,30 @@
         "Aghanim, N., et al. (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/gravitational_lensing.md"
+    },
+    {
+      "id": "gravitationalredshiftandthepoundrebkaexperiment",
+      "title": "Gravitational Redshift and the Pound–Rebka Experiment",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Pound, R. V. & Rebka, G. A. (1960), 'Apparent Weight of Photons', https://doi.org/10.1103/PhysRevLett.4.337",
+        "Pound, R. V. & Snider, J. L. (1965), 'Effect of Gravity on Gamma Radiation', https://doi.org/10.1103/PhysRev.140.B788",
+        "Vessot, R. F. C., Levine, M. W., Mattison, E. M., et al. (1980), 'Test of Relativistic Gravitation with a Space-Borne Hydrogen Maser', https://doi.org/10.1103/PhysRevLett.45.2081",
+        "Herrmann, S., Finke, F., Lülf, M., et al. (2018), 'Test of the Gravitational Redshift with Galileo Satellites in an Eccentric Orbit', https://doi.org/10.1103/PhysRevLett.121.231102",
+        "Delva, P., Puchades, N., Schönemann, E., et al. (2018), 'Gravitational Redshift Test Using Eccentric Galileo Satellites', https://doi.org/10.1103/PhysRevLett.121.231101",
+        "Delva, P., Puchades, N., Schönemann, E., et al. (2019), 'A new test of gravitational redshift using Galileo satellites: The GREAT experiment', https://doi.org/10.1016/j.crhy.2019.04.002",
+        "Savalle, E., et al. (2019), 'Gravitational redshift test with the future ACES mission', https://doi.org/10.1088/1361-6382/ab4f25",
+        "Turyshev, S. G. (2009), 'Experimental tests of general relativity: recent progress and future directions', https://doi.org/10.3367/UFNe.0179.200901a.0003"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/gravitational_redshift_and_the_poundrebka_experiment.md"
     },
     {
       "id": "gravitationalwaveastronomy",
@@ -2894,10 +2918,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "wimpfreezeout",
-        "freezeinproduction",
         "darkmatterrelicabundance",
-        "cosmologicalperturbationtheory"
+        "cosmologicalperturbationtheory",
+        "freezeinproduction",
+        "wimpfreezeout"
       ],
       "tags": [
         "1"
@@ -2988,10 +3012,10 @@
       "math_score": "4/4",
       "dependencies": [
         "quantumfieldtheory",
-        "latticeqcd",
-        "stronginteraction",
         "thestandardmodel",
-        "gaugetheory"
+        "latticeqcd",
+        "gaugetheory",
+        "stronginteraction"
       ],
       "tags": [
         "1"
@@ -3706,11 +3730,11 @@
       "math_score": "3/4",
       "dependencies": [
         "sparcgalaxydatabase",
-        "radialaccelerationrelation",
-        "baryonictullyfisherrelation",
         "mondexternalfieldeffect",
-        "modifiednewtoniandynamics",
-        "lcdmbaryonicfeedback"
+        "lcdmbaryonicfeedback",
+        "baryonictullyfisherrelation",
+        "radialaccelerationrelation",
+        "modifiednewtoniandynamics"
       ],
       "tags": [
         "2"
@@ -4992,11 +5016,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "functionalrenormalizationgroup",
-        "gravitationalwaveobservations",
-        "causaldynamicaltriangulations",
         "earlydarkenergy",
         "quantumgravity",
+        "functionalrenormalizationgroup",
+        "causaldynamicaltriangulations",
+        "gravitationalwaveobservations",
         "hubbletension"
       ],
       "tags": [
@@ -5041,13 +5065,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "softpqparitysolution",
         "neutronelectricdipolemoment",
         "axionmisalignmentrelicabundance",
-        "nelsonbarrmechanism",
-        "latticeqcdquarkmasses",
         "strongcpproblem",
+        "latticeqcdquarkmasses",
+        "nelsonbarrmechanism",
         "qcdaxionandaxionlikeparticles",
-        "softpqparitysolution",
         "thestrongcpproblem"
       ],
       "tags": [
@@ -5105,10 +5129,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "cosmicstringsandtopologicaldefects",
         "supermassiveblackholebinaries",
         "firstordercosmologicalphasetransitions",
         "pulsartimingarrays",
+        "cosmicstringsandtopologicaldefects",
         "stochasticgravitationalwavebackgrounds"
       ],
       "tags": [
@@ -6640,12 +6664,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "cosmologicalstructureformation",
-        "lcdmcosmology",
+        "topologicaldataanalysis",
+        "nullmodelsandhypothesistesting",
         "persistenthomology",
         "cosmicweb",
-        "topologicaldataanalysis",
-        "nullmodelsandhypothesistesting"
+        "lcdmcosmology",
+        "cosmologicalstructureformation"
       ],
       "tags": [
         "3"
@@ -6777,12 +6801,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
+        "landauerprinciple",
+        "corticalenergybudgets",
+        "falsifiabilityandmodeldependentinference",
         "s8tension",
         "cosmicwebhalovirialization",
-        "falsifiabilityandmodeldependentinference",
-        "bremermannlimit",
-        "corticalenergybudgets",
-        "landauerprinciple"
+        "bremermannlimit"
       ],
       "tags": [
         "3"
@@ -6793,6 +6817,25 @@
         "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md"
+    },
+    {
+      "id": "falsifiablequantumclassicaldiscriminationboundsfromleggettgargandtemporalbellinequalitytestsofcoherenceinwarmbiologicalionchanneldynamicswithexplicitsiunittrac",
+      "title": "Falsifiable Quantum–Classical Discrimination Bounds from Leggett–Garg and Temporal Bell Inequality Tests of Coherence in Warm Biological Ion-Channel Dynamics, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Leggett, A. J., and Garg, A. (1985), 'Quantum mechanics versus macroscopic realism: Is the flux there when nobody looks?', https://doi.org/10.1103/PhysRevLett.54.857",
+        "Emary, C., Lambert, N., and Nori, F. (2014), 'Leggett-Garg inequalities', https://doi.org/10.1088/0034-4885/77/1/016001",
+        "Tiesinga, E., Mohr, P. J., Newell, D. B., and Taylor, B. N. (2021), 'CODATA recommended values of the fundamental physical constants: 2018', https://doi.org/10.1103/RevModPhys.93.025010"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac.md"
     },
     {
       "id": "finitetimethermodynamiccostoferrorcorrectioninneuralcircuitsanempiricaltestofreliabilitydissipationbounds",
@@ -6822,10 +6865,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "transferentropyandeffectiveconnectivity",
         "stochasticthermodynamicsandentropyproduction",
-        "scalefreenetworksanduniversality",
         "fluctuationdissipationtheorem",
+        "transferentropyandeffectiveconnectivity",
+        "scalefreenetworksanduniversality",
         "cosmicwebfilamentsandvelocityshear"
       ],
       "tags": [
@@ -7308,11 +7351,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "openquantumsystemsandlindbladdynamics",
         "leggettgarginequalities",
-        "environmentassistedquantumtransport",
+        "openquantumsystemsandlindbladdynamics",
         "quantumfisherinformationandquantumcramerraobound",
-        "classicalforstertransportandincoherenthopping"
+        "classicalforstertransportandincoherenthopping",
+        "environmentassistedquantumtransport"
       ],
       "tags": [
         "3"
@@ -7418,12 +7461,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "bottleneckdistance",
+        "baryonicfeedback",
+        "topologicaldataanalysis",
         "persistenthomology",
         "cosmicweb",
-        "topologicaldataanalysis",
-        "baryonicfeedback",
-        "observationalselectioneffects",
-        "bottleneckdistance"
+        "observationalselectioneffects"
       ],
       "tags": [
         "3"
