@@ -54,6 +54,7 @@ graph TD
     dark_matter["Dark Matter"]:::theoretical
     spectral_decomposition_of_non_hermitian_decay_hamiltonians["Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms"]:::theoretical
     operator_theoretic_foundations_of_neutrino_decay["Operator-Theoretic Foundations of Neutrino Decay Survival Probabilities"]:::verified
+    spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit["Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit"]:::verified
     quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
     black_hole_thermodynamics["Black Hole Thermodynamics"]:::verified
     baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests["Baryogenesis and Leptogenesis: Sakharov Conditions and Experimental Tests"]:::verified
@@ -265,6 +266,7 @@ graph TD
     parity_violation_vs_scalar_charge_in_strongfield_gravity["Parity Violation vs Scalar Charge in Strong-Field Gravity"]:::theoretical
     asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance["Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance"]:::verified
     fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations["Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations"]:::theoretical
+    slowroll_inflation_vs_prebigbang_string_cosmology_in_predicting_the_primordial_tensor_spectrum_and_cmb_bmode_signatures["Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures"]:::verified
     pre_vs_postinflationary_qcd_axion_cosmology["Pre- vs Post-Inflationary QCD Axion Cosmology"]:::theoretical
     informationtheoretic_vs_thermodynamic_interpretations_of_gravity["Information-Theoretic vs. Thermodynamic Interpretations of Gravity"]:::theoretical
     scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale["Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale"]:::theoretical
@@ -312,6 +314,7 @@ graph TD
     empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models["Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models"]:::theoretical
     informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution["Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution"]:::theoretical
     dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks["Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks"]:::theoretical
+    a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr["A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units"]:::theoretical
     a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics["A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics"]:::theoretical
     a_preregistered_causalmediation_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems["A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems"]:::theoretical
     landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures["Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures"]:::theoretical
@@ -414,6 +417,7 @@ graph TD
     dark_matter --- primordial_nucleosynthesis_and_lightelement_abundances
     cosmic_microwave_background_radiation --- dark_matter
     quantum_decoherence --- operator_theoretic_foundations_of_neutrino_decay
+    general_relativity --- spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit
     quantum_electrodynamics_qed --- quantum_vacuum_and_spacetime_structure
     general_relativity --- black_hole_thermodynamics
     electroweak_baryogenesis --- baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests
@@ -740,6 +744,7 @@ graph TD
 - [Simulation Studies and Sensitivity Limits for Neutrino Decay Detectors](level_1_fundamental_physics/simulation_studies_and_sensitivity_limits_for_neutrino_decay_detectors.md) [VERIFIED]
 - [Special Relativity](level_1_fundamental_physics/special_relativity.md) [VERIFIED]
 - [Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms](level_1_fundamental_physics/spectral_decomposition_of_non_hermitian_decay_hamiltonians.md) [THEORETICAL]
+- [Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit](level_1_fundamental_physics/spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit.md) [VERIFIED]
 - [Spontaneous Symmetry Breaking and the Goldstone Theorem](level_1_fundamental_physics/spontaneous_symmetry_breaking_and_the_goldstone_theorem.md) [VERIFIED]
 - [Standard Model Fermion Mass Hierarchies and Mixing Matrices](level_1_fundamental_physics/standard_model_fermion_mass_hierarchies_and_mixing_matrices.md) [VERIFIED]
 - [Standard Model Gauge Symmetries and Their Spontaneous Breaking](level_1_fundamental_physics/standard_model_gauge_symmetries_and_their_spontaneous_breaking.md) [VERIFIED]
@@ -872,6 +877,7 @@ graph TD
 - [Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration](level_2_advanced_frameworks/screening_mechanisms_in_modified_gravity_vs_cosmic_acceleration.md) [THEORETICAL]
 - [Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations](level_2_advanced_frameworks/singlefield_inflation_vs_the_curvaton_scenario_in_generating_primordial_perturbations.md) [THEORETICAL]
 - [Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations](level_2_advanced_frameworks/slowroll_inflation_vs_matterbounce_cosmology_in_explaining_primordial_perturbations.md) [VERIFIED]
+- [Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures](level_2_advanced_frameworks/slowroll_inflation_vs_prebigbang_string_cosmology_in_predicting_the_primordial_tensor_spectrum_and_cmb_bmode_signatures.md) [VERIFIED]
 - [Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation](level_2_advanced_frameworks/sterile_neutrino_vs_fuzzy_dark_matter_in_explaining_structure_formation.md) [THEORETICAL]
 - [Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition](level_2_advanced_frameworks/stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition.md) [THEORETICAL]
 - [String Theory versus Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
@@ -912,6 +918,7 @@ graph TD
 - [A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence](level_3_emergence_and_intelligence/a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence.md) [THEORETICAL]
 - [A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](level_3_emergence_and_intelligence/a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit.md) [THEORETICAL]
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
+- [A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units](level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization](level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md) [THEORETICAL]
 - [A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](level_3_emergence_and_intelligence/a_preregistered_causalmediation_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md) [THEORETICAL]
