@@ -12,50 +12,23 @@
 
 ---
 
-## 📬 Pending Student Inquiries (2)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261028-1976f7` | L1 | **Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit** | UniverseFlow Orchestrator | Concept 'Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-| `adv-20261029-726348` | L2 | **Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures** | UniverseFlow Orchestrator | Concept 'Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261028-1976f7` — Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit
-- **Timestamp**: `2026-10-28T00:46:16.197329+00:00`
-- **Level**: Level 1
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: Rule 2 requires rejection when the Math Physicist's status is [MATH_FLAWED], and the report carries that status through a recorded LIMIT_MISMATCH. The Skeptic also found a real error: the report gives the tidal deformability as Λ ∝ R^5/M^3, but the standard dimensionless Λ scales as (R/M)^5. The Skeptic's score of 5/6 passes, but it does not override the math rejection. The citation audit also lists 2025 sources in a report dated 2023, so its claim of no future-dated sources is false. These problems can be fixed in a short revision, and the underlying TOV physics is sound.
-- **Agent Blockers**:
-  * Researcher: Correct the tidal deformability scaling to Λ = (2/3) k2 (R/M)^5, or define the dimensionful λ ∝ R^5 explicitly in the symbol table.
-  * Researcher: Regenerate the citation audit. Resolve the 2025 vs 2023 date inconsistency, include all in-text citations (Rhoades & Ruffini, Miller et al., Abbott et al.), and remove or justify uncited entries.
-  * Researcher: Tag the benchmark TOV masses (2.10 and 2.45 Msun) as [MODEL-DEPENDENT] and give EoS parameters, matching densities and the numerical method.
-  * Researcher: Replace 'only known mechanism' with 'one possible mechanism'. Distinguish spontaneous scalarization from first-order phase transitions. Clarify the 'mass gap' and 'lattice instability' terminology.
-  * Researcher: Use a two-level status: standard TOV and observational constraints [VERIFIED], spontaneous mechanisms [THEORETICAL], EoS benchmarks [MODEL-DEPENDENT]. Clarify that the c_s^2=1 causal bound is the M-R sequence of the maximally stiff causal EoS.
-  * Math Physicist: State the Newtonian limit explicitly as the joint limit P<<rho and 2M/r<<1, so the LIMIT_MISMATCH clears on re-review.
-  * Math Physicist: Declare natural-unit dimensions for all symbols so the 24 undecidable equations can be checked.
-  * Math Physicist: Confirm the corrected Λ scaling is dimensionless and consistent.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261028-1976f7 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261029-726348` — Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures
-- **Timestamp**: `2026-10-29T01:14:33.133400+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic score of 5/5 meets the threshold. The Math status is [MATH_CONSISTENT], with the slow-roll algebra and dimensional checks passing. The Math score of 2/4 is below the guideline, and the Math Physicist's headline PBB figures (f_peak, Ω_GW, ε_best-fit) were contested. The comparative report resolved most of these: f_peak is about 24 GHz, and the ε, exponent and Ω_GW errors are corrected. I did not independently re-verify the arithmetic. The comparison draws on at least 3 independent sources and is transparent about uncertainty. Epistemic status is [VERIFIED] because the comparison rests on measured n_s, r, NANOGrav and LIGO constraints, even though the primordial tensor tilt itself is untested.
-
-Math gate: approval blocked because the Math Physicist's tool-verified report contains 1 LIMIT_MISMATCH verdict(s). Correct the flagged equations/derivation steps and re-verify.
-- **Agent Blockers**:
-  * Math Physicist: Independently re-verify f_peak at T_reh = 1e15 GeV (about 2.4e10 Hz) and the corrected NANOGrav Ω_GW(f) ∝ f^(2/3) extrapolation to the LIGO band
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261029-726348 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (30)
+## 📚 Answered Advisory Consultations (32)
+
+### ✅ `adv-20261029-726348`: Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures
+- **Student Inquired**: Concept 'Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"Retry this concept. The Skeptic score (5/5) and dimensional structure ([MATH_CONSISTENT]) already pass; resolve the remaining numerical benchmark mismatches and calculator expressions so the Math Physicist's verify_claim and limit checks pass with 0 mismatches: (1) Slow-roll best-fit epsilon from Planck n_s = 0.9649 +- 0.0042: for single-field slow-roll n_s = 1 - 2 epsilon (at negligible eta), epsilon_best = (1 - n_s) / 2 = (1 - 0.9649) / 2 = 0.01755 (do NOT write 0.000875, which erroneously divides by 40; if quoting the upper bound from r < 0.036 via r = 16 epsilon, label it distinctly as epsilon_max = 0.036 / 16 = 0.00225). (2) Calculator-reproducible Pre-Big-Bang (PBB) peak frequency f_peak: write the explicit unit-converted expression so the PhysicsCalculatorTool evaluates it in one step without dropping T_reh = 1e15 GeV. With string-phase Hubble scale H_1 = 1.4e14 GeV, T_reh = 1e15 GeV, T_0 = 2.3486e-13 GeV, g_s0 = 3.909, g_reh = 106.75, and 1 GeV = 1.51927e24 Hz (1 GeV^-1 = 6.58212e-25 s), the redshifted cutoff frequency is f_peak = (H_1 / (2 * pi)) * (T_0 / T_reh) * (g_s0 / g_reh)**(1/3) * 1.51927e24 = 2.64e9 Hz (2.64 GHz; or 2.40e10 Hz = 24.0 GHz if setting H_1 = 1.27e15 GeV at string/reheating matching). Instruct the Math Physicist to include the division by T_reh = 1e15 GeV in verify_claim and not to run a bare P -> 0 or T_reh = 1 limit that produces the unphysical 2.39e25 Hz artefact and triggers LIMIT_MISMATCH. (3) NANOGrav 15-yr reference energy density at f_yr = 1/yr = 3.1688e-8 Hz: using the canonical definition Omega_GW(f) = (2 * pi^2 / (3 * H_0^2)) * f^2 * h_c(f)^2 with A = h_c(f_yr) = 2.4e-15 and Planck H_0 = 67.36 km/s/Mpc = 2.183e-18 s^-1, quote Omega_GW(f_yr) = 7.99e-9 (or 7.91e-9 for H_0 = 67.7 km/s/Mpc; do NOT write 1.58e-8, which doubles the standard prefactor 2*pi^2/3)."*
+- **Answered At**: `2026-10-30T00:20:53.094822+00:00`
+
+### ✅ `adv-20261028-1976f7`: Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit
+- **Student Inquired**: Concept 'Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"Retry this concept. The TOV physics and Skeptic score (5/6) are sound; fix these specific items so both the Math Physicist and Skeptic checks pass cleanly: (1) Dimensionless tidal deformability: replace Lambda prop R^5 / M^3 with the canonical dimensionless relation Lambda = (2/3) k_2 (c^2 R / (G M))^5 = (2/3) k_2 C^-5 prop (R/M)^5 (where C = G M / (c^2 R) is compactness and k_2 is the quadrupolar Love number; if mentioning dimensionful tidal polarizability lambda_tidal = (2/3) k_2 R^5 / G, distinguish its symbol and units explicitly from dimensionless Lambda = lambda_tidal / M^5). (2) Newtonian weak-field limit for the Symbolic Derivation Verifier: write the TOV pressure gradient in terms of dimensionless compactness u = 2M/r and pressure-to-energy ratio w = P/rho as dP/dr = -(rho M / r^2) * (1 + w) * (1 + 4 pi r^3 P / M) / (1 - u), and state the Newtonian hydrostatic limit dP/dr = -rho M / r^2 as the simultaneous weak-field, non-relativistic limit u = 2M/r -> 0 and w = P/rho -> 0 (instructing the Math Physicist not to evaluate P -> 0 alone at finite 2M/r, which retains the Schwarzschild factor (1 - 2M/r)^-1 and triggers a false LIMIT_MISMATCH). (3) Symbol Table completeness: declare explicit natural-unit mass dimensions [E]^n for every symbol used in displayed equations ([rho] = [E]^4, [P] = [E]^4, [M] = [E]^-1, [r] = [E]^-1, [R] = [E]^-1, [Lambda] = [E]^0, [k_2] = [E]^0, [Gamma] = [E]^0, [c_s] = [E]^0) so the automated pre-check leaves zero UNDECIDABLE equations. (4) Epistemic tags & citations: use a two-tier status ([VERIFIED] for GR TOV structure and NICER/GW170817/PSR J0740+6620 observational bounds; [THEORETICAL] for spontaneous scalarization and quark-core phase transitions; [MODEL-DEPENDENT] for specific polytropic/stiff-EoS M_TOV values like 2.10 M_sun and 2.45 M_sun), replace 'only known mechanism' with 'one proposed mechanism', and synchronize the report date and citation audit table."*
+- **Answered At**: `2026-10-30T00:20:51.233526+00:00`
 
 ### ✅ `adv-20261023-e64b12`: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
 - **Student Inquired**: Concept 'Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
@@ -96,14 +69,4 @@ Math gate: approval blocked because the Math Physicist's tool-verified report co
 - **Student Inquired**: Concept 'Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology' was rejected after 2 attempts (crew_kickoff_error). How should the agents proceed?
 - **Professor Directive**: 💬 *"In the synthesis of Thermal Inflation vs Thermal Trapping: (1) Resolve Affleck-Dine baryogenesis timing: In late-generation AD baryogenesis (Stewart, Kawasaki & Yanagida 1996; Felder et al. 2007), flat-direction oscillations begin near the end of thermal inflation (T ~ T_TI), giving the canonical dimensionless yield n_B / s = (3 epsilon / 4) * (m_soft |phi_osc|^2 T_RH* / V_0) ~ 10^-10 (linear in T_RH*, dimensionally verified as [E]^3 * [E] / [E]^4 = [1]). If presenting early generation (oscillations start at T_osc during modulus domination), account for comoving dilution n_B proportional to a^-3 ~ T^3 before thermal inflation, yielding n_B / s = (3 epsilon / 4) * (m_soft |phi_osc|^2 / V_0) * T_TI * (T_TI / T_osc)^3 * (T_TI / T_RH*)^2. (2) Reconcile numerical calculations: Avoid double-counting energy scales in worked examples; with epsilon = 10^-2, m_soft = 10^3 GeV, phi_osc = 10^10 GeV, T_TI = 10^7 GeV (V_0 = 10^28 GeV^4), and T_RH* = 1 GeV, late generation gives n_B / s ~ 10^-10 matching Planck data (8.6 x 10^-11). (3) Clarify condensate patch size: Strictly separate the physical Hubble horizon expanded to today lambda_phys(t_0) = H_TI^-1 (a_0 / a_TI) ~ sqrt(3) M_Pl / (T_TI T_0) ~ O(meters) as a physical length ([E]^-1) from the dimensionless yield n_B / s. (4) Classify Thermal Inflation strictly as [THEORETICAL], bounded by LHC moduli mass limits and PTA/LISA gravitational-wave background constraints."*
 - **Answered At**: `2026-10-14T19:05:28.218917+00:00`
-
-### ✅ `adv-20261011-897b7e`: Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology
-- **Student Inquired**: Concept 'Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology' was rejected after 2 attempts (crew_kickoff_error). How should the agents proceed?
-- **Professor Directive**: 💬 *"In the comparative analysis of Thermal Inflation vs Thermal Trapping: (1) Reconcile the cosmological timeline and onset inequalities: Thermal inflation must occur strictly after modulus oscillation onset to achieve moduli dilution. Enforce the correct hierarchy T_TI = V_0^(1/4) < T_osc = sqrt(m_phi M_Pl) and H_TI = sqrt(V_0) / (sqrt(3) M_Pl) < m_phi, where all comparative quantities are evaluated consistently in GeV. (2) Enforce dimensional consistency in Affleck-Dine baryogenesis: The AD charge density at oscillation onset is n_(B-L) ~ epsilon m_soft |phi_osc|^2 (units of [E]^3), and with flaton dilution and reheating at T_RH*, the dimensionless yield is n_B / s ~ epsilon (m_soft |phi_osc|^2 / V_0) * (T_RH* / T_TI) ~ 10^-10 (where m_soft |phi|^2 and V_0 both have units of energy density [E]^4). (3) Resolve the condensate patch size: Distinguish the physical comoving domain size lambda_phys ~ (a_0 / a_TI) H_TI^(-1) (units of length) from dimensionless density perturbations or yields, avoiding equating a length to an abundance without dimensional conversion factors. (4) Cite the canonical primary paper: D. H. Lyth & E. D. Stewart, Phys. Rev. D 53, 1784 (1996) (DOI: 10.1103/PhysRevD.53.1784). (5) Explicitly designate Thermal Inflation as [THEORETICAL], framing it as a conditional SUSY solution constrained by LHC superpartner bounds and PTA/LISA gravitational wave limits."*
-- **Answered At**: `2026-10-11T19:11:45.796462+00:00`
-
-### ✅ `adv-20261011-c03631`: Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics
-- **Student Inquired**: Level 3 topic 'Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the research proceed?
-- **Professor Directive**: 💬 *"In the analysis of Thermodynamic Uncertainty Relations (TUR) for neural and cosmic-web dynamics: (1) Correct the steady-state precision conversion: starting from the canonical TUR Var(J_T) / <J_T>^2 >= 2 / Sigma_T with stationary current <J_T> = v T and diffusion Var(J_T) = 2 D T, the bound is strictly v^2 T / D <= Sigma_T (with dimensionless entropy production Sigma_T = sigma T / k_B in nats); remove the extraneous factor of 2. (2) Strictly enforce dimensional consistency: distinguish dimensionless entropy production Sigma_T from dissipated heat Q = T_env Delta S_tot (in Joules). (3) Withdraw the unjustified general channel capacity bound I_channel <= Sigma_t / 2; a bound on current precision does not imply an informational channel capacity without an explicit operational encoding/decoding model. (4) Clearly classify the core steady-state Markovian TUR as [MATHEMATICALLY_RIGOROUS], while designating neural precision trade-offs as [THEORETICAL] and cosmological mass-flow applications as [CONJECTURED]."*
-- **Answered At**: `2026-10-11T14:53:20.457524+00:00`
 
