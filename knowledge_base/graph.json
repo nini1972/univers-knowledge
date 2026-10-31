@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-30T01:11:10.154873+00:00",
+  "updated_at": "2026-10-31T00:58:12.543270+00:00",
   "stats": {
-    "total_nodes": 362,
-    "level_1_count": 156,
-    "level_2_count": 138,
-    "level_3_count": 68,
+    "total_nodes": 365,
+    "level_1_count": 157,
+    "level_2_count": 139,
+    "level_3_count": 69,
     "total_edges": 172,
     "frontier_count": 71
   },
@@ -308,10 +308,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "darkenergy",
-        "friedmannequations",
-        "cosmicmicrowavebackground",
         "baryonacousticoscillations",
+        "friedmannequations",
+        "darkenergy",
+        "cosmicmicrowavebackground",
         "hubbletension"
       ],
       "tags": [
@@ -851,11 +851,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "peskintakeuchiparameters",
+        "standardmodeleffectivefieldtheory",
         "higgsmechanism",
         "standardmodel",
-        "peskintakeuchiparameters",
-        "electroweaksymmetrybreaking",
-        "standardmodeleffectivefieldtheory"
+        "electroweaksymmetrybreaking"
       ],
       "tags": [
         "1"
@@ -1095,9 +1095,9 @@
       "math_score": "3/4",
       "dependencies": [
         "minimalsupersymmetricstandardmodel",
-        "standardmodel",
         "protondecay",
         "grandunifiedtheories",
+        "standardmodel",
         "renormalizationgroup"
       ],
       "tags": [
@@ -2715,12 +2715,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "neutronstarequationofstate",
-        "generalrelativity",
-        "neutronstarphasetransitions",
         "tidaldeformabilityandlovenumbers",
+        "generalrelativity",
+        "scalartensortheoriesofgravity",
         "tolmanoppenheimervolkoffequations",
-        "scalartensortheoriesofgravity"
+        "neutronstarequationofstate",
+        "neutronstarphasetransitions"
       ],
       "tags": [
         "1"
@@ -2948,10 +2948,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "cosmologicalperturbationtheory",
-        "freezeinproduction",
+        "darkmatterrelicabundance",
         "wimpfreezeout",
-        "darkmatterrelicabundance"
+        "freezeinproduction",
+        "cosmologicalperturbationtheory"
       ],
       "tags": [
         "1"
@@ -3041,11 +3041,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "quantumfieldtheory",
+        "thestandardmodel",
         "stronginteraction",
         "gaugetheory",
-        "thestandardmodel",
-        "latticeqcd",
-        "quantumfieldtheory"
+        "latticeqcd"
       ],
       "tags": [
         "1"
@@ -3106,6 +3106,28 @@
         "J. M. R. Parrondo (2026), 'Title not supplied in the research report', https://doi.org/10.1093/pnasnexus/pgag288"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/thermodynamic_arrow_of_time.md"
+    },
+    {
+      "id": "typeiasupernovaeandtheacceleratingexpansionoftheuniverse",
+      "title": "Type Ia Supernovae and the Accelerating Expansion of the Universe",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Riess, A. G., et al. (1998), 'Observational Evidence from Supernovae for an Accelerating Universe and a Cosmological Constant', https://doi.org/10.1086/300499",
+        "Perlmutter, S., et al. (1999), 'Measurements of Ω and Λ from 42 High-Redshift Supernovae', https://doi.org/10.1086/307221",
+        "Carroll, S. M. (2001), 'The Cosmological Constant', https://doi.org/10.12942/lrr-2001-1",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "DESI Collaboration (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://doi.org/10.1088/1475-7516/2025/02/021"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/type_ia_supernovae_and_the_accelerating_expansion_of_the_universe.md"
     },
     {
       "id": "whatspecificexperimentalobservablesorsignaturescanuniquelydiscriminateneutrinodecayfrombackgroundprocessesandalternativenewphysicsscenariosindunejunooricecubedatasets",
@@ -3759,12 +3781,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "lcdmbaryonicfeedback",
+        "radialaccelerationrelation",
+        "mondexternalfieldeffect",
+        "sparcgalaxydatabase",
         "modifiednewtoniandynamics",
         "baryonictullyfisherrelation",
-        "sparcgalaxydatabase",
-        "radialaccelerationrelation",
-        "mondexternalfieldeffect"
+        "lcdmbaryonicfeedback"
       ],
       "tags": [
         "2"
@@ -5046,10 +5068,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "gravitationalwaveobservations",
         "functionalrenormalizationgroup",
-        "quantumgravity",
         "earlydarkenergy",
+        "quantumgravity",
+        "gravitationalwaveobservations",
         "causaldynamicaltriangulations",
         "hubbletension"
       ],
@@ -5095,13 +5117,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "strongcpproblem",
         "latticeqcdquarkmasses",
         "neutronelectricdipolemoment",
-        "axionmisalignmentrelicabundance",
-        "qcdaxionandaxionlikeparticles",
         "nelsonbarrmechanism",
+        "qcdaxionandaxionlikeparticles",
         "softpqparitysolution",
+        "axionmisalignmentrelicabundance",
+        "strongcpproblem",
         "thestrongcpproblem"
       ],
       "tags": [
@@ -5159,11 +5181,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "cosmicstringsandtopologicaldefects",
-        "supermassiveblackholebinaries",
-        "firstordercosmologicalphasetransitions",
+        "pulsartimingarrays",
         "stochasticgravitationalwavebackgrounds",
-        "pulsartimingarrays"
+        "supermassiveblackholebinaries",
+        "cosmicstringsandtopologicaldefects",
+        "firstordercosmologicalphasetransitions"
       ],
       "tags": [
         "2"
@@ -5595,6 +5617,39 @@
         "Kamionkowski, M., and Kovetz, E. D. (2016), 'The Quest for B Modes from Inflationary Gravitational Waves', https://doi.org/10.1146/annurev-astro-081915-023433"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/slowroll_inflation_vs_prebigbang_string_cosmology_in_predicting_the_primordial_tensor_spectrum_and_cmb_bmode_signatures.md"
+    },
+    {
+      "id": "slowrollinflationarytensormodesvscosmicsuperstringnetworksinexplainingthenanohertzgravitationalwavebackground",
+      "title": "Slow-Roll Inflationary Tensor Modes vs Cosmic Superstring Networks in Explaining the Nanohertz Gravitational-Wave Background",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck Collaboration (2014), 'Planck 2013 results. XXII. Constraints on inflation', https://doi.org/10.1051/0004-6361/201321569",
+        "BICEP/Keck Collaboration et al. (2021), 'Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Season', https://doi.org/10.1103/PhysRevLett.127.151301",
+        "Caprini, C. and Figueroa, D. G. (2018), 'Cosmological backgrounds of gravitational waves', https://doi.org/10.1088/1361-6382/aac608",
+        "Cook, J. L. and Sorbo, L. (2012), 'Particle production during inflation and gravitational waves detectable by ground-based interferometers', https://doi.org/10.1103/PhysRevD.85.023534",
+        "Kamionkowski, M., Kosowsky, A. and Stebbins, A. (1997), 'A Probe of Primordial Gravity Waves and Vorticity', https://doi.org/10.1103/PhysRevD.55.7368",
+        "Kamionkowski, M. and Jaffe, A. H. (2001), 'Detection of gravitational waves from inflation', https://arxiv.org/abs/astro-ph/0011329",
+        "Di, H. and Gong, Y. (2018), 'Primordial black holes and second order gravitational waves from ultra-slow-roll inflation', https://doi.org/10.1088/1475-7516/2018/07/007",
+        "Green, A. M. and Kavanagh, B. J. (2021), 'Primordial black holes as a dark matter candidate', https://doi.org/10.1088/1361-6471/abc534",
+        "Marsh, D. J. E. (2016), 'Axion cosmology', https://doi.org/10.1016/j.physrep.2016.06.005",
+        "NANOGrav Collaboration (2023), 'The NANOGrav 15-year Data Set: Evidence for a Gravitational-wave Background', https://doi.org/10.3847/2041-8213/acdac6",
+        "Ketov, S. V. (2025), 'On Legacy of Starobinsky Inflation', https://arxiv.org/abs/2501.06451",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "DESI Collaboration (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://doi.org/10.1088/1475-7516/2025/02/021",
+        "Kamionkowski, M. and Riess, A. G. (2023), 'The Hubble Tension and Early Universe Physics', https://doi.org/10.1146/annurev-nucl-111422-024107",
+        "Poulin, V., Smith, T. L. and Karwal, T. (2023), 'The Ups and Downs of Early Dark Energy solutions to the Hubble tension: a review of models, hints and constraints circa 2023', https://doi.org/10.1016/j.dark.2023.101348",
+        "Kolb, E. W. and Long, A. J. (2024), 'Cosmological gravitational particle production and its implications for cosmology', https://doi.org/10.1103/RevModPhys.96.045005",
+        "Vagnozzi, S. (2023), 'Inflationary cosmology in the era of precision cosmology', https://doi.org/10.1016/j.jheap.2023.07.001"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/slowroll_inflationary_tensor_modes_vs_cosmic_superstring_networks_in_explaining_the_nanohertz_gravitationalwave_background.md"
     },
     {
       "id": "sterileneutrinovsfuzzydarkmatterinexplainingstructureformation",
@@ -6743,12 +6798,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "nullmodelsandhypothesistesting",
-        "topologicaldataanalysis",
-        "cosmicweb",
-        "persistenthomology",
         "cosmologicalstructureformation",
-        "lcdmcosmology"
+        "persistenthomology",
+        "cosmicweb",
+        "lcdmcosmology",
+        "topologicaldataanalysis",
+        "nullmodelsandhypothesistesting"
       ],
       "tags": [
         "3"
@@ -6880,12 +6935,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
+        "corticalenergybudgets",
         "landauerprinciple",
-        "s8tension",
-        "falsifiabilityandmodeldependentinference",
-        "bremermannlimit",
         "cosmicwebhalovirialization",
-        "corticalenergybudgets"
+        "bremermannlimit",
+        "s8tension",
+        "falsifiabilityandmodeldependentinference"
       ],
       "tags": [
         "3"
@@ -6936,6 +6991,47 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md"
     },
     {
+      "id": "fisherinformationandminimumdescriptionlengthboundsonpredictivecodingefficiencyincorticalhierarchiesversushierarchicalhalomergertreesafalsifiabletestwithexplic",
+      "title": "Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Friston, K. (2010), 'The free-energy principle: a unified brain theory?', https://doi.org/10.1038/nrn2787",
+        "Clark, A. (2013), 'Whatever next? Predictive brains, situated agents, and the future of cognitive science', https://doi.org/10.1017/S0140525X12000477",
+        "Seth, A. K. (2013), 'Interoceptive inference, emotion, and the embodied self', https://doi.org/10.1016/j.tics.2013.09.007",
+        "Frank, S. A. (2009), 'Natural selection maximizes Fisher information', https://doi.org/10.1111/j.1420-9101.2008.01647.x",
+        "Karbowski, J. (2003), 'Cortical connectivity scaling laws', https://arxiv.org/abs/q-bio/0310015",
+        "Vogelsberger, M., et al. (2014), 'Introducing the Illustris Project: simulating the coevolution of dark and luminous matter', https://doi.org/10.1093/mnras/stu1536",
+        "Nelson, D., et al. (2019), 'The IllustrisTNG simulations: public data release', https://doi.org/10.1186/s40668-019-0028-x",
+        "Avila, S., et al. (2014), 'The Sussing Project: comparing apples to apples in the hierarchy of dark matter haloes', https://doi.org/10.1093/mnras/stu799",
+        "Artale, M. C., et al. (2018), 'The impact of baryons on halo assembly bias', https://doi.org/10.1093/mnras/sty2110",
+        "Famaey, B. and McGaugh, S. (2012), 'Modified Newtonian Dynamics (MOND): Observational Phenomenology and Relativistic Extensions', https://doi.org/10.12942/lrr-2012-10",
+        "Wadekar, D., et al. (2023), 'Testing gravity with the large-scale structure of the Universe', https://doi.org/10.1073/pnas.2202074120",
+        "Carniani, S., et al. (2024), 'Spectroscopic confirmation of two luminous galaxies at z ≃ 14', https://doi.org/10.1038/s41586-024-07860-9",
+        "Labbé, I., et al. (2023), 'A population of red candidate massive galaxies ∼600 Myr after the Big Bang', https://doi.org/10.1038/s41586-023-05786-2",
+        "Boylan-Kolchin, M. (2023), 'Stress testing ΛCDM with high-redshift galaxy candidates', https://doi.org/10.1038/s41550-023-01937-7",
+        "Maiolino, R., et al. (2024), 'A small and vigorous black hole in the early Universe', https://doi.org/10.1038/s41586-024-07052-5",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "Riess, A. G., et al. (2024), 'Crowded No More: The Accuracy of the Hubble Constant Using Spitzer and the Carnegie-Chicago Hubble Program', https://doi.org/10.3847/2041-8213/ad1ddd",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Kamionkowski, M. and Riess, A. G. (2023), 'The Hubble Tension and Early Universe Physics', https://doi.org/10.1146/annurev-nucl-111422-024107",
+        "DESI Collaboration (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://doi.org/10.1088/1475-7516/2025/02/021",
+        "Peebles, P. J. E. and Ratra, B. (2003), 'The cosmological constant and dark energy', https://doi.org/10.1103/RevModPhys.75.559",
+        "Poulin, V., et al. (2023), 'Early dark energy', https://doi.org/10.1016/j.dark.2023.101348",
+        "Giarè, W., et al. (2024), 'The Hubble tension and the dark energy equation of state', https://doi.org/10.1088/1475-7516/2024/10/035",
+        "Asgari, M., et al. (2021), 'KiDS-1000 cosmology: cosmic shear constraints and comparison between two point statistics', https://doi.org/10.1051/0004-6361/202039070",
+        "Amon, A., et al. (2022), 'Dark Energy Survey Year 3 results: cosmology from cosmic shear and robustness to data calibration', https://doi.org/10.1103/PhysRevD.105.023520"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic.md"
+    },
+    {
       "id": "fluctuationdissipationandentropyrateboundsoninformationtransferacrosshierarchicalscalesafalsifiabledimensionallyconsistentcomparisonofcorticalaxonaltransportnetw",
       "title": "Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow",
       "level": 3,
@@ -6944,11 +7040,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "cosmicwebfilamentsandvelocityshear",
-        "fluctuationdissipationtheorem",
         "transferentropyandeffectiveconnectivity",
+        "scalefreenetworksanduniversality",
         "stochasticthermodynamicsandentropyproduction",
-        "scalefreenetworksanduniversality"
+        "fluctuationdissipationtheorem",
+        "cosmicwebfilamentsandvelocityshear"
       ],
       "tags": [
         "3"
@@ -7430,11 +7526,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "openquantumsystemsandlindbladdynamics",
         "quantumfisherinformationandquantumcramerraobound",
+        "leggettgarginequalities",
         "environmentassistedquantumtransport",
         "classicalforstertransportandincoherenthopping",
-        "leggettgarginequalities"
+        "openquantumsystemsandlindbladdynamics"
       ],
       "tags": [
         "3"
@@ -7540,12 +7636,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "topologicaldataanalysis",
         "bottleneckdistance",
-        "baryonicfeedback",
-        "cosmicweb",
         "persistenthomology",
-        "observationalselectioneffects"
+        "cosmicweb",
+        "topologicaldataanalysis",
+        "observationalselectioneffects",
+        "baryonicfeedback"
       ],
       "tags": [
         "3"

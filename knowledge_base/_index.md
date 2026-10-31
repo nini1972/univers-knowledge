@@ -115,6 +115,7 @@ graph TD
     cosmic_recombination_and_photon_decoupling["Cosmic Recombination and Photon Decoupling"]:::verified
     baryon_acoustic_oscillations["Baryon Acoustic Oscillations"]:::verified
     hydrodynamic_simulations_baryonic_feedback_sfdm_sidm["Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM"]:::theoretical
+    type_ia_supernovae_and_the_accelerating_expansion_of_the_universe["Type Ia Supernovae and the Accelerating Expansion of the Universe"]:::verified
     gravitational_lensing["Gravitational Lensing"]:::verified
     non_markovian_memory_kernels_in_neutrino_matter_propagation["Non-Markovian Memory Kernels in Non-Adiabatic Neutrino Matter Propagation"]:::theoretical
     cross_correlation_methods_breaking_neutrino_decay_degeneracies["Cross-Correlation Methods Breaking Degeneracies in Neutrino Decay Surveys"]:::theoretical
@@ -174,6 +175,7 @@ graph TD
     phasetransition_sound_waves_vs_cosmic_defect_networks_in_sourcing_the_nanohertztomillihertz_stochastic_gravitational_wave_background["Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational-Wave Background"]:::theoretical
     loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate["Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate"]:::theoretical
     asymmetric_dark_matter_vs_wimp_dark_matter_in_addressing_the_coincidence_problem["Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem"]:::verified
+    slowroll_inflationary_tensor_modes_vs_cosmic_superstring_networks_in_explaining_the_nanohertz_gravitationalwave_background["Slow-Roll Inflationary Tensor Modes vs Cosmic Superstring Networks in Explaining the Nanohertz Gravitational-Wave Background"]:::verified
     quantum_gravity_approaches_loop_quantum_gravity_vs_string_theory["Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory"]:::theoretical
     primordial_nongaussianity_inflationary_multifield_models_vs_cosmic_defects["Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects"]:::theoretical
     beyond_the_standard_model_supersymmetry_vs_extra_dimensions["Beyond the Standard Model: Supersymmetry vs Extra Dimensions"]:::verified
@@ -324,6 +326,7 @@ graph TD
     noiserobust_generalizedcontextuality_witnesses_for_benchmarkrelative_quantum_advantage_in_warm_biological_information_processing["Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing"]:::theoretical
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
     a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and["A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses"]:::theoretical
+    fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic["Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees"]:::theoretical
     quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions["Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions"]:::theoretical
     robustness_of_cosmicweb_persistent_homology_to_observational_selection_effects_and_baryonic_feedback["Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback"]:::theoretical
     identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism["Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism"]:::theoretical
@@ -466,6 +469,7 @@ graph TD
     standard_model_of_particle_physics --- cp_violation
     neutrino_cp_violation --- cp_violation
     the_higgs_boson --- cp_violation
+    baryon_acoustic_oscillations --- type_ia_supernovae_and_the_accelerating_expansion_of_the_universe
     dark_matter --- gravitational_lensing
     general_relativity --- gravitational_lensing
     neutrino_oscillations --- distinguishing_higgs_portal_from_sterile_neutrino_dark_matter
@@ -763,6 +767,7 @@ graph TD
 - [The Strong CP Problem](level_1_fundamental_physics/the_strong_cp_problem.md) [VERIFIED]
 - [Thermodynamic Arrow of Time](level_1_fundamental_physics/thermodynamic_arrow_of_time.md) [VERIFIED]
 - [To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?](level_1_fundamental_physics/lisa_gravitational_waves_and_adm_phase_transitions.md) [THEORETICAL]
+- [Type Ia Supernovae and the Accelerating Expansion of the Universe](level_1_fundamental_physics/type_ia_supernovae_and_the_accelerating_expansion_of_the_universe.md) [VERIFIED]
 - [Ultraviolet Completions and Experimental Testability of BSM Physics](level_1_fundamental_physics/uv_completions_and_experimental_testability_of_bsm_models.md) [THEORETICAL]
 - [Unique Observables for Neutrino Decay in Major Detectors](level_1_fundamental_physics/unique_observables_for_neutrino_decay_in_major_detectors.md) [THEORETICAL]
 - [WIMP Baryogenesis Models and Washout Constraints](level_1_fundamental_physics/wimp_baryogenesis_models_and_washout_constraints.md) [THEORETICAL]
@@ -878,6 +883,7 @@ graph TD
 - [Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations](level_2_advanced_frameworks/singlefield_inflation_vs_the_curvaton_scenario_in_generating_primordial_perturbations.md) [THEORETICAL]
 - [Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations](level_2_advanced_frameworks/slowroll_inflation_vs_matterbounce_cosmology_in_explaining_primordial_perturbations.md) [VERIFIED]
 - [Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures](level_2_advanced_frameworks/slowroll_inflation_vs_prebigbang_string_cosmology_in_predicting_the_primordial_tensor_spectrum_and_cmb_bmode_signatures.md) [VERIFIED]
+- [Slow-Roll Inflationary Tensor Modes vs Cosmic Superstring Networks in Explaining the Nanohertz Gravitational-Wave Background](level_2_advanced_frameworks/slowroll_inflationary_tensor_modes_vs_cosmic_superstring_networks_in_explaining_the_nanohertz_gravitationalwave_background.md) [VERIFIED]
 - [Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation](level_2_advanced_frameworks/sterile_neutrino_vs_fuzzy_dark_matter_in_explaining_structure_formation.md) [THEORETICAL]
 - [Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition](level_2_advanced_frameworks/stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition.md) [THEORETICAL]
 - [String Theory versus Loop Quantum Gravity in Quantum Gravity Research](level_2_advanced_frameworks/string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research.md) [THEORETICAL]
@@ -945,6 +951,7 @@ graph TD
 - [Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse](level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md) [THEORETICAL]
 - [Falsifiable Quantum–Classical Discrimination Bounds from Leggett–Garg and Temporal Bell Inequality Tests of Coherence in Warm Biological Ion-Channel Dynamics, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](level_3_emergence_and_intelligence/falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac.md) [THEORETICAL]
 - [Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds](level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md) [THEORETICAL]
+- [Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees](level_3_emergence_and_intelligence/fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic.md) [THEORETICAL]
 - [Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow](level_3_emergence_and_intelligence/fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw.md) [THEORETICAL]
 - [Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test](level_3_emergence_and_intelligence/fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test.md) [THEORETICAL]
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]
