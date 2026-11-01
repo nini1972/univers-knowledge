@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-10-31T00:58:12.543270+00:00",
+  "updated_at": "2026-11-01T00:59:59.953670+00:00",
   "stats": {
-    "total_nodes": 365,
-    "level_1_count": 157,
-    "level_2_count": 139,
-    "level_3_count": 69,
+    "total_nodes": 368,
+    "level_1_count": 158,
+    "level_2_count": 140,
+    "level_3_count": 70,
     "total_edges": 172,
     "frontier_count": 71
   },
@@ -308,11 +308,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "baryonacousticoscillations",
-        "friedmannequations",
+        "hubbletension",
         "darkenergy",
         "cosmicmicrowavebackground",
-        "hubbletension"
+        "friedmannequations",
+        "baryonacousticoscillations"
       ],
       "tags": [
         "1"
@@ -852,10 +852,10 @@
       "math_score": "4/4",
       "dependencies": [
         "peskintakeuchiparameters",
+        "electroweaksymmetrybreaking",
         "standardmodeleffectivefieldtheory",
-        "higgsmechanism",
         "standardmodel",
-        "electroweaksymmetrybreaking"
+        "higgsmechanism"
       ],
       "tags": [
         "1"
@@ -1094,11 +1094,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "minimalsupersymmetricstandardmodel",
-        "protondecay",
         "grandunifiedtheories",
+        "renormalizationgroup",
+        "protondecay",
         "standardmodel",
-        "renormalizationgroup"
+        "minimalsupersymmetricstandardmodel"
       ],
       "tags": [
         "1"
@@ -1262,6 +1262,30 @@
         "Kamionkowski, M. & Riess, A. G. (2023), 'The Hubble Tension and Early Universe', https://doi.org/10.1146/annurev-nucl-111422-024107"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/gravitational_wave_standard_sirens_and_the_hubble_constant.md"
+    },
+    {
+      "id": "gravitationalwavesfromfirstorderphasetransitions",
+      "title": "Gravitational Waves from First-Order Cosmological Phase Transitions",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Caprini, C., et al. (2016), 'Science with the space-based interferometer eLISA. II: Gravitational waves from cosmological phase transitions', https://doi.org/10.1088/1475-7516/2016/04/001",
+        "Caprini, C., et al. (2020), 'Detecting gravitational waves from cosmological phase transitions with LISA: an update', https://doi.org/10.1088/1475-7516/2020/03/024",
+        "Hindmarsh, M. B., et al. (2017), 'Gravitational waves from the sound of a first order phase transition', https://doi.org/10.1103/PhysRevD.96.103520",
+        "DESI Collaboration (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://doi.org/10.1088/1475-7516/2025/02/021",
+        "Agazie, G., et al. (2023), 'The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background', https://doi.org/10.3847/2041-8213/acdac6",
+        "Peebles, P. J. E., and Ratra, B. (2003), 'The cosmological constant and dark energy', https://doi.org/10.1103/RevModPhys.75.559",
+        "Tiesinga, E., et al. (2021), 'CODATA recommended values of the fundamental physical constants: 2018', https://doi.org/10.1103/RevModPhys.93.025010",
+        "Particle Data Group (2022), 'Review of Particle Physics', https://doi.org/10.1093/ptep/ptac097"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/gravitational_waves_from_firstorder_phase_transitions.md"
     },
     {
       "id": "hawkingradiationandtheblackholeinformationparadox",
@@ -2719,8 +2743,8 @@
         "generalrelativity",
         "scalartensortheoriesofgravity",
         "tolmanoppenheimervolkoffequations",
-        "neutronstarequationofstate",
-        "neutronstarphasetransitions"
+        "neutronstarphasetransitions",
+        "neutronstarequationofstate"
       ],
       "tags": [
         "1"
@@ -2948,10 +2972,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "darkmatterrelicabundance",
+        "cosmologicalperturbationtheory",
         "wimpfreezeout",
         "freezeinproduction",
-        "cosmologicalperturbationtheory"
+        "darkmatterrelicabundance"
       ],
       "tags": [
         "1"
@@ -3041,11 +3065,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "quantumfieldtheory",
+        "latticeqcd",
+        "gaugetheory",
         "thestandardmodel",
         "stronginteraction",
-        "gaugetheory",
-        "latticeqcd"
+        "quantumfieldtheory"
       ],
       "tags": [
         "1"
@@ -3782,11 +3806,11 @@
       "math_score": "3/4",
       "dependencies": [
         "radialaccelerationrelation",
-        "mondexternalfieldeffect",
-        "sparcgalaxydatabase",
-        "modifiednewtoniandynamics",
         "baryonictullyfisherrelation",
-        "lcdmbaryonicfeedback"
+        "lcdmbaryonicfeedback",
+        "modifiednewtoniandynamics",
+        "sparcgalaxydatabase",
+        "mondexternalfieldeffect"
       ],
       "tags": [
         "2"
@@ -4840,6 +4864,36 @@
       "path": "knowledge_base/level_2_advanced_frameworks/loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate.md"
     },
     {
+      "id": "manyworldsinterpretationvsdebrogliebohmpilotwavemechanicsinexplainingquantummeasurementandbornruleprobabilities",
+      "title": "Many-Worlds Interpretation vs de Broglie–Bohm Pilot-Wave Mechanics in Explaining Quantum Measurement and Born-Rule Probabilities",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Tegmark, M. (2009), 'The Many Worlds Interpretation of Quantum Mechanics', https://arxiv.org/abs/0905.2182",
+        "Zurek, W. H. (2000), 'Decoherence, einselection, and the quantum origins of the classical', Ann. Phys. 9, 855",
+        "Zurek, W. H. (2022), 'Quantum theory of the classical: quantum jumps, Born's rule and objective reality derived from quantum mechanics', https://doi.org/10.3390/e24111520",
+        "Shayeghi, A., et al. (2020), 'Matter-wave interference of a native polypeptide', https://doi.org/10.1038/s41467-020-15280-2",
+        "Bassi, A., Großardt, A., and Ulbricht, H. (2017), 'Gravitational decoherence', https://doi.org/10.1088/1361-6382/aa864f",
+        "Wallace, D. (2003), 'Everettian rationality: defending Deutsch's approach to probability in the Everett interpretation', https://doi.org/10.1016/s1355-2198(03)00036-4",
+        "Wallace, D. (2009), 'The quantum measurement problem: state of play', https://arxiv.org/abs/0906.2718",
+        "Greaves, H. (2004), 'Understanding Deutsch's probability in a deterministic universe', https://doi.org/10.1016/j.shpsb.2004.04.006",
+        "Zurek, W. H. (2005), 'Environment-assisted invariance, entanglement, and probabilities in quantum physics', https://doi.org/10.1103/PhysRevA.71.052105",
+        "Schlosshauer, M., and Fine, A. (2005), 'On Zurek's derivation of the Born rule', https://doi.org/10.1007/s10701-004-1941-6",
+        "Jarlskog, C. (2011), 'On the derivation of the Born rule in the Everett interpretation', https://arxiv.org/abs/1107.3736",
+        "Kent, A. (2010), 'One world versus many: the inadequacy of Everettian accounts of evolution, probability, and scientific confirmation', https://arxiv.org/abs/0905.0624",
+        "Rae, A. I. M. (2009), 'Everett and the Born rule', https://arxiv.org/abs/0810.2657",
+        "Helou, A., et al. (2017), 'Testing collapse models with LISA Pathfinder', https://arxiv.org/abs/1607.05880"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/manyworlds_interpretation_vs_de_brogliebohm_pilotwave_mechanics_in_explaining_quantum_measurement_and_bornrule_probabilities.md"
+    },
+    {
       "id": "massivegravityversusfrgravityinmodifiedgravitydebates",
       "title": "Massive Gravity versus f(R) Gravity in Modified Gravity Debates",
       "level": 2,
@@ -5068,12 +5122,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "functionalrenormalizationgroup",
-        "earlydarkenergy",
+        "hubbletension",
+        "causaldynamicaltriangulations",
         "quantumgravity",
         "gravitationalwaveobservations",
-        "causaldynamicaltriangulations",
-        "hubbletension"
+        "functionalrenormalizationgroup",
+        "earlydarkenergy"
       ],
       "tags": [
         "2"
@@ -5118,12 +5172,12 @@
       "math_score": "3/4",
       "dependencies": [
         "latticeqcdquarkmasses",
-        "neutronelectricdipolemoment",
         "nelsonbarrmechanism",
-        "qcdaxionandaxionlikeparticles",
         "softpqparitysolution",
         "axionmisalignmentrelicabundance",
+        "neutronelectricdipolemoment",
         "strongcpproblem",
+        "qcdaxionandaxionlikeparticles",
         "thestrongcpproblem"
       ],
       "tags": [
@@ -5181,10 +5235,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "pulsartimingarrays",
-        "stochasticgravitationalwavebackgrounds",
         "supermassiveblackholebinaries",
+        "pulsartimingarrays",
         "cosmicstringsandtopologicaldefects",
+        "stochasticgravitationalwavebackgrounds",
         "firstordercosmologicalphasetransitions"
       ],
       "tags": [
@@ -6798,12 +6852,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "cosmologicalstructureformation",
-        "persistenthomology",
-        "cosmicweb",
+        "nullmodelsandhypothesistesting",
         "lcdmcosmology",
+        "persistenthomology",
         "topologicaldataanalysis",
-        "nullmodelsandhypothesistesting"
+        "cosmicweb",
+        "cosmologicalstructureformation"
       ],
       "tags": [
         "3"
@@ -6935,9 +6989,9 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
+        "cosmicwebhalovirialization",
         "corticalenergybudgets",
         "landauerprinciple",
-        "cosmicwebhalovirialization",
         "bremermannlimit",
         "s8tension",
         "falsifiabilityandmodeldependentinference"
@@ -6951,6 +7005,34 @@
         "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md"
+    },
+    {
+      "id": "falsifiableminkowskifunctionalandbettinumberscalingtestsofhierarchicalselforganizationinthecosmicwebagainstgaussianrandomfieldandcdmnbodynullmodelswithexplicit",
+      "title": "Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Pranav et al. (2019), 'Minkowski-functional analysis of the cosmic web', https://doi.org/10.1093/mnras/stz541",
+        "Park et al. (2013), 'Minkowski functionals of the large-scale structure', https://doi.org/10.5303/JKAS.2013.46.3.125",
+        "Pranav et al. (2016), 'Persistent homology of the cosmic web', https://doi.org/10.1093/mnras/stw2862",
+        "Feldbrugge et al. (2019), 'Stochastic homology of Gaussian random fields', https://doi.org/10.1088/1475-7516/2019/09/052",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Asgari et al. (2021), 'KiDS-1000 cosmology: Cosmic shear constraints and comparison between two-point statistics', https://doi.org/10.1051/0004-6361/202039070",
+        "Dark Energy Survey Collaboration (2022), 'Dark Energy Survey Year 3 results: Cosmological constraints from galaxy clustering and weak lensing', https://doi.org/10.1103/PhysRevD.105.023520",
+        "Riess et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "DESI Collaboration (2025), 'DESI 2024 VI: Cosmological constraints from the measurements of baryon acoustic oscillations', https://doi.org/10.1088/1475-7516/2025/02/021",
+        "Peebles, P. J. E. and Ratra, B. (2003), 'The cosmological constant and dark energy', https://doi.org/10.1103/RevModPhys.75.559",
+        "Poulin et al. (2023), 'Early Dark Energy Can Resolve The Hubble Tension', https://doi.org/10.1016/j.dark.2023.101348",
+        "van de Weygaert et al. (2011), 'Alpha, Betti and the Megaparsec Universe', https://arxiv.org/abs/1306.3640"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md"
     },
     {
       "id": "falsifiablequantumclassicaldiscriminationboundsfromleggettgargandtemporalbellinequalitytestsofcoherenceinwarmbiologicalionchanneldynamicswithexplicitsiunittrac",
@@ -7040,11 +7122,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "transferentropyandeffectiveconnectivity",
         "scalefreenetworksanduniversality",
-        "stochasticthermodynamicsandentropyproduction",
         "fluctuationdissipationtheorem",
-        "cosmicwebfilamentsandvelocityshear"
+        "cosmicwebfilamentsandvelocityshear",
+        "stochasticthermodynamicsandentropyproduction",
+        "transferentropyandeffectiveconnectivity"
       ],
       "tags": [
         "3"
@@ -7526,11 +7608,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "quantumfisherinformationandquantumcramerraobound",
         "leggettgarginequalities",
-        "environmentassistedquantumtransport",
+        "quantumfisherinformationandquantumcramerraobound",
+        "openquantumsystemsandlindbladdynamics",
         "classicalforstertransportandincoherenthopping",
-        "openquantumsystemsandlindbladdynamics"
+        "environmentassistedquantumtransport"
       ],
       "tags": [
         "3"
@@ -7636,12 +7718,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "bottleneckdistance",
-        "persistenthomology",
-        "cosmicweb",
-        "topologicaldataanalysis",
+        "baryonicfeedback",
         "observationalselectioneffects",
-        "baryonicfeedback"
+        "persistenthomology",
+        "topologicaldataanalysis",
+        "cosmicweb",
+        "bottleneckdistance"
       ],
       "tags": [
         "3"

@@ -55,6 +55,7 @@ graph TD
     spectral_decomposition_of_non_hermitian_decay_hamiltonians["Spectral Decomposition of Non-Hermitian Hamiltonians with Decay Terms"]:::theoretical
     operator_theoretic_foundations_of_neutrino_decay["Operator-Theoretic Foundations of Neutrino Decay Survival Probabilities"]:::verified
     spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit["Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit"]:::verified
+    gravitational_waves_from_firstorder_phase_transitions["Gravitational Waves from First-Order Cosmological Phase Transitions"]:::theoretical
     quantum_vacuum_and_spacetime_structure["Quantum Vacuum and Spacetime Structure"]:::theoretical
     black_hole_thermodynamics["Black Hole Thermodynamics"]:::verified
     baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests["Baryogenesis and Leptogenesis: Sakharov Conditions and Experimental Tests"]:::verified
@@ -249,6 +250,7 @@ graph TD
     thermal_inflation_vs_thermal_trapping_in_earlyuniverse_cosmology["Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology"]:::theoretical
     leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation["Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation"]:::theoretical
     su5_vs_so10_grand_unification_fermion_masses_and_proton_decay["SU(5) vs SO(10) Grand Unification: Fermion Masses and Proton Decay"]:::verified
+    manyworlds_interpretation_vs_de_brogliebohm_pilotwave_mechanics_in_explaining_quantum_measurement_and_bornrule_probabilities["Many-Worlds Interpretation vs de Broglie–Bohm Pilot-Wave Mechanics in Explaining Quantum Measurement and Born-Rule Probabilities"]:::verified
     emergent_gravity_vs_cold_dark_matter_in_resolving_galactic_rotation_curve_discrepancies["Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies"]:::verified
     dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration["DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"]:::theoretical
@@ -306,6 +308,7 @@ graph TD
     modified_newtonian_dynamics_mond_vs_wimp_dark_matter_in_galaxy_cluster_dynamics["Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics"]:::verified
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
     macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy["Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems"]:::theoretical
+    falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit["Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology"]:::theoretical
     interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems["Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems"]:::theoretical
     a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks["A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks"]:::theoretical
     falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational["Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse"]:::theoretical
@@ -565,6 +568,7 @@ graph TD
     quantum_gravity --> nonperturbative_quantum_gravity_debate
     inflationary_cosmology --> multiverse_hypothesis_versus_anthropic_principle_debate
     neutrino_oscillations --> leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation
+    quantum_measurement_problem --> manyworlds_interpretation_vs_de_brogliebohm_pilotwave_mechanics_in_explaining_quantum_measurement_and_bornrule_probabilities
     electroweak_symmetry_breaking --> supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking
     quantum_gravity --> causal_dynamical_triangulations_vs_causal_set_theory_in_recovering_continuum_spacetime
     neutrinoless_double_beta_decay --> typeii_seesaw_vs_inverse_seesaw_in_neutrino_mass_generation_and_colliderleptonflavorviolation_testability
@@ -673,6 +677,7 @@ graph TD
 - [Gravitational Redshift and the Pound–Rebka Experiment](level_1_fundamental_physics/gravitational_redshift_and_the_poundrebka_experiment.md) [VERIFIED]
 - [Gravitational Wave Astronomy](level_1_fundamental_physics/gravitational_wave_astronomy.md) [VERIFIED]
 - [Gravitational Wave Standard Sirens and the Hubble Constant](level_1_fundamental_physics/gravitational_wave_standard_sirens_and_the_hubble_constant.md) [THEORETICAL]
+- [Gravitational Waves from First-Order Cosmological Phase Transitions](level_1_fundamental_physics/gravitational_waves_from_firstorder_phase_transitions.md) [THEORETICAL]
 - [Gravitational-Wave Memory Effect](level_1_fundamental_physics/gravitational_wave_memory_effect.md) [THEORETICAL]
 - [Hawking Radiation and the Black Hole Information Paradox](level_1_fundamental_physics/hawking_radiation_and_the_black_hole_information_paradox.md) [THEORETICAL]
 - [Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM](level_1_fundamental_physics/hydrodynamic_simulations_baryonic_feedback_sfdm_sidm.md) [THEORETICAL]
@@ -849,6 +854,7 @@ graph TD
 - [Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](level_2_advanced_frameworks/loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
 - [Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
+- [Many-Worlds Interpretation vs de Broglie–Bohm Pilot-Wave Mechanics in Explaining Quantum Measurement and Born-Rule Probabilities](level_2_advanced_frameworks/manyworlds_interpretation_vs_de_brogliebohm_pilotwave_mechanics_in_explaining_quantum_measurement_and_bornrule_probabilities.md) [VERIFIED]
 - [Massive Gravity versus f(R) Gravity in Modified Gravity Debates](level_2_advanced_frameworks/massive_gravity_versus_fr_gravity_in_modified_gravity_debates.md) [THEORETICAL]
 - [Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md) [THEORETICAL]
 - [Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints](level_2_advanced_frameworks/metricaffine_gravity_vs_symmetric_teleparallel_gravity_in_resolving_cosmic_singularity_constraints.md) [THEORETICAL]
@@ -949,6 +955,7 @@ graph TD
 - [Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing](level_3_emergence_and_intelligence/empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse](level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md) [THEORETICAL]
+- [Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology](level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md) [THEORETICAL]
 - [Falsifiable Quantum–Classical Discrimination Bounds from Leggett–Garg and Temporal Bell Inequality Tests of Coherence in Warm Biological Ion-Channel Dynamics, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](level_3_emergence_and_intelligence/falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac.md) [THEORETICAL]
 - [Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds](level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md) [THEORETICAL]
 - [Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees](level_3_emergence_and_intelligence/fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic.md) [THEORETICAL]
