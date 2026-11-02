@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-11-01T00:59:59.953670+00:00",
+  "updated_at": "2026-11-02T01:01:41.594146+00:00",
   "stats": {
-    "total_nodes": 368,
-    "level_1_count": 158,
-    "level_2_count": 140,
-    "level_3_count": 70,
-    "total_edges": 172,
-    "frontier_count": 71
+    "total_nodes": 371,
+    "level_1_count": 159,
+    "level_2_count": 141,
+    "level_3_count": 71,
+    "total_edges": 174,
+    "frontier_count": 75
   },
   "nodes": [
     {
@@ -308,11 +308,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "hubbletension",
         "darkenergy",
-        "cosmicmicrowavebackground",
+        "hubbletension",
         "friedmannequations",
-        "baryonacousticoscillations"
+        "baryonacousticoscillations",
+        "cosmicmicrowavebackground"
       ],
       "tags": [
         "1"
@@ -853,9 +853,9 @@
       "dependencies": [
         "peskintakeuchiparameters",
         "electroweaksymmetrybreaking",
-        "standardmodeleffectivefieldtheory",
         "standardmodel",
-        "higgsmechanism"
+        "higgsmechanism",
+        "standardmodeleffectivefieldtheory"
       ],
       "tags": [
         "1"
@@ -1096,9 +1096,9 @@
       "dependencies": [
         "grandunifiedtheories",
         "renormalizationgroup",
-        "protondecay",
         "standardmodel",
-        "minimalsupersymmetricstandardmodel"
+        "minimalsupersymmetricstandardmodel",
+        "protondecay"
       ],
       "tags": [
         "1"
@@ -1423,6 +1423,41 @@
         "Mathematical theories of phase transitions"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/lisa_gravitational_waves_and_adm_phase_transitions.md"
+    },
+    {
+      "id": "lorentzinvarianceviolationanditsexperimentalconstraints",
+      "title": "Lorentz Invariance Violation and Its Experimental Constraints",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "4/4",
+      "dependencies": [
+        "quantumgravity",
+        "earlydarkenergy",
+        "gammaraybursts",
+        "hubbletension",
+        "doublyspecialrelativity",
+        "gravitationalwavepropagation",
+        "standardmodelextension"
+      ],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Kostelecký, V. A., and Samuel, S. (1989), 'Spontaneous breaking of Lorentz symmetry in string theory', https://doi.org/10.1103/PhysRevD.39.683",
+        "Kostelecký, V. A. (2004), 'Gravity, Lorentz violation, and the Standard Model', https://doi.org/10.1103/PhysRevD.69.105009",
+        "Kostelecký, V. A., and Mewes, M. (2002), 'Signals for Lorentz violation in electrodynamics', https://doi.org/10.1103/PhysRevD.66.056005",
+        "Kostelecký, V. A., and Russell, N. (2011), 'Data Tables for Lorentz and CPT Violation', https://doi.org/10.1103/RevModPhys.83.11",
+        "Mattingly, D. (2005), 'Modern Tests of Lorentz Invariance', https://doi.org/10.12942/lrr-2005-5",
+        "Liberati, S. (2013), 'Tests of Lorentz invariance: a 2013 update', https://doi.org/10.1088/0264-9381/30/13/133001",
+        "Abdo, A. A., et al. (2009), 'A limit on the variation of the speed of light arising from quantum gravity effects', https://doi.org/10.1038/nature08574",
+        "Vasileiou, V., et al. (2013), 'Constraints on Lorentz invariance violation from Fermi-Large Area Telescope observations of gamma-ray bursts', https://doi.org/10.1103/PhysRevD.87.122001",
+        "Aharonian, F., et al. (2008), 'A strong limit on the variation of the speed of light arising from quantum gravity effects', https://doi.org/10.1103/PhysRevLett.101.170402",
+        "Abbott, B. P., et al. (2017), 'GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral', https://doi.org/10.1103/PhysRevLett.119.161101",
+        "Abbott, B. P., et al. (2017), 'Gravitational Waves and Gamma-Rays from a Binary Neutron Star Merger: GW170817 and GRB 170817A', https://doi.org/10.3847/2041-8213/aa920c"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/lorentz_invariance_violation_and_its_experimental_constraints.md"
     },
     {
       "id": "whatarethemostpromisingnearfutureexperimentalstrategiestoimprovedetectionsensitivityforaxiondarkmatterinthelowmassrange",
@@ -2739,12 +2774,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "tidaldeformabilityandlovenumbers",
-        "generalrelativity",
         "scalartensortheoriesofgravity",
+        "tidaldeformabilityandlovenumbers",
         "tolmanoppenheimervolkoffequations",
-        "neutronstarphasetransitions",
-        "neutronstarequationofstate"
+        "generalrelativity",
+        "neutronstarequationofstate",
+        "neutronstarphasetransitions"
       ],
       "tags": [
         "1"
@@ -2972,10 +3007,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "cosmologicalperturbationtheory",
+        "darkmatterrelicabundance",
         "wimpfreezeout",
         "freezeinproduction",
-        "darkmatterrelicabundance"
+        "cosmologicalperturbationtheory"
       ],
       "tags": [
         "1"
@@ -3066,9 +3101,9 @@
       "math_score": "4/4",
       "dependencies": [
         "latticeqcd",
-        "gaugetheory",
         "thestandardmodel",
         "stronginteraction",
+        "gaugetheory",
         "quantumfieldtheory"
       ],
       "tags": [
@@ -3807,10 +3842,10 @@
       "dependencies": [
         "radialaccelerationrelation",
         "baryonictullyfisherrelation",
+        "mondexternalfieldeffect",
         "lcdmbaryonicfeedback",
-        "modifiednewtoniandynamics",
         "sparcgalaxydatabase",
-        "mondexternalfieldeffect"
+        "modifiednewtoniandynamics"
       ],
       "tags": [
         "2"
@@ -4864,6 +4899,32 @@
       "path": "knowledge_base/level_2_advanced_frameworks/loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate.md"
     },
     {
+      "id": "lymanalphaforestandstellarstreamconstraintscolddarkmattervsultralightscalardarkmatterinsuppressingsmallscalepower",
+      "title": "Lyman-Alpha Forest and Stellar Stream Constraints: Cold Dark Matter vs Ultralight Scalar Dark Matter in Suppressing Small-Scale Power",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Bullock, J. S., and Boylan-Kolchin, M. (2017), 'Small-Scale Challenges to the ΛCDM Paradigm', https://doi.org/10.1146/annurev-astro-091916-055313",
+        "Hui, L., Ostriker, J. P., Tremaine, S., and Witten, E. (2017), 'Ultralight scalars as cosmological dark matter', https://doi.org/10.1103/PhysRevD.95.043541",
+        "Asgari, M., et al. (2021), 'KiDS-1000 cosmology: Cosmic shear constraints and comparison between two-point statistics', https://doi.org/10.1051/0004-6361/202039070",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "Rogers, K. K., and Peiris, H. V. (2021), 'Strong Bound on the Mass of Fuzzy Dark Matter from Ultrafaint Dwarf Galaxies', https://arxiv.org/abs/2007.12705",
+        "Particle Data Group (2022), 'Review of Particle Physics', https://doi.org/10.1093/ptep/ptac097",
+        "Fixsen, D. J. (2009), 'The Temperature of the Cosmic Microwave Background', https://doi.org/10.1088/0004-637X/707/2/916"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/lymanalpha_forest_and_stellar_stream_constraints_cold_dark_matter_vs_ultralight_scalar_dark_matter_in_suppressing_smallscale_power.md"
+    },
+    {
       "id": "manyworldsinterpretationvsdebrogliebohmpilotwavemechanicsinexplainingquantummeasurementandbornruleprobabilities",
       "title": "Many-Worlds Interpretation vs de Broglie–Bohm Pilot-Wave Mechanics in Explaining Quantum Measurement and Born-Rule Probabilities",
       "level": 2,
@@ -5122,12 +5183,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "hubbletension",
-        "causaldynamicaltriangulations",
         "quantumgravity",
-        "gravitationalwaveobservations",
+        "earlydarkenergy",
         "functionalrenormalizationgroup",
-        "earlydarkenergy"
+        "hubbletension",
+        "gravitationalwaveobservations",
+        "causaldynamicaltriangulations"
       ],
       "tags": [
         "2"
@@ -5171,13 +5232,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "latticeqcdquarkmasses",
+        "neutronelectricdipolemoment",
+        "axionmisalignmentrelicabundance",
+        "qcdaxionandaxionlikeparticles",
+        "strongcpproblem",
         "nelsonbarrmechanism",
         "softpqparitysolution",
-        "axionmisalignmentrelicabundance",
-        "neutronelectricdipolemoment",
-        "strongcpproblem",
-        "qcdaxionandaxionlikeparticles",
+        "latticeqcdquarkmasses",
         "thestrongcpproblem"
       ],
       "tags": [
@@ -5236,10 +5297,10 @@
       "math_score": "3/4",
       "dependencies": [
         "supermassiveblackholebinaries",
-        "pulsartimingarrays",
-        "cosmicstringsandtopologicaldefects",
         "stochasticgravitationalwavebackgrounds",
-        "firstordercosmologicalphasetransitions"
+        "firstordercosmologicalphasetransitions",
+        "cosmicstringsandtopologicaldefects",
+        "pulsartimingarrays"
       ],
       "tags": [
         "2"
@@ -6852,12 +6913,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "nullmodelsandhypothesistesting",
+        "topologicaldataanalysis",
         "lcdmcosmology",
         "persistenthomology",
-        "topologicaldataanalysis",
+        "cosmologicalstructureformation",
         "cosmicweb",
-        "cosmologicalstructureformation"
+        "nullmodelsandhypothesistesting"
       ],
       "tags": [
         "3"
@@ -6989,11 +7050,11 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
+        "s8tension",
+        "landauerprinciple",
         "cosmicwebhalovirialization",
         "corticalenergybudgets",
-        "landauerprinciple",
         "bremermannlimit",
-        "s8tension",
         "falsifiabilityandmodeldependentinference"
       ],
       "tags": [
@@ -7122,10 +7183,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "scalefreenetworksanduniversality",
-        "fluctuationdissipationtheorem",
         "cosmicwebfilamentsandvelocityshear",
         "stochasticthermodynamicsandentropyproduction",
+        "scalefreenetworksanduniversality",
+        "fluctuationdissipationtheorem",
         "transferentropyandeffectiveconnectivity"
       ],
       "tags": [
@@ -7608,10 +7669,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "leggettgarginequalities",
-        "quantumfisherinformationandquantumcramerraobound",
         "openquantumsystemsandlindbladdynamics",
+        "quantumfisherinformationandquantumcramerraobound",
         "classicalforstertransportandincoherenthopping",
+        "leggettgarginequalities",
         "environmentassistedquantumtransport"
       ],
       "tags": [
@@ -7718,12 +7779,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "baryonicfeedback",
+        "topologicaldataanalysis",
         "observationalselectioneffects",
         "persistenthomology",
-        "topologicaldataanalysis",
         "cosmicweb",
-        "bottleneckdistance"
+        "bottleneckdistance",
+        "baryonicfeedback"
       ],
       "tags": [
         "3"
@@ -7774,6 +7835,25 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md"
     },
     {
+      "id": "thermodynamiclimitsofneuralinformationprocessing",
+      "title": "Thermodynamic Limits of Neural Information Processing",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Achard, S. & Bullmore, E. (2007), 'Efficiency and cost of economical brain functional networks', https://doi.org/10.1371/journal.pcbi.0030017",
+        "Niven, J. E. & Laughlin, S. B. (2008), 'Energy limitation as a selective pressure on the evolution of sensory systems', https://doi.org/10.1242/jeb.017574",
+        "Mohr, P. J., Newell, D. B. & Taylor, B. N. (2021), 'CODATA recommended values of the fundamental physical constants: 2018', https://doi.org/10.1103/RevModPhys.93.025010"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/thermodynamic_limits_of_neural_information_processing.md"
+    },
+    {
       "id": "thermodynamicuncertaintyrelationsasboundsonreliableinformationprocessinginneuralcircuitsandcosmicwebdynamics",
       "title": "Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics",
       "level": 3,
@@ -7821,6 +7901,11 @@
     {
       "source": "electroweaksymmetrybreaking",
       "target": "electroweakprecisiontestsandthehiggsmechanism",
+      "type": "prerequisite"
+    },
+    {
+      "source": "quantumgravity",
+      "target": "lorentzinvarianceviolationanditsexperimentalconstraints",
       "type": "prerequisite"
     },
     {
@@ -8246,6 +8331,11 @@
     {
       "source": "asymptoticsafetyversusemergentgravityinquantumgravityresearch",
       "target": "loopquantumgravityvsasymptoticsafetyinquantumgravitydebate",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "lymanalphaforestandstellarstreamconstraintscolddarkmattervsultralightscalardarkmatterinsuppressingsmallscalepower",
       "type": "component_theory"
     },
     {
@@ -8772,6 +8862,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "doublyspecialrelativity",
+      "suggested_title": "Doublyspecialrelativity",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "earlydarkenergy",
       "suggested_title": "Earlydarkenergy",
       "target_level": 1,
@@ -8820,6 +8916,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "gammaraybursts",
+      "suggested_title": "Gammaraybursts",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "gaugetheory",
       "suggested_title": "Gaugetheory",
       "target_level": 1,
@@ -8834,6 +8936,12 @@
     {
       "id": "gravitationalwaveobservations",
       "suggested_title": "Gravitationalwaveobservations",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "gravitationalwavepropagation",
+      "suggested_title": "Gravitationalwavepropagation",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -9032,6 +9140,12 @@
     {
       "id": "standardmodeleffectivefieldtheory",
       "suggested_title": "Standardmodeleffectivefieldtheory",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "standardmodelextension",
+      "suggested_title": "Standardmodelextension",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },

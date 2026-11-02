@@ -111,6 +111,7 @@ graph TD
     the_standard_model_of_particle_physics_quantum_chromodynamics_qcd_and_the_strong_interaction["The Standard Model of Particle Physics: Quantum Chromodynamics (QCD) and the Strong Interaction"]:::verified
     neutrino_mass_hierarchies_and_their_implications["Neutrino Mass Hierarchies and Their Implications"]:::theoretical
     sterile_neutrino_production_mechanisms_and_cosmological_constraints["Sterile Neutrino Production Mechanisms and Cosmological Constraints"]:::theoretical
+    lorentz_invariance_violation_and_its_experimental_constraints["Lorentz Invariance Violation and Its Experimental Constraints"]:::theoretical
     cp_violation["CP Violation"]:::theoretical
     screening_protected_scalar_fields_vs_non_local_gravity["Screening-Protected Scalar Fields vs Non-Local Gravity in Black Hole Mergers"]:::theoretical
     cosmic_recombination_and_photon_decoupling["Cosmic Recombination and Photon Decoupling"]:::verified
@@ -295,6 +296,7 @@ graph TD
     braneworld_warped_extra_dimensions_vs_dynamical_technicolor_in_resolving_the_hierarchy_problem["Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem"]:::theoretical
     initial_state_entropy_and_information_loss_paradoxes["Initial State Entropy and Information Loss Paradoxes"]:::theoretical
     quantum_loop_gravity_vs_string_field_theory_debate["Quantum Loop Gravity vs String Field Theory Debate"]:::theoretical
+    lymanalpha_forest_and_stellar_stream_constraints_cold_dark_matter_vs_ultralight_scalar_dark_matter_in_suppressing_smallscale_power["Lyman-Alpha Forest and Stellar Stream Constraints: Cold Dark Matter vs Ultralight Scalar Dark Matter in Suppressing Small-Scale Power"]:::verified
     cdm_baryonic_feedback_vs_mond_external_field_effect_in_explaining_the_radial_acceleration_relation_of_galaxies["ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies"]:::verified
     cuscuton_gravity_vs_ghost_condensate_cosmology_in_stable_accelerated_expansion["Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion"]:::theoretical
     initial_condition_entropy_and_arrow_of_time["Initial Condition Entropy and Arrow of Time"]:::theoretical
@@ -328,6 +330,7 @@ graph TD
     a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue["A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue"]:::theoretical
     noiserobust_generalizedcontextuality_witnesses_for_benchmarkrelative_quantum_advantage_in_warm_biological_information_processing["Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing"]:::theoretical
     computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks["Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks"]:::theoretical
+    thermodynamic_limits_of_neural_information_processing["Thermodynamic Limits of Neural Information Processing"]:::theoretical
     a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and["A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses"]:::theoretical
     fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic["Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees"]:::theoretical
     quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions["Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions"]:::theoretical
@@ -469,6 +472,7 @@ graph TD
     quantum_gravity --- planck_epoch_and_the_initial_conditions_for_the_universe
     gravitational_lensing --- discriminating_warm_vs_cold_dark_matter_via_cosmological_probes
     quantum_field_theory --- the_standard_model_of_particle_physics_quantum_chromodynamics_qcd_and_the_strong_interaction
+    quantum_gravity --- lorentz_invariance_violation_and_its_experimental_constraints
     standard_model_of_particle_physics --- cp_violation
     neutrino_cp_violation --- cp_violation
     the_higgs_boson --- cp_violation
@@ -686,6 +690,7 @@ graph TD
 - [Integrating Higher-Order Effects and Non-Standard Interactions in Neutrino Dynamics](level_1_fundamental_physics/higher_order_effects_and_non_standard_interactions_in_neutrino_dynamics.md) [THEORETICAL]
 - [Joint Bayesian Evidence Analysis of the Neutrino Decay Hypothesis](level_1_fundamental_physics/bayesian_evidence_analysis_neutrino_decay_hypothesis.md) [THEORETICAL]
 - [Laboratory Haloscope and Light-Mediator Tests of SIDM and SFDM](level_1_fundamental_physics/laboratory_tests_of_sidm_and_sfdm_variants.md) [THEORETICAL]
+- [Lorentz Invariance Violation and Its Experimental Constraints](level_1_fundamental_physics/lorentz_invariance_violation_and_its_experimental_constraints.md) [THEORETICAL]
 - [Low-Mass Axion Dark Matter Detection Strategies](level_1_fundamental_physics/low_mass_axion_dark_matter_detection_strategies.md) [VERIFIED]
 - [Mathematical Formulation of Neutrino Decay Survival Probabilities](level_1_fundamental_physics/mathematical_formulation_of_neutrino_decay_survival_probabilities.md) [THEORETICAL]
 - [Matter-Antimatter Asymmetry](level_1_fundamental_physics/matterantimatter_asymmetry.md) [THEORETICAL]
@@ -854,6 +859,7 @@ graph TD
 - [Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](level_2_advanced_frameworks/loop_quantum_cosmology_vs_string_gas_cosmology_in_early_universe_models_debate.md) [THEORETICAL]
 - [Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](level_2_advanced_frameworks/loop_quantum_gravity_versus_causal_set_theory_in_quantum_gravity.md) [THEORETICAL]
 - [Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate](level_2_advanced_frameworks/loop_quantum_gravity_vs_asymptotic_safety_in_quantum_gravity_debate.md) [THEORETICAL]
+- [Lyman-Alpha Forest and Stellar Stream Constraints: Cold Dark Matter vs Ultralight Scalar Dark Matter in Suppressing Small-Scale Power](level_2_advanced_frameworks/lymanalpha_forest_and_stellar_stream_constraints_cold_dark_matter_vs_ultralight_scalar_dark_matter_in_suppressing_smallscale_power.md) [VERIFIED]
 - [Many-Worlds Interpretation vs de Broglie–Bohm Pilot-Wave Mechanics in Explaining Quantum Measurement and Born-Rule Probabilities](level_2_advanced_frameworks/manyworlds_interpretation_vs_de_brogliebohm_pilotwave_mechanics_in_explaining_quantum_measurement_and_bornrule_probabilities.md) [VERIFIED]
 - [Massive Gravity versus f(R) Gravity in Modified Gravity Debates](level_2_advanced_frameworks/massive_gravity_versus_fr_gravity_in_modified_gravity_debates.md) [THEORETICAL]
 - [Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md) [THEORETICAL]
@@ -991,5 +997,6 @@ graph TD
 - [Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback](level_3_emergence_and_intelligence/robustness_of_cosmicweb_persistent_homology_to_observational_selection_effects_and_baryonic_feedback.md) [THEORETICAL]
 - [Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](level_3_emergence_and_intelligence/spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology.md) [THEORETICAL]
 - [Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md) [THEORETICAL]
+- [Thermodynamic Limits of Neural Information Processing](level_3_emergence_and_intelligence/thermodynamic_limits_of_neural_information_processing.md) [THEORETICAL]
 - [Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics](level_3_emergence_and_intelligence/thermodynamic_uncertainty_relations_as_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md) [VERIFIED]
 - [Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks](level_3_emergence_and_intelligence/topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks.md) [THEORETICAL]
