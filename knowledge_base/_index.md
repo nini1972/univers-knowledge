@@ -12,6 +12,7 @@ graph TD
     neutrino_physics_and_its_implications_for_cosmology["Neutrino Physics and Its Implications for Cosmology"]:::verified
     dark_acoustic_oscillations_and_dissipation_in_dark_sector_models["Dark Acoustic Oscillations and Dissipation in Complex Dark-Sector Models"]:::theoretical
     classical_mechanics["Classical Mechanics"]:::verified
+    cosmic_microwave_background_polarization_and_bmode_signatures["Cosmic Microwave Background Polarization and B-Mode Signatures"]:::verified
     astrophysical_neutrino_flavor_and_spectral_resolution_enhancement["Astrophysical Neutrino Flavor and Spectral Resolution Enhancement"]:::theoretical
     electroweak_symmetry_breaking["Electroweak Symmetry Breaking (EWSB)"]:::theoretical
     anomalous_magnetic_moment_of_the_muon_g2["Anomalous Magnetic Moment of the Muon (g−2)"]:::verified
@@ -263,6 +264,7 @@ graph TD
     randallsundrum_vs_add_models_in_hierarchy_problem_resolution["Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution"]:::theoretical
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
     bransdicke_vs_fq_symmetric_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration["Brans-Dicke vs f(Q) Symmetric Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration"]:::theoretical
+    thermal_wimp_cold_dark_matter_vs_misalignmentproduced_ultralight_axion_dark_matter_in_predicting_the_linear_matter_power_spectrum_cutoff_and_pulsartiming_signatures["Thermal WIMP Cold Dark Matter vs Misalignment-Produced Ultralight Axion Dark Matter in Predicting the Linear Matter Power Spectrum Cutoff and Pulsar-Timing Signatures"]:::verified
     modified_gravity_vs_dark_matter_paradigm_debate["Modified Newtonian Dynamics (MOND) versus Cold Dark Matter (CDM) Paradigm Debate"]:::theoretical
     superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics["Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics"]:::theoretical
     conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_the_entropy_of_initial_conditions["Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions"]:::theoretical
@@ -311,6 +313,7 @@ graph TD
     falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context["Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context"]:::theoretical
     macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy["Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems"]:::theoretical
     falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit["Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology"]:::theoretical
+    a_falsifiable_test_of_anisotropic_filament_connectivity_statistics_in_the_cosmic_web_against_cdm_nbody_null_ensembles_using_graphtheoretic_degree_distributions_and_persistent_homol["A Falsifiable Test of Anisotropic Filament Connectivity Statistics in the Cosmic Web Against ΛCDM N-Body Null Ensembles Using Graph-Theoretic Degree Distributions and Persistent Homology of Galaxy Survey Catalogs"]:::theoretical
     interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems["Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems"]:::theoretical
     a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks["A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks"]:::theoretical
     falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational["Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse"]:::theoretical
@@ -384,6 +387,8 @@ graph TD
     %% Connections & Prerequisites
     neutrino_oscillations --- neutrino_physics_and_its_implications_for_cosmology
     dark_matter --- dark_acoustic_oscillations_and_dissipation_in_dark_sector_models
+    primordial_gravitational_waves --- cosmic_microwave_background_polarization_and_bmode_signatures
+    gravitational_lensing --- cosmic_microwave_background_polarization_and_bmode_signatures
     neutrino_oscillations --- astrophysical_neutrino_flavor_and_spectral_resolution_enhancement
     the_higgs_boson --- electroweak_symmetry_breaking
     standard_model_of_particle_physics --- electroweak_symmetry_breaking
@@ -637,6 +642,7 @@ graph TD
 - [Collaborative Empirical Test Strategies for Theoretical Neutrino Models](level_1_fundamental_physics/collaborative_empirical_test_strategies_for_neutrino_models.md) [VERIFIED]
 - [Cosmic Inflation Mechanisms](level_1_fundamental_physics/cosmic_inflation_mechanisms.md) [THEORETICAL]
 - [Cosmic Microwave Background Anisotropies and Acoustic Peak Phenomenology](level_1_fundamental_physics/cosmic_microwave_background_anisotropies_and_acoustic_peak_phenomenology.md) [VERIFIED]
+- [Cosmic Microwave Background Polarization and B-Mode Signatures](level_1_fundamental_physics/cosmic_microwave_background_polarization_and_bmode_signatures.md) [VERIFIED]
 - [Cosmic Microwave Background Radiation](level_1_fundamental_physics/cosmic_microwave_background_radiation.md) [VERIFIED]
 - [Cosmic Neutrino Background](level_1_fundamental_physics/cosmic_neutrino_background.md) [THEORETICAL]
 - [Cosmic Ray Physics](level_1_fundamental_physics/cosmic_ray_physics.md) [THEORETICAL]
@@ -918,6 +924,7 @@ graph TD
 - [The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework](level_2_advanced_frameworks/chiral_magnetic_effect_vs_chiral_vortical_effect_in_relativistic_plasmas.md) [THEORETICAL]
 - [Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology](level_2_advanced_frameworks/thermal_inflation_vs_thermal_trapping_in_earlyuniverse_cosmology.md) [THEORETICAL]
 - [Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches](level_2_advanced_frameworks/thermal_leptogenesis_vs_resonant_leptogenesis_in_generating_the_baryon_asymmetry_and_testability_via_neutrinoless_double_beta_decay_and_collider_searches.md) [THEORETICAL]
+- [Thermal WIMP Cold Dark Matter vs Misalignment-Produced Ultralight Axion Dark Matter in Predicting the Linear Matter Power Spectrum Cutoff and Pulsar-Timing Signatures](level_2_advanced_frameworks/thermal_wimp_cold_dark_matter_vs_misalignmentproduced_ultralight_axion_dark_matter_in_predicting_the_linear_matter_power_spectrum_cutoff_and_pulsartiming_signatures.md) [VERIFIED]
 - [Thermal WIMPs vs Primordial Black Holes as Dark Matter](level_2_advanced_frameworks/thermal_wimps_vs_primordial_black_holes_as_dark_matter.md) [THEORETICAL]
 - [Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](level_2_advanced_frameworks/torsionbased_einsteincartan_gravity_vs_general_relativity_in_resolving_initial_singularity_constraints.md) [THEORETICAL]
 - [Type-I Seesaw vs Radiative Neutrino Mass Generation](level_2_advanced_frameworks/typei_seesaw_vs_radiative_neutrino_mass_generation.md) [THEORETICAL]
@@ -936,6 +943,7 @@ graph TD
 - [A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence](level_3_emergence_and_intelligence/a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence.md) [THEORETICAL]
 - [A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](level_3_emergence_and_intelligence/a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit.md) [THEORETICAL]
 - [A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md) [THEORETICAL]
+- [A Falsifiable Test of Anisotropic Filament Connectivity Statistics in the Cosmic Web Against ΛCDM N-Body Null Ensembles Using Graph-Theoretic Degree Distributions and Persistent Homology of Galaxy Survey Catalogs](level_3_emergence_and_intelligence/a_falsifiable_test_of_anisotropic_filament_connectivity_statistics_in_the_cosmic_web_against_cdm_nbody_null_ensembles_using_graphtheoretic_degree_distributions_and_persistent_homol.md) [THEORETICAL]
 - [A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units](level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md) [THEORETICAL]
 - [A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md) [THEORETICAL]
 - [A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization](level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md) [THEORETICAL]
