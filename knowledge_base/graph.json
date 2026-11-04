@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-11-03T01:10:22.926608+00:00",
+  "updated_at": "2026-11-04T01:01:00.302622+00:00",
   "stats": {
-    "total_nodes": 374,
-    "level_1_count": 160,
-    "level_2_count": 142,
-    "level_3_count": 72,
-    "total_edges": 175,
+    "total_nodes": 377,
+    "level_1_count": 161,
+    "level_2_count": 143,
+    "level_3_count": 73,
+    "total_edges": 177,
     "frontier_count": 75
   },
   "nodes": [
@@ -308,11 +308,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "friedmannequations",
-        "hubbletension",
         "cosmicmicrowavebackground",
+        "darkenergy",
         "baryonacousticoscillations",
-        "darkenergy"
+        "hubbletension",
+        "friedmannequations"
       ],
       "tags": [
         "1"
@@ -875,9 +875,9 @@
       "dependencies": [
         "peskintakeuchiparameters",
         "standardmodel",
-        "electroweaksymmetrybreaking",
         "standardmodeleffectivefieldtheory",
-        "higgsmechanism"
+        "higgsmechanism",
+        "electroweaksymmetrybreaking"
       ],
       "tags": [
         "1"
@@ -1116,11 +1116,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "protondecay",
-        "grandunifiedtheories",
         "standardmodel",
         "renormalizationgroup",
-        "minimalsupersymmetricstandardmodel"
+        "grandunifiedtheories",
+        "minimalsupersymmetricstandardmodel",
+        "protondecay"
       ],
       "tags": [
         "1"
@@ -1428,6 +1428,27 @@
       "path": "knowledge_base/level_1_fundamental_physics/laboratory_tests_of_sidm_and_sfdm_variants.md"
     },
     {
+      "id": "latticegaugetheoryandnumericallatticeqcd",
+      "title": "Lattice Gauge Theory and Numerical Lattice QCD",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Wilson, K. G. (1974), 'Confinement of quarks', https://doi.org/10.1103/PhysRevD.10.2445",
+        "Flavour Lattice Averaging Group (FLAG) (2024), 'FLAG Review 2024', https://arxiv.org/abs/2411.04268",
+        "Borsányi, S., et al. (2020), 'QCD equation of state at finite chemical potential from lattice calculations', https://doi.org/10.1103/PhysRevLett.125.052002",
+        "Lüscher, M. (2010), 'Properties and uses of the Wilson flow in lattice QCD', https://doi.org/10.1007/JHEP08(2010)071",
+        "Fixsen, D. J. (2009), 'The Temperature of the Cosmic Microwave Background', https://doi.org/10.1088/0004-637X/707/2/916"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/lattice_gauge_theory_and_numerical_lattice_qcd.md"
+    },
+    {
       "id": "lisagravitationalwavesandadmphasetransitions",
       "title": "To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?",
       "level": 1,
@@ -1455,13 +1476,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "4/4",
       "dependencies": [
-        "earlydarkenergy",
-        "hubbletension",
-        "gammaraybursts",
-        "standardmodelextension",
+        "doublyspecialrelativity",
         "gravitationalwavepropagation",
+        "gammaraybursts",
         "quantumgravity",
-        "doublyspecialrelativity"
+        "standardmodelextension",
+        "hubbletension",
+        "earlydarkenergy"
       ],
       "tags": [
         "1"
@@ -2796,12 +2817,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "tolmanoppenheimervolkoffequations",
         "neutronstarequationofstate",
-        "neutronstarphasetransitions",
-        "generalrelativity",
-        "tidaldeformabilityandlovenumbers",
         "scalartensortheoriesofgravity",
-        "tolmanoppenheimervolkoffequations"
+        "tidaldeformabilityandlovenumbers",
+        "generalrelativity",
+        "neutronstarphasetransitions"
       ],
       "tags": [
         "1"
@@ -3029,10 +3050,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "darkmatterrelicabundance",
-        "wimpfreezeout",
         "freezeinproduction",
-        "cosmologicalperturbationtheory"
+        "wimpfreezeout",
+        "cosmologicalperturbationtheory",
+        "darkmatterrelicabundance"
       ],
       "tags": [
         "1"
@@ -3122,11 +3143,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "quantumfieldtheory",
         "stronginteraction",
         "latticeqcd",
-        "gaugetheory",
-        "thestandardmodel"
+        "thestandardmodel",
+        "quantumfieldtheory",
+        "gaugetheory"
       ],
       "tags": [
         "1"
@@ -3862,12 +3883,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "sparcgalaxydatabase",
-        "lcdmbaryonicfeedback",
-        "radialaccelerationrelation",
         "baryonictullyfisherrelation",
+        "radialaccelerationrelation",
+        "lcdmbaryonicfeedback",
         "mondexternalfieldeffect",
-        "modifiednewtoniandynamics"
+        "modifiednewtoniandynamics",
+        "sparcgalaxydatabase"
       ],
       "tags": [
         "2"
@@ -4853,6 +4874,29 @@
       "path": "knowledge_base/level_2_advanced_frameworks/leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation.md"
     },
     {
+      "id": "loopquantumcosmologybigbouncevseternalinflationinpredictingprimordialpowerspectrumfeaturesandspatialcurvatureconstraints",
+      "title": "Loop Quantum Cosmology Big Bounce vs Eternal Inflation in Predicting Primordial Power Spectrum Features and Spatial Curvature Constraints",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "[MATH_CONSISTENT]",
+      "math_score": "3.5/4",
+      "dependencies": [
+        "conformalcycliccosmologyvseternalinflationinexplainingprebigbanginitialconditions"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Douglas, M. R., and Kachru, S. (2007), 'Flux compactification', https://doi.org/10.1103/revmodphys.79.733",
+        "Garriga, J., Guth, A. H., and Vilenkin, A. (2007), 'Eternal inflation, bubble collisions, and the persistence of memory', https://doi.org/10.1103/PhysRevD.76.123512",
+        "Winitzki, S. (2008), 'A volume-weighted measure for eternal inflation', https://doi.org/10.1103/PhysRevD.78.043501",
+        "Podolsky, D., and Enqvist, K. (2009), 'Cosmological perturbations in the landscape', https://arxiv.org/abs/0704.0144",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/loop_quantum_cosmology_big_bounce_vs_eternal_inflation_in_predicting_primordial_power_spectrum_features_and_spatial_curvature_constraints.md"
+    },
+    {
       "id": "loopquantumcosmologyvsstringgascosmologyinearlyuniversemodelsdebate",
       "title": "Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate",
       "level": 2,
@@ -4860,7 +4904,9 @@
       "status": "THEORETICAL",
       "math_status": "MATH_UNKNOWN",
       "math_score": "0/4",
-      "dependencies": [],
+      "dependencies": [
+        "loopquantumcosmologybigbouncevseternalinflationinpredictingprimordialpowerspectrumfeaturesandspatialcurvatureconstraints"
+      ],
       "tags": [
         "2",
         "quantum_physics"
@@ -5205,12 +5251,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "functionalrenormalizationgroup",
-        "earlydarkenergy",
-        "hubbletension",
-        "gravitationalwaveobservations",
         "causaldynamicaltriangulations",
-        "quantumgravity"
+        "functionalrenormalizationgroup",
+        "gravitationalwaveobservations",
+        "quantumgravity",
+        "hubbletension",
+        "earlydarkenergy"
       ],
       "tags": [
         "2"
@@ -5255,12 +5301,12 @@
       "math_score": "3/4",
       "dependencies": [
         "qcdaxionandaxionlikeparticles",
-        "nelsonbarrmechanism",
-        "neutronelectricdipolemoment",
-        "latticeqcdquarkmasses",
         "softpqparitysolution",
         "axionmisalignmentrelicabundance",
+        "neutronelectricdipolemoment",
         "strongcpproblem",
+        "nelsonbarrmechanism",
+        "latticeqcdquarkmasses",
         "thestrongcpproblem"
       ],
       "tags": [
@@ -5318,10 +5364,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "supermassiveblackholebinaries",
+        "firstordercosmologicalphasetransitions",
         "stochasticgravitationalwavebackgrounds",
         "pulsartimingarrays",
-        "firstordercosmologicalphasetransitions",
+        "supermassiveblackholebinaries",
         "cosmicstringsandtopologicaldefects"
       ],
       "tags": [
@@ -7001,12 +7047,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "lcdmcosmology",
-        "persistenthomology",
         "cosmologicalstructureformation",
-        "nullmodelsandhypothesistesting",
+        "lcdmcosmology",
+        "cosmicweb",
         "topologicaldataanalysis",
-        "cosmicweb"
+        "persistenthomology",
+        "nullmodelsandhypothesistesting"
       ],
       "tags": [
         "3"
@@ -7138,12 +7184,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "landauerprinciple",
-        "s8tension",
-        "cosmicwebhalovirialization",
+        "bremermannlimit",
         "corticalenergybudgets",
         "falsifiabilityandmodeldependentinference",
-        "bremermannlimit"
+        "s8tension",
+        "landauerprinciple",
+        "cosmicwebhalovirialization"
       ],
       "tags": [
         "3"
@@ -7182,6 +7228,26 @@
         "van de Weygaert et al. (2011), 'Alpha, Betti and the Megaparsec Universe', https://arxiv.org/abs/1306.3640"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md"
+    },
+    {
+      "id": "falsifiablequantumfisherinformationandlindbladiandephasingboundsoncoherenceassistedelectrontransferinwarmbiologicalphotosyntheticreactioncenterswithexplicitsiun",
+      "title": "Falsifiable Quantum Fisher Information and Lindbladian Dephasing Bounds on Coherence-Assisted Electron Transfer in Warm Biological Photosynthetic Reaction Centers",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Engel, G. S., et al. (2007), 'Evidence for wavelike energy transfer through quantum coherence in photosynthetic systems', https://doi.org/10.1038/nature05678",
+        "Rebentrost, P., Mohseni, M., and Aspuru-Guzik, A. (2009), 'Environment-assisted quantum transport', https://doi.org/10.1088/1367-2630/11/3/033003",
+        "Cao, J., et al. (2020), 'Quantum biology revisited', https://doi.org/10.1126/sciadv.aaz4888",
+        "Tiwari, V., Peters, W. K., and Jonas, D. M. (2012), 'Electronic energy transfer through non-Markovian vibrationally coherent states', https://doi.org/10.1073/pnas.1205569109"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_quantum_fisher_information_and_lindbladian_dephasing_bounds_on_coherenceassisted_electron_transfer_in_warm_biological_photosynthetic_reaction_centers_with_explicit_siun.md"
     },
     {
       "id": "falsifiablequantumclassicaldiscriminationboundsfromleggettgargandtemporalbellinequalitytestsofcoherenceinwarmbiologicalionchanneldynamicswithexplicitsiunittrac",
@@ -7271,11 +7337,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "transferentropyandeffectiveconnectivity",
         "fluctuationdissipationtheorem",
-        "cosmicwebfilamentsandvelocityshear",
         "stochasticthermodynamicsandentropyproduction",
-        "scalefreenetworksanduniversality"
+        "scalefreenetworksanduniversality",
+        "cosmicwebfilamentsandvelocityshear",
+        "transferentropyandeffectiveconnectivity"
       ],
       "tags": [
         "3"
@@ -7757,11 +7823,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "openquantumsystemsandlindbladdynamics",
         "leggettgarginequalities",
-        "classicalforstertransportandincoherenthopping",
-        "quantumfisherinformationandquantumcramerraobound",
         "environmentassistedquantumtransport",
-        "openquantumsystemsandlindbladdynamics"
+        "quantumfisherinformationandquantumcramerraobound",
+        "classicalforstertransportandincoherenthopping"
       ],
       "tags": [
         "3"
@@ -7867,12 +7933,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "observationalselectioneffects",
         "bottleneckdistance",
-        "persistenthomology",
-        "topologicaldataanalysis",
+        "cosmicweb",
+        "observationalselectioneffects",
         "baryonicfeedback",
-        "cosmicweb"
+        "topologicaldataanalysis",
+        "persistenthomology"
       ],
       "tags": [
         "3"
@@ -8399,6 +8465,16 @@
     {
       "source": "baryogenesisandleptogenesissakharovconditionsandexperimentaltests",
       "target": "leptogenesisvsaffleckdinebaryogenesisinearlyuniversematterantimattergeneration",
+      "type": "component_theory"
+    },
+    {
+      "source": "conformalcycliccosmologyvseternalinflationinexplainingprebigbanginitialconditions",
+      "target": "loopquantumcosmologybigbouncevseternalinflationinpredictingprimordialpowerspectrumfeaturesandspatialcurvatureconstraints",
+      "type": "component_theory"
+    },
+    {
+      "source": "loopquantumcosmologybigbouncevseternalinflationinpredictingprimordialpowerspectrumfeaturesandspatialcurvatureconstraints",
+      "target": "loopquantumcosmologyvsstringgascosmologyinearlyuniversemodelsdebate",
       "type": "component_theory"
     },
     {
