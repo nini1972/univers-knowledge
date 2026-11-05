@@ -392,7 +392,8 @@ class TestGeneratedWishlistSection(unittest.TestCase):
         text = "\n".join(_build_wishlist_section2(collect_historical_agent_shortcomings(limit=3)))
         self.assertIn("Nothing in this section is hand-written", text)
         self.assertIn("✅ present — Physics Calculator & Tension Evaluator", text)
-        self.assertIn("🎯 OPEN — arXiv full-text section reader", text)
+        self.assertIn("✅ present — arXiv full-text section reader", text)
+        self.assertIn("✅ present — Per-run scorecard", text)
         self.assertIn("✅ present — Math gate in the flow", text)
 
 
@@ -558,6 +559,30 @@ class TestInterviewHelpers(unittest.TestCase):
         line = _describe_tools([PhysicsCalculatorTool()])[0]
         self.assertTrue(line.startswith("Physics Calculator & Tension Evaluator — "), line)
         self.assertNotIn("Tool Name:", line)
+
+    def test_all_capabilities_present_and_scorecard_populated(self):
+        from src.advisory_manager import _capability_registry, _live_tool_names, build_run_scorecard
+        from src.math_precheck import find_undeclared_symbols, run_math_precheck
+
+        reg = _capability_registry(_live_tool_names())
+        open_items = [c["name"] for c in reg if c["present"] is not True]
+        self.assertEqual(open_items, [], f"Expected all wishlist capabilities to be present, got open: {open_items}")
+
+        scorecard = build_run_scorecard(recent_window=50)
+        self.assertIn("undecidable_ratio_pct", scorecard)
+        self.assertIn("avg_attempts_to_approval", scorecard)
+        self.assertIn("timeouts_or_kickoff_errors", scorecard)
+        self.assertGreater(scorecard["window_size"], 0)
+
+        # Dimensionless composite symbols (SNR, PCI, KIE) should not make an equation UNDECIDABLE
+        self.assertEqual(_verdicts([r"\mathrm{SNR} = \frac{m_1}{m_2}", r"PCI = \frac{\phi_1}{\phi_2}"]), ["CONSISTENT", "CONSISTENT"])
+
+        # Missing symbols in UNDECIDABLE equations should be detected by pre-check
+        missing = find_undeclared_symbols([r"\Xi_{\rm dark} = \zeta_{\rm eff} T^2"], {"T": 1.0})
+        self.assertIn(r"\Xi_{\rm dark}", missing)
+        pre = run_math_precheck(r"We define $$\Xi_{\rm dark} = \zeta_{\rm eff} T^2$$ in our model.")
+        self.assertIn(r"\Xi_{\rm dark}", pre["undeclared_symbols"])
+
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # 🛠️ Autonomous Agent Shortcomings & Capability Wishlist
 
-> **Last Updated**: `2026-11-05T20:27:50.442510+00:00`
+> **Last Updated**: `2026-11-05T20:41:58.151074+00:00`
 > **How to Query Agents Directly**:
 > - Generate/refresh this wishlist: `python scripts/consult_professor.py wishlist` (add `--live` to interview live LLMs)
 > - Ask any agent a direct question: `python scripts/consult_professor.py ask <agent_role> "Your question"`
@@ -13,7 +13,10 @@
 > ⏱️ **Evaluations since the last tooling change** (`2026-10-22T18:55:34+02:00`, from git history): **48** (`39` approved, `9` rejected; reasons: `mathematical_flaw_or_inconsistency` ×8, `parse_error` ×1)
 
 ### Recent Window Scorecard (Last `100` Evaluations)
-- **Evaluations in Window**: `100` (`66` approved, `34` rejected)
+- **Evaluations in Window**: `100` (`66` approved, `34` rejected — `66.0%` approval rate)
+- **Attempts to Approval**: avg `1.29` attempt(s) (`87.9%` approved on attempt 1; `0` micro-revision pass(es))
+- **Pre-Check `UNDECIDABLE` Ratio**: `75.6%` (`1196/1581` equations across `79` pre-checked drafts; avg `6.4` symbols declared/draft)
+- **Timeouts & Kickoff Errors**: `0` timeout/kickoff error(s) (`0` empty-response salvage recovery/recoveries)
 - **Recent Rejection Breakdown by Root Cause**:
   * `mathematical_flaw_or_inconsistency`: **27** occurrence(s)
   * `crew_kickoff_error`: **3** occurrence(s)
@@ -70,7 +73,7 @@
 > Generated automatically: tool lists are read from the live agent configuration, need themes from the last `100` evaluations, and each capability's status from a probe of the code. Nothing in this section is hand-written.
 
 ### 🔭 A. Researcher, Bio-Digital Analyst & Cosmological Architect
-- **Equipped Tools (live)**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`, `Physics Calculator & Tension Evaluator`, `Scholarly Tavily Search`, `Search the internet with Serper`
+- **Equipped Tools (live)**: `ArXiv Preprint Search`, `ArXiv Full-Text Section Reader`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`, `Physics Calculator & Tension Evaluator`
 - **Recurring need themes (`researcher_needs`, last 100)**: `citation_provenance` ×51, `units_and_dimensions` ×38, `conventions_and_signs` ×34, `worked_arithmetic_and_benchmarks` ×23, `causal_and_statistical_design` ×21
 - **Most recent concrete needs**:
   * Specify the source of baryonic mass flux, such as hydrodynamical simulations, and a spatially constrained cortical null
@@ -80,7 +83,7 @@
   * ✅ present — Physics Calculator & Tension Evaluator (worked examples, sigma / delta-chi2) · addresses `worked_arithmetic_and_benchmarks` (23 recent mention(s))
   * ✅ present — Observational Cosmology tracker with values, uncertainties and covariances · addresses `worked_arithmetic_and_benchmarks`, `citation_provenance` (74 recent mention(s))
   * ✅ present — Conventions & Symbol Table / Validity Domain preamble in the concept template · addresses `conventions_and_signs`, `units_and_dimensions` (72 recent mention(s))
-  * 🎯 OPEN — arXiv full-text section reader (exact conventions and prefactors) · addresses `conventions_and_signs`, `citation_provenance` (85 recent mention(s))
+  * ✅ present — arXiv full-text section reader (exact conventions and prefactors) · addresses `conventions_and_signs`, `citation_provenance` (85 recent mention(s))
 
 ### 🧮 B. Mathematical Physics Verifier
 - **Equipped Tools (live)**: `Equation Extractor`, `Dimensional Consistency Checker`, `Symbolic Derivation Verifier`, `Topology Classifier`, `Numerical Benchmark Validator`, `Physics Calculator & Tension Evaluator`
@@ -102,7 +105,7 @@
 - **Capabilities**:
   * ✅ present — Shared canonical conventions header in every crew task · addresses `conventions_and_signs` (65 recent mention(s))
   * ✅ present — Level 3 causal-design checklist (estimand, DAG, identification, power, multiplicity) · addresses `causal_and_statistical_design` (36 recent mention(s))
-  * 🎯 OPEN — Per-run scorecard (UNDECIDABLE ratio, attempts to approval, timeouts) · addresses — (0 recent mention(s))
+  * ✅ present — Per-run scorecard (UNDECIDABLE ratio, attempts to approval, timeouts) · addresses — (0 recent mention(s))
 
 ---
 
@@ -201,4 +204,3 @@ Professor, here is my diagnosis. I weight the 48 post-change evaluations most he
    - It would let me check premise applicability, for example whether a bound is stated for erasure or for transfer, and whether the source's convention matches the draft's.
 
 I would still keep my skepticism, since the tools reduce workload but do not decide approval. They would let me spend my judgment on whether the physics is true instead of on whether the draft is parseable and cited correctly.
-

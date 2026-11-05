@@ -26,9 +26,9 @@ import json
 import re
 
 try:
-    from tools.math_tools import DimensionalConsistencyTool
+    from tools.math_tools import DimensionalConsistencyTool, NaturalUnitDimensionAnalyzer
 except ImportError:  # pragma: no cover - package-style import
-    from src.tools.math_tools import DimensionalConsistencyTool
+    from src.tools.math_tools import DimensionalConsistencyTool, NaturalUnitDimensionAnalyzer
 
 BLOCKING_BASES = ("known_error_pattern", "lagrangian_operator")
 MAX_EQUATIONS = 40
@@ -168,6 +168,59 @@ def parse_symbol_table(text: str) -> dict[str, float]:
     return dims
 
 
+_LATEX_IGNORED_CMDS = (
+    NaturalUnitDimensionAnalyzer.FUNCTIONS
+    | NaturalUnitDimensionAnalyzer.BIG_OPERATORS
+    | NaturalUnitDimensionAnalyzer.SKIP_COMMANDS
+    | NaturalUnitDimensionAnalyzer.ACCENTS
+    | NaturalUnitDimensionAnalyzer.STYLED
+    | NaturalUnitDimensionAnalyzer.TEXT_COMMANDS
+    | NaturalUnitDimensionAnalyzer.RELATION_COMMANDS
+    | NaturalUnitDimensionAnalyzer.ABORT_COMMANDS
+    | {
+        "frac", "dfrac", "tfrac", "sqrt", "left", "right", "big", "Big", "bigg", "Bigg",
+        "partial", "nabla", "infty", "pm", "mp", "dots", "cdots", "ldots", "quad", "qquad",
+    }
+)
+
+
+def find_undeclared_symbols(equations: list[str], symbol_table: dict[str, float]) -> list[str]:
+    """Identify physics symbols appearing in (typically UNDECIDABLE) equations that are missing from symbol_table."""
+    declared_norm = {NaturalUnitDimensionAnalyzer._nk(k) for k in (symbol_table or {})}
+    known_bare = (
+        NaturalUnitDimensionAnalyzer.UNAMBIGUOUS_BARE
+        | NaturalUnitDimensionAnalyzer.UNIVERSAL_CONSTANTS
+        | set(NaturalUnitDimensionAnalyzer.UNITS.keys())
+        | NaturalUnitDimensionAnalyzer.INDEX_NAMES
+        | {"d", "x", "r", "z", "k", "n", "N"}
+    )
+    token_re = re.compile(
+        r"(\\[A-Za-z]+(?:\s*_\{[^{}]+\}|\s*_[A-Za-z0-9]+)?|\b[A-Za-z](?:_\{[^{}]+\}|_[A-Za-z0-9]+)\b|\b[A-Za-z]\b)"
+    )
+    missing: list[str] = []
+    seen_norm: set[str] = set()
+    for eq in equations or []:
+        # Strip \mathrm{...} / \text{...} wrappers that are pure words (>3 letters)
+        s = re.sub(r"\\(?:mathrm|text|operatorname)\{[A-Za-z\s]{4,}\}", " ", str(eq or ""))
+        for m in token_re.finditer(s):
+            tok = m.group(1).strip()
+            if tok.startswith("\\"):
+                cmd_base = re.match(r"^\\([A-Za-z]+)", tok)
+                if cmd_base and cmd_base.group(1) in _LATEX_IGNORED_CMDS:
+                    continue
+            norm = NaturalUnitDimensionAnalyzer._nk(tok)
+            base_norm = norm.split("_", 1)[0]
+            if not norm or norm in seen_norm or norm in declared_norm or base_norm in declared_norm:
+                continue
+            if norm in known_bare or (base_norm in NaturalUnitDimensionAnalyzer.LABEL_SAFE_BASES and base_norm in known_bare):
+                continue
+            seen_norm.add(norm)
+            missing.append(tok)
+            if len(missing) >= 15:
+                return missing
+    return missing
+
+
 # ---------------------------------------------------------------------------
 # Pre-check
 # ---------------------------------------------------------------------------
@@ -185,6 +238,7 @@ def run_math_precheck(research_text: str) -> dict:
             "flags": [],
             "advisory": [],
             "quoted_as_incorrect": [],
+            "undeclared_symbols": [],
             "undecidable_count": 0,
             "verified_count": 0,
             "error": None,
@@ -218,6 +272,12 @@ def run_math_precheck(research_text: str) -> dict:
             elif verdict in ("CONSISTENT", "DIMENSIONLESS"):
                 result["verified_count"] += 1
         result["blocking_count"] = len(result["blocking"])
+        undecidable_eqs = [
+            eq_info["equation"]
+            for eq_info, res in zip(equations, tool_out.get("results", []))
+            if res.get("verdict") == "UNDECIDABLE"
+        ]
+        result["undeclared_symbols"] = find_undeclared_symbols(undecidable_eqs, symbol_table)
         return result
     except Exception as exc:  # the pre-check must never break a crew run
         return {"ran": False, "error": str(exc), "blocking": [], "blocking_count": 0, "flags": [],
@@ -257,7 +317,8 @@ def format_precheck_for_prompt(precheck: dict) -> str:
         f"symbols read from the draft's Symbol Table: {len(syms)}"
         + (f" ({', '.join(list(syms)[:12])}{'…' if len(syms) > 12 else ''})" if syms else
            " — NO machine-readable Symbol | Meaning | Dimension table found; flag this in your Conventions audit."),
-        f"- Tool-verified CONSISTENT/DIMENSIONLESS: {p.get('verified_count', 0)}; UNDECIDABLE: {p.get('undecidable_count', 0)}",
+        f"- Tool-verified CONSISTENT/DIMENSIONLESS: {p.get('verified_count', 0)}; UNDECIDABLE: {p.get('undecidable_count', 0)}"
+        + (f" (missing from Symbol Table: {', '.join(p['undeclared_symbols'][:10])})" if p.get("undeclared_symbols") else ""),
         f"- Definitive INCONSISTENT (known error patterns; blocks approval until corrected): {p.get('blocking_count', 0)}",
     ]
     for k, e in enumerate(p.get("blocking") or [], 1):

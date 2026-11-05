@@ -822,3 +822,299 @@ class ObservationalCosmologyTool(BaseTool):
 
         return "\n".join(md)
 
+
+# ===========================================================================
+# Tool 6: ArxivFullTextSectionReaderTool
+# ===========================================================================
+
+def _normalize_arxiv_id(raw_id: str) -> str:
+    """Extract canonical arXiv identifier (e.g. '2404.03002' or 'hep-th/9905111') from an ID or URL."""
+    s = str(raw_id or "").strip()
+    m_url = re.search(r"arxiv\.org/(?:abs|pdf|html)/([A-Za-z\-]+/[0-9]{7}|[0-9]{4}\.[0-9]{4,5})(?:v[0-9]+)?", s, re.I)
+    if m_url:
+        return m_url.group(1)
+    s = re.sub(r"^arxiv:\s*", "", s, flags=re.I).strip()
+    m_id = re.match(r"^([A-Za-z\-]+/[0-9]{7}|[0-9]{4}\.[0-9]{4,5})(?:v[0-9]+)?$", s)
+    if m_id:
+        return m_id.group(1)
+    return s
+
+
+def _html_with_latex_to_text(fragment: str) -> tuple[str, list[str]]:
+    """Convert HTML fragment (arXiv LaTeXML / ar5iv) into readable text with inline $...$ LaTeX and extracted equations."""
+    import html as html_lib
+
+    s = str(fragment or "")
+    equations: list[str] = []
+
+    def _sub_math_alt(m: re.Match) -> str:
+        tex = html_lib.unescape(m.group(1)).strip()
+        if tex:
+            if len(tex) > 3 and tex not in equations:
+                equations.append(tex)
+            return f" ${tex}$ "
+        return " "
+
+    # 1. Replace <math ... alttext="...">...</math> with $alttext$
+    s = re.sub(
+        r"<math\b[^>]*\balttext=[\"']([^\"']+)[\"'][^>]*>.*?</math>",
+        _sub_math_alt,
+        s,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+
+    # 2. Replace <math>...<annotation encoding="application/x-tex">...</annotation>...</math>
+    def _sub_math_annot(m: re.Match) -> str:
+        inner = m.group(1)
+        ann = re.search(
+            r"<annotation\b[^>]*encoding=[\"']application/x-tex[\"'][^>]*>(.*?)</annotation>",
+            inner,
+            flags=re.DOTALL | re.IGNORECASE,
+        )
+        if ann:
+            tex = html_lib.unescape(re.sub(r"<[^>]+>", "", ann.group(1))).strip()
+            if tex:
+                if len(tex) > 3 and tex not in equations:
+                    equations.append(tex)
+                return f" ${tex}$ "
+        return " " + re.sub(r"<[^>]+>", " ", inner) + " "
+
+    s = re.sub(r"<math\b[^>]*>(.*?)</math>", _sub_math_annot, s, flags=re.DOTALL | re.IGNORECASE)
+
+    # 3. Strip scripts/styles/nav and convert block tags to newlines
+    s = re.sub(r"<(?:script|style|nav|header|footer|figure)\b[^>]*>.*?</(?:script|style|nav|header|footer|figure)>", " ", s, flags=re.DOTALL | re.I)
+    s = re.sub(r"</?(?:p|div|section|article|tr|li|br|h[1-6]|blockquote|table)\b[^>]*>", "\n", s, flags=re.I)
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = html_lib.unescape(s)
+    # Collapse horizontal whitespace while preserving paragraph breaks
+    lines = [" ".join(line.split()) for line in s.splitlines()]
+    clean_text = "\n".join(line for line in lines if line)
+    return clean_text, equations
+
+
+def _extract_arxiv_html_sections(html_text: str, section_query: str = "", max_chars: int = 4000) -> dict:
+    """Parse arXiv/ar5iv HTML into sections and select the best-matching sections & equations."""
+    import html as html_lib
+
+    max_chars = max(500, min(int(max_chars or 4000), 10000))
+    raw = str(html_text or "")
+
+    title_m = re.search(r"<title\b[^>]*>(.*?)</title>", raw, flags=re.DOTALL | re.I)
+    title = html_lib.unescape(re.sub(r"<[^>]+>", " ", title_m.group(1))).strip() if title_m else "arXiv Paper"
+    title = " ".join(title.split())
+
+    # Remove head/script/style/bibliography noise before splitting by headings
+    body_m = re.search(r"<body\b[^>]*>(.*)</body>", raw, flags=re.DOTALL | re.I)
+    body = body_m.group(1) if body_m else raw
+    body = re.sub(r"<(?:script|style|nav)\b[^>]*>.*?</(?:script|style|nav)>", " ", body, flags=re.DOTALL | re.I)
+
+    heading_re = re.compile(r"<h([1-4])\b[^>]*>(.*?)</h\1>", flags=re.DOTALL | re.I)
+    matches = list(heading_re.finditer(body))
+
+    sections: list[dict] = []
+    if not matches:
+        text, eqs = _html_with_latex_to_text(body)
+        if text:
+            sections.append({"heading": "Full Text", "text": text, "equations": eqs})
+    else:
+        # Capture any preamble/abstract before first heading
+        pre_html = body[:matches[0].start()]
+        pre_text, pre_eqs = _html_with_latex_to_text(pre_html)
+        if len(pre_text) > 80:
+            sections.append({"heading": "Abstract & Preamble", "text": pre_text, "equations": pre_eqs})
+
+        for idx, m in enumerate(matches):
+            h_text, _ = _html_with_latex_to_text(m.group(2))
+            h_text = " ".join(h_text.split()) or f"Section {idx + 1}"
+            # Skip bibliography/references sections unless explicitly queried
+            if re.search(r"\b(references|bibliography|acknowledg(?:e)?ments)\b", h_text, re.I) and not (
+                section_query and re.search(r"ref|bib|cit", section_query, re.I)
+            ):
+                continue
+            start_pos = m.end()
+            end_pos = matches[idx + 1].start() if idx + 1 < len(matches) else len(body)
+            sec_text, sec_eqs = _html_with_latex_to_text(body[start_pos:end_pos])
+            if sec_text or sec_eqs:
+                sections.append({"heading": h_text, "text": sec_text, "equations": sec_eqs})
+
+    headings_outline = [s["heading"] for s in sections[:25]]
+    q = (section_query or "").strip()
+    q_terms = [t.lower() for t in re.split(r"[^A-Za-z0-9_\\]+", q) if len(t) >= 2]
+
+    scored: list[tuple[float, int, dict]] = []
+    default_priority_re = re.compile(
+        r"\b(convention|notation|symbol|metric|signature|unit|preliminar|setup|model|lagrangian|action|formalism|definition|equation|introduction|summary)\b",
+        re.I,
+    )
+
+    for idx, sec in enumerate(sections):
+        h_low = sec["heading"].lower()
+        t_low = sec["text"].lower()
+        eq_joined = " ".join(sec["equations"]).lower()
+        score = 0.0
+        if q_terms:
+            if q.lower() in h_low:
+                score += 12.0
+            if q.lower() in t_low or q.lower() in eq_joined:
+                score += 6.0
+            for term in q_terms:
+                if term in h_low:
+                    score += 4.0
+                if term in t_low:
+                    score += min(3.0, 0.5 * t_low.count(term))
+                if term in eq_joined:
+                    score += 3.0
+        else:
+            if default_priority_re.search(h_low):
+                score += 5.0
+            if default_priority_re.search(t_low[:600]):
+                score += 2.0
+            if sec["equations"]:
+                score += min(3.0, 0.3 * len(sec["equations"]))
+            # Slight preference for early setup sections
+            score += max(0.0, 1.5 - 0.1 * idx)
+        scored.append((score, idx, sec))
+
+    scored.sort(key=lambda item: (-item[0], item[1]))
+    selected: list[dict] = []
+    collected_eqs: list[str] = []
+    char_budget = max_chars
+
+    for score, _, sec in scored:
+        if q_terms and score <= 0 and selected:
+            break
+        if char_budget <= 0:
+            break
+        snippet = sec["text"][:char_budget]
+        selected.append({"heading": sec["heading"], "text": snippet, "score": score})
+        for eq in sec["equations"]:
+            if eq not in collected_eqs and len(collected_eqs) < 20:
+                collected_eqs.append(eq)
+        char_budget -= len(snippet)
+        if len(selected) >= 4:
+            break
+
+    return {
+        "title": title,
+        "headings": headings_outline,
+        "selected_sections": selected,
+        "equations": collected_eqs,
+    }
+
+
+class ArxivFullTextSectionInput(BaseModel):
+    arxiv_id: str = Field(
+        ...,
+        description=(
+            "The arXiv paper identifier or URL (e.g., '2404.03002', 'arXiv:2306.16219v2', "
+            "or 'https://arxiv.org/abs/2404.03002')."
+        ),
+    )
+    section_query: str = Field(
+        default="",
+        description=(
+            "Optional section heading, physical keyword, symbol, or equation query to target "
+            "(e.g., 'conventions', 'metric signature', 'sound speed c_s^2', 'Lagrangian', 'Table 1'). "
+            "Leave empty to extract the paper's setup, conventions, and key equations."
+        ),
+    )
+    max_chars: int = Field(
+        default=4000,
+        description="Maximum characters of full-text section content to return (500 to 10000).",
+    )
+
+
+class ArxivFullTextSectionReaderTool(BaseTool):
+    name: str = "ArXiv Full-Text Section Reader"
+    description: str = (
+        "Fetches full-text HTML sections and LaTeX equations directly from an arXiv paper "
+        "(via arxiv.org/html and ar5iv.labs.arxiv.org/html with arXiv API fallback). "
+        "Use this tool to inspect exact metric signatures, normalization conventions, numerical prefactors "
+        "(e.g., 1/(8*pi*G) vs 1/(2*M_Pl^2)), symbol definitions, and full derivations that are omitted from abstracts."
+    )
+    args_schema: Type[BaseModel] = ArxivFullTextSectionInput
+
+    def _run(
+        self,
+        arxiv_id: str,
+        section_query: str = "",
+        max_chars: int = 4000,
+    ) -> str:
+        clean_id = _normalize_arxiv_id(arxiv_id)
+        if not clean_id:
+            return "Error: Please provide a valid arXiv ID (e.g., '2404.03002')."
+
+        max_chars = max(500, min(int(max_chars or 4000), 10000))
+        html_urls = [
+            f"https://arxiv.org/html/{clean_id}",
+            f"https://ar5iv.labs.arxiv.org/html/{clean_id}",
+        ]
+
+        html_content = ""
+        used_url = ""
+        for candidate_url in html_urls:
+            try:
+                req = urllib.request.Request(candidate_url, headers={"User-Agent": _USER_AGENT})
+                with urllib.request.urlopen(req, timeout=10) as conn:
+                    raw_bytes = conn.read(2_500_000)  # cap at 2.5 MB
+                    text_candidate = raw_bytes.decode("utf-8", errors="replace")
+                if len(text_candidate) > 500 and ("<p" in text_candidate.lower() or "<section" in text_candidate.lower() or "<h" in text_candidate.lower()):
+                    html_content = text_candidate
+                    used_url = candidate_url
+                    break
+            except Exception:
+                continue
+
+        if html_content:
+            parsed = _extract_arxiv_html_sections(html_content, section_query=section_query, max_chars=max_chars)
+            md = [
+                f"### 📖 ArXiv Full-Text Section Reader: `{clean_id}`",
+                f"- **Title:** {parsed['title']}",
+                f"- **Full-Text Source:** [{used_url}]({used_url})",
+                f"- **Section Query:** `{section_query or 'default (conventions, setup & equations)'}`",
+            ]
+            if parsed["headings"]:
+                md.append("- **Document Section Outline:** " + " | ".join(f"`{h}`" for h in parsed["headings"][:15]))
+            md.append("")
+            for sec in parsed["selected_sections"]:
+                md.append(f"#### § {sec['heading']}")
+                md.append(sec["text"])
+                md.append("")
+            if parsed["equations"]:
+                md.append("#### 🧮 Extracted LaTeX Equations from Matched Sections")
+                for eq in parsed["equations"][:12]:
+                    md.append(f"- `$${eq}$$`")
+            return "\n".join(md)
+
+        # Fallback: fetch full abstract & metadata from export.arxiv.org API when HTML compilation is unavailable
+        try:
+            api_url = f"https://export.arxiv.org/api/query?id_list={urllib.parse.quote(clean_id)}"
+            req = urllib.request.Request(api_url, headers={"User-Agent": _USER_AGENT})
+            with urllib.request.urlopen(req, timeout=8) as conn:
+                xml_data = conn.read()
+            root = ET.fromstring(xml_data)
+            ns = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
+            entry = root.find("atom:entry", ns)
+            if entry is not None:
+                title_el = entry.find("atom:title", ns)
+                summary_el = entry.find("atom:summary", ns)
+                comment_el = entry.find("arxiv:comment", ns)
+                journal_el = entry.find("arxiv:journal_ref", ns)
+                title = title_el.text.strip().replace("\n", " ") if title_el is not None and title_el.text else clean_id
+                summary = summary_el.text.strip().replace("\n", " ") if summary_el is not None and summary_el.text else ""
+                comment = comment_el.text.strip() if comment_el is not None and comment_el.text else ""
+                journal = journal_el.text.strip() if journal_el is not None and journal_el.text else ""
+                return (
+                    f"### 📖 ArXiv Full-Text Section Reader: `{clean_id}` (Abstract/Metadata Fallback)\n"
+                    f"- **Title:** {title}\n"
+                    f"- **Note:** HTML full-text rendering (`arxiv.org/html` / `ar5iv`) is not available for `{clean_id}`; returning complete abstract & metadata.\n"
+                    + (f"- **Journal Ref:** {journal}\n" if journal else "")
+                    + (f"- **Comments:** {comment}\n" if comment else "")
+                    + f"\n#### Abstract\n{summary}\n"
+                )
+        except Exception:
+            pass
+
+        return f"Could not retrieve full-text HTML or metadata for arXiv ID `{clean_id}`."
+
+

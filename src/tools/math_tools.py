@@ -223,7 +223,8 @@ class NaturalUnitDimensionAnalyzer:
     LABEL_SAFE_BASES = {"rho", "Omega", "T", "H", "m", "M", "phi", "w", "Gamma", "E", "a", "t"}
     # Bare symbols whose meaning is near-universal here (counted as exact without a symbol table).
     UNAMBIGUOUS_BARE = {"m", "M", "t", "c", "hbar", "k_B", "pi", "e", "i",
-                        "phi", "psi", "barpsi", "g", "y", "w"}
+                        "phi", "psi", "barpsi", "g", "y", "w",
+                        "SNR", "PCI", "KIE", "BF", "AIC", "BIC", "dof"}
     # Bare symbols that are exact only in a scalar-field context (phi/psi in the equation):
     # V = potential density, lambda = coupling, rho/p = energy density/pressure, H = Hubble, T = temperature,
     # chi = second scalar field (otherwise usually the chi^2 statistic),
@@ -267,6 +268,7 @@ class NaturalUnitDimensionAnalyzer:
                 "c": 0.0, "hbar": 0.0, "k_B": 0.0, "pi": 0.0, "e": 0.0, "i": 0.0,
                 "n_s": 0.0, "n_t": 0.0, "N_eff": 0.0, "Omega": 0.0, "eta_B": 0.0, "Y_B": 0.0,
                 "A_s": 0.0, "f_NL": 0.0, "J": 3.0, "x": -1.0,
+                "SNR": 0.0, "PCI": 0.0, "KIE": 0.0, "BF": 0.0, "AIC": 0.0, "BIC": 0.0, "dof": 0.0,
                 # Tensors carrying Greek indices
                 "T_IDX": 4.0, "G_IDX": 2.0, "R_IDX": 2.0, "g_IDX": 0.0, "F_IDX": 2.0,
                 "J_IDX": 3.0, "A_IDX": 1.0, "x_IDX": -1.0, "h_IDX": 0.0, "gamma_IDX": 0.0,
@@ -559,6 +561,8 @@ class NaturalUnitDimensionAnalyzer:
     def _parse_letter(self, s: str, i: int):
         run = re.match(r"[A-Za-z]+", s[i:]).group(0)
         if len(run) >= 3:
+            if run in self.custom or run in self.UNAMBIGUOUS_BARE:
+                return self._finish_symbol(s, i + len(run), run, None)
             raise _UnknownDimension(f"multi-letter word '{run}' outside \\mathrm")
         ch = s[i]
         # Differentials: d^4x, dt, d\phi  (the differential carries the variable's dimension)
@@ -646,7 +650,10 @@ class NaturalUnitDimensionAnalyzer:
             content, i = self._read_group(s, i)
             if content.strip() == "d":
                 return None, i
-            unit_dim = self._unit_dimension(content)
+            try:
+                unit_dim = self._unit_dimension(content)
+            except _UnknownDimension:
+                return self._finish_symbol(s, i, self._nk(content), None)
             self._dim_hits += 1  # an explicit unit (GeV, K, Mpc^-1, ...) makes a number dimensionful
             _, exponent, i = self._read_scripts(s, i)
             return self._apply_exponent(unit_dim, True, exponent, allow_index=False), i

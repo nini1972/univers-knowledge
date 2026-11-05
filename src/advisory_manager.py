@@ -742,6 +742,119 @@ def _build_wishlist_section2(stats: dict) -> list[str]:
     return lines
 
 
+def build_run_scorecard(recent_window: int = 100) -> dict:
+    """
+    Compute operational per-run scorecard metrics over the recent evaluation window:
+    - UNDECIDABLE ratio and symbol-table coverage from automated pre-check telemetry
+    - Average attempts to approval, first-attempt approval rate, and micro-revision passes
+    - Timeouts / crew_kickoff_error occurrences and empty-response salvage recoveries
+    """
+    eval_file = LOGS_DIR / "evaluation_runs.jsonl"
+    eval_records: list[dict] = []
+    if eval_file.exists():
+        try:
+            with open(eval_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        eval_records.append(json.loads(line))
+                    except Exception:
+                        continue
+        except Exception:
+            pass
+
+    window_evals = eval_records[-recent_window:] if recent_window > 0 else eval_records
+    window_size = len(window_evals)
+    approved_recs = [r for r in window_evals if r.get("status") == "approved"]
+    rejected_recs = [r for r in window_evals if r.get("status") == "rejected"]
+    approved_count = len(approved_recs)
+    rejected_count = len(rejected_recs)
+    approval_rate_pct = round(100.0 * approved_count / window_size, 1) if window_size else 0.0
+
+    attempts_list = [max(1, int(r.get("attempt") or 1)) for r in approved_recs]
+    avg_attempts_to_approval = round(sum(attempts_list) / len(attempts_list), 2) if attempts_list else 0.0
+    first_try = sum(1 for a in attempts_list if a == 1)
+    first_attempt_approval_rate_pct = round(100.0 * first_try / len(attempts_list), 1) if attempts_list else 0.0
+
+    precheck_runs = 0
+    total_equations_checked = 0
+    total_undecidable = 0
+    total_symbols_declared = 0
+    micro_revision_count = 0
+    timeouts_or_kickoff_errors = 0
+    salvage_count = 0
+
+    telemetry_file = LOGS_DIR / "telemetry.jsonl"
+    if telemetry_file.exists():
+        try:
+            t_records: list[dict] = []
+            with open(telemetry_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        t_records.append(json.loads(line))
+                    except Exception:
+                        continue
+
+            precheck_events: list[dict] = []
+            for rec in t_records:
+                meta = rec.get("metadata") if isinstance(rec.get("metadata"), dict) else {}
+                mp = meta.get("math_precheck")
+                if isinstance(mp, dict) and mp.get("ran"):
+                    precheck_events.append(mp)
+
+            for mp in precheck_events[-recent_window:]:
+                precheck_runs += 1
+                total_equations_checked += int(mp.get("equations") or 0)
+                total_undecidable += int(mp.get("undecidable") or 0)
+                total_symbols_declared += int(mp.get("symbols_declared") or 0)
+
+            recent_t = t_records[-(recent_window * 6):] if recent_window > 0 else t_records
+            for rec in recent_t:
+                ev = str(rec.get("event_type") or "")
+                st = str(rec.get("status") or "")
+                if ev == "micro_revision":
+                    micro_revision_count += 1
+                elif ev == "crew_kickoff_error" or "timeout" in st.lower():
+                    timeouts_or_kickoff_errors += 1
+                elif ev == "crew_empty_response_salvage":
+                    salvage_count += 1
+        except Exception:
+            pass
+
+    undecidable_ratio_pct = (
+        round(100.0 * total_undecidable / total_equations_checked, 1)
+        if total_equations_checked > 0
+        else 0.0
+    )
+    avg_symbols_declared = (
+        round(total_symbols_declared / precheck_runs, 1)
+        if precheck_runs > 0
+        else 0.0
+    )
+
+    return {
+        "window_size": window_size,
+        "approved_count": approved_count,
+        "rejected_count": rejected_count,
+        "approval_rate_pct": approval_rate_pct,
+        "avg_attempts_to_approval": avg_attempts_to_approval,
+        "first_attempt_approval_rate_pct": first_attempt_approval_rate_pct,
+        "micro_revision_count": micro_revision_count,
+        "precheck_runs": precheck_runs,
+        "total_equations_checked": total_equations_checked,
+        "total_undecidable": total_undecidable,
+        "undecidable_ratio_pct": undecidable_ratio_pct,
+        "avg_symbols_declared": avg_symbols_declared,
+        "timeouts_or_kickoff_errors": timeouts_or_kickoff_errors,
+        "salvage_count": salvage_count,
+    }
+
+
 def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
     """
     Generates a comprehensive Agent Shortcomings & Wishlist report combining empirical
@@ -749,6 +862,7 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
     saving it to knowledge_base/AGENT_WISHLIST.md.
     """
     stats = collect_historical_agent_shortcomings(limit=8, recent_window=100)
+    scorecard = build_run_scorecard(recent_window=100)
     now_str = _get_utc_now()
 
     # Preserve existing live interview section when refreshing telemetry without --live
@@ -779,7 +893,10 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
         _freshness_line(),
         "",
         f"### Recent Window Scorecard (Last `{stats['recent_window_size']}` Evaluations)",
-        f"- **Evaluations in Window**: `{stats['recent_window_size']}` (`{stats['recent_window_approved']}` approved, `{stats['recent_window_rejected']}` rejected)",
+        f"- **Evaluations in Window**: `{stats['recent_window_size']}` (`{stats['recent_window_approved']}` approved, `{stats['recent_window_rejected']}` rejected — `{scorecard['approval_rate_pct']}%` approval rate)",
+        f"- **Attempts to Approval**: avg `{scorecard['avg_attempts_to_approval']}` attempt(s) (`{scorecard['first_attempt_approval_rate_pct']}%` approved on attempt 1; `{scorecard['micro_revision_count']}` micro-revision pass(es))",
+        f"- **Pre-Check `UNDECIDABLE` Ratio**: `{scorecard['undecidable_ratio_pct']}%` (`{scorecard['total_undecidable']}/{scorecard['total_equations_checked']}` equations across `{scorecard['precheck_runs']}` pre-checked drafts; avg `{scorecard['avg_symbols_declared']}` symbols declared/draft)",
+        f"- **Timeouts & Kickoff Errors**: `{scorecard['timeouts_or_kickoff_errors']}` timeout/kickoff error(s) (`{scorecard['salvage_count']}` empty-response salvage recovery/recoveries)",
         "- **Recent Rejection Breakdown by Root Cause**:",
     ]
 
@@ -846,7 +963,7 @@ def generate_agent_wishlist_markdown(live_responses: dict | None = None) -> str:
 
 # Fallback used when git history is unavailable (e.g. the shallow checkout in GitHub Actions).
 # Bump this whenever agent tools, tasks, the math gate or the pre-check change.
-LAST_TOOLING_CHANGE_FALLBACK_UTC = "2026-10-22T16:55:00+00:00"
+LAST_TOOLING_CHANGE_FALLBACK_UTC = "2026-11-05T20:40:00+00:00"
 _TOOLING_PATHS = [
     "src/tools", "src/agents", "src/tasks", "src/workflow_contracts.py",
     "src/math_precheck.py", "src/conventions.py",
@@ -972,6 +1089,7 @@ def build_interview_prompt(role: str, tools: list, question: str) -> str:
     """Interview prompt: tool descriptions, safeguards present/open, telemetry freshness, telemetry, question."""
     tool_lines = _describe_tools(tools)
     stats = collect_historical_agent_shortcomings(limit=5, recent_window=100)
+    scorecard = build_run_scorecard(recent_window=100)
     change_ts, change_source = _last_tooling_change_utc()
     since = _evaluations_since(change_ts)
     registry = _capability_registry(_live_tool_names())
@@ -1005,7 +1123,8 @@ def build_interview_prompt(role: str, tools: list, question: str) -> str:
         f"approval on code-confirmed math flaws.\n\n"
         f"{freshness}\n\n"
         f"Recent Operational Telemetry (Last {stats['recent_window_size']} Evaluations):\n"
-        f"- Recent Window Approvals / Rejections: {stats['recent_window_approved']} approved, {stats['recent_window_rejected']} rejected\n"
+        f"- Recent Window Approvals / Rejections: {stats['recent_window_approved']} approved, {stats['recent_window_rejected']} rejected ({scorecard['approval_rate_pct']}% approval rate, avg {scorecard['avg_attempts_to_approval']} attempts to approval)\n"
+        f"- Per-Run Scorecard: pre-check UNDECIDABLE ratio={scorecard['undecidable_ratio_pct']}% ({scorecard['total_undecidable']}/{scorecard['total_equations_checked']} eqs across {scorecard['precheck_runs']} drafts, avg {scorecard['avg_symbols_declared']} symbols declared), timeouts/kickoff errors={scorecard['timeouts_or_kickoff_errors']}\n"
         f"- Recent Window Rejection Reasons (Last {stats['recent_window_size']} runs): {json.dumps(stats['recent_window_rejection_counts'])}\n"
         f"- Recurring Need Themes in Recent Window: {json.dumps(stats['recent_need_themes'])}\n"
         f"- All-Time Historical Rejection Totals (older runs included): {json.dumps(stats['rejection_counts'])}\n"

@@ -144,6 +144,7 @@ def _build_search_tools():
                 EuropePmcSearchTool,
                 CitationAuditTool,
                 ObservationalCosmologyTool,
+                ArxivFullTextSectionReaderTool,
             )
             from tools.math_tools import PhysicsCalculatorTool
         except ImportError:
@@ -153,10 +154,12 @@ def _build_search_tools():
                 EuropePmcSearchTool,
                 CitationAuditTool,
                 ObservationalCosmologyTool,
+                ArxivFullTextSectionReaderTool,
             )
             from src.tools.math_tools import PhysicsCalculatorTool
         tools.extend([
             ArxivSearchTool(),
+            ArxivFullTextSectionReaderTool(),
             OpenAlexSearchTool(),
             EuropePmcSearchTool(),
             CitationAuditTool(),

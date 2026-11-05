@@ -18,6 +18,9 @@ from src.tools.scientific_literature_tools import (
     EuropePmcSearchTool,
     CitationAuditTool,
     ObservationalCosmologyTool,
+    ArxivFullTextSectionReaderTool,
+    _extract_arxiv_html_sections,
+    _normalize_arxiv_id,
     reconstruct_abstract,
 )
 from src.agents.universe_agents import _build_search_tools, UniverseAgents
@@ -177,6 +180,47 @@ Neutrino decay is bounded by cosmological observations.
         result = audit_tool._run(report)
         self.assertIn("CITATION AUDIT PASSED", result)
         self.assertNotIn("FUTURE_DATED_HALLUCINATION", result)
+
+    def test_arxiv_full_text_section_reader_html_and_latex(self):
+        """Tests that ArxivFullTextSectionReaderTool extracts headings, conventions, and <math alttext> LaTeX."""
+        self.assertEqual(_normalize_arxiv_id("arXiv:2404.03002v2"), "2404.03002")
+        self.assertEqual(_normalize_arxiv_id("https://arxiv.org/abs/2306.16219v1"), "2306.16219")
+
+        sample_html = """
+        <html>
+        <head><title>Horndeski Sound Speed and Metric Conventions</title></head>
+        <body>
+          <h2>1. Introduction</h2>
+          <p>We study cosmological perturbations on a flat FLRW background.</p>
+          <h2>2. Conventions and Action Setup</h2>
+          <p>We adopt the mostly-plus metric signature <math alttext="(-,+,+,+)">(-,+,+,+)</math> and natural units
+          where <math alttext="c = \\hbar = 1">c=hbar=1</math> and reduced Planck mass
+          <math alttext="M_{\\rm Pl} = (8\\pi G)^{-1/2}">M_Pl</math>.</p>
+          <h2>3. Effective Sound Speed</h2>
+          <p>The scalar propagation speed squared is given by
+          <math alttext="c_s^2 = \\frac{\\dot{P}}{\\dot{\\rho}} = 1 - \\frac{2\\alpha_B}{H}">c_s^2</math>.</p>
+          <h2>References</h2>
+          <p>[1] Planck 2018.</p>
+        </body>
+        </html>
+        """
+        parsed = _extract_arxiv_html_sections(sample_html, section_query="sound speed c_s^2")
+        self.assertEqual(parsed["title"], "Horndeski Sound Speed and Metric Conventions")
+        self.assertEqual(parsed["selected_sections"][0]["heading"], "3. Effective Sound Speed")
+        self.assertTrue(any("c_s^2" in eq for eq in parsed["equations"]))
+
+        tool = ArxivFullTextSectionReaderTool()
+        self.assertEqual(tool.name, "ArXiv Full-Text Section Reader")
+        fake_conn = MagicMock()
+        fake_conn.read.return_value = sample_html.encode("utf-8")
+        fake_conn.__enter__.return_value = fake_conn
+        fake_conn.__exit__.return_value = False
+        with patch("urllib.request.urlopen", return_value=fake_conn):
+            out = tool._run("arXiv:2404.03002", section_query="conventions metric signature")
+        self.assertIn("ArXiv Full-Text Section Reader: `2404.03002`", out)
+        self.assertIn("2. Conventions and Action Setup", out)
+        self.assertIn("M_{\\rm Pl} = (8\\pi G)^{-1/2}", out)
+
 
 
 if __name__ == "__main__":
