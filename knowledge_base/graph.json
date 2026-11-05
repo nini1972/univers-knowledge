@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-11-04T01:01:00.302622+00:00",
+  "updated_at": "2026-11-05T01:16:49.447810+00:00",
   "stats": {
-    "total_nodes": 377,
-    "level_1_count": 161,
-    "level_2_count": 143,
-    "level_3_count": 73,
-    "total_edges": 177,
+    "total_nodes": 380,
+    "level_1_count": 162,
+    "level_2_count": 144,
+    "level_3_count": 74,
+    "total_edges": 179,
     "frontier_count": 75
   },
   "nodes": [
@@ -308,11 +308,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "cosmicmicrowavebackground",
-        "darkenergy",
-        "baryonacousticoscillations",
+        "friedmannequations",
         "hubbletension",
-        "friedmannequations"
+        "baryonacousticoscillations",
+        "cosmicmicrowavebackground",
+        "darkenergy"
       ],
       "tags": [
         "1"
@@ -364,6 +364,28 @@
         "Planck Satellite Results"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cosmic_microwave_background_radiation.md"
+    },
+    {
+      "id": "cosmicmicrowavebackgroundspectraldistortions",
+      "title": "Cosmic Microwave Background Spectral Distortions",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Fixsen, D. J., et al. (1996), 'The Cosmic Microwave Background Spectrum from the Full COBE FIRAS Data Set', https://doi.org/10.1086/178173",
+        "Chluba, J., & Sunyaev, R. A. (2012), 'The evolution of CMB spectral distortions in the early Universe', https://arxiv.org/abs/1109.6552",
+        "Chluba, J., Erickcek, A. L., & Ben-Dayan, I. (2012), 'Probing the inflaton: Small-scale power spectrum constraints from measurements of the cosmic microwave background energy spectrum', https://doi.org/10.1088/0004-637X/758/2/76",
+        "Kogut, A., et al. (2011), 'The Primordial Inflation Explorer (PIXIE): A Nulling Polarimeter for Cosmic Microwave Background Observations', https://doi.org/10.1088/1475-7516/2011/07/025",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_microwave_background_spectral_distortions.md"
     },
     {
       "id": "cosmicneutrinobackground",
@@ -874,10 +896,10 @@
       "math_score": "4/4",
       "dependencies": [
         "peskintakeuchiparameters",
-        "standardmodel",
+        "electroweaksymmetrybreaking",
         "standardmodeleffectivefieldtheory",
-        "higgsmechanism",
-        "electroweaksymmetrybreaking"
+        "standardmodel",
+        "higgsmechanism"
       ],
       "tags": [
         "1"
@@ -1116,11 +1138,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "standardmodel",
         "renormalizationgroup",
-        "grandunifiedtheories",
         "minimalsupersymmetricstandardmodel",
-        "protondecay"
+        "protondecay",
+        "standardmodel",
+        "grandunifiedtheories"
       ],
       "tags": [
         "1"
@@ -1476,13 +1498,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "4/4",
       "dependencies": [
-        "doublyspecialrelativity",
-        "gravitationalwavepropagation",
-        "gammaraybursts",
-        "quantumgravity",
         "standardmodelextension",
         "hubbletension",
-        "earlydarkenergy"
+        "earlydarkenergy",
+        "doublyspecialrelativity",
+        "gammaraybursts",
+        "gravitationalwavepropagation",
+        "quantumgravity"
       ],
       "tags": [
         "1"
@@ -2818,11 +2840,11 @@
       "math_score": "4/4",
       "dependencies": [
         "tolmanoppenheimervolkoffequations",
-        "neutronstarequationofstate",
-        "scalartensortheoriesofgravity",
         "tidaldeformabilityandlovenumbers",
+        "neutronstarphasetransitions",
         "generalrelativity",
-        "neutronstarphasetransitions"
+        "neutronstarequationofstate",
+        "scalartensortheoriesofgravity"
       ],
       "tags": [
         "1"
@@ -3051,8 +3073,8 @@
       "math_score": "2/4",
       "dependencies": [
         "freezeinproduction",
-        "wimpfreezeout",
         "cosmologicalperturbationtheory",
+        "wimpfreezeout",
         "darkmatterrelicabundance"
       ],
       "tags": [
@@ -3143,9 +3165,9 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "stronginteraction",
         "latticeqcd",
         "thestandardmodel",
+        "stronginteraction",
         "quantumfieldtheory",
         "gaugetheory"
       ],
@@ -3883,11 +3905,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "modifiednewtoniandynamics",
+        "lcdmbaryonicfeedback",
         "baryonictullyfisherrelation",
         "radialaccelerationrelation",
-        "lcdmbaryonicfeedback",
         "mondexternalfieldeffect",
-        "modifiednewtoniandynamics",
         "sparcgalaxydatabase"
       ],
       "tags": [
@@ -5251,12 +5273,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "hubbletension",
         "causaldynamicaltriangulations",
+        "earlydarkenergy",
         "functionalrenormalizationgroup",
         "gravitationalwaveobservations",
-        "quantumgravity",
-        "hubbletension",
-        "earlydarkenergy"
+        "quantumgravity"
       ],
       "tags": [
         "2"
@@ -5300,13 +5322,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "qcdaxionandaxionlikeparticles",
-        "softpqparitysolution",
         "axionmisalignmentrelicabundance",
         "neutronelectricdipolemoment",
         "strongcpproblem",
-        "nelsonbarrmechanism",
         "latticeqcdquarkmasses",
+        "qcdaxionandaxionlikeparticles",
+        "nelsonbarrmechanism",
+        "softpqparitysolution",
         "thestrongcpproblem"
       ],
       "tags": [
@@ -5364,11 +5386,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "firstordercosmologicalphasetransitions",
-        "stochasticgravitationalwavebackgrounds",
-        "pulsartimingarrays",
         "supermassiveblackholebinaries",
-        "cosmicstringsandtopologicaldefects"
+        "firstordercosmologicalphasetransitions",
+        "cosmicstringsandtopologicaldefects",
+        "stochasticgravitationalwavebackgrounds",
+        "pulsartimingarrays"
       ],
       "tags": [
         "2"
@@ -6286,6 +6308,31 @@
       "path": "knowledge_base/level_2_advanced_frameworks/thermal_inflation_vs_thermal_trapping_in_earlyuniverse_cosmology.md"
     },
     {
+      "id": "thermalleptogenesisvsextendedhiggselectroweakbaryogenesisinexplainingthebaryonasymmetrytestabilityviaelectricdipolemomentshiggsselfcouplingandneutrinolessdouble",
+      "title": "Thermal Leptogenesis vs Extended-Higgs Electroweak Baryogenesis in Explaining the Baryon Asymmetry: Testability via Electric Dipole Moments, Higgs Self-Coupling, and Neutrinoless Double Beta Decay",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "baryogenesismechanismsthermalleptogenesisvsaffleckdinescalarfielddynamics",
+        "electroweakbaryogenesis"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Davidson, S., and Ibarra, A. (2002), 'A lower bound on the right-handed neutrino mass from leptogenesis', https://doi.org/10.1016/S0370-2693(02)01796-3",
+        "Andreev, V., et al. (2018), 'Improved limit on the electric dipole moment of the electron', https://doi.org/10.1038/s41586-018-0599-1",
+        "Abel, C., et al. (2020), 'Measurement of the permanent electric dipole moment of the neutron', https://doi.org/10.1103/PhysRevLett.124.081803",
+        "CUORE Collaboration (2022), 'Search for Majorana neutrinos exploiting the large exposure of the CUORE experiment', https://doi.org/10.1038/s41586-022-04497-4",
+        "KamLAND-Zen Collaboration (2023), 'Search for Majorana Neutrinos near the Inverted Mass Ordering Region with KamLAND-Zen', https://doi.org/10.1103/PhysRevLett.130.051801"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/thermal_leptogenesis_vs_extendedhiggs_electroweak_baryogenesis_in_explaining_the_baryon_asymmetry_testability_via_electric_dipole_moments_higgs_selfcoupling_and_neutrinoless_double.md"
+    },
+    {
       "id": "thermalleptogenesisvsresonantleptogenesisingeneratingthebaryonasymmetryandtestabilityvianeutrinolessdoublebetadecayandcollidersearches",
       "title": "Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches",
       "level": 2,
@@ -6692,6 +6739,26 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md"
     },
     {
+      "id": "afalsifiabletestofthermodynamicefficiencyboundsoninformationtransferusingminimumcutmaxflowcapacityincorticalconnectomesandcdmcosmicwebfilamentgraphswithexpli",
+      "title": "A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Landauer, R. (1961), 'Irreversibility and Heat Generation in the Computing Process', https://doi.org/10.1147/rd.53.0183",
+        "Goldberg, A. V., and Tarjan, R. E. (1988), 'A new approach to the maximum-flow problem', https://doi.org/10.1145/48014.61051",
+        "Leighton, T., and Rao, S. (1999), 'Multicommodity max-flow min-cut theorems and their use in designing approximation algorithms', https://doi.org/10.1145/301250.301287",
+        "Van Essen, D. C., et al. (2013), 'The WU-Minn Human Connectome Project: An overview', https://doi.org/10.1016/j.neuroimage.2013.05.041"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli.md"
+    },
+    {
       "id": "afalsifiablethermodynamicresourcetheoryofbiologicalquantumcoherencedecoherenceworkextractionandinformationprocessing",
       "title": "A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing",
       "level": 3,
@@ -7048,11 +7115,11 @@
       "math_score": "4/4",
       "dependencies": [
         "cosmologicalstructureformation",
+        "nullmodelsandhypothesistesting",
+        "topologicaldataanalysis",
         "lcdmcosmology",
         "cosmicweb",
-        "topologicaldataanalysis",
-        "persistenthomology",
-        "nullmodelsandhypothesistesting"
+        "persistenthomology"
       ],
       "tags": [
         "3"
@@ -7184,12 +7251,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "bremermannlimit",
-        "corticalenergybudgets",
-        "falsifiabilityandmodeldependentinference",
         "s8tension",
+        "corticalenergybudgets",
+        "cosmicwebhalovirialization",
+        "bremermannlimit",
         "landauerprinciple",
-        "cosmicwebhalovirialization"
+        "falsifiabilityandmodeldependentinference"
       ],
       "tags": [
         "3"
@@ -7338,9 +7405,9 @@
       "math_score": "3/4",
       "dependencies": [
         "fluctuationdissipationtheorem",
+        "cosmicwebfilamentsandvelocityshear",
         "stochasticthermodynamicsandentropyproduction",
         "scalefreenetworksanduniversality",
-        "cosmicwebfilamentsandvelocityshear",
         "transferentropyandeffectiveconnectivity"
       ],
       "tags": [
@@ -7824,10 +7891,10 @@
       "math_score": "3/4",
       "dependencies": [
         "openquantumsystemsandlindbladdynamics",
-        "leggettgarginequalities",
-        "environmentassistedquantumtransport",
         "quantumfisherinformationandquantumcramerraobound",
-        "classicalforstertransportandincoherenthopping"
+        "classicalforstertransportandincoherenthopping",
+        "leggettgarginequalities",
+        "environmentassistedquantumtransport"
       ],
       "tags": [
         "3"
@@ -7933,12 +8000,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "bottleneckdistance",
-        "cosmicweb",
-        "observationalselectioneffects",
         "baryonicfeedback",
         "topologicaldataanalysis",
-        "persistenthomology"
+        "cosmicweb",
+        "persistenthomology",
+        "observationalselectioneffects",
+        "bottleneckdistance"
       ],
       "tags": [
         "3"
@@ -8785,6 +8852,16 @@
     {
       "source": "darkmatter",
       "target": "tevesvssuperfluiddarkmatteringalacticrotationcurvesandclusterlensing",
+      "type": "component_theory"
+    },
+    {
+      "source": "baryogenesismechanismsthermalleptogenesisvsaffleckdinescalarfielddynamics",
+      "target": "thermalleptogenesisvsextendedhiggselectroweakbaryogenesisinexplainingthebaryonasymmetrytestabilityviaelectricdipolemomentshiggsselfcouplingandneutrinolessdouble",
+      "type": "component_theory"
+    },
+    {
+      "source": "electroweakbaryogenesis",
+      "target": "thermalleptogenesisvsextendedhiggselectroweakbaryogenesisinexplainingthebaryonasymmetrytestabilityviaelectricdipolemomentshiggsselfcouplingandneutrinolessdouble",
       "type": "component_theory"
     },
     {
