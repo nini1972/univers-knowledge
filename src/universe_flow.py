@@ -782,21 +782,12 @@ class UniverseFlow(Flow[UniverseState]):
 
     # ── STEP 3: Router & Branching ───────────────────────────────────────────
 
-    @router(conduct_research_and_verify)
-    def evaluate_route(self):
-        """Intelligently route execution between approval, micro-revision, retry, or escalation."""
-        status = self.state.decision_status
-        reason_code = self.state.reason_code
-        print(f"\n[FLOW ROUTER] Evaluating decision: status='{status}', reason='{reason_code}'")
-
-        if status == "approved":
-            return "approved"
-
-        # Log rejection outcome
+    def _record_evaluation_outcome(self):
+        """Persist every evaluation outcome (approved or rejected) to evaluation_runs.jsonl."""
         log_evaluation_outcome(
             concept=self.state.concept,
-            status=status,
-            reason_code=reason_code,
+            status=self.state.decision_status,
+            reason_code=self.state.reason_code,
             score=self.state.skeptic_score,
             total_score=self.state.skeptic_total,
             follow_up_questions=self.state.decision.get("follow_up_questions", []),
@@ -806,6 +797,18 @@ class UniverseFlow(Flow[UniverseState]):
             detailed_rationale=self.state.decision.get("detailed_rationale"),
             agent_needs=self.state.decision.get("agent_needs"),
         )
+
+    @router(conduct_research_and_verify)
+    def evaluate_route(self):
+        """Intelligently route execution between approval, micro-revision, retry, or escalation."""
+        status = self.state.decision_status
+        reason_code = self.state.reason_code
+        print(f"\n[FLOW ROUTER] Evaluating decision: status='{status}', reason='{reason_code}'")
+
+        self._record_evaluation_outcome()
+
+        if status == "approved":
+            return "approved"
 
         # Check eligibility for in-place micro-revision (Issue D)
         # Micro-revision is triggered when research has solid substance but localized flaws:
@@ -943,6 +946,7 @@ class UniverseFlow(Flow[UniverseState]):
     @router(execute_micro_revision)
     def route_post_micro_revision(self):
         """Route following micro-revision."""
+        self._record_evaluation_outcome()
         if self.state.decision_status == "approved":
             return "approved"
         if self.state.attempt < self.state.max_attempts:
@@ -973,6 +977,7 @@ class UniverseFlow(Flow[UniverseState]):
     @router(execute_full_retry)
     def route_post_full_retry(self):
         """Route following full retry."""
+        self._record_evaluation_outcome()
         if self.state.decision_status == "approved":
             return "approved"
         # If still rejected after retry, allow one micro-revision if eligible or escalate

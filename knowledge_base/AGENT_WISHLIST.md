@@ -1,6 +1,6 @@
 # 🛠️ Autonomous Agent Shortcomings & Capability Wishlist
 
-> **Last Updated**: `2026-10-18T22:05:33.902793+00:00`
+> **Last Updated**: `2026-11-05T20:21:15.234740+00:00`
 > **How to Query Agents Directly**:
 > - Generate/refresh this wishlist: `python scripts/consult_professor.py wishlist` (add `--live` to interview live LLMs)
 > - Ask any agent a direct question: `python scripts/consult_professor.py ask <agent_role> "Your question"`
@@ -10,29 +10,29 @@
 
 ## 📊 1. Empirical Telemetry: Where Agents Struggle in Production
 
-> ⏱️ **Evaluations since the last tooling change** (`2026-10-18T23:40:07+02:00`, from git history): **0** — everything below predates the current tools and safeguards.
+> ⏱️ **Evaluations since the last tooling change** (`2026-10-22T18:55:34+02:00`, from git history): **48** (`39` approved, `9` rejected; reasons: `mathematical_flaw_or_inconsistency` ×8, `parse_error` ×1)
 
 ### Recent Window Scorecard (Last `100` Evaluations)
-- **Evaluations in Window**: `100` (`29` approved, `71` rejected)
+- **Evaluations in Window**: `100` (`66` approved, `34` rejected)
 - **Recent Rejection Breakdown by Root Cause**:
-  * `mathematical_flaw_or_inconsistency`: **58** occurrence(s)
-  * `crew_kickoff_error`: **10** occurrence(s)
-  * `parse_error`: **2** occurrence(s)
-  * `insufficient_skeptic_score`: **1** occurrence(s)
+  * `mathematical_flaw_or_inconsistency`: **27** occurrence(s)
+  * `crew_kickoff_error`: **3** occurrence(s)
+  * `insufficient_skeptic_score`: **3** occurrence(s)
+  * `parse_error`: **1** occurrence(s)
 - **Recurring Need Themes in Recent Window (`agent_needs`)**:
-  * `units_and_dimensions`: **80** mention(s)
-  * `conventions_and_signs`: **73** mention(s)
-  * `worked_arithmetic_and_benchmarks`: **39** mention(s)
-  * `citation_provenance`: **32** mention(s)
-  * `causal_and_statistical_design`: **20** mention(s)
+  * `units_and_dimensions`: **112** mention(s)
+  * `conventions_and_signs`: **65** mention(s)
+  * `citation_provenance`: **54** mention(s)
+  * `worked_arithmetic_and_benchmarks`: **52** mention(s)
+  * `causal_and_statistical_design`: **36** mention(s)
 
 ### All-Time Cumulative Totals (Historical Baseline)
-- **Total Logged Evaluations**: `659` (`324` approved)
+- **Total Logged Evaluations**: `740` (`388` approved)
 - **All-Time Rejection Breakdown by Root Cause**:
-  * `insufficient_skeptic_score`: **210** occurrence(s)
-  * `mathematical_flaw_or_inconsistency`: **94** occurrence(s)
-  * `crew_kickoff_error`: **12** occurrence(s)
-  * `parse_error`: **7** occurrence(s)
+  * `insufficient_skeptic_score`: **212** occurrence(s)
+  * `mathematical_flaw_or_inconsistency`: **106** occurrence(s)
+  * `crew_kickoff_error`: **14** occurrence(s)
+  * `parse_error`: **8** occurrence(s)
   * `missing_math_equations`: **4** occurrence(s)
   * `mathematical_and_verification_failures`: **1** occurrence(s)
   * `critical_formalism_errors`: **1** occurrence(s)
@@ -44,24 +44,24 @@
   * `missing_critical_comparisons`: **1** occurrence(s)
 
 ### Recent Concrete Shortcomings Logged for the **Researcher**:
-- Correct the ionization-balance equation in the report and ensure its source and recombination terms use consistent units.
-- Review related explanatory claims and visual material so they reflect the corrected equation.
-- Recompute the present-day patch scale using a clearly specified thermal history, including thermal-inflation expansion and the post-inflation flaton-dominated reheating era; document assumptions and correct the numerical result.
-- Revise the comparative analysis to distinguish model-dependent claims from general results and add quantitative observational comparisons of predicted perturbations and sound speeds.
-- Replace the unsupported NIE-magnitude decision rule with divergent predictions derived from formalized theories.
-- Use a clearly defined interventional estimand or state and justify the assumptions required for a natural indirect effect.
-- Distinguish PCI from IIT’s Φ and specify a valid, preregistered mediator measurement strategy.
-- Correct the future-dated 2026 citation and reconcile the duplicated drafts and inconsistent citation-audit claims.
+- Cite primary ACME-II and PSI nEDM papers and the KamLAND-Zen 2023 result
+- Add [GENERAL]/[MODEL-DEPENDENT] tags at the equation level and a global [THEORETICAL] tag
+- Derive the κ-dependent DI bound explicitly and give a realistic HL-LHC λ_hhh sensitivity
+- Justify applying Landauer's erasure bound to information transfer events, or reformulate kappa-hat in terms of a valid bound
+- Correct the H4 finite-time Landauer logic, since the correction raises the floor, and justify or remove the factor-2 tolerance
+- Specify the source of baryonic mass flux, such as hydrodynamical simulations, and a spatially constrained cortical null
+- Fix ref. 16 (placeholder), refs 8, 10, 11 (missing DOIs) and ref. 3, and correct the citation audit statement
+- Reconcile n = 89 with the standard power calculation
 
 ### Recent Concrete Shortcomings Logged for the **Math Physicist**:
-- Provide a dimensional check showing that both sides and all additive terms have matching units.
-- Show the scale-factor evolution from the horizon-crossing or onset epoch through the end of thermal inflation, flaton oscillation, reheating, and today, then verify the GeV^-1 to meter conversion.
-- Correct the thermal-trapping effective-mass equation to distinguish the thermal potential V_T ∼ (1/2)g^2T^2φ^2 from the mass-squared contribution m_T^2 ∼ g^2T^2, and audit dependent statements.
-- Reconcile the math report’s claim that all equations are dimensionally consistent with its own identification of the dimensional mismatch.
-- State the metric signature and action conventions explicitly, qualify the canonical w bound, and replace the variable-w density scaling expression with the integral solution.
-- Derive the proposed theory-discriminating statistic from explicit model assumptions.
-- Specify an estimand and identification conditions appropriate to the intervention design.
-- Correct the variance of the mediator contrast to include covariance and preregister its sampling distribution, power analysis, and multiplicity control.
+- Derive the ε_DI numerical prefactor explicitly
+- Resolve the H*/T* ~1e-5 versus ~1e-16 discrepancy
+- Correct the symbol-table dimensions for T½ and d_e/d_n
+- Restate the 6 UNDECIDABLE equations with explicit units
+- Write ΔV_1(φ) as T-independent
+- Define a normalization that guarantees Φ <= 1 and kappa-hat in (0,1], or restate the range
+- Add a Dimension column to the Symbol Table
+- Formalize the dimensions of Φ, C_fil, SNR and z so the tool no longer reports them as undecidable
 
 ---
 
@@ -71,37 +71,37 @@
 
 ### 🔭 A. Researcher, Bio-Digital Analyst & Cosmological Architect
 - **Equipped Tools (live)**: `ArXiv Preprint Search`, `OpenAlex Scholarly Graph Search`, `Europe PMC Literature Search`, `Pre-Flight Citation Verifier`, `Observational Cosmology & Deep-Space Survey Tracker`, `Physics Calculator & Tension Evaluator`
-- **Recurring need themes (`researcher_needs`, last 100)**: `citation_provenance` ×26, `conventions_and_signs` ×26, `units_and_dimensions` ×23, `worked_arithmetic_and_benchmarks` ×18, `causal_and_statistical_design` ×10
+- **Recurring need themes (`researcher_needs`, last 100)**: `citation_provenance` ×51, `units_and_dimensions` ×38, `conventions_and_signs` ×34, `worked_arithmetic_and_benchmarks` ×23, `causal_and_statistical_design` ×21
 - **Most recent concrete needs**:
-  * Use a clearly defined interventional estimand or state and justify the assumptions required for a natural indirect effect.
-  * Distinguish PCI from IIT’s Φ and specify a valid, preregistered mediator measurement strategy.
-  * Correct the future-dated 2026 citation and reconcile the duplicated drafts and inconsistent citation-audit claims.
+  * Specify the source of baryonic mass flux, such as hydrodynamical simulations, and a spatially constrained cortical null
+  * Fix ref. 16 (placeholder), refs 8, 10, 11 (missing DOIs) and ref. 3, and correct the citation audit statement
+  * Reconcile n = 89 with the standard power calculation
 - **Capabilities**:
-  * ✅ present — Physics Calculator & Tension Evaluator (worked examples, sigma / delta-chi2) · addresses `worked_arithmetic_and_benchmarks` (18 recent mention(s))
-  * ✅ present — Observational Cosmology tracker with values, uncertainties and covariances · addresses `worked_arithmetic_and_benchmarks`, `citation_provenance` (44 recent mention(s))
-  * ✅ present — Conventions & Symbol Table / Validity Domain preamble in the concept template · addresses `conventions_and_signs`, `units_and_dimensions` (49 recent mention(s))
-  * 🎯 OPEN — arXiv full-text section reader (exact conventions and prefactors) · addresses `conventions_and_signs`, `citation_provenance` (52 recent mention(s))
+  * ✅ present — Physics Calculator & Tension Evaluator (worked examples, sigma / delta-chi2) · addresses `worked_arithmetic_and_benchmarks` (23 recent mention(s))
+  * ✅ present — Observational Cosmology tracker with values, uncertainties and covariances · addresses `worked_arithmetic_and_benchmarks`, `citation_provenance` (74 recent mention(s))
+  * ✅ present — Conventions & Symbol Table / Validity Domain preamble in the concept template · addresses `conventions_and_signs`, `units_and_dimensions` (72 recent mention(s))
+  * 🎯 OPEN — arXiv full-text section reader (exact conventions and prefactors) · addresses `conventions_and_signs`, `citation_provenance` (85 recent mention(s))
 
 ### 🧮 B. Mathematical Physics Verifier
 - **Equipped Tools (live)**: `Equation Extractor`, `Dimensional Consistency Checker`, `Symbolic Derivation Verifier`, `Topology Classifier`, `Numerical Benchmark Validator`, `Physics Calculator & Tension Evaluator`
-- **Recurring need themes (`math_needs`, last 100)**: `units_and_dimensions` ×57, `conventions_and_signs` ×47, `worked_arithmetic_and_benchmarks` ×21, `causal_and_statistical_design` ×10, `citation_provenance` ×6
+- **Recurring need themes (`math_needs`, last 100)**: `units_and_dimensions` ×74, `conventions_and_signs` ×31, `worked_arithmetic_and_benchmarks` ×29, `causal_and_statistical_design` ×15, `citation_provenance` ×3
 - **Most recent concrete needs**:
-  * Derive the proposed theory-discriminating statistic from explicit model assumptions.
-  * Specify an estimand and identification conditions appropriate to the intervention design.
-  * Correct the variance of the mediator contrast to include covariance and preregister its sampling distribution, power analysis, and multiplicity control.
+  * Define a normalization that guarantees Φ <= 1 and kappa-hat in (0,1], or restate the range
+  * Add a Dimension column to the Symbol Table
+  * Formalize the dimensions of Φ, C_fil, SNR and z so the tool no longer reports them as undecidable
 - **Capabilities**:
-  * ✅ present — Term-level natural-unit [E]^n dimension checker using the report's symbol table · addresses `units_and_dimensions` (57 recent mention(s))
-  * ✅ present — Symbolic re-derivation (continuity/ODE integrals, identities, limits) for the Math Physicist · addresses `conventions_and_signs`, `causal_and_statistical_design` (57 recent mention(s))
-  * ✅ present — Benchmark table + claim verification (verify_claim within 10%) · addresses `worked_arithmetic_and_benchmarks` (21 recent mention(s))
-  * ✅ present — Math gate in the flow (tool-confirmed INCONSISTENT / STEP_INVALID blocks approval) · addresses `units_and_dimensions` (57 recent mention(s))
-  * ✅ present — Automated pre-check: equations + the draft's own symbol table checked in code before the Math Physicist · addresses `units_and_dimensions`, `conventions_and_signs` (104 recent mention(s))
+  * ✅ present — Term-level natural-unit [E]^n dimension checker using the report's symbol table · addresses `units_and_dimensions` (74 recent mention(s))
+  * ✅ present — Symbolic re-derivation (continuity/ODE integrals, identities, limits) for the Math Physicist · addresses `conventions_and_signs`, `causal_and_statistical_design` (46 recent mention(s))
+  * ✅ present — Benchmark table + claim verification (verify_claim within 10%) · addresses `worked_arithmetic_and_benchmarks` (29 recent mention(s))
+  * ✅ present — Math gate in the flow (tool-confirmed INCONSISTENT / STEP_INVALID blocks approval) · addresses `units_and_dimensions` (74 recent mention(s))
+  * ✅ present — Automated pre-check: equations + the draft's own symbol table checked in code before the Math Physicist · addresses `units_and_dimensions`, `conventions_and_signs` (105 recent mention(s))
 
 ### ⚖️ C. Scientific Skeptic & Student
 - **Equipped Tools**: none by design — both receive the Math Physicist's tool-verified report in context.
-- **Rejection root causes (last 100)**: `mathematical_flaw_or_inconsistency` ×58, `crew_kickoff_error` ×10, `parse_error` ×2, `insufficient_skeptic_score` ×1
+- **Rejection root causes (last 100)**: `mathematical_flaw_or_inconsistency` ×27, `crew_kickoff_error` ×3, `insufficient_skeptic_score` ×3, `parse_error` ×1
 - **Capabilities**:
-  * ✅ present — Shared canonical conventions header in every crew task · addresses `conventions_and_signs` (73 recent mention(s))
-  * ✅ present — Level 3 causal-design checklist (estimand, DAG, identification, power, multiplicity) · addresses `causal_and_statistical_design` (20 recent mention(s))
+  * ✅ present — Shared canonical conventions header in every crew task · addresses `conventions_and_signs` (65 recent mention(s))
+  * ✅ present — Level 3 causal-design checklist (estimand, DAG, identification, power, multiplicity) · addresses `causal_and_statistical_design` (36 recent mention(s))
   * 🎯 OPEN — Per-run scorecard (UNDECIDABLE ratio, attempts to approval, timeouts) · addresses — (0 recent mention(s))
 
 ---
