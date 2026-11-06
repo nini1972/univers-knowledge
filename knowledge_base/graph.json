@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-11-05T01:16:49.447810+00:00",
+  "updated_at": "2026-11-06T01:08:18.481845+00:00",
   "stats": {
-    "total_nodes": 380,
-    "level_1_count": 162,
-    "level_2_count": 144,
-    "level_3_count": 74,
-    "total_edges": 179,
+    "total_nodes": 383,
+    "level_1_count": 163,
+    "level_2_count": 145,
+    "level_3_count": 75,
+    "total_edges": 180,
     "frontier_count": 75
   },
   "nodes": [
@@ -309,10 +309,10 @@
       "math_score": "4/4",
       "dependencies": [
         "friedmannequations",
+        "darkenergy",
         "hubbletension",
         "baryonacousticoscillations",
-        "cosmicmicrowavebackground",
-        "darkenergy"
+        "cosmicmicrowavebackground"
       ],
       "tags": [
         "1"
@@ -323,6 +323,27 @@
         "Amon, A., et al. (2022), 'Dark Energy Survey Year 3 results: Cosmological constraints from cosmic shear', https://doi.org/10.1103/PhysRevD.105.023514"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cosmic_microwave_background_anisotropies_and_acoustic_peak_phenomenology.md"
+    },
+    {
+      "id": "cosmicmicrowavebackgroundlensingandthesunyaevzeldovicheffect",
+      "title": "CMB Lensing and the Sunyaev–Zel'dovich Effect",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Hill, J. C. & Spergel, D. N. (2014), 'Detection of the thermal Sunyaev–Zel'dovich effect of the cosmic microwave background lensing signal', https://arxiv.org/abs/1312.4525",
+        "McCarthy, F. & Hill, J. C. (2023), 'The tSZ–CMB lensing cross-correlation with Planck PR4', https://arxiv.org/abs/2308.16260",
+        "Okamoto, T. & Hu, W. (2003), 'The Angular Trispectra of CMB Temperature and Polarization', https://doi.org/10.1103/PhysRevD.67.083002",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Nozawa, S., Itoh, N., Kohyama, Y. & Suda, Y. (2006), 'Relativistic Corrections to the Sunyaev–Zeldovich Effect for Clusters of Galaxies', https://arxiv.org/abs/astro-ph/0603835"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmic_microwave_background_lensing_and_the_sunyaevzeldovich_effect.md"
     },
     {
       "id": "cosmicmicrowavebackgroundpolarizationandbmodesignatures",
@@ -895,11 +916,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "peskintakeuchiparameters",
-        "electroweaksymmetrybreaking",
-        "standardmodeleffectivefieldtheory",
+        "higgsmechanism",
         "standardmodel",
-        "higgsmechanism"
+        "standardmodeleffectivefieldtheory",
+        "electroweaksymmetrybreaking",
+        "peskintakeuchiparameters"
       ],
       "tags": [
         "1"
@@ -1138,10 +1159,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "renormalizationgroup",
-        "minimalsupersymmetricstandardmodel",
         "protondecay",
+        "minimalsupersymmetricstandardmodel",
         "standardmodel",
+        "renormalizationgroup",
         "grandunifiedtheories"
       ],
       "tags": [
@@ -1498,13 +1519,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "4/4",
       "dependencies": [
-        "standardmodelextension",
-        "hubbletension",
-        "earlydarkenergy",
+        "quantumgravity",
         "doublyspecialrelativity",
         "gammaraybursts",
-        "gravitationalwavepropagation",
-        "quantumgravity"
+        "hubbletension",
+        "standardmodelextension",
+        "earlydarkenergy",
+        "gravitationalwavepropagation"
       ],
       "tags": [
         "1"
@@ -2839,12 +2860,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "tolmanoppenheimervolkoffequations",
-        "tidaldeformabilityandlovenumbers",
-        "neutronstarphasetransitions",
         "generalrelativity",
+        "neutronstarphasetransitions",
+        "scalartensortheoriesofgravity",
+        "tolmanoppenheimervolkoffequations",
         "neutronstarequationofstate",
-        "scalartensortheoriesofgravity"
+        "tidaldeformabilityandlovenumbers"
       ],
       "tags": [
         "1"
@@ -3165,11 +3186,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "latticeqcd",
-        "thestandardmodel",
-        "stronginteraction",
+        "gaugetheory",
         "quantumfieldtheory",
-        "gaugetheory"
+        "latticeqcd",
+        "stronginteraction",
+        "thestandardmodel"
       ],
       "tags": [
         "1"
@@ -3906,11 +3927,11 @@
       "math_score": "3/4",
       "dependencies": [
         "modifiednewtoniandynamics",
-        "lcdmbaryonicfeedback",
         "baryonictullyfisherrelation",
-        "radialaccelerationrelation",
+        "sparcgalaxydatabase",
+        "lcdmbaryonicfeedback",
         "mondexternalfieldeffect",
-        "sparcgalaxydatabase"
+        "radialaccelerationrelation"
       ],
       "tags": [
         "2"
@@ -4134,6 +4155,28 @@
         "Liberati, S. (2013), 'Tests of Lorentz invariance: a 2013 update,' https://doi.org/10.1088/0264-9381/30/13/133001"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/cuscuton_gravity_vs_ghost_condensate_cosmology_in_stable_accelerated_expansion.md"
+    },
+    {
+      "id": "darkphotonkineticmixingvsaxionlikeparticlephotoncouplingportalsinlaboratoryandastrophysicalsearchesforlightdarkmatter",
+      "title": "Dark Photon Kinetic-Mixing vs Axion-Like Particle Photon-Coupling Portals in Laboratory and Astrophysical Searches for Light Dark Matter",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "3/4",
+      "dependencies": [
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Graham, P. W., Irastorza, I. G., Lamoreaux, S. K., Lindner, A., and van Bibber, K. A. (2015), 'Experimental Searches for the Axion and Axion-Like Particles', https://doi.org/10.1146/annurev-nucl-102014-022120",
+        "Anastassopoulos, V., et al. (2017), 'New CAST Limit on the Axion-Photon Interaction', https://doi.org/10.1038/nphys4109",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "DESI Collaboration (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://doi.org/10.1088/1475-7516/2025/02/021"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/dark_photon_kineticmixing_vs_axionlike_particle_photoncoupling_portals_in_laboratory_and_astrophysical_searches_for_light_dark_matter.md"
     },
     {
       "id": "debateonmodifiedgravitytheoriestevesvsfrgravity",
@@ -5273,12 +5316,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "gravitationalwaveobservations",
+        "functionalrenormalizationgroup",
+        "quantumgravity",
         "hubbletension",
         "causaldynamicaltriangulations",
-        "earlydarkenergy",
-        "functionalrenormalizationgroup",
-        "gravitationalwaveobservations",
-        "quantumgravity"
+        "earlydarkenergy"
       ],
       "tags": [
         "2"
@@ -5323,12 +5366,12 @@
       "math_score": "3/4",
       "dependencies": [
         "axionmisalignmentrelicabundance",
-        "neutronelectricdipolemoment",
-        "strongcpproblem",
-        "latticeqcdquarkmasses",
         "qcdaxionandaxionlikeparticles",
-        "nelsonbarrmechanism",
         "softpqparitysolution",
+        "latticeqcdquarkmasses",
+        "strongcpproblem",
+        "neutronelectricdipolemoment",
+        "nelsonbarrmechanism",
         "thestrongcpproblem"
       ],
       "tags": [
@@ -5386,11 +5429,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "supermassiveblackholebinaries",
+        "stochasticgravitationalwavebackgrounds",
+        "pulsartimingarrays",
         "firstordercosmologicalphasetransitions",
         "cosmicstringsandtopologicaldefects",
-        "stochasticgravitationalwavebackgrounds",
-        "pulsartimingarrays"
+        "supermassiveblackholebinaries"
       ],
       "tags": [
         "2"
@@ -6739,6 +6782,26 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md"
     },
     {
+      "id": "afalsifiabletestofquantumcoherenceassistedenergytransferefficiencyboundsinwarmbiologicalmicrotubulefreemitochondrialelectrontransportchainsusingredfieldlindblad",
+      "title": "A Falsifiable Test of Quantum Coherence-Assisted Energy Transfer Efficiency Bounds in Warm Biological Microtubule-Free Mitochondrial Electron Transport Chains Using Redfield-Lindblad Dephasing Models With Explicit SI-Unit Tracing and Pre-Specified Classical Kinetic Null Models",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Mohseni, M., Rebentrost, P., Lloyd, S., and Aspuru-Guzik, A. (2008), 'Environment-assisted quantum walks in photosynthetic energy transfer', https://doi.org/10.1063/1.3002335",
+        "Plenio, M. B., and Huelga, S. F. (2008), 'Dephasing-assisted transport: quantum networks and biomolecules', https://doi.org/10.1088/1367-2630/10/11/113019",
+        "Engel, G. S., Calhoun, T. R., Read, E. L., Ahn, T.-K., Mancal, T., Cheng, Y.-C., Blankenship, R. E., and Fleming, G. R. (2007), 'Evidence for wavelike energy transfer through quantum coherence in photosynthetic systems', https://doi.org/10.1038/nature05678",
+        "Streltsov, A., Adesso, G., and Plenio, M. B. (2017), 'Quantum coherence as a resource', https://doi.org/10.1103/RevModPhys.89.041003"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad.md"
+    },
+    {
       "id": "afalsifiabletestofthermodynamicefficiencyboundsoninformationtransferusingminimumcutmaxflowcapacityincorticalconnectomesandcdmcosmicwebfilamentgraphswithexpli",
       "title": "A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles",
       "level": 3,
@@ -7115,11 +7178,11 @@
       "math_score": "4/4",
       "dependencies": [
         "cosmologicalstructureformation",
-        "nullmodelsandhypothesistesting",
+        "persistenthomology",
         "topologicaldataanalysis",
-        "lcdmcosmology",
         "cosmicweb",
-        "persistenthomology"
+        "lcdmcosmology",
+        "nullmodelsandhypothesistesting"
       ],
       "tags": [
         "3"
@@ -7251,12 +7314,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "s8tension",
-        "corticalenergybudgets",
-        "cosmicwebhalovirialization",
-        "bremermannlimit",
         "landauerprinciple",
-        "falsifiabilityandmodeldependentinference"
+        "falsifiabilityandmodeldependentinference",
+        "cosmicwebhalovirialization",
+        "corticalenergybudgets",
+        "s8tension",
+        "bremermannlimit"
       ],
       "tags": [
         "3"
@@ -7405,10 +7468,10 @@
       "math_score": "3/4",
       "dependencies": [
         "fluctuationdissipationtheorem",
-        "cosmicwebfilamentsandvelocityshear",
         "stochasticthermodynamicsandentropyproduction",
-        "scalefreenetworksanduniversality",
-        "transferentropyandeffectiveconnectivity"
+        "cosmicwebfilamentsandvelocityshear",
+        "transferentropyandeffectiveconnectivity",
+        "scalefreenetworksanduniversality"
       ],
       "tags": [
         "3"
@@ -7890,11 +7953,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "openquantumsystemsandlindbladdynamics",
+        "environmentassistedquantumtransport",
         "quantumfisherinformationandquantumcramerraobound",
-        "classicalforstertransportandincoherenthopping",
         "leggettgarginequalities",
-        "environmentassistedquantumtransport"
+        "openquantumsystemsandlindbladdynamics",
+        "classicalforstertransportandincoherenthopping"
       ],
       "tags": [
         "3"
@@ -8000,12 +8063,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "baryonicfeedback",
+        "observationalselectioneffects",
+        "persistenthomology",
         "topologicaldataanalysis",
         "cosmicweb",
-        "persistenthomology",
-        "observationalselectioneffects",
-        "bottleneckdistance"
+        "bottleneckdistance",
+        "baryonicfeedback"
       ],
       "tags": [
         "3"
@@ -8942,6 +9005,11 @@
     {
       "source": "quantumgravity",
       "target": "causalsettheoryvsspinfoammodelsinquantumgravityresearch",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "darkmatter",
+      "target": "darkphotonkineticmixingvsaxionlikeparticlephotoncouplingportalsinlaboratoryandastrophysicalsearchesforlightdarkmatter",
       "type": "foundational_prerequisite"
     },
     {
