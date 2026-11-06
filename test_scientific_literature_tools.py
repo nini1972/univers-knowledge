@@ -221,6 +221,40 @@ Neutrino decay is bounded by cosmological observations.
         self.assertIn("2. Conventions and Action Setup", out)
         self.assertIn("M_{\\rm Pl} = (8\\pi G)^{-1/2}", out)
 
+    def test_arxiv_full_text_multi_section_budget_and_paragraph_selection(self):
+        """Tests that a long first section does not starve later matching sections and picks matching paragraphs."""
+        filler = "<p>" + ("Background cosmological discussion without target keywords. " * 40) + "</p>"
+        long_html = f"""
+        <html>
+        <head><title>Cross-correlation of tSZ and CMB lensing in Planck PR4</title></head>
+        <body>
+          <h1>Cross-correlation of tSZ and CMB lensing in Planck PR4</h1>
+          <p>Fiona McCarthy and J. Colin Hill. Abstract summary of CIB decontamination.</p>
+          <h2>I. Introduction</h2>
+          {filler}
+          <p>We measure the detection significance and CIB contamination in the cross-spectrum.</p>
+          <h2>IV. Foreground Mitigation</h2>
+          {filler}
+          <p>Moment deprojection in NILC suppresses CIB bias in the reconstructed Compton-y map.</p>
+          <h2>V. Measurement Results</h2>
+          {filler}
+          <p>We find detection significance of 3.9 sigma with A = 0.82 +- 0.21 for PR4 and A = 0.56 +- 0.24 after CIB deprojection.</p>
+        </body>
+        </html>
+        """
+        parsed = _extract_arxiv_html_sections(
+            long_html,
+            section_query="detection significance CIB deprojection measurement results",
+            max_chars=2400,
+        )
+        selected_headings = [s["heading"] for s in parsed["selected_sections"]]
+        self.assertGreaterEqual(len(selected_headings), 2)
+        self.assertIn("V. Measurement Results", selected_headings)
+        combined_text = "\n".join(s["text"] for s in parsed["selected_sections"])
+        self.assertIn("0.82 +- 0.21", combined_text)
+        self.assertIn("Abstract & Frontmatter", parsed["headings"])
+
+
 
 
 if __name__ == "__main__":

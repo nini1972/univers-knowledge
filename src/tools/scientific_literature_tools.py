@@ -892,6 +892,33 @@ def _html_with_latex_to_text(fragment: str) -> tuple[str, list[str]]:
     return clean_text, equations
 
 
+def _select_section_snippet(sec_text: str, q_terms: list[str], budget: int) -> str:
+    """Return up to `budget` chars from `sec_text`, prioritizing paragraphs that match `q_terms` when truncated."""
+    if len(sec_text) <= budget or not q_terms:
+        return sec_text[:budget]
+    paragraphs = [p.strip() for p in sec_text.splitlines() if p.strip()]
+    if len(paragraphs) <= 1:
+        return sec_text[:budget]
+    scored_paras: list[tuple[float, int, str]] = []
+    for idx, para in enumerate(paragraphs):
+        p_low = para.lower()
+        hits = sum(1 for t in q_terms if t in p_low)
+        density = sum(min(3, p_low.count(t)) for t in q_terms)
+        has_math_or_num = 0.5 if ("$" in para or "±" in para or "\\sigma" in para or re.search(r"\b\d+\.\d+\b", para)) else 0.0
+        score = hits * 3.0 + density * 1.0 + has_math_or_num + max(0.0, 0.2 - 0.01 * idx)
+        scored_paras.append((score, idx, para))
+    scored_paras.sort(key=lambda x: (-x[0], x[1]))
+    chosen_chunks: dict[int, str] = {}
+    used = 0
+    for score, idx, para in scored_paras:
+        if used >= budget:
+            break
+        chunk = para[: budget - used]
+        chosen_chunks[idx] = chunk
+        used += len(chunk) + 1
+    return "\n".join(chosen_chunks[idx] for idx in sorted(chosen_chunks))
+
+
 def _extract_arxiv_html_sections(html_text: str, section_query: str = "", max_chars: int = 4000) -> dict:
     """Parse arXiv/ar5iv HTML into sections and select the best-matching sections & equations."""
     import html as html_lib
@@ -926,6 +953,8 @@ def _extract_arxiv_html_sections(html_text: str, section_query: str = "", max_ch
         for idx, m in enumerate(matches):
             h_text, _ = _html_with_latex_to_text(m.group(2))
             h_text = " ".join(h_text.split()) or f"Section {idx + 1}"
+            if m.group(1) == "1" or h_text.lower() == title.lower():
+                h_text = "Abstract & Frontmatter"
             # Skip bibliography/references sections unless explicitly queried
             if re.search(r"\b(references|bibliography|acknowledg(?:e)?ments)\b", h_text, re.I) and not (
                 section_query and re.search(r"ref|bib|cit", section_query, re.I)
@@ -937,7 +966,7 @@ def _extract_arxiv_html_sections(html_text: str, section_query: str = "", max_ch
             if sec_text or sec_eqs:
                 sections.append({"heading": h_text, "text": sec_text, "equations": sec_eqs})
 
-    headings_outline = [s["heading"] for s in sections[:25]]
+    headings_outline = [s["heading"] for s in sections[:35]]
     q = (section_query or "").strip()
     q_terms = [t.lower() for t in re.split(r"[^A-Za-z0-9_\\]+", q) if len(t) >= 2]
 
@@ -958,7 +987,7 @@ def _extract_arxiv_html_sections(html_text: str, section_query: str = "", max_ch
             if q.lower() in t_low or q.lower() in eq_joined:
                 score += 6.0
             for term in q_terms:
-                if term in h_low:
+                if term in h_low and h_low != "abstract & frontmatter":
                     score += 4.0
                 if term in t_low:
                     score += min(3.0, 0.5 * t_low.count(term))
@@ -979,13 +1008,15 @@ def _extract_arxiv_html_sections(html_text: str, section_query: str = "", max_ch
     selected: list[dict] = []
     collected_eqs: list[str] = []
     char_budget = max_chars
+    matching_count = sum(1 for sc, _, _ in scored if sc > 0)
+    per_sec_cap = max(900, int(max_chars * 0.45)) if matching_count >= 2 else max_chars
 
     for score, _, sec in scored:
         if q_terms and score <= 0 and selected:
             break
         if char_budget <= 0:
             break
-        snippet = sec["text"][:char_budget]
+        snippet = _select_section_snippet(sec["text"], q_terms, min(char_budget, per_sec_cap))
         selected.append({"heading": sec["heading"], "text": snippet, "score": score})
         for eq in sec["equations"]:
             if eq not in collected_eqs and len(collected_eqs) < 20:
@@ -1074,7 +1105,7 @@ class ArxivFullTextSectionReaderTool(BaseTool):
                 f"- **Section Query:** `{section_query or 'default (conventions, setup & equations)'}`",
             ]
             if parsed["headings"]:
-                md.append("- **Document Section Outline:** " + " | ".join(f"`{h}`" for h in parsed["headings"][:15]))
+                md.append("- **Document Section Outline:** " + " | ".join(f"`{h}`" for h in parsed["headings"][:30]))
             md.append("")
             for sec in parsed["selected_sections"]:
                 md.append(f"#### § {sec['heading']}")

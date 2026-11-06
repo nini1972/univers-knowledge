@@ -815,13 +815,14 @@ def build_run_scorecard(recent_window: int = 100) -> dict:
 
             recent_t = t_records[-(recent_window * 6):] if recent_window > 0 else t_records
             for rec in recent_t:
+                stage = str(rec.get("stage") or "")
                 ev = str(rec.get("event_type") or "")
                 st = str(rec.get("status") or "")
-                if ev == "micro_revision":
+                if (stage == "micro_revision" and ev == "end") or ev == "micro_revision":
                     micro_revision_count += 1
-                elif ev == "crew_kickoff_error" or "timeout" in st.lower():
+                elif stage == "crew_kickoff_error" or ev == "crew_kickoff_error" or "timeout" in st.lower():
                     timeouts_or_kickoff_errors += 1
-                elif ev == "crew_empty_response_salvage":
+                elif stage == "crew_empty_response_salvage" or ev == "crew_empty_response_salvage":
                     salvage_count += 1
         except Exception:
             pass
