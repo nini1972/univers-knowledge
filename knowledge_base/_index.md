@@ -114,6 +114,7 @@ graph TD
     dimensional_analysis_and_unit_tracing_of_modified_survival_equations["Dimensional Analysis and Unit Tracing of Modified Survival Equations"]:::theoretical
     neutrino_mass_ordering_and_experimental_determination["Neutrino Mass Ordering and Experimental Determination"]:::verified
     matterantimatter_asymmetry_mechanisms["Matter-Antimatter Asymmetry Mechanisms"]:::theoretical
+    cosmological_constraints_on_the_sum_of_neutrino_masses_from_largescale_structure["Cosmological Constraints on the Sum of Neutrino Masses from Large-Scale Structure"]:::theoretical
     cosmic_inflation_mechanisms["Cosmic Inflation Mechanisms"]:::theoretical
     tensor_networks_in_dynamical_lorentzian_spacetimes["Tensor Networks in Dynamical Lorentzian Spacetimes"]:::theoretical
     empirical_tests_of_spacetime_discreteness_and_entanglement_geometry_duality["Empirical Tests of Spacetime Discreteness and Entanglement-Geometry Duality"]:::theoretical
@@ -277,6 +278,7 @@ graph TD
     slowroll_inflationary_tensor_modes_vs_cosmic_superstring_networks_in_explaining_the_nanohertz_gravitationalwave_background["Slow-Roll Inflationary Tensor Modes vs Cosmic Superstring Networks in Explaining the Nanohertz Gravitational-Wave Background"]:::verified
     mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model["Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model"]:::theoretical
     scalar_field_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges["Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges"]:::theoretical
+    stable_cold_dark_matter_with_baryonic_feedback_vs_decaying_dark_matter_in_resolving_the_s8_tension["Fundamental Physics Concept"]:::theoretical
     asymptotic_safety_versus_emergent_gravity_in_quantum_gravity_research["Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research"]:::theoretical
     supersymmetric_dark_matter_models_vs_primordial_black_hole_dark_matter_hypothesis_debate["Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate"]:::theoretical
     slowroll_inflation_vs_prebigbang_string_cosmology_in_predicting_the_primordial_tensor_spectrum_and_cmb_bmode_signatures["Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures"]:::verified
@@ -359,6 +361,7 @@ graph TD
     fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic["Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees"]:::theoretical
     a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models["A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models"]:::theoretical
     a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations["A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations"]:::theoretical
+    falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models["Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models"]:::theoretical
     quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures["Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures"]:::verified
     algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks["Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks"]:::theoretical
     axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure["Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure"]:::theoretical
@@ -494,6 +497,7 @@ graph TD
     dark_matter --- primordial_nucleosynthesis_and_lightelement_abundances
     quantum_mechanics --- statistical_mechanics
     cp_violation --- matterantimatter_asymmetry_mechanisms
+    baryon_acoustic_oscillations --- cosmological_constraints_on_the_sum_of_neutrino_masses_from_largescale_structure
     quantum_gravity --- tensor_networks_in_dynamical_lorentzian_spacetimes
     quantum_mechanics --- special_relativity
     neutrino_oscillations --- neutrino_mass_mechanisms_beyond_standard_seesaw_models
@@ -664,6 +668,7 @@ graph TD
 - [Cosmic Structure Formation and Growth of Large-Scale Structure](level_1_fundamental_physics/cosmic_structure_formation_and_growth_of_largescale_structure.md) [VERIFIED]
 - [Cosmic Thermal History of the Universe](level_1_fundamental_physics/cosmic_thermal_history_of_the_universe.md) [VERIFIED]
 - [Cosmological Constant and Dark Energy](level_1_fundamental_physics/cosmological_constant_and_dark_energy.md) [VERIFIED]
+- [Cosmological Constraints on the Sum of Neutrino Masses from Large-Scale Structure](level_1_fundamental_physics/cosmological_constraints_on_the_sum_of_neutrino_masses_from_largescale_structure.md) [THEORETICAL]
 - [Cosmological Perturbation Theory](level_1_fundamental_physics/cosmological_perturbation_theory.md) [VERIFIED]
 - [Covariant Quantum Measure Construction in Causal Set Theory](level_1_fundamental_physics/covariant_quantum_measure_construction_in_causal_set_theory.md) [THEORETICAL]
 - [CP Violation](level_1_fundamental_physics/cp_violation.md) [THEORETICAL]
@@ -861,6 +866,7 @@ graph TD
 - [Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](level_2_advanced_frameworks/falsifiable_multiverse_theories_versus_simulation_hypothesis_in_cosmological_context.md) [THEORETICAL]
 - [Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations](level_2_advanced_frameworks/fermionic_wimps_vs_bosonic_ultralight_axions_in_galaxy_formation_simulations.md) [THEORETICAL]
 - [Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate](level_2_advanced_frameworks/freezein_versus_freezeout_mechanisms_in_dark_matter_production_debate.md) [THEORETICAL]
+- [Fundamental Physics Concept](level_2_advanced_frameworks/stable_cold_dark_matter_with_baryonic_feedback_vs_decaying_dark_matter_in_resolving_the_s8_tension.md) [THEORETICAL]
 - [Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges](level_2_advanced_frameworks/fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges.md) [THEORETICAL]
 - [Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics](level_2_advanced_frameworks/galileaninvariant_vs_nonminimally_coupled_scalar_dark_matter_in_galactic_dynamics.md) [THEORETICAL]
 - [Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate](level_2_advanced_frameworks/higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate.md) [THEORETICAL]
@@ -991,6 +997,7 @@ graph TD
 - [Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology](level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md) [THEORETICAL]
 - [Falsifiable Quantum Fisher Information and Lindbladian Dephasing Bounds on Coherence-Assisted Electron Transfer in Warm Biological Photosynthetic Reaction Centers](level_3_emergence_and_intelligence/falsifiable_quantum_fisher_information_and_lindbladian_dephasing_bounds_on_coherenceassisted_electron_transfer_in_warm_biological_photosynthetic_reaction_centers_with_explicit_siun.md) [THEORETICAL]
 - [Falsifiable Quantum–Classical Discrimination Bounds from Leggett–Garg and Temporal Bell Inequality Tests of Coherence in Warm Biological Ion-Channel Dynamics, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](level_3_emergence_and_intelligence/falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac.md) [THEORETICAL]
+- [Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models](level_3_emergence_and_intelligence/falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models.md) [THEORETICAL]
 - [Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds](level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md) [THEORETICAL]
 - [Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees](level_3_emergence_and_intelligence/fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic.md) [THEORETICAL]
 - [Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow](level_3_emergence_and_intelligence/fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw.md) [THEORETICAL]

@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-11-06T01:08:18.481845+00:00",
+  "updated_at": "2026-11-07T00:53:03.123898+00:00",
   "stats": {
-    "total_nodes": 383,
-    "level_1_count": 163,
-    "level_2_count": 145,
-    "level_3_count": 75,
-    "total_edges": 180,
+    "total_nodes": 386,
+    "level_1_count": 164,
+    "level_2_count": 146,
+    "level_3_count": 76,
+    "total_edges": 181,
     "frontier_count": 75
   },
   "nodes": [
@@ -308,11 +308,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "friedmannequations",
-        "darkenergy",
         "hubbletension",
+        "darkenergy",
         "baryonacousticoscillations",
-        "cosmicmicrowavebackground"
+        "cosmicmicrowavebackground",
+        "friedmannequations"
       ],
       "tags": [
         "1"
@@ -552,6 +552,25 @@
         "Baryon Acoustic Oscillations, SDSS Collaboration (2017)"
       ],
       "path": "knowledge_base/level_1_fundamental_physics/cosmological_constant_and_dark_energy.md"
+    },
+    {
+      "id": "cosmologicalconstraintsonthesumofneutrinomassesfromlargescalestructure",
+      "title": "Cosmological Constraints on the Sum of Neutrino Masses from Large-Scale Structure",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Vagnozzi, S., et al. (2017), 'Unveiling ν secrets: The impact of neutrino masses on the cosmic microwave background', https://doi.org/10.1103/PhysRevD.96.123503",
+        "Font-Ribera, A., et al. (2014), 'DESI and the neutrino mass', https://doi.org/10.1088/1475-7516/2014/01/002"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/cosmological_constraints_on_the_sum_of_neutrino_masses_from_largescale_structure.md"
     },
     {
       "id": "cosmologicalperturbationtheory",
@@ -1159,11 +1178,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "protondecay",
-        "minimalsupersymmetricstandardmodel",
         "standardmodel",
+        "grandunifiedtheories",
         "renormalizationgroup",
-        "grandunifiedtheories"
+        "minimalsupersymmetricstandardmodel",
+        "protondecay"
       ],
       "tags": [
         "1"
@@ -1519,13 +1538,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "4/4",
       "dependencies": [
-        "quantumgravity",
-        "doublyspecialrelativity",
-        "gammaraybursts",
         "hubbletension",
+        "gammaraybursts",
+        "doublyspecialrelativity",
+        "gravitationalwavepropagation",
+        "quantumgravity",
         "standardmodelextension",
-        "earlydarkenergy",
-        "gravitationalwavepropagation"
+        "earlydarkenergy"
       ],
       "tags": [
         "1"
@@ -2860,12 +2879,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "tidaldeformabilityandlovenumbers",
+        "scalartensortheoriesofgravity",
+        "neutronstarequationofstate",
         "generalrelativity",
         "neutronstarphasetransitions",
-        "scalartensortheoriesofgravity",
-        "tolmanoppenheimervolkoffequations",
-        "neutronstarequationofstate",
-        "tidaldeformabilityandlovenumbers"
+        "tolmanoppenheimervolkoffequations"
       ],
       "tags": [
         "1"
@@ -3093,10 +3112,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "freezeinproduction",
         "cosmologicalperturbationtheory",
         "wimpfreezeout",
-        "darkmatterrelicabundance"
+        "darkmatterrelicabundance",
+        "freezeinproduction"
       ],
       "tags": [
         "1"
@@ -3186,11 +3205,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "gaugetheory",
-        "quantumfieldtheory",
-        "latticeqcd",
         "stronginteraction",
-        "thestandardmodel"
+        "thestandardmodel",
+        "latticeqcd",
+        "quantumfieldtheory",
+        "gaugetheory"
       ],
       "tags": [
         "1"
@@ -3930,8 +3949,8 @@
         "baryonictullyfisherrelation",
         "sparcgalaxydatabase",
         "lcdmbaryonicfeedback",
-        "mondexternalfieldeffect",
-        "radialaccelerationrelation"
+        "radialaccelerationrelation",
+        "mondexternalfieldeffect"
       ],
       "tags": [
         "2"
@@ -5316,12 +5335,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "hubbletension",
         "gravitationalwaveobservations",
         "functionalrenormalizationgroup",
         "quantumgravity",
-        "hubbletension",
-        "causaldynamicaltriangulations",
-        "earlydarkenergy"
+        "earlydarkenergy",
+        "causaldynamicaltriangulations"
       ],
       "tags": [
         "2"
@@ -5366,11 +5385,11 @@
       "math_score": "3/4",
       "dependencies": [
         "axionmisalignmentrelicabundance",
-        "qcdaxionandaxionlikeparticles",
-        "softpqparitysolution",
-        "latticeqcdquarkmasses",
         "strongcpproblem",
+        "latticeqcdquarkmasses",
+        "qcdaxionandaxionlikeparticles",
         "neutronelectricdipolemoment",
+        "softpqparitysolution",
         "nelsonbarrmechanism",
         "thestrongcpproblem"
       ],
@@ -5429,11 +5448,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "stochasticgravitationalwavebackgrounds",
         "pulsartimingarrays",
         "firstordercosmologicalphasetransitions",
-        "cosmicstringsandtopologicaldefects",
-        "supermassiveblackholebinaries"
+        "stochasticgravitationalwavebackgrounds",
+        "supermassiveblackholebinaries",
+        "cosmicstringsandtopologicaldefects"
       ],
       "tags": [
         "2"
@@ -5898,6 +5917,25 @@
         "Vagnozzi, S. (2023), 'Inflationary cosmology in the era of precision cosmology', https://doi.org/10.1016/j.jheap.2023.07.001"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/slowroll_inflationary_tensor_modes_vs_cosmic_superstring_networks_in_explaining_the_nanohertz_gravitationalwave_background.md"
+    },
+    {
+      "id": "stablecolddarkmatterwithbaryonicfeedbackvsdecayingdarkmatterinresolvingthes8tension",
+      "title": "Fundamental Physics Concept",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_UNKNOWN",
+      "math_score": "0/4",
+      "dependencies": [
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Standard scientific consensus"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/stable_cold_dark_matter_with_baryonic_feedback_vs_decaying_dark_matter_in_resolving_the_s8_tension.md"
     },
     {
       "id": "sterileneutrinovsfuzzydarkmatterinexplainingstructureformation",
@@ -7178,11 +7216,11 @@
       "math_score": "4/4",
       "dependencies": [
         "cosmologicalstructureformation",
-        "persistenthomology",
-        "topologicaldataanalysis",
+        "nullmodelsandhypothesistesting",
         "cosmicweb",
-        "lcdmcosmology",
-        "nullmodelsandhypothesistesting"
+        "topologicaldataanalysis",
+        "persistenthomology",
+        "lcdmcosmology"
       ],
       "tags": [
         "3"
@@ -7314,12 +7352,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "landauerprinciple",
         "falsifiabilityandmodeldependentinference",
-        "cosmicwebhalovirialization",
-        "corticalenergybudgets",
         "s8tension",
-        "bremermannlimit"
+        "bremermannlimit",
+        "corticalenergybudgets",
+        "cosmicwebhalovirialization",
+        "landauerprinciple"
       ],
       "tags": [
         "3"
@@ -7399,6 +7437,52 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac.md"
     },
     {
+      "id": "falsifiablethermodynamicboundsonpredictiveinformationratesincorticalnetworksusingmeasuredmetabolicdissipationwithexplicitsiunittracingandprespecifiednullmodels",
+      "title": "Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Still, S., Sivak, D. A., Bell, A. J., & Crooks, G. E. (2012), 'Thermodynamics of prediction', https://doi.org/10.1103/PhysRevLett.109.120604",
+        "Attwell, D., & Laughlin, S. B. (2001), 'An energy budget for signaling in the grey matter of the brain', https://doi.org/10.1097/00004647-200110000-00001",
+        "Engl, E., & Attwell, D. (2015), 'Non-signalling energy use in the brain', https://doi.org/10.1113/jphysiol.2014.282517",
+        "Clark, A. (2013), 'Whatever next? Predictive brains, situated agents, and the future of cognitive science', https://doi.org/10.1017/S0140525X12000477",
+        "Sengupta, B., Stemmler, M. B., & Friston, K. J. (2013), 'Information and efficiency in the nervous system—a synthesis', https://doi.org/10.1371/journal.pcbi.1003157",
+        "Horowitz, J. M., & Gingrich, T. R. (2017), 'Proof of the finite-time thermodynamic uncertainty relation for steady-state currents', https://doi.org/10.1103/PhysRevE.96.020103",
+        "Landi, G. T., & Paternostro, M. (2021), 'Irreversible entropy production: From classical to quantum', https://doi.org/10.1103/RevModPhys.93.035008",
+        "Karbowski, J. (2024), 'Information thermodynamics in neuroscience', https://doi.org/10.3390/e26090779",
+        "Pearson, J. E., et al. (2021), 'The thermodynamic cost of timekeeping', https://doi.org/10.1103/PhysRevX.11.021029",
+        "Niven, J. E., & Laughlin, S. B. (2008), 'Energy limitation as a selective pressure on the evolution of sensory systems', https://doi.org/10.1242/jeb.017574",
+        "Niven, J. E., Anderson, J. C., & Laughlin, S. B. (2007), 'Fly photoreceptors demonstrate energy-information trade-offs in neural coding', https://doi.org/10.1371/journal.pbio.0050116",
+        "Mehta, P., & Schwab, D. J. (2012), 'Energetic costs of cellular computation', https://doi.org/10.1073/pnas.1207814109",
+        "Ilker, E., & Hinczewski, M. (2019), 'Modeling the efficiency of sensory information transmission', https://doi.org/10.1103/PhysRevLett.122.238101",
+        "Balasubramanian, V. (2021), 'Brain power', https://doi.org/10.1073/pnas.2107022118",
+        "Perge, J. A., Koch, K., Miller, R., Sterling, P., & Balasubramanian, V. (2009), 'How the optic nerve allocates space, energy capacity, and information', https://doi.org/10.1523/JNEUROSCI.5200-08.2009",
+        "Tkačik, G., & Bialek, W. (2016), 'Information processing in living systems', https://doi.org/10.1146/annurev-conmatphys-031214-014803",
+        "Gnesotto, F. S., et al. (2018), 'Broken detailed balance and non-equilibrium dynamics in living systems: a review', https://doi.org/10.1088/1361-6633/aab3ed",
+        "Ciliberto, S. (2017), 'Experiments in stochastic thermodynamics: Short history and perspectives', https://doi.org/10.1103/PhysRevX.7.021051",
+        "Padamsey, Z., et al. (2022), 'Metabolic scarcity reduces synaptic ATP use by 29%', https://doi.org/10.1016/j.neuron.2021.10.024",
+        "Theriault, R. K., et al. (2023), 'Aerobic glycolysis, BOLD interpretation, and the energetic cost of brain function', https://doi.org/10.1016/j.neubiorev.2023.105373",
+        "Venkatesh, S., Dutta, S., Mehta, P., & Grover, P. (2021), 'M-information flows in neural circuits' [preprint], https://arxiv.org/abs/2111.05299",
+        "Fang, X., et al. (2019), 'Nonequilibrium physics in biology', https://doi.org/10.1103/RevModPhys.91.045004",
+        "Marzen, S., García, H. G., & Phillips, R. (2013), 'Statistical mechanics of adaptation', https://doi.org/10.1016/j.jmb.2013.03.013",
+        "Pietzonka, P., Barato, A. C., & Seifert, U. (2016), 'Universal bounds on current fluctuations', https://doi.org/10.1103/PhysRevE.93.052145",
+        "Sivak, D. A., & Crooks, G. E. (2016), 'Thermodynamic metrics and optimal paths', https://doi.org/10.1103/PhysRevE.94.052106",
+        "Cocchi, L., et al. (2017), 'Theoretical and empirical implications of complexity in brain function', https://doi.org/10.1016/j.pneurobio.2017.07.002",
+        "Sengupta, B., et al. (2013), 'Cellular and circuit mechanisms of energy efficiency in neural systems', https://doi.org/10.1038/jcbfm.2013.103",
+        "Badcock, P. B., Friston, K. J., & Ramstead, M. J. D. (2019), 'The hierarchically mechanistic mind: A free-energy formulation of the human psyche', https://doi.org/10.1016/j.plrev.2018.10.002",
+        "Peters, A., McEwen, B. S., & Friston, K. (2017), 'Uncertainty and the brain: An evolutionarily conserved perspective', https://doi.org/10.1016/j.pneurobio.2017.05.004",
+        "Niven, J. E. (2016), 'Neuronal energy consumption: biophysics, efficiency and evolution', https://doi.org/10.1016/j.conb.2016.09.004"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models.md"
+    },
+    {
       "id": "finitetimethermodynamiccostoferrorcorrectioninneuralcircuitsanempiricaltestofreliabilitydissipationbounds",
       "title": "Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds",
       "level": 3,
@@ -7468,9 +7552,9 @@
       "math_score": "3/4",
       "dependencies": [
         "fluctuationdissipationtheorem",
-        "stochasticthermodynamicsandentropyproduction",
         "cosmicwebfilamentsandvelocityshear",
         "transferentropyandeffectiveconnectivity",
+        "stochasticthermodynamicsandentropyproduction",
         "scalefreenetworksanduniversality"
       ],
       "tags": [
@@ -7953,11 +8037,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "environmentassistedquantumtransport",
-        "quantumfisherinformationandquantumcramerraobound",
         "leggettgarginequalities",
+        "quantumfisherinformationandquantumcramerraobound",
+        "classicalforstertransportandincoherenthopping",
         "openquantumsystemsandlindbladdynamics",
-        "classicalforstertransportandincoherenthopping"
+        "environmentassistedquantumtransport"
       ],
       "tags": [
         "3"
@@ -8064,11 +8148,11 @@
       "math_score": "4/4",
       "dependencies": [
         "observationalselectioneffects",
-        "persistenthomology",
-        "topologicaldataanalysis",
+        "baryonicfeedback",
         "cosmicweb",
-        "bottleneckdistance",
-        "baryonicfeedback"
+        "topologicaldataanalysis",
+        "persistenthomology",
+        "bottleneckdistance"
       ],
       "tags": [
         "3"
@@ -9045,6 +9129,11 @@
     {
       "source": "quantummeasurementproblem",
       "target": "quantumdecoherenceversusobjectivecollapseinquantummeasurementproblem",
+      "type": "foundational_prerequisite"
+    },
+    {
+      "source": "darkmatter",
+      "target": "stablecolddarkmatterwithbaryonicfeedbackvsdecayingdarkmatterinresolvingthes8tension",
       "type": "foundational_prerequisite"
     },
     {
