@@ -184,13 +184,26 @@ def parse_student_decision(raw_output: str):
 def normalize_markdown_output(raw_output: str):
     text = str(raw_output).strip()
 
-    # Extract content inside markdown code block if present (discards external preamble/postamble)
-    fence_match = re.search(r"```(?:markdown|md)?\s*\n([\s\S]*?)\n```", text, re.IGNORECASE)
-    if fence_match:
-        text = fence_match.group(1).strip()
-    elif text.startswith("```"):
-        text = re.sub(r"^```(?:markdown|md)?", "", text).strip()
-        text = re.sub(r"```$", "", text).strip()
+    # Extract content inside an outer markdown code fence only if the document itself
+    # is wrapped in a fence (do not match inner code blocks inside an unwrapped document).
+    first_fence_pos = text.find("```")
+    first_frontmatter_pos = text.find("---")
+    has_unwrapped_frontmatter = (
+        first_frontmatter_pos != -1
+        and (first_fence_pos == -1 or first_frontmatter_pos < first_fence_pos)
+        and bool(re.match(r"^\s*---", text))
+    )
+    if not has_unwrapped_frontmatter:
+        outer_fence_match = re.search(
+            r"```(?:markdown|md)?\s*\n(\s*(?:---|#)[\s\S]*)\n```(?:\s*$|\s*\n)",
+            text,
+            re.IGNORECASE,
+        )
+        if outer_fence_match:
+            text = outer_fence_match.group(1).strip()
+        elif text.startswith("```"):
+            text = re.sub(r"^```(?:markdown|md)?", "", text).strip()
+            text = re.sub(r"```$", "", text).strip()
 
     # Step 1: Extract and isolate YAML frontmatter if present
     frontmatter = ""
@@ -238,11 +251,13 @@ def normalize_markdown_output(raw_output: str):
     ]
 
     lines = body_text.splitlines()
+    seen_h_ids = set()
     for idx, line in enumerate(lines):
         line_stripped = line.strip()
         for h_id, pattern, standard_heading in heading_patterns:
-            if re.match(pattern, line_stripped, re.IGNORECASE):
+            if h_id not in seen_h_ids and re.match(pattern, line_stripped, re.IGNORECASE):
                 lines[idx] = standard_heading
+                seen_h_ids.add(h_id)
                 break
     body_text = "\n".join(lines)
 
@@ -516,15 +531,15 @@ def parse_math_score(math_output: str):
     # Strip markdown bold asterisks before matching for robustness
     stripped = text.replace("**", "").replace("*", "")
 
-    # Primary: Match "Math Score: X/Y" (after stripping)
-    match = re.search(r'Math\s*Score\s*:\s*(\d+)\s*/\s*(\d+)', stripped, re.IGNORECASE)
+    # Primary: Match "Math Score: X/Y" (after stripping, supporting decimal numerators like 3.5/4)
+    match = re.search(r'Math\s*Score\s*:\s*(\d+(?:\.\d+)?)\s*/\s*(\d+)', stripped, re.IGNORECASE)
     if match:
-        return int(match.group(1)), int(match.group(2))
+        return int(float(match.group(1))), int(match.group(2))
 
     # Secondary: generic score format anchored to denominator 4 (after stripping)
-    match = re.search(r'Score\s*:\s*(\d+)\s*/\s*4', stripped, re.IGNORECASE)
+    match = re.search(r'Score\s*:\s*(\d+(?:\.\d+)?)\s*/\s*4', stripped, re.IGNORECASE)
     if match:
-        return int(match.group(1)), 4
+        return int(float(match.group(1))), 4
 
     return None, None
 
@@ -540,13 +555,17 @@ def parse_math_status(math_output: str) -> str:
         "MATH_PROVEN", "MATH_CONSISTENT", "MATH_CONJECTURED",
         "MATH_TOPOLOGICAL", "MATH_FLAWED", "MATH_PENDING",
     ]
-    # Preferred: the explicitly assigned "Math Status: [MATH_X]" line (ignores any echoed legend).
-    assigned = re.search(r"Math\s*Status\s*:?\s*\**\s*`?\[?\s*(MATH_[A-Z]+)", text.replace("**", ""), re.IGNORECASE)
+    # Preferred: the explicitly assigned "Math Status: [MATH_X]", "math_status: [MATH_X]", or "Final Status: MATH_X" line.
+    assigned = re.search(
+        r"(?:Math[_\s]*Status|Final\s*Status)\s*:?\s*\**\s*`?\[?\s*(MATH_[A-Z]+)",
+        text.replace("**", ""),
+        re.IGNORECASE,
+    )
     if assigned and assigned.group(1).upper() in valid_statuses:
         return assigned.group(1).upper()
     for status in valid_statuses:
-        # Match [MATH_PROVEN] or MATH_PROVEN
-        if re.search(rf"\[?{re.escape(status)}\]?", text, re.IGNORECASE):
+        # Match [MATH_PROVEN] or MATH_PROVEN, ignoring negated mentions like "Not [MATH_PROVEN]"
+        if re.search(rf"(?<!not\s)(?<!not\s\[)\b{re.escape(status)}\b", text, re.IGNORECASE):
             return status
     return "MATH_UNKNOWN"
 
@@ -568,11 +587,15 @@ def parse_math_tool_verdicts(math_output: str) -> dict:
     Returns a dict of upper-case verdict -> count, or {} if the line is absent.
     """
     text = str(math_output or "").replace("**", "")
-    match = re.search(r"Tool\s*Verdicts\s*:\s*([^\n]+)", text, re.IGNORECASE)
-    if not match:
+    match = re.search(r"Tool\s*Verdicts[^\n]*?:\s*([^\n]+)", text, re.IGNORECASE)
+    verdict_line = match.group(1) if match else ""
+    if not verdict_line or "=" not in verdict_line:
+        block_match = re.search(r"(INCONSISTENT\s*[=:]\s*\d+[^\n]*)", text, re.IGNORECASE)
+        verdict_line = block_match.group(1) if block_match else ""
+    if not verdict_line:
         return {}
     counts: dict[str, int] = {}
-    for key, val in re.findall(r"([A-Za-z_]+)\s*[=:]\s*(\d+)", match.group(1)):
+    for key, val in re.findall(r"([A-Za-z_]+)\s*[=:]\s*(\d+)", verdict_line):
         counts[key.upper()] = int(val)
     return counts
 

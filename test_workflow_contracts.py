@@ -500,6 +500,43 @@ The electromagnetic force is one of the four fundamental forces.
         self.assertIn("Markov pair", decision["detailed_rationale"])
         self.assertEqual(len(decision["follow_up_questions"]), 1)
 
+    def test_normalize_markdown_preserves_document_with_inner_code_fence(self):
+        raw = VALID_MARKDOWN + """
+## 9. Mathematical Integrity Report
+### 9. Tool Verdicts (machine-readable)
+```
+INCONSISTENT=0; DISMISSED_FLAGS=3; UNDECIDABLE=2; STEP_INVALID=0; LIMIT_MISMATCH=0; CLAIM_MISMATCH=0
+```
+**Final Status: MATH_CONSISTENT | Math Score: 3.5/4**
+"""
+        normalized = normalize_markdown_output(raw)
+        valid, errors = validate_concept_markdown(normalized)
+        self.assertTrue(valid, f"Validation failed: {errors}")
+        self.assertIn('title: "Supersymmetry"', normalized)
+        self.assertNotIn('title: "Fundamental Physics Concept"', normalized)
+        self.assertIn("Overview text.", normalized)
+        self.assertIn("INCONSISTENT=0; DISMISSED_FLAGS=3", normalized)
+
+    def test_parse_math_score_status_and_verdicts_edge_cases(self):
+        from src.workflow_contracts import parse_math_score, parse_math_status, parse_math_tool_verdicts
+
+        report = """
+**Math Score: 3.5/4** (deducted 0.5 for missing Dimension column)
+**math_status: [MATH_CONSISTENT]** — Not [MATH_PROVEN] because 2 equations remain tool-UNDECIDABLE.
+
+### 9. Tool Verdicts (machine-readable)
+
+```
+INCONSISTENT=0; DISMISSED_FLAGS=3; UNDECIDABLE=2; STEP_INVALID=0; LIMIT_MISMATCH=0; CLAIM_MISMATCH=0
+```
+"""
+        self.assertEqual(parse_math_score(report), (3, 4))
+        self.assertEqual(parse_math_status(report), "MATH_CONSISTENT")
+        verdicts = parse_math_tool_verdicts(report)
+        self.assertEqual(verdicts.get("INCONSISTENT"), 0)
+        self.assertEqual(verdicts.get("DISMISSED_FLAGS"), 3)
+        self.assertEqual(verdicts.get("UNDECIDABLE"), 2)
+
 
 if __name__ == "__main__":
     unittest.main()
