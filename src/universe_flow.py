@@ -389,6 +389,16 @@ class UniverseFlow(Flow[UniverseState]):
         if standing_directives:
             directives_prompt = "\n\nPROFESSOR STANDING DIRECTIVES:\n" + "\n".join(f"- {d}" for d in standing_directives)
 
+        # Synchronize Colony & Agora snapshot and ingest any new #literature-and-theory questions into backlog
+        try:
+            try:
+                from colony_bridge import sync_colony_snapshot
+            except ImportError:
+                from src.colony_bridge import sync_colony_snapshot
+            sync_colony_snapshot(self.repo_root)
+        except Exception as cb_sync_err:
+            print(f"[COLONY BRIDGE WARNING] Pre-topic sync skipped: {cb_sync_err}")
+
         # ── Level 1 Logic ──
         if level == 1:
             missing_prereq = get_last_missing_prerequisite(current_index)
@@ -406,6 +416,9 @@ class UniverseFlow(Flow[UniverseState]):
                 candidate = backlog_item.get("concept") or backlog_item.get("question")
                 print(f"[CLOSED-LOOP FEEDBACK] Prioritizing curriculum candidate: '{candidate}'")
                 self.state.concept = candidate
+                if backlog_item.get("description"):
+                    self.state.follow_up_context = backlog_item["description"]
+                    self.state.topic_metadata = {**self.state.topic_metadata, **(backlog_item.get("metadata") or {})}
             elif self.state.dry_run:
                 self.state.concept = "Quantum Entanglement"
             else:
@@ -438,12 +451,21 @@ class UniverseFlow(Flow[UniverseState]):
         # ── Level 2 Logic ──
         elif level == 2:
             retryable_advisory = get_next_retryable_advisory(level=2, repo_root=self.repo_root)
+            backlog_item = backlog_manager.get_next_backlog_item(level=2)
             if retryable_advisory:
                 candidate = retryable_advisory.get("concept")
                 print(f"[OFFICE HOURS CLOSED-LOOP] Prioritizing answered advisory retry for Level 2: '{candidate}'")
                 self.state.concept = candidate
                 th_a, th_b = _resolve_level2_theories(candidate, self.state.topic_metadata)
                 self.state.topic_metadata = {"theory_a": th_a, "theory_b": th_b}
+            elif backlog_item:
+                candidate = backlog_item.get("concept") or backlog_item.get("question")
+                print(f"[COLONY / CURRICULUM BACKLOG] Prioritizing Level 2 candidate: '{candidate}'")
+                self.state.concept = candidate
+                th_a, th_b = _resolve_level2_theories(candidate, self.state.topic_metadata)
+                self.state.topic_metadata = {"theory_a": th_a, "theory_b": th_b, **(backlog_item.get("metadata") or {})}
+                if backlog_item.get("description"):
+                    self.state.follow_up_context = backlog_item["description"]
             elif self.state.dry_run:
                 self.state.concept = "Asymptotic Safety vs Causal Dynamical Triangulations"
                 self.state.topic_metadata = {"theory_a": "Asymptotic Safety Gravity", "theory_b": "Causal Dynamical Triangulations"}
@@ -480,10 +502,18 @@ class UniverseFlow(Flow[UniverseState]):
         # ── Level 3 Logic ──
         else:
             retryable_advisory = get_next_retryable_advisory(level=3, repo_root=self.repo_root)
+            backlog_item = backlog_manager.get_next_backlog_item(level=3)
             if retryable_advisory:
                 candidate = retryable_advisory.get("concept")
                 print(f"[OFFICE HOURS CLOSED-LOOP] Prioritizing answered advisory retry for Level 3: '{candidate}'")
                 self.state.concept = candidate
+            elif backlog_item:
+                candidate = backlog_item.get("concept") or backlog_item.get("question")
+                print(f"[COLONY / CURRICULUM BACKLOG] Prioritizing Level 3 candidate: '{candidate}' (source={backlog_item.get('source')})")
+                self.state.concept = candidate
+                self.state.topic_metadata = {"focus_area": "Colony & Agora Commissioned Synthesis", **(backlog_item.get("metadata") or {})}
+                if backlog_item.get("description"):
+                    self.state.follow_up_context = backlog_item["description"]
             elif self.state.dry_run:
                 self.state.concept = "Thermodynamic Limits of Neural Information Processing"
                 self.state.topic_metadata = {"focus_area": "Integrated Information Theory & Neural Thermodynamics"}

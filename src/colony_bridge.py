@@ -586,6 +586,151 @@ def generate_cross_world_atlas_markdown(snapshot: dict[str, Any]) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, int] | None:
+    """
+    Extracts a clean, formal academic concept title (non-question format, <= 75 chars)
+    and target curriculum level (default Level 3) from a World A or World B Colleague Commons message.
+    """
+    raw_msg = str(msg_dict.get("message") or "").strip()
+    if len(raw_msg) < 25:
+        return None
+
+    # 1. Check if the message contains an explicit Topic/Concept/Title/Request line
+    explicit_m = re.search(
+        r"(?:\*\*|__)?(?:Topic|Concept|Title|Literature\s+Request|Theory\s+Request|Research\s+Question)(?:\*\*|__)?\s*:\s*([^\n`]+)",
+        raw_msg,
+        flags=re.IGNORECASE,
+    )
+    candidate = explicit_m.group(1).strip() if explicit_m else ""
+
+    # 2. Otherwise extract the primary question or scientific clause
+    if not candidate:
+        cleaned = re.sub(r"@[a-zA-Z0-9_-]+", "", raw_msg)
+        cleaned = re.sub(r"`[^`]+`", "", cleaned)
+        cleaned = re.sub(r"\*\*([^*]+)\*\*", r"\1", cleaned)
+        sentences = [s.strip() for s in re.split(r"[\n]|(?<=[.?!])\s+", cleaned) if len(s.strip()) >= 20]
+        q_sents = [s for s in sentences if "?" in s or re.search(r"\b(derive|bound|scaling|exponent|citation|literature|proof|invariant|theorem)\b", s, re.IGNORECASE)]
+        candidate = (q_sents[0] if q_sents else (sentences[0] if sentences else cleaned)).strip()
+
+    # Strip conversational question prefixes so backlog_manager.is_question_text() accepts it as a formal topic title
+    candidate = re.sub(
+        r"^(?:can\s+(?:you|the\s+academy|anyone)|could\s+you|what\s+(?:is|are)|how\s+(?:do|does|can)|"
+        r"does\s+anyone\s+know|is\s+there|we\s+(?:need|are\s+looking\s+for)|please\s+(?:derive|check|find)|"
+        r"question\s+for\s+the\s+academy\s*[:\-]?)\s+",
+        "",
+        candidate,
+        flags=re.IGNORECASE,
+    ).strip()
+    candidate = re.sub(r"^(?:the\s+exact\s+|a\s+|an\s+)", "", candidate, flags=re.IGNORECASE).strip()
+    candidate = candidate.rstrip("?.!,:; ").strip()
+
+    if len(candidate) < 12:
+        return None
+
+    # Ensure it reads as a formal academic noun phrase (not starting with a question word)
+    if re.match(r"^(what|how|can|which|are|is|does|why|to what extent|could|would)\b", candidate, re.IGNORECASE):
+        candidate = "Analytical Bounds on " + re.sub(
+            r"^(what|how|can|which|are|is|does|why|to what extent|could|would)\s+",
+            "",
+            candidate,
+            flags=re.IGNORECASE,
+        )
+
+    if len(candidate) > 74:
+        words = candidate[:74].rsplit(" ", 1)[0]
+        candidate = words.rstrip(",:; -")
+
+    # Capitalize first letter cleanly
+    if candidate:
+        candidate = candidate[0].upper() + candidate[1:]
+
+    level = 2 if re.search(r"\b(?:vs\.?|versus)\b", candidate, re.IGNORECASE) else 3
+    return candidate, level
+
+
+def ingest_commons_questions_to_backlog(
+    commons_msgs: list[dict[str, Any]],
+    repo_root: Path | None = None,
+) -> list[dict[str, Any]]:
+    """
+    Scans World A & World B Colleague Commons messages for questions posted in `#literature-and-theory`
+    (or messages mentioning `@uk_literature_fellow` / `@academy` or tagged as literature/theory requests)
+    and queues them into Universe Knowledge's `research_backlog.jsonl` via `backlog_manager`.
+    """
+    try:
+        try:
+            import backlog_manager
+        except ImportError:
+            from src import backlog_manager
+    except Exception:
+        return []
+
+    ingested: list[dict[str, Any]] = []
+    trigger_tags = {
+        "literature-request", "theory-request", "academy-question",
+        "citation-request", "dimensional-audit", "academy-request",
+    }
+
+    # Process oldest-to-newest so earlier commissions enter the FIFO queue first
+    for m in reversed(commons_msgs):
+        author = str(m.get("author") or "").strip()
+        role = str(m.get("author_role") or "peer_model").strip().lower()
+        if not author or author == "uk_literature_fellow" or role in (
+            "academy", "academy_fellow", "uk_literature_fellow", "universe_knowledge",
+            "human", "human_researcher", "visitor", "creator", "architect", "substrate_architect",
+        ):
+            continue
+
+        ch = str(m.get("channel") or "").strip().lower()
+        tag = str(m.get("tag") or "").strip().lower()
+        msg_text = str(m.get("message") or "").strip()
+        msg_low = msg_text.lower()
+
+        is_lit_channel = ch == "literature-and-theory"
+        mentions_academy = any(
+            kw in msg_low
+            for kw in ("@uk_literature_fellow", "@academy", "@universe_knowledge", "uk_literature_fellow")
+        )
+        has_trigger_tag = tag in trigger_tags
+
+        if not (is_lit_channel or mentions_academy or has_trigger_tag):
+            continue
+
+        extracted = _extract_commissioned_concept_title(m)
+        if not extracted:
+            continue
+        concept_title, level = extracted
+        msg_id = str(m.get("msg_id") or "").strip() or f"{author}_{ch}"
+        world = str(m.get("world") or "Colony").strip()
+        node_ref = f" [DAG Node: {m['node_id']}]" if m.get("node_id") else ""
+        job_ref = f" [World C Job: {m['job_id']}]" if m.get("job_id") else ""
+
+        description = (
+            f"[Colony & Agora Commissioned Inquiry from @{author} in {world} #{ch} (msg {msg_id}){node_ref}{job_ref}]: "
+            f"{msg_text}"
+        )
+        meta = {
+            "requester": author,
+            "world": world,
+            "channel": ch,
+            "msg_id": msg_id,
+            "thread_id": str(m.get("thread_id") or ""),
+            "node_id": str(m.get("node_id") or ""),
+            "job_id": str(m.get("job_id") or ""),
+        }
+        added = backlog_manager.add_curriculum_candidate(
+            concept_name=concept_title,
+            level=level,
+            description=description,
+            source=f"colony_commons:{msg_id}",
+            metadata=meta,
+        )
+        if added:
+            ingested.append({"concept": concept_title, "level": level, "requester": author, "world": world, "msg_id": msg_id})
+
+    return ingested
+
+
 def sync_colony_snapshot(repo_root: Path | None = None) -> dict[str, Any]:
     """Pull-only synchronization from World A, World B, and World C into `knowledge_base/embassy/`."""
     root = (repo_root or REPO_ROOT).resolve()
@@ -600,6 +745,7 @@ def sync_colony_snapshot(repo_root: Path | None = None) -> dict[str, Any]:
 
     wb_nodes = load_world_b_nodes(world_b_root)
     commons_msgs = load_colleague_commons_messages(world_a_root, world_b_root)
+    commissioned_Added = ingest_commons_questions_to_backlog(commons_msgs, root)
     dossiers = load_embassy_dossiers_metadata(world_a_root, world_b_root)
     if not dossiers and (embassy_dir / "colony_snapshot.json").exists():
         try:
@@ -808,6 +954,7 @@ def format_uk_paper_as_embassy_dossier(
     theme_labels = [BRIDGE_THEMES[t]["label"] for t in matched_themes if t in BRIDGE_THEMES]
     world_c_modules = [BRIDGE_THEMES[t]["world_c_module"] for t in matched_themes if t in BRIDGE_THEMES]
 
+    commissioned_by = str(entry.get("commissioned_by") or "").strip()
     lines = [
         f"# FRONTIER EPISTEMIC DOSSIER: [Universe Knowledge L{level}] {title}",
         "",
@@ -816,6 +963,10 @@ def format_uk_paper_as_embassy_dossier(
         f"- **Epistemic Status:** `[{status}]` | **Math Verification:** `[{math_status}]` (`{math_score}`)",
         f"- **Bridged Colony Themes:** {', '.join(theme_labels) if theme_labels else 'Emergence & Mathematical Physics'}",
         f"- **Suggested World C (`colony_lib`) Substrate:** `{'; '.join(world_c_modules) if world_c_modules else 'colony_lib.invariants'}`",
+    ]
+    if commissioned_by:
+        lines.append(f"- **Commissioned By:** {commissioned_by}")
+    lines.extend([
         f"- **Export Timestamp:** `{_utc_now_iso()}`",
         "",
         "---",
@@ -965,6 +1116,25 @@ def export_single_paper_dossier(markdown_path: str | Path, repo_root: Path | Non
         "sources": sources,
         "content": text,
     }
+
+    # Check if this paper was commissioned by a World A or World B colleague in research_backlog.jsonl
+    backlog_file = root / "knowledge_base" / "logs" / "research_backlog.jsonl"
+    if backlog_file.exists():
+        try:
+            for bl_line in backlog_file.read_text(encoding="utf-8", errors="replace").splitlines():
+                if not bl_line.strip():
+                    continue
+                bl_item = json.loads(bl_line)
+                bl_concept = str(bl_item.get("concept") or "").strip().lower()
+                if bl_concept and (bl_concept in entry["title"].lower() or re.sub(r"[^a-z0-9]+", "_", bl_concept)[:35] in md_file.stem.lower()):
+                    meta = bl_item.get("metadata") or {}
+                    req = str(meta.get("requester") or "").strip()
+                    wld = str(meta.get("world") or "").strip()
+                    if req:
+                        entry["commissioned_by"] = f"@{req}" + (f" ({wld})" if wld else "")
+                        break
+        except Exception:
+            pass
 
     snapshot_file = root / "knowledge_base" / "embassy" / "colony_snapshot.json"
     wb_nodes = []

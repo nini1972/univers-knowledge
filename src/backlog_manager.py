@@ -70,15 +70,22 @@ def add_to_backlog(parent_concept: str, level: int, questions: list[str]):
     add_followup_questions(parent_concept=parent_concept, level=level, questions=questions)
 
 
-def add_curriculum_candidate(concept_name: str, level: int = 1, description: str = "", source: str = "curriculum_plan"):
-    """Adds a genuine candidate concept to the curriculum research backlog."""
+def add_curriculum_candidate(
+    concept_name: str,
+    level: int = 1,
+    description: str = "",
+    source: str = "curriculum_plan",
+    metadata: dict | None = None,
+) -> bool:
+    """Adds a genuine candidate concept to the curriculum research backlog. Returns True if newly added."""
     clean_name = (concept_name or "").strip()
     if not clean_name:
-        return
+        return False
     _ensure_log_dir()
 
     timestamp = _get_utc_now()
-    existing = set()
+    existing_names = set()
+    existing_sources = set()
     if BACKLOG_FILE.exists():
         with open(BACKLOG_FILE, "r", encoding="utf-8") as f:
             for line in f:
@@ -86,32 +93,40 @@ def add_curriculum_candidate(concept_name: str, level: int = 1, description: str
                     try:
                         data = json.loads(line)
                         name = data.get("concept") or data.get("question") or ""
-                        existing.add(name.strip().lower())
+                        existing_names.add(name.strip().lower())
+                        src = (data.get("source") or "").strip()
+                        if src.startswith("colony_commons:"):
+                            existing_sources.add(src)
                     except Exception:
                         pass
 
-    if clean_name.lower() in existing:
-        return
+    if clean_name.lower() in existing_names:
+        return False
+    if source.startswith("colony_commons:") and source in existing_sources:
+        return False
 
     entry = {
         "concept": clean_name,
         "level": level,
         "description": description.strip(),
         "source": source,
+        "metadata": metadata or {},
         "status": "pending",
         "timestamp": timestamp,
         "resolved_at": None,
     }
     with open(BACKLOG_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps(entry, ensure_ascii=False) + "\n")
-    print(f"[CURRICULUM BACKLOG] Added candidate topic: '{clean_name}' (Level {level})")
+    print(f"[CURRICULUM BACKLOG] Added candidate topic: '{clean_name}' (Level {level}, source={source})")
+    return True
 
 
 def get_next_backlog_item(level: int = None) -> dict | None:
-    """Returns the oldest pending curriculum candidate item, strictly filtered by level."""
+    """Returns the next pending curriculum candidate item, prioritizing commissioned Colony Commons requests."""
     if not BACKLOG_FILE.exists():
         return None
 
+    pending_items = []
     with open(BACKLOG_FILE, "r", encoding="utf-8") as f:
         for line in f:
             if not line.strip():
@@ -128,18 +143,26 @@ def get_next_backlog_item(level: int = None) -> dict | None:
                     if is_question_text(concept_text) and len(concept_text) > 80:
                         continue
 
-                    # Standardize return dictionary
-                    return {
+                    pending_items.append({
                         "concept": concept_text,
                         "question": concept_text,
                         "level": item_level,
                         "description": data.get("description", ""),
                         "source": data.get("source", "curriculum"),
+                        "metadata": data.get("metadata") or {},
                         "timestamp": data.get("timestamp"),
-                    }
+                    })
             except Exception:
                 pass
-    return None
+
+    if not pending_items:
+        return None
+
+    # Prioritize commissioned Colony & Agora requests (colony_commons:*) over generic backlog items
+    colony_items = [item for item in pending_items if str(item.get("source", "")).startswith("colony_commons:")]
+    if colony_items:
+        return colony_items[0]
+    return pending_items[0]
 
 
 def get_candidate_curriculum_digest(level: int = None, limit: int = 5) -> str:

@@ -1,4 +1,4 @@
-from crewai import Task
+﻿from crewai import Task
 from textwrap import dedent
 
 try:
@@ -91,6 +91,7 @@ class UniverseTasks:
                   * Observational Cosmology & Deep-Space Survey Tracker: to retrieve flagship telescope data (Hubble/HST, JWST, DESI, Euclid, Planck, NANOGrav/LIGO) with quantitative central values, error bars, and covariance matrices.
                   * Physics Calculator & Tension Evaluator: to deterministically compute any worked numerical example, GeV^-1 to meter/second conversion, or Gaussian/DESI tension (sigma / delta_chi2) before writing the number into your draft.
                   * Europe PMC Literature Search: to cross-reference open-access peer-reviewed literature and biophysics.
+                  * Colony & Agora Empirical Discovery Search: to cross-reference autonomous numerical simulations, CANON_VERIFIED scaling laws, and REFUTED hypotheses from World A (evolution_sandbox) and World B (synthetic-agora).
                 - When searching, generate highly specific queries. Append terms like "review article", "recent advances", "experimental constraints", or "mathematical framework" (e.g., "{concept} experimental constraints" or "{concept} review article").
                 - Run the Pre-Flight Citation Verifier tool on your draft to audit all citations, ensuring 0 future-dated years, 0 unresolvable DOIs, and 0 placeholder sources before submitting.
 
@@ -187,7 +188,7 @@ class UniverseTasks:
         )
 
     def math_verification_task(self, agent, concept, context=None):
-        """Tier 1 — Automatic math verification task. Inserted after research, before skeptic."""
+        """Tier 1 â€” Automatic math verification task. Inserted after research, before skeptic."""
         return Task(
             description=dedent(f"""
                 Perform a rigorous mathematical integrity check on the research report for: {concept}.
@@ -196,21 +197,21 @@ class UniverseTasks:
 
                 You MUST execute the following steps in order using your tools:
 
-                STEP 1 — Extract equations & audit Conventions/Symbol Table:
+                STEP 1 â€” Extract equations & audit Conventions/Symbol Table:
                 Use the "Equation Extractor" tool by passing ONLY the mathematical equations and formula blocks ($$...$$ and $...$) from the research context (keep the input under 4,000 characters; do NOT copy-paste the entire narrative prose or bibliography). Also inspect whether the report includes `### Conventions & Symbol Table` and `### Validity Domain & Claim Scope` (flagging any missing or conflicting metric signature, Planck mass M_Pl vs m_Pl, or unit conventions).
 
-                STEP 2 — Check dimensional consistency & symbolic derivations/limits:
-                Pass the JSON output from Step 1 directly to the "Dimensional Consistency Checker" tool, and ALWAYS pass the report's Symbol Table as `symbol_dimensions_json` (e.g. {{"\\phi": 1, "V": 4, "\\lambda": 0, "n_B": 3, "T": 1}}) — ambiguous letters (p, P, k, s, n, R, G, V, T, H, \\lambda) only get a definitive verdict when declared. If the report includes a continuity/ODE integral (e.g. variable-w(a) dark energy density), a contrast variance expansion, or an asymptotic limit claim (e.g. a->0, a->1, k->0), verify it with the "Symbolic Derivation Verifier" tool (`derivation_steps` written as 'LHS = RHS', and/or `limits_json`).
+                STEP 2 â€” Check dimensional consistency & symbolic derivations/limits:
+                Pass the JSON output from Step 1 directly to the "Dimensional Consistency Checker" tool, and ALWAYS pass the report's Symbol Table as `symbol_dimensions_json` (e.g. {{"\\phi": 1, "V": 4, "\\lambda": 0, "n_B": 3, "T": 1}}) â€” ambiguous letters (p, P, k, s, n, R, G, V, T, H, \\lambda) only get a definitive verdict when declared. If the report includes a continuity/ODE integral (e.g. variable-w(a) dark energy density), a contrast variance expansion, or an asymptotic limit claim (e.g. a->0, a->1, k->0), verify it with the "Symbolic Derivation Verifier" tool (`derivation_steps` written as 'LHS = RHS', and/or `limits_json`).
 
-                STEP 3 — Classify topological structures:
+                STEP 3 â€” Classify topological structures:
                 Use the "Topology Classifier" tool with the concept name and a concise summary (under 1,500 characters) of the geometric, symmetry, and topological structures in the research context.
 
-                STEP 4 — Validate numerical benchmarks & worked claims:
+                STEP 4 â€” Validate numerical benchmarks & worked claims:
                 Use the "Numerical Benchmark Validator" tool with the concept name and the equation JSON from Step 1. If the report includes a specific worked numerical calculation (e.g. a horizon/patch length in meters, a baryon yield n_B/s, or a sigma/delta_chi2 tension), verify it with the "Physics Calculator & Tension Evaluator" tool (`verify_claim`, `tension_sigma`, or `delta_chi2_w0wa`).
 
-                STEP 5 — Compute the Math Score and assign math_status (GLOBAL COHERENCE RULE):
+                STEP 5 â€” Compute the Math Score and assign math_status (GLOBAL COHERENCE RULE):
                 - Global Coherence Rule: Your overall verdict MUST be the logical conjunction of your itemized equation checks. NEVER state in your summary that "all equations are dimensionally consistent" if you or a tool identified an itemized dimensional mismatch, missing covariance term, or erroneous integral (e.g., writing rho ~ a^(-3(1+w(a))) for variable w(a)). Report any `UNDECIDABLE` equations honestly as `UNDECIDABLE`.
-                - Two levels of tool verdict: `INCONSISTENT` comes from known error patterns and is definitive. `DIMENSION_FLAG` is a mismatch computed from symbol dimensions and needs your judgment, because one letter often has several meanings in a paper (rho as energy density vs a correlation coefficient, G as Newton's constant vs a Horndeski function, chi as a field vs the chi^2 statistic). For each flag: if it is a real error, count it as INCONSISTENT; if it is an artefact of symbol reuse, dismiss it under `### Dismissed Dimension Flags` with a one-line reason. Dismissed flags do NOT make the math flawed — but you must not dismiss a flag whose symbols really carry the declared meaning.
+                - Two levels of tool verdict: `INCONSISTENT` comes from known error patterns and is definitive. `DIMENSION_FLAG` is a mismatch computed from symbol dimensions and needs your judgment, because one letter often has several meanings in a paper (rho as energy density vs a correlation coefficient, G as Newton's constant vs a Horndeski function, chi as a field vs the chi^2 statistic). For each flag: if it is a real error, count it as INCONSISTENT; if it is an artefact of symbol reuse, dismiss it under `### Dismissed Dimension Flags` with a one-line reason. Dismissed flags do NOT make the math flawed â€” but you must not dismiss a flag whose symbols really carry the declared meaning.
                 Award 1 point for each criterion met:
                   - Point 1: At least 1 equation was successfully extracted (Step 1)
                   - Point 2: All extracted equations are CONSISTENT or DIMENSIONLESS (Step 2) with coherent conventions (dismissed flags allowed), OR math is purely topological
@@ -218,14 +219,14 @@ class UniverseTasks:
                   - Point 4: At least 1 numerical benchmark MATCHES (Step 4), OR concept is theoretical with no experimental values
 
                 Assign math_status based on results:
-                  [MATH_PROVEN]      — Score 4/4, all steps verified
-                  [MATH_CONSISTENT]  — Score 2-3/4, no INCONSISTENT verdicts (dismissed flags allowed)
-                  [MATH_CONJECTURED] — Has unproven assumptions clearly flagged
-                  [MATH_TOPOLOGICAL] — Primarily topological, structurally valid
-                  [MATH_FLAWED]      — Any INCONSISTENT verdict (including confirmed flags) or broken mathematical derivation detected
-                  [MATH_PENDING]     — No equations found at all
+                  [MATH_PROVEN]      â€” Score 4/4, all steps verified
+                  [MATH_CONSISTENT]  â€” Score 2-3/4, no INCONSISTENT verdicts (dismissed flags allowed)
+                  [MATH_CONJECTURED] â€” Has unproven assumptions clearly flagged
+                  [MATH_TOPOLOGICAL] â€” Primarily topological, structurally valid
+                  [MATH_FLAWED]      â€” Any INCONSISTENT verdict (including confirmed flags) or broken mathematical derivation detected
+                  [MATH_PENDING]     â€” No equations found at all
 
-                STEP 6 — Write the Math Verification Report:
+                STEP 6 â€” Write the Math Verification Report:
                 Format your output EXACTLY as:
 
                 ## Math Verification Report
@@ -272,7 +273,7 @@ class UniverseTasks:
         )
 
     def derivation_deep_dive_task(self, agent, concept, research_text, context=None):
-        """Tier 2 — On-demand deep-dive derivation task for the Derivation Architect."""
+        """Tier 2 â€” On-demand deep-dive derivation task for the Derivation Architect."""
         return Task(
             description=dedent(f"""
                 Produce a complete step-by-step mathematical derivation for: {concept}.
@@ -402,7 +403,7 @@ class UniverseTasks:
                 - Assign epistemic_status based on evidence strength:
                   * Use [VERIFIED] when the comparative analysis is grounded in experimentally confirmed physics (e.g. observed parameters, confirmed predictions).
                   * Use [THEORETICAL] when both theories genuinely lack direct experimental confirmation or observational support.
-                  * Most L2 debates compare well-established frameworks with empirical grounding — these should be [VERIFIED].
+                  * Most L2 debates compare well-established frameworks with empirical grounding â€” these should be [VERIFIED].
                 - Reject ONLY for fundamental quality failures (Skeptic score < 4, Math Status [MATH_FLAWED], fewer than 3 independent sources, or missing core theoretical comparison).
                 - "lack_of_experimental_confirmation" alone is NOT a valid rejection reason for Level 2 debates.
 
@@ -491,7 +492,7 @@ class UniverseTasks:
                 Evaluate both theories based on:
                 1. Mathematical consistency (unifying both theories under a single shared metric signature, unit basis, and Symbol Table, and referencing the Math Physicist's verification report).
                 2. Alignment with existing empirical data (e.g., General Relativity, Quantum Mechanics, Planck, DESI, JWST, HST, LIGO/GW170817) with explicit quantitative observables (such as $c_s^2$, $w(a)$, $f\\sigma_8(z)$, or $S_8$).
-                3. Major flaws, stability conditions, or unprovable assumptions in each — explicitly distinguishing `[GENERAL]` results from `[MODEL-DEPENDENT: ...]` parameterizations.
+                3. Major flaws, stability conditions, or unprovable assumptions in each â€” explicitly distinguishing `[GENERAL]` results from `[MODEL-DEPENDENT: ...]` parameterizations.
                 Highlight which theory (if either) has stronger current consensus.
                 Assign status based on evidence: use [VERIFIED] if the analysis is grounded in experimentally confirmed physics, or [THEORETICAL] only if both theories genuinely lack any direct experimental support.
 
@@ -603,7 +604,7 @@ class UniverseTasks:
         # Build explicit math field instructions from pre-parsed values
         if math_status and math_score is not None:
             math_yaml_instruction = dedent(f"""
-                IMPORTANT — Math YAML fields are already known. Use these EXACT values verbatim:
+                IMPORTANT â€” Math YAML fields are already known. Use these EXACT values verbatim:
                   math_status: "{math_status}"
                   math_score: "{math_score}/4"
                 Do NOT change or omit these values.
@@ -619,7 +620,7 @@ class UniverseTasks:
         # Build explicit math report instructions
         if math_report:
             math_report_instruction = dedent(f"""
-                IMPORTANT — Use this exact Math Physicist's verification report verbatim for Section '## 9. Mathematical Integrity Report':
+                IMPORTANT â€” Use this exact Math Physicist's verification report verbatim for Section '## 9. Mathematical Integrity Report':
                 ---
                 {math_report}
                 ---
@@ -627,14 +628,14 @@ class UniverseTasks:
         else:
             math_report_instruction = dedent("""
                 For section ## 9. Mathematical Integrity Report: copy the Math Physicist's full verification report from context.
-                If no math report is available, write "[MATH_PENDING — will be populated by math_enrichment.py]".
+                If no math report is available, write "[MATH_PENDING â€” will be populated by math_enrichment.py]".
             """).strip()
 
         # Build explicit citation preservation instructions
         if research_report:
             research_context = research_report[:12000]
             citation_instruction = dedent(f"""
-                IMPORTANT — SOURCE CITATION PRESERVATION MANDATE:
+                IMPORTANT â€” SOURCE CITATION PRESERVATION MANDATE:
                 The specialist research report contains authentic scientific sources, papers, author names, DOIs, arXiv IDs, and publication years:
                 ---
                 {research_context}
@@ -652,7 +653,7 @@ class UniverseTasks:
             """).strip()
         else:
             citation_instruction = dedent("""
-                IMPORTANT — SOURCE CITATION PRESERVATION MANDATE:
+                IMPORTANT â€” SOURCE CITATION PRESERVATION MANDATE:
                 In the YAML frontmatter `sources:` list, you MUST list specific authentic academic sources:
                 - Format each source as: `"Author(s) (Year), 'Title', DOI or arXiv URL"`
                 - Do NOT use generic placeholder categories like 'Empirical observations'.

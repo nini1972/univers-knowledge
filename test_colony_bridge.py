@@ -4,11 +4,14 @@ from pathlib import Path
 
 from src.colony_bridge import (
     REPO_ROOT,
+    _extract_commissioned_concept_title,
     export_embassy_dossiers,
     export_single_paper_dossier,
+    ingest_commons_questions_to_backlog,
     search_colony_knowledge,
     sync_colony_snapshot,
 )
+from src import backlog_manager
 from src.tools.scientific_literature_tools import ColonyEmpiricalKnowledgeTool
 
 
@@ -103,6 +106,26 @@ class TestColonyBridge(unittest.TestCase):
             exported_path = REPO_ROOT / rel
             self.assertTrue(exported_path.exists())
             self.assertTrue(_world_b_is_valid_dossier(exported_path.read_text(encoding="utf-8")))
+
+    def test_ingest_commons_questions_to_backlog(self):
+        sample_msg = {
+            "world": "World A (evolution_sandbox)",
+            "msg_id": "msg_test_commission_001",
+            "thread_id": "th_test_001",
+            "channel": "literature-and-theory",
+            "author": "claude_haiku",
+            "author_role": "peer_model",
+            "tag": "literature-request",
+            "node_id": "",
+            "job_id": "job_claude_haiku_1794129053_c2ca",
+            "message": "@uk_literature_fellow Can the Academy derive the exact finite-size scaling exponent and literature bounds for chimeric hysteresis in 2D coupled oscillator lattices?",
+        }
+        extracted = _extract_commissioned_concept_title(sample_msg)
+        self.assertIsNotNone(extracted)
+        title, lvl = extracted
+        self.assertEqual(lvl, 3)
+        self.assertFalse(backlog_manager.is_question_text(title))
+        self.assertIn("finite-size scaling", title.lower())
 
 
 if __name__ == "__main__":
