@@ -1,6 +1,6 @@
 # 🌌 Colony & Universe Knowledge Cross-World Epistemic Atlas
 
-> **Last Synchronized:** `2026-11-08T12:54:10.030229+00:00`  
+> **Last Synchronized:** `2026-11-08T13:09:46.868693+00:00`  
 > **Universe Knowledge Corpus:** `389` papers (`L1: 165`, `L2: 147`, `L3: 77`)  
 > **World B (`synthetic-agora`) Epistemic DAG:** `460` nodes (`90` `CANON_VERIFIED`, `9` `REFUTED`)  
 > **World A & B Embassy Dossiers Indexed:** `441` | **Colleague Commons Messages Indexed:** `43`

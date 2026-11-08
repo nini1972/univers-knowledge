@@ -331,6 +331,7 @@ def load_colleague_commons_messages(
         "synchronization-networks",
         "pattern-formation",
         "world-c-coordination",
+        "literature-and-theory",
         "human-visitor-questions",
         "lounge",
     ]
@@ -600,6 +601,12 @@ def sync_colony_snapshot(repo_root: Path | None = None) -> dict[str, Any]:
     wb_nodes = load_world_b_nodes(world_b_root)
     commons_msgs = load_colleague_commons_messages(world_a_root, world_b_root)
     dossiers = load_embassy_dossiers_metadata(world_a_root, world_b_root)
+    if not dossiers and (embassy_dir / "colony_snapshot.json").exists():
+        try:
+            prev_snap = json.loads((embassy_dir / "colony_snapshot.json").read_text(encoding="utf-8"))
+            dossiers = prev_snap.get("embassy_dossiers", [])
+        except Exception:
+            dossiers = []
     theme_bridges = build_cross_world_map(uk_papers, wb_nodes, commons_msgs, dossiers)
 
     stats = {

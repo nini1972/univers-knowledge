@@ -88,6 +88,11 @@ jobs:
             echo "PROJECT_ID=${GCP_PROJECT_ID}" >> "$GITHUB_ENV"
           fi
 
+      - name: Sync Colony & Agora Epistemic Bridge (Pre-Run)
+        run: |
+          set -euo pipefail
+          python src/colony_bridge.py --sync || true
+
       - name: Execute Knowledge Gathering (Level 1)
         run: |
           set -euo pipefail
@@ -176,6 +181,7 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/okf_indexer.py --build --validate
+          python src/colony_bridge.py --sync --export-outbox || true
 
       - name: Commit and Push Knowledge Base Updates
         run: |
