@@ -81,104 +81,6 @@ def extract_related_links(body_text: str):
         links.append(sanitize_slug(target_stem))
     return list(set(links))
 
-def scan_okf_bundle(repo_root: Path):
-    """Scans knowledge_base/ for OKF concept nodes and builds the graph structure."""
-    kb_dir = repo_root / "knowledge_base"
-    nodes = []
-    node_map = {}
-    edges = []
-    errors = []
-    warnings = []
-
-    level_folders = {
-        "level_1_fundamental_physics": 1,
-        "level_2_advanced_frameworks": 2,
-        "level_3_emergence_and_intelligence": 3
-    }
-
-    for folder_name, level_num in level_folders.items():
-        folder_path = kb_dir / folder_name
-        if not folder_path.exists():
-            continue
-
-        for filepath in sorted(folder_path.glob("*.md")):
-            if filepath.name.startswith("_") or filepath.name == "concept_template.md":
-                continue
-
-            try:
-                content = filepath.read_text(encoding="utf-8")
-            except Exception as err:
-                errors.append(f"Failed to read file {filepath.relative_to(repo_root)}: {err}")
-                continue
-
-            fm, body = parse_yaml_frontmatter(content)
-            stem_slug = sanitize_slug(filepath.stem)
-
-            # Determine Node ID
-            node_id = fm.get("id")
-            if not node_id:
-                node_id = stem_slug
-            else:
-                node_id = sanitize_slug(str(node_id))
-
-            # Determine Title
-            title = fm.get("title")
-            if not title:
-                title_match = re.search(r"^#\s+(.+)$", body, re.MULTILINE)
-                title = title_match.group(1).strip() if title_match else filepath.stem.replace("_", " ").title()
-
-            # Determine Status
-            status_raw = str(fm.get("status", "[THEORETICAL]")).upper()
-            if "VERIFIED" in status_raw:
-                status = "VERIFIED"
-            elif "REJECTED" in status_raw:
-                status = "REJECTED"
-            else:
-                status = "THEORETICAL"
-
-            # Parse dependencies and sources
-            dependencies = fm.get("dependencies", [])
-            if isinstance(dependencies, str):
-                dependencies = [dependencies]
-            dependencies = [sanitize_slug(d) for d in dependencies if d and sanitize_slug(d)]
-
-            # Merge body links into dependencies if not present
-            body_links = extract_related_links(body)
-            for link_slug in body_links:
-                if link_slug and link_slug not in dependencies and link_slug != node_id:
-                    dependencies.append(link_slug)
-
-            sources = fm.get("sources", [])
-            if isinstance(sources, str):
-                sources = [sources]
-
-            tags = fm.get("tags", [])
-            if isinstance(tags, str):
-                tags = [tags]
-            if not tags:
-                # Infer basic tags from category / title
-                tags = [folder_name.split("_")[1]]
-
-            node = {
-                "id": node_id,
-                "title": title,
-                "level": level_num,
-                "category": folder_name,
-                "status": status,
-                "math_status": fm.get("math_status", "MATH_UNKNOWN"),
-                "math_score": fm.get("math_score", "0/4"),
-                "dependencies": dependencies,
-                "tags": tags,
-                "sources": sources,
-                "path": str(filepath.relative_to(repo_root)).replace("\\", "/")
-            }
-
-            if node_id in node_map:
-                errors.append(f"Duplicate node ID '{node_id}' found in {filepath.relative_to(repo_root)} and {node_map[node_id]['path']}")
-            else:
-                node_map[node_id] = node
-                nodes.append(node)
-
 def _resolve_smart_edges(nodes):
     """Smartly extracts directed prerequisite and dependency edges across all nodes."""
     node_map = {n["id"]: n for n in nodes}
@@ -207,12 +109,34 @@ def _resolve_smart_edges(nodes):
                 if src_id not in node_map[tgt_id]["dependencies"]:
                     node_map[tgt_id]["dependencies"].append(src_id)
 
-    # 1. Parse frontmatter dependencies & links
+    # 1. Parse frontmatter dependencies & links (with shorthand prefix/substring resolution)
     for node in nodes:
+        resolved_deps = []
         for dep_id in list(node["dependencies"]):
             dep_slug = sanitize_slug(dep_id)
             if dep_slug in node_map:
                 add_edge(dep_slug, node["id"], "prerequisite")
+                if dep_slug not in resolved_deps:
+                    resolved_deps.append(dep_slug)
+            elif dep_slug in title_lookup:
+                target_id = title_lookup[dep_slug]
+                add_edge(target_id, node["id"], "prerequisite")
+                if target_id not in resolved_deps:
+                    resolved_deps.append(target_id)
+            else:
+                matches = [
+                    nid for nid in node_map
+                    if nid != node["id"] and len(dep_slug) >= 6 and (dep_slug in nid or nid in dep_slug)
+                ]
+                if matches:
+                    matches.sort(key=len)
+                    target_id = matches[0]
+                    add_edge(target_id, node["id"], "prerequisite")
+                    if target_id not in resolved_deps:
+                        resolved_deps.append(target_id)
+                elif dep_slug not in resolved_deps:
+                    resolved_deps.append(dep_slug)
+        node["dependencies"] = resolved_deps
 
     # 2. Parse Level 2 & 3 Debate Titles (Theory A vs Theory B)
     for node in nodes:

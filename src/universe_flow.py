@@ -267,7 +267,7 @@ def update_index_file(index_path: str, repo_root: Path):
         except ImportError:
             from src.equation_archaeologist import EquationArchaeologist
         archaeologist = EquationArchaeologist(repo_root=repo_root)
-        archaeologist.scan_and_index()
+        archaeologist.run()
     except Exception as exc:
         print(f"Warning: Failed to auto-index equations: {exc}")
 

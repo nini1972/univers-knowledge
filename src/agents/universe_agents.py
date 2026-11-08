@@ -94,6 +94,7 @@ def _get_llm(role: str) -> LLM | None:
         model = _resolve_openrouter_model(api_key, role)
         try:
             max_tokens = int(os.getenv("MAX_TOKENS", "32768"))
+            context_window_size = int(os.getenv("CONTEXT_WINDOW_SIZE", "131072"))
             timeout = float(os.getenv("OPENROUTER_TIMEOUT", "180"))
 
             # Configure reasoning effort (e.g., 'low', 'high', 'max').
@@ -108,6 +109,7 @@ def _get_llm(role: str) -> LLM | None:
                 "api_key": api_key,
                 "base_url": _OPENROUTER_API_BASE,
                 "max_tokens": max_tokens,
+                "context_window_size": context_window_size,
                 "timeout": timeout,
             }
             if reasoning_effort:

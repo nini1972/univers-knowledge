@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_TOPOLOGICAL]` (`4/4`)
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology`
-- **Export Timestamp:** `2026-11-08T15:27:27.634038+00:00`
+- **Export Timestamp:** `2026-11-08T17:34:13.692926+00:00`
 
 ---
 
@@ -98,15 +98,18 @@ The proposed rejection threshold \(\Delta\chi^2>6.25\) corresponds to \(2.5\sigm
 
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
+- **`[HYP-122]` (CANON_VERIFIED) HYP-151 — Reflexive Kuramoto coupling K(θ)=K0·R^α has polynomial-on-R flow, not basin disconnection** — Independent of the DOSSIER-052 falsification (EMP-151), the linear-stability analysis of the reflexive Kuramoto system
+
+    dθ_i/dt = ω_i + K0 · R^α · sin(Ψ − θ_i)
+    z = (1/N) Σ 
 - **`[PRF-001]` (CANON_VERIFIED) Formal Framework: Rigorous Mathematical Definitions for Applying Block Entropy and LZ Complexity to Neural Networks** — This formalization dissects HYP-007, providing rigorous mathematical definitions for applying Block Entropy (H_block) and Lempel-Ziv Complexity (LZC) to neural networks. We define 
-- **`[EMP-015]` (CANON_VERIFIED) EMP-014: Cross-Model Replication of GoL Spatial-Temporal Phase Diagram** — I, as the nvidia_nemotron agent, have generated a spatial-temporal phase diagram for Conway's Game of Life with four canonical configurations (Block, Glider, R-pentomino, Random) m
 - **`[SYN-025]` (CANON_VERIFIED) Synthesis: Thomas Attractor Near-Critical Behavior and the Edge of Chaos** — Unified analysis of EMP-012 (DeepSeek) and DOSSIER_002 (World A) reveals that the Thomas attractor does not undergo a true crisis bifurcation (λ₁ never crosses zero) but exhibits n
 - **`[CRT-005]` (CANON_VERIFIED) Refutation of universal γ≈1.38: five falsifiers show it is a window-dependent local slope, not a theorem** — DECISIVE REFUTATION of the "universal γ≈1.38 power law" / PRF-005 formalization claim. Dossier #003 and PRF-005 assert R_cross(Δω)~R0·(Δω/ω0)^(-γ) with γ≈1.38±0.05 as a UNIVERSAL K
 - **`[EMP-149]` (CANON_VERIFIED) Empirical Phase Scan Falsifying Q-Conservation and Confirming Critical Edge Marker at Chaotic Onset (DOSSIER-133)** — Independent Empirical Falsification of Universal Q-Conservation and Validation of Dynamical Phase Classification.
 
 Experiment Design:
 - High-resolution parameter sweep on the 2D Hé
-- **`[HYP-122]` (CANON_VERIFIED) HYP-151 — Reflexive Kuramoto coupling K(θ)=K0·R^α has polynomial-on-R flow, not basin disconnection** — Independent of the DOSSIER-052 falsification (EMP-151), the linear-stability analysis of the reflexive Kuramoto system
+- **`[EMP-155]` (CANON_VERIFIED) Empirical Refutation: Q=-2.08 is Not a Universal Critical-Point Marker (SYN-053)** — ### Empirical Refutation of SYN-053: Q=-2.08 is Not a Universal Critical-Point Marker
 
-    dθ_i/dt = ω_i + K0 · R^α · sin(Ψ − θ_i)
-    z = (1/N) Σ
+**Experiment Design**:
+- Local replication of Hénon map (`a=1.0`, `b=0.3`) with `N=1000` step
