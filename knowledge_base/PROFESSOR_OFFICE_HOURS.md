@@ -12,9 +12,31 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (1)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20261108-7b088d` | L1 | **Proton Decay and Baryon Number Violation** | UniverseFlow Orchestrator | Concept 'Proton Decay and Baryon Number Violation' was rejected after 2 attempts (insufficient_skeptic_score). How should the agents proceed? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20261108-7b088d` — Proton Decay and Baryon Number Violation
+- **Timestamp**: `2026-11-08T16:12:11.267816+00:00`
+- **Level**: Level 1
+- **Reason Code**: `insufficient_skeptic_score`
+- **Question**: Concept 'Proton Decay and Baryon Number Violation' was rejected after 2 attempts (insufficient_skeptic_score). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic's Verification Score is 3/6, which is below the 4/6 threshold, so Rule 1 requires rejection even though the Math Physicist gave [MATH_CONSISTENT] (4/4). The Skeptic found substantive physics errors. The report calls the dimension-5 ΔL=2 Weinberg operator a d=6 baryon-number-violating operator. It says Super-K constrains d=9 ΔB=2 operators, but those are probed by neutron–antineutron searches. It states the equilibration inequality as Λ ≳ Λ_max when the condition Γ_d ≳ Γ_H gives Λ ≲ Λ_max. It also has a numerical discrepancy at T=10^4 GeV: the stated d=6 formula appears to give about 1.94×10^7 GeV, not 1.941×10^6 GeV. I did not recompute that figure myself. The report also lacks an explicit [THEORETICAL] label and a visual grounding description.
+- **Agent Blockers**:
+  * Researcher: Correct the operator classification. The Weinberg operator LLHH is d=5 and has ΔL=2, so it does not cause proton decay. Proton decay comes from d=6 gauge-mediated operators and from d=5 QQQL operators in SUSY GUTs. Neutron–antineutron oscillation comes from d=9 ΔB=2 operators.
+  * Researcher: Separate the experimental bounds by operator. Super-K limits apply to d=6 ΔB=1 operators, with Λ near 10^15 GeV. The d=9 bounds come from neutron–antineutron oscillation experiments such as ILL and the future ESS NNBAR, and are much lower in scale. Cite those sources.
+  * Researcher: State explicitly that the thermal washout/equilibration scale is a different and weaker constraint than the Super-K proton lifetime bound.
+  * Researcher: Label the report [THEORETICAL] and add a visual grounding description, such as a figure of Γ_d versus Γ_H against T for d=6 and d=9.
+  * Math Physicist: Fix the inequality direction. Γ_d ≳ Γ_H implies Λ ≲ Λ_max (the operator equilibrates), and Γ_d < Γ_H implies Λ ≳ Λ_max (the operator decouples). Restate the bound as the decoupling condition.
+  * Math Physicist: Recompute Λ_max(d=6, T=10^4 GeV) from (T^3 M_Pl/(1.66√g_*))^(1/4) with explicit arithmetic. Resolve the 1.94×10^7 versus 1.941×10^6 GeV conflict, and say which value is correct.
+  * Math Physicist: Re-derive the thermal rate scaling Γ_d ~ T^(2d-7)/Λ^(2d-8) from dimensional analysis. Check that the Γ_H comparison is dimensionally consistent for d=6 and d=9.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261108-7b088d "Your guidance"`
+
 
 ---
 

@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-11-08T09:21:44.171592+00:00",
+  "updated_at": "2026-11-08T16:33:44.705261+00:00",
   "stats": {
-    "total_nodes": 389,
+    "total_nodes": 391,
     "level_1_count": 165,
-    "level_2_count": 147,
-    "level_3_count": 77,
+    "level_2_count": 148,
+    "level_3_count": 78,
     "total_edges": 182,
     "frontier_count": 87
   },
@@ -308,11 +308,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "cosmicmicrowavebackground",
-        "friedmannequations",
         "baryonacousticoscillations",
         "darkenergy",
-        "hubbletension"
+        "hubbletension",
+        "friedmannequations",
+        "cosmicmicrowavebackground"
       ],
       "tags": [
         "1"
@@ -935,11 +935,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "standardmodeleffectivefieldtheory",
-        "higgsmechanism",
         "electroweaksymmetrybreaking",
+        "peskintakeuchiparameters",
         "standardmodel",
-        "peskintakeuchiparameters"
+        "higgsmechanism",
+        "standardmodeleffectivefieldtheory"
       ],
       "tags": [
         "1"
@@ -1178,11 +1178,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "grandunifiedtheories",
-        "minimalsupersymmetricstandardmodel",
-        "renormalizationgroup",
         "protondecay",
-        "standardmodel"
+        "standardmodel",
+        "renormalizationgroup",
+        "minimalsupersymmetricstandardmodel",
+        "grandunifiedtheories"
       ],
       "tags": [
         "1"
@@ -1559,13 +1559,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "4/4",
       "dependencies": [
-        "doublyspecialrelativity",
-        "earlydarkenergy",
-        "gammaraybursts",
-        "standardmodelextension",
         "gravitationalwavepropagation",
+        "gammaraybursts",
+        "doublyspecialrelativity",
         "quantumgravity",
-        "hubbletension"
+        "hubbletension",
+        "earlydarkenergy",
+        "standardmodelextension"
       ],
       "tags": [
         "1"
@@ -2901,11 +2901,11 @@
       "math_score": "4/4",
       "dependencies": [
         "tidaldeformabilityandlovenumbers",
-        "neutronstarphasetransitions",
-        "generalrelativity",
         "tolmanoppenheimervolkoffequations",
-        "neutronstarequationofstate",
-        "scalartensortheoriesofgravity"
+        "scalartensortheoriesofgravity",
+        "generalrelativity",
+        "neutronstarphasetransitions",
+        "neutronstarequationofstate"
       ],
       "tags": [
         "1"
@@ -3134,8 +3134,8 @@
       "math_score": "2/4",
       "dependencies": [
         "cosmologicalperturbationtheory",
-        "wimpfreezeout",
         "freezeinproduction",
+        "wimpfreezeout",
         "darkmatterrelicabundance"
       ],
       "tags": [
@@ -3226,11 +3226,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "latticeqcd",
-        "gaugetheory",
         "stronginteraction",
+        "quantumfieldtheory",
+        "gaugetheory",
         "thestandardmodel",
-        "quantumfieldtheory"
+        "latticeqcd"
       ],
       "tags": [
         "1"
@@ -3970,8 +3970,8 @@
         "radialaccelerationrelation",
         "sparcgalaxydatabase",
         "baryonictullyfisherrelation",
-        "lcdmbaryonicfeedback",
-        "mondexternalfieldeffect"
+        "mondexternalfieldeffect",
+        "lcdmbaryonicfeedback"
       ],
       "tags": [
         "2"
@@ -4681,13 +4681,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "cosmologicalparametertensions",
-        "anomalymediatedsupersymmetrybreaking",
-        "warmdarkmatterandstructureformation",
         "gaugemediatedsupersymmetrybreaking",
+        "anomalymediatedsupersymmetrybreaking",
+        "cosmologicalparametertensions",
+        "gravitinodarkmatter",
         "supersymmetricparticlesearches",
         "winodarkmatter",
-        "gravitinodarkmatter",
+        "warmdarkmatterandstructureformation",
         "darkmatter"
       ],
       "tags": [
@@ -5385,11 +5385,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "earlydarkenergy",
-        "functionalrenormalizationgroup",
         "quantumgravity",
         "causaldynamicaltriangulations",
         "hubbletension",
+        "functionalrenormalizationgroup",
+        "earlydarkenergy",
         "gravitationalwaveobservations"
       ],
       "tags": [
@@ -5435,12 +5435,12 @@
       "math_score": "3/4",
       "dependencies": [
         "neutronelectricdipolemoment",
-        "qcdaxionandaxionlikeparticles",
-        "nelsonbarrmechanism",
-        "latticeqcdquarkmasses",
-        "softpqparitysolution",
-        "strongcpproblem",
         "axionmisalignmentrelicabundance",
+        "softpqparitysolution",
+        "qcdaxionandaxionlikeparticles",
+        "latticeqcdquarkmasses",
+        "nelsonbarrmechanism",
+        "strongcpproblem",
         "thestrongcpproblem"
       ],
       "tags": [
@@ -5498,11 +5498,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "cosmicstringsandtopologicaldefects",
         "stochasticgravitationalwavebackgrounds",
-        "pulsartimingarrays",
-        "supermassiveblackholebinaries",
         "firstordercosmologicalphasetransitions",
-        "cosmicstringsandtopologicaldefects"
+        "supermassiveblackholebinaries",
+        "pulsartimingarrays"
       ],
       "tags": [
         "2"
@@ -5977,13 +5977,13 @@
       "math_status": "[MATH_CONSISTENT]",
       "math_score": "3.5/4",
       "dependencies": [
-        "growthratefsigma8",
         "cosmicshear",
-        "decayingdarkmatterdarkradiation",
-        "lambdacdm",
         "s8tension",
+        "decayingdarkmatterdarkradiation",
+        "growthratefsigma8",
         "matterpowerspectrum",
         "baryonicfeedback",
+        "lambdacdm",
         "darkmatter"
       ],
       "tags": [
@@ -6156,6 +6156,28 @@
         "Superfluid Dark Matter: Theoretical Advances and Challenges, Physical Review Letters"
       ],
       "path": "knowledge_base/level_2_advanced_frameworks/superfluid_dark_matter_vs_sterile_neutrino_dark_matter_debate.md"
+    },
+    {
+      "id": "supermassiveblackholebinaryinspiralsvscosmicstringnetworksinsourcingthepulsartimingarraynanohertzgravitationalwavebackgroundspectrum",
+      "title": "SMBHB Inspirals vs. Cosmic-String Networks as Sources of the PTA Nanohertz SGWB",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "VERIFIED",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Kibble, T. W. B. (1976), 'Topology of cosmic domains and strings', https://doi.org/10.1088/0305-4470/9/8/018",
+        "Vilenkin, A. (1981), 'Cosmic strings and domain walls', https://doi.org/10.1103/PhysRevD.24.2082",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Agazie, G., et al. (2023), 'The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background', https://doi.org/10.3847/2041-8213/acdac6",
+        "Copeland, E. J., Myers, R. C., and Polchinski, J. (2004), 'Cosmic F- and D-strings', https://doi.org/10.1088/1126-6708/2004/06/013",
+        "Blanco-Pillado, J. J., Olum, K. D., and Shlaer, B. (2015), 'The number of cosmic strings in the long-string network', https://doi.org/10.1103/PhysRevD.91.083519"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/supermassive_black_hole_binary_inspirals_vs_cosmic_string_networks_in_sourcing_the_pulsartimingarray_nanohertz_gravitationalwave_background_spectrum.md"
     },
     {
       "id": "superstringtheoryvstwistortheoryinunifyingquantumgravityandparticlephysics",
@@ -7282,11 +7304,11 @@
       "math_score": "4/4",
       "dependencies": [
         "nullmodelsandhypothesistesting",
-        "cosmicweb",
+        "persistenthomology",
+        "cosmologicalstructureformation",
         "lcdmcosmology",
         "topologicaldataanalysis",
-        "persistenthomology",
-        "cosmologicalstructureformation"
+        "cosmicweb"
       ],
       "tags": [
         "3"
@@ -7410,6 +7432,30 @@
       "path": "knowledge_base/level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md"
     },
     {
+      "id": "escapetimelawtesc2ak0r0aandtheuniversalprefactoru",
+      "title": "The Kuramoto Escape-Time Law and Universal Prefactor",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Acebrón, J. A., Bonilla, L. L., Pérez Vicente, C. J., Ritort, F., & Spigler, R. (2005), 'The Kuramoto model: A simple paradigm for synchronization phenomena', https://doi.org/10.1103/revmodphys.77.137",
+        "Strogatz, S. H. (2000), 'From Kuramoto to Crawford: exploring the onset of synchronization in populations of coupled oscillators', https://doi.org/10.1016/s0167-2789(00)00094-4",
+        "Tang, Y. (2011), 'To synchronize or not to synchronize…: finite-size scaling and fluctuation effects in the Kuramoto model', https://doi.org/10.1088/1742-5468/2011/01/p01034",
+        "Arenas, A., Díaz-Guilera, A., Kurths, J., Moreno, Y., & Zhou, C. (2008), 'Synchronization in complex networks', https://doi.org/10.1016/j.physrep.2008.09.002",
+        "Rodrigues, F. A., Peron, T. K. D., Ji, P., & Kurths, J. (2015), 'The Kuramoto model in complex networks', https://doi.org/10.1016/j.physrep.2015.10.008",
+        "Pazó, D. & Montbrió, E. (2009), 'Existence of hysteresis in the Kuramoto model with bimodal frequency distributions', https://doi.org/10.1103/physreve.80.046215",
+        "Bronski, J. C., Carty, T. & DeVille, L. (2020), 'Synchronization conditions in the Kuramoto model and their relationship to seminorms', https://doi.org/10.1088/1361-6544/abf9ed",
+        "Castellano, C., Fortunato, S. & Loreto, V. (2009), 'Statistical physics of social dynamics', https://doi.org/10.1103/RevModPhys.81.591"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/escapetime_law_tesc__2ak0r0a_and_the_universal_prefactor_u.md"
+    },
+    {
       "id": "falsifiablebremermannlandauerboundsonsustainedcomputationratesincorticaltissueadimensionallyconsistentcomparisonagainstdissipationlimitsincosmicwebgravitational",
       "title": "Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse",
       "level": 3,
@@ -7418,12 +7464,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "bremermannlimit",
-        "falsifiabilityandmodeldependentinference",
-        "corticalenergybudgets",
+        "landauerprinciple",
         "s8tension",
         "cosmicwebhalovirialization",
-        "landauerprinciple"
+        "corticalenergybudgets",
+        "bremermannlimit",
+        "falsifiabilityandmodeldependentinference"
       ],
       "tags": [
         "3"
@@ -7636,10 +7682,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "stochasticthermodynamicsandentropyproduction",
+        "fluctuationdissipationtheorem",
         "scalefreenetworksanduniversality",
         "cosmicwebfilamentsandvelocityshear",
-        "fluctuationdissipationtheorem",
-        "stochasticthermodynamicsandentropyproduction",
         "transferentropyandeffectiveconnectivity"
       ],
       "tags": [
@@ -8122,11 +8168,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "quantumfisherinformationandquantumcramerraobound",
-        "classicalforstertransportandincoherenthopping",
         "environmentassistedquantumtransport",
-        "leggettgarginequalities",
-        "openquantumsystemsandlindbladdynamics"
+        "quantumfisherinformationandquantumcramerraobound",
+        "openquantumsystemsandlindbladdynamics",
+        "classicalforstertransportandincoherenthopping",
+        "leggettgarginequalities"
       ],
       "tags": [
         "3"
@@ -8232,11 +8278,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "cosmicweb",
-        "bottleneckdistance",
         "observationalselectioneffects",
-        "topologicaldataanalysis",
+        "bottleneckdistance",
         "persistenthomology",
+        "topologicaldataanalysis",
+        "cosmicweb",
         "baryonicfeedback"
       ],
       "tags": [
