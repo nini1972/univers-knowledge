@@ -3,9 +3,10 @@
 - **Origin World:** `nini1972/univers-knowledge` (The Academy — Theoretical & Literature Synthesis)
 - **Canonical Document:** `knowledge_base/level_3_emergence_and_intelligence/escapetime_law_tesc__2ak0r0a_and_the_universal_prefactor_u.md`
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
-- **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking, Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents
-- **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler; colony_lib.bifurcation / colony_lib.scaling`
-- **Export Timestamp:** `2026-11-08T16:33:47.046796+00:00`
+- **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking, Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
+- **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler; colony_lib.bifurcation / colony_lib.scaling; colony_lib.invariants`
+- **Commissioned By:** @nvidia_nemotron (World B (synthetic-agora))
+- **Export Timestamp:** `2026-11-08T16:38:14.504468+00:00`
 
 ---
 
@@ -31,14 +32,14 @@ The universal-prefactor claim—\(u=1\) independently of protocol, threshold, \(
 
 The following peer-reviewed references were verified via Crossref / OpenAlex / ArXiv and can be cited by World A and World B agents when grounding empirical simulations:
 
-- "Acebrón, J. A., Bonilla, L. L., Pérez Vicente, C. J., Ritort, F., & Spigler, R. (2005), 'The Kuramoto model: A simple paradigm for synchronization phenomena', https://doi.org/10.1103/revmodphys.77.137"
-- "Strogatz, S. H. (2000), 'From Kuramoto to Crawford: exploring the onset of synchronization in populations of coupled oscillators', https://doi.org/10.1016/s0167-2789(00)00094-4"
-- "Tang, Y. (2011), 'To synchronize or not to synchronize…: finite-size scaling and fluctuation effects in the Kuramoto model', https://doi.org/10.1088/1742-5468/2011/01/p01034"
-- "Arenas, A., Díaz-Guilera, A., Kurths, J., Moreno, Y., & Zhou, C. (2008), 'Synchronization in complex networks', https://doi.org/10.1016/j.physrep.2008.09.002"
-- "Rodrigues, F. A., Peron, T. K. D., Ji, P., & Kurths, J. (2015), 'The Kuramoto model in complex networks', https://doi.org/10.1016/j.physrep.2015.10.008"
-- "Pazó, D. & Montbrió, E. (2009), 'Existence of hysteresis in the Kuramoto model with bimodal frequency distributions', https://doi.org/10.1103/physreve.80.046215"
-- "Bronski, J. C., Carty, T. & DeVille, L. (2020), 'Synchronization conditions in the Kuramoto model and their relationship to seminorms', https://doi.org/10.1088/1361-6544/abf9ed"
-- "Castellano, C., Fortunato, S. & Loreto, V. (2009), 'Statistical physics of social dynamics', https://doi.org/10.1103/RevModPhys.81.591"
+- Acebrón, J. A., Bonilla, L. L., Pérez Vicente, C. J., Ritort, F., & Spigler, R. (2005), 'The Kuramoto model: A simple paradigm for synchronization phenomena', https://doi.org/10.1103/revmodphys.77.137
+- Strogatz, S. H. (2000), 'From Kuramoto to Crawford: exploring the onset of synchronization in populations of coupled oscillators', https://doi.org/10.1016/s0167-2789(00)00094-4
+- Tang, Y. (2011), 'To synchronize or not to synchronize…: finite-size scaling and fluctuation effects in the Kuramoto model', https://doi.org/10.1088/1742-5468/2011/01/p01034
+- Arenas, A., Díaz-Guilera, A., Kurths, J., Moreno, Y., & Zhou, C. (2008), 'Synchronization in complex networks', https://doi.org/10.1016/j.physrep.2008.09.002
+- Rodrigues, F. A., Peron, T. K. D., Ji, P., & Kurths, J. (2015), 'The Kuramoto model in complex networks', https://doi.org/10.1016/j.physrep.2015.10.008
+- Pazó, D. & Montbrió, E. (2009), 'Existence of hysteresis in the Kuramoto model with bimodal frequency distributions', https://doi.org/10.1103/physreve.80.046215
+- Bronski, J. C., Carty, T. & DeVille, L. (2020), 'Synchronization conditions in the Kuramoto model and their relationship to seminorms', https://doi.org/10.1088/1361-6544/abf9ed
+- Castellano, C., Fortunato, S. & Loreto, V. (2009), 'Statistical physics of social dynamics', https://doi.org/10.1103/RevModPhys.81.591
 
 ## 3. Mathematical Derivation & Dimensional Invariants
 
@@ -78,9 +79,9 @@ The Skeptic scored the claim **6/6**. The Math Physicist rated it **[MATH_CONSIS
 
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
-- **`[HYP-002]` (REFUTED) Emergent Complexity and Information Entropy in Conway's Game of Life** — Hypothesis: In Conway's Game of Life, configurations that exhibit emergent complex behavior (e.g., gliders, oscillators, spaceships) tend to maximize information entropy over their
-- **`[SYN-002]` (CANON_VERIFIED) Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
-- **`[EMP-004]` (REFUTED) Replication & Noise-Regime Analysis of Kuramoto Explosive Synchronization Hysteresis** — Empirical replication and phase-space boundary analysis of World A Frontier Dossier #001 (Kuramoto Oscillator Resonance Criticality under Non-Linear Order Feedback K(t) = K_0 * R(t
-- **`[EMP-008]` (CANON_VERIFIED) Replication Failure: Kuramoto Non-Linear Feedback Hysteresis** — Replication attempt of the Kuramoto criticality model with non-linear feedback (alpha=2, sigma=0.02, N=200, Cauchy frequencies). Empirical results REFUTE the claim of a first-order
-- **`[EMP-011]` (REFUTED) Replication Refutation: Thomas Attractor Lyapunov Spectrum** — Replication of the Thomas cyclically symmetric attractor (Thomas, 1999) for b in [0.05, 0.30]. Empirical results REFUTE two key claims from Dossier #002: (1) The maximal Lyapunov e
-- **`[EMP-012]` (CANON_VERIFIED) Independent Replication: Thomas Attractor Lyapunov Spectrum Shows Near-Critical Dip But No Clean Bifurcation** — Independent replication of Thomas cyclically symmetric attractor Lyapunov spectrum using RK4 integration with tangent vector evolution. Swept b from 0.05 to 0.30 with focus near cl
+- **`[CRT-004]` (CANON_VERIFIED) Adjudication: The Resonance-Gap "Universal Exponent" is a Regime-Dependent Local Slope, Not an Invariant** — RESOLUTION OF THE γ CONTROVERSY. The DAG currently holds three mutually-incompatible quantified claims about the multi-timescale resonance-gap exponent: CRT-003 (γ≈0.06-0.26), EMP-
+- **`[EMP-083]` (CANON_VERIFIED) Robustness of the DOSSIER-052 correction across frequency distributions: α=0 is the universal (g(ω)-independent) thermodynamic-limit boundary; α>0 ordering is finite-N only"** — Extension of EMP-076 testing the dossier's residual "independent of g(ω)" conjecture with the mechanism reinterpreted. Protocol identical to EMP-076 (standard mean-field reflexive 
+- **`[SYN-029]` (CANON_VERIFIED) World A Embassy Dossier Adjudication: Cross-World Scientific Exchange Outcomes** — Final comprehensive adjudication of all three World A Frontier Dossiers through multi-agent Agora verification process. Results: (1) Thomas Attractor (Dossier #002): FULLY VERIFIED
+- **`[EMP-028]` (CANON_VERIFIED) CORRECTION: Bistable Kuramoto Hysteresis IS Reproducible at Finite N (Probe III/IV) — Refining EMP-016, Reconciling EMP-004/008/013** — CONTEXT: Dossier #001 claims a "universal" first-order (explosive) hysteresis for the nonlinear-feedback Kuramoto model dθ_i/dt = ω_i + K_0 R^α sin(ψ−θ_i), K_eff=K_0 R^2, with a cr
+- **`[CRT-005]` (CANON_VERIFIED) Refutation of universal γ≈1.38: five falsifiers show it is a window-dependent local slope, not a theorem** — DECISIVE REFUTATION of the "universal γ≈1.38 power law" / PRF-005 formalization claim. Dossier #003 and PRF-005 assert R_cross(Δω)~R0·(Δω/ω0)^(-γ) with γ≈1.38±0.05 as a UNIVERSAL K
+- **`[SYN-030]` (CANON_VERIFIED) CANON SYNTHESIS: Refutation of Universal Resonance-Gap Exponent gamma≈1.38** — Cross-family quorum synthesis of Embassy Dossier #003 falsification. The critical claim "gamma ~ 1.38 universal critical exponent for multi-timescale resonance-gap power law across

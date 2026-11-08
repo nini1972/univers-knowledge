@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_TOPOLOGICAL]` (`4/4`)
 - **Bridged Colony Themes:** Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds, Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.recurrence.rqa; colony_lib.bifurcation / colony_lib.scaling`
-- **Export Timestamp:** `2026-11-08T16:33:47.051193+00:00`
+- **Export Timestamp:** `2026-11-08T16:38:14.491519+00:00`
 
 ---
 
@@ -33,9 +33,9 @@ The synthesis and its implications have yet to be empirically tested, particular
 
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
-- **`[HYP-002]` (REFUTED) Emergent Complexity and Information Entropy in Conway's Game of Life** — Hypothesis: In Conway's Game of Life, configurations that exhibit emergent complex behavior (e.g., gliders, oscillators, spaceships) tend to maximize information entropy over their
-- **`[HYP-004]` (CANON_VERIFIED) Revisiting Complexity and Entropy in Game of Life: Towards Advanced Measures for Emergent Phenomena** — The refutation of HYP-002 using simple global Shannon entropy (based on live/dead cell proportions) highlighted the inadequacy of this measure to capture 'emergent complexity' in C
-- **`[HYP-005]` (CANON_VERIFIED) Lempel-Ziv Complexity as a Measure of Emergent Phenomena in Conway's Game of Life** — This simulation and plot support the hypothesis that Lempel-Ziv complexity better captures emergent complexity than Shannon entropy in Conway's Game of Life. The plot conways_lz_co
-- **`[SYN-001]` (CANON_VERIFIED) Synthesis: Advanced Measures of Complexity and Entropy in Conway's Game of Life** — This synthesis integrates the insights from HYP-004 and HYP-005 to provide a comprehensive understanding of advanced measures for capturing emergent complexity in Conway's Game of 
-- **`[SYN-002]` (CANON_VERIFIED) Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
-- **`[EMP-001]` (CANON_VERIFIED) Empirical Unified Benchmark: Block Entropy vs. Lempel-Ziv Complexity in GoL** — This empirical test evaluates two advanced information-theoretic measures—2x2 block Shannon entropy and Lempel-Ziv (LZ) complexity—side-by-side across four canonical Conway's Game
+- **`[SYN-024]` (CANON_VERIFIED) Unified Cross-World Dynamical Systems Framework: Subcritical Bifurcations as Universal Organizing Principle** — This synthesis unifies three seemingly disparate World A phenomena (Kuramoto synchronization, Thomas attractor chaos-to-order transitions, and multi-timescale resonance scaling) un
+- **`[SYN-027]` (CANON_VERIFIED) Subcritical Bifurcation Framework: Cross-Domain Validation and Universality Class Theory** — A unified theoretical framework demonstrating that dynamical systems approaching criticality without collapse exhibit universal subcritical bifurcation structure with system-depend
+- **`[EMP-001]` (CANON_VERIFIED) Empirical Unified Benchmark: Block Entropy vs. Lempel-Ziv Complexity in GoL** — This empirical test evaluates two advanced information-theoretic measures—2x2 block Shannon entropy and Lempel-Ziv (LZ) complexity—side-by-side across four canonical Conway's Game 
+- **`[PRF-001]` (CANON_VERIFIED) Formal Framework: Rigorous Mathematical Definitions for Applying Block Entropy and LZ Complexity to Neural Networks** — This formalization dissects HYP-007, providing rigorous mathematical definitions for applying Block Entropy (H_block) and Lempel-Ziv Complexity (LZC) to neural networks. We define 
+- **`[EMP-008]` (CANON_VERIFIED) Replication Failure: Kuramoto Non-Linear Feedback Hysteresis** — Replication attempt of the Kuramoto criticality model with non-linear feedback (alpha=2, sigma=0.02, N=200, Cauchy frequencies). Empirical results REFUTE the claim of a first-order
+- **`[SYN-023]` (CANON_VERIFIED) Synthesis: Nonlinear Feedback as a Universal Generator of Edge-of-Chaos Criticality Across Dynamical Substrates** — Cross-verification of World A dossiers reveals a unifying mechanism: when dynamical systems (continuous attractors, phase oscillators, multi-timescale networks) incorporate nonline

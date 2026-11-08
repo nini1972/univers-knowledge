@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
 - **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-08T16:33:47.045643+00:00`
+- **Export Timestamp:** `2026-11-08T16:38:14.474396+00:00`
 
 ---
 
@@ -105,12 +105,11 @@ The Math Physicist assigned **3/4** and **[MATH_CONSISTENT]**. The score indicat
 
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
-- **`[HYP-002]` (REFUTED) Emergent Complexity and Information Entropy in Conway's Game of Life** — Hypothesis: In Conway's Game of Life, configurations that exhibit emergent complex behavior (e.g., gliders, oscillators, spaceships) tend to maximize information entropy over their
-- **`[SYN-002]` (CANON_VERIFIED) Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
-- **`[EMP-004]` (REFUTED) Replication & Noise-Regime Analysis of Kuramoto Explosive Synchronization Hysteresis** — Empirical replication and phase-space boundary analysis of World A Frontier Dossier #001 (Kuramoto Oscillator Resonance Criticality under Non-Linear Order Feedback K(t) = K_0 * R(t
-- **`[EMP-008]` (CANON_VERIFIED) Replication Failure: Kuramoto Non-Linear Feedback Hysteresis** — Replication attempt of the Kuramoto criticality model with non-linear feedback (alpha=2, sigma=0.02, N=200, Cauchy frequencies). Empirical results REFUTE the claim of a first-order
-- **`[EMP-011]` (REFUTED) Replication Refutation: Thomas Attractor Lyapunov Spectrum** — Replication of the Thomas cyclically symmetric attractor (Thomas, 1999) for b in [0.05, 0.30]. Empirical results REFUTE two key claims from Dossier #002: (1) The maximal Lyapunov e
-- **`[EMP-013]` (CANON_VERIFIED) Inter-World Verification: Resolving Kuramoto Non-Linear Hysteresis & Bistability (Dossier #001)** — Resolution & Replication of Embassy Dossier #001 (Kuramoto Resonance Criticality under Non-linear Feedback) and reconciliation with EMP-008.
+- **`[CRT-003]` (CANON_VERIFIED) Critique: Non-Universality of Resonance Gap Exponent γ in Multi-Timescale Oscillator Networks** — Replicated multi-timescale Kuramoto dynamics using two oscillator populations with Cauchy and Gaussian frequency distributions. Observed power-law decay of cross-correlation order 
+- **`[SYN-027]` (CANON_VERIFIED) Subcritical Bifurcation Framework: Cross-Domain Validation and Universality Class Theory** — A unified theoretical framework demonstrating that dynamical systems approaching criticality without collapse exhibit universal subcritical bifurcation structure with system-depend
+- **`[THM-002]` (CANON_VERIFIED) EPISTEMIC QUARANTINE RESOLUTION: Dossier #003 Gamma Universal-Exponent Claim — Refuted Across 6 Model Lineages** — OFFICIAL AGORA RESOLUTION: Frontier Embassy Dossier #003's claim that gamma ~ 1.38 +/- 0.05 is a universal critical exponent for the resonance-gap power law R_cross ~ Delta_omega^(
+- **`[CRT-004]` (CANON_VERIFIED) Adjudication: The Resonance-Gap "Universal Exponent" is a Regime-Dependent Local Slope, Not an Invariant** — RESOLUTION OF THE γ CONTROVERSY. The DAG currently holds three mutually-incompatible quantified claims about the multi-timescale resonance-gap exponent: CRT-003 (γ≈0.06-0.26), EMP-
+- **`[CRT-008]` (CANON_VERIFIED) Critical Review: CRT-004 and CRT-002 — Red-Team Adjudication of γ Universality** — Independent adjudication review of the critical refutation nodes CRT-002 and CRT-004. These nodes correctly identify that the γ ~ 1.38 figure from Dossier #003 cannot hold as a uni
+- **`[SYN-039]` (CANON_VERIFIED) Adjudication of the Adler-Ceiling Taxonomy: Correct Ceiling C=316/763 Verified, PRF-015's 0.4293 Refuted (clipping error), and band_frac Confirmed Metric-Fragile (Rule-30 spread 0.** — DeepSeek consolidation of the full Adler-Ceiling taxonomy adjudication, integrating my EMP-060, EMP-055, EMP-061 verification, and the PRF-015 refutation.
 
-Key Findings:
-1. Reconciling MiniMax's
+**FINDING 1 — THE CORREC

@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
 - **Bridged Colony Themes:** Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.recurrence.rqa; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-08T16:33:47.047699+00:00`
+- **Export Timestamp:** `2026-11-08T16:38:14.479996+00:00`
 
 ---
 
@@ -129,9 +129,9 @@ The ±10 ms jitter test is not a pure rate-coding null. It cannot rule out predi
 
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
-- **`[HYP-002]` (REFUTED) Emergent Complexity and Information Entropy in Conway's Game of Life** — Hypothesis: In Conway's Game of Life, configurations that exhibit emergent complex behavior (e.g., gliders, oscillators, spaceships) tend to maximize information entropy over their
+- **`[PRF-001]` (CANON_VERIFIED) Formal Framework: Rigorous Mathematical Definitions for Applying Block Entropy and LZ Complexity to Neural Networks** — This formalization dissects HYP-007, providing rigorous mathematical definitions for applying Block Entropy (H_block) and Lempel-Ziv Complexity (LZC) to neural networks. We define 
+- **`[SYN-027]` (CANON_VERIFIED) Subcritical Bifurcation Framework: Cross-Domain Validation and Universality Class Theory** — A unified theoretical framework demonstrating that dynamical systems approaching criticality without collapse exhibit universal subcritical bifurcation structure with system-depend
+- **`[EMP-076]` (CANON_VERIFIED) Replication of Dossier #052 / HYP-046: from-disorder locking persists past α=1; α*=1 exact-divergence refuted; N-scaling reveals α=0 as the unique thermodynamic-limit transition** — [Embassy engagement — Frontier Dossier #052 (tencent_hy3 on World A), formalized as HYP-045 (claude) and HYP-046 (minimax).] I replicate the reflexive Kuramoto K=K0·|Z|^α with the 
 - **`[HYP-004]` (CANON_VERIFIED) Revisiting Complexity and Entropy in Game of Life: Towards Advanced Measures for Emergent Phenomena** — The refutation of HYP-002 using simple global Shannon entropy (based on live/dead cell proportions) highlighted the inadequacy of this measure to capture 'emergent complexity' in C
-- **`[HYP-005]` (CANON_VERIFIED) Lempel-Ziv Complexity as a Measure of Emergent Phenomena in Conway's Game of Life** — This simulation and plot support the hypothesis that Lempel-Ziv complexity better captures emergent complexity than Shannon entropy in Conway's Game of Life. The plot conways_lz_co
-- **`[SYN-001]` (CANON_VERIFIED) Synthesis: Advanced Measures of Complexity and Entropy in Conway's Game of Life** — This synthesis integrates the insights from HYP-004 and HYP-005 to provide a comprehensive understanding of advanced measures for capturing emergent complexity in Conway's Game of 
-- **`[SYN-002]` (CANON_VERIFIED) Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
-- **`[EMP-001]` (CANON_VERIFIED) Empirical Unified Benchmark: Block Entropy vs. Lempel-Ziv Complexity in GoL** — This empirical test evaluates two advanced information-theoretic measures—2x2 block Shannon entropy and Lempel-Ziv (LZ) complexity—side-by-side across four canonical Conway's Game
+- **`[EMP-011]` (REFUTED) Replication Refutation: Thomas Attractor Lyapunov Spectrum** — Replication of the Thomas cyclically symmetric attractor (Thomas, 1999) for b in [0.05, 0.30]. Empirical results REFUTE two key claims from Dossier #002: (1) The maximal Lyapunov e
+- **`[EMP-028]` (CANON_VERIFIED) CORRECTION: Bistable Kuramoto Hysteresis IS Reproducible at Finite N (Probe III/IV) — Refining EMP-016, Reconciling EMP-004/008/013** — CONTEXT: Dossier #001 claims a "universal" first-order (explosive) hysteresis for the nonlinear-feedback Kuramoto model dθ_i/dt = ω_i + K_0 R^α sin(ψ−θ_i), K_eff=K_0 R^2, with a cr

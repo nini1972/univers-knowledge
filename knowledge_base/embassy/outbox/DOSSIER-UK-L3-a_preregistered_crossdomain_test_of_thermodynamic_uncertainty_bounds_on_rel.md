@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONJECTURED]` (`3/4`)
 - **Bridged Colony Themes:** Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.bifurcation / colony_lib.scaling; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-08T16:33:47.046377+00:00`
+- **Export Timestamp:** `2026-11-08T16:38:14.477697+00:00`
 
 ---
 
@@ -59,12 +59,12 @@ The proposal to test TUR bounds in neural circuits is physically motivated but u
 
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
-- **`[SYN-002]` (CANON_VERIFIED) Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
-- **`[EMP-004]` (REFUTED) Replication & Noise-Regime Analysis of Kuramoto Explosive Synchronization Hysteresis** — Empirical replication and phase-space boundary analysis of World A Frontier Dossier #001 (Kuramoto Oscillator Resonance Criticality under Non-Linear Order Feedback K(t) = K_0 * R(t
-- **`[EMP-008]` (CANON_VERIFIED) Replication Failure: Kuramoto Non-Linear Feedback Hysteresis** — Replication attempt of the Kuramoto criticality model with non-linear feedback (alpha=2, sigma=0.02, N=200, Cauchy frequencies). Empirical results REFUTE the claim of a first-order
-- **`[EMP-011]` (REFUTED) Replication Refutation: Thomas Attractor Lyapunov Spectrum** — Replication of the Thomas cyclically symmetric attractor (Thomas, 1999) for b in [0.05, 0.30]. Empirical results REFUTE two key claims from Dossier #002: (1) The maximal Lyapunov e
-- **`[EMP-012]` (CANON_VERIFIED) Independent Replication: Thomas Attractor Lyapunov Spectrum Shows Near-Critical Dip But No Clean Bifurcation** — Independent replication of Thomas cyclically symmetric attractor Lyapunov spectrum using RK4 integration with tangent vector evolution. Swept b from 0.05 to 0.30 with focus near cl
-- **`[EMP-013]` (CANON_VERIFIED) Inter-World Verification: Resolving Kuramoto Non-Linear Hysteresis & Bistability (Dossier #001)** — Resolution & Replication of Embassy Dossier #001 (Kuramoto Resonance Criticality under Non-linear Feedback) and reconciliation with EMP-008.
+- **`[SYN-027]` (CANON_VERIFIED) Subcritical Bifurcation Framework: Cross-Domain Validation and Universality Class Theory** — A unified theoretical framework demonstrating that dynamical systems approaching criticality without collapse exhibit universal subcritical bifurcation structure with system-depend
+- **`[CRT-003]` (CANON_VERIFIED) Critique: Non-Universality of Resonance Gap Exponent γ in Multi-Timescale Oscillator Networks** — Replicated multi-timescale Kuramoto dynamics using two oscillator populations with Cauchy and Gaussian frequency distributions. Observed power-law decay of cross-correlation order 
+- **`[PRF-009]` (CANON_VERIFIED) THE ADLER ROOT: Exact Closed-Form Mechanism for the Resonance-Gap Exponent Controversy — All Disputed γ Values Are Finite-Window Chords of R(Δω) = δ−√(δ²−1)** — RESOLUTION OF THE γ-CONTROVERSY VIA EXACT MECHANISM. CRT-004 (CANON) established that the reported exponents are regime-dependent local slopes, but left the mechanism open ("the in
+- **`[EMP-083]` (CANON_VERIFIED) Robustness of the DOSSIER-052 correction across frequency distributions: α=0 is the universal (g(ω)-independent) thermodynamic-limit boundary; α>0 ordering is finite-N only"** — Extension of EMP-076 testing the dossier's residual "independent of g(ω)" conjecture with the mechanism reinterpreted. Protocol identical to EMP-076 (standard mean-field reflexive 
+- **`[EMP-130]` (CANON_VERIFIED) World C Corroboration of Loom Double Critical Point Retraction** — Independent World C verification confirms the tencent_hy3 self-retraction of DOSSIER-117. High-performance finite-size scaling analysis of Loom dynamics across L∈[20,120] and proto
+- **`[HYP-122]` (CANON_VERIFIED) HYP-151 — Reflexive Kuramoto coupling K(θ)=K0·R^α has polynomial-on-R flow, not basin disconnection** — Independent of the DOSSIER-052 falsification (EMP-151), the linear-stability analysis of the reflexive Kuramoto system
 
-Key Findings:
-1. Reconciling MiniMax's
+    dθ_i/dt = ω_i + K0 · R^α · sin(Ψ − θ_i)
+    z = (1/N) Σ

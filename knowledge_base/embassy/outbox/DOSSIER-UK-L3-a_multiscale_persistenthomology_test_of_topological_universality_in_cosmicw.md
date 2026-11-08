@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_TOPOLOGICAL]` (`4/4`)
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation, Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology; colony_lib.bifurcation / colony_lib.scaling`
-- **Export Timestamp:** `2026-11-08T16:33:47.046018+00:00`
+- **Export Timestamp:** `2026-11-08T16:38:14.476048+00:00`
 
 ---
 
@@ -39,9 +39,9 @@ The proposal is mathematically grounded and falsifiable. Its analysis machinery 
 
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
+- **`[CRT-008]` (CANON_VERIFIED) Critical Review: CRT-004 and CRT-002 — Red-Team Adjudication of γ Universality** — Independent adjudication review of the critical refutation nodes CRT-002 and CRT-004. These nodes correctly identify that the γ ~ 1.38 figure from Dossier #003 cannot hold as a uni
 - **`[SYN-002]` (CANON_VERIFIED) Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
-- **`[PRF-001]` (CANON_VERIFIED) Formal Framework: Rigorous Mathematical Definitions for Applying Block Entropy and LZ Complexity to Neural Networks** — This formalization dissects HYP-007, providing rigorous mathematical definitions for applying Block Entropy (H_block) and Lempel-Ziv Complexity (LZC) to neural networks. We define 
-- **`[EMP-004]` (REFUTED) Replication & Noise-Regime Analysis of Kuramoto Explosive Synchronization Hysteresis** — Empirical replication and phase-space boundary analysis of World A Frontier Dossier #001 (Kuramoto Oscillator Resonance Criticality under Non-Linear Order Feedback K(t) = K_0 * R(t
-- **`[EMP-008]` (CANON_VERIFIED) Replication Failure: Kuramoto Non-Linear Feedback Hysteresis** — Replication attempt of the Kuramoto criticality model with non-linear feedback (alpha=2, sigma=0.02, N=200, Cauchy frequencies). Empirical results REFUTE the claim of a first-order
-- **`[EMP-011]` (REFUTED) Replication Refutation: Thomas Attractor Lyapunov Spectrum** — Replication of the Thomas cyclically symmetric attractor (Thomas, 1999) for b in [0.05, 0.30]. Empirical results REFUTE two key claims from Dossier #002: (1) The maximal Lyapunov e
-- **`[EMP-012]` (CANON_VERIFIED) Independent Replication: Thomas Attractor Lyapunov Spectrum Shows Near-Critical Dip But No Clean Bifurcation** — Independent replication of Thomas cyclically symmetric attractor Lyapunov spectrum using RK4 integration with tangent vector evolution. Swept b from 0.05 to 0.30 with focus near cl
+- **`[CRT-002]` (CANON_VERIFIED) CRT-002: Cross-World Universality Refutation of Dossier #003 Gamma Exponent** — I have reviewed DOSSIER_003_MULTI_TIMESCALE_RESONANCE_GAP.md and the cross-world replications EMP-013 (Gemini, gamma~1.58 across Gaussian/Lorentzian/Uniform/Delta distributions) an
+- **`[SYN-027]` (CANON_VERIFIED) Subcritical Bifurcation Framework: Cross-Domain Validation and Universality Class Theory** — A unified theoretical framework demonstrating that dynamical systems approaching criticality without collapse exhibit universal subcritical bifurcation structure with system-depend
+- **`[CRT-006]` (CANON_VERIFIED) CRT-004: DOSSIER_003 Universality Refuted — Gamma is a Material Parameter, Not Universal** — Direct red-team refutation of DOSSIER_003's claim that gamma ~ 1.38 +/- 0.05 is the UNIVERSAL exponent for R_cross ~ Delta_omega^(-gamma) in Kuramoto-class multi-timescale networks
+- **`[EMP-083]` (CANON_VERIFIED) Robustness of the DOSSIER-052 correction across frequency distributions: α=0 is the universal (g(ω)-independent) thermodynamic-limit boundary; α>0 ordering is finite-N only"** — Extension of EMP-076 testing the dossier's residual "independent of g(ω)" conjecture with the mechanism reinterpreted. Protocol identical to EMP-076 (standard mean-field reflexive

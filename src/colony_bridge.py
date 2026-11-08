@@ -1050,6 +1050,35 @@ def format_uk_paper_as_embassy_dossier(
     return "\n".join(lines).rstrip() + "\n"
 
 
+def _resolve_commissioned_by(root: Path, title: str, stem_or_id: str) -> str:
+    """Match a paper title or filename stem against completed/pending items in research_backlog.jsonl."""
+    backlog_file = root / "knowledge_base" / "logs" / "research_backlog.jsonl"
+    if not backlog_file.exists():
+        return ""
+    norm_stem = re.sub(r"[^a-z0-9]+", "", stem_or_id.lower())
+    norm_title = re.sub(r"[^a-z0-9]+", "", title.lower())
+    try:
+        for bl_line in backlog_file.read_text(encoding="utf-8", errors="replace").splitlines():
+            if not bl_line.strip():
+                continue
+            bl_item = json.loads(bl_line)
+            bl_concept = str(bl_item.get("concept") or "").strip()
+            norm_concept = re.sub(r"[^a-z0-9]+", "", bl_concept.lower())
+            if norm_concept and (
+                norm_concept[:30] in norm_stem
+                or norm_stem[:30] in norm_concept
+                or norm_concept[:30] in norm_title
+            ):
+                meta = bl_item.get("metadata") or {}
+                req = str(meta.get("requester") or "").strip()
+                wld = str(meta.get("world") or "").strip()
+                if req:
+                    return f"@{req}" + (f" ({wld})" if wld else "")
+    except Exception:
+        pass
+    return ""
+
+
 def export_embassy_dossiers(repo_root: Path | None = None, max_dossiers: int = 25) -> list[str]:
     """
     Export top cross-world Universe Knowledge papers as `DOSSIER-UK-*.md` files into
@@ -1081,7 +1110,10 @@ def export_embassy_dossiers(repo_root: Path | None = None, max_dossiers: int = 2
         if not themes:
             continue
         lvl = int(entry.get("level") or 1)
-        score = len(themes) * 10 + (lvl * 5)
+        comm = _resolve_commissioned_by(root, title, str(entry.get("id") or ""))
+        if comm:
+            entry["commissioned_by"] = comm
+        score = len(themes) * 10 + (lvl * 5) + (100 if comm else 0)
         candidates.append((score, entry, themes))
 
     candidates.sort(key=lambda x: (-x[0], str(x[1].get("id") or "")))
@@ -1090,12 +1122,17 @@ def export_embassy_dossiers(repo_root: Path | None = None, max_dossiers: int = 2
     for _, entry, themes in candidates[:max_dossiers]:
         slug = re.sub(r"[^a-z0-9_]+", "_", str(entry.get("id") or "concept").lower()).strip("_")[:75]
         filename = f"DOSSIER-UK-L{entry.get('level', 3)}-{slug}.md"
+        entry_tokens = _tokenize(f"{entry.get('title', '')} {entry.get('overview', '')}")
         related_nodes = [
             n
             for n in wb_nodes
             if n.get("status") in ("CANON_VERIFIED", "REFUTED")
             and (set(n.get("themes") or []) & set(themes))
         ]
+        related_nodes.sort(
+            key=lambda n: len(entry_tokens & _tokenize(f"{n.get('title', '')} {n.get('summary', '')}")),
+            reverse=True,
+        )
         dossier_md = format_uk_paper_as_embassy_dossier(entry, themes, related_nodes)
         target = outbox / filename
         target.write_text(dossier_md, encoding="utf-8")
@@ -1143,24 +1180,9 @@ def export_single_paper_dossier(markdown_path: str | Path, repo_root: Path | Non
         "content": text,
     }
 
-    # Check if this paper was commissioned by a World A or World B colleague in research_backlog.jsonl
-    backlog_file = root / "knowledge_base" / "logs" / "research_backlog.jsonl"
-    if backlog_file.exists():
-        try:
-            for bl_line in backlog_file.read_text(encoding="utf-8", errors="replace").splitlines():
-                if not bl_line.strip():
-                    continue
-                bl_item = json.loads(bl_line)
-                bl_concept = str(bl_item.get("concept") or "").strip().lower()
-                if bl_concept and (bl_concept in entry["title"].lower() or re.sub(r"[^a-z0-9]+", "_", bl_concept)[:35] in md_file.stem.lower()):
-                    meta = bl_item.get("metadata") or {}
-                    req = str(meta.get("requester") or "").strip()
-                    wld = str(meta.get("world") or "").strip()
-                    if req:
-                        entry["commissioned_by"] = f"@{req}" + (f" ({wld})" if wld else "")
-                        break
-        except Exception:
-            pass
+    comm = _resolve_commissioned_by(root, entry["title"], md_file.stem)
+    if comm:
+        entry["commissioned_by"] = comm
 
     snapshot_file = root / "knowledge_base" / "embassy" / "colony_snapshot.json"
     wb_nodes = []
@@ -1170,12 +1192,17 @@ def export_single_paper_dossier(markdown_path: str | Path, repo_root: Path | Non
         except Exception:
             wb_nodes = []
 
+    entry_tokens = _tokenize(f"{entry.get('title', '')} {entry.get('overview', '')}")
     related_nodes = [
         n
         for n in wb_nodes
         if n.get("status") in ("CANON_VERIFIED", "REFUTED")
         and (set(n.get("themes") or []) & set(themes))
     ]
+    related_nodes.sort(
+        key=lambda n: len(entry_tokens & _tokenize(f"{n.get('title', '')} {n.get('summary', '')}")),
+        reverse=True,
+    )
     dossier_md = format_uk_paper_as_embassy_dossier(entry, themes, related_nodes)
     outbox = root / "knowledge_base" / "embassy" / "outbox"
     outbox.mkdir(parents=True, exist_ok=True)

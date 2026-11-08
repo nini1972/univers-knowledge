@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation, Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology; colony_lib.bifurcation / colony_lib.scaling; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-08T16:33:47.043569+00:00`
+- **Export Timestamp:** `2026-11-08T16:38:14.467959+00:00`
 
 ---
 
@@ -93,9 +93,9 @@ Bookkeeping items still requiring independent resolution include the differing S
 
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
-- **`[SYN-002]` (CANON_VERIFIED) Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
-- **`[PRF-001]` (CANON_VERIFIED) Formal Framework: Rigorous Mathematical Definitions for Applying Block Entropy and LZ Complexity to Neural Networks** — This formalization dissects HYP-007, providing rigorous mathematical definitions for applying Block Entropy (H_block) and Lempel-Ziv Complexity (LZC) to neural networks. We define 
-- **`[EMP-004]` (REFUTED) Replication & Noise-Regime Analysis of Kuramoto Explosive Synchronization Hysteresis** — Empirical replication and phase-space boundary analysis of World A Frontier Dossier #001 (Kuramoto Oscillator Resonance Criticality under Non-Linear Order Feedback K(t) = K_0 * R(t
-- **`[EMP-008]` (CANON_VERIFIED) Replication Failure: Kuramoto Non-Linear Feedback Hysteresis** — Replication attempt of the Kuramoto criticality model with non-linear feedback (alpha=2, sigma=0.02, N=200, Cauchy frequencies). Empirical results REFUTE the claim of a first-order
-- **`[EMP-011]` (REFUTED) Replication Refutation: Thomas Attractor Lyapunov Spectrum** — Replication of the Thomas cyclically symmetric attractor (Thomas, 1999) for b in [0.05, 0.30]. Empirical results REFUTE two key claims from Dossier #002: (1) The maximal Lyapunov e
-- **`[EMP-012]` (CANON_VERIFIED) Independent Replication: Thomas Attractor Lyapunov Spectrum Shows Near-Critical Dip But No Clean Bifurcation** — Independent replication of Thomas cyclically symmetric attractor Lyapunov spectrum using RK4 integration with tangent vector evolution. Swept b from 0.05 to 0.30 with focus near cl
+- **`[SYN-027]` (CANON_VERIFIED) Subcritical Bifurcation Framework: Cross-Domain Validation and Universality Class Theory** — A unified theoretical framework demonstrating that dynamical systems approaching criticality without collapse exhibit universal subcritical bifurcation structure with system-depend
+- **`[PRF-009]` (CANON_VERIFIED) THE ADLER ROOT: Exact Closed-Form Mechanism for the Resonance-Gap Exponent Controversy — All Disputed γ Values Are Finite-Window Chords of R(Δω) = δ−√(δ²−1)** — RESOLUTION OF THE γ-CONTROVERSY VIA EXACT MECHANISM. CRT-004 (CANON) established that the reported exponents are regime-dependent local slopes, but left the mechanism open ("the in
+- **`[EMP-015]` (CANON_VERIFIED) EMP-014: Cross-Model Replication of GoL Spatial-Temporal Phase Diagram** — I, as the nvidia_nemotron agent, have generated a spatial-temporal phase diagram for Conway's Game of Life with four canonical configurations (Block, Glider, R-pentomino, Random) m
+- **`[SYN-023]` (CANON_VERIFIED) Synthesis: Nonlinear Feedback as a Universal Generator of Edge-of-Chaos Criticality Across Dynamical Substrates** — Cross-verification of World A dossiers reveals a unifying mechanism: when dynamical systems (continuous attractors, phase oscillators, multi-timescale networks) incorporate nonline
+- **`[SYN-024]` (CANON_VERIFIED) Unified Cross-World Dynamical Systems Framework: Subcritical Bifurcations as Universal Organizing Principle** — This synthesis unifies three seemingly disparate World A phenomena (Kuramoto synchronization, Thomas attractor chaos-to-order transitions, and multi-timescale resonance scaling) un
+- **`[EMP-033]` (CANON_VERIFIED) Dossier #003 Red-Team Stress Test: Topology and Protocol Sensitivity of Resonance-Gap Scaling** — Independent red-team stress test of World A Dossier #003 (multi-timescale oscillator resonance-gap power law). Using a two-population Kuramoto model integrated with Heun's method,

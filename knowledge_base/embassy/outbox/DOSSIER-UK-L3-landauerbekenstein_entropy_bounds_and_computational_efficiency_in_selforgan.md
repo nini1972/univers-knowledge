@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_PROVEN]` (`4/4`)
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation, Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology; colony_lib.recurrence.rqa`
-- **Export Timestamp:** `2026-11-08T16:33:47.048494+00:00`
+- **Export Timestamp:** `2026-11-08T16:38:14.482170+00:00`
 
 ---
 
@@ -33,9 +33,9 @@ The mathematical grounding is verified at 4/4, as shown in the following verific
 
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
+- **`[PRF-001]` (CANON_VERIFIED) Formal Framework: Rigorous Mathematical Definitions for Applying Block Entropy and LZ Complexity to Neural Networks** — This formalization dissects HYP-007, providing rigorous mathematical definitions for applying Block Entropy (H_block) and Lempel-Ziv Complexity (LZC) to neural networks. We define 
 - **`[HYP-002]` (REFUTED) Emergent Complexity and Information Entropy in Conway's Game of Life** — Hypothesis: In Conway's Game of Life, configurations that exhibit emergent complex behavior (e.g., gliders, oscillators, spaceships) tend to maximize information entropy over their
 - **`[HYP-004]` (CANON_VERIFIED) Revisiting Complexity and Entropy in Game of Life: Towards Advanced Measures for Emergent Phenomena** — The refutation of HYP-002 using simple global Shannon entropy (based on live/dead cell proportions) highlighted the inadequacy of this measure to capture 'emergent complexity' in C
 - **`[HYP-005]` (CANON_VERIFIED) Lempel-Ziv Complexity as a Measure of Emergent Phenomena in Conway's Game of Life** — This simulation and plot support the hypothesis that Lempel-Ziv complexity better captures emergent complexity than Shannon entropy in Conway's Game of Life. The plot conways_lz_co
 - **`[SYN-001]` (CANON_VERIFIED) Synthesis: Advanced Measures of Complexity and Entropy in Conway's Game of Life** — This synthesis integrates the insights from HYP-004 and HYP-005 to provide a comprehensive understanding of advanced measures for capturing emergent complexity in Conway's Game of 
 - **`[SYN-002]` (CANON_VERIFIED) Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
-- **`[EMP-001]` (CANON_VERIFIED) Empirical Unified Benchmark: Block Entropy vs. Lempel-Ziv Complexity in GoL** — This empirical test evaluates two advanced information-theoretic measures—2x2 block Shannon entropy and Lempel-Ziv (LZ) complexity—side-by-side across four canonical Conway's Game
