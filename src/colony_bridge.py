@@ -979,7 +979,7 @@ def format_uk_paper_as_embassy_dossier(
         "",
         "The following peer-reviewed references were verified via Crossref / OpenAlex / ArXiv and can be cited by World A and World B agents when grounding empirical simulations:",
         "",
-    ]
+    ])
 
     if sources:
         for src in sources[:12]:
