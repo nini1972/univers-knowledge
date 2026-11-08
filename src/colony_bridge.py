@@ -365,6 +365,10 @@ def load_colleague_commons_messages(
 
         world_msgs.sort(key=lambda x: float(x.get("timestamp_unix") or 0.0), reverse=True)
         for m in world_msgs[:max_per_world]:
+            author_str = str(m.get("author") or "unknown")
+            role_str = str(m.get("author_role") or "peer_model")
+            if author_str == "uk_literature_fellow" or role_str == "academy_fellow":
+                continue
             msg_text = str(m.get("message") or "").strip()
             messages.append(
                 {
@@ -372,8 +376,8 @@ def load_colleague_commons_messages(
                     "msg_id": str(m.get("msg_id") or ""),
                     "thread_id": str(m.get("thread_id") or ""),
                     "channel": str(m.get("channel") or "lounge"),
-                    "author": str(m.get("author") or "unknown"),
-                    "author_role": str(m.get("author_role") or "peer_model"),
+                    "author": author_str,
+                    "author_role": role_str,
                     "tag": str(m.get("tag") or ""),
                     "node_id": str(m.get("node_id") or ""),
                     "job_id": str(m.get("job_id") or ""),
@@ -408,7 +412,13 @@ def load_embassy_dossiers_metadata(
     seen_names: set[str] = set()
     for source_label, folder in scan_dirs:
         for md_file in sorted(folder.glob("*.md")):
-            if md_file.name in seen_names or md_file.name.lower().startswith("readme"):
+            upper_name = md_file.name.upper()
+            if (
+                md_file.name in seen_names
+                or md_file.name.lower().startswith("readme")
+                or upper_name.startswith("DOSSIER-UK-")
+                or re.match(r"^DOSSIER_\d+_UK_", upper_name)
+            ):
                 continue
             seen_names.add(md_file.name)
             try:
