@@ -62,6 +62,7 @@ graph TD
     dark_matter["Dark Matter"]:::theoretical
     operator_theoretic_foundations_of_neutrino_decay["Operator-Theoretic Foundations of Neutrino Decay Survival Probabilities"]:::verified
     cosmic_ray_physics["Cosmic Ray Physics"]:::theoretical
+    hubblelematre_law_and_cosmic_expansion_kinematics["Hubble-Lemaître Law and Cosmic Expansion Kinematics"]:::verified
     observational_signatures_unique_to_superfluid_dark_matter["Observational Signatures Unique to Superfluid Dark Matter"]:::theoretical
     lattice_gauge_theory_and_numerical_lattice_qcd["Lattice Gauge Theory and Numerical Lattice QCD"]:::verified
     quantum_entanglement["Quantum Entanglement"]:::verified
@@ -313,6 +314,7 @@ graph TD
     thermal_wimps_vs_primordial_black_holes_as_dark_matter["Thermal WIMPs vs Primordial Black Holes as Dark Matter"]:::theoretical
     nonlocal_quantum_gravity_vs_asymptotically_safe_gravity_in_ultraviolet_completion_of_spacetime["Non-Local Quantum Gravity vs Asymptotically Safe Gravity in Ultraviolet Completion of Spacetime"]:::theoretical
     asymptotic_safety_vs_causal_dynamical_triangulations_in_resolving_ultraviolet_spacetime_singularities["Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities"]:::theoretical
+    gaugemediated_vs_anomalymediated_supersymmetry_breaking_in_predicting_sparticle_spectra_higgs_mass_and_dark_matter_testability["Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking: Sparticle Spectra, Higgs Mass, and Dark Matter Testability"]:::theoretical
     dfsz_vs_ksvz_axion_models_in_explaining_dark_matter_and_strong_cp_problem["DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem"]:::theoretical
     symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity["Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity"]:::verified
     leptogenesis_vs_affleckdine_baryogenesis_in_early_universe_matterantimatter_generation["Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation"]:::theoretical
@@ -327,6 +329,7 @@ graph TD
     falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational["Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse"]:::theoretical
     noiserobust_generalizedcontextuality_witnesses_for_benchmarkrelative_quantum_advantage_in_warm_biological_information_processing["Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing"]:::theoretical
     a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems["A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems"]:::theoretical
+    falsifiable_percolationthreshold_and_eulercharacteristic_tests_of_cosmicweb_connectivity_against_cdm_simulation_null_ensembles_with_explicit_siunit_tracing_and_prespecified_rejecti["Falsifiable Percolation-Threshold and Euler-Characteristic Tests of Cosmic-Web Connectivity Against ΛCDM Simulation Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria"]:::theoretical
     empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models["Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models"]:::theoretical
     empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure["Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure"]:::theoretical
     quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence["Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence"]:::theoretical
@@ -450,6 +453,7 @@ graph TD
     general_relativity --- cosmological_constant_and_dark_energy
     cosmic_microwave_background_radiation --- dark_matter
     quantum_decoherence --- operator_theoretic_foundations_of_neutrino_decay
+    baryon_acoustic_oscillations --- hubblelematre_law_and_cosmic_expansion_kinematics
     quantum_field_theory --- quantum_vacuum_fluctuations_and_zeropoint_energy
     general_relativity --- spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit
     dark_matter --- cdm_cosmological_model
@@ -708,6 +712,7 @@ graph TD
 - [Gravitational Waves from First-Order Cosmological Phase Transitions](level_1_fundamental_physics/gravitational_waves_from_firstorder_phase_transitions.md) [THEORETICAL]
 - [Gravitational-Wave Memory Effect](level_1_fundamental_physics/gravitational_wave_memory_effect.md) [THEORETICAL]
 - [Hawking Radiation and the Black Hole Information Paradox](level_1_fundamental_physics/hawking_radiation_and_the_black_hole_information_paradox.md) [THEORETICAL]
+- [Hubble-Lemaître Law and Cosmic Expansion Kinematics](level_1_fundamental_physics/hubblelematre_law_and_cosmic_expansion_kinematics.md) [VERIFIED]
 - [Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM](level_1_fundamental_physics/hydrodynamic_simulations_baryonic_feedback_sfdm_sidm.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Inflationary Reheating Mechanisms](level_1_fundamental_physics/inflationary_reheating_mechanisms.md) [THEORETICAL]
@@ -869,6 +874,7 @@ graph TD
 - [Fundamental Physics Concept](level_2_advanced_frameworks/stable_cold_dark_matter_with_baryonic_feedback_vs_decaying_dark_matter_in_resolving_the_s8_tension.md) [THEORETICAL]
 - [Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges](level_2_advanced_frameworks/fuzzy_dark_matter_vs_wimp_cold_dark_matter_in_resolving_smallscale_structure_challenges.md) [THEORETICAL]
 - [Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics](level_2_advanced_frameworks/galileaninvariant_vs_nonminimally_coupled_scalar_dark_matter_in_galactic_dynamics.md) [THEORETICAL]
+- [Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking: Sparticle Spectra, Higgs Mass, and Dark Matter Testability](level_2_advanced_frameworks/gaugemediated_vs_anomalymediated_supersymmetry_breaking_in_predicting_sparticle_spectra_higgs_mass_and_dark_matter_testability.md) [THEORETICAL]
 - [Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate](level_2_advanced_frameworks/higgs_inflation_vs_starobinsky_inflation_in_cosmic_inflation_models_debate.md) [THEORETICAL]
 - [Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate](level_2_advanced_frameworks/higgs_portal_dark_matter_vs_sterile_neutrino_dark_matter_debate.md) [THEORETICAL]
 - [Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](level_2_advanced_frameworks/holographic_principle_vs_causal_set_theory_in_quantum_gravity_debate.md) [THEORETICAL]
@@ -995,6 +1001,7 @@ graph TD
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse](level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md) [THEORETICAL]
 - [Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology](level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md) [THEORETICAL]
+- [Falsifiable Percolation-Threshold and Euler-Characteristic Tests of Cosmic-Web Connectivity Against ΛCDM Simulation Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria](level_3_emergence_and_intelligence/falsifiable_percolationthreshold_and_eulercharacteristic_tests_of_cosmicweb_connectivity_against_cdm_simulation_null_ensembles_with_explicit_siunit_tracing_and_prespecified_rejecti.md) [THEORETICAL]
 - [Falsifiable Quantum Fisher Information and Lindbladian Dephasing Bounds on Coherence-Assisted Electron Transfer in Warm Biological Photosynthetic Reaction Centers](level_3_emergence_and_intelligence/falsifiable_quantum_fisher_information_and_lindbladian_dephasing_bounds_on_coherenceassisted_electron_transfer_in_warm_biological_photosynthetic_reaction_centers_with_explicit_siun.md) [THEORETICAL]
 - [Falsifiable Quantum–Classical Discrimination Bounds from Leggett–Garg and Temporal Bell Inequality Tests of Coherence in Warm Biological Ion-Channel Dynamics, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](level_3_emergence_and_intelligence/falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac.md) [THEORETICAL]
 - [Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models](level_3_emergence_and_intelligence/falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models.md) [THEORETICAL]

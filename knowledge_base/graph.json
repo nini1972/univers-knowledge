@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-11-07T00:53:03.123898+00:00",
+  "updated_at": "2026-11-08T01:18:48.687490+00:00",
   "stats": {
-    "total_nodes": 386,
-    "level_1_count": 164,
-    "level_2_count": 146,
-    "level_3_count": 76,
-    "total_edges": 181,
-    "frontier_count": 75
+    "total_nodes": 389,
+    "level_1_count": 165,
+    "level_2_count": 147,
+    "level_3_count": 77,
+    "total_edges": 182,
+    "frontier_count": 82
   },
   "nodes": [
     {
@@ -309,10 +309,10 @@
       "math_score": "4/4",
       "dependencies": [
         "hubbletension",
-        "darkenergy",
-        "baryonacousticoscillations",
         "cosmicmicrowavebackground",
-        "friedmannequations"
+        "baryonacousticoscillations",
+        "friedmannequations",
+        "darkenergy"
       ],
       "tags": [
         "1"
@@ -935,10 +935,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "higgsmechanism",
+        "electroweaksymmetrybreaking",
         "standardmodel",
         "standardmodeleffectivefieldtheory",
-        "electroweaksymmetrybreaking",
+        "higgsmechanism",
         "peskintakeuchiparameters"
       ],
       "tags": [
@@ -1178,11 +1178,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "standardmodel",
-        "grandunifiedtheories",
         "renormalizationgroup",
-        "minimalsupersymmetricstandardmodel",
-        "protondecay"
+        "grandunifiedtheories",
+        "standardmodel",
+        "protondecay",
+        "minimalsupersymmetricstandardmodel"
       ],
       "tags": [
         "1"
@@ -1410,6 +1410,27 @@
       "path": "knowledge_base/level_1_fundamental_physics/higher_order_effects_and_non_standard_interactions_in_neutrino_dynamics.md"
     },
     {
+      "id": "hubblelematrelawandcosmicexpansionkinematics",
+      "title": "Hubble-Lemaître Law and Cosmic Expansion Kinematics",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "VERIFIED",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Hubble, E. (1929), 'A Relation between Distance and Radial Velocity among Extra-Galactic Nebulae', https://doi.org/10.1073/pnas.15.3.168",
+        "Planck Collaboration (2020), 'Planck 2018 results. VI. Cosmological parameters', https://doi.org/10.1051/0004-6361/201833910",
+        "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b",
+        "DESI Collaboration (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://doi.org/10.1088/1475-7516/2025/02/021",
+        "Sotiriou, T. P. and Faraoni, V. (2010), 'f(R) Theories Of Gravity', https://doi.org/10.1103/RevModPhys.82.451"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/hubblelematre_law_and_cosmic_expansion_kinematics.md"
+    },
+    {
       "id": "hydrodynamicsimulationsbaryonicfeedbacksfdmsidm",
       "title": "Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM",
       "level": 1,
@@ -1539,12 +1560,12 @@
       "math_score": "4/4",
       "dependencies": [
         "hubbletension",
-        "gammaraybursts",
         "doublyspecialrelativity",
-        "gravitationalwavepropagation",
+        "gammaraybursts",
+        "earlydarkenergy",
         "quantumgravity",
-        "standardmodelextension",
-        "earlydarkenergy"
+        "gravitationalwavepropagation",
+        "standardmodelextension"
       ],
       "tags": [
         "1"
@@ -2879,12 +2900,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "tidaldeformabilityandlovenumbers",
-        "scalartensortheoriesofgravity",
-        "neutronstarequationofstate",
-        "generalrelativity",
         "neutronstarphasetransitions",
-        "tolmanoppenheimervolkoffequations"
+        "neutronstarequationofstate",
+        "tolmanoppenheimervolkoffequations",
+        "generalrelativity",
+        "tidaldeformabilityandlovenumbers",
+        "scalartensortheoriesofgravity"
       ],
       "tags": [
         "1"
@@ -3112,10 +3133,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "cosmologicalperturbationtheory",
-        "wimpfreezeout",
         "darkmatterrelicabundance",
-        "freezeinproduction"
+        "freezeinproduction",
+        "cosmologicalperturbationtheory",
+        "wimpfreezeout"
       ],
       "tags": [
         "1"
@@ -3205,11 +3226,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
+        "gaugetheory",
         "stronginteraction",
         "thestandardmodel",
         "latticeqcd",
-        "quantumfieldtheory",
-        "gaugetheory"
+        "quantumfieldtheory"
       ],
       "tags": [
         "1"
@@ -3945,11 +3966,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
+        "sparcgalaxydatabase",
+        "radialaccelerationrelation",
+        "lcdmbaryonicfeedback",
         "modifiednewtoniandynamics",
         "baryonictullyfisherrelation",
-        "sparcgalaxydatabase",
-        "lcdmbaryonicfeedback",
-        "radialaccelerationrelation",
         "mondexternalfieldeffect"
       ],
       "tags": [
@@ -4652,6 +4673,35 @@
       "path": "knowledge_base/level_2_advanced_frameworks/galileaninvariant_vs_nonminimally_coupled_scalar_dark_matter_in_galactic_dynamics.md"
     },
     {
+      "id": "gaugemediatedvsanomalymediatedsupersymmetrybreakinginpredictingsparticlespectrahiggsmassanddarkmattertestability",
+      "title": "Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking: Sparticle Spectra, Higgs Mass, and Dark Matter Testability",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "3/4",
+      "dependencies": [
+        "supersymmetricparticlesearches",
+        "gravitinodarkmatter",
+        "gaugemediatedsupersymmetrybreaking",
+        "cosmologicalparametertensions",
+        "warmdarkmatterandstructureformation",
+        "winodarkmatter",
+        "anomalymediatedsupersymmetrybreaking",
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Giudice, G. F., and Rattazzi, R. (1999), 'Theories with gauge-mediated supersymmetry breaking', https://doi.org/10.1016/S0370-1573(99)00042-3",
+        "Martin, S. P. (1997), 'A Supersymmetry Primer', https://arxiv.org/abs/hep-ph/9709356",
+        "Marsh, D. J. E. (2016), 'Axion cosmology', https://doi.org/10.1016/j.physrep.2016.06.005",
+        "Hui, L., et al. (2017), 'Ultralight scalars as cosmological dark matter', https://doi.org/10.1103/PhysRevD.95.043541"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/gaugemediated_vs_anomalymediated_supersymmetry_breaking_in_predicting_sparticle_spectra_higgs_mass_and_dark_matter_testability.md"
+    },
+    {
       "id": "higgsinflationvsstarobinskyinflationincosmicinflationmodelsdebate",
       "title": "Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate",
       "level": 2,
@@ -5336,11 +5386,11 @@
       "math_score": "3/4",
       "dependencies": [
         "hubbletension",
-        "gravitationalwaveobservations",
-        "functionalrenormalizationgroup",
-        "quantumgravity",
         "earlydarkenergy",
-        "causaldynamicaltriangulations"
+        "gravitationalwaveobservations",
+        "quantumgravity",
+        "causaldynamicaltriangulations",
+        "functionalrenormalizationgroup"
       ],
       "tags": [
         "2"
@@ -5384,13 +5434,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "axionmisalignmentrelicabundance",
-        "strongcpproblem",
-        "latticeqcdquarkmasses",
-        "qcdaxionandaxionlikeparticles",
-        "neutronelectricdipolemoment",
-        "softpqparitysolution",
         "nelsonbarrmechanism",
+        "softpqparitysolution",
+        "neutronelectricdipolemoment",
+        "axionmisalignmentrelicabundance",
+        "latticeqcdquarkmasses",
+        "strongcpproblem",
+        "qcdaxionandaxionlikeparticles",
         "thestrongcpproblem"
       ],
       "tags": [
@@ -5448,11 +5498,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "pulsartimingarrays",
-        "firstordercosmologicalphasetransitions",
-        "stochasticgravitationalwavebackgrounds",
         "supermassiveblackholebinaries",
-        "cosmicstringsandtopologicaldefects"
+        "pulsartimingarrays",
+        "cosmicstringsandtopologicaldefects",
+        "firstordercosmologicalphasetransitions",
+        "stochasticgravitationalwavebackgrounds"
       ],
       "tags": [
         "2"
@@ -7216,11 +7266,11 @@
       "math_score": "4/4",
       "dependencies": [
         "cosmologicalstructureformation",
-        "nullmodelsandhypothesistesting",
-        "cosmicweb",
-        "topologicaldataanalysis",
         "persistenthomology",
-        "lcdmcosmology"
+        "topologicaldataanalysis",
+        "lcdmcosmology",
+        "cosmicweb",
+        "nullmodelsandhypothesistesting"
       ],
       "tags": [
         "3"
@@ -7354,10 +7404,10 @@
       "dependencies": [
         "falsifiabilityandmodeldependentinference",
         "s8tension",
-        "bremermannlimit",
         "corticalenergybudgets",
         "cosmicwebhalovirialization",
-        "landauerprinciple"
+        "landauerprinciple",
+        "bremermannlimit"
       ],
       "tags": [
         "3"
@@ -7396,6 +7446,25 @@
         "van de Weygaert et al. (2011), 'Alpha, Betti and the Megaparsec Universe', https://arxiv.org/abs/1306.3640"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md"
+    },
+    {
+      "id": "falsifiablepercolationthresholdandeulercharacteristictestsofcosmicwebconnectivityagainstcdmsimulationnullensembleswithexplicitsiunittracingandprespecifiedrejecti",
+      "title": "Falsifiable Percolation-Threshold and Euler-Characteristic Tests of Cosmic-Web Connectivity Against ΛCDM Simulation Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_TOPOLOGICAL",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Libeskind et al. (2018), 'Tracing the cosmic web', https://doi.org/10.1093/mnras/stx1976",
+        "Cautun et al. (2014), 'Evolution of the cosmic web', https://doi.org/10.1093/mnras/stu768",
+        "Codis et al. (2018), 'The impact of the connectivity of the cosmic web on the physical properties of galaxies at its nodes', https://doi.org/10.1093/mnras/stz3319"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/falsifiable_percolationthreshold_and_eulercharacteristic_tests_of_cosmicweb_connectivity_against_cdm_simulation_null_ensembles_with_explicit_siunit_tracing_and_prespecified_rejecti.md"
     },
     {
       "id": "falsifiablequantumfisherinformationandlindbladiandephasingboundsoncoherenceassistedelectrontransferinwarmbiologicalphotosyntheticreactioncenterswithexplicitsiun",
@@ -7551,11 +7620,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "fluctuationdissipationtheorem",
-        "cosmicwebfilamentsandvelocityshear",
         "transferentropyandeffectiveconnectivity",
         "stochasticthermodynamicsandentropyproduction",
-        "scalefreenetworksanduniversality"
+        "fluctuationdissipationtheorem",
+        "scalefreenetworksanduniversality",
+        "cosmicwebfilamentsandvelocityshear"
       ],
       "tags": [
         "3"
@@ -8037,11 +8106,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "leggettgarginequalities",
         "quantumfisherinformationandquantumcramerraobound",
         "classicalforstertransportandincoherenthopping",
-        "openquantumsystemsandlindbladdynamics",
-        "environmentassistedquantumtransport"
+        "environmentassistedquantumtransport",
+        "leggettgarginequalities",
+        "openquantumsystemsandlindbladdynamics"
       ],
       "tags": [
         "3"
@@ -8147,12 +8216,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "observationalselectioneffects",
-        "baryonicfeedback",
-        "cosmicweb",
-        "topologicaldataanalysis",
         "persistenthomology",
-        "bottleneckdistance"
+        "topologicaldataanalysis",
+        "baryonicfeedback",
+        "bottleneckdistance",
+        "observationalselectioneffects",
+        "cosmicweb"
       ],
       "tags": [
         "3"
@@ -8624,6 +8693,11 @@
     {
       "source": "darkmatter",
       "target": "galileaninvariantvsnonminimallycoupledscalardarkmatteringalacticdynamics",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
+      "target": "gaugemediatedvsanomalymediatedsupersymmetrybreakinginpredictingsparticlespectrahiggsmassanddarkmattertestability",
       "type": "component_theory"
     },
     {
@@ -9169,6 +9243,12 @@
   ],
   "frontier": [
     {
+      "id": "anomalymediatedsupersymmetrybreaking",
+      "suggested_title": "Anomalymediatedsupersymmetrybreaking",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "axionmisalignmentrelicabundance",
       "suggested_title": "Axionmisalignmentrelicabundance",
       "target_level": 1,
@@ -9243,6 +9323,12 @@
     {
       "id": "cosmicwebhalovirialization",
       "suggested_title": "Cosmicwebhalovirialization",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "cosmologicalparametertensions",
+      "suggested_title": "Cosmologicalparametertensions",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -9325,6 +9411,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "gaugemediatedsupersymmetrybreaking",
+      "suggested_title": "Gaugemediatedsupersymmetrybreaking",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "gaugetheory",
       "suggested_title": "Gaugetheory",
       "target_level": 1,
@@ -9345,6 +9437,12 @@
     {
       "id": "gravitationalwavepropagation",
       "suggested_title": "Gravitationalwavepropagation",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "gravitinodarkmatter",
+      "suggested_title": "Gravitinodarkmatter",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -9583,6 +9681,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "supersymmetricparticlesearches",
+      "suggested_title": "Supersymmetricparticlesearches",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "thestandardmodel",
       "suggested_title": "Thestandardmodel",
       "target_level": 1,
@@ -9613,8 +9717,20 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "warmdarkmatterandstructureformation",
+      "suggested_title": "Warmdarkmatterandstructureformation",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "wimpfreezeout",
       "suggested_title": "Wimpfreezeout",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "winodarkmatter",
+      "suggested_title": "Winodarkmatter",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     }
