@@ -1102,6 +1102,18 @@ class UniverseFlow(Flow[UniverseState]):
         # Update index and OKF graph
         update_index_file(self.index_path, self.repo_root)
 
+        # Export Colony Embassy Dossier if the paper bridges to World A / World B themes
+        try:
+            try:
+                from colony_bridge import export_single_paper_dossier
+            except ImportError:
+                from src.colony_bridge import export_single_paper_dossier
+            dossier_rel = export_single_paper_dossier(output_file, self.repo_root)
+            if dossier_rel:
+                print(f"[COLONY BRIDGE] Exported Literature & Math Audit Dossier: {dossier_rel}")
+        except Exception as cb_err:
+            print(f"[COLONY BRIDGE WARNING] Failed to export embassy dossier: {cb_err}")
+
         # Backlog resolution
         backlog_manager.resolve_backlog_item(self.state.concept)
         backlog_manager.add_to_backlog(self.state.concept, level=self.state.level, questions=self.state.decision.get("follow_up_questions", []))

@@ -145,6 +145,7 @@ def _build_search_tools():
                 CitationAuditTool,
                 ObservationalCosmologyTool,
                 ArxivFullTextSectionReaderTool,
+                ColonyEmpiricalKnowledgeTool,
             )
             from tools.math_tools import PhysicsCalculatorTool
         except ImportError:
@@ -155,6 +156,7 @@ def _build_search_tools():
                 CitationAuditTool,
                 ObservationalCosmologyTool,
                 ArxivFullTextSectionReaderTool,
+                ColonyEmpiricalKnowledgeTool,
             )
             from src.tools.math_tools import PhysicsCalculatorTool
         tools.extend([
@@ -165,6 +167,7 @@ def _build_search_tools():
             CitationAuditTool(),
             ObservationalCosmologyTool(),
             PhysicsCalculatorTool(),
+            ColonyEmpiricalKnowledgeTool(),
         ])
     except Exception as exc:
         print(f"Warning: Failed to load open scientific literature tools: {exc}")

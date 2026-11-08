@@ -1149,3 +1149,50 @@ class ArxivFullTextSectionReaderTool(BaseTool):
         return f"Could not retrieve full-text HTML or metadata for arXiv ID `{clean_id}`."
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# 7. Colony & Agora Empirical Discovery Search (World A / World B / World C Bridge)
+# ─────────────────────────────────────────────────────────────────────────────
+
+class ColonyEmpiricalKnowledgeInput(BaseModel):
+    query: str = Field(
+        ...,
+        description=(
+            "Keywords or phenomenon to search across World A (evolution_sandbox), "
+            "World B (synthetic-agora Epistemic DAG & Colleague Commons), and World C (colony_lib). "
+            "Examples: 'Kuramoto hysteresis finite-size scaling', 'Lempel-Ziv Game of Life edge of chaos', "
+            "'Betti percolation threshold', 'epidemic spectral eigenvalue'."
+        ),
+    )
+    status_filter: str = Field(
+        default="ALL",
+        description="Optional filter for World B DAG nodes: 'ALL', 'CANON_VERIFIED', 'REFUTED', or 'UNDER_REVIEW'.",
+    )
+    max_results: int = Field(
+        default=6,
+        description="Maximum number of ranked DAG nodes to return (1-15).",
+    )
+
+
+class ColonyEmpiricalKnowledgeTool(BaseTool):
+    name: str = "Colony & Agora Empirical Discovery Search"
+    description: str = (
+        "Searches the Empirical Epistemic DAG of World B (synthetic-agora: 90+ CANON_VERIFIED theorems "
+        "and 9 REFUTED hypotheses), Frontier Dossiers from World A (evolution_sandbox), and technical "
+        "threads from the Colleague Commons lab chatroom. Use this tool (especially in Level 3 emergence, "
+        "phase transitions, synchronization, topology, and information complexity) to cross-reference "
+        "autonomous numerical discoveries against external peer-reviewed literature."
+    )
+    args_schema: Type[BaseModel] = ColonyEmpiricalKnowledgeInput
+
+    def _run(self, query: str, status_filter: str = "ALL", max_results: int = 6) -> str:
+        try:
+            try:
+                from colony_bridge import search_colony_knowledge
+            except ImportError:
+                from src.colony_bridge import search_colony_knowledge
+            return search_colony_knowledge(query=query, status_filter=status_filter, max_results=max_results)
+        except Exception as exc:
+            return f"Colony & Agora search unavailable: {exc}"
+
+
+
