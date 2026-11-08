@@ -383,7 +383,7 @@ def load_colleague_commons_messages(
                     "node_id": str(m.get("node_id") or ""),
                     "job_id": str(m.get("job_id") or ""),
                     "stage_name": str(m.get("stage_name") or ""),
-                    "message": msg_text[:500],
+                    "message": msg_text[:1500],
                     "themes": _classify_themes(msg_text),
                     "timestamp_utc": str(m.get("timestamp_utc") or ""),
                 }
@@ -608,20 +608,35 @@ def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, 
         cleaned = re.sub(r"@[a-zA-Z0-9_-]+", "", raw_msg)
         cleaned = re.sub(r"`[^`]+`", "", cleaned)
         cleaned = re.sub(r"\*\*([^*]+)\*\*", r"\1", cleaned)
-        sentences = [s.strip() for s in re.split(r"[\n]|(?<=[.?!])\s+", cleaned) if len(s.strip()) >= 20]
-        q_sents = [s for s in sentences if "?" in s or re.search(r"\b(derive|bound|scaling|exponent|citation|literature|proof|invariant|theorem)\b", s, re.IGNORECASE)]
-        candidate = (q_sents[0] if q_sents else (sentences[0] if sentences else cleaned)).strip()
+        sentences = [
+            re.sub(r"^\s*\d+[.)]\s*", "", s).strip()
+            for s in re.split(r"[\n]|(?<=[.?!])\s+", cleaned)
+            if len(s.strip()) >= 20
+        ]
+        sci_sents = [
+            s for s in sentences
+            if re.search(
+                r"\b(derive|bound|scaling|exponent|citation|literature|proof|invariant|theorem|escape-time|prefactor|surrogate|kuramoto|lorenz|lenia|gray-scott)\b",
+                s,
+                re.IGNORECASE,
+            )
+            and not re.match(r"^(?:maybe|also|if\s+so|i\s+can\s+share)\b", s, re.IGNORECASE)
+        ]
+        q_sents = [s for s in sentences if "?" in s and not re.match(r"^(?:maybe|also)\b", s, re.IGNORECASE)]
+        candidate = (sci_sents[0] if sci_sents else (q_sents[0] if q_sents else (sentences[0] if sentences else cleaned))).strip()
 
     # Strip conversational question prefixes so backlog_manager.is_question_text() accepts it as a formal topic title
     candidate = re.sub(
-        r"^(?:can\s+(?:you|the\s+academy|anyone)|could\s+you|what\s+(?:is|are)|how\s+(?:do|does|can)|"
-        r"does\s+anyone\s+know|is\s+there|we\s+(?:need|are\s+looking\s+for)|please\s+(?:derive|check|find)|"
+        r"^(?:i'm\s+conducting\s+a\s+systematic\s+investigation\s+of|i\s+am\s+investigating|we\s+are\s+investigating|"
+        r"just\s+completed\s+a\s+targeted\s+robustness\s+check\s+on|"
+        r"can\s+(?:you|the\s+academy|anyone)|could\s+you|what\s+(?:is|are)|how\s+(?:do|does|can)|"
+        r"does\s+anyone\s+(?:know|have\s+insight\s+into\s+what)|is\s+there|we\s+(?:need|are\s+looking\s+for)|please\s+(?:derive|check|find)|"
         r"question\s+for\s+the\s+academy\s*[:\-]?)\s+",
         "",
         candidate,
         flags=re.IGNORECASE,
     ).strip()
-    candidate = re.sub(r"^(?:the\s+exact\s+|a\s+|an\s+)", "", candidate, flags=re.IGNORECASE).strip()
+    candidate = re.sub(r"^(?:the\s+exact\s+|the\s+|a\s+|an\s+)", "", candidate, flags=re.IGNORECASE).strip()
     candidate = candidate.rstrip("?.!,:; ").strip()
 
     if len(candidate) < 12:
@@ -638,7 +653,7 @@ def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, 
 
     if len(candidate) > 74:
         words = candidate[:74].rsplit(" ", 1)[0]
-        candidate = words.rstrip(",:; -")
+        candidate = words.rstrip(",:; -=")
 
     # Capitalize first letter cleanly
     if candidate:
@@ -692,8 +707,19 @@ def ingest_commons_questions_to_backlog(
             for kw in ("@uk_literature_fellow", "@academy", "@universe_knowledge", "uk_literature_fellow")
         )
         has_trigger_tag = tag in trigger_tags
+        is_open_theory_question = (
+            ch in ("sanity-check", "synchronization-networks", "pattern-formation", "methods-and-debugging")
+            and "?" in msg_text
+            and bool(
+                re.search(
+                    r"\b(prefactor|escape-time|analytic|derivation|original\s+papers|definition|normalization|universal\s+constant)\b",
+                    msg_low,
+                )
+            )
+            and "is blocked" not in msg_low
+        )
 
-        if not (is_lit_channel or mentions_academy or has_trigger_tag):
+        if not (is_lit_channel or mentions_academy or has_trigger_tag or is_open_theory_question):
             continue
 
         extracted = _extract_commissioned_concept_title(m)
