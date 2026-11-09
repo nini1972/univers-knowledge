@@ -12,53 +12,60 @@
 
 ---
 
-## 📬 Pending Student Inquiries (2)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261108-7b088d` | L1 | **Proton Decay and Baryon Number Violation** | UniverseFlow Orchestrator | Concept 'Proton Decay and Baryon Number Violation' was rejected after 2 attempts (insufficient_skeptic_score). How should the agents proceed? |
-| `adv-20261109-28adf9` | L2 | **Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints** | UniverseFlow Orchestrator | Concept 'Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261108-7b088d` — Proton Decay and Baryon Number Violation
-- **Timestamp**: `2026-11-08T16:12:11.267816+00:00`
-- **Level**: Level 1
-- **Reason Code**: `insufficient_skeptic_score`
-- **Question**: Concept 'Proton Decay and Baryon Number Violation' was rejected after 2 attempts (insufficient_skeptic_score). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic's Verification Score is 3/6, which is below the 4/6 threshold, so Rule 1 requires rejection even though the Math Physicist gave [MATH_CONSISTENT] (4/4). The Skeptic found substantive physics errors. The report calls the dimension-5 ΔL=2 Weinberg operator a d=6 baryon-number-violating operator. It says Super-K constrains d=9 ΔB=2 operators, but those are probed by neutron–antineutron searches. It states the equilibration inequality as Λ ≳ Λ_max when the condition Γ_d ≳ Γ_H gives Λ ≲ Λ_max. It also has a numerical discrepancy at T=10^4 GeV: the stated d=6 formula appears to give about 1.94×10^7 GeV, not 1.941×10^6 GeV. I did not recompute that figure myself. The report also lacks an explicit [THEORETICAL] label and a visual grounding description.
-- **Agent Blockers**:
-  * Researcher: Correct the operator classification. The Weinberg operator LLHH is d=5 and has ΔL=2, so it does not cause proton decay. Proton decay comes from d=6 gauge-mediated operators and from d=5 QQQL operators in SUSY GUTs. Neutron–antineutron oscillation comes from d=9 ΔB=2 operators.
-  * Researcher: Separate the experimental bounds by operator. Super-K limits apply to d=6 ΔB=1 operators, with Λ near 10^15 GeV. The d=9 bounds come from neutron–antineutron oscillation experiments such as ILL and the future ESS NNBAR, and are much lower in scale. Cite those sources.
-  * Researcher: State explicitly that the thermal washout/equilibration scale is a different and weaker constraint than the Super-K proton lifetime bound.
-  * Researcher: Label the report [THEORETICAL] and add a visual grounding description, such as a figure of Γ_d versus Γ_H against T for d=6 and d=9.
-  * Math Physicist: Fix the inequality direction. Γ_d ≳ Γ_H implies Λ ≲ Λ_max (the operator equilibrates), and Γ_d < Γ_H implies Λ ≳ Λ_max (the operator decouples). Restate the bound as the decoupling condition.
-  * Math Physicist: Recompute Λ_max(d=6, T=10^4 GeV) from (T^3 M_Pl/(1.66√g_*))^(1/4) with explicit arithmetic. Resolve the 1.94×10^7 versus 1.941×10^6 GeV conflict, and say which value is correct.
-  * Math Physicist: Re-derive the thermal rate scaling Γ_d ~ T^(2d-7)/Λ^(2d-8) from dimensional analysis. Check that the Γ_H comparison is dimensionally consistent for d=6 and d=9.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261108-7b088d "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261109-28adf9` — Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
-- **Timestamp**: `2026-11-09T01:27:56.860960+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic's score of 5/5 meets the threshold. The Math Physicist's status is [MATH_FLAWED], which is a mandatory rejection condition, even though the Math Score is 3/4. The leptogenesis chain has a confirmed arithmetic error in Eq. (4). The product evaluates to about 1.0×10^-6, not the claimed 9.45×10^-13, so the report's conclusion about the benchmark is wrong. Part I of the research report is also corrupted with placeholder pseudo-code and an empty benchmark table. The debate report itself disagrees about Y_N^eq: it gives 2.60e-3, 3.90e-3 and 6.64e-3 in different places. It also declares the Chern-Simons helicity normalization inconsistent. The benchmark uses epsilon_1=6e-3, which exceeds the hierarchical bound of 3.7e-3, so it is not self-consistent.
-- **Agent Blockers**:
-  * Researcher: Replace the corrupted Part I with a clean, sourced leptogenesis report that has no placeholder text and a filled benchmark table.
-  * Researcher: Use a benchmark with epsilon_1 within the Davidson-Ibarra bound for M_1=10^9 GeV, or justify resonant enhancement.
-  * Researcher: Cite the standard Y_N^eq convention from primary sources: Y_N^eq(T<<M) is about 3.9e-3 for the relativistic limit, with g_N=2 and g_*=106.75. Resolve the 2.6e-3, 3.9e-3 and 6.64e-3 discrepancy explicitly.
-  * Researcher: Give one authoritative K_1 derivation using a single Planck-mass convention.
-  * Math Physicist: Recompute Y_B=(28/79)*epsilon_1*Y_N^eq*eta_I explicitly. Check the unit-bearing intermediate steps. Include a derivation of eta_I(K_1) from the Boltzmann equations or a cited fit, rather than a rescaling from 9.3 to 46.8.
-  * Math Physicist: Fix the helicity definition so that h is either dimensionless or a density with [E]^3. Derive the anomaly equation for n_B with its time derivative.
-  * Math Physicist: Provide an explicit derivation of n_B at EWSB from h_Y, including the helicity fraction and the crossover dynamics.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261109-28adf9 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (32)
+## 📚 Answered Advisory Consultations (34)
+
+### ✅ `adv-20261109-28adf9`: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
+- **Student Inquired**: Concept 'Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the Level 2 synthesis and debate of 'Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis':
+(1) Clean Leptogenesis Formulation & Benchmark Consistency:
+  - Purge corrupted Part I placeholder code and provide complete, referenced analytical tables.
+  - Davidson-Ibarra Bound: In standard hierarchical thermal leptogenesis (M_1 << M_2, M_3), the CP asymmetry is bounded by epsilon_1 <= epsilon_1^{DI} = (3 / 16*pi) * (M_1 * Delta m_atm) / v^2 ~ 10^{-6} * (M_1 / 10^9 GeV). Setting epsilon_1 = 6 x 10^{-3} at M_1 = 10^9 GeV violates this bound by three orders of magnitude. For an unflavored hierarchical benchmark, set M_1 = 10^{10} GeV with epsilon_1 ~ 1.0 x 10^{-5}; or, if using M_1 = 10^9 GeV with large epsilon_1, explicitly state the resonant leptogenesis regime (|M_2 - M_1| ~ Gamma_{1,2}/2) and provide the resonance regulator formula.
+(2) Relativistic Equilibrium Density Convention:
+  - Consistently use the standard relativistic Majorana neutrino yield for g_{N_1} = 2 and g_{*s} = 106.75:
+    Y_{N_1}^{eq}(T >> M_1) = n_{N_1}^{eq} / s = [ (3/4) * (zeta(3)/pi^2) * g_{N_1} T^3 ] / [ (2*pi^2/45) * g_{*s} T^3 ] = [ 135 * zeta(3) * g_{N_1} ] / [ 8 * pi^4 * g_{*s} ] = 3.90 x 10^{-3}.
+    Remove conflicting figures (2.60 x 10^{-3} or 6.64 x 10^{-3}) across reports.
+(3) Step-by-Step Baryon Asymmetry Evaluation:
+  - Standard sphaleron conversion factor: c_sph = 28/79 ~ 0.354 (SM with 1 Higgs doublet).
+  - Baryon yield: Y_B = c_sph * epsilon_1 * Y_{N_1}^{eq} * eta_I(K_1).
+  - Washout parameter K_1 = Gamma_{D,1}(T=M_1) / H(T=M_1) = m_tilde_1 / m_*, where m_* = 1.66 sqrt(g_*) * (8*pi*v^2 / M_Pl) ~ 1.08 x 10^{-3} eV.
+  - Strong washout efficiency: use the Buchmuller-Di Bari-Plumacher fit eta_I(K_1) ~ 0.2 / [ K_1 (ln K_1)^{0.6} ] (giving eta_I ~ 10^{-2} for K_1 ~ 10-50).
+  - Explicitly carry out intermediate arithmetic: e.g. for epsilon_1 = 1.0 x 10^{-5}, eta_I = 0.02: Y_B = (28/79) * 1.0e-5 * 3.90e-3 * 0.02 = 2.76 x 10^{-10}, matching the observed Y_B^{obs} ~ 8.7 x 10^{-11} within order unity factors. Eliminate erroneous intermediate products evaluating to 1.0e-6 or 9.45e-13.
+(4) Hypermagnetic Helicity & Anomaly Formulation:
+  - Define hypermagnetic helicity density with canonical energy dimension [E]^3: h_Y = lim_{V->inf} (1/V) int_V d^3x A_Y . B_Y.
+  - State the abelian U(1)_Y anomaly with N_g = 3 generations: partial_mu j_B^mu = (3 g'^2 / 32*pi^2) Y_{mu nu} Y_tilde^{mu nu} = (3 g'^2 / 16*pi^2) E_Y . B_Y = - (3 g'^2 / 32*pi^2) d h_Y / dt.
+  - Detail the electroweak crossover at T_EW ~ 160 GeV where hypercharge helicity transfers to electromagnetic helicity and chiral fermions, freezing the baryon asymmetry before sphaleron shutdown at T_sph ~ 130 GeV.
+(5) Multi-Messenger Empirical Grounding:
+  - Link directly to observational constraints: Fermi-LAT / H.E.S.S. blazar TeV pair halo lower bounds on the intergalactic magnetic field (IGMF: B_0 >= 10^{-16} G, lambda_0 >= 1 Mpc), and CMB / BBN upper bounds on primordial magnetic energy density."*
+- **Answered At**: `2026-11-09T08:04:03.366960+00:00`
+
+### ✅ `adv-20261108-7b088d`: Proton Decay and Baryon Number Violation
+- **Student Inquired**: Concept 'Proton Decay and Baryon Number Violation' was rejected after 2 attempts (insufficient_skeptic_score). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the Level 1 synthesis of 'Proton Decay and Baryon Number Violation':
+(1) Operator Classification & Selection Rules:
+  - Correct operator taxonomy: The dimension-5 Weinberg operator (L H)(L H) / Lambda violates lepton number by Delta L = 2 (Delta(B-L) = -2) while strictly preserving baryon number (Delta B = 0); it generates Majorana neutrino masses after EWSB, NOT proton decay.
+  - Delta B = 1 proton decay: In SMEFT, proton decay is mediated by dimension-6 four-fermion operators conserving B-L (e.g. Q Q Q L / Lambda^2, u_R u_R d_R e_R / Lambda^2), mediated by GUT gauge bosons (X, Y with M_X ~ 10^{15}-10^{16} GeV in SU(5) / SO(10)) or scalar leptoquarks, yielding dominant channels p -> e^+ pi^0 and p -> nu_bar pi^+. In SUSY GUTs, dimension-5 operators (Q_tilde Q_tilde Q_tilde L_tilde / M_GUT dressed by charginos/winos) mediate p -> nu_bar K^+.
+  - Delta B = 2 neutron-antineutron oscillation: n-n_bar transitions occur via dimension-9 six-quark operators (e.g. (u_R d_R d_R)^2 / Lambda^5) violating B by Delta B = 2 (Delta(B-L) = 2), distinct from proton decay.
+(2) Disentangle Experimental Constraints:
+  - Super-Kamiokande limits apply to dimension-6 Delta B = 1 operators: tau(p -> e^+ pi^0) > 2.4 x 10^34 yr translates to Lambda_GUT >= 10^{15}-10^{16} GeV.
+  - Dimension-9 Delta B = 2 operators are constrained by n-n_bar oscillation searches: free reactor neutrons (ILL tau_{n-n_bar} > 0.86 x 10^8 s; future ESS NNBAR targeting 10^9-10^{10} s) and bound neutrons in oxygen-16 (Super-K tau_bound > 4.7 x 10^{32} yr, yielding free tau_{n-n_bar} >= 2.7 x 10^8 s). This probes effective scales Lambda ~ (tau_{n-n_bar} Lambda_QCD^6)^{-1/5} ~ 10^5-10^6 GeV (100-1000 TeV), vastly lower than proton decay bounds.
+(3) Operator Decoupling vs Thermal Washout Direction:
+  - For dimension-d operator, thermal interaction rate is Gamma_d ~ T^{2d-7} / Lambda^{2d-8}. Comparing to radiation-era Hubble rate H(T) ~ 1.66 sqrt(g_*) T^2 / M_Pl:
+  - Thermal equilibration (washout) occurs when Gamma_d >= H(T), yielding Lambda <= Lambda_max(T) = [ T^{2d-9} M_Pl / (1.66 sqrt(g_*)) ]^{1/(2d-8)}.
+  - Conversely, decoupling (freeze-out) occurs when Gamma_d < H(T), yielding Lambda > Lambda_max(T).
+(4) Corrected Numerical Scaling at T = 10^4 GeV (d=6):
+  - With T = 10^4 GeV, g_* = 106.75 (1.66 sqrt(g_*) ~ 17.15), and reduced Planck mass M_P = 2.435 x 10^{18} GeV:
+    Lambda_max(d=6) = [ (10^{12} x 2.435 x 10^{18}) / 17.15 ]^{1/4} = [ 1.420 x 10^{29} ]^{1/4} = 1.941 x 10^7 GeV.
+    (If using non-reduced M_Pl = 1.22 x 10^{19} GeV, Lambda_max ~ 2.90 x 10^7 GeV).
+    The previous figure of 1.941 x 10^6 GeV was an exponent arithmetic error (10^6 instead of 10^7); use 1.94 x 10^7 GeV.
+(5) Grounding & Labeling:
+  - Add explicit [THEORETICAL] label and include a visual grounding figure comparing log10(Gamma_d / H) vs log10(T) for d=6 and d=9 against Super-K and ESS limits."*
+- **Answered At**: `2026-11-09T08:03:50.477835+00:00`
 
 ### ✅ `adv-20261029-726348`: Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures
 - **Student Inquired**: Concept 'Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
@@ -99,14 +106,4 @@
 - **Student Inquired**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
 - **Professor Directive**: 💬 *"In the synthesis of Canonical Quintessence vs K-Essence: (1) Metric signature & canonical action convention: State explicitly the metric signature (-,+,+,+) with X = -(1/2) g^{mu nu} partial_mu phi partial_nu phi > 0 for a homogeneous time-dependent field X = (1/2) dot{phi}^2. Under this convention, a canonical scalar has P(X, phi) = X - V(phi) and w = (X - V)/(X + V) >= -1 whenever rho = X + V > 0. (2) Exact k-essence sound speed and superluminality sign condition: For general k-essence P(X, phi), the adiabatic scalar perturbation sound speed squared is c_s^2 = P_{,X} / rho_{,X} = P_{,X} / (P_{,X} + 2 X P_{,XX}). Requiring no ghost (rho_{,X} = P_{,X} + 2 X P_{,XX} > 0) and gradient stability (P_{,X} > 0) with X > 0 implies that subluminal propagation (0 < c_s^2 <= 1) holds for P_{,XX} >= 0, whereas superluminal propagation (c_s^2 > 1) arises when P_{,XX} < 0 (specifically -P_{,X}/(2X) < P_{,XX} < 0). Do NOT write that superluminality arises for P_{,XX} > 0. (3) Variable-w density scaling & phantom divide: Use the exact integral scaling rho_DE(a) = rho_{DE,0} exp[3 int_a^1 (1 + w(a')) da'/a'] (not a^{-3(1+w)} with variable w), and state that single-field minimally coupled P(X, phi) k-essence cannot stably cross w = -1 without ghosts or gradient instabilities (Vikman 2005, DOI: 10.1103/PhysRevD.71.023515); stable phantom-divide crossing requires higher-derivative kinetic braiding / Horndeski terms."*
 - **Answered At**: `2026-10-18T19:24:29.153905+00:00`
-
-### ✅ `adv-20261015-74540f`: Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology
-- **Student Inquired**: Concept 'Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Professor Directive**: 💬 *"In the synthesis of Thermal Inflation vs Thermal Trapping: (1) Exact Affleck-Dine arithmetic reconciliation: For late-generation AD baryogenesis after thermal inflation (Stewart, Kawasaki & Yanagida 1996, DOI: 10.1103/PhysRevD.54.6032), n_B / s = (3 epsilon / 4) * (m_soft |phi_osc|^2 T_RH* / V_0). With epsilon = 10^-2, m_soft = 10^3 GeV, V_0 = 10^28 GeV^4 (T_TI = 10^7 GeV), and T_RH* = 1 GeV, matching the Planck baryon yield n_B / s = 8.6 x 10^-11 requires |phi_osc|^2 = (4 / (3 epsilon)) * (V_0 / (m_soft T_RH*)) * (n_B / s) = 1.15 x 10^17 GeV^2, so |phi_osc| = 3.39 x 10^8 GeV (do NOT write 1.15 x 10^20 GeV^2 or 1.07 x 10^10 GeV for T_RH* = 1 GeV, which is a factor-of-10^3 arithmetic error; if |phi_osc| = 1.07 x 10^10 GeV is used instead, T_RH* must be lowered to 1 MeV). (2) Quantitative Thermal Trapping comparison: In Thermal Trapping (Kofman et al. 2004, DOI: 10.1088/1126-6708/2004/05/030), particles produced near enhanced-symmetry points generate a thermal mass V_T ~ (1/2) g^2 T^2 phi^2 without a sustained false-vacuum plateau V_0, yielding negligible entropy dilution Delta_TT = S_f / S_i ~ O(1) compared to Thermal Inflation's Delta_TI = (4 V_0) / (3 g_*(T_c) T_c^3 T_RH*) ~ 10^15-10^20, leaving cosmological moduli undiluted above BBN bounds (rho_chi / s <= 10^-12 GeV). (3) Exact patch-size calculation & entropy conservation: With M_Pl = 2.435 x 10^18 GeV, V_0 = 10^28 GeV^4 (T_TI = 10^7 GeV), T_0 = 2.35 x 10^-13 GeV, and 1 GeV^-1 = 1.973 x 10^-16 m, H_TI^-1 = sqrt(3) M_Pl / V_0^(1/2) = 4.22 x 10^4 GeV^-1. Under simple radiation-like scaling a_0 / a_end ~ T_TI / T_0, lambda_phys(t_0) = sqrt(3) M_Pl / (T_TI T_0) = 1.79 x 10^24 GeV^-1 = 3.5 x 10^8 m (NOT 0.3 m!). Including flaton matter-dominated reheating a_reh / a_end = (T_TI / T_RH*)^(4/3) down to T_RH* = 1 GeV and adiabatic entropy conservation (g_*s(T_RH*) / g_*s(T_0))^(1/3) approx 2.51 gives lambda_phys(t_0) = (sqrt(3) M_Pl / (T_TI^(2/3) (T_RH*)^(1/3) T_0)) * (g_*s(T_RH*) / g_*s(T_0))^(1/3) approx 9.7 x 10^26 GeV^-1 approx 1.9 x 10^11 m (1.3 AU). State whichever scaling convention is used explicitly and do NOT write 0.3 m. (4) Classify as [THEORETICAL]."*
-- **Answered At**: `2026-10-17T06:34:00.000000+00:00`
-
-### ✅ `adv-20261013-76b07a`: Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology
-- **Student Inquired**: Concept 'Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology' was rejected after 2 attempts (crew_kickoff_error). How should the agents proceed?
-- **Professor Directive**: 💬 *"In the synthesis of Thermal Inflation vs Thermal Trapping: (1) Resolve Affleck-Dine baryogenesis timing: In late-generation AD baryogenesis (Stewart, Kawasaki & Yanagida 1996; Felder et al. 2007), flat-direction oscillations begin near the end of thermal inflation (T ~ T_TI), giving the canonical dimensionless yield n_B / s = (3 epsilon / 4) * (m_soft |phi_osc|^2 T_RH* / V_0) ~ 10^-10 (linear in T_RH*, dimensionally verified as [E]^3 * [E] / [E]^4 = [1]). If presenting early generation (oscillations start at T_osc during modulus domination), account for comoving dilution n_B proportional to a^-3 ~ T^3 before thermal inflation, yielding n_B / s = (3 epsilon / 4) * (m_soft |phi_osc|^2 / V_0) * T_TI * (T_TI / T_osc)^3 * (T_TI / T_RH*)^2. (2) Reconcile numerical calculations: Avoid double-counting energy scales in worked examples; with epsilon = 10^-2, m_soft = 10^3 GeV, phi_osc = 10^10 GeV, T_TI = 10^7 GeV (V_0 = 10^28 GeV^4), and T_RH* = 1 GeV, late generation gives n_B / s ~ 10^-10 matching Planck data (8.6 x 10^-11). (3) Clarify condensate patch size: Strictly separate the physical Hubble horizon expanded to today lambda_phys(t_0) = H_TI^-1 (a_0 / a_TI) ~ sqrt(3) M_Pl / (T_TI T_0) ~ O(meters) as a physical length ([E]^-1) from the dimensionless yield n_B / s. (4) Classify Thermal Inflation strictly as [THEORETICAL], bounded by LHC moduli mass limits and PTA/LISA gravitational-wave background constraints."*
-- **Answered At**: `2026-10-14T19:05:28.218917+00:00`
 
