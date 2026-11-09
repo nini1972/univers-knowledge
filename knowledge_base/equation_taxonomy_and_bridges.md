@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-11-08T17:34:13.961214+00:00  
-> **Total Analyzed Concepts:** 537 | **Total Discovered Equations:** 20876 | **Discovered Bridges:** 886
+> **Generated:** 2026-11-09T01:36:57.714405+00:00  
+> **Total Analyzed Concepts:** 541 | **Total Discovered Equations:** 21035 | **Discovered Bridges:** 890
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 123 concepts:
+**Occurrences:** Appears in 124 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -131,6 +131,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Lyman-Alpha Forest and Stellar Stream Constraints: Cold Dark Matter vs Ultralight Scalar Dark Matter in Suppressing Small-Scale Power
 - **Level 1**: Cosmological Constraints on the Sum of Neutrino Masses from Large-Scale Structure
 - **Level 2**: Supermassive Black Hole Binary Inspirals vs Cosmic String Networks in Sourcing the Pulsar-Timing-Array Nanohertz Gravitational-Wave Background Spectrum
+- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
 
 ### ` 1.380649 \times 10^{-23} `
 **Occurrences:** Appears in 43 concepts:
@@ -374,7 +375,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation
 
 ### ` \phi `
-**Occurrences:** Appears in 25 concepts:
+**Occurrences:** Appears in 26 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
@@ -400,9 +401,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
 - **Level 2**: Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology
 - **Level 1**: Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit
+- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
 
 ### ` \hbar = c = k_B = 1 `
-**Occurrences:** Appears in 23 concepts:
+**Occurrences:** Appears in 24 concepts:
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
 - **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 - **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
@@ -426,6 +428,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Cosmological Constraints on the Sum of Neutrino Masses from Large-Scale Structure
 - **Level 2**: Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking in Predicting Sparticle Spectra, Higgs Mass, and Dark Matter Testability
 - **Level 2**: Supermassive Black Hole Binary Inspirals vs Cosmic String Networks in Sourcing the Pulsar-Timing-Array Nanohertz Gravitational-Wave Background Spectrum
+- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
 
 ### ` ^{-2} `
 **Occurrences:** Appears in 22 concepts:
@@ -477,7 +480,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Dark Photon Kinetic-Mixing vs Axion-Like Particle Photon-Coupling Portals in Laboratory and Astrophysical Searches for Light Dark Matter
 
 ### ` (-,+,+,+) `
-**Occurrences:** Appears in 20 concepts:
+**Occurrences:** Appears in 21 concepts:
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 2**: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
 - **Level 1**: Gauge Coupling Unification and Renormalization Group Running
@@ -498,6 +501,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Stable Cold Dark Matter with Baryonic Feedback vs Decaying Dark Matter in Resolving the S8 Tension
 - **Level 2**: Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking in Predicting Sparticle Spectra, Higgs Mass, and Dark Matter Testability
 - **Level 2**: Supermassive Black Hole Binary Inspirals vs Cosmic String Networks in Sourcing the Pulsar-Timing-Array Nanohertz Gravitational-Wave Background Spectrum
+- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
 
 ### ` \Lambda \approx 1.089 \times 10^{-52} \text{ m}^{-2} `
 **Occurrences:** Appears in 19 concepts:
@@ -568,15 +572,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 203 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 174 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 166 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 134 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 90 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 81 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 205 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 175 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 167 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 135 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 92 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 82 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 38 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 29 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 209
-- **MATH_CONSISTENT Entries:** 159
+- **MATH_PROVEN Entries:** 210
+- **MATH_CONSISTENT Entries:** 160

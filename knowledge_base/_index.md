@@ -37,6 +37,7 @@ graph TD
     baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests["Baryogenesis and Leptogenesis: Sakharov Conditions and Experimental Tests"]:::verified
     primordial_gravitational_waves["Primordial Gravitational Waves"]:::theoretical
     superfluid_dark_matter_phonon_effects["Superfluid Dark Matter Phonon Effects"]:::theoretical
+    gravitational_wave_memory_is_already_covered_and_so_are_most_of_the_standard_topics_i_looked_for_a_foundational_gap_the_list_has_no_entry_for_bells_theorem_and_tests_of_local_reali["Bell's Theorem and Loophole-Free Tests of Local Realism"]:::verified
     direct_detection_strategies_for_neutrino_decay["Direct Detection Strategies for Neutrino Decay"]:::theoretical
     hawking_radiation_and_the_black_hole_information_paradox["Hawking Radiation and the Black Hole Information Paradox"]:::theoretical
     cross_correlation_methods_breaking_neutrino_decay_degeneracies["Cross-Correlation Methods Breaking Degeneracies in Neutrino Decay Surveys"]:::theoretical
@@ -330,6 +331,7 @@ graph TD
     falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational["Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse"]:::theoretical
     noiserobust_generalizedcontextuality_witnesses_for_benchmarkrelative_quantum_advantage_in_warm_biological_information_processing["Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing"]:::theoretical
     a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems["A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems"]:::theoretical
+    falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models["Falsifiable Heat-Dissipation and Mutual-Information Bounds on Cortical Energy Budgets Using Calorimetric and Spike-Train Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models"]:::theoretical
     falsifiable_percolationthreshold_and_eulercharacteristic_tests_of_cosmicweb_connectivity_against_cdm_simulation_null_ensembles_with_explicit_siunit_tracing_and_prespecified_rejecti["Falsifiable Percolation-Threshold and Euler-Characteristic Tests of Cosmic-Web Connectivity Against ΛCDM Simulation Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria"]:::theoretical
     empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models["Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models"]:::theoretical
     empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure["Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure"]:::theoretical
@@ -429,6 +431,8 @@ graph TD
     quantum_decoherence --- modified_neutrino_survival_probabilities_and_vacuum_decoherence
     quantum_gravity --- experimental_signatures_distinguishing_causal_sets_from_tensor_networks
     electroweak_baryogenesis --- baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests
+    quantum_entanglement --- gravitational_wave_memory_is_already_covered_and_so_are_most_of_the_standard_topics_i_looked_for_a_foundational_gap_the_list_has_no_entry_for_bells_theorem_and_tests_of_local_reali
+    quantum_measurement_problem --- gravitational_wave_memory_is_already_covered_and_so_are_most_of_the_standard_topics_i_looked_for_a_foundational_gap_the_list_has_no_entry_for_bells_theorem_and_tests_of_local_reali
     neutrinoless_double_beta_decay --- direct_detection_strategies_for_neutrino_decay
     neutrino_oscillations --- direct_detection_strategies_for_neutrino_decay
     black_hole_thermodynamics --- hawking_radiation_and_the_black_hole_information_paradox
@@ -654,6 +658,7 @@ graph TD
 - [Astrophysical Neutrino Flavor and Spectral Resolution Enhancement](level_1_fundamental_physics/astrophysical_neutrino_flavor_and_spectral_resolution_enhancement.md) [THEORETICAL]
 - [Baryogenesis and Leptogenesis: Sakharov Conditions and Experimental Tests](level_1_fundamental_physics/baryogenesis_and_leptogenesis_sakharov_conditions_and_experimental_tests.md) [VERIFIED]
 - [Baryon Acoustic Oscillations](level_1_fundamental_physics/baryon_acoustic_oscillations.md) [VERIFIED]
+- [Bell's Theorem and Loophole-Free Tests of Local Realism](level_1_fundamental_physics/gravitational_wave_memory_is_already_covered_and_so_are_most_of_the_standard_topics_i_looked_for_a_foundational_gap_the_list_has_no_entry_for_bells_theorem_and_tests_of_local_reali.md) [VERIFIED]
 - [Big Bang Nucleosynthesis](level_1_fundamental_physics/big_bang_nucleosynthesis.md) [VERIFIED]
 - [Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions](level_1_fundamental_physics/big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions.md) [VERIFIED]
 - [Black Hole Thermodynamics](level_1_fundamental_physics/black_hole_thermodynamics.md) [VERIFIED]
@@ -1003,6 +1008,7 @@ graph TD
 - [Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing](level_3_emergence_and_intelligence/empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
 - [Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse](level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md) [THEORETICAL]
+- [Falsifiable Heat-Dissipation and Mutual-Information Bounds on Cortical Energy Budgets Using Calorimetric and Spike-Train Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models](level_3_emergence_and_intelligence/falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models.md) [THEORETICAL]
 - [Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology](level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md) [THEORETICAL]
 - [Falsifiable Percolation-Threshold and Euler-Characteristic Tests of Cosmic-Web Connectivity Against ΛCDM Simulation Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria](level_3_emergence_and_intelligence/falsifiable_percolationthreshold_and_eulercharacteristic_tests_of_cosmicweb_connectivity_against_cdm_simulation_null_ensembles_with_explicit_siunit_tracing_and_prespecified_rejecti.md) [THEORETICAL]
 - [Falsifiable Quantum Fisher Information and Lindbladian Dephasing Bounds on Coherence-Assisted Electron Transfer in Warm Biological Photosynthetic Reaction Centers](level_3_emergence_and_intelligence/falsifiable_quantum_fisher_information_and_lindbladian_dephasing_bounds_on_coherenceassisted_electron_transfer_in_warm_biological_photosynthetic_reaction_centers_with_explicit_siun.md) [THEORETICAL]

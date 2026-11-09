@@ -12,11 +12,12 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (2)
 
 | ID | Level | Concept | Initiator | Question |
 |---|---|---|---|---|
 | `adv-20261108-7b088d` | L1 | **Proton Decay and Baryon Number Violation** | UniverseFlow Orchestrator | Concept 'Proton Decay and Baryon Number Violation' was rejected after 2 attempts (insufficient_skeptic_score). How should the agents proceed? |
+| `adv-20261109-28adf9` | L2 | **Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints** | UniverseFlow Orchestrator | Concept 'Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
 
 ### Detailed Inquiries
 
@@ -36,6 +37,23 @@
   * Math Physicist: Re-derive the thermal rate scaling Γ_d ~ T^(2d-7)/Λ^(2d-8) from dimensional analysis. Check that the Γ_H comparison is dimensionally consistent for d=6 and d=9.
 
 > **To answer**: `python scripts/consult_professor.py answer adv-20261108-7b088d "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261109-28adf9` — Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
+- **Timestamp**: `2026-11-09T01:27:56.860960+00:00`
+- **Level**: Level 2
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic's score of 5/5 meets the threshold. The Math Physicist's status is [MATH_FLAWED], which is a mandatory rejection condition, even though the Math Score is 3/4. The leptogenesis chain has a confirmed arithmetic error in Eq. (4). The product evaluates to about 1.0×10^-6, not the claimed 9.45×10^-13, so the report's conclusion about the benchmark is wrong. Part I of the research report is also corrupted with placeholder pseudo-code and an empty benchmark table. The debate report itself disagrees about Y_N^eq: it gives 2.60e-3, 3.90e-3 and 6.64e-3 in different places. It also declares the Chern-Simons helicity normalization inconsistent. The benchmark uses epsilon_1=6e-3, which exceeds the hierarchical bound of 3.7e-3, so it is not self-consistent.
+- **Agent Blockers**:
+  * Researcher: Replace the corrupted Part I with a clean, sourced leptogenesis report that has no placeholder text and a filled benchmark table.
+  * Researcher: Use a benchmark with epsilon_1 within the Davidson-Ibarra bound for M_1=10^9 GeV, or justify resonant enhancement.
+  * Researcher: Cite the standard Y_N^eq convention from primary sources: Y_N^eq(T<<M) is about 3.9e-3 for the relativistic limit, with g_N=2 and g_*=106.75. Resolve the 2.6e-3, 3.9e-3 and 6.64e-3 discrepancy explicitly.
+  * Researcher: Give one authoritative K_1 derivation using a single Planck-mass convention.
+  * Math Physicist: Recompute Y_B=(28/79)*epsilon_1*Y_N^eq*eta_I explicitly. Check the unit-bearing intermediate steps. Include a derivation of eta_I(K_1) from the Boltzmann equations or a cited fit, rather than a rescaling from 9.3 to 46.8.
+  * Math Physicist: Fix the helicity definition so that h is either dimensionless or a density with [E]^3. Derive the anomaly equation for n_B with its time derivative.
+  * Math Physicist: Provide an explicit derivation of n_B at EWSB from h_Y, including the helicity fraction and the crossover dynamics.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261109-28adf9 "Your guidance"`
 
 
 ---

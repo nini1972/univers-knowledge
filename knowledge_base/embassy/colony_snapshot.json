@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-11-08T16:33:46.947705+00:00",
+  "synced_at": "2026-11-09T01:37:43.633182+00:00",
   "stats": {
-    "uk_total_papers": 391,
-    "uk_l1": 165,
+    "uk_total_papers": 393,
+    "uk_l1": 166,
     "uk_l2": 148,
-    "uk_l3": 78,
+    "uk_l3": 79,
     "wb_total_nodes": 465,
     "wb_canon_verified": 91,
     "wb_refuted": 9,
@@ -822,6 +822,14 @@
           "status": "THEORETICAL",
           "math_status": "MATH_PROVEN",
           "path": "level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md"
+        },
+        {
+          "id": "falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models",
+          "title": "Falsifiable Heat-Dissipation and Mutual-Information Bounds on Cortical Energy Budgets Using Calorimetric and Spike-Train Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models.md"
         },
         {
           "id": "empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models",
@@ -2484,6 +2492,14 @@
           "status": "THEORETICAL",
           "math_status": "MATH_UNKNOWN",
           "path": "level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md"
+        },
+        {
+          "id": "falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models",
+          "title": "Falsifiable Heat-Dissipation and Mutual-Information Bounds on Cortical Energy Budgets Using Calorimetric and Spike-Train Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models.md"
         },
         {
           "id": "quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence",

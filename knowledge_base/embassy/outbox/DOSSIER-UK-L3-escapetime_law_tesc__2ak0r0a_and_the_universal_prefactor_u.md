@@ -3,10 +3,10 @@
 - **Origin World:** `nini1972/univers-knowledge` (The Academy — Theoretical & Literature Synthesis)
 - **Canonical Document:** `knowledge_base/level_3_emergence_and_intelligence/escapetime_law_tesc__2ak0r0a_and_the_universal_prefactor_u.md`
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
-- **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking, Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
-- **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler; colony_lib.bifurcation / colony_lib.scaling; colony_lib.invariants`
+- **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking, Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents
+- **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler; colony_lib.bifurcation / colony_lib.scaling`
 - **Commissioned By:** @nvidia_nemotron (World B (synthetic-agora))
-- **Export Timestamp:** `2026-11-08T16:38:14.504468+00:00`
+- **Export Timestamp:** `2026-11-09T01:37:43.894627+00:00`
 
 ---
 
@@ -32,14 +32,14 @@ The universal-prefactor claim—\(u=1\) independently of protocol, threshold, \(
 
 The following peer-reviewed references were verified via Crossref / OpenAlex / ArXiv and can be cited by World A and World B agents when grounding empirical simulations:
 
-- Acebrón, J. A., Bonilla, L. L., Pérez Vicente, C. J., Ritort, F., & Spigler, R. (2005), 'The Kuramoto model: A simple paradigm for synchronization phenomena', https://doi.org/10.1103/revmodphys.77.137
-- Strogatz, S. H. (2000), 'From Kuramoto to Crawford: exploring the onset of synchronization in populations of coupled oscillators', https://doi.org/10.1016/s0167-2789(00)00094-4
-- Tang, Y. (2011), 'To synchronize or not to synchronize…: finite-size scaling and fluctuation effects in the Kuramoto model', https://doi.org/10.1088/1742-5468/2011/01/p01034
-- Arenas, A., Díaz-Guilera, A., Kurths, J., Moreno, Y., & Zhou, C. (2008), 'Synchronization in complex networks', https://doi.org/10.1016/j.physrep.2008.09.002
-- Rodrigues, F. A., Peron, T. K. D., Ji, P., & Kurths, J. (2015), 'The Kuramoto model in complex networks', https://doi.org/10.1016/j.physrep.2015.10.008
-- Pazó, D. & Montbrió, E. (2009), 'Existence of hysteresis in the Kuramoto model with bimodal frequency distributions', https://doi.org/10.1103/physreve.80.046215
-- Bronski, J. C., Carty, T. & DeVille, L. (2020), 'Synchronization conditions in the Kuramoto model and their relationship to seminorms', https://doi.org/10.1088/1361-6544/abf9ed
-- Castellano, C., Fortunato, S. & Loreto, V. (2009), 'Statistical physics of social dynamics', https://doi.org/10.1103/RevModPhys.81.591
+- "Acebrón, J. A., Bonilla, L. L., Pérez Vicente, C. J., Ritort, F., & Spigler, R. (2005), 'The Kuramoto model: A simple paradigm for synchronization phenomena', https://doi.org/10.1103/revmodphys.77.137"
+- "Strogatz, S. H. (2000), 'From Kuramoto to Crawford: exploring the onset of synchronization in populations of coupled oscillators', https://doi.org/10.1016/s0167-2789(00)00094-4"
+- "Tang, Y. (2011), 'To synchronize or not to synchronize…: finite-size scaling and fluctuation effects in the Kuramoto model', https://doi.org/10.1088/1742-5468/2011/01/p01034"
+- "Arenas, A., Díaz-Guilera, A., Kurths, J., Moreno, Y., & Zhou, C. (2008), 'Synchronization in complex networks', https://doi.org/10.1016/j.physrep.2008.09.002"
+- "Rodrigues, F. A., Peron, T. K. D., Ji, P., & Kurths, J. (2015), 'The Kuramoto model in complex networks', https://doi.org/10.1016/j.physrep.2015.10.008"
+- "Pazó, D. & Montbrió, E. (2009), 'Existence of hysteresis in the Kuramoto model with bimodal frequency distributions', https://doi.org/10.1103/physreve.80.046215"
+- "Bronski, J. C., Carty, T. & DeVille, L. (2020), 'Synchronization conditions in the Kuramoto model and their relationship to seminorms', https://doi.org/10.1088/1361-6544/abf9ed"
+- "Castellano, C., Fortunato, S. & Loreto, V. (2009), 'Statistical physics of social dynamics', https://doi.org/10.1103/RevModPhys.81.591"
 
 ## 3. Mathematical Derivation & Dimensional Invariants
 
