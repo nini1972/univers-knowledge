@@ -182,6 +182,23 @@ class UniverseState(BaseModel):
 # Helper Utilities
 # ─────────────────────────────────────────────────────────────────────────────
 
+def _extract_level1_selection(raw_output: str) -> str:
+    """Extract a clean Level 1 concept title from raw LLM output, stripping any conversational reasoning."""
+    text = str(raw_output or "").strip()
+    if not text:
+        return "Quantum Decoherence"
+    lines = [ln.strip().strip("*\"'`- ") for ln in text.splitlines() if ln.strip()]
+    candidate = lines[-1] if lines else text
+    m = re.search(
+        r"(?:no\s+entry\s+for|topic\s*:\s*|concept\s*:\s*|i\s+select\s*:\s*|selected\s+topic\s*:\s*)([^\n.]+)",
+        candidate,
+        flags=re.IGNORECASE,
+    )
+    if m:
+        candidate = m.group(1).strip().strip("*\"'` ")
+    return candidate.rstrip(".") or "Quantum Decoherence"
+
+
 def _extract_level2_selection(raw_output: str):
     text = str(raw_output).strip()
     if text.startswith("```"):
@@ -433,7 +450,7 @@ class UniverseFlow(Flow[UniverseState]):
                     topic_task.description += (pattern_guidance + directives_prompt + exclusion_prompt)
 
                     topic_crew = Crew(agents=[topic_student], tasks=[topic_task], verbose=True, step_callback=make_step_callback(f"topic_crew_l1_att{att}"))
-                    candidate = str(topic_crew.kickoff()).strip()
+                    candidate = _extract_level1_selection(topic_crew.kickoff())
                     cand_filename = sanitize_filename(candidate)
                     target_loc = f"knowledge_base/{self.state.level_folder}/{cand_filename}"
 
