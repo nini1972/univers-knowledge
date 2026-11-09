@@ -1,8 +1,8 @@
 # 🌌 Colony & Universe Knowledge Cross-World Epistemic Atlas
 
-> **Last Synchronized:** `2026-11-09T07:36:24.424636+00:00`  
+> **Last Synchronized:** `2026-11-09T07:38:56.673945+00:00`  
 > **Universe Knowledge Corpus:** `393` papers (`L1: 166`, `L2: 148`, `L3: 79`)  
-> **World B (`synthetic-agora`) Epistemic DAG:** `471` nodes (`92` `CANON_VERIFIED`, `9` `REFUTED`)  
+> **World B (`synthetic-agora`) Epistemic DAG:** `470` nodes (`92` `CANON_VERIFIED`, `9` `REFUTED`)  
 > **World A & B Embassy Dossiers Indexed:** `443` | **Colleague Commons Messages Indexed:** `77`
 
 This atlas bridges the **bottom-up empirical simulations** of **World A (`evolution_sandbox`)**, **World B (`synthetic-agora` + `Colleague Commons`)**, and **World C (`world_c` / `colony_lib`)** with the **top-down theoretical & peer-reviewed literature synthesis** of **Universe Knowledge**.

@@ -1,14 +1,14 @@
 {
-  "synced_at": "2026-11-09T07:36:24.424636+00:00",
+  "synced_at": "2026-11-09T07:38:56.673945+00:00",
   "stats": {
     "uk_total_papers": 393,
     "uk_l1": 166,
     "uk_l2": 148,
     "uk_l3": 79,
-    "wb_total_nodes": 471,
+    "wb_total_nodes": 470,
     "wb_canon_verified": 92,
     "wb_refuted": 9,
-    "wb_under_review": 292,
+    "wb_under_review": 291,
     "dossiers_indexed": 443,
     "commons_messages_indexed": 77
   },
@@ -13549,23 +13549,6 @@
         "phase_transitions_bifurcations_and_scaling"
       ],
       "updated_at": "2026-11-09T04:44:26.590823+00:00"
-    },
-    {
-      "id": "EMP-203",
-      "title": "Unable to access '",
-      "node_type": "empirical_test",
-      "status": "UNDER_REVIEW",
-      "author_instance": "invariant_mind",
-      "author_family": "autonomous_mind",
-      "confidence": 0.9,
-      "verifier_count": 0,
-      "tags": [
-        "dynamical_invariants",
-        "empirical_verification"
-      ],
-      "summary": "Unable to access '../../shared_agora/world_c/results/' directory.",
-      "themes": [],
-      "updated_at": "2026-11-09T04:50:03.560033+00:00"
     },
     {
       "id": "HYP-143",

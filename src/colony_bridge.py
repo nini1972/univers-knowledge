@@ -595,6 +595,16 @@ def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, 
     if len(raw_msg) < 25:
         return None
 
+    # Strip conversational salutations before sentence splitting
+    raw_msg = re.sub(
+        r"^(?:hello|hi|hey|greetings|congratulations|congrats)\b[^\n.?!]*[.?!]\s*",
+        "",
+        raw_msg,
+        flags=re.IGNORECASE,
+    ).strip()
+    if len(raw_msg) < 25 or re.match(r"^(?:i'm\s+excited\s+to\s+discuss|thank\s+you\s+for|thanks\s+for\s+sharing)\b", raw_msg, flags=re.IGNORECASE):
+        return None
+
     # 1. Check if the message contains an explicit Topic/Concept/Title/Request line
     explicit_m = re.search(
         r"(?:\*\*|__)?(?:Topic|Concept|Title|Literature\s+Request|Theory\s+Request|Research\s+Question)(?:\*\*|__)?\s*:\s*([^\n`]+)",
@@ -620,15 +630,18 @@ def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, 
                 s,
                 re.IGNORECASE,
             )
-            and not re.match(r"^(?:maybe|also|if\s+so|i\s+can\s+share)\b", s, re.IGNORECASE)
+            and not re.match(r"^(?:maybe|also|if\s+so|i\s+can\s+share|hello|hi|congrats|congratulations|share\s+your)\b", s, re.IGNORECASE)
         ]
-        q_sents = [s for s in sentences if "?" in s and not re.match(r"^(?:maybe|also)\b", s, re.IGNORECASE)]
+        q_sents = [
+            s for s in sentences
+            if "?" in s and not re.match(r"^(?:maybe|also|could\s+you\s+share|can\s+you\s+share|share\s+your)\b", s, re.IGNORECASE)
+        ]
         candidate = (sci_sents[0] if sci_sents else (q_sents[0] if q_sents else (sentences[0] if sentences else cleaned))).strip()
 
     # Strip conversational question prefixes so backlog_manager.is_question_text() accepts it as a formal topic title
     candidate = re.sub(
         r"^(?:i'm\s+conducting\s+a\s+systematic\s+investigation\s+of|i\s+am\s+investigating|we\s+are\s+investigating|"
-        r"just\s+completed\s+a\s+targeted\s+robustness\s+check\s+on|"
+        r"i\s+just\s+completed\s+an?\s+(?:independent\s+)?|just\s+completed\s+a\s+targeted\s+robustness\s+check\s+on|"
         r"can\s+(?:you|the\s+academy|anyone)|could\s+you|what\s+(?:is|are)|how\s+(?:do|does|can)|"
         r"does\s+anyone\s+(?:know|have\s+insight\s+into\s+what)|is\s+there|we\s+(?:need|are\s+looking\s+for)|please\s+(?:derive|check|find)|"
         r"question\s+for\s+the\s+academy\s*[:\-]?)\s+",
@@ -712,11 +725,12 @@ def ingest_commons_questions_to_backlog(
             and "?" in msg_text
             and bool(
                 re.search(
-                    r"\b(prefactor|escape-time|analytic|derivation|original\s+papers|definition|normalization|universal\s+constant)\b",
+                    r"\b(prefactor|escape-time|analytic|derivation|original\s+papers|universal\s+constant|q-metric)\b",
                     msg_low,
                 )
             )
             and "is blocked" not in msg_low
+            and "scipy.signal.butter" not in msg_low
         )
 
         if not (is_lit_channel or mentions_academy or has_trigger_tag or is_open_theory_question):
