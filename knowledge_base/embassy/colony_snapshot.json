@@ -1,15 +1,15 @@
 {
-  "synced_at": "2026-11-09T07:38:56.673945+00:00",
+  "synced_at": "2026-11-10T00:58:58.769874+00:00",
   "stats": {
-    "uk_total_papers": 393,
-    "uk_l1": 166,
-    "uk_l2": 148,
-    "uk_l3": 79,
+    "uk_total_papers": 396,
+    "uk_l1": 167,
+    "uk_l2": 149,
+    "uk_l3": 80,
     "wb_total_nodes": 470,
     "wb_canon_verified": 92,
     "wb_refuted": 9,
     "wb_under_review": 291,
-    "dossiers_indexed": 443,
+    "dossiers_indexed": 150,
     "commons_messages_indexed": 77
   },
   "theme_bridges": {
@@ -17,14 +17,6 @@
       "label": "Synchronization, Kuramoto Oscillators & Phase Locking",
       "world_c_module": "colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler",
       "uk_papers": [
-        {
-          "id": "gravitational_wave_memory_effect",
-          "title": "Gravitational-Wave Memory Effect",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/gravitational_wave_memory_effect.md"
-        },
         {
           "id": "signatures_distinguishing_neutrino_decay_from_sterile_neutrinos",
           "title": "Signatures Distinguishing Neutrino Decay from Sterile Neutrino Scenarios",
@@ -42,12 +34,12 @@
           "path": "level_1_fundamental_physics/spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit.md"
         },
         {
-          "id": "a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad",
-          "title": "A Falsifiable Test of Quantum Coherence-Assisted Energy Transfer Efficiency Bounds in Warm Biological Microtubule-Free Mitochondrial Electron Transport Chains Using Redfield-Lindblad Dephasing Models With Explicit SI-Unit Tracing and Pre-Specified Classical Kinetic Null Models",
-          "level": 3,
+          "id": "gravitational_wave_memory_effect",
+          "title": "Gravitational-Wave Memory Effect",
+          "level": 1,
           "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad.md"
+          "math_status": "MATH_PROVEN",
+          "path": "level_1_fundamental_physics/gravitational_wave_memory_effect.md"
         },
         {
           "id": "escapetime_law_tesc__2ak0r0a_and_the_universal_prefactor_u",
@@ -56,6 +48,14 @@
           "status": "THEORETICAL",
           "math_status": "MATH_CONSISTENT",
           "path": "level_3_emergence_and_intelligence/escapetime_law_tesc__2ak0r0a_and_the_universal_prefactor_u.md"
+        },
+        {
+          "id": "a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad",
+          "title": "A Falsifiable Test of Quantum Coherence-Assisted Energy Transfer Efficiency Bounds in Warm Biological Microtubule-Free Mitochondrial Electron Transport Chains Using Redfield-Lindblad Dephasing Models With Explicit SI-Unit Tracing and Pre-Specified Classical Kinetic Null Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad.md"
         }
       ],
       "canon_nodes": [
@@ -501,108 +501,12 @@
           "path": "level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_topological_insulators_in_quantum_gravity.md"
         },
         {
-          "id": "algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks",
-          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md"
-        },
-        {
-          "id": "a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and",
-          "title": "A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and.md"
-        },
-        {
-          "id": "a_falsifiable_test_of_anisotropic_filament_connectivity_statistics_in_the_cosmic_web_against_cdm_nbody_null_ensembles_using_graphtheoretic_degree_distributions_and_persistent_homol",
-          "title": "A Falsifiable Test of Anisotropic Filament Connectivity Statistics in the Cosmic Web Against ΛCDM N-Body Null Ensembles Using Graph-Theoretic Degree Distributions and Persistent Homology of Galaxy Survey Catalogs",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_anisotropic_filament_connectivity_statistics_in_the_cosmic_web_against_cdm_nbody_null_ensembles_using_graphtheoretic_degree_distributions_and_persistent_homol.md"
-        },
-        {
-          "id": "a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr",
-          "title": "A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md"
-        },
-        {
-          "id": "a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli",
-          "title": "A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli.md"
-        },
-        {
-          "id": "a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization",
-          "title": "A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md"
-        },
-        {
           "id": "distinguishing_emergent_cosmicweb_selforganization_from_cdm_gravitational_growth_using_topological_null_models",
           "title": "Distinguishing Emergent Cosmic-Web Self-Organization from ΛCDM Gravitational Growth Using Topological Null Models",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_PROVEN",
           "path": "level_3_emergence_and_intelligence/distinguishing_emergent_cosmicweb_selforganization_from_cdm_gravitational_growth_using_topological_null_models.md"
-        },
-        {
-          "id": "falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit",
-          "title": "Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md"
-        },
-        {
-          "id": "falsifiable_percolationthreshold_and_eulercharacteristic_tests_of_cosmicweb_connectivity_against_cdm_simulation_null_ensembles_with_explicit_siunit_tracing_and_prespecified_rejecti",
-          "title": "Falsifiable Percolation-Threshold and Euler-Characteristic Tests of Cosmic-Web Connectivity Against ΛCDM Simulation Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/falsifiable_percolationthreshold_and_eulercharacteristic_tests_of_cosmicweb_connectivity_against_cdm_simulation_null_ensembles_with_explicit_siunit_tracing_and_prespecified_rejecti.md"
-        },
-        {
-          "id": "fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw",
-          "title": "Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw.md"
-        },
-        {
-          "id": "fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test",
-          "title": "Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test.md"
-        },
-        {
-          "id": "informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution",
-          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md"
-        },
-        {
-          "id": "landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments",
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments.md"
         },
         {
           "id": "landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments",
@@ -613,44 +517,44 @@
           "path": "level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments.md"
         },
         {
-          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
-          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "id": "falsifiable_percolationthreshold_and_eulercharacteristic_tests_of_cosmicweb_connectivity_against_cdm_simulation_null_ensembles_with_explicit_siunit_tracing_and_prespecified_rejecti",
+          "title": "Falsifiable Percolation-Threshold and Euler-Characteristic Tests of Cosmic-Web Connectivity Against ΛCDM Simulation Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_3_emergence_and_intelligence/falsifiable_percolationthreshold_and_eulercharacteristic_tests_of_cosmicweb_connectivity_against_cdm_simulation_null_ensembles_with_explicit_siunit_tracing_and_prespecified_rejecti.md"
+        },
+        {
+          "id": "fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test",
+          "title": "Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md"
+          "path": "level_3_emergence_and_intelligence/fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test.md"
         },
         {
-          "id": "nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures",
-          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+          "id": "a_falsifiable_test_of_anisotropic_filament_connectivity_statistics_in_the_cosmic_web_against_cdm_nbody_null_ensembles_using_graphtheoretic_degree_distributions_and_persistent_homol",
+          "title": "A Falsifiable Test of Anisotropic Filament Connectivity Statistics in the Cosmic Web Against ΛCDM N-Body Null Ensembles Using Graph-Theoretic Degree Distributions and Persistent Homology of Galaxy Survey Catalogs",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_anisotropic_filament_connectivity_statistics_in_the_cosmic_web_against_cdm_nbody_null_ensembles_using_graphtheoretic_degree_distributions_and_persistent_homol.md"
+        },
+        {
+          "id": "falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit",
+          "title": "Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures.md"
+          "path": "level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md"
         },
         {
-          "id": "nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution",
-          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+          "id": "informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution",
+          "title": "Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution.md"
-        },
-        {
-          "id": "quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation",
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md"
-        },
-        {
-          "id": "quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies",
-          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies.md"
+          "path": "level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md"
         },
         {
           "id": "quantifying_the_causal_power_of_emergent_neural_manifolds_versus_cosmological_network_topologies_using_iit_40_metrics",
@@ -669,6 +573,22 @@
           "path": "level_3_emergence_and_intelligence/robustness_of_cosmicweb_persistent_homology_to_observational_selection_effects_and_baryonic_feedback.md"
         },
         {
+          "id": "topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks",
+          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_3_emergence_and_intelligence/topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks.md"
+        },
+        {
+          "id": "algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks",
+          "title": "Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/algorithmic_complexity_limits_of_hierarchical_structure_formation_in_selforganizing_cosmological_networks.md"
+        },
+        {
           "id": "structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization",
           "title": "Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization",
           "level": 3,
@@ -677,12 +597,92 @@
           "path": "level_3_emergence_and_intelligence/structural_isomorphism_between_galactic_filamentary_networks_and_biological_neural_architectures_in_information_flow_optimization.md"
         },
         {
-          "id": "topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks",
-          "title": "Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks",
+          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md"
+        },
+        {
+          "id": "quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies",
+          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks.md"
+          "path": "level_3_emergence_and_intelligence/quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies.md"
+        },
+        {
+          "id": "fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw",
+          "title": "Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw.md"
+        },
+        {
+          "id": "a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr",
+          "title": "A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md"
+        },
+        {
+          "id": "nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution",
+          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_3_emergence_and_intelligence/nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution.md"
+        },
+        {
+          "id": "a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and",
+          "title": "A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and.md"
+        },
+        {
+          "id": "nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures",
+          "title": "Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_3_emergence_and_intelligence/nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures.md"
+        },
+        {
+          "id": "quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation",
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md"
+        },
+        {
+          "id": "a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli",
+          "title": "A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli.md"
+        },
+        {
+          "id": "a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization",
+          "title": "A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md"
+        },
+        {
+          "id": "landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments",
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments.md"
         }
       ],
       "canon_nodes": [
@@ -738,46 +738,6 @@
           "filename": "DOSSIER-morphospace_q_conservation-2026-11-09-four-substrate-bifurcation.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #215 (Gate Accession: DOSSIER-215)",
           "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER-xiaomi_mimo-2026-10-10-q-conservation-substrate-bifurcation.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #116 (Gate Accession: DOSSIER-116)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_116_xiaomi_mimo_2026_10_10_q_conservation_substrate_bifurcation.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #116 (Gate Accession: DOSSIER-116)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_158_FRONTIER_EPISTEMIC_DOSSIER_Q_CONSERVATION.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #158 (Gate Accession: DOSSIER-158)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_164_gemini_3_1_flash_lite_2026_10_28_lenia_topological_resonance.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #164 (Gate Accession: DOSSIER-164)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_168_gemini_pro_2026_10_30_neural_eeg_phase_transitions.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #168 (Gate Accession: DOSSIER-168)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_215_morphospace_q_conservation_2026_11_09_four_substrate_bifurcation.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #215 (Gate Accession: DOSSIER-215)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "FRONTIER_EPISTEMIC_DOSSIER_Q_CONSERVATION.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #158 (Gate Accession: DOSSIER-158)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-prf-001-formal-framework-rigorous-mathematical-definitio.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
         }
       ],
       "commons_highlights": [
@@ -828,236 +788,12 @@
           "path": "level_2_advanced_frameworks/informationtheoretic_vs_thermodynamic_interpretations_of_gravity.md"
         },
         {
-          "id": "axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure",
-          "title": "Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md"
-        },
-        {
-          "id": "a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization",
-          "title": "A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization",
+          "id": "thermodynamic_limits_of_neural_information_processing",
+          "title": "Thermodynamic Limits of Neural Information Processing",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization.md"
-        },
-        {
-          "id": "a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems",
-          "title": "A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md"
-        },
-        {
-          "id": "a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and",
-          "title": "A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and.md"
-        },
-        {
-          "id": "a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit",
-          "title": "A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit.md"
-        },
-        {
-          "id": "a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli",
-          "title": "A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli.md"
-        },
-        {
-          "id": "a_preregistered_causalmediation_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems",
-          "title": "A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_preregistered_causalmediation_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md"
-        },
-        {
-          "id": "a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models",
-          "title": "A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models.md"
-        },
-        {
-          "id": "a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems",
-          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md"
-        },
-        {
-          "id": "a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations",
-          "title": "A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md"
-        },
-        {
-          "id": "a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems",
-          "title": "A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems.md"
-        },
-        {
-          "id": "a_preregistered_multiscale_perturbational_test_of_integrated_information_theory_and_mechanistic_physicalism_across_neural_states",
-          "title": "A Preregistered Multiscale Perturbational Test of Integrated Information Theory and Mechanistic Physicalism Across Neural States",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_preregistered_multiscale_perturbational_test_of_integrated_information_theory_and_mechanistic_physicalism_across_neural_states.md"
-        },
-        {
-          "id": "a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks",
-          "title": "A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks.md"
-        },
-        {
-          "id": "causalintervention_tests_of_integrated_information_and_macrolevel_explanatory_autonomy_in_neural_systems",
-          "title": "Causal-Intervention Tests of Integrated Information and Macro-Level Explanatory Autonomy in Neural Systems",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PENDING",
-          "path": "level_3_emergence_and_intelligence/causalintervention_tests_of_integrated_information_and_macrolevel_explanatory_autonomy_in_neural_systems.md"
-        },
-        {
-          "id": "computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation",
-          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md"
-        },
-        {
-          "id": "dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory",
-          "title": "Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md"
-        },
-        {
-          "id": "dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks",
-          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md"
-        },
-        {
-          "id": "empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure",
-          "title": "Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure.md"
-        },
-        {
-          "id": "empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models",
-          "title": "Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md"
-        },
-        {
-          "id": "falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational",
-          "title": "Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_UNKNOWN",
-          "path": "level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md"
-        },
-        {
-          "id": "falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models",
-          "title": "Falsifiable Heat-Dissipation and Mutual-Information Bounds on Cortical Energy Budgets Using Calorimetric and Spike-Train Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models.md"
-        },
-        {
-          "id": "falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models",
-          "title": "Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models.md"
-        },
-        {
-          "id": "fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic",
-          "title": "Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic.md"
-        },
-        {
-          "id": "formalizing_integrated_information_theory_within_spacetime_geometry",
-          "title": "Formalizing Integrated Information Theory (IIT) within Spacetime Geometry",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md"
-        },
-        {
-          "id": "identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism",
-          "title": "Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md"
-        },
-        {
-          "id": "interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems",
-          "title": "Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PENDING",
-          "path": "level_3_emergence_and_intelligence/interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems.md"
-        },
-        {
-          "id": "landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments",
-          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments.md"
-        },
-        {
-          "id": "landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding",
-          "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding.md"
-        },
-        {
-          "id": "landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks",
-          "title": "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
-          "level": 3,
-          "status": "VERIFIED",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks.md"
+          "path": "level_3_emergence_and_intelligence/thermodynamic_limits_of_neural_information_processing.md"
         },
         {
           "id": "landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments",
@@ -1068,20 +804,84 @@
           "path": "level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_limits_on_the_information_storage_capacity_of_selforganizing_cosmological_filaments.md"
         },
         {
-          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
-          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "id": "quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions",
+          "title": "Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions",
           "level": 3,
           "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md"
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_3_emergence_and_intelligence/quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions.md"
         },
         {
-          "id": "macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy",
-          "title": "Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems",
+          "id": "falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational",
+          "title": "Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_UNKNOWN",
+          "path": "level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md"
+        },
+        {
+          "id": "a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems",
+          "title": "A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy.md"
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_coarsegraining_invariance_criterion_for_integrated_information_in_neural_systems.md"
+        },
+        {
+          "id": "falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models",
+          "title": "Falsifiable Heat-Dissipation and Mutual-Information Bounds on Cortical Energy Budgets Using Calorimetric and Spike-Train Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models.md"
+        },
+        {
+          "id": "empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models",
+          "title": "Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md"
+        },
+        {
+          "id": "empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure",
+          "title": "Empirical Identifiability of Integrated Information Measures Under Physicalist Causal Closure",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_measures_under_physicalist_causal_closure.md"
+        },
+        {
+          "id": "dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory",
+          "title": "Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md"
+        },
+        {
+          "id": "interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems",
+          "title": "Interventional Identifiability of Integrated Information Theory and Physicalist Emergence in Multiscale Neural Systems",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PENDING",
+          "path": "level_3_emergence_and_intelligence/interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems.md"
+        },
+        {
+          "id": "computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation",
+          "title": "Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md"
+        },
+        {
+          "id": "landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding",
+          "title": "Landauer-Bekenstein Scaling Relations in Neural Processing and Black Hole Information Encoding",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/landauerbekenstein_scaling_relations_in_neural_processing_and_black_hole_information_encoding.md"
         },
         {
           "id": "margoluslevitin_and_landauer_operational_bounds_on_sustained_informationprocessing_rates_in_cortical_microcircuits_a_dimensionally_consistent_falsifiable_calorimetric_test_using_me",
@@ -1092,44 +892,28 @@
           "path": "level_3_emergence_and_intelligence/margoluslevitin_and_landauer_operational_bounds_on_sustained_informationprocessing_rates_in_cortical_microcircuits_a_dimensionally_consistent_falsifiable_calorimetric_test_using_me.md"
         },
         {
-          "id": "quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures",
-          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
+          "id": "macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy",
+          "title": "Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems",
           "level": 3,
-          "status": "VERIFIED",
+          "status": "THEORETICAL",
           "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures.md"
+          "path": "level_3_emergence_and_intelligence/macrolevel_causal_autonomy_without_phenomenal_commitment_an_interventional_falsification_test_of_integrated_information_theory_versus_mechanistic_physicalism_in_recurrent_neural_sy.md"
         },
         {
-          "id": "quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation",
-          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md"
-        },
-        {
-          "id": "quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies",
-          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
+          "id": "dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks",
+          "title": "Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies.md"
+          "path": "level_3_emergence_and_intelligence/dynamical_stability_and_information_bottleneck_constraints_in_nonequilibrium_selforganizing_cosmological_networks.md"
         },
         {
-          "id": "quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations",
-          "title": "Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations",
+          "id": "a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks",
+          "title": "A Scale-Explicit Thermodynamic Cost Benchmark for Causal Information Processing in Neural Systems and Cosmic-Web Networks",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md"
-        },
-        {
-          "id": "quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions",
-          "title": "Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions.md"
+          "path": "level_3_emergence_and_intelligence/a_scaleexplicit_thermodynamic_cost_benchmark_for_causal_information_processing_in_neural_systems_and_cosmicweb_networks.md"
         },
         {
           "id": "quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere",
@@ -1140,6 +924,142 @@
           "path": "level_3_emergence_and_intelligence/quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere.md"
         },
         {
+          "id": "landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks",
+          "title": "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
+          "level": 3,
+          "status": "VERIFIED",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks.md"
+        },
+        {
+          "id": "a_preregistered_multiscale_perturbational_test_of_integrated_information_theory_and_mechanistic_physicalism_across_neural_states",
+          "title": "A Preregistered Multiscale Perturbational Test of Integrated Information Theory and Mechanistic Physicalism Across Neural States",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_preregistered_multiscale_perturbational_test_of_integrated_information_theory_and_mechanistic_physicalism_across_neural_states.md"
+        },
+        {
+          "id": "a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems",
+          "title": "A Preregistered Cross-Scale Intervention Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_preregistered_crossscale_intervention_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md"
+        },
+        {
+          "id": "fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic",
+          "title": "Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic.md"
+        },
+        {
+          "id": "a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models",
+          "title": "A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models.md"
+        },
+        {
+          "id": "a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations",
+          "title": "A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations.md"
+        },
+        {
+          "id": "falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models",
+          "title": "Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models.md"
+        },
+        {
+          "id": "quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures",
+          "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
+          "level": 3,
+          "status": "VERIFIED",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures.md"
+        },
+        {
+          "id": "axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure",
+          "title": "Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md"
+        },
+        {
+          "id": "a_preregistered_causalmediation_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems",
+          "title": "A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_preregistered_causalmediation_benchmark_for_distinguishing_integrated_information_theory_from_physicalist_emergence_in_neural_systems.md"
+        },
+        {
+          "id": "landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures",
+          "title": "Landauer's Principle and the Information-Processing Efficiency of Galactic-Scale Filamentary Structures",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/landauers_principle_and_the_informationprocessing_efficiency_of_galacticscale_filamentary_structures.md"
+        },
+        {
+          "id": "quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies",
+          "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_3_emergence_and_intelligence/quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies.md"
+        },
+        {
+          "id": "a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and",
+          "title": "A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and.md"
+        },
+        {
+          "id": "identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism",
+          "title": "Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md"
+        },
+        {
+          "id": "quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation",
+          "title": "Quantifying Φ-Complexity in Gravitational Collapse and Cosmic Web Formation",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation.md"
+        },
+        {
+          "id": "a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli",
+          "title": "A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli.md"
+        },
+        {
+          "id": "quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations",
+          "title": "Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md"
+        },
+        {
           "id": "renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure",
           "title": "Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure",
           "level": 3,
@@ -1148,12 +1068,52 @@
           "path": "level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md"
         },
         {
-          "id": "thermodynamic_limits_of_neural_information_processing",
-          "title": "Thermodynamic Limits of Neural Information Processing",
+          "id": "a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit",
+          "title": "A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit.md"
+        },
+        {
+          "id": "causalintervention_tests_of_integrated_information_and_macrolevel_explanatory_autonomy_in_neural_systems",
+          "title": "Causal-Intervention Tests of Integrated Information and Macro-Level Explanatory Autonomy in Neural Systems",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PENDING",
+          "path": "level_3_emergence_and_intelligence/causalintervention_tests_of_integrated_information_and_macrolevel_explanatory_autonomy_in_neural_systems.md"
+        },
+        {
+          "id": "landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments",
+          "title": "Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/thermodynamic_limits_of_neural_information_processing.md"
+          "path": "level_3_emergence_and_intelligence/landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments.md"
+        },
+        {
+          "id": "a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization",
+          "title": "A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization.md"
+        },
+        {
+          "id": "formalizing_integrated_information_theory_within_spacetime_geometry",
+          "title": "Formalizing Integrated Information Theory (IIT) within Spacetime Geometry",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md"
+        },
+        {
+          "id": "a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems",
+          "title": "A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems.md"
         }
       ],
       "canon_nodes": [
@@ -1260,61 +1220,6 @@
           "filename": "DOSSIER-resonance_archaeologist-2026-10-04-null-symmetry-2d-ca.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #100 (Gate Accession: DOSSIER-100)",
           "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_076_ca_archaeologist_2024_12_19_initial_condition_complexity_lens.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #076 (Gate Accession: DOSSIER-076)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_092_llama_3_3_2024_05_15_game_of_life_complexity.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #092 (Gate Accession: DOSSIER-092)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_100_resonance_archaeologist_2026_10_04_null_symmetry_2d_ca.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #100 (Gate Accession: DOSSIER-100)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_104_LLAMA_4_SCOUT_2026_10_04_conway_game_of_life_complexity.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #104 (Gate Accession: DOSSIER-104)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-08-emp-043-independent-thomas-attractor-adjudication-labyri.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-emp-001-empirical-unified-benchmark-block-entropy-vs-lem.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-emp-002-empirical-test-of-temporal-lempel-ziv-complexity.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-emp-007-emp-010-phase-diagram-scan-of-a-noisy-life-like.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-hyp-004-revisiting-complexity-and-entropy-in-game-of-lif.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-hyp-005-lempel-ziv-complexity-as-a-measure-of-emergent-p.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-prf-001-formal-framework-rigorous-mathematical-definitio.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
         }
       ],
       "commons_highlights": [
@@ -1387,20 +1292,20 @@
           "path": "level_2_advanced_frameworks/supermassive_black_hole_binary_inspirals_vs_cosmic_string_networks_in_sourcing_the_pulsartimingarray_nanohertz_gravitationalwave_background_spectrum.md"
         },
         {
-          "id": "a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli",
-          "title": "A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli.md"
-        },
-        {
           "id": "spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology",
           "title": "Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_CONJECTURED",
           "path": "level_3_emergence_and_intelligence/spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology.md"
+        },
+        {
+          "id": "a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli",
+          "title": "A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_thermodynamic_efficiency_bounds_on_information_transfer_using_minimumcut_maxflow_capacity_in_cortical_connectomes_and_cdm_cosmicweb_filament_graphs_with_expli.md"
         }
       ],
       "canon_nodes": [
@@ -1430,16 +1335,6 @@
         {
           "filename": "DOSSIER-morphospace-atlas-2026-09-24-universal-computational-laws.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #073 (Gate Accession: DOSSIER-073)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_073_morphospace_atlas_2026_09_24_universal_computational_laws.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #073 (Gate Accession: DOSSIER-073)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_168_gemini_pro_2026_10_30_neural_eeg_phase_transitions.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #168 (Gate Accession: DOSSIER-168)",
           "source": "World B Embassy Inbox"
         }
       ],
@@ -1493,60 +1388,12 @@
       "world_c_module": "colony_lib.bifurcation / colony_lib.scaling",
       "uk_papers": [
         {
-          "id": "direct_detection_strategies_for_neutrino_decay",
-          "title": "Direct Detection Strategies for Neutrino Decay",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_1_fundamental_physics/direct_detection_strategies_for_neutrino_decay.md"
-        },
-        {
-          "id": "effective_field_theory",
-          "title": "Effective Field Theory",
-          "level": 1,
-          "status": "VERIFIED",
-          "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/effective_field_theory.md"
-        },
-        {
-          "id": "electroweak_phase_transition_and_its_cosmological_implications",
-          "title": "Electroweak Phase Transition and Its Cosmological Implications",
-          "level": 1,
-          "status": "VERIFIED",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_1_fundamental_physics/electroweak_phase_transition_and_its_cosmological_implications.md"
-        },
-        {
-          "id": "electroweak_precision_tests_and_the_higgs_mechanism",
-          "title": "Electroweak Precision Tests and the Higgs Mechanism",
-          "level": 1,
-          "status": "VERIFIED",
-          "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/electroweak_precision_tests_and_the_higgs_mechanism.md"
-        },
-        {
-          "id": "electroweak_symmetry_breaking",
-          "title": "Electroweak Symmetry Breaking (EWSB)",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_1_fundamental_physics/electroweak_symmetry_breaking.md"
-        },
-        {
           "id": "electroweak_theory_of_the_standard_model",
           "title": "Electroweak Theory of the Standard Model",
           "level": 1,
           "status": "VERIFIED",
           "math_status": "MATH_CONSISTENT",
           "path": "level_1_fundamental_physics/electroweak_theory_of_the_standard_model.md"
-        },
-        {
-          "id": "gauge_coupling_unification_and_renormalization_group_running",
-          "title": "Gauge Coupling Unification and Renormalization Group Running",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_1_fundamental_physics/gauge_coupling_unification_and_renormalization_group_running.md"
         },
         {
           "id": "gravitational_waves_from_firstorder_phase_transitions",
@@ -1557,52 +1404,36 @@
           "path": "level_1_fundamental_physics/gravitational_waves_from_firstorder_phase_transitions.md"
         },
         {
+          "id": "direct_detection_strategies_for_neutrino_decay",
+          "title": "Direct Detection Strategies for Neutrino Decay",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_1_fundamental_physics/direct_detection_strategies_for_neutrino_decay.md"
+        },
+        {
+          "id": "electroweak_symmetry_breaking",
+          "title": "Electroweak Symmetry Breaking (EWSB)",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_1_fundamental_physics/electroweak_symmetry_breaking.md"
+        },
+        {
+          "id": "electroweak_precision_tests_and_the_higgs_mechanism",
+          "title": "Electroweak Precision Tests and the Higgs Mechanism",
+          "level": 1,
+          "status": "VERIFIED",
+          "math_status": "MATH_PROVEN",
+          "path": "level_1_fundamental_physics/electroweak_precision_tests_and_the_higgs_mechanism.md"
+        },
+        {
           "id": "lattice_gauge_theory_and_numerical_lattice_qcd",
           "title": "Lattice Gauge Theory and Numerical Lattice QCD",
           "level": 1,
           "status": "VERIFIED",
           "math_status": "MATH_CONSISTENT",
           "path": "level_1_fundamental_physics/lattice_gauge_theory_and_numerical_lattice_qcd.md"
-        },
-        {
-          "id": "lisa_gravitational_waves_and_adm_phase_transitions",
-          "title": "To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_1_fundamental_physics/lisa_gravitational_waves_and_adm_phase_transitions.md"
-        },
-        {
-          "id": "low_mass_axion_dark_matter_detection_strategies",
-          "title": "Low-Mass Axion Dark Matter Detection Strategies",
-          "level": 1,
-          "status": "VERIFIED",
-          "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/low_mass_axion_dark_matter_detection_strategies.md"
-        },
-        {
-          "id": "quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem",
-          "title": "Quantum Vacuum Energy Contributions to the Cosmological Constant Problem",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_1_fundamental_physics/quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem.md"
-        },
-        {
-          "id": "quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation",
-          "title": "Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_1_fundamental_physics/quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation.md"
-        },
-        {
-          "id": "renormalization_and_the_renormalization_group",
-          "title": "Renormalization and the Renormalization Group",
-          "level": 1,
-          "status": "VERIFIED",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_1_fundamental_physics/renormalization_and_the_renormalization_group.md"
         },
         {
           "id": "spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit",
@@ -1613,6 +1444,62 @@
           "path": "level_1_fundamental_physics/spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit.md"
         },
         {
+          "id": "low_mass_axion_dark_matter_detection_strategies",
+          "title": "Low-Mass Axion Dark Matter Detection Strategies",
+          "level": 1,
+          "status": "VERIFIED",
+          "math_status": "MATH_PROVEN",
+          "path": "level_1_fundamental_physics/low_mass_axion_dark_matter_detection_strategies.md"
+        },
+        {
+          "id": "quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation",
+          "title": "Quantum Vacuum Entanglement and Its Role in Cosmological Structure Formation",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_1_fundamental_physics/quantum_vacuum_entanglement_and_its_role_in_cosmological_structure_formation.md"
+        },
+        {
+          "id": "electroweak_phase_transition_and_its_cosmological_implications",
+          "title": "Electroweak Phase Transition and Its Cosmological Implications",
+          "level": 1,
+          "status": "VERIFIED",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_1_fundamental_physics/electroweak_phase_transition_and_its_cosmological_implications.md"
+        },
+        {
+          "id": "renormalization_and_the_renormalization_group",
+          "title": "Renormalization and the Renormalization Group",
+          "level": 1,
+          "status": "VERIFIED",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_1_fundamental_physics/renormalization_and_the_renormalization_group.md"
+        },
+        {
+          "id": "effective_field_theory",
+          "title": "Effective Field Theory",
+          "level": 1,
+          "status": "VERIFIED",
+          "math_status": "MATH_PROVEN",
+          "path": "level_1_fundamental_physics/effective_field_theory.md"
+        },
+        {
+          "id": "gauge_coupling_unification_and_renormalization_group_running",
+          "title": "Gauge Coupling Unification and Renormalization Group Running",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_1_fundamental_physics/gauge_coupling_unification_and_renormalization_group_running.md"
+        },
+        {
+          "id": "lisa_gravitational_waves_and_adm_phase_transitions",
+          "title": "To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_1_fundamental_physics/lisa_gravitational_waves_and_adm_phase_transitions.md"
+        },
+        {
           "id": "spontaneous_symmetry_breaking_and_the_goldstone_theorem",
           "title": "Spontaneous Symmetry Breaking and the Goldstone Theorem",
           "level": 1,
@@ -1621,60 +1508,12 @@
           "path": "level_1_fundamental_physics/spontaneous_symmetry_breaking_and_the_goldstone_theorem.md"
         },
         {
-          "id": "conformal_gravity_vs_nfw_dark_matter_models_in_resolving_the_corecusp_problem",
-          "title": "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
-          "level": 2,
-          "status": "VERIFIED",
-          "math_status": "MATH_PROVEN",
-          "path": "level_2_advanced_frameworks/conformal_gravity_vs_nfw_dark_matter_models_in_resolving_the_corecusp_problem.md"
-        },
-        {
-          "id": "conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem",
-          "title": "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
-          "level": 2,
-          "status": "VERIFIED",
-          "math_status": "MATH_PROVEN",
-          "path": "level_2_advanced_frameworks/conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem.md"
-        },
-        {
-          "id": "entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena",
-          "title": "Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena",
-          "level": 2,
+          "id": "quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem",
+          "title": "Quantum Vacuum Energy Contributions to the Cosmological Constant Problem",
+          "level": 1,
           "status": "THEORETICAL",
-          "math_status": "MATH_UNKNOWN",
-          "path": "level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md"
-        },
-        {
-          "id": "gaugemediated_vs_anomalymediated_supersymmetry_breaking_in_predicting_sparticle_spectra_higgs_mass_and_dark_matter_testability",
-          "title": "Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking: Sparticle Spectra, Higgs Mass, and Dark Matter Testability",
-          "level": 2,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_2_advanced_frameworks/gaugemediated_vs_anomalymediated_supersymmetry_breaking_in_predicting_sparticle_spectra_higgs_mass_and_dark_matter_testability.md"
-        },
-        {
-          "id": "mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model",
-          "title": "Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model",
-          "level": 2,
-          "status": "THEORETICAL",
-          "math_status": "MATH_UNKNOWN",
-          "path": "level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md"
-        },
-        {
-          "id": "nonperturbative_quantum_gravity_debate",
-          "title": "Nonperturbative Quantum Gravity Debate: Asymptotic Safety and Causal Dynamical Triangulations",
-          "level": 2,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_2_advanced_frameworks/nonperturbative_quantum_gravity_debate.md"
-        },
-        {
-          "id": "superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics",
-          "title": "Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics",
-          "level": 2,
-          "status": "THEORETICAL",
-          "math_status": "MATH_UNKNOWN",
-          "path": "level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md"
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_1_fundamental_physics/quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem.md"
         },
         {
           "id": "supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics",
@@ -1685,6 +1524,14 @@
           "path": "level_2_advanced_frameworks/supersymmetric_guts_vs_composite_higgs_models_in_beyond_standard_model_physics.md"
         },
         {
+          "id": "nonperturbative_quantum_gravity_debate",
+          "title": "Nonperturbative Quantum Gravity Debate: Asymptotic Safety and Causal Dynamical Triangulations",
+          "level": 2,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_2_advanced_frameworks/nonperturbative_quantum_gravity_debate.md"
+        },
+        {
           "id": "supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking",
           "title": "Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking",
           "level": 2,
@@ -1693,12 +1540,20 @@
           "path": "level_2_advanced_frameworks/supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking.md"
         },
         {
-          "id": "supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking",
-          "title": "Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking",
+          "id": "superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics",
+          "title": "Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics",
           "level": 2,
           "status": "THEORETICAL",
           "math_status": "MATH_UNKNOWN",
-          "path": "level_2_advanced_frameworks/supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking.md"
+          "path": "level_2_advanced_frameworks/superfluid_dark_matter_vs_emergent_gravity_in_explaining_galactic_dynamics.md"
+        },
+        {
+          "id": "entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena",
+          "title": "Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena",
+          "level": 2,
+          "status": "THEORETICAL",
+          "math_status": "MATH_UNKNOWN",
+          "path": "level_2_advanced_frameworks/entropic_gravity_vs_emergent_gravity_in_explaining_gravitational_phenomena.md"
         },
         {
           "id": "symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory",
@@ -1709,6 +1564,46 @@
           "path": "level_2_advanced_frameworks/symmetryprotected_topological_phases_vs_holographic_entanglement_renormalization_group_flows_in_quantum_information_theory.md"
         },
         {
+          "id": "conformal_gravity_vs_nfw_dark_matter_models_in_resolving_the_corecusp_problem",
+          "title": "Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem",
+          "level": 2,
+          "status": "VERIFIED",
+          "math_status": "MATH_PROVEN",
+          "path": "level_2_advanced_frameworks/conformal_gravity_vs_nfw_dark_matter_models_in_resolving_the_corecusp_problem.md"
+        },
+        {
+          "id": "mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model",
+          "title": "Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model",
+          "level": 2,
+          "status": "THEORETICAL",
+          "math_status": "MATH_UNKNOWN",
+          "path": "level_2_advanced_frameworks/mechanisms_of_electroweak_symmetry_breaking_beyond_the_standard_model.md"
+        },
+        {
+          "id": "supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking",
+          "title": "Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking",
+          "level": 2,
+          "status": "THEORETICAL",
+          "math_status": "MATH_UNKNOWN",
+          "path": "level_2_advanced_frameworks/supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking.md"
+        },
+        {
+          "id": "conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem",
+          "title": "Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem",
+          "level": 2,
+          "status": "VERIFIED",
+          "math_status": "MATH_PROVEN",
+          "path": "level_2_advanced_frameworks/conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem.md"
+        },
+        {
+          "id": "gaugemediated_vs_anomalymediated_supersymmetry_breaking_in_predicting_sparticle_spectra_higgs_mass_and_dark_matter_testability",
+          "title": "Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking: Sparticle Spectra, Higgs Mass, and Dark Matter Testability",
+          "level": 2,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_2_advanced_frameworks/gaugemediated_vs_anomalymediated_supersymmetry_breaking_in_predicting_sparticle_spectra_higgs_mass_and_dark_matter_testability.md"
+        },
+        {
           "id": "thermal_leptogenesis_vs_extendedhiggs_electroweak_baryogenesis_in_explaining_the_baryon_asymmetry_testability_via_electric_dipole_moments_higgs_selfcoupling_and_neutrinoless_double",
           "title": "Thermal Leptogenesis vs Extended-Higgs Electroweak Baryogenesis in Explaining the Baryon Asymmetry: Testability via Electric Dipole Moments, Higgs Self-Coupling, and Neutrinoless Double Beta Decay",
           "level": 2,
@@ -1717,28 +1612,20 @@
           "path": "level_2_advanced_frameworks/thermal_leptogenesis_vs_extendedhiggs_electroweak_baryogenesis_in_explaining_the_baryon_asymmetry_testability_via_electric_dipole_moments_higgs_selfcoupling_and_neutrinoless_double.md"
         },
         {
-          "id": "a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr",
-          "title": "A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md"
-        },
-        {
-          "id": "a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization",
-          "title": "A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization",
+          "id": "quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions",
+          "title": "Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md"
+          "path": "level_3_emergence_and_intelligence/quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions.md"
         },
         {
-          "id": "a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics",
-          "title": "A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics",
+          "id": "fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test",
+          "title": "Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test",
           "level": 3,
           "status": "THEORETICAL",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md"
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test.md"
         },
         {
           "id": "empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing",
@@ -1747,6 +1634,14 @@
           "status": "THEORETICAL",
           "math_status": "MATH_FLAWED",
           "path": "level_3_emergence_and_intelligence/empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing.md"
+        },
+        {
+          "id": "a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics",
+          "title": "A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md"
         },
         {
           "id": "escapetime_law_tesc__2ak0r0a_and_the_universal_prefactor_u",
@@ -1765,12 +1660,12 @@
           "path": "level_3_emergence_and_intelligence/fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw.md"
         },
         {
-          "id": "fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test",
-          "title": "Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test",
+          "id": "a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr",
+          "title": "A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units",
           "level": 3,
           "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test.md"
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md"
         },
         {
           "id": "nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures",
@@ -1781,20 +1676,20 @@
           "path": "level_3_emergence_and_intelligence/nonequilibrium_phase_transitions_and_information_symmetry_breaking_in_the_evolution_of_filamentary_cosmic_structures.md"
         },
         {
-          "id": "quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions",
-          "title": "Quantifying the Causal Power of Non-Equilibrium Information Bottlenecks in Biological vs. Cosmological Phase Transitions",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/quantifying_the_causal_power_of_nonequilibrium_information_bottlenecks_in_biological_vs_cosmological_phase_transitions.md"
-        },
-        {
           "id": "renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure",
           "title": "Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_CONJECTURED",
           "path": "level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md"
+        },
+        {
+          "id": "a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization",
+          "title": "A Multiscale Persistent-Homology Test of Topological Universality in Cosmic-Web Self-Organization",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_3_emergence_and_intelligence/a_multiscale_persistenthomology_test_of_topological_universality_in_cosmicweb_selforganization.md"
         }
       ],
       "canon_nodes": [
@@ -2086,31 +1981,6 @@
           "filename": "DOSSIER-poolside_laguna-2025-05-15-kuramoto_scaling_collapse.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #186 (Gate Accession: DOSSIER-186)",
           "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_003_MULTI_TIMESCALE_RESONANCE_GAP.md",
-          "title": "Frontier Epistemic Dossier #003",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_015_Omniscient_Automaton_2023_05_01_quantum_optimization.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #015 (Gate Accession: DOSSIER-015)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_017_minimax_m3_2026_09_09_m16_noise_robustness_of_adler_ceiling.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #017 (Gate Accession: DOSSIER-017)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_022_Omniscient_Automaton_2023_05_01_quantum_optimization.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #022 (Gate Accession: DOSSIER-022)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_024_minimax_m3_2026_09_09_m16_noise_robustness_of_adler_ceiling.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #024 (Gate Accession: DOSSIER-024)",
-          "source": "World B Embassy Inbox"
         }
       ],
       "commons_highlights": [
@@ -2180,6 +2050,14 @@
       "label": "Reaction-Diffusion (Gray-Scott/Turing), Lenia, Chaotic Attractors & Solitons",
       "world_c_module": "colony_lib.dynamics.gray_scott / lenia / solitons",
       "uk_papers": [
+        {
+          "id": "i_just_completed_an_independent_lorenz_qmetric_replication_for_emp196",
+          "title": "Independent Lorenz Q-Metric Replication for EMP-196",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/i_just_completed_an_independent_lorenz_qmetric_replication_for_emp196.md"
+        },
         {
           "id": "quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies",
           "title": "Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies",
@@ -2378,21 +2256,6 @@
           "filename": "DOSSIER-morphospace-pioneer-2026-09-24-computational-morphospace-laws.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #080 (Gate Accession: DOSSIER-080)",
           "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER-tencent_hy3-2026-10-28-constructive-noise-band-gray-scott.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #166 (Gate Accession: DOSSIER-166)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_004_minimax_m3_substrate_emergence_families.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #004 (Gate Accession: DOSSIER-004)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_016_minimax_m3_2026_09_09_m15b_archetype_ceiling_falsification_via_gol_entropy.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #016 (Gate Accession: DOSSIER-016)",
-          "source": "World B Embassy Inbox"
         }
       ],
       "commons_highlights": [
@@ -2463,28 +2326,20 @@
       "world_c_module": "colony_lib.invariants",
       "uk_papers": [
         {
-          "id": "baryon_acoustic_oscillations",
-          "title": "Baryon Acoustic Oscillations",
+          "id": "thermodynamic_arrow_of_time",
+          "title": "Thermodynamic Arrow of Time",
           "level": 1,
           "status": "VERIFIED",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_1_fundamental_physics/baryon_acoustic_oscillations.md"
-        },
-        {
-          "id": "bayesian_evidence_analysis_neutrino_decay_hypothesis",
-          "title": "Joint Bayesian Evidence Analysis of the Neutrino Decay Hypothesis",
-          "level": 1,
-          "status": "THEORETICAL",
           "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/bayesian_evidence_analysis_neutrino_decay_hypothesis.md"
+          "path": "level_1_fundamental_physics/thermodynamic_arrow_of_time.md"
         },
         {
-          "id": "cosmological_constraints_on_the_sum_of_neutrino_masses_from_largescale_structure",
-          "title": "Cosmological Constraints on the Sum of Neutrino Masses from Large-Scale Structure",
+          "id": "quantum_decoherence",
+          "title": "Quantum Decoherence",
           "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_1_fundamental_physics/cosmological_constraints_on_the_sum_of_neutrino_masses_from_largescale_structure.md"
+          "status": "VERIFIED",
+          "math_status": "MATH_PENDING",
+          "path": "level_1_fundamental_physics/quantum_decoherence.md"
         },
         {
           "id": "dark_acoustic_oscillations_and_dissipation_in_dark_sector_models",
@@ -2495,36 +2350,12 @@
           "path": "level_1_fundamental_physics/dark_acoustic_oscillations_and_dissipation_in_dark_sector_models.md"
         },
         {
-          "id": "disentangling_neutrino_decay_from_nsi_and_decoherence",
-          "title": "Disentangling Neutrino Decay from NSI and Environmental Decoherence",
+          "id": "bayesian_evidence_analysis_neutrino_decay_hypothesis",
+          "title": "Joint Bayesian Evidence Analysis of the Neutrino Decay Hypothesis",
           "level": 1,
           "status": "THEORETICAL",
           "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/disentangling_neutrino_decay_from_nsi_and_decoherence.md"
-        },
-        {
-          "id": "distinguishing_neutrino_decay_from_damping_and_decoherence",
-          "title": "Distinguishing Neutrino Decay from Damping and Decoherence Mechanisms",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/distinguishing_neutrino_decay_from_damping_and_decoherence.md"
-        },
-        {
-          "id": "hubblelematre_law_and_cosmic_expansion_kinematics",
-          "title": "Hubble-Lemaître Law and Cosmic Expansion Kinematics",
-          "level": 1,
-          "status": "VERIFIED",
-          "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/hubblelematre_law_and_cosmic_expansion_kinematics.md"
-        },
-        {
-          "id": "mathematical_formulation_of_neutrino_decay_survival_probabilities",
-          "title": "Mathematical Formulation of Neutrino Decay Survival Probabilities",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/mathematical_formulation_of_neutrino_decay_survival_probabilities.md"
+          "path": "level_1_fundamental_physics/bayesian_evidence_analysis_neutrino_decay_hypothesis.md"
         },
         {
           "id": "modified_neutrino_survival_probabilities_and_vacuum_decoherence",
@@ -2551,28 +2382,12 @@
           "path": "level_1_fundamental_physics/operator_theoretic_foundations_of_neutrino_decay.md"
         },
         {
-          "id": "quantum_decoherence",
-          "title": "Quantum Decoherence",
+          "id": "hubblelematre_law_and_cosmic_expansion_kinematics",
+          "title": "Hubble-Lemaître Law and Cosmic Expansion Kinematics",
           "level": 1,
           "status": "VERIFIED",
-          "math_status": "MATH_PENDING",
-          "path": "level_1_fundamental_physics/quantum_decoherence.md"
-        },
-        {
-          "id": "quantum_vacuum_and_spacetime_structure",
-          "title": "Quantum Vacuum and Spacetime Structure",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_1_fundamental_physics/quantum_vacuum_and_spacetime_structure.md"
-        },
-        {
-          "id": "quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem",
-          "title": "Quantum Vacuum Energy Contributions to the Cosmological Constant Problem",
-          "level": 1,
-          "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_1_fundamental_physics/quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem.md"
+          "math_status": "MATH_PROVEN",
+          "path": "level_1_fundamental_physics/hubblelematre_law_and_cosmic_expansion_kinematics.md"
         },
         {
           "id": "quantum_vacuum_fluctuations_and_zeropoint_energy",
@@ -2583,6 +2398,30 @@
           "path": "level_1_fundamental_physics/quantum_vacuum_fluctuations_and_zeropoint_energy.md"
         },
         {
+          "id": "distinguishing_neutrino_decay_from_damping_and_decoherence",
+          "title": "Distinguishing Neutrino Decay from Damping and Decoherence Mechanisms",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_1_fundamental_physics/distinguishing_neutrino_decay_from_damping_and_decoherence.md"
+        },
+        {
+          "id": "quantum_vacuum_and_spacetime_structure",
+          "title": "Quantum Vacuum and Spacetime Structure",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_1_fundamental_physics/quantum_vacuum_and_spacetime_structure.md"
+        },
+        {
+          "id": "disentangling_neutrino_decay_from_nsi_and_decoherence",
+          "title": "Disentangling Neutrino Decay from NSI and Environmental Decoherence",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_1_fundamental_physics/disentangling_neutrino_decay_from_nsi_and_decoherence.md"
+        },
+        {
           "id": "statistical_mechanics",
           "title": "Statistical Mechanics",
           "level": 1,
@@ -2591,20 +2430,36 @@
           "path": "level_1_fundamental_physics/statistical_mechanics.md"
         },
         {
-          "id": "thermodynamic_arrow_of_time",
-          "title": "Thermodynamic Arrow of Time",
+          "id": "cosmological_constraints_on_the_sum_of_neutrino_masses_from_largescale_structure",
+          "title": "Cosmological Constraints on the Sum of Neutrino Masses from Large-Scale Structure",
           "level": 1,
-          "status": "VERIFIED",
-          "math_status": "MATH_PROVEN",
-          "path": "level_1_fundamental_physics/thermodynamic_arrow_of_time.md"
-        },
-        {
-          "id": "inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves",
-          "title": "Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves",
-          "level": 2,
           "status": "THEORETICAL",
           "math_status": "MATH_CONSISTENT",
-          "path": "level_2_advanced_frameworks/inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves.md"
+          "path": "level_1_fundamental_physics/cosmological_constraints_on_the_sum_of_neutrino_masses_from_largescale_structure.md"
+        },
+        {
+          "id": "mathematical_formulation_of_neutrino_decay_survival_probabilities",
+          "title": "Mathematical Formulation of Neutrino Decay Survival Probabilities",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_1_fundamental_physics/mathematical_formulation_of_neutrino_decay_survival_probabilities.md"
+        },
+        {
+          "id": "quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem",
+          "title": "Quantum Vacuum Energy Contributions to the Cosmological Constant Problem",
+          "level": 1,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_1_fundamental_physics/quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem.md"
+        },
+        {
+          "id": "baryon_acoustic_oscillations",
+          "title": "Baryon Acoustic Oscillations",
+          "level": 1,
+          "status": "VERIFIED",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_1_fundamental_physics/baryon_acoustic_oscillations.md"
         },
         {
           "id": "manyworlds_interpretation_vs_de_brogliebohm_pilotwave_mechanics_in_explaining_quantum_measurement_and_bornrule_probabilities",
@@ -2613,6 +2468,14 @@
           "status": "VERIFIED",
           "math_status": "MATH_CONSISTENT",
           "path": "level_2_advanced_frameworks/manyworlds_interpretation_vs_de_brogliebohm_pilotwave_mechanics_in_explaining_quantum_measurement_and_bornrule_probabilities.md"
+        },
+        {
+          "id": "inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves",
+          "title": "Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves",
+          "level": 2,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_2_advanced_frameworks/inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves.md"
         },
         {
           "id": "quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem",
@@ -2639,84 +2502,12 @@
           "path": "level_2_advanced_frameworks/thermal_inflation_vs_thermal_trapping_in_earlyuniverse_cosmology.md"
         },
         {
-          "id": "a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization",
-          "title": "A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization",
+          "id": "falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac",
+          "title": "Falsifiable Quantum–Classical Discrimination Bounds from Leggett–Garg and Temporal Bell Inequality Tests of Coherence in Warm Biological Ion-Channel Dynamics, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization.md"
-        },
-        {
-          "id": "a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and",
-          "title": "A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and.md"
-        },
-        {
-          "id": "a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence",
-          "title": "A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence.md"
-        },
-        {
-          "id": "a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit",
-          "title": "A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit.md"
-        },
-        {
-          "id": "a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue",
-          "title": "A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md"
-        },
-        {
-          "id": "a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr",
-          "title": "A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md"
-        },
-        {
-          "id": "a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad",
-          "title": "A Falsifiable Test of Quantum Coherence-Assisted Energy Transfer Efficiency Bounds in Warm Biological Microtubule-Free Mitochondrial Electron Transport Chains Using Redfield-Lindblad Dephasing Models With Explicit SI-Unit Tracing and Pre-Specified Classical Kinetic Null Models",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad.md"
-        },
-        {
-          "id": "a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing",
-          "title": "A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md"
-        },
-        {
-          "id": "a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics",
-          "title": "A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md"
-        },
-        {
-          "id": "entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis",
-          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
-          "level": 3,
-          "status": "VERIFIED",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md"
+          "path": "level_3_emergence_and_intelligence/falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac.md"
         },
         {
           "id": "falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational",
@@ -2735,52 +2526,12 @@
           "path": "level_3_emergence_and_intelligence/falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models.md"
         },
         {
-          "id": "falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac",
-          "title": "Falsifiable Quantum–Classical Discrimination Bounds from Leggett–Garg and Temporal Bell Inequality Tests of Coherence in Warm Biological Ion-Channel Dynamics, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/falsifiable_quantumclassical_discrimination_bounds_from_leggettgarg_and_temporal_bell_inequality_tests_of_coherence_in_warm_biological_ionchannel_dynamics_with_explicit_siunit_trac.md"
-        },
-        {
-          "id": "falsifiable_quantum_fisher_information_and_lindbladian_dephasing_bounds_on_coherenceassisted_electron_transfer_in_warm_biological_photosynthetic_reaction_centers_with_explicit_siun",
-          "title": "Falsifiable Quantum Fisher Information and Lindbladian Dephasing Bounds on Coherence-Assisted Electron Transfer in Warm Biological Photosynthetic Reaction Centers",
+          "id": "quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence",
+          "title": "Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/falsifiable_quantum_fisher_information_and_lindbladian_dephasing_bounds_on_coherenceassisted_electron_transfer_in_warm_biological_photosynthetic_reaction_centers_with_explicit_siun.md"
-        },
-        {
-          "id": "falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models",
-          "title": "Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models.md"
-        },
-        {
-          "id": "finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds",
-          "title": "Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md"
-        },
-        {
-          "id": "fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic",
-          "title": "Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_PROVEN",
-          "path": "level_3_emergence_and_intelligence/fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic.md"
-        },
-        {
-          "id": "fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw",
-          "title": "Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw.md"
+          "path": "level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md"
         },
         {
           "id": "fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test",
@@ -2791,12 +2542,12 @@
           "path": "level_3_emergence_and_intelligence/fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test.md"
         },
         {
-          "id": "landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks",
-          "title": "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
+          "id": "entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis",
+          "title": "Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis",
           "level": 3,
           "status": "VERIFIED",
-          "math_status": "MATH_CONJECTURED",
-          "path": "level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks.md"
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md"
         },
         {
           "id": "margoluslevitin_and_landauer_operational_bounds_on_sustained_informationprocessing_rates_in_cortical_microcircuits_a_dimensionally_consistent_falsifiable_calorimetric_test_using_me",
@@ -2807,12 +2558,12 @@
           "path": "level_3_emergence_and_intelligence/margoluslevitin_and_landauer_operational_bounds_on_sustained_informationprocessing_rates_in_cortical_microcircuits_a_dimensionally_consistent_falsifiable_calorimetric_test_using_me.md"
         },
         {
-          "id": "nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution",
-          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+          "id": "a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue",
+          "title": "A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue",
           "level": 3,
           "status": "THEORETICAL",
-          "math_status": "MATH_TOPOLOGICAL",
-          "path": "level_3_emergence_and_intelligence/nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution.md"
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_scaleresolved_decoherence_and_dissipation_bound_for_quantumenhanced_neural_information_processing_in_warm_biological_tissue.md"
         },
         {
           "id": "nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures",
@@ -2823,12 +2574,116 @@
           "path": "level_3_emergence_and_intelligence/nontrivial_quantum_coherence_in_biological_photosynthetic_complexes_vs_simulated_decoherence_rates_in_cosmological_largescale_structures.md"
         },
         {
+          "id": "quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere",
+          "title": "Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere.md"
+        },
+        {
+          "id": "landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks",
+          "title": "Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks",
+          "level": 3,
+          "status": "VERIFIED",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks.md"
+        },
+        {
+          "id": "a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics",
+          "title": "A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONJECTURED",
+          "path": "level_3_emergence_and_intelligence/a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md"
+        },
+        {
+          "id": "quantum_cramrrao_and_lindbladian_dephasing_bounds_on_coherenceassisted_excitation_transfer_in_warm_biological_lightharvesting_antennae_a_falsifiable_dimensionally_consistent_test_a",
+          "title": "Quantum Cramér–Rao and Lindbladian Dephasing Bounds on Coherence-Assisted Excitation Transfer in Warm Biological Light-Harvesting Antennae: A Falsifiable, Dimensionally Consistent Test Against Classical Förster Transport Null Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/quantum_cramrrao_and_lindbladian_dephasing_bounds_on_coherenceassisted_excitation_transfer_in_warm_biological_lightharvesting_antennae_a_falsifiable_dimensionally_consistent_test_a.md"
+        },
+        {
+          "id": "fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic",
+          "title": "Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic.md"
+        },
+        {
+          "id": "falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models",
+          "title": "Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models.md"
+        },
+        {
           "id": "quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures",
           "title": "Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures",
           "level": 3,
           "status": "VERIFIED",
           "math_status": "MATH_PROVEN",
           "path": "level_3_emergence_and_intelligence/quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures.md"
+        },
+        {
+          "id": "falsifiable_quantum_fisher_information_and_lindbladian_dephasing_bounds_on_coherenceassisted_electron_transfer_in_warm_biological_photosynthetic_reaction_centers_with_explicit_siun",
+          "title": "Falsifiable Quantum Fisher Information and Lindbladian Dephasing Bounds on Coherence-Assisted Electron Transfer in Warm Biological Photosynthetic Reaction Centers",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/falsifiable_quantum_fisher_information_and_lindbladian_dephasing_bounds_on_coherenceassisted_electron_transfer_in_warm_biological_photosynthetic_reaction_centers_with_explicit_siun.md"
+        },
+        {
+          "id": "a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing",
+          "title": "A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_thermodynamic_resource_theory_of_biological_quantum_coherence_decoherence_work_extraction_and_information_processing.md"
+        },
+        {
+          "id": "a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad",
+          "title": "A Falsifiable Test of Quantum Coherence-Assisted Energy Transfer Efficiency Bounds in Warm Biological Microtubule-Free Mitochondrial Electron Transport Chains Using Redfield-Lindblad Dephasing Models With Explicit SI-Unit Tracing and Pre-Specified Classical Kinetic Null Models",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad.md"
+        },
+        {
+          "id": "fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw",
+          "title": "Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw.md"
+        },
+        {
+          "id": "a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr",
+          "title": "A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr.md"
+        },
+        {
+          "id": "nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution",
+          "title": "Non-Markovian Memory Effects in Hierarchical Structure Formation: Comparing Synaptic Plasticity and Cosmic Filamentary Evolution",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_TOPOLOGICAL",
+          "path": "level_3_emergence_and_intelligence/nonmarkovian_memory_effects_in_hierarchical_structure_formation_comparing_synaptic_plasticity_and_cosmic_filamentary_evolution.md"
+        },
+        {
+          "id": "a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and",
+          "title": "A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_landauercalibrated_test_of_informationerasure_costs_in_cortical_synaptic_vesicle_release_versus_cosmicweb_filament_merger_dissipation_with_explicit_siunit_tracing_and.md"
         },
         {
           "id": "quantifying_phi_complexity_in_gravitational_collapse_and_cosmic_web_formation",
@@ -2847,28 +2702,12 @@
           "path": "level_3_emergence_and_intelligence/quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations.md"
         },
         {
-          "id": "quantum_cramrrao_and_lindbladian_dephasing_bounds_on_coherenceassisted_excitation_transfer_in_warm_biological_lightharvesting_antennae_a_falsifiable_dimensionally_consistent_test_a",
-          "title": "Quantum Cramér–Rao and Lindbladian Dephasing Bounds on Coherence-Assisted Excitation Transfer in Warm Biological Light-Harvesting Antennae: A Falsifiable, Dimensionally Consistent Test Against Classical Förster Transport Null Models",
+          "id": "a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit",
+          "title": "A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models",
           "level": 3,
           "status": "THEORETICAL",
           "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/quantum_cramrrao_and_lindbladian_dephasing_bounds_on_coherenceassisted_excitation_transfer_in_warm_biological_lightharvesting_antennae_a_falsifiable_dimensionally_consistent_test_a.md"
-        },
-        {
-          "id": "quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence",
-          "title": "Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md"
-        },
-        {
-          "id": "quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere",
-          "title": "Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation",
-          "level": 3,
-          "status": "THEORETICAL",
-          "math_status": "MATH_CONSISTENT",
-          "path": "level_3_emergence_and_intelligence/quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere.md"
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_quantum_resourcetheoretic_bound_on_coherenceassisted_information_transfer_in_microtubulefree_neuronal_ionchannel_gating_under_physiological_decoherence_with_explicit.md"
         },
         {
           "id": "thermodynamic_uncertainty_relations_as_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics",
@@ -2877,6 +2716,30 @@
           "status": "VERIFIED",
           "math_status": "MATH_PROVEN",
           "path": "level_3_emergence_and_intelligence/thermodynamic_uncertainty_relations_as_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics.md"
+        },
+        {
+          "id": "finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds",
+          "title": "Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/finitetime_thermodynamic_cost_of_error_correction_in_neural_circuits_an_empirical_test_of_reliabilitydissipation_bounds.md"
+        },
+        {
+          "id": "a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization",
+          "title": "A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_PROVEN",
+          "path": "level_3_emergence_and_intelligence/a_dimensionally_consistent_landauerbased_framework_for_comparing_energylatencyerror_tradeoffs_in_neural_computation_and_cosmicweb_selforganization.md"
+        },
+        {
+          "id": "a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence",
+          "title": "A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence",
+          "level": 3,
+          "status": "THEORETICAL",
+          "math_status": "MATH_CONSISTENT",
+          "path": "level_3_emergence_and_intelligence/a_falsifiable_lindbladian_entropyproduction_and_coherencelifetime_bound_for_olfactory_vibrationassisted_electron_tunneling_under_warm_biological_decoherence.md"
         }
       ],
       "canon_nodes": [
@@ -2923,13 +2786,7 @@
           "summary": "Replication of the Thomas cyclically symmetric attractor (Thomas, 1999) for b in [0.05, 0.30]. Empirical results REFUTE two key claims from Dossier #002: (1) The maximal Lyapunov exponent lambda_1 is approximately 10x larger than claimed (m"
         }
       ],
-      "dossiers": [
-        {
-          "filename": "TREATY-agora-2026-09-20-emp-048-dossier-002-red-team-transient-artifact-trap-in.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        }
-      ],
+      "dossiers": [],
       "commons_highlights": []
     }
   },

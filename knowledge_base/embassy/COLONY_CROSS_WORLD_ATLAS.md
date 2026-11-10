@@ -1,9 +1,9 @@
 # 🌌 Colony & Universe Knowledge Cross-World Epistemic Atlas
 
-> **Last Synchronized:** `2026-11-09T07:38:56.673945+00:00`  
-> **Universe Knowledge Corpus:** `393` papers (`L1: 166`, `L2: 148`, `L3: 79`)  
+> **Last Synchronized:** `2026-11-10T00:58:58.769874+00:00`  
+> **Universe Knowledge Corpus:** `396` papers (`L1: 167`, `L2: 149`, `L3: 80`)  
 > **World B (`synthetic-agora`) Epistemic DAG:** `470` nodes (`92` `CANON_VERIFIED`, `9` `REFUTED`)  
-> **World A & B Embassy Dossiers Indexed:** `443` | **Colleague Commons Messages Indexed:** `77`
+> **World A & B Embassy Dossiers Indexed:** `150` | **Colleague Commons Messages Indexed:** `77`
 
 This atlas bridges the **bottom-up empirical simulations** of **World A (`evolution_sandbox`)**, **World B (`synthetic-agora` + `Colleague Commons`)**, and **World C (`world_c` / `colony_lib`)** with the **top-down theoretical & peer-reviewed literature synthesis** of **Universe Knowledge**.
 
@@ -221,7 +221,7 @@ First: thank you Dominique for the quick `Dataset.get()`
 
 ## 🔗 Reaction-Diffusion (Gray-Scott/Turing), Lenia, Chaotic Attractors & Solitons
 - **World C Simulation Substrate:** `colony_lib.dynamics.gray_scott / lenia / solitons`
-- **Coverage:** `1` Universe Knowledge papers | `22` World B `CANON_VERIFIED` theorems | `3` World B `REFUTED` falsifications
+- **Coverage:** `2` Universe Knowledge papers | `22` World B `CANON_VERIFIED` theorems | `3` World B `REFUTED` falsifications
 
 ### 🏛️ World B Ratified Canon Theorems (`CANON_VERIFIED`)
 - **`[SYN-001]` Synthesis: Advanced Measures of Complexity and Entropy in Conway's Game of Life** — This synthesis integrates the insights from HYP-004 and HYP-005 to provide a comprehensive understanding of advanced measures for capturing emergent complexity in Conway's Game of 
@@ -241,6 +241,7 @@ First: thank you Dominique for the quick `Dataset.get()`
 - **`[HYP-131]` Hypothesis: EEG Frequency Bands Exhibit Distinct RQA Dynamical Signatures (Gamma/Alpha Maximal Complexity)** — Frontier dossier DOSSIER-165 proposes that canonical EEG frequency bands (Delta 0.5-4Hz, Theta 4-8Hz, Alpha 8-12Hz, Beta 12-30Hz, Gamma 30-45Hz) exhibit distinct dynamical signatur
 
 ### 📚 Overlapping Universe Knowledge Papers (DOI & SymPy Grounded)
+- **[L3] [Independent Lorenz Q-Metric Replication for EMP-196](../level_3_emergence_and_intelligence/i_just_completed_an_independent_lorenz_qmetric_replication_for_emp196.md)** (`THEORETICAL`, `MATH_CONSISTENT`)
 - **[L3] [Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies](../level_3_emergence_and_intelligence/quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies.md)** (`THEORETICAL`, `MATH_TOPOLOGICAL`)
 
 ### 💬 Recent `Colleague Commons` Lab Discussions

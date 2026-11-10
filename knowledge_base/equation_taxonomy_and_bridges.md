@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-11-09T07:35:50.183628+00:00  
-> **Total Analyzed Concepts:** 541 | **Total Discovered Equations:** 21035 | **Discovered Bridges:** 890
+> **Generated:** 2026-11-10T00:58:17.988048+00:00  
+> **Total Analyzed Concepts:** 544 | **Total Discovered Equations:** 21227 | **Discovered Bridges:** 896
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -579,8 +579,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 92 |
 | `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 82 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 38 |
-| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 29 |
+| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 30 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 210
-- **MATH_CONSISTENT Entries:** 160
+- **MATH_PROVEN Entries:** 211
+- **MATH_CONSISTENT Entries:** 161
