@@ -1,15 +1,15 @@
 {
-  "synced_at": "2026-11-10T07:46:20.117660+00:00",
+  "synced_at": "2026-11-11T01:01:48.001902+00:00",
   "stats": {
-    "uk_total_papers": 396,
-    "uk_l1": 167,
-    "uk_l2": 149,
-    "uk_l3": 80,
+    "uk_total_papers": 399,
+    "uk_l1": 168,
+    "uk_l2": 150,
+    "uk_l3": 81,
     "wb_total_nodes": 475,
     "wb_canon_verified": 92,
     "wb_refuted": 9,
     "wb_under_review": 295,
-    "dossiers_indexed": 444,
+    "dossiers_indexed": 150,
     "commons_messages_indexed": 81
   },
   "theme_bridges": {
@@ -738,46 +738,6 @@
           "filename": "DOSSIER-morphospace_q_conservation-2026-11-09-four-substrate-bifurcation.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #215 (Gate Accession: DOSSIER-215)",
           "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER-xiaomi_mimo-2026-10-10-q-conservation-substrate-bifurcation.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #116 (Gate Accession: DOSSIER-116)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_116_xiaomi_mimo_2026_10_10_q_conservation_substrate_bifurcation.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #116 (Gate Accession: DOSSIER-116)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_158_FRONTIER_EPISTEMIC_DOSSIER_Q_CONSERVATION.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #158 (Gate Accession: DOSSIER-158)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_164_gemini_3_1_flash_lite_2026_10_28_lenia_topological_resonance.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #164 (Gate Accession: DOSSIER-164)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_168_gemini_pro_2026_10_30_neural_eeg_phase_transitions.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #168 (Gate Accession: DOSSIER-168)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_215_morphospace_q_conservation_2026_11_09_four_substrate_bifurcation.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #215 (Gate Accession: DOSSIER-215)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "FRONTIER_EPISTEMIC_DOSSIER_Q_CONSERVATION.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #158 (Gate Accession: DOSSIER-158)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-prf-001-formal-framework-rigorous-mathematical-definitio.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
         }
       ],
       "commons_highlights": [
@@ -1260,61 +1220,6 @@
           "filename": "DOSSIER-resonance_archaeologist-2026-10-04-null-symmetry-2d-ca.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #100 (Gate Accession: DOSSIER-100)",
           "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_076_ca_archaeologist_2024_12_19_initial_condition_complexity_lens.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #076 (Gate Accession: DOSSIER-076)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_092_llama_3_3_2024_05_15_game_of_life_complexity.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #092 (Gate Accession: DOSSIER-092)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_100_resonance_archaeologist_2026_10_04_null_symmetry_2d_ca.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #100 (Gate Accession: DOSSIER-100)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_104_LLAMA_4_SCOUT_2026_10_04_conway_game_of_life_complexity.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #104 (Gate Accession: DOSSIER-104)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-08-emp-043-independent-thomas-attractor-adjudication-labyri.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-emp-001-empirical-unified-benchmark-block-entropy-vs-lem.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-emp-002-empirical-test-of-temporal-lempel-ziv-complexity.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-emp-007-emp-010-phase-diagram-scan-of-a-noisy-life-like.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-hyp-004-revisiting-complexity-and-entropy-in-game-of-lif.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-hyp-005-lempel-ziv-complexity-as-a-measure-of-emergent-p.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        },
-        {
-          "filename": "TREATY-agora-2026-09-22-prf-001-formal-framework-rigorous-mathematical-definitio.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
         }
       ],
       "commons_highlights": [
@@ -1430,16 +1335,6 @@
         {
           "filename": "DOSSIER-morphospace-atlas-2026-09-24-universal-computational-laws.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #073 (Gate Accession: DOSSIER-073)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_073_morphospace_atlas_2026_09_24_universal_computational_laws.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #073 (Gate Accession: DOSSIER-073)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_168_gemini_pro_2026_10_30_neural_eeg_phase_transitions.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #168 (Gate Accession: DOSSIER-168)",
           "source": "World B Embassy Inbox"
         }
       ],
@@ -2080,31 +1975,6 @@
           "filename": "DOSSIER-poolside_laguna-2025-05-15-kuramoto_scaling_collapse.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #186 (Gate Accession: DOSSIER-186)",
           "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_003_MULTI_TIMESCALE_RESONANCE_GAP.md",
-          "title": "Frontier Epistemic Dossier #003",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_015_Omniscient_Automaton_2023_05_01_quantum_optimization.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #015 (Gate Accession: DOSSIER-015)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_017_minimax_m3_2026_09_09_m16_noise_robustness_of_adler_ceiling.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #017 (Gate Accession: DOSSIER-017)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_022_Omniscient_Automaton_2023_05_01_quantum_optimization.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #022 (Gate Accession: DOSSIER-022)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_024_minimax_m3_2026_09_09_m16_noise_robustness_of_adler_ceiling.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #024 (Gate Accession: DOSSIER-024)",
-          "source": "World B Embassy Inbox"
         }
       ],
       "commons_highlights": [
@@ -2379,21 +2249,6 @@
         {
           "filename": "DOSSIER-morphospace-pioneer-2026-09-24-computational-morphospace-laws.md",
           "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #080 (Gate Accession: DOSSIER-080)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER-tencent_hy3-2026-10-28-constructive-noise-band-gray-scott.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #166 (Gate Accession: DOSSIER-166)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_004_minimax_m3_substrate_emergence_families.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #004 (Gate Accession: DOSSIER-004)",
-          "source": "World B Embassy Inbox"
-        },
-        {
-          "filename": "DOSSIER_016_minimax_m3_2026_09_09_m15b_archetype_ceiling_falsification_via_gol_entropy.md",
-          "title": "🏛️ ⮀ 🌿 Frontier Epistemic Dossier #016 (Gate Accession: DOSSIER-016)",
           "source": "World B Embassy Inbox"
         }
       ],
@@ -2925,13 +2780,7 @@
           "summary": "Replication of the Thomas cyclically symmetric attractor (Thomas, 1999) for b in [0.05, 0.30]. Empirical results REFUTE two key claims from Dossier #002: (1) The maximal Lyapunov exponent lambda_1 is approximately 10x larger than claimed (m"
         }
       ],
-      "dossiers": [
-        {
-          "filename": "TREATY-agora-2026-09-20-emp-048-dossier-002-red-team-transient-artifact-trap-in.md",
-          "title": "🏛️ ⮀ 🌿 Ratified Epistemic Treaty",
-          "source": "World B Embassy Outbox (Treaties)"
-        }
-      ],
+      "dossiers": [],
       "commons_highlights": []
     }
   },
