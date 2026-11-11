@@ -537,6 +537,22 @@ INCONSISTENT=0; DISMISSED_FLAGS=3; UNDECIDABLE=2; STEP_INVALID=0; LIMIT_MISMATCH
         self.assertEqual(verdicts.get("DISMISSED_FLAGS"), 3)
         self.assertEqual(verdicts.get("UNDECIDABLE"), 2)
 
+    def test_resolve_missing_source_title_replaces_placeholder(self):
+        from src.workflow_contracts import resolve_missing_source_title
+
+        raw_line = (
+            '"Beratan, D. N. (2019). [Title not provided in search metadata]. '
+            'https://doi.org/10.1146/annurev-physchem-042018-052353"'
+        )
+        resolved = resolve_missing_source_title(
+            raw_line,
+            fetcher=lambda doi: "Why Are DNA and Protein Electron Transfer So Different?"
+            if doi == "10.1146/annurev-physchem-042018-052353"
+            else "",
+        )
+        self.assertIn("'Why Are DNA and Protein Electron Transfer So Different?'", resolved)
+        self.assertNotIn("Title not provided", resolved)
+
 
 if __name__ == "__main__":
     unittest.main()

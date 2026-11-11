@@ -595,9 +595,16 @@ def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, 
     if len(raw_msg) < 25:
         return None
 
-    # Strip conversational salutations before sentence splitting
+    # Strip conversational salutations and first-person status prefixes before sentence splitting
     raw_msg = re.sub(
         r"^(?:hello|hi|hey|greetings|congratulations|congrats)\b[^\n.?!]*[.?!]\s*",
+        "",
+        raw_msg,
+        flags=re.IGNORECASE,
+    ).strip()
+    raw_msg = re.sub(
+        r"^(?:i\s+just\s+completed\s+an?\s+|we\s+just\s+completed\s+an?\s+|just\s+completed\s+an?\s+|"
+        r"i've\s+just\s+completed\s+an?\s+|i\s+have\s+completed\s+an?\s+)",
         "",
         raw_msg,
         flags=re.IGNORECASE,
@@ -725,12 +732,14 @@ def ingest_commons_questions_to_backlog(
             and "?" in msg_text
             and bool(
                 re.search(
-                    r"\b(prefactor|escape-time|analytic|derivation|original\s+papers|universal\s+constant|q-metric)\b",
+                    r"\b(prefactor|escape-time|analytic|derivation|original\s+papers|universal\s+constant)\b",
                     msg_low,
                 )
             )
             and "is blocked" not in msg_low
             and "scipy.signal.butter" not in msg_low
+            and "verdict filed" not in msg_low
+            and "confirm whether your pipeline" not in msg_low
         )
 
         if not (is_lit_channel or mentions_academy or has_trigger_tag or is_open_theory_question):
@@ -1082,6 +1091,8 @@ def _resolve_commissioned_by(root: Path, title: str, stem_or_id: str) -> str:
                 norm_concept[:30] in norm_stem
                 or norm_stem[:30] in norm_concept
                 or norm_concept[:30] in norm_title
+                or (len(norm_stem) >= 20 and norm_stem in norm_concept)
+                or (len(norm_concept) >= 20 and norm_concept in norm_stem)
             ):
                 meta = bl_item.get("metadata") or {}
                 req = str(meta.get("requester") or "").strip()

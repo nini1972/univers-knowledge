@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
 - **Bridged Colony Themes:** Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.invariants`
-- **Export Timestamp:** `2026-11-11T01:01:16.590155+00:00`
+- **Export Timestamp:** `2026-11-11T20:49:04.604004+00:00`
 
 ---
 
@@ -29,11 +29,11 @@ The central unresolved check is whether the proposed dephasing bound is compatib
 
 The following peer-reviewed references were verified via Crossref / OpenAlex / ArXiv and can be cited by World A and World B agents when grounding empirical simulations:
 
-- Beratan, D. N. (2019), '[Title not provided in the supplied research report]', https://doi.org/10.1146/annurev-physchem-042018-052353
-- Cellini, A. et al. (2024), '[Title not provided in the supplied research report]', https://doi.org/10.1038/s41557-023-01413-9
+- Beratan, D. N. (2019), 'Why Are DNA and Protein Electron Transfer So Different?', https://doi.org/10.1146/annurev-physchem-042018-052353
+- Cellini, A. et al. (2024), 'Directed ultrafast conformational changes accompany electron transfer in a photolyase as resolved by serial crystallography', https://doi.org/10.1038/s41557-023-01413-9
 - Marais, A. et al. (2018), 'The future of quantum biology', https://doi.org/10.1098/rsif.2018.0640
-- Skourtis, S. S., Balabin, I. A., Kawatsu, T., & Beratan, D. N. (2005), '[Title not provided in the supplied research report]', https://doi.org/10.1073/pnas.0409047102
-- Zadeh-Haghighi, H. & Simon, C. (2022), '[Title not provided in the supplied research report]', https://doi.org/10.1098/rsif.2022.0325
+- Skourtis, S. S., Balabin, I. A., Kawatsu, T., & Beratan, D. N. (2005), 'Protein dynamics and electron transfer: Electronic decoherence and non-Condon effects', https://doi.org/10.1073/pnas.0409047102
+- Zadeh-Haghighi, H. & Simon, C. (2022), 'Magnetic field effects in biology from the perspective of the radical pair mechanism', https://doi.org/10.1098/rsif.2022.0325
 
 ## 3. Mathematical Derivation & Dimensional Invariants
 

@@ -401,6 +401,7 @@ def normalize_markdown_output(raw_output: str):
     if sources_lines:
         for s in sources_lines:
             s_clean = s.strip().lstrip("-").strip()
+            s_clean = resolve_missing_source_title(s_clean)
             if not ((s_clean.startswith('"') and s_clean.endswith('"')) or (s_clean.startswith("'") and s_clean.endswith("'"))):
                 if ": " in s_clean or s_clean.startswith("[") or s_clean.startswith("{"):
                     escaped = s_clean.replace('"', '\\"')
@@ -413,6 +414,61 @@ def normalize_markdown_output(raw_output: str):
 
     final_doc = f"{frontmatter}\n\n{title}\n\n" + "\n".join(reconstructed_body)
     return final_doc.strip()
+
+
+_MISSING_TITLE_PLACEHOLDER_RE = re.compile(
+    r"\[?\s*title\s+(?:not\s+provided|unavailable|unknown|missing)[^\]\n.\"']*\]?",
+    re.IGNORECASE,
+)
+_DOI_URL_RE = re.compile(
+    r"https?://(?:dx\.)?doi\.org/(10\.\d{4,9}/[^\s\"'\])>,;]+)",
+    re.IGNORECASE,
+)
+
+
+def _fetch_crossref_title_by_doi(doi: str) -> str:
+    """Resolve an official article title from Crossref given a DOI."""
+    import urllib.parse
+    import urllib.request
+
+    clean_doi = str(doi or "").strip().rstrip(".,;)]\"'")
+    if not clean_doi:
+        return ""
+    url = f"https://api.crossref.org/works/{urllib.parse.quote(clean_doi, safe='/')}"
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "UniverseKnowledge/1.0 (https://github.com/nini1972/univers-knowledge)"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=6) as resp:
+            payload = json.loads(resp.read().decode("utf-8", errors="replace"))
+        titles = (payload.get("message") or {}).get("title") or []
+        if titles and isinstance(titles[0], str):
+            no_tags = re.sub(r"<[^>]+>", "", titles[0])
+            return re.sub(r"\s+", " ", no_tags).strip()
+    except Exception:
+        return ""
+    return ""
+
+
+def resolve_missing_source_title(source_line: str, fetcher=None) -> str:
+    """
+    If a YAML frontmatter source line has a placeholder like '[Title not provided in search metadata]'
+    alongside an https://doi.org/<doi> URL, resolve the official title via Crossref and substitute it.
+    """
+    line = str(source_line or "")
+    if not _MISSING_TITLE_PLACEHOLDER_RE.search(line):
+        return line
+    doi_m = _DOI_URL_RE.search(line)
+    if not doi_m:
+        return line
+    doi = doi_m.group(1).rstrip(".,;)]\"'")
+    lookup = fetcher if callable(fetcher) else _fetch_crossref_title_by_doi
+    resolved_title = str(lookup(doi) or "").strip()
+    if not resolved_title:
+        return line
+    safe_title = resolved_title.replace('"', "'")
+    return _MISSING_TITLE_PLACEHOLDER_RE.sub(f"'{safe_title}'", line, count=1)
 
 
 

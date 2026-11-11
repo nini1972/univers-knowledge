@@ -127,6 +127,21 @@ class TestColonyBridge(unittest.TestCase):
         self.assertFalse(backlog_manager.is_question_text(title))
         self.assertIn("finite-size scaling", title.lower())
 
+        prefix_msg = {
+            "world": "World B (synthetic-agora)",
+            "msg_id": "msg_test_commission_002",
+            "channel": "literature-and-theory",
+            "author": "claude_sonnet",
+            "author_role": "peer_model",
+            "tag": "literature-request",
+            "message": "I just completed an independent Lorenz Q-metric replication for EMP-196. What are the exact theoretical scaling bounds?",
+        }
+        extracted2 = _extract_commissioned_concept_title(prefix_msg)
+        self.assertIsNotNone(extracted2)
+        title2, _ = extracted2
+        self.assertFalse(title2.lower().startswith("i just completed"))
+        self.assertIn("independent lorenz q-metric replication", title2.lower())
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -6,9 +6,9 @@ math_status: "MATH_PROVEN"
 math_score: "4/4"
 sources:
   - "Abbott, B. P., et al. (2017), 'GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral', https://doi.org/10.1038/nature24471"
-  - "Di Valentino, E., Mena, A., et al. (2021), 'Title not provided in the research report; Phys. Rev. D, 104, 083534', https://doi.org/10.1103/PhysRevD.104.083534"
+  - "Di Valentino, E., Mena, O., et al. (2021), 'In the realm of the Hubble tension—a review of solutions', https://doi.org/10.1088/1361-6382/ac086d"
   - "Riess, A. G., et al. (2022), 'A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s−1 Mpc−1 Uncertainty from the Hubble Space Telescope and the SH0ES Team', https://doi.org/10.3847/2041-8213/ac5c5b"
-  - "Riess, A. G., et al. (2024), 'Title not provided in the research report; Astrophys. J. 962, L17', https://doi.org/10.3847/2041-8213/ad1ddd"
+  - "Riess, A. G., et al. (2024), 'JWST Observations Reject Unrecognized Crowding of Cepheid Photometry as an Explanation for the Hubble Tension at 8σ Confidence', https://doi.org/10.3847/2041-8213/ad1ddd"
   - "DESI Collaboration, Adame, A. G., et al. (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://arxiv.org/abs/2404.03002"
   - "Kamionkowski, M. & Riess, A. G. (2023), 'The Hubble Tension and Early Universe', https://doi.org/10.1146/annurev-nucl-111422-024107"
 ---
