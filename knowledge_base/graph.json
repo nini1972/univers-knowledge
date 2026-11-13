@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "format": "Open Knowledge Format (OKF)",
-  "updated_at": "2026-11-12T01:11:30.187925+00:00",
+  "updated_at": "2026-11-13T01:53:53.163469+00:00",
   "stats": {
-    "total_nodes": 402,
-    "level_1_count": 169,
-    "level_2_count": 151,
-    "level_3_count": 82,
-    "total_edges": 216,
-    "frontier_count": 61
+    "total_nodes": 405,
+    "level_1_count": 170,
+    "level_2_count": 152,
+    "level_3_count": 83,
+    "total_edges": 217,
+    "frontier_count": 66
   },
   "nodes": [
     {
@@ -123,10 +123,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "deviceindependentquantuminformation",
+        "quantumentanglement",
         "quantumnonlocalityandnosignalling",
         "quantummeasurementproblem",
-        "quantumentanglement"
+        "deviceindependentquantuminformation"
       ],
       "tags": [
         "1"
@@ -336,11 +336,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "cosmicmicrowavebackgroundradiation",
-        "cosmologicalconstantanddarkenergy",
         "friedmannequations",
         "earlydarkenergyvsquintessenceinresolvingthehubbletension",
-        "baryonacousticoscillations"
+        "cosmologicalconstantanddarkenergy",
+        "baryonacousticoscillations",
+        "cosmicmicrowavebackgroundradiation"
       ],
       "tags": [
         "1"
@@ -1015,11 +1015,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "electroweaksymmetrybreaking",
-        "standardmodelofparticlephysics",
+        "peskintakeuchiparameters",
         "higgsmechanism",
         "effectivefieldtheory",
-        "peskintakeuchiparameters"
+        "standardmodelofparticlephysics",
+        "electroweaksymmetrybreaking"
       ],
       "tags": [
         "1"
@@ -1258,10 +1258,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "standardmodelofparticlephysics",
         "renormalizationandtherenormalizationgroup",
-        "grandunifiedtheories",
         "protondecayandbaryonnumberviolation",
+        "grandunifiedtheories",
+        "standardmodelofparticlephysics",
         "minimalsupersymmetricstandardmodel"
       ],
       "tags": [
@@ -1511,6 +1511,35 @@
       "path": "knowledge_base/level_1_fundamental_physics/hubblelematre_law_and_cosmic_expansion_kinematics.md"
     },
     {
+      "id": "hubblesphereandcosmologicaleventhorizondynamicsindesitterspacetime",
+      "title": "Hubble-Sphere and Cosmological Event Horizon Dynamics in de Sitter Spacetime",
+      "level": 1,
+      "category": "level_1_fundamental_physics",
+      "status": "THEORETICAL",
+      "math_status": "MATH_PROVEN",
+      "math_score": "4/4",
+      "dependencies": [
+        "cosmologicalhorizons",
+        "darkenergycplparametrization",
+        "hubbleparameterandcosmicexpansion",
+        "desitterspacetime",
+        "gibbonshawkingtemperature"
+      ],
+      "tags": [
+        "1"
+      ],
+      "sources": [
+        "Gibbons, G. W. & Hawking, S. W. (1977), 'Cosmological event horizons, thermodynamics, and particle creation', https://doi.org/10.1103/PhysRevD.15.2738",
+        "Peebles, P. J. E. & Ratra, B. (2003), 'The cosmological constant and dark energy', https://doi.org/10.1103/RevModPhys.75.559",
+        "Volovik, G. E. (2024), 'Thermodynamics and decay of de Sitter vacuum', https://doi.org/10.3390/sym16060763",
+        "Tian, D. W. & Booth, I. (2015), 'Apparent horizon and gravitational thermodynamics of the Universe: Solutions to the temperature and entropy confusions, and extensions to modified gravity', https://doi.org/10.1103/PhysRevD.92.024001",
+        "Leonhardt, U. (2021), 'Cosmological horizons radiate', https://doi.org/10.1209/0295-5075/ac0ecf",
+        "DESI Collaboration, Adame, A. G., et al. (2025), 'DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations', https://doi.org/10.1088/1475-7516/2025/02/021",
+        "Cicoli, M., et al. (2018), 'De Sitter vs Quintessence in String Theory', https://doi.org/10.1002/prop.201800079"
+      ],
+      "path": "knowledge_base/level_1_fundamental_physics/hubblesphere_and_cosmological_event_horizon_dynamics_in_de_sitter_spacetime.md"
+    },
+    {
       "id": "hydrodynamicsimulationsbaryonicfeedbacksfdmsidm",
       "title": "Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM",
       "level": 1,
@@ -1639,11 +1668,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "4/4",
       "dependencies": [
+        "standardmodelextension",
         "earlydarkenergyvsquintessenceinresolvingthehubbletension",
+        "specialrelativity",
         "quantumgravity",
         "gravitationalwavepropagation",
-        "standardmodelextension",
-        "specialrelativity",
         "gammaraybursts"
       ],
       "tags": [
@@ -2999,12 +3028,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "tidaldeformabilityandlovenumbers",
-        "tolmanoppenheimervolkoffequations",
         "generalrelativity",
+        "scalartensortheoriesofgravity",
         "neutronstarequationofstate",
-        "neutronstarphasetransitions",
-        "scalartensortheoriesofgravity"
+        "tolmanoppenheimervolkoffequations",
+        "tidaldeformabilityandlovenumbers",
+        "neutronstarphasetransitions"
       ],
       "tags": [
         "1"
@@ -3232,10 +3261,10 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "2/4",
       "dependencies": [
-        "cosmologicalperturbationtheory",
-        "wimpfreezeout",
+        "freezeinproduction",
         "darkmatter",
-        "freezeinproduction"
+        "cosmologicalperturbationtheory",
+        "wimpfreezeout"
       ],
       "tags": [
         "1"
@@ -3325,10 +3354,10 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "latticegaugetheoryandnumericallatticeqcd",
         "quantumfieldtheory",
-        "stronginteraction",
-        "electroweaktheoryofthestandardmodel"
+        "electroweaktheoryofthestandardmodel",
+        "latticegaugetheoryandnumericallatticeqcd",
+        "stronginteraction"
       ],
       "tags": [
         "1"
@@ -4064,12 +4093,12 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "mondexternalfieldeffect",
-        "modifiednewtoniandynamicsmondvswimpdarkmatteringalaxyclusterdynamics",
-        "lcdmbaryonicfeedback",
-        "radialaccelerationrelation",
+        "sparcgalaxydatabase",
         "baryonictullyfisherrelation",
-        "sparcgalaxydatabase"
+        "mondexternalfieldeffect",
+        "lcdmbaryonicfeedback",
+        "modifiednewtoniandynamicsmondvswimpdarkmatteringalaxyclusterdynamics",
+        "radialaccelerationrelation"
       ],
       "tags": [
         "2"
@@ -4779,11 +4808,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "darkmatter",
         "cosmologicalparametertensions",
-        "supersymmetricparticlesearches",
         "gaugemediatedsupersymmetrybreaking",
-        "anomalymediatedsupersymmetrybreaking"
+        "darkmatter",
+        "anomalymediatedsupersymmetrybreaking",
+        "supersymmetricparticlesearches"
       ],
       "tags": [
         "2"
@@ -5481,10 +5510,10 @@
       "math_score": "3/4",
       "dependencies": [
         "earlydarkenergyvsquintessenceinresolvingthehubbletension",
-        "causaldynamicaltriangulationsvscausalsettheoryinrecoveringcontinuumspacetime",
         "functionalrenormalizationgroup",
         "gravitationalwaveobservations",
-        "quantumgravity"
+        "quantumgravity",
+        "causaldynamicaltriangulationsvscausalsettheoryinrecoveringcontinuumspacetime"
       ],
       "tags": [
         "2"
@@ -5528,13 +5557,13 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "softpqparitysolution",
+        "qcdaxionandaxionlikeparticles",
+        "thestrongcpproblem",
         "neutronelectricdipolemoment",
         "nelsonbarrmechanism",
-        "thestrongcpproblem",
-        "qcdaxionandaxionlikeparticles",
         "axionmisalignmentrelicabundance",
-        "latticeqcdquarkmasses"
+        "latticeqcdquarkmasses",
+        "softpqparitysolution"
       ],
       "tags": [
         "2"
@@ -5592,10 +5621,10 @@
       "math_score": "3/4",
       "dependencies": [
         "firstordercosmologicalphasetransitions",
-        "cosmicstringsandtopologicaldefects",
         "stochasticgravitationalwavebackgrounds",
-        "supermassiveblackholebinaries",
-        "pulsartimingarrays"
+        "cosmicstringsandtopologicaldefects",
+        "pulsartimingarrays",
+        "supermassiveblackholebinaries"
       ],
       "tags": [
         "2"
@@ -5850,6 +5879,33 @@
       "path": "knowledge_base/level_2_advanced_frameworks/randallsundrum_vs_add_models_in_hierarchy_problem_resolution_comparative_analysis_of_phenomenological_signatures.md"
     },
     {
+      "id": "resonantsterileneutrinovsmisalignmentaxionlikeparticledarkmatterinpredictingxraylineandhaloscopesignatures",
+      "title": "Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures",
+      "level": 2,
+      "category": "level_2_advanced_frameworks",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "4/4",
+      "dependencies": [
+        "darkmatter"
+      ],
+      "tags": [
+        "2"
+      ],
+      "sources": [
+        "Shi, X. and Fuller, G. M. (1999), 'A new dark matter candidate: nonthermal sterile neutrinos', https://doi.org/10.1103/PhysRevLett.82.2832",
+        "Abazajian, K., Fuller, G. M., and Patel, M. (2001), 'Sterile neutrino hot, warm, and cold dark matter', https://doi.org/10.1103/PhysRevD.64.023501",
+        "Dodelson, S. and Widrow, L. M. (1994), 'Sterile-neutrinos as dark matter', https://doi.org/10.1103/PhysRevLett.72.17",
+        "Sikivie, P. (1983), 'Experimental Tests of the Invisible-Axion', https://doi.org/10.1103/PhysRevLett.51.1415",
+        "Marsh, D. J. E. (2016), 'Axion Cosmology', https://doi.org/10.1016/j.physrep.2016.06.005",
+        "Laine, M. and Shaposhnikov, M. (2008), 'Sterile neutrino dark matter as a consequence of νMSM-induced lepton asymmetry', https://arxiv.org/abs/0804.4543",
+        "Canetti, L., Drewes, M., and Shaposhnikov, M. (2013), 'Matter and Antimatter in the Universe', https://arxiv.org/abs/1204.3902",
+        "Vogel, H., García Escudero, M., Froustey, J., and Abazajian, K. (2025), 'Large lepton asymmetries and neutrino flavor evolution', https://arxiv.org/abs/2507.18752",
+        "Gorbunov, D., Kalashnikov, Y., and Krugan, V. (2025), 'Playing with lepton asymmetry', https://arxiv.org/abs/2502.17374"
+      ],
+      "path": "knowledge_base/level_2_advanced_frameworks/resonant_sterile_neutrino_vs_misalignment_axionlike_particle_dark_matter_in_predicting_xray_line_and_haloscope_signatures.md"
+    },
+    {
       "id": "scalarfielddarkmattervsselfinteractingdarkmatterinresolvingsmallscalestructurechallenges",
       "title": "Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges",
       "level": 2,
@@ -6070,13 +6126,13 @@
       "math_status": "[MATH_CONSISTENT]",
       "math_score": "3.5/4",
       "dependencies": [
-        "thermalwimpcolddarkmattervsmisalignmentproducedultralightaxiondarkmatterinpredictingthelinearmatterpowerspectrumcutoffandpulsartimingsignatures",
-        "s8tension",
         "darkmatter",
-        "hydrodynamicsimulationsbaryonicfeedbacksfdmsidm",
-        "growthratefsigma8",
         "relativisticsimulationsdifferentiatingsfdmfromlambdacdm",
-        "cosmicshear"
+        "s8tension",
+        "thermalwimpcolddarkmattervsmisalignmentproducedultralightaxiondarkmatterinpredictingthelinearmatterpowerspectrumcutoffandpulsartimingsignatures",
+        "growthratefsigma8",
+        "cosmicshear",
+        "hydrodynamicsimulationsbaryonicfeedbacksfdmsidm"
       ],
       "tags": [
         "2"
@@ -7482,12 +7538,12 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "quantumvacuumentanglementanditsroleincosmologicalstructureformation",
         "amultiscalepersistenthomologytestoftopologicaluniversalityincosmicwebselforganization",
+        "nullmodelsandhypothesistesting",
         "quantifyingphicomplexityingravitationalcollapseandcosmicwebformation",
         "lcdmcosmology",
         "topologicaldataanalysistdaofpersistenthomologyinthemorphologicalevolutionofneuralnetworksvscosmicfilamentarynetworks",
-        "nullmodelsandhypothesistesting"
+        "quantumvacuumentanglementanditsroleincosmologicalstructureformation"
       ],
       "tags": [
         "3"
@@ -7643,12 +7699,12 @@
       "math_status": "MATH_UNKNOWN",
       "math_score": "3/4",
       "dependencies": [
-        "bremermannlimit",
-        "falsifiabilityandmodeldependentinference",
-        "falsifiableheatdissipationandmutualinformationboundsoncorticalenergybudgetsusingcalorimetricandspiketraindatawithexplicitsiunittracingandprespecifiednullmodels",
         "stablecolddarkmatterwithbaryonicfeedbackvsdecayingdarkmatterinresolvingthes8tension",
         "landauerprinciple",
-        "cosmicwebhalovirialization"
+        "falsifiableheatdissipationandmutualinformationboundsoncorticalenergybudgetsusingcalorimetricandspiketraindatawithexplicitsiunittracingandprespecifiednullmodels",
+        "cosmicwebhalovirialization",
+        "bremermannlimit",
+        "falsifiabilityandmodeldependentinference"
       ],
       "tags": [
         "3"
@@ -7903,11 +7959,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "scalefreenetworksanduniversality",
+        "transferentropyandeffectiveconnectivity",
         "cosmicwebfilamentsandvelocityshear",
+        "scalefreenetworksanduniversality",
         "stochasticthermodynamicsandentropyproduction",
-        "fluctuationdissipationtheorem",
-        "transferentropyandeffectiveconnectivity"
+        "fluctuationdissipationtheorem"
       ],
       "tags": [
         "3"
@@ -8048,6 +8104,28 @@
         "Findlay, G. et al. (2024), 'Insights into macro-level intrinsic cause-effect power', arXiv:2412.04571"
       ],
       "path": "knowledge_base/level_3_emergence_and_intelligence/interventional_identifiability_of_integrated_information_theory_and_physicalist_emergence_in_multiscale_neural_systems.md"
+    },
+    {
+      "id": "iveformalizedhyp222toresolvethelorenzqmetricdiscrepancyin",
+      "title": "HYP-222: Lorenz Q-Metric Discrepancy",
+      "level": 3,
+      "category": "level_3_emergence_and_intelligence",
+      "status": "THEORETICAL",
+      "math_status": "MATH_CONSISTENT",
+      "math_score": "4/4",
+      "dependencies": [],
+      "tags": [
+        "3"
+      ],
+      "sources": [
+        "Grassberger, P., & Procaccia, I. (1983), 'Measuring the strangeness of strange attractors', https://doi.org/10.1016/0167-2789(83)90298-1",
+        "Benettin, G., Galgani, L., Giorgilli, A., & Strelcyn, J.-M. (1980), 'Lyapunov characteristic exponents for smooth dynamical systems…; a method for computing all of them', https://doi.org/10.1007/BF02128236",
+        "Leonov, G. A., Kuznetsov, N. V., Korzhemanova, N. A., & Kusakin, D. V. (2016), 'The Lyapunov dimension formula for the global attractor of the Lorenz system', https://doi.org/10.1016/j.cnsns.2016.04.032",
+        "Kuznetsov, N. V., Alexeeva, T. A., & Leonov, G. A. (2016), 'Invariance of Lyapunov exponents and Lyapunov dimension for regular and irregular linearizations', https://doi.org/10.1007/s11071-016-2678-4",
+        "Hegger, H., Kantz, H., & Schreiber, T. (1999), 'Practical implementation of nonlinear time series methods: The TISEAN package', https://doi.org/10.1063/1.166424",
+        "Kuznetsov, N. V., & Mokaev, T. N. (2018), 'Numerical analysis of dynamical systems: unstable periodic orbits, hidden transient chaotic sets, hidden attractors, and finite-time Lyapunov dimension', https://doi.org/10.1088/1742-6596/1205/1/012034"
+      ],
+      "path": "knowledge_base/level_3_emergence_and_intelligence/ive_formalized_hyp222_to_resolve_the_lorenz_qmetric_discrepancy_in.md"
     },
     {
       "id": "landauerbekensteinentropyboundsandcomputationalefficiencyinselforganizingneuralmanifoldsversusgravitationalfilaments",
@@ -8408,11 +8486,11 @@
       "math_status": "MATH_CONSISTENT",
       "math_score": "3/4",
       "dependencies": [
-        "classicalforstertransportandincoherenthopping",
-        "quantumfisherinformationandquantumcramerraobound",
         "environmentassistedquantumtransport",
+        "leggettgarginequalities",
+        "quantumfisherinformationandquantumcramerraobound",
         "openquantumsystemsandlindbladdynamics",
-        "leggettgarginequalities"
+        "classicalforstertransportandincoherenthopping"
       ],
       "tags": [
         "3"
@@ -8518,11 +8596,11 @@
       "math_status": "MATH_PROVEN",
       "math_score": "4/4",
       "dependencies": [
-        "observationalselectioneffects",
         "amultiscalepersistenthomologytestoftopologicaluniversalityincosmicwebselforganization",
+        "observationalselectioneffects",
         "quantifyingphicomplexityingravitationalcollapseandcosmicwebformation",
-        "bottleneckdistance",
         "topologicaldataanalysistdaofpersistenthomologyinthemorphologicalevolutionofneuralnetworksvscosmicfilamentarynetworks",
+        "bottleneckdistance",
         "hydrodynamicsimulationsbaryonicfeedbacksfdmsidm"
       ],
       "tags": [
@@ -8633,17 +8711,17 @@
   ],
   "edges": [
     {
-      "source": "quantummeasurementproblem",
-      "target": "bellstheoremandloopholefreetestsoflocalrealism",
-      "type": "prerequisite"
-    },
-    {
       "source": "quantumentanglement",
       "target": "bellstheoremandloopholefreetestsoflocalrealism",
       "type": "prerequisite"
     },
     {
-      "source": "cosmicmicrowavebackgroundradiation",
+      "source": "quantummeasurementproblem",
+      "target": "bellstheoremandloopholefreetestsoflocalrealism",
+      "type": "prerequisite"
+    },
+    {
+      "source": "earlydarkenergyvsquintessenceinresolvingthehubbletension",
       "target": "cosmicmicrowavebackgroundanisotropiesandacousticpeakphenomenology",
       "type": "prerequisite"
     },
@@ -8653,23 +8731,13 @@
       "type": "prerequisite"
     },
     {
-      "source": "earlydarkenergyvsquintessenceinresolvingthehubbletension",
-      "target": "cosmicmicrowavebackgroundanisotropiesandacousticpeakphenomenology",
-      "type": "prerequisite"
-    },
-    {
       "source": "baryonacousticoscillations",
       "target": "cosmicmicrowavebackgroundanisotropiesandacousticpeakphenomenology",
       "type": "prerequisite"
     },
     {
-      "source": "electroweaksymmetrybreaking",
-      "target": "electroweakprecisiontestsandthehiggsmechanism",
-      "type": "prerequisite"
-    },
-    {
-      "source": "standardmodelofparticlephysics",
-      "target": "electroweakprecisiontestsandthehiggsmechanism",
+      "source": "cosmicmicrowavebackgroundradiation",
+      "target": "cosmicmicrowavebackgroundanisotropiesandacousticpeakphenomenology",
       "type": "prerequisite"
     },
     {
@@ -8679,7 +8747,12 @@
     },
     {
       "source": "standardmodelofparticlephysics",
-      "target": "gaugecouplingunificationandrenormalizationgrouprunning",
+      "target": "electroweakprecisiontestsandthehiggsmechanism",
+      "type": "prerequisite"
+    },
+    {
+      "source": "electroweaksymmetrybreaking",
+      "target": "electroweakprecisiontestsandthehiggsmechanism",
       "type": "prerequisite"
     },
     {
@@ -8693,12 +8766,12 @@
       "type": "prerequisite"
     },
     {
-      "source": "earlydarkenergyvsquintessenceinresolvingthehubbletension",
-      "target": "lorentzinvarianceviolationanditsexperimentalconstraints",
+      "source": "standardmodelofparticlephysics",
+      "target": "gaugecouplingunificationandrenormalizationgrouprunning",
       "type": "prerequisite"
     },
     {
-      "source": "quantumgravity",
+      "source": "earlydarkenergyvsquintessenceinresolvingthehubbletension",
       "target": "lorentzinvarianceviolationanditsexperimentalconstraints",
       "type": "prerequisite"
     },
@@ -8708,13 +8781,13 @@
       "type": "prerequisite"
     },
     {
-      "source": "generalrelativity",
-      "target": "spontaneousneutronstarequationofstateandtolmanoppenheimervolkofflimit",
+      "source": "quantumgravity",
+      "target": "lorentzinvarianceviolationanditsexperimentalconstraints",
       "type": "prerequisite"
     },
     {
-      "source": "cosmologicalperturbationtheory",
-      "target": "theboltzmannequationincosmology",
+      "source": "generalrelativity",
+      "target": "spontaneousneutronstarequationofstateandtolmanoppenheimervolkofflimit",
       "type": "prerequisite"
     },
     {
@@ -8723,8 +8796,8 @@
       "type": "prerequisite"
     },
     {
-      "source": "latticegaugetheoryandnumericallatticeqcd",
-      "target": "thestandardmodelofparticlephysicsquantumchromodynamicsqcdandthestronginteraction",
+      "source": "cosmologicalperturbationtheory",
+      "target": "theboltzmannequationincosmology",
       "type": "prerequisite"
     },
     {
@@ -8734,6 +8807,11 @@
     },
     {
       "source": "electroweaktheoryofthestandardmodel",
+      "target": "thestandardmodelofparticlephysicsquantumchromodynamicsqcdandthestronginteraction",
+      "type": "prerequisite"
+    },
+    {
+      "source": "latticegaugetheoryandnumericallatticeqcd",
       "target": "thestandardmodelofparticlephysicsquantumchromodynamicsqcdandthestronginteraction",
       "type": "prerequisite"
     },
@@ -8753,12 +8831,12 @@
       "type": "prerequisite"
     },
     {
-      "source": "causaldynamicaltriangulationsvscausalsettheoryinrecoveringcontinuumspacetime",
+      "source": "quantumgravity",
       "target": "nonperturbativequantumgravitydebate",
       "type": "prerequisite"
     },
     {
-      "source": "quantumgravity",
+      "source": "causaldynamicaltriangulationsvscausalsettheoryinrecoveringcontinuumspacetime",
       "target": "nonperturbativequantumgravitydebate",
       "type": "prerequisite"
     },
@@ -8768,17 +8846,7 @@
       "type": "prerequisite"
     },
     {
-      "source": "thermalwimpcolddarkmattervsmisalignmentproducedultralightaxiondarkmatterinpredictingthelinearmatterpowerspectrumcutoffandpulsartimingsignatures",
-      "target": "stablecolddarkmatterwithbaryonicfeedbackvsdecayingdarkmatterinresolvingthes8tension",
-      "type": "prerequisite"
-    },
-    {
       "source": "darkmatter",
-      "target": "stablecolddarkmatterwithbaryonicfeedbackvsdecayingdarkmatterinresolvingthes8tension",
-      "type": "prerequisite"
-    },
-    {
-      "source": "hydrodynamicsimulationsbaryonicfeedbacksfdmsidm",
       "target": "stablecolddarkmatterwithbaryonicfeedbackvsdecayingdarkmatterinresolvingthes8tension",
       "type": "prerequisite"
     },
@@ -8788,8 +8856,13 @@
       "type": "prerequisite"
     },
     {
-      "source": "quantumvacuumentanglementanditsroleincosmologicalstructureformation",
-      "target": "distinguishingemergentcosmicwebselforganizationfromcdmgravitationalgrowthusingtopologicalnullmodels",
+      "source": "thermalwimpcolddarkmattervsmisalignmentproducedultralightaxiondarkmatterinpredictingthelinearmatterpowerspectrumcutoffandpulsartimingsignatures",
+      "target": "stablecolddarkmatterwithbaryonicfeedbackvsdecayingdarkmatterinresolvingthes8tension",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hydrodynamicsimulationsbaryonicfeedbacksfdmsidm",
+      "target": "stablecolddarkmatterwithbaryonicfeedbackvsdecayingdarkmatterinresolvingthes8tension",
       "type": "prerequisite"
     },
     {
@@ -8808,12 +8881,17 @@
       "type": "prerequisite"
     },
     {
-      "source": "falsifiableheatdissipationandmutualinformationboundsoncorticalenergybudgetsusingcalorimetricandspiketraindatawithexplicitsiunittracingandprespecifiednullmodels",
-      "target": "falsifiablebremermannlandauerboundsonsustainedcomputationratesincorticaltissueadimensionallyconsistentcomparisonagainstdissipationlimitsincosmicwebgravitational",
+      "source": "quantumvacuumentanglementanditsroleincosmologicalstructureformation",
+      "target": "distinguishingemergentcosmicwebselforganizationfromcdmgravitationalgrowthusingtopologicalnullmodels",
       "type": "prerequisite"
     },
     {
       "source": "stablecolddarkmatterwithbaryonicfeedbackvsdecayingdarkmatterinresolvingthes8tension",
+      "target": "falsifiablebremermannlandauerboundsonsustainedcomputationratesincorticaltissueadimensionallyconsistentcomparisonagainstdissipationlimitsincosmicwebgravitational",
+      "type": "prerequisite"
+    },
+    {
+      "source": "falsifiableheatdissipationandmutualinformationboundsoncorticalenergybudgetsusingcalorimetricandspiketraindatawithexplicitsiunittracingandprespecifiednullmodels",
       "target": "falsifiablebremermannlandauerboundsonsustainedcomputationratesincorticaltissueadimensionallyconsistentcomparisonagainstdissipationlimitsincosmicwebgravitational",
       "type": "prerequisite"
     },
@@ -9389,6 +9467,11 @@
     },
     {
       "source": "darkmatter",
+      "target": "resonantsterileneutrinovsmisalignmentaxionlikeparticledarkmatterinpredictingxraylineandhaloscopesignatures",
+      "type": "component_theory"
+    },
+    {
+      "source": "darkmatter",
       "target": "scalarfielddarkmattervsselfinteractingdarkmatterinresolvingsmallscalestructurechallenges",
       "type": "component_theory"
     },
@@ -9775,8 +9858,26 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "cosmologicalhorizons",
+      "suggested_title": "Cosmologicalhorizons",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "cosmologicalparametertensions",
       "suggested_title": "Cosmologicalparametertensions",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "darkenergycplparametrization",
+      "suggested_title": "Darkenergycplparametrization",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "desitterspacetime",
+      "suggested_title": "Desitterspacetime",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
@@ -9841,6 +9942,12 @@
       "reason": "Referenced as prerequisite link in existing verified concept"
     },
     {
+      "id": "gibbonshawkingtemperature",
+      "suggested_title": "Gibbonshawkingtemperature",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
       "id": "grandunifiedtheories",
       "suggested_title": "Grandunifiedtheories",
       "target_level": 1,
@@ -9867,6 +9974,12 @@
     {
       "id": "higgsmechanism",
       "suggested_title": "Higgsmechanism",
+      "target_level": 1,
+      "reason": "Referenced as prerequisite link in existing verified concept"
+    },
+    {
+      "id": "hubbleparameterandcosmicexpansion",
+      "suggested_title": "Hubbleparameterandcosmicexpansion",
       "target_level": 1,
       "reason": "Referenced as prerequisite link in existing verified concept"
     },

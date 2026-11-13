@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-11-12T01:10:43.569172+00:00  
-> **Total Analyzed Concepts:** 552 | **Total Discovered Equations:** 21722 | **Discovered Bridges:** 918
+> **Generated:** 2026-11-13T01:53:11.495896+00:00  
+> **Total Analyzed Concepts:** 554 | **Total Discovered Equations:** 21903 | **Discovered Bridges:** 931
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -409,7 +409,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
 
 ### ` (-,+,+,+) `
-**Occurrences:** Appears in 25 concepts:
+**Occurrences:** Appears in 26 concepts:
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 2**: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
 - **Level 1**: Gauge Coupling Unification and Renormalization Group Running
@@ -435,9 +435,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Strong-Lensing Substructure and Milky Way Satellite Counts: ΛCDM Subhalo Mass Function vs KeV Thermal-Relic Warm Dark Matter in Testing the Small-Scale Matter Power Spectrum Cutoff
 - **Level 1**: Cosmological Lithium Problem
 - **Level 2**: Standard Sirens vs Cosmic Chronometers in Resolving the Hubble Constant Tension
+- **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
 
 ### ` \hbar = c = k_B = 1 `
-**Occurrences:** Appears in 24 concepts:
+**Occurrences:** Appears in 25 concepts:
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
 - **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 - **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
@@ -462,6 +463,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking in Predicting Sparticle Spectra, Higgs Mass, and Dark Matter Testability
 - **Level 2**: Supermassive Black Hole Binary Inspirals vs Cosmic String Networks in Sourcing the Pulsar-Timing-Array Nanohertz Gravitational-Wave Background Spectrum
 - **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
+- **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
 
 ### ` ^{-2} `
 **Occurrences:** Appears in 22 concepts:
@@ -512,6 +514,52 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures
 - **Level 2**: Dark Photon Kinetic-Mixing vs Axion-Like Particle Photon-Coupling Portals in Laboratory and Astrophysical Searches for Light Dark Matter
 
+### ` N_{\rm eff} `
+**Occurrences:** Appears in 20 concepts:
+- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
+- **Level 1**: How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?
+- **Level 1**: Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?
+- **Level 2**: Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure
+- **Level 1**: How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?
+- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
+- **Level 2**: Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem
+- **Level 1**: Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?
+- **Level 1**: Cosmic Recombination and Photon Decoupling
+- **Level 1**: Primordial Nucleosynthesis and Light-Element Abundances
+- **Level 1**: Cosmic Thermal History of the Universe
+- **Level 1**: The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements
+- **Level 1**: Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions
+- **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
+- **Level 1**: The Cosmic Distance Ladder and Hubble Constant Tension
+- **Level 2**: Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches
+- **Level 2**: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
+- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
+- **Level 1**: Cosmological Principle and Observational Tests of Large-Scale Isotropy and Homogeneity
+- **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
+
+### ` ^{-1} `
+**Occurrences:** Appears in 20 concepts:
+- **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
+- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness
+- **Level 2**: Modified Newtonian Dynamics (MOND) vs WIMP Dark Matter in Galaxy Cluster Dynamics
+- **Level 3**: Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks
+- **Level 2**: Scalar-Tensor vs Non-Local Gravity in Explaining Late-Time Cosmic Acceleration
+- **Level 1**: Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?
+- **Level 3**: Phase-Space Entropy Production and Information Bottleneck Dynamics in Large-Scale Structure Formation vs. Neural Network Synaptic Pruning
+- **Level 3**: Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation
+- **Level 3**: Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics
+- **Level 1**: How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?
+- **Level 3**: Landauer-Bekenstein Scaling Limits on Bit-Erasure Entropy and Causal Information Complexity in Expanding Spacetimes
+- **Level 2**: Type-II vs Type-III Seesaw Neutrino Mass Generation
+- **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
+- **Level 1**: Cosmological Perturbation Theory
+- **Level 1**: Cosmic Recombination and Photon Decoupling
+- **Level 2**: Inflationary Perturbations vs Cosmic-String Loops as Primordial Black Hole Origins
+- **Level 1**: Gravitational Wave Standard Sirens and the Hubble Constant
+- **Level 1**: Gravitational Wave Memory Effect
+- **Level 2**: Dark Photon Kinetic-Mixing vs Axion-Like Particle Photon-Coupling Portals in Laboratory and Astrophysical Searches for Light Dark Matter
+- **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
+
 ### ` 10^{-15} `
 **Occurrences:** Appears in 20 concepts:
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
@@ -535,62 +583,17 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models
 - **Level 2**: Standard Sirens vs Cosmic Chronometers in Resolving the Hubble Constant Tension
 
-### ` \sigma `
-**Occurrences:** Appears in 20 concepts:
-- **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
-- **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness
-- **Level 2**: MOND vs Emergent Gravity in Explaining Galactic Dynamics
-- **Level 2**: Self-Interacting Dark Matter vs Modified Gravity in Galactic Dynamics
-- **Level 1**: How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?
-- **Level 1**: Can independent laboratory experiments definitively disentangle active-flux loss due to invisible decay from flux normalization systematic errors?
-- **Level 2**: Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities
-- **Level 2**: Vacuum Decay and Cosmological Inflationary Termination Debate
-- **Level 2**: Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation
-- **Level 1**: Baryon Acoustic Oscillations
-- **Level 2**: Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime
-- **Level 2**: Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem
-- **Level 2**: Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations
-- **Level 3**: A Dimensionally Consistent Landauer-Based Framework for Comparing Energy–Latency–Error Trade-offs in Neural Computation and Cosmic-Web Self-Organization
-- **Level 1**: Primordial Black Holes (PBHs) as Dark Matter Candidates
-- **Level 2**: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
-- **Level 2**: Nonperturbative Quantum Gravity Debate
-- **Level 2**: Dark Photon Kinetic-Mixing vs Axion-Like Particle Photon-Coupling Portals in Laboratory and Astrophysical Searches for Light Dark Matter
-- **Level 3**: Falsifiable Quantum Discord and Dephasing-Rate Bounds on Coherence-Assisted Charge Transfer in Warm Biological DNA Photolyase Repair, Tested Against Classical Marcus-Theory Null Models With Explicit SI-Unit Tracing
-- **Level 2**: Standard Sirens vs Cosmic Chronometers in Resolving the Hubble Constant Tension
-
-### ` N_{\rm eff} `
-**Occurrences:** Appears in 19 concepts:
-- **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
-- **Level 1**: How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?
-- **Level 1**: Could a comprehensive visual schematic of the neutrino decay experiments be produced and included with future reports?
-- **Level 2**: Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure
-- **Level 1**: How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?
-- **Level 2**: Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics
-- **Level 2**: Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem
-- **Level 1**: Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?
-- **Level 1**: Cosmic Recombination and Photon Decoupling
-- **Level 1**: Primordial Nucleosynthesis and Light-Element Abundances
-- **Level 1**: Cosmic Thermal History of the Universe
-- **Level 1**: The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements
-- **Level 1**: Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions
-- **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
-- **Level 1**: The Cosmic Distance Ladder and Hubble Constant Tension
-- **Level 2**: Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches
-- **Level 2**: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
-- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
-- **Level 1**: Cosmological Principle and Observational Tests of Large-Scale Isotropy and Homogeneity
-
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 210 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 180 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 170 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 138 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 212 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 181 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 171 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 139 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 93 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 87 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 88 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 38 |
-| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 32 |
+| `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 33 |
 
 ## 📊 3. Verification Status Summary
 - **MATH_PROVEN Entries:** 213

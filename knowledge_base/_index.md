@@ -57,6 +57,7 @@ graph TD
     screening_protected_scalar_fields_vs_non_local_gravity["Screening-Protected Scalar Fields vs Non-Local Gravity in Black Hole Mergers"]:::theoretical
     neutrino_masses_and_leptogenesis["Neutrino Masses and Leptogenesis"]:::verified
     electroweak_baryogenesis["Electroweak Baryogenesis"]:::theoretical
+    hubblesphere_and_cosmological_event_horizon_dynamics_in_de_sitter_spacetime["Hubble-Sphere and Cosmological Event Horizon Dynamics in de Sitter Spacetime"]:::theoretical
     cosmic_neutrino_background["Cosmic Neutrino Background"]:::theoretical
     cp_violation["CP Violation"]:::theoretical
     statistical_tests_of_point_source_vs_diffuse_astrophysical_neutrinos["Statistical Tests of Point-Source vs Diffuse Astrophysical Neutrinos"]:::theoretical
@@ -226,6 +227,7 @@ graph TD
     asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime["Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime"]:::theoretical
     nonperturbative_quantum_gravity_debate["Nonperturbative Quantum Gravity Debate: Asymptotic Safety and Causal Dynamical Triangulations"]:::theoretical
     inflationary_vacuum_fluctuations_vs_cosmic_string_networks_as_sources_of_primordial_gravitational_waves["Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves"]:::theoretical
+    resonant_sterile_neutrino_vs_misalignment_axionlike_particle_dark_matter_in_predicting_xray_line_and_haloscope_signatures["Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures"]:::theoretical
     randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem["Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem"]:::theoretical
     supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"]:::theoretical
     sterile_neutrino_vs_fuzzy_dark_matter_in_explaining_structure_formation["Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation"]:::theoretical
@@ -375,6 +377,7 @@ graph TD
     quantum_cramrrao_and_lindbladian_dephasing_bounds_on_coherenceassisted_excitation_transfer_in_warm_biological_lightharvesting_antennae_a_falsifiable_dimensionally_consistent_test_a["Quantum Cramér–Rao and Lindbladian Dephasing Bounds on Coherence-Assisted Excitation Transfer in Warm Biological Light-Harvesting Antennae: A Falsifiable, Dimensionally Consistent Test Against Classical Förster Transport Null Models"]:::theoretical
     fisherinformation_and_minimum_description_length_bounds_on_predictive_coding_efficiency_in_cortical_hierarchies_versus_hierarchical_halo_merger_trees_a_falsifiable_test_with_explic["Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees"]:::theoretical
     a_preregistered_crossscale_causalintervention_test_of_integrated_information_theory_and_physicalist_emergence_under_matched_neural_models["A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models"]:::theoretical
+    ive_formalized_hyp222_to_resolve_the_lorenz_qmetric_discrepancy_in["HYP-222: Lorenz Q-Metric Discrepancy"]:::theoretical
     a_preregistered_modeldiscrimination_framework_for_integrated_information_theory_and_physicalist_emergence_using_multiscale_neural_perturbations["A Preregistered Model-Discrimination Framework for Integrated Information Theory and Physicalist Emergence Using Multiscale Neural Perturbations"]:::theoretical
     falsifiable_thermodynamic_bounds_on_predictive_information_rates_in_cortical_networks_using_measured_metabolic_dissipation_with_explicit_siunit_tracing_and_prespecified_null_models["Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models"]:::theoretical
     quantifying_causal_emergence_in_nonequilibrium_systems_linking_thermodynamic_entropy_production_to_integrated_information_measures_in_cosmic_and_biological_architectures["Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures"]:::verified
@@ -733,6 +736,7 @@ graph TD
 - [Gravitational-Wave Memory Effect](level_1_fundamental_physics/gravitational_wave_memory_effect.md) [THEORETICAL]
 - [Hawking Radiation and the Black Hole Information Paradox](level_1_fundamental_physics/hawking_radiation_and_the_black_hole_information_paradox.md) [THEORETICAL]
 - [Hubble-Lemaître Law and Cosmic Expansion Kinematics](level_1_fundamental_physics/hubblelematre_law_and_cosmic_expansion_kinematics.md) [VERIFIED]
+- [Hubble-Sphere and Cosmological Event Horizon Dynamics in de Sitter Spacetime](level_1_fundamental_physics/hubblesphere_and_cosmological_event_horizon_dynamics_in_de_sitter_spacetime.md) [THEORETICAL]
 - [Hydrodynamic Simulations Disentangling Baryonic Feedback from SFDM and SIDM](level_1_fundamental_physics/hydrodynamic_simulations_baryonic_feedback_sfdm_sidm.md) [THEORETICAL]
 - [Inflationary Cosmology](level_1_fundamental_physics/inflationary_cosmology.md) [THEORETICAL]
 - [Inflationary Reheating Mechanisms](level_1_fundamental_physics/inflationary_reheating_mechanisms.md) [THEORETICAL]
@@ -941,6 +945,7 @@ graph TD
 - [Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem](level_2_advanced_frameworks/randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem.md) [THEORETICAL]
 - [Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution](level_2_advanced_frameworks/randallsundrum_vs_add_models_in_hierarchy_problem_resolution.md) [THEORETICAL]
 - [Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures](level_2_advanced_frameworks/randallsundrum_vs_add_models_in_hierarchy_problem_resolution_comparative_analysis_of_phenomenological_signatures.md) [THEORETICAL]
+- [Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures](level_2_advanced_frameworks/resonant_sterile_neutrino_vs_misalignment_axionlike_particle_dark_matter_in_predicting_xray_line_and_haloscope_signatures.md) [THEORETICAL]
 - [Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](level_2_advanced_frameworks/scalar_field_dark_matter_vs_selfinteracting_dark_matter_in_resolving_smallscale_structure_challenges.md) [THEORETICAL]
 - [Scalar-Tensor Gravity vs Galileon Gravity in Addressing Cosmic Acceleration](level_2_advanced_frameworks/scalartensor_gravity_vs_galileon_gravity_in_addressing_cosmic_acceleration.md) [THEORETICAL]
 - [Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale](level_2_advanced_frameworks/scalartensor_vs_noncommutative_geometry_in_addressing_singularity_resolution_at_the_planck_scale.md) [THEORETICAL]
@@ -1038,6 +1043,7 @@ graph TD
 - [Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow](level_3_emergence_and_intelligence/fluctuationdissipation_and_entropyrate_bounds_on_information_transfer_across_hierarchical_scales_a_falsifiable_dimensionally_consistent_comparison_of_cortical_axonal_transport_netw.md) [THEORETICAL]
 - [Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test](level_3_emergence_and_intelligence/fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test.md) [THEORETICAL]
 - [Formalizing Integrated Information Theory (IIT) within Spacetime Geometry](level_3_emergence_and_intelligence/formalizing_integrated_information_theory_within_spacetime_geometry.md) [THEORETICAL]
+- [HYP-222: Lorenz Q-Metric Discrepancy](level_3_emergence_and_intelligence/ive_formalized_hyp222_to_resolve_the_lorenz_qmetric_discrepancy_in.md) [THEORETICAL]
 - [Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism](level_3_emergence_and_intelligence/identifiability_limits_of_psychophysical_bridge_laws_an_adversarial_test_of_integrated_information_theory_versus_mechanistic_physicalism.md) [THEORETICAL]
 - [Independent Lorenz Q-Metric Replication for EMP-196](level_3_emergence_and_intelligence/independent_lorenz_qmetric_replication_for_emp196.md) [THEORETICAL]
 - [Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](level_3_emergence_and_intelligence/informationtheoretic_complexity_and_emergent_hierarchies_in_the_cosmic_web_a_comparative_analysis_of_neural_networks_and_largescale_structure_evolution.md) [THEORETICAL]
