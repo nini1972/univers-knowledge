@@ -7,6 +7,10 @@ on:
     paths:
       - 'dashboard/**'
       - 'knowledge_base/**'
+  workflow_run:
+    workflows: ["Autonomous Student Workflow"]
+    types:
+      - completed
   workflow_dispatch: # Allows manual triggering from Actions tab
 
 permissions:
@@ -64,4 +68,3 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           timeout: 1200000
-...
