@@ -12,37 +12,32 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261114-37a4b7` | L2 | **Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures** | UniverseFlow Orchestrator | Concept 'Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261114-37a4b7` — Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures
-- **Timestamp**: `2026-11-14T01:09:24.719609+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic's Verification Score is 5/5, which meets the threshold. However, the Math Physicist's status is [MATH_FLAWED] with a score of 2/4, which is below the 3/4 needed for approval. The Skeptic confirmed the errors. The source reports convert <σv> = 3×10^-26 cm^3/s to 3.0×10^-13 GeV^-2, but the correct value is about 2.57×10^-9 GeV^-2. They give H_I,max as 6.10×10^13 GeV, but their own formula gives 4.70×10^13 GeV. Their schematic isocurvature bound on H_I is dimensionally inconsistent. The Skeptic's corrected values have not been re-verified by the Math Physicist. Report 1 also still cites arXiv:2605.20186 as verified, while Report 2 removed it as unconfirmable.
-- **Agent Blockers**:
-  * Researcher: Remove or properly resolve arXiv:2605.20186 consistently in both reports.
-  * Researcher: Replace the 3.0×10^-13 GeV^-2 conversion and the m_χ ~ 8 TeV estimate with <σv> ≈ 2.57×10^-9 GeV^-2 and the unitarity-based m_χ ≲ 70–100 TeV.
-  * Researcher: Replace the H_I values of 6.10×10^13 and 7.58×10^13 GeV with 4.70×10^13 GeV, and drop the inconsistent measured-ε route.
-  * Researcher: State the isocurvature bound correctly, with H_I ∝ m_X^2/M_Pl and an explicit isocurvature-fraction factor, citing Planck β_iso < 0.038.
-  * Math Physicist: Re-derive H_I = M_Pl·sqrt(π² r P_R / 2) = 4.70×10^13 GeV for r = 0.036 and P_R = 2.1×10^-9.
-  * Math Physicist: Re-derive the cm^3/s to GeV^-2 conversion from the stated constants.
-  * Math Physicist: Provide a dimensionally consistent isocurvature bound on H_I.
-  * Math Physicist: Resolve the ε versus n_s relation using n_s = 1 − 6ε + 2η.
-  * Math Physicist: Re-run the verification so the corrected manuscript earns a Math Score of at least 3/4.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261114-37a4b7 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (34)
+## 📚 Answered Advisory Consultations (35)
+
+### ✅ `adv-20261114-37a4b7`: Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures
+- **Student Inquired**: Concept 'Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the Level 2 synthesis of 'Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter':
+(1) Natural Unit Conversion and Thermal Unitarity Bound:
+  - Derive the canonical cross section conversion using natural units (\hbar = c = 1), where 1 GeV^{-2} = (\hbar c)^2 \approx 3.89379 \times 10^{-28} cm^2 and c \approx 2.99792 \times 10^{10} cm/s.
+  - The standard thermal relic cross section <\sigma v> = 3.0 \times 10^{-26} cm^3/s converts to <\sigma v> = (3.0 \times 10^{-26}) / (2.99792 \times 10^{10} \times 3.89379 \times 10^{-28}) \approx 2.57 \times 10^{-9} GeV^{-2}. Eliminate the erroneous 3.0 \times 10^{-13} GeV^{-2} figure.
+  - From the Griest-Kamionkowski s-wave partial-wave unitarity bound <\sigma v> \le 4\pi / (m_\chi^2 v_{rel}), requiring \Omega_\chi h^2 \approx 0.12 yields m_\chi \lesssim 70-100 TeV (\sim 80 TeV for v_{rel} \sim 0.3). Replace the flawed m_\chi \sim 8 TeV estimate.
+(2) Inflationary Hubble Scale & Slow-Roll Consistency:
+  - From the tensor perturbation amplitude P_t = (2/\pi^2) (H_I / M_{Pl})^2 with reduced Planck mass M_{Pl} = 2.435 \times 10^{18} GeV and tensor-to-scalar ratio r = P_t / P_R:
+    H_{I,max} = M_{Pl} \sqrt{(\pi^2 / 2) r P_R}. For r = 0.036 (BICEP/Keck + Planck) and P_R = 2.1 \times 10^{-9}, this yields H_{I,max} = 2.435 \times 10^{18} \times \sqrt{4.9348 \times 7.56 \times 10^{-11}} = 4.70 \times 10^{13} GeV.
+  - Drop the conflicting 6.10 \times 10^{13} GeV and 7.58 \times 10^{13} GeV estimates. Respect the standard slow-roll relation n_s = 1 - 6\epsilon + 2\eta and r = 16\epsilon; do not equate \epsilon directly to (1 - n_s).
+(3) Dimensionally Consistent Isocurvature Bound:
+  - Formulate the uncorrelated CDM isocurvature bound using the Planck constraint \beta_{iso} = P_S / (P_R + P_S) < 0.038 (k_* = 0.05 Mpc^{-1}).
+  - For gravitationally produced superheavy particles X with m_X \sim H_I, ensure dimensional consistency in the isocurvature perturbation spectrum P_S \propto (H_I / m_X)^2 (or P_S = (H_I / (\pi X_0))^2 with X_0 \sim M_{Pl}), so that all expressions bounding H_I maintain correct energy dimension [E]^1.
+(4) Citation Cleanup & Verification:
+  - Remove unconfirmable preprint citation arXiv:2605.20186 across all reports. Cite canonical foundations: Kolb, Chung, & Riotto (1998, 1999) for WIMPzillas, Griest & Kamionkowski (1990) for the unitarity bound, and Planck 2018 / BICEP/Keck 2021 for cosmological parameter bounds.
+  - Re-verify so the manuscript achieves a Math Physicist score \ge 3/4 and Skeptic approval."*
+- **Answered At**: `2026-11-14T08:02:01.611793+00:00`
 
 ### ✅ `adv-20261109-28adf9`: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
 - **Student Inquired**: Concept 'Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
@@ -125,9 +120,4 @@
 - **Student Inquired**: Concept 'A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
 - **Professor Directive**: 💬 *"In the Level 3 benchmark comparing Integrated Information Theory (IIT) and Global Neuronal Workspace / Physicalist Emergence (GNWT): (1) Common-exposure multi-mediator DAG: Define a single randomized sensory stimulus/masking exposure A in {0, 1} acting on two parallel candidate neural mediators — posterior irreducible integration proxy M_post (operationalized via perturbational complexity / Φ* proxy, explicitly distinguished from exact NP-hard IIT Φ) and prefrontal-parietal global broadcast ignition M_bc — with outcome Y measured under a 2x2 report-by-no-report paradigm (pairing overt report Y_rep with no-report optokinetic/pupillometry/decodability readout Y_norep). (2) Exact VanderWeele interventional mediation decomposition: Under the common exposure A, decompose the total effect TE = E[Y(1) - Y(0)] into interventional direct effect IDE, interventional indirect effect via posterior integration IIE_post = E[Y(1, G_{M_post}(1), G_{M_bc}(0)) - Y(1, G_{M_post}(0), G_{M_bc}(0))], interventional indirect effect via prefrontal broadcast IIE_bc = E[Y(1, G_{M_post}(0), G_{M_bc}(1)) - Y(1, G_{M_post}(0), G_{M_bc}(0))], and mediated interaction IIE_int. Keep labels strictly consistent: IIE (psi) is the indirect mediated contrast and IDE (Delta) is the direct contrast. (3) Falsifiable decision rule without biased ratios: Instead of an unstable ratio statistic, preregister joint equivalence/superiority bounds on (IIE_post, IIE_bc) across report vs no-report blocks: GNWT predicts Y_rep and Y_norep require IIE_bc > delta_min, whereas IIT predicts Y_norep persists with IIE_post > delta_min even when prefrontal broadcast is disrupted (IIE_bc within equivalence bounds [-epsilon, +epsilon]). Classify the benchmark as [THEORETICAL]."*
 - **Answered At**: `2026-10-18T19:24:31.687104+00:00`
-
-### ✅ `adv-20261018-e3d5d6`: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
-- **Student Inquired**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Professor Directive**: 💬 *"In the synthesis of Canonical Quintessence vs K-Essence: (1) Metric signature & canonical action convention: State explicitly the metric signature (-,+,+,+) with X = -(1/2) g^{mu nu} partial_mu phi partial_nu phi > 0 for a homogeneous time-dependent field X = (1/2) dot{phi}^2. Under this convention, a canonical scalar has P(X, phi) = X - V(phi) and w = (X - V)/(X + V) >= -1 whenever rho = X + V > 0. (2) Exact k-essence sound speed and superluminality sign condition: For general k-essence P(X, phi), the adiabatic scalar perturbation sound speed squared is c_s^2 = P_{,X} / rho_{,X} = P_{,X} / (P_{,X} + 2 X P_{,XX}). Requiring no ghost (rho_{,X} = P_{,X} + 2 X P_{,XX} > 0) and gradient stability (P_{,X} > 0) with X > 0 implies that subluminal propagation (0 < c_s^2 <= 1) holds for P_{,XX} >= 0, whereas superluminal propagation (c_s^2 > 1) arises when P_{,XX} < 0 (specifically -P_{,X}/(2X) < P_{,XX} < 0). Do NOT write that superluminality arises for P_{,XX} > 0. (3) Variable-w density scaling & phantom divide: Use the exact integral scaling rho_DE(a) = rho_{DE,0} exp[3 int_a^1 (1 + w(a')) da'/a'] (not a^{-3(1+w)} with variable w), and state that single-field minimally coupled P(X, phi) k-essence cannot stably cross w = -1 without ghosts or gradient instabilities (Vikman 2005, DOI: 10.1103/PhysRevD.71.023515); stable phantom-divide crossing requires higher-derivative kinetic braiding / Horndeski terms."*
-- **Answered At**: `2026-10-18T19:24:29.153905+00:00`
 
