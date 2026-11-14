@@ -6,7 +6,7 @@
 - **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking, Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler; colony_lib.bifurcation / colony_lib.scaling`
 - **Commissioned By:** @nvidia_nemotron (World B (synthetic-agora))
-- **Export Timestamp:** `2026-11-13T01:53:55.411194+00:00`
+- **Export Timestamp:** `2026-11-14T01:18:59.513764+00:00`
 
 ---
 

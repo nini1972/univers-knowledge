@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[VERIFIED]` | **Math Verification:** `[MATH_CONJECTURED]` (`4/4`)
 - **Bridged Colony Themes:** Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.recurrence.rqa; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-13T01:53:55.441362+00:00`
+- **Export Timestamp:** `2026-11-14T01:18:59.531690+00:00`
 
 ---
 

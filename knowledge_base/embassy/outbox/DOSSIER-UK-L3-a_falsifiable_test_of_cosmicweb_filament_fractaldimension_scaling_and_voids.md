@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation, Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds, Spectral Graph Theory, Laplacian Eigenvalues & Network Criticality, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology; colony_lib.recurrence.rqa; colony_lib.network_topology / colony_lib.dynamics.contact_process; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-13T01:53:55.415339+00:00`
+- **Export Timestamp:** `2026-11-14T01:18:59.516420+00:00`
 
 ---
 
