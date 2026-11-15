@@ -66,5 +66,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        env:
+          GITHUB_EVENT_NAME: push
         with:
-          timeout: 1200000
+          timeout: 600000
