@@ -1,13 +1,66 @@
 from crewai import Agent, LLM
 import json
+import logging
 import os
+from pathlib import Path
 from textwrap import dedent
+import threading
 from urllib.error import URLError
 from urllib.request import Request, urlopen
 
 _OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
 _OPENROUTER_FALLBACK_MODEL = "~openai/gpt-luna-latest"
 _OPENROUTER_MODEL_INDEX: set[str] | None = None
+
+
+class _ApproximateTokenWarningOnceFilter(logging.Filter):
+    """Allow CrewAI's approximate input-token warning at most once per run."""
+
+    _uk_approx_token_once_filter = True
+    _FRAGMENT = "Using an approximate input token count"
+
+    def __init__(self, sentinel_path: Path | None = None) -> None:
+        super().__init__()
+        self._lock = threading.Lock()
+        self._emitted = False
+        self._sentinel_path = sentinel_path
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        try:
+            msg = record.getMessage()
+        except Exception:
+            return True
+        if self._FRAGMENT not in msg:
+            return True
+
+        with self._lock:
+            if self._emitted:
+                return False
+            if self._sentinel_path is not None:
+                try:
+                    self._sentinel_path.parent.mkdir(parents=True, exist_ok=True)
+                    with self._sentinel_path.open("x", encoding="utf-8") as fh:
+                        fh.write("1\n")
+                except FileExistsError:
+                    self._emitted = True
+                    return False
+                except OSError:
+                    pass
+            self._emitted = True
+            return True
+
+
+def _install_crewai_log_filters() -> None:
+    """Attach a once-per-run filter to ``crewai.llms.base_llm``."""
+    target_logger = logging.getLogger("crewai.llms.base_llm")
+    if any(getattr(f, "_uk_approx_token_once_filter", False) for f in target_logger.filters):
+        return
+    runner_temp = os.getenv("RUNNER_TEMP", "").strip()
+    sentinel = (Path(runner_temp) / ".uk_crewai_approx_token_warned") if runner_temp else None
+    target_logger.addFilter(_ApproximateTokenWarningOnceFilter(sentinel_path=sentinel))
+
+
+_install_crewai_log_filters()
 
 
 def _normalize_openrouter_model(model: str) -> str:
@@ -89,6 +142,7 @@ def _resolve_openrouter_model(api_key: str, role: str) -> str:
 
 def _get_llm(role: str) -> LLM | None:
     """Retrieve custom LLM configuration for OpenRouter if configured, otherwise fallback."""
+    _install_crewai_log_filters()
     api_key = os.getenv("OPENROUTER_API_KEY")
     if api_key:
         model = _resolve_openrouter_model(api_key, role)

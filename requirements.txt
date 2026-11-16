@@ -1,5 +1,5 @@
-crewai
-crewai-tools
+crewai==1.15.41
+crewai-tools==1.15.41
 langchain-openai
 langchain-community
 langchain-tavily
