@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-11-15T01:09:32.181986+00:00  
-> **Total Analyzed Concepts:** 561 | **Total Discovered Equations:** 22595 | **Discovered Bridges:** 968
+> **Generated:** 2026-11-16T00:41:52.059564+00:00  
+> **Total Analyzed Concepts:** 562 | **Total Discovered Equations:** 22667 | **Discovered Bridges:** 969
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -385,6 +385,37 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence
 - **Level 3**: Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation
 
+### ` (-,+,+,+) `
+**Occurrences:** Appears in 28 concepts:
+- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
+- **Level 2**: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
+- **Level 1**: Gauge Coupling Unification and Renormalization Group Running
+- **Level 2**: Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches
+- **Level 2**: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
+- **Level 1**: Gauge Fixing and Faddeev-Popov Ghosts in Non-Abelian Gauge Theories
+- **Level 2**: Nonperturbative Quantum Gravity Debate
+- **Level 1**: Gravitational Wave Memory Effect
+- **Level 2**: Type-II Seesaw vs Inverse Seesaw in Neutrino Mass Generation and Collider/Lepton-Flavor-Violation Testability
+- **Level 2**: ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies
+- **Level 1**: Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit
+- **Level 2**: Peccei-Quinn Axion vs Massless Up-Quark Solutions to the Strong CP Problem
+- **Level 1**: Gravitational Redshift and the Pound–Rebka Experiment
+- **Level 2**: Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures
+- **Level 2**: Many-Worlds Interpretation vs de Broglie–Bohm Pilot-Wave Mechanics in Explaining Quantum Measurement and Born-Rule Probabilities
+- **Level 1**: Cosmic Microwave Background Polarization and B-Mode Signatures
+- **Level 2**: Dark Photon Kinetic-Mixing vs Axion-Like Particle Photon-Coupling Portals in Laboratory and Astrophysical Searches for Light Dark Matter
+- **Level 2**: Stable Cold Dark Matter with Baryonic Feedback vs Decaying Dark Matter in Resolving the S8 Tension
+- **Level 2**: Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking in Predicting Sparticle Spectra, Higgs Mass, and Dark Matter Testability
+- **Level 2**: Supermassive Black Hole Binary Inspirals vs Cosmic String Networks in Sourcing the Pulsar-Timing-Array Nanohertz Gravitational-Wave Background Spectrum
+- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
+- **Level 1**: Cosmological Principle and Observational Tests of Large-Scale Isotropy and Homogeneity
+- **Level 2**: Strong-Lensing Substructure and Milky Way Satellite Counts: ΛCDM Subhalo Mass Function vs KeV Thermal-Relic Warm Dark Matter in Testing the Small-Scale Matter Power Spectrum Cutoff
+- **Level 1**: Cosmological Lithium Problem
+- **Level 2**: Standard Sirens vs Cosmic Chronometers in Resolving the Hubble Constant Tension
+- **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
+- **Level 2**: Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures
+- **Level 1**: Cosmological Constraints on Primordial Magnetic Fields
+
 ### ` \phi `
 **Occurrences:** Appears in 27 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
@@ -414,36 +445,6 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit
 - **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
 - **Level 1**: Thermodynamics and the Laws of Thermodynamics in Cosmology: The Sachs–Wolfe Effect
-
-### ` (-,+,+,+) `
-**Occurrences:** Appears in 27 concepts:
-- **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
-- **Level 2**: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
-- **Level 1**: Gauge Coupling Unification and Renormalization Group Running
-- **Level 2**: Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches
-- **Level 2**: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
-- **Level 1**: Gauge Fixing and Faddeev-Popov Ghosts in Non-Abelian Gauge Theories
-- **Level 2**: Nonperturbative Quantum Gravity Debate
-- **Level 1**: Gravitational Wave Memory Effect
-- **Level 2**: Type-II Seesaw vs Inverse Seesaw in Neutrino Mass Generation and Collider/Lepton-Flavor-Violation Testability
-- **Level 2**: ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies
-- **Level 1**: Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit
-- **Level 2**: Peccei-Quinn Axion vs Massless Up-Quark Solutions to the Strong CP Problem
-- **Level 1**: Gravitational Redshift and the Pound–Rebka Experiment
-- **Level 2**: Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures
-- **Level 2**: Many-Worlds Interpretation vs de Broglie–Bohm Pilot-Wave Mechanics in Explaining Quantum Measurement and Born-Rule Probabilities
-- **Level 1**: Cosmic Microwave Background Polarization and B-Mode Signatures
-- **Level 2**: Dark Photon Kinetic-Mixing vs Axion-Like Particle Photon-Coupling Portals in Laboratory and Astrophysical Searches for Light Dark Matter
-- **Level 2**: Stable Cold Dark Matter with Baryonic Feedback vs Decaying Dark Matter in Resolving the S8 Tension
-- **Level 2**: Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking in Predicting Sparticle Spectra, Higgs Mass, and Dark Matter Testability
-- **Level 2**: Supermassive Black Hole Binary Inspirals vs Cosmic String Networks in Sourcing the Pulsar-Timing-Array Nanohertz Gravitational-Wave Background Spectrum
-- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
-- **Level 1**: Cosmological Principle and Observational Tests of Large-Scale Isotropy and Homogeneity
-- **Level 2**: Strong-Lensing Substructure and Milky Way Satellite Counts: ΛCDM Subhalo Mass Function vs KeV Thermal-Relic Warm Dark Matter in Testing the Small-Scale Matter Power Spectrum Cutoff
-- **Level 1**: Cosmological Lithium Problem
-- **Level 2**: Standard Sirens vs Cosmic Chronometers in Resolving the Hubble Constant Tension
-- **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
-- **Level 2**: Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures
 
 ### ` \hbar = c = k_B = 1 `
 **Occurrences:** Appears in 25 concepts:
@@ -599,15 +600,15 @@ Bell's Theorem and Loophole-Free Tests of Local Realism
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 215 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 183 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 216 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 184 |
 | `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 172 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 141 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 142 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 95 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 91 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 92 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 38 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 33 |
 
 ## 📊 3. Verification Status Summary
 - **MATH_PROVEN Entries:** 214
-- **MATH_CONSISTENT Entries:** 170
+- **MATH_CONSISTENT Entries:** 171

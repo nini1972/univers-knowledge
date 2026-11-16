@@ -12,9 +12,51 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (2)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20261116-d311b6` | L2 | **Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay** | UniverseFlow Orchestrator | Concept 'Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+| `adv-20261116-6d7668` | L3 | **👏 Formally Acknowledged the new Dossier from Universe Knowledge** | UniverseFlow Orchestrator | Concept '👏 Formally Acknowledged the new Dossier from Universe Knowledge' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20261116-d311b6` — Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay
+- **Timestamp**: `2026-11-16T01:42:59.056072+00:00`
+- **Level**: Level 2
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic score of 5/5 and the Math status of [MATH_CONSISTENT] (3/4) both meet the approval thresholds. The debate compares at least six independent sources and sets out the different testability profiles of the two frameworks. The comparison is anchored in verified data (oscillations, Planck eta_B, MEG, LZ), so I assign [VERIFIED]. The scotogenic Eq. (6) normalization defect and the m_* convention mixing are recorded as caveats rather than grounds for rejection.
+
+Math gate: approval blocked because the Math Physicist's tool-verified report contains 1 STEP_INVALID verdict(s); 1 LIMIT_MISMATCH verdict(s). Correct the flagged equations/derivation steps and re-verify.
+- **Agent Blockers**:
+  * Researcher: Re-derive the scotogenic Yukawa windows with the standard Ma normalization (lambda_5 v^2/(16 pi^2 M_k)) and the correct loop function
+  * Researcher: Replace the LZ preprint with a peer-reviewed citation if one is available
+  * Math Physicist: Check that the scotogenic mass formula vanishes as v_EW -> 0 (a physical-normalization check beyond dimensional analysis)
+  * Math Physicist: Unify the v convention (246.22 vs 174 GeV) and the Planck-mass convention across all formulas
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261116-d311b6 "Your guidance"`
+
+#### 🔍 Inquiry: `adv-20261116-6d7668` — 👏 Formally Acknowledged the new Dossier from Universe Knowledge
+- **Timestamp**: `2026-11-16T01:58:11.206951+00:00`
+- **Level**: Level 3
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept '👏 Formally Acknowledged the new Dossier from Universe Knowledge' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic score is 5/6, which meets the threshold. However, the Math Physicist returned [MATH_FLAWED] because of a confirmed LIMIT_MISMATCH. The report claims R ~ (2δ²)^-1 with a large-δ chord slope of 2, but the exact Adler form R = 1/(δ+√(δ²-1)) gives R ~ (2δ)^-1 and a slope of 1. The error carries into the §3 asymptotics and the Visual Grounding annotations. The K_c normalization is also not resolved: 2/[πg(0)(N-1)] does not recover the HMF limit for fixed g(0) under the K/N convention. The policy rejects [MATH_FLAWED] even when the Skeptic score is sufficient. The central finding is analytically sound: 1.3791 is a window-dependent chord of the Adler curve. It can be approved as [THEORETICAL] once the errors are corrected and the report is resubmitted.
+- **Agent Blockers**:
+  * Researcher: Correct the large-δ asymptotic to R ~ 1/(2δ) with chord slope → 1 in §3 and in the Executive Summary.
+  * Researcher: Relabel the Visual Grounding windows: [1.05,1.3] ≈ 2.067, [1.3,2] ≈ 1.30, [2,3] ≈ 1.10 (tending to 1), and full window [1.05,3] ≈ 1.3791.
+  * Researcher: State the Kuramoto normalization explicitly. With K/N, K_c = 2/[πg(0)]. Do not claim the (N-1) form recovers the HMF limit unless K is redefined as a total coupling.
+  * Researcher: Reconcile the DAG node IDs (SYN-032 versus SYN-030/THM-002).
+  * Researcher: Provide the raw fit records for CRT-003/EMP-029, or mark them explicitly as unavailable.
+  * Researcher: Specify a concrete hardware measurement protocol for R(Δω) on a Josephson or injection-locked platform.
+  * Math Physicist: Re-derive and verify lim δ→∞ of δ·R(δ) = 1/2 and the large-δ chord slope → 1 symbolically and numerically.
+  * Math Physicist: Recheck the chord slopes for every window quoted in the report.
+  * Math Physicist: Provide a consistent K_c derivation under a single declared normalization.
+  * Math Physicist: Reformat the Symbol Table in the machine-parsable Symbol | Meaning | Dimension format.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261116-6d7668 "Your guidance"`
+
 
 ---
 
