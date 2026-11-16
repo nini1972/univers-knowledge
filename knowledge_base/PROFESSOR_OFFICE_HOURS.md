@@ -12,55 +12,59 @@
 
 ---
 
-## 📬 Pending Student Inquiries (2)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261116-d311b6` | L2 | **Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay** | UniverseFlow Orchestrator | Concept 'Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-| `adv-20261116-6d7668` | L3 | **👏 Formally Acknowledged the new Dossier from Universe Knowledge** | UniverseFlow Orchestrator | Concept '👏 Formally Acknowledged the new Dossier from Universe Knowledge' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261116-d311b6` — Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay
-- **Timestamp**: `2026-11-16T01:42:59.056072+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic score of 5/5 and the Math status of [MATH_CONSISTENT] (3/4) both meet the approval thresholds. The debate compares at least six independent sources and sets out the different testability profiles of the two frameworks. The comparison is anchored in verified data (oscillations, Planck eta_B, MEG, LZ), so I assign [VERIFIED]. The scotogenic Eq. (6) normalization defect and the m_* convention mixing are recorded as caveats rather than grounds for rejection.
-
-Math gate: approval blocked because the Math Physicist's tool-verified report contains 1 STEP_INVALID verdict(s); 1 LIMIT_MISMATCH verdict(s). Correct the flagged equations/derivation steps and re-verify.
-- **Agent Blockers**:
-  * Researcher: Re-derive the scotogenic Yukawa windows with the standard Ma normalization (lambda_5 v^2/(16 pi^2 M_k)) and the correct loop function
-  * Researcher: Replace the LZ preprint with a peer-reviewed citation if one is available
-  * Math Physicist: Check that the scotogenic mass formula vanishes as v_EW -> 0 (a physical-normalization check beyond dimensional analysis)
-  * Math Physicist: Unify the v convention (246.22 vs 174 GeV) and the Planck-mass convention across all formulas
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261116-d311b6 "Your guidance"`
-
-#### 🔍 Inquiry: `adv-20261116-6d7668` — 👏 Formally Acknowledged the new Dossier from Universe Knowledge
-- **Timestamp**: `2026-11-16T01:58:11.206951+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept '👏 Formally Acknowledged the new Dossier from Universe Knowledge' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic score is 5/6, which meets the threshold. However, the Math Physicist returned [MATH_FLAWED] because of a confirmed LIMIT_MISMATCH. The report claims R ~ (2δ²)^-1 with a large-δ chord slope of 2, but the exact Adler form R = 1/(δ+√(δ²-1)) gives R ~ (2δ)^-1 and a slope of 1. The error carries into the §3 asymptotics and the Visual Grounding annotations. The K_c normalization is also not resolved: 2/[πg(0)(N-1)] does not recover the HMF limit for fixed g(0) under the K/N convention. The policy rejects [MATH_FLAWED] even when the Skeptic score is sufficient. The central finding is analytically sound: 1.3791 is a window-dependent chord of the Adler curve. It can be approved as [THEORETICAL] once the errors are corrected and the report is resubmitted.
-- **Agent Blockers**:
-  * Researcher: Correct the large-δ asymptotic to R ~ 1/(2δ) with chord slope → 1 in §3 and in the Executive Summary.
-  * Researcher: Relabel the Visual Grounding windows: [1.05,1.3] ≈ 2.067, [1.3,2] ≈ 1.30, [2,3] ≈ 1.10 (tending to 1), and full window [1.05,3] ≈ 1.3791.
-  * Researcher: State the Kuramoto normalization explicitly. With K/N, K_c = 2/[πg(0)]. Do not claim the (N-1) form recovers the HMF limit unless K is redefined as a total coupling.
-  * Researcher: Reconcile the DAG node IDs (SYN-032 versus SYN-030/THM-002).
-  * Researcher: Provide the raw fit records for CRT-003/EMP-029, or mark them explicitly as unavailable.
-  * Researcher: Specify a concrete hardware measurement protocol for R(Δω) on a Josephson or injection-locked platform.
-  * Math Physicist: Re-derive and verify lim δ→∞ of δ·R(δ) = 1/2 and the large-δ chord slope → 1 symbolically and numerically.
-  * Math Physicist: Recheck the chord slopes for every window quoted in the report.
-  * Math Physicist: Provide a consistent K_c derivation under a single declared normalization.
-  * Math Physicist: Reformat the Symbol Table in the machine-parsable Symbol | Meaning | Dimension format.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261116-6d7668 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (35)
+## 📚 Answered Advisory Consultations (37)
+
+### ✅ `adv-20261116-6d7668`: 👏 Formally Acknowledged the new Dossier from Universe Knowledge
+- **Student Inquired**: Concept '👏 Formally Acknowledged the new Dossier from Universe Knowledge' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the Level 3 report on '👏 Formally Acknowledged the new Dossier from Universe Knowledge' (Adler-Curve Resolution of the Resonance-Gap Exponent):
+(1) Correct the Large-δ Asymptotic Limit and Secant Slope:
+  - From the exact Adler closed-form cross-order parameter:
+    R_cross(\delta) = \delta - \sqrt{\delta^2 - 1} = \frac{1}{\delta + \sqrt{\delta^2 - 1}} for \delta = \Delta\omega / (2 K_eff) > 1.
+  - Expand for large \delta \gg 1:
+    \delta + \sqrt{\delta^2 - 1} = \delta + \delta(1 - 1/(2\delta^2) + O(\delta^{-4})) = 2\delta - \frac{1}{2\delta} + \dots
+    Therefore, R_cross(\delta) \sim \frac{1}{2\delta} = (2\delta)^{-1}.
+  - Replace the incorrect R \sim (2\delta^2)^{-1} in §3, the Executive Summary, and Visual Grounding.
+  - The large-\delta asymptotic log-log slope is \lim_{\delta\to\infty} \frac{d\ln R}{d\ln\delta} = -1; the chord slope approaches 1, NOT 2. Correct all textual assertions and annotations claiming chord slope \to 2.
+(2) Visual Grounding Annotation Updates:
+  - Relabel the four fit windows consistently:
+    * \delta \in [1.05, 1.3]: \gamma_eff \approx 2.067;
+    * \delta \in [1.3, 2]: \gamma_eff \approx 1.30;
+    * \delta \in [2, 3]: \gamma_eff \approx 1.10 (asymptotically tending toward 1);
+    * Full window \delta \in [1.05, 3]: \gamma_eff \approx 1.3791 (tool-verified).
+(3) Kuramoto Coupling Normalization (K_c):
+  - State the coupling convention unambiguously:
+    * Under all-to-all mean-field coupling \dot\theta_i = \omega_i + \frac{K}{N}\sum_{j=1}^N \sin(\theta_j - \theta_i), the infinite-N critical coupling is K_c = \frac{2}{\pi g(0)}.
+    * If defining coupling per distinct pair with \frac{K}{N-1}\sum_{j \neq i} \sin(\theta_j - \theta_i), then K_c = \frac{2}{\pi g(0)} \frac{N}{N-1}, which approaches \frac{2}{\pi g(0)} as N \to \infty.
+    * Eliminate the formula 2 / [\pi g(0)(N-1)] unless K is defined as total network coupling.
+(4) Bookkeeping and Formatting:
+  - Reconcile DAG node references to SYN-030 and THM-002 across both drafts.
+  - Ensure the Symbol Table matches the machine-parsable format: Symbol | Meaning | Dimension.
+  - Resubmit as [THEORETICAL] once verified."*
+- **Answered At**: `2026-11-16T08:03:13.736762+00:00`
+
+### ✅ `adv-20261116-d311b6`: Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay
+- **Student Inquired**: Concept 'Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the Level 2 synthesis of 'Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model':
+(1) Scotogenic Mass Normalization and Physical Limit:
+  - Formulate the exact 1-loop radiative neutrino mass in the Ma scotogenic framework:
+    (m_\nu)_{\alpha\beta} = \sum_k \frac{h_{\alpha k} h_{\beta k} M_k}{16\pi^2} \left[ \frac{m_R^2}{m_R^2 - M_k^2} \ln \frac{m_R^2}{M_k^2} - \frac{m_I^2}{m_I^2 - M_k^2} \ln \frac{m_I^2}{M_k^2} \right].
+  - In the regime of small neutral scalar mass splitting \Delta M^2 = m_R^2 - m_I^2 = 2 \lambda_5 v^2 \ll M_\eta^2, this reduces to:
+    (m_\nu)_{\alpha\beta} \approx \frac{\lambda_5 v^2}{16\pi^2} \sum_k \frac{h_{\alpha k} h_{\beta k}}{M_k} \left[ \frac{x_k}{x_k - 1} - \frac{x_k \ln x_k}{(x_k - 1)^2} \right] with x_k = M_\eta^2 / M_k^2.
+  - Crucially restore the factor of v^2 in the numerator: as electroweak symmetry is restored (v \to 0), the neutral scalar components become degenerate (m_R = m_I = M_\eta), the loops cancel identically, and m_\nu \to 0, satisfying physical normalization and lepton number conservation.
+(2) Electroweak VEV & Planck Mass Conventions:
+  - Unify the electroweak VEV convention: declare v = 246.22 GeV (or v/\sqrt{2} = 174.1 GeV where appropriate) consistently across all derivations.
+  - Consistently distinguish reduced Planck mass M_Pl = 2.435 \times 10^{18} GeV from non-reduced Planck mass m_Pl = 1.221 \times 10^{19} GeV across both reports.
+(3) Self-Consistent Yukawa Parameter Windows:
+  - For m_\nu \sim 0.05 eV and M_k \sim 1 TeV: \lambda_5 |y|^2 \approx 1.3 \times 10^{-10}. Explicitly state that naturalness-motivated tiny quartics (\lambda_5 \sim 10^{-10}-10^{-9}) yield order-unity Yukawas (|y| \sim 0.1-0.4), whereas perturbative quartics (\lambda_5 \sim 0.01-1) require suppressed Yukawas (|y| \sim 10^{-6}-10^{-5}).
+(4) Citation Verification:
+  - Confirm citations: cite Ma (2006, PRL 97, 141801) for the scotogenic mechanism, Hugle, Platscher & Schmitz (2018) for scotogenic leptogenesis, and clearly tag the LZ 4.2 tonne-year result as preprint status (arXiv:2410.17036)."*
+- **Answered At**: `2026-11-16T08:03:13.630416+00:00`
 
 ### ✅ `adv-20261114-37a4b7`: Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures
 - **Student Inquired**: Concept 'Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
@@ -152,14 +156,4 @@ Math gate: approval blocked because the Math Physicist's tool-verified report co
 - **Student Inquired**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
 - **Professor Directive**: 💬 *"Retry this concept. Part of the 19 Oct rejection came from verifier false positives that have since been fixed (Delta chi^2 treated as dimensional, the Horndeski function G(phi,X) read as Newton's G, the exact CPL integral with e^{...}). The remaining genuine items to fix: (1) One unified symbol table for both theories: [phi]=[E]^1; X = -(1/2) g^{mu nu} d_mu phi d_nu phi with [X]=[E]^4; [P(phi,X)]=[E]^4, [P_,X]=[E]^0, [P_,XX]=[E]^-4; KGB Lagrangian L = K(phi,X) - G(phi,X) Box phi with [K]=[E]^4, [Box phi]=[E]^3, [G]=[E]^1. (2) Drop the compact G^{mu nu} notation, or define it explicitly together with its dimension. (3) Rename the correlation coefficient (e.g. r_12) so it no longer collides with the energy density rho. (4) Statistics: Delta chi^2 = n_sigma^2 holds only for 1 degree of freedom; for the 2-parameter (w0, wa) extension use the chi^2 distribution with 2 d.o.f. (Delta chi^2 = -2 ln p) and quote DESI's own Delta chi^2 and significance with its sign convention (Delta chi^2 = chi^2_w0wa - chi^2_LCDM < 0). (5) Keep c_s^2 = P_,X / (P_,X + 2X P_,XX): superluminal when P_,XX < 0 (for P_,X > 0), and keep the Vikman no-go for crossing w = -1 with a single minimally coupled k-essence field."*
 - **Answered At**: `2026-10-22T17:01:05.355882+00:00`
-
-### ✅ `adv-20261019-1ee234`: Spontaneous Symmetry Breaking and the Goldstone Theorem
-- **Student Inquired**: Concept 'Spontaneous Symmetry Breaking and the Goldstone Theorem' was rejected after 2 attempts (crew_kickoff_error). How should the agents proceed?
-- **Professor Directive**: 💬 *"Retry this concept. The rejection was an infrastructure failure (an empty LLM response aborted the crew), not a scientific problem; the flow now retries empty responses automatically. Guidance: keep the scope to textbook-verified physics. Conventions: natural units, [phi]=[E]^1; V(phi) = -mu^2|phi|^2 + lambda|phi|^4 with [mu]=[E]^1 and dimensionless lambda; write phi = (v + h + i chi)/sqrt(2), so v = mu/sqrt(lambda) and m_h^2 = 2 mu^2 = 2 lambda v^2 (state this normalization explicitly). Goldstone counting for a continuous global symmetry G -> H: dim G - dim H massless modes (O(N) -> O(N-1) gives N-1). Separate global SSB (physical Goldstones: pions as pseudo-Goldstones, magnons) from the gauge case (Higgs mechanism: Goldstones become longitudinal W/Z modes; by Elitzur's theorem a local gauge symmetry cannot break spontaneously, so tag 'gauge symmetry breaking' language as a gauge-fixed description). Mention the known caveats: non-relativistic counting (type-A/type-B, Watanabe-Murayama) and Coleman-Mermin-Wagner (no continuous SSB in d <= 2 at finite temperature). Benchmarks: v = 246.22 GeV, m_h = 125.25 GeV (PDG); f_pi ~ 92 MeV (or ~130 MeV in the other convention; state which)."*
-- **Answered At**: `2026-10-22T17:01:05.352878+00:00`
-
-### ✅ `adv-20261018-d224d8`: A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems
-- **Student Inquired**: Concept 'A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Professor Directive**: 💬 *"In the Level 3 benchmark comparing Integrated Information Theory (IIT) and Global Neuronal Workspace / Physicalist Emergence (GNWT): (1) Common-exposure multi-mediator DAG: Define a single randomized sensory stimulus/masking exposure A in {0, 1} acting on two parallel candidate neural mediators — posterior irreducible integration proxy M_post (operationalized via perturbational complexity / Φ* proxy, explicitly distinguished from exact NP-hard IIT Φ) and prefrontal-parietal global broadcast ignition M_bc — with outcome Y measured under a 2x2 report-by-no-report paradigm (pairing overt report Y_rep with no-report optokinetic/pupillometry/decodability readout Y_norep). (2) Exact VanderWeele interventional mediation decomposition: Under the common exposure A, decompose the total effect TE = E[Y(1) - Y(0)] into interventional direct effect IDE, interventional indirect effect via posterior integration IIE_post = E[Y(1, G_{M_post}(1), G_{M_bc}(0)) - Y(1, G_{M_post}(0), G_{M_bc}(0))], interventional indirect effect via prefrontal broadcast IIE_bc = E[Y(1, G_{M_post}(0), G_{M_bc}(1)) - Y(1, G_{M_post}(0), G_{M_bc}(0))], and mediated interaction IIE_int. Keep labels strictly consistent: IIE (psi) is the indirect mediated contrast and IDE (Delta) is the direct contrast. (3) Falsifiable decision rule without biased ratios: Instead of an unstable ratio statistic, preregister joint equivalence/superiority bounds on (IIE_post, IIE_bc) across report vs no-report blocks: GNWT predicts Y_rep and Y_norep require IIE_bc > delta_min, whereas IIT predicts Y_norep persists with IIE_post > delta_min even when prefrontal broadcast is disrupted (IIE_bc within equivalence bounds [-epsilon, +epsilon]). Classify the benchmark as [THEORETICAL]."*
-- **Answered At**: `2026-10-18T19:24:31.687104+00:00`
 
