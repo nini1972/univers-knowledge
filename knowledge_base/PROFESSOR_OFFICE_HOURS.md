@@ -12,33 +12,18 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261118-b9f593` | L2 | **Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies** | UniverseFlow Orchestrator | Concept 'Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261118-b9f593` — Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies
-- **Timestamp**: `2026-11-18T01:01:05.464424+00:00`
-- **Level**: Level 2
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic's score is 5/5, which meets the threshold. The Math Physicist's status is [MATH_FLAWED] at 2/4, so the debate fails the math gate. It confirmed two real dimensional errors in the FDM half. First, the soliton invariant ρ_c r_c⁴ = 1/(2π m_a²) is dimensionally inconsistent because it is missing 1/G. The submitted SI 'correction' with c²/G adds a spurious factor. Second, the field decomposition φ = ψe^{-imt}/(√2 m_a) should divide by √(2m_a). The debate report itself says neither half can be treated as verified until the FDM equations are corrected. It is repairable, but it does not meet the approval policy as submitted.
-- **Agent Blockers**:
-  * Researcher: Restate the FDM soliton invariant with the correct normalization constant C and cite the source eigenvalue convention (Schive et al. 2014).
-  * Researcher: Replace the incorrect 'verified to 0.6%' claim with a reproducible numerical evaluation of ħ²/(G m_a²).
-  * Math Physicist: Re-derive ρ_c r_c⁴ = C ħ²/(G m_a²) in natural and SI units, with no c²/G factor, and state C explicitly.
-  * Math Physicist: Correct the NR decomposition to φ = (ψ e^{-i m_a t} + c.c.)/√(2 m_a) and make the symbol table's ψ dimension consistent.
-  * Math Physicist: Re-run the math gate on the corrected equations to reach at least 3/4 and [MATH_CONSISTENT] or [MATH_PROVEN].
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261118-b9f593 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (37)
+## 📚 Answered Advisory Consultations (38)
+
+### ✅ `adv-20261118-b9f593`: Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies
+- **Student Inquired**: Concept 'Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the Level 2 synthesis of 'Baryonic-Feedback Cusp Flattening in LambdaCDM vs Ultralight-Axion Soliton Cores': (1) Exact FDM Soliton Scale Invariant (No c^2/G Artifact): Re-derive the scaling invariant directly from the stationary Schrodinger-Poisson ground state (-hbar^2/(2 m_a) nabla^2 f + m_a (Phi - E/m_a) f = 0, nabla^2 Phi = 4 pi G rho_c f^2) with half-density radius r_c defined by f(r_c)^2 = 1/2. In natural units (hbar = c = 1), rho_c r_c^4 = C / (G m_a^2), which has mass dimension [E]^4 [E]^-4 = [E]^0 matching [G]^-1 [m_a]^-2 = [E]^2 [E]^-2 = [E]^0 (never omit 1/G). In SI units, restore hbar and convert m_a (eV/c^2 -> kg) directly via rho_c r_c^4 = C * hbar^2 / (G m_{a,kg}^2); since [hbar^2/(G m_a^2)] = kg*m = (kg/m^3)*m^4, eliminate all spurious c^2/G factors. State the dimensionless ground-state eigenvalue constant C explicitly: solving the dimensionless ground-state ODE (nabla^2 f = 2 phi f, nabla^2 phi = f^2, f(0)=1, phi(0) approx -0.64953) yields half-density radius x_{1/2} = 1.2993 and C = x_{1/2}^4 / (4 pi) approx 0.2268 (equivalently C = r_tilde_{1/2}^4 approx 0.2268 under Schive et al. 2014 PRL 113, 261302 normalization nabla^2 V = 4 pi |psi|^2). (2) Reproducible Numerical Evaluation: Replace the unverified '0.6%' claim and '1.6' shorthand with the exact calculation for m_a = 10^-22 eV (m_{a,kg} = 1.78266e-58 kg): hbar^2/(G m_a^2) = 5.243e57 kg*m = 8.546e7 M_sun/kpc, and rho_c r_c^4 = C * hbar^2/(G m_a^2) = 1.189e57 kg*m = 1.938e7 M_sun/kpc = 0.0194 M_sun/pc^3 * kpc^4, matching Schive et al. (2014) Eq. (3) (rho_c approx 0.019 (m_a/10^-22 eV)^-2 (r_c/kpc)^-4 M_sun/pc^3). (3) Non-Relativistic Field Decomposition & Symbol Table Consistency: Write the NR scalar-field decomposition as phi(t,x) = (psi(t,x) e^{-i m_a t} + c.c.) / sqrt(2 m_a) (dividing by sqrt(2 m_a), not sqrt(2) * m_a). With [phi] = [E]^1 and [psi] = [E]^{3/2} in natural units, [psi / sqrt(2 m_a)] = [E]^{3/2} / [E]^{1/2} = [E]^1 and rho = m_a |psi|^2 has [E]^4, resolving all dimensional inconsistencies. (4) Re-Verification Gate: Re-run the Math Physicist verification on the corrected equations to achieve >= 3/4 and [MATH_CONSISTENT] or [MATH_PROVEN], preserving the [THEORETICAL] classification and joint kinematic + de-biased lensing test protocol."*
+- **Answered At**: `2026-11-18T08:04:09.196848+00:00`
 
 ### ✅ `adv-20261116-6d7668`: 👏 Formally Acknowledged the new Dossier from Universe Knowledge
 - **Student Inquired**: Concept '👏 Formally Acknowledged the new Dossier from Universe Knowledge' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
@@ -171,9 +156,4 @@
 - **Student Inquired**: Concept 'Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
 - **Professor Directive**: 💬 *"Retry this concept. The rejection was justified, but the physical framework is sound; fix exactly these items and re-verify each one with the tools before resubmitting. (1) Sound-wave duration: tau_sw H_* = H_* R_* / U_f (O(1) prefactor as in Caprini et al. 2020); both sides must be dimensionless. State whether you use the suppression factor Upsilon = 1 - 1/sqrt(1 + 2 tau_sw H_*) or the min(tau_sw H_*, 1) approximation. (2) PTA conversion: Omega_GW(f) = (2 pi^2 / 3 H_0^2) f^2 h_c(f)^2; with h_c = A (f/f_yr)^{(3-gamma)/2} this gives Omega_GW(f) = (2 pi^2 f_yr^2 / 3 H_0^2) A^2 (f/f_yr)^{5-gamma} (exponent 2/3 for gamma = 13/3). (3) Horizon-crossing frequency: state one convention, f = a_i H_i / a_0 (no 2 pi; this is the convention behind 1.65e-5 Hz (T/100 GeV)(g_*/100)^{1/6}), and evaluate g_* and g_*s at T_i itself: 106.75 applies only above ~100 GeV, below ~0.5 MeV use g_* = 3.36 and g_*s = 3.91. Then recompute f_min,0 and lambda_0 = c / f_min,0 with the physics calculator (mode verify_claim) and quote the tool's value rather than a hand estimate. (4) For the PTA comparison against the SMBHB baseline, cite the NANOGrav 15-yr new-physics analysis (Afzal et al. 2023, ApJL 951, L11) for Bayes factors instead of deriving new ones."*
 - **Answered At**: `2026-10-22T17:01:05.358537+00:00`
-
-### ✅ `adv-20261019-e12f3d`: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
-- **Student Inquired**: Concept 'Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Professor Directive**: 💬 *"Retry this concept. Part of the 19 Oct rejection came from verifier false positives that have since been fixed (Delta chi^2 treated as dimensional, the Horndeski function G(phi,X) read as Newton's G, the exact CPL integral with e^{...}). The remaining genuine items to fix: (1) One unified symbol table for both theories: [phi]=[E]^1; X = -(1/2) g^{mu nu} d_mu phi d_nu phi with [X]=[E]^4; [P(phi,X)]=[E]^4, [P_,X]=[E]^0, [P_,XX]=[E]^-4; KGB Lagrangian L = K(phi,X) - G(phi,X) Box phi with [K]=[E]^4, [Box phi]=[E]^3, [G]=[E]^1. (2) Drop the compact G^{mu nu} notation, or define it explicitly together with its dimension. (3) Rename the correlation coefficient (e.g. r_12) so it no longer collides with the energy density rho. (4) Statistics: Delta chi^2 = n_sigma^2 holds only for 1 degree of freedom; for the 2-parameter (w0, wa) extension use the chi^2 distribution with 2 d.o.f. (Delta chi^2 = -2 ln p) and quote DESI's own Delta chi^2 and significance with its sign convention (Delta chi^2 = chi^2_w0wa - chi^2_LCDM < 0). (5) Keep c_s^2 = P_,X / (P_,X + 2X P_,XX): superluminal when P_,XX < 0 (for P_,X > 0), and keep the Vikman no-go for crossing w = -1 with a single minimally coupled k-essence field."*
-- **Answered At**: `2026-10-22T17:01:05.355882+00:00`
 
