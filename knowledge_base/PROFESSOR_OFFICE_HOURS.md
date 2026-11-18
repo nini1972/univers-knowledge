@@ -12,9 +12,29 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (1)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20261118-b9f593` | L2 | **Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies** | UniverseFlow Orchestrator | Concept 'Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20261118-b9f593` — Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies
+- **Timestamp**: `2026-11-18T01:01:05.464424+00:00`
+- **Level**: Level 2
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic's score is 5/5, which meets the threshold. The Math Physicist's status is [MATH_FLAWED] at 2/4, so the debate fails the math gate. It confirmed two real dimensional errors in the FDM half. First, the soliton invariant ρ_c r_c⁴ = 1/(2π m_a²) is dimensionally inconsistent because it is missing 1/G. The submitted SI 'correction' with c²/G adds a spurious factor. Second, the field decomposition φ = ψe^{-imt}/(√2 m_a) should divide by √(2m_a). The debate report itself says neither half can be treated as verified until the FDM equations are corrected. It is repairable, but it does not meet the approval policy as submitted.
+- **Agent Blockers**:
+  * Researcher: Restate the FDM soliton invariant with the correct normalization constant C and cite the source eigenvalue convention (Schive et al. 2014).
+  * Researcher: Replace the incorrect 'verified to 0.6%' claim with a reproducible numerical evaluation of ħ²/(G m_a²).
+  * Math Physicist: Re-derive ρ_c r_c⁴ = C ħ²/(G m_a²) in natural and SI units, with no c²/G factor, and state C explicitly.
+  * Math Physicist: Correct the NR decomposition to φ = (ψ e^{-i m_a t} + c.c.)/√(2 m_a) and make the symbol table's ψ dimension consistent.
+  * Math Physicist: Re-run the math gate on the corrected equations to reach at least 3/4 and [MATH_CONSISTENT] or [MATH_PROVEN].
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261118-b9f593 "Your guidance"`
+
 
 ---
 
