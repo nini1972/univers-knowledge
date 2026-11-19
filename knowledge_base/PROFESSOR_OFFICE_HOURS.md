@@ -12,9 +12,33 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (1)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20261119-d1a131` | L3 | **Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /** | UniverseFlow Orchestrator | Concept 'Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20261119-d1a131` — Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /
+- **Timestamp**: `2026-11-19T01:20:49.925606+00:00`
+- **Level**: Level 3
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Skeptic score is 4/6, which meets the threshold. However, the Math Physicist returned [MATH_FLAWED] with a score of 2/4, and the approval policy requires [MATH_PROVEN] or [MATH_CONSISTENT] with a score of at least 3/4. The report's headline B_crit of about 144 nG matches the true pressure balance sqrt(8*pi*n*kB*T). The printed derivation and parameter set are still internally inconsistent. The quoted density 1.02e-29 g/cm^3 is arithmetically false, since mu*m_p*n is about 5.92e-30. The tabulated sound speeds contradict the declared formula by a factor of about 2.21. The pressure-balance algebra has a sqrt(2) slip that cancels against a nonstandard c_s definition. The 'single self-consistent parameter set' and 'CLAIM_MISMATCH=0' claims are therefore false. The edge-weight kernel and its sign are also still underived, and neither the decision rule nor any observational test has been run.
+- **Agent Blockers**:
+  * Researcher: Recompute rho = mu*m_p*n correctly, which gives about 5.9e-30 g/cm^3 for n = 6e-6 and mu = 0.59, or state a different n explicitly.
+  * Researcher: Use the standard isothermal c_s = sqrt(kB*T/(mu*m_p)) with P = rho*c_s^2. Alternatively keep the sqrt(2) definition and write the pressure balance consistently. Make every tabulated c_s match the declared formula.
+  * Researcher: State the mu-independent result B_crit = sqrt(8*pi*n*kB*T) explicitly.
+  * Researcher: Re-run the reproducibility script and show all (rho, c_s, B_crit) triples agreeing with no CLAIM_MISMATCH.
+  * Researcher: Retag the seed-inertness claim as conditional on the filament thermodynamic regime and the seed-field prior, not [GENERAL].
+  * Researcher: Provide an SKA/LOFAR forecast and state clearly that no current measurement verifies HYP-154.
+  * Math Physicist: Fix the boxed pressure-balance algebra: B_crit = sqrt(8*pi*rho)*c_s when B^2/8pi = rho*c_s^2.
+  * Math Physicist: Derive or rigorously bound the sign of the exponential kernel W_ij = W0*exp[-(B/B_crit)^2], including the strengthening branch.
+  * Math Physicist: Execute the preregistered decision rule with N_sim >= 500, covariance estimate, power and BH-FDR outputs, or give a worked synthetic example.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261119-d1a131 "Your guidance"`
+
 
 ---
 

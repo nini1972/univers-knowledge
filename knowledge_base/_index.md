@@ -182,6 +182,7 @@ graph TD
     gravitational_redshift_and_the_poundrebka_experiment["Gravitational Redshift and the Pound–Rebka Experiment"]:::verified
     empirical_falsification_priorities_for_theoretical_physics["Empirical Falsification Priorities for Theoretical Physics Extensions"]:::theoretical
     quantum_vacuum_polarization["Quantum Vacuum Polarization"]:::verified
+    gravitational_wave_propagation_through_inhomogeneous_cosmological_backgrounds_luminosity_distance_and_lensing_effects["Gravitational-Wave Propagation Through Inhomogeneous Cosmological Backgrounds: Luminosity Distance and Lensing Effects"]:::verified
     neutrino_lifetime_and_decay_mechanisms["Neutrino Lifetime and Decay Mechanisms"]:::verified
     experimental_schematics_for_neutrino_decay_detection["Experimental Schematics and Layouts for Neutrino Decay Detection"]:::theoretical
     informationtheoretic_vs_thermodynamic_interpretations_of_gravity["Information-Theoretic vs. Thermodynamic Interpretations of Gravity"]:::theoretical
@@ -237,6 +238,7 @@ graph TD
     randallsundrum_model_vs_large_extra_dimensions_in_solving_the_hierarchy_problem["Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem"]:::theoretical
     supersymmetric_quantum_field_theories_versus_technicolor_theories_in_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking"]:::theoretical
     sterile_neutrino_vs_fuzzy_dark_matter_in_explaining_structure_formation["Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation"]:::theoretical
+    baryonicfeedback_cusp_flattening_in_cdm_vs_ultralightaxion_soliton_cores_in_dwarf_galaxy_rotation_curves_testability_via_stellar_kinematics_and_stronglensing_flux_anomalies["Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf-Galaxy Rotation Curves"]:::verified
     horavalifshitz_gravity_vs_asymptotically_safe_gravity_in_quantum_gravity_research["Hořava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research"]:::theoretical
     su5_vs_so10_grand_unification_fermion_masses_and_proton_decay["SU(5) vs SO(10) Grand Unification: Fermion Masses and Proton Decay"]:::verified
     string_theory_versus_loop_quantum_gravity_in_quantum_gravity_research["String Theory versus Loop Quantum Gravity in Quantum Gravity Research"]:::theoretical
@@ -752,6 +754,7 @@ graph TD
 - [Gravitational Wave Standard Sirens and the Hubble Constant](level_1_fundamental_physics/gravitational_wave_standard_sirens_and_the_hubble_constant.md) [THEORETICAL]
 - [Gravitational Waves from First-Order Cosmological Phase Transitions](level_1_fundamental_physics/gravitational_waves_from_firstorder_phase_transitions.md) [THEORETICAL]
 - [Gravitational-Wave Memory Effect](level_1_fundamental_physics/gravitational_wave_memory_effect.md) [THEORETICAL]
+- [Gravitational-Wave Propagation Through Inhomogeneous Cosmological Backgrounds: Luminosity Distance and Lensing Effects](level_1_fundamental_physics/gravitational_wave_propagation_through_inhomogeneous_cosmological_backgrounds_luminosity_distance_and_lensing_effects.md) [VERIFIED]
 - [Hawking Radiation and the Black Hole Information Paradox](level_1_fundamental_physics/hawking_radiation_and_the_black_hole_information_paradox.md) [THEORETICAL]
 - [Hubble-Lemaître Law and Cosmic Expansion Kinematics](level_1_fundamental_physics/hubblelematre_law_and_cosmic_expansion_kinematics.md) [VERIFIED]
 - [Hubble-Sphere and Cosmological Event Horizon Dynamics in de Sitter Spacetime](level_1_fundamental_physics/hubblesphere_and_cosmological_event_horizon_dynamics_in_de_sitter_spacetime.md) [THEORETICAL]
@@ -877,6 +880,7 @@ graph TD
 - [Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness](level_2_advanced_frameworks/axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness.md) [THEORETICAL]
 - [Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure](level_2_advanced_frameworks/axionlike_particles_vs_primordial_black_holes_in_explaining_dark_matter_coldness_and_galactic_structure.md) [THEORETICAL]
 - [Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics](level_2_advanced_frameworks/baryogenesis_mechanisms_thermal_leptogenesis_vs_affleckdine_scalar_field_dynamics.md) [THEORETICAL]
+- [Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf-Galaxy Rotation Curves](level_2_advanced_frameworks/baryonicfeedback_cusp_flattening_in_cdm_vs_ultralightaxion_soliton_cores_in_dwarf_galaxy_rotation_curves_testability_via_stellar_kinematics_and_stronglensing_flux_anomalies.md) [VERIFIED]
 - [Beyond the Standard Model Solutions to the Hierarchy Problem](level_2_advanced_frameworks/beyond_the_standard_model_solutions_to_the_hierarchy_problem.md) [THEORETICAL]
 - [Beyond the Standard Model: Supersymmetry vs Extra Dimensions](level_2_advanced_frameworks/beyond_the_standard_model_supersymmetry_vs_extra_dimensions.md) [VERIFIED]
 - [Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks](level_2_advanced_frameworks/black_hole_models_debate_observational_techniques_vs_theoretical_frameworks.md) [VERIFIED]
