@@ -12,37 +12,29 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261119-d1a131` | L3 | **Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /** | UniverseFlow Orchestrator | Concept 'Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261119-d1a131` — Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /
-- **Timestamp**: `2026-11-19T01:20:49.925606+00:00`
-- **Level**: Level 3
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Skeptic score is 4/6, which meets the threshold. However, the Math Physicist returned [MATH_FLAWED] with a score of 2/4, and the approval policy requires [MATH_PROVEN] or [MATH_CONSISTENT] with a score of at least 3/4. The report's headline B_crit of about 144 nG matches the true pressure balance sqrt(8*pi*n*kB*T). The printed derivation and parameter set are still internally inconsistent. The quoted density 1.02e-29 g/cm^3 is arithmetically false, since mu*m_p*n is about 5.92e-30. The tabulated sound speeds contradict the declared formula by a factor of about 2.21. The pressure-balance algebra has a sqrt(2) slip that cancels against a nonstandard c_s definition. The 'single self-consistent parameter set' and 'CLAIM_MISMATCH=0' claims are therefore false. The edge-weight kernel and its sign are also still underived, and neither the decision rule nor any observational test has been run.
-- **Agent Blockers**:
-  * Researcher: Recompute rho = mu*m_p*n correctly, which gives about 5.9e-30 g/cm^3 for n = 6e-6 and mu = 0.59, or state a different n explicitly.
-  * Researcher: Use the standard isothermal c_s = sqrt(kB*T/(mu*m_p)) with P = rho*c_s^2. Alternatively keep the sqrt(2) definition and write the pressure balance consistently. Make every tabulated c_s match the declared formula.
-  * Researcher: State the mu-independent result B_crit = sqrt(8*pi*n*kB*T) explicitly.
-  * Researcher: Re-run the reproducibility script and show all (rho, c_s, B_crit) triples agreeing with no CLAIM_MISMATCH.
-  * Researcher: Retag the seed-inertness claim as conditional on the filament thermodynamic regime and the seed-field prior, not [GENERAL].
-  * Researcher: Provide an SKA/LOFAR forecast and state clearly that no current measurement verifies HYP-154.
-  * Math Physicist: Fix the boxed pressure-balance algebra: B_crit = sqrt(8*pi*rho)*c_s when B^2/8pi = rho*c_s^2.
-  * Math Physicist: Derive or rigorously bound the sign of the exponential kernel W_ij = W0*exp[-(B/B_crit)^2], including the strengthening branch.
-  * Math Physicist: Execute the preregistered decision rule with N_sim >= 500, covariance estimate, power and BH-FDR outputs, or give a worked synthetic example.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261119-d1a131 "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (38)
+## 📚 Answered Advisory Consultations (39)
+
+### ✅ `adv-20261119-d1a131`: Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /
+- **Student Inquired**: Concept 'Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the Level 3 analysis of 'Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154)':
+(1) Single Self-Consistent Parameter Set & Standard Isothermal Convention: Declare the standard isothermal sound speed c_{s,iso} = sqrt(k_B T / (mu m_p)) with ideal-gas thermal pressure P_th = n k_B T = rho c_{s,iso}^2 in cgs-Gaussian units. With n = 6.0e-6 cm^-3, mu = 0.59, m_p = 1.6726e-24 g, and k_B = 1.380649e-16 erg/K:
+  - Recompute rho = mu * m_p * n = 5.92e-30 g/cm^3 exactly (eliminate the erroneous 1.02e-29 g/cm^3, which dropped mu).
+  - Fix the boxed pressure-balance algebra from B_crit^2 / (8*pi) = rho * c_{s,iso}^2 to B_crit = sqrt(8*pi*rho) * c_{s,iso}, and explicitly note the mu-independent form B_crit = sqrt(8*pi*n*k_B*T).
+  - Update every row of the (rho, c_{s,iso}, B_crit, g(100 nG)) table so all entries satisfy B_crit = sqrt(8*pi*rho)*c_{s,iso} identically with CLAIM_MISMATCH = 0:
+    * T = 10^5 K: c_{s,iso} = 37.4 km/s, B_crit = 45.6 nG, g(100 nG) = 99.2%
+    * T = 10^6 K (WHIM core): c_{s,iso} = 118.3 km/s, B_crit = 144.3 nG, g(100 nG) = 38.1%
+    * T = 10^7 K: c_{s,iso} = 374.0 km/s, B_crit = 456.3 nG, g(100 nG) = 4.69%
+  - Eliminate all leftover 117/370/1170 km/s values and sqrt(4*pi*rho)*c_s slips. Re-run the reproducibility script to verify all triples agree.
+(2) Complete Symbol Table: Declare explicit cgs units and dimensions for every equation symbol (including rho, c_s, B_crit, n, T, k_B, m_p, G, v_A, k_J, lambda_J, omega_A, L, D, W, W_0, W_ij, lambda_2, Delta lambda_2, Var, Cov) so the automated pre-check leaves zero UNDECIDABLE dimensional flags.
+(3) Exponential Kernel Ansatz & Branch Bounds: Explicitly tag W_ij = W_0 exp[-(B_ij/B_crit)^2] as [MODEL-DEPENDENT] phenomenological ansatz. Derive the weakening branch (Branch A) via the magnetized Jeans mass M_J^mag prop (c_{s,iso}^2 + v_A^2/2)^(3/2) = (c_{s,iso}^2 + B^2/(8*pi*rho))^(3/2), strictly increasing in B and bounded (W_ij -> 0 as B -> inf). Treat the cross-field confinement strengthening branch (Branch B) with a bounded parameterization (e.g., W_ij = W_0 [1 + alpha * (1 - exp(-(B/B_crit)^2))], avoiding unbounded exp[+(B/B_crit)^2]) and retain both as preregistered alternative model branches.
+(4) Conditional Tagging, Executed Decision Rule & Observational Forecast: Retag seed-PMF inertness (B_seed <= 10 nG => g <= 0.48% at T=10^6 K, <= 4.7% at T=10^5 K) as conditional on the WHIM thermodynamic regime (n, T) and seed-field prior, not [GENERAL]. Execute a worked synthetic paired-ensemble demonstration (N_sim >= 500 realizations) reporting Var(Delta lambda_2) with positive Cov retained, Z-score, power (>= 80% at alpha=0.05), and Benjamini-Hochberg FDR (q=0.05) outputs, clearly labeled as synthetic validation. Provide a quantitative SKA/LOFAR RM-grid and synchrotron-stacking forecast and state explicitly that no current measurement verifies HYP-154. Keep status [THEORETICAL] and achieve Math >= 3/4 ([MATH_CONSISTENT]) and Skeptic >= 4/6."*
+- **Answered At**: `2026-11-19T08:02:12.873908+00:00`
 
 ### ✅ `adv-20261118-b9f593`: Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies
 - **Student Inquired**: Concept 'Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
@@ -175,9 +167,4 @@
 - **Student Inquired**: Concept 'Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
 - **Professor Directive**: 💬 *"Retry this concept. All structural, dimensional, and topological items from the previous directive are now resolved; fix the remaining two numerical/reproducibility items and re-verify with the PhysicsCalculatorTool: (1) NANOGrav reference energy density at f_yr = 1/yr = 3.1688e-8 Hz: using Omega_GW(f) = (2 pi^2 / 3 H_0^2) f^2 h_c(f)^2 with h_c(f_yr) = A = 2.4e-15 and Planck H_0 = 67.36 km/s/Mpc = 2.183e-18 s^-1, direct evaluation gives Omega_GW(f_yr) = (2 pi^2 / 3) * (f_yr / H_0)^2 * A^2 = 7.99e-9 (or h^2 Omega_GW(f_yr) = 3.62e-9). Remove the erroneous 1.2e-13 value from both manuscripts and all comparison tables. (2) Explicit calculator-reproducible expression for the horizon-crossing frequency f_0 = (a_*/a_0) H_*: write out the exact inputs H_* = sqrt(pi^2 g_* / 90) T_*^2 / M_Pl and a_*/a_0 = (g_*s(T_0) / g_*s(T_*))^(1/3) (T_0 / T_*) with M_Pl = 2.43536e18 GeV, T_0 = 2.3486e-13 GeV, g_*s(T_0) = 3.909, and 1 GeV^-1 = 6.58212e-25 s, so that the PhysicsCalculatorTool expression (sqrt(pi^2 * g_star / 90) * (T_star^2 / M_Pl)) * (3.909 / g_stars)^(1/3) * (T_0 / T_star) / GeV_inv_to_s reproduces f_0 = 1.6647e-5 Hz (lambda_0 = c / f_0 = 1.801e13 m) at the electroweak benchmark T_* = 100 GeV (g_* = g_*s = 106.75), and f_0 = 8.89e-15 Hz (lambda_0 = 3.37e22 m = 1.09 Mpc) at the QCD/PTA-scale benchmark T_* = 100 MeV = 0.1 GeV (or 8.89e-15 Hz * (T_*/10^-7 GeV) below 0.5 MeV where g_* = 3.36, g_*s = 3.91). State the exact calculator expression in the text so the Math Physicist can verify it in one call. (3) Keep all resolved conventions from the previous attempt: rho_c = 3 H_0^2 M_Pl^2 = 3.6735e-47 GeV^4, tau_sw H_* = H_* R_* / U_f with [tau_sw] = [E]^-1 and [U_f] = [E]^0 declared in the Symbol Table, explicit choice of Upsilon = 1 - (1 + 2 tau_sw H_*)^(-1/2), and Afzal et al. 2023 (ApJL 951, L11) cited for PTA Bayes factors."*
 - **Answered At**: `2026-10-23T05:48:31.903933+00:00`
-
-### ✅ `adv-20261022-609db1`: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
-- **Student Inquired**: Concept 'Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Professor Directive**: 💬 *"Retry this concept. The rejection was justified, but the physical framework is sound; fix exactly these items and re-verify each one with the tools before resubmitting. (1) Sound-wave duration: tau_sw H_* = H_* R_* / U_f (O(1) prefactor as in Caprini et al. 2020); both sides must be dimensionless. State whether you use the suppression factor Upsilon = 1 - 1/sqrt(1 + 2 tau_sw H_*) or the min(tau_sw H_*, 1) approximation. (2) PTA conversion: Omega_GW(f) = (2 pi^2 / 3 H_0^2) f^2 h_c(f)^2; with h_c = A (f/f_yr)^{(3-gamma)/2} this gives Omega_GW(f) = (2 pi^2 f_yr^2 / 3 H_0^2) A^2 (f/f_yr)^{5-gamma} (exponent 2/3 for gamma = 13/3). (3) Horizon-crossing frequency: state one convention, f = a_i H_i / a_0 (no 2 pi; this is the convention behind 1.65e-5 Hz (T/100 GeV)(g_*/100)^{1/6}), and evaluate g_* and g_*s at T_i itself: 106.75 applies only above ~100 GeV, below ~0.5 MeV use g_* = 3.36 and g_*s = 3.91. Then recompute f_min,0 and lambda_0 = c / f_min,0 with the physics calculator (mode verify_claim) and quote the tool's value rather than a hand estimate. (4) For the PTA comparison against the SMBHB baseline, cite the NANOGrav 15-yr new-physics analysis (Afzal et al. 2023, ApJL 951, L11) for Bayes factors instead of deriving new ones."*
-- **Answered At**: `2026-10-22T17:01:05.358537+00:00`
 
