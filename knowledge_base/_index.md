@@ -181,6 +181,7 @@ graph TD
     baryon_acoustic_oscillations["Baryon Acoustic Oscillations"]:::verified
     gravitational_redshift_and_the_poundrebka_experiment["Gravitational Redshift and the Pound–Rebka Experiment"]:::verified
     empirical_falsification_priorities_for_theoretical_physics["Empirical Falsification Priorities for Theoretical Physics Extensions"]:::theoretical
+    casimir_effect["Casimir Effect"]:::verified
     quantum_vacuum_polarization["Quantum Vacuum Polarization"]:::verified
     gravitational_wave_propagation_through_inhomogeneous_cosmological_backgrounds_luminosity_distance_and_lensing_effects["Gravitational-Wave Propagation Through Inhomogeneous Cosmological Backgrounds: Luminosity Distance and Lensing Effects"]:::verified
     neutrino_lifetime_and_decay_mechanisms["Neutrino Lifetime and Decay Mechanisms"]:::verified
@@ -303,6 +304,7 @@ graph TD
     supersymmetric_quantum_field_theories_vs_composite_higgs_models_in_explaining_electroweak_symmetry_breaking["Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking"]:::theoretical
     quantum_decoherence_versus_objective_collapse_in_quantum_measurement_problem["Quantum Decoherence versus Objective Collapse in Quantum Measurement Problem"]:::theoretical
     multiverse_hypothesis_versus_anthropic_principle_debate["Multiverse Hypothesis versus Anthropic Principle Debate"]:::theoretical
+    cdm_subhalo_lensing_vs_primordial_magnetic_field_seeding_in_smallscale_matter_power_spectrum_tests_testability_via_lymanalpha_forest_cmb_spectral_distortions_and_21cm_signals["ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals"]:::verified
     conformal_cyclic_cosmology_vs_eternal_inflation_in_explaining_prebig_bang_initial_conditions["Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions"]:::theoretical
     dgp_gravity_vs_ft_teleparallel_gravity_in_explaining_latetime_cosmic_acceleration["DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration"]:::theoretical
     conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem["Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem"]:::verified
@@ -379,6 +381,7 @@ graph TD
     landauerbekenstein_thermodynamic_equivalence_and_information_erasure_in_selforganizing_cosmological_networks["Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks"]:::verified
     robustness_of_cosmicweb_persistent_homology_to_observational_selection_effects_and_baryonic_feedback["Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback"]:::theoretical
     a_preregistered_crossdomain_test_of_thermodynamic_uncertainty_bounds_on_reliable_information_processing_in_neural_circuits_and_cosmicweb_dynamics["A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics"]:::theoretical
+    regarding_the_pmf_cosmic_web_graph_laplacian_hypothesis_hyp154["Regarding the PMF Cosmic-Web Graph Laplacian Hypothesis (HYP-154 / HYP-230 / SYN-062)"]:::theoretical
     a_falsifiable_causalinformation_boundary_framework_for_the_hard_problem_testing_phenomenal_causation_epiphenomenalism_and_strong_emergence_under_microphysical_closure["A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure"]:::theoretical
     escapetime_law_tesc__2ak0r0a_and_the_universal_prefactor_u["The Kuramoto Escape-Time Law and Universal Prefactor"]:::theoretical
     topological_data_analysis_tda_of_persistent_homology_in_the_morphological_evolution_of_neural_networks_vs_cosmic_filamentary_networks["Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks"]:::theoretical
@@ -485,6 +488,7 @@ graph TD
     cosmic_microwave_background_radiation --- dark_matter
     quantum_decoherence --- operator_theoretic_foundations_of_neutrino_decay
     baryon_acoustic_oscillations --- hubblelematre_law_and_cosmic_expansion_kinematics
+    casimir_effect --- quantum_vacuum_fluctuations_and_zeropoint_energy
     quantum_field_theory --- quantum_vacuum_fluctuations_and_zeropoint_energy
     general_relativity --- spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit
     dark_matter --- cdm_cosmological_model
@@ -524,6 +528,7 @@ graph TD
     big_bang_nucleosynthesis --- big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions
     cosmological_lithium_problem --- big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions
     quantum_electrodynamics_qed --- quantum_vacuum_and_spacetime_structure
+    casimir_effect --- quantum_vacuum_and_spacetime_structure
     quantum_entanglement --- quantum_mechanics
     standard_model_of_particle_physics --- quantum_mechanics
     quantum_decoherence --- disentangling_neutrino_decay_from_nsi_and_decoherence
@@ -693,6 +698,7 @@ graph TD
 - [Big Bang Nucleosynthesis (BBN) Theory and Light-Element Abundance Predictions](level_1_fundamental_physics/big_bang_nucleosynthesis_bbn_theory_and_lightelement_abundance_predictions.md) [VERIFIED]
 - [Black Hole Thermodynamics](level_1_fundamental_physics/black_hole_thermodynamics.md) [VERIFIED]
 - [Calibration Strategies to Rule Out Confounding Neutrino Decay Signals](level_1_fundamental_physics/calibration_strategies_for_neutrino_decay_signals.md) [THEORETICAL]
+- [Casimir Effect](level_1_fundamental_physics/casimir_effect.md) [VERIFIED]
 - [Classical Electromagnetism](level_1_fundamental_physics/classical_electromagnetism.md) [VERIFIED]
 - [Classical Mechanics](level_1_fundamental_physics/classical_mechanics.md) [VERIFIED]
 - [CMB Lensing and the Sunyaev–Zel'dovich Effect](level_1_fundamental_physics/cosmic_microwave_background_lensing_and_the_sunyaevzeldovich_effect.md) [VERIFIED]
@@ -1017,6 +1023,7 @@ graph TD
 - [Vacuum Decay and Cosmological Inflationary Termination Debate](level_2_advanced_frameworks/vacuum_decay_and_cosmological_inflationary_termination_debate.md) [THEORETICAL]
 - [Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md) [THEORETICAL]
 - [ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies](level_2_advanced_frameworks/cdm_baryonic_feedback_vs_mond_external_field_effect_in_explaining_the_radial_acceleration_relation_of_galaxies.md) [VERIFIED]
+- [ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals](level_2_advanced_frameworks/cdm_subhalo_lensing_vs_primordial_magnetic_field_seeding_in_smallscale_matter_power_spectrum_tests_testability_via_lymanalpha_forest_cmb_spectral_distortions_and_21cm_signals.md) [VERIFIED]
 
 ## Level 3: Emergence and Intelligence
 
@@ -1098,6 +1105,7 @@ graph TD
 - [Quantum Fisher Information Bounds on Avian Radical-Pair Magnetoreception: Testing Quantum Enhancement Over the Classical Fisher Bound Under Decoherence](level_3_emergence_and_intelligence/quantum_fisher_information_bounds_on_avian_radicalpair_magnetoreception_testing_quantum_enhancement_over_the_classical_fisher_bound_under_decoherence.md) [THEORETICAL]
 - [Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation](level_3_emergence_and_intelligence/quantum_speedlimit_and_landauerdissipation_bounds_on_enzymecatalyzed_protontunneling_information_transfer_a_dimensionally_consistent_falsifiable_kineticisotopeeffect_test_of_cohere.md) [THEORETICAL]
 - [Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing](level_3_emergence_and_intelligence/quantum_thermodynamic_speed_limits_and_energetic_advantage_in_biological_sensing_a_falsifiable_benchmarkrelative_test_of_coherenceenhanced_information_processing.md) [THEORETICAL]
+- [Regarding the PMF Cosmic-Web Graph Laplacian Hypothesis (HYP-154 / HYP-230 / SYN-062)](level_3_emergence_and_intelligence/regarding_the_pmf_cosmic_web_graph_laplacian_hypothesis_hyp154.md) [THEORETICAL]
 - [Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure](level_3_emergence_and_intelligence/renormalizationgroup_constraints_on_integrated_information_testing_cg__micro_under_physicalist_causal_closure.md) [THEORETICAL]
 - [Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback](level_3_emergence_and_intelligence/robustness_of_cosmicweb_persistent_homology_to_observational_selection_effects_and_baryonic_feedback.md) [THEORETICAL]
 - [Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](level_3_emergence_and_intelligence/spectral_fractal_dimension_convergence_quantifying_selfsimilarity_in_cosmic_web_voids_and_biological_neural_network_topology.md) [THEORETICAL]

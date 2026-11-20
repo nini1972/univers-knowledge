@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONJECTURED]` (`3/4`)
 - **Bridged Colony Themes:** Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.bifurcation / colony_lib.scaling; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-19T01:20:55.493373+00:00`
+- **Export Timestamp:** `2026-11-20T00:59:05.888294+00:00`
 
 ---
 
