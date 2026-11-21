@@ -1,12 +1,38 @@
-# Comprehensive Audio Tags Reference
+# Gemini 3.8 TTS Inline Vocal Tags & Style Guide
 
-The following is a comprehensive list of inline audio tags that can be used within the `#### TRANSCRIPT` section to steer the performance. Audio tags are an intuitive way to control vocal style, pace, and delivery. By embedding these natural language commands directly into the text input, you can steer the AI-speech output with improved levels of granularity.
+Gemini 3.8 TTS (`gemini-3.8-flash-tts` and `gemini-3.8-flash-lite-tts`) separates **point-in-time inline vocal tags** inside `text` from **sustained emotional/acting directions** inside `speech_metadata.style`.
 
-**Important Notes:**
-* Annotating the transcript is where audio tags have the most impact.
-* These tags are suggestions/examples, not an exhaustive or limited list.
-* Tags must be in **English only**, but can be combined with text in other languages (e.g., `[anger] Je ne sais pas!`).
+> [!IMPORTANT]
+> Do **not** embed square-bracket stage directions (like `[anger]`, `[whispers]`, or `[medium pause]`) inside `text`. In Gemini 3.8 TTS, `text` is read verbatim unless using the supported angle-bracket vocal tags below.
 
-## Complete List
+## Supported Inline Vocal Tags (Inside `text`)
 
-`[acceptance]`, `[accomplishment]`, `[achievement]`, `[active]`, `[admiration]`, `[admonition]`, `[adoration]`, `[affection]`, `[aggression]`, `[agitation]`, `[alarm]`, `[amazement]`, `[ambivalence]`, `[amused]`, `[amusement]`, `[analysis]`, `[anger]`, `[animation]`, `[annoyance]`, `[anticipation]`, `[anxiety]`, `[apology]`, `[appreciation]`, `[apprehension]`, `[approval]`, `[arrogance]`, `[assertion]`, `[assertive]`, `[assertiveness]`, `[assurance]`, `[astonishment]`, `[aversion]`, `[awareness]`, `[awe]`, `[awkwardness]`, `[bargaining]`, `[boredom]`, `[caring]`, `[caution]`, `[cautious]`, `[certainty]`, `[challenging]`, `[comfort]`, `[compassion]`, `[concentration]`, `[concern]`, `[confidence]`, `[confident]`, `[confusion]`, `[contemplative]`, `[contempt]`, `[contentment]`, `[conviction]`, `[courage]`, `[craving]`, `[critical]`, `[criticism]`, `[curiosity]`, `[decision]`, `[defiance]`, `[demonstration]`, `[description]`, `[descriptive]`, `[desire]`, `[despair]`, `[desperation]`, `[despondency]`, `[determination]`, `[determined]`, `[devotion]`, `[directness]`, `[disagreement]`, `[disappointment]`, `[disapproval]`, `[disbelief]`, `[discernment]`, `[discomfort]`, `[disdain]`, `[disgust]`, `[disillusionment]`, `[dislike]`, `[dismissive]`, `[distress]`, `[doubt]`, `[dread]`, `[eagerness]`, `[effervescence]`, `[embarrassment]`, `[embitterment]`, `[embracement]`, `[empathy]`, `[emphasis]`, `[enchantment]`, `[encouraging]`, `[energetic]`, `[enjoyment]`, `[enthusiasm]`, `[enthusiastic]`, `[excitement]`, `[exhaustion]`, `[explaining]`, `[fascination]`, `[fast]`, `[fear]`, `[focus]`, `[fondness]`, `[friendly]`, `[frustration]`, `[gratification]`, `[gratitude]`, `[grief]`, `[guilt]`, `[happy]`, `[high energy]`, `[hope]`, `[horror]`, `[humor]`, `[hurt]`, `[incredulity]`, `[indifference]`, `[indignation]`, `[informative]`, `[instruction]`, `[interest]`, `[intrigue]`, `[invitation]`, `[joy]`, `[laughs]`, `[logical reasoning]`, `[long pause]`, `[love]`, `[low energy]`, `[melancholy]`, `[mixed]`, `[negative]`, `[negative surprise]`, `[nervousness]`, `[neutral]`, `[nostalgia]`, `[observation]`, `[offense]`, `[optimism]`, `[pain]`, `[panic]`, `[passion]`, `[passive]`, `[pensive]`, `[pessimism]`, `[pity]`, `[planning]`, `[playful]`, `[pleading]`, `[pleased]`, `[positive]`, `[positive surprise]`, `[praise]`, `[pride]`, `[realization]`, `[recognition]`, `[reflection]`, `[regret]`, `[relaxation]`, `[relief]`, `[reminiscence]`, `[resignation]`, `[sadness]`, `[sarcasm]`, `[satisfaction]`, `[self-deprecation]`, `[self-satisfaction]`, `[sentimentality]`, `[serenity]`, `[seriousness]`, `[shame]`, `[shock]`, `[short pause]`, `[skepticism]`, `[slight relief]`, `[smitten]`, `[solemnity]`, `[speculation]`, `[slow]`, `[strategizing]`, `[stress]`, `[struggle]`, `[success]`, `[suffering]`, `[suggestion]`, `[summary]`, `[surprise]`, `[suspicion]`, `[sympathy]`, `[tension]`, `[terror]`, `[thanks]`, `[thinking]`, `[thrill]`, `[tiredness]`, `[triumph]`, `[uncertainty]`, `[unclear]`, `[understanding]`, `[unease]`, `[urgency]`, `[victory]`, `[warning]`, `[weariness]`, `[whispers]`, `[wisdom]`, `[wistful]`, `[worry]`, `[yearning]`
+Use angle brackets for momentary human vocalizations and pauses:
+
+* `<laugh>` — natural laughter
+* `<sigh>` — audible exhale/sigh
+* `<gasp>` — sharp intake of breath / surprise
+* `<cough>` — brief throat clear or cough
+* `<breath>` — audible breath before a phrase
+* `<short pause>` — brief rhythmic pause
+
+Example:
+```text
+Wait... <short pause> did you hear that? <sigh> Let's try again.
+```
+
+## Sustained Tone, Emotion, and Pacing (Inside `speech_metadata.style`)
+
+Move all sustained delivery adjectives into the `speech_metadata` annotation's `style` field:
+
+* **Emotion & Attitude:** `"urgent and whispered"`, `"warm and enthusiastic"`, `"calm, reverent documentary narrator"`, `"exhausted and cynical"`, `"cheerful and friendly"`, `"sarcastic amusement"`, `"quiet awe"`
+* **Pacing & Dynamics:** `"slow, deliberate pacing"`, `"fast, energetic cadence"`, `"soft, intimate whisper"`, `"firm projection"`
+* **Accent:** `"Brixton London accent"`, `"Belgian Dutch (Flemish)"`, `"Received Pronunciation British English"`
+
+Example annotation:
+```json
+{
+  "type": "speech_metadata",
+  "style": "whispered urgently, fast pacing, slight nervousness"
+}
+```

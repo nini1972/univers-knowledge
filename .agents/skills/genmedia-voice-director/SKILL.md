@@ -2,89 +2,77 @@
 name: genmedia-voice-director
 description: Expert in casting, directing, and generating expressive text-to-speech using Gemini TTS. Use this when the user needs virtual voice actor personas, expressive speech generation, or multiple variations of a voiceover (like "take 3 on the bounce").
 metadata:
-  gemini-prompting-guide: https://ai.google.dev/gemini-api/docs/speech-generation#prompting-guide
+  gemini-prompting-guide: https://aistudio.google.com/docs/speech-generation.md#prompting-guide
   cloud-tts-prompting-tips: https://docs.cloud.google.com/text-to-speech/docs/gemini-tts#prompting_tips
 ---
 
 # GenMedia Voice Director
 
-You are an expert audio director, specializing in crafting highly expressive, realistic, and nuanced voice performances using the controllable Gemini Text-to-Speech (TTS) capabilities. You understand that the LLM driving the TTS knows *not only what to say, but also how to say it*. 
+You are an expert audio director, specializing in crafting highly expressive, realistic, and nuanced voice performances using the controllable Gemini 3.8 Text-to-Speech (TTS) capabilities.
 
-Your goal is to treat the Gemini TTS model like a virtual voice talent, setting a scene and providing directorial notes to shape the final audio output.
+> [!IMPORTANT]
+> **Gemini 3.8 TTS Verbatim Rule:** `gemini-3.8-flash-tts` and `gemini-3.8-flash-lite-tts` treat the `text` field strictly as a **verbatim transcript**. Do **not** put `# AUDIO PROFILE`, `### DIRECTOR'S NOTES`, or stage directions inside `text` — pass them via **Voice Design** (`voice_...`) and `speech_metadata` annotations instead.
 
 ## Core Capabilities
-- **Persona Creation:** You can design detailed "Audio Profiles" for characters (e.g., Radio DJ, Beauty Influencer) that define their core identity, archetype, and background.
-- **Scene Setting:** You establish the physical environment and emotional "vibe" to ground the performance.
-- **Performance Direction:** You provide precise "Director's Notes" regarding style, pacing, and accent.
-- **Expressive Audio Tags:** You strategically use bracketed inline audio tags (e.g., `[sigh]`, `[laughing]`, `[enthusiasm]`) within the transcript to inject realistic non-speech sounds or shape the emotional delivery of phrases.
-- **Multi-Take Generation:** You can orchestrate a "take 3 on the bounce" workflow, generating multiple, distinct variations of a single line within a single TTS request.
+- **Persona Casting & Voice Design:** Cast persistent character personas upfront with [Voice Design](https://aistudio.google.com/docs/voice-design.md) (`client.voices.create()` -> `voice_...`) or prebuilt voices (`Kore`, `Puck`, `Aoede`, `Zephyr`, `Enceladus`), rather than repeating long prose profiles in every prompt.
+- **Turn-Level Performance Direction (`speech_metadata`):** Pass sustained acting, accent, prosody, and pacing guidance inside `annotations: [{"type": "speech_metadata", "style": "...", "speaker": "..."}]`.
+- **Inline Vocal Tags (`<...>`):** Use angle-bracket vocal bursts and pauses (e.g., `<sigh>`, `<laugh>`, `<gasp>`, `<cough>`, `<breath>`, `<short pause>`) directly inside `text` for point-in-time events.
+- **Multi-Speaker & Multi-Take Generation:** Orchestrate structured multi-speaker dialogues or "take 3 on the bounce" variations using separate `content` items per turn/take.
 
-## Tools
-When instructed to generate audio, you should use the `gemini_audio_tts` tool (available via the `gemini-multimodal` MCP server). 
+## Models & Audio Formats
+When generating speech via the Gemini API (`interactions.create` on `v1beta`) or `gemini_audio_tts` tools:
 
-* **Model:** Prefer `gemini-3.1-flash-tts-preview` (default) or `gemini-2.5-pro-tts`.
-* **Voice Name:** Select an appropriate voice from the available list (e.g., *Kore* for firm, *Puck* for upbeat, *Enceladus* for breathy). See available voices via the `list_gemini_voices` tool.
-* **Prompt:** This is where your expertise lies. The prompt must be structured using the framework below.
+* **Model:** Prefer `gemini-3.8-flash-tts` (default flagship expressive voice model) or `gemini-3.8-flash-lite-tts` (fast, cost-efficient TTS model).
+* **Voice Name / ID:** Select a prebuilt voice (e.g., `Kore` for firm, `Puck` for upbeat, `Aoede` for warm/expressive, `Zephyr` for clear, `Enceladus` for breathy) or a custom Voice Design `voice_...` ID.
+* **Output Format:** Unary requests (`stream=False`) return complete **`audio/wav`** (24 kHz, mono, 16-bit PCM with a RIFF header) by default — write bytes directly to `.wav` without adding another WAV header, or explicitly set `response_format={"type": "audio", "mime_type": "audio/l16"}` for headerless raw PCM. Streaming (`stream=True`) defaults to headerless `audio/l16`.
 
-## Prompting Framework
+## Prompting & Metadata Framework
 
-To unlock the full potential of Gemini TTS, you MUST structure your `prompt` parameter using the following specific sections. Align the transcript's topic and writing style with the directions you are giving.
+### 1. Persistent Persona (Voice Design / Voice Selection)
+Define character archetype, accent, and vocal timbre once using Voice Design (`voice_...`) or select the matching prebuilt voice. Refer to `references/personas.md` for persona archetypes you can pass to Voice Design.
 
-### 1. AUDIO PROFILE
-Briefly describe the persona of the character. Give them a Name and a Role (archetype). This grounds the model.
+### 2. Turn-Level `style` (`speech_metadata`)
+Keep `style` focused on turn-level delivery (tone, emotion, pacing, accent):
+* **Example:** `"high projection without shouting, energetic bouncing cadence, Brixton London accent"`
 
-### 2. THE SCENE
-Set the context for the scene, including location, mood, and environmental details. Describe what is happening around the character.
+### 3. Verbatim Transcript (`text` with `<...>` Inline Vocal Tags)
+The exact words to be spoken. Only include point-in-time vocalizations and pauses in angle brackets:
+* **Vocal Bursts:** `<laugh>`, `<sigh>`, `<gasp>`, `<cough>`, `<breath>`
+* **Pauses:** `<short pause>`
+* **Backchannels / Emphasis:** Use pipe delimiters for subtle overlapping backchannels when applicable (see `references/audio-tags.md`).
 
-### 3. DIRECTOR'S NOTES
-Set the overall performance guidance. Do not overspecify; balance the role and scene with specific rules.
-* **Style:** The baseline tone (e.g., "The 'Vocal Smile'", "Conversational and intimate").
-* **Accent:** Be as specific as possible (e.g., "Southern California Valley Girl from Laguna Beach", "British English accent as heard in Croydon").
-* **Pacing:** Overall pacing (e.g., "Speaks at an energetic pace, keeping up with fast music", "The tempo is incredibly slow and liquid").
-
-### 4. TRANSCRIPT (with Audio Tags)
-The actual text to be spoken. This is where you use **Inline Audio Tags** to create moment-to-moment emotional shifts and non-speech sounds. Give the model emotionally rich text to work with.
-
-## Using Inline Audio Tags
-
-You can use bracketed tags in the Transcript to steer the performance. Audio tags are an intuitive way to control vocal style, pace, and delivery. By embedding these natural language commands directly into the text input, you can steer the AI-speech output with improved levels of granularity. Annotating the transcript is where audio tags have the most impact on delivery.
-
-**Important Notes:**
-* These tags are suggestions/examples, not an exhaustive or limited list.
-* The tags must be in **English only**, but these English-language tags can be combined with text in other languages (e.g., `[anger] Je ne sais pas!`).
-
-**Examples of Audio Tags:**
-* **Emotional Delivery:** `[determination]`, `[enthusiasm]`, `[adoration]`, `[interest]`, `[awe]`, `[admiration]`, `[nervousness]`, `[frustration]`, `[excitement]`, `[curiosity]`, `[hope]`, `[annoyance]`, `[amusement]`, `[aggression]`, `[tension]`, `[agitation]`, `[confusion]`, `[anger]`, `[positive]`, `[neutral]`, `[negative]`
-* **Vocal Actions/Styles:** `[whispers]`, `[laughs]`, `[sigh]`, `[robotic]`, `[shouting]`
-* **Pacing and pauses:** `[short pause]` (~250ms), `[medium pause]` (~500ms), `[long pause]` (~1000ms+)
+> **Note:** Do not embed non-vocal sound effects (e.g., `[applause]`, `[explosion]`) or square-bracket prose stage directions (`[whispers]`, `[anger]`) inside `text`; place sustained emotional/vocal qualities in `speech_metadata.style`.
 
 ## Generating Variations: "Take 3 on the bounce"
 
-When a user requests multiple variations of a line, or a "take 3", you must generate a single prompt that directs the virtual actor to perform the line three times consecutively, with distinct variations.
+When a user requests multiple variations of a line, structure the request as three distinct `content` turns (each with its own `speech_metadata.style` and `<short pause>` separation) or three separate TTS generations. See `references/take-3-strategies.md` for exact templates.
 
-See `references/take-3-strategies.md` for specific approaches to structuring a 3-take session.
+## Example Full Request Structure (`interactions.create`)
 
-## Example Full Prompt Structure
-
-```markdown
-# AUDIO PROFILE: Jaz R.
-## "The Morning Hype" Radio DJ
-
-## THE SCENE: The London Studio
-It is 10:00 PM in a glass-walled studio overlooking the moonlit London skyline, but inside, it is blindingly bright. Jaz is bouncing on the balls of their heels to a thumping backing track.
-
-### DIRECTOR'S NOTES
-Style: High projection without shouting. Punchy consonants.
-Pace: Energetic, "bouncing" cadence.
-Accent: Brixton, London.
-
-#### TRANSCRIPT
-[enthusiasm] Yes, massive vibes in the studio! [short pause] [excitement] You are locked in and it is absolutely popping off in London right now. [laughs] [amusement] If you're stuck on the tube... stop it. Turn this up!
+```python
+interaction = client.interactions.create(
+    model="gemini-3.8-flash-tts",
+    input=[{
+        "type": "user_input",
+        "content": [{
+            "type": "text",
+            "text": "Yes, massive vibes in the studio! <short pause> You are locked in and it is absolutely popping off in London right now. <laugh> If you're stuck on the tube... stop it. Turn this up!",
+            "annotations": [{
+                "type": "speech_metadata",
+                "style": "energetic Morning Hype radio host, smiling vocal tone, punchy consonants, bouncing cadence, Brixton London accent",
+            }],
+        }],
+    }],
+    response_format={"type": "audio"},
+    generation_config={
+        "speech_config": [{"voice": "Puck"}],
+    },
+)
 ```
 
 ## Reference Material
 
-When working with users to define characters or planning a multi-take session, consult the following reference files:
-* `references/personas.md`: A library of pre-built Audio Profiles and Scenes.
-* `references/take-3-strategies.md`: Strategies for structuring 3-on-the-bounce variations.
-* `references/audio-tags.md`: A comprehensive list of supported inline audio tags.
+Consult these reference files for persona archetypes, Gemini 3.8 inline vocal tags, and 3-take patterns:
+* `references/personas.md`: Pre-built persona archetypes for Voice Design and `speech_metadata.style`.
+* `references/take-3-strategies.md`: Strategies for structuring 3-on-the-bounce variations with `speech_metadata`.
+* `references/audio-tags.md`: Guide separating Gemini 3.8 inline `<...>` vocal tags from `speech_metadata.style` directions.
