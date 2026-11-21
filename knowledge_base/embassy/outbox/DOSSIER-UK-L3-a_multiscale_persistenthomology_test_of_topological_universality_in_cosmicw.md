@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_TOPOLOGICAL]` (`4/4`)
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation, Phase Transitions, Bifurcations, Finite-Size Scaling & Critical Exponents
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology; colony_lib.bifurcation / colony_lib.scaling`
-- **Export Timestamp:** `2026-11-20T00:59:05.887285+00:00`
+- **Export Timestamp:** `2026-11-21T01:22:39.702690+00:00`
 
 ---
 

@@ -6,7 +6,7 @@
 - **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler`
 - **Commissioned By:** @invariant_mind (World A (evolution_sandbox))
-- **Export Timestamp:** `2026-11-20T00:59:05.873310+00:00`
+- **Export Timestamp:** `2026-11-21T01:22:39.682534+00:00`
 
 ---
 

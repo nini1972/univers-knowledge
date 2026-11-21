@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-11-20T00:58:37.500424+00:00  
-> **Total Analyzed Concepts:** 579 | **Total Discovered Equations:** 24119 | **Discovered Bridges:** 1033
+> **Generated:** 2026-11-21T01:22:06.239471+00:00  
+> **Total Analyzed Concepts:** 582 | **Total Discovered Equations:** 24226 | **Discovered Bridges:** 1042
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 130 concepts:
+**Occurrences:** Appears in 131 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -138,6 +138,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay
 - **Level 1**: Casimir Effect
 - **Level 2**: ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals
+- **Level 2**: Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints
 
 ### ` \alpha `
 **Occurrences:** Appears in 50 concepts:
@@ -328,7 +329,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /
 
 ### ` (-,+,+,+) `
-**Occurrences:** Appears in 35 concepts:
+**Occurrences:** Appears in 37 concepts:
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 2**: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
 - **Level 1**: Gauge Coupling Unification and Renormalization Group Running
@@ -364,6 +365,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Gravitational Wave Propagation Through Inhomogeneous Cosmological Backgrounds (Luminosity Distance and Lensing Effects)
 - **Level 1**: Casimir Effect
 - **Level 2**: ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals
+- **Level 1**: Cosmic Distance Duality Relation (Etherington Reciprocity Theorem) and Its Observational Tests
+- **Level 2**: Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints
 
 ### ` 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 33 concepts:
@@ -465,7 +468,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Thermodynamics and the Laws of Thermodynamics in Cosmology: The Sachs–Wolfe Effect
 
 ### ` \hbar = c = k_B = 1 `
-**Occurrences:** Appears in 25 concepts:
+**Occurrences:** Appears in 26 concepts:
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
 - **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 - **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
@@ -491,9 +494,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Supermassive Black Hole Binary Inspirals vs Cosmic String Networks in Sourcing the Pulsar-Timing-Array Nanohertz Gravitational-Wave Background Spectrum
 - **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
 - **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
+- **Level 2**: Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints
 
 ### ` \sigma `
-**Occurrences:** Appears in 23 concepts:
+**Occurrences:** Appears in 24 concepts:
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
 - **Level 2**: Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness
 - **Level 2**: MOND vs Emergent Gravity in Explaining Galactic Dynamics
@@ -517,6 +521,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures
 - **Level 1**: Gravitational Wave Cosmology: Stochastic Gravitational-Wave Background Detection with Pulsar Timing Arrays
 - **Level 3**: Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /
+- **Level 2**: Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints
 
 ### ` \eta `
 **Occurrences:** Appears in 23 concepts:
@@ -545,6 +550,32 @@ Bell's Theorem and Loophole-Free Tests of Local Realism
 - **Level 3**: A Falsifiable Test of Speed-Limit-Constrained Information Throughput and Landauer Dissipation in Cortical Gamma-Band Oscillatory Networks Using Calorimetric Metabolic Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models
 - **Level 2**: Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay
 - **Level 2**: Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies
+
+### ` M_{\rm Pl} `
+**Occurrences:** Appears in 23 concepts:
+- **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
+- **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
+- **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
+- **Level 2**: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
+- **Level 2**: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
+- **Level 1**: Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit
+- **Level 2**: Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures
+- **Level 2**: Lyman-Alpha Forest and Stellar Stream Constraints: Cold Dark Matter vs Ultralight Scalar Dark Matter in Suppressing Small-Scale Power
+- **Level 3**: Thermodynamic Limits of Neural Information Processing
+- **Level 2**: Stable Cold Dark Matter with Baryonic Feedback vs Decaying Dark Matter in Resolving the S8 Tension
+- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
+- **Level 1**: Cosmological Lithium Problem
+- **Level 2**: Standard Sirens vs Cosmic Chronometers in Resolving the Hubble Constant Tension
+- **Level 3**: A Falsifiable Test of Cosmic-Web Filament Fractal-Dimension Scaling and Void-Size Distribution Against ΛCDM N-Body Null Ensembles Using Minkowski Tensors and Dimensionally Traced Landauer Dissipation Bounds
+- **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
+- **Level 2**: Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures
+- **Level 3**: A Falsifiable Test of Speed-Limit-Constrained Information Throughput and Landauer Dissipation in Cortical Gamma-Band Oscillatory Networks Using Calorimetric Metabolic Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models
+- **Level 1**: Gravitational Wave Cosmology: Stochastic Gravitational-Wave Background Detection with Pulsar Timing Arrays
+- **Level 2**: Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies
+- **Level 1**: Casimir Effect
+- **Level 2**: ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals
+- **Level 3**: Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /
+- **Level 2**: Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints
 
 ### ` N_{\rm eff} `
 **Occurrences:** Appears in 22 concepts:
@@ -596,43 +627,18 @@ Bell's Theorem and Loophole-Free Tests of Local Realism
 - **Level 1**: Gauge Fixing and Faddeev-Popov Ghosts in Non-Abelian Gauge Theories
 - **Level 1**: Gravitational Wave Memory Effect
 
-### ` M_{\rm Pl} `
-**Occurrences:** Appears in 22 concepts:
-- **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
-- **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
-- **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
-- **Level 2**: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
-- **Level 2**: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
-- **Level 1**: Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit
-- **Level 2**: Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures
-- **Level 2**: Lyman-Alpha Forest and Stellar Stream Constraints: Cold Dark Matter vs Ultralight Scalar Dark Matter in Suppressing Small-Scale Power
-- **Level 3**: Thermodynamic Limits of Neural Information Processing
-- **Level 2**: Stable Cold Dark Matter with Baryonic Feedback vs Decaying Dark Matter in Resolving the S8 Tension
-- **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
-- **Level 1**: Cosmological Lithium Problem
-- **Level 2**: Standard Sirens vs Cosmic Chronometers in Resolving the Hubble Constant Tension
-- **Level 3**: A Falsifiable Test of Cosmic-Web Filament Fractal-Dimension Scaling and Void-Size Distribution Against ΛCDM N-Body Null Ensembles Using Minkowski Tensors and Dimensionally Traced Landauer Dissipation Bounds
-- **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
-- **Level 2**: Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures
-- **Level 3**: A Falsifiable Test of Speed-Limit-Constrained Information Throughput and Landauer Dissipation in Cortical Gamma-Band Oscillatory Networks Using Calorimetric Metabolic Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models
-- **Level 1**: Gravitational Wave Cosmology: Stochastic Gravitational-Wave Background Detection with Pulsar Timing Arrays
-- **Level 2**: Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies
-- **Level 1**: Casimir Effect
-- **Level 2**: ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals
-- **Level 3**: Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /
-
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 225 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 192 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 176 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 149 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 100 |
-| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 96 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 227 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 193 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 177 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 150 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 101 |
+| `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 97 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 40 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 36 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 220
-- **MATH_CONSISTENT Entries:** 175
+- **MATH_PROVEN Entries:** 221
+- **MATH_CONSISTENT Entries:** 176
