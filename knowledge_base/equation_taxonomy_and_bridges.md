@@ -1,7 +1,7 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-11-21T01:22:06.239471+00:00  
-> **Total Analyzed Concepts:** 582 | **Total Discovered Equations:** 24226 | **Discovered Bridges:** 1042
+> **Generated:** 2026-11-22T01:06:16.827624+00:00  
+> **Total Analyzed Concepts:** 585 | **Total Discovered Equations:** 24341 | **Discovered Bridges:** 1048
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
@@ -287,7 +287,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics
 
 ### ` \gamma `
-**Occurrences:** Appears in 39 concepts:
+**Occurrences:** Appears in 40 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 2**: Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration
 - **Level 2**: Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration
@@ -327,9 +327,10 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: 👏 Formally Acknowledged the new Dossier from Universe Knowledge
 - **Level 2**: Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies
 - **Level 3**: Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /
+- **Level 1**: Gravitational Time Dilation and the Shapiro Delay
 
 ### ` (-,+,+,+) `
-**Occurrences:** Appears in 37 concepts:
+**Occurrences:** Appears in 39 concepts:
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 2**: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
 - **Level 1**: Gauge Coupling Unification and Renormalization Group Running
@@ -367,6 +368,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals
 - **Level 1**: Cosmic Distance Duality Relation (Etherington Reciprocity Theorem) and Its Observational Tests
 - **Level 2**: Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints
+- **Level 1**: Gravitational Time Dilation and the Shapiro Delay
+- **Level 2**: Annihilating Thermal WIMP vs Decaying Gravitino Dark Matter in Explaining Cosmic-Ray Antiproton, Gamma-Ray, and CMB Energy-Injection Constraints
 
 ### ` 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 33 concepts:
@@ -468,7 +471,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 1**: Thermodynamics and the Laws of Thermodynamics in Cosmology: The Sachs–Wolfe Effect
 
 ### ` \hbar = c = k_B = 1 `
-**Occurrences:** Appears in 26 concepts:
+**Occurrences:** Appears in 27 concepts:
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
 - **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 - **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
@@ -495,6 +498,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints
 - **Level 2**: Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures
 - **Level 2**: Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints
+- **Level 2**: Annihilating Thermal WIMP vs Decaying Gravitino Dark Matter in Explaining Cosmic-Ray Antiproton, Gamma-Ray, and CMB Energy-Injection Constraints
 
 ### ` \sigma `
 **Occurrences:** Appears in 24 concepts:
@@ -630,15 +634,15 @@ Bell's Theorem and Loophole-Free Tests of Local Realism
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 227 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 193 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 229 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 194 |
 | `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 177 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 150 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 101 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 151 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 102 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 97 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 40 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 36 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 221
-- **MATH_CONSISTENT Entries:** 176
+- **MATH_PROVEN Entries:** 223
+- **MATH_CONSISTENT Entries:** 177

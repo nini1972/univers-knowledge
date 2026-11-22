@@ -67,6 +67,7 @@ graph TD
     inflationary_cosmology["Inflationary Cosmology"]:::theoretical
     disentangling_neutrino_invisible_decay_from_flux_normalization_errors["Disentangling Neutrino Invisible Decay from Flux Normalization Errors"]:::theoretical
     quantum_vacuum_energy_contributions_to_the_cosmological_constant_problem["Quantum Vacuum Energy Contributions to the Cosmological Constant Problem"]:::theoretical
+    gravitational_time_dilation_and_the_shapiro_delay["Gravitational Time Dilation and the Shapiro Delay"]:::verified
     superfluid_dark_matter_phonon_effects["Superfluid Dark Matter Phonon Effects"]:::theoretical
     neutrino_oscillation_mechanisms["Neutrino Oscillation Mechanisms"]:::verified
     general_relativity["General Relativity"]:::verified
@@ -239,6 +240,7 @@ graph TD
     stochastic_gravity_vs_diosipenrose_objective_collapse_in_explaining_the_quantumtoclassical_transition["Stochastic Gravity vs. Diosi-Penrose Objective Collapse in Explaining the Quantum-to-Classical Transition"]:::theoretical
     electroweak_vs_spontaneous_baryogenesis_in_explaining_matterantimatter_asymmetry["Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry"]:::theoretical
     modified_newtonian_dynamics_vs_emergent_gravity_in_explaining_galactic_rotation_curves["Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves"]:::theoretical
+    annihilating_thermal_wimp_vs_decaying_gravitino_dark_matter_in_explaining_cosmicray_antiproton_gammaray_and_cmb_energyinjection_constraints["Annihilating Thermal WIMP vs Decaying Gravitino Dark Matter in Explaining Cosmic-Ray Antiproton, Gamma-Ray, and CMB Energy-Injection Constraints"]:::theoretical
     conformal_symmetry_breaking_vs_weylinvariant_gravity_in_addressing_the_cosmological_constant_problem["Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem"]:::verified
     singlefield_inflation_vs_the_curvaton_scenario_in_generating_primordial_perturbations["Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations"]:::theoretical
     asymptotic_safety_vs_noncommutative_geometry_in_ultraviolet_completion_of_spacetime["Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime"]:::theoretical
@@ -431,6 +433,7 @@ graph TD
     a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad["A Falsifiable Test of Quantum Coherence-Assisted Energy Transfer Efficiency Bounds in Warm Biological Microtubule-Free Mitochondrial Electron Transport Chains Using Redfield-Lindblad Dephasing Models With Explicit SI-Unit Tracing and Pre-Specified Classical Kinetic Null Models"]:::theoretical
     falsifiable_quantum_fisher_information_and_lindbladian_dephasing_bounds_on_coherenceassisted_electron_transfer_in_warm_biological_photosynthetic_reaction_centers_with_explicit_siun["Falsifiable Quantum Fisher Information and Lindbladian Dephasing Bounds on Coherence-Assisted Electron Transfer in Warm Biological Photosynthetic Reaction Centers"]:::theoretical
     margoluslevitin_and_landauer_operational_bounds_on_sustained_informationprocessing_rates_in_cortical_microcircuits_a_dimensionally_consistent_falsifiable_calorimetric_test_using_me["Margolus–Levitin and Landauer Operational Bounds on Sustained Information-Processing Rates in Cortical Microcircuits: A Dimensionally Consistent, Falsifiable Calorimetric Test Using Measured ATP Turnover and Spike-Train Entropy Rates"]:::theoretical
+    clarification__collaboration_request_for_syn062_pmf_spectral_invariant["Clarification & Collaboration Request for SYN-062 (PMF Spectral Invariant)"]:::theoretical
     hyp230_posted_primordial_magnetic_field_constraints_as_a_dynamical["HYP-230: Primordial Magnetic Field Constraints as a Dynamical Systems Invariant"]:::theoretical
     computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation["Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation"]:::theoretical
 
@@ -477,6 +480,7 @@ graph TD
     quantum_measurement_problem --- quantum_decoherence
     big_bang_nucleosynthesis --- inflationary_reheating_mechanisms
     primordial_gravitational_waves --- inflationary_cosmology
+    general_relativity --- gravitational_time_dilation_and_the_shapiro_delay
     quantum_mechanics --- general_relativity
     baryon_acoustic_oscillations --- cosmic_distance_duality_relation_etherington_reciprocity_theorem_and_its_observational_tests
     big_bang_nucleosynthesis --- cosmological_lithium_problem
@@ -758,6 +762,7 @@ graph TD
 - [General Relativity](level_1_fundamental_physics/general_relativity.md) [VERIFIED]
 - [Gravitational Lensing](level_1_fundamental_physics/gravitational_lensing.md) [VERIFIED]
 - [Gravitational Redshift and the Pound–Rebka Experiment](level_1_fundamental_physics/gravitational_redshift_and_the_poundrebka_experiment.md) [VERIFIED]
+- [Gravitational Time Dilation and the Shapiro Delay](level_1_fundamental_physics/gravitational_time_dilation_and_the_shapiro_delay.md) [VERIFIED]
 - [Gravitational Wave Astronomy](level_1_fundamental_physics/gravitational_wave_astronomy.md) [VERIFIED]
 - [Gravitational Wave Constraints on the Speed of Gravity and Tests of Lorentz-Invariant Propagation (GW170817)](level_1_fundamental_physics/gravitational_wave_constraints_on_the_speed_of_gravity_and_tests_of_lorentzinvariant_propagation_gw170817.md) [VERIFIED]
 - [Gravitational Wave Cosmology: Stochastic Gravitational-Wave Background Detection with Pulsar Timing Arrays](level_1_fundamental_physics/gravitational_wave_cosmology_stochastic_gravitationalwave_background_detection_with_pulsar_timing_arrays.md) [VERIFIED]
@@ -873,6 +878,7 @@ graph TD
 
 ## Level 2: Advanced Frameworks
 
+- [Annihilating Thermal WIMP vs Decaying Gravitino Dark Matter in Explaining Cosmic-Ray Antiproton, Gamma-Ray, and CMB Energy-Injection Constraints](level_2_advanced_frameworks/annihilating_thermal_wimp_vs_decaying_gravitino_dark_matter_in_explaining_cosmicray_antiproton_gammaray_and_cmb_energyinjection_constraints.md) [THEORETICAL]
 - [Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance](level_2_advanced_frameworks/asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance.md) [VERIFIED]
 - [Asymmetric Dark Matter vs SIMP Dark Matter in Explaining Dark Matter Abundance and Small-Scale structure](level_2_advanced_frameworks/asymmetric_dark_matter_vs_simp_dark_matter_in_explaining_dark_matter_abundance_and_smallscale_structure.md) [THEORETICAL]
 - [Asymmetric Dark Matter vs WIMP Baryogenesis in Explaining Matter-Antimatter Asymmetry](level_2_advanced_frameworks/asymmetric_dark_matter_vs_wimp_baryogenesis_in_explaining_matterantimatter_asymmetry.md) [THEORETICAL]
@@ -1061,6 +1067,7 @@ graph TD
 - [Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](level_3_emergence_and_intelligence/axiomatic_bridge_principles_from_microphysical_causal_structure_to_phenomenal_unity_a_falsifiable_test_of_integrated_information_theory_under_physicalist_closure.md) [THEORETICAL]
 - [Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](level_3_emergence_and_intelligence/causal_closure_multiple_realizability_and_the_explanatory_gap_an_axiomatic_and_empirically_falsifiable_physicalist_framework_for_consciousness.md) [THEORETICAL]
 - [Causal-Intervention Tests of Integrated Information and Macro-Level Explanatory Autonomy in Neural Systems](level_3_emergence_and_intelligence/causalintervention_tests_of_integrated_information_and_macrolevel_explanatory_autonomy_in_neural_systems.md) [THEORETICAL]
+- [Clarification & Collaboration Request for SYN-062 (PMF Spectral Invariant)](level_3_emergence_and_intelligence/clarification__collaboration_request_for_syn062_pmf_spectral_invariant.md) [THEORETICAL]
 - [Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](level_3_emergence_and_intelligence/computational_complexity_and_scalability_of_selforganizing_systems_in_cosmological_and_biological_neural_networks.md) [THEORETICAL]
 - [Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation](level_3_emergence_and_intelligence/computational_irreducibility_and_algorithmic_information_compression_in_neural_manifolds_versus_cosmological_structure_formation.md) [THEORETICAL]
 - [Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory](level_3_emergence_and_intelligence/dissociating_phenomenal_structure_from_cognitive_access_a_falsifiable_causalperturbation_test_of_integrated_information_theory_and_global_neuronal_workspace_theory.md) [THEORETICAL]
