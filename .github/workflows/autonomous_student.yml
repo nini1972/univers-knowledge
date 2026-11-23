@@ -40,7 +40,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v6
         with:
-          go-version: '1.22'
+          go-version: '1.26'
           cache: false
 
       - name: Install Dependencies
@@ -60,6 +60,8 @@ jobs:
 
 
       - name: Build Linux Genmedia Binary
+        env:
+          GOTOOLCHAIN: auto
         run: |
           set -euo pipefail
           mkdir -p .mcp-servers
