@@ -65,7 +65,7 @@ Notably, the ΛCDM model’s empirical parameters are tightly constrained by Pla
 Researchers using this report can rely on it as a thorough and up-to-date resource for theoretical investigation and cosmological model development related to dark energy.
 
 ## 6. Visual Representation
-![Cosmological Constant versus Quintessence in Explaining Dark Energy](../images/gemini_20260628011801_1.png)
+![Cosmological Constant versus Quintessence in Explaining Dark Energy](../images/gemini_20260628011801_1.webp)
 
 ## 7. Related Concepts
 - ΛCDM Cosmology and its observational foundations  

@@ -40,7 +40,7 @@ Skepticism arises primarily due to a lack of empirical validation for the predic
 The theoretical framework and predictions propose intriguing links, yet without reliable experimental corroboration, these conjectures remain speculative. Consistent data from LIGO/Virgo/KAGRA satellites show a predominance of classical predictions, stressing the importance of further theoretical and experimental endeavors.
 
 ## 6. Visual Representation
-![Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?](../images/gemini_20260712150758_0.png)
+![Can the theoretical predictions from quantum extremal surface computations and modified gravity approaches be linked to potentially observable signatures, e.g., in black hole evaporation or gravitational wave echoes, to enable empirical testing?](../images/gemini_20260712150758_0.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

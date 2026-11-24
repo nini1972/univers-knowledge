@@ -25,7 +25,7 @@ The mathematical structures behind both frameworks are explored in-depth, reveal
 The report maintains high standards by flagging ad-hoc assumptions such as the orbifold structure in RS and the fine-tuning required in Extended Technicolor.
 
 ## 5. Verification & Skeptic's Notes
-![Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem](../images/gemini_20260807020315_0.png)
+![Brane-World Warped Extra Dimensions vs. Dynamical Technicolor in Resolving the Hierarchy Problem](../images/gemini_20260807020315_0.webp)
 
 ## 6. Visual Representation
 Visual aids and graphical representations linked to the described frameworks will help in understanding their comparative analysis.

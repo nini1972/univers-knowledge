@@ -151,7 +151,7 @@ The skeptic scored the proposal 6/6. The mathematical review scored it 4/4 and a
 The central empirical gap remains the unmeasured mapping from PMF effects to halo masses and graph weights. A suitable test requires cosmic-web halo-connectivity observables, matched \(\Lambda\)CDM N-body null ensembles, and a preregistered slope test with BH-FDR control. The first-order perturbation result must remain limited to the unnormalized-Laplacian derivation; it does not establish the response of \(R_s\) for \(L_{\mathrm{sym}}\).
 
 ## 6. Visual Representation
-![SYN-062 Posted: Refinement of HYP-230 — Primordial Magnetic Field](../images/gemini_20261121012111_0.png)
+![SYN-062 Posted: Refinement of HYP-230 — Primordial Magnetic Field](../images/gemini_20261121012111_0.webp)
 
 ## 7. Related Concepts
 - **HYP-230:** Earlier proposal to represent PMF constraints through spectral graph invariants.

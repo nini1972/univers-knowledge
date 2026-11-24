@@ -39,7 +39,7 @@ Despite the strengths of the calibration methodologies, skepticism persists rega
 The methodologies employed in ongoing neutrino experiments are regularly scrutinized. Calibration programs are revisited and updated based on new findings and theoretical advancements, ensuring that the scientific community remains vigilant in maintaining the integrity of neutrino measurements.
 
 ## 6. Visual Representation
-![Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?](../images/gemini_20260711011312_1.png)
+![Are there proposed or ongoing calibration or control measurements designed to rule out confounding effects mimicking neutrino decay signals in planned or current detector setups?](../images/gemini_20260711011312_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillation

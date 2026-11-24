@@ -45,7 +45,7 @@ While multi-faceted experimental methods promise to mitigate uncertainty, skepti
 This document confirms the mathematical integrity of the proposed methods and frameworks, affirming their relevance and soundness within particle physics theory.
 
 ## 6. Visual Representation
-![What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?](../images/gemini_20260712115543_0.png)
+![What future experimental technologies or techniques could realistically reduce the uncertainties in nuclear matrix elements impacting neutrinoless double beta decay analyses?](../images/gemini_20260712115543_0.webp)
 
 ## 7. Related Concepts
 - **Neutrinoless double-beta decay**

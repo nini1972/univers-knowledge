@@ -167,7 +167,7 @@ These limitations make the proposal a **research program**, not a result.
 - **Citation hygiene:** Preserve specific author, year, journal, and DOI/arXiv identifiers; independently resolve DOI details and investigate the reported Oprea et al. volume-year anomaly before relying on it.
 
 ## 6. Visual Representation
-![A Falsifiable Test of Speed-Limit-Constrained Information Throughput and Landauer Dissipation in Cortical Gamma-Band Oscillatory Networks Using Calorimetric Metabolic Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models](../images/gemini_20261115010823_0.png)
+![A Falsifiable Test of Speed-Limit-Constrained Information Throughput and Landauer Dissipation in Cortical Gamma-Band Oscillatory Networks Using Calorimetric Metabolic Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models](../images/gemini_20261115010823_0.webp)
 
 ## 7. Related Concepts
 - [[Landauer Principle]]

@@ -33,7 +33,7 @@ The CNB remains classified as a theoretical construct primarily due to the absen
 The Cosmic Neutrino Background is rigorously supported by multiple independent, high-quality sources and tightly integrated within the standard frameworks of cosmology and particle physics. The skeptical review confirms that all necessary verification metrics—conceptual clarity, theoretical consistency, mathematical integrity, and addressing alternative viewpoints—have been satisfied. Despite this robust verification, the report clearly flags the CNB as [THEORETICAL], pending direct experimental confirmation.
 
 ## 6. Visual Representation
-![Cosmic Neutrino Background](../images/gemini_20260701231804_0.png)
+![Cosmic Neutrino Background](../images/gemini_20260701231804_0.webp)
 
 ## 7. Related Concepts
 - Cosmic Microwave Background (CMB)

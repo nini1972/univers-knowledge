@@ -46,7 +46,7 @@ The concept of neutrino mass is approved because experimental evidence from neut
 The report maintains scientific rigor, logical consistency, and transparency about empirical gaps and alternative hypotheses such as sterile neutrinos and nonstandard interactions. Overall, the core verification criteria are met with appropriate caution applied to unsettled theoretical issues.
 
 ## 6. Visual Representation
-![Neutrino Mass and its Role in Particle Physics and Cosmology](../images/gemini_20261023011839_1.png)
+![Neutrino Mass and its Role in Particle Physics and Cosmology](../images/gemini_20261023011839_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

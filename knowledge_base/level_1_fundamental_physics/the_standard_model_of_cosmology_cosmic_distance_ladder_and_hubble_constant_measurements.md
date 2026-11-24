@@ -67,7 +67,7 @@ The cosmic distance-ladder methodology and the observational discrepancy between
 These independent measurements substantiate the existence of the discrepancy, but do not independently verify a proposed new-physics explanation. The physical resolutions discussed in the literature should be treated as hypotheses, not established results.
 
 ## 6. Visual Representation
-![The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements](../images/gemini_20261024011223_0.png)
+![The Standard Model of Cosmology: Cosmic Distance Ladder and Hubble Constant Measurements](../images/gemini_20261024011223_0.webp)
 
 ## 7. Related Concepts
 - [[ΛCDM]]

@@ -29,7 +29,7 @@ The mathematical framework underlying this analysis incorporates Bayesian statis
 The verification of the methodologies employed in this analysis is grounded in robust statistical principles. The Bayesian evidence framework enables a nuanced understanding that frequentist approaches do not capture adequately when assessing decay models.
 
 ## 6. Visual Representation
-![How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?](../images/gemini_20260828032541_1.png)
+![How would a joint Bayesian evidence analysis significantly alter the current frequentist conclusion that the 'decay hypothesis' is only a 1.5σ fluctuation?](../images/gemini_20260828032541_1.webp)
 
 ## 7. Related Concepts
 - Bayesian Statistics

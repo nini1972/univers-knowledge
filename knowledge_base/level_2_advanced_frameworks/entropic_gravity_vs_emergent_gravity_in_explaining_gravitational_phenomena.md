@@ -71,7 +71,7 @@ While Entropic and Emergent Gravity present elegant reinterpretations of gravity
 The evaluation rigorously applies a verification checklist across conceptual clarity, literature consensus, mathematical rigor, and empirical assessment. It achieves a skeptic review score of 5/5, indicating thorough vetting and transparency in the discussion of limitations. The report clearly distinguishes between theoretical promise and current evidential standing, affirming the status of Entropic and Emergent Gravity as active research domains with no definitive experimental verification yet.
 
 ## 6. Visual Representation
-![Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena](../images/gemini_20260618012147_1.png)
+![Entropic Gravity vs Emergent Gravity in Explaining Gravitational Phenomena](../images/gemini_20260618012147_1.webp)
 
 ## 7. Related Concepts
 - Holographic Principle  

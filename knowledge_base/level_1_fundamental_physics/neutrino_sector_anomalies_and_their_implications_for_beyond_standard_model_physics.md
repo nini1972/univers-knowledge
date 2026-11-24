@@ -57,7 +57,7 @@ The skeptic’s verification score for this research report is 5 out of 5, indic
 Minor suggestions for improvement do not affect the overall scientific validity or approval of the report. The conceptual framework remains a crucial baseline for ongoing research, pending future experimental confirmation.
 
 ## 6. Visual Representation
-![Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics](../images/gemini_20260701185715_1.png)
+![Neutrino Sector Anomalies and Their Implications for Beyond Standard Model Physics](../images/gemini_20260701185715_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

@@ -158,7 +158,7 @@ The Math Physicist assigned **3/4** and **[MATH_CONSISTENT]**. The score indicat
 The bibliography above preserves specific papers and identifiers for foundational ENAQT, photosynthetic coherence, and quantum coherence as a resource. The research report supplied for this entry refers to its supporting literature by numbered citations but does not include the full reference list; the sources listed here should not be treated as a reconstructed mapping of every numbered reference.
 
 ## 6. Visual Representation
-![A Falsifiable Test of Quantum Coherence-Assisted Energy Transfer Efficiency Bounds in Warm Biological Microtubule-Free Mitochondrial Electron Transport Chains Using Redfield-Lindblad Dephasing Models With Explicit SI-Unit Tracing and Pre-Specified Classical Kinetic Null Models](../images/gemini_20261106010648_0.png)
+![A Falsifiable Test of Quantum Coherence-Assisted Energy Transfer Efficiency Bounds in Warm Biological Microtubule-Free Mitochondrial Electron Transport Chains Using Redfield-Lindblad Dephasing Models With Explicit SI-Unit Tracing and Pre-Specified Classical Kinetic Null Models](../images/gemini_20261106010648_0.webp)
 
 ## 7. Related Concepts
 - [[Environment-Assisted Quantum Transport (ENAQT)]]

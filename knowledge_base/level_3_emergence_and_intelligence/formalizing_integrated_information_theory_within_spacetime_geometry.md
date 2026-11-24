@@ -33,7 +33,7 @@ Critics point out that the lack of a mathematical coupling to conventional space
 The validity of the concepts within IIT is underpinned by robust mathematical formulations. However, ongoing discussions emphasize the theory's conjectural status due to the challenges in empirical validation and the need for a derived field-theoretic mechanism.
 
 ## 6. Visual Representation
-![Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?](../images/gemini_20260805014250_0.png)
+![Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?](../images/gemini_20260805014250_0.webp)
 
 ## 7. Related Concepts
 - Consciousness Studies

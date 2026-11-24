@@ -33,7 +33,7 @@ Critics may question the reliance on theoretical constructs without experimental
 ...
 
 ## 6. Visual Representation
-![What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?](../images/gemini_20260729011552_0.png)
+![What experimental advances are required to unambiguously distinguish neutrino decay effects from oscillation, NSI, and decoherence effects?](../images/gemini_20260729011552_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillation

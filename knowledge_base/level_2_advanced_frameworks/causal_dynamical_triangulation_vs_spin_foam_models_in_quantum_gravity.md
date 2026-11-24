@@ -65,7 +65,7 @@ The report was subjected to a skeptic verification scoring system, successfully 
 Both frameworks' theoretical nature is maintained, but the comprehensive review and verification standards justify formal approval of the report as a trusted academic resource.
 
 ## 6. Visual Representation
-![Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](../images/gemini_20261024011301_0.png)
+![Causal Dynamical Triangulation vs Spin Foam Models in Quantum Gravity](../images/gemini_20261024011301_0.webp)
 
 ## 7. Related Concepts
 - Loop Quantum Gravity

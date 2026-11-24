@@ -81,7 +81,7 @@ The corrected dark-energy expansion equation and the proper domain of the low-re
 The term “clean” is not used as an unqualified description of standard sirens: they provide a geometrically distinct distance measurement, but their inference still depends on observational data, modeling, and systematic-error control. Topological structures mentioned in the mathematical audit are not relevant to measuring \(H_0\) with standard sirens and are not treated as part of this knowledge entry.
 
 ## 6. Visual Representation
-![Gravitational Wave Standard Sirens and the Hubble Constant](../images/gemini_20261024004724_0.png)
+![Gravitational Wave Standard Sirens and the Hubble Constant](../images/gemini_20261024004724_0.webp)
 
 ## 7. Related Concepts
 - Hubble constant (\(H_0\))

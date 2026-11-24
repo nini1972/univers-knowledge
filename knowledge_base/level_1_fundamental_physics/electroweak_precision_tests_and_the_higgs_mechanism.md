@@ -39,7 +39,7 @@ The available evidence supports the Higgs mechanism as the leading source of ele
 The student-approved summary states that electroweak precision measurements and Higgs-boson observations provide strong empirical support for the Standard Model Higgs mechanism as the leading source of electroweak symmetry breaking. Mathematical verification found no dimensional inconsistencies. The skeptic awarded 6/6, noting limited sourcing and fit-dependent details that do not overturn the conclusion. The minimality and microscopic nature of the Higgs sector remain open questions.
 
 ## 6. Visual Representation
-![Electroweak Precision Tests and the Higgs Mechanism](../images/gemini_20261011171305_0.png)
+![Electroweak Precision Tests and the Higgs Mechanism](../images/gemini_20261011171305_0.webp)
 
 ## 7. Related Concepts
 - [Standard Model](standard_model.md)

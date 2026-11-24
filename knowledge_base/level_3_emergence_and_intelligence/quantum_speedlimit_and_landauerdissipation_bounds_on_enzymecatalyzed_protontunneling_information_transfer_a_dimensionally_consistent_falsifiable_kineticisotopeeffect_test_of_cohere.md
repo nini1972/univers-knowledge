@@ -92,7 +92,7 @@ Key alternatives and limitations include:
 - **Open biological challenge:** The causal DAG, Markovian-bath, and local-isometry assumptions are unvalidated for real enzymes. Decoherence in warm, wet environments remains the central challenge.
 
 ## 6. Visual Representation
-![Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation](../images/gemini_20261023011635_0.png)
+![Quantum Speed-Limit and Landauer-Dissipation Bounds on Enzyme-Catalyzed Proton-Tunneling Information Transfer: A Dimensionally Consistent, Falsifiable Kinetic-Isotope-Effect Test of Coherence-Assisted Biological Computation](../images/gemini_20261023011635_0.webp)
 
 ## 7. Related Concepts
 - Mandelstam–Tamm quantum speed limit

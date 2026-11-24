@@ -45,7 +45,7 @@ Critics point toward the lack of experimental confirmation for the proposed heav
 The Skeptic Verification Score is established at 5/5, indicating robustness in conceptual validation. However, the fabricated Loualidi reference is duly noted as a retraction.
 
 ## 6. Visual Representation
-![Type-I Seesaw vs Radiative Neutrino Mass Generation](../images/gemini_20260909172159_1.png)
+![Type-I Seesaw vs Radiative Neutrino Mass Generation](../images/gemini_20260909172159_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillation

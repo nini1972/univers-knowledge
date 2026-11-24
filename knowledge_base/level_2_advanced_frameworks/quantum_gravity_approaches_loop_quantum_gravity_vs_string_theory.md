@@ -37,7 +37,7 @@ The report implements a skepticism verification score of 5/5, underlining thorou
 Both Loop Quantum Gravity and String Theory remain theoretical constructs without direct empirical confirmation as of the report’s composition. The documented skepticism verification score confirms the report’s reliability and exhaustive referencing. The work ensures accurate contextualization of each approach within ongoing experimental efforts such as cosmological observations and high-energy particle experiments, which might eventually provide critical tests.
 
 ## 6. Visual Representation
-![Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory](../images/gemini_20260615012226_0.png)
+![Quantum Gravity Approaches: Loop Quantum Gravity vs String Theory](../images/gemini_20260615012226_0.webp)
 
 ## 7. Related Concepts
 - Canonical Quantization of Gravity  

@@ -32,7 +32,7 @@ Skeptics argue that while MOND and emergent gravity provide compelling arguments
 The mathematical integrity of the report has been verified without contradictions; both concepts are classified as theoretical due to the absence of direct physical proof. Verified features and equations support claims made, although it should be noted that further empirical validation may be necessary for broader acceptance.
 
 ## 6. Visual Representation
-![Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies](../images/gemini_20260828033552_1.png)
+![Emergent Entropic Gravity vs Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies](../images/gemini_20260828033552_1.webp)
 
 ## 7. Related Concepts
 - **Modified Newtonian Dynamics (MOND)**

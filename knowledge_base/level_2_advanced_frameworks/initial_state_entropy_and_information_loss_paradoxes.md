@@ -39,7 +39,7 @@ While both theoretical models contribute significantly to cosmological discourse
 Both frameworks are noted for their mathematical structures, but the absence of empirical data remains a challenge. The approved report highlights rigorous source-grounding, transparent treatment of uncertainty, and mathematical accuracy in its comparative analysis.
 
 ## 6. Visual Representation
-![Initial State Entropy and Information Loss Paradoxes](../images/gemini_20260906012727_1.png)
+![Initial State Entropy and Information Loss Paradoxes](../images/gemini_20260906012727_1.webp)
 
 ## 7. Related Concepts
 - Conformal Geometry

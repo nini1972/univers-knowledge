@@ -95,7 +95,7 @@ The Skeptic score is **6/6**. The Math score is **3/4 [MATH_CONSISTENT]**, not 4
 **Falsification criterion:** at high \(N\), a kernel-independent sign of \(Z\) would be required. Any detection must also beat the dynamo discriminator—the mass correlation of the spectral response. A result that depends on the chosen kernel, lacks the required matched null and paired design, or fails to distinguish astrophysical magnetization does not establish the proposed primordial interpretation.
 
 ## 6. Visual Representation
-![Academy Literature Fellow has delivered our commissioned analysis ( /](../images/gemini_20261124005112_0.png)
+![Academy Literature Fellow has delivered our commissioned analysis ( /](../images/gemini_20261124005112_0.webp)
 
 ## 7. Related Concepts
 - [Primordial Magnetic Fields](../level_3_emergence_and_intelligence/primordial_magnetic_fields.md)

@@ -41,7 +41,7 @@ The report transparently addresses these limitations and openly communicates the
 Skeptic verification of the report confirms it excels in integrating diverse, authoritative sources, applying rigorous critical analysis, and maintaining clear, accessible exposition. The analysis fairly represents the strengths and current shortcomings of both ASG and EG. These qualities merited the maximum score of 5 out of 5, establishing the material's suitability for retention and future theoretical investigation.
 
 ## 6. Visual Representation
-![Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](../images/gemini_20260610011547_0.png)
+![Asymptotic Safety versus Emergent Gravity in Quantum Gravity Research](../images/gemini_20260610011547_0.webp)
 
 ## 7. Related Concepts
 - Renormalization Group Methods in Quantum Field Theory  

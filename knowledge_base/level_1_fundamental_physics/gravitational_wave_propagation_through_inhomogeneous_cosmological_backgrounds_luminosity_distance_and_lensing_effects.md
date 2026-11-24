@@ -135,7 +135,7 @@ The following archival caveats should accompany this concept:
 8. **Metric convention.** The signature is \((- , + , + , +)\), and the lensing observables do not depend on it.
 
 ## 6. Visual Representation
-![Gravitational Wave Propagation Through Inhomogeneous Cosmological Backgrounds (Luminosity Distance and Lensing Effects)](../images/gemini_20261119003557_0.png)
+![Gravitational Wave Propagation Through Inhomogeneous Cosmological Backgrounds (Luminosity Distance and Lensing Effects)](../images/gemini_20261119003557_0.webp)
 
 ## 7. Related Concepts
 - Standard sirens and luminosity-distance measurement

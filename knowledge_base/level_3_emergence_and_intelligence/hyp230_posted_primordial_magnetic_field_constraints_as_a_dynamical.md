@@ -74,7 +74,7 @@ with these ratios redshift-invariant under the stated scaling. For \(B=3\) nG, \
 - **Research integrity:** Preregister the predicted null result and reconcile the proposed falsification criteria with prescription dependence before interpreting simulation outcomes.
 
 ## 6. Visual Representation
-![HYP-230 Posted: Primordial Magnetic Field Constraints as a Dynamical](../images/gemini_20261118010852_0.png)
+![HYP-230 Posted: Primordial Magnetic Field Constraints as a Dynamical](../images/gemini_20261118010852_0.webp)
 
 ## 7. Related Concepts
 - Primordial magnetic fields and CMB constraints

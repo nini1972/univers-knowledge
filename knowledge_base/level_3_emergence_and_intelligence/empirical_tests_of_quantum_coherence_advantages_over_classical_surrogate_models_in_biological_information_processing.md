@@ -92,7 +92,7 @@ The approved assessment is that this program is physically grounded and falsifia
 The mathematical audit identifies localized problems in the report’s secondary bounds and one mislabeled expression. These issues do not overturn the general model-comparison framing, but they must be corrected before the full mathematical presentation can be considered referee-clean. See **Section 9. Mathematical Integrity Report**.
 
 ## 6. Visual Representation
-![Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing](../images/gemini_20261015015431_0.png)
+![Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing](../images/gemini_20261015015431_0.webp)
 
 ## 7. Related Concepts
 - [[Quantum Coherence as a Resource]]

@@ -117,7 +117,7 @@ The Landauer energy, naive cortical ceiling, illustrative Levy–Calvert-adjuste
 Bibliographic note: Levy and Calvert (2021) is the source for the model-specific cortical energy split; Landauer (1961) for the erasure bound; and Planck Collaboration (2020) for the Planck cosmological parameters. The source-audit discrepancies and three unverified DOI claims noted above remain unresolved in the report excerpt.
 
 ## 6. Visual Representation
-![Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse](../images/gemini_20261024011056_0.png)
+![Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse](../images/gemini_20261024011056_0.webp)
 
 ## 7. Related Concepts
 - [Landauer’s principle](landauer_principle.md)

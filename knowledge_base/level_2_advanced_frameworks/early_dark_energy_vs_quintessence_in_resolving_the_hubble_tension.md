@@ -34,7 +34,7 @@ Theoretical skepticism remains around both concepts, questioning whether early o
 Both EDE and quintessence theories stand robust under mathematical scrutiny but have yet to demonstrate empirical validation. Ongoing observations and future cosmological surveys may offer insights into the validity of these hypotheses in relation to dark energy.
 
 ## 6. Visual Representation
-![Early Dark Energy vs Quintessence in Resolving the Hubble Tension](../images/gemini_20260924015621_0.png)
+![Early Dark Energy vs Quintessence in Resolving the Hubble Tension](../images/gemini_20260924015621_0.webp)
 
 ## 7. Related Concepts
 - ΛCDM Model

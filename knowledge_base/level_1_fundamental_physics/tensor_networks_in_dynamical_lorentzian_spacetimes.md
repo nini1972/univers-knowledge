@@ -43,7 +43,7 @@ Alternative theories might suggest different forms of quantization or discrete m
 The developing theories have received a score of 4/4 in mathematical integrity assessments with a robust framework, showing rigorous dimensionally consistent equations. The theoretical constructs remain valid, but the empirical realization of the predictions remains to be achieved.
 
 ## 6. Visual Representation
-![What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?](../images/gemini_20260803010006_0.png)
+![What progress has been made in extending tensor network methods to fully dynamical Lorentzian spacetimes reproducing classical gravity?](../images/gemini_20260803010006_0.webp)
 
 ## 7. Related Concepts
 - **Quantum Gravity**

@@ -34,7 +34,7 @@ Critics of these frameworks point out the limitations posed by empirical data, s
 The verified status of the mathematical framework offers a robust overall assessment, indicating strong adherence to theoretical principles despite facing challenges from observational data.
 
 ## 6. Visual Representation
-![Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints](../images/gemini_20260821005130_1.png)
+![Metric-Affine Gravity vs Symmetric Teleparallel Gravity in Resolving Cosmic Singularity Constraints](../images/gemini_20260821005130_1.webp)
 
 ## 7. Related Concepts
 - **General Relativity (GR)**

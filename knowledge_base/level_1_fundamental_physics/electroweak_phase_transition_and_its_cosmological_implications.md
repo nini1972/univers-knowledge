@@ -40,7 +40,7 @@ where parameter $D$ and $E$ are dimensionless and critical in computing the effe
 The verification process has reaffirmed the lattice results, pinpointing the crucial temperatures and effective potential structures governing the EWPT. Nevertheless, all BSM scenarios remain theoretical, as direct experimental evidence is still pending. Challenges remain regarding the compatibility of these theories with the empirical observations of baryogenesis.
 
 ## 6. Visual Representation
-![Electroweak Phase Transition and Its Cosmological Implications](../images/gemini_20261023011824_0.png)
+![Electroweak Phase Transition and Its Cosmological Implications](../images/gemini_20261023011824_0.webp)
 
 ## 7. Related Concepts
 - Electroweak symmetry breaking

@@ -203,7 +203,7 @@ not \(0.861\). This corresponds to approximately \(57\%\) growth suppression, no
 8. The Hubble-constant tension should be described as approximately \(4.8\sigma\), not \(>5\sigma\).
 
 ## 6. Visual Representation
-![Annihilating Thermal WIMP vs Decaying Gravitino Dark Matter in Explaining Cosmic-Ray Antiproton, Gamma-Ray, and CMB Energy-Injection Constraints](../images/gemini_20261122005642_0.png)
+![Annihilating Thermal WIMP vs Decaying Gravitino Dark Matter in Explaining Cosmic-Ray Antiproton, Gamma-Ray, and CMB Energy-Injection Constraints](../images/gemini_20261122005642_0.webp)
 
 ## 7. Related Concepts
 - Thermal relic freeze-out and the WIMP abundance.

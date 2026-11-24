@@ -33,7 +33,7 @@ The primary skeptical perspective centers on the lithium-7 abundance discrepancy
 BBN is classified as VERIFIED, having passed rigorous verification protocols. Observational data align with theoretical predictions within error margins for most of the light elements. The skepticism score from the verifier is 5/5, confirming confidence in BBN's scientific foundation while appropriately noting the lithium aberration as an open question.
 
 ## 6. Visual Representation
-![Big Bang Nucleosynthesis](../images/gemini_20260614011724_0.png)
+![Big Bang Nucleosynthesis](../images/gemini_20260614011724_0.webp)
 
 ## 7. Related Concepts
 - Cosmic Microwave Background Radiation

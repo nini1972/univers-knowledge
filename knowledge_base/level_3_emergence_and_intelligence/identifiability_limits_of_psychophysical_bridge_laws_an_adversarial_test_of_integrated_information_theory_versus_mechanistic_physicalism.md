@@ -40,7 +40,7 @@ IIT is framed against mechanistic physicalism, which posits that consciousness i
 The theoretical framework of this report has been validated against the set criteria. The identifiability limits of psychophysical bridge laws remain conceptual; further empirical investigations are required to establish the specific attributes of consciousness within these frameworks.
 
 ## 6. Visual Representation
-![Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism](../images/gemini_20260924021555_0.png)
+![Identifiability Limits of Psychophysical Bridge Laws: An Adversarial Test of Integrated Information Theory versus Mechanistic Physicalism](../images/gemini_20260924021555_0.webp)
 
 ## 7. Related Concepts
 The findings are related to ongoing discussions in both consciousness studies and theories of information, integrating concepts from neuroscience, philosophy of mind, and complex systems.

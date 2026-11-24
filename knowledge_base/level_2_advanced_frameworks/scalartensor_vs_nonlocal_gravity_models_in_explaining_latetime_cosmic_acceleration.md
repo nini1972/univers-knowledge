@@ -34,7 +34,7 @@ Skeptics argue that both theoretical models struggle under the weight of empiric
 The comparative analysis, mathematical derivations, and observational constraints have received a 5/5 verification score from the Scientific Skeptic and Verifier.
 
 ## 6. Visual Representation
-![Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration](../images/gemini_20260709221707_1.png)
+![Scalar-Tensor vs Non-Local Gravity Models in Explaining Late-Time Cosmic Acceleration](../images/gemini_20260709221707_1.webp)
 
 ## 7. Related Concepts
 - General Relativity

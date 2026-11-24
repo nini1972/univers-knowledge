@@ -33,7 +33,7 @@ Balanced scientific skepticism notes that despite the strong experimental and th
 The comprehensive evaluation of the neutrino mass and oscillation phenomena meets strict verification criteria, supported by multiple independent measurements and rigorous formalism. The skeptical verification stresses balanced scrutiny and transparent acknowledgment of current gaps—namely the unresolved mass ordering pattern. This justifies a full verification status for established neutrino oscillation phenomena, while maintaining a cautious theoretical classification with respect to the ordering itself. The report and skeptic review together provide a rigorous and well-grounded scientific assessment appropriate for archival.
 
 ## 6. Visual Representation
-![Neutrino Mass Ordering and Experimental Determination](../images/gemini_20260627010639_1.png)
+![Neutrino Mass Ordering and Experimental Determination](../images/gemini_20260627010639_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillation Phenomenon

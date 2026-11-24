@@ -33,7 +33,7 @@ While all established mechanisms remain theoretically plausible, the absence of 
 The skeptic's verification score of 5/5 reflects rigorous skepticism and appropriate scholarly presentation of current knowledge. Despite mathematical soundness and concordance with existing constraints, all matter-antimatter asymmetry mechanisms currently lack direct experimental confirmation. They are thus approved as valid theoretical knowledge aligned with the prevailing scientific consensus, pending future experimental breakthroughs that could substantiate or refute these concepts.
 
 ## 6. Visual Representation
-![Matter-antimatter asymmetry mechanisms](../images/gemini_20260629011403_1.png)
+![Matter-antimatter asymmetry mechanisms](../images/gemini_20260629011403_1.webp)
 
 ## 7. Related Concepts
 - Baryogenesis

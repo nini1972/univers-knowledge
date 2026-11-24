@@ -35,7 +35,7 @@ The report addresses critical views and alternative interpretations, underscorin
 The evaluation attained a skeptic verification score of 5/5, confirming the report’s high rigor and reliability. Full transparency concerning uncertainties and limitations is maintained throughout, ensuring that the conclusions drawn about CST and SFMs are balanced and cautious, reflecting the current state of scientific knowledge.
 
 ## 6. Visual Representation
-![Causal Set Theory vs Spin Foam Models in Quantum Gravity Research](../images/gemini_20260702012416_1.png)
+![Causal Set Theory vs Spin Foam Models in Quantum Gravity Research](../images/gemini_20260702012416_1.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

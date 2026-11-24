@@ -102,7 +102,7 @@ The light-mediator self-interaction sector remains [THEORETICAL]. Its quoted cou
 The Hubble-tension benchmarks \(4.85\sigma\) and \(\Delta\chi^2=23.5\) are verified. The signature convention is \((- ,+,+,+)\), and \(M_{\rm Pl}\) is kept distinct from \(m_{\rm Pl}\). The dimensional flag raised for \(\Gamma\) was an artefact and was dismissed; dimensional checks pass.
 
 ## 6. Visual Representation
-![Free-Streaming Standard Model Neutrinos vs Secret Neutrino Self-Interactions in CMB Damping Tail Phase Shift, N_eff, and Hubble Tension Constraints](../images/gemini_20261124004510_1.png)
+![Free-Streaming Standard Model Neutrinos vs Secret Neutrino Self-Interactions in CMB Damping Tail Phase Shift, N_eff, and Hubble Tension Constraints](../images/gemini_20261124004510_1.webp)
 
 ## 7. Related Concepts
 - ΛCDM and the cosmic neutrino background

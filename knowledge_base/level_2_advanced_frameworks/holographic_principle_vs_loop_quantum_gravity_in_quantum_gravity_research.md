@@ -75,7 +75,7 @@ Alternative quantum gravity approaches such as String Theory extensions and othe
 - Both frameworks are correctly classified as **theoretical**, underscoring their current status in quantum gravity research.
 
 ## 6. Visual Representation
-![Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](../images/gemini_20260617011940_1.png)
+![Holographic Principle vs Loop Quantum Gravity in Quantum Gravity Research](../images/gemini_20260617011940_1.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

@@ -142,7 +142,7 @@ The mathematical verification score is **4/4 [MATH_PROVEN]** for the formalism a
 The classification remains **[THEORETICAL]** because no current measurement verifies the proposed PMF-dependent spectral shift. In particular, the synthetic significance and power results based on the invalid covariance inputs are not evidence and must not be cited.
 
 ## 6. Visual Representation
-![Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /](../images/gemini_20261120005748_0.png)
+![Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /](../images/gemini_20261120005748_0.webp)
 
 ## 7. Related Concepts
 - **Primordial magnetic fields:** observational constraints and magnetogenesis context ([Planck Collaboration 2016](https://doi.org/10.1051/0004-6361/201525821); [Kandus, Kunze & Tsagas 2011](https://doi.org/10.1016/j.physrep.2011.03.001)).

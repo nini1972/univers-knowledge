@@ -33,7 +33,7 @@ Skeptic verification acknowledges strong consensus among sources regarding the t
 Verification by the Skeptic assigned the Planck Epoch concept a maximum verification score of 5/5, confirming its validity as a well-founded theoretical framework consistent with contemporary physics. The verification stressed its clear classification as a theoretical construct and endorsed the report’s careful articulation of consensus, open questions, and scholarly rigor, underscoring its value as an authoritative resource on the Universe’s earliest known phase.
 
 ## 6. Visual Representation
-![Planck Epoch and the Initial Conditions for the Universe](../images/gemini_20260605011120_1.png)
+![Planck Epoch and the Initial Conditions for the Universe](../images/gemini_20260605011120_1.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

@@ -28,7 +28,7 @@ While f(T) gravity and K-essence provide novel insights into cosmic phenomena, s
 The verification process yielded a perfect score of **5/5**, confirming strict adherence to the scientific and methodological standards. This included the successful extraction of **95 equations** and a validated mathematical consistency check.
 
 ## 6. Visual Representation
-![f(T) Gravity vs. K-Essence in Addressing Cosmic Acceleration](../images/gemini_20260830011037_1.png)
+![f(T) Gravity vs. K-Essence in Addressing Cosmic Acceleration](../images/gemini_20260830011037_1.webp)
 
 ## 7. Related Concepts
 - Teleparallel Gravity (TEGR)

@@ -34,7 +34,7 @@ While quantum vacuum polarization is a well-supported theory, some skepticism ar
 Quantum Vacuum Polarization has been experimentally verified through multiple high-precision measurements including the Lamb shift in atomic spectra, the anomalous magnetic moments of the electron and muon, and the running of the fine-structure constant with energy. The phenomenon is robustly supported by rigorous mathematical formalism and detailed theoretical analyses. Skeptical viewpoints about alternative explanations and experimental errors are acknowledged but do not detract from the overwhelming evidence confirming QED predictions. The phenomenon has been assigned a comprehensive verification score of 5/5, affirming its status as verified scientific knowledge.
 
 ## 6. Visual Representation
-![Quantum Vacuum Polarization](../images/gemini_20260626011134_0.png)
+![Quantum Vacuum Polarization](../images/gemini_20260626011134_0.webp)
 
 ## 7. Related Concepts
 - Lamb Shift

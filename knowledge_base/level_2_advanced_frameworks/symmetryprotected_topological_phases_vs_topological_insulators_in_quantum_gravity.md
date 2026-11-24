@@ -31,7 +31,7 @@ Critical scrutiny informs the understanding of the limitations associated with t
 A robust verification report attests to the dimensional and structural consistency of crucial equations in this domain. The distinction between responses to background geometry versus claims of dynamical spacetime generation underpins ongoing debates in theoretical physics, while substantiating the mathematical soundness of SPT phases.
 
 ## 6. Visual Representation
-![Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity](../images/gemini_20260814012938_1.png)
+![Symmetry-Protected Topological Phases vs Topological Insulators in Quantum Gravity](../images/gemini_20260814012938_1.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

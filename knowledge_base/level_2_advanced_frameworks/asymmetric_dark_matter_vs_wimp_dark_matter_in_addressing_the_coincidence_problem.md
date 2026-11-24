@@ -34,7 +34,7 @@ The analysis notes the challenges faced by ADM regarding the protection of proto
 Verification of the mathematical integrity and the associated frameworks establishes a strong foundation for the findings presented.
 
 ## 6. Visual Representation
-![Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem](../images/gemini_20260827023840_1.png)
+![Asymmetric Dark Matter vs WIMP Dark Matter in Addressing the Coincidence Problem](../images/gemini_20260827023840_1.webp)
 
 ## 7. Related Concepts
 - Dark Matter

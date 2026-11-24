@@ -67,7 +67,7 @@ A major source of confusion is that “emergence” can refer to substantially d
 The framework emphasizes the need to compare competing theories using common experimental paradigms and asserts that many models, including Integrated Information Theory, can supply quantitative markers for candidate conscious organization.
 
 ## 6. Visual Representation
-![A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure](../images/gemini_20260918121053_0.png)
+![A Falsifiable Causal-Information Boundary Framework for the Hard Problem: Testing Phenomenal Causation, Epiphenomenalism, and Strong Emergence Under Microphysical Closure](../images/gemini_20260918121053_0.webp)
 
 ## 7. Related Concepts
 Some related concepts include information closure theory, integrated information theory, and the global neuronal workspace theory, which represent different models of understanding consciousness and its relationship to physical processes.

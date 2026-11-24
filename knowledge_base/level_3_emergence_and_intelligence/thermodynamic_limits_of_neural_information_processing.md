@@ -151,7 +151,7 @@ A proposed route is single-event calorimetry in *C. elegans* or retina, tested w
 The arithmetic for the Landauer energy at \(310\,\mathrm{K}\) and the idealized \(20\,\mathrm{W}\) ceiling is sound. The biological event-rate estimate, competing per-event energy calculations, and mapping from metabolic power to logical erasure remain unresolved. No conclusion about neural optimality follows from the gap alone.
 
 ## 6. Visual Representation
-![Thermodynamic Limits of Neural Information Processing](../images/gemini_20261102010007_0.png)
+![Thermodynamic Limits of Neural Information Processing](../images/gemini_20261102010007_0.webp)
 
 ## 7. Related Concepts
 - Landauer’s principle and information erasure

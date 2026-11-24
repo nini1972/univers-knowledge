@@ -76,7 +76,7 @@ Neural ATP-related applications remain conditional and theoretical. Applying the
 **Skeptic verification score: 6/6.**
 
 ## 6. Visual Representation
-![Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics](../images/gemini_20261011183530_0.png)
+![Thermodynamic Uncertainty Relations as Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics](../images/gemini_20261011183530_0.webp)
 
 ## 7. Related Concepts
 - Stochastic thermodynamics

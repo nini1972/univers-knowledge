@@ -28,7 +28,7 @@ While manual checks are deemed beneficial, skeptics argue that these methods can
 The combination of rigorous dimensional checks has been deemed a valid approach, further affirming the necessity of manual checks in conjunction with automated tools.
 
 ## 6. Visual Representation
-![Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?](../images/gemini_20260806005149_0.png)
+![Can rigorous manual dimensional consistency checks be performed by experts to supplement the automated undecidable result?](../images/gemini_20260806005149_0.webp)
 
 ## 7. Related Concepts
 - Dimensional Analysis

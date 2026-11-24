@@ -41,7 +41,7 @@ Skeptics may argue over the unconfirmed status of the inflaton field and the nec
 Both approaches have been subject to rigorous scrutiny. The slow-roll inflation model aligns with observational data, yielding predictions near the observed values of \( n_s \) and \( r \). On the contrary, the matter bounce's predictions suffer from pivotal inconsistencies including an erroneous formula for the spectral index.
 
 ## 6. Visual Representation
-![Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations](../images/gemini_20260921012001_0.png)
+![Slow-Roll Inflation vs Matter-Bounce Cosmology in Explaining Primordial Perturbations](../images/gemini_20260921012001_0.webp)
 
 ## 7. Related Concepts
 - Cosmic Microwave Background (CMB)

@@ -172,7 +172,7 @@ Empirical tests are **quasi-model-independent**. Their inferences may depend on:
 - **Source-title handling:** The approved research report supplies author/year and identifiers for several citations but not their paper titles. The sources list marks those titles as not supplied rather than inventing bibliographic titles.
 
 ## 6. Visual Representation
-![Cosmic Distance Duality Relation (Etherington Reciprocity Theorem) and Its Observational Tests](../images/gemini_20261121004402_0.png)
+![Cosmic Distance Duality Relation (Etherington Reciprocity Theorem) and Its Observational Tests](../images/gemini_20261121004402_0.webp)
 
 ## 7. Related Concepts
 - [Luminosity distance \(D_L\)](luminosity_distance.md)

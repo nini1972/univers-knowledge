@@ -57,7 +57,7 @@ Alternate hypotheses include the standard Lambda-Cold Dark Matter (ΛCDM) model,
 The report’s skeptic verification score is 5/5, reflecting its adherence to rigorous scientific skepticism. It presents all theoretical claims transparently, grounds mathematical derivations in peer-reviewed literature, and objectively confronts empirical data sets. Importantly, it acknowledges that both TeVeS and f(R) theories are promising frameworks that remain unverified alternatives or complements to the standard ΛCDM paradigm. The absence of definitive experimental confirmation classifies these modifications as theoretical constructs deserving ongoing critical analysis.
 
 ## 6. Visual Representation
-![Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](../images/gemini_20260611011744_1.png)
+![Debate on Modified Gravity Theories: TeVeS vs f(R) Gravity](../images/gemini_20260611011744_1.webp)
 
 ## 7. Related Concepts
 - Lambda-Cold Dark Matter (ΛCDM) Model

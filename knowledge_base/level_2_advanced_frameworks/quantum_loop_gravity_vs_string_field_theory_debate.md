@@ -45,7 +45,7 @@ Alternative approaches such as causal dynamical triangulations, asymptotic safet
 The skeptic score of 5/5 confirms the report's robustness, adherence to rigorous standards, and candid acknowledgment of open questions and empirical challenges. All claims are well substantiated through foundational literature and authoritative reviews, ensuring a balanced and credible comparative analysis.
 
 ## 6. Visual Representation
-![Quantum Loop Gravity vs String Field Theory Debate](../images/gemini_20260613011732_1.png)
+![Quantum Loop Gravity vs String Field Theory Debate](../images/gemini_20260613011732_1.webp)
 
 ## 7. Related Concepts
 - Loop Quantum Gravity

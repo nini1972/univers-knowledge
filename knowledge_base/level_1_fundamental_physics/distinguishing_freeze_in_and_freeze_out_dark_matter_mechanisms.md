@@ -35,7 +35,7 @@ Some skepticism remains regarding the feasibility of effectively distinguishing 
 Upon evaluation, it has been confirmed that a multi-messenger approach to analyzing dark matter production mechanisms is essential. This consensus highlights the collaborative nature of the research and the need for multiple lines of inquiry to substantiate claims regarding the mechanisms.
 
 ## 6. Visual Representation
-![How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?](../images/gemini_20260716010232_0.png)
+![How might future experiments or observations be designed to effectively distinguish between freeze-in and freeze-out dark matter production mechanisms?](../images/gemini_20260716010232_0.webp)
 
 ## 7. Related Concepts
 - Dark Matter

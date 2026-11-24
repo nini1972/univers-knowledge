@@ -62,7 +62,7 @@ The Skeptic's Verification Score of 5/5 is awarded, reflecting the report's rigo
 
 ## 5. Visual Representation
 
-![Beyond the Standard Model Solutions to the Hierarchy Problem](../images/gemini_20260529201132_1.png)
+![Beyond the Standard Model Solutions to the Hierarchy Problem](../images/gemini_20260529201132_1.webp)
 
 ## 6. Related Concepts
 

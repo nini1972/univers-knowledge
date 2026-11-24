@@ -57,7 +57,7 @@ Despite its successes, the EFT framework has notable limitations, primarily asso
 In terms of rigorous validation, the EFT methodology is buttressed by a range of empirical data, including notable experiments in particle physics and cosmology that yield significant insights into the structure and behavior of phenomena at varying energy scales. Critical engagement with alternative hypotheses remains vital, particularly as advancements in experimental techniques may render theoretical assumptions more directly testable.
 
 ## 6. Visual Representation
-![Effective Field Theory](../images/gemini_20260919010343_1.png)
+![Effective Field Theory](../images/gemini_20260919010343_1.webp)
 
 ## 7. Related Concepts
 EFT is closely related to other conceptual frameworks such as quantum field theory, perturbation theory, and model systems derived from condensed matter and particle physics disciplines. Connections with gravitational wave studies and modifications to Standard Model interactions reflect its interdisciplinary applications.

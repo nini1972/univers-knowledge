@@ -65,7 +65,7 @@ The debate report meets rigorous verification criteria:
 The included skeptic verification checklist confirms compliance with standards for multi-source integration, mathematical rigor, empirical alignment, and transparent uncertainty management, culminating in an overall score of 5/5.
 
 ## 6. Visual Representation
-![Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](../images/gemini_20260614011940_0.png)
+![Falsifiable Multiverse Theories versus Simulation Hypothesis in Cosmological Context](../images/gemini_20260614011940_0.webp)
 
 ## 7. Related Concepts
 - **Many-Worlds Interpretation of Quantum Mechanics**  

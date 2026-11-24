@@ -28,7 +28,7 @@ Though both AS and CDT present compelling theoretical quests, critics argue the 
 Upon thorough analysis, the mathematical integrity of the frameworks was confirmed without inconsistencies. While both AS and CDT remain in the theoretical domain due to the lack of empirical evidence, the rigorous mathematical formulation renders both approaches sound in their internal logic.
 
 ## 6. Visual Representation
-![Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities](../images/gemini_20260829011142_0.png)
+![Asymptotic Safety vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities](../images/gemini_20260829011142_0.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

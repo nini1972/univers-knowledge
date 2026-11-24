@@ -33,7 +33,7 @@ While these extensions provide substantial theoretical benefits, they invite ske
 The mathematical integrity of the report underscores its robustness, presenting a clear link between theoretical constructs and empirical observables, although potential degeneracies require careful consideration.
 
 ## 6. Visual Representation
-![How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?](../images/gemini_20260723005818_0.png)
+![How do non-minimal extensions or ultraviolet completions of these models affect their testability and theoretical robustness in light of planned future experiments?](../images/gemini_20260723005818_0.webp)
 
 ## 7. Related Concepts
 - Effective Field Theory (EFT)

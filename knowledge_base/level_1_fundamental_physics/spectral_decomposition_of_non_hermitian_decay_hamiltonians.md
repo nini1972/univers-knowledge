@@ -31,7 +31,7 @@ While the research provides robust evidence for the validity of the mathematical
 The established results have been scrutinized for their mathematical integrity and consistency, corroborating their formulation within established mathematical structures.
 
 ## 6. Visual Representation
-![Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?](../images/gemini_20260809004104_1.png)
+![Can operator domain and spectral decomposition analyses for the non-Hermitian Hamiltonian with decay terms be rigorously established?](../images/gemini_20260809004104_1.webp)
 
 ## 7. Related Concepts
 - **Functional Analysis**: The mathematical discipline that provides the foundation for the study of vector spaces and linear operators.

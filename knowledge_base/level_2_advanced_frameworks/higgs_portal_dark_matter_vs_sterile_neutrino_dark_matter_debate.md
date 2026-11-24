@@ -48,7 +48,7 @@ Despite their theoretical appeal, both models encounter skepticism due to:
 The report has undergone a rigorous verification process with a skeptic verification score of 5/5. This perfect score reflects a thorough validation of assumptions, logical coherence, and comprehensive inclusion of peer-reviewed data. The evaluation confirms that while experimental and observational data constrain both models, significant viable parameter space remains uncovered. This uncertainty advocates ongoing and refined experimental investigation to further probe these dark matter candidates.
 
 ## 6. Visual Representation
-![Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate](../images/gemini_20260706011017_0.png)
+![Higgs Portal Dark Matter vs Sterile Neutrino Dark Matter Debate](../images/gemini_20260706011017_0.webp)
 
 ## 7. Related Concepts
 - Standard Model Extensions

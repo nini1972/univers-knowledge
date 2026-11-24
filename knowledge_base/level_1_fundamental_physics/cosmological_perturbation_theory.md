@@ -48,7 +48,7 @@ Critical alternative theories such as Modified Newtonian Dynamics (MOND) attempt
 CPT has been verified through extensive cosmological observations, particularly those from the Planck satellite, reinforcing its empirical robustness. While critiques and alternate models exist, they must contend with substantial empirical evidence supporting CPT's framework.
 
 ## 6. Visual Representation
-![Cosmological Perturbation Theory](../images/gemini_20260917005009_0.png)
+![Cosmological Perturbation Theory](../images/gemini_20260917005009_0.webp)
 
 ## 7. Related Concepts
 ## 7. Related Concepts

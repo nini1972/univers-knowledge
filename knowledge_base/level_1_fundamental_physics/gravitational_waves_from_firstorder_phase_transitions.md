@@ -123,7 +123,7 @@ The visual prompt’s reference to visible cosmic microwave background (CMB) emi
 10. **Error budget:** The report provides no error budget for \(v_w\), \(\alpha\), \(\beta/H_*\), viscosity, or sound-shell lifetime.
 
 ## 6. Visual Representation
-![Gravitational Waves from First-Order Phase Transitions](../images/gemini_20261101003922_0.png)
+![Gravitational Waves from First-Order Phase Transitions](../images/gemini_20261101003922_0.webp)
 
 The image is a conceptual visualization, not observational evidence. In particular, the CMB should not be represented as emission from the FOPT plasma.
 

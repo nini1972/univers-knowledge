@@ -102,7 +102,7 @@ The precise factors of \(i\) and signs depend on conventions for the fields and 
 - **Citation audit:** The audit count is 15 references, of which 12 are DOIs.
 
 ## 6. Visual Representation
-![Gauge Fixing and Faddeev-Popov Ghosts in Non-Abelian Gauge Theories](../images/gemini_20261025005803_0.png)
+![Gauge Fixing and Faddeev-Popov Ghosts in Non-Abelian Gauge Theories](../images/gemini_20261025005803_0.webp)
 
 ## 7. Related Concepts
 - Yang–Mills theory and non-Abelian gauge symmetry

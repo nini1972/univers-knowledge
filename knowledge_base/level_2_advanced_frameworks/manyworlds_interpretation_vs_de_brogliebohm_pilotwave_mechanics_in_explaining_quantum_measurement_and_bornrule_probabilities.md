@@ -168,7 +168,7 @@ LISA Pathfinder constrains \(\lambda_{\rm CSL}\) in the 0.7–20 mHz band as sta
 - **Collapse-bound caveats:** CSL is bounded but not excluded. Some comparative claims about bound strength are loosely sourced, and the stated GRW comparison value lacks a primary citation in the supplied record.
 
 ## 6. Visual Representation
-![Many-Worlds Interpretation vs de Broglie–Bohm Pilot-Wave Mechanics in Explaining Quantum Measurement and Born-Rule Probabilities](../images/gemini_20261101004729_0.png)
+![Many-Worlds Interpretation vs de Broglie–Bohm Pilot-Wave Mechanics in Explaining Quantum Measurement and Born-Rule Probabilities](../images/gemini_20261101004729_0.webp)
 
 ## 7. Related Concepts
 - Environmental decoherence and einselection

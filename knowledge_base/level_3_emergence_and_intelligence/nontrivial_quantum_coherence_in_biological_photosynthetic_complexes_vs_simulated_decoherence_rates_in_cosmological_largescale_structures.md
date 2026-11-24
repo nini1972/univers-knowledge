@@ -28,7 +28,7 @@ Despite the robust mathematical similarities, skeptics might argue about the ina
 While the theoretical basis for both processes holds strong, the verification methods differ substantially. The vibrational dynamics in photosynthesis are observed through experiments, whereas cosmological theories remain elusive without direct measurement capabilities.
 
 ## 6. Visual Representation
-![Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures](../images/gemini_20260804015055_0.png)
+![Non-Trivial Quantum Coherence in Biological Photosynthetic Complexes vs. Simulated Decoherence Rates in Cosmological Large-Scale Structures](../images/gemini_20260804015055_0.webp)
 
 ## 7. Related Concepts
 - Open Quantum Systems

@@ -46,7 +46,7 @@ Critical scrutiny highlights significant conceptual and empirical challenges: th
 This debate incorporates mathematical rigor, multiple independent analyses, and transparency on assumptions. Empirical data evaluations confront theoretical predictions with observations from solar system tests, gravitational wave events, and cosmological surveys. The discussion follows the skeptic verification checklist, scoring a perfect 5/5 by addressing evidence strength, falsifiability, assumptions disclosure, consensus evaluation, and alternative hypotheses consideration. Both Massive Gravity and f(R) Gravity thus qualify as Level 2 theoretical frameworks pending future experimental verification.
 
 ## 6. Visual Representation
-![Massive Gravity versus f(R) Gravity in Modified Gravity Debates](../images/gemini_20260612011948_0.png)
+![Massive Gravity versus f(R) Gravity in Modified Gravity Debates](../images/gemini_20260612011948_0.webp)
 
 ## 7. Related Concepts
 - General Relativity  

@@ -131,7 +131,7 @@ Key verified conclusions and qualifications:
 - The Hubble, DESI, and JWST tensions do not discriminate between inflationary tensors and cosmic strings.
 
 ## 6. Visual Representation
-![Slow-Roll Inflationary Tensor Modes vs Cosmic Superstring Networks in Explaining the Nanohertz Gravitational-Wave Background](../images/gemini_20261031004855_0.png)
+![Slow-Roll Inflationary Tensor Modes vs Cosmic Superstring Networks in Explaining the Nanohertz Gravitational-Wave Background](../images/gemini_20261031004855_0.webp)
 
 ## 7. Related Concepts
 - **Primordial gravitational waves:** Tensor perturbations generated in the early universe and constrained through CMB polarization and gravitational-wave observations.

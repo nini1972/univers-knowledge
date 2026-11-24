@@ -44,7 +44,7 @@ The report achieves transparency by explicitly discussing uncertainties and assu
 The Skeptic's Verification Score assigned is 4.3 out of 5, reflecting high confidence in the report’s quality, methodological soundness, and balanced presentation. It is approved for archival as a comprehensive scientific assessment for advanced research and reference.
 
 ## 6. Visual Representation
-![Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration](../images/gemini_20260701012051_1.png)
+![Supersymmetric Dark Energy Models vs Modified Gravity Theories in Explaining Cosmic Acceleration](../images/gemini_20260701012051_1.webp)
 
 ## 7. Related Concepts
 - Dark Energy and the Cosmological Constant

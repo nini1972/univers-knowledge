@@ -57,7 +57,7 @@ This report’s verification score of 5/5 confirms:
 - Emphasis on the critical need for ongoing and future experimental and observational studies to validate or falsify these hypotheses.
 
 ## 6. Visual Representation
-![Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate](../images/gemini_20260630193552_1.png)
+![Supersymmetric Dark Matter Models vs Primordial Black Hole Dark Matter Hypothesis Debate](../images/gemini_20260630193552_1.webp)
 
 ## 7. Related Concepts
 - Supersymmetry in Particle Physics

@@ -128,7 +128,7 @@ A further interpretive caution applies to both reports: \(n_s\) and \(r\) should
 - **Ranking:** ΛCDM + inflation ≫ LQC bounce >~ landscape multiverse; LQC is ahead on internal mathematical rigor of its core claim, while neither framework is empirically confirmed.
 
 ## 6. Visual Representation
-![Loop Quantum Cosmology Big Bounce vs Eternal Inflation in Predicting Primordial Power Spectrum Features and Spatial Curvature Constraints](../images/gemini_20261104004840_0.png)
+![Loop Quantum Cosmology Big Bounce vs Eternal Inflation in Predicting Primordial Power Spectrum Features and Spatial Curvature Constraints](../images/gemini_20261104004840_0.webp)
 
 ## 7. Related Concepts
 - ΛCDM cosmology and inflation

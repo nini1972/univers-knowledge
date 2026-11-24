@@ -36,7 +36,7 @@ Quantum Mechanics meets all critical verification thresholds and protocol requir
 
 ## 5. Visual Representation
 
-![Quantum Mechanics](../images/gemini_20260529185208_1.png)
+![Quantum Mechanics](../images/gemini_20260529185208_1.webp)
 
 ## 6. Related Concepts
 

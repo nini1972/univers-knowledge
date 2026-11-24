@@ -195,7 +195,7 @@ The following caveats are retained as required:
 References identified in the research material also include Benaoum (2021), arXiv:2112.01170; Hambye, March-Russell and West (2004), arXiv:hep-ph/0403183; Chakraborty et al. (2023), arXiv:2206.07037; Abada et al. (2019), arXiv:1810.12463; and De Simone and Riotto (2007), arXiv:0705.2183. These works concern proposed degeneracy constructions, flavour effects, or quantum-kinetic effects; their citation does not establish the corresponding leptogenesis scenarios experimentally.
 
 ## 6. Visual Representation
-![Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches](../images/gemini_20261021014711_0.png)
+![Thermal Leptogenesis vs Resonant Leptogenesis in Generating the Baryon Asymmetry and Testability via Neutrinoless Double Beta Decay and Collider Searches](../images/gemini_20261021014711_0.webp)
 
 ## 7. Related Concepts
 - Type-I seesaw mechanism

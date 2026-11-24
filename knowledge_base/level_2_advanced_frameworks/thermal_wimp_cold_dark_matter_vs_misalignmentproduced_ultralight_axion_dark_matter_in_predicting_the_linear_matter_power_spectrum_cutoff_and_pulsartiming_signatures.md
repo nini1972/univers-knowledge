@@ -129,7 +129,7 @@ The comparison uses more than three independent sources and tests the frameworks
 8. Classified JWST high-redshift observations as an astrophysics/structure-formation tension rather than a demonstrated particle-physics tension.
 
 ## 6. Visual Representation
-![Thermal WIMP Cold Dark Matter vs Misalignment-Produced Ultralight Axion Dark Matter in Predicting the Linear Matter Power Spectrum Cutoff and Pulsar-Timing Signatures](../images/gemini_20261103005445_0.png)
+![Thermal WIMP Cold Dark Matter vs Misalignment-Produced Ultralight Axion Dark Matter in Predicting the Linear Matter Power Spectrum Cutoff and Pulsar-Timing Signatures](../images/gemini_20261103005445_0.webp)
 
 ## 7. Related Concepts
 - Cold dark matter (CDM) and the \(\Lambda\)CDM benchmark framework

@@ -59,7 +59,7 @@ Verdict: BENCHMARK_MATCHES
 The mathematical framework presented in the report is fully consistent, accurately modeling the neutrino sky as an inhomogeneous Poisson process combined with Bayesian population hierarchies.
 
 ## 6. Visual Representation
-![How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?](../images/gemini_20260905010629_0.png)
+![How can the proposed comparison between nearby steady astrophysical sources and the diffuse neutrino population be statistically quantified to yield an unambiguous test, given that the current statistics for nearby neutrino sources like NGC 1068 remain low?](../images/gemini_20260905010629_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Astronomy

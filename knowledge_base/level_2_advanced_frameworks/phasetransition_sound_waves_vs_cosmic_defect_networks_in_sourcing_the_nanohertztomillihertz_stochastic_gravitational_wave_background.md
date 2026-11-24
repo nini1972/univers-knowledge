@@ -165,7 +165,7 @@ x=\frac{1-\cos\theta}{2}.
 The Siemens et al. DOI is recorded as [10.1088/0264-9381/30/22/224015](https://doi.org/10.1088/0264-9381/30/22/224015). Citations and model-dependent claims should remain attached to their specific papers and assumptions rather than being generalized into unsupported source attributions.
 
 ## 6. Visual Representation
-![Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background](../images/gemini_20261024005613_0.png)
+![Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background](../images/gemini_20261024005613_0.webp)
 
 ## 7. Related Concepts
 - [Stochastic Gravitational-Wave Backgrounds](stochastic_gravitational_wave_backgrounds.md)

@@ -67,7 +67,7 @@ The approved assessment classifies this as a scientifically grounded theoretical
 The mathematical review assigned a score of 3/4 and status MATH_CONSISTENT. It found no inconsistent verdicts, but noted that the substantive equations were not certified by the dimensional-analysis tool, the PCI formula was formally abridged, and the multiscale regression model was phenomenological. These qualifications do not alter the distinction between empirical proxy measures and theoretical identity claims.
 
 ## 6. Visual Representation
-![A Preregistered Multiscale Perturbational Test of Integrated Information Theory and Mechanistic Physicalism Across Neural States](../images/gemini_20261014020942_1.png)
+![A Preregistered Multiscale Perturbational Test of Integrated Information Theory and Mechanistic Physicalism Across Neural States](../images/gemini_20261014020942_1.webp)
 
 ## 7. Related Concepts
 - Integrated Information Theory (IIT)

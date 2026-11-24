@@ -215,7 +215,7 @@ This is a summary under those assumptions, not a model-independent measure of CP
 - **Mathematical status:** **[MATH_PROVEN]**, score **4/4**.
 
 ## 6. Visual Representation
-![Cosmological Principle and Observational Tests of Large-Scale Isotropy and Homogeneity](../images/gemini_20261111003553_0.png)
+![Cosmological Principle and Observational Tests of Large-Scale Isotropy and Homogeneity](../images/gemini_20261111003553_0.webp)
 
 ## 7. Related Concepts
 - [[Friedmann–Lemaître–Robertson–Walker Metric]]

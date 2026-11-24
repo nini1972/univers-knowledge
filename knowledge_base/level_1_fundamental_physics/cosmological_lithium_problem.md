@@ -135,7 +135,7 @@ The broader reported factor, about 3–3.5, reflects the approximate nature of t
 - **Interpretation label:** “Cleanest unsolved tension” is an interpretation, not a verified measurement.
 
 ## 6. Visual Representation
-![Cosmological Lithium Problem](../images/gemini_20261112003442_1.png)
+![Cosmological Lithium Problem](../images/gemini_20261112003442_1.webp)
 
 ## 7. Related Concepts
 - Big Bang nucleosynthesis

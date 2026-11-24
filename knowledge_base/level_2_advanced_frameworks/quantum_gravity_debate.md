@@ -15,7 +15,7 @@ tags:
 
 # Quantum Gravity Debate: String Theory vs Loop Quantum Gravity (LQG)
 
-![Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity](../images/gemini_20261029012755_0.png)
+![Quantum Gravity Debate Report: String Theory vs Loop Quantum Gravity](../images/gemini_20261029012755_0.webp)
 
 ---
 

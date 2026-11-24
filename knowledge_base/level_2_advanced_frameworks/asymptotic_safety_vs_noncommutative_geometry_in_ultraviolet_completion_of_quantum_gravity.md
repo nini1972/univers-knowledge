@@ -37,7 +37,7 @@ Critics of Asymptotic Safety highlight the necessity for rigorous mathematics to
 A detailed comparative analysis confirmed the mathematical consistency and rigorous basis of both programs, despite the challenges they face. The frameworks illustrate the complexity of achieving a unified theory of quantum gravity.
 
 ## 6. Visual Representation
-![Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity](../images/gemini_20260726013228_0.png)
+![Asymptotic Safety vs Non-Commutative Geometry in Ultraviolet Completion of Quantum Gravity](../images/gemini_20260726013228_0.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

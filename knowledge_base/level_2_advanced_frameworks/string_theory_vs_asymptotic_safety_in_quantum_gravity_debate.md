@@ -62,7 +62,7 @@ The Skeptic Verification Score assigned is 5/5, underscoring the report's meticu
 Thus, the report meets all criteria for approval and archival as a reliable, comprehensive Level 2 academic resource on quantum gravity approaches.
 
 ## 6. Visual Representation
-![String Theory vs Asymptotic Safety in Quantum Gravity Debate](../images/gemini_20260601011842_1.png)
+![String Theory vs Asymptotic Safety in Quantum Gravity Debate](../images/gemini_20260601011842_1.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

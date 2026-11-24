@@ -128,7 +128,7 @@ The following caveats are retained:
 6. KeV sterile-neutrino dark matter is constrained by X-ray and Lyman-\(\alpha\) data, not by the LZ limit at approximately \(30\) GeV.
 
 ## 6. Visual Representation
-![Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay](../images/gemini_20261117004929_0.png)
+![Type-I Seesaw Thermal Leptogenesis vs Scotogenic Inert-Doublet Model in Unifying Neutrino Mass, Dark Matter, and Baryon Asymmetry: Testability via Lepton-Flavor Violation, Direct Detection, and Neutrinoless Double Beta Decay](../images/gemini_20261117004929_0.webp)
 
 ## 7. Related Concepts
 - Type-I seesaw mechanism

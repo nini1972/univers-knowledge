@@ -34,7 +34,7 @@ Skepticism surrounding the 5 GeV ADM model arises primarily from the reliance on
 The requirement for highly sensitive experimental criteria provides a rigorous framework for potential falsification of the 5 GeV ADM model. The emphasis on low background noise and specific sensitivity thresholds illustrates the intricate nature of dark matter detection and the barriers that remain to validate this theoretical concept.
 
 ## 6. Visual Representation
-![What specific experimental thresholds in next-generation Skipper-CCD or sub-GeV dark matter detectors are required to provide a meaningful falsification test for the 5 GeV ADM mass scale?](../images/gemini_20260907012438_0.png)
+![What specific experimental thresholds in next-generation Skipper-CCD or sub-GeV dark matter detectors are required to provide a meaningful falsification test for the 5 GeV ADM mass scale?](../images/gemini_20260907012438_0.webp)
 
 ## 7. Related Concepts
 - Asymmetric Dark Matter (ADM)

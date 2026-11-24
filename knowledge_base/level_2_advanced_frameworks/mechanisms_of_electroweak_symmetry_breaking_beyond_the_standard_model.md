@@ -36,7 +36,7 @@ The verification checklist attests to multi-source integration, mathematical rig
 Importantly, the consensus favors SUSY as the more viable candidate for physics beyond the Standard Model, though it remains experimentally unverified. Technicolor, particularly in its minimal forms, is currently disfavored due to conflicts with precision measurements and the Higgs boson discovery. The report is thus approved as an authoritative theoretical examination, pending future experimental insights.
 
 ## 5. Visual Representation
-![Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](../images/gemini_20260529185516_1.png)
+![Mechanisms of Electroweak Symmetry Breaking Beyond the Standard Model](../images/gemini_20260529185516_1.webp)
 
 ## 6. Related Concepts
 - Supersymmetry (SUSY)

@@ -128,7 +128,7 @@ Critics of this framework might point out the theoretical nature of the invarian
 Despite its theoretical advancements, the necessity of empirical validation should not be underestimated. Until the unified invariance criterion is rigorously tested in biological neural contexts, its status as a verified entity remains precarious.
 
 ## 6. Visual Representation
-![A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](../images/gemini_20260919025411_0.png)
+![A Falsifiable Coarse-Graining Invariance Criterion for Integrated Information in Neural Systems](../images/gemini_20260919025411_0.webp)
 
 ## 7. Related Concepts
 - Integrated Information Theory (IIT)

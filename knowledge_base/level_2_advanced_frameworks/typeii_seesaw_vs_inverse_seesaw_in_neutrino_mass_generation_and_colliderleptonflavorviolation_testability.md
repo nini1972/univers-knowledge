@@ -122,7 +122,7 @@ Corrections and scope notes:
 9. **Audit scope:** The Math audit covered only the Type-II portion; the ISS algebra was checked in the debate.
 
 ## 6. Visual Representation
-![Type-II Seesaw vs Inverse Seesaw in Neutrino Mass Generation and Collider/Lepton-Flavor-Violation Testability](../images/gemini_20261026005814_0.png)
+![Type-II Seesaw vs Inverse Seesaw in Neutrino Mass Generation and Collider/Lepton-Flavor-Violation Testability](../images/gemini_20261026005814_0.webp)
 
 ## 7. Related Concepts
 - [[Neutrino Mass and Mixing]]

@@ -28,7 +28,7 @@ While the mathematical frameworks demonstrate coherence and innovative approache
 The verification process validated the mathematical integrity of the studied frameworks. The models align with contemporary observational data from Planck 2018 and BICEP/Keck, showcasing their potential as high-energy physics frameworks. The extracted equations displayed dimensional consistency across the board, providing a mathematical basis for the theoretical arguments presented.
 
 ## 6. Visual Representation
-![Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics](../images/gemini_20260822004701_0.png)
+![Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics](../images/gemini_20260822004701_0.webp)
 
 ## 7. Related Concepts
 - Inflationary Theory

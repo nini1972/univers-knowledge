@@ -111,7 +111,7 @@ The reported Hubble-tension benchmark is 4.85σ, with \(\Delta\chi^2=23.49\) ver
 8. **Testability routes:** proposed routes include AS black-hole quasinormal-mode shifts and constraints involving \(r_{0.05}<0.036\) and \(n_s=0.9649\pm0.0042\). These are potential tests, not confirmed signals.
 
 ## 6. Visual Representation
-![Nonperturbative Quantum Gravity Debate](../images/gemini_20261025011231_0.png)
+![Nonperturbative Quantum Gravity Debate](../images/gemini_20261025011231_0.webp)
 
 ## 7. Related Concepts
 - [Quantum Gravity](quantum_gravity.md)

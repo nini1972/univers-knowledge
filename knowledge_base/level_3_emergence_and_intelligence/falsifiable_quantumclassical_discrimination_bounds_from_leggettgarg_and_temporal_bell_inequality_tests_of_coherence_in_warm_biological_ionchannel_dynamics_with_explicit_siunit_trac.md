@@ -159,7 +159,7 @@ The following cautions govern any future interpretation:
 10. The “3.58 sigma” example is hypothetical and needs clarification: the approved summary gives \(\Delta\) of about \(0.4\) or \(0.143\), and the example does not follow from \(\sigma=0.004\) as stated.
 
 ## 6. Visual Representation
-![Falsifiable Quantum-Classical Discrimination Bounds from Leggett-Garg and Temporal Bell Inequality Tests of Coherence in Warm Biological Ion-Channel Dynamics, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](../images/gemini_20261029012625_0.png)
+![Falsifiable Quantum-Classical Discrimination Bounds from Leggett-Garg and Temporal Bell Inequality Tests of Coherence in Warm Biological Ion-Channel Dynamics, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](../images/gemini_20261029012625_0.webp)
 
 ## 7. Related Concepts
 - Leggett–Garg inequalities and macrorealism

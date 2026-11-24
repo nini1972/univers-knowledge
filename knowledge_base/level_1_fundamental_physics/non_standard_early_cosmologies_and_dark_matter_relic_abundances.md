@@ -35,7 +35,7 @@ Skepticism often arises regarding the implications of alternative cosmological m
 The framework remains [THEORETICAL] due to the absence of direct observational evidence for pre-BBN expansion phases. As such, results are contingent upon specific model assumptions, particularly regarding key parameters such as reheating temperature and maximum temperature.
 
 ## 6. Visual Representation
-![What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?](../images/gemini_20260717010017_0.png)
+![What are the implications of non-standard early universe cosmologies on the predicted relic abundances for freeze-in versus freeze-out models?](../images/gemini_20260717010017_0.webp)
 
 ## 7. Related Concepts
 - Dark Matter

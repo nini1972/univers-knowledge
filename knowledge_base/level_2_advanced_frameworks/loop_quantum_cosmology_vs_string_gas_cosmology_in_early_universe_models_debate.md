@@ -34,7 +34,7 @@ Acknowledging the theoretical status of both LQC and SGC, the report adopts a sk
 The skeptic verification score assigned is 5/5, indicating thorough vetting of assumptions, mathematical rigor, and a balanced appraisal of sources and uncertainties. The report excels in transparent presentation, providing detailed justifications and articulating the theoretical nature of foundational premises. This high verification score establishes the document as a reliable theoretical assessment rather than an empirical or definitive model of early universe cosmology.
 
 ## 6. Visual Representation
-![Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](../images/gemini_20260701232744_1.png)
+![Loop Quantum Cosmology vs String Gas Cosmology in Early Universe Models Debate](../images/gemini_20260701232744_1.webp)
 
 ## 7. Related Concepts
 - Loop Quantum Gravity and its application in cosmology

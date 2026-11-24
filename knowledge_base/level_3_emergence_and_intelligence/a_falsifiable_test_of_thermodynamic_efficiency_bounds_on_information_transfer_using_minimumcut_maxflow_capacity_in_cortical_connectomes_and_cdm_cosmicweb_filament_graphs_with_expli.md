@@ -131,7 +131,7 @@ The H₀ tension is indirectly relevant only, as motivation for EDE robustness c
 *(Verification notes pending peer review.)*
 
 ## 6. Visual Representation
-![A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles](../images/gemini_20261105011517_0.png)
+![A Falsifiable Test of Thermodynamic Efficiency Bounds on Information Transfer Using Minimum-Cut Max-Flow Capacity in Cortical Connectomes and ΛCDM Cosmic-Web Filament Graphs, with Explicit SI-Unit Tracing and Pre-Specified Null Ensembles](../images/gemini_20261105011517_0.webp)
 
 ## 7. Related Concepts
 - Landauer’s principle and the thermodynamics of irreversible erasure

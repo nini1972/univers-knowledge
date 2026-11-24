@@ -52,7 +52,7 @@ Several critical perspectives emerge around Dirac models:
 The theoretical aspects of these frameworks need careful scrutiny to ensure mathematical validity. The discrepancies observed in neutrino mass measurements versus theoretical model predictions emphasize the need for affirmative experimental validation.
 
 ## 6. Visual Representation
-![Dirac vs Majorana Neutrino Mass Frameworks](../images/gemini_20261025012659_0.png)
+![Dirac vs Majorana Neutrino Mass Frameworks](../images/gemini_20261025012659_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

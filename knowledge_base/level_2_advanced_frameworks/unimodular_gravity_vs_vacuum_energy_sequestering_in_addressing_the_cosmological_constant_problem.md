@@ -28,7 +28,7 @@ While both UG and VES are mathematically consistent, skepticism remains regardin
 All mathematical frameworks were rigorously verified, yielding consistent results across all major derivations. The elaboration of quantum properties and conservation laws strengthens the theoretical bases but invites ongoing inquiry into the observable ramifications.
 
 ## 6. Visual Representation
-![Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem](../images/gemini_20260919022006_0.png)
+![Unimodular Gravity vs Vacuum Energy Sequestering in Addressing the Cosmological Constant Problem](../images/gemini_20260919022006_0.webp)
 
 ## 7. Related Concepts
 - General Relativity (GR)

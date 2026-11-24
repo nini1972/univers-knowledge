@@ -41,7 +41,7 @@ The **chiral vortical effect (CVE)** generates a current along the fluid vortici
 - Current bounds suggest the CME fraction of the measured signal is at most ~50% and possibly much smaller.
 
 ## 6. Visual Representation
-![The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework](../images/gemini_20261024011309_0.png)
+![The Chiral Magnetic Effect (CME) and Chiral Anomalous Transport: A Corrected Mathematical Framework](../images/gemini_20261024011309_0.webp)
 
 ## 7. Related Concepts
 The report details various complex interactions and theoretical mechanisms, including **anomalous hydrodynamics**, **topological mechanisms in heavy-ion collisions**, and distinct differing views on the CME's experimental evidence.

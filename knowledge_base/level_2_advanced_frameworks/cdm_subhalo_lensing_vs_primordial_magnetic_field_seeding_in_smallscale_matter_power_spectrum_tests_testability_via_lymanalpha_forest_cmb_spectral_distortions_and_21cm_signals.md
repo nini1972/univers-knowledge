@@ -172,7 +172,7 @@ The archived assessment distinguishes established observations, mathematical res
 The report’s use of \(D_{ls}=0.450\) Gpc is invalid because it takes the difference of angular-diameter distances. The resulting 12.7 mas and 1.27 mas figures, as well as the 371 mas and 23 mas figures, are discarded. The approved Skeptic correction is used here instead.
 
 ## 6. Visual Representation
-![ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals](../images/gemini_20261120004958_0.png)
+![ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals](../images/gemini_20261120004958_0.webp)
 
 ## 7. Related Concepts
 - ΛCDM and hierarchical structure formation

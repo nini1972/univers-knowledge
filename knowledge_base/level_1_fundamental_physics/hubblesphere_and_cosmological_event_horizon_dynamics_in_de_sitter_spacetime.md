@@ -213,7 +213,7 @@ The event-horizon integral is comoving; its proper counterpart includes the scal
 For the DESI best fit, the CPL density scales as \(a^{1.731}e^{-2.25a}\), not \(a^{-0.519}\) or \(a^{-3.231}\). Although the formal extrapolation makes the dark-energy density vanish and leads to a matter-dominated, growing horizon, this is a **[MODEL-DEPENDENT: CPL extrapolation beyond calibrated range]** conclusion. The temperature \(T_{\rm dS}\) is not a testable observable; empirical links concern \(H(z)\), \(f\sigma_8\), ISW, and weak lensing.
 
 ## 6. Visual Representation
-![Hubble-Sphere and Cosmological Event Horizon Dynamics in de Sitter Spacetime](../images/gemini_20261113005926_1.png)
+![Hubble-Sphere and Cosmological Event Horizon Dynamics in de Sitter Spacetime](../images/gemini_20261113005926_1.webp)
 
 ## 7. Related Concepts
 - [de Sitter spacetime](de_sitter_spacetime.md)

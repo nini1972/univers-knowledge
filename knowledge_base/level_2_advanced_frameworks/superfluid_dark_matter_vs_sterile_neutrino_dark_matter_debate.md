@@ -49,7 +49,7 @@ No direct experimental or observational confirmation currently certifies either 
 The skeptic's verification score awarded to the report is a perfect 5/5, surpassing the acceptance threshold. This reflects the report’s high quality, rigorous methodology, transparent evaluation of uncertainties, and comprehensive sourcing. It confirms that the debate encapsulates the state-of-the-art understanding and reliably informs ongoing dark matter research and experimental strategies.
 
 ## 6. Visual Representation
-![Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate](../images/gemini_20260709063645_1.png)
+![Superfluid Dark Matter vs Sterile Neutrino Dark Matter Debate](../images/gemini_20260709063645_1.webp)
 
 ## 7. Related Concepts
 - Dark Matter Phenomenology  

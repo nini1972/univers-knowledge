@@ -34,7 +34,7 @@ Several skeptical perspectives suggest that the issues faced by these theories, 
 Both Symmetric Teleparallel and Metric-Affine f(R) gravity are classified as theoretical constructs lacking empirical validation against the prevailing models. The necessity for further observational data and theoretical refinement is paramount to elevate these frameworks to a verified status.
 
 ## 6. Visual Representation
-![Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration](../images/gemini_20260715010544_1.png)
+![Symmetric Teleparallel Gravity vs Metric-Affine f(R) Gravity in Addressing Late-Time Cosmic Acceleration](../images/gemini_20260715010544_1.webp)
 
 ## 7. Related Concepts
 - General Relativity (GR)

@@ -28,7 +28,7 @@ Critics of Einstein-Cartan gravity often point to its current lack of empirical 
 The math verification confirms complete consistency, with no dimensional errors and valid topological structure in the Riemann-Cartan framework.
 
 ## 6. Visual Representation
-![Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](../images/gemini_20260902014600_1.png)
+![Torsion-based Einstein-Cartan Gravity vs. General Relativity in Resolving Initial Singularity Constraints](../images/gemini_20260902014600_1.webp)
 
 ## 7. Related Concepts
 - General Relativity

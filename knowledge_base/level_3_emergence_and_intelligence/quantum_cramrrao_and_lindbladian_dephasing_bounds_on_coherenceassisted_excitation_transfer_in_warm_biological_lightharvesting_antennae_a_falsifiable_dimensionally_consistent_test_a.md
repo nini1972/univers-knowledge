@@ -147,7 +147,7 @@ The following corrections from the Skeptic review are incorporated into this ent
 These amendments take precedence over conflicting preliminary numerical statements in the appended verification report. The report is included verbatim in Section 9 for audit traceability.
 
 ## 6. Visual Representation
-![Quantum Cramér–Rao and Lindbladian Dephasing Bounds on Coherence-Assisted Excitation Transfer in Warm Biological Light-Harvesting Antennae: A Falsifiable, Dimensionally Consistent Test Against Classical Förster Transport Null Models](../images/gemini_20261027010707_0.png)
+![Quantum Cramér–Rao and Lindbladian Dephasing Bounds on Coherence-Assisted Excitation Transfer in Warm Biological Light-Harvesting Antennae: A Falsifiable, Dimensionally Consistent Test Against Classical Förster Transport Null Models](../images/gemini_20261027010707_0.webp)
 
 ## 7. Related Concepts
 - [Open quantum systems and Lindblad dynamics](../level_3_emergence_and_intelligence/open_quantum_systems_and_lindblad_dynamics.md)

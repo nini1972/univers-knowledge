@@ -51,7 +51,7 @@ $$\Delta t = \frac{D_{\Delta t}}{c}\,\left[\tfrac{1}{2}|\theta - \beta|^2 - \psi
 - Despite some skepticism regarding dark matter conclusions drawn from lensing, the foundational role of lensing in understanding cosmic structure remains robust.
 
 ## 6. Visual Representation
-![Gravitational Lensing](../images/gemini_20260920170507_1.png)
+![Gravitational Lensing](../images/gemini_20260920170507_1.webp)
 
 ## 7. Related Concepts
 - Dark Matter

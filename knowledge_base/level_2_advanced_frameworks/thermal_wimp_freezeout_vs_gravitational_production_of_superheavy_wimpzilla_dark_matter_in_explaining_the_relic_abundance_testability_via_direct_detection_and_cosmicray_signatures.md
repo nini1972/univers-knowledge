@@ -151,7 +151,7 @@ The Skeptic scored the comparative assessment **5/5**. The Math Physicist scored
 - The unconfirmable citation arXiv:2605.20186 is removed. The canonical references include Chung–Kolb–Riotto, Griest–Kamionkowski, Planck 2018, and BICEP/Keck 2021.
 
 ## 6. Visual Representation
-![Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures](../images/gemini_20261115010009_0.png)
+![Thermal WIMP Freeze-Out vs Gravitational Production of Superheavy WIMPzilla Dark Matter in Explaining the Relic Abundance: Testability via Direct Detection and Cosmic-Ray Signatures](../images/gemini_20261115010009_0.webp)
 
 ## 7. Related Concepts
 - Thermal relic abundance and cosmological freeze-out

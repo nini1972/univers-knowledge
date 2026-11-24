@@ -46,7 +46,7 @@ The report confirms that all verification criteria are met:
 This yields a transparent, rigorous, and scientifically credible summary of the current knowledge state on neutrino mass hierarchies and their implications.
 
 ## 6. Visual Representation
-![Neutrino Mass Hierarchies and Their Implications](../images/gemini_20260619012150_1.png)
+![Neutrino Mass Hierarchies and Their Implications](../images/gemini_20260619012150_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

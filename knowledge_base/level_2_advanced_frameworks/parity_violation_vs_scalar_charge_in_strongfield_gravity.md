@@ -40,7 +40,7 @@ The framework presents significant theoretical challenges:
 A verified review process classified this framework on a level 5 out of 5 skeptic review, and 3 out of 4 on the mathematical review. The notation and dimensional-scaling issues identified are treated as necessary revisions rather than fatal failures.
 
 ## 6. Visual Representation
-![Parity Violation vs Scalar Charge in Strong-Field Gravity](../images/gemini_20260920172920_0.png)
+![Parity Violation vs Scalar Charge in Strong-Field Gravity](../images/gemini_20260920172920_0.webp)
 
 ## 7. Related Concepts
 - **Einstein-Dilaton-Gauss-Bonnet Gravity**: A related theoretical framework that contrasts with the dynamical characteristics of dCS gravity.

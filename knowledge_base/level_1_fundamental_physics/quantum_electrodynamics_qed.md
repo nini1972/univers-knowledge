@@ -20,7 +20,7 @@ tags:
 
 Quantum Electrodynamics (QED) is the relativistic quantum field theory describing the electromagnetic interaction between charged particles (primarily electrons and positrons) and photons. It unifies quantum mechanics with special relativity and serves as a fundamental part of the Standard Model of particle physics.
 
-![Quantum Electrodynamics (QED)](../images/gemini_20260521202912_0.png)
+![Quantum Electrodynamics (QED)](../images/gemini_20260521202912_0.webp)
 
 ## Theoretical Foundations
 

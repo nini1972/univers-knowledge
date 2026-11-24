@@ -46,7 +46,7 @@ Skeptics emphasize the lack of definitive experimental evidence proving any reso
 The verification process confirms the comprehensive coverage of conceptual and mathematical issues with citations from multiple independent sources. Mathematical formulations and empirical constraints are clear and thorough. The verification score assigned by a skeptic is 5/5, exceeding the acceptance threshold. The problem is thus classified as [THEORETICAL], and all current interpretations or solutions remain provisional hypotheses pending further experimental validation.
 
 ## 6. Visual Representation
-![Quantum Measurement Problem](../images/gemini_20260610011232_1.png)
+![Quantum Measurement Problem](../images/gemini_20260610011232_1.webp)
 
 ## 7. Related Concepts
 - Schrödinger Equation

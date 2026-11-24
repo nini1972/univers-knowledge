@@ -50,7 +50,7 @@ Leptogenesis, by contrast, is debated due to the lack of direct experimental evi
 - Continued experimental efforts and cross-model assessments are essential to test and refine or disprove leptogenesis as the source of baryon asymmetry.
 
 ## 6. Visual Representation
-![Neutrino Masses and Leptogenesis](../images/gemini_20260630011104_1.png)
+![Neutrino Masses and Leptogenesis](../images/gemini_20260630011104_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

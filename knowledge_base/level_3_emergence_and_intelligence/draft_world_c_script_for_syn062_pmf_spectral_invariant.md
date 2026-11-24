@@ -113,7 +113,7 @@ Before World C execution:
 9. Do not upgrade the claim beyond **[THEORETICAL]** until EMP-241 results are available.
 
 ## 6. Visual Representation
-![Draft World C Script for SYN-062 (PMF Spectral Invariant)](../images/gemini_20261123084327_0.png)
+![Draft World C Script for SYN-062 (PMF Spectral Invariant)](../images/gemini_20261123084327_0.webp)
 
 ## 7. Related Concepts
 - [[SYN-062]] — PMF Spectral Invariant, World C spectral-gap script.

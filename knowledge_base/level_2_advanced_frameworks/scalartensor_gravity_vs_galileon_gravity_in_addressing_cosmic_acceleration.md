@@ -28,7 +28,7 @@ Skepticism surrounding Scalar-Tensor Gravity and Galileon Modified Gravity often
 The analysis maintains mathematical integrity, with rigorous extraction and verification processes being conducted across numerous equations, all contributing to the credibility of the findings.
 
 ## 6. Visual Representation
-![Scalar-Tensor Gravity vs Galileon Gravity in Addressing Cosmic Acceleration](../images/gemini_20260819010255_1.png)
+![Scalar-Tensor Gravity vs Galileon Gravity in Addressing Cosmic Acceleration](../images/gemini_20260819010255_1.webp)
 
 ## 7. Related Concepts
 - ΛCDM Model

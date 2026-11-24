@@ -92,7 +92,7 @@ The feasibility gate is a prerequisite, not evidence that the proposed analysis 
 The reference list in the research report also requires a full bibliographic audit. In particular, future-dated citations and the non-standard Lodha 2025 DOI must be investigated, and all DOIs must be re-resolved. The sources listed in the frontmatter preserve specific citation identifiers; they do not certify that every citation mentioned in the report has passed that audit.
 
 ## 6. Visual Representation
-![A Falsifiable Test of Cosmic-Web Filament Fractal-Dimension Scaling and Void-Size Distribution Against ΛCDM N-Body Null Ensembles Using Minkowski Tensors and Dimensionally Traced Landauer Dissipation Bounds](../images/gemini_20261112010939_0.png)
+![A Falsifiable Test of Cosmic-Web Filament Fractal-Dimension Scaling and Void-Size Distribution Against ΛCDM N-Body Null Ensembles Using Minkowski Tensors and Dimensionally Traced Landauer Dissipation Bounds](../images/gemini_20261112010939_0.webp)
 
 ## 7. Related Concepts
 - Cosmic-web fractal dimension and the two-point correlation function

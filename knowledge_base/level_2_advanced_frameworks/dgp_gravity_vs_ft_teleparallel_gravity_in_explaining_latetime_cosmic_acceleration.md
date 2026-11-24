@@ -28,7 +28,7 @@ Both theories face skepticism due to their lack of observable predictions that c
 Both DGP and f(T) gravity have been rigorously evaluated through a variety of mathematical checks, showing strengths and failure modes.
 
 ## 6. Visual Representation
-![DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](../images/gemini_20260804011743_0.png)
+![DGP Gravity vs f(T) Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](../images/gemini_20260804011743_0.webp)
 
 ## 7. Related Concepts
 - Modified Gravity

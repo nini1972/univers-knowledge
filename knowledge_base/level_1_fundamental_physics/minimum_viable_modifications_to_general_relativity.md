@@ -28,7 +28,7 @@ Some alternative theories challenge the necessity or validity of modifications t
 The study meets all validation criteria and underscores the need for further verification of the proposed modifications through observational tests.
 
 ## 6. Visual Representation
-![Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?](../images/gemini_20260825003909_0.png)
+![Given that current observational constraints force both theories toward the limit of GR, what is the 'minimum viable' degree of modification that remains mathematically stable and physically motivated for either model?](../images/gemini_20260825003909_0.webp)
 
 ## 7. Related Concepts
 - General Relativity

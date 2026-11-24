@@ -84,7 +84,7 @@ The reported \(H_0\) tension of \(4.85\sigma\) and \(S_8\) tension of about \(2.
 **Net verdict: split decision.** The dark photon leads on formal naturalness; the ALP leads on experimental breadth, DESI interpretation, and near-term falsifiability.
 
 ## 6. Visual Representation
-![Dark Photon Kinetic-Mixing vs Axion-Like Particle Photon-Coupling Portals in Laboratory and Astrophysical Searches for Light Dark Matter](../images/gemini_20261106005441_0.png)
+![Dark Photon Kinetic-Mixing vs Axion-Like Particle Photon-Coupling Portals in Laboratory and Astrophysical Searches for Light Dark Matter](../images/gemini_20261106005441_0.webp)
 
 ## 7. Related Concepts
 - [[Dark Photon]]

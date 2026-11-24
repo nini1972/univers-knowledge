@@ -28,7 +28,7 @@ Critics may argue that the proposed observational framework could be impacted by
 The concept is classified as theoretical due to the absence of empirical confirmation in LIGO-Virgo-KAGRA data.
 
 ## 6. Visual Representation
-![What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?](../images/gemini_20260824003055_0.png)
+![What specific experimental signature could unambiguously differentiate a screening-protected scalar field from a non-local interaction in the context of strong-field gravity (e.g., binary black hole mergers)?](../images/gemini_20260824003055_0.webp)
 
 ## 7. Related Concepts
 - **Scalar Fields**: Understanding their role in gravity.

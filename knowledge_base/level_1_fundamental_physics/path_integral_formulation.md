@@ -128,7 +128,7 @@ Skepticism is not fringe: peer-reviewed critiques [4, 5] identify genuine gaps â
 The operational path-integral formulation passes verification through a 6/6 Skeptic score and a 4/4 Math Physicist score with no dimensional inconsistencies. Approval applies to time-sliced, Euclidean, and lattice-regularized computational uses supported by interferometry, quantum Monte Carlo, and lattice QCD; literal all-path ontology and full Lorentzian or gravitational extensions remain theoretical.
 
 ## 6. Visual Representation
-![Path Integral Formulation](../images/gemini_20260924013527_0.png)
+![Path Integral Formulation](../images/gemini_20260924013527_0.webp)
 
 ## 7. Related Concepts
 - Quantum Mechanics

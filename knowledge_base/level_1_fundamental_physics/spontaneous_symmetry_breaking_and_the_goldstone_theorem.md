@@ -126,7 +126,7 @@ The Goldstone counting formula also has a stated domain: its simple form applies
 - A simulated citation-audit result is not independent or authentic source verification; it is not treated as evidence here.
 
 ## 6. Visual Representation
-![Spontaneous Symmetry Breaking and the Goldstone Theorem](../images/gemini_20261023004835_0.png)
+![Spontaneous Symmetry Breaking and the Goldstone Theorem](../images/gemini_20261023004835_0.webp)
 
 ## 7. Related Concepts
 - [[Goldstone theorem]]

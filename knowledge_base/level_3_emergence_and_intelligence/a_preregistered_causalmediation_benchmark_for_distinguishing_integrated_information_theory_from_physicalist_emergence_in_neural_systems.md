@@ -123,7 +123,7 @@ The active-inference alternative is important because it may predict that neithe
 - **Mandatory design follow-ups:** Preregister mediator-confounding sensitivity analyses; validate proxy constructs; recompute sample size under multiplicity correction; specify how a dominant \(\psi_{\text{int}}\) will be interpreted; define mediator regions in advance; and include an exploratory active-inference test.
 
 ## 6. Visual Representation
-![A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](../images/gemini_20261019024539_0.png)
+![A Preregistered Causal-Mediation Benchmark for Distinguishing Integrated Information Theory from Physicalist Emergence in Neural Systems](../images/gemini_20261019024539_0.webp)
 
 ## 7. Related Concepts
 - [[Integrated Information Theory]]

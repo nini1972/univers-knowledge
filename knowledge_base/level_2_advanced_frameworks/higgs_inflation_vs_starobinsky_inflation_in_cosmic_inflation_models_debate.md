@@ -78,7 +78,7 @@ Alternative inflationary frameworks and extensions continue to be explored but h
 The comprehensive report integrating multiple scholarly sources, relevant mathematical formulations, and empirical constraints, has been awarded a full verification score of 5/5 by a skeptical review panel. It transparently discusses limitations and unsettled theoretical gaps, demonstrating rigor and credibility. Both Higgs Inflation and Starobinsky Inflation are confirmed as theoretically robust but remain in the [THEORETICAL] classification, pending further experimental validation through improved CMB polarization measurements and refined particle physics data.
 
 ## 6. Visual Representation
-![Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate](../images/gemini_20260629011801_0.png)
+![Higgs Inflation vs Starobinsky Inflation in Cosmic Inflation Models Debate](../images/gemini_20260629011801_0.webp)
 
 ## 7. Related Concepts
 - Cosmic Inflation

@@ -168,7 +168,7 @@ While the framework of special relativity is robust and supported by extensive e
 Special relativity remains an essential component of modern physics, with many experimental validations underscoring its accuracy. Significant findings in particle lifetimes, optical properties, and consistent adherence to predictions have solidified its standing as a valid physical theory.
 
 ## 6. Visual Representation
-![Special Relativity](../images/gemini_20260918113914_0.png)
+![Special Relativity](../images/gemini_20260918113914_0.webp)
 
 ## 7. Related Concepts
 - General Relativity

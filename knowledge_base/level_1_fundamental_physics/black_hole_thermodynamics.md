@@ -62,7 +62,7 @@ The area theorem applies to classical processes. Hawking radiation is expected t
 - **PBH numerical discussion:** An unresolved inconsistency remains between the stated enhancement factor and critical mass. Correct those figures before reusing them.
 
 ## 6. Visual Representation
-![Black Hole Thermodynamics](../images/gemini_20261022013352_1.png)
+![Black Hole Thermodynamics](../images/gemini_20261022013352_1.webp)
 
 ## 7. Related Concepts
 - [[General Relativity]]

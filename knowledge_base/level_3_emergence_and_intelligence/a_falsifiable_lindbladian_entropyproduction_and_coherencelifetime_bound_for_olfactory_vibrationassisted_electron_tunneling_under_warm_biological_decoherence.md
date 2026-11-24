@@ -84,7 +84,7 @@ The revised rate identity is dimensionally consistent in SI units, and its state
 The broader quantum-biology context is discussed by Arndt, Juffmann, and Vedral (2009). Counter-evidence relevant to vibration-based olfaction includes Block et al. (2015). The constants used in the numerical benchmark are associated with the CODATA reference cited above.
 
 ## 6. Visual Representation
-![A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence](../images/gemini_20261021021234_0.png)
+![A Falsifiable Lindbladian Entropy-Production and Coherence-Lifetime Bound for Olfactory Vibration-Assisted Electron Tunneling Under Warm Biological Decoherence](../images/gemini_20261021021234_0.webp)
 
 ## 7. Related Concepts
 - Open quantum systems and Lindblad dephasing

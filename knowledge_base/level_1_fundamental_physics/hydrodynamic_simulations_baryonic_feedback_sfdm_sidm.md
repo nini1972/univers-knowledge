@@ -28,7 +28,7 @@ The campaign introduces complex mathematical formalism derived from statistical 
 The proposed framework is validated through established mathematical principles and numerous simulations aligning with observational data. The assumption of a joint analysis framework strengthens the foundation of the experiment.
 
 ## 6. Visual Representation
-![How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?](../images/gemini_20260901011614_0.png)
+![How can hydrodynamic simulations be structured to conclusively break the degeneracy between baryonic feedback effects and dark-sector physics (SFDM wave effects vs. SIDM collisions) in dwarf galaxy cores?](../images/gemini_20260901011614_0.webp)
 
 ## 7. Related Concepts
 - Baryonic Feedback

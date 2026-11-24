@@ -28,7 +28,7 @@ While the theory has garnered attention, it faces scrutiny regarding its uncompu
 The mathematical integrity of this research report is fully verified, correctly synthesizing hierarchical structure formation equations with advanced network topology. Issues of dimensional consistency were thoroughly addressed, reinforcing the robustness of the model.
 
 ## 6. Visual Representation
-![Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](../images/gemini_20260812012427_1.png)
+![Algorithmic Complexity Limits of Hierarchical Structure Formation in Self-Organizing Cosmological Networks](../images/gemini_20260812012427_1.webp)
 
 ## 7. Related Concepts
 - ΛCDM Model

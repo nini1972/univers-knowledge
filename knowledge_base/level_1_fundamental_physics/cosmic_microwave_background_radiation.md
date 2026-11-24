@@ -39,7 +39,7 @@ While the CMB is broadly accepted as the thermal remnant of the Big Bang, altern
 The Cosmic Microwave Background Radiation concept is comprehensively verified with multiple independent authoritative sources, rigorous mathematical grounding, explicit acknowledgment of skepticism and gaps, and robust empirical evidence from satellite missions like COBE, WMAP, and Planck. The reported [VERIFIED] status is supported by the near-perfect blackbody spectrum measurements, anisotropy patterns consistent with ΛCDM, and exclusion of viable alternative explanations. The verification checklist is fully satisfied with a perfect skeptic score of 5/5.
 
 ## 6. Visual Representation
-![Cosmic Microwave Background Radiation](../images/gemini_20260530212453_1.png)
+![Cosmic Microwave Background Radiation](../images/gemini_20260530212453_1.webp)
 
 ## 7. Related Concepts
 - Big Bang Theory

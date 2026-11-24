@@ -135,7 +135,7 @@ The authoritative status is **[THEORETICAL]** for full gauge coupling unificatio
 Before publication, the proton-decay formula must consistently distinguish rate from lifetime: \(m_p^3\) gives rate dimensions under dimensionless hadronic factors, whereas the lifetime expression uses \(m_p^5\) with the appropriate hadronic and model-dependent factors. The SUSY threshold scale must be identified as a free parameter, and the freedom in threshold corrections noted as weakening the significance of the apparent unification. Cosmological cross-checks must be tagged [MODEL-DEPENDENT/SPECULATIVE].
 
 ## 6. Visual Representation
-![Gauge Coupling Unification and Renormalization Group Running](../images/gemini_20261020005019_0.png)
+![Gauge Coupling Unification and Renormalization Group Running](../images/gemini_20261020005019_0.webp)
 
 ## 7. Related Concepts
 - [Standard Model](standard_model.md)

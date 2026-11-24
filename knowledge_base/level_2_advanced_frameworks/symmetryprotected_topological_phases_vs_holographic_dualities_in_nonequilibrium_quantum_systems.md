@@ -30,7 +30,7 @@ Skepticism about SPTs often focuses on the incompleteness of existing classifica
 The rigorous assessment confirms the underlying mathematical frameworks used in comparing SPT phases and holographic dualities. A total of **96 equations** were rigorously analyzed, ensuring no dimensional inconsistencies while identifying a robust theoretical landscape for both domains.
 
 ## 6. Visual Representation
-![Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems](../images/gemini_20260810005949_1.png)
+![Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems](../images/gemini_20260810005949_1.webp)
 
 ## 7. Related Concepts
 - Topological Order

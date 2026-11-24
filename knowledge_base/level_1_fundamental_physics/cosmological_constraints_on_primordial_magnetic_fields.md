@@ -100,7 +100,7 @@ The Faraday-rotation formula is schematic. Its coefficient and convention should
 9. BICEP/Keck Collaboration (Ade, P.A.R. et al.) (2021), PRL 127, 151301, [DOI:10.1103/PhysRevLett.127.151301](https://doi.org/10.1103/PhysRevLett.127.151301).
 
 ## 6. Visual Representation
-![Cosmological Constraints on Primordial Magnetic Fields](../images/gemini_20261116004114_0.png)
+![Cosmological Constraints on Primordial Magnetic Fields](../images/gemini_20261116004114_0.webp)
 
 ## 7. Related Concepts
 - [Cosmic microwave background](cosmic_microwave_background.md)

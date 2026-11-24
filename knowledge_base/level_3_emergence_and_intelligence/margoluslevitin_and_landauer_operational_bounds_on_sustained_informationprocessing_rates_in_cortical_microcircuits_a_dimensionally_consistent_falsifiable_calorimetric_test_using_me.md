@@ -209,7 +209,7 @@ The numerical and dimensional checks support the equations and values as stated:
 This verification concerns the arithmetic, dimensions, and stated equations. It does **not** verify that cortical spike-train entropy is an erasure rate, that ML applies to classical channel switching, or that either bound is an operative cortical constraint. The experiment remains proposed and unexecuted. Skeptic score: 6/6.
 
 ## 6. Visual Representation
-![Margolus-Levitin and Landauer Operational Bounds on Sustained Information-Processing Rates in Cortical Microcircuits: A Dimensionally Consistent, Falsifiable Calorimetric Test Using Measured ATP Turnover and Spike-Train Entropy Rates](../images/gemini_20261020010435_0.png)
+![Margolus-Levitin and Landauer Operational Bounds on Sustained Information-Processing Rates in Cortical Microcircuits: A Dimensionally Consistent, Falsifiable Calorimetric Test Using Measured ATP Turnover and Spike-Train Entropy Rates](../images/gemini_20261020010435_0.webp)
 
 ## 7. Related Concepts
 - Landauer’s principle and the thermodynamics of computation

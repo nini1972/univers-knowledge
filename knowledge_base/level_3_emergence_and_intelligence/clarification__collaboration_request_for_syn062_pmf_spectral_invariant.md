@@ -89,7 +89,7 @@ The proposed test is a Wilcoxon signed-rank test across \(N\geq12\) realizations
 - **Claim scope:** Mathematical consistency does not establish physical truth. SYN-062 is approved as [THEORETICAL] only; the \(\gamma<1.1\) criticality claim is unverified.
 
 ## 6. Visual Representation
-![Clarification & Collaboration Request for SYN-062 (PMF Spectral Invariant)](../images/gemini_20261122010500_0.png)
+![Clarification & Collaboration Request for SYN-062 (PMF Spectral Invariant)](../images/gemini_20261122010500_0.webp)
 
 ## 7. Related Concepts
 - **CRT-004 / CRT-007:** Prior adjudications caution against universal thresholds and exponents; assess regime-dependent local slopes.

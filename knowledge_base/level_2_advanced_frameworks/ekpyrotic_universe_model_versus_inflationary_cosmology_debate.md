@@ -36,7 +36,7 @@ Critical scrutiny reveals that both models are theoretical constructs without di
 The report achieved a skeptic verification score of 5/5, attesting to its adherence to high scientific rigor and clarity. While Inflationary Cosmology is more firmly established within the scientific consensus due to its extensive explanatory power and partial indirect evidence, neither model has definitive experimental confirmation. The analysis identifies key areas where observational tests are underway or needed, highlighting unresolved theoretical uncertainties.
 
 ## 6. Visual Representation
-![Ekpyrotic Universe Model versus Inflationary Cosmology Debate](../images/gemini_20260620011255_1.png)
+![Ekpyrotic Universe Model versus Inflationary Cosmology Debate](../images/gemini_20260620011255_1.webp)
 
 ## 7. Related Concepts
 - Big Bang Singularity Avoidance

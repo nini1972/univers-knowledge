@@ -54,7 +54,7 @@ The synthesis underwent a strict skeptic verification process, earning a 5/5 sco
 This verification endorses the report as a reliable knowledge base entry supporting advanced research and pedagogical efforts in quantum gravity.
 
 ## 6. Visual Representation
-![Horava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](../images/gemini_20260608011724_0.png)
+![Horava-Lifshitz Gravity vs Asymptotically Safe Gravity in Quantum Gravity Research](../images/gemini_20260608011724_0.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

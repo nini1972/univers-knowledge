@@ -62,7 +62,7 @@ The skeptic verification score is **5/6**, above the mandatory rejection thresho
 The evidence supports a physically grounded, testable hypothesis. A direct test would require simultaneous measurement of circuit-level error-correction performance, entropy production, and protocol duration in the same preparation.
 
 ## 6. Visual Representation
-![Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds](../images/gemini_20261017014740_0.png)
+![Finite-Time Thermodynamic Cost of Error Correction in Neural Circuits: An Empirical Test of Reliability–Dissipation Bounds](../images/gemini_20261017014740_0.webp)
 
 ## 7. Related Concepts
 - Landauer’s principle and the thermodynamics of information processing

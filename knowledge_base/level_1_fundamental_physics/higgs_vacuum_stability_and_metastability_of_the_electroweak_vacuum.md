@@ -160,7 +160,7 @@ The stability boundary is the Buttazzo et al. Eq. 64 expression given above. The
 - The decay-rate density \(\Gamma/V\) has dimension \([E]^4\).
 
 ## 6. Visual Representation
-![Higgs Vacuum Stability and Metastability of the Electroweak Vacuum](../images/gemini_20261124003901_0.png)
+![Higgs Vacuum Stability and Metastability of the Electroweak Vacuum](../images/gemini_20261124003901_0.webp)
 
 ## 7. Related Concepts
 - [False-vacuum decay](false_vacuum_decay.md)

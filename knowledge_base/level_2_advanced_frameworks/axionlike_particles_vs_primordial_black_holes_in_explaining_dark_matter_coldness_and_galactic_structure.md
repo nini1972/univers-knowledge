@@ -28,7 +28,7 @@ Critics highlight that the lack of direct detection means both ALPs and PBHs can
 The report achieves a perfect 5/5 skeptic verification score, indicating strong alignment with mathematical scrutiny and observational data.
 
 ## 6. Visual Representation
-![Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure](../images/gemini_20260802011109_0.png)
+![Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness and Galactic Structure](../images/gemini_20260802011109_0.webp)
 
 ## 7. Related Concepts
 - Dark Matter

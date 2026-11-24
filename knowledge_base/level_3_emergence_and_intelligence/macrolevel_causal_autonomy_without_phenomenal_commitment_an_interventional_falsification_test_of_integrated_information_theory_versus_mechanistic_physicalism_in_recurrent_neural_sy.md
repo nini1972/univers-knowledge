@@ -109,7 +109,7 @@ All 38 extracted equations and partial expressions returned either **DIMENSIONLE
 The mathematical integrity of the research report is highly rigorous. All equations, specifically the corrected Effective Information (EI) identity and PID decompositions, are well-defined, internally consistent, and logically valid without asserting incorrect mathematical identities. Topological verification passed smoothly, and the theoretical absence of dimensional physics units or empirical numerical benchmarks correctly aligns with the nature of the systems-theoretic arguments proposed, warranting a flawless verification score.
 
 ## 6. Visual Representation
-![Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems](../images/gemini_20260920174938_1.png)
+![Macro-Level Causal Autonomy Without Phenomenal Commitment: An Interventional Falsification Test of Integrated Information Theory Versus Mechanistic Physicalism in Recurrent Neural Systems](../images/gemini_20260920174938_1.webp)
 
 ## 7. Related Concepts
 - Integrated Information Theory

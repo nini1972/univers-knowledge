@@ -37,7 +37,7 @@ Despite promising data trends, the experimental verification of neutrino CP viol
 All established verification criteria for neutrino CP violation are met with exceptional rigor, receiving a perfect skeptic score of 5/5. This reflects thorough cross-examination of data, incorporation of model uncertainties, and critical comparison against alternative explanations. While the phenomenon remains theoretically classified, experimental data already disfavors CP conservation at a confidence level near 3 sigma, suggesting imminent transition towards a [VERIFIED] status. Hence, there is cautious optimism in the scientific community supporting the near-future discovery of neutrino CP violation.
 
 ## 6. Visual Representation
-![Neutrino CP Violation](../images/gemini_20260624010457_0.png)
+![Neutrino CP Violation](../images/gemini_20260624010457_0.webp)
 
 ## 7. Related Concepts
 - PMNS Mixing Matrix

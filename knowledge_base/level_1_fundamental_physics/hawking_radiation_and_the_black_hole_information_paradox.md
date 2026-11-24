@@ -104,7 +104,7 @@ The Math Physicist’s dismissal of the dimension flags was partly flawed: it co
 Citation 3 (Berti et al.) is tangential to the information-paradox claim. Citation 1’s arXiv ID and DOI should be checked for consistency.
 
 ## 6. Visual Representation
-![Hawking Radiation and the Black Hole Information Paradox](../images/gemini_20261021011509_0.png)
+![Hawking Radiation and the Black Hole Information Paradox](../images/gemini_20261021011509_0.webp)
 
 ## 7. Related Concepts
 - Quantum field theory in curved spacetime

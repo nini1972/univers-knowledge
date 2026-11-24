@@ -62,7 +62,7 @@ The standard TUR has mathematical and experimental support within its applicable
 The proposal to test TUR bounds in neural circuits is physically motivated but unverified. The proposed cosmic-web analogue is separately conjectural. Neither cross-domain universality nor the proposed gravitational bound is established.
 
 ## 6. Visual Representation
-![A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics](../images/gemini_20261013022945_0.png)
+![A Preregistered Cross-Domain Test of Thermodynamic Uncertainty Bounds on Reliable Information Processing in Neural Circuits and Cosmic-Web Dynamics](../images/gemini_20261013022945_0.webp)
 
 ## 7. Related Concepts
 - Thermodynamic uncertainty relations

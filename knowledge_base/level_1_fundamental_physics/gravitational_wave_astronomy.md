@@ -75,7 +75,7 @@ The central competing hypothesis space holds that GR is an effective limit and t
 **[THEORETICAL]** — not yet empirically established: inflationary stochastic GW backgrounds; primordial black-hole binaries as dark matter; any beyond-GR GW signature (extra polarizations, modified dispersion); neutron-star EOS uniquely determined from GWs alone; continuous waves from known pulsars (amplitude upper limits only, no detection).
 
 ## 6. Visual Representation
-![Gravitational Wave Astronomy](../images/gemini_20261023011831_0.png)
+![Gravitational Wave Astronomy](../images/gemini_20261023011831_0.webp)
 
 ## 7. Related Concepts
 ...

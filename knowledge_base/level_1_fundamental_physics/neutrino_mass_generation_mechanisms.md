@@ -77,7 +77,7 @@ While neutrino oscillations are experimentally confirmed, the concrete nature of
 - **Conclusion:** The report balances confirmed experimental facts and theoretical proposals, maintaining transparency about gaps in knowledge and avoiding conflating verified results with model-dependent hypotheses.
 
 ## 6. Visual Representation
-![Neutrino Mass Generation Mechanisms](../images/gemini_20260611011415_0.png)
+![Neutrino Mass Generation Mechanisms](../images/gemini_20260611011415_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

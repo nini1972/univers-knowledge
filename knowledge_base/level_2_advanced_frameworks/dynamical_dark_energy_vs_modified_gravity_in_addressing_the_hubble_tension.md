@@ -29,7 +29,7 @@ There are perspectives within the scientific community that question the validit
 This section discusses the steps taken to verify the mathematical integrity of the equations involved and highlights any skepticism from alternative theories. It is essential to recognize the rigorous methodologies applied to ensure that the derived equations maintain dimensional consistency and adhere to known physical laws.
 
 ## 6. Visual Representation
-![Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension](../images/gemini_20260820004429_0.png)
+![Dynamical Dark Energy vs Modified Gravity in Addressing the Hubble Tension](../images/gemini_20260820004429_0.webp)
 
 ## 7. Related Concepts
 This report also touches on related cosmological concepts, including:

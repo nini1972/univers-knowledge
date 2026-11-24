@@ -47,7 +47,7 @@ Alternative approaches such as String Theory propose different resolutions to qu
 - The skeptic verification score is a perfect 5/5, indicating rigorous adherence to methodological rigor and logical coherence without detected flaws.
 
 ## 6. Visual Representation
-![Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate](../images/gemini_20260703010226_1.png)
+![Loop Quantum Gravity vs Asymptotic Safety in Quantum Gravity Debate](../images/gemini_20260703010226_1.webp)
 
 ## 7. Related Concepts
 - Ashtekar Variables

@@ -180,7 +180,7 @@ Key limitations include:
 
 
 ## 6. Visual Representation
-![Matter-Antimatter Asymmetry](../images/gemini_20261028010704_1.png)
+![Matter-Antimatter Asymmetry](../images/gemini_20261028010704_1.webp)
 
 ## 7. Related Concepts
 - CP Violation

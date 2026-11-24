@@ -104,7 +104,7 @@ The numerical benchmark validator returned **BENCHMARK_MATCHES** with 2 matched 
 **Notes:** The identified constants are consistent with their expected values, demonstrating strong correspondence with standard measurements.
 
 ## 6. Visual Representation
-![Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory](../images/gemini_20260813010725_1.png)
+![Symmetry-Protected Topological Phases vs Holographic Entanglement Renormalization Group Flows in Quantum Information Theory](../images/gemini_20260813010725_1.webp)
 
 ## 7. Related Concepts
 - AdS/CFT Correspondence

@@ -34,7 +34,7 @@ There is a recognized skepticism within the scientific community regarding the e
 - The community awaits empirical validation of these theoretical findings to substantiate claims surrounding neutrino decay.
 
 ## 6. Visual Representation
-![What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?](../images/gemini_20260713011345_1.png)
+![What specific numerical benchmarks or simulations can be performed to enhance the mathematical integrity verification of neutrino decay effects in cosmological Boltzmann codes?](../images/gemini_20260713011345_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Physics

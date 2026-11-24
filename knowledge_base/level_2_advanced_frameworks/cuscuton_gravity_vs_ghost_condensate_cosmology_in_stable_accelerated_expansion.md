@@ -38,7 +38,7 @@ The key skepticism surrounding these theories centers on their inability to gain
 The comparative studies reinforce that neither theory exhibits a statistically significant advantage over the conventional \( \Lambda \)CDM model. Furthermore, in investigating the Cuscuton gravity framework, it was noted that the causal and ultraviolet ambiguities raise questions about the minimality trade-offs it proposes. Conversely, while the ghost condensate theory benefits from a richer effective field theory toolkit, it invites its own set of complications such as fifth-force implications, blue-tilt spectrum, and constraints on scale-tuning.
 
 ## 6. Visual Representation
-![Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion](../images/gemini_20260923012618_0.png)
+![Cuscuton Gravity vs Ghost Condensate Cosmology in Stable Accelerated Expansion](../images/gemini_20260923012618_0.webp)
 
 ## 7. Related Concepts
 The discussion of Cuscuton gravity and ghost condensation naturally leads to considerations of modifications to fundamental physics, comparisons with existing dark energy frameworks, and the broader implications of modified gravity theories on cosmology and early-universe scenarios.

@@ -132,7 +132,7 @@ The framework’s mathematical status is **[MATH_PROVEN]**, with a score of **4/
 The evidential status is distinct from the mathematical status: the dominant \((2,2,0)\) consistency test is empirically anchored, while the GW150914 overtone claim and full multi-mode spectroscopy remain contested. Exact numerical GWTC-3 posterior bounds are not supplied in the approved summary and are not fabricated here.
 
 ## 6. Visual Representation
-![Gravitational Wave Ringdown and Black Hole Quasinormal Mode Spectroscopy](../images/gemini_20261118004104_0.png)
+![Gravitational Wave Ringdown and Black Hole Quasinormal Mode Spectroscopy](../images/gemini_20261118004104_0.webp)
 
 ## 7. Related Concepts
 - Regge–Wheeler equation

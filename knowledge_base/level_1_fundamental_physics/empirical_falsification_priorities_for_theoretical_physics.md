@@ -33,7 +33,7 @@ While the framework proposes a structured approach to tackle empirical verificat
 This framework includes an empirical roadmap implementing multi-probe convergence (T_ij < 2) and seeks strong Bayesian evidence (ln B > 5) for confirmation, establishing clear thresholds for falsification.
 
 ## 6. Visual Representation
-![Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?](../images/gemini_20260801094126_0.png)
+![Which open questions and potential falsification tests should be prioritized to move the framework towards empirical verification?](../images/gemini_20260801094126_0.webp)
 
 ## 7. Related Concepts
 - Late-time Modified Gravity

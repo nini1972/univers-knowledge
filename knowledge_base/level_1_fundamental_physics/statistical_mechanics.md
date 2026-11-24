@@ -62,7 +62,7 @@ which relates the non-equilibrium work $W$ performed along an arbitrary driving 
 *Equilibrium statistical mechanics is verified to extraordinary precision across various states and processes; however, the mechanisms of thermalization and general nonequilibrium theory remain theoretical frontiers.*
 
 ## 6. Visual Representation
-![Statistical Mechanics](../images/gemini_20260922005506_0.png)
+![Statistical Mechanics](../images/gemini_20260922005506_0.webp)
 
 ## 7. Related Concepts
 - Thermodynamics

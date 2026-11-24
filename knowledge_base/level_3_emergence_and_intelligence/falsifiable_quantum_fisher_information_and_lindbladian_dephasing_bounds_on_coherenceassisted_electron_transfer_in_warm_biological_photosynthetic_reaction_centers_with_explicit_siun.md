@@ -126,7 +126,7 @@ Mandatory corrections and limitations:
 **Overall status:** plausible but unfalsified in either direction. No experiment has jointly measured \(\eta(\Gamma)\), \(F_Q(\tau)\), and the Marcus null in one warm preparation.
 
 ## 6. Visual Representation
-![Falsifiable Quantum Fisher Information and Lindbladian Dephasing Bounds on Coherence-Assisted Electron Transfer in Warm Biological Photosynthetic Reaction Centers, with Explicit SI-Unit Tracing and Pre-Specified Classical Marcus-Theory Null Models](../images/gemini_20261104005927_0.png)
+![Falsifiable Quantum Fisher Information and Lindbladian Dephasing Bounds on Coherence-Assisted Electron Transfer in Warm Biological Photosynthetic Reaction Centers, with Explicit SI-Unit Tracing and Pre-Specified Classical Marcus-Theory Null Models](../images/gemini_20261104005927_0.webp)
 
 ## 7. Related Concepts
 - Quantum Fisher information and classical Fisher information

@@ -30,7 +30,7 @@ Skeptical assessments regarding the framework highlight its theoretical nature. 
 Verified as a Level 3 theoretical framework. Pending further testing, concepts like causal closure, multiple realizability, and IIT are not yet classified as verified physical laws but rather as theoretical constructs that await reproducible outcomes.
 
 ## 6. Visual Representation
-![Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](../images/gemini_20260909172640_0.png)
+![Causal Closure, Multiple Realizability, and the Explanatory Gap: An Axiomatic and Empirically Falsifiable Physicalist Framework for Consciousness](../images/gemini_20260909172640_0.webp)
 
 ## 7. Related Concepts
 This framework connects to discussions about Functionalism, Information Theory, and Consciousness Studies, providing a theoretical basis for understanding how different models of consciousness interact and challenge each other.

@@ -31,7 +31,7 @@ While the theoretical foundations are robust, there are skeptics who urge cautio
 The mathematical formulations derived in the research have been verified as consistent and robust without critical flaws. The proposed frameworks are capable of elucidating the differences between SFDM and ΛCDM through advanced modeling techniques.
 
 ## 6. Visual Representation
-![What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?](../images/gemini_20260815002755_1.png)
+![What advancements in relativistic modeling and numerical simulations are needed to more conclusively differentiate SFDM predictions from ΛCDM scenarios in structure formation?](../images/gemini_20260815002755_1.webp)
 
 ## 7. Related Concepts
 - Scalar Field Dark Matter (SFDM)

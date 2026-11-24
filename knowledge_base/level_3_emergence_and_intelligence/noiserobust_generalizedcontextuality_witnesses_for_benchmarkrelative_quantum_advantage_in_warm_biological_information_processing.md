@@ -28,7 +28,7 @@ Skepticism persists regarding the applicability of quantum principles in biologi
 A thorough analysis of theoretical and empirical evidence reveals that while individual components of the conjecture have undergone verification, their combined implications for biological processes have not yet been substantiated. This highlights an ongoing need for focused experimental efforts.
 
 ## 6. Visual Representation
-![Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing](../images/gemini_20260921012915_1.png)
+![Noise-Robust Generalized-Contextuality Witnesses for Benchmark-Relative Quantum Advantage in Warm Biological Information Processing](../images/gemini_20260921012915_1.webp)
 
 ## 7. Related Concepts
 The exploration of concepts such as quantum contextuality, benchmark-relative advantage, and the implications of noise in biological systems continues to be an active area of research, significantly impacting fields such as quantum biology and quantum information theory.

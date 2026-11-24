@@ -33,7 +33,7 @@ While the theoretical implications hold promise, skeptics raise concerns regardi
 The investigations confirm that no documented intentions regarding data sharing exist among the respective collaborations (JUNO, DUNE, Hyper-Kamiokande). Therefore, independent verification of decay-bound observations based on publicly available datasets is currently unattainable.
 
 ## 6. Visual Representation
-![Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?](../images/gemini_20260718010934_1.png)
+![Can independent, publicly available datasets from JUNO, DUNE, or Hyper-Kamiokande be released to enable external verification of neutrino decay bounds?](../images/gemini_20260718010934_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Physics

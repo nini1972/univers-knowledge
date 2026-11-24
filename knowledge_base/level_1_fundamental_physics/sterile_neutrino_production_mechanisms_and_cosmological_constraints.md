@@ -28,7 +28,7 @@ The findings of this report are classified as [THEORETICAL] and satisfy all math
 The mathematical integrity of the research report is verified successfully. Dimensional consistency checks yielded exclusively dimensionless or undecidable results without any unphysical or inconsistent units, while topological analysis confirmed the structural validity of the relevant gauge interaction and active-sterile mixing parameters. Additionally, the extracted numerical benchmarks correctly matched standard expected values, leading to a robust mathematical validation.
 
 ## 6. Visual Representation
-![How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?](../images/gemini_20260814005029_0.png)
+![How can sterile neutrino production mechanisms be constrained or clarified by future neutrino oscillation or cosmological probes?](../images/gemini_20260814005029_0.webp)
 
 ## 7. Related Concepts
 - Neutrino oscillation

@@ -132,7 +132,7 @@ The first SymPy `MATH_FLAWED` verdict was a parse artifact. It was superseded by
 - **Open citation task:** check background citations, including the EPTA reference, before relying on them.
 
 ## 6. Visual Representation
-![Supermassive Black Hole Binary Inspirals vs Cosmic String Networks in Sourcing the Pulsar-Timing-Array Nanohertz Gravitational-Wave Background Spectrum](../images/gemini_20261108162433_0.png)
+![Supermassive Black Hole Binary Inspirals vs Cosmic String Networks in Sourcing the Pulsar-Timing-Array Nanohertz Gravitational-Wave Background Spectrum](../images/gemini_20261108162433_0.webp)
 
 ## 7. Related Concepts
 - [[Stochastic Gravitational-Wave Background]]

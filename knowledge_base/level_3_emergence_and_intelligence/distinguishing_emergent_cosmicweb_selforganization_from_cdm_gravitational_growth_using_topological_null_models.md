@@ -55,7 +55,7 @@ A checklist score and a hypothesis verdict answer different questions. The skept
 The supplied research report lists author names, years, publication details, and persistent identifiers, but does not provide paper titles. To avoid inventing bibliographic titles, the source entries in the YAML explicitly note that the titles were not stated in the supplied report. The identifiers and author/year details are retained.
 
 ## 6. Visual Representation
-![Distinguishing Emergent Cosmic-Web Self-Organization from ΛCDM Gravitational Growth Using Topological Null Models](../images/gemini_20261017073238_0.png)
+![Distinguishing Emergent Cosmic-Web Self-Organization from ΛCDM Gravitational Growth Using Topological Null Models](../images/gemini_20261017073238_0.webp)
 
 ## 7. Related Concepts
 - [Cosmic web](cosmic_web.md)

@@ -38,7 +38,7 @@ Skeptics argue that without conclusive evidence, endorsing one model over anothe
 Current empirical evidence lacks the definitive capability to differentiate between models due to the aforementioned degeneracies. Further observational advancements are necessary to reinforce or challenge existing theories.
 
 ## 6. Visual Representation
-![What are the prospects and timelines for observational advances (e.g., next-generation EHT or improved gravitational wave detectors) to resolve current degeneracies between Kerr and alternative black hole models?](../images/gemini_20260712135048_0.png)
+![What are the prospects and timelines for observational advances (e.g., next-generation EHT or improved gravitational wave detectors) to resolve current degeneracies between Kerr and alternative black hole models?](../images/gemini_20260712135048_0.webp)
 
 ## 7. Related Concepts
 - Kerr Metric

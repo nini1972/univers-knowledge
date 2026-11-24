@@ -95,7 +95,7 @@ The Skeptic scored the claim **6/6**. The Math Physicist rated it **[MATH_CONSIS
 - **Dossier status:** DOSSIER-127 remains pending as **[THEORETICAL]** only.
 
 ## 6. Visual Representation
-![Escape-time law t_esc = 2/(a·K0·R0^a) and the universal prefactor u](../images/gemini_20261108163208_0.png)
+![Escape-time law t_esc = 2/(a·K0·R0^a) and the universal prefactor u](../images/gemini_20261108163208_0.webp)
 
 ## 7. Related Concepts
 - [[CRT-004]] — regime-dependent local slopes rather than invariant universal exponents.

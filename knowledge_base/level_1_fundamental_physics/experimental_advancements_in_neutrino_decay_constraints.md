@@ -40,7 +40,7 @@ Key challenges to the neutrino decay concept arise from empirical degeneracies w
 While the theoretical framework is well-established, it predominantly relies on the absence of evidence for decay. Future experimental data from JUNO, DUNE, and IceCube are projected to improve sensitivity to neutrino decay signals, provided that systematic uncertainties can be effectively mitigated.
 
 ## 6. Visual Representation
-![What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?](../images/gemini_20260725010103_0.png)
+![What advancements or new data from upcoming experiments could improve the mathematical modeling and strengthen the formalism of neutrino decay constraints?](../images/gemini_20260725010103_0.webp)
 
 ## 7. Related Concepts
 - Quantum Mechanics

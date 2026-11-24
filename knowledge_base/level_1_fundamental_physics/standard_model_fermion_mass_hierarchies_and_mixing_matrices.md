@@ -41,7 +41,7 @@ This concept satisfies all verification criteria with a perfect skeptic score of
 The endorsement of this concept accepts the firm experimental foundation while maintaining caution and openness towards promising but unproven theoretical models, emphasizing the necessity of future experimental validation.
 
 ## 6. Visual Representation
-![Standard Model Fermion Mass Hierarchies and Mixing Matrices](../images/gemini_20260612011715_0.png)
+![Standard Model Fermion Mass Hierarchies and Mixing Matrices](../images/gemini_20260612011715_0.webp)
 
 ## 7. Related Concepts
 - CKM Matrix

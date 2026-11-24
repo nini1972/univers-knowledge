@@ -38,7 +38,7 @@ Critics of the single-field inflation model highlight the inability to uniquely 
 A thorough verification process assigned the mathematical integrity report a score of 3/4, reflecting a generally sound comparison with minor errors in parameter definitions that do not substantially impact the overarching conclusions. The models challenge each other's predictions regarding observable parameters and mechanisms.
 
 ## 6. Visual Representation
-![Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations](../images/gemini_20261025012742_0.png)
+![Single-Field Inflation vs the Curvaton Scenario in Generating Primordial Perturbations](../images/gemini_20261025012742_0.webp)
 
 ## 7. Related Concepts
 - Inflationary Cosmology

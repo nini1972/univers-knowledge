@@ -168,7 +168,7 @@ Corrections applied in this archive:
 7. A failed SymPy \(a\to1\) limit check was a tool syntax error. Its result remains **UNDECIDABLE** and should be rerun in a later revision.
 
 ## 6. Visual Representation
-![Lattice Gauge Theory and Numerical Lattice QCD](../images/gemini_20261104003725_0.png)
+![Lattice Gauge Theory and Numerical Lattice QCD](../images/gemini_20261104003725_0.webp)
 
 ## 7. Related Concepts
 - **Quantum chromodynamics (QCD):** The non-Abelian gauge theory of quarks and gluons that lattice QCD regulates and studies.

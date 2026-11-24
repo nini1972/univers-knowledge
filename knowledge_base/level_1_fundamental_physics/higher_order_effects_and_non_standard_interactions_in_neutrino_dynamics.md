@@ -36,7 +36,7 @@ Critics may raise concerns about the reliance on effective theories that can suf
 The defined framework indeed stands robust against internal inconsistencies, as verified by the rigorous mathematical integrity report. The theoretical constructs are carefully scrutinized to identify any potential discrepancies or weaknesses.
 
 ## 6. Visual Representation
-![What steps can be taken to integrate higher-order effects and non-standard interactions consistently within the existing framework?](../images/gemini_20260811003651_0.png)
+![What steps can be taken to integrate higher-order effects and non-standard interactions consistently within the existing framework?](../images/gemini_20260811003651_0.webp)
 
 ## 7. Related Concepts
 - Effective Field Theory (EFT)

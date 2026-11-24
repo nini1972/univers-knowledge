@@ -33,7 +33,7 @@ The report openly acknowledges skepticism by recognizing that neither the Multiv
 The skeptic's verification checklist confirms rigorous methodology, balanced transparency, and alignment with accepted scientific scrutiny standards. Despite the theoretical status of both concepts, the report’s careful adherence to multi-source integration, empirical alignment, and clear mathematical exposition justifies a verification score of 5/5. No logical fallacies, empirical misinterpretations, or presentation flaws are detected.
 
 ## 6. Visual Representation
-![Multiverse Hypothesis versus Anthropic Principle Debate](../images/gemini_20260603012323_0.png)
+![Multiverse Hypothesis versus Anthropic Principle Debate](../images/gemini_20260603012323_0.webp)
 
 ## 7. Related Concepts
 - Multiverse Hypothesis

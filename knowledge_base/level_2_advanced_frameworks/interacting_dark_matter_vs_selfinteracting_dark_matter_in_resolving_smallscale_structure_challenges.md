@@ -33,7 +33,7 @@ Skepticism regarding SIDM and IDM primarily revolves around their empirical vali
 The current audit affirms that while dark matter's gravitational effects are verified, the non-gravitational interactions of IDM and SIDM remain theoretical, emphasizing the need for continued exploration and observation to advance our understanding of these frameworks.
 
 ## 6. Visual Representation
-![Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](../images/gemini_20260730013042_1.png)
+![Interacting Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](../images/gemini_20260730013042_1.webp)
 
 ## 7. Related Concepts
 - Dark Matter

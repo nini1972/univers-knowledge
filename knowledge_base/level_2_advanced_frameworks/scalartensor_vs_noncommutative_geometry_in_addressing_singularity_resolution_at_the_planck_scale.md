@@ -37,7 +37,7 @@ Critics of Scalar-Tensor gravity and Non-Commutative Geometry point out their em
 While both frameworks are sophisticated, their lack of empirical verification raises questions regarding their applicability in addressing singularity resolution.
 
 ## 6. Visual Representation
-![Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale](../images/gemini_20260714012557_0.png)
+![Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale](../images/gemini_20260714012557_0.webp)
 
 ## 7. Related Concepts
 ## 7. Related Concepts

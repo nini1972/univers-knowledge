@@ -33,7 +33,7 @@ Critics may argue that the reliance on multi-channel datasets can lead to system
 The proposed observables are derived from robust theoretical foundations and are expected to undergo rigorous validation in ongoing and future neutrino experiments.
 
 ## 6. Visual Representation
-![What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?](../images/gemini_20260710181737_1.png)
+![What specific experimental observables or signatures can uniquely discriminate neutrino decay from background processes and alternative new physics scenarios in DUNE, JUNO, or IceCube datasets?](../images/gemini_20260710181737_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillation

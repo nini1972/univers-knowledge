@@ -143,7 +143,7 @@ A schematic relation for gravitational-wave energy density after production is m
 - Replace “tensor [VERIFIED]” with “HD tensor-like correlation verified; polarization composition pending.”
 
 ## 6. Visual Representation
-![Gravitational Wave Cosmology: Stochastic Gravitational-Wave Background Detection with Pulsar Timing Arrays](../images/gemini_20261117004133_0.png)
+![Gravitational Wave Cosmology: Stochastic Gravitational-Wave Background Detection with Pulsar Timing Arrays](../images/gemini_20261117004133_0.webp)
 
 ## 7. Related Concepts
 - Pulsar timing arrays and pulsar timing residuals

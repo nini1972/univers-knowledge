@@ -32,7 +32,7 @@ Critics point to the lack of statistical confirmation of CCC's predictions and t
 The report confirms the mathematical integrity of the frameworks and discusses the consistency of their equations, while acknowledging the unresolved issues in both models.
 
 ## 6. Visual Representation
-![Initial Condition Entropy and Arrow of Time](../images/gemini_20260905011827_0.png)
+![Initial Condition Entropy and Arrow of Time](../images/gemini_20260905011827_0.webp)
 
 ## 7. Related Concepts
 - **Cosmology**

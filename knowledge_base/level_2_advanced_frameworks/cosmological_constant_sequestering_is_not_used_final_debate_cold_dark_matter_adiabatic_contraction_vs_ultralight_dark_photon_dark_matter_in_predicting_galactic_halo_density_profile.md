@@ -103,7 +103,7 @@ The archive retains these review caveats:
 7. **Status of alternatives:** DPDM remains theoretical with no direct detection; SIDM, MOND, and fuzzy DM remain open alternatives for the core–cusp problem.
 
 ## 6. Visual Representation
-![Cosmological Constant Sequestering is not used. Final debate: Cold Dark Matter Adiabatic Contraction vs Ultralight Dark Photon Dark Matter in Predicting Galactic Halo Density Profiles and Pulsar-Timing Signatures](../images/gemini_20261123083541_0.png)
+![Cosmological Constant Sequestering is not used. Final debate: Cold Dark Matter Adiabatic Contraction vs Ultralight Dark Photon Dark Matter in Predicting Galactic Halo Density Profiles and Pulsar-Timing Signatures](../images/gemini_20261123083541_0.webp)
 
 ## 7. Related Concepts
 - Cold Dark Matter (CDM)

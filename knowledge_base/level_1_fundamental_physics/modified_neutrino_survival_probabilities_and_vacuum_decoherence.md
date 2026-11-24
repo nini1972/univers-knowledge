@@ -34,7 +34,7 @@ While the theoretical framework presents intriguing possibilities, skepticism ar
 The model is analytically sound, exhibiting mathematically established aspects of decoherence and survival probabilities. Nevertheless, the absence of experimental evidence points to a need for cautious interpretation.
 
 ## 6. Visual Representation
-![Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?](../images/gemini_20260819004949_0.png)
+![Can you provide a rigorous, derivation-based proof of the modified survival probability equations using non-Hermitian Hamiltonians and Lindblad operator formalism?](../images/gemini_20260819004949_0.webp)
 
 ## 7. Related Concepts
 - Quantum Decoherence

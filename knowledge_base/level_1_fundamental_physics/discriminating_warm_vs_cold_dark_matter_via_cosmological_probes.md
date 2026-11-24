@@ -50,7 +50,7 @@ While the sterile-neutrino warm dark matter model is compelling, skepticism exis
 Verification of this theoretical framework will depend heavily on future observational data, particularly regarding the small-scale structure and signatures of sterile neutrinos. Bayesian model selection will certainly benefit from new findings that can either support or challenge the sterile-neutrino hypothesis.
 
 ## 6. Visual Representation
-![How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?](../images/gemini_20260727005904_1.png)
+![How can cosmological observations be refined to better discriminate between warm dark matter effects predicted by sterile neutrinos and cold dark matter scenarios?](../images/gemini_20260727005904_1.webp)
 
 ## 7. Related Concepts
 - Lambda Cold Dark Matter (ΛCDM)

@@ -28,7 +28,7 @@ Critics may argue about the validity of drawing parallels between cosmic structu
 The mathematical grounding is verified at 4/4, as shown in the following verification report.
 
 ## 6. Visual Representation
-![Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments](../images/gemini_20260827025028_1.png)
+![Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments](../images/gemini_20260827025028_1.webp)
 
 ## 7. Related Concepts
 - Landauer's Principle

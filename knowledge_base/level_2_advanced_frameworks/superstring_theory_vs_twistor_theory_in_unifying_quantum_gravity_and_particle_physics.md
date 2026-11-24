@@ -39,7 +39,7 @@ Both theories remain speculative without empirical verification. Skepticism aris
 The report achieves a perfect Skeptic Verification Score of 5/5 by transparently presenting theoretical gaps, explicitly acknowledging the absence of direct experimental tests, and grounding all claims in authoritative sources. Both Superstring and Twistor theories retain a confirmed theoretical status pending empirical validation.
 
 ## 6. Visual Representation
-![Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics](../images/gemini_20260626011429_1.png)
+![Superstring Theory vs Twistor Theory in Unifying Quantum Gravity and Particle Physics](../images/gemini_20260626011429_1.webp)
 
 ## 7. Related Concepts
 - M-Theory and String Dualities  

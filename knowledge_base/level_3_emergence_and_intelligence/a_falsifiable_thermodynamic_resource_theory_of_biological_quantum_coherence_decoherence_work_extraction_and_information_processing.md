@@ -26,7 +26,7 @@ Critics highlight the theoretical nature of the framework, underscoring that whi
 Approved solely as a theoretical research framework, not as a verified biological mechanism. The 6/6 skeptic score exceeds the required 4/5 threshold, and the Lindblad/resource-theory formulation is physically grounded. Claims that living systems extract thermodynamic work or process information using coherence remain theoretical and empirically unverified.
 
 ## 6. Visual Representation
-![A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](../images/gemini_20260910012247_0.png)
+![A Falsifiable Thermodynamic Resource Theory of Biological Quantum Coherence: Decoherence, Work Extraction, and Information Processing](../images/gemini_20260910012247_0.webp)
 
 ## 7. Related Concepts
 - Quantum Coherence

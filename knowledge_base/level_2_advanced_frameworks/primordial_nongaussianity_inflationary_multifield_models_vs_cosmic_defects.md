@@ -39,7 +39,7 @@ The necessity for highly tuned parameters in multifield inflation raises skeptic
 While both multifield inflation and cosmic string theories demonstrate mathematical rigor, the lack of empirical data to support either framework remains a critical barrier to their acceptance as verified theories. Current constraints, such as \(f_{\mathrm{NL}}^{\mathrm{local}} = -0.9 \pm 5.1\) and \(G\mu/c^2 \lesssim 10^{-7}\), highlight the gap between theoretical predictions and observational validation.
 
 ## 6. Visual Representation
-![Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects](../images/gemini_20260721010942_0.png)
+![Primordial Non-Gaussianity: Inflationary Multifield Models vs. Cosmic Defects](../images/gemini_20260721010942_0.webp)
 
 ## 7. Related Concepts
 - Cosmic Inflation

@@ -28,7 +28,7 @@ The mathematical integrity of each approach offers several unique equations acro
 Verification through dimensional analysis and numerical benchmarks demonstrates that all examined equations within both frameworks exhibit proper dimensional consistency, underscoring their reliability in theoretical physics.
 
 ## 6. Visual Representation
-![Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics](../images/gemini_20260816004326_1.png)
+![Galilean-Invariant vs Non-Minimally Coupled Scalar Dark Matter in Galactic Dynamics](../images/gemini_20260816004326_1.webp)
 
 ## 7. Related Concepts
 - Effective Field Theories in Particle Physics

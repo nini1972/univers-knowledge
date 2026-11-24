@@ -83,7 +83,7 @@ The full Okamoto–Hu quadratic-estimator weights and the detailed halo-model \(
 - **Correction to the relativistic tSZ citation:** Cooray & Sheth is not the appropriate source for relativistic tSZ corrections; cite Nozawa, Itoh, Kohyama & Suda (2006) or Sazonov & Sunyaev (2000).
 
 ## 6. Visual Representation
-![Cosmic Microwave Background Lensing and the Sunyaev–Zel'dovich Effect](../images/gemini_20261106004408_0.png)
+![Cosmic Microwave Background Lensing and the Sunyaev–Zel'dovich Effect](../images/gemini_20261106004408_0.webp)
 
 ## 7. Related Concepts
 - Cosmic microwave background lensing convergence

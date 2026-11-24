@@ -74,7 +74,7 @@ The dimensional consistency of the rates and relations is confirmed, though the 
 The mathematical models correctly incorporate standard physical constants and benchmarks, maintaining mathematical integrity despite some uncertainties in the dimensional checks.
 
 ## 6. Visual Representation
-![Cosmic Recombination and Photon Decoupling](../images/gemini_20260923010730_0.png)
+![Cosmic Recombination and Photon Decoupling](../images/gemini_20260923010730_0.webp)
 
 ## 7. Related Concepts
 - Cosmological principles related to the formation of structures in the early universe.

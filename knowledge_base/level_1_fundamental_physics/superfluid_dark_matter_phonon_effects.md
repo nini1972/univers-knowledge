@@ -28,7 +28,7 @@ The degeneracies with other models such as MOND, Cold Dark Matter (CDM), Self-In
 The current limitations include constraints imposed by weak-lensing data and stellar evolution bounds. Nonetheless, the framework remains robust mathematically and proposes a clear path for future empirical validation.
 
 ## 6. Visual Representation
-![How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?](../images/gemini_20260816003030_1.png)
+![How might potential degeneracies in astrophysical signals between SFDM phonon effects and alternative dark matter models be resolved observationally?](../images/gemini_20260816003030_1.webp)
 
 ## 7. Related Concepts
 - Modified Newtonian Dynamics (MOND)

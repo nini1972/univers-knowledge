@@ -36,7 +36,7 @@ This synthesis explicitly distinguishes between empirical provisional verificati
 The report maintains transparency about the provisional nature of empirical confirmations compared to the tentative status of some theoretical resolutions. It carefully articulates observational gaps and uncertainties, while affirming strong alignment with the prevailing scientific consensus.
 
 ## 6. Visual Representation
-![Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks](../images/gemini_20260704010559_0.png)
+![Black Hole Models Debate: Observational Techniques vs Theoretical Frameworks](../images/gemini_20260704010559_0.webp)
 
 ## 7. Related Concepts
 - Event Horizon Telescope Imaging Techniques  

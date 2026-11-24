@@ -49,7 +49,7 @@ While WIMPs and ULAs are leading dark matter candidates, alternative theories su
 The exploration of both models underscores the complexities and uncertainties in dark matter research, revealing that both WIMPs and ULAs possess significant theoretical and observational constraints.
 
 ## 6. Visual Representation
-![Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations](../images/gemini_20260712140141_1.png)
+![Fermionic WIMPs vs Bosonic Ultralight Axions in Galaxy Formation Simulations](../images/gemini_20260712140141_1.webp)
 
 ## 7. Related Concepts
 - Dark Matter

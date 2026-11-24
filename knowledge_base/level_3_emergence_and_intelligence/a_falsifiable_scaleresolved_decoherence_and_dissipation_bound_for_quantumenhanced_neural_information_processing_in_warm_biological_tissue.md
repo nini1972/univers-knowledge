@@ -39,7 +39,7 @@ While the theoretical framework is solidified in established physics forms, skep
 The overarching conclusion encapsulates a theoretical framework; the validity hinges on future experiments that could measure decoherence within neurons. Meanwhile, the bid of claims from various researchers stands on shaky ground, demanding rigorous experimental feedback to verify theoretical assertions.
 
 ## 6. Visual Representation
-![A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](../images/gemini_20260922012444_0.png)
+![A Falsifiable Scale-Resolved Decoherence and Dissipation Bound for Quantum-Enhanced Neural Information Processing in Warm Biological Tissue](../images/gemini_20260922012444_0.webp)
 
 ## 7. Related Concepts
 This research intersects broadly with notions in quantum biology, the role of thermal environments in quantum coherence, and challenges classical paradigms in understanding neural cognition.

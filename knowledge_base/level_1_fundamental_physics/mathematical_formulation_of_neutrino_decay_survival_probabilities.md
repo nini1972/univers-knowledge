@@ -33,7 +33,7 @@ While the leading experimental data from T2K and NOvA align with the standard th
 Current experimental measurements suggest that the statistical anomalies witnessed in neutrino behavior may not reflect genuine decay processes, highlighting a need for further verification and observation.
 
 ## 6. Visual Representation
-![Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?](../images/gemini_20260710012011_0.png)
+![Can the mathematical framework for neutrino decay survival probabilities and flavor oscillation modifications be rigorously revised and peer-reviewed to achieve full mathematical integrity compliance?](../images/gemini_20260710012011_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

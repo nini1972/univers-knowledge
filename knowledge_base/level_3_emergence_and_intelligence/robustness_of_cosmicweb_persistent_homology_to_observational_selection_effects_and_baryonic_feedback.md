@@ -45,7 +45,7 @@ Accordingly, the combined robustness claim remains theoretical rather than verif
 - **Interpretation:** Treat the combined robustness claim as theoretical, not verified.
 
 ## 6. Visual Representation
-![Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback](../images/gemini_20261016012525_0.png)
+![Robustness of Cosmic-Web Persistent Homology to Observational Selection Effects and Baryonic Feedback](../images/gemini_20261016012525_0.webp)
 
 ## 7. Related Concepts
 - [Persistent homology](persistent_homology.md)

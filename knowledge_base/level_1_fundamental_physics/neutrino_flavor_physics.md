@@ -52,7 +52,7 @@ These areas reflect the ongoing frontiers in neutrino physics but do not undermi
 The consensus in the scientific community is that neutrino flavor oscillations are solidly confirmed. The phenomenon has been experimentally demonstrated by multiple, independent, and complementary oscillation experiments with high precision and rigor. The Skeptic's Verification Score assigned is 4.25 out of 5, indicating very strong empirical support combined with healthy scientific caution about remaining unknowns in neutrino physics.
 
 ## 6. Visual Representation
-![Neutrino Flavor Physics](../images/gemini_20260606010719_0.png)
+![Neutrino Flavor Physics](../images/gemini_20260606010719_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Mass Hierarchy

@@ -78,7 +78,7 @@ where \(\sigma\) is the string tension and \(C\) a constant offset.
 
 ## Illustration
 
-![Quantum Chromodynamics (QCD)](../images/gemini_20260519215407_1.png)
+![Quantum Chromodynamics (QCD)](../images/gemini_20260519215407_1.webp)
 
 ---
 

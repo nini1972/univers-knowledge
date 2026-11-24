@@ -47,7 +47,7 @@ While the proposed designs show promise, skepticism remains regarding their prac
 The concept has been verified with a score of 4/4, indicating a thorough mathematical grounding and validation against experimental constraints.
 
 ## 6. Visual Representation
-![What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?](../images/gemini_20260712131113_1.png)
+![What novel detector designs might improve sensitivity to spectral distortions near beta decay endpoints beyond current capabilities like KATRIN?](../images/gemini_20260712131113_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Masses and Mixing

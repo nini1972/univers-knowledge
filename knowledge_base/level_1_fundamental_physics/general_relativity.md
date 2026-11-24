@@ -46,7 +46,7 @@ General Relativity’s verification is robust, supported by at least three indep
 The transparent discussion of known deficiencies—quantum incompatibility, singularities, cosmological constant issues, and extreme gravity testing gaps—establishes responsible scientific communication, emphasizing both achievements and ongoing research challenges. This responsible balance justifies classifying GR as VERIFIED knowledge in fundamental physics.
 
 ## 5. Visual Representation
-![General Relativity](../images/gemini_20260529200927_1.png)
+![General Relativity](../images/gemini_20260529200927_1.webp)
 
 ## 6. Related Concepts
 - Special Relativity

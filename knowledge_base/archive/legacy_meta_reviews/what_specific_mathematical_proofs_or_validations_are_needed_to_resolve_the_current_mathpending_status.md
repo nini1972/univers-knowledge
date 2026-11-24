@@ -28,7 +28,7 @@ Despite its mathematical consistency, the framework's applicability as a univers
 The comprehensive nature of the framework allows for a robust validation process, yet it highlights cases where verification may be prematurely asserted without adequate evidence.
 
 ## 6. Visual Representation
-![What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?](../images/gemini_20260808004154_1.png)
+![What specific mathematical proofs or validations are needed to resolve the current MATH_PENDING status?](../images/gemini_20260808004154_1.webp)
 
 ## 7. Related Concepts
 - Interactive Theorem Proving

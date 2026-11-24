@@ -48,7 +48,7 @@ where \( T \) is an effective temperature and \( \Delta S \) an entropy gradient
 The report’s conclusions have been rigorously evaluated and assigned a skeptic verification score of 5/5, reflecting its thorough incorporation of diverse theoretical and empirical analyses, clear statement of assumptions, and acknowledgment of unresolved issues. It aligns with scientific prudence by classifying both SFDM and EG as theoretical constructs requiring further foundational work and experimental testing before any acceptance as established astrophysical knowledge. This reasoning conforms with best practices in astrophysical research and community consensus.
 
 ## 6. Visual Representation
-![Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics](../images/gemini_20260616061732_0.png)
+![Superfluid Dark Matter vs Emergent Gravity in Explaining Galactic Dynamics](../images/gemini_20260616061732_0.webp)
 
 ## 7. Related Concepts
 - Modified Newtonian Dynamics (MOND)  

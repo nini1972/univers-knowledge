@@ -46,7 +46,7 @@ The verification of QFT is supported by extraordinarily precise experimental dat
 The source report was meticulously cross-checked for comprehensive referencing, balanced treatment of skepticism, and sound mathematical formulations. Verified classification as a foundational theory in modern physics is appropriate, with the acknowledgment that formal mathematical rigor challenges persist.
 
 ## 6. Visual Representation
-![Quantum Field Theory](../images/gemini_20260607011411_0.png)
+![Quantum Field Theory](../images/gemini_20260607011411_0.webp)
 
 ## 7. Related Concepts
 - Quantum Mechanics

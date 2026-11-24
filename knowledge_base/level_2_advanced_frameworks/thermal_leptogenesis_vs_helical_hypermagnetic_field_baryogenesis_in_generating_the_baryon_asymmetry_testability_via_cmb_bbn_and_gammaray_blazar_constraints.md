@@ -172,7 +172,7 @@ The IGMF lower bound inferred from blazar observations carries a plasma-instabil
 - **Verdict:** Thermal leptogenesis is the consensus mainstream front-runner, not an empirically established mechanism. HMBG is a constrained niche alternative. No smoking gun exists. Primordial IGMF observations from CTA, LHAASO, and SKA are the key future discriminator.
 
 ## 6. Visual Representation
-![Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints](../images/gemini_20261110005109_0.png)
+![Thermal Leptogenesis vs Helical Hypermagnetic Field Baryogenesis in Generating the Baryon Asymmetry: Testability via CMB, BBN, and Gamma-Ray Blazar Constraints](../images/gemini_20261110005109_0.webp)
 
 ## 7. Related Concepts
 - Type-I seesaw mechanism and Majorana neutrinos

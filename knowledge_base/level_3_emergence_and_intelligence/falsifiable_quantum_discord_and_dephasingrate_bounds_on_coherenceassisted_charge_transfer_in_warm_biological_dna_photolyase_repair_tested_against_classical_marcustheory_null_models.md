@@ -145,7 +145,7 @@ The most parsimonious explanation remains classical Marcus theory plus structura
 - **Key unresolved empirical test:** Compare a photolyase-relevant MD-computed \(\tau_{corr}\) with the corrected dephasing bound. Tens-of-fs correlation times, if found, would exclude the proposed mechanism.
 
 ## 6. Visual Representation
-![Falsifiable Quantum Discord and Dephasing-Rate Bounds on Coherence-Assisted Charge Transfer in Warm Biological DNA Photolyase Repair, Tested Against Classical Marcus-Theory Null Models With Explicit SI-Unit Tracing](../images/gemini_20261111010019_0.png)
+![Falsifiable Quantum Discord and Dephasing-Rate Bounds on Coherence-Assisted Charge Transfer in Warm Biological DNA Photolyase Repair, Tested Against Classical Marcus-Theory Null Models With Explicit SI-Unit Tracing](../images/gemini_20261111010019_0.webp)
 
 ## 7. Related Concepts
 - [[Marcus theory]]

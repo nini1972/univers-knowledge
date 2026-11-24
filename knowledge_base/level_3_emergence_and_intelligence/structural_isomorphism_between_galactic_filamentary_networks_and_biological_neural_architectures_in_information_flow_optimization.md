@@ -33,7 +33,7 @@ Despite the intriguing similarities, the claim remains theoretical as no univers
 The correspondence between the cosmic web and neural networks is compelling but should be approached with caution given the need for further empirical validation.
 
 ## 6. Visual Representation
-![Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](../images/gemini_20260801111226_1.png)
+![Structural Isomorphism Between Galactic Filamentary Networks and Biological Neural Architectures in Information Flow Optimization](../images/gemini_20260801111226_1.webp)
 
 ## 7. Related Concepts
 - Graph Theory

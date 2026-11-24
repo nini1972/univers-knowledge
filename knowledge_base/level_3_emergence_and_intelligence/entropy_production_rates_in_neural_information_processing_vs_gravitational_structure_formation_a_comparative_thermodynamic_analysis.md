@@ -28,7 +28,7 @@ There are ongoing debates regarding the reliability of models pertaining to grav
 The established framework highlights the necessity of further empirical alignment between the biological and cosmological realms, necessitating caution in assumptions drawn solely from analogous comparisons.
 
 ## 6. Visual Representation
-![Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](../images/gemini_20260807021437_1.png)
+![Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](../images/gemini_20260807021437_1.webp)
 
 ## 7. Related Concepts
 - Biological Neural Information Processing

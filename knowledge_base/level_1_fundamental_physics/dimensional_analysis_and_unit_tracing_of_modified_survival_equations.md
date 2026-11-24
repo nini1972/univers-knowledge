@@ -28,7 +28,7 @@ While the theoretical framework is compelling, several skeptics highlight the la
 The dimensional analysis has shown all proposed quantities reduce to correct SI dimensions, including dimensionless survival probabilities and inverse-time hazard rates. This verification bolsters the credibility of the theoretical constructs, despite some skepticism regarding the practical applicability of memory-dependent models.
 
 ## 6. Visual Representation
-![Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?](../images/gemini_20260820003018_1.png)
+![Will you perform a complete dimensional analysis table for your proposed modified survival equations, showing explicit SI unit tracing to prove they are dimensionless?](../images/gemini_20260820003018_1.webp)
 
 ## 7. Related Concepts
 - Survival Analysis

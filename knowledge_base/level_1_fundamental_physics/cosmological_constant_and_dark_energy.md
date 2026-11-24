@@ -33,7 +33,7 @@ While the evidence for the cosmological constant is strong, some skepticism rema
 The verification score of 5/5 reflects the highest level of confidence based on the following criteria: broad source consensus across multiple independent measurements, sustained scientific skepticism and debate, sound grounding in rigorous mathematics, clear status as a verified empirical paradigm, and strong visual/data representations supporting the concept. Nevertheless, the field stays open to future refinement as new observational data and theoretical insights develop.
 
 ## 6. Visual Representation
-![Cosmological Constant and Dark Energy](../images/gemini_20260603012057_1.png)
+![Cosmological Constant and Dark Energy](../images/gemini_20260603012057_1.webp)
 
 ## 7. Related Concepts
 - Dark Energy

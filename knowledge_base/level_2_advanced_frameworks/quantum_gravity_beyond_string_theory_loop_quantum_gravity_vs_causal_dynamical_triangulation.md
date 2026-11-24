@@ -67,7 +67,7 @@ The skeptic provides a full 5/5 evaluation of this report, confirming that:
 Thus, this synthesis is approved as a verified theoretical knowledge base entry, suitable for advanced scholarly reference.
 
 ## 6. Visual Representation
-![Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation](../images/gemini_20260530212654_1.png)
+![Quantum Gravity Beyond String Theory: Loop Quantum Gravity vs Causal Dynamical Triangulation](../images/gemini_20260530212654_1.webp)
 
 ## 7. Related Concepts
 - Loop Quantum Gravity  

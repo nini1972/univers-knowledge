@@ -33,7 +33,7 @@ The report anticipates and addresses potential skeptic concerns by validating so
 A rigorous verification process rated the report with a flawless 5/5 score. This assessment confirms the comprehensive validation of cited sources, the careful treatment of uncertainties, consistency across mathematical formulations, and meticulous classification between established results and speculative models. While acknowledging suggestions for deeper numerical detail and sharper experimental bounds on new physics, the verification underscores the report’s overall soundness, dependability, and significant contribution to ongoing neutrino research.
 
 ## 6. Visual Representation
-![Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology](../images/gemini_20260616061453_0.png)
+![Neutrino Cross-Section Measurements and Their Implications in Particle Physics and Cosmology](../images/gemini_20260616061453_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations and Flavor Transitions

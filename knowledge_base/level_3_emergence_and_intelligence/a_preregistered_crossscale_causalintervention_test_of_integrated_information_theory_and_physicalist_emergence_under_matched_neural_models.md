@@ -60,7 +60,7 @@ The proposal is grounded in published work on IIT, causal emergence, neural ener
 Before implementation, the proposal must correct its causal-emergence and falsification claims. In particular, it should not infer a general IIT scale ordering from causal-emergence results, and should not treat disagreement between distinct measures as decisive falsification without a separately justified decision rule.
 
 ## 6. Visual Representation
-![A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models](../images/gemini_20261026011215_0.png)
+![A Preregistered Cross-Scale Causal-Intervention Test of Integrated Information Theory and Physicalist Emergence Under Matched Neural Models](../images/gemini_20261026011215_0.webp)
 
 ## 7. Related Concepts
 - Integrated Information Theory 4.0

@@ -77,7 +77,7 @@ This evaluation employed the skeptic verification checklist, assessing reproduci
 - Ensures classification as a [THEORETICAL] debate outcome pending future empirical clarification.
 
 ## 6. Visual Representation
-![Modified Gravity Theories vs Dark Matter Particle Models Debate](../images/gemini_20260625011506_0.png)
+![Modified Gravity Theories vs Dark Matter Particle Models Debate](../images/gemini_20260625011506_0.webp)
 
 ## 7. Related Concepts
 - General Relativity and its extensions

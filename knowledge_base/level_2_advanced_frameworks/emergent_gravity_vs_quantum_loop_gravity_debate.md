@@ -39,7 +39,7 @@ Both theories face skepticism on empirical and theoretical grounds. Emergent Gra
 The skeptical verification score awarded is 5/5, reflecting the report's rigor, transparency, and carefully balanced critical assessment. It fully recognizes the theoretical status of both models and accurately presents their strengths and limitations without bias. The empirical data currently neither definitively support nor falsify either framework: Emergent Gravity partially aligns with galactic observations but not with larger scale phenomena, whereas Loop Quantum Gravity remains consistent with known physics but experimentally untested. Consequently, both are approved with a classification of [THEORETICAL].
 
 ## 6. Visual Representation
-![Emergent Gravity vs Quantum Loop Gravity Debate](../images/gemini_20260531011408_1.png)
+![Emergent Gravity vs Quantum Loop Gravity Debate](../images/gemini_20260531011408_1.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity Theories

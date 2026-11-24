@@ -37,7 +37,7 @@ Despite its mathematical foundations, the SFDM framework encounters empirical ch
 The theoretical framework of SFDM remains under scrutiny and has not yet been validated through empirical evidence. Its observables suggest certain signatures, but tensions with observational benchmarks must be reconciled before it can be fully accepted within the field of cosmology.
 
 ## 6. Visual Representation
-![What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?](../images/gemini_20260813005616_0.png)
+![What are the most promising upcoming observational or experimental tests that could directly detect signatures unique to Superfluid Dark Matter?](../images/gemini_20260813005616_0.webp)
 
 ## 7. Related Concepts
 - Cold Dark Matter (CDM)

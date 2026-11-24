@@ -140,7 +140,7 @@ Caveats to carry forward:
 **Comparative verdict:** CC have the stronger current empirical base in data quantity and redshift reach. Sirens have cleaner absolute-distance systematics and unique modified-gravity reach. The \(H_0\)–\(\Xi_0\) degeneracy is broken only by \(z> \sim1\) events combined with CC \(H(z)\).
 
 ## 6. Visual Representation
-![Standard Sirens vs Cosmic Chronometers in Resolving the Hubble Constant Tension](../images/gemini_20261112005140_0.png)
+![Standard Sirens vs Cosmic Chronometers in Resolving the Hubble Constant Tension](../images/gemini_20261112005140_0.webp)
 
 ## 7. Related Concepts
 - Hubble constant (\(H_0\)) and the local-versus-CMB Hubble tension

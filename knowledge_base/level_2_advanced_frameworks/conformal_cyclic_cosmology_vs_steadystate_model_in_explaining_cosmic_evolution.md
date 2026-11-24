@@ -33,7 +33,7 @@ Critics argue that both models fail to provide sufficient empirical backing and 
 While CCC is mathematically robust, its reliance on untested assumptions raises skepticism about its applicability and acceptance within the cosmological community. The Steady-State model’s historical reception highlights the importance of empirical verification in theoretical physics.
 
 ## 6. Visual Representation
-![Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution](../images/gemini_20260712001506_1.png)
+![Conformal Cyclic Cosmology vs Steady-State Model in Explaining Cosmic Evolution](../images/gemini_20260712001506_1.webp)
 
 ## 7. Related Concepts
 - Standard Model of Cosmology

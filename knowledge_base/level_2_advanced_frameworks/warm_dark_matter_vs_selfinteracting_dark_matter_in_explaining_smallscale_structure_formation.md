@@ -47,7 +47,7 @@ This comprehensive theoretical analysis has passed stringent verification criter
 Both WDM and SIDM maintain a [THEORETICAL] status pending direct empirical confirmation, highlighting the current state of scientific consensus that acknowledges their promising yet unconfirmed explanatory power in addressing small-scale structure formation issues.
 
 ## 6. Visual Representation
-![Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](../images/gemini_20260701190228_1.png)
+![Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](../images/gemini_20260701190228_1.webp)
 
 ## 7. Related Concepts
 - Cold Dark Matter (CDM) and its small-scale challenges  

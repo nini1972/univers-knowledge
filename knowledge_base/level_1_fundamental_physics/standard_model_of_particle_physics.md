@@ -119,7 +119,7 @@ where \(\psi_L, \psi_R\) are left- and right-handed fermion fields, \(\phi\) is 
 
 ## Visual Illustration
 
-![Standard Model of Particle Physics](../images/gemini_20260521010846_1.png)
+![Standard Model of Particle Physics](../images/gemini_20260521010846_1.webp)
 
 *The Standard Model particles and interactions: fermions (quarks and leptons), gauge bosons (photon, W, Z, gluons), and the Higgs boson.*
 

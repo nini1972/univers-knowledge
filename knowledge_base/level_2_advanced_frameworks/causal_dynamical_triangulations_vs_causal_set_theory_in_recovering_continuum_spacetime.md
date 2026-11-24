@@ -42,7 +42,7 @@ Critics of CDT argue that while empirical indicators suggest the emergence of cl
 Currently, CDT shows promising computational evidence leading to an extended semiclassical phase, characterized by behaviors akin to familiar universes. However, CST's formal structure allows it to cleanly implement Lorentz invariance. Scientific scrutiny continues regarding the lack of unique empirical predictions from both approaches which is essential for their validation.
 
 ## 6. Visual Representation
-![Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime](../images/gemini_20260918120229_0.png)
+![Causal Dynamical Triangulations vs Causal Set Theory in Recovering Continuum Spacetime](../images/gemini_20260918120229_0.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

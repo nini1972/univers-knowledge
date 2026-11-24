@@ -33,7 +33,7 @@ While extensively vetted, skepticism largely arises from the continued non-obser
 Verification efforts span decades of experimental campaigns using different isotope targets and detector technologies. All comprehensive skeptical verification reports confirm that 0νββ fulfills theoretical validity but remains unconfirmed experimentally, earning a perfect skeptic score of 5/5 for theoretical soundness and cautious interpretation. These reports emphasize transparent criteria, methodological rigor, and acknowledgment of known limitations, highlighting the theory's robust foundation without premature empirical claims.
 
 ## 6. Visual Representation
-![Neutrino-less Double Beta Decay](../images/gemini_20260617011700_1.png)
+![Neutrino-less Double Beta Decay](../images/gemini_20260617011700_1.webp)
 
 ## 7. Related Concepts
 - Majorana Neutrinos

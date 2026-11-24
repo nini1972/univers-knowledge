@@ -38,7 +38,7 @@ There exist various skeptical perspectives regarding the viability of Weyl-Invar
 The assessment of these frameworks is substantiated by empirical evidence surrounding the QCD trace anomaly and other experimental constraints derived from LHC, LIGO, and Cassini. The differentiation between the verified components of CSB and the largely speculative aspects of Weyl-Invariant Gravity is crucial for a balanced discussion.
 
 ## 6. Visual Representation
-![Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem](../images/gemini_20260907014259_1.png)
+![Conformal Symmetry Breaking vs Weyl-Invariant Gravity in Addressing the Cosmological Constant Problem](../images/gemini_20260907014259_1.webp)
 
 ## 7. Related Concepts
 - Quantum Chromodynamics (QCD)

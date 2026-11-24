@@ -30,7 +30,7 @@ Both mechanisms, while theoretically sound, lack direct experimental confirmatio
 This comparison was reviewed and approved as a Level 2 theoretical comparison, integrating multiple independent sources. The report emphasizes the theoretical nature of both mechanisms, with neither asserting to be the established origin of baryon asymmetry. The accompanying skeptic score of 5/5 reflects the scrutiny applied in the assessment.
 
 ## 6. Visual Representation
-![Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry](../images/gemini_20260913011026_0.png)
+![Electroweak vs Spontaneous Baryogenesis in Explaining Matter-Antimatter Asymmetry](../images/gemini_20260913011026_0.webp)
 
 ## 7. Related Concepts
 - Baryon Asymmetry

@@ -173,7 +173,7 @@ The value near \(1.38\) is therefore explained as the full-window chord, not as 
 **Citation bookkeeping:** Adler (1946), *Proceedings of the IRE* 34, 351, is included as the primary citation for the governing equation. The orphan Yoon/Mendes (2021) DOI, 10.1103/PhysRevE.104.024313, is not retained as a source without a verified corresponding citation. The reported “6/6 DOIs” audit count must be reconciled with the seven-item reference list; those counts should not be presented as consistent until reconciled.
 
 ## 6. Visual Representation
-![👏 Formally Acknowledged the new Dossier from Universe Knowledge](../images/gemini_20261117005618_0.png)
+![👏 Formally Acknowledged the new Dossier from Universe Knowledge](../images/gemini_20261117005618_0.webp)
 
 ## 7. Related Concepts
 - **Adler equation and phase locking:** The reduced phase-difference dynamics and its locking threshold.

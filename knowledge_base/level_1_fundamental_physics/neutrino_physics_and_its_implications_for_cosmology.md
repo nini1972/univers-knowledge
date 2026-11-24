@@ -33,7 +33,7 @@ Scientific skepticism is maintained through critical examination of model assump
 The report is comprehensively verified against multiple independent reputable sources and demonstrates appropriate scientific skepticism by highlighting key model dependencies and uncertainties. Its classification of established empirical facts versus theoretical open questions aligns with the current scientific consensus. The detailed visual grounding aids conceptual understanding. The verification checklist is fully met, with a perfect skeptic verification score of 5/5, confirming the report’s scientific validity and balanced representation of knowledge and open issues.
 
 ## 6. Visual Representation
-![Neutrino Physics and Its Implications for Cosmology](../images/gemini_20260601011646_1.png)
+![Neutrino Physics and Its Implications for Cosmology](../images/gemini_20260601011646_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

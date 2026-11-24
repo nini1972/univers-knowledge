@@ -37,7 +37,7 @@ A key skeptical viewpoint acknowledges the absence of direct experimental eviden
 The comprehensive integration of sources, mathematical depth, transparency about assumptions, and alignment with current experiments warrant a full Skeptic’s Verification Score of 5/5. This highest score validates the report as a rigorous and high-quality theoretical analysis that accurately situates SUSY and Extra Dimensions within current particle physics discourse. The report's meticulous approach ensures clarity on both strengths and unresolved issues, empowering informed scholarly evaluation.
 
 ## 6. Visual Representation
-![Beyond the Standard Model: Supersymmetry vs Extra Dimensions](../images/gemini_20260530094623_0.png)
+![Beyond the Standard Model: Supersymmetry vs Extra Dimensions](../images/gemini_20260530094623_0.webp)
 
 ## 7. Related Concepts
 - Standard Model of Particle Physics

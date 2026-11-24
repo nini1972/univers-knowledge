@@ -31,7 +31,7 @@ The concept is classified as theoretical due to the absence of experimental brid
 The mathematical integrity of the report is exceptionally robust, successfully scoring across all automated validation criteria.
 
 ## 6. Visual Representation
-![Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation](../images/gemini_20260901015441_1.png)
+![Computational Irreducibility and Algorithmic Information Compression in Neural Manifolds versus Cosmological Structure Formation](../images/gemini_20260901015441_1.webp)
 
 ## 7. Related Concepts
 - **Lambda Cold Dark Matter (ΛCDM) Cosmology**

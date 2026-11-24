@@ -100,7 +100,7 @@ The central puzzle is that QCD permits a physical CP-violating angle, while neut
 The PQ/axion mechanism is a theoretically sound proposed response to the puzzle. Its status must remain distinct from the status of the puzzle itself: the axion solution has not been experimentally confirmed. Further theoretical and experimental work, including axion searches and improved EDM measurements, can test the proposal.
 
 ## 6. Visual Representation
-![The Strong CP Problem](../images/gemini_20261018005348_0.png)
+![The Strong CP Problem](../images/gemini_20261018005348_0.webp)
 
 ## 7. Related Concepts
 - [[Quantum Chromodynamics]]

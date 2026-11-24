@@ -38,7 +38,7 @@ Despite its successes, inflationary cosmology faces several theoretical and empi
 The inflationary framework remains strongly favored due to its consistency with current data and explanatory power. However, it is properly characterized as a [THEORETICAL] model pending direct empirical confirmation. The report accurately addresses its limitations, the status of competing hypotheses, and maintains robust scientific skepticism. This balanced treatment reinforces the model's credibility while acknowledging areas requiring further research and observational breakthroughs.
 
 ## 6. Visual Representation
-![Inflationary Cosmology](../images/gemini_20260530215009_0.png)
+![Inflationary Cosmology](../images/gemini_20260530215009_0.webp)
 
 ## 7. Related Concepts
 - Big Bang Cosmology

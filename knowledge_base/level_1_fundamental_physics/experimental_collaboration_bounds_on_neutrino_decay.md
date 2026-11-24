@@ -44,7 +44,7 @@ While the analysis draws on strong empirical data and enjoys broad literature co
 The concept’s overall verification checklist rates 5 out of 6 points, and the skeptical verification score is 4 out of 5, both surpassing acceptance thresholds. This reflects a carefully balanced synthesis of theoretical concepts with verified experimental constraints. It recognizes the solid empirical foundations underpinning the claims, while recommending future improvements in mathematical detail and completeness to fully ascertain neutrino decay phenomena.
 
 ## 6. Visual Representation
-![What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?](../images/gemini_20260707010036_0.png)
+![What experimental collaborations could provide the latest bounds or evidence relevant to neutrino decay?](../images/gemini_20260707010036_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations  

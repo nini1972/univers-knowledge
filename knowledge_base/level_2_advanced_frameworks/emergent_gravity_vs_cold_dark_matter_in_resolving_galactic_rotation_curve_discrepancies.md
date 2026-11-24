@@ -40,7 +40,7 @@ Skeptics may point to the lack of a complete covariant theory for MOND and Verli
 The verification steps employed reveal that the mathematics of the research report demonstrates a high degree of consistency, with all equations passing dimensional consistency checks. The associated math score confirms the robust nature of the analytical framework.
 
 ## 6. Visual Representation
-![Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies](../images/gemini_20260823004901_0.png)
+![Emergent Gravity vs. Cold Dark Matter in Resolving Galactic Rotation Curve Discrepancies](../images/gemini_20260823004901_0.webp)
 
 ## 7. Related Concepts
 - MOND (Modified Newtonian Dynamics)

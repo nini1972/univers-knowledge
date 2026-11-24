@@ -35,7 +35,7 @@ There are challenges in experimentally verifying neutrino decay. The lack of emp
 Experimental strategies and observational techniques are crucial for advancing knowledge and verifying this theoretical framework. The road to achieving experimental validation remains uncertain, with decays still requiring solid evidence to be acknowledged within the scientific community.
 
 ## 6. Visual Representation
-![Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?](../images/gemini_20260810004603_0.png)
+![Are there experimental strategies to better constrain neutrino decay widths Γ_j and confirm decay-inclusive oscillation modifications?](../images/gemini_20260810004603_0.webp)
 
 ## 7. Related Concepts
 - Neutrino oscillations

@@ -42,7 +42,7 @@ The comparative debate report received a skeptic verification score of 5/5, refl
 The scientific consensus regards both SQFTs and CHMs as valuable theoretical paths beyond the Standard Model. However, they remain unconfirmed awaiting future experimental insights that could provide decisive evidence.
 
 ## 6. Visual Representation
-![Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking](../images/gemini_20260621011827_1.png)
+![Supersymmetric Quantum Field Theories vs Composite Higgs Models in Explaining Electroweak Symmetry Breaking](../images/gemini_20260621011827_1.webp)
 
 ## 7. Related Concepts
 - Supersymmetry and Superpartners  

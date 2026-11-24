@@ -34,7 +34,7 @@ Skeptics of both AS and NCG point towards the lack of empirical evidence confirm
 The comparative analysis correctly identifies both Asymptotic Safety and Noncommutative Geometry as unverified theories. The necessity of future Planck-scale observations is highlighted to assess their validity.
 
 ## 6. Visual Representation
-![Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime](../images/gemini_20260812011230_1.png)
+![Asymptotic Safety vs Noncommutative Geometry in Ultraviolet Completion of Spacetime](../images/gemini_20260812011230_1.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

@@ -157,7 +157,7 @@ The \(H_0\) discrepancy is separate from the S₈ comparison. Neither baryonic f
 - **Model-selection cautions:** Amon–Efstathiou \(B(k)\) is phenomenological, has about six free parameters, and risks circularity and degeneracy with intrinsic alignments and photo-z systematics. DDM claims require profile-likelihood treatment. Quantify the feedback-versus-kSZ tension in \(\Delta\chi^2\).
 
 ## 6. Visual Representation
-![Stable Cold Dark Matter with Baryonic Feedback vs Decaying Dark Matter in Resolving the S8 Tension](../images/gemini_20261107004208_0.png)
+![Stable Cold Dark Matter with Baryonic Feedback vs Decaying Dark Matter in Resolving the S8 Tension](../images/gemini_20261107004208_0.webp)
 
 ## 7. Related Concepts
 - [Cosmic shear](cosmic_shear.md)

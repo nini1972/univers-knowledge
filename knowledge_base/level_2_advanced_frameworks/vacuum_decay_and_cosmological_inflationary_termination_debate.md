@@ -41,7 +41,7 @@ Critics of both frameworks point to the lack of empirical validation as a fundam
 Both frameworks lack direct empirical support but remain consistent as effective descriptions. This acknowledgment highlights the importance of further research and empirical validation in cosmological studies.
 
 ## 6. Visual Representation
-![Vacuum Decay and Cosmological Inflationary Termination Debate](../images/gemini_20260904065420_0.png)
+![Vacuum Decay and Cosmological Inflationary Termination Debate](../images/gemini_20260904065420_0.webp)
 
 ## 7. Related Concepts
 - **Stochastic Inflationary Dynamics (SID)**

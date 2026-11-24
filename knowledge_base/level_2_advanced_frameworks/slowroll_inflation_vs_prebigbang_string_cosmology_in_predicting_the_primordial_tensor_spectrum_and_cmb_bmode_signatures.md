@@ -126,7 +126,7 @@ The equation extractor returned 0 equations, so extraction was done manually. Th
 Slow-roll is **[VERIFIED]** for core CMB observables. PBB parameters and spectra are **[THEORETICAL]**. The inference \(\epsilon=(1-n_s)/2\) and the relation \(n_t=-r/8\) are single-field model-dependent; the consistency relation is not yet directly tested. The B-mode bound depends on the foreground dust model.
 
 ## 6. Visual Representation
-![Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures](../images/gemini_20261030005251_0.png)
+![Slow-Roll Inflation vs Pre-Big-Bang String Cosmology in Predicting the Primordial Tensor Spectrum and CMB B-Mode Signatures](../images/gemini_20261030005251_0.webp)
 
 ## 7. Related Concepts
 - Cosmic Microwave Background (CMB) B-mode polarization

@@ -119,7 +119,7 @@ The discriminant between canonical quintessence and k-essence is their perturbat
 The reviewed claims distinguish the canonical case from general k-essence, state the stability conditions, and give the correct sign range for superluminal propagation. The density evolution for variable \(w(a)\) is expressed in exact integral form. The observational results are presented as hints rather than a detection, and the \(S_8\) tension is correctly identified as a matter/growth-sector issue. The evidence does not directly detect the scalar field; it grounds the comparison in empirical cosmological measurements interpreted within GR and Friedmann cosmology.
 
 ## 6. Visual Representation
-![Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration](../images/gemini_20261020005846_0.png)
+![Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration](../images/gemini_20261020005846_0.webp)
 
 ## 7. Related Concepts
 - \(\Lambda\)CDM

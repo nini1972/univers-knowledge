@@ -46,7 +46,7 @@ The report attains a skeptic verification score of 5/5, indicating:
 No significant logical errors or sourcing problems were identified. The report carefully balances the current scientific consensus with open questions and maintains prudent classification of both hypotheses as [THEORETICAL].
 
 ## 6. Visual Representation
-![Axion Dark Matter vs WIMPs in Explaining Dark Matter](../images/gemini_20260606011045_1.png)
+![Axion Dark Matter vs WIMPs in Explaining Dark Matter](../images/gemini_20260606011045_1.webp)
 
 ## 7. Related Concepts
 - Dark Matter Detection Methods

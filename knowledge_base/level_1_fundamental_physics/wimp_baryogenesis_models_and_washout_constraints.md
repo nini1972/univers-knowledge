@@ -28,7 +28,7 @@ Skeptics of the WIMP baryogenesis models argue that the theoretical foundations 
 Models of WIMP baryogenesis are mathematically coherent and provide rational explanations for the baryon asymmetry observed in the universe. However, their status remains primarily theoretical due to insufficient experimental validation. As new experimental data emerges, it may challenge the predictions made by WIMP models and influence the development of alternative theories.
 
 ## 6. Visual Representation
-![Can a rigorous model of WIMP baryogenesis be constructed that naturally satisfies the washout constraint without invoking fine-tuned flavor structures or heavy mass hierarchies?](../images/gemini_20260908005906_0.png)
+![Can a rigorous model of WIMP baryogenesis be constructed that naturally satisfies the washout constraint without invoking fine-tuned flavor structures or heavy mass hierarchies?](../images/gemini_20260908005906_0.webp)
 
 ## 7. Related Concepts
 - Baryogenesis 

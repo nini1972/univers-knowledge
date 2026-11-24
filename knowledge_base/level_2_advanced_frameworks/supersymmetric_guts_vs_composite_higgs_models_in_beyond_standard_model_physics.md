@@ -33,7 +33,7 @@ Critical discussion addresses the lack of experimental confirmation for both SUS
 This Level 2 debate report meets a skeptic verification score of 5/5 by satisfying key criteria including integration across independent peer-reviewed sources, mathematical consistency via rigorous formulations, direct confrontation with experimental data, transparent outlining of theoretical limitations, and comprehensive consensus considerations. The classification of both SUSY GUTs and Composite Higgs Models as currently [THEORETICAL] reflects their status without definitive experimental confirmation and aligns with the highest standards of scientific skepticism applicable to advanced theoretical physics debates.
 
 ## 6. Visual Representation
-![Supersymmetric GUTs vs Composite Higgs Models in Beyond Standard Model Physics](../images/gemini_20260619012447_0.png)
+![Supersymmetric GUTs vs Composite Higgs Models in Beyond Standard Model Physics](../images/gemini_20260619012447_0.webp)
 
 ## 7. Related Concepts
 - Supersymmetry (SUSY)

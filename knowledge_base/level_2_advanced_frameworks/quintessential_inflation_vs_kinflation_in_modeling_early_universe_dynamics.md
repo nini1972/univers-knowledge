@@ -49,7 +49,7 @@ Skepticism regarding these models stems from their lack of empirical evidence an
 Currently, empirical data does not substantiate the necessity for these models over the canonical inflation framework. As noted, current CMB observations do not require alterations to the established model.
 
 ## 6. Visual Representation
-![Quintessential Inflation vs K-Inflation in Modeling Early Universe Dynamics](../images/gemini_20260712121514_0.png)
+![Quintessential Inflation vs K-Inflation in Modeling Early Universe Dynamics](../images/gemini_20260712121514_0.webp)
 
 ## 7. Related Concepts
 - **Canonical Inflation**: The traditional model relying on a simple scalar field.

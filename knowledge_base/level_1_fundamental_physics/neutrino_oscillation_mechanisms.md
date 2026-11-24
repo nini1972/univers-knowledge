@@ -53,7 +53,7 @@ This balanced apprehension embodies healthy scientific skepticism, remaining ope
 The neutrino oscillation report is rated 5/5 on the skeptic's verification scale, reflecting robust confidence in its accuracy and scientific validity. The comprehensive experimental confirmation—from solar neutrinos detected by Homestake and SNO experiments to atmospheric neutrino observations by Super-Kamiokande and reactor neutrino measurements—strongly supports the existence of neutrino mass and mixing. The mathematical construction with no internal inconsistencies and the explicit differentiation of firmly established facts from theoretical or phenomenological hypotheses ensures transparent and credible communication of the current state of knowledge.
 
 ## 6. Visual Representation
-![Neutrino Oscillation Mechanisms](../images/gemini_20260623010722_1.png)
+![Neutrino Oscillation Mechanisms](../images/gemini_20260623010722_1.webp)
 
 ## 7. Related Concepts
 - Pontecorvo–Maki–Nakagawa–Sakata (PMNS) Matrix

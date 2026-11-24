@@ -156,7 +156,7 @@ The proposed \(\sigma_{\log\Xi}\) values of 0.5 and 0.8 have no cited pilot data
 - **Disclaimer:** no empirical data are presented, and all \(\Xi\) values are projections.
 
 ## 6. Visual Representation
-![A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses](../images/gemini_20261025012526_0.png)
+![A Falsifiable Landauer-Calibrated Test of Information-Erasure Costs in Cortical Synaptic Vesicle Release versus Cosmic-Web Filament Merger Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Hypotheses](../images/gemini_20261025012526_0.webp)
 
 ## 7. Related Concepts
 - [[Landauer's Principle]]

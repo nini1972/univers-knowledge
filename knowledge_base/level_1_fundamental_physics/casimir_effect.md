@@ -186,7 +186,7 @@ Casimir experiments also measure energy differences, not the absolute value of v
 - DESI’s dynamical-dark-energy hints are **not directly related within standard assumptions** to boundary-controlled vacuum-energy differences measured in Casimir experiments.
 
 ## 6. Visual Representation
-![Casimir Effect](../images/gemini_20261120003226_0.png)
+![Casimir Effect](../images/gemini_20261120003226_0.webp)
 
 ## 7. Related Concepts
 - Lifshitz theory

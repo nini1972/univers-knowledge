@@ -28,7 +28,7 @@ The research acknowledges several limitations, such as the lack of observational
 The rigorous mathematical and theoretical basis of the study has been verified, yet it is essential to keep in mind that it remains a theoretical exploration rather than an empirical affirmation of the ideas presented.
 
 ## 6. Visual Representation
-![Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments](../images/gemini_20260820005503_0.png)
+![Landauer-Bekenstein Thermodynamic Limits on the Information Storage Capacity of Self-Organizing Cosmological Filaments](../images/gemini_20260820005503_0.webp)
 
 ## 7. Related Concepts
 - Landauer’s Principle

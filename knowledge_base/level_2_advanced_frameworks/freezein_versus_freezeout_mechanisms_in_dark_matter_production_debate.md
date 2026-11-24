@@ -33,7 +33,7 @@ The report transparently confronts theoretical assumptions such as specific part
 A skeptic’s comprehensive verification assigns a perfect score of 5/5, acknowledging impeccable grounding in verified sources, rigorous mathematical coherence, relevant empirical cross-checks, clear delineation of theoretical assumptions, and scientific consensus transparency. This outstanding scholarly rigor supports approving Freeze-In and Freeze-Out as principal theoretical frameworks fundamental to current dark matter research discourse.
 
 ## 6. Visual Representation
-![Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate](../images/gemini_20260705011735_0.png)
+![Freeze-In versus Freeze-Out Mechanisms in Dark Matter Production Debate](../images/gemini_20260705011735_0.webp)
 
 ## 7. Related Concepts
 - Thermal Relic Abundance in Cosmology

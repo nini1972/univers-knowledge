@@ -169,7 +169,7 @@ Corrections incorporated into this document:
 8. DESI evolving-\(w\) hints are not conclusive, and quintessence fits them equally well.
 
 ## 6. Visual Representation
-![Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints](../images/gemini_20261121010811_0.png)
+![Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints](../images/gemini_20261121010811_0.webp)
 
 ## 7. Related Concepts
 - Flat ΛCDM

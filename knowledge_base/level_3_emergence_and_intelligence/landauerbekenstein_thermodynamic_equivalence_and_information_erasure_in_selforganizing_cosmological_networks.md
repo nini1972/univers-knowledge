@@ -36,7 +36,7 @@ While the mathematical mapping offers rigorous diagnostics, it is essential to r
 Upon verification, the mathematical integrity of the proposed equivalence has been assessed positively, supporting its theoretical validity. However, the conjectured nature emphasizes the need for further investigation into its cosmological applicability.
 
 ## 6. Visual Representation
-![Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks](../images/gemini_20260819011132_0.png)
+![Landauer-Bekenstein Thermodynamic Equivalence and Information Erasure in Self-Organizing Cosmological Networks](../images/gemini_20260819011132_0.webp)
 
 ## 7. Related Concepts
 - Erasure Cost in Information Theory

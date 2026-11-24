@@ -36,7 +36,7 @@ Each theory has its skeptics; for Emergent Gravity, the reliance on thermodynami
 The analysis satisfies the 5/5 skeptic verification score by cross-referencing high-precision data (Planck 2018), rigorous quantum field theory scattering foundations, and explicit cluster-scale empirical failures.
 
 ## 6. Visual Representation
-![Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics](../images/gemini_20260713012811_0.png)
+![Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics](../images/gemini_20260713012811_0.webp)
 
 ## 7. Related Concepts
 - Thermodynamics in Physics

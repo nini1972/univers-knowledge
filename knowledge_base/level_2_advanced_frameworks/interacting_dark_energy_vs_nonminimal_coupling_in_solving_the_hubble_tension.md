@@ -33,7 +33,7 @@ Critics of these models often point out the need for a more robust observational
 The theoretical foundations of IDE and Non-Minimal Coupling may be mathematically proven, but the reliance on observational data continues to underscore the critical need for verification against actual cosmic phenomena.
 
 ## 6. Visual Representation
-![Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension](../images/gemini_20260712164922_0.png)
+![Interacting Dark Energy vs Non-Minimal Coupling in Solving the Hubble Tension](../images/gemini_20260712164922_0.webp)
 
 ## 7. Related Concepts
 - Dark Energy

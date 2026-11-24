@@ -51,7 +51,7 @@ These skeptical angles stress the provisional status of reheating scenarios and 
 The concept has undergone thorough verification against a rigorous protocol encompassing source integration, clarity of explanation, acknowledgment of uncertainties, and theoretical soundness. The skeptic assigned a top score of 5/5, reflecting the framework's comprehensive coverage and internal consistency despite the absence of direct empirical validation. It is thus classified as a verified theoretical knowledge piece awaiting future observational corroboration.
 
 ## 6. Visual Representation
-![Inflationary reheating mechanisms](../images/gemini_20260628011317_0.png)
+![Inflationary reheating mechanisms](../images/gemini_20260628011317_0.webp)
 
 ## 7. Related Concepts
 - Cosmic Inflation

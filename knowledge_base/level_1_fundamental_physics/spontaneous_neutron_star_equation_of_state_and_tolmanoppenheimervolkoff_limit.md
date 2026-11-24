@@ -172,7 +172,7 @@ in units \(c=1\). A comparison of GR and scalar–tensor gravity must use the ac
 - **Citation and date audit:** the research report’s date is 2024-05-23. The citations below identify primary or relevant scientific publications with their publication years and DOI links; report placeholders are not treated as citations.
 
 ## 6. Visual Representation
-![Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit](../images/gemini_20261030004235_0.png)
+![Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit](../images/gemini_20261030004235_0.webp)
 
 ## 7. Related Concepts
 - [General Relativity](general_relativity.md)

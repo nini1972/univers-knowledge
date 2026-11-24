@@ -161,7 +161,7 @@ The experimental results are lower bounds on lifetimes, not measured decay times
 ## 6. Visual Representation
 [THEORETICAL]
 
-![Proton Decay and Baryon Number Violation](../images/gemini_20261110004154_0.png)
+![Proton Decay and Baryon Number Violation](../images/gemini_20261110004154_0.webp)
 
 ## 7. Related Concepts
 - Standard Model effective field theory (SMEFT)

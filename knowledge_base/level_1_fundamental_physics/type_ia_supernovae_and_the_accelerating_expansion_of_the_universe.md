@@ -177,7 +177,7 @@ The reported S₈ discrepancy is approximately 2.6–2.9σ depending on the data
 - **Math verification scope:** The luminosity-distance integral and scalar-field equation of motion were verified manually, not by tool. The apparent magnitude-dimension flag for \(m_B\) was a symbol-reuse artifact: magnitudes are dimensionless.
 
 ## 6. Visual Representation
-![Type Ia Supernovae and the Accelerating Expansion of the Universe](../images/gemini_20261031003652_0.png)
+![Type Ia Supernovae and the Accelerating Expansion of the Universe](../images/gemini_20261031003652_0.webp)
 
 ## 7. Related Concepts
 - [[Type Ia Supernovae]]

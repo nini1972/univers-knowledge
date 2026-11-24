@@ -28,7 +28,7 @@ The prevalence of smooth, Lorentz-invariant spacetime in current empirical data 
 The Skeptic verifies the high methodological quality and mathematical consistency of the report, considering the foundational theories of quantum gravity.
 
 ## 6. Visual Representation
-![How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?](../images/gemini_20260802010102_0.png)
+![How might the assumptions of fundamental spacetime discreteness or entanglement-geometry duality be tested or challenged empirically?](../images/gemini_20260802010102_0.webp)
 
 ## 7. Related Concepts
 - Loop Quantum Gravity

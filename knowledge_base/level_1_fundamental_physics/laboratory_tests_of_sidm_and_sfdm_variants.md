@@ -28,7 +28,7 @@ Skeptical viewpoints might argue that without definitive experimental results, t
 The verification process highlights that existing constraints are robust but suggests that they do not exhaust the entire parameter space of possible solutions for SIDM and SFDM candidates.
 
 ## 6. Visual Representation
-![What specific laboratory-based experiment, such as an axion haloscope or light-mediator search, could definitively falsify the most plausible variants of SIDM or SFDM?](../images/gemini_20260830010208_1.png)
+![What specific laboratory-based experiment, such as an axion haloscope or light-mediator search, could definitively falsify the most plausible variants of SIDM or SFDM?](../images/gemini_20260830010208_1.webp)
 
 ## 7. Related Concepts
 - **Dark Matter**: Refers to a form of matter that does not interact with electromagnetic forces, making it invisible and detectable only via gravitational effects.

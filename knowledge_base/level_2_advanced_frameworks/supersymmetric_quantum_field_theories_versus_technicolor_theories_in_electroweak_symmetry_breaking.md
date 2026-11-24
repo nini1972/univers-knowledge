@@ -46,7 +46,7 @@ A skepticism score of 4/5 highlights the report’s rigorous assessment but note
 The analysis derives from a comprehensive review of peer-reviewed articles, institutional reports, and authoritative lecture notes. Mathematical formulations are explicitly stated, underlying assumptions and theoretical gaps are transparently discussed, and empirical tensions are critically evaluated. Minor improvements suggested include clearer disclaimers related to the speculative aspects and continuously updated empirical perspectives as data accumulates.
 
 ## 6. Visual Representation
-![Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking](../images/gemini_20260622012058_0.png)
+![Supersymmetric Quantum Field Theories versus Technicolor Theories in Electroweak Symmetry Breaking](../images/gemini_20260622012058_0.webp)
 
 ## 7. Related Concepts
 - Supersymmetry and Superalgebra

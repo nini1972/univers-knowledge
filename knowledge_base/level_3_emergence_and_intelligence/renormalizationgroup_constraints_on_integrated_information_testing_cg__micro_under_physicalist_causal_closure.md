@@ -34,7 +34,7 @@ Critics of this hypothesis often point to the lack of empirical data supporting 
 The audit confirmed a strong score but reiterates that while the hypothesis stands on sound theoretical ground, it should be treated as such until further empirical evidence can either validate or refute these claims.
 
 ## 6. Visual Representation
-![Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure](../images/gemini_20260911011017_0.png)
+![Renormalization-Group Constraints on Integrated Information: Testing Φ_CG ≤ Φ_micro Under Physicalist Causal Closure](../images/gemini_20260911011017_0.webp)
 
 ## 7. Related Concepts
 - Information Theory

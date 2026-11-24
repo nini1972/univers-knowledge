@@ -179,7 +179,7 @@ The mathematical verification supports the consistency of the audited equations 
 The Symbol Table must be reconciled with the dimensionless estimand by declaring \(\theta\) dimensionless. Merger-tree algorithm systematics set a 10–20% floor; the tree branch is limited to \(z<2\) under the stated calibration caveats. Neural/tree information quantities and the level-matching calibration remain central interpretive limitations. Rejection requires Holm-corrected significance and robustness across at least three tree algorithms and two neural-noise models; failed robustness is indeterminate.
 
 ## 6. Visual Representation
-![Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees: A Falsifiable Test with Explicit SI-Unit Tracing](../images/gemini_20261031005636_0.png)
+![Fisher-Information and Minimum Description Length Bounds on Predictive-Coding Efficiency in Cortical Hierarchies versus Hierarchical Halo Merger Trees: A Falsifiable Test with Explicit SI-Unit Tracing](../images/gemini_20261031005636_0.webp)
 
 ## 7. Related Concepts
 - [[Predictive Coding]]

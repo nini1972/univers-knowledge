@@ -146,7 +146,7 @@ In natural units, \(\hbar=c=k_B=1\). The half-life \(T_{1/2}\) and EDMs \(d_e,d_
 - The \(0\nu\beta\beta\) empirical anchor is updated to KamLAND-Zen 2023. CUORE and KamLAND-Zen DOI records were carried forward and not re-fetched because of HTTP 429 errors.
 
 ## 6. Visual Representation
-![Thermal Leptogenesis vs Extended-Higgs Electroweak Baryogenesis in Explaining the Baryon Asymmetry: Testability via Electric Dipole Moments, Higgs Self-Coupling, and Neutrinoless Double Beta Decay](../images/gemini_20261105010032_0.png)
+![Thermal Leptogenesis vs Extended-Higgs Electroweak Baryogenesis in Explaining the Baryon Asymmetry: Testability via Electric Dipole Moments, Higgs Self-Coupling, and Neutrinoless Double Beta Decay](../images/gemini_20261105010032_0.webp)
 
 ## 7. Related Concepts
 - [[Type-I Seesaw Mechanism]]

@@ -39,7 +39,7 @@ Despite intense theoretical developments and indirect observational constraints,
 The verification status for Primordial Gravitational Waves is robust within theoretical physics, despite the absence of direct experimental observations. The skeptic’s verification score is a perfect 5 out of 5, reflecting full confidence in the report’s scientific integrity, completeness, and mathematical rigor. Multiple independent studies, observational constraints, and ongoing dedicated measurement efforts corroborate the theoretical concept while transparently acknowledging current limitations. PGWs thus represent solid, vetted theoretical knowledge anticipating future empirical confirmation, with strong indirect evidence motivating continued investigation.
 
 ## 6. Visual Representation
-![Primordial Gravitational Waves](../images/gemini_20260622011833_0.png)
+![Primordial Gravitational Waves](../images/gemini_20260622011833_0.webp)
 
 ## 7. Related Concepts
 - Cosmic Inflation

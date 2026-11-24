@@ -28,7 +28,7 @@ Despite the strong theoretical backing, there are still open questions that leav
 The comparison is approved with a Skeptic Verification Score of 5/5 based on the integration of various constraints and mathematical coherence.
 
 ## 6. Visual Representation
-![Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation](../images/gemini_20260911010421_1.png)
+![Sterile Neutrino vs Fuzzy Dark Matter in Explaining Structure Formation](../images/gemini_20260911010421_1.webp)
 
 ## 7. Related Concepts
 - Dark Matter

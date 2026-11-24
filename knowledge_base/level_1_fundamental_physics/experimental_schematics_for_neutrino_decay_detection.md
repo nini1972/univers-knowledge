@@ -41,7 +41,7 @@ There exists a variety of perspectives questioning the validity of hypothetical 
 The proposal to develop this schematic has undergone an initial verification process, assessing its alignment with established theoretical frameworks and experimental observations. It's important to recognize that the schematic will include prominent caveats regarding model dependence, ensuring that users of the schematic are aware of these limitations.
 
 ## 6. Visual Representation
-![Proposed visual schematic for neutrino decay constraints](../images/gemini_20260719010849_0.png)
+![Proposed visual schematic for neutrino decay constraints](../images/gemini_20260719010849_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

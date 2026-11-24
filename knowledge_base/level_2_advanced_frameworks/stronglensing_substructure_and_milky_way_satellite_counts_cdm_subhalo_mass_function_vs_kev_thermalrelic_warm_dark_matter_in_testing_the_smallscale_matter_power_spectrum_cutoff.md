@@ -113,7 +113,7 @@ The prior worked example for \(T_{X,0}/T_0\) is not retained as an established n
 - **Citation caveat:** Vegetti et al. (2023), arXiv:2306.04681, is retained only for the cutoff-mass comparison table because the verifier did not fully resolve it.
 
 ## 6. Visual Representation
-![Strong-Lensing Substructure and Milky Way Satellite Counts: ΛCDM Subhalo Mass Function vs KeV Thermal-Relic Warm Dark Matter in Testing the Small-Scale Matter Power Spectrum Cutoff](../images/gemini_20261111005146_0.png)
+![Strong-Lensing Substructure and Milky Way Satellite Counts: ΛCDM Subhalo Mass Function vs KeV Thermal-Relic Warm Dark Matter in Testing the Small-Scale Matter Power Spectrum Cutoff](../images/gemini_20261111005146_0.webp)
 
 ## 7. Related Concepts
 - ΛCDM and hierarchical structure formation

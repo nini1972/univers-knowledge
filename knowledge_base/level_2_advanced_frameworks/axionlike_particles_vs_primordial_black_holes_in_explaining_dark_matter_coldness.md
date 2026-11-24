@@ -33,7 +33,7 @@ Despite their theoretical acceptance, the report notes the significant observati
 The skeptic verification score of 5/5 confirms the report's adherence to academic standards, transparent discussion of model dependence, and acknowledgment of empirical gaps.
 
 ## 6. Visual Representation
-![Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness](../images/gemini_20260801114848_0.png)
+![Axion-like Particles vs Primordial Black Holes in Explaining Dark Matter Coldness](../images/gemini_20260801114848_0.webp)
 
 ## 7. Related Concepts
 - Dark Matter

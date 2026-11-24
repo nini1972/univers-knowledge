@@ -50,7 +50,7 @@ Despite its successes, the FLRW model faces challenges:
 FLRW cosmology is approved as a theoretically sound framework. It satisfies the skeptic checklist with 6/6 and the mathematics report with [MATH_CONSISTENT] and 3/4, while its exact matter-energy content and global symmetry assumptions remain observationally constrained rather than proven.
 
 ## 6. Visual Representation
-![Friedmann–Lemaître–Robertson–Walker Cosmology](../images/gemini_20260918005013_2.png)
+![Friedmann–Lemaître–Robertson–Walker Cosmology](../images/gemini_20260918005013_2.webp)
 
 ## 7. Related Concepts
 Emerging theories and discoveries in cosmology—particularly those related to dark energy, the Hubble constant, and cosmic structure formation—continue to shape our understanding of FLRW cosmology.

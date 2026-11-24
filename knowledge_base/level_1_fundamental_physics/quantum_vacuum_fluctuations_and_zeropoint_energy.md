@@ -36,7 +36,7 @@ Skepticism around zero-point energy focuses largely on the practical extraction 
 Verification status is robust, with the skeptic's assessment achieving a perfect 5/5 score. This rating comes from comprehensive scrutiny, replication of key experiments such as the Casimir effect and Lamb shift observations, and adherence to formal theoretical checks. The verification acknowledges open theoretical questions but classifies the concept as scientifically reliable and verified. The convergence of multiple independent sources and consistent mathematical treatments supports this classification for academic and technical utilization.
 
 ## 6. Visual Representation
-![Quantum Vacuum Fluctuations and Zero-Point Energy](../images/gemini_20260609010939_1.png)
+![Quantum Vacuum Fluctuations and Zero-Point Energy](../images/gemini_20260609010939_1.webp)
 
 ## 7. Related Concepts
 - Casimir Effect

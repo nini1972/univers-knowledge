@@ -29,7 +29,7 @@ While the proposed methodology is theoretically grounded, there remain skeptical
 The rigorous mathematical structure and derived equations solidify the validity of the analysis. However, ongoing scrutiny regarding interpretation and prediction accuracy is essential, especially as experimental data continues to evolve.
 
 ## 6. Visual Representation
-![Will you provide a statistical chi-squared fit analysis comparing your proposed modifications against contemporary datasets from T2K, NOvA, or IceCube?](../images/gemini_20260822002956_0.png)
+![Will you provide a statistical chi-squared fit analysis comparing your proposed modifications against contemporary datasets from T2K, NOvA, or IceCube?](../images/gemini_20260822002956_0.webp)
 
 ## 7. Related Concepts
 - Non-Standard Interactions (NSI)

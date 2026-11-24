@@ -28,7 +28,7 @@ Skeptics may question the reliance on selected bibliometric metrics or alternati
 This work critically evaluates the reliability of citations by leveraging established literature and rigorous methodologies for verification.
 
 ## 6. Visual Representation
-![Can you provide a corrected and verifiable bibliography, replacing the future-dated 2025 reference with established peer-reviewed material?](../images/gemini_20260823003342_1.png)
+![Can you provide a corrected and verifiable bibliography, replacing the future-dated 2025 reference with established peer-reviewed material?](../images/gemini_20260823003342_1.webp)
 
 ## 7. Related Concepts
 - Bibliometrics

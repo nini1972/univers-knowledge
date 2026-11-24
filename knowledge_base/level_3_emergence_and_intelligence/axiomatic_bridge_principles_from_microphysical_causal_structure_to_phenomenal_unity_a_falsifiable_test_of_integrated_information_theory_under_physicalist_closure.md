@@ -28,7 +28,7 @@ The skeptic score of 6/6 (100%) indicates that the theoretical framework exhibit
 Approved only as a [THEORETICAL] research program, not as [VERIFIED] knowledge. The skeptic score is 6/6 (100%), exceeding the mandatory 4/5 threshold. The work is grounded in physicalist modeling and information theory and explicitly acknowledges major empirical gaps. However, the displayed equations are not established IIT 4.0 definitions, physicalist closure remains a methodological assumption rather than a demonstrated bridge law, and no decisive evidence establishes Φ as necessary or sufficient for phenomenal unity. The claimed falsifiable test remains undeveloped.
 
 ## 6. Visual Representation
-![Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](../images/gemini_20260912011354_0.png)
+![Axiomatic Bridge Principles from Microphysical Causal Structure to Phenomenal Unity: A Falsifiable Test of Integrated Information Theory under Physicalist Closure](../images/gemini_20260912011354_0.webp)
 
 ## 7. Related Concepts
 - Integrated Information Theory (IIT)

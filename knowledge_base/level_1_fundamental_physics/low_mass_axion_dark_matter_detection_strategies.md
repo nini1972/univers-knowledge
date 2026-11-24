@@ -33,7 +33,7 @@ Despite the theoretical foundations of these approaches, the absence of empirica
 The reliance on theoretical projections emphasizes the need for further experimental validation. Ongoing advancements in technologies could aid in addressing these concerns.
 
 ## 6. Visual Representation
-![What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?](../images/gemini_20260726012032_0.png)
+![What are the most promising near-future experimental strategies to improve detection sensitivity for axion dark matter in the low mass range?](../images/gemini_20260726012032_0.webp)
 
 ## 7. Related Concepts
 - Axion electrodynamics

@@ -34,7 +34,7 @@ Critics of both theories highlight their speculative nature due to the absence o
 As multifaceted cosmological models, both CCC and EI remain primarily theoretical, with insufficient empirical support to be fully validated as predictive frameworks in cosmology.
 
 ## 6. Visual Representation
-![Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions](../images/gemini_20260711012311_0.png)
+![Conformal Cyclic Cosmology vs Eternal Inflation in Explaining Pre-Big Bang Initial Conditions](../images/gemini_20260711012311_0.webp)
 
 ## 7. Related Concepts
 - Cosmological Constant (Λ)

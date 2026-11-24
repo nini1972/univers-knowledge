@@ -101,7 +101,7 @@ The \(S_8\) comparison also requires accurate wording: the cited Planck value is
 - **Sources:** Specific paper citations and identifiers are provided in the YAML frontmatter. They replace placeholder references for the cited Planck, SH0ES, and DES evidence; citations should remain attached to the claims they support.
 
 ## 6. Visual Representation
-![Cosmic Microwave Background Anisotropies and Acoustic Peak Phenomenology](../images/gemini_20261022004905_0.png)
+![Cosmic Microwave Background Anisotropies and Acoustic Peak Phenomenology](../images/gemini_20261022004905_0.webp)
 
 ## 7. Related Concepts
 - [Cosmic Microwave Background](cosmic_microwave_background.md)

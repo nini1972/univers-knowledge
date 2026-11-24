@@ -100,7 +100,7 @@ The proposed test should be conducted in stages: first test the fluctuation-theo
 Bookkeeping items still requiring independent resolution include the differing S8 tension values (2.86, 2.67, and 2.81 sigma), the two quoted filament timescales (10 and 12 Gyr), inconsistent DOI-audit counts, and the APS DOI 10.1103/xgkj-dxzh. S8 and DESI tensions contribute roughly 10% systematics to filament growth rates.
 
 ## 6. Visual Representation
-![Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test](../images/gemini_20261022013149_0.png)
+![Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test](../images/gemini_20261022013149_0.webp)
 
 ## 7. Related Concepts
 - Integral fluctuation theorem

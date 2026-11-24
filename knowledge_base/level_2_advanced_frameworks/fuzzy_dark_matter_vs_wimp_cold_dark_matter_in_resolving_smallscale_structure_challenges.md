@@ -34,7 +34,7 @@ Skepticism around both models lies in the lack of direct detection for WIMPs and
 FDM remains [THEORETICAL] and is currently severely constrained by Lyman-α forest data, rendering its canonical parameters empirically excluded. This status highlights the importance of further research and experimentation to validate or refute these theoretical models.
 
 ## 6. Visual Representation
-![Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges](../images/gemini_20260731011841_1.png)
+![Fuzzy Dark Matter vs WIMP Cold Dark Matter in Resolving Small-Scale Structure Challenges](../images/gemini_20260731011841_1.webp)
 
 ## 7. Related Concepts
 - Dark Matter

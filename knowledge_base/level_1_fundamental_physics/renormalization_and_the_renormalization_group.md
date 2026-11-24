@@ -49,7 +49,7 @@ Alternative theories, such as loop quantum gravity or unimodular gravity, propos
 The empirical support for renormalization and the RG is both robust and comprehensive, particularly in the context of critical phenomena and well-measured QFT phenomena.
 
 ## 6. Visual Representation
-![Renormalization and the Renormalization Group](../images/gemini_20260925010221_0.png)
+![Renormalization and the Renormalization Group](../images/gemini_20260925010221_0.webp)
 
 ## 7. Related Concepts
 - Quantum Field Theory (QFT)

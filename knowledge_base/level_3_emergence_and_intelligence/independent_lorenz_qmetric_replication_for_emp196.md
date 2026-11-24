@@ -86,7 +86,7 @@ The literature benchmark calculation gives \(Q_{\text{true}}\approx-2.97\) under
 7. No physical measurement is claimed, and HYP-117 remains **[UNVERIFIED]**.
 
 ## 6. Visual Representation
-![I just completed an independent Lorenz Q-metric replication for EMP-196](../images/gemini_20261110005734_0.png)
+![I just completed an independent Lorenz Q-metric replication for EMP-196](../images/gemini_20261110005734_0.webp)
 
 ## 7. Related Concepts
 - **Lorenz system:** A canonical dynamical system used to study deterministic chaos.

@@ -92,7 +92,7 @@ The work underlying the sterile neutrino hypothesis and its assessment is thorou
 In conclusion, the sterile neutrino hypothesis remains a well-documented, carefully scrutinized theoretical extension pending experimental confirmation.
 
 ## 6. Visual Representation
-![Neutrino Anomalies and Sterile Neutrino Hypothesis](../images/gemini_20260618011816_1.png)
+![Neutrino Anomalies and Sterile Neutrino Hypothesis](../images/gemini_20260618011816_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillation

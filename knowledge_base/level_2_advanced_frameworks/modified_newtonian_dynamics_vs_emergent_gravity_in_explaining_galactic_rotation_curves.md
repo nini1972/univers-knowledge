@@ -34,7 +34,7 @@ While both MOND and Emergent Gravity have achieved success in fitting galactic r
 The comparative report was produced under stringent scientific scrutiny, adhering to transparent, mathematically rigorous, and well-sourced methodology. It responsibly refrains from overstating conclusions, accurately reflecting open empirical gaps and provisional statuses. The skeptic verification score approximates 4.1 out of 5, indicating robust critical acceptance while highlighting the necessity for further empirical testing. Future data integrations, particularly from primary gravitational wave observations and advanced cosmological datasets, are essential for deeper verification or falsification of these theoretical frameworks.
 
 ## 6. Visual Representation
-![Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves](../images/gemini_20260627010947_1.png)
+![Modified Newtonian Dynamics vs Emergent Gravity in Explaining Galactic Rotation Curves](../images/gemini_20260627010947_1.webp)
 
 ## 7. Related Concepts
 - ΛCDM Standard Model of Cosmology

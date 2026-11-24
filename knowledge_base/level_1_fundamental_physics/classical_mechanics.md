@@ -34,7 +34,7 @@ Despite its successes, classical mechanics shows limitations, particularly in re
 The classical mechanics framework has been verified through countless experiments and observations, effectively modeling a vast range of physical phenomena. However, it is recognized that classical mechanics fails to explain phenomena at the quantum level and in contexts where relativistic effects become significant.
 
 ## 6. Visual Representation
-![Classical Mechanics](../images/gemini_20260921005624_0.png)
+![Classical Mechanics](../images/gemini_20260921005624_0.webp)
 
 ## 7. Related Concepts
 1. Quantum Mechanics

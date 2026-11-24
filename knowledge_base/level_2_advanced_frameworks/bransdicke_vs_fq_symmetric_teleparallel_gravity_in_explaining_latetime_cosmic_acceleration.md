@@ -28,7 +28,7 @@ As these theories remain theoretical, skepticism exists concerning their empiric
 The theories maintain mathematical integrity, as demonstrated by their derived equations and theoretical constraints, yet the necessity for empirical validation remains a key discussion point among physicists.
 
 ## 6. Visual Representation
-![Brans-Dicke vs f(Q) Symmetric Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](../images/gemini_20260825005013_0.png)
+![Brans-Dicke vs f(Q) Symmetric Teleparallel Gravity in Explaining Late-Time Cosmic Acceleration](../images/gemini_20260825005013_0.webp)
 
 ## 7. Related Concepts
 - Scalar-Tensor Theories

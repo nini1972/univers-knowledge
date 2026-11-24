@@ -33,7 +33,7 @@ Theoretical frameworks often face skepticism due to the lack of experimental con
 The findings emphasize the importance of distinguishing between the key observable signatures to advance towards experimental tests.
 
 ## 6. Visual Representation
-![What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?](../images/gemini_20260722005605_0.png)
+![What experimental advancements or novel observational signatures could most effectively distinguish between Higgs Portal Dark Matter and Sterile Neutrino Dark Matter in the next decade?](../images/gemini_20260722005605_0.webp)
 
 ## 7. Related Concepts
 - Higgs Field Theory

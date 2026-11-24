@@ -155,7 +155,7 @@ The Skeptic’s verification rubric does **not** require the power-analysis arit
 - The concrete falsification criteria are retained, but empirical constraints remain substantial: no in-vivo axonal FD measurement, simulation-only cosmic-web TE, observational proxy velocity noise of at least 100 km/s, and no unique cross-scale coarse-graining.
 
 ## 6. Visual Representation
-![Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow](../images/gemini_20261028010255_0.png)
+![Fluctuation-Dissipation and Entropy-Rate Bounds on Information Transfer Across Hierarchical Scales: A Falsifiable, Dimensionally Consistent Comparison of Cortical Axonal Transport Networks and Cosmic-Web Filamentary Mass Flow](../images/gemini_20261028010255_0.webp)
 
 ## 7. Related Concepts
 - [Fluctuation-dissipation theorem](../level_3_emergence_and_intelligence/fluctuation_dissipation_theorem.md)

@@ -41,7 +41,7 @@ Verification stems from the strong consensus of the scientific community, which 
 Future work is recommended to improve experimental sensitivities to neutrino properties and investigate potential deviations indicating physics beyond the Standard Model within this context.
 
 ## 6. Visual Representation
-![Neutrino Decoupling and Its Effects on Early Universe Cosmology](../images/gemini_20260604012052_0.png)
+![Neutrino Decoupling and Its Effects on Early Universe Cosmology](../images/gemini_20260604012052_0.webp)
 
 ## 7. Related Concepts
 - Cosmic Microwave Background (CMB) Anisotropies

@@ -32,7 +32,7 @@ The key skeptical arguments against TeVeS center on its empirical disfavor—evi
 The skeptic verification score highlights the rigorous standards required for empirical validation of both frameworks. TeVeS has significant observational conflicts, while SFDM is still under development with no direct laboratory detections.
 
 ## 6. Visual Representation
-![TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing](../images/gemini_20260922011000_0.png)
+![TeVeS vs Superfluid Dark Matter in Galactic Rotation Curves and Cluster Lensing](../images/gemini_20260922011000_0.webp)
 
 ## 7. Related Concepts
 Further reading and exploration of related frameworks such as MOND, ΛCDM cosmology, and alternative theories of gravity provide deeper context and understanding of these ongoing debates within astrophysics and cosmology. 

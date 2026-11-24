@@ -28,7 +28,7 @@ While SFDC posits a potentially groundbreaking perspective on the correlation be
 The report is accepted as a foundational exploratory document, successfully categorizing the limits of current cross-domain topological analysis while recognizing the need for empirical data to substantiate its claims.
 
 ## 6. Visual Representation
-![Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](../images/gemini_20260824005206_0.png)
+![Spectral Fractal Dimension Convergence: Quantifying Self-Similarity in Cosmic Web Voids and Biological Neural Network Topology](../images/gemini_20260824005206_0.webp)
 
 ## 7. Related Concepts
 - Fractal Geometry

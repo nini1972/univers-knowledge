@@ -154,7 +154,7 @@ Corrections recorded:
 - Restrict “gravitino generically LSP” to minimal gauge mediation.
 
 ## 6. Visual Representation
-![Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking in Predicting Sparticle Spectra, Higgs Mass, and Dark Matter Testability](../images/gemini_20261108010951_0.png)
+![Gauge-Mediated vs Anomaly-Mediated Supersymmetry Breaking in Predicting Sparticle Spectra, Higgs Mass, and Dark Matter Testability](../images/gemini_20261108010951_0.webp)
 
 ## 7. Related Concepts
 - [Gauge-mediated supersymmetry breaking](gauge_mediated_supersymmetry_breaking.md)

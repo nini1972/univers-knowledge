@@ -81,7 +81,7 @@ The proposed inference uses five preregistered statistics, with Holm–Bonferron
 Before interpreting any result, the program needs a demonstrated noisy-spine torsion estimator, injection–recovery tests, real-mask null tests, a systematics budget, and preregistration of both the five-statistic family and the parameter/bin scan. No result from this proposed test should presently be used as evidence for or against ΛCDM, primordial parity violation, or dynamical dark energy.
 
 ## 6. Visual Representation
-![A Falsifiable Test of Cosmic-Web Filament Spine Curvature and Torsion Statistics Against ΛCDM N-Body Null Ensembles Using Skeleton-Based Differential Geometry of Galaxy Survey Catalogs](../images/gemini_20261114011721_0.png)
+![A Falsifiable Test of Cosmic-Web Filament Spine Curvature and Torsion Statistics Against ΛCDM N-Body Null Ensembles Using Skeleton-Based Differential Geometry of Galaxy Survey Catalogs](../images/gemini_20261114011721_0.webp)
 
 ## 7. Related Concepts
 - [[Cosmic Web]]

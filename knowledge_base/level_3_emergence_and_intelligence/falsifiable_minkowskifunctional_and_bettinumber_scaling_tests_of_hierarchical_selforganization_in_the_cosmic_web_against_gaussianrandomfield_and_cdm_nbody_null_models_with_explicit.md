@@ -129,7 +129,7 @@ For Holm correction across eight primary channels, the first-step threshold is \
 Corrections required before preregistration include the growth-factor expression, MF dimensions and naming, the Euler-characteristic/Betti relation and its validity regime, Holm threshold and power, covariance-estimation method and mock split, adequate tail calibration, a canonical S₈ quotation with asymmetric-error treatment, a defined Betti-scaling estimator or removal of “scaling,” qualified Hadwiger wording, accurate description of Pranav et al. (2016), and a unified bibliography with one numbering scheme, one count, and the correct MNRAS volume year.
 
 ## 6. Visual Representation
-![Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology](../images/gemini_20261101005832_0.png)
+![Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology](../images/gemini_20261101005832_0.webp)
 
 ## 7. Related Concepts
 - Gaussian random fields and Kac–Rice theory

@@ -33,7 +33,7 @@ While the methodologies employed are robust, certain perspectives argue that rel
 The report affirms that the methodologies employed are documented and generally accepted within the field. However, it stresses that any claims of achieving significant discoveries remain speculative until corroborating experimental evidence is available.
 
 ## 6. Visual Representation
-![Could the researchers provide simulation studies or sensitivity analyses quantifying the discovery potential and limits achievable with current technologies under realistic experimental conditions?](../images/gemini_20260712000016_0.png)
+![Could the researchers provide simulation studies or sensitivity analyses quantifying the discovery potential and limits achievable with current technologies under realistic experimental conditions?](../images/gemini_20260712000016_0.webp)
 
 ## 7. Related Concepts
 - Particle Physics

@@ -137,7 +137,7 @@ The source record includes eight DOI-verified references. The experimental preci
 **Correction note:** The supplied Math Verification Report below contains a sign-convention statement that conflicts with the required sign correction. The corrected equations and sign convention in Sections 2–3 are authoritative for this document: for the stated definition of \(\Delta\nu/\nu\), a photon climbing from the lower emitter to the upper observer has \(\Delta\nu/\nu>0\). The report is reproduced verbatim as requested.
 
 ## 6. Visual Representation
-![Gravitational Redshift and the Pound–Rebka Experiment](../images/gemini_20261029004314_0.png)
+![Gravitational Redshift and the Pound–Rebka Experiment](../images/gemini_20261029004314_0.webp)
 
 ## 7. Related Concepts
 - [[Cosmological Redshift]] — redshift associated with the expansion of the cosmological scale factor; distinct from a static gravitational-potential shift.

@@ -30,7 +30,7 @@ The discrepancy is an observational result, but its interpretation is not settle
 The approved summary supports the empirical grounding of the distance ladder and the Planck–SH0ES discrepancy. It also sets an important limit on interpretation: the quoted significance is conditional on measurement selection and error budgets. No proposed explanation is presented here as established.
 
 ## 6. Visual Representation
-![The Cosmic Distance Ladder and Hubble Constant Tension](../images/gemini_20261014005037_0.png)
+![The Cosmic Distance Ladder and Hubble Constant Tension](../images/gemini_20261014005037_0.webp)
 
 ## 7. Related Concepts
 - [[Hubble Constant]]

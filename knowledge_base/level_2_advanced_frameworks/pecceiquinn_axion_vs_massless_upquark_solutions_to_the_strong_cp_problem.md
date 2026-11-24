@@ -136,7 +136,7 @@ Axion dark matter is also conditional on cosmological assumptions. The standard 
 - **Math status:** **[MATH_CONSISTENT] (3/4)**, with 0 inconsistent equations and 0 invalid steps. Seven relational equations were checked by hand only, not by tool.
 
 ## 6. Visual Representation
-![Peccei-Quinn Axion vs Massless Up-Quark Solutions to the Strong CP Problem](../images/gemini_20261028005238_0.png)
+![Peccei-Quinn Axion vs Massless Up-Quark Solutions to the Strong CP Problem](../images/gemini_20261028005238_0.webp)
 
 ## 7. Related Concepts
 - [Strong CP problem](strong_cp_problem.md)

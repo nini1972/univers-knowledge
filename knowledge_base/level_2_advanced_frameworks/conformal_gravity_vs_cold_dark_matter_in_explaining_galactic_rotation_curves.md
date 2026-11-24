@@ -34,7 +34,7 @@ Critics of Conformal Gravity point out its inability to fully account for existi
 The verification process behind these theories has revealed strengths and weaknesses in both frameworks. While ΛCDM effectively models pivotal observations, Conformal Gravity's predictive power is limited, leading to ongoing debates within the astrophysical community.
 
 ## 6. Visual Representation
-![Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves](../images/gemini_20260803011332_1.png)
+![Conformal Gravity vs Cold Dark Matter in Explaining Galactic Rotation Curves](../images/gemini_20260803011332_1.webp)
 
 ## 7. Related Concepts
 - **Cold Dark Matter (CDM)**

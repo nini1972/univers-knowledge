@@ -146,7 +146,7 @@ In neutral-meson systems, Lorentz- and CPT-violating effects can enter the effec
 - **Mathematics:** **[MATH_CONSISTENT]**, 4/4. No dimensional failures were identified. The corrected Planck mass, time-of-flight calculation, GRB 090510 distance and delay interpretation, and symbol-table dimensions are used in this document.
 
 ## 6. Visual Representation
-![Lorentz Invariance Violation and Its Experimental Constraints](../images/gemini_20261102004057_0.png)
+![Lorentz Invariance Violation and Its Experimental Constraints](../images/gemini_20261102004057_0.webp)
 
 ## 7. Related Concepts
 - [Standard-Model Extension](standard_model_extension.md)

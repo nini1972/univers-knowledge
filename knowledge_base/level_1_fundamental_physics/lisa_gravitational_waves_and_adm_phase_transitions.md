@@ -33,7 +33,7 @@ Skeptics argue that the current framework lacks definitive ADM-specific signatur
 This theoretical exploration has been conditionally approved based on specific benchmarks. The dual verification through a checklist and mathematics indicates promising avenues for future research, albeit contingent on correcting the ADM-specific modeling.
 
 ## 6. Visual Representation
-![To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?](../images/gemini_20260909171614_0.png)
+![To what extent can future gravitational wave observatories (e.g., LISA) distinguish between ADM-driven first-order phase transitions and other high-energy cosmic events?](../images/gemini_20260909171614_0.webp)
 
 ## 7. Related Concepts
 - Gravitational Waves

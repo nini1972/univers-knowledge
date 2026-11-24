@@ -105,7 +105,7 @@ The numerical claims carried forward are \(4.85\sigma\) for H₀, with a separat
 The topology tool’s positive classification was dismissed as a false positive. The mathematical audit found no blocking inconsistency. The quantitative and scope caveats in Sections 2–4 are part of the verified conclusion and should accompany these results in subsequent use.
 
 ## 6. Visual Representation
-![Lyman-Alpha Forest and Stellar Stream Constraints: Cold Dark Matter vs Ultralight Scalar Dark Matter in Suppressing Small-Scale Power](../images/gemini_20261102005207_0.png)
+![Lyman-Alpha Forest and Stellar Stream Constraints: Cold Dark Matter vs Ultralight Scalar Dark Matter in Suppressing Small-Scale Power](../images/gemini_20261102005207_0.webp)
 
 ## 7. Related Concepts
 - [[Lambda-CDM]]

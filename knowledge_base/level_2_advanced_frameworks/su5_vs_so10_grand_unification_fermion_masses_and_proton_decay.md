@@ -46,7 +46,7 @@ Despite their mathematical elegance, both theories face skepticism due to lack o
 No inconsistencies were identified in the equations derived from both frameworks. However, the original SU(5) report presented incorrect representation assignments. The correct assignments place left-handed Weyl fermions into \(\mathbf{5}^* \oplus \mathbf{10}\). This highlights the importance of careful interpretation and validation of theoretical models.
 
 ## 6. Visual Representation
-![SU(5) vs SO(10) Grand Unification: Fermion Masses and Proton Decay](../images/gemini_20260914010627_1.png)
+![SU(5) vs SO(10) Grand Unification: Fermion Masses and Proton Decay](../images/gemini_20260914010627_1.webp)
 
 ## 7. Related Concepts
 - Unified Field Theories

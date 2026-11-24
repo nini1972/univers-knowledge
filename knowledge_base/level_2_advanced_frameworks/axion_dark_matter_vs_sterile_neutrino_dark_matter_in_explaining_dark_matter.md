@@ -45,7 +45,7 @@ Alternative explanations for dark matter, including weakly interacting massive p
 The skeptic’s verification checklist is comprehensively satisfied, achieving a top verification score. This includes thorough referencing to multiple, independent, and peer-reviewed research sources; full disclosure of model assumptions; and transparent linkage of mathematical formulation to observational tests. The report’s meticulous approach ensures that it meets highest standards of theoretical-level reliability and scientific scrutiny, marking it as suitable for archival as a trusted resource on these dark matter candidates.
 
 ## 6. Visual Representation
-![Axion Dark Matter vs Sterile Neutrino Dark Matter in Explaining Dark Matter](../images/gemini_20260707010706_0.png)
+![Axion Dark Matter vs Sterile Neutrino Dark Matter in Explaining Dark Matter](../images/gemini_20260707010706_0.webp)
 
 ## 7. Related Concepts
 - Axion Field Theory and the Strong CP Problem

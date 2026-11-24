@@ -178,7 +178,7 @@ Corrections incorporated into this record:
 10. Five of nine references come from the Chluba/Sunyaev lineage, and the CosmoTherm Green’s functions have not been independently reimplemented.
 
 ## 6. Visual Representation
-![Cosmic Microwave Background Spectral Distortions](../images/gemini_20261105003744_0.png)
+![Cosmic Microwave Background Spectral Distortions](../images/gemini_20261105003744_0.webp)
 
 ## 7. Related Concepts
 - [[Cosmic Microwave Background]]

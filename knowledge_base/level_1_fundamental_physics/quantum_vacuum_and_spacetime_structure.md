@@ -48,7 +48,7 @@ This concept has undergone rigorous scrutiny with a skeptic’s verification sco
 However, the key caveat is that discrete spacetime constructs and vacuum energy integrations remain theoretical frameworks. These parts of the concept are to be approached cautiously, pending future empirical breakthroughs that might confirm or refute their validity.
 
 ## 6. Visual Representation
-![Quantum Vacuum and Spacetime Structure](../images/gemini_20260620011029_0.png)
+![Quantum Vacuum and Spacetime Structure](../images/gemini_20260620011029_0.webp)
 
 ## 7. Related Concepts
 - Quantum Electrodynamics (QED)

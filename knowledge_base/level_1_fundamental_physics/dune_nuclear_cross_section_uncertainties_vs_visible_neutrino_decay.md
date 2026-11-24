@@ -32,7 +32,7 @@ The concept holds a theoretical status as it is categorized under BSM hypotheses
 The research emphasizes the potential overlap of nuclear uncertainties with decay signatures, providing a fertile ground for both theoretical exploration and experimental validation. Skeptical observers may look for further corroboration of nuclear models or alternative explanations for the observed spectral distortions.
 
 ## 6. Visual Representation
-![To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?](../images/gemini_20260903011940_0.png)
+![To what degree do current uncertainties in DUNE's nuclear cross-model backgrounds (e.g., RPA, 2p2h effects) overlap with the energy-dependent spectral distortion predicted by visible neutrino decay?](../images/gemini_20260903011940_0.webp)
 
 ## 7. Related Concepts
 - Neutrino oscillation mechanisms

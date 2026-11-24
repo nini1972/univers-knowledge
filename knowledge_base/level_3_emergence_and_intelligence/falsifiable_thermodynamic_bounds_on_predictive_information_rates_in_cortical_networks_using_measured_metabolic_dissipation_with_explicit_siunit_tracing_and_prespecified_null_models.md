@@ -241,7 +241,7 @@ A viable alternative is that dissipation is primarily driven by non-signaling ho
 - **Key caveats:** transfer entropy is a proxy for the predictive-information estimand; BOLD is not a valid proxy for dissipation; TUR application to coarse-grained neural populations is unproven; non-signaling homeostasis remains a viable confound.
 
 ## 6. Visual Representation
-![Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models](../images/gemini_20261107005113_0.png)
+![Falsifiable Thermodynamic Bounds on Predictive Information Rates in Cortical Networks Using Measured Metabolic Dissipation, with Explicit SI-Unit Tracing and Pre-Specified Null Models](../images/gemini_20261107005113_0.webp)
 
 ## 7. Related Concepts
 - Thermodynamics of prediction

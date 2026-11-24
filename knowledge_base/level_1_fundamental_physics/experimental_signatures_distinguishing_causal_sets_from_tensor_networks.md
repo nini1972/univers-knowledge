@@ -33,7 +33,7 @@ The report notes that the status is classified as theoretical, as no experimenta
 The report meets all verification standards, including a 6/6 compliance score for the strict verification protocol.
 
 ## 6. Visual Representation
-![What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?](../images/gemini_20260801113906_0.png)
+![What concrete experimental signatures could distinguish quantum causal sets from tensor network approaches?](../images/gemini_20260801113906_0.webp)
 
 ## 7. Related Concepts
 * Quantum gravity

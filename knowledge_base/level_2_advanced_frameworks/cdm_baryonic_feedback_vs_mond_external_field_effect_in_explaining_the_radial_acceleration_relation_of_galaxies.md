@@ -88,7 +88,7 @@ A ΛCDM description instead models the observed acceleration through the combine
 - **Classifier result:** The topology-classifier hit is a false positive.
 
 ## 6. Visual Representation
-![ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies](../images/gemini_20261027005955_0.png)
+![ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies](../images/gemini_20261027005955_0.webp)
 
 ## 7. Related Concepts
 - [Radial Acceleration Relation (RAR)](radial_acceleration_relation.md)

@@ -34,7 +34,7 @@ Skeptically, the report scores a perfect 5/5 in verification. It provides a bala
 The report notes rigorous evaluation aligned with skepticism, confirming both the utility and limitation of the theories under review.
 
 ## 6. Visual Representation
-![Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration](../images/gemini_20260801095109_0.png)
+![Horndeski Gravity vs Galileon Gravity in Addressing Cosmic Acceleration](../images/gemini_20260801095109_0.webp)
 
 ## 7. Related Concepts
 - General Relativity

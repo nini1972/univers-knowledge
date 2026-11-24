@@ -45,7 +45,7 @@ Particle dark matter remains an alternative explanation. The existence of a math
 - **Assessment:** Retain PBHs as a mathematically grounded, observationally testable dark-matter candidate, without presenting the dark-matter claim as established fact.
 
 ## 6. Visual Representation
-![Primordial Black Holes (PBHs) as Dark Matter Candidates](../images/gemini_20261017070047_0.png)
+![Primordial Black Holes (PBHs) as Dark Matter Candidates](../images/gemini_20261017070047_0.webp)
 
 ## 7. Related Concepts
 - [[Dark Matter]]

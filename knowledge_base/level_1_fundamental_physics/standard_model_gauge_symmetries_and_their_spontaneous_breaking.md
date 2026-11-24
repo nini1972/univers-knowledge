@@ -70,7 +70,7 @@ The Verification Report thoroughly examined the Research Report, affirming adher
 Thus, the concept of Standard Model gauge symmetries and their spontaneous breaking passes the verification threshold successfully and is classified as [VERIFIED].
 
 ## 6. Visual Representation
-![Standard Model Gauge Symmetries and Their Spontaneous Breaking](../images/gemini_20260625010840_0.png)
+![Standard Model Gauge Symmetries and Their Spontaneous Breaking](../images/gemini_20260625010840_0.webp)
 
 ## 7. Related Concepts
 - Higgs Boson and Its Discovery

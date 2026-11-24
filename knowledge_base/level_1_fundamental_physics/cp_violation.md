@@ -122,7 +122,7 @@ The mathematical formalism accurately models observed CP-violating asymmetries. 
 
 
 ## 6. Visual Representation
-![CP Violation](../images/gemini_20261028010632_0.png)
+![CP Violation](../images/gemini_20261028010632_0.webp)
 
 ## 7. Related Concepts
 - Standard Model of Particle Physics

@@ -211,7 +211,7 @@ The observational status of the low-redshift kinematic relation should be kept s
 - **Citation caveat:** The citation-verification claim is asserted in the supplied research material but was not independently checked.
 
 ## 6. Visual Representation
-![Hubble-Lemaître Law and Cosmic Expansion Kinematics](../images/gemini_20261108004943_0.png)
+![Hubble-Lemaître Law and Cosmic Expansion Kinematics](../images/gemini_20261108004943_0.webp)
 
 ## 7. Related Concepts
 - Friedmann-Lemaître-Robertson-Walker (FLRW) geometry

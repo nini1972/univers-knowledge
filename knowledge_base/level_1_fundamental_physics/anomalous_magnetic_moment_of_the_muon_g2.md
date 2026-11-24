@@ -104,7 +104,7 @@ Potential new-physics interpretations include dark photons, lepton-portal models
 - **Review results:** Skeptic score 6/6; Math 3/4, with status **[MATH_CONSISTENT]**.
 
 ## 6. Visual Representation
-![Anomalous Magnetic Moment of the Muon (g-2)](../images/gemini_20261027005135_0.png)
+![Anomalous Magnetic Moment of the Muon (g-2)](../images/gemini_20261027005135_0.webp)
 
 ## 7. Related Concepts
 - [[Muon]]

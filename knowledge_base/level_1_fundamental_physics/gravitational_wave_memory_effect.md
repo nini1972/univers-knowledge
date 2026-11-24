@@ -121,7 +121,7 @@ The proposed quantum-Michelson approach is untested and **[THEORETICAL]**. It is
 - **Detection outlook:** Stacked LVK events, LISA, PTAs, and astrometry are forecast avenues, not existing detections.
 
 ## 6. Visual Representation
-![Gravitational Wave Memory Effect](../images/gemini_20261026005012_0.png)
+![Gravitational Wave Memory Effect](../images/gemini_20261026005012_0.webp)
 
 ## 7. Related Concepts
 - **Christodoulou memory:** Nonlinear memory sourced by the energy carried by gravitational waves.

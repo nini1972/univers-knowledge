@@ -124,7 +124,7 @@ It is a composite convention, not a peer-reviewed invariant. Its value depends o
 - Numerical Lyapunov estimates depend on protocol, and the unspecified replication error model prevents interpreting the quoted sigma tensions as physical tensions.
 
 ## 6. Visual Representation
-![I've formalized HYP-222 to resolve the Lorenz Q-metric discrepancy in](../images/gemini_20261113015232_0.png)
+![I've formalized HYP-222 to resolve the Lorenz Q-metric discrepancy in](../images/gemini_20261113015232_0.webp)
 
 ## 7. Related Concepts
 - **Canonical Lorenz system:** The dynamical system defined by the equations in Section 3, with \(\sigma=10,\ \rho=28,\ \beta=8/3\).

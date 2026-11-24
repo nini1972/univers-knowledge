@@ -47,7 +47,7 @@ Induced Gravity models currently lack direct experimental verification and depen
 The report maintains high standards of rigor and transparency, providing comprehensive references and acknowledging theoretical limitations. It assigns a skeptic verification score of 4/5, indicating robust mathematical consistency and balanced treatment of uncertainties and speculative elements. Both f(R) and Induced Gravity frameworks remain classified as [THEORETICAL] due to the absence of direct empirical confirmation but continue to be important areas of ongoing research.
 
 ## 6. Visual Representation
-![Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration](../images/gemini_20260703191919_1.png)
+![Modified Gravity vs Quantum Gravity Induced Gravity in Explaining Cosmic Acceleration](../images/gemini_20260703191919_1.webp)
 
 ## 7. Related Concepts
 - Scalar-Tensor Theories of Gravity  

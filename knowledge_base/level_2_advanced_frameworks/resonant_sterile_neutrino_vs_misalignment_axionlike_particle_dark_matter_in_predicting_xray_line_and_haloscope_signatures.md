@@ -146,7 +146,7 @@ The principal corrections archived here are:
 6. Retain the stated caveats for large lepton asymmetries, BBN, Lyman-\(\alpha\), the disputed 3.5 keV line, post-inflation PQ defects, and the haloscope natural-unit-to-SI conversion.
 
 ## 6. Visual Representation
-![Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures](../images/gemini_20261113014324_0.png)
+![Resonant Sterile Neutrino vs Misalignment Axion-Like Particle Dark Matter in Predicting X-ray Line and Haloscope Signatures](../images/gemini_20261113014324_0.webp)
 
 ## 7. Related Concepts
 - Shi–Fuller resonant sterile-neutrino production

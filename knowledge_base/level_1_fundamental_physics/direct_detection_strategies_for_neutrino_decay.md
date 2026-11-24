@@ -51,7 +51,7 @@ The field maintains considerable skepticism for several reasons:
 The report responsibly cites multiple independent experimental collaborations, incorporating their rigorous peer-reviewed findings. It carefully demarcates the detection of neutrino decay as theoretical, avoiding premature assertion of experimental confirmation. This responsible approach ensures the field’s integrity and highlights the critical role of skepticism in guiding future research.
 
 ## 6. Visual Representation
-![What specific experimental strategies are most promising for achieving direct detection of neutrino decay?](../images/gemini_20260704005814_0.png)
+![What specific experimental strategies are most promising for achieving direct detection of neutrino decay?](../images/gemini_20260704005814_0.webp)
 
 ## 7. Related Concepts
 - Neutrinoless Double Beta Decay

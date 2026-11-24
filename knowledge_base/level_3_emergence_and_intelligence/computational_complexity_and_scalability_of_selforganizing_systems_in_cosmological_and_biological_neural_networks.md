@@ -28,7 +28,7 @@ While the research proposes intriguing possible connections, it acknowledges the
 The study meticulously avoids speculative conclusions and focuses on empirically grounded assertions. By employing rigorous physicalist principles, it provides a framework that invites further exploration and validation within the scientific community.
 
 ## 6. Visual Representation
-![Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](../images/gemini_20260802012839_0.png)
+![Computational Complexity and Scalability of Self-Organizing Systems in Cosmological and Biological Neural Networks](../images/gemini_20260802012839_0.webp)
 
 ## 7. Related Concepts
 - Graph Theory

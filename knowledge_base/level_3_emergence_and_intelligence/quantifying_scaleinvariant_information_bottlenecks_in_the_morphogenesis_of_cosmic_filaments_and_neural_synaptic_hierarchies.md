@@ -28,7 +28,7 @@ Despite the robust mathematical framework, the speculative nature of linking cos
 The skeptic verification score is 6/6, satisfying all criteria for a well-structured speculative inquiry. Various aspects of this hypothesis have been validated against existing theories, reinforcing its credibility.
 
 ## 6. Visual Representation
-![Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies](../images/gemini_20260821010248_0.png)
+![Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies](../images/gemini_20260821010248_0.webp)
 
 ## 7. Related Concepts
 - Information Theory

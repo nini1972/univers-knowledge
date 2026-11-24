@@ -172,7 +172,7 @@ Corrections and qualifications recorded:
 Overall labels: core SW/ISW kinematics **[VERIFIED]**. Thermodynamic interpretation **[THEORETICAL]**.
 
 ## 6. Visual Representation
-![Thermodynamics and the Laws of Thermodynamics in Cosmology: The Sachs–Wolfe Effect](../images/gemini_20261115003918_0.png)
+![Thermodynamics and the Laws of Thermodynamics in Cosmology: The Sachs–Wolfe Effect](../images/gemini_20261115003918_0.webp)
 
 ## 7. Related Concepts
 - [Cosmic Microwave Background](cosmic_microwave_background.md)

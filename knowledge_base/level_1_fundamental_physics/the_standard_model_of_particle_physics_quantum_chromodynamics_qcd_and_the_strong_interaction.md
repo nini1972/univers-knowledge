@@ -80,7 +80,7 @@ QCD’s perturbative predictions, including asymptotic freedom, the running coup
 - **Foundational sources:** The discovery of asymptotic freedom is associated with Gross and Wilczek and with Politzer. Wilson’s work is a foundational reference for the lattice approach to confinement.
 
 ## 6. Visual Representation
-![The Standard Model of Particle Physics: Quantum Chromodynamics (QCD) and the Strong Interaction](../images/gemini_20261024011231_0.png)
+![The Standard Model of Particle Physics: Quantum Chromodynamics (QCD) and the Strong Interaction](../images/gemini_20261024011231_0.webp)
 
 ## 7. Related Concepts
 - [Standard Model](the_standard_model.md)

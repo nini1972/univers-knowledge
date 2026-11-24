@@ -38,7 +38,7 @@ While the theoretical framework is strongly supported by mathematical consistenc
 The work is mathematically consistent and correctly classified as [THEORETICAL], identifying key experimental discriminants while pointing out the potential for significant overlap in measurements across models.
 
 ## 6. Visual Representation
-![What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?](../images/gemini_20260721005910_0.png)
+![What experimental evidence or signatures would decisively distinguish neutrino decay from sterile neutrino or non-standard interaction scenarios?](../images/gemini_20260721005910_0.webp)
 
 ## 7. Related Concepts
 - Standard Model of Particle Physics

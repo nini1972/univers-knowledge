@@ -113,7 +113,7 @@ The test’s ability to reject a particular mock null should not be conflated wi
 - **Interpretation:** rejection of the mock null is not evidence by itself for anisotropic filament anomalies, failure of ΛCDM, or dynamical dark energy.
 
 ## 6. Visual Representation
-![A Falsifiable Test of Anisotropic Filament Connectivity Statistics in the Cosmic Web Against ΛCDM N-Body Null Ensembles Using Graph-Theoretic Degree Distributions and Persistent Homology of Galaxy Survey Catalogs](../images/gemini_20261103010857_0.png)
+![A Falsifiable Test of Anisotropic Filament Connectivity Statistics in the Cosmic Web Against ΛCDM N-Body Null Ensembles Using Graph-Theoretic Degree Distributions and Persistent Homology of Galaxy Survey Catalogs](../images/gemini_20261103010857_0.webp)
 
 ## 7. Related Concepts
 - Persistent homology and Betti curves

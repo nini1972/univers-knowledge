@@ -47,7 +47,7 @@ Despite the theoretical underpinnings, skepticism surrounds the empirical valida
 The significant skepticism regarding coherence in biological systems stems from potential environmental decoherence, and the reproducibility of results has been questioned.
 
 ## 6. Visual Representation
-![Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing](../images/gemini_20260917011951_0.png)
+![Quantum Thermodynamic Speed Limits and Energetic Advantage in Biological Sensing: A Falsifiable Benchmark-Relative Test of Coherence-Enhanced Information Processing](../images/gemini_20260917011951_0.webp)
 
 ## 7. Related Concepts
 - Quantum Biology

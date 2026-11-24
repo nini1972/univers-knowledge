@@ -33,7 +33,7 @@ Critics argue that while these models offer intriguing theoretical insights, the
 While mathematically pristine, the models proposed by RS and ADD remain speculative in nature. The mathematical structure and integrity of both approaches have been upheld under scrutiny, but their theoretical nature requires further investigation for practical validation against empirical observations.
 
 ## 6. Visual Representation
-![Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures](../images/gemini_20260724011214_0.png)
+![Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures](../images/gemini_20260724011214_0.webp)
 
 ## 7. Related Concepts
 - Hierarchy Problem

@@ -28,7 +28,7 @@ While the framework presents a scientifically rigorous approach to understanding
 The framework's validity is supported by its alignment with established scientific principles. The rigorous integration of mathematics and topology permits verification against existing studies and data, leading to a comprehensive understanding of cosmic structures.
 
 ## 6. Visual Representation
-![Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures](../images/gemini_20260811010154_1.png)
+![Non-Equilibrium Phase Transitions and Information Symmetry Breaking in the Evolution of Filamentary Cosmic Structures](../images/gemini_20260811010154_1.webp)
 
 ## 7. Related Concepts
 - Cosmological Structure Formation

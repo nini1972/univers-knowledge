@@ -28,7 +28,7 @@ The mathematical framework consists of various equations that describe the behav
 The report adheres strictly to verification protocols, flagging the absence of direct experimental confirmation for both dark matter candidates. This critical note reinforces the necessity for skepticism in theoretical physics and the importance of continued experimental inquiry.
 
 ## 6. Visual Representation
-![Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution](../images/gemini_20260811004814_0.png)
+![Dynamical Relaxation vs. Wave-Like Condensation in Galactic Core-Cusp Resolution](../images/gemini_20260811004814_0.webp)
 
 ## 7. Related Concepts
 - Cold Dark Matter (CDM)

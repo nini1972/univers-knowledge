@@ -28,7 +28,7 @@ There is a caveat that topological similarity should not be conflated with physi
 Each claim has undergone scrutiny and has been supported through empirical data, establishing its validity in the context of modern scientific understanding.
 
 ## 6. Visual Representation
-![Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks](../images/gemini_20260808010540_1.png)
+![Topological Data Analysis (TDA) of Persistent Homology in the Morphological Evolution of Neural Networks vs. Cosmic Filamentary Networks](../images/gemini_20260808010540_1.webp)
 
 ## 7. Related Concepts
 - **Topological Data Analysis (TDA)**

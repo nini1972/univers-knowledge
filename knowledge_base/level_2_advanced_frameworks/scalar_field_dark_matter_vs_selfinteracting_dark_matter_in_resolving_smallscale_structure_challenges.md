@@ -37,7 +37,7 @@ Moreover, both models are partially degenerate with baryonic feedback, which can
 While both SFDM and SIDM provide interesting theoretical implications for dark matter research, the absence of direct verification and their sensitivity to various astrophysical parameters necessitates further observational studies.
 
 ## 6. Visual Representation
-![Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](../images/gemini_20260710013127_0.png)
+![Scalar Field Dark Matter vs Self-Interacting Dark Matter in Resolving Small-Scale Structure Challenges](../images/gemini_20260710013127_0.webp)
 
 ## 7. Related Concepts
 - Cold Dark Matter (CDM)

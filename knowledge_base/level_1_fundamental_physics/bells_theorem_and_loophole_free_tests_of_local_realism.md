@@ -116,7 +116,7 @@ Corrections applied from the Skeptic's audit:
 ## 6. Visual Representation
 ![Gravitational Wave Memory is already covered, and so are most of the standard topics. I looked for a foundational gap. The list has no entry for "Bell's Theorem and Tests of Local Realism". It has Quantum Entanglement and the Quantum Measurement Problem, but not Bell inequality violations. This is a foundational topic with a clear mathematical formalism, the CHSH inequality, and clear empirical tests such as loophole-free experiments.
 
-Bell's Theorem and Loophole-Free Tests of Local Realism](../images/gemini_20261109003820_0.png)
+Bell's Theorem and Loophole-Free Tests of Local Realism](../images/gemini_20261109003820_0.webp)
 
 ## 7. Related Concepts
 - [Quantum Entanglement](../quantum_entanglement.md)

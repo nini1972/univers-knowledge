@@ -66,7 +66,7 @@ The Lorentz force law follows as the equation of motion for a point charge: $\ma
 Maxwell's equations have passed extensive empirical tests, and deviations are bounded but have never been observed. The theory's domain of validity is precisely outlined by coherence theory, illustrating applicability rather than falsification. Rigorous mathematical underpinnings ensure testability and generate falsifiable predictions.
 
 ## 6. Visual Representation
-![Classical Electromagnetism](../images/gemini_20261022013410_0.png)
+![Classical Electromagnetism](../images/gemini_20261022013410_0.webp)
 
 ## 7. Related Concepts
 - Quantum Electrodynamics (QED)

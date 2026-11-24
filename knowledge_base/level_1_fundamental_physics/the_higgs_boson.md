@@ -15,7 +15,7 @@ tags:
 
 # The Higgs Boson
 
-![The Higgs Boson](../images/gemini_20260520010906_0.png)
+![The Higgs Boson](../images/gemini_20260520010906_0.webp)
 
 ---
 

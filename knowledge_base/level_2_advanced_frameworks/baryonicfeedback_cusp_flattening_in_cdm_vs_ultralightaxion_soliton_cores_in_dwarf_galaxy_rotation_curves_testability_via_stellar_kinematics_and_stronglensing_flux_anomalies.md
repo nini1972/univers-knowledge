@@ -167,7 +167,7 @@ Equation (8) in the underlying report is a proportionality only; its prefactor i
 The invariant, units, numerical evaluation, nonrelativistic decomposition, and corrected de Broglie wavelength have been checked. The numerical agreement with Schive et al. (2014) is a consistency check, not an independent derivation of exactness. The SHR caveats, conditional Lyman-α limit, Eridanus II degeneracy, faint-dwarf limitations of feedback, and strong-lensing sample-size qualifications must travel with this entry.
 
 ## 6. Visual Representation
-![Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies](../images/gemini_20261119005211_0.png)
+![Baryonic-Feedback Cusp Flattening in ΛCDM vs Ultralight-Axion Soliton Cores in Dwarf Galaxy Rotation Curves: Testability via Stellar Kinematics and Strong-Lensing Flux Anomalies](../images/gemini_20261119005211_0.webp)
 
 ## 7. Related Concepts
 - [[Core–Cusp Problem]]

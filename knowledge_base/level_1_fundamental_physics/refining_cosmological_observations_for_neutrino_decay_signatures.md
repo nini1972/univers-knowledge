@@ -33,7 +33,7 @@ Current skepticism centers on several points: (1) The limited sensitivity of exi
 A comprehensive verification report acknowledges the theoretical robustness of this concept while appropriately recognizing uncertainties and current experimental limitations. The skeptical verification score surpasses rejection thresholds, substantiating approval of the concept at this stage. Despite the incomplete mathematical closure, the current degree of mathematical quality and visual pedagogy are deemed sufficient to support scientific credibility. The approach awaits further mathematical development and observational advances to enhance confirmatory power.
 
 ## 6. Visual Representation
-![How can cosmological observations be refined to better constrain or detect neutrino decay signatures?](../images/gemini_20260705010210_1.png)
+![How can cosmological observations be refined to better constrain or detect neutrino decay signatures?](../images/gemini_20260705010210_1.webp)
 
 ## 7. Related Concepts
 - Cosmic Neutrino Background

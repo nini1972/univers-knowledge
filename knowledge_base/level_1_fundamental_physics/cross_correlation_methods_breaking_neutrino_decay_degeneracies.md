@@ -33,7 +33,7 @@ While the framework has theoretical backing, skeptics may argue that without emp
 The legitimacy of the research is reinforced by the strong mathematical integrity observed in the equations derived.
 
 ## 6. Visual Representation
-![Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?](../images/gemini_20260715005139_0.png)
+![Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?](../images/gemini_20260715005139_0.webp)
 
 ## 7. Related Concepts
 - Neutrino decay

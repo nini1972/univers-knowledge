@@ -45,7 +45,7 @@ Skeptics may argue that without direct experimental validation of these models, 
 The mathematical integrity report surfaces that the work demonstrates strong mathematical coherence. All examined equations are dimensionally consistent, yet some limitations arise from computational verification tools that yield undecidable results for certain patterns.
 
 ## 6. Visual Representation
-![Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance](../images/gemini_20260801110247_1.png)
+![Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance](../images/gemini_20260801110247_1.webp)
 
 ## 7. Related Concepts
 - Dark Matter

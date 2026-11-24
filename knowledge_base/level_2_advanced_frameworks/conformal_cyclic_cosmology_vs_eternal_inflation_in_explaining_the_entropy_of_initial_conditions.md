@@ -28,7 +28,7 @@ Critics of CCC argue that its reliance on unproven assumptions, such as 'mass fa
 The report is highly rigorous, utilizing precise mathematical formalism, consistent benchmarks, and thorough empirical vetting against Planck/WMAP/BICEP data. Both models remain theoretical, with ongoing debates in the scientific community regarding their implications and compatibility with observational evidence.
 
 ## 6. Visual Representation
-![Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions](../images/gemini_20260815005014_1.png)
+![Conformal Cyclic Cosmology vs Eternal Inflation in Explaining the Entropy of Initial Conditions](../images/gemini_20260815005014_1.webp)
 
 ## 7. Related Concepts
 - **Cosmic Microwave Background (CMB)**

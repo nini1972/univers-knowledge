@@ -139,7 +139,7 @@ A two-way signal accumulates approximately
 - **Metric dependence:** Redshift depends mainly on \(g_{00}\); Shapiro delay depends on both \(g_{00}\) and \(g_{ij}\). Treating both as encoded in \(g_{00}\) alone is imprecise.
 
 ## 6. Visual Representation
-![Gravitational Time Dilation and the Shapiro Delay](../images/gemini_20261122003945_0.png)
+![Gravitational Time Dilation and the Shapiro Delay](../images/gemini_20261122003945_0.webp)
 
 ## 7. Related Concepts
 - [[General Relativity]]

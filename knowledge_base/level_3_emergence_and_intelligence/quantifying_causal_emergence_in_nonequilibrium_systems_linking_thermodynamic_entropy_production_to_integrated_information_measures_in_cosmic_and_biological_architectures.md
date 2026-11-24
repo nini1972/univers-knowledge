@@ -36,7 +36,7 @@ While the links made between entropy production and integrated information show 
 The research ensures scientific integrity by encompassing established theories while clearly defining speculative frameworks within the discourse.
 
 ## 6. Visual Representation
-![Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures](../images/gemini_20260825012347_0.png)
+![Quantifying Causal Emergence in Non-Equilibrium Systems: Linking Thermodynamic Entropy Production to Integrated Information Measures in Cosmic and Biological Architectures](../images/gemini_20260825012347_0.webp)
 
 ## 7. Related Concepts
 - Stochastic Thermodynamics

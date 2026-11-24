@@ -34,7 +34,7 @@ Despite being mathematically robust, both frameworks face criticisms and skeptic
 The report classifies these frameworks as [THEORETICAL] due to their requirement for substantial parameter adjustments to align with observational data, drawing into question their overall feasibility and applicability in cosmology.
 
 ## 6. Visual Representation
-![Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration](../images/gemini_20260717011436_0.png)
+![Dynamical Dark Energy vs Modified Gravity in Explaining the Redshift Dependence of Cosmic Acceleration](../images/gemini_20260717011436_0.webp)
 
 ## 7. Related Concepts
 - ΛCDM Model

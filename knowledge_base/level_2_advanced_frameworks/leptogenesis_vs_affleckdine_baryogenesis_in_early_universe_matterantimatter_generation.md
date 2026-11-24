@@ -39,7 +39,7 @@ The reliance on theoretical constructs like right-handed neutrinos and scalar co
 While both mechanisms lack direct experimental confirmation, their mathematical integrity is bolstered by rigorous analysis. The reports provide strong theoretical justifications for each framework, leading to insights into the nature of matter-antimatter asymmetry in the universe.
 
 ## 6. Visual Representation
-![Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation](../images/gemini_20260826011352_0.png)
+![Leptogenesis vs Affleck-Dine Baryogenesis in Early Universe Matter-Antimatter Generation](../images/gemini_20260826011352_0.webp)
 
 ## 7. Related Concepts
 - **Neutrino Oscillations**

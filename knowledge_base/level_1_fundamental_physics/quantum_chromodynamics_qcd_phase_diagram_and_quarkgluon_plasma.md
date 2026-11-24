@@ -39,7 +39,7 @@ The critical endpoint and other proposed high-density phase structures are theor
 - **Interpretive caution:** Do not treat theoretical extrapolations or proposed phase diagrams at high baryon chemical potential as established experimental or lattice findings.
 
 ## 6. Visual Representation
-![Quantum Chromodynamics (QCD) Phase Diagram and Quark–Gluon Plasma](../images/gemini_20261015010821_0.png)
+![Quantum Chromodynamics (QCD) Phase Diagram and Quark–Gluon Plasma](../images/gemini_20261015010821_0.webp)
 
 ## 7. Related Concepts
 - [[Quantum Chromodynamics]]

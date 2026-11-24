@@ -35,7 +35,7 @@ Despite its mathematical elegance, Quantum Gravity faces critical scrutiny due t
 Verification involved comprehensive cross-referencing with multiple authoritative independent sources, ensuring accuracy in mathematical formalism and conceptual clarity. The report systematically acknowledges unresolved challenges and explicitly designates the domain as theoretical. The highest skepticism rating underscores the care taken to avoid overclaiming and emphasizes ongoing efforts to bridge theory and experiment.
 
 ## 6. Visual Representation
-![Quantum Gravity](../images/gemini_20260630192717_0.png)
+![Quantum Gravity](../images/gemini_20260630192717_0.webp)
 
 ## 7. Related Concepts
 - Loop Quantum Gravity

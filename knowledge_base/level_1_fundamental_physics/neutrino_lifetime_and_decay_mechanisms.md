@@ -53,7 +53,7 @@ This concept achieves the highest skeptic’s verification score of 5/5 by satis
 The neutrino lifetime and decay mechanisms concept comfortably meets the verification threshold and is approved as verified knowledge encompassing theoretical elements.
 
 ## 6. Visual Representation
-![Neutrino Lifetime and Decay Mechanisms](../images/gemini_20260701011409_1.png)
+![Neutrino Lifetime and Decay Mechanisms](../images/gemini_20260701011409_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

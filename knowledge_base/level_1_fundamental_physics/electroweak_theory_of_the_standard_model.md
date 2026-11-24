@@ -63,7 +63,7 @@ The status **[VERIFIED]** applies to the electroweak gauge and Higgs sector’s 
 Naturalness, the origin of electroweak symmetry breaking, neutrino masses, and composite-Higgs alternatives remain open or theoretical questions, not established conclusions. The discovery measurements of the Higgs boson are reported independently by ATLAS and CMS (Aad et al., 2012; Chatrchyan et al., 2012). Precision electroweak corrections are commonly discussed using the \(S\), \(T\), and \(U\) parameters (Peskin & Takeuchi, 1992).
 
 ## 6. Visual Representation
-![Electroweak Theory of the Standard Model](../images/gemini_20261016004639_0.png)
+![Electroweak Theory of the Standard Model](../images/gemini_20261016004639_0.webp)
 
 ## 7. Related Concepts
 - Standard Model

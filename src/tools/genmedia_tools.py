@@ -98,6 +98,43 @@ def _render_programmatic_scientific_diagram(prompt: str, root_dir: str) -> str:
         return ""
 
 
+def _convert_png_to_webp(rel_path: str, root_dir: str) -> str:
+    """Convert a newly generated PNG image under knowledge_base/images/ to WebP and remove the PNG."""
+    try:
+        norm = str(rel_path).replace("\\", "/")
+        fname = os.path.basename(norm)
+        if not fname.lower().endswith(".png") or fname == "reverse_time_graph.png":
+            return rel_path
+        images_dir = os.path.join(root_dir, "knowledge_base", "images")
+        src_path = os.path.join(images_dir, fname)
+        if not os.path.isfile(src_path):
+            return rel_path
+        from PIL import Image
+
+        stem = os.path.splitext(fname)[0]
+        webp_name = f"{stem}.webp"
+        dst_path = os.path.join(images_dir, webp_name)
+        tmp_path = f"{dst_path}.tmp"
+        with Image.open(src_path) as im:
+            if im.mode not in ("RGB", "RGBA"):
+                im = im.convert("RGB")
+            im.save(tmp_path, format="WEBP", quality=82, method=6)
+        with Image.open(tmp_path) as check_im:
+            check_im.verify()
+        if os.path.getsize(tmp_path) <= 0:
+            os.remove(tmp_path)
+            return rel_path
+        os.replace(tmp_path, dst_path)
+        if os.path.getsize(dst_path) < os.path.getsize(src_path):
+            os.remove(src_path)
+            return f"../images/{webp_name}"
+        os.remove(dst_path)
+        return rel_path
+    except Exception as exc:
+        print(f"WebP conversion skipped for {rel_path}: {exc}")
+        return rel_path
+
+
 async def _generate_image_async(prompt: str) -> str:
     """Async core to call the nanobanana MCP server with automatic programmatic fallback."""
     prompt = prompt.replace('"', "'")
@@ -179,7 +216,7 @@ async def _generate_image_async(prompt: str) -> str:
                             filepath = filepath.split("knowledge_base/")[-1]
                         if filepath.startswith("images/"):
                             filepath = f"../{filepath}"
-                        return filepath
+                        return _convert_png_to_webp(filepath, root_dir)
 
                     # If tool returned text without match, log error and continue
                     last_error_text = text_output

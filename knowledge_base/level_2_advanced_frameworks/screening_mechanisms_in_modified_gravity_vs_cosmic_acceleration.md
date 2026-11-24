@@ -41,7 +41,7 @@ Skeptics of both theories point to the empirical challenges faced by predictions
 The analysis maintains a 5/5 skeptic verification score, indicating a high level of scrutiny and mathematical integrity.
 
 ## 6. Visual Representation
-![Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration](../images/gemini_20260908013002_0.png)
+![Screening Mechanisms in Modified Gravity vs. Cosmic Acceleration](../images/gemini_20260908013002_0.webp)
 
 ## 7. Related Concepts
 - Dark Energy Models

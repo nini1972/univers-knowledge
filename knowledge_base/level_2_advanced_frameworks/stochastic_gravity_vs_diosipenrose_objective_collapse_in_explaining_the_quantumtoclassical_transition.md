@@ -32,7 +32,7 @@ While the frameworks presented are theoretically sound, there remains skepticism
 *(Verification notes pending peer review.)*
 
 ## 6. Visual Representation
-![Stochastic Gravity vs. Diosi-Penrose Objective Collapse](../images/gemini_20260806013310_0.png)
+![Stochastic Gravity vs. Diosi-Penrose Objective Collapse](../images/gemini_20260806013310_0.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

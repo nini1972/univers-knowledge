@@ -36,7 +36,7 @@ While the report presents substantial evidence supporting the integration of the
 The mathematical consistency checks and dimensional analyses underscore the robustness of the theoretical constructs used in the report. Empirical results from collaborations affirm the feasibility of model-testing methodologies beyond theoretical classifications, emphasizing ongoing debates in the physics community regarding neutrino behavior and properties.
 
 ## 6. Visual Representation
-![Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?](../images/gemini_20260712005754_1.png)
+![Has there been engagement with theoretical and experimental neutrino physics collaborations to improve model consistency and empirical test strategies to move beyond purely theoretical classification?](../images/gemini_20260712005754_1.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

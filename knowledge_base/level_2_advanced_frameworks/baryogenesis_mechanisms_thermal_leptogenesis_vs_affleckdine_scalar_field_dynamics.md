@@ -51,7 +51,7 @@ While both models are mathematically sound, criticisms lie in their lack of obse
 The conceptual and mathematical integrity of the models is sustained upon rigorous examination, though the absence of empirical evidence remains a crucial point of skepticism.
 
 ## 6. Visual Representation
-![Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics](../images/gemini_20260712153152_0.png)
+![Baryogenesis Mechanisms: Thermal Leptogenesis vs. Affleck-Dine Scalar Field Dynamics](../images/gemini_20260712153152_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Physics

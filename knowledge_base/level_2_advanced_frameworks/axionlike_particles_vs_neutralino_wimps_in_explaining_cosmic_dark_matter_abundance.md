@@ -35,7 +35,7 @@ Skeptics of both ALPs and neutralinos highlight the challenges of relying on the
 This detailed analysis has been verified for mathematical accuracy, and its structure adheres to rigorous physical standards. The report outlines the substantial gaps in empirical evidence for both models while maintaining a balanced approach.
 
 ## 6. Visual Representation
-![Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance](../images/gemini_20260728010803_1.png)
+![Axion-like Particles vs Neutralino WIMPs in Explaining Cosmic Dark Matter Abundance](../images/gemini_20260728010803_1.webp)
 
 ## 7. Related Concepts
 - **Dark Matter**: The underlying substance theorized to account for gravitational effects in the universe.

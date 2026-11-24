@@ -34,7 +34,7 @@ Empirical searches conducted by collaborations such as IceCube and DeepCore have
 While the theoretical framework is robust, it remains paramount to emphasize that the predictions outlined rely heavily on idealized conditions that may not manifest in actual empirical observations.
 
 ## 6. Visual Representation
-![What specific non-Markovian memory kernels would arise if neutrino propagation through Earth's matter density is treated as a truly non-adiabatic process?](../images/gemini_20260826004557_0.png)
+![What specific non-Markovian memory kernels would arise if neutrino propagation through Earth's matter density is treated as a truly non-adiabatic process?](../images/gemini_20260826004557_0.webp)
 
 ## 7. Related Concepts
 ## 7. Related Concepts

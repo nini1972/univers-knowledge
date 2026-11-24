@@ -163,7 +163,7 @@ The conversion \(\Omega_\nu h^2=\Sigma m_\nu/(93.14\ \mathrm{eV})\) applies in t
 - The source material names several analyses without providing their full bibliographic metadata. Author-year citations are retained in the text; no missing DOI or arXiv identifier is inferred.
 
 ## 6. Visual Representation
-![Cosmological Constraints on the Sum of Neutrino Masses from Large-Scale Structure](../images/gemini_20261107003240_0.png)
+![Cosmological Constraints on the Sum of Neutrino Masses from Large-Scale Structure](../images/gemini_20261107003240_0.webp)
 
 ## 7. Related Concepts
 - [[Neutrino Oscillations and the Neutrino Mass Hierarchy]]

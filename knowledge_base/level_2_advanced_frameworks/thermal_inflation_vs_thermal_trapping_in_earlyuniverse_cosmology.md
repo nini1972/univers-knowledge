@@ -103,7 +103,7 @@ The dimensional error in the earlier effective-mass expression was explicitly id
 Numerical benchmarks should be interpreted with their stated assumptions. In particular, the quoted dilution range is parameter-dependent, and the verification report flags a degrees-of-freedom value used in one patch-size calculation as a soft numerical caveat.
 
 ## 6. Visual Representation
-![Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology](../images/gemini_20261017072512_0.png)
+![Thermal Inflation vs Thermal Trapping in Early-Universe Cosmology](../images/gemini_20261017072512_0.webp)
 
 ## 7. Related Concepts
 - **Cosmological moduli problem:** The overproduction or persistence of long-lived scalar relics in cosmology.

@@ -79,7 +79,7 @@ The accepted conclusion is limited to the verified claims: QCD is the fundamenta
 The mathematical verification does not establish completeness of the nuclear-force EFT program. It also does not constitute a fully first-principles lattice demonstration of the QCD-to-deuteron connection. See the detailed mathematical integrity report in Section 9.
 
 ## 6. Visual Representation
-![Nuclear Physics and the Strong Nuclear Force](../images/gemini_20261013011827_1.png)
+![Nuclear Physics and the Strong Nuclear Force](../images/gemini_20261013011827_1.webp)
 
 ## 7. Related Concepts
 - [[Quantum Chromodynamics]]

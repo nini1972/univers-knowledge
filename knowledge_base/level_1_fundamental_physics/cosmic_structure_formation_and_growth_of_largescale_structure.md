@@ -46,7 +46,7 @@ Despite the successes of the ΛCDM model, several key questions persist:
 The mathematical framework surrounding cosmic structure formation demonstrates strong empirical foundations yet grapples with several unresolved issues. Current studies continue to enhance our understanding of growth mechanisms and the fundamental components of cosmic structure.
 
 ## 6. Visual Representation
-![Cosmic Structure Formation and Growth of Large-Scale Structure](../images/gemini_20261022013429_0.png)
+![Cosmic Structure Formation and Growth of Large-Scale Structure](../images/gemini_20261022013429_0.webp)
 
 ## 7. Related Concepts
 - Dark Matter

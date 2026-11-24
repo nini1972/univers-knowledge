@@ -33,7 +33,7 @@ Some physicists suggest alternative approaches or reforms in theoretical framewo
 The verification process indicates a mathematically conjectured status due to the unresolved fundamental questions in the theoretical constructs of physics today.
 
 ## 6. Visual Representation
-![What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?](../images/gemini_20260728005645_0.png)
+![What specific mathematical subtleties or unstated assumptions prevented full mathematical integrity compliance?](../images/gemini_20260728005645_0.webp)
 
 ## 7. Related Concepts
 - Lattice quantum chromodynamics (QCD)

@@ -34,7 +34,7 @@ Skepticism around decoherence often emerges from interpretational nuances, parti
 The concept of Quantum Decoherence has been rigorously evaluated both theoretically and experimentally, meeting all five skeptical verification criteria with a perfect score of 5/5. While acknowledging interpretational nuances remain theoretical, the physical process underlying decoherence is conclusively verified. Therefore, the concept is approved based on comprehensive empirical validation and logical consistency.
 
 ## 6. Visual Representation
-![Quantum Decoherence](../images/gemini_20260615012014_0.png)
+![Quantum Decoherence](../images/gemini_20260615012014_0.webp)
 
 ## 7. Related Concepts
 - Quantum Measurement Problem

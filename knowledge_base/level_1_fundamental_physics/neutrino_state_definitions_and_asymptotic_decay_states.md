@@ -28,7 +28,7 @@ Some skeptics argue that without definitive measurements of recoil or other dire
 The coherent production model's support from oscillation experiments is a significant finding, but skeptics highlight the need for more direct measurements to bolster the claims against incoherent mixture models.
 
 ## 6. Visual Representation
-![How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?](../images/gemini_20260812005846_0.png)
+![How might ambiguities in neutrino state definitions during decay be theoretically and experimentally clarified?](../images/gemini_20260812005846_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillation

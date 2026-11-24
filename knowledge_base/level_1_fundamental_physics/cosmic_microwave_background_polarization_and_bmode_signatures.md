@@ -122,7 +122,7 @@ The Lyth bound relates \(r\) to the inflaton field excursion under specified inf
 - **Corrections applied:** The slow-roll relation, energy-scale prefactor and numerical value, distinction between the single-realization estimator and theoretical \(C_\ell\), and tensor temperature-amplitude description are corrected or clarified in Section 3. The GW170817 bound and its redshift scope, and the indirect relation of Hubble and DESI tensions to B-modes, are clarified above.
 
 ## 6. Visual Representation
-![Cosmic Microwave Background Polarization and B-Mode Signatures](../images/gemini_20261103003820_0.png)
+![Cosmic Microwave Background Polarization and B-Mode Signatures](../images/gemini_20261103003820_0.webp)
 
 ## 7. Related Concepts
 - [[Cosmic Microwave Background]]

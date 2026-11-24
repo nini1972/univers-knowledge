@@ -28,7 +28,7 @@ It is essential to recognize the limitations of applying IIT 4.0 metrics within 
 The verification process confirms the soundness of the claims made within the framework, supported by rigorous analysis and distinct mathematical categorizations.
 
 ## 6. Visual Representation
-![Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics](../images/gemini_20260902022251_1.png)
+![Quantifying the Causal Power of Emergent Neural Manifolds versus Cosmological Network Topologies using IIT 4.0 Metrics](../images/gemini_20260902022251_1.webp)
 
 ## 7. Related Concepts
 - Neural Dynamics

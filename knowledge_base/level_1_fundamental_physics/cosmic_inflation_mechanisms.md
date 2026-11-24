@@ -34,7 +34,7 @@ While cosmic inflation remains a dominant paradigm, skepticism arises from the c
 The verification report maintains cosmic inflation as a rigorously constructed theoretical framework, keeping in view its current experimental limitations. The skeptic’s scoring is a full 5/5, indicating full compliance with criteria including source consensus, thorough skepticism, detailed mathematical foundations, clear status as theoretical, and effective visual clarity. The concept passes verification thresholds while awaiting definitive experimental validation.
 
 ## 6. Visual Representation
-![Cosmic Inflation Mechanisms](../images/gemini_20260608011438_0.png)
+![Cosmic Inflation Mechanisms](../images/gemini_20260608011438_0.webp)
 
 ## 7. Related Concepts
 - Big Bang Cosmology

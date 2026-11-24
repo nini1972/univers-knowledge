@@ -39,7 +39,7 @@ Skeptics of the QSG process often point to the unresolved mathematical gaps that
 While the concept remains classified as theoretical, significant strides have been made in identifying the obstacles preventing its full validation. Continued exploration into these mathematical constraints is essential to advance our understanding of quantum sequential growth.
 
 ## 6. Visual Representation
-![What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?](../images/gemini_20260801105305_0.png)
+![What specific mathematical or conceptual gaps prevent the quantum sequential growth process from being fully formulated?](../images/gemini_20260801105305_0.webp)
 
 ## 7. Related Concepts
 For further reading and contextual understanding, consider exploring the following concepts:

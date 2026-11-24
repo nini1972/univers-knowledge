@@ -28,7 +28,7 @@ Critics argue that the lack of a complete quantum dynamics raises doubts about t
 Ongoing investigations and mathematical developments continue to build on the theoretical foundations of causal set theory, exploring various models and quantizations. The mathematical rigor of the framework provides a basis for exploring these complexities, despite the challenges faced.
 
 ## 6. Visual Representation
-![What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?](../images/gemini_20260804005746_0.png)
+![What are the prospects for constructing a quantum measure satisfying all covariant and causality requirements in causal set theory?](../images/gemini_20260804005746_0.webp)
 
 ## 7. Related Concepts
 - **Quantum Gravity**

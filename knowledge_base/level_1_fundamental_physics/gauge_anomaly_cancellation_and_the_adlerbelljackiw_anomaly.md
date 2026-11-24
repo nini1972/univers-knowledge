@@ -153,7 +153,7 @@ The numerical pion-decay result uses the anomaly coefficient \(N_c(Q_u^2-Q_d^2)=
 - Green–Schwarz and string mechanisms are **[THEORETICAL]**; GUT mechanisms are model-dependent.
 
 ## 6. Visual Representation
-![Gauge Anomaly Cancellation and the Adler–Bell–Jackiw Anomaly](../images/gemini_20261123081604_1.png)
+![Gauge Anomaly Cancellation and the Adler–Bell–Jackiw Anomaly](../images/gemini_20261123081604_1.webp)
 
 ## 7. Related Concepts
 - Adler–Bell–Jackiw (axial) anomaly

@@ -68,7 +68,7 @@ Experimental constraints from neutrino oscillation experiments, direct searches 
 Theoretical scrutiny and cross-checks with experimental data have assigned this class of models a verification score of 5/5 from a skeptic perspective, reflecting thorough critical evaluation. Their mathematical consistency, alignment with observed neutrino oscillation parameters, and compatibility with known constraints affirm their credibility as robust theoretical frameworks. However, they remain classified as theoretical models pending future experimental validation, which is crucial for establishing them as physical reality.
 
 ## 6. Visual Representation
-![Neutrino Mass Mechanisms Beyond Standard See-Saw Models](../images/gemini_20260613011529_0.png)
+![Neutrino Mass Mechanisms Beyond Standard See-Saw Models](../images/gemini_20260613011529_0.webp)
 
 ## 7. Related Concepts
 - Standard Type-I Seesaw Mechanism

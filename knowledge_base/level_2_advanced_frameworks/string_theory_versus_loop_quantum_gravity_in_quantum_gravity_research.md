@@ -43,7 +43,7 @@ The skeptic verification score for this debate is 5/5, attesting to strict compl
 This meticulous approach supports the report's reliability as an academic resource, enhancing conceptual clarity and facilitating informed discourse on the quantum gravity frontier.
 
 ## 6. Visual Representation
-![String Theory versus Loop Quantum Gravity in Quantum Gravity Research](../images/gemini_20260605011416_0.png)
+![String Theory versus Loop Quantum Gravity in Quantum Gravity Research](../images/gemini_20260605011416_0.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity  

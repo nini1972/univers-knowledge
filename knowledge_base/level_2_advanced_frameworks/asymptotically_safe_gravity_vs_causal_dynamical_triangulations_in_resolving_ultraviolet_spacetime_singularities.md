@@ -34,7 +34,7 @@ Critics of ASG point out the lack of a rigorous proof of convergence, suggesting
 No experimental violations of General Relativity have been uniquely predicted or confirmed by either framework, affirming their theoretical status.
 
 ## 6. Visual Representation
-![Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities](../images/gemini_20260824004110_1.png)
+![Asymptotically Safe Gravity vs Causal Dynamical Triangulations in Resolving Ultraviolet Spacetime Singularities](../images/gemini_20260824004110_1.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

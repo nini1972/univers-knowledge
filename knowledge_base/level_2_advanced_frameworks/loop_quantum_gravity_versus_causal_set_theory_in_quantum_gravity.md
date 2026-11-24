@@ -46,7 +46,7 @@ Alternative approaches to quantum gravity (e.g., String Theory, Asymptotic Safet
 The review fully justifies a skeptic verification score of 5/5, denoting comprehensive, independent, and rigorous scrutiny. This score reflects the thorough engagement with multiple peer-reviewed sources and transparent reporting of challenges. The report is approved under current knowledge policies and is classified as [THEORETICAL] consistent with the frameworks’ current experimental status.
 
 ## 6. Visual Representation
-![Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](../images/gemini_20260607011610_0.png)
+![Loop Quantum Gravity versus Causal Set Theory in Quantum Gravity](../images/gemini_20260607011610_0.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

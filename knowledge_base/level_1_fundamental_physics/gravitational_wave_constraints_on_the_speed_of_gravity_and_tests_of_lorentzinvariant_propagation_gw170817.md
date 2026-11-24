@@ -107,7 +107,7 @@ Two corrections are essential when presenting the result:
 Dimensional closure was checked manually: \(\Phi\) carries \([E]^2\) under normalization (a), and \(\Delta t\) carries \([E]^{-1}\) for all \(\alpha\in\{0,1,3,4\}\). The dimensional checker returned **UNDECIDABLE** for all six equations. The graviton-mass bound \(m_g\leq1.2\times10^{-22}\) eV, the Horndeski \(\alpha_T\) form, and LIV dispersion bounds are **[MODEL-DEPENDENT]**.
 
 ## 6. Visual Representation
-![Gravitational Wave Constraints on the Speed of Gravity and Tests of Lorentz-Invariant Propagation (GW170817)](../images/gemini_20261114004812_0.png)
+![Gravitational Wave Constraints on the Speed of Gravity and Tests of Lorentz-Invariant Propagation (GW170817)](../images/gemini_20261114004812_0.webp)
 
 ## 7. Related Concepts
 - Binary neutron-star mergers and multimessenger astronomy

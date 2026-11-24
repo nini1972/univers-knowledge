@@ -82,7 +82,7 @@ Advisory:
 - Lack of empirical proof prevents elevation to experimentally confirmed status.
 
 ## 6. Visual Representation
-![Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](../images/gemini_20260630011829_1.png)
+![Holographic Principle vs Causal Set Theory in Quantum Gravity Debate](../images/gemini_20260630011829_1.webp)
 
 ## 7. Related Concepts
 - AdS/CFT Correspondence

@@ -70,7 +70,7 @@ The report earned a perfect verification score (5/5) across all relevant criteri
 Overall, it justifies classifying this debate as [THEORETICAL], reaffirming that neither model is fully confirmed, and CDM holds a stronger position in cosmological science due to wider empirical support.
 
 ## 6. Visual Representation
-![Modified Gravity vs Dark Matter Paradigm Debate](../images/gemini_20260530215137_0.png)
+![Modified Gravity vs Dark Matter Paradigm Debate](../images/gemini_20260530215137_0.webp)
 
 ## 7. Related Concepts
 - Dark Matter Particle Physics Candidates  

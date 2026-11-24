@@ -31,7 +31,7 @@ While the framework adheres to operator theory standards, skeptics emphasize the
 The verification process demonstrated the framework's robust mathematical integrity, confirming adherence to defined operator-theoretic principles.
 
 ## 6. Visual Representation
-![What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?](../images/gemini_20260805005425_0.png)
+![What specific operator-theoretic proofs can be developed to ensure full mathematical integrity compliance of the neutrino decay survival probability framework?](../images/gemini_20260805005425_0.webp)
 
 ## 7. Related Concepts
 - Quantum Decoherence

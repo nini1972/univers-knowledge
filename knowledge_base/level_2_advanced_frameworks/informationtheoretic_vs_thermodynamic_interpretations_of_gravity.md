@@ -34,7 +34,7 @@ Critics have pointed out the speculative aspects of Verlinde’s framework, emph
 The evaluation of these concepts has been informed by several high-profile studies and mathematical analyses. The consensus emphasizes the greater empirical support garnered by the Bekenstein–Hawking formulation over Verlinde’s emerging gravitational theories.
 
 ## 6. Visual Representation
-![Information-Theoretic vs. Thermodynamic Interpretations of Gravity](../images/gemini_20260719011733_1.png)
+![Information-Theoretic vs. Thermodynamic Interpretations of Gravity](../images/gemini_20260719011733_1.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

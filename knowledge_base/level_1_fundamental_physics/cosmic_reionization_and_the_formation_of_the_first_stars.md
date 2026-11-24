@@ -52,7 +52,7 @@ Keep two evidentiary claims distinct:
 - **Not confirmed in detail:** the specific formation history and properties of Population III stars, and a definitive reionization timeline.
 
 ## 6. Visual Representation
-![Cosmic Reionization and the Formation of the First Stars](../images/gemini_20261017005749_0.png)
+![Cosmic Reionization and the Formation of the First Stars](../images/gemini_20261017005749_0.webp)
 
 ## 7. Related Concepts
 - [[Cosmic Reionization]]

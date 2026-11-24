@@ -43,7 +43,7 @@ While the integration of DAOs and dissipative processes offers a promising avenu
 The mathematical integrity of the proposed models aligns with established theories in cosmology and dark matter physics, as outlined in the validation report below.
 
 ## 6. Visual Representation
-![Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?](../images/gemini_20260902013323_0.png)
+![Does the inclusion of 'dark acoustic oscillations' or dissipation in complex dark-sector models alter the large-scale structure success of SIDM compared to standard collisionless ΛCDM?](../images/gemini_20260902013323_0.webp)
 
 ## 7. Related Concepts
 - Dark Matter

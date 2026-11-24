@@ -34,7 +34,7 @@ Critics may argue that large NSI parameters could lead to interpretations of dec
 The verification process reaffirms that current studies confirm the retention of decay bounds regardless of NSI presence, as the outlined degeneracies do not qualitatively undermine the existing theoretical framework.
 
 ## 6. Visual Representation
-![Does the inclusion of potential Non-Standard Interactions (NSI) in the matter-evolution Hamiltonian qualitatively shift the existing bounds on neutrino decay lifetimes at DUNE?](../images/gemini_20260906011616_1.png)
+![Does the inclusion of potential Non-Standard Interactions (NSI) in the matter-evolution Hamiltonian qualitatively shift the existing bounds on neutrino decay lifetimes at DUNE?](../images/gemini_20260906011616_1.webp)
 
 ## 7. Related Concepts
 - Non-Standard Interactions (NSI)

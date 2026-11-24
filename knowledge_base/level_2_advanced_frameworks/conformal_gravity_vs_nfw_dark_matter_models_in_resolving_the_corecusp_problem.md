@@ -43,7 +43,7 @@ The skepticism surrounding these models is valid, as ongoing research continues 
 NFW refinements are grounded in robust empirical evidence, whereas Weyl Gravity lacks historical validation and relies on speculative modifications. The weight of current cosmological data leans heavily in favor of the ΛCDM approach, fostering confidence in observational predictions based on NFW parameters.
 
 ## 6. Visual Representation
-![Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem](../images/gemini_20260903013205_0.png)
+![Conformal Gravity vs NFW Dark Matter Models in Resolving the Core-Cusp Problem](../images/gemini_20260903013205_0.webp)
 
 ## 7. Related Concepts
 - **Lambda Cold Dark Matter (ΛCDM) Model:** A dominant cosmological model describing large-scale structure formation.

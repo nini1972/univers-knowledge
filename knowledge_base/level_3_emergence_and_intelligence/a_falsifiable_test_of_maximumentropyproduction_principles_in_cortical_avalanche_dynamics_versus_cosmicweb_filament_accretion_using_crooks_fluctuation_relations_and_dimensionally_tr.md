@@ -96,7 +96,7 @@ The appropriate claim, if supported by a future test, would be limited to an obs
 - **Sources relevant to the verified identity and hidden-entropy caveat:** Crooks (1999), DOI: [10.1103/PhysRevE.60.2721]; Seifert (2012), DOI: [10.1088/0034-4885/75/12/126001]; Toyabe et al. (2010), DOI: [10.1038/nphys1821]. The cortical subsampling caveat is associated with Pinheiro Neto, Spitzner & Priesemann (2022), DOI: [10.1371/journal.pcbi.1010678].
 
 ## 6. Visual Representation
-![A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units](../images/gemini_20261030010946_0.png)
+![A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units](../images/gemini_20261030010946_0.webp)
 
 ## 7. Related Concepts
 - [[Crooks fluctuation theorem]]

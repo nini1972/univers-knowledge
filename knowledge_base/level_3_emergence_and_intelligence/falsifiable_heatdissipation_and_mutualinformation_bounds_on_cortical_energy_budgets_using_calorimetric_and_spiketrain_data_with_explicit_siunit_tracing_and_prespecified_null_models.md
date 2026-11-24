@@ -175,7 +175,7 @@ Key corrections and safeguards:
 6. Interpret the 9–10-order-of-magnitude gap cautiously: it compares partly incommensurable quantities and provides a bound with little bite.
 
 ## 6. Visual Representation
-![Falsifiable Heat-Dissipation and Mutual-Information Bounds on Cortical Energy Budgets Using Calorimetric and Spike-Train Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models](../images/gemini_20261109013555_0.png)
+![Falsifiable Heat-Dissipation and Mutual-Information Bounds on Cortical Energy Budgets Using Calorimetric and Spike-Train Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models](../images/gemini_20261109013555_0.webp)
 
 ## 7. Related Concepts
 - Stochastic thermodynamics and entropy production

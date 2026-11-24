@@ -43,7 +43,7 @@ While the DFSZ and KSVZ models provide robust theoretical frameworks, they are n
 Both models endure critical scrutiny due to their reliance on unproven theoretical assumptions and face substantial empirical pressure. Nevertheless, their mathematical foundation is sound, emphasizing valid coupling mechanisms and effective field theory.
 
 ## 6. Visual Representation
-![DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem](../images/gemini_20260712132329_0.png)
+![DFSZ vs KSVZ Axion Models in Explaining Dark Matter and Strong CP Problem](../images/gemini_20260712132329_0.webp)
 
 ## 7. Related Concepts
 - Strong CP problem

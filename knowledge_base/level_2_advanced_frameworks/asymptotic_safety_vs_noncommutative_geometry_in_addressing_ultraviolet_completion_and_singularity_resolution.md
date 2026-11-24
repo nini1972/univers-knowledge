@@ -33,7 +33,7 @@ Skeptical evaluations reveal that while both frameworks exhibit internal consist
 The skeptic verification score of 5/5 confirms the report's adherence to professional standards of transparency regarding uncertainty, mathematical rigor, and alignment with existing empirical constraints.
 
 ## 6. Visual Representation
-![Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution](../images/gemini_20260716011023_0.png)
+![Asymptotic Safety vs Non-Commutative Geometry in Addressing Ultraviolet Completion and Singularity Resolution](../images/gemini_20260716011023_0.webp)
 
 ## 7. Related Concepts
 - Quantum Gravity

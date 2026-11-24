@@ -35,7 +35,7 @@ While the theoretical framework provides rich insights, the current status remai
 The study emphasizes the importance of robust statistical techniques in validating the findings and stresses the relevance of ongoing research to refine experimental designs.
 
 ## 6. Visual Representation
-![What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?](../images/gemini_20260807015036_0.png)
+![What experimental designs or data analyses can definitively distinguish neutrino decay effects from alternative damping mechanisms such as decoherence or non-standard interactions?](../images/gemini_20260807015036_0.webp)
 
 ## 7. Related Concepts
 - Neutrino Oscillations

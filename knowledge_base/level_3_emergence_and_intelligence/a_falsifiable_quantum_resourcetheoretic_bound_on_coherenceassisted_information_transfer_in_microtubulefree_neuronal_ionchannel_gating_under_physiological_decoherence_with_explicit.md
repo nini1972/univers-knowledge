@@ -103,7 +103,7 @@ The report also discusses prospective controls and counter-hypotheses, including
 - **Consciousness scope:** No consciousness or IIT claims are made.
 
 ## 6. Visual Representation
-![A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](../images/gemini_20261026011019_0.png)
+![A Falsifiable Quantum Resource-Theoretic Bound on Coherence-Assisted Information Transfer in Microtubule-Free Neuronal Ion-Channel Gating Under Physiological Decoherence, with Explicit SI-Unit Tracing and Pre-Specified Classical Null Models](../images/gemini_20261026011019_0.webp)
 
 ## 7. Related Concepts
 - **Leggett–Garg inequalities:** Tests of macrorealist descriptions using temporal correlations.

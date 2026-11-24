@@ -58,7 +58,7 @@ This analysis reveals not only the significance of investigating consciousness t
 Approved as a theoretically grounded, falsifiability-oriented research conjecture. The 6/6 skeptic score passes the Level 3 threshold, but the proposal does not constitute empirical validation of IIT, GNWT, or a phenomenal-access dissociation.
 
 ## 6. Visual Representation
-![Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory](../images/gemini_20260918010641_0.png)
+![Dissociating Phenomenal Structure from Cognitive Access: A Falsifiable Causal-Perturbation Test of Integrated Information Theory and Global Neuronal Workspace Theory](../images/gemini_20260918010641_0.webp)
 
 ## 7. Related Concepts
 - Consciousness

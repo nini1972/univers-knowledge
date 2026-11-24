@@ -33,7 +33,7 @@ Despite strong indirect observational evidence, a key unresolved issue remains t
 The Dark Matter concept meets all protocol criteria and has been assigned a perfect skeptic score of 5/5. This reflects the broad consensus within the scientific community based on robust indirect evidence and theoretical consistency. Visual grounding and explanatory details enrich conceptual understanding, ensuring this representation is both reliable and scientifically cautious pending future experimental confirmation.
 
 ## 6. Visual Representation
-![Dark Matter](../images/gemini_20260530094449_1.png)
+![Dark Matter](../images/gemini_20260530094449_1.webp)
 
 ## 7. Related Concepts
 - Lambda-CDM Cosmological Model

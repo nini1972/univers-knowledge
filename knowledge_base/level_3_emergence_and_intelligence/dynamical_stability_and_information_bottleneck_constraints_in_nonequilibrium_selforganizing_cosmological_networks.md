@@ -28,7 +28,7 @@ It is acknowledged within the study that while the framework is mathematically s
 The report includes a rigorous examination of mathematical consistency and its connection to empirical data, reinforcing the importance of adhering to robust theoretical and experimental standards.
 
 ## 6. Visual Representation
-![Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](../images/gemini_20260809013933_1.png)
+![Dynamical Stability and Information Bottleneck Constraints in Non-Equilibrium Self-Organizing Cosmological Networks](../images/gemini_20260809013933_1.webp)
 
 ## 7. Related Concepts
 - Information Theory

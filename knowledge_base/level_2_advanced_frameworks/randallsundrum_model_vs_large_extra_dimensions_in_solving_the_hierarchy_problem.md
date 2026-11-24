@@ -38,7 +38,7 @@ Despite the hypothetical possibilities presented by the Randall-Sundrum and ADD 
 The models have been subjected to rigorous scrutiny, particularly in the domain of high-energy physics. The theoretical robustness of the RS framework, especially its holographic interpretations, provides a counterbalance to the apparent disqualification of the ADD model due to extensive experimental data.
 
 ## 6. Visual Representation
-![Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem](../images/gemini_20260712011418_1.png)
+![Randall-Sundrum Model vs Large Extra Dimensions in Solving the Hierarchy Problem](../images/gemini_20260712011418_1.webp)
 
 ## 7. Related Concepts
 - Hierarchy Problem

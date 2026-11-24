@@ -43,7 +43,7 @@ Extra dimensional models, although innovative in their geometric approach, intro
 The report transparently states the theoretical status of the frameworks and openly discusses experimental limitations and resulting parameter constraints stemming from LHC data and gravitational tests. Mathematical consistency is demonstrated via rigorous algebraic and geometrical formulations, and phenomenological consequences are critically reviewed. The skeptic verification score assigned is 5/5, reflecting comprehensive coverage, transparent assumptions, and critical appraisal exceeding minimal standards for acceptance.
 
 ## 6. Visual Representation
-![Supersymmetry vs Extra Dimensions in Beyond Standard Model Physics](../images/gemini_20260602011828_0.png)
+![Supersymmetry vs Extra Dimensions in Beyond Standard Model Physics](../images/gemini_20260602011828_0.webp)
 
 ## 7. Related Concepts
 - Supersymmetry Algebra and Superfields

@@ -33,7 +33,7 @@ While the report maintains a robust physicalist framework, it is essential to no
 The research effectively avoids metaphysical overreach by providing an operational definition of complexity that is dependent on observational parameters.
 
 ## 6. Visual Representation
-![Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](../images/gemini_20260801120435_1.png)
+![Information-Theoretic Complexity and Emergent Hierarchies in the Cosmic Web: A Comparative Analysis of Neural Networks and Large-Scale Structure Evolution](../images/gemini_20260801120435_1.webp)
 
 ## 7. Related Concepts
 - Graph Theory

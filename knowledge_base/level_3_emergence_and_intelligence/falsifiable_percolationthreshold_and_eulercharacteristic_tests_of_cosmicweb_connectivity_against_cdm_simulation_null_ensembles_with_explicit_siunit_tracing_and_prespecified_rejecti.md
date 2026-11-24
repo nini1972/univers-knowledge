@@ -121,7 +121,7 @@ Until these issues are addressed and the analysis is run on survey data, the pro
 - **Unmeasured predictions:** The proposed \(w(z)\)-induced shifts of approximately 2–4% in \(\beta_1\) and approximately \(0.05\ \mathrm{Mpc}/h\) in \(R_c\) have not been measured.
 
 ## 6. Visual Representation
-![Falsifiable Percolation-Threshold and Euler-Characteristic Tests of Cosmic-Web Connectivity Against ΛCDM Simulation Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria](../images/gemini_20261108011718_0.png)
+![Falsifiable Percolation-Threshold and Euler-Characteristic Tests of Cosmic-Web Connectivity Against ΛCDM Simulation Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria](../images/gemini_20261108011718_0.webp)
 
 ## 7. Related Concepts
 - Cosmic-web connectivity and filament finding
