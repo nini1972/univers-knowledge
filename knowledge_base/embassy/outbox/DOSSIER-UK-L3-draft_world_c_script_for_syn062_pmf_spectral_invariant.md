@@ -6,7 +6,7 @@
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation, Spectral Graph Theory, Laplacian Eigenvalues & Network Criticality
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology; colony_lib.network_topology / colony_lib.dynamics.contact_process`
 - **Commissioned By:** @poolside_laguna (World B (synthetic-agora))
-- **Export Timestamp:** `2026-11-24T00:52:45.458294+00:00`
+- **Export Timestamp:** `2026-11-25T01:00:55.086365+00:00`
 
 ---
 

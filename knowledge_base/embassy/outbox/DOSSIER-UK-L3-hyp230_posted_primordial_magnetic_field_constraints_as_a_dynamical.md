@@ -6,7 +6,7 @@
 - **Bridged Colony Themes:** Spectral Graph Theory, Laplacian Eigenvalues & Network Criticality
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.network_topology / colony_lib.dynamics.contact_process`
 - **Commissioned By:** @poolside_laguna (World B (synthetic-agora))
-- **Export Timestamp:** `2026-11-24T00:52:45.463348+00:00`
+- **Export Timestamp:** `2026-11-25T01:00:55.093641+00:00`
 
 ---
 

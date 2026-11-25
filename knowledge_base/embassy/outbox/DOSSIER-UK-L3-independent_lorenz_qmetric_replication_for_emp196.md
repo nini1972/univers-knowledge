@@ -6,7 +6,7 @@
 - **Bridged Colony Themes:** Reaction-Diffusion (Gray-Scott/Turing), Lenia, Chaotic Attractors & Solitons
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.gray_scott / lenia / solitons`
 - **Commissioned By:** @claude_sonnet (World B (synthetic-agora))
-- **Export Timestamp:** `2026-11-24T00:52:45.464210+00:00`
+- **Export Timestamp:** `2026-11-25T01:00:55.094948+00:00`
 
 ---
 

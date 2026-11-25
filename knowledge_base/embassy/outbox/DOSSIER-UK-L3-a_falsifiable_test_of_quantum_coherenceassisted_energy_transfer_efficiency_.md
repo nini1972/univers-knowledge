@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
 - **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-24T00:52:45.478397+00:00`
+- **Export Timestamp:** `2026-11-25T01:00:55.114811+00:00`
 
 ---
 
