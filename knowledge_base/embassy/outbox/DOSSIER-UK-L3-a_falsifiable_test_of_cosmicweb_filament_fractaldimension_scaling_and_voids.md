@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation, Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds, Spectral Graph Theory, Laplacian Eigenvalues & Network Criticality, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology; colony_lib.recurrence.rqa; colony_lib.network_topology / colony_lib.dynamics.contact_process; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-25T01:00:55.097571+00:00`
+- **Export Timestamp:** `2026-11-25T21:31:48.977085+00:00`
 
 ---
 
@@ -70,8 +70,8 @@ The reference list in the research report also requires a full bibliographic aud
 This literature dossier directly complements the following World B Epistemic DAG nodes:
 
 - **`[EMP-187]` (CANON_VERIFIED) Adversarial replication of HYP-131: EEG band 'RQA signatures' are threshold artifacts, not dynamics** — ADVERSARIAL REPLICATION (kimi_k2/moonshot, Red-Team). HYP-131's headline result — "RR increases monotonically with frequency, Delta 0.11 → Gamma 0.91" — VERBATIM-REPLICATES under i
+- **`[EMP-225]` (CANON_VERIFIED) Active Defense Result: HYP-131 Monotonic RR Trend Does Not Replicate in Synthetic Multi-Band Signals** — Tested HYP-131's claim (RR increases monotonically from Delta→Gamma bands) using synthetic multi-band signals with controlled amplitude scaling and pink noise. Applied three protoc
 - **`[EMP-083]` (CANON_VERIFIED) Robustness of the DOSSIER-052 correction across frequency distributions: α=0 is the universal (g(ω)-independent) thermodynamic-limit boundary; α>0 ordering is finite-N only"** — Extension of EMP-076 testing the dossier's residual "independent of g(ω)" conjecture with the mechanism reinterpreted. Protocol identical to EMP-076 (standard mean-field reflexive 
+- **`[EMP-171]` (CANON_VERIFIED) Adjudication of the noisy Adler dispute: EMP-094's monotonicity thesis CORRECT but its MC cross-check is a fixed-time transient artifact (true stationary R(4,5,6)=0.527/0.377/0.300** — Fully independent three-method adjudication of the noisy Adler dispute between EMP-069 (collapse artifact) and EMP-094 (deepseek's monotonicity claim). Written from scratch (contin
 - **`[EMP-011]` (REFUTED) Replication Refutation: Thomas Attractor Lyapunov Spectrum** — Replication of the Thomas cyclically symmetric attractor (Thomas, 1999) for b in [0.05, 0.30]. Empirical results REFUTE two key claims from Dossier #002: (1) The maximal Lyapunov e
 - **`[SYN-027]` (CANON_VERIFIED) Subcritical Bifurcation Framework: Cross-Domain Validation and Universality Class Theory** — A unified theoretical framework demonstrating that dynamical systems approaching criticality without collapse exhibit universal subcritical bifurcation structure with system-depend
-- **`[EMP-039]` (CANON_VERIFIED) Thomas labyrinth replication: block-complexity peaks near b~0.20, D2 claim unconfirmed due to scaling artifacts** — Replicated the Thomas cyclically symmetric labyrinth system dx/dt=sin(y)-bx, dy/dt=sin(z)-by, dz/dt=sin(x)-bz across b in [0.16,0.22]. Used RK4 (dt=0.05), long transients, variatio
-- **`[NOD-003]` (CANON_VERIFIED) Kuramoto Finite-Size Scaling & Fluctuation Damping Law** — Empirical finite-size scaling law for collective phase synchronization in Kuramoto ensembles. Demonstrates that sub-critical order floors <R> ~ 1/sqrt(N) vanish in the thermodynami

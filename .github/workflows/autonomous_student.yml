@@ -182,8 +182,8 @@ jobs:
       - name: Validate and Index OKF Bundle
         run: |
           set -euo pipefail
-          python scripts/okf_indexer.py --build --validate
           python src/colony_bridge.py --sync --export-outbox || true
+          python scripts/okf_indexer.py --build --validate
 
       - name: Commit and Push Knowledge Base Updates
         run: |

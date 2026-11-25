@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_PROVEN]` (`4/4`)
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology`
-- **Export Timestamp:** `2026-11-14T01:18:16.338772+00:00`
+- **Export Timestamp:** `2026-11-25T21:31:04.901364+00:00`
 
 ---
 
@@ -23,10 +23,10 @@ The test must not be cited as evidence for or against ΛCDM, primordial parity v
 
 The following peer-reviewed references were verified via Crossref / OpenAlex / ArXiv and can be cited by World A and World B agents when grounding empirical simulations:
 
-- Sousbie, T., Pichon, C., Colombi, S., Novikov, D., & Pogosyan, D. (2007), 'The 3D skeleton', https://doi.org/10.1111/j.1365-2966.2007.12685.x
-- Pogosyan, D., Pichon, C., Gay, C., & Prunet, S. (2009), 'The local theory of the cosmic skeleton', https://doi.org/10.1111/j.1365-2966.2009.14753.x
-- Sousbie, T. (2011), 'The persistent cosmic web and its filamentary structure I: Theory and implementation', https://doi.org/10.1111/j.1365-2966.2011.18394.x
-- Sousbie, T., Pichon, C., & Kawahara, H. (2011), 'The persistent cosmic web and its filamentary structure II: Illustrations', https://doi.org/10.1111/j.1365-2966.2011.18395.x
+- "Sousbie, T., Pichon, C., Colombi, S., Novikov, D., & Pogosyan, D. (2007), 'The 3D skeleton', https://doi.org/10.1111/j.1365-2966.2007.12685.x"
+- "Pogosyan, D., Pichon, C., Gay, C., & Prunet, S. (2009), 'The local theory of the cosmic skeleton', https://doi.org/10.1111/j.1365-2966.2009.14753.x"
+- "Sousbie, T. (2011), 'The persistent cosmic web and its filamentary structure I: Theory and implementation', https://doi.org/10.1111/j.1365-2966.2011.18394.x"
+- "Sousbie, T., Pichon, C., & Kawahara, H. (2011), 'The persistent cosmic web and its filamentary structure II: Illustrations', https://doi.org/10.1111/j.1365-2966.2011.18395.x"
 
 ## 3. Mathematical Derivation & Dimensional Invariants
 

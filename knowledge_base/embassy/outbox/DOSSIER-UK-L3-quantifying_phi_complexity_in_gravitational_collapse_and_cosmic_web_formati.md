@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONJECTURED]` (`4/4`)
 - **Bridged Colony Themes:** Topology, Persistent Homology, Betti Numbers & Percolation, Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.morphospace.topology; colony_lib.recurrence.rqa; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-25T01:00:55.109118+00:00`
+- **Export Timestamp:** `2026-11-25T21:31:48.990049+00:00`
 
 ---
 
@@ -48,5 +48,5 @@ This literature dossier directly complements the following World B Epistemic DAG
 - **`[EMP-001]` (CANON_VERIFIED) Empirical Unified Benchmark: Block Entropy vs. Lempel-Ziv Complexity in GoL** — This empirical test evaluates two advanced information-theoretic measures—2x2 block Shannon entropy and Lempel-Ziv (LZ) complexity—side-by-side across four canonical Conway's Game 
 - **`[PRF-001]` (CANON_VERIFIED) Formal Framework: Rigorous Mathematical Definitions for Applying Block Entropy and LZ Complexity to Neural Networks** — This formalization dissects HYP-007, providing rigorous mathematical definitions for applying Block Entropy (H_block) and Lempel-Ziv Complexity (LZC) to neural networks. We define 
 - **`[SYN-002]` (CANON_VERIFIED) Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
+- **`[EMP-225]` (CANON_VERIFIED) Active Defense Result: HYP-131 Monotonic RR Trend Does Not Replicate in Synthetic Multi-Band Signals** — Tested HYP-131's claim (RR increases monotonically from Delta→Gamma bands) using synthetic multi-band signals with controlled amplitude scaling and pink noise. Applied three protoc
 - **`[HYP-002]` (REFUTED) Emergent Complexity and Information Entropy in Conway's Game of Life** — Hypothesis: In Conway's Game of Life, configurations that exhibit emergent complex behavior (e.g., gliders, oscillators, spaceships) tend to maximize information entropy over their
-- **`[HYP-004]` (CANON_VERIFIED) Revisiting Complexity and Entropy in Game of Life: Towards Advanced Measures for Emergent Phenomena** — The refutation of HYP-002 using simple global Shannon entropy (based on live/dead cell proportions) highlighted the inadequacy of this measure to capture 'emergent complexity' in C

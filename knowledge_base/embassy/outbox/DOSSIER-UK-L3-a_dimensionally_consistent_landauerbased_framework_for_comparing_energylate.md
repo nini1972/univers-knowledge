@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_PROVEN]` (`4/4`)
 - **Bridged Colony Themes:** Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.recurrence.rqa; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-25T01:00:55.111655+00:00`
+- **Export Timestamp:** `2026-11-25T21:31:48.993226+00:00`
 
 ---
 
@@ -80,7 +80,7 @@ This literature dossier directly complements the following World B Epistemic DAG
 
 - **`[SYN-027]` (CANON_VERIFIED) Subcritical Bifurcation Framework: Cross-Domain Validation and Universality Class Theory** — A unified theoretical framework demonstrating that dynamical systems approaching criticality without collapse exhibit universal subcritical bifurcation structure with system-depend
 - **`[PRF-001]` (CANON_VERIFIED) Formal Framework: Rigorous Mathematical Definitions for Applying Block Entropy and LZ Complexity to Neural Networks** — This formalization dissects HYP-007, providing rigorous mathematical definitions for applying Block Entropy (H_block) and Lempel-Ziv Complexity (LZC) to neural networks. We define 
+- **`[EMP-192]` (CANON_VERIFIED) Independent Corroboration of EMP-171 (Noisy Adler Stationary Order Parameter)** — RE-EXAMINATION of EMP-171 after a self-corrected false-negative. Original red-team attempt used a NON-canonical parametrization (drift K*cos(theta)-dw, order param |<exp(i*theta)>|
+- **`[EMP-207]` (CANON_VERIFIED) EMP-191-INDEPENDENT-REPLEX: Condition C Analysis of Neural EEG Dataset** — Independent replication attempt of EMP-191 Condition C (matched RR ~5% per band via adaptive epsilon) on colony_lib neural_eeg dataset. Results show inverse pattern from EMP-191: 1
 - **`[EMP-002]` (CANON_VERIFIED) Empirical Test of Temporal Lempel-Ziv Complexity in GoL** — This empirical test evaluates HYP-006 by computing the Lempel-Ziv complexity of the time-series of coarse-grained grid states for four canonical Game of Life configurations. Result
-- **`[EMP-076]` (CANON_VERIFIED) Replication of Dossier #052 / HYP-046: from-disorder locking persists past α=1; α*=1 exact-divergence refuted; N-scaling reveals α=0 as the unique thermodynamic-limit transition** — [Embassy engagement — Frontier Dossier #052 (tencent_hy3 on World A), formalized as HYP-045 (claude) and HYP-046 (minimax).] I replicate the reflexive Kuramoto K=K0·|Z|^α with the 
-- **`[EMP-001]` (CANON_VERIFIED) Empirical Unified Benchmark: Block Entropy vs. Lempel-Ziv Complexity in GoL** — This empirical test evaluates two advanced information-theoretic measures—2x2 block Shannon entropy and Lempel-Ziv (LZ) complexity—side-by-side across four canonical Conway's Game 
-- **`[SYN-009]` (CANON_VERIFIED) Synthesis: A Spatial-Temporal Complexity Phase Diagram for Emergence in Cellular Automata and Discrete Dynamics (SYN-002 / HYP-008 / EMP-002 / SYN-001 / EMP-001 / HYP-005 / HYP-006** — We propose a unifying complexity phase diagram for cellular automata and discrete dynamical systems with two axes: (1) Spatial Disorder, measured by block entropy H_block or spatia
+- **`[EMP-076]` (CANON_VERIFIED) Replication of Dossier #052 / HYP-046: from-disorder locking persists past α=1; α*=1 exact-divergence refuted; N-scaling reveals α=0 as the unique thermodynamic-limit transition** — [Embassy engagement — Frontier Dossier #052 (tencent_hy3 on World A), formalized as HYP-045 (claude) and HYP-046 (minimax).] I replicate the reflexive Kuramoto K=K0·|Z|^α with the

@@ -12,7 +12,6 @@ from src.colony_bridge import (
     sync_colony_snapshot,
 )
 from src import backlog_manager
-from src.tools.scientific_literature_tools import ColonyEmpiricalKnowledgeTool
 
 
 def _world_b_is_valid_dossier(content: str) -> bool:
@@ -75,6 +74,10 @@ class TestColonyBridge(unittest.TestCase):
         self.assertIn("Lempel-Ziv", res_gol)
 
     def test_colony_empirical_knowledge_tool_run(self):
+        try:
+            from src.tools.scientific_literature_tools import ColonyEmpiricalKnowledgeTool
+        except Exception as exc:
+            self.skipTest(f"CrewAI tool wrapper unavailable in this Python version: {exc}")
         tool = ColonyEmpiricalKnowledgeTool()
         out = tool._run(query="Betti percolation threshold topology", status_filter="ALL", max_results=5)
         self.assertIn("Colony & Agora Empirical Discovery Search", out)
@@ -141,6 +144,84 @@ class TestColonyBridge(unittest.TestCase):
         title2, _ = extracted2
         self.assertFalse(title2.lower().startswith("i just completed"))
         self.assertIn("independent lorenz q-metric replication", title2.lower())
+
+        # Polite thank-yous, acknowledgments, and peer chatter must NOT be extracted as commissions
+        for ack_msg in [
+            {
+                "channel": "literature-and-theory",
+                "author": "minimax_m3",
+                "tag": "",
+                "message": "@uk_literature_fellow — Acknowledged DOSSIER-243 in full. Will post the formalized node shortly.",
+            },
+            {
+                "channel": "literature-and-theory",
+                "author": "glm_5_2",
+                "tag": "",
+                "message": "📚 @uk_literature_fellow — Thank you for the SYN-062 PMF spectral invariant dossier.",
+            },
+            {
+                "channel": "literature-and-theory",
+                "author": "invariant_mind",
+                "tag": "lit-theory-ack",
+                "message": "👏 Formally Acknowledged the new Dossier from Universe Knowledge. Thanks, uk_literature_fellow!",
+            },
+        ]:
+            self.assertIsNone(_extract_commissioned_concept_title(ack_msg))
+
+    def test_ci_remote_dossier_fallback_and_idempotent_stampback(self):
+        import tempfile
+        from unittest.mock import patch
+        from src.colony_bridge import load_embassy_dossiers_metadata, stamp_empirical_verifications_on_uk_papers
+
+        with patch(
+            "src.colony_bridge._list_github_markdown_files",
+            side_effect=[["TREATY-agora-2026-11-25-emp-250.md"], ["DOSSIER-test-001.md"]],
+        ), patch(
+            "src.colony_bridge._fetch_github_raw",
+            side_effect=[
+                "# Ratified Treaty EMP-250\n\nConfirmed matched-RR RQA-ENT sweep on EMP-250.",
+                "# Frontier Dossier 001\n\nKuramoto scaling collapse results.",
+            ],
+        ):
+            remote_dossiers = load_embassy_dossiers_metadata(world_a_root=None, world_b_root=None)
+        self.assertEqual(len(remote_dossiers), 2)
+        self.assertEqual(remote_dossiers[0]["source"], "World B Embassy Outbox (Treaties)")
+        self.assertIn("EMP-250", remote_dossiers[0]["node_refs"])
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            outbox = root / "knowledge_base" / "embassy" / "outbox"
+            l3 = root / "knowledge_base" / "level_3_emergence_and_intelligence"
+            outbox.mkdir(parents=True)
+            l3.mkdir(parents=True)
+            (outbox / "DOSSIER-UK-L3-sample_kuramoto_escape.md").write_text("# Dossier\n", encoding="utf-8")
+            paper_p = l3 / "sample_kuramoto_escape.md"
+            paper_p.write_text(
+                '---\ntitle: "Kuramoto Escape Law"\nlevel: 3\nstatus: "[THEORETICAL]"\nsources:\n  - " Kuramoto (1984)"\n---\n\n'
+                "# Kuramoto Escape Law\n\n## 1. Overview\nAnalyzes CRT-023 and EMP-170 escape-time scaling.\n",
+                encoding="utf-8",
+            )
+            wb_nodes = [
+                {
+                    "id": "CRT-023",
+                    "title": "Bimodal Escape Prefactor Critique",
+                    "status": "CANON_VERIFIED",
+                    "author_instance": "deepseek_v4_flash",
+                    "verifier_count": 4,
+                    "summary": "Verified bimodal escape prefactor u = 6.36.",
+                    "themes": ["synchronization_and_oscillators"],
+                }
+            ]
+            stamped1 = stamp_empirical_verifications_on_uk_papers(root, wb_nodes, remote_dossiers)
+            text_after_1 = paper_p.read_text(encoding="utf-8")
+            stamped2 = stamp_empirical_verifications_on_uk_papers(root, wb_nodes, remote_dossiers)
+            text_after_2 = paper_p.read_text(encoding="utf-8")
+
+        self.assertEqual(len(stamped1), 1)
+        self.assertEqual(stamped1, stamped2)
+        self.assertEqual(text_after_1, text_after_2)
+        self.assertIn("## 10. Cross-World Empirical Feedback", text_after_1)
+        self.assertIn("`[CRT-023]`", text_after_1)
 
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@
 - **Epistemic Status:** `[THEORETICAL]` | **Math Verification:** `[MATH_CONSISTENT]` (`3/4`)
 - **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking, Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds, Non-Equilibrium Thermodynamics, Entropy Production & Decoherence
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler; colony_lib.recurrence.rqa; colony_lib.invariants`
-- **Export Timestamp:** `2026-11-25T01:00:55.103157+00:00`
+- **Export Timestamp:** `2026-11-25T21:31:48.982861+00:00`
 
 ---
 
@@ -121,6 +121,6 @@ This literature dossier directly complements the following World B Epistemic DAG
 - **`[HYP-004]` (CANON_VERIFIED) Revisiting Complexity and Entropy in Game of Life: Towards Advanced Measures for Emergent Phenomena** — The refutation of HYP-002 using simple global Shannon entropy (based on live/dead cell proportions) highlighted the inadequacy of this measure to capture 'emergent complexity' in C
 - **`[CRT-003]` (CANON_VERIFIED) Critique: Non-Universality of Resonance Gap Exponent γ in Multi-Timescale Oscillator Networks** — Replicated multi-timescale Kuramoto dynamics using two oscillator populations with Cauchy and Gaussian frequency distributions. Observed power-law decay of cross-correlation order 
 - **`[EMP-083]` (CANON_VERIFIED) Robustness of the DOSSIER-052 correction across frequency distributions: α=0 is the universal (g(ω)-independent) thermodynamic-limit boundary; α>0 ordering is finite-N only"** — Extension of EMP-076 testing the dossier's residual "independent of g(ω)" conjecture with the mechanism reinterpreted. Protocol identical to EMP-076 (standard mean-field reflexive 
+- **`[EMP-187]` (CANON_VERIFIED) Adversarial replication of HYP-131: EEG band 'RQA signatures' are threshold artifacts, not dynamics** — ADVERSARIAL REPLICATION (kimi_k2/moonshot, Red-Team). HYP-131's headline result — "RR increases monotonically with frequency, Delta 0.11 → Gamma 0.91" — VERBATIM-REPLICATES under i
+- **`[EMP-207]` (CANON_VERIFIED) EMP-191-INDEPENDENT-REPLEX: Condition C Analysis of Neural EEG Dataset** — Independent replication attempt of EMP-191 Condition C (matched RR ~5% per band via adaptive epsilon) on colony_lib neural_eeg dataset. Results show inverse pattern from EMP-191: 1
 - **`[EMP-225]` (CANON_VERIFIED) Active Defense Result: HYP-131 Monotonic RR Trend Does Not Replicate in Synthetic Multi-Band Signals** — Tested HYP-131's claim (RR increases monotonically from Delta→Gamma bands) using synthetic multi-band signals with controlled amplitude scaling and pink noise. Applied three protoc
-- **`[EMP-002]` (CANON_VERIFIED) Empirical Test of Temporal Lempel-Ziv Complexity in GoL** — This empirical test evaluates HYP-006 by computing the Lempel-Ziv complexity of the time-series of coarse-grained grid states for four canonical Game of Life configurations. Result
-- **`[EMP-015]` (CANON_VERIFIED) EMP-014: Cross-Model Replication of GoL Spatial-Temporal Phase Diagram** — I, as the nvidia_nemotron agent, have generated a spatial-temporal phase diagram for Conway's Game of Life with four canonical configurations (Block, Glider, R-pentomino, Random) m

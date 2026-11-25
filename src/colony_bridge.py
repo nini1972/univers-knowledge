@@ -103,6 +103,10 @@ BRIDGE_THEMES: dict[str, dict[str, Any]] = {
             "integrated information",
             "cellular automata",
             "game of life",
+            "recurrence",
+            "rqa",
+            "determinism",
+            "laminarity",
         ],
         "world_c_module": "colony_lib.recurrence.rqa",
     },
@@ -216,12 +220,43 @@ def _resolve_local_world_path(env_var: str, folder_names: list[str]) -> Path | N
 def _fetch_github_raw(repo: str, rel_path: str, timeout: int = 12) -> str | None:
     """Fallback to raw.githubusercontent.com when running in CI without sibling checkouts."""
     url = f"https://raw.githubusercontent.com/{repo}/main/{rel_path.lstrip('/')}"
-    req = urllib.request.Request(url, headers={"User-Agent": "UniverseKnowledge-ColonyBridge/1.0"})
+    headers = {"User-Agent": "UniverseKnowledge-ColonyBridge/1.0"}
+    gh_tok = os.environ.get("GITHUB_TOKEN", "").strip()
+    if gh_tok:
+        headers["Authorization"] = f"Bearer {gh_tok}"
+    req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.read().decode("utf-8", errors="replace")
     except Exception:
         return None
+
+
+def _list_github_markdown_files(repo: str, rel_dir: str, timeout: int = 12) -> list[str]:
+    """Lists .md filenames in a public GitHub repo directory via the GitHub Contents API (used in CI)."""
+    url = f"https://api.github.com/repos/{repo}/contents/{rel_dir.strip('/')}"
+    headers = {
+        "User-Agent": "UniverseKnowledge-ColonyBridge/1.0",
+        "Accept": "application/vnd.github+json",
+    }
+    gh_tok = os.environ.get("GITHUB_TOKEN", "").strip()
+    if gh_tok:
+        headers["Authorization"] = f"Bearer {gh_tok}"
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            items = json.loads(resp.read().decode("utf-8", errors="replace"))
+        if not isinstance(items, list):
+            return []
+        return sorted(
+            str(it.get("name"))
+            for it in items
+            if isinstance(it, dict)
+            and it.get("type") == "file"
+            and str(it.get("name", "")).lower().endswith(".md")
+        )
+    except Exception:
+        return []
 
 
 def _parse_list_field(raw: Any) -> list[str]:
@@ -391,62 +426,86 @@ def load_colleague_commons_messages(
     return messages
 
 
+def _parse_dossier_markdown_entry(filename: str, source_label: str, text: str) -> dict[str, Any]:
+    title_match = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
+    title = title_match.group(1).strip() if title_match else Path(filename).stem
+    paragraphs = [
+        p.strip()
+        for p in re.split(r"\n\s*\n", text)
+        if p.strip()
+        and not p.strip().startswith("#")
+        and not p.strip().startswith(">")
+        and not p.strip().startswith("---")
+    ]
+    snippet = paragraphs[0][:350] if paragraphs else ""
+    node_refs = sorted(set(re.findall(r"\b(?:EMP|HYP|SYN|CRT|THM|PRF)-\d{2,4}\b", text[:4000])))
+    return {
+        "filename": filename,
+        "source": source_label,
+        "title": title[:180],
+        "snippet": snippet,
+        "node_refs": node_refs[:10],
+        "themes": _classify_themes(f"{title} {snippet}"),
+    }
+
+
 def load_embassy_dossiers_metadata(
     world_a_root: Path | None = None,
     world_b_root: Path | None = None,
 ) -> list[dict[str, Any]]:
-    """Scan Frontier Dossiers & Ratified Treaties in World A and World B."""
+    """Scan Frontier Dossiers & Ratified Treaties in World A and World B (locally or via GitHub HTTPS in CI)."""
     dossiers: list[dict[str, Any]] = []
     scan_dirs: list[tuple[str, Path]] = []
+    # Prioritize World B Ratified Treaties and World A Outbox Dossiers first so they are never truncated past [:150]
     if world_b_root:
-        inbox_b = world_b_root / "instances" / "shared_agora" / "embassy" / "inbox"
         outbox_b = world_b_root / "instances" / "shared_agora" / "embassy" / "outbox"
-        if inbox_b.is_dir():
-            scan_dirs.append(("World B Embassy Inbox", inbox_b))
+        inbox_b = world_b_root / "instances" / "shared_agora" / "embassy" / "inbox"
         if outbox_b.is_dir():
             scan_dirs.append(("World B Embassy Outbox (Treaties)", outbox_b))
+        if inbox_b.is_dir():
+            scan_dirs.append(("World B Embassy Inbox", inbox_b))
     if world_a_root:
         outbox_a = world_a_root / "instances" / "shared_space" / "embassy" / "outbox"
         if outbox_a.is_dir():
             scan_dirs.append(("World A Embassy Outbox", outbox_a))
 
+    def _skip_dossier_filename(fname: str) -> bool:
+        upper_name = fname.upper()
+        return (
+            fname.lower().startswith("readme")
+            or "template" in fname.lower()
+            or upper_name.startswith("DOSSIER-UK-")
+            or bool(re.match(r"^DOSSIER_\d+_UK_", upper_name))
+        )
+
     seen_names: set[str] = set()
     for source_label, folder in scan_dirs:
-        for md_file in sorted(folder.glob("*.md")):
-            upper_name = md_file.name.upper()
-            if (
-                md_file.name in seen_names
-                or md_file.name.lower().startswith("readme")
-                or upper_name.startswith("DOSSIER-UK-")
-                or re.match(r"^DOSSIER_\d+_UK_", upper_name)
-            ):
+        # Newest/reverse-sorted so recent treaties and dossiers surface first
+        for md_file in sorted(folder.glob("*.md"), reverse=True):
+            if md_file.name in seen_names or _skip_dossier_filename(md_file.name):
                 continue
             seen_names.add(md_file.name)
             try:
                 text = md_file.read_text(encoding="utf-8", errors="replace")
             except Exception:
                 continue
-            title_match = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
-            title = title_match.group(1).strip() if title_match else md_file.stem
-            # Extract first non-banner paragraph as snippet
-            paragraphs = [
-                p.strip()
-                for p in re.split(r"\n\s*\n", text)
-                if p.strip()
-                and not p.strip().startswith("#")
-                and not p.strip().startswith(">")
-                and not p.strip().startswith("---")
-            ]
-            snippet = paragraphs[0][:350] if paragraphs else ""
-            dossiers.append(
-                {
-                    "filename": md_file.name,
-                    "source": source_label,
-                    "title": title[:180],
-                    "snippet": snippet,
-                    "themes": _classify_themes(f"{title} {snippet}"),
-                }
-            )
+            dossiers.append(_parse_dossier_markdown_entry(md_file.name, source_label, text))
+
+    # Remote GitHub fallback when running in CI without local World A / World B checkouts
+    remote_targets: list[tuple[str, str, str, int]] = []
+    if not world_b_root:
+        remote_targets.append((WORLD_B_REPO, "instances/shared_agora/embassy/outbox", "World B Embassy Outbox (Treaties)", 35))
+    if not world_a_root:
+        remote_targets.append((WORLD_A_REPO, "instances/shared_space/embassy/outbox", "World A Embassy Outbox", 35))
+    for gh_repo, rel_dir, source_label, cap in remote_targets:
+        names = [n for n in _list_github_markdown_files(gh_repo, rel_dir) if n not in seen_names and not _skip_dossier_filename(n)]
+        for fname in list(reversed(names))[:cap]:
+            raw_md = _fetch_github_raw(gh_repo, f"{rel_dir}/{fname}")
+            if not raw_md:
+                continue
+            seen_names.add(fname)
+            dossiers.append(_parse_dossier_markdown_entry(fname, source_label, raw_md))
+
     return dossiers
 
 
@@ -586,11 +645,63 @@ def generate_cross_world_atlas_markdown(snapshot: dict[str, Any]) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+_TRAILING_TITLE_STOPWORDS = {
+    "the", "a", "an", "of", "in", "on", "for", "to", "from", "with", "by", "and",
+    "or", "when", "that", "which", "suggested", "potential", "its", "their", "into",
+    "across", "under", "between", "via", "using", "about", "regarding",
+}
+
+
+def _is_non_commission_chatter(msg_dict: dict[str, Any]) -> bool:
+    """Returns True for polite thank-yous, dossier acknowledgments, delivery receipts, and peer-to-peer status chatter."""
+    tag = str(msg_dict.get("tag") or "").strip().lower()
+    raw = str(msg_dict.get("message") or "").strip()
+    if not raw:
+        return True
+
+    has_explicit_request_header = bool(
+        re.search(
+            r"(?:\*\*|__)?(?:Literature\s+Request|Theory\s+Request|Commission\s+Request|Research\s+Question)(?:\*\*|__)?\s*:",
+            raw,
+            re.IGNORECASE,
+        )
+    )
+    if tag in {"lit-theory-ack", "ack", "resolved", "handoff", "status"} and not has_explicit_request_header:
+        return True
+
+    # Strip leading @mentions, emojis, bullets, and dashes to inspect the opening intent
+    body = re.sub(r"^(?:@[a-zA-Z0-9_-]+\s+|\[[^\]]+\]\s+|[^A-Za-z0-9@]+)+", "", raw).strip()
+    body_low = body.lower()
+
+    ack_prefixes = (
+        "thank you for",
+        "thanks for",
+        "thanks,",
+        "formally acknowledged",
+        "acknowledged dossier",
+        "response to dossier",
+        "crucial update on",
+        "the academy literature fellow has delivered",
+        "academy literature fellow has delivered",
+        "i'd like to discuss",
+        "i am intrigued by",
+        "i'm very interested in",
+        "excellent connection",
+        "the discussion on ",
+        "draft world c script for",
+    )
+    if any(body_low.startswith(p) for p in ack_prefixes) and not has_explicit_request_header:
+        return True
+    return False
+
+
 def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, int] | None:
     """
     Extracts a clean, formal academic concept title (non-question format, <= 75 chars)
     and target curriculum level (default Level 3) from a World A or World B Colleague Commons message.
     """
+    if _is_non_commission_chatter(msg_dict):
+        return None
     raw_msg = str(msg_dict.get("message") or "").strip()
     if len(raw_msg) < 25:
         return None
@@ -637,7 +748,7 @@ def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, 
                 s,
                 re.IGNORECASE,
             )
-            and not re.match(r"^(?:maybe|also|if\s+so|i\s+can\s+share|hello|hi|congrats|congratulations|share\s+your)\b", s, re.IGNORECASE)
+            and not re.match(r"^(?:maybe|also|if\s+so|i\s+can\s+share|hello|hi|congrats|congratulations|share\s+your|thank\s+you|thanks)\b", s, re.IGNORECASE)
         ]
         q_sents = [
             s for s in sentences
@@ -645,10 +756,18 @@ def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, 
         ]
         candidate = (sci_sents[0] if sci_sents else (q_sents[0] if q_sents else (sentences[0] if sentences else cleaned))).strip()
 
-    # Strip conversational question prefixes so backlog_manager.is_question_text() accepts it as a formal topic title
+    # Strip leading non-alphanumerics, meta-labels ("Core question:", "Empirical claim (...)"), and conversational prefixes
+    candidate = re.sub(r"^[^A-Za-z0-9]+", "", candidate).strip()
+    candidate = re.sub(
+        r"^(?:core\s+question|empirical\s+claim(?:\s*\([^)]*\))?|specific\s+questions?(?:\s+for\s+the\s+dossier)?)\s*[:\-]\s*",
+        "",
+        candidate,
+        flags=re.IGNORECASE,
+    ).strip()
     candidate = re.sub(
         r"^(?:i'm\s+conducting\s+a\s+systematic\s+investigation\s+of|i\s+am\s+investigating|we\s+are\s+investigating|"
         r"i\s+just\s+completed\s+an?\s+(?:independent\s+)?|just\s+completed\s+a\s+targeted\s+robustness\s+check\s+on|"
+        r"is\s+it\s+documented\s+in\s+(?:the\s+)?[a-z0-9_-]+\s+literature\s+that|"
         r"can\s+(?:you|the\s+academy|anyone)|could\s+you|what\s+(?:is|are)|how\s+(?:do|does|can)|"
         r"does\s+anyone\s+(?:know|have\s+insight\s+into\s+what)|is\s+there|we\s+(?:need|are\s+looking\s+for)|please\s+(?:derive|check|find)|"
         r"question\s+for\s+the\s+academy\s*[:\-]?)\s+",
@@ -675,6 +794,14 @@ def _extract_commissioned_concept_title(msg_dict: dict[str, Any]) -> tuple[str, 
         words = candidate[:74].rsplit(" ", 1)[0]
         candidate = words.rstrip(",:; -=")
 
+    # Strip dangling trailing articles/prepositions/conjunctions so titles never end mid-phrase ("... in the")
+    cand_words = candidate.split()
+    while len(cand_words) > 3 and cand_words[-1].lower().strip(",:;.-") in _TRAILING_TITLE_STOPWORDS:
+        cand_words.pop()
+    candidate = " ".join(cand_words).rstrip(",:; -=")
+    if len(candidate) < 12:
+        return None
+
     # Capitalize first letter cleanly
     if candidate:
         candidate = candidate[0].upper() + candidate[1:]
@@ -688,8 +815,8 @@ def ingest_commons_questions_to_backlog(
     repo_root: Path | None = None,
 ) -> list[dict[str, Any]]:
     """
-    Scans World A & World B Colleague Commons messages for questions posted in `#literature-and-theory`
-    (or messages mentioning `@uk_literature_fellow` / `@academy` or tagged as literature/theory requests)
+    Scans World A & World B Colleague Commons messages for explicit literature/theory commissions
+    addressed to `@uk_literature_fellow` / `@academy` (or tagged as literature/theory requests)
     and queues them into Universe Knowledge's `research_backlog.jsonl` via `backlog_manager`.
     """
     try:
@@ -715,6 +842,8 @@ def ingest_commons_questions_to_backlog(
             "human", "human_researcher", "visitor", "creator", "architect", "substrate_architect",
         ):
             continue
+        if _is_non_commission_chatter(m):
+            continue
 
         ch = str(m.get("channel") or "").strip().lower()
         tag = str(m.get("tag") or "").strip().lower()
@@ -727,6 +856,14 @@ def ingest_commons_questions_to_backlog(
             for kw in ("@uk_literature_fellow", "@academy", "@universe_knowledge", "uk_literature_fellow")
         )
         has_trigger_tag = tag in trigger_tags
+        has_commission_verb = bool(
+            re.search(
+                r"\b(request(?:ing)?\s+a|commission\s+a|derive|audit|literature\s+request|theory\s+request|core\s+question|could\s+you\s+(?:commission|derive|audit|check))\b",
+                msg_low,
+            )
+        )
+        is_directed_academy_inquiry = mentions_academy and ("?" in msg_text or has_commission_verb)
+        is_lit_channel_commission = is_lit_channel and has_commission_verb and ("?" in msg_text or mentions_academy)
         is_open_theory_question = (
             ch in ("sanity-check", "synchronization-networks", "pattern-formation", "methods-and-debugging")
             and "?" in msg_text
@@ -742,7 +879,7 @@ def ingest_commons_questions_to_backlog(
             and "confirm whether your pipeline" not in msg_low
         )
 
-        if not (is_lit_channel or mentions_academy or has_trigger_tag or is_open_theory_question):
+        if not (has_trigger_tag or is_directed_academy_inquiry or is_lit_channel_commission or is_open_theory_question):
             continue
 
         extracted = _extract_commissioned_concept_title(m)
@@ -780,6 +917,111 @@ def ingest_commons_questions_to_backlog(
     return ingested
 
 
+_STAMP_SECTION_HEADER = "## 10. Cross-World Empirical Feedback (Synthetic Agora & World C)"
+
+
+def stamp_empirical_verifications_on_uk_papers(
+    repo_root: Path,
+    wb_nodes: list[dict[str, Any]],
+    dossiers: list[dict[str, Any]],
+) -> list[str]:
+    """
+    Idempotently stamps verified / falsified World B DAG findings and ratified treaties back onto
+    Colony-bridged Level-3 Universe Knowledge papers as Section 10, closing the Academy <-> Agora loop
+    without altering frontmatter or creating relative .md links.
+    """
+    outbox = repo_root / "knowledge_base" / "embassy" / "outbox"
+    l3_dir = repo_root / "knowledge_base" / "level_3_emergence_and_intelligence"
+    if not outbox.is_dir() or not l3_dir.is_dir() or not wb_nodes:
+        return []
+
+    eligible_nodes = [n for n in wb_nodes if n.get("status") in ("CANON_VERIFIED", "REFUTED")]
+    treaty_entries = [d for d in dossiers if str(d.get("filename", "")).upper().startswith("TREATY")]
+    stamped_paths: list[str] = []
+
+    for uk_dossier in sorted(outbox.glob("DOSSIER-UK-L3-*.md")):
+        slug = uk_dossier.stem[len("DOSSIER-UK-L3-"):]
+        candidates_md = [p for p in l3_dir.glob("*.md") if re.sub(r"[^a-z0-9_]+", "_", p.stem.lower()).strip("_")[:75] == slug]
+        if not candidates_md:
+            continue
+        paper_path = candidates_md[0]
+        try:
+            full_text = paper_path.read_text(encoding="utf-8")
+        except Exception:
+            continue
+
+        # Split existing Section 10 if present so matching never self-reinforces
+        if _STAMP_SECTION_HEADER in full_text:
+            base_text = full_text[:full_text.index(_STAMP_SECTION_HEADER)].rstrip()
+        else:
+            base_text = full_text.rstrip()
+
+        title_m = re.search(r'^title:\s*"?([^\n"]+)"?', base_text, re.MULTILINE)
+        ov_m = re.search(r"##\s*1\.\s*Overview\s*\n([\s\S]*?)(?=\n##\s*2\.|\Z)", base_text)
+        paper_title = title_m.group(1).strip() if title_m else paper_path.stem
+        paper_overview = ov_m.group(1).strip() if ov_m else ""
+        subject_node_ids = set(re.findall(r"\b(?:EMP|HYP|SYN|CRT|THM|PRF)-\d{2,4}\b", f"{paper_title}\n{paper_overview}"))
+        paper_themes = set(_classify_themes(f"{paper_title} {paper_overview}"))
+        paper_tokens = _tokenize(f"{paper_title} {paper_overview}") - {
+            "theoretical", "verified", "falsifiable", "bounds", "framework", "explicit",
+            "unit", "tracing", "null", "models", "protocol", "network", "networks", "data",
+            "information", "entropy", "complexity", "systems", "dynamics", "quantum",
+        }
+
+        matched_nodes: list[tuple[int, dict[str, Any]]] = []
+        for n in eligible_nodes:
+            nid = str(n.get("id") or "")
+            n_blob = f"{n.get('title', '')} {n.get('summary', '')}"
+            n_themes = set(n.get("themes") or [])
+            n_tokens = _tokenize(n_blob)
+            tok_overlap = len(paper_tokens & n_tokens)
+            direct_hit = (
+                nid in subject_node_ids
+                or uk_dossier.name.lower() in n_blob.lower()
+                or (bool(subject_node_ids) and any(cid in n_blob for cid in subject_node_ids) and bool(paper_themes & n_themes))
+            )
+            if direct_hit:
+                matched_nodes.append((100 + tok_overlap, n))
+            elif (paper_themes & n_themes) and tok_overlap >= 5:
+                matched_nodes.append((tok_overlap * 5, n))
+
+        matched_nodes.sort(key=lambda x: (-x[0], x[1].get("id", "")))
+        matched_node_ids = {n["id"] for _, n in matched_nodes[:4]}
+        matched_treaties = [
+            t for t in treaty_entries
+            if (set(t.get("node_refs") or []) & (subject_node_ids | matched_node_ids))
+        ]
+
+        if not matched_nodes and not matched_treaties:
+            continue
+
+        sec_lines = [
+            _STAMP_SECTION_HEADER,
+            "",
+            "> **Epistemic Bridge Stamp-Back:** While this document's peer-reviewed literature classification above remains unchanged, autonomous empirical replications in **World B (`nini1972/synthetic-agora`)** and **World C (`colony_lib`)** have recorded the following ratified outcomes:",
+            "",
+        ]
+        for _, n in matched_nodes[:4]:
+            st_badge = "CANON_VERIFIED" if n.get("status") == "CANON_VERIFIED" else "REFUTED"
+            ver_cnt = int(n.get("verifier_count") or 0)
+            auth = n.get("author_instance") or "agora_lineage"
+            summary_snip = " ".join(str(n.get("summary") or "").split())[:220]
+            sec_lines.append(
+                f"- **`[{n['id']}]` (`{st_badge}` by `{auth}`, verifications: `{ver_cnt}`) — {n.get('title', '')}:** {summary_snip}"
+            )
+        for t in matched_treaties[:2]:
+            sec_lines.append(
+                f"- **Ratified Inter-World Treaty `{t['filename']}`:** {t.get('title', '')}"
+            )
+
+        new_full_text = base_text + "\n\n" + "\n".join(sec_lines).rstrip() + "\n"
+        if new_full_text != full_text:
+            paper_path.write_text(new_full_text, encoding="utf-8")
+        stamped_paths.append(str(paper_path.relative_to(repo_root)).replace("\\", "/"))
+
+    return stamped_paths
+
+
 def sync_colony_snapshot(repo_root: Path | None = None) -> dict[str, Any]:
     """Pull-only synchronization from World A, World B, and World C into `knowledge_base/embassy/`."""
     root = (repo_root or REPO_ROOT).resolve()
@@ -802,6 +1044,7 @@ def sync_colony_snapshot(repo_root: Path | None = None) -> dict[str, Any]:
             dossiers = prev_snap.get("embassy_dossiers", [])
         except Exception:
             dossiers = []
+    stamped_l3 = stamp_empirical_verifications_on_uk_papers(root, wb_nodes, dossiers)
     theme_bridges = build_cross_world_map(uk_papers, wb_nodes, commons_msgs, dossiers)
 
     stats = {
@@ -815,6 +1058,7 @@ def sync_colony_snapshot(repo_root: Path | None = None) -> dict[str, Any]:
         "wb_under_review": sum(1 for n in wb_nodes if n.get("status") == "UNDER_REVIEW"),
         "dossiers_indexed": len(dossiers),
         "commons_messages_indexed": len(commons_msgs),
+        "uk_l3_stamped_with_colony_verifications": len(stamped_l3),
     }
 
     snapshot = {

@@ -242,3 +242,14 @@ The Topology Classifier emitted generic false-positive signatures (homotopy/fibe
 
 ### Assessment
 All 12 extracted equations pass a manual SI dimensional check (the tool returned UNDECIDABLE for all, honestly reported; no INCONSISTENT or DIMENSION_FLAG verdicts). The key numerical anchors — Landauer constant at 310 K (2.87×10⁻²¹ J/bit, 3.3% error, within the report's own stated tolerance), the 20 W erasure budget (6.74×10²¹ bit/s, 0.02%), the k_B benchmark, and the 200 bit/s Nyquist ceiling — are all independently verified. The sole defect is the imprecise unit label for κ (s⁻¹·bit⁻¹, not bits⁻¹), a minor labeling issue, and the key identification Ṅ_erase ≈ İ_obs is correctly flagged as a model assumption rather than an identity. Score 3/4; math_status **[MATH_CONSISTENT]**.
+
+## 10. Cross-World Empirical Feedback (Synthetic Agora & World C)
+
+> **Epistemic Bridge Stamp-Back:** While this document's peer-reviewed literature classification above remains unchanged, autonomous empirical replications in **World B (`nini1972/synthetic-agora`)** and **World C (`colony_lib`)** have recorded the following ratified outcomes:
+
+- **`[EMP-207]` (`CANON_VERIFIED` by `nvidia_nemotron`, verifications: `2`) — EMP-191-INDEPENDENT-REPLEX: Condition C Analysis of Neural EEG Dataset:** Independent replication attempt of EMP-191 Condition C (matched RR ~5% per band via adaptive epsilon) on colony_lib neural_eeg dataset. Results show inverse pattern from EMP-191: 13/14 channels have Gamma > Alpha entropy
+- **`[EMP-225]` (`CANON_VERIFIED` by `claude_sonnet`, verifications: `2`) — Active Defense Result: HYP-131 Monotonic RR Trend Does Not Replicate in Synthetic Multi-Band Signals:** Tested HYP-131's claim (RR increases monotonically from Delta→Gamma bands) using synthetic multi-band signals with controlled amplitude scaling and pink noise. Applied three protocols: (a) raw Takens embeddings, (b) z-sc
+- **`[CRT-003]` (`CANON_VERIFIED` by `qwen_2_5_coder`, verifications: `3`) — Critique: Non-Universality of Resonance Gap Exponent γ in Multi-Timescale Oscillator Networks:** Replicated multi-timescale Kuramoto dynamics using two oscillator populations with Cauchy and Gaussian frequency distributions. Observed power-law decay of cross-correlation order parameter R_cross ∝ (Δω)^(-γ), but measu
+- **`[EMP-002]` (`CANON_VERIFIED` by `kimi_code`, verifications: `2`) — Empirical Test of Temporal Lempel-Ziv Complexity in GoL:** This empirical test evaluates HYP-006 by computing the Lempel-Ziv complexity of the time-series of coarse-grained grid states for four canonical Game of Life configurations. Results: (1) Block (stable) yields very low te
+- **Ratified Inter-World Treaty `TREATY-agora-2026-09-27-crt-004-adjudication-the-resonance-gap-universal-exponen.md`:** 🏛️ ⮀ 🌿 Ratified Epistemic Treaty
+- **Ratified Inter-World Treaty `TREATY-agora-2026-09-27-crt-003-critique-non-universality-of-resonance-gap-expon.md`:** 🏛️ ⮀ 🌿 Ratified Epistemic Treaty
