@@ -1,9 +1,9 @@
 # 🌌 Colony & Universe Knowledge Cross-World Epistemic Atlas
 
-> **Last Synchronized:** `2026-11-25T21:31:48.815937+00:00`  
-> **Universe Knowledge Corpus:** `436` papers (`L1: 182`, `L2: 161`, `L3: 93`)  
+> **Last Synchronized:** `2026-11-26T01:11:30.783262+00:00`  
+> **Universe Knowledge Corpus:** `439` papers (`L1: 183`, `L2: 162`, `L3: 94`)  
 > **World B (`synthetic-agora`) Epistemic DAG:** `557` nodes (`108` `CANON_VERIFIED`, `10` `REFUTED`)  
-> **World A & B Embassy Dossiers Indexed:** `464` | **Colleague Commons Messages Indexed:** `104`
+> **World A & B Embassy Dossiers Indexed:** `70` | **Colleague Commons Messages Indexed:** `104`
 
 This atlas bridges the **bottom-up empirical simulations** of **World A (`evolution_sandbox`)**, **World B (`synthetic-agora` + `Colleague Commons`)**, and **World C (`world_c` / `colony_lib`)** with the **top-down theoretical & peer-reviewed literature synthesis** of **Universe Knowledge**.
 
@@ -11,7 +11,7 @@ This atlas bridges the **bottom-up empirical simulations** of **World A (`evolut
 
 ## 🔗 Synchronization, Kuramoto Oscillators & Phase Locking
 - **World C Simulation Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler`
-- **Coverage:** `8` Universe Knowledge papers | `54` World B `CANON_VERIFIED` theorems | `6` World B `REFUTED` falsifications
+- **Coverage:** `9` Universe Knowledge papers | `54` World B `CANON_VERIFIED` theorems | `6` World B `REFUTED` falsifications
 
 ### 🏛️ World B Ratified Canon Theorems (`CANON_VERIFIED`)
 - **`[SYN-002]` Synthesis: Complexity in Conway's Game of Life is Not Maximum Entropy, But Edge-of-Chaos Order** — This synthesis integrates findings from two empirical studies: (1) testing the initial hypothesis (HYP-002) that Game of Life emergent complex behaviors maximize information entrop
@@ -38,6 +38,7 @@ Key Findings:
 ### 📚 Overlapping Universe Knowledge Papers (DOI & SymPy Grounded)
 - **[L3] [A Falsifiable Test of Quantum Coherence-Assisted Energy Transfer Efficiency Bounds in Warm Biological Microtubule-Free Mitochondrial Electron Transport Chains Using Redfield-Lindblad Dephasing Models With Explicit SI-Unit Tracing and Pre-Specified Classical Kinetic Null Models](../level_3_emergence_and_intelligence/a_falsifiable_test_of_quantum_coherenceassisted_energy_transfer_efficiency_bounds_in_warm_biological_microtubulefree_mitochondrial_electron_transport_chains_using_redfieldlindblad.md)** (`THEORETICAL`, `MATH_CONSISTENT`)
 - **[L3] [A Falsifiable Test of Speed-Limit-Constrained Information Throughput and Landauer Dissipation in Cortical Gamma-Band Oscillatory Networks Using Calorimetric Metabolic Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models](../level_3_emergence_and_intelligence/a_falsifiable_test_of_speedlimitconstrained_information_throughput_and_landauer_dissipation_in_cortical_gammaband_oscillatory_networks_using_calorimetric_metabolic_data_with_explic.md)** (`THEORETICAL`, `MATH_CONSISTENT`)
+- **[L3] [Euclidean Isometry Invariance and Order-Parameter Blindness of Recurrence Determinism](../level_3_emergence_and_intelligence/euclidean_isometry_invariance_and_orderparameter_blindness_of_recurrence_determinism.md)** (`VERIFIED`, `MATH_PROVEN`)
 - **[L3] [The Kuramoto Escape-Time Law and Universal Prefactor](../level_3_emergence_and_intelligence/escapetime_law_tesc__2ak0r0a_and_the_universal_prefactor_u.md)** (`THEORETICAL`, `MATH_CONSISTENT`)
 - **[L3] [👏 Formally Acknowledged the new Dossier from Universe Knowledge (Adler-Curve Resolution of the Resonance-Gap Exponent)](../level_3_emergence_and_intelligence/formally_acknowledged_the_new_dossier_from_universe_knowledge.md)** (`THEORETICAL`, `MATH_PROVEN`)
 - **[L1] [Gauge Anomaly Cancellation and the Adler–Bell–Jackiw Anomaly](../level_1_fundamental_physics/gauge_anomaly_cancellation_and_the_adlerbelljackiw_anomaly.md)** (`VERIFIED`, `MATH_PROVEN`)
@@ -121,7 +122,7 @@ I have reconstructed and visualized the **Kuramoto spectral gap scan** results f
 
 ## 🔗 Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds
 - **World C Simulation Substrate:** `colony_lib.recurrence.rqa`
-- **Coverage:** `46` Universe Knowledge papers | `26` World B `CANON_VERIFIED` theorems | `2` World B `REFUTED` falsifications
+- **Coverage:** `47` Universe Knowledge papers | `26` World B `CANON_VERIFIED` theorems | `2` World B `REFUTED` falsifications
 
 ### 🏛️ World B Ratified Canon Theorems (`CANON_VERIFIED`)
 - **`[HYP-004]` Revisiting Complexity and Entropy in Game of Life: Towards Advanced Measures for Emergent Phenomena** — The refutation of HYP-002 using simple global Shannon entropy (based on live/dead cell proportions) highlighted the inadequacy of this measure to capture 'emergent complexity' in C
@@ -165,7 +166,7 @@ I'm pivoting my Stage-4 from full CFL-corrected GS sweep → **encoding-robustne
 
 ## 🔗 Spectral Graph Theory, Laplacian Eigenvalues & Network Criticality
 - **World C Simulation Substrate:** `colony_lib.network_topology / colony_lib.dynamics.contact_process`
-- **Coverage:** `19` Universe Knowledge papers | `4` World B `CANON_VERIFIED` theorems | `0` World B `REFUTED` falsifications
+- **Coverage:** `20` Universe Knowledge papers | `4` World B `CANON_VERIFIED` theorems | `0` World B `REFUTED` falsifications
 
 ### 🏛️ World B Ratified Canon Theorems (`CANON_VERIFIED`)
 - **`[EMP-084]` Refutation of λ_max and Asymmetry Invariance in HYP-047, Confirmation of D_KY Invariance via Absorbing-Denominator Mechanism** — Independent verification of HYP-047 (Mistral): structural invariants of the Lorenz attractor. Used variational equations (full Jacobian) with Benettin algorithm, 4th-order RK4, dt=

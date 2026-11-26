@@ -143,6 +143,7 @@ graph TD
     thermodynamics_and_the_laws_of_thermodynamics_in_cosmology_the_sachswolfe_effect["Thermodynamics and the Laws of Thermodynamics in Cosmology: The Sachs–Wolfe Effect"]:::verified
     non_markovian_memory_kernels_in_neutrino_matter_propagation["Non-Markovian Memory Kernels in Non-Adiabatic Neutrino Matter Propagation"]:::theoretical
     cosmological_constant_and_dark_energy["Cosmological Constant and Dark Energy"]:::verified
+    cpt_theorem_and_experimental_tests_of_cpt_symmetry["CPT Theorem and Experimental Tests of CPT Symmetry"]:::theoretical
     spontaneous_neutron_star_equation_of_state_and_tolmanoppenheimervolkoff_limit["Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit"]:::verified
     electroweak_baryogenesis["Electroweak Baryogenesis"]:::theoretical
     unique_observables_for_neutrino_decay_in_major_detectors["Unique Observables for Neutrino Decay in Major Detectors"]:::theoretical
@@ -192,6 +193,7 @@ graph TD
     the_boltzmann_equation_in_cosmology["The Boltzmann Equation in Cosmology"]:::verified
     gravitational_lensing["Gravitational Lensing"]:::verified
     symmetryprotected_topological_phases_vs_holographic_dualities_in_nonequilibrium_quantum_systems["Symmetry-Protected Topological Phases vs Holographic Dualities in Non-Equilibrium Quantum Systems"]:::theoretical
+    unconditional_criticalline_spectral_rigidity_vs_conditional_analytic_bounds_in_prime_distribution_and_lfunction_races["“Hypothesized” Unconditional Critical-Line Spectral Rigidity vs Conditional Analytic Bounds in Prime Distribution and L-Function Races"]:::theoretical
     dirac_vs_majorana_neutrino_mass_frameworks["Dirac vs Majorana Neutrino Mass Frameworks"]:::verified
     asymmetric_reheating_vs_instant_preheating_in_early_universe_dynamics["Asymmetric Reheating vs Instant Preheating in Early Universe Dynamics"]:::theoretical
     asymmetric_dark_matter_vs_dark_matter_decay_to_hidden_sector_photons_in_explaining_dark_matter_relic_abundance["Asymmetric Dark Matter vs Dark Matter Decay to Hidden Sector Photons in Explaining Dark Matter Relic Abundance"]:::verified
@@ -433,6 +435,7 @@ graph TD
     quantifying_scaleinvariant_information_bottlenecks_in_the_morphogenesis_of_cosmic_filaments_and_neural_synaptic_hierarchies["Quantifying Scale-Invariant Information Bottlenecks in the Morphogenesis of Cosmic Filaments and Neural Synaptic Hierarchies"]:::theoretical
     a_falsifiable_test_of_maximumentropyproduction_principles_in_cortical_avalanche_dynamics_versus_cosmicweb_filament_accretion_using_crooks_fluctuation_relations_and_dimensionally_tr["A Falsifiable Test of Maximum-Entropy-Production Principles in Cortical Avalanche Dynamics versus Cosmic-Web Filament Accretion, Using Crooks Fluctuation Relations and Dimensionally Traced SI Units"]:::theoretical
     landauerbekenstein_entropy_bounds_and_computational_efficiency_in_selforganizing_neural_manifolds_versus_gravitational_filaments["Landauer-Bekenstein Entropy Bounds and Computational Efficiency in Self-Organizing Neural Manifolds versus Gravitational Filaments"]:::theoretical
+    euclidean_isometry_invariance_and_orderparameter_blindness_of_recurrence_determinism["Euclidean Isometry Invariance and Order-Parameter Blindness of Recurrence Determinism"]:::verified
     quantifying_thermodynamic_dissipation_costs_in_neural_information_processing_versus_gravitational_structure_formation_via_landauerbekenstein_scaling_relations["Quantifying Thermodynamic Dissipation Costs in Neural Information Processing versus Gravitational Structure Formation via Landauer-Bekenstein Scaling Relations"]:::theoretical
     a_preregistered_multiscale_intervention_framework_for_testing_integrated_information_theory_against_mechanistic_physicalist_emergence_in_neural_systems["A Preregistered Multiscale Intervention Framework for Testing Integrated Information Theory Against Mechanistic Physicalist Emergence in Neural Systems"]:::theoretical
     fluctuationtheorem_bounds_on_irreversibility_and_entropy_production_in_cortical_spiketrain_dynamics_versus_cosmicweb_filament_evolution_a_falsifiable_dimensionally_consistent_test["Fluctuation-Theorem Bounds on Irreversibility and Entropy Production in Cortical Spike-Train Dynamics versus Cosmic-Web Filament Evolution: A Falsifiable Dimensionally Consistent Test"]:::theoretical
@@ -742,6 +745,7 @@ graph TD
 - [Cosmological Principle and Observational Tests of Large-Scale Isotropy and Homogeneity](level_1_fundamental_physics/cosmological_principle_and_observational_tests_of_largescale_isotropy_and_homogeneity.md) [VERIFIED]
 - [Covariant Quantum Measure Construction in Causal Set Theory](level_1_fundamental_physics/covariant_quantum_measure_construction_in_causal_set_theory.md) [THEORETICAL]
 - [CP Violation](level_1_fundamental_physics/cp_violation.md) [THEORETICAL]
+- [CPT Theorem and Experimental Tests of CPT Symmetry](level_1_fundamental_physics/cpt_theorem_and_experimental_tests_of_cpt_symmetry.md) [THEORETICAL]
 - [Cross-Correlation Methods Breaking Degeneracies in Neutrino Decay Surveys](level_1_fundamental_physics/cross_correlation_methods_breaking_neutrino_decay_degeneracies.md) [THEORETICAL]
 - [Dark Acoustic Oscillations and Dissipation in Complex Dark-Sector Models](level_1_fundamental_physics/dark_acoustic_oscillations_and_dissipation_in_dark_sector_models.md) [THEORETICAL]
 - [Dark Matter](level_1_fundamental_physics/dark_matter.md) [THEORETICAL]
@@ -1052,6 +1056,7 @@ graph TD
 - [Warm Dark Matter vs Self-Interacting Dark Matter in Explaining Small-Scale Structure Formation](level_2_advanced_frameworks/warm_dark_matter_vs_selfinteracting_dark_matter_in_explaining_smallscale_structure_formation.md) [THEORETICAL]
 - [ΛCDM Baryonic Feedback vs MOND External Field Effect in Explaining the Radial Acceleration Relation of Galaxies](level_2_advanced_frameworks/cdm_baryonic_feedback_vs_mond_external_field_effect_in_explaining_the_radial_acceleration_relation_of_galaxies.md) [VERIFIED]
 - [ΛCDM Subhalo Lensing vs Primordial Magnetic Field Seeding in Small-Scale Matter Power Spectrum Tests: Testability via Lyman-Alpha Forest, CMB Spectral Distortions, and 21-cm Signals](level_2_advanced_frameworks/cdm_subhalo_lensing_vs_primordial_magnetic_field_seeding_in_smallscale_matter_power_spectrum_tests_testability_via_lymanalpha_forest_cmb_spectral_distortions_and_21cm_signals.md) [VERIFIED]
+- [“Hypothesized” Unconditional Critical-Line Spectral Rigidity vs Conditional Analytic Bounds in Prime Distribution and L-Function Races](level_2_advanced_frameworks/unconditional_criticalline_spectral_rigidity_vs_conditional_analytic_bounds_in_prime_distribution_and_lfunction_races.md) [THEORETICAL]
 
 ## Level 3: Emergence and Intelligence
 
@@ -1095,6 +1100,7 @@ graph TD
 - [Empirical Identifiability of Integrated Information Theory and Physicalist Emergence Under Matched Causal-Intervention Models](level_3_emergence_and_intelligence/empirical_identifiability_of_integrated_information_theory_and_physicalist_emergence_under_matched_causalintervention_models.md) [THEORETICAL]
 - [Empirical Tests of Quantum Coherence Advantages over Classical Surrogate Models in Biological Information Processing](level_3_emergence_and_intelligence/empirical_tests_of_quantum_coherence_advantages_over_classical_surrogate_models_in_biological_information_processing.md) [THEORETICAL]
 - [Entropy Production Rates in Neural Information Processing vs. Gravitational Structure Formation: A Comparative Thermodynamic Analysis](level_3_emergence_and_intelligence/entropy_production_rates_in_neural_information_processing_vs_gravitational_structure_formation_a_comparative_thermodynamic_analysis.md) [VERIFIED]
+- [Euclidean Isometry Invariance and Order-Parameter Blindness of Recurrence Determinism](level_3_emergence_and_intelligence/euclidean_isometry_invariance_and_orderparameter_blindness_of_recurrence_determinism.md) [VERIFIED]
 - [Falsifiable Bremermann–Landauer Bounds on Sustained Computation Rates in Cortical Tissue: A Dimensionally Consistent Comparison Against Dissipation Limits in Cosmic-Web Gravitational Collapse](level_3_emergence_and_intelligence/falsifiable_bremermannlandauer_bounds_on_sustained_computation_rates_in_cortical_tissue_a_dimensionally_consistent_comparison_against_dissipation_limits_in_cosmicweb_gravitational.md) [THEORETICAL]
 - [Falsifiable Heat-Dissipation and Mutual-Information Bounds on Cortical Energy Budgets Using Calorimetric and Spike-Train Data, with Explicit SI-Unit Tracing and Pre-Specified Null Models](level_3_emergence_and_intelligence/falsifiable_heatdissipation_and_mutualinformation_bounds_on_cortical_energy_budgets_using_calorimetric_and_spiketrain_data_with_explicit_siunit_tracing_and_prespecified_null_models.md) [THEORETICAL]
 - [Falsifiable Minkowski-Functional and Betti-Number Tests of Cosmic-Web Morphology](level_3_emergence_and_intelligence/falsifiable_minkowskifunctional_and_bettinumber_scaling_tests_of_hierarchical_selforganization_in_the_cosmic_web_against_gaussianrandomfield_and_cdm_nbody_null_models_with_explicit.md) [THEORETICAL]
