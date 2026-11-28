@@ -12,35 +12,32 @@
 
 ---
 
-## 📬 Pending Student Inquiries (1)
+## 📬 Pending Student Inquiries (0)
 
-| ID | Level | Concept | Initiator | Question |
-|---|---|---|---|---|
-| `adv-20261128-14c9db` | L1 | **Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running** | UniverseFlow Orchestrator | Concept 'Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
-
-### Detailed Inquiries
-
-#### 🔍 Inquiry: `adv-20261128-14c9db` — Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running
-- **Timestamp**: `2026-11-28T01:00:30.795574+00:00`
-- **Level**: Level 1
-- **Reason Code**: `mathematical_flaw_or_inconsistency`
-- **Question**: Concept 'Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Scientific Rationale**: The Math Physicist reported [MATH_FLAWED] because Eq. (A3), n_s - 1 = 2ε₁ - η_V, combined with the report's own convention η_V = ε₁ - ε₂/2, gives a blue tilt. That contradicts the measured red tilt and the report's own quadratic example. Rule 2 requires rejection when math_status is [MATH_FLAWED], even though the Skeptic scored 6/6. The observational anchoring (Planck 2018, BK18) is strong, so the concept can be approved once the slow-roll algebra is corrected.
-- **Agent Blockers**:
-  * Researcher: Replace Eq. (A3) with the standard Hubble-flow result n_s - 1 = -2ε₁ - ε₂ (with r = 16ε₁). Check the potential-parameter form n_s - 1 = 2η_V - 6ε_V against it.
-  * Researcher: Fix the numerical example. For V∝φ² at N=50, the standard result is n_s = 1 - 2/N = 0.96 with r = 8/N = 0.16. The report's 1 - 3/(2N) and its '2(0.01) - 0.01 = 0.01' line are wrong. Also remove the garbled ε₁^(V)/ε₁^(H) conversion text in Sec. 2.1.
-  * Researcher: Tag the ACT DR6 running values and the 2026 arXiv preprints as [THEORETICAL / PENDING PEER REVIEW].
-  * Researcher: Restrict the >8σ red-tilt claim to [VERIFIED within the power-law parametrization class]. Present the 1.06σ and 1.49σ Planck-ACT offsets as naive Gaussian estimates only. Check that the cited arXiv identifiers are genuine.
-  * Math Physicist: Derive n_s - 1 = -2ε₁ - ε₂ from the Mukhanov-Sasaki equation. Show the relation to 2η_V - 6ε_V, with ε₂ = 4ε_V - 2η_V at leading order.
-  * Math Physicist: Re-verify the quadratic example (ε_V = η_V = 1/(2N), so n_s - 1 = -2/N). The Math Physicist's earlier correction 'n_s - 1 = -0.01' and the Skeptic's counter-correction 'n_s - 1 = -0.04' need to be reconciled explicitly. Note that ε₁ = η_V = 0.01 with η_V the potential parameter gives -0.04 (-6ε_V + 2η_V).
-  * Math Physicist: Check the α_s hierarchy expression against the standard second-order result. At leading order α_s = -2ε₁ε₂ - ε₂ε₃.
-
-> **To answer**: `python scripts/consult_professor.py answer adv-20261128-14c9db "Your guidance"`
-
+*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
 
 ---
 
-## 📚 Answered Advisory Consultations (39)
+## 📚 Answered Advisory Consultations (40)
+
+### ✅ `adv-20261128-14c9db`: Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running
+- **Student Inquired**: Concept 'Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Professor Directive**: 💬 *"In the Level 1 synthesis of 'Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running':
+(1) Correct Slow-Roll Algebra (Eq. A3) & Distinguish eta_V from eta_H:
+  - Derive the canonical Hubble-flow spectral tilt directly from the Mukhanov-Sasaki equation (z = a M_Pl sqrt(2 epsilon_1), conformal time nu^2 - 1/4 = 2 - epsilon_1 + (3/2) epsilon_2 at leading order): n_s - 1 = 3 - 2 nu = -2 epsilon_1 - epsilon_2, with tensor-to-scalar ratio r = 16 epsilon_1.
+  - Eliminate the erroneous Eq. (A3) 'n_s - 1 = 2 epsilon_1 - eta_V' and purge the garbled epsilon_1^(V)/epsilon_1^(H) text in Sec. 2.1.
+  - Explicitly resolve the eta convention clash between Researcher, Math Physicist, and Skeptic: the relation eta_H = epsilon_1 - epsilon_2/2 defines the Hubble slow-roll parameter eta_H = -ddot(phi)/(H dot(phi)) (yielding n_s - 1 = -4 epsilon_1 + 2 eta_H = -2 epsilon_1 - epsilon_2), whereas the potential slow-roll parameter eta_V = M_Pl^2 (V''/V) satisfies epsilon_2 = 4 epsilon_V - 2 eta_V (i.e. eta_V = 2 epsilon_1 - epsilon_2/2) at leading order, yielding the equivalent potential-parameter form n_s - 1 = 2 eta_V - 6 epsilon_V.
+(2) Reconcile the Quadratic Monomial Example (V prop phi^2 at N=50):
+  - For V(phi) = (1/2) m^2 phi^2 at N = 50 e-folds: epsilon_V = eta_V = 1/(2N) = 0.01, so epsilon_1 = 0.01 and epsilon_2 = 4 epsilon_V - 2 eta_V = 1/N = 0.02.
+  - Both formulas agree identically: n_s - 1 = -2(0.01) - 0.02 = -0.04 and n_s - 1 = 2(0.01) - 6(0.01) = -0.04, giving n_s = 1 - 2/N = 0.96 and r = 16 epsilon_1 = 8/N = 0.16 (decisively excluded by BK18+Planck r_{0.05} < 0.036 at 95% CL).
+  - Eliminate the wrong 1 - 3/(2N) = 0.97 formula, the '2(0.01) - 0.01 = 0.01' line, and the Math Physicist's erroneous 'n_s - 1 = -0.01' note.
+(3) Second-Order Running Hierarchy (alpha_s):
+  - Replace the garbled running expression with the canonical leading-order Hubble-flow result alpha_s = dn_s/d(ln k) = -2 epsilon_1 epsilon_2 - epsilon_2 epsilon_3 (equivalent to 16 epsilon_V eta_V - 24 epsilon_V^2 - 2 xi_V^2, giving alpha_s = -2/N^2 = -0.0008 for V prop phi^2 at N=50).
+(4) Epistemic Scoping & Citation Hygiene:
+  - Restrict the >8 sigma red-tilt claim (n_s < 1) to [VERIFIED within the power-law parametrization class] (Planck 2018: n_s = 0.965 +/- 0.004; BK18+Planck: n_s = 0.9649 +/- 0.0042, r_{0.05} < 0.036).
+  - Tag ACT DR6 running/tilt values and all unrefereed 2025-2026 arXiv preprints explicitly as [THEORETICAL / PENDING PEER REVIEW], verify all cited arXiv IDs (dropping any unconfirmable 2026 identifiers), and label the 1.06 sigma (rho=0) and 1.49 sigma (rho=0.5) Planck-ACT offsets strictly as naive independent-Gaussian estimates rather than joint-likelihood tensions.
+  - Re-verify to achieve >= 3/4 ([MATH_CONSISTENT] or [MATH_PROVEN]) with 0 INCONSISTENT/LIMIT_MISMATCH verdicts."*
+- **Answered At**: `2026-11-28T08:04:40.951852+00:00`
 
 ### ✅ `adv-20261119-d1a131`: Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /
 - **Student Inquired**: Concept 'Regarding the PMF cosmic web graph Laplacian hypothesis (HYP-154 /' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
@@ -184,9 +181,4 @@
 - **Student Inquired**: Concept 'Spontaneous Neutron Star Equation of State and Tolman–Oppenheimer–Volkoff Limit' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
 - **Professor Directive**: 💬 *"Retry this concept. The TOV physics and Skeptic score (5/6) are sound; fix these specific items so both the Math Physicist and Skeptic checks pass cleanly: (1) Dimensionless tidal deformability: replace Lambda prop R^5 / M^3 with the canonical dimensionless relation Lambda = (2/3) k_2 (c^2 R / (G M))^5 = (2/3) k_2 C^-5 prop (R/M)^5 (where C = G M / (c^2 R) is compactness and k_2 is the quadrupolar Love number; if mentioning dimensionful tidal polarizability lambda_tidal = (2/3) k_2 R^5 / G, distinguish its symbol and units explicitly from dimensionless Lambda = lambda_tidal / M^5). (2) Newtonian weak-field limit for the Symbolic Derivation Verifier: write the TOV pressure gradient in terms of dimensionless compactness u = 2M/r and pressure-to-energy ratio w = P/rho as dP/dr = -(rho M / r^2) * (1 + w) * (1 + 4 pi r^3 P / M) / (1 - u), and state the Newtonian hydrostatic limit dP/dr = -rho M / r^2 as the simultaneous weak-field, non-relativistic limit u = 2M/r -> 0 and w = P/rho -> 0 (instructing the Math Physicist not to evaluate P -> 0 alone at finite 2M/r, which retains the Schwarzschild factor (1 - 2M/r)^-1 and triggers a false LIMIT_MISMATCH). (3) Symbol Table completeness: declare explicit natural-unit mass dimensions [E]^n for every symbol used in displayed equations ([rho] = [E]^4, [P] = [E]^4, [M] = [E]^-1, [r] = [E]^-1, [R] = [E]^-1, [Lambda] = [E]^0, [k_2] = [E]^0, [Gamma] = [E]^0, [c_s] = [E]^0) so the automated pre-check leaves zero UNDECIDABLE equations. (4) Epistemic tags & citations: use a two-tier status ([VERIFIED] for GR TOV structure and NICER/GW170817/PSR J0740+6620 observational bounds; [THEORETICAL] for spontaneous scalarization and quark-core phase transitions; [MODEL-DEPENDENT] for specific polytropic/stiff-EoS M_TOV values like 2.10 M_sun and 2.45 M_sun), replace 'only known mechanism' with 'one proposed mechanism', and synchronize the report date and citation audit table."*
 - **Answered At**: `2026-10-30T00:20:51.233526+00:00`
-
-### ✅ `adv-20261023-e64b12`: Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background
-- **Student Inquired**: Concept 'Phase-Transition Sound Waves vs Cosmic Defect Networks in Sourcing the Nanohertz-to-Millihertz Stochastic Gravitational Wave Background' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
-- **Professor Directive**: 💬 *"Retry this concept. All structural, dimensional, and topological items from the previous directive are now resolved; fix the remaining two numerical/reproducibility items and re-verify with the PhysicsCalculatorTool: (1) NANOGrav reference energy density at f_yr = 1/yr = 3.1688e-8 Hz: using Omega_GW(f) = (2 pi^2 / 3 H_0^2) f^2 h_c(f)^2 with h_c(f_yr) = A = 2.4e-15 and Planck H_0 = 67.36 km/s/Mpc = 2.183e-18 s^-1, direct evaluation gives Omega_GW(f_yr) = (2 pi^2 / 3) * (f_yr / H_0)^2 * A^2 = 7.99e-9 (or h^2 Omega_GW(f_yr) = 3.62e-9). Remove the erroneous 1.2e-13 value from both manuscripts and all comparison tables. (2) Explicit calculator-reproducible expression for the horizon-crossing frequency f_0 = (a_*/a_0) H_*: write out the exact inputs H_* = sqrt(pi^2 g_* / 90) T_*^2 / M_Pl and a_*/a_0 = (g_*s(T_0) / g_*s(T_*))^(1/3) (T_0 / T_*) with M_Pl = 2.43536e18 GeV, T_0 = 2.3486e-13 GeV, g_*s(T_0) = 3.909, and 1 GeV^-1 = 6.58212e-25 s, so that the PhysicsCalculatorTool expression (sqrt(pi^2 * g_star / 90) * (T_star^2 / M_Pl)) * (3.909 / g_stars)^(1/3) * (T_0 / T_star) / GeV_inv_to_s reproduces f_0 = 1.6647e-5 Hz (lambda_0 = c / f_0 = 1.801e13 m) at the electroweak benchmark T_* = 100 GeV (g_* = g_*s = 106.75), and f_0 = 8.89e-15 Hz (lambda_0 = 3.37e22 m = 1.09 Mpc) at the QCD/PTA-scale benchmark T_* = 100 MeV = 0.1 GeV (or 8.89e-15 Hz * (T_*/10^-7 GeV) below 0.5 MeV where g_* = 3.36, g_*s = 3.91). State the exact calculator expression in the text so the Math Physicist can verify it in one call. (3) Keep all resolved conventions from the previous attempt: rho_c = 3 H_0^2 M_Pl^2 = 3.6735e-47 GeV^4, tau_sw H_* = H_* R_* / U_f with [tau_sw] = [E]^-1 and [U_f] = [E]^0 declared in the Symbol Table, explicit choice of Upsilon = 1 - (1 + 2 tau_sw H_*)^(-1/2), and Afzal et al. 2023 (ApJL 951, L11) cited for PTA Bayes factors."*
-- **Answered At**: `2026-10-23T05:48:31.903933+00:00`
 
