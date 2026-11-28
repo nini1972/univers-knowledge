@@ -1,13 +1,13 @@
 # 🧮 Equation Taxonomy & Cross-Concept Bridges Report
 
-> **Generated:** 2026-11-27T01:25:54.192437+00:00  
-> **Total Analyzed Concepts:** 600 | **Total Discovered Equations:** 25169 | **Discovered Bridges:** 1100
+> **Generated:** 2026-11-28T01:29:09.491857+00:00  
+> **Total Analyzed Concepts:** 603 | **Total Discovered Equations:** 25251 | **Discovered Bridges:** 1105
 
 ## 🌉 1. Cross-Concept Equation Bridges
 These equations appear across multiple distinct concepts, serving as mathematical bridges between physics subfields.
 
 ### ` \Lambda `
-**Occurrences:** Appears in 133 concepts:
+**Occurrences:** Appears in 135 concepts:
 - **Level 2**: Emergent Gravity vs Self-Interacting Dark Matter in Explaining Galaxy Cluster Dynamics
 - **Level 1**: Which observational strategies or novel cross-correlation methods could most effectively break degeneracies between neutrino decay signatures and other neutrino property variations in upcoming surveys?
 - **Level 2**: Scalar-Tensor vs Non-Commutative Geometry in Addressing Singularity Resolution at the Planck Scale
@@ -141,6 +141,8 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Chameleon Screening vs Vacuum-Energy Λ in Explaining Late-Time Cosmic Acceleration: Testability via Laboratory Torsion-Balance, Atom-Interferometry, and Cosmological Growth Constraints
 - **Level 2**: Cosmological Constant Sequestering is not used. Final debate: Cold Dark Matter Adiabatic Contraction vs Ultralight Dark Photon Dark Matter in Predicting Galactic Halo Density Profiles and Pulsar-Timing Signatures
 - **Level 2**: Free-Streaming Standard Model Neutrinos vs Secret Neutrino Self-Interactions in CMB Damping Tail Phase Shift, N_eff, and Hubble Tension Constraints
+- **Level 1**: Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running
+- **Level 2**: Thermal WIMP Freeze-Out vs Hawking-Evaporation Planck-Mass Relics in Explaining the Dark Matter Relic Density: Testability via Direct Detection, Extragalactic Gamma-Ray Background, and BBN/CMB Energy-Injection Constraints
 
 ### ` \alpha `
 **Occurrences:** Appears in 52 concepts:
@@ -198,7 +200,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 3**: A Falsifiable Test of Cosmic-Web Filament Betweenness-Centrality and Spectral-Gap Statistics Against ΛCDM N-Body Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria
 
 ### ` (-,+,+,+) `
-**Occurrences:** Appears in 48 concepts:
+**Occurrences:** Appears in 49 concepts:
 - **Level 3**: Can Integrated Information Theory (IIT) be Formalized within Spacetime Geometry to Address the Hard Problem of Consciousness?
 - **Level 2**: Canonical Quintessence vs K-Essence in Explaining Cosmic Acceleration
 - **Level 1**: Gauge Coupling Unification and Renormalization Group Running
@@ -247,6 +249,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Unconditional Critical-Line Spectral Rigidity vs Conditional Analytic Bounds in Prime Distribution and L-Function Races
 - **Level 2**: Thermal WIMP Freeze-Out vs Cannibal Dark Matter in Predicting the Relic Abundance and the Matter Power Spectrum Cutoff: Testability via Indirect Detection, CMB Constraints, and Lyman-Alpha Forest Data
 - **Level 3**: A Falsifiable Test of Cosmic-Web Filament Betweenness-Centrality and Spectral-Gap Statistics Against ΛCDM N-Body Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria
+- **Level 2**: Thermal WIMP Freeze-Out vs Hawking-Evaporation Planck-Mass Relics in Explaining the Dark Matter Relic Density: Testability via Direct Detection, Extragalactic Gamma-Ray Background, and BBN/CMB Energy-Injection Constraints
 
 ### ` \Phi `
 **Occurrences:** Appears in 45 concepts:
@@ -388,7 +391,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Thermal WIMP Freeze-Out vs Cannibal Dark Matter in Predicting the Relic Abundance and the Matter Power Spectrum Cutoff: Testability via Indirect Detection, CMB Constraints, and Lyman-Alpha Forest Data
 
 ### ` \hbar = c = k_B = 1 `
-**Occurrences:** Appears in 34 concepts:
+**Occurrences:** Appears in 35 concepts:
 - **Level 1**: Electroweak Phase Transition and Its Cosmological Implications
 - **Level 2**: Chiral Magnetic Effect vs Chiral Vortical Effect in Relativistic Plasmas
 - **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
@@ -423,6 +426,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Unconditional Critical-Line Spectral Rigidity vs Conditional Analytic Bounds in Prime Distribution and L-Function Races
 - **Level 2**: Thermal WIMP Freeze-Out vs Cannibal Dark Matter in Predicting the Relic Abundance and the Matter Power Spectrum Cutoff: Testability via Indirect Detection, CMB Constraints, and Lyman-Alpha Forest Data
 - **Level 3**: A Falsifiable Test of Cosmic-Web Filament Betweenness-Centrality and Spectral-Gap Statistics Against ΛCDM N-Body Null Ensembles, With Explicit SI-Unit Tracing and Pre-Specified Rejection Criteria
+- **Level 2**: Thermal WIMP Freeze-Out vs Hawking-Evaporation Planck-Mass Relics in Explaining the Dark Matter Relic Density: Testability via Direct Detection, Extragalactic Gamma-Ray Background, and BBN/CMB Energy-Injection Constraints
 
 ### ` 6.62607015 \times 10^{-34} `
 **Occurrences:** Appears in 33 concepts:
@@ -526,7 +530,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Thermal WIMP Freeze-Out vs Cannibal Dark Matter in Predicting the Relic Abundance and the Matter Power Spectrum Cutoff: Testability via Indirect Detection, CMB Constraints, and Lyman-Alpha Forest Data
 
 ### ` M_{\rm Pl} `
-**Occurrences:** Appears in 26 concepts:
+**Occurrences:** Appears in 27 concepts:
 - **Level 2**: Randall-Sundrum vs. ADD Models in Hierarchy Problem Resolution: Comparative Analysis of Phenomenological Signatures
 - **Level 2**: Inflationary Vacuum Fluctuations vs Cosmic String Networks as Sources of Primordial Gravitational Waves
 - **Level 2**: Perturbative Reheating vs Parametric-Resonance Preheating
@@ -553,6 +557,7 @@ These equations appear across multiple distinct concepts, serving as mathematica
 - **Level 2**: Cosmological Constant Sequestering is not used. Final debate: Cold Dark Matter Adiabatic Contraction vs Ultralight Dark Photon Dark Matter in Predicting Galactic Halo Density Profiles and Pulsar-Timing Signatures
 - **Level 1**: Higgs Vacuum Stability and Metastability of the Electroweak Vacuum
 - **Level 2**: Thermal WIMP Freeze-Out vs Cannibal Dark Matter in Predicting the Relic Abundance and the Matter Power Spectrum Cutoff: Testability via Indirect Detection, CMB Constraints, and Lyman-Alpha Forest Data
+- **Level 2**: Thermal WIMP Freeze-Out vs Hawking-Evaporation Planck-Mass Relics in Explaining the Dark Matter Relic Density: Testability via Direct Detection, Extragalactic Gamma-Ray Background, and BBN/CMB Energy-Injection Constraints
 
 ### ` \hbar=c=k_B=1 `
 **Occurrences:** Appears in 25 concepts:
@@ -666,15 +671,15 @@ These equations appear across multiple distinct concepts, serving as mathematica
 ## 📏 2. Fundamental Physical Constants Index
 | Symbol | Physical Quantity | Standard Units | Cited Value | Concept Count |
 | :--- | :--- | :--- | :--- | :--- |
-| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 241 |
-| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 203 |
-| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 182 |
-| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 161 |
-| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 111 |
+| `c` | Speed of Light | `m/s` | `2.998 x 10^8` | 242 |
+| `G` | Gravitational Constant | `m^3 kg^-1 s^-2` | `6.674 x 10^-11` | 204 |
+| `\Lambda` | Cosmological Constant | `m^-2` | `1.089 x 10^-52` | 184 |
+| `\hbar` | Reduced Planck Constant | `J s` | `1.054 x 10^-34` | 162 |
+| `M_{\text{Pl}}` | Planck Mass | `GeV` | `1.22 x 10^19` | 112 |
 | `a_0` | MOND Acceleration Scale | `m s^-2` | `1.2 x 10^-10` | 101 |
 | `\Omega_c` | Cold Dark Matter Density Parameter | `dimensionless` | `0.120` | 41 |
 | `N_{\text{eff}}` | Effective Neutrino Species | `dimensionless` | `3.044` | 39 |
 
 ## 📊 3. Verification Status Summary
-- **MATH_PROVEN Entries:** 227
-- **MATH_CONSISTENT Entries:** 183
+- **MATH_PROVEN Entries:** 228
+- **MATH_CONSISTENT Entries:** 185

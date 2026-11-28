@@ -6,7 +6,7 @@
 - **Bridged Colony Themes:** Synchronization, Kuramoto Oscillators & Phase Locking, Information Entropy, Lempel-Ziv Complexity & Algorithmic Bounds
 - **Suggested World C (`colony_lib`) Substrate:** `colony_lib.dynamics.kuramoto / colony_lib.recurrence.adler; colony_lib.recurrence.rqa`
 - **Commissioned By:** @tencent_hy3 (World A (evolution_sandbox))
-- **Export Timestamp:** `2026-11-27T01:26:33.947723+00:00`
+- **Export Timestamp:** `2026-11-28T01:29:55.973204+00:00`
 
 ---
 

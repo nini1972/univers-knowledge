@@ -12,9 +12,31 @@
 
 ---
 
-## 📬 Pending Student Inquiries (0)
+## 📬 Pending Student Inquiries (1)
 
-*The advisory queue is currently clear. The Student and underlying agents are operating autonomously.*
+| ID | Level | Concept | Initiator | Question |
+|---|---|---|---|---|
+| `adv-20261128-14c9db` | L1 | **Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running** | UniverseFlow Orchestrator | Concept 'Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed? |
+
+### Detailed Inquiries
+
+#### 🔍 Inquiry: `adv-20261128-14c9db` — Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running
+- **Timestamp**: `2026-11-28T01:00:30.795574+00:00`
+- **Level**: Level 1
+- **Reason Code**: `mathematical_flaw_or_inconsistency`
+- **Question**: Concept 'Cosmic Microwave Background Anisotropy Constraints on the Primordial Power Spectrum: Scalar Spectral Index and Running' was rejected after 2 attempts (mathematical_flaw_or_inconsistency). How should the agents proceed?
+- **Scientific Rationale**: The Math Physicist reported [MATH_FLAWED] because Eq. (A3), n_s - 1 = 2ε₁ - η_V, combined with the report's own convention η_V = ε₁ - ε₂/2, gives a blue tilt. That contradicts the measured red tilt and the report's own quadratic example. Rule 2 requires rejection when math_status is [MATH_FLAWED], even though the Skeptic scored 6/6. The observational anchoring (Planck 2018, BK18) is strong, so the concept can be approved once the slow-roll algebra is corrected.
+- **Agent Blockers**:
+  * Researcher: Replace Eq. (A3) with the standard Hubble-flow result n_s - 1 = -2ε₁ - ε₂ (with r = 16ε₁). Check the potential-parameter form n_s - 1 = 2η_V - 6ε_V against it.
+  * Researcher: Fix the numerical example. For V∝φ² at N=50, the standard result is n_s = 1 - 2/N = 0.96 with r = 8/N = 0.16. The report's 1 - 3/(2N) and its '2(0.01) - 0.01 = 0.01' line are wrong. Also remove the garbled ε₁^(V)/ε₁^(H) conversion text in Sec. 2.1.
+  * Researcher: Tag the ACT DR6 running values and the 2026 arXiv preprints as [THEORETICAL / PENDING PEER REVIEW].
+  * Researcher: Restrict the >8σ red-tilt claim to [VERIFIED within the power-law parametrization class]. Present the 1.06σ and 1.49σ Planck-ACT offsets as naive Gaussian estimates only. Check that the cited arXiv identifiers are genuine.
+  * Math Physicist: Derive n_s - 1 = -2ε₁ - ε₂ from the Mukhanov-Sasaki equation. Show the relation to 2η_V - 6ε_V, with ε₂ = 4ε_V - 2η_V at leading order.
+  * Math Physicist: Re-verify the quadratic example (ε_V = η_V = 1/(2N), so n_s - 1 = -2/N). The Math Physicist's earlier correction 'n_s - 1 = -0.01' and the Skeptic's counter-correction 'n_s - 1 = -0.04' need to be reconciled explicitly. Note that ε₁ = η_V = 0.01 with η_V the potential parameter gives -0.04 (-6ε_V + 2η_V).
+  * Math Physicist: Check the α_s hierarchy expression against the standard second-order result. At leading order α_s = -2ε₁ε₂ - ε₂ε₃.
+
+> **To answer**: `python scripts/consult_professor.py answer adv-20261128-14c9db "Your guidance"`
+
 
 ---
 
